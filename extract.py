@@ -24,6 +24,8 @@ authors = {
     'Fayola Peters' : 'Fayola Peters'
 }
 
+overwrite = (len(sys.argv) > 1) and (sys.argv[1] == 'overwrite')
+
 data = sys.stdin.read()
 for item in item_p.findall(data):
     if '<wp:post_type>post</wp:post_type>' not in item:
@@ -39,14 +41,15 @@ for item in item_p.findall(data):
     link = link_p.search(item).group(1)
     pathname = '_posts/%s-%s-%s-%s.html' % (year, month, day, name)
     print link, ':', '%s/%s/%s/%s.html' % (year, month, day, name)
-    with open(pathname, 'w') as writer:
-        print >> writer, '---'
-        print >> writer, 'layout: post'
-        print >> writer, 'author:', author
-        print >> writer, 'title: "%s"' % title
-        print >> writer, 'date:', date
-        print >> writer, 'time:', time
-        print >> writer, 'categories: [%s]' % ', '.join(categories)
-        print >> writer, '---'
-        print >> writer
-        print >> writer, content.strip()
+    if overwrite:
+        with open(pathname, 'w') as writer:
+            print >> writer, '---'
+            print >> writer, 'layout: post'
+            print >> writer, 'author:', author
+            print >> writer, 'title: "%s"' % title
+            print >> writer, 'date:', date
+            print >> writer, 'time:', time
+            print >> writer, 'categories: [%s]' % ', '.join(categories)
+            print >> writer, '---'
+            print >> writer
+            print >> writer, content.strip()
