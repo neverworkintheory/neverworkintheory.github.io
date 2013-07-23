@@ -1,0 +1,24 @@
+---
+layout: none
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0">
+  <channel>
+    <title>It Will Never Work in Theory</title>
+    <link>{{site.url}}</link>
+    <description>Empirical research results in software engineering.</description>
+    <copyright>Copyright (c) the authors.</copyright>
+    <lastBuildDate>{{site.time | date: "%a, %d %b %Y %H:%M:%S %Z"}}</lastBuildDate>
+    <generator>Emacs, Make, and Jekyll</generator>
+    <docs>http://blogs.law.harvard.edu/tech/rss</docs>
+    {% for post in site.posts limit:20 %}
+      <item>
+        <title>{{post.title}}</title>
+        <author>{{site.email}} ({{site.author}})</author>
+        <link>{{site.url}}{{post.url}}</link>
+        <pubDate>{{post.date | date: "%a, %d %b %Y %H:%M:%S %Z"}}</pubDate>
+        <description>{{post.content|xml_escape}}</description>
+      </item>
+    {% endfor %}
+  </channel>
+</rss>
