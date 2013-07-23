@@ -1,0 +1,19 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    {% include standard_header.html %}
+    <title>{{page.title}}</title>
+  </head>
+  <body>
+    <div class="container shadow">
+      <div class="row-fluid">
+        <div class="span10 offset1">
+          <h1>It Will Never Work in Theory</h1>
+          {% include standard_navbar.html %}
+          {{content}}
+          {% include standard_footer.html %}
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

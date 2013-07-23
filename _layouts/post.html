@@ -1,5 +1,7 @@
 ---
-layout: default
+layout: base
+root: ../../..
 ---
-{% include JB/setup %}
-{% include themes/twitter/post.html %}
+<h3>{{page.title}}</h3>
+<hr>Posted {{page.date}} by {{page.author}} in {{page.category|join: ', '}}</h4>
+{{content}}

@@ -1,0 +1,27 @@
+---
+layout: page
+root: .
+---
+<table class="table table-striped">
+  {% for post in site.posts limit:20 %}
+    <tr>
+      <td>{{post.date|date: '%b&nbsp;%e,&nbsp;%Y'}}</td>
+      <td>
+	<a href=".{{post.url}}">{{post.title}}</a>
+	<br/>
+	Keywords: <em>{{post.categories|join: ', '}}</em>
+      </td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>
+	{{post.content|strip_html|truncatewords: 100}}
+      </td>
+    </tr>
+  {% endfor %}
+    <tr>
+      <td></td>
+      <td><a href="blog.html">...more</a></td>
+    </tr>
+</table>
+<hr/>

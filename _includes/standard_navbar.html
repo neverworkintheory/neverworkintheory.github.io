@@ -1,0 +1,12 @@
+<div class="navbar">
+  <div class="navbar-inner">
+    <ul class="nav">
+      <li>{% if page.previous.url %}<a href="{{page.root}}{{page.previous.url}}">&laquo;</a>{% endif %}</li>
+      <li><a href="{{page.root}}/index.html">Home</a></li>
+      <li><a href="{{page.root}}/about.html">About</a></li>
+      <li><a href="{{page.root}}/blog.html">Archives</a></li>
+      <li><a href="{{page.root}}/bib.html">Bibliography</a></li>
+      <li>{% if page.next.url %}<a href="{{page.root}}{{page.next.url}}">&raquo;</a>{% endif %}</li>
+    </ul>
+  </div>
+</div>
