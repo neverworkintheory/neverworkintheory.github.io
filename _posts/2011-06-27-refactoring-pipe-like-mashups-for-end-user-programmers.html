@@ -1,0 +1,13 @@
+---
+layout: post
+author: Jorge Aranda
+title: "Refactoring pipe-like mashups for end-user programmers"
+date: 2011-06-27
+time: 14:46:08
+categories: [Code Smells, Refactoring, Usability]
+---
+{% include JB/setup %}
+
+<em><a title="Kathryn Stolee's website" href="http://cse.unl.edu/~kstolee/index.html">Kathryn Stolee</a> and <a title="Sebastian Elbaum's website" href="http://cse.unl.edu/~elbaum/content/">Sebastian Elbaum</a>, <a href="http://cse.unl.edu/~kstolee/icse2011.pdf"><strong>"Refactoring Pipe-like Mashups for End-User Programmers"</strong></a>. ICSE 2011:</em>
+<blockquote>Mashups are becoming increasingly popular as end users are able to easily access, manipulate, and compose data from many web sources. We have observed, however, that mashups tend to suffer from deficiencies that propagate as mashups are reused. To address these deficiencies, we would like to bring some of the benefits of software engineering techniques to the end users creating these programs. In this work, we focus on identifying code smells indicative of the deficiencies we observed in web mashups programmed in the popular Yahoo! Pipes environment. Through an empirical study, we explore the impact of those smells on end-user programmers and observe that users generally prefer mashups without smells. We then introduce refactorings targeting those smells, reducing the complexity of the mashup programs, increasing their abstraction, updating broken data sources and dated components, and standardizing their structures to fit the community development patterns. Our assessment of a large sample of mashups shows that smells are present in 81% of them and that the proposed refactorings can reduce the number of smelly mashups to 16%, illustrating the potential of refactoring to support the thousands of end users programming mashups.</blockquote>
+A great use of computer science-y automation to improve end-user programs. In this case the beneficiaries are <a href="http://pipes.yahoo.com/pipes/">Yahoo! Pipes</a> users, but the same <em>code smell -&gt; refactor</em> principle can easily be used in other web mashups, and eventually in other kinds of end-user programs.

@@ -1,0 +1,13 @@
+---
+layout: post
+author: Jorge Aranda
+title: "Clustering duplicate crash reports"
+date: 2012-07-18
+time: 09:00:50
+categories: [Metrics, Quality, Quantitative Studies]
+---
+{% include JB/setup %}
+
+<em><a href="http://research.microsoft.com/en-us/people/yidang/">Yingnong Dang</a>, Rongxin Wu, <a href="https://sites.google.com/site/hongyujohn/">Hongyu Zhang</a>, Dongmei Zhang, and Peter Nobel. <strong><a href="http://research.microsoft.com/en-us/groups/sa/rebucket-icse2012.pdf">"ReBucket: A Method for Clustering Duplicate Crash Reports Based on Call Stack Similarity"</a>.</strong> ICSE 2012.</em>
+<blockquote><em>Software often crashes. Once a crash happens, a crash report could be sent to software developers for investigation upon user permission. To facilitate efficient handling of crashes, crash reports received by Microsoft’s Windows Error Reporting (WER) system are organized into a set of “buckets”. Each bucket contains duplicate crash reports that are deemed as manifestations of the same bug. The bucket information is important for prioritizing efforts to resolve crashing bugs. To improve the accuracy of bucketing, we propose ReBucket, a method for clustering crash reports based on call stack matching. ReBucket measures the similarities of call stacks in crash reports and then assigns the reports to appropriate buckets based on the similarity values. We evaluate ReBucket using crash data collected from five widely-used Microsoft products. The results show that ReBucket achieves better overall performance than the existing methods. On average, the F-measure obtained by ReBucket is about 0.88.</em></blockquote>
+For successful software products, one nasty consequence of a massive user base is the similarly massive amount of crash reports that they produce. Somebody (or some tool) needs to sift through all of them and categorize them to figure out if there's anything that's new and worthy of investigation, as well as which bugs are in most urgent need of attention. Dang &amp; Co developed a method to cluster these crash reports (the paper describes it in some detail), and it seems to have pretty good results so far---and although it has been tried only on Microsoft data, the authors are planning to move onto other projects as well.

@@ -1,0 +1,15 @@
+---
+layout: post
+author: Greg Wilson
+title: "A Characteristic Study on Failures of Production Distributed Data-Parallel Programs"
+date: 2013-04-16
+time: 11:08:23
+categories: [Qualitative Studies, Quantitative Studies, Tools, Usability]
+---
+{% include JB/setup %}
+
+Sihan Li, Hucheng Zhou, Haoxiang Lin, Tian Xiao, Haibo Lin, Wei Lin, and Tao Xie: "<a href="http://research.microsoft.com/apps/pubs/default.aspx?id=185279">A Characteristic Study on Failures of Production Distributed Data-Parallel Programs</a>". <em>Proc. ICSE 2013</em>.
+<blockquote><em>SCOPE is adopted by thousands of developers from tens of different product teams in Microsoft Bing for daily web-scale data processing, including index building, search ranking, and advertisement display. A SCOPE job is composed of declarative SQL-like queries and imperative C# user-defined functions (UDFs), which are executed in pipeline by thousands of machines. There are tens of thousands of SCOPE jobs executed on Microsoft clusters per day, while some of them fail after a long execution time and thus waste tremendous resources. Reducing SCOPE failures would save significant resources.</em>
+
+<em>This paper presents a comprehensive characteristic study on 200 SCOPE failures/fixes and 50 SCOPE failures with debugging statistics from Microsoft Bing, investigating not only major failure types, failure sources, and fixes, but also current debugging practice. Our major findings include (1) most of the failures (84.5%) are caused by defects in data processing rather than defects in code logic; (2) table-level failures (22.5%) are mainly caused by programmers' mistakes and frequent data-schema changes while row-level failures (62%) are mainly caused by exceptional data; (3) 93% of fixes do not change data processing logic; (4) there are 8% failures with root cause not at the failure-exposing stage, making current debugging practice insufficient in this case. Our study results provide valuable guidelines for future development of data-parallel programs. We believe that these guidelines are not limited to SCOPE, but can also be generalized to other similar data-parallel platforms.</em></blockquote>
+This insightful little paper is a great example of how a small investment in studying how things actually work can beneficially impact where developers focus their effort. A similar fault analysis of (for example) the way novices do joins in SQL, or of how they get list comprehensions in Python wrong, would be very welcome. We look forward to seeing how the team at Microsoft incorporates these findings into the next version of SCOPE.

@@ -1,0 +1,23 @@
+---
+layout: post
+author: Fayola Peters
+title: "Does Bug Prediction Support Human Developers? Findings From a Google Case Study"
+date: 2013-06-06
+time: 10:38:22
+categories: [Case Studies, Tools]
+---
+{% include JB/setup %}
+
+Chris Lewis, Zhongpeng Lin, Caitlin Sadowski, Xiaoyan Zhu, Rong Ou, and E. James Whitehead Jr.: "Does Bug Prediction Support Human Developers? Findings From a Google Case Study." <cite>ICSE'13</cite>, 2013, <a href="http://www.cflewis.com/publications/google.pdf?attredirects=3D0">http://www.cflewis.com/publications/google.pdf?attredirects=3D0</a>.
+<blockquote><em>While many bug prediction algorithms have been developed by academia, they're often only tested and verified in the lab using automated means. We do not have a strong idea about whether such algorithms are useful to guide human developers. We deployed a bug prediction algorithm across Google, and found no identifiable change in developer behavior. Using our experience, we provide several characteristics that bug prediction algorithms need to meet in order to be accepted by human developers and truly change how developers evaluate their code. </em></blockquote>
+This paper highlights the divide between the success of bug prediction algorithms in academia and the lack of their adoption in software engineering practice. Lewis et al. presented volunteer software developers at Google with the results of two state-of-the-art algorithms. The first, the award winning FIxCache which caches files that are predicted to be bug-prone (Lewis et al. used two versions of this algorithm, one biased to cache newer files and the other biased to cache older files) and the second is what they call the Rahman algorithm which uses "the number of closed bugs to rank files from most bug-prone to least bug-prone".
+
+The highlight of this paper is the list of three must-have characteristics for a bug prediction algorithm to be adopted as part of the software development process:
+<ol>
+	<li>Actionable messages: The output of a bug prediction algorithm should be actionable.</li>
+	<li>Obvious reasoning: When a bug prediction algorithm flags a file as bug prone, developers would like to know why to allay any fears that the flag is a false positive.</li>
+	<li>Bias towards the new: Developers are more concerned with files that are currently causing problems.</li>
+</ol>
+These characteristics were born from conversations with Google developers which led Lewis et al. to create TWS (an optimized version of the Rahman algorithm). TWS addressed two of the three must-have characteristics (2 and 3 above). The results showed that developer behavior did not change significantly before and after TWS was deployed. Lewis et al. looked at this result as a failure of TWS which did not present developers with actionable messages.
+
+This work opens a line of discussion as to the real success of bug prediction algorithms, who are their most likely users, and what they should offer beyond precision, recall and F-measures.

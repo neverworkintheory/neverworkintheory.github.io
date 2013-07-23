@@ -1,0 +1,15 @@
+---
+layout: post
+author: Greg Wilson
+title: "A Survey of the Practice of Computational Science"
+date: 2012-01-17
+time: 13:28:33
+categories: [Practices, Qualitative Studies, Quantitative Studies, Scientific Computing, Survey]
+---
+{% include JB/setup %}
+
+A survey of the practice of computational science. In <cite>International Conference for High Performance Computing, Networking, Storage and Analysis</cite>, pages 19:1–19:12, 2011. (<a href="http://dx.doi.org/10.1145/2063348.2063374">doi:10.1145/2063348.2063374</a>)
+<blockquote><em>Computing plays an indispensable role in scientific research. Presently, researchers in science have different problems, needs, and beliefs about computation than professional programmers. In order to accelerate the progress of science, computer scientists must understand these problems, needs, and beliefs. To this end, this paper presents a survey of scientists from diverse disciplines, practicing computational science at a doctoral-granting university with very high research activity. The survey covers many things, among them, prevalent programming practices within this scientific community, the importance of computational power in different fields, use of tools to enhance performance and software productivity, computational resources leveraged, and prevalence of parallel computation. The results reveal several patterns that suggest interesting avenues to bridge the gap between scientific researchers and programming tools developers.</em></blockquote>
+Several studies of scientific programmers and scientific programming have come out in the past few years [<a href="#1">1</a>]. This in-depth analysis, which is based on semi-structured interviews with 114 researchers in science and engineering at Princeton University, is probably the most insightful to date. It explores the languages and tools researchers use, their debugging techniques, the environments they use, their performance tuning strategies, their use of parallelism [<a href="#2">2</a>], and many other aspects of their work. While some of its conclusions are unsurprising (e.g., the fact that scientists don't test their programs rigorously), others highlight fruitful directions for future research—most particularly, the need to integrate performance analysis and tuning tools into everyday programming. More studies like this in other areas would be very welcome.
+<p id="1">[1] Disclosure: one of us (GW) co-authored<a href="http://dl.acm.org/citation.cfm?id=1556928"> one of these studies</a>, a web-based survey of over 1900 scientists conducted in 2008-09.</p>
+<p id="2">[2] Not surprisingly, job-level parallelism (i.e., running a sequential program many times with slightly different parameters) is by far the most common.</p>

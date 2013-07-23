@@ -1,0 +1,34 @@
+---
+layout: post
+author: Jorge Aranda
+title: "Codermetrics?"
+date: 2011-11-28
+time: 15:48:01
+categories: [Metrics]
+---
+{% include JB/setup %}
+
+As a new parent I haven't had much chance to go to the movies lately, and among the many new releases I've missed is <a title="Moneyball on IMDB" href="http://www.imdb.com/title/tt1210166/">"Moneyball"</a>. But I read enough about the movie to learn that it was about baseball and the folks behind <a href="http://en.wikipedia.org/wiki/Sabermetrics">Sabermetrics</a>, and so it did not surprise me when, shortly after the film came out, <a href="http://third-bit.com/">Greg Wilson</a> pointed me to the article <a href="http://radar.oreilly.com/2011/10/moneyball-for-software-enginee.html">"Moneyball for software engineering"</a>, by Jonathan Alexander, who also wrote <a href="http://shop.oreilly.com/product/0636920020134.do">a book</a> on the same topic. I decided to write about it here because it is, sadly, an illustrative example of the <a title="My previous post on controlling what you can't measure" href="http://catenary.wordpress.com/2007/01/11/controlling-what-you-cant-measure/">"you can't control what you can measure" trap</a> that we're too prone to fall for in our domain.
+
+In his article, Alexander argues that the statistical approach featured in Moneyball can be applied to the software development domain. By gathering the right stats, he says, software companies can better assess the contributions from their employees, and create "more competitive teams". Here's a few of Alexander's proposed measurements:
+<ul>
+	<li>Productivity by looking at the number of tasks completed or the total complexity rating for all completed tasks.</li>
+	<li>Utility by keeping track of how many areas someone works on or covers.</li>
+	<li>Teamwork by tallying how many times someone helps or mentors others, or demonstrates behavior that motivates teammates.</li>
+	<li>Innovation by noting the times when someone invents, innovates, or demonstrates strong initiative to solve an important problem.</li>
+</ul>
+If you're going down this route, you'll also need some way to assess success, and software development does not have the simple win/loss that baseball has. Alexander has a few metrics in mind though:
+<ul>
+	<li>Looking at the number of users acquired or lost.</li>
+	<li>Calculating the impact of software enhancements that deliver benefit to existing users.</li>
+	<li>...and so on.</li>
+</ul>
+And once you have all these metrics, you could play around with them, assessing performance, identifying different kinds of "roles", coaching on skills that the team is lacking, <em>et cetera</em>. That is Alexander's proposal, in short, and he says that a "growing number of companies" are starting to use it.
+
+But there is no data on the efficacy of this approach, and frankly I cannot see how it could possibly work. There are two major problems with it.
+
+The first problem is assuming that a technique that works for baseball will also work for software development. Baseball is the perfect home for a stats-heavy approach. It is a very discrete sport---that is, you can get discrete data fairly easily. There are clear win/loss conditions, and every single play can be classified according to given criteria and assigned to individual players with relative ease. That's not the case with software development. Exactly what counts as an innovation? What counts as an area of work? How do you assign a complexity rating for a completed task? And how could you ever get agreement on your answers to questions like these?
+
+The second problem is that measurements can be gamed, and <a title="as discussed in this Wikipedia article about Campbell's Law" href="http://en.wikipedia.org/wiki/Campbell%27s_Law">measurements used to shape policy will be gamed</a>. Perhaps in baseball this is not an issue, and that may be because Sabermetrics measurements (as far as I know) tend not to focus on interpersonal or subjective criteria. That is not the case here, and it<em> can't</em> be the case here, as good software development often depends on interpersonal and subjective criteria. <a href="http://coderoom.wordpress.com/2010/01/28/3-simple-rules-that-will-make-you-a-superstar-developer/">See here for a wonderful illustration of a nightmare scenario that nonetheless would do great on the performance metrics above</a>.
+
+This is not to say that measurements are not useful in our domain---we've covered several examples of the opposite in this blog already. But we often jump to the numbers a bit too quickly, no matter how careless was the process to come up with them. Perhaps this is because seeing percentages or trends gives us a warm fuzzy illusion of control, and we tend to forget that we're dealing with pretty complex constructs that can't be captured easily, and with intelligent professionals that will react to our observations in unintended ways. My advice: always be suspicious of your subjective appraisals, but if you start collecting metrics, be extra suspicious. All those seemingly hard numbers might make you forget that they are probably still subjective, but dressed up in objectivity: wolves in sheeps' clothing.

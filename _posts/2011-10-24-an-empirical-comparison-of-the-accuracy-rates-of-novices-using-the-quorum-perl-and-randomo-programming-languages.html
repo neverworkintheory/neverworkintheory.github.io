@@ -1,0 +1,25 @@
+---
+layout: post
+author: Greg Wilson
+title: "An Empirical Comparison of the Accuracy Rates of Novices using the Quorum, Perl, and Randomo Programming Languages"
+date: 2011-10-24
+time: 11:45:35
+categories: [Controlled Experiments, Programming Languages]
+---
+{% include JB/setup %}
+
+<a href="http://www.cs.siue.edu/~astefik/index.php">Andreas Stefik</a>, Susanna Siebert, Melissa Stefik, and Kim Slattery: <a href="http://ecs.victoria.ac.nz/twiki/pub/Events/PLATEAU/Program/plateau2011-stefik.pdf">An Empirical Comparison of the Accuracy Rates of Novices using the Quorum, Perl, and Randomo Programming Languages</a>. <em><a href="http://ecs.victoria.ac.nz/Events/PLATEAU/WebHome#Evaluation_and_Usability_of_Prog">PLATEAU 2011</a></em>.
+
+
+
+<blockquote>
+  <em>We present here an empirical study comparing the accuracy rates of novices writing software in three programming languages: Quorum, Perl, and Randomo. The first language, Quorum, we call an evidence-based programming language, where the syntax, semantics, and API designs change in correspondence to the latest academic research and literature on programming language usability. Second, while Perl is well known, we call Randomo a Placebo-language, where some of the syntax was chosen with a random number generator and the ASCII table. We compared novices that were programming for the first time using each of these languages, testing how accurately they could write simple programs using common program constructs (e.g., loops, conditionals, functions, variables, parameters). Results showed that while Quorum users were afforded significantly greater accuracy compared to those using Perl and Randomo, Perl users were unable to write programs more accurately than those using a language designed by chance.</em>
+
+
+</blockquote>
+
+In the early 1990s, when I was teaching parallel programming to scientists, I discovered very quickly that they found some programming systems much easier to learn than others. Data parallelism and Linda's tuple spaces? They could get something working in half an hour. Message passing? It took hours to get as far. When Brent Gorda and I started teaching software engineering to scientists a few years later at <a href="http://lanl.gov">Los Alamos National Laboratory</a>, we initially used Perl; after switching to Python, we found that it only took two days to cover material that had previously taken three, and that students seemed to remember it better weeks or months later.
+
+
+
+But everyone has stories like that about their favorite programming language. Haskell's fans swear that strong typing makes all the difference, while fans of Scheme are wont to claim that strong typing is for people with weak memories. If anything deserves empirical study (if only to put such claims to rest), it's this. That's why I enjoyed this paper so much. It isn't just their finding that novices using Perl were no more likely to write a correct program than novices using a language whose syntax was generated randomly (although I did smile quite broadly when I read that). This paper's real contribution is to show that such studies are possible—that we can and should put such claims to the test, just as Rossbach et al. did for <a href="http://www.neverworkintheory.org/?p=122">transactional programming</a>.

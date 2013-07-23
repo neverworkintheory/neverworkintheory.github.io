@@ -1,0 +1,28 @@
+---
+layout: post
+author: Jorge Aranda
+title: "The IROP paper"
+date: 2011-10-11
+time: 10:27:55
+categories: [Meta, Mining, Noticed]
+---
+{% include JB/setup %}
+
+<em>(Re-posted from my blog, <a href="http://catenary.wordpress.com/">Catenary</a> --Jorge Aranda)</em>
+
+If you keep track of recent developments in empirical software engineering, you may have already heard of <a title="IROP page" href="http://www.st.cs.uni-saarland.de/softevo/irop/">the fantastic IROP study</a>. I was too busy writing a paper to blog about it when <a title="Andreas Zeller's page" href="http://www.st.cs.uni-saarland.de/zeller/">Andreas Zeller</a> presented it at PROMISE 2011, but here I go, in case you haven't read it.
+
+Basically, Zeller, <a href="http://thomas-zimmermann.com/">Thomas Zimmermann</a>, and <a href="http://www.cabird.com/">Christian Bird</a> did what I'm afraid some researchers in our field do on a regular basis: take some mining tools and some data, and then go nuts with them---abuse of them in the most absurd ways imaginable. Luckily, Zeller, Zimmermann, and Bird did it <em>on purpose</em> and as <em>a parody</em>.
+
+Here's what they did: take Eclipse data on code and errors, and correlate the two to find good predictors of bugs. Sounds sensible. But they did the correlation at the ASCII character level. So it turns out, for Eclipse 3.0, the characters that are most highly correlated with errors are the letters 'i', 'r', 'o', and 'p'. What is a sensible researcher to do facing these findings? Well take those letters out of the keyboard, of course! Problem solved:
+
+<a href="http://catenary.files.wordpress.com/2011/10/irop-keyboard-4801.jpg"><img class="size-full wp-image-703 alignnone" title="The IROP keyboard" src="http://catenary.files.wordpress.com/2011/10/irop-keyboard-4801.jpg" alt="The IROP keyboard" width="480" height="360" /></a>
+
+They then go over a supposed half-baked validation study with three interns, who reported great success in adapting to a life without 'i', 'r', 'o', and 'p' in their keyboards. Trial feedback:
+<blockquote>We can shun these set majuscules, and the text stays just as swell as antecedently. Let us just ban them!</blockquote>
+Near the end, the authors go over everything that's wrong with their approach (lack of theoretical grounding, dishonest use of statistics, and a long <em>et cetera</em>). It's a fun read, and instructive. Research, in general, needs more parodies. If you like this one, some of my other favourites are:
+<ul>
+	<li><em><a href="http://catenary.files.wordpress.com/2011/10/haley1969.pdf">The Art of Being a Failure as a Therapist</a> </em>(thanks to <a href="http://skoolr.blogspot.com/">Jon Pipitone</a> for finding it after we thought it was a futile endeavour!)</li>
+	<li><em><a href="http://catenary.files.wordpress.com/2011/10/upper-1974-the-unsuccessful-self-treatment-of-a-case-of-writers-block.pdf">The Unsuccessful Self-Treatment of a Case of "Writer's Block"</a></em> (also via Jon)</li>
+	<li>And our own paper of ill-conceived, impractical pie-in-the-sky research proposals, <em><a title="An older post about it" href="http://catenary.wordpress.com/2010/04/30/do-not-aim-for-the-eagle/">Aim for the Eagle</a></em>, which unfortunately was not always taken as a parody.</li>
+</ul>

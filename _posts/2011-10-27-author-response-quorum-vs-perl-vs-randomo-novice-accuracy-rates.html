@@ -1,0 +1,48 @@
+---
+layout: post
+author: Andreas Stefik
+title: "Author Response: Quorum vs Perl vs Randomo Novice Accuracy Rates"
+date: 2011-10-27
+time: 12:42:20
+categories: [Uncategorized]
+---
+{% include JB/setup %}
+
+Hi Greg and Jorge,
+
+Thanks for mentioning our work on your site. My team and I have been astonished at how far and wide our results have spread in just a day or two. It’s amazing how emotional people have become about our experiment. Anyway, I’m a working scientist, so I don’t have a ton of time, but I’ll try to respond to a few user comments:
+
+<strong>1. Claim: We tested with novices. This would never apply in the field.</strong>
+
+Response: As scientists and practitioners, it would behoove us to objectively test such claims instead of just declaring their truth-value. I think that we should be testing languages with novices, professionals, and everyone in between.
+
+<strong>2. Claim: $a to $c initializations are non-idiomatic and borked (or old). The syntax ($a,$b,$c) = @_; would be better. Or similarly, people might have chosen different examples.</strong>
+
+Response: Testing with other examples or other versions of Perl, could reveal different accuracy rates. With that said, I find it pretty unlikely that ($a,$b,$c) = @_; would have much meaning to a novice. There is no way to know without more formal experiments, but it wouldn’t surprise me if someone discovered novices did even worse with such syntax.
+
+<strong>3. Claim: We should trust our gut instincts over empirical studies.</strong>
+
+Response: Gut instincts can be valuable, but in programming language design, people's guts rarely seem to agree. By using the scientific method, we can obtain more reproducible, and frankly more accurate, answers.
+
+<strong>4. Claim: A larger sample size might show Perl did better than a language designed by chance.</strong>
+
+Response: This is <em><strong>true</strong></em>, as we clearly discuss in the paper. Keep in mind, if this is the case, it would only mean that novices were afforded 26% greater accuracy than those using Randomo. That's very poor.
+
+<strong>5. Claim: Quorum users were not more accurate than Perl or Randomo users.</strong>
+
+Response: This is <em><strong>false</strong></em>. Results show there is a 95.3% chance that novice Quorum users were more accurate than Perl users and a 99.6% chance that they were more accurate than Randomo. To say otherwise is misrepresentative of our results.
+
+<strong>6. Claim: Two of the languages are made up.</strong>
+
+Response: Three: so is Perl. Quorum is implemented though. We’ll release 1.0 in a few months on sourceforge. Randomo is clearly a thought experiment, but would be easy to implement.
+
+<strong>In Summary:</strong>
+
+If anything, from reading the responses, what I think our community really needs to do is to move away from a largely pseudo-scientific view of programming language design toward one based on evidence. The scientific method has a much better chance of ending the programming language wars someday than does continuing to argue about it.
+
+Finally, as one last point, for those readers that absolutely must send hate mail, please send it only to me, not my students.
+
+Andreas Stefik, Ph.D.
+Assistant Professor
+Department of Computer Science
+Southern Illinois University Edwardsville

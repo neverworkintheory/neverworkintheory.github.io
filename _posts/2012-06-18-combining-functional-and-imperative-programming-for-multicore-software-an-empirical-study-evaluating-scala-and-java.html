@@ -1,0 +1,41 @@
+---
+layout: post
+author: Greg Wilson
+title: "Combining Functional and Imperative Programming for Multicore Software: An Empirical Study Evaluating Scala and Java"
+date: 2012-06-18
+time: 06:06:51
+categories: [Controlled Experiments, Programming Languages, Quantitative Studies]
+---
+{% include JB/setup %}
+
+<em><a href="http://www.victorpankratius.com/">Victor Pankratius</a>, Felix Schmidt, and Gilda Garretón: <a href="http://www.rz.uni-karlsruhe.de/~kb95/papers/pankratius-Scala-ICSE12-preprint.pdf">"Combining Functional and Imperative Programming for Multicore Software: An Empirical Study Evaluating Scala and Java."</a> <a href="http://www.ifi.uzh.ch/icse2012/">ICSE 2012</a>.</em>
+
+
+
+<blockquote>
+  <em>Recent multi-paradigm programming languages combine functional and imperative programming styles to make software development easier. Given today's proliferation of multicore processors, parallel programmers are supposed to benefit from this combination, as many difficult problems can be expressed more easily in a functional style while others match an imperative style. Due to a lack of empirical evidence from controlled studies, however, important software engineering questions are largely unanswered. Our paper is the first to provide thorough empirical results by using Scala and Java as a vehicle in a controlled comparative study on multicore software development. Scala combines functional and imperative programming while Java focuses on imperative shared-memory programming. We study thirteen programmers who worked on three projects, including an industrial application, in both Scala and Java. In addition to the resulting 39 Scala programs and 39 Java programs, we obtain data from an industry software engineer who worked on the same project in Scala. We analyze key issues such as effort, code, language usage, performance, and programmer satisfaction. Contrary to popular belief, the functional style does not lead to bad performance. Average Scala run-times are comparable to Java, lowest run-times are sometimes better, but Java scales better on parallel hardware. We confirm with statistical significance Scala's claim that Scala code is more compact than Java code, but clearly refute other claims of Scala on lower programming effort and lower debugging effort. Our study also provides explanations for these observations and shows directions on how to improve multi-paradigm languages in the future.</em>
+
+
+</blockquote>
+
+Functional programming has been the "next big thing" in computing for thirty years, and people joke that it still will be thirty years from now. These days, arguments for it are often based on the claim that parallel programming is easier in the absence of side effects. Like any plausible claim, though, that one needs to be tested empirically before it can be accepted.
+
+
+
+This study by Pankratius et al is one such test. Thirteen Master's students in Computer Science with an average of four years of Java experience, and no previous Scala experience, were given four weeks of training in both Java and Scala, then required to provide implementations of the Dining Philosophers problem and a basic mergesort algorithm. With that warmup out of the way, the subjects moved on to the real task: implementing a 17-page spec for a VLSI layout problem. To do this, they were divided randomly into two groups: one tackled the problem in Scala first, then in Java, while the other group did Java, then Scala. (This counter-balancing allows assessment of learning effects.)
+
+
+
+The results? First, it took participants longer to solve the problem in Scala than in Java (median times were <del>6</del> 56 hours and 43 hours respectively). What was really interesting was that programmer skill (as measured by a pre-test) did not have a significant influence on testing and debugging time, which suggests that the difference was <em>not</em> skill-based. One hypothesis (based on interviews) is that Scala's automatic type inference actually made debugging more difficult.
+
+
+
+A second result was that the final Scala programs were significantly smaller than their Java counterparts. However, the difference was smaller than many of the claims one can find on the Internet: only 2.6% (mean) or 15.2% (median), rather than factors of two, five, or ten. On the other hand, the Scala programs performed as well as their Java counterparts, or better, which contrasts with claims that functional programming is inherently slow.
+
+
+
+Overall, this was a well-executed study of an important subject, and a good demonstration of the value of studying programming languages empirically. If anyone would like to translate it into a tweet, we'd be happy to enter the result in <a href="/?p=366">our competition</a>.
+
+
+
+**<em>Errata: ***Median times were 56 hours for Scala and 43 for Java, not 6 and 43. Post edited to fix the typo. *--J.A.</em>

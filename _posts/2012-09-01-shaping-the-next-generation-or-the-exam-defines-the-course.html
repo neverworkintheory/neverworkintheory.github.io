@@ -1,0 +1,83 @@
+---
+layout: post
+author: Greg Wilson
+title: "Shaping the Next Generation (or, the exam defines the course defines the discipline)"
+date: 2012-09-01
+time: 12:32:27
+categories: [Education]
+---
+{% include JB/setup %}
+
+As we <a href="/?p=407">reported</a> a few days ago, one of our contributors, <a href="http://www.third-bit.com">Greg Wilson</a>, gave a keynote at the <a href="http://msrcanada.org/msrvision2020/">MSR Vision 2020</a> workshop in Kingston on August 20. In that, he explored why there's still a gulf between software engineering researchers and the people who actually build software for a living (see the <a href="http://www.slideshare.net/gvwilson/two-solitudes">slides</a> or the <a href="http://www.reddit.com/r/programming/comments/yw9ra/greg_wilsons_brilliant_slides_about_the/">discussion on Reddit</a> for details). He also said that:
+<ol>
+	<li>there's no easy way to close that gap, because most of the people in industry that researchers want to collaborate with have never encountered empirical software engineering studies, and therefore don't understand their scope or value; so</li>
+	<li>researchers—many of whom are professors—should pivot the software engineering classes they teach to focus on how to analyze real-world data, and what past analyses have told us, so that the next generation of developers <em>will</em> understand (and listen, and want to collaborate).</li>
+</ol>
+To make this more concrete, Greg asked the workshop participants to make up some assignments and exam questions for such a course. Some of the suggestions are listed below; we would welcome other ideas as well (please post them as comments). We'd also like to know who'd be interested in trying to teach such a course at their institution, and what you think the prerequisites would have to be: statistics, obviously, but would a database course that introduced students to SQL be necessary? What about a natural language processing course? Or something else we haven't thought of?
+
+<strong>Group 1</strong>
+
+<dl><dt>Give two examples of success stories in studies of the social aspects of software engineering.</dt><dd>
+<ol>
+	<li>Reorganization based on social structures</li>
+	<li>Identifying the "big players" in a software project</li>
+</ol>
+</dd><dt>What are three sources of social interaction in software projects?</dt><dd>
+<ol>
+	<li>Email</li>
+	<li>IRC</li>
+	<li>bug comments</li>
+	<li>source code comments</li>
+</ol>
+</dd><dt>Name three challenges in preprocessing emails.</dt><dd>
+<ol>
+	<li>signatures</li>
+	<li>code snippets</li>
+	<li>stack traces</li>
+	<li>fake/multiple email addresses</li>
+	<li>identifying email headers and inline replies</li>
+	<li>typos</li>
+	<li>chat acronyms</li>
+	<li>non-native speakers</li>
+	<li>use of multiple languages</li>
+</ol>
+</dd></dl><strong>Group 2</strong>
+<ol>
+	<li>You are given a dataset A of OSS projects and a subset of it B. Evaluate whether a hypothesis H can be rejected on A and B. Design the question in such a way that H is significant (at 0.05 level) at A and not B. Discuss the discrepancy.</li>
+	<li>Given a dataset and a specific question, perhaps from exisitng MSR papers, discuss which data mining approach is best suited for that question.</li>
+	<li>Given a specific question (e.g., bug finding) what repositories should you use to solve it? Illustrate it with Bugzilla. How do you adapt this to Jira?</li>
+	<li>Given that two variables A and B correlate, can you say "A causes B"? Why or why not?</li>
+	<li>Repeat an existing analysis from an MSR paper. Do you get the same results? Vary a number of variables. How different are the results?</li>
+</ol>
+<strong>Group 3</strong>
+<ul>
+	<li><strong>Statistics</strong>
+<ol>
+	<li>What is wrong with this claim: "Files with a large number of committers/authors have more defects/bugs, so we conclude that more authors cause more bugs, and we recommended that the number of commiters be reduced."</li>
+	<li>A tool is 99% accurate in detecting defective lines of code. Should developers use the tool? Why or why not?</li>
+	<li>What are the internal validity issues and external validity issues with this method? "Researcher X finds that a lack of modularity leads to more defects in Windows, and Y is going to apply that predict defects in Eclipse."</li>
+	<li>Design a study to see whether people who go to lunch together have fewer build defects in their software.</li>
+	<li>Which would product fewer false positives: 90% recall and 10% precision, or 10% precision and 90% recall?</li>
+</ol>
+</li>
+	<li><strong>Data</strong>
+<ol>
+	<li>Given a table of bug reports with severity, etc. and another table of users with qualifications, etc., determine whether experience and bug report frequency are correlated, and if so, how strongly.</li>
+	<li>Define: evolutionary coupling, tokenizing, word nets, stemming, n-gram, entropy.</li>
+	<li>List 10 sources of data that could be mined to estimate the risks to a software projects, and describe the limitations of each.</li>
+</ol>
+</li>
+	<li><strong>Interpretation and Actionability</strong>
+<ol>
+	<li>Your boss has asked you to generate documentation for a legacy system that doesn't have any. What approach(es) would you use to automatically generate some useful documentation for each class and method?</li>
+	<li>Given a set of version control logs, how would you tell which commits were bug fixes (vs. adding new features)?</li>
+	<li>What technique(s) would you use to correlate email messages from a mailing list archive with related version control commits?</li>
+</ol>
+</li>
+	<li><strong>Ethics</strong>
+<ol>
+	<li>Given a data set (mailing list archive, bug reports, and version control log), anonymize it so that it can be shared without risk.</li>
+	<li>Is it ethical to do an experiment to find out whether one race or gender produces more bugs than another? Justify your answer. How about graduates of one university vs. another?</li>
+</ol>
+</li>
+</ul>
