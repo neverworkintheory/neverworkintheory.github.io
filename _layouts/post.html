@@ -3,5 +3,6 @@ layout: base
 root: ../../..
 ---
 <h3>{{page.title}}</h3>
-<hr>Posted {{page.date}} by {{page.author}} in {{page.category|join: ', '}}</h4>
+<h4>Posted {{page.date|date: '%b %e, %Y'}} by {{page.author}} in {{page.categories|join: ', '}}</h4>
+<hr/>
 {{content}}

@@ -1,23 +1,21 @@
 ---
 layout: post
 author: Greg Wilson
-title: "Don&#039;t Touch My Code!"
+title: "Don't Touch My Code!"
 date: 2011-09-05
 time: 14:21:16
 categories: [Code Ownership, Mining]
 ---
-
-Christian Bird, Nachiappan Nagappan, Brendan Murphy, Harald Gall, and Premkumar Devanbu: <a href="http://www.cabird.com/papers/bird2011dtm.pdf">"Don't Touch My Code! Examining the Effects of Ownership on Software Quality."</a> ESEC/FSE'11, 2011.
+<p>Christian Bird, Nachiappan Nagappan, Brendan Murphy, Harald Gall, and Premkumar Devanbu: <a href="http://www.cabird.com/papers/bird2011dtm.pdf">"Don't Touch My Code! Examining the Effects of Ownership on Software Quality."</a> ESEC/FSE'11, 2011.</p>
 <blockquote><em>Ownership is a key aspect of large-scale software development. We examine the relationship between different ownership measures and software failures in two large software projects: Windows Vista and Windows 7. We find that in all cases, measures of ownership such as the number of low-expertise developers, and the proportion of ownership for the top owner have a relationship with both pre-release faults and post-release failures. We also empirically identify reasons that low-expertise developers make changes to components and show that the removal of low-expertise contributions dramatically decreases the performance of contribution based defect prediction. Finally we provide recommendations for source code change policies and utilization of resources such as code inspections based on our results.</em></blockquote>
-I used to tell my students that a paper's abstract should be a summary, not a movie trailer. When I read, "We find that... measures of ownership... have a relationship with both pre-release faults and post-release failures," my reaction is, "What kind of relationship?" And when a paper's authors say, "We... identify reasons that low-expertise developers make changes to components," I want to grab my red pen and scribble, "Summarize them here!"
-
-Fortunately, this paper's abstract is the only thing about it that I don't like. Over the course of its 11 pages, its authors explore three related questions:
+<p>I used to tell my students that a paper's abstract should be a summary, not a movie trailer. When I read, "We find that... measures of ownership... have a relationship with both pre-release faults and post-release failures," my reaction is, "What kind of relationship?" And when a paper's authors say, "We... identify reasons that low-expertise developers make changes to components," I want to grab my red pen and scribble, "Summarize them here!"</p>
+<p>Fortunately, this paper's abstract is the only thing about it that I don't like. Over the course of its 11 pages, its authors explore three related questions:</p>
 <ol>
 	<li>Are higher levels of ownership associated with less defects?</li>
 	<li>Is there a negative effect when a software entity is developed by many people with low ownership?</li>
 	<li>Are these effects related to the development process used?</li>
 </ol>
-They start by defining their units of measurement (a compiled binary such as a .dll or .exe), what they mean by major and minor contributors, and how they measure ownership. After grinding their data (they have <em>lots</em> of data), they come up with Table 1:
+<p>They start by defining their units of measurement (a compiled binary such as a .dll or .exe), what they mean by major and minor contributors, and how they measure ownership. After grinding their data (they have <em>lots</em> of data), they come up with Table 1:</p>
 <table border="1">
 <tbody>
 <tr>
@@ -96,18 +94,17 @@ All correlations are statistically significant except for that of Ownership and 
 </tr>
 </tbody>
 </table>
-("Total" stands for the total number of contributors, "Major" and "Minor" for the number of major and minor contributors, respectively, and "Ownership" for the proportion of ownership of the contributor with the highest proportion of ownership---how much a single person owns that piece of code.)
-
-There's a lot of information in that table, and I won't try to squeeze it all into this blog post, but as a taste, it allows them to conclude that:
+<p>("Total" stands for the total number of contributors, "Major" and "Minor" for the number of major and minor contributors, respectively, and "Ownership" for the proportion of ownership of the contributor with the highest proportion of ownership---how much a single person owns that piece of code.)</p>
+<p>There's a lot of information in that table, and I won't try to squeeze it all into this blog post, but as a taste, it allows them to conclude that:</p>
 <blockquote><em>The results indicated that pre- and post-release defects in had strong relationships with Minor, Total, and Ownership. In fact, Minor had a higher correlation with both pre- and post-release defects in Vista and pre-release defects in Windows 7 than any other metric that Microsoft collects!. Post-release failures for Windows 7 present a difficulty for analysis as at the time of this analysis many binaries had no post-release failures reported. Thus the correlation values between metrics and and post-release failures are noticeably lower than the other failure categories...</em></blockquote>
-Later, after teasing apart the contributions of major and minor contributors, and the effects of dependencies between components, they conclude that:
+<p>Later, after teasing apart the contributions of major and minor contributors, and the effects of dependencies between components, they conclude that:</p>
 <blockquote><em>...the minor contribution edges [in the contributions graph] provide the "signal" used by defect predictors that are based on the contribution network. Without them, the ability to predict failure prone components is greatly diminished, further supporting our hypothesis that they are strongly related to software quality.</em></blockquote>
-and:
+<p>and:</p>
 <blockquote><em>After controlling for known software quality factors, binaries with more minor contributors had more pre- and post-release failures in both versions of Windows.</em></blockquote>
-They then recommend that:
+<p>They then recommend that:</p>
 <ol>
 	<li>Changes made by minor contributors should be reviewed with more scrutiny.</li>
 	<li>Potential minor contributors should communicate desired changes to developers experienced with the respective binary.</li>
 	<li>Components with low ownership should be given priority by QA resources.</li>
 </ol>
-Even if you can't apply their results directly to your own projects, they show that it is possible to analyze the impact of different software manufacturing practices methodically and quantitatively. The next time someone suggests that your team start doing X, Y, or Z, ask them if they have this kind of data to back up their recommendation. If they don't, you might consider giving them a copy of this paper...
+<p>Even if you can't apply their results directly to your own projects, they show that it is possible to analyze the impact of different software manufacturing practices methodically and quantitatively. The next time someone suggests that your team start doing X, Y, or Z, ask them if they have this kind of data to back up their recommendation. If they don't, you might consider giving them a copy of this paper...</p>
