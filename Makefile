@@ -1,5 +1,5 @@
 INSTALL_DIR=$(HOME)/dev.third-bit.com
-PAGES=about.html bib.html blog.html index.html license.html
+PAGES=about.html bib.html blog.html guidelines.html index.html license.html
 POSTS=$(wildcard _posts/*.html)
 LAYOUTS=$(wildcard _layouts/*.html)
 INCLUDES=$(wildcard _includes/*.html)
