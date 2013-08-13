@@ -6,7 +6,11 @@ date: 2013-08-12
 time: 09:00:00
 categories: [Book Reviews]
 ---
-<p>FIXME: biblio info</p>
+<p>
+  Ivar Jacobson, Pan-Wei Ng, Paul E. McMahon, Ian Spence, and Svante Lidman:
+  <cite>The Essence of Software Engineering: Applying the SEMAT Kernel</cite>.
+  Addison-Wesley Professional, 2013, 978-0321885951.
+</p>
 
 <p>
   SEMAT started almost four years ago
@@ -20,7 +24,7 @@ categories: [Book Reviews]
 </p>
 
 <p>
-  <em>The Essence of Software Engineering</em>,
+  <cite>The Essence of Software Engineering</cite>,
   by Jacobson, Ng, McMahon, Spence, and Lidman,
   is meant to be a practitioner-oriented book describing the SEMAT kernel.
   Unfortunately,
@@ -34,6 +38,7 @@ categories: [Book Reviews]
   this kernel is not informed by any established theories from any discipline.
   It does not even articulate any theories of software engineering,
   but instead claims that that will be handled separately by the theory working group.
+  (Tellingly, the <a href="http://semat.org/?page_id=956">Theory Track page</a> in the SEMAT website is currently blank.)
 </p>
 
 <p>
@@ -78,33 +83,20 @@ categories: [Book Reviews]
 
 <p>
   As an example,
-  SEMAT wants development teams to keep track of several areas of concern&mdash;the aforementioned "alphas"&mdash;such as
+  SEMAT wants development teams to keep track of several areas of concern&mdash;the aforementioned alphas&mdash;such as
   stakeholders, requirements, and systems.
   At any time,
   each alpha is in some particular state
   (e.g.,
   requirements can be "conceived", "bounded", "coherent", "acceptable", "addressed", and finally "fulfilled"),
   and this state changes as the project progresses.
-</p>
-
-<p>
   That may sound nice in the boardroom,
   but as many researchers have reported,
-  this is not the way requirements progress for many software groups.
-  Under some conditions requirements can be exploratory and unarticulated,
-  and projects can still succeed&mdash;not despite this fluidity,
-  but because of it.
-  What's more,
-  the whole notion of concrete states is flawed.
+  this is not the way requirements progress for many (possibly even most) successful software groups.
   In reality,
-  the state of many parts of a project can be fuzzy,
-  or there can be valid disagreement as to what state something is in,
-  or even about what it means to be in one state or another.
-</p>
-
-<p>
-  FIXME: insert reference here to "Seeing Like a State":
-  the center demands uniformity even at the cost of productivity or honesty.
+  requirements can be exploratory and unarticulated,
+  and projects can still succeed&mdash;not despite this fluidity,
+  but because of it [<a href="#semat-1">1</a>].
 </p>
 
 <p>
@@ -117,4 +109,16 @@ categories: [Book Reviews]
   Today's empirical studies of software engineering are imperfect and incomplete,
   but they're a more substantial foundation for real engineering
   than anything you'll find in this book.
+</p>
+
+<p id="semat-1">
+  James C. Scott's explores this idea in considerable depth
+  in his insightful book <cite>Seeing Like a State</cite>
+  (Yale University Press, 1999, 978-0300078152).
+  He shows that centralizers have frequently preferred
+  manageable uniformity to local custom and adaptation,
+  even when the latter is more productive and more robust.
+  <cite>Essence</cite>'s alphas are unlikely to cause as much suffering
+  as the forced collectivization Scott analyzes,
+  but they are unlikely to produce any better results.
 </p>
