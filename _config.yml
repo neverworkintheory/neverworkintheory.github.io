@@ -1,4 +1,4 @@
 email: admin@neverworkintheory.org
-permalink: /:year/:month/:day/:title.html
-url: http://neverworkintheory.org
+permalink: "/:year/:month/:day/:title.html"
+url: "http://neverworkintheory.org"
 exclude: [wordpress.xml, extract.py]
