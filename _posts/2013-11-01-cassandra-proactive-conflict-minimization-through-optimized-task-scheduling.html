@@ -1,0 +1,38 @@
+---
+layout: post
+author: Fayola Peters
+title: "Cassandra: Proactive Conflict Minimization through Optimized Task Scheduling"
+date: 2013-11-01
+categories: [Collaborative Development, Coordination, Collaboration Conflicts, Task Scheduling]
+---
+<p><a href="http://cse.unl.edu/~bkasi/index.html">Bakhtiar Khan Kasi</a>, and <a href="http://csce.unl.edu/~asarma/">Anita Sarma</a>: "Cassandra: Proactive Conflict Minimization through Optimized Task Scheduling." ICSE'13, 2013. <a href="http://cse.unl.edu/~bkasi/papers/IEEE-preprint.pdf">http://cse.unl.edu/~bkasi/papers/IEEE-preprint.pdf</a></p>
+
+<blockquote><em>Software conflicts arising because of conflicting changes are a regular occurrence and delay projects. The main precept of workspace awareness tools has been to identify potential conflicts early, while changes are still small and easier to resolve. However, in this approach conflicts still occur and require developer time and effort to resolve. We present a novel conflict minimization technique that proactively identifies potential conflicts, encodes them as constraints, and solves the constraint space to recommend a set of conflict-minimal development paths for the team. Here we present a study of four open source projects to characterize the distribution of conflicts 
+and their resolution efforts. We then explain our conflict minimization technique and the design and implementation of this technique in our prototype, Cassandra. We show that Cassandra would have successfully avoided a majority of conflicts in the four open source test subjects. We demonstrate the efficiency of our approach by applying the technique to a simulated set of scenarios with higher than normal incidence of conflicts. 
+</em></blockquote>
+
+<p>You've heard it before, "Prevention is better than Cure". For an environment of parallel software development prone to conflicts, authors Kasi and Sarma seek 'prevention' by proactively identifying potential conflicts and minimizing them with Cassandra.</p>
+
+<p>Cassandra is "...a novel conflict minimization technique that formalizes a parallel software development context - task dependencies, file dependencies, and developer preferences into constraints, and then solves these constraints to determine conflict-minimal development paths for the team".
+</p>
+
+<p>Two particularly useful aspects of Cassandra's design are that:
+<ol><li>
+Cassandra provides information at the task level that parallel the developers logical unit of work. This allows Cassandra to present contextualized information of the rationale for its recommended task orders.</li><li>
+Cassandra pushes change notifications to the developers workspace in an unobtrusive manner. It updates the users task view and re-evaluates the constraint space when they have completed their work so that the information is ready when they are about to start a new task.</li></ol>
+ </p>
+
+<p>What's glaringly missing from this work is a user study to answer questions. One question in particular comes to mind, "What would happen if developers ignored Cassandra's recommendations versus when Cassandra's recommendations is used"?
+</p>
+
+<p>The authors address this issue in <a href="http://cse.unl.edu/~bkasi/papers/icsewsPreprint.pdf">a workshop paper</a>. They admitted that the results were limited. Since Cassandra is a workspace tool a user study is necessary to test the design decisions made with the user in mind. In such a study, the authors hope to answer the following research questions:
+</br>
+<ol><li>
+Does using Cassandra allow users to avoid conflicts?</li><li>
+How well do users understand the task recommendation and how often do they follow it?</li><li>
+What is the consequence of violating the recommended task sequence?</li><li>
+Does Cassandra affect the time to completion of tasks by proactively identifying conflicts and avoiding them?</li></ol>
+</p>
+
+
+
