@@ -1,0 +1,113 @@
+developers solve problems better: psychological measurements in empirical software engineering"
+date: 2014-04-30
+categories: [Controlled Experiments]
+---
+
+<p><a href="http://www.inf.unibz.it/~dgraziotin/">Daniel Graziotin</a>,
+<a href="https://peerj.com/xiaofengwang/">Xiaofeng Wang</a> and <a
+  href="https://peerj.com/Abrahamsson/">Pekka Abrahamsson</a>: "Happy software
+developers solve problems better: psychological measurements in empirical
+software engineering" PeerJ 2(289), Mar. 2014. <a href="https://peerj.com/articles/289/">https://peerj.com/articles/289/</a></p>
+
+<blockquote><em>
+For more than thirty years, it has been claimed that a way to improve software
+developers' productivity and software quality is to focus on people and to
+provide incentives to make developers satisfied and happy. This claim has
+rarely been verified in software engineering research, which faces an
+additional challenge in comparison to more traditional engineering fields:
+software development is an intellectual activity and is dominated by
+often-neglected human factors (called human aspects in software engineering
+research). Among the many skills required for software development, developers
+must possess high analytical problem-solving skills and creativity for the
+software construction process. According to psychology research, affective
+states-emotions and moods-deeply influence the cognitive processing abilities
+and performance of workers, including creativity and analytical problem
+solving. Nonetheless, little research has investigated the correlation between
+the affective states, creativity, and analytical problem-solving performance of
+programmers. This article echoes the call to employ psychological measurements
+in software engineering research. We report a study with 42 participants to
+investigate the relationship between the affective states, creativity, and
+analytical problem-solving skills of software developers. The results offer
+support for the claim that happy developers are indeed better problem solvers
+in terms of their analytical abilities. The following contributions are made by
+this study: (1) providing a better understanding of the impact of affective
+states on the creativity and analytical problem-solving capacities of
+developers, (2) introducing and validating psychological measurements,
+theories, and concepts of affective states, creativity, and
+analytical-problem-solving skills in empirical software engineering, and (3)
+raising the need for studying the human factors of software engineering by
+employing a multidisciplinary viewpoint.
+</em></blockquote>
+
+<p>
+I've long harbored a suspicion that most of the technologies that we argue
+about, (static/dynamic types, TDD, etc.), have little impact on the success of
+software projects. Their effects, while potentially measurable in controlled
+experiments, are swamped by the noise of the environments where software is
+implemented. And so, if it doesn't really matter which technologies developer
+use, why not just let them choose the ones that make them happiest? But this
+approaches raises the question: do we actually get better outcomes with happier
+developers? That's the research question that Graziotin, Wang, and Abrahamsson
+address in this paper.
+</p>
+
+<p>
+Unfortunately, researchers haven't yet discovered how to induce happiness, so a
+randomized controlled trial isn't an option. Instead, the authors measured
+<em>affective states</em> (the term psychology researchers use to describe
+emotional state) using a questionnaire developed by psychology researchers
+called the <a
+href="http://internal.psychology.illinois.edu/~ediener/SPANE.html">SPANE</a>.
+They divided up the study participants into two equal groups based on their
+questionnaire responses: a happier group which they called the positive group
+(POS) and a less happy group which they called the non-positive group (N-POS).
+The authors looked at how the two groups performed an analytical task and a
+creative task.  </p>
+
+<p>
+For the analytical task, the authors used the <a
+  href="http://en.wikipedia.org/wiki/Tower_of_London_test">Tower of London</a>
+test, which is similar to the Towers of Hanoi. They scored performance as a
+function of how many trials the participant passed and how long it took to solve
+each trial. For this problem, the POS group did much better, and the results
+were statistically significant at p&lt;.05. For the creative task, they showed
+the participants images, and the participants had to invent captions for these
+images. Neither quantity nor quality measures for this task showed statistically
+significant differences between the two groups at p=.05, in contradiction with
+the results of previous studies done by other authors.</p>
+
+<p>
+Ultimately, what we want to know is <em>how much</em> developer happiness
+impacts outcomes. The authors do report <em>d</em> values, which I assume is <a
+href="http://en.wikiversity.org/wiki/Cohen's_d">Cohen's d</a>, an
+effect size measure. Alas, I couldn't find the meaning of <em>d</em> explained in
+the paper, so I can't be certain. For the analytic task, the authors report a
+d=0.91. That sounds like an impressive result, given that Cohen considered a
+d=0.8 to be a "large" effect in psychology research. Unfortunately, we haven't
+yet come up with conventions in software engineering research to characterize
+small, medium and large effects. The main takeaway from this study is:
+<strong>happier developers perform much better on analytic tasks</strong>.</p>
+
+<p>The authors report d=0.07 and d=0.10 for the creative quality measures, favoring the
+N-POS group. They report d=0.41 for the creative quantity measure favoring the
+POS group, which is somewhere between "small' and "medium" according to Cohen's
+guidelines. Even though the authors didn't get statistically significant
+results, a positive result would be consistent with one of the other studies
+cited by the authors (Sowden &amp; Dawson, 2011).  </p>
+
+<p>
+It seemed a bit odd that the tasks were not explicitly software related,
+making the paper feel like a more traditional psychology study with a software
+engineering spin. The creativity task did not use images that were
+related to software development at all. The analytic task was more
+software-related, but the participants had to solve the problem themselves
+rather than implement a program to solve the problem. Still, it seems reasonable
+that these more generic measures of creativity and analytic problem solving
+would be correlated with performance on software engineering tasks.
+</p>
+
+<p>One notable thing about this paper is that it's published in <a
+  href="http://peerj.com">PeerJ</a>, an open venue (read: no paywall). The
+authors also elected to <a href="https://peerj.com/reviews/289/">make the peer
+review comments public</a>, which is wonderful. Hopefully, more authors will
+follow their lead.</p>
