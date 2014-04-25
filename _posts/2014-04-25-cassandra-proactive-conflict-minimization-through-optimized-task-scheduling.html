@@ -1,0 +1,62 @@
+---
+layout: post
+author: Fayola Peters
+title: "Cassandra: Proactive Conflict Minimization through Optimized Task Scheduling"
+date: 2014-04-25
+categories: [Collaborative Development, Coordination, Collaboration Conflicts, Task Scheduling]
+---
+<p><a href="http://cse.unl.edu/~bkasi/index.html">Bakhtiar Khan Kasi</a>, and <a href="http://csce.unl.edu/~asarma/">Anita Sarma</a>: "Cassandra: Proactive Conflict Minimization through Optimized Task Scheduling." ICSE'13, 2013. <a href="http://cse.unl.edu/~bkasi/papers/IEEE-preprint.pdf">http://cse.unl.edu/~bkasi/papers/IEEE-preprint.pdf</a></p>
+
+<blockquote><em>
+Software conflicts arising because of conflicting changes are a regular occurrence 
+and delay projects. The main precept of workspace awareness tools has been to 
+identify potential conflicts early, while changes are still small and easier to 
+resolve. However, in this approach conflicts still occur and require developer 
+time and effort to resolve. We present a novel conflict minimization technique 
+that proactively identifies potential conflicts, encodes them as constraints, and 
+solves the constraint space to recommend a set of conflict-minimal development 
+paths for the team. Here we present a study of four open source projects to 
+characterize the distribution of conflicts and their resolution efforts. We then 
+explain our conflict minimization technique and the design and implementation of 
+this technique in our prototype, Cassandra. We show that Cassandra would have 
+successfully avoided a majority of conflicts in the four open source test subjects. 
+We demonstrate the efficiency of our approach by applying the technique to a 
+simulated set of scenarios with higher than normal incidence of conflicts. 
+</em></blockquote>
+
+<p>
+To help limit conflicts caused by collaborative software development,
+researchers Kasi and Sarma decided on a <i>Prevention is better than cure</i> 
+approach. Why?
+</p>
+<p>
+In an initial study of four open source projects from GitHub (Perl, Storm, 
+Jenkins, and Voldemort) the authors found that merge conflicts ranged from 
+7.6% to 19.3%. Of the clean merges, 2.1% to 14.7% had build failures and 5.6% to 
+35% of correct builds incurred test failures. Also,
+each project had different distributions of different types of conflicts and 
+different resolution times for each conflict type.
+</p>
+<p>Two main conclusions from this work are:
+<ol>
+<li><i>Conflicts are the norm rather than the exception</i>. Kasi and Sarma
+report that this is the case no matter the size of the project (KLOC) or the
+number of developers involved. This provides an explanation as to why this norm 
+exists in open projects where the majority of work is done by a small core group.
+</li>
+<br>
+<li><i>There is no one-size-fits-all conflict mitigation technique</i>. This
+conclusion is due to the large variances in the results in terms of types and 
+number of conflicts which also varied with resolution times.
+</li>
+</ol>
+<p>
+Kasi and Sarma's proactive approach resulted in task scheduling tool for 
+conflict minimization that was effective by avoiding the majority of conflicts 
+from their experiments.
+Considering that the conflict resolution times in their study spanned multiple 
+days, ranging from an average of 6 to 23 days, Kasi and Sarma's work adds another
+dimension to research in the area conflicting changes parallel software 
+development. This work addresses the premise that,
+<b>less conflicts = less time spent on conflict resolution.</b>
+</p>
