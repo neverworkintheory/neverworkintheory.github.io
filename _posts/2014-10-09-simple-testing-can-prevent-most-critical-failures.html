@@ -1,0 +1,100 @@
+---
+layout: post
+author: Lorin Hochstein
+title: "Simple Testing Can Prevent Most Critical Failures: An Analysis of Production Failures in Distributed Data-Intensive Systems"
+date: 2014-10-08
+categories: [Defects, Failures]
+---
+
+Ding Yuan, Yu Luo, Xin Zhuang, Guilherme Renna Rodrigues, Xu Zhao, Yongle Zhang,
+Pranay U. Jain, and Michael Stumm: "Simple Testing Can Prevent Most Critical
+Failures: An Analysis of Production Failures in Distributed Data-Intensive
+Systems" Proceedings of the 11th USENIX Symposium on Operating Systems Design
+and Implementation (OSDI '14), Oct. 2014.
+<a
+  href="https://www.usenix.org/system/files/conference/osdi14/osdi14-paper-yuan.pdf">https://www.usenix.org/system/files/conference/osdi14/osdi14-paper-yuan.pdf</a>
+
+<blockquote><em>
+
+Large, production quality distributed systems still fail periodically, and do
+so sometimes catastrophically, where most or all users experience an outage or
+data loss. We present the result of a comprehensive study investigating 198
+randomly selected, user-reported failures that occurred on Cassandra, HBase,
+Hadoop Distributed File System (HDFS), Hadoop MapReduce, and Redis, with the
+goal of understanding how one or multiple faults eventually evolve into a
+user-visible failure. We found that from a testing point of view, almost all
+failures require only 3 or fewer nodes to reproduce, which is good news
+considering that these services typically run on a very large number of nodes.
+However, multiple inputs are needed to trigger the failures with the order
+between them being important. Finally, we found the error logs of these systems
+typically contain sufficient data on both the errors and the input events that
+triggered the failure, enabling the diagnose and the reproduction of the production failures.
+
+We found the majority of catastrophic failures could easily have been prevented
+by performing simple testing on error handling code – the last line of defense –
+even without an understanding of the software design. We extracted three
+simple rules from the bugs that have lead to some of the catastrophic failures,
+and developed a static checker, Aspirator, capable of locating these bugs. Over
+30% of the catastrophic failures would have been prevented had Aspirator been
+used and the identified bugs fixed. Running Aspirator on the code of 9
+distributed systems located 143 bugs and bad practices that have been fixed or
+confirmed by the developers.  </em></blockquote>
+
+
+<p>
+This is a wonderful study that explores the reasons why distributed systems
+fail in production by analyzing the root causes of around 200 confirmed system
+failures. The failures were reported against open-source projects that are used
+to implement distributed systems, including Hadoop and Redis.
+</p>
+
+<p>The trends in failure modes among these systems are fascinating and
+actionable. The authors report many findings, but here are some key takeaways
+for practitioners:</p>
+
+<p>
+<em>[A]lmost all (92%) of the catastrophic system failures are the result of
+  incorrect handling of non-fatal errors explicitly signaled in software.</em>
+</p>
+
+<p>
+<em>[I]n 58% of the catastrophic failures, the underlying faults could easily have
+  been detected through simple testing of error handling code.</em>
+</p>
+
+<p>
+<em>
+A majority (77%) of the failures require more than one input event to manifest, but
+most of the failures (90%) require no more than 3.
+</em>
+
+</p>
+
+<p>
+<em>
+For a majority (84%) of the failures, all of their triggering events are logged.
+</em>
+</p>
+
+<p>
+<em>
+Almost all catastrophic failures (92%) are the result of incorrect handling of
+non-fatal errors explicitly signaled in software.
+</em>
+</p>
+
+<p>The lessons for software engineers are clear: put more effort into writing
+and validating your error handling code, run your integration tests with a small number of nodes
+(but greater than one), and examine your application logs to diagnose
+failures.</p>
+
+
+<p>This study also provides evidence for what Daniel Jackson calls
+the "small-scope hypothesis": you can identify most defects through tests with
+a small number of entities.</p>
+
+<p>The authors developed a tool called <a
+href="http://www.eecg.toronto.edu/failureAnalysis/">Aspirator</a> to help
+identify inadequate error-handling in Java applications. But even if you don't
+write software in Java, if you build distributed systems, you should read this
+paper.</p>
