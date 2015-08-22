@@ -1,3 +1,4 @@
+
 ---
 layout: post
 author: Lorin Hochstein
@@ -6,12 +7,13 @@ date: 2015-08-23
 categories: [Productivity]
 ---
 
-<p>André N. Meyer, Thomas Fritz, Gail C. Murphy, and Thomas Zimmermann:
+André N. Meyer, Thomas Fritz, Gail C. Murphy, and Thomas Zimmermann:
 "Software Developers' Perceptions of Productivity",
 FSE '14: Proceedings of the 22nd ACM SIGSOFT International Symposium on the
-Foundations of Software Engineering, Nov. 2014.
+Foundations of Software Engineering, Nov. 2014
+
 <a href="http://research.microsoft.com/apps/pubs/default.aspx?id=228971">
-    http://research.microsoft.com/apps/pubs/default.aspx?id=228971</a></p>
+    http://research.microsoft.com/apps/pubs/default.aspx?id=228971</a>
 
 <blockquote><em>
 The better the software development community becomes at creating software, the
@@ -34,6 +36,7 @@ development of new tools and the sharing of best practices.
 </em></blockquote>
 
 <p>
+
 One of the goals of software engineering researchers is to improve the
 productivity of software developers. To show an improvement in productivity, you
 need to be able to measure it, and that turns out to be a tricky thing to do.
@@ -41,7 +44,7 @@ Researchers have tried metrics such as lines of code per day, function points
 per day and story points per iteration, but these are all
 ultimately unsatisfying. Robert Martin has gone so far as to assert that we <a
    href="http://martinfowler.com/bliki/CannotMeasureProductivity.html">cannot
-   measure productivity</a>.</p>
+   measure productivity</a>. </p>
 
 <p>Yet, I suspect that every programmer has thought at one time or another "I
 really got nothing today". Similarly, I'd wager that every programmer
