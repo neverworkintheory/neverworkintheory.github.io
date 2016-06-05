@@ -1,0 +1,70 @@
+---
+layout: post
+author: Greg Wilson
+title: "Java Exception Handling"
+date: 2016-04-26
+categories: [Research]
+---
+<p>
+  Suman Nakshatri, Maithri Hegde, and Sahithi Thandra:
+  "Analysis of Exception Handling Patterns in Java Projects: An Empirical Study".
+  MSR'16, May 2016, http://dx.doi.org/10.1145/2901739.2903499,
+  <a href="http://plg.uwaterloo.ca/~migod/846/current/projects/09-NakshatriHegdeThandra-report.pdf">http://plg.uwaterloo.ca/~migod/846/current/projects/09-NakshatriHegdeThandra-report.pdf</a>
+</p>
+<blockquote>
+  <em>
+    Exception handling is a powerful tool provided by many programming
+    languages to help developers deal with unforeseen conditions.
+    Java is one of the few programming languages to enforce an
+    additional compilation check on certain subclasses of the
+    Exception class through checked exceptions. As part of this study,
+    empirical data was extracted from software projects developed in
+    Java.  The intent is to explore how developers respond to checked
+    exceptions and identify common patterns used by them to deal with
+    exceptions, checked or otherwise.  Bloch's book "Eective Java" was
+    used as reference for best practices in exception handling - these
+    recommendations were compared against results from the empirical
+    data.  Results of this study indicate that most programmers ignore
+    checked exceptions and leave them unnoticed.  Additionally, it is
+    observed that classes higher in the exception class hierarchy are
+    more frequently used as compared to specific exception subclasses.
+  </em>
+</blockquote>
+<p>
+  This paper's abstract underplays the bleakness of its findings.
+  Rather than being used to make software more robust,
+  exceptions are either ignored or used as a debugging aid.
+  For example,
+  the most common <code>catch</code> block is one that logs the error rather than trying to recover from it;
+  the next most common are to do nothing at all (20% of cases),
+  or to convert the checked exception into an unchecked exception
+  so that it can be ignored.
+  Similarly,
+  most programmers ignore Java's carefully thought out exception hierarchy
+  and simply catch <code>Exception</code> (78%) or <code>Throwable</code> (84%)
+  rather than any of their subclasses.
+</p>
+<p>
+  The only conclusion I can draw from this is that
+  exception-based error handling has failed to achieve what its creators intended.
+  That's slightly different from being a complete failure:
+  based on Nakshatri et al's findings,
+  it appears that exception <em>are</em> useful as a debugging aid during development.
+  And it's possible that the real failure is educational:
+  despite the ubiquity of distributed systems,
+  most undergraduate programs still spend approximately zero time on error handling and recovery.
+  Either way,
+  I think language developers have their work cut out for them.
+</p>
+<p>
+  <em>
+    Note:
+    I would have liked to compare these findings with those in
+    Kery, Le Goues, and Myers' "Examining Programmer Practices for Locally Handling Exceptions",
+    which was published in the same conference.
+    It also explores Java exception handling,
+    but I was unable to find an open access copy anywhere on the web.
+    It's unfortunate that its authors have chosen not to share their work with practitioners
+    who might be interested in their findings.
+  </em>
+</p>
