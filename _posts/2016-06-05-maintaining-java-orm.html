@@ -1,0 +1,53 @@
+---
+layout: post
+author: Greg Wilson
+title: "Maintaining Java ORM Code"
+date: 2016-04-26
+categories: [Research]
+---
+<p>
+  Tse-Hsun Chen, Weiyi Shang, Jinqiu Yang, Ahmed E. Hassan, and Michael W. Godfrey:
+  "An Empirical Study on the Practice of Maintaining Object-Relational Mapping Code in Java Systems".
+  MSR'16, May 2016, 
+  <a href="https://plg.uwaterloo.ca/~migod/papers/2016/msr16.pdf">https://plg.uwaterloo.ca/~migod/papers/2016/msr16.pdf</a>.
+</p>
+<p>
+  From the abstract:
+</p>
+<blockquote>
+  <em>
+    Despite the advantages of using ORM [object-relational mapping]
+    frameworks, we observe several difficulties in maintaining ORM
+    code (i.e., code that makes use of ORM frameworks) when
+    cooperating with our industrial partner.  After conducting studies
+    on other open source systems, we find that such difficulties are
+    common in other Java systems.  Our study finds that i) ORM cannot
+    completely encapsulate database accesses in objects or abstract
+    the underlying database technology, thus making ORM code changes
+    more scattered; ii) ORM code changes are more frequent than
+    regular code, but there is a lack of tools that help developers
+    verify ORM code at compilation time; iii) changes to ORM code are
+    more commonly due to performance or security reasons; however,
+    traditional static code analyzers need to be extended to capture
+    the peculiarities of ORM code in order to detect such problems.
+    Our study highlights the hidden maintenance costs of using ORM
+    frameworks, and provides some initial insights about potential
+    approaches to help maintain ORM code.  Future studies should
+    carefully examine ORM code, in particular given the rising use of
+    ORM in modern software systems.
+  </em>
+</blockquote>
+<p>
+  I wasn't surprised to find that ORMs can't completely encapsulate
+  database access, but I <em>was</em> surprised to learn that the
+  result is scattered code changes.  I was even more surprised to find
+  that changes to ORM code are more common than changes to "regular"
+  code, but that's one of the reasons to read research: to find out
+  where personal experience is atypical of general practice.  And I
+  hope the authors of various IDEs take the third point to heart:
+  PyCharm's ability
+  to <a href="https://www.jetbrains.com/help/pycharm/2016.1/debugging-django-templates.html">debug
+  Django templates</a> saved me days of tedious debugging (at least),
+  and similar support for debugging ORM code might have saved me even
+  more.
+</p>
