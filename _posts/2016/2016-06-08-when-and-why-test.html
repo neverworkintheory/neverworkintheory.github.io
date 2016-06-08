@@ -1,0 +1,55 @@
+---
+layout: post
+author: Greg Wilson
+title: "When, How, and Why Developers (Do Not) Test in Their IDEs"
+date: 2016-06-08
+categories: [Research]
+---
+<p>
+  Moritz Beller, Georgios Gousios, Annibale Pannichella, and Andy Zaidman:
+  "When, How, and Why Developers (Do Not) Test in Their IDEs".
+  ESEC/FSE'15, August 2015, http://dx.doi.org/10.1145/2786805.2786843,
+  <a href="http://www.st.ewi.tudelft.nl/~mbeller/publications/2015_beller_gousios_panichella_zaidman_when_how_and_why_developers_do_not_test_in_their_ides.pdf">http://www.st.ewi.tudelft.nl/~mbeller/publications/2015_beller_gousios_panichella_zaidman_when_how_and_why_developers_do_not_test_in_their_ides.pdf</a>
+</p>
+<blockquote>
+  <em>
+    We report on the surprising results of a large-scale field study
+    with 416 software engineers whose development activity we closely
+    monitored over the course of five months, resulting in over 13
+    years of recorded work time in their integrated development
+    environments (IDEs). Our findings question several commonly shared
+    assumptions and beliefs about testing and might be contributing
+    factors to the observed bug proneness of software in practice: the
+    majority of developers in our study does not test; developers
+    rarely run their tests in the IDE; Test-Driven Development (TDD)
+    is not widely practiced; and, last but not least, software
+    developers only spend a quarter of their work time engineering
+    tests, whereas they think they test half of their time.
+  </em>
+</blockquote>
+<p>
+  The bullet point summary is fairly innocuous:
+</p>
+<ul>
+  <li>The majority of projects and users do not practice testing actively.</li>
+  <li>Developers largely do not run tests in the IDE. However, when they do, they do it heftily.</li>
+  <li>Tests and production code do not co-evolve gracefully.</li>
+  <li>Tests run in the IDE take a very short amount of time.</li>
+  <li>Developers frequently select a specific set of tests to run in the IDE. In most cases, developers execute one test.</li>
+  <li>Most test executions in the IDE fail.</li>
+  <li>The typical immediate reaction to a failing test is to dive into the offending production code.</li>
+  <li>TDD is not widely practiced. Programmers who claim to do it, neither follow it strictly nor for all their modifications.</li>
+  <li>Developers spend a quarter of their time engineering tests in the IDE. They overestimated this number twofold.</li>
+</ul>
+<p>
+  but the details are rather depressing.
+  For example, in 85% of development sessions, no tests were run, even in those projects that had unit tests.
+  Similarly, developers do test their changes to production code,
+  but the correlation coefficient is pretty weak (0.38),
+  and the correlation between test and production code co-evolving is even weaker (0.35).
+  Fast tests don't correlate with more frequent test execution,
+  and <em>only 4% of sessions that had test execution followed the classic red-green-refactor TDD cycle</em>.
+  It's possible&mdash;indeed, likely&mdash;that the researchers' IDE instrumentation missed some things,
+  but it's painfully clear that we still have a long way to go
+  when it comes to real-world adoption of better testing practices.
+</p>
