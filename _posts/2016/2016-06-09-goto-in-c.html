@@ -1,0 +1,56 @@
+---
+layout: post
+author: Greg Wilson
+title: "Goto in C"
+date: 2016-06-09
+categories: [Research]
+---
+<p>
+  Meiyappan Nagappan, Romain Robbes, Yasutaka Kamei, Eric Tante,  Shane McIntos4, Audris Mocku5,and  Ahmed E. Hassa:
+  "An Empirical Study of Goto in C Code from GitHub Repositories".
+  ESEC/FSE'15, August 2015,
+  <a href="http://www.se.rit.edu/~mei//publications/publications/FSE2015-Nagappan.pdf">http://www.se.rit.edu/~mei//publications/publications/FSE2015-Nagappan.pdf</a>.
+</p>
+<blockquote>
+  <em>
+    It is nearly 50 years since Dijkstra argued that goto obscures the
+    flow of control in program execution and urged programmers to
+    abandon the goto statement. While past research has shown that
+    goto is still in use, little is known about whether goto is used
+    in the unrestricted manner that Dijkstra feared, and if it is
+    'harmful' enough to be a part of a post-release bug. We,
+    therefore, conduct a two part empirical study - (1) qualitatively
+    analyze a statistically representative sample of 384 files from a
+    population of almost 250K C programming language files collected
+    from over 11K GitHub repositories and find that developers use
+    goto in C files for error handling (80.21±5%) and cleaning up
+    resources at the end of a procedure (40.36±5%); and (2)
+    quantitatively analyze the commit history from the release
+    branches of six OSS projects and find that no goto statement was
+    removed/modified in the post-release phase of four of the six
+    projects. We conclude that developers limit themselves to using
+    goto appropriately in most cases, and not in an unrestricted
+    manner like Dijkstra feared, thus suggesting that goto does not
+    appear to be harmful in practice.
+  </em>
+</blockquote>
+<p>
+  This abstract shows just how far software engineering has progressed
+  in the last fifty years.  Where one of founders of the field could
+  only express a (strong) opinion, today's researchers can gather data,
+  analyze, and settle the question empirically.
+</p>
+<p>
+  But saying "how far software engineering has progressed" is
+  misleading.  What this paper and others presented on this blog
+  actually show is how far the leading edge of empirical software
+  engineering research has come.  Most practitioners are still arguing
+  from first principles and personal experience, just as Dijkstra did.
+  But where he can be forgiven&mdash;the data needed to settle the
+  issue either didn't exist or wasn't available in 1968&mdash;the only
+  excuses today's practitioners have are that they aren't exposed to
+  this kind of work as undergraduates, and can't read much of it after
+  graduation because it's locked away behind paywalls.  I'm grateful
+  that this study's authors chose not to do the second; now, how are
+  we going to fix the first?
+</p>
