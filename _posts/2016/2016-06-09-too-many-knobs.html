@@ -1,0 +1,115 @@
+---
+layout: post
+author: Greg Wilson
+title: "Too Many Knobs"
+date: 2016-06-09
+categories: [Research]
+---
+<p>
+  Tianyin Xu, Long Jin, Xuepeng Fan, Yuanyuan Zhou, Shankar Pasupathy, and Rukma Talwadker:
+  "Hey, You Have Given Me Too Many Knobs! Understanding and Dealing with Over-Designed Configuration in System Software".
+  ESEC/FSE'15, August 2015, http://dx.doi.org/10.1145/2786805.2786852,
+  <a href="http://cseweb.ucsd.edu/~tixu/papers/fse15.pdf">http://cseweb.ucsd.edu/~tixu/papers/fse15.pdf</a>.
+</p>
+<blockquote>
+  <em>
+    This paper makes a first step in understanding a fundamental
+    question of configuration design: "do users really need so many
+    knobs?"  To provide the quantitatively answer, we study the
+    configuration settings of real-world users, including thousands of
+    customers of a commercial storage system (Storage-A), and hundreds
+    of users of two widely-used open-source system software projects.
+    Our study reveals a series of interesting findings to motivate
+    software architects and developers to be more cautious and
+    disciplined in configuration design. Motivated by these findings,
+    we providea few concrete, practical guidelines which can
+    significantly reduce the configuration space. Take Storage-A as an
+    example, the guidelines can remove 51.9% of its parameters and
+    simplify 19.7% of the remaining ones with little impact on
+    existing users. Also, we study the existing configuration
+    navigation methods in the context of "too many knobs" to
+    understand their effectiveness in dealing with the over-designed
+    configuration, and to provide practices for building navigation
+    support in system software.
+  </em>
+</blockquote>
+<p>
+  I can't write a better summary of the paper than the authors have themselves:
+</p>
+<ul>
+  <li>
+    Only a small percentage (6.1%∼16.7%) of configuration parameters
+    are set by the majority of users; a significant percentage (up to
+    54.1%) of parameters are rarely set by any user.
+  </li>
+  <li>
+    A small percentage (1.8%∼7.8%) of parameters are configured by more than 90% of the users.
+  </li>
+  <li>
+    Software developers often choose more "flexible" data types for
+    configuration parameters to give users more flexibility of
+    settings (e.g., using numeric types instead of the simple Boolean
+    or enumerative ones). However, users seem not to take full
+    advantage of such flexibility. A significant percentage (up to
+    47.4%) of numeric parameters have no more than five distinct
+    settings among all the users' settings.
+  </li>
+  <li>
+    Similarly, for enumerative parameters with many options, typically
+    only two to three of the options are actually used by the users,
+    indicating once again the over-designed flexibility.
+  </li>
+  <li>
+    Too many knobs do come with a cost: users encounter tremendous
+    difficulties in knowing which parameters should be set among the
+    large configuration space. This is reflected by the following two
+    facts: (1) a significant percentage (up to 48.5%) of configuration
+    issues are about users’ difficulties in finding or setting the
+    parameters to obtain the intended system behavior; (2) a
+    significant percentage (up to 53.3%) of configuration errors are
+    introduced due to users’ staying with default values incorrectly.
+  </li>
+  <li>
+    Configuration parameters with explicit semantics, visible external
+    impact are set by more users, in comparison to parameters that are
+    specific to internal system implementation.
+  </li>
+  <li>
+    The configuration of the studied software can be significantly
+    simplified by reducing the configuration space both vertically and
+    horizontally. For Storage-A, 51.9% of the original parameters can
+    be hidden or removed, and 19.7% of the remaining ones can be
+    further converted into simpler types, with the impact on fewer
+    than 1% of the users. The similar reduction rates are also
+    observed in the other two open-source software.
+  </li>
+  <li>
+    Searching user manuals by keywords is not efficient to help users
+    identify the target parameter(s).
+  </li>
+  <li>
+    Google search can provide useful information for 46.1%∼80.0% of
+    the historical configuration navigation issues. However, it is
+    less efficient in navigation parameters of less popular software
+    or new issues. The majority of resources on the Web that host
+    useful information for navigation are the contents contributed by
+    users, such as Q&amp;A forums and blog articles.
+  </li>
+  <li>
+    Well-engineered NLP-based navigation can return the target
+    configuration parameter for more than 60% of the historical
+    navigation issues. Boosting the results with the statistics of
+    users' configuration settings in the field can significantly
+    improve the performance of NLP-based navigation.
+  </li>
+</ul>
+<p>
+  There's lots more in here: discussion of the experimental method
+  used, a table of recommendations for simplifying configuration whose
+  points are all grounded in findings, and pointers to related work
+  (much of which I hadn't seen before).  What's more, the
+  configuration data
+  is <a href="https://github.com/tianyin/configuration_datasets">available
+  in a GitHub repository</a> for those who wish to examine it
+  themselves.
+</p>
