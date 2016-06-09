@@ -1,0 +1,78 @@
+---
+layout: post
+author: Greg Wilson
+title: "Hidden Truths in Dead Software Paths"
+date: 2016-06-09
+categories: [Research]
+---
+<p>
+  Michael Eichberg, Ben Hermann, Mira Mezini, and Leonid Glanz:
+  "Hidden Truths in Dead Software Paths".
+  ESEC/FSE'15, August 2015, http://dx.doi.org/10.1145/2786805.2786865
+  <a href="http://www.thewhitespace.de/publications/ehmg15-deadpath.pdf">http://www.thewhitespace.de/publications/ehmg15-deadpath.pdf</a>.
+</p>
+<blockquote>
+  <em>
+    <p>
+      Approaches and techniques for statically finding a multitude of
+      issues in source code have been developed in the past. A core
+      property of these approaches is that they are usually targeted
+      towards finding only a very specific kind of issue and that the
+      effort to develop such an analysis is significant. This strictly
+      limits the number of kinds of issues that can be detected.
+    </p>
+    <p>
+      In this paper, we discuss a generic approach based on the
+      detection of infeasible paths in code that can discover a wide
+      range of code smells ranging from useless code that hinders
+      comprehension to real bugs. Code issues are identified by
+      calculating the difference between the control-flow graph that
+      contains all technically possible edges and the corresponding
+      graph recorded while performing a more precise analysis using
+      abstract interpretation.
+    </p>
+    <p>
+      We have evaluated the approach using the Java Development Kit as
+      well as the Qualitas Corpus (a curated collection of over 100
+      Java Applications) and were able to find thousands of issues
+      across a wide range of categories.
+    </p>
+  </em>
+</blockquote>
+<p>
+  If engineering is indeed "applied science",
+  then this paper is a great example of software engineering.
+  In it,
+  the authors show that it's possible to identify a wide range of problems in code
+  by comparing the actual control flow graph
+  (which is the set of all possible paths through the program)
+  with the abstract interpretation flow graph
+  (which is the set of all paths once possible data values are taken into account).
+  To make this more concrete,
+  the control flow graph (CFG) for:
+</p>
+<pre>
+01: x = 0
+02: if x &gt; 0:
+03:     x = 1
+</pre>
+<p>
+  includes the statement on line 3,
+  but the abstract interpretation flow graph (AIFG) doesn't,
+  because there's no way it could ever be executed given the possible value(s) of <code>x</code>.
+  Code paths that are in the CFG but not in the AIFG signal dead code,
+  which in turn usually signals logic errors,
+  such as use of <code>and</code> instead of <code>or</code> in a logical test.
+  The results are impressive;
+  in particular,
+  the authors found that a lot of code in widely-used libraries
+  is littered with unnecessary <code>null</code> checks,
+  and that even experienced developers don't seem to understand Boolean operators as well as they should.
+</p>
+<p>
+  Best of all,
+  their tool is <a href="http://www.opal-project.de/tools/bugpicker/">available for download</a>
+  under a BSD license.
+  Most developers probably won't have encountered the science behind it in their training&mdash;abstract
+  interpretation is a fairly advanced topic&mdash;but they'll appreciate the usefulness of the end product.
+</p>
