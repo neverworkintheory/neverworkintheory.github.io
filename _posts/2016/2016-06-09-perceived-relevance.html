@@ -1,0 +1,114 @@
+---
+layout: post
+author: Greg Wilson
+title: "Perceived Relevance"
+date: 2016-06-09
+categories: [Research]
+---
+<p>
+  David Log, Nachiappan Nagappan, and Thomas Zimmermann:
+  "How Practitioners Perceive the Relevance of Software Engineering Research".
+  ESEC/FSE'15, August 2015,
+  <a href="http://thomas-zimmermann.com/publications/files/lo-esecfse-2015.pdf">http://thomas-zimmermann.com/publications/files/lo-esecfse-2015.pdf</a>.
+</p>
+<blockquote>
+  <em>
+    The number of software engineering research papers over the last
+    few years has grown significantly. An important question here is:
+    how relevant is software engineering research to practitioners in
+    the field? To address this question, we conducted a survey at
+    Microsoft where we invited 3,000 industry practitioners to rate
+    the relevance of research ideas contained in 571 ICSE, ESEC/FSE
+    and FSE papers that were published over a five year period.  We
+    received 17,913 ratings by 512 practitioners who labelled ideas as
+    essential, worthwhile, unimportant, or unwise.  The results from
+    the survey suggest that practitioners are positive towards studies
+    done by the software engineering research community: 71% of all
+    ratings were essential or worthwhile. We found no correlation
+    between the citation counts and the relevance scores of the
+    papers. Through a qualitative analysis of free text responses, we
+    identify several reasons why practitioners considered certain
+    research ideas to be unwise.  The survey approach described in
+    this paper is lightweight: on average, a participant spent only
+    22.5 minutes to respond to the survey. At the same time, the
+    results can provide useful insight to conference organizers,
+    authors, and participating practitioners.
+  </em>
+</blockquote>
+<p>
+  There's lots in this paper, but its most important finding (for me)
+  is buried in the middle of the abstract: "no correlation between
+  citation counts and [practitioner-assigned] relevance scores".  In
+  plainer language, academic researchers and practitioners care about
+  different things (which may mean this blog doesn't have much of a
+  future).
+</p>
+<p>
+  So what <em>do</em> the two groups care about?
+  The top studies favored by practitioners were:
+</p>
+<ul>
+  <li>
+    A new technique that not only detects leaks, but also points
+    developers to the locations where the underlying errors may be
+    fixed.
+  </li>
+  <li>
+    A technique to engineer applications with a self-healing layer for
+    service-oriented systems that dynamically reveals and fixes
+    interoperability problems.
+  </li>
+  <li>
+    A technique to monitor if a system fulfils its requirements
+    expressed as probabilistic properties (e.g., performance,
+    reliability, safety, and availability requirements) at runtime.
+  </li>
+  <li>
+    Automatically detecting security vulnerabilities in client-side
+    self-contained components that interact with one another.
+  </li>
+  <li>
+    Failure to release unneeded system resources results in resource
+    leaks, which can lead to performance degradation and system
+    crashes. The paper presents a new tool that performs static
+    analysis to find code that causes resource leaks in Java programs.
+  </li>
+</ul>
+<p>
+  while academics' favorites were:
+</p>
+<ul>
+  <li>
+    Empirical study on whether the bug fixes recorded in these
+    historical datasets is a fair representation of the full
+    population of bug fixes.
+  </li>
+  <li>
+    Technique to verify the correctness of a family of programs in a
+    software product line against a set of properties.
+  </li>
+  <li>
+    Empirical study of using software defect data from one project to
+    predict defects in another project.
+  </li>
+  <li>
+    A graph model based on Markov chains, which captures bug tossing
+    history, to better assign developers to bug reports
+  </li>
+  <li>
+    Over 30 years ago, the preprocessor cpp was developed to extend
+    the programming language C by lightweight metaprogramming
+    capabilities. The paper describes a study that analyzes 40 C
+    projects to investigate how cpp preprocessor is employed to
+    implement variability.
+  </li>
+</ul>
+<p>
+  As the authors say several times, this is a preliminary study,
+  and is based on feedback from developers at only one company (albeit
+  a large one).  I hope they do another, larger, study, but I hope
+  even more that a decade from now, there will be at
+  least <em>some</em> correlation between what the
+  <a href="http://third-bit.com/2012/12/06/two-solitudes-illustrated.html">"two
+  solitudes" of software engineering</a> care about.
+</p>
