@@ -1,0 +1,94 @@
+---
+layout: post
+author: Greg Wilson
+title: "Frequency Distribution of Error Message"
+date: 2016-06-12
+categories: [Research]
+---
+<p>
+  David Pritchard:
+  "Frequency Distribution of Error Messages".
+  PLATEAU'15, October 2015,
+  <a href="http://2015.splashcon.org/event/plateau2015-frequency-distribution-of-error-messages">http://2015.splashcon.org/event/plateau2015-frequency-distribution-of-error-messages</a>.
+</p>
+<blockquote>
+  <em>
+    <p>
+      Which programming error messages are the most common? We
+      investigate this question, motivated by writing error
+      explanations for novices. We consider large data sets in Python
+      and Java that include both syntax and run-time errors. In both
+      data sets, after grouping essentially identical messages, the
+      error message frequencies empirically resemble Zipf-Mandelbrot
+      distributions. We use a maximum-likelihood approach to fit the
+      distribution parameters. This gives one possible way to contrast
+      languages or compilers quantitatively.
+    </p>
+  </em>
+</blockquote>
+<p>
+  Based on <a href="http:// daveagp.github.io/errors">a large corpus of error messages</a>,
+  the 5 most common errors in Python programs are:
+<p>
+<table class="table table-striped">
+  <tr>
+    <td>179624</td>
+    <td>SyntaxError: invalid syntax</td>
+  </tr>
+  <tr>
+    <td>97186</td>
+    <td>NameError: name ’NAME’ is not defined</td>
+  </tr>
+  <tr>
+    <td>76026</td>
+    <td>EOFError: EOF when reading a line</td>
+  </tr>
+  <tr>
+    <td>26097</td>
+    <td>SyntaxError: unexpected EOF while parsing</td>
+  </tr>
+  <tr>
+    <td>20758</td>
+    <td>IndentationError: unindent does not match any outer indentation level</td>
+  </tr>
+</table>
+<p>
+  and the 5 most common in Java are:
+</p>
+<table class="table table-striped">
+  <tr>
+    <td>702102</td>
+    <td>cannot find symbol - variable NAME</td>
+  </tr>
+  <tr>
+    <td>407776</td>
+    <td>’;’ expected</td>
+  </tr>
+  <tr>
+    <td>280874</td>
+    <td>cannot find symbol - method NAME</td>
+  </tr>
+  <tr>
+    <td>197213</td>
+    <td>cannot find symbol - class NAME</td>
+  </tr>
+  <tr>
+    <td>183908</td>
+    <td>incompatible types</td>
+  </tr>
+</table>
+<p>
+  What's more,
+  their frequency has a power law (or "long tail") distribution,
+  which suggests that improving reporting for just a handful of errors
+  would have a disproportionate effect on usability.
+  But my favorite part of this paper comes toward the end of Section 3.2:
+</p>
+<blockquote>
+  Can this [relationship] be plausible: is the total number of
+  possible errors infinite? We will accept this as a reasonable
+  hypothesis...
+</blockquote>
+<p>
+  to which I can only say, "Amen."
+</p>
