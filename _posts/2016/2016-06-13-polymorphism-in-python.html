@@ -1,0 +1,71 @@
+---
+layout: post
+author: Greg Wilson
+title: "Polymorphism in Python"
+date: 2016-06-13
+categories: [Research]
+---
+<p>
+  Beatrice &Acirc;kerblom and Tobias Wrigstad:
+  "Measuring Polymorphism in Python Programs".
+  SPLASH'15, October 2015,
+  <a href="https://people.dsv.su.se/~beatrice/python/dls15_large_images.pdf">https://people.dsv.su.se/~beatrice/python/dls15_large_images.pdf</a>.
+</p>
+<p>
+  In a break from our usual practice of quoting abstracts,
+  here are this paper's conclusions:
+</p>
+<blockquote>
+  <em>
+    <p>
+      Our results show that while Python’s dynamic typing allows
+      unbounded polymorphism, Python programs are predominantly
+      monomorphic, that is, variables only hold values of a single
+      type.  This is true for program start-up and normal runtime, in
+      library code and in program-specific code.
+    </p>
+    <p>
+      Nevertheless, most programs have a few places which are
+      megamorphic, meaning that variables in those places contain
+      values of many different types at different times or in
+      different contexts. Smaller programs do not generally differ
+      from larger programs in this.
+    </p>
+    <p>
+      Because of the high degree of monomorphism, most programs can be
+      typed to a large extent using a very simple type systems. Our
+      findings show that the receiver in 97.4% of all call-sites in
+      the average program can be described by a single static type
+      using a conservative nominal type system using single
+      inheritance.  If we add parametric polymorphism to the type
+      system, we increase the typeability to 97.9% of all call-sites
+      for the average program.
+    </p>
+    <p>
+      For clusters, the receiver objects are typeable using a
+      conservative nominal type system using single inheritance to
+      95.6% (on average). If we instead use a structural type, the
+      typeability increases somewhat to 96.7% (on average).
+    </p>
+    <p>
+      Most polymorphic and megamorphic parts of programs are not
+      typeable by nominal or structural systems, for example due to
+      use of value-based overloading. Structural typing is only
+      slightly better than nominal typing at handling non-monomorphic
+      program parts. This suggests that nominal and structural typing
+      is not a deciding factor in type system design if typing
+      polymorphic code is desirable. More powerful constructs are
+      needed in these cases, such as refinement types.
+    </p>
+  </em>
+</blockquote>
+<p>
+  In simple terms, only 2.5% of call sites in most programs
+  <em>can't</em> be handled by name-based typing with single
+  inheritance.  Adding parametric polymorphism (i.e., generics) only
+  makes half a percent of difference, and most of the remaining
+  cases <em>can't</em> be handled by widely-used mechanisms.  This
+  doesn't mean that languages shouldn't include more complex type
+  systems, but it does (or should) mean that the onus is on their
+  designers to show that the complexity is worthwhile.
+</p>
