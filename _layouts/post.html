@@ -3,6 +3,14 @@ layout: base
 root: ../../..
 ---
 <h3>{{page.title}}</h3>
-<h4>Posted {{page.date|date: '%b %e, %Y'}} by {{page.author}} in {{page.categories|join: ', '}}</h4>
+<h4>Posted {{page.date|date: '%b %e, %Y'}} by {{page.author}}</h4>
+<span>{% for category in page.categories %}
+    <span>| <a class="tag" href="/categories#{{ category | replace: ' ', '' | downcase }}">{{ category }}</a> </span>
+    {% endfor %}|
+</span>
+
 <hr/>
 {{content}}
+
+
+
