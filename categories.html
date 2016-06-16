@@ -1,26 +1,25 @@
 ---
 layout: base
 root: .
-title: Archives
+title: Categories
 ---
-
-{% for category in site.data.categories %}
-<div >
-    <a name="{{category.name| replace: ' ', '' | downcase }}"></a>
-    <h2>{{category.name}}</h2>
-    <table class="table table-striped">
-        {% for post in site.categories[category.name] %}
-        <tr>
-            <td><span>{{post.date|date: '%b&nbsp;%e,&nbsp;%Y'}}</span></td>
-            <td>
-                <a href="{{post.url}}">{{post.title}}</a>
-            </td>
-        </tr>
+{% assign sorted_cats = site.categories | sort %}
+{% for category in sorted_cats %}
+<a name="{{ category | first | replace: ' ', '' | downcase}}"></a>
+<h2>{{ category | first }}</h2>
+<table class="table table-striped">
+        {% for posts in category %}
+        {% for post in posts %}
+            <tr>
+                <td>
+                    <span>{{post.date|date: '%b&nbsp;%e,&nbsp;%Y'}}</span>
+                </td>
+                <td>
+                    <a href="{{ post.url }}">{{ post.title }}</a>
+                </td>
+            </tr>
         {% endfor %}
-    </table>
-</div>
-
+        {% endfor %}
+</table>
 {% endfor %}
-
-
-
+<hr/>
