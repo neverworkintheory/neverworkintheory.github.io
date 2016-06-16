@@ -10,14 +10,16 @@ title: Categories
 <table class="table table-striped">
         {% for posts in category %}
         {% for post in posts %}
-            <tr>
-                <td>
-                    <span>{{post.date|date: '%b&nbsp;%e,&nbsp;%Y'}}</span>
-                </td>
-                <td>
-                    <a href="{{ post.url }}">{{ post.title }}</a>
-                </td>
-            </tr>
+            {% if post.url %}
+                    <tr>
+                        <td>
+                            <span>{{post.date|date: '%b&nbsp;%e,&nbsp;%Y'}}</span>
+                        </td>
+                        <td>
+                            <a href="{{ post.url }}">{{ post.title }}</a>
+                        </td>
+                    </tr>
+            {% endif %}
         {% endfor %}
         {% endfor %}
 </table>
