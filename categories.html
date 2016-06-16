@@ -4,24 +4,31 @@ root: .
 title: Categories
 ---
 {% assign sorted_cats = site.categories | sort %}
+<table class="table table-striped" width="100%">
+  {% for category in sorted_cats %}
+  {% cycle '<tr width="25%">', '', '', '' %}
+    <td><a href="#{{ category | first | slugify}}">{{ category | first}}</a></td>
+  {% cycle '', '', '', '</tr>' %}
+  {% endfor %}
+</table>
 {% for category in sorted_cats %}
-<a name="{{ category | first | replace: ' ', '' | downcase}}"></a>
-<h2>{{ category | first }}</h2>
+<a name="{{ category | first | replace: ' ', '' | downcase }}"></a>
+<h2 id="{{ category | first | slugify }}">{{ category | first }}</h2>
 <table class="table table-striped">
-        {% for posts in category %}
-        {% for post in posts %}
-            {% if post.url %}
-                    <tr>
-                        <td>
-                            <span>{{post.date|date: '%b&nbsp;%e,&nbsp;%Y'}}</span>
-                        </td>
-                        <td>
-                            <a href="{{ post.url }}">{{ post.title }}</a>
-                        </td>
-                    </tr>
-            {% endif %}
-        {% endfor %}
-        {% endfor %}
+  {% for posts in category %}
+    {% for post in posts %}
+    {% if post.url %}
+    <tr>
+      <td>
+        <span>{{ post.date|date: '%b&nbsp;%e,&nbsp;%Y' }}</span>
+      </td>
+      <td>
+        <a href="{{ post.url }}">{{ post.title }}</a>
+      </td>
+    </tr>
+    {% endif %}
+    {% endfor %}
+  {% endfor %}
 </table>
 {% endfor %}
 <hr/>
