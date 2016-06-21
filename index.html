@@ -2,26 +2,24 @@
 layout: page
 root: .
 ---
-<table class="table table-striped">
-  {% for post in site.posts limit:20 %}
-    <tr>
-      <td>{{post.date|date: '%b&nbsp;%e,&nbsp;%Y'}}</td>
-      <td>
-	<a href=".{{post.url}}">{{post.title}}</a>
-	<br/>
-	Keywords: <em>{{post.categories|join: ', '}}</em>
-      </td>
-    </tr>
-    <tr>
-      <td></td>
-      <td>
-	{{post.content|strip_html|truncatewords: 100}}
-      </td>
-    </tr>
-  {% endfor %}
-    <tr>
-      <td></td>
-      <td><a href="blog.html">...more</a></td>
-    </tr>
-</table>
-<hr/>
+<div class="container-fluid">
+    {% for post in site.posts limit:20 %}
+    <div class="row article-header">
+        <div class="col-xs-2 col-md-1 article-column">
+            {{post.date|date: '%b'}}
+            {{post.date|date: '%e,'}}
+            {{post.date|date: '%Y'}}</div>
+        <div class="col-xs-10 col-md-11 article-column">
+            <a href=".{{post.url}}">{{post.title}}</a><br/>
+            Keywords: <em>{{post.categories|join: ', '}}</em></div>
+    </div>
+    <div class="row">
+        <div class="col-xs-2 col-md-1"></div>
+        <div class="col-xs-10 col-md-11 article-column">{{post.content|strip_html|truncatewords: 100}}</div>
+    </div>
+    {% endfor %}
+    <div class="row">
+        <div class="col-xs-2 col-md-1 article-column"></div>
+        <div class="col-xs-10 col-md-11 article-column"><a href="blog.html">...more</a></div>
+    </div>
+</div>
