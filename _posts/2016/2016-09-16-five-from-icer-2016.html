@@ -1,0 +1,285 @@
+---
+layout: post
+author: Greg Wilson
+title: "Five From ICER'16"
+date: 2016-09-16
+categories: ["Education"]
+---
+
+<p>
+  These papers were all presented at the 12th Annual International
+  Computing Education Research conference in Melbourne earlier this
+  month, and give a good sense of what CS education researchers are
+  looking at and what they're finding.
+</p>
+
+<p>
+  Elizabeth Patitsas, Jesse Berlin, Michelle Craig, and Steve Easterbrook:
+  "<a href="http://www.cs.toronto.edu/~sme/papers/2016/icer_2016_bimodal.pdf">Evidence That Computer Science Grades Are Not Bimodal</a>",
+  10.1145/2960310.2960312.
+</p>
+<blockquote>
+  <p>
+    <em>
+      Although it has never been rigourously demonstrated, there is a
+      common belief that CS grades are bimodal. We statistically
+      analyzed 778 distributions of final course grades from a large
+      research university, and found only 5.8% of the distributions
+      passed tests of multimodality. We then devised a psychology
+      experiment to understand why CS educators believe their grades
+      to be bimodal. We showed 53 CS professors a series of histograms
+      displaying ambiguous distributions and asked them to categorize
+      the distributions. A random half of participants were primed to
+      think about the fact that CS grades are commonly thought to be
+      bimodal; these participants were more likely to label ambiguous
+      distributions as "bimodal". Participants were also more likely
+      to label distributions as bimodal if they believed that some
+      students are innately predisposed to do better at CS. These
+      results suggest that bimodal grades are instructional folklore
+      in CS, caused by confirmation bias and instructor beliefs about
+      their students.
+    </em>
+  </p>
+</blockquote>
+
+<p>
+  This was the most thought-provoking paper of the conference, as it
+  shows pretty conclusively that people are seeing evidence for a
+  "geek gene" where none exists.  Mark Guzdial has called this belief
+  <a href="http://cacm.acm.org/blogs/blog-cacm/189498-top-10-myths-about-teaching-computer-science/fulltext">the
+  biggest myth about teaching computer science</a>; I hope this paper
+  will finally put some nails in its coffin.
+</p>
+
+<hr/>
+
+<p>
+  Kelly Rivers, Erik Harpstead, and Ken Koedinger:
+  "<a href="http://krivers.net/files/icer2016-paper.pdf">Learning Curve Analysis for Programming: Which Concepts do Students Struggle With?</a>",
+  10.1145/2960310.2960333.
+</p>
+<blockquote>
+  <p>
+    <em>
+      The recent surge in interest in using educational data mining on
+      student written programs has led to discoveries about which
+      compiler errors students encounter while they are learning how
+      to program. However, less attention has been paid to the actual
+      code that students produce. In this paper, we investigate
+      programming data by using learning curve analysis to determine
+      which programming elements students struggle with the most when
+      learning in Python. Our analysis extends the traditional use of
+      learning curve analysis to include less structured data, and
+      also reveals new possibilities for when to teach students new
+      programming concepts. One particular discovery is that while we
+      find evidence of student learning in some cases (for example, in
+      function definitions and comparisons), there are other
+      programming elements which do not demonstrate typical
+      learning. In those cases, we discuss how further changes to the
+      model could affect both demonstrated learning and our
+      understanding of the different concepts that students learn.
+    </em>
+  </p>
+</blockquote>
+
+<p>
+  The authors present "…a preliminary exploration of the application
+  of knowledge-based learning curve analysis on programming data with
+  the goal of extending the promise of educational data mining to
+  programming."  Doing this requires them to identify knowledge
+  components, figure out how to measure progress toward correctness,
+  and a host of other details.  Their discussion of how they
+  operationalized these issues was the most valuable part of the paper
+  for me, since it allowed me to see very clearly what their
+  assumptions and definitions are, and where my own thinking is vague,
+  fuzzy, or contradictory.  It's intriguing work, and I look forward
+  to their next paper.
+</p>
+
+<hr/>
+
+<p>
+  Soohyun Nam Liao, Daniel Zingaro, Michael A. Laurenzano, William G. Griswold, and Leo Porter:
+  "<a href="http://www.danielzingaro.com/icer16.pdf">Lightweight, Early Identification of At-Risk CS1 Students</a>",
+  10.1145/2960310.2960315.
+</p>
+
+<blockquote>
+  <p>
+    <em>
+      Being able to identify low-performing students early in the term
+      may help instructors intervene or differently allocate course
+      resources. Prior work in CS1 has demonstrated that clicker
+      correctness in Peer Instruction courses correlates with exam
+      outcomes and, separately, that machine learning models can be
+      built based on early-term programming assessments. This work
+      aims to combine the best elements of each of these
+      approaches. We offer a methodology for creating models, based on
+      in-class clicker questions, to predict cross-term student
+      performance. In as early as week 3 in a 12-week CS1 course, this
+      model is capable of correctly predicting students as being in
+      danger of failing, or not, for 70% of the students, with only
+      17% of students misclassified as not at-risk when
+      at-risk. Additional measures to ensure more broad applicability
+      of the methodology, along with possible limitations, are
+      explored.
+    </em>
+  </p>
+</blockquote>
+
+<p>
+  There's no point getting people into computer science classes if
+  they then drop out.  Here, a group from several different
+  institutions show how to build a statistical model that uses clicker
+  data collected during the course of peer instruction to identify
+  students who are likely to drop out only three weeks into an
+  introductory course (i.e., early enough to intervene).  Crucially,
+  they conclude that, "Should an instructor not use Peer
+  Instruction…simply asking the same multiple-choice questions before
+  or after class could produce similarly accurate results."  While I
+  remain nervous about
+  <a href="http://third-bit.com/2014/03/14/learning-at-scale.html">widespread
+  monitoring students in classrooms</a>, it's clear in this case that
+  doing so could help a lot of people we might otherwise lose.
+</p>
+
+<hr/>
+
+<p>
+  Kyle J. Harms, Jason Chen, and Caitlin Kelleher:
+  "<a href="http://research.engineering.wustl.edu/~harmsk/downloads/harmsk-icer-2016.pdf">Distractors in Parsons Problems Decrease Learning Efficiency for Young Novice Programmers</a>",
+  10.1145/2960310.2960314.
+</p>
+<blockquote>
+  <p>
+    <em>
+      Parsons problems are an increasingly popular method for helping
+      inexperienced programmers improve their programming skills. In
+      Parsons problems, learners are given a set of programming
+      statements that they must assemble into the correct
+      order. Parsons problems commonly use distractors, extra
+      statements that are not part of the solution. Yet, little is
+      known about the effect distractors have on a learner's ability
+      to acquire new programming skills. We present a study comparing
+      the effectiveness of learning programming from Parsons problems
+      with and without distractors. The results suggest that
+      distractors decrease learning efficiency. We found that
+      distractor participants showed no difference in transfer task
+      performance compared to those without distractors. However, the
+      distractors increased learners cognitive load, decreased their
+      success at completing Parsons problems by 26%, and increased
+      learners' time on task by 14%.
+    </em>
+  </p>
+</blockquote>
+
+<p>
+  A Parsons Problem is a programming challenge in which the learner is
+  given the statements they need to solve a problem, but in a jumbled
+  order.  They must then put those statements together to get the
+  right answer.  I've been using them for about a year in the classes
+  I teach, and finding them really useful.
+</p>
+
+<p>
+  We know from prior work that high school students who completed
+  partially written programs later constructed better quality programs
+  than students who authored programs from scratch Here, the authors
+  explored what happens to learning when Parsons problems include
+  distractors of various kinds.  Crucially, they found early that
+  there was little point including irrelevant and tangential
+  distractors, so they focused on distractors that encouraged learners
+  to follow familiar but suboptimal solution paths.
+</p>
+
+<p>
+  Their conclusion is that distractors of this kind in code puzzles
+  provide no clear benefit while reducing learning efficiency.  As a
+  practicing teacher, this is exactly the kind of result that I look
+  for from researchers: a plausible idea has been shown empirically to
+  have no educational benefit.  While this single result is not
+  revolutionary, the accumulation of such results is what we need to
+  build the body of pedagogical content knowledge (PCK) that computing
+  education needs.
+</p>
+
+<hr/>
+
+<p>
+  Craig S. Miller and Amber Settle:
+  "<a href="https://www.researchgate.net/publication/307088989_Some_Trouble_with_Transparency_An_Analysis_of_Student_Errors_with_Object-oriented_Python">Some Trouble with Transparency: An Analysis of Student Errors with Object-oriented Python</a>",
+  10.1145/2960310.2960327.
+</p>
+<blockquote>
+  <p>
+    <em>
+      We investigated implications of transparent mechanisms in the
+      context of an introductory object-oriented programming course
+      using Python. Here transparent mechanisms are those that reveal
+      how the instance object in Python relates to its instance
+      data. We asked students to write a new method for a provided
+      Python class in an attempt to answer two research questions: 1)
+      to what extent do Python’s transparent OO mechanisms lead to
+      student difficulties? and 2) what are common pitfalls in OO
+      programming using Python that instructors should address? Our
+      methodology also presented the correct answer to the students
+      and solicited their comments on their submission. We conducted a
+      content analysis to classify errors in the student
+      submissions. We find that most students had difficulty with the
+      instance (self) object, either by omitting the parameter in the
+      method definition, by failing to use the instance object when
+      referencing attributes of the object, or both. Reference errors
+      in general were more common than other errors, including
+      misplaced returns and indentation errors. These issues may be
+      connected to problems with parameter passing and using
+      dot-notation, which we argue are prerequisites for OO
+      development in Python.
+    </em>
+  </p>
+</blockquote>
+
+<p>
+  Python is my favorite programming language, but it does have its
+  warts.  One that irritated me when I first switched from C++ and
+  Java to Python is the need to include <code>self</code> explicitly
+  in method definitions.  I therefore wasn't surprised to see that 53%
+  of novices forget to include <code>self</code> in method headers,
+  along with other problems associated with the explicit use
+  of <code>self</code> to refer to "this" object.  As the authors say:
+</p>
+
+<blockquote>
+  <p>
+    Even a minor oversight could have learning implications given the
+    feedback that the Python interpreter provides. Below is the error
+    message students see when they omit the self parameter:
+  </p>
+  <p><code>TypeError: lookup() takes 1 positional argument but 2 were given</code></p>
+  <p>
+    Because the error message does not mention 'self' or refer to the
+    instance object placed before the calling method, students who simply
+    forgot the instance object among the parameters may have difficulty
+    interpreting this message to correct their omission.
+  </p>
+</blockquote>
+
+<p>
+  Like the previous paper, this is exactly the kind of practical,
+  evidence-based advice I look for as a teacher.  The authors of this
+  paper go on to say in a section title "Guidance for Instructors":
+</p>
+
+<blockquote>
+  <p>
+    Given these difficulties, instructors are advised to have students
+    practice the fundamentals of parameter passing and dot-notation as
+    a prerequisite to class definitions. For students to see how
+    Python transforms the method call by adding the instance object as
+    one of the parameters, student understanding of parameter passing
+    needs to be effortless.
+  </p>
+</blockquote>
+
+<p>
+  I'll be adjusting my lesson plans accordingly.
+</p>
