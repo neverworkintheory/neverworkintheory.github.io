@@ -1,0 +1,71 @@
+---
+layout: post
+author: Greg Wilson
+title: "Apex: Automatic Programming Assignment Error Explanation"
+date: 2016-10-01
+categories: ["Education", "Tools", "Program Analysis", "Symbolic Execution"]
+---
+<p>
+  Dohyeong Kim, Yongwhi Kwon, Peng Liu, I Luk Kim, David Mitchel Perry, Xiangyu Zhang, and Gustavo Rodriguez-Rivera:
+  "Apex: Automatic Programming Assignment Error Explanation".
+  OOPSLA 2016,
+  <a href="http://researcher.watson.ibm.com/researcher/files/us-liup/apex.pdf">http://researcher.watson.ibm.com/researcher/files/us-liup/apex.pdf</a>.
+</p>
+<blockquote>
+  <em>
+    This paper presents Apex, a system that can automatically generate
+    explanations for programming assignment bugs, regarding where the
+    bugs are and how the root causes led to the runtime failures. It
+    works by comparing the passing execution of a correct
+    implementation (provided by the instructor) and the failing
+    execution of the buggy implementation (submitted by the
+    student). The technique overcomes a number of technical challenges
+    caused by syntactic and semantic differences of the two
+    implementations. It collects the symbolic traces of the executions
+    and matches assignment statements in the two execution traces by
+    reasoning about symbolic equivalence. It then matches predicates
+    by aligning the control dependences of the matched assignment
+    statements, avoiding direct matching of path conditions which are
+    usually quite different. Our evaluation shows that Apex is every
+    effective for 205 buggy real world student submissions of 4
+    programming assignments, and a set of 15 programming assignment
+    type of buggy programs collected from stackoverflow.com, precisely
+    pinpointing the root causes and capturing the causality for 94.5%
+    of them. The evaluation on a standard benchmark set with over 700
+    student bugs shows similar results. A user study in the classroom
+    shows that Apex has substantially improved student productivity.
+  </em>
+</blockquote>
+<p>
+  In this paper,
+  the authors combine several sophisticated techniques
+  to diagnose the root causes of errors in novice programming assignments
+  <em>even when the novice's code is significantly different from
+  the correct implementation provided by the instructor</em>.
+  They do this by collecting traces of the programs' execution
+  and reasoning about them symbolically
+  to figure out why the final states of variables differ,
+  regardless of the paths taken to create those variables.
+</p>
+<p>
+  This may seem like magic,
+  but the methods used are well established.
+  What they <em>aren't</em> is part of the usual undergraduate curriculum.
+  I suspect this is due to the mathematical sophistication they require,
+  but in truth,
+  there is nothing here more complicated than the partial differential equations
+  commonly taught in the junior or senior year of most engineering programs.
+</p>
+<p>
+  What really made this paper for me,
+  though,
+  was that the authors didn't stop once they had built a complex tool:
+  they assessed its real-world utility by examining some programs found on the web,
+  and then did a small controlled experiment
+  to see whether the feedback provided by the tool
+  helped novice programmers finish assignments faster.
+  All together,
+  this is a wonderful exemplar of how theory can guide the implementation of new things,
+  which can then be assessed empirically&mdash;in short,
+  of how engineering ought to be done.
+</p>
