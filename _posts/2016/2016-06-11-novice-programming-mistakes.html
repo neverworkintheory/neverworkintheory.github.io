@@ -5,35 +5,40 @@ title: "Novice Programming Mistakes"
 date: 2016-06-09
 categories: ["Novices"]
 ---
-<p>
-  Amjad Altadmri and Neil C. C. Brown:
-  "37 Million Compilations: Investigating Novice Programming Mistakes in Large-Scale Student Data".
-  SIGCSE'15, March 2015, http://dx.doi.org/10.1145/2676723.2677258,
-  <a href="https://kar.kent.ac.uk/46742/1/fp1187-altadmri.pdf">https://kar.kent.ac.uk/46742/1/fp1187-altadmri.pdf</a>.
+<p id="Altadmri2015" class="bibliography"><a class="bibliographykey" href="/bib/#Altadmri2015">Altadmri2015</a>
+  Amjad Altadmri and Neil C.C. Brown:
+  "<a href="https://doi.org/10.1145/2676723.2677258">37 Million Compilations</a>".
+  <em>Proceedings of the 46th ACM Technical Symposium on Computer Science Education</em>,
+  <a class="doi" href="https://doi.org/10.1145/2676723.2677258">10.1145/2676723.2677258</a>.
 </p>
-<blockquote>
-  <em>
-    Educators often form opinions on which programming mistakes novices make most often – for example, in Java:
-    "they always confuse equality with assignment", or "they always call methods with the wrong types".
-    These opinions are generally based solely on personal experience.
-    We report a study to determine if programming educators form a consensus about which Java programming mistakes are the most common.
-    We used the Blackbox data set to check whether the educators' opinions matched data from over 100,000 students –
-    and checked whether this agreement was mediated by educators' experience.
-    We found that educators formed only a weak consensus about which mistakes are most frequent,
-    that their rankings bore only a moderate correspondence to the students in the Blackbox data,
-    and that educators' experience had no effect on this level of agreement.
-    These results raise questions about claims educators make regarding which errors students are most likely to commit.
-  </em>
+<blockquote class="abstract">
+  <p>
+    Educators often form opinions on which programming mistakes novices make
+    most often–for example, in Java: "they always confuse equality with
+    assignment", or "they always call methods with the wrong types".  These
+    opinions are generally based solely on personal experience.  We report a
+    study to determine if programming educators form a consensus about which
+    Java programming mistakes are the most common.  We used the Blackbox data
+    set to check whether the educators' opinions matched data from over 100,000
+    students–and checked whether this agreement was mediated by educators'
+    experience.  We found that educators formed only a weak consensus about
+    which mistakes are most frequent, that their rankings bore only a moderate
+    correspondence to the students in the Blackbox data, and that educators'
+    experience had no effect on this level of agreement.  These results raise
+    questions about claims educators make regarding which errors students are
+    most likely to commit.
+  </p>
 </blockquote>
+<div class="review">
 <p>
-  So,
-  what's the most common kind of error novice Java programmers make?
-  Turns out it isn't confusing assignment "=" with equality "==",
-  but rather mis-matched or unbalanced parentheses.
-  Invoking methods with the wrong argument (e.g., <code>list.get("abc")</code>) is the second most common,
-  and control flow being able to reach the end of a non-void method without returning a value is third.
-  And which errors take the most time to fix?
-  The answer to that turns out to be:
+  So, what's the most common kind of error novice Java programmers
+  make?  Turns out it isn't confusing assignment "=" with equality
+  "==", but rather mis-matched or unbalanced parentheses.  Invoking
+  methods with the wrong argument (e.g., <code>list.get("abc")</code>)
+  is the second most common, and control flow being able to reach the
+  end of a non-void method without returning a value is third.  And
+  which errors take the most time to fix?  The answer to that turns
+  out to be:
 </p>
 <ul>
   <li>
@@ -54,7 +59,7 @@ categories: ["Novices"]
   "<a href="http://www.twistedsquare.com/Educators.pdf">Investigating
   Novice Programming Mistakes: Educator Beliefs vs Student Data</a>",
   ICER'14, http://dx.doi.org/10.1145/2632320.2632343).  Their main
-  finding: "...educators formed only a weak consensus about which
+  finding: "…educators formed only a weak consensus about which
   mistakes are most frequent, that their rankings bore only a moderate
   correspondence to the students in the Blackbox data, and that
   educators' experience had no effect on this level of agreement."  It
@@ -62,3 +67,4 @@ categories: ["Novices"]
   decades before they start to influence language design, but at least
   we now know that better is possible.
 </p>
+</div>

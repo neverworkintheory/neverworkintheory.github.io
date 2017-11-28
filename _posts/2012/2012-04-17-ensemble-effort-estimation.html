@@ -1,28 +1,94 @@
 ---
 layout: post
 author: Jorge Aranda
-title: "Ensemble effort estimation"
+title: "Ensemble Effort Estimation"
 date: 2012-04-17
 time: 08:00:06
 categories: ["Estimation", "Quantitative Studies"]
 ---
-<p><em><a href="http://www.kocaguneli.com/">Ekrem Kocaguneli</a>, <a href="http://menzies.us/">Tim Menzies</a>, and <a href="http://www4.comp.polyu.edu.hk/~cswkeung/Home.html">Jacky Keung</a>. <a href="http://menzies.us/pdf/11comba.pdf"><strong>"On the value of ensemble effort estimation"</strong></a>, TSE 2011.</em></p>
-<blockquote><em><strong>Background:</strong> Despite decades of research, there is no consensus on which software effort estimation methods produce the most accurate models.</em><em><strong></strong></em>
-<br/>
-<em><strong>Aim:</strong> Prior work has reported that, given M estimation methods, no single method consistently outperforms all others. Perhaps rather than recommending one estimation method as best, it is wiser to generate estimates from ensembles of multiple estimation methods.</em>
-<br/>
-<em><strong>Method:</strong> 9 learners were combined with 10 pre-processing options to generate 9 &times; 10 = 90 solo-methods. These were applied to 20 data sets and evaluated using 7 error measures. This identified the best n (in our case n = 13) solo-methods that showed stable performance across multiple datasets and error measures. The top 2, 4, 8 and 13 solo-methods were then combined to generate 12 multi-methods, which were then compared to the solo-methods.</em><em><strong></strong></em>
-<br/>
-<em><strong>Results:</strong> (i) The top 10 (out of 12) multi-methods significantly out-performed all 90 solo-methods. (ii) The error rates of the multi-methods were significantly less than the solo-methods. (iii) The ranking of the best multi-method was remarkably stable.</em><em><strong></strong></em>
-<br/>
-<em><strong>Conclusion:</strong> While there is no best single effort estimation method, there exist best combinations of such effort estimation methods.</em></blockquote>
-<p>Anybody who has ever done software effort estimation knows that it's a pretty hard thing to do. It's tough even for small individual tasks for someone without practice, and it's a horribly difficult task for large-scale group projects even for estimators with lots of practice. There are many methods that estimators could use, but as Kocaguneli &amp; Co remind us, "no single method consistently outperforms all others"---sometimes you're better off using method A, other times, method B would've been more appropriate. Their proposal: to build ensembles of methods, each of them deficient on their own, and to plug them with different automated learners in the hope that these new multi-methods will provide estimates with less error and more consistency.</p>
-<p>The multi-methods approach worked well in their (pretty large) dataset of nearly 1,200 projects. This does <em>not</em> mean that the method that came out on top for them will come out on top for you, too. It only means that ensembles of methods are a good workaround for the problem of inconsistency of method efficacy. What the authors propose is for practitioners to learn the basics of machine learning and build method ensembles themselves:</p>
-<blockquote>Therefore, our recommendations to practitioners, who are willing to use multi-methods but lack the knowledge of machine learning algorithms are:
-<ul>
-	<li>Start with initial 2 learners and build the associated multi-methods</li>
-	<li>See the performance of the current multi-methods</li>
-	<li>Build new multi-methods only if you are not pleased with the performance of the current ones</li>
-</ul>
+<p id="Kocaguneli2012" class="bibliography"><a class="bibliographykey" href="/bib/#Kocaguneli2012">Kocaguneli2012</a>
+  Ekrem Kocaguneli, Tim Menzies, and Jacky W. Keung:
+  "<a href="https://doi.org/10.1109/tse.2011.111">On the Value of Ensemble Effort Estimation</a>".
+  <em>IEEE Transactions on Software Engineering</em>, 38(6), 2012,
+  <a class="doi" href="https://doi.org/10.1109/tse.2011.111">10.1109/tse.2011.111</a>.
+</p>
+<blockquote class="abstract">
+  <p>
+    <strong>Background:</strong> Despite decades of research, there is
+    no consensus on which software effort estimation methods produce
+    the most accurate models.
+  </p>
+  <p>
+    <strong>Aim:</strong> Prior work has reported that, given M
+    estimation methods, no single method consistently outperforms all
+    others. Perhaps rather than recommending one estimation method as
+    best, it is wiser to generate estimates from ensembles of multiple
+    estimation methods.
+  </p>
+  <p>
+    <strong>Method:</strong> 9 learners were combined with 10
+    pre-processing options to generate 9 &times; 10 = 90
+    solo-methods. These were applied to 20 data sets and evaluated
+    using 7 error measures. This identified the best n (in our case n
+    = 13) solo-methods that showed stable performance across multiple
+    datasets and error measures. The top 2, 4, 8 and 13 solo-methods
+    were then combined to generate 12 multi-methods, which were then
+    compared to the solo-methods.
+  </p>
+  <p>
+    <strong>Results:</strong> (i) The top 10 (out of 12) multi-methods
+    significantly out-performed all 90 solo-methods. (ii) The error
+    rates of the multi-methods were significantly less than the
+    solo-methods. (iii) The ranking of the best multi-method was
+    remarkably stable.
+  </p>
+  <p>
+    <strong>Conclusion:</strong> While there is no best single effort
+    estimation method, there exist best combinations of such effort
+    estimation methods.
+  </p>
 </blockquote>
-<p>That won't be an easy task, but it may be less painful than committing to using a single method that often won't work. If you're interested in doing it, this paper has several references and pointers to get you started.</p>
+<div class="review">
+  <p>
+    Anybody who has ever done software effort estimation knows that
+    it's a pretty hard thing to do. It's tough even for small
+    individual tasks for someone without practice, and it's a horribly
+    difficult task for large-scale group projects even for estimators
+    with lots of practice. There are many methods that estimators
+    could use, but as Kocaguneli &amp; Co remind us, "no single method
+    consistently outperforms all others"—sometimes you're better off
+    using method A, other times, method B would've been more
+    appropriate. Their proposal: to build ensembles of methods, each
+    of them deficient on their own, and to plug them with different
+    automated learners in the hope that these new multi-methods will
+    provide estimates with less error and more consistency.
+  </p>
+  <p>
+    The multi-methods approach worked well in their (pretty large)
+    dataset of nearly 1,200 projects. This does <em>not</em> mean that
+    the method that came out on top for them will come out on top for
+    you, too. It only means that ensembles of methods are a good
+    workaround for the problem of inconsistency of method
+    efficacy. What the authors propose is for practitioners to learn
+    the basics of machine learning and build method ensembles
+    themselves:
+  </p>
+  <blockquote>
+    <p>
+      Therefore, our recommendations to practitioners, who are willing
+      to use multi-methods but lack the knowledge of machine learning
+      algorithms are:
+    </p>
+    <ul>
+      <li>Start with initial 2 learners and build the associated multi-methods</li>
+      <li>See the performance of the current multi-methods</li>
+      <li>Build new multi-methods only if you are not pleased with the performance of the current ones</li>
+    </ul>
+  </blockquote>
+  <p>
+    That won't be an easy task, but it may be less painful than
+    committing to using a single method that often won't work. If
+    you're interested in doing it, this paper has several references
+    and pointers to get you started.
+  </p>
+</div>

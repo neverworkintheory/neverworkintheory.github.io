@@ -5,14 +5,14 @@ title: "When, How, and Why Developers (Do Not) Test in Their IDEs"
 date: 2016-06-08
 categories: ["Testing"]
 ---
-<p>
-  Moritz Beller, Georgios Gousios, Annibale Pannichella, and Andy Zaidman:
-  "When, How, and Why Developers (Do Not) Test in Their IDEs".
-  ESEC/FSE'15, August 2015, http://dx.doi.org/10.1145/2786805.2786843,
-  <a href="http://www.st.ewi.tudelft.nl/~mbeller/publications/2015_beller_gousios_panichella_zaidman_when_how_and_why_developers_do_not_test_in_their_ides.pdf">http://www.st.ewi.tudelft.nl/~mbeller/publications/2015_beller_gousios_panichella_zaidman_when_how_and_why_developers_do_not_test_in_their_ides.pdf</a>
+<p id="Beller2015" class="bibliography"><a class="bibliographykey" href="/bib/#Beller2015">Beller2015</a>
+  Moritz Beller, Georgios Gousios, Annibale Panichella, and Andy Zaidman:
+  "<a href="https://doi.org/10.1145/2786805.2786843">When, how, and why developers (do not) test in their IDEs</a>".
+  <em>Proceedings of the 2015 10th Joint Meeting on Foundations of Software Engineering</em>,
+  <a class="doi" href="https://doi.org/10.1145/2786805.2786843">10.1145/2786805.2786843</a>.
 </p>
-<blockquote>
-  <em>
+<blockquote class="abstract">
+  <p>
     We report on the surprising results of a large-scale field study
     with 416 software engineers whose development activity we closely
     monitored over the course of five months, resulting in over 13
@@ -25,8 +25,9 @@ categories: ["Testing"]
     is not widely practiced; and, last but not least, software
     developers only spend a quarter of their work time engineering
     tests, whereas they think they test half of their time.
-  </em>
+  </p>
 </blockquote>
+<div class="review">
 <p>
   The bullet point summary is fairly innocuous:
 </p>
@@ -49,7 +50,8 @@ categories: ["Testing"]
   and the correlation between test and production code co-evolving is even weaker (0.35).
   Fast tests don't correlate with more frequent test execution,
   and <em>only 4% of sessions that had test execution followed the classic red-green-refactor TDD cycle</em>.
-  It's possible&mdash;indeed, likely&mdash;that the researchers' IDE instrumentation missed some things,
+  It's possible—indeed, likely—that the researchers' IDE instrumentation missed some things,
   but it's painfully clear that we still have a long way to go
   when it comes to real-world adoption of better testing practices.
 </p>
+</div>

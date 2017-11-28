@@ -1,16 +1,13 @@
 ---
-layout: base
-root: ../../..
+layout: default
 ---
-<h3>{{page.title}}</h3>
-<h4>Posted {{page.date|date: '%b %e, %Y'}} by {{page.author}}</h4>
-<span>{% for category in page.categories %}
-    <span>| <a class="tag" href="/categories#{{ category | replace: ' ', '' | downcase }}">{{ category }}</a> </span>
-    {% endfor %}|
-</span>
-
-<hr/>
-{{content}}
-
-
-
+<article class="post">
+  <h1 class="post-title">{{ page.title }}</h1>
+  <p>
+    Reviewed by {{ page.author }} / {{ page.date | date: "%Y-%m-%d" }}
+    <br/>
+    Keywords: {{ page.categories | sort | join: ', ' }}
+  </p>
+  {{ content }}
+  {% include prevnext.html %}
+</article>

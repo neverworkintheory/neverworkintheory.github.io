@@ -5,17 +5,14 @@ title: "Maintaining Java ORM Code"
 date: 2016-04-26
 categories: ["Maintenance"]
 ---
-<p>
-  Tse-Hsun Chen, Weiyi Shang, Jinqiu Yang, Ahmed E. Hassan, and Michael W. Godfrey:
-  "An Empirical Study on the Practice of Maintaining Object-Relational Mapping Code in Java Systems".
-  MSR'16, May 2016, 
-  <a href="https://plg.uwaterloo.ca/~migod/papers/2016/msr16.pdf">https://plg.uwaterloo.ca/~migod/papers/2016/msr16.pdf</a>.
+<p id="Chen2016" class="bibliography"><a class="bibliographykey" href="/bib/#Chen2016">Chen2016</a>
+  Tse-Hsun Chen, Weiyi Shang, Jinqiu Yang, Ahmed E. Hassan, Michael W. Godfrey, Mohamed Nasser, and Parminder Flora:
+  "<a href="https://doi.org/10.1145/2901739.2901758">An empirical study on the practice of maintaining object-relational mapping code in Java systems</a>".
+  <em>Proceedings of the 13th International Conference on Mining Software Repositories</em>,
+  <a class="doi" href="https://doi.org/10.1145/2901739.2901758">10.1145/2901739.2901758</a>.
 </p>
-<p>
-  From the abstract:
-</p>
-<blockquote>
-  <em>
+<blockquote class="abstract">
+  <p>
     Despite the advantages of using ORM [object-relational mapping]
     frameworks, we observe several difficulties in maintaining ORM
     code (i.e., code that makes use of ORM frameworks) when
@@ -35,8 +32,9 @@ categories: ["Maintenance"]
     approaches to help maintain ORM code.  Future studies should
     carefully examine ORM code, in particular given the rising use of
     ORM in modern software systems.
-  </em>
+  </p>
 </blockquote>
+<div class="review">
 <p>
   I wasn't surprised to find that ORMs can't completely encapsulate
   database access, but I <em>was</em> surprised to learn that the
@@ -51,3 +49,4 @@ categories: ["Maintenance"]
   and similar support for debugging ORM code might have saved me even
   more.
 </p>
+</div>

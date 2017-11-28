@@ -6,12 +6,76 @@ date: 2013-07-24
 time: 17:00:00
 categories: ["Code Smells"]
 ---
-<p>Fran&ccedil;ois Gauthier and Ettore Merlo: "Semantic Smells and Errors in Access Control Models: A Case Study in PHP." ICSE'13, 2013. <a href="https://sites.google.com/site/francois2gauthier/Gauthier_Merlo_ICSE-NIER2013.pdf">https://sites.google.com/site/francois2gauthier/Gauthier_Merlo_ICSE-NIER2013.pdf</a></p>
-<blockquote><em>Access control models implement mechanisms to restrict access to sensitive data from unprivileged users. Access controls typically check privileges that capture the semantics of the operations they protect. Semantic smells and errors in access control models stem from privileges that are partially or totally unrelated to the action they protect.
-<br/>
-This paper presents a novel approach, partly based on static analysis and information retrieval techniques, for the automatic detection of semantic smells and errors in access control models. Investigation of the case study application revealed 31 smells and 2 errors. Errors were reported to developers who quickly confirmed their relevance and took actions to correct them. Based on the obtained results, we also propose three categories of semantic smells and errors to lay the foundations for further research on access control smells in other systems and domains.</em></blockquote>
-<p>Perfection can be boring and time consuming. Anyone trying to make a living building perfect software will (maybe) die a pauper. But are there some areas where we must seek ~perfection? Privacy and security come to mind and the story of <a href="https://bugzilla.mozilla.org/show_bug.cgi?id=330884">Firefox Bug 330884</a> which starts as follows:</p>
-<blockquote>This privacy flaw has caused my fianc&eacute; and I to break-up after having dated for 5 years.</blockquote>
-<p>In their work on semantic smells and errors, Gauthier and Merlo focus on access control models for web applications (many of which now deal with private and security sensitive information). Semantic smell is seen as the situation where the semantic of the privilege does not always clearly relate to the semantic of the protected action. For example when the semantic relationship is only partial it gives rise to semantic smells. Semantic errors occurs in the absence of that relationship and this must be fixed.</p>
-<p>In this work, the authors make the assumption that, "... semantically related sections of source code usually perform similar actions and should therefore be protected by similar privileges". If not, they assume that there might be semantic smells and errors. To test this assumption they used automated methods to first map privileges to source code, then extract semantically related sections of code. Finally, using logistic regression to create a privilege prediction model, they were able to infer the privileges that should protect a block of code.</p>
-<p>Gauthier and Merlo's results are promising. From their case study, they found 31 semantic smells and two semantic errors. But what is most significant about the result is that when the authors submitted bug reports for the semantic errors as potential security issues, they were accepted within two days by developers.</p>
+<p id="Gauthier2013" class="bibliography"><a class="bibliographykey" href="/bib/#Gauthier2013">Gauthier2013</a>
+  Francois Gauthier and Ettore Merlo:
+  "<a href="https://doi.org/10.1109/icse.2013.6606670">Semantic smells and errors in access control models: A case study in PHP</a>".
+  <em>2013 35th International Conference on Software Engineering (ICSE)</em>,
+  <a class="doi" href="https://doi.org/10.1109/icse.2013.6606670">10.1109/icse.2013.6606670</a>.
+</p>
+<blockquote class="abstract">
+  <p>
+    Access control models implement mechanisms to restrict access to
+    sensitive data from unprivileged users. Access controls typically
+    check privileges that capture the semantics of the operations they
+    protect. Semantic smells and errors in access control models stem
+    from privileges that are partially or totally unrelated to the
+    action they protect.
+  </p>
+  <p>
+    This paper presents a novel approach, partly based on static
+    analysis and information retrieval techniques, for the automatic
+    detection of semantic smells and errors in access control
+    models. Investigation of the case study application revealed 31
+    smells and 2 errors. Errors were reported to developers who
+    quickly confirmed their relevance and took actions to correct
+    them. Based on the obtained results, we also propose three
+    categories of semantic smells and errors to lay the foundations
+    for further research on access control smells in other systems and
+    domains.
+  </p>
+</blockquote>
+<div class="review">
+  <p>
+    Perfection can be boring and time consuming. Anyone trying to make
+    a living building perfect software will (maybe) die a pauper. But
+    are there some areas where we must seek perfection? Privacy and
+    security come to mind and the story
+    of <a href="https://bugzilla.mozilla.org/show_bug.cgi?id=330884">Firefox
+    Bug 330884</a> which starts as follows:
+  </p>
+  <blockquote>
+    <p>
+      This privacy flaw has caused my fiancé and I to break-up after
+      having dated for 5 years.
+    </p>
+  </blockquote>
+  <p>
+    In their work on semantic smells and errors, Gauthier and Merlo
+    focus on access control models for web applications (many of which
+    now deal with private and security sensitive
+    information). Semantic smell is seen as the situation where the
+    semantic of the privilege does not always clearly relate to the
+    semantic of the protected action. For example when the semantic
+    relationship is only partial it gives rise to semantic
+    smells. Semantic errors occurs in the absence of that relationship
+    and this must be fixed.
+  </p>
+  <p>
+    In this work, the authors make the assumption that, "…semantically
+    related sections of source code usually perform similar actions
+    and should therefore be protected by similar privileges". If not,
+    they assume that there might be semantic smells and errors. To
+    test this assumption they used automated methods to first map
+    privileges to source code, then extract semantically related
+    sections of code. Finally, using logistic regression to create a
+    privilege prediction model, they were able to infer the privileges
+    that should protect a block of code.
+  </p>
+  <p>
+    Gauthier and Merlo's results are promising. From their case study,
+    they found 31 semantic smells and two semantic errors. But what is
+    most significant about the result is that when the authors
+    submitted bug reports for the semantic errors as potential
+    security issues, they were accepted within two days by developers.
+  </p>
+</div>

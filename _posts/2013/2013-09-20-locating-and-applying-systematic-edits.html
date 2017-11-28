@@ -5,26 +5,74 @@ title: "LASE: Locating and Applying Systematic Edits by Learning from Examples"
 date: 2013-09-20
 categories: ["Refactoring"]
 ---
-<p><a href="http://www.cs.utexas.edu/~mengna09/">Na Meng</a>, <a href="http://users.ece.utexas.edu/~miryung/">Miryung Kim</a>, and <a href="http://www.cs.utexas.edu/~mckinley/">Kathryn S. McKinley</a>: "LASE: Locating and Applying Systematic Edits by Learning from Examples." ICSE'13, 2013. <a href="http://users.ece.utexas.edu/~miryung/Publications/icse2013-lase-submitted.pdf">http://users.ece.utexas.edu/~miryung/Publications/icse2013-lase-submitted.pdf</a></p>
-
-<blockquote><em>Adding features and fixing bugs often require systematic edits that make similar, but not identical, changes to many code locations. Finding all the relevant locations and making the
-correct edits is a tedious and error-prone process for developers. This paper addresses both problems using edit scripts learned from multiple examples. We design and implement a tool called LASE that (1) creates a context-aware edit script from two or more examples, and uses the script to (2) automatically identify edit locations and to (3) transform the code.
-<br/>We evaluate LASE on an oracle test suite of systematic edits from Eclipse JDT and SWT. LASE finds edit locations with 99% precision and 89% recall, and transforms them with 91% accuracy. We also evaluate LASE on 37 example systematic edits from other open source programs and find LASE is accurate and effective. Furthermore, we confirmed with developers that LASE found edit locations which they missed. Our novel algorithm that learns from multiple examples is critical to achieving high precision and recall; edit scripts created from only one example
-produce too many false positives, false negatives, or both. Our results indicate that LASE should help developers in automating systematic editing. Whereas most prior work either suggests edit locations or performs simple edits, LASE is the first to do both for nontrivial program edits. 
-</em></blockquote>
-
-<p>It's a pain to go into a large code base to change something because of the inclusion of new features, as is locating all the areas in a code base where similar, but not identical changes are needed. Recognizing that the literature tackles one problem, or both problems (but in a trivial manner), Meng et al. present LASE for Locating and Applying Systematic Edits. </p>
-
-<p>What sets LASE apart from previous work by the same authors (<a href="http://users.ece.utexas.edu/~miryung/Publications/fse2012-syditdemo.pdf">Sydit</a>), is the use of multiple example methods (rather than one) to learn an edit script (to avoid over specification and over generalization). Also, LASE automatically locates other methods to change while Sydit requires the developer locate these methods. 
-
-LASE also helps the developer by suggesting changed methods based on the customized edit scripts for methods located by the edit script.</p>
-
-<p>To evaluate their tool, Meng et al., experimented with two oracle test suites: </p>
-
-<ol><li>Consists of multiple systematic edits that fix the same bug in multiple commits, drawn from two open-source programs, Eclipse JDT and Eclipse SWT.</li> 
-<li>Contains 37 systematic edits from five Java open-source programs (jEdit, Eclipse jdt.core, Eclipse compare, Eclipse core.runtime, and Eclipse debug).</li></ol>
-
-<p>With impressive results of 99% precision and 89% recall for finding edit locations and transforms at 91% accuracy, LASE can be a great help to developers especially when dealing with very large code bases. A demonstration of LASE can be seen at: <a href="https://www.youtube.com/watch?v=npDqMVP2e9Q>https://www.youtube.com/watch?v=npDqMVP2e9Q">https://www.youtube.com/watch?v=npDqMVP2e9Q</a></p>
-
-
-
+<p id="Meng2013" class="bibliography"><a class="bibliographykey" href="/bib/#Meng2013">Meng2013</a>
+  Na Meng, Miryung Kim, and Kathryn S. McKinley:
+  "<a href="https://doi.org/10.1109/icse.2013.6606596">Lase: Locating and applying systematic edits by learning from examples</a>".
+  <em>2013 35th International Conference on Software Engineering (ICSE)</em>,
+  <a class="doi" href="https://doi.org/10.1109/icse.2013.6606596">10.1109/icse.2013.6606596</a>.
+</p>
+<blockquote class="abstract">
+  <p>
+    Adding features and fixing bugs often require systematic edits
+    that make similar, but not identical, changes to many code
+    locations. Finding all the relevant locations and making the
+    correct edits is a tedious and error-prone process for
+    developers. This paper addresses both problems using edit scripts
+    learned from multiple examples. We design and implement a tool
+    called LASE that (1) creates a context-aware edit script from two
+    or more examples, and uses the script to (2) automatically
+    identify edit locations and to (3) transform the code.
+  </p>
+  <p>
+    We evaluate LASE on an oracle test suite of systematic edits from
+    Eclipse JDT and SWT. LASE finds edit locations with 99% precision
+    and 89% recall, and transforms them with 91% accuracy. We also
+    evaluate LASE on 37 example systematic edits from other open
+    source programs and find LASE is accurate and
+    effective. Furthermore, we confirmed with developers that LASE
+    found edit locations which they missed. Our novel algorithm that
+    learns from multiple examples is critical to achieving high
+    precision and recall; edit scripts created from only one example
+    produce too many false positives, false negatives, or both. Our
+    results indicate that LASE should help developers in automating
+    systematic editing. Whereas most prior work either suggests edit
+    locations or performs simple edits, LASE is the first to do both
+    for nontrivial program edits.
+  </p>
+</blockquote>
+<div class="review">
+  <p>
+    It's a pain to go into a large code base to change something
+    because of the inclusion of new features, as is locating all the
+    areas in a code base where similar, but not identical changes are
+    needed. Recognizing that the literature tackles one problem, or
+    both problems (but in a trivial manner), Meng et al. present LASE
+    for Locating and Applying Systematic Edits. 
+  </p>
+  <p>
+    What sets LASE apart from previous work by the same authors
+    (<a href="http://users.ece.utexas.edu/~miryung/Publications/fse2012-syditdemo.pdf">Sydit</a>),
+    is the use of multiple example methods (rather than one) to learn
+    an edit script (to avoid over specification and over
+    generalization). Also, LASE automatically locates other methods to
+    change while Sydit requires the developer locate these
+    methods. LASE also helps the developer by suggesting changed
+    methods based on the customized edit scripts for methods located
+    by the edit script.
+  </p>
+  <p>
+    To evaluate their tool, Meng et al., experimented with two oracle
+    test suites: 
+  </p>
+  <ol>
+    <li>Consists of multiple systematic edits that fix the same bug in multiple commits, drawn from two open-source programs, Eclipse JDT and Eclipse SWT.</li> 
+    <li>Contains 37 systematic edits from five Java open-source programs (jEdit, Eclipse jdt.core, Eclipse compare, Eclipse core.runtime, and Eclipse debug).</li>
+  </ol>
+  <p>
+    With impressive results of 99% precision and 89% recall for
+    finding edit locations and transforms at 91% accuracy, LASE can be
+    a great help to developers especially when dealing with very large
+    code bases. A demonstration of LASE can be seen
+    at: <a href="https://www.youtube.com/watch?v=npDqMVP2e9Q>https://www.youtube.com/watch?v=npDqMVP2e9Q">https://www.youtube.com/watch?v=npDqMVP2e9Q</a>
+  </p>
+</div>

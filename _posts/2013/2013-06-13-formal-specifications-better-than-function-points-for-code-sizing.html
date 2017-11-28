@@ -6,6 +6,50 @@ date: 2013-06-13
 time: 10:46:26
 categories: ["Estimation"]
 ---
-<p>Mark Staples, Rafal Kolanski, Gerwin Klein, Corey Lewis, June Andronick, Toby Murray, Ross Jeffery, and Len Bass: "Formal Specifications Better Than Function Points for Code Sizing". <cite>ICSE'13</cite>, 2013, <a href="http://www.nicta.com.au/pub?doc=6416">http://www.nicta.com.au/pub?doc=6416</a>.</p>
-<blockquote><em>Size and effort estimation is a significant challenge for the management of large-scale formal verification projects. We report on an initial study of relationships between the sizes of artefacts from the development of seL4, a formally-verified embedded systems microkernel. For each API function we first determined its COSMIC Function Point (CFP) count (based on the seL4 user manual), then sliced the formal specifications and source code, and performed a normalised line count on these artefact slices. We found strong and significant relationships between the sizes of the artefact slices, but no significant relationships between them and the CFP counts. Our finding that CFP is poorly correlated with lines of code is based on just one system, but is largely consistent with prior literature. We find CFP is also poorly correlated with the size of formal specifications. Nonetheless, lines of formal specification correlate with lines of source code, and this may provide a basis for size prediction in future formal verification projects. In future work we will investigate proof sizing.</em></blockquote>
-<p>Donald Knuth reportedly once said that C was the best language ever invented for analyzing algorithms because you could see how many atomic operations there were simply by counting punctuation. In this paper, Staples et al. apply that idea at a much, much higher level. Does the size of the formal specification for part of a micro-kernel correlate with the number of lines required to implement it? The answer appears to be "yes", and moreover, that correlation is much better than the correlation between lines of code and function points. This doesn't necessarily mean that formal specifications are worth writing solely as an aid to project cost estimation, but it does open up some new practical applications&mdash;not least, the question of whether the effort saved by having a formal specification repays the cost of creating it. We look forward to seeing this work replicated on other systems.</p>
+<p id="Staples2013" class="bibliography"><a class="bibliographykey" href="/bib/#Staples2013">Staples2013</a>
+  Mark Staples, Rafal Kolanski, Gerwin Klein, Corey Lewis, June Andronick, Toby Murray, Ross Jeffery, and Len Bass:
+  "<a href="https://doi.org/10.1109/icse.2013.6606692">Formal specifications better than function points for code sizing</a>".
+  <em>2013 35th International Conference on Software Engineering (ICSE)</em>,
+  <a class="doi" href="https://doi.org/10.1109/icse.2013.6606692">10.1109/icse.2013.6606692</a>.
+</p>
+<blockquote class="abstract">
+  <p>
+    Size and effort estimation is a significant challenge for the
+    management of large-scale formal verification projects. We report
+    on an initial study of relationships between the sizes of
+    artefacts from the development of seL4, a formally-verified
+    embedded systems microkernel. For each API function we first
+    determined its COSMIC Function Point (CFP) count (based on the
+    seL4 user manual), then sliced the formal specifications and
+    source code, and performed a normalised line count on these
+    artefact slices. We found strong and significant relationships
+    between the sizes of the artefact slices, but no significant
+    relationships between them and the CFP counts. Our finding that
+    CFP is poorly correlated with lines of code is based on just one
+    system, but is largely consistent with prior literature. We find
+    CFP is also poorly correlated with the size of formal
+    specifications. Nonetheless, lines of formal specification
+    correlate with lines of source code, and this may provide a basis
+    for size prediction in future formal verification projects. In
+    future work we will investigate proof sizing.
+  </p>
+</blockquote>
+<div class="review">
+  <p>
+    Donald Knuth reportedly once said that C was the best language
+    ever invented for analyzing algorithms because you could see how
+    many atomic operations there were simply by counting
+    punctuation. In this paper, Staples et al. apply that idea at a
+    much, much higher level. Does the size of the formal specification
+    for part of a micro-kernel correlate with the number of lines
+    required to implement it? The answer appears to be "yes", and
+    moreover, that correlation is much better than the correlation
+    between lines of code and function points. This doesn't
+    necessarily mean that formal specifications are worth writing
+    solely as an aid to project cost estimation, but it does open up
+    some new practical applications—not least, the question of
+    whether the effort saved by having a formal specification repays
+    the cost of creating it. We look forward to seeing this work
+    replicated on other systems.
+  </p>
+</div>

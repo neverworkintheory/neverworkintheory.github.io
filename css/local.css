@@ -1,0 +1,105 @@
+/* Wrap */
+@media
+ only screen and (max-width: 38em) {
+  div.flex-row {
+    flex-wrap: wrap;
+  }
+  div.flex-card {
+    width: 96%;
+  }
+}
+
+/* Create a row */
+div.flex-row {
+    display: flex;
+    flex-direction: row;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+/* Create a column (not cards) */
+
+div.flex-col {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    width: 46%;
+}
+
+/* Add shadows to create the "card" effect */
+div.flex-card {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    width: 46%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+
+/* On mouse-over, add a deeper shadow */
+div.flex-card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+/* Add some padding inside the card container */
+div.flex-card-container {
+    padding: 2px 16px;
+}
+
+/* Show a table with no extra space */
+table.slim {
+    width: auto;
+}
+
+/* Disclaimer about disabling comments */
+div.comments-disclaimer {
+    font-style: italic;
+    font-size: 80%;
+    text-align: center;
+}
+
+/* Footer */
+footer {
+    border-top: solid 1px gray;
+}
+
+/* Citations and abstracts */
+p.citation {
+    background-color: #F8F8F8;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+p.bibliography {
+    background-color: #F8F8F8;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+.bibliographykey {
+    font-weight: bold;
+}
+.bibliographykey::before {
+    content: "[";
+}
+.bibliographykey::after {
+    content: "] ";
+}
+
+blockquote.abstract {
+}
+
+/* Page navigation */
+.page-navigation {
+  font-size: 14px;
+  display: block;
+  width: auto;
+  overflow: hidden;
+}
+
+.page-navigation a {
+  display: block;
+  width: 50%;
+  float: left;
+  margin: 1em 0;
+}
+
+.page-navigation .next {
+  text-align: right;
+}

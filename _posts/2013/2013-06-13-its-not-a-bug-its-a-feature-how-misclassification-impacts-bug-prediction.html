@@ -1,12 +1,59 @@
 ---
 layout: post
 author: Greg Wilson
-title: "It&#039;s Not a Bug, It&#039;s a Feature: How Misclassification Impacts Bug Prediction"
+title: "It's Not a Bug, It's a Feature: How Misclassification Impacts Bug Prediction"
 date: 2013-06-13
 time: 10:45:41
 categories: ["Mining", "Quantitative Studies"]
 ---
-<p>Kim Herzig, Sascha Just, and Andreas Zeller: "It's not a Bug, it's a Feature: How Misclassification Impacts Bug Prediction". <cite>ICSE'13</cite>, 2013, <a href="http://www.st.cs.uni-saarland.de/softevo/bugclassify/paper/icse2013-bugclassify.pdf">http://www.st.cs.uni-saarland.de/softevo/bugclassify/paper/icse2013-bugclassify.pdf</a>.</p>
-<blockquote><em>In a manual examination of more than 7,000 issue reports from the bug databases of five open-source projects, we found 33.8% of all bug reports to be misclassified&mdash;that is, rather than referring to a code fix, they resulted in a new feature, an update to documentation, or an internal refactoring. This misclassification introduces bias in bug prediction models, confusing bugs and features: On average, 39% of files marked as defective actually never had a bug. We estimate the impact of this misclassification on earlier studies and recommend manual data validation for future studies.</em></blockquote>
-<p>The popular media often gets very excited when a new study overturns an old one. Skeptics seize on this as proof that scientists don't know what they're talking about; what they fail to realize is that this is often actually evidence that science is working as it should. To paraphrase Enrico Fermi, its goal is to leave us confused, but on a higher level, and the insight that comes from realizing that earlier questions were poorly phrased, or their answers mis-understood, is often as valuable as any "Eureka!" moment.</p>
-<p>This paper is a prime example of that, and evidence of how quickly empirical software engineering research is maturing. By carefully examining thousands of bug reports from several projects, they have found that many mis-report themselves in ways that will inevitably skew the results of simplistic data mining. From one perspective, it's just a large-scale replication of Aranda and Venolia's "<a href="http://research.microsoft.com/apps/pubs/default.aspx?id=81022">Secret Life of Bugs</a>" paper from ICSE 2009, but there's a lot of hard work hiding in that "just". And while this kind of research may not feel like a big step forward, it's what ensures that the next generation of studies will be more useful. Like the lewis et al paper on <a href="http://www.neverworkintheory.org/?p=531">the usability of bug prediction tools</a> described a few days ago, it gives practitioners a more trustworthy foundation for translating insights into projections and decisions.</p>
+<p id="Herzig2013" class="bibliography"><a class="bibliographykey" href="/bib/#Herzig2013">Herzig2013</a>
+  Kim Herzig, Sascha Just, and Andreas Zeller:
+  "<a href="https://doi.org/10.1109/icse.2013.6606585">It's not a bug, it's a feature: How misclassification impacts bug prediction</a>".
+  <em>2013 35th International Conference on Software Engineering (ICSE)</em>,
+  <a class="doi" href="https://doi.org/10.1109/icse.2013.6606585">10.1109/icse.2013.6606585</a>.
+</p>
+<blockquote class="abstract">
+  <p>
+    In a manual examination of more than 7,000 issue reports from the
+    bug databases of five open-source projects, we found 33.8% of all
+    bug reports to be misclassified—that is, rather than
+    referring to a code fix, they resulted in a new feature, an update
+    to documentation, or an internal refactoring. This
+    misclassification introduces bias in bug prediction models,
+    confusing bugs and features: On average, 39% of files marked as
+    defective actually never had a bug. We estimate the impact of this
+    misclassification on earlier studies and recommend manual data
+    validation for future studies.
+  </p>
+</blockquote>
+<div class="review">
+  <p>
+    The popular media often gets very excited when a new study
+    overturns an old one. Skeptics seize on this as proof that
+    scientists don't know what they're talking about; what they fail
+    to realize is that this is often actually evidence that science is
+    working as it should. To paraphrase Enrico Fermi, its goal is to
+    leave us confused, but on a higher level, and the insight that
+    comes from realizing that earlier questions were poorly phrased,
+    or their answers mis-understood, is often as valuable as any
+    "Eureka!" moment.
+  </p>
+  <p>
+    This paper is a prime example of that, and evidence of how quickly
+    empirical software engineering research is maturing. By carefully
+    examining thousands of bug reports from several projects, they
+    have found that many mis-report themselves in ways that will
+    inevitably skew the results of simplistic data mining. From one
+    perspective, it's just a large-scale replication of Aranda and
+    Venolia's
+    "<a href="http://research.microsoft.com/apps/pubs/default.aspx?id=81022">Secret
+    Life of Bugs</a>" paper from ICSE 2009, but there's a lot of hard
+    work hiding in that "just". And while this kind of research may
+    not feel like a big step forward, it's what ensures that the next
+    generation of studies will be more useful. Like the Lewis et al
+    paper on <a href="{{'/2013/06/06/does-bug-prediction-support-human-developers-findings-from-a-google-case-study.html' | relative_url}}">the
+    usability of bug prediction tools</a> described a few days ago, it
+    gives practitioners a more trustworthy foundation for translating
+    insights into projections and decisions.
+  </p>
+</div>

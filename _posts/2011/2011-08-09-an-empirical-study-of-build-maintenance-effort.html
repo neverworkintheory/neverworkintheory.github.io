@@ -6,6 +6,49 @@ date: 2011-08-09
 time: 10:54:27
 categories: ["Experience Reports"]
 ---
-<p>Shane McIntosh, Bram Adams, Thanh H. D. Nguyen, Yasutaka Kamei, and Ahmed E. Hassan: "An Empirical Study of Build Maintenance Effort". ICSE 2011</p>
-<blockquote><em>The build system of a software project is responsible for transforming source code and other development artifacts into executable programs and deliverables. Similar to source code, build system specifications require maintenance to cope with newly implemented features, changes to imported Application Program Interfaces (APIs), and source code restructuring. In this paper, we mine the version histories of one proprietary and nine open source projects of different sizes and domain to analyze the overhead that build maintenance imposes on developers. We split our analysis into two dimensions: (1) Build Coupling, i.e., how frequently source code changes require build changes, and (2) Build Ownership, i.e., the proportion of developers responsible for build maintenance. Our results indicate that, despite the difference in scale, the build system churn rate is comparable to that of the source code, and build changes induce more relative churn on the build system than source code changes induce on the source code. Furthermore, build maintenance yields up to a 27% overhead on source code development and a 44% overhead on test development. Up to 79% of source code developers and 89% of test code developers are significantly impacted by build maintenance, yet investment in build experts can reduce the proportion of impacted developers to 22% of source code developers and 24% of test code developers.</em></blockquote>
-<p>One of the many reasons software projects fail is poor estimation, and one of the reasons people estimate badly is that they don't keep track of what's happened before. This paper provides a baseline for both how much effort is required to keep the build system in working order, and how much those figures can be improved. If you have similar numbers for your current project, or if you'd be willing to share data with McIntosh et al so that they could help us all do our jobs better, they'd enjoy hearing from you.</p>
+<p id="McIntosh2011" class="bibliography"><a class="bibliographykey" href="/bib/#McIntosh2011">McIntosh2011</a>
+  Shane McIntosh, Bram Adams, Thanh H.D. Nguyen, Yasutaka Kamei, and Ahmed E. Hassan:
+  "<a href="https://doi.org/10.1145/1985793.1985813">An empirical study of build maintenance effort</a>".
+  <em>Proceedings of the 33rd International Conference on Software Engineering</em>,
+  <a class="doi" href="https://doi.org/10.1145/1985793.1985813">10.1145/1985793.1985813</a>.
+</p>
+<blockquote class="abstract">
+  <p>
+    The build system of a software project is responsible for
+    transforming source code and other development artifacts into
+    executable programs and deliverables. Similar to source code,
+    build system specifications require maintenance to cope with newly
+    implemented features, changes to imported Application Program
+    Interfaces (APIs), and source code restructuring. In this paper,
+    we mine the version histories of one proprietary and nine open
+    source projects of different sizes and domain to analyze the
+    overhead that build maintenance imposes on developers. We split
+    our analysis into two dimensions: (1) Build Coupling, i.e., how
+    frequently source code changes require build changes, and (2)
+    Build Ownership, i.e., the proportion of developers responsible
+    for build maintenance. Our results indicate that, despite the
+    difference in scale, the build system churn rate is comparable to
+    that of the source code, and build changes induce more relative
+    churn on the build system than source code changes induce on the
+    source code. Furthermore, build maintenance yields up to a 27%
+    overhead on source code development and a 44% overhead on test
+    development. Up to 79% of source code developers and 89% of test
+    code developers are significantly impacted by build maintenance,
+    yet investment in build experts can reduce the proportion of
+    impacted developers to 22% of source code developers and 24% of
+    test code developers.
+  </p>
+</blockquote>
+<div class="review">
+  <p>
+    One of the many reasons software projects fail is poor estimation,
+    and one of the reasons people estimate badly is that they don't
+    keep track of what's happened before. This paper provides a
+    baseline for both how much effort is required to keep the build
+    system in working order, and how much those figures can be
+    improved. If you have similar numbers for your current project, or
+    if you'd be willing to share data with McIntosh et al so that they
+    could help us all do our jobs better, they'd enjoy hearing from
+    you.
+  </p>
+</div>

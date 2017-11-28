@@ -6,9 +6,71 @@ date: 2012-08-23
 time: 16:05:10
 categories: ["Organizational Studies", "Quantitative Studies"]
 ---
-<p><a href="http://softwareprocess.es">Abram Hindle</a> and <a href="http://thomas-zimmermann.com">Thomas Zimmerman</a>, "<a href="http://softwareprocess.es/a/hindle-abram-relating-requirements-WEB-EDITION.pdf">Do Topics Extracted from Requirements Make Sense to Managers and Developers?</a>", <em>International Conference on Software Maintenance</em>, 2012.</p>
-<p>Disclosure: Abram and I have collaborated on a somewhat related paper</em>.
-<blockquote>Large organizations like Microsoft tend to rely on formal requirements documentation in order to specify and design the software products that they develop. These documents are meant to be tightly coupled with the actual implementation of the features they describe. In this paper we evaluate the value of high-level topic-based requirements traceability in the version control system, using Latent Dirichlet Allocation (LDA). We evaluate LDA topics on practitioners and check if the topics and trends extracted matches the perception that Program Managers and Developers have about the effort put into addressing certain topics. We found that effort extracted from version control that was relevant to a topic often matched the perception of the managers and developers of what occurred at the time. Furthermore we found evidence that many of the identified topics made sense to practitioners and matched their perception of what occurred. But for some topics, we found that practitioners had difficulty interpreting and labelling them. In summary, we investigate the high-level traceability of requirements topics to version control commits via topic analysis and validate with the actual stakeholders the relevance of these topics extracted from requirements.</blockquote>
-<p>A holy grail of software research is to (automatically) relate the business value of the software feature to the code implementing that feature, known as <a href="http://en.wikipedia.org/wiki/Requirements_traceability"><em>requirements traceability</em></a>. All sorts of benefits are posited to result from this, including the ability to tell whether your customer's needs are met. </p>
-<p>One approach to this is to use an information retrieval technique called <a href="http://en.wikipedia.org/wiki/Topic_model">topic modelling</a>. Topic modelling generates word distributions for a set of documents, like requirements specifications. One of the problems with topic modelling is that the topics are presented as lists of seemingly unrelated words, and the content of these topics must be captured with a descriptive label. In this paper the authors assess whether developers at Microsoft find the topics easy to label and understand.</p>
-<p>What they discovered was that the study participants agreed with the proposed linkages between requirements topics and commits, but that the topics were difficult to label without being customized to the individual developer. Program managers seemed to find the topics more comprehensible, possibly because they deal with a wider array of features in their work. Further use of topic modelling in this area seems to require labelling by domain experts before being widely applicable to the traceability problem. </p>
+<p id="Hindle2012" class="bibliography"><a class="bibliographykey" href="/bib/#Hindle2012">Hindle2012</a>
+  Abram Hindle, Christian Bird, Thomas Zimmermann, and Nachiappan Nagappan:
+  "<a href="https://doi.org/10.1109/icsm.2012.6405278">Relating requirements to implementation via topic analysis: Do topics extracted from requirements make sense to managers and developers?</a>".
+  <em>2012 28th IEEE International Conference on Software Maintenance (ICSM)</em>,
+  <a class="doi" href="https://doi.org/10.1109/icsm.2012.6405278">10.1109/icsm.2012.6405278</a>.
+</p>
+<blockquote class="abstract">
+  <p>
+    Large organizations like Microsoft tend to rely on formal
+    requirements documentation in order to specify and design the
+    software products that they develop. These documents are meant to
+    be tightly coupled with the actual implementation of the features
+    they describe. In this paper we evaluate the value of high-level
+    topic-based requirements traceability in the version control
+    system, using Latent Dirichlet Allocation (LDA). We evaluate LDA
+    topics on practitioners and check if the topics and trends
+    extracted matches the perception that Program Managers and
+    Developers have about the effort put into addressing certain
+    topics. We found that effort extracted from version control that
+    was relevant to a topic often matched the perception of the
+    managers and developers of what occurred at the time. Furthermore
+    we found evidence that many of the identified topics made sense to
+    practitioners and matched their perception of what occurred. But
+    for some topics, we found that practitioners had difficulty
+    interpreting and labelling them. In summary, we investigate the
+    high-level traceability of requirements topics to version control
+    commits via topic analysis and validate with the actual
+    stakeholders the relevance of these topics extracted from
+    requirements.
+  </p>
+</blockquote>
+<div class="review">
+  <p>
+    <em>Disclosure: Abram and I have collaborated on a somewhat
+    related paper</em>.
+  </p>
+  <p>
+    A holy grail of software research is to (automatically) relate the
+    business value of the software feature to the code implementing
+    that feature, known
+    as <a href="http://en.wikipedia.org/wiki/Requirements_traceability"><em>requirements
+    traceability</em></a>. All sorts of benefits are posited to result
+    from this, including the ability to tell whether your customer's
+    needs are met.
+  </p>
+  <p>
+    One approach to this is to use an information retrieval technique
+    called <a href="http://en.wikipedia.org/wiki/Topic_model">topic
+    modelling</a>. Topic modelling generates word distributions for a
+    set of documents, like requirements specifications. One of the
+    problems with topic modelling is that the topics are presented as
+    lists of seemingly unrelated words, and the content of these
+    topics must be captured with a descriptive label. In this paper
+    the authors assess whether developers at Microsoft find the topics
+    easy to label and understand.
+  </p>
+  <p>
+    What they discovered was that the study participants agreed with
+    the proposed linkages between requirements topics and commits, but
+    that the topics were difficult to label without being customized
+    to the individual developer. Program managers seemed to find the
+    topics more comprehensible, possibly because they deal with a
+    wider array of features in their work. Further use of topic
+    modelling in this area seems to require labelling by domain
+    experts before being widely applicable to the traceability
+    problem.
+  </p>
+</div>

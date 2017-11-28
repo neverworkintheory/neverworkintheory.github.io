@@ -5,40 +5,39 @@ title: "Hidden Truths in Dead Software Paths"
 date: 2016-06-09
 categories: ["Program Analysis"]
 ---
-<p>
+<p id="Eichberg2015" class="bibliography"><a class="bibliographykey" href="/bib/#Eichberg2015">Eichberg2015</a>
   Michael Eichberg, Ben Hermann, Mira Mezini, and Leonid Glanz:
-  "Hidden Truths in Dead Software Paths".
-  ESEC/FSE'15, August 2015, http://dx.doi.org/10.1145/2786805.2786865
-  <a href="http://www.thewhitespace.de/publications/ehmg15-deadpath.pdf">http://www.thewhitespace.de/publications/ehmg15-deadpath.pdf</a>.
+  "<a href="https://doi.org/10.1145/2786805.2786865">Hidden truths in dead software paths</a>".
+  <em>Proceedings of the 2015 10th Joint Meeting on Foundations of Software Engineering</em>,
+  <a class="doi" href="https://doi.org/10.1145/2786805.2786865">10.1145/2786805.2786865</a>.
 </p>
-<blockquote>
-  <em>
-    <p>
-      Approaches and techniques for statically finding a multitude of
-      issues in source code have been developed in the past. A core
-      property of these approaches is that they are usually targeted
-      towards finding only a very specific kind of issue and that the
-      effort to develop such an analysis is significant. This strictly
-      limits the number of kinds of issues that can be detected.
-    </p>
-    <p>
-      In this paper, we discuss a generic approach based on the
-      detection of infeasible paths in code that can discover a wide
-      range of code smells ranging from useless code that hinders
-      comprehension to real bugs. Code issues are identified by
-      calculating the difference between the control-flow graph that
-      contains all technically possible edges and the corresponding
-      graph recorded while performing a more precise analysis using
-      abstract interpretation.
-    </p>
-    <p>
-      We have evaluated the approach using the Java Development Kit as
-      well as the Qualitas Corpus (a curated collection of over 100
-      Java Applications) and were able to find thousands of issues
-      across a wide range of categories.
-    </p>
-  </em>
+<blockquote class="abstract">
+  <p>
+    Approaches and techniques for statically finding a multitude of
+    issues in source code have been developed in the past. A core
+    property of these approaches is that they are usually targeted
+    towards finding only a very specific kind of issue and that the
+    effort to develop such an analysis is significant. This strictly
+    limits the number of kinds of issues that can be detected.
+  </p>
+  <p>
+    In this paper, we discuss a generic approach based on the
+    detection of infeasible paths in code that can discover a wide
+    range of code smells ranging from useless code that hinders
+    comprehension to real bugs. Code issues are identified by
+    calculating the difference between the control-flow graph that
+    contains all technically possible edges and the corresponding
+    graph recorded while performing a more precise analysis using
+    abstract interpretation.
+  </p>
+  <p>
+    We have evaluated the approach using the Java Development Kit as
+    well as the Qualitas Corpus (a curated collection of over 100
+    Java Applications) and were able to find thousands of issues
+    across a wide range of categories.
+  </p>
 </blockquote>
+<div class="review">
 <p>
   If engineering is indeed "applied science",
   then this paper is a great example of software engineering.
@@ -73,6 +72,7 @@ categories: ["Program Analysis"]
   Best of all,
   their tool is <a href="http://www.opal-project.de/tools/bugpicker/">available for download</a>
   under a BSD license.
-  Most developers probably won't have encountered the science behind it in their training&mdash;abstract
-  interpretation is a fairly advanced topic&mdash;but they'll appreciate the usefulness of the end product.
+  Most developers probably won't have encountered the science behind it in their training—abstract
+  interpretation is a fairly advanced topic—but they'll appreciate the usefulness of the end product.
 </p>
+</div>

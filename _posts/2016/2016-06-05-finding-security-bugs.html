@@ -5,14 +5,14 @@ title: "Finding Security Bugs"
 date: 2016-04-26
 categories: ["Security"]
 ---
-<p>
+<p id="Near2016" class="bibliography"><a class="bibliographykey" href="/bib/#Near2016">Near2016</a>
   Joseph P. Near and Daniel Jackson:
-  "Finding Security Bugs in Web Applications Using a Catalog of Access Control Patterns".
-  ICSE'16, May 2016, http://dx.doi.org/10.1145/2884781.2884836,
-  <a href="http://dspace.mit.edu/openaccess-disseminate/1721.1/102281">http://dspace.mit.edu/openaccess-disseminate/1721.1/102281</a>.
+  "<a href="https://doi.org/10.1145/2884781.2884836">Finding security bugs in web applications using a catalog of access control patterns</a>".
+  <em>Proceedings of the 38th International Conference on Software Engineering</em>,
+  <a class="doi" href="https://doi.org/10.1145/2884781.2884836">10.1145/2884781.2884836</a>.
 </p>
-<blockquote>
-  <em>
+<blockquote class="abstract">
+  <p>
     We propose a specification-free technique for finding missing
     security checks in web applications using a catalog of access
     control patterns in which each pattern models a common access
@@ -22,10 +22,11 @@ categories: ["Security"]
     user-provided input is a mapping from application types to the
     types of the catalog; the rest of the process is entirely
     automatic.  In an evaluation on the 50 most watched Ruby on Rails
-    applications on Github, SPACE reported 33 possible bugs&mdash;23
+    applications on Github, SPACE reported 33 possible bugs—23
     previously unknown security bugs, and 10 false positives.
-  </em>
+  </p>
 </blockquote>
+<div class="review">
 <p>
   A lot of programmers use object-relational mapping systems (ORMs)
   that provide a more-or-less declarative interface between their code
@@ -51,3 +52,4 @@ categories: ["Security"]
   If anyone can clarify its availability,
   please let us know.
 </p>
+</div>

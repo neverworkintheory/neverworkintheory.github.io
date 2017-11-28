@@ -1,13 +1,58 @@
 ---
 layout: post
 author: Jorge Aranda
-title: "On the naturalness of software"
+title: "On the Naturalness of Software"
 date: 2012-04-26
 time: 11:00:11
 categories: ["Mining"]
 ---
-<p><em><a href="http://softwareprocess.es/static/SoftwareProcess.es.html">Abram Hindle</a>, <a href="http://earlbarr.com/">Earl Barr</a>, <a href="http://www.cs.ucdavis.edu/~su/">Zhendong Su</a>, <a href="http://www.cs.ucdavis.edu/~devanbu/">Prem Devanbu</a>, and <a href="http://www.utdallas.edu/~mark.gabel/">Mark Gabel</a>. <a href="http://macbeth.cs.ucdavis.edu/natural.pdf"><strong>"On the Naturalness of Software"</strong></a>, ICSE 2012.</em></p>
-<blockquote><em>Natural languages like English are rich, complex, and powerful. The highly creative and graceful use of languages like English and Tamil, by masters like Shakespeare and Avvaiyar, can certainly delight and inspire. But in practice, given cognitive constraints and the exigencies of daily life, most human utterances are far simpler and much more repetitive and predictable. In fact, these utterances can be very usefully modeled using modern statistical methods. This fact has led to the phenomenal success of statistical approaches to speech recognition, natural language translation, question-answering, and text mining and comprehension.</em>
-<br/>
-<em>We begin with the conjecture that most software is also natural, in the sense that it is created by humans at work, with all the attendant constraints and limitations&mdash;and thus, like natural language, it is also likely to be repetitive and predictable. We then proceed to ask whether a) code can be usefully modeled by statistical language models and b) such models can be leveraged to support software engineers. Using the widely adopted n-gram model, we provide empirical evidence supportive of a positive answer to both these questions. We show that code is also very repetitive, and in fact even more so than natural languages. As an example use of the model, we have developed a simple code completion engine for Java that, despite its simplicity, already improves Eclipse's completion capability. We conclude the paper by laying out a vision for future research in this area.</em></blockquote>
-<p>This paper is not directly applicable to software practice, but you may still find it pretty cool and a great read. It uses the statistical approach to Natural Language Processing that is used to such good effect by tools such as Google Translate, but applied to lines of code. The authors find that code is much more amenable to statistical modelling than English. This means that more powerful code completion and code suggestion tools are viable (they prototyped one for Eclipse), and it also opens the door to new approaches in software mining research. Exciting stuff...</p>
+<p id="Hindle2016" class="bibliography"><a class="bibliographykey" href="/bib/#Hindle2016">Hindle2016</a>
+  Abram Hindle, Earl T. Barr, Mark Gabel, Zhendong Su, and Premkumar Devanbu:
+  "<a href="https://doi.org/10.1145/2902362">On the naturalness of software</a>".
+  <em>Communications of the ACM</em>, 59(5), 2016,
+  <a class="doi" href="https://doi.org/10.1145/2902362">10.1145/2902362</a>.
+</p>
+<blockquote class="abstract">
+  <p>
+    Natural languages like English are rich, complex, and
+    powerful. The highly creative and graceful use of languages like
+    English and Tamil, by masters like Shakespeare and Avvaiyar, can
+    certainly delight and inspire. But in practice, given cognitive
+    constraints and the exigencies of daily life, most human
+    utterances are far simpler and much more repetitive and
+    predictable. In fact, these utterances can be very usefully
+    modeled using modern statistical methods. This fact has led to the
+    phenomenal success of statistical approaches to speech
+    recognition, natural language translation, question-answering, and
+    text mining and comprehension.
+  </p>
+  <p>
+    We begin with the conjecture that most software is also natural,
+    in the sense that it is created by humans at work, with all the
+    attendant constraints and limitations—and thus, like natural
+    language, it is also likely to be repetitive and predictable. We
+    then proceed to ask whether a) code can be usefully modeled by
+    statistical language models and b) such models can be leveraged to
+    support software engineers. Using the widely adopted n-gram model,
+    we provide empirical evidence supportive of a positive answer to
+    both these questions. We show that code is also very repetitive,
+    and in fact even more so than natural languages. As an example use
+    of the model, we have developed a simple code completion engine
+    for Java that, despite its simplicity, already improves Eclipse's
+    completion capability. We conclude the paper by laying out a
+    vision for future research in this area.
+  </p>
+</blockquote>
+<div class="review">
+  <p>
+    This paper is not directly applicable to software practice, but
+    you may still find it pretty cool and a great read. It uses the
+    statistical approach to Natural Language Processing that is used
+    to such good effect by tools such as Google Translate, but applied
+    to lines of code. The authors find that code is much more amenable
+    to statistical modelling than English. This means that more
+    powerful code completion and code suggestion tools are viable
+    (they prototyped one for Eclipse), and it also opens the door to
+    new approaches in software mining research. Exciting stuff…
+  </p>
+</div>

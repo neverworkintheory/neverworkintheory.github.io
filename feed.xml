@@ -13,7 +13,7 @@
     {% for post in site.posts limit:20 %}
       <item>
         <title>{{post.title}}</title>
-        <author>{{site.email}} ({{site.author}})</author>
+        <author>{{site.author.email}} ({{site.author.name}})</author>
         <link>{{site.url}}{{post.url}}</link>
         <pubDate>{{post.date | date: "%a, %d %b %Y %H:%M:%S %Z"}}</pubDate>
         <description>{{post.content|xml_escape}}</description>

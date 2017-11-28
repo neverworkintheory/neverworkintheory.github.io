@@ -6,13 +6,97 @@ date: 2012-05-03
 time: 03:16:13
 categories: ["Reviews"]
 ---
-<p>Max Kanat-Alexander: <a href="http://www.amazon.com/Code-Simplicity-Software-Development-ebook/dp/B007NZU848/"><cite>Code Simplicity: The Science of Software Development</cite></a> (Kindle edition). O'Reilly, 2012, B007NZU848.</p>
-<p>The goal of this ambitious new book from O'Reilly, stated in its preface, is to "[lay] out scientific laws for software development, in a simple form that anybody can read." What it actually does, however, is demonstrate that its author doesn't really know what science is, or what science has already told us about his chosen subject.</p>
-<p>Let's start with the first point. Kanat-Alexander's definition of a science is the traditional one: it is composed of facts that have been collected and organized, and contains general truths or basic laws that have been validated experimentally. Where he comes up short is in applying the last part of that definition. There are plenty of sweeping claims, many of which I actually agree with, but where's the data? Where are the experiments (or at least studies) showing how that data backs up his claims, and that those claims aren't actually refuted by any data? The only hard evidence on offer in the whole book is a table in chapter 5 showing how five files changed over time. The files aren't identified; neither are the projects they came from, and we're not told the timescale of the changes (was it days or years?).</p>
-<p>The second failing of this book is that it completely ignores what we actually do know about programs and programmers. 20% of the way through the book [<a href="#1">1</a>], as he's trying to explain how we got into our present mess, he writes:</p>
-<blockquote>Then along came <cite>The Mythical Man Month</cite>, a book by Fred Brooks, who actually looked at the process of software development in a real project and pointed our some facts about it... He didn't come up with a whole science, but he did make some good observations... After that came a flurry of software development methods: the Rational Unified Process, the Capability Maturity Model, Agile Software Development, and many others. And that, basically, brings us up to where we are today: lots of methods, but no real <em>science</em>.</blockquote>
-<p>Well, no. Where we actually are today is in the middle of an explosion in real scientific understanding of how programmers work, how software evolves, how likely it is to contain bugs, and dozens of related topics. If this year matches 2011, something like 200 new peer-reviewed studies will be published, some by academics, and some by researchers at IBM, Microsoft Research, and other industrial labs. That's a lot for a working programmer to read, which is why we put together <a href="http://www.amazon.com/Making-Software-Really-Works-Believe/dp/0596808321/"><em>Making Software</em></a> (ironically, also published by O'Reilly) to summarize what we actually know and why we believe it's true.</p>
-<p>So what are Kanat-Alexander's "laws", and how substantial are they?</p>
-<dl><dt><em>1. The purpose of software is <em>to help people</em>.</em></dt><dd>If I said, "The purpose of cars is to move people around," would you consider that a "law"?</dd><dt><em>2. The desirability of a change is directly proportional to the value now plus the future value, and inversely proportional to the effort of implementation plus the effort of maintenance.</em></dt><dd>Replace the word "desirability" with "value", and this is simply the definition of net present value.</dd><dt><em>3. The longer your program exists, the more likely it is that any piece of it will have to change.</em></dt><dd>Really? How does that claim stand up against the data that Elaine Weyuker and Tom Ostrand analyzed at AT&amp;T, or the work Nachi Nagappan, Tom Ball, and their colleagues have done at Microsoft Research?</dd><dt><em>4. The chance of introducing a defect into your program is proportional to the size of the changes you make to it.</em></dt><dd>The people listed above, plus others like Dewayne Perry, have found that small changes are proportionally more likely to introduce faults than large ones. If they're wrong, can Kanat-Alexander show where they made their mistake?</dd><dt><em>5. The ease of maintenance of any piece of software is proportional to the simplicity of its individual pieces.</em></dt><dd>If Kanat-Alexander knows how to measure the simplicity of a piece of software, he deserves the Turing Award: as El Emam shows and colleagues showed in 2001 (see Herraiz and Hassan's chapter in <cite>Making Software</cite> for a summary), we still don't have a complexity measure that performs any better than counting lines of code. If he <em>doesn't</em> know how to measure simplicity, how can he say that anything else is proportional to it? And either way, I strongly suspect that maintenance costs are influenced more by the complexity of the couplings between the components, rather than by their individual simplicity.</dd><dt><em>6. The degree to which you know how your software behaves is the degree to which you have accurately tested it.</em></dt><dd>I think this is saying that the degree to which we can predict how a program will behave is correlated with the amount of testing we've done. That's a plausible claim (assuming we agree on ways to measure "predictability" and "amount of testing"), but <em>where's the data?</em></dd></dl>
-<p>The author of this book is clearly intelligent and passionate about his craft. He has undoubtedly written and shipped more good software in the last ten years than I ever will. If he doesn't know what we've discovered about software engineering in the last forty years, that's a clear sign that we're not doing our jobs properly. It isn't enough to be right: if we want our work to matter, we must communicate it to others, and this book shows that we have clearly failed to do that.</p>
-<p id="1">[1] How <em>do</em> you specify a location in an e-book that doesn't have page numbers?</p>
+<p id="KanatAlexander2012" class="bibliography"><a class="bibliographykey" href="/bib/#KanatAlexander2012">KanatAlexander2012</a>
+  Max Kanat-Alexander:
+  <em>Code Simplicity: The Science of Software Development</em>.
+  O'Reilly, 2012, 978-1449313890.
+</p>
+<div class="review">
+  <p>
+    The goal of this ambitious new book from O'Reilly, stated in its
+    preface, is to "[lay] out scientific laws for software
+    development, in a simple form that anybody can read." What it
+    actually does, however, is demonstrate that its author doesn't
+    really know what science is, or what science has already told us
+    about his chosen subject.
+  </p>
+  <p>
+    Let's start with the first point. Kanat-Alexander's definition of
+    a science is the traditional one: it is composed of facts that
+    have been collected and organized, and contains general truths or
+    basic laws that have been validated experimentally. Where he comes
+    up short is in applying the last part of that definition. There
+    are plenty of sweeping claims, many of which I actually agree
+    with, but where's the data? Where are the experiments (or at least
+    studies) showing how that data backs up his claims, and that those
+    claims aren't actually refuted by any data? The only hard evidence
+    on offer in the whole book is a table in chapter 5 showing how
+    five files changed over time. The files aren't identified; neither
+    are the projects they came from, and we're not told the timescale
+    of the changes (was it days or years?).
+  </p>
+  <p>
+    The second failing of this book is that it completely ignores what
+    we actually do know about programs and programmers. 20% of the way
+    through the book [<a href="#1">1</a>], as he's trying to explain
+    how we got into our present mess, he writes:
+  </p>
+  <blockquote>
+    <p>
+      Then along came <cite>The Mythical Man Month</cite>, a book by
+      Fred Brooks, who actually looked at the process of software
+      development in a real project and pointed our some facts about
+      it… He didn't come up with a whole science, but he did make
+      some good observations… After that came a flurry of software
+      development methods: the Rational Unified Process, the
+      Capability Maturity Model, Agile Software Development, and many
+      others. And that, basically, brings us up to where we are today:
+      lots of methods, but no real <em>science</em>.
+    </p>
+  </blockquote>
+  <p>
+    Well, no. Where we actually are today is in the middle of an
+    explosion in real scientific understanding of how programmers
+    work, how software evolves, how likely it is to contain bugs, and
+    dozens of related topics. If this year matches 2011, something
+    like 200 new peer-reviewed studies will be published, some by
+    academics, and some by researchers at IBM, Microsoft Research, and
+    other industrial labs. That's a lot for a working programmer to
+    read, which is why we put
+    together <a href="http://www.amazon.com/Making-Software-Really-Works-Believe/dp/0596808321/"><em>Making
+    Software</em></a> (ironically, also published by O'Reilly) to
+    summarize what we actually know and why we believe it's true.
+  </p>
+  <p>
+    So what are Kanat-Alexander's "laws", and how substantial are
+    they?
+  </p>
+<dl>
+  <dt><em>1. The purpose of software is <em>to help people</em>.</em></dt>
+  <dd>If I said, "The purpose of cars is to move people around," would you consider that a "law"?</dd>
+  <dt><em>2. The desirability of a change is directly proportional to the value now plus the future value, and inversely proportional to the effort of implementation plus the effort of maintenance.</em></dt>
+  <dd>Replace the word "desirability" with "value", and this is simply the definition of net present value.</dd>
+  <dt><em>3. The longer your program exists, the more likely it is that any piece of it will have to change.</em></dt>
+  <dd>Really? How does that claim stand up against the data that Elaine Weyuker and Tom Ostrand analyzed at AT&amp;T, or the work Nachi Nagappan, Tom Ball, and their colleagues have done at Microsoft Research?</dd>
+  <dt><em>4. The chance of introducing a defect into your program is proportional to the size of the changes you make to it.</em></dt>
+  <dd>The people listed above, plus others like Dewayne Perry, have found that small changes are proportionally more likely to introduce faults than large ones. If they're wrong, can Kanat-Alexander show where they made their mistake?</dd>
+  <dt><em>5. The ease of maintenance of any piece of software is proportional to the simplicity of its individual pieces.</em></dt>
+  <dd>If Kanat-Alexander knows how to measure the simplicity of a piece of software, he deserves the Turing Award: as El Emam shows and colleagues showed in 2001 (see Herraiz and Hassan's chapter in <cite>Making Software</cite> for a summary), we still don't have a complexity measure that performs any better than counting lines of code. If he <em>doesn't</em> know how to measure simplicity, how can he say that anything else is proportional to it? And either way, I strongly suspect that maintenance costs are influenced more by the complexity of the couplings between the components, rather than by their individual simplicity.</dd>
+  <dt><em>6. The degree to which you know how your software behaves is the degree to which you have accurately tested it.</em></dt>
+  <dd>I think this is saying that the degree to which we can predict how a program will behave is correlated with the amount of testing we've done. That's a plausible claim (assuming we agree on ways to measure "predictability" and "amount of testing"), but <em>where's the data?</em></dd>
+</dl>
+  <p>
+    The author of this book is clearly intelligent and passionate
+    about his craft. He has undoubtedly written and shipped more good
+    software in the last ten years than I ever will. If he doesn't
+    know what we've discovered about software engineering in the last
+    forty years, that's a clear sign that we're not doing our jobs
+    properly. It isn't enough to be right: if we want our work to
+    matter, we must communicate it to others, and this book shows that
+    we have clearly failed to do that.
+  </p>
+</div>
+<p id="1">
+  [1] How <em>do</em> you specify a location in an e-book that doesn't
+  have page numbers?
+</p>

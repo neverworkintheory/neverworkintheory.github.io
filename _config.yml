@@ -1,4 +1,43 @@
-email: admin@neverworkintheory.org
+title: It Will Never Work in Theory
+subtitle: Short summaries of recent results in empirical software engineering research
+url: https://neverworkintheory.org
+repository: gvwilson/neverworkintheory.github.com
+
+markdown: kramdown
+highlighter: rouge
 permalink: "/:year/:month/:day/:title.html"
-url: "http://neverworkintheory.org"
-exclude: [wordpress.xml, extract.py]
+paginate: 10
+paginate_path: /blog/:num
+
+blog:
+  truncated_preview: true
+
+sass:
+  sass_dir: _sass
+  style: :compressed
+
+author:
+  name: Greg Wilson
+  url: third-bit.com
+  email: gvwilson@third-bit.com
+
+years:
+  - 2011
+  - 2012
+  - 2013
+  - 2014
+  - 2015
+  - 2016
+  - 2017
+  - 2021
+
+plugins:
+  - jekyll-paginate
+
+exclude:
+  - '*.sublime-*'
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - Makefile
+  - vendor/bundle

@@ -1,17 +1,59 @@
 ---
 layout: post
 author: Jorge Aranda
-title: "Proactive detection of collaboration conflicts"
+title: "Proactive Detection of Collaboration Conflicts"
 date: 2011-09-13
 time: 19:03:53
 categories: ["Mining", "Tools"]
 ---
-<p><em><a href="http://www.cs.washington.edu/homes/brun/">Yuriy Brun</a>, <a href="http://www.cs.uwaterloo.ca/~rtholmes/">Reid Holmes</a>, <a href="http://www.cs.washington.edu/homes/mernst/">Michael D. Ernst</a>, and <a href="http://www.cs.washington.edu/homes/notkin/">David Notkin</a>. <strong><a href="http://www.cs.uwaterloo.ca/~rtholmes/papers/fse_2011_brun.pdf">"Proactive Detection of Collaboration Conflicts"</a></strong>, ESEC/FSE 2011.</em></p>
-<blockquote><em>Collaborative development can be hampered when conflicts arise because developers have inconsistent copies of a shared project. We present an approach to help developers identify and resolve conflicts early, before those conflicts become severe and before relevant changes fade away in the developers' memories. This paper presents three results.</em>
-<br/>
-<em>First, a study of open-source systems establishes that conflicts are frequent, persistent, and appear not only as overlapping textual edits but also as subsequent build and test failures. The study spans nine open-source systems totaling 3.4 million lines of code; our conflict data is derived from 550,000 development versions of the systems.</em>
-<br/>
-<em>Second, using previously-unexploited information, we precisely diagnose important classes of conflicts using the novel technique of speculative analysis over version control operations.</em>
-<br/>
-<em>Third, we describe the design of Crystal, a publicly-available tool that uses speculative analysis to make concrete advice unobtrusively available to developers, helping them identify, manage, and prevent conflicts.</em></blockquote>
-<p>This paper provides a good new look at conflicts in version control repositories. Collaboration conflicts appear not just at the textual level (which current version control systems can spot and often help correct), but also when developers attempt to build or test the system. One of the paper's greatest strengths is that it shows how pervasive these conflicts are, and that in many cases appropriate tooling can help spot them and resolve them more efficiently. The authors also <a href="http://code.google.com/p/crystalvc/">present a tool</a> to showcase their conflict detection strategies, which seems to be at a better state than most research prototypes, but I can't vouch for it as I have not used it.</p>
+<p id="Brun2011" class="bibliography"><a class="bibliographykey" href="/bib/#Brun2011">Brun2011</a>
+  Yuriy Brun, Reid Holmes, Michael D. Ernst, and David Notkin:
+  "<a href="https://doi.org/10.1145/2025113.2025139">Proactive detection of collaboration conflicts</a>".
+  <em>Proceedings of the 19th ACM SIGSOFT symposium and the 13th European conference on Foundations of software engineering - SIGSOFT/FSE '11</em>,
+  <a class="doi" href="https://doi.org/10.1145/2025113.2025139">10.1145/2025113.2025139</a>.
+</p>
+<blockquote class="abstract">
+  <p>
+    Collaborative development can be hampered when conflicts arise
+    because developers have inconsistent copies of a shared
+    project. We present an approach to help developers identify and
+    resolve conflicts early, before those conflicts become severe and
+    before relevant changes fade away in the developers'
+    memories. This paper presents three results.
+  </p>
+  <p>
+    First, a study of open-source systems establishes that conflicts
+    are frequent, persistent, and appear not only as overlapping
+    textual edits but also as subsequent build and test failures. The
+    study spans nine open-source systems totaling 3.4 million lines of
+    code; our conflict data is derived from 550,000 development
+    versions of the systems.
+  </p>
+  <p>
+    Second, using previously-unexploited information, we precisely
+    diagnose important classes of conflicts using the novel technique
+    of speculative analysis over version control operations.
+  </p>
+  <p>
+    Third, we describe the design of Crystal, a publicly-available
+    tool that uses speculative analysis to make concrete advice
+    unobtrusively available to developers, helping them identify,
+    manage, and prevent conflicts.
+  </p>
+</blockquote>
+<div class="review">
+  <p>
+    This paper provides a good new look at conflicts in version
+    control repositories. Collaboration conflicts appear not just at
+    the textual level (which current version control systems can spot
+    and often help correct), but also when developers attempt to build
+    or test the system. One of the paper's greatest strengths is that
+    it shows how pervasive these conflicts are, and that in many cases
+    appropriate tooling can help spot them and resolve them more
+    efficiently. The authors
+    also <a href="http://code.google.com/p/crystalvc/">present a
+    tool</a> to showcase their conflict detection strategies, which
+    seems to be at a better state than most research prototypes, but I
+    can't vouch for it as I have not used it.
+  </p>
+</div>

@@ -6,6 +6,50 @@ date: 2012-01-12
 time: 11:01:53
 categories: ["Mining", "Open Source", "Qualitative Studies", "Quality", "Quantitative Studies"]
 ---
-<p><em><a href="http://entrepreneurship.ucdavis.edu/person.php?people_id=92">Daryl Posnett</a>, <a href="http://softwareprocess.es/">Abram Hindle</a>, and <a href="http://www.cs.ucdavis.edu/~devanbu/">Prem Devanbu</a>. <strong>"<a href="http://softwareprocess.es/a/issues.pdf">Got Issues? Do New Features and Code Improvements Affect Defects?</a>"</strong> WCRE 2011.</em></p>
-<blockquote><em>There is a perception that when new features are added to a system that those added and modified parts of the source-code are more fault prone. Many have argued that new code and new features are defect prone due to immaturity, lack of testing, as well unstable requirements. Unfortunately most previous work does not investigate the link between a concrete requirement or new feature and the defects it causes, in particular the feature, the changed code and the subsequent defects are rarely investigated. In this paper we investigate the relationship between improvements, new features and defects recorded within an issue tracker. A manual case study is performed to validate the accuracy of these issue types. We combine defect issues and new feature issues with the code from version-control systems that introduces these features; we then explore the relationship of new features with the fault-proneness of their implementations. We describe properties and produce models of the relationship between new features and fault proneness, based on the analysis of issue trackers and version-control systems. We find, surprisingly, that neither improvements nor new features have any significant effect on later defect counts, when controlling for size and total number of changes.</em></blockquote>
-<p>One piece of common wisdom in the software industry is that new code tends to be buggier than old code, because it is immature and more poorly tested. But in this short paper, Posnett, Hindle, and Devanbu present an interesting twist on this. In the open source projects they studied, they found that although code changes in general are associated with future defect fixing activity, as we might expect, those changes that correspond to new feature development and to code improvements are <strong>not</strong>. That's interesting and counter-intuitive---one would expect new feature code commits to be among the buggiest. The authors offer a possible explanation: well-established open source projects tend to be quite conservative, and new feature code is heavily scrutinized, so that most defects are found and sorted out before the code is integrated. Which means that projects that are not so careful might experience much more new feature pain.</p>
+<p id="Posnett2011" class="bibliography"><a class="bibliographykey" href="/bib/#Posnett2011">Posnett2011</a>
+  Daryl Posnett, Abram Hindle, and Prem Devanbu:
+  "<a href="https://doi.org/10.1109/wcre.2011.33">Got Issues? Do New Features and Code Improvements Affect Defects?</a>".
+  <em>2011 18th Working Conference on Reverse Engineering</em>,
+  <a class="doi" href="https://doi.org/10.1109/wcre.2011.33">10.1109/wcre.2011.33</a>.
+</p>
+<blockquote class="abstract">
+  <p>
+    There is a perception that when new features are added to a system
+    that those added and modified parts of the source-code are more
+    fault prone. Many have argued that new code and new features are
+    defect prone due to immaturity, lack of testing, as well unstable
+    requirements. Unfortunately most previous work does not
+    investigate the link between a concrete requirement or new feature
+    and the defects it causes, in particular the feature, the changed
+    code and the subsequent defects are rarely investigated. In this
+    paper we investigate the relationship between improvements, new
+    features and defects recorded within an issue tracker. A manual
+    case study is performed to validate the accuracy of these issue
+    types. We combine defect issues and new feature issues with the
+    code from version-control systems that introduces these features;
+    we then explore the relationship of new features with the
+    fault-proneness of their implementations. We describe properties
+    and produce models of the relationship between new features and
+    fault proneness, based on the analysis of issue trackers and
+    version-control systems. We find, surprisingly, that neither
+    improvements nor new features have any significant effect on later
+    defect counts, when controlling for size and total number of
+    changes.
+  </p>
+</blockquote>
+<div class="review">
+  <p>
+    One piece of common wisdom in the software industry is that new code tends
+    to be buggier than old code, because it is immature and more poorly
+    tested. But in this short paper, Posnett, Hindle, and Devanbu present an
+    interesting twist on this. In the open source projects they studied, they
+    found that although code changes in general are associated with future
+    defect fixing activity, as we might expect, those changes that correspond to
+    new feature development and to code improvements are <strong>not</strong>.
+    That's interesting and counter-intuitive: one would expect new feature code
+    commits to be among the buggiest. The authors offer a possible explanation:
+    well-established open source projects tend to be quite conservative, and new
+    feature code is heavily scrutinized, so that most defects are found and
+    sorted out before the code is integrated. Which means that projects that are
+    not so careful might experience much more new feature pain.</p>
+</div>

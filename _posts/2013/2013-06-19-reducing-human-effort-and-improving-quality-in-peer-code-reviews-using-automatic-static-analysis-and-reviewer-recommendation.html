@@ -6,7 +6,62 @@ date: 2013-06-19
 time: 09:16:32
 categories: ["Code Review"]
 ---
-<p>Vipin Balachandran: "Reducing Human Effort and Improving Quality in Peer Code Reviews using Automatic Static Analysis and Reviewer Recommendation." <cite>ICSE'13</cite>, 2013, <a href="http://labs.vmware.com/download/198/">http://labs.vmware.com/download/198/</a>.</p>
-<blockquote><em>Peer code review is a cost-effective software defect detection technique. Tool assisted code review is a form of peer code review, which can improve both quality and quantity of reviews. However, there is a significant amount of human effort involved even in tool based code reviews. Using static analysis tools, it is possible to reduce the human effort by automating the checks for coding standard violations and common defect patterns. Towards this goal, we propose a tool called Review Bot for the integration of automatic static analysis with the code review process. Review Bot uses output of multiple static analysis tools to publish reviews automatically. Through a user study, we show that integrating static analysis tools with code review process can improve the quality of code review. The developer feedback for a subset of comments from automatic reviews shows that the developers agree to fix 93% of all the automatically generated comments. There is only 14.71% of all the accepted comments which need improvements in terms of priority, comment message, etc. Another problem with tool assisted code review is the assignment of appropriate reviewers. Review Bot solves this problem by generating reviewer recommendations based on change history of source code lines. Our experimental results show that the recommendation accuracy is in the range of 60%-92%, which is significantly better than a comparable method based on file change history.</em></blockquote>
-<p>In the case of human code review vs. tool assisted code review, this paper by Balachandran favors tool assistance. The tool in question, Review Bot (an extension of the online code review tool <a href="http://www.reviewboard.org/">Review Board</a>) automates the checks for standard coding violations and defect patterns that turn up regularly in approved code reviews. In other words, let the tool sweat the small stuff while developers focus on the logic verification aspects in the code. However, for a tool like Review Bot to be useful, it must be used. A <a href="http://www.neverworkintheory.org/?p=531">paper</a> we reviewed a few days ago said that developers were unwilling to adopt an analysis tool. This paper finds the opposite. With Review Bot, developers acted on 93% of the auto-review comments.</p>
-<p>This paper does not stop there: Review Bot improves on reviewer assignment for large projects. Using line change history to rank reviewers outperforms the commonly used file change history. However, it has a shared problem with manual reviewer assignment&mdash;it cannot be used on new files. Balachandran left this problem for future work and proposes a syntactic similarity method as a possible solution. It will be interesting to see if his idea works.</p>
+<p id="Balachandran2013" class="bibliography"><a class="bibliographykey" href="/bib/#Balachandran2013">Balachandran2013</a>
+  Vipin Balachandran:
+  "<a href="https://doi.org/10.1109/icse.2013.6606642">Reducing human effort and improving quality in peer code reviews using automatic static analysis and reviewer recommendation</a>".
+  <em>2013 35th International Conference on Software Engineering (ICSE)</em>,
+  <a class="doi" href="https://doi.org/10.1109/icse.2013.6606642">10.1109/icse.2013.6606642</a>.
+</p>
+<blockquote class="abstract">
+  <p>
+    Peer code review is a cost-effective software defect detection
+    technique. Tool assisted code review is a form of peer code
+    review, which can improve both quality and quantity of
+    reviews. However, there is a significant amount of human effort
+    involved even in tool based code reviews. Using static analysis
+    tools, it is possible to reduce the human effort by automating the
+    checks for coding standard violations and common defect
+    patterns. Towards this goal, we propose a tool called Review Bot
+    for the integration of automatic static analysis with the code
+    review process. Review Bot uses output of multiple static analysis
+    tools to publish reviews automatically. Through a user study, we
+    show that integrating static analysis tools with code review
+    process can improve the quality of code review. The developer
+    feedback for a subset of comments from automatic reviews shows
+    that the developers agree to fix 93% of all the automatically
+    generated comments. There is only 14.71% of all the accepted
+    comments which need improvements in terms of priority, comment
+    message, etc. Another problem with tool assisted code review is
+    the assignment of appropriate reviewers. Review Bot solves this
+    problem by generating reviewer recommendations based on change
+    history of source code lines. Our experimental results show that
+    the recommendation accuracy is in the range of 60%-92%, which is
+    significantly better than a comparable method based on file change
+    history.
+  </p>
+</blockquote>
+<div class="review">
+  <p>
+    In the case of human code review vs. tool assisted code review, this paper
+    by Balachandran favors tool assistance. The tool in question, Review Bot (an
+    extension of the online code review
+    tool <a href="http://www.reviewboard.org/">Review Board</a>) automates the
+    checks for standard coding violations and defect patterns that turn up
+    regularly in approved code reviews. In other words, let the tool sweat the
+    small stuff while developers focus on the logic verification aspects in the
+    code. However, for a tool like Review Bot to be useful, it must be used. A
+    paper we reviewed a few days ago said that developers were unwilling to
+    adopt an analysis tool. This paper finds the opposite. With Review Bot,
+    developers acted on 93% of the auto-review comments.
+  </p>
+  <p>
+    This paper does not stop there: Review Bot improves on reviewer
+    assignment for large projects. Using line change history to rank
+    reviewers outperforms the commonly used file change
+    history. However, it has a shared problem with manual reviewer
+    assignment—it cannot be used on new files. Balachandran left
+    this problem for future work and proposes a syntactic similarity
+    method as a possible solution. It will be interesting to see if
+    his idea works.
+  </p>
+</div>

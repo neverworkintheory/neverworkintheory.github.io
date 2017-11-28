@@ -5,34 +5,33 @@ title: "Parallelism in Open Source Projects"
 date: 2016-06-12
 categories: ["Parallelism"]
 ---
-<p>
-  Marc Kiefer, Daniel Warzel, and Walter Tichy:
-  "An Empirical Study on Parallelism in Modern Open-Source Projects".
-  SEPS'15, October 2015, 
-  <a href="https://ps.ipd.kit.edu/backend/index.php/veroeffentlichungen-details/items/3803.html">https://ps.ipd.kit.edu/backend/index.php/veroeffentlichungen-details/items/3803.html</a>.
+<p id="Kiefer2015" class="bibliography"><a class="bibliographykey" href="/bib/#Kiefer2015">Kiefer2015</a>
+  Marc Kiefer, Daniel Warzel, and Walter F. Tichy:
+  "<a href="https://doi.org/10.1145/2837476.2837481">An empirical study on parallelism in modern open-source projects</a>".
+  <em>Proceedings of the 2nd International Workshop on Software Engineering for Parallel Systems</em>,
+  <a class="doi" href="https://doi.org/10.1145/2837476.2837481">10.1145/2837476.2837481</a>.
 </p>
-<blockquote>
-  <em>
-    <p>
-      We present an empirical study of 135 parallel open-source
-      projects in Java, C# and C++ ranging from small (&lt;1000 lines
-      of code) to very large (&gt;2M lines of code) codebases. We
-      examine the projects to find out how language features,
-      synchronization mechanisms, parallel data structures and
-      libraries are used by developers to express parallelism. We also
-      determine which common parallel patterns are used and how the
-      implemented solutions compare to typical textbook advice.
-    </p>
-    <p>
-      The results show that similar parallel constructs are used
-      equally often across languages, but usage also heavily depends
-      on how easy to use a certain language feature is. Patterns that
-      do not map well to a language are much rarer compared to other
-      languages. Bad practices are prevalent in hobby projects but
-      also occur in larger projects.
-    </p>
-  </em>
+<blockquote class="abstract">
+  <p>
+    We present an empirical study of 135 parallel open-source
+    projects in Java, C# and C++ ranging from small (&lt;1000 lines
+    of code) to very large (&gt;2M lines of code) codebases. We
+    examine the projects to find out how language features,
+    synchronization mechanisms, parallel data structures and
+    libraries are used by developers to express parallelism. We also
+    determine which common parallel patterns are used and how the
+    implemented solutions compare to typical textbook advice.
+  </p>
+  <p>
+    The results show that similar parallel constructs are used
+    equally often across languages, but usage also heavily depends
+    on how easy to use a certain language feature is. Patterns that
+    do not map well to a language are much rarer compared to other
+    languages. Bad practices are prevalent in hobby projects but
+    also occur in larger projects.
+  </p>
 </blockquote>
+<div class="review">
 <p>
   I wrote my first parallel program in 1986 on an ICL DAP with 4096
   bit-serial processors.  I wrote my second in Occam the following
@@ -343,7 +342,7 @@ categories: ["Parallelism"]
     it by accident. Unexperienced developers just create threads and
     distribute their work to them. In larger projects comments and
     class naming suggests that they are aware of the master-worker
-    pattern and implement it on purpose..."
+    pattern and implement it on purpose…"
   </li>
   <li>
     "Prime examples of bad pratice are the synchronized() and lock()
@@ -355,12 +354,13 @@ categories: ["Parallelism"]
 </ul>
 <p>
   It's easy to say this means we need better
-  documentation&mdash;better, but wrong.  Just as you can't refactor
+  documentation—better, but wrong.  Just as you can't refactor
   your way to better security, you can't document your way to better
   usability.  Knowing what people use, how they use it, and how
   they <em>mis</em>-use it could and should inform the design of the
   next generation of parallel programming tools.  And if that's too
   optimistic, we can at least hope that it will give the builders of
   the next generation of program checking tools a larger list of
-  things to look for...
+  things to look for…
 </p>
+</div>

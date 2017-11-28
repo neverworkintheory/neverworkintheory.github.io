@@ -5,21 +5,21 @@ title: "Goto in C"
 date: 2016-06-09
 categories: ["Programming Languages"]
 ---
-<p>
-  Meiyappan Nagappan, Romain Robbes, Yasutaka Kamei, Eric Tante,  Shane McIntos4, Audris Mocku5,and  Ahmed E. Hassa:
-  "An Empirical Study of Goto in C Code from GitHub Repositories".
-  ESEC/FSE'15, August 2015,
-  <a href="http://www.se.rit.edu/~mei//publications/publications/FSE2015-Nagappan.pdf">http://www.se.rit.edu/~mei//publications/publications/FSE2015-Nagappan.pdf</a>.
+<p id="Nagappan2015" class="bibliography"><a class="bibliographykey" href="/bib/#Nagappan2015">Nagappan2015</a>
+  Meiyappan Nagappan, Romain Robbes, Yasutaka Kamei, 'Eric Tanter, Shane McIntosh, Audris Mockus, and Ahmed E. Hassan:
+  "<a href="https://doi.org/10.1145/2786805.2786834">An empirical study of goto in C code from GitHub repositories</a>".
+  <em>Proceedings of the 2015 10th Joint Meeting on Foundations of Software Engineering</em>,
+  <a class="doi" href="https://doi.org/10.1145/2786805.2786834">10.1145/2786805.2786834</a>.
 </p>
-<blockquote>
-  <em>
+<blockquote class="abstract">
+  <p>
     It is nearly 50 years since Dijkstra argued that goto obscures the
     flow of control in program execution and urged programmers to
     abandon the goto statement. While past research has shown that
     goto is still in use, little is known about whether goto is used
     in the unrestricted manner that Dijkstra feared, and if it is
     'harmful' enough to be a part of a post-release bug. We,
-    therefore, conduct a two part empirical study - (1) qualitatively
+    therefore, conduct a two part empirical study to (1) qualitatively
     analyze a statistically representative sample of 384 files from a
     population of almost 250K C programming language files collected
     from over 11K GitHub repositories and find that developers use
@@ -32,8 +32,9 @@ categories: ["Programming Languages"]
     goto appropriately in most cases, and not in an unrestricted
     manner like Dijkstra feared, thus suggesting that goto does not
     appear to be harmful in practice.
-  </em>
+  </p>
 </blockquote>
+<div class="review">
 <p>
   This abstract shows just how far software engineering has progressed
   in the last fifty years.  Where one of founders of the field could
@@ -46,11 +47,12 @@ categories: ["Programming Languages"]
   actually show is how far the leading edge of empirical software
   engineering research has come.  Most practitioners are still arguing
   from first principles and personal experience, just as Dijkstra did.
-  But where he can be forgiven&mdash;the data needed to settle the
-  issue either didn't exist or wasn't available in 1968&mdash;the only
+  But where he can be forgiven—the data needed to settle the
+  issue either didn't exist or wasn't available in 1968—the only
   excuses today's practitioners have are that they aren't exposed to
   this kind of work as undergraduates, and can't read much of it after
   graduation because it's locked away behind paywalls.  I'm grateful
   that this study's authors chose not to do the second; now, how are
   we going to fix the first?
 </p>
+</div>

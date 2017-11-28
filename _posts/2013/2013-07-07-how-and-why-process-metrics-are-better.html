@@ -6,15 +6,79 @@ date: 2013-07-07
 time: 04:37:15
 categories: ["Code Smells", "Metrics", "Quantitative Studies"]
 ---
-<p>Foyzur Rahman and Premkumar Devanbu: "How, and Why, Process Metrics Are Better." <em>ICSE'13</em>, 2013, <a href="http://www.cs.ucdavis.edu/research/tech-reports/2012/CSE-2012-33.pdf">http://www.cs.ucdavis.edu/research/tech-reports/2012/CSE-2012-33.pdf</a>.</p>
-<blockquote><em>Defect prediction techniques could potentially help us to focus quality-assurance efforts on the most defect-prone files. Modern statistical tools make it very easy to quickly build and deploy prediction models. Software metrics are at the heart of prediction models; understanding how and especially why different types of metrics are effective is very important for successful model deployment. In this paper we analyze the applicability and efficacy of process and code metrics from several different perspectives. We build many prediction models across 85 releases of 12 large open source projects to address the performance, stability, portability and stasis of different sets of metrics. Our results suggest that code metrics, despite widespread use in the defect prediction literature, are generally less useful than process metrics for prediction. Second, we find that code metrics have high stasis; they don't change very much from release to release. This leads to stagnation in the prediction models, leading to the same files being repeatedly predicted as defective; unfortunately, these recurringly defective files turn out to be comparatively less defect-dense.</em></blockquote>
-<p>Software engineering practices are often based on the 'guruisms' or pure myth. However, in resent years researchers have empirically prove or disprove some of these myths. One example is code cloning being considered as bad practice. But why? A <a href="http://www.neverworkintheory.org/?p=102">past review</a> of Kapser and Godfrey's work stated that many code clones are actually OK. Kapser and Godfrey found that as many as 71% of the clones they studied could be considered to have a positive impact on the maintainability of the software system. This isn't the only clones result that denounces the "bad practice" premise: Rahman et al.'s "<a href="http://www.cabird.com/papers/rahman2010cws.pdf">Clones: What is that Smell</a>?" found no evidence that cloning makes code more defect prone.</p>
-<p>Here, Rahman et al. are exploring the question of "how" and "why" process metrics are better than code metrics. In this "don't take my word for it" study, the authors answer seven research questions comparing the performance, stability, portability and stasis of these metrics. To answer the "how" they found the following:</p>
+<p id="Rahman2013" class="bibliography"><a class="bibliographykey" href="/bib/#Rahman2013">Rahman2013</a>
+  Foyzur Rahman and Premkumar Devanbu:
+  "<a href="https://doi.org/10.1109/icse.2013.6606589">How, and why, process metrics are better</a>".
+  <em>2013 35th International Conference on Software Engineering (ICSE)</em>,
+  <a class="doi" href="https://doi.org/10.1109/icse.2013.6606589">10.1109/icse.2013.6606589</a>.
+</p>
+<blockquote class="abstract">
+  <p>
+    Defect prediction techniques could potentially help us to focus
+    quality-assurance efforts on the most defect-prone files. Modern
+    statistical tools make it very easy to quickly build and deploy
+    prediction models. Software metrics are at the heart of prediction
+    models; understanding how and especially why different types of
+    metrics are effective is very important for successful model
+    deployment. In this paper we analyze the applicability and
+    efficacy of process and code metrics from several different
+    perspectives. We build many prediction models across 85 releases
+    of 12 large open source projects to address the performance,
+    stability, portability and stasis of different sets of
+    metrics. Our results suggest that code metrics, despite widespread
+    use in the defect prediction literature, are generally less useful
+    than process metrics for prediction. Second, we find that code
+    metrics have high stasis; they don't change very much from release
+    to release. This leads to stagnation in the prediction models,
+    leading to the same files being repeatedly predicted as defective;
+    unfortunately, these recurringly defective files turn out to be
+    comparatively less defect-dense.
+  </p>
+</blockquote>
+<div class="review">
+  <p>
+    Software engineering practices are often based on the 'guruisms'
+    or pure myth. However, in resent years researchers have
+    empirically prove or disprove some of these myths. One example is
+    code cloning being considered as bad practice. But why?
+    A <a href="{{'/2011/08/16/cloning-considered-harmful-considered-harmful.html' | relative_url}}">past
+    review</a> of Kapser and Godfrey's work stated that many code
+    clones are actually OK. Kapser and Godfrey found that as many as
+    71% of the clones they studied could be considered to have a
+    positive impact on the maintainability of the software
+    system. This isn't the only clones result that denounces the "bad
+    practice" premise: Rahman et al.'s
+    "<a href="http://www.cabird.com/papers/rahman2010cws.pdf">Clones:
+    What is that Smell</a>?" found no evidence that cloning makes code
+    more defect prone.
+  </p>
+  <p>
+    Here, Rahman et al. are exploring the question of "how" and "why"
+    process metrics are better than code metrics. In this "don't take
+    my word for it" study, the authors answer seven research questions
+    comparing the performance, stability, portability and stasis of
+    these metrics. To answer the "how" they found the following:
+  </p>
 <ol>
-	<li>Process metrics create significantly better defect predictors than code metrics across multiple learners.</li>
-	<li>By using older project releases to predict for newer ones, they found no significant difference in the stability of process metrics and code metrics.</li>
-	<li>Process metrics are more portable than code metrics, in other words, using data from one project to predict for another works better with process metrics.</li>
-	<li>Process metrics are less static than code metrics: They change more than code metrics over releases.</li>
+  <li>Process metrics create significantly better defect predictors than code metrics across multiple learners.</li>
+  <li>By using older project releases to predict for newer ones, they found no significant difference in the stability of process metrics and code metrics.</li>
+  <li>Process metrics are more portable than code metrics, in other words, using data from one project to predict for another works better with process metrics.</li>
+  <li>Process metrics are less static than code metrics: They change more than code metrics over releases.</li>
 </ol>
-<p>To answer the "why" they found that code metrics have what the authors call "high stasis": they don't change much over releases. This led them to conclude that "...the stasis of code metrics leads to stagnant prediction models, that predict the same files as defective over and over again".</p>
-<p>Is this a bad thing? Their results show that not only do code metrics predict for "recurringly" defective files, these files tend to be larger and less defect dense, thus making code metric based predictors less cost effective. Considering that the use of software metrics for defect prediction helps to prioritize quality assurance activities, this paper definitely helps in the decision process of which metrics to collect for software projects and why.</p>
+  <p>
+    To answer the "why" they found that code metrics have what the
+    authors call "high stasis": they don't change much over
+    releases. This led them to conclude that "…the stasis of code
+    metrics leads to stagnant prediction models, that predict the same
+    files as defective over and over again".
+  </p>
+  <p>
+    Is this a bad thing? Their results show that not only do code
+    metrics predict for "recurringly" defective files, these files
+    tend to be larger and less defect dense, thus making code metric
+    based predictors less cost effective. Considering that the use of
+    software metrics for defect prediction helps to prioritize quality
+    assurance activities, this paper definitely helps in the decision
+    process of which metrics to collect for software projects and why.
+  </p>
+</div>

@@ -5,46 +5,45 @@ title: "BigDebug"
 date: 2016-06-05
 categories: ["Debugging"]
 ---
-<p>
+<p id="Gulzar2016" class="bibliography"><a class="bibliographykey" href="/bib/#Gulzar2016">Gulzar2016</a>
   Muhammad Ali Gulzar, Matteo Interlandi, Seunghyun Yoo, Sai Deep Tetali, Tyson Condie, Todd Millstein, and Miryung Kim:
-  "BigDebug: Debugging Primitives for Interactive Big Data Processing in Spark".
-  ICSE'16, May 2016, http://dx.doi.org/10.1145/2884781.2884813,
-  <a href="http://web.cs.ucla.edu/~miryung/Publications/icse2016-gulzar-bigdebug.pdf">http://web.cs.ucla.edu/~miryung/Publications/icse2016-gulzar-bigdebug.pdf</a>.
+  "<a href="https://doi.org/10.1145/2884781.2884813">BigDebug</a>".
+  <em>Proceedings of the 38th International Conference on Software Engineering</em>,
+  <a class="doi" href="https://doi.org/10.1145/2884781.2884813">10.1145/2884781.2884813</a>.
 </p>
-<blockquote>
-  <em>
-    <p>
-      Developers use cloud computing platforms to process a large
-      quantity of data in parallel when developing big data analytics.
-      Debugging the massive parallel computations that run in today's
-      data-centers is time consuming and error-prone.  To address this
-      challenge, we design a set of interactive, real-time debugging
-      primitives for big data processing in Apache Spark, the next
-      generation data-intensive scalable cloud computing
-      platform. This requires rethinking the notion of step-through
-      debugging in a traditional debugger such as gdb, because pausing
-      the entire computation across distributed worker nodes causes
-      significant delay and naively inspecting millions of records
-      using a watchpoint is too time consuming for an end user.
-    </p>
-    <p>
-      First, BIGDEBUG's simulated breakpoints and on-demand
-      watchpoints allow users to selectively examine distributed,
-      intermediate data on the cloud with little overhead.  Second, a
-      user can also pinpoint a crash-inducing record and selectively
-      resume relevant sub-computations after a quick fix.  Third, a
-      user can determine the root causes of errors (or delays) at the
-      level of individual records through a fine-grained data
-      provenance capability.  Our evaluation shows that BIGDEBUG
-      scales to terabytes and its record-level tracing incurs less
-      than 25% overhead on average.  It determines crash culprits
-      orders of magnitude more accurately and provides up to 100% time
-      saving compared to the baseline replay debugger. The results
-      show that BIGDEBUG supports debugging at interactive speeds with
-      minimal performance impact.
-    </p>
-  </em>
+<blockquote class="abstract">
+  <p>
+    Developers use cloud computing platforms to process a large
+    quantity of data in parallel when developing big data analytics.
+    Debugging the massive parallel computations that run in today's
+    data-centers is time consuming and error-prone.  To address this
+    challenge, we design a set of interactive, real-time debugging
+    primitives for big data processing in Apache Spark, the next
+    generation data-intensive scalable cloud computing
+    platform. This requires rethinking the notion of step-through
+    debugging in a traditional debugger such as gdb, because pausing
+    the entire computation across distributed worker nodes causes
+    significant delay and naively inspecting millions of records
+    using a watchpoint is too time consuming for an end user.
+  </p>
+  <p>
+    First, BIGDEBUG's simulated breakpoints and on-demand
+    watchpoints allow users to selectively examine distributed,
+    intermediate data on the cloud with little overhead.  Second, a
+    user can also pinpoint a crash-inducing record and selectively
+    resume relevant sub-computations after a quick fix.  Third, a
+    user can determine the root causes of errors (or delays) at the
+    level of individual records through a fine-grained data
+    provenance capability.  Our evaluation shows that BIGDEBUG
+    scales to terabytes and its record-level tracing incurs less
+    than 25% overhead on average.  It determines crash culprits
+    orders of magnitude more accurately and provides up to 100% time
+    saving compared to the baseline replay debugger. The results
+    show that BIGDEBUG supports debugging at interactive speeds with
+    minimal performance impact.
+  </p>
 </blockquote>
+<div class="review">
 <p>
   I stumbled across the journal <em>Software: Practice &amp;
   Experience</em> in the summer of 1985, while I was working at Bell
@@ -61,3 +60,4 @@ categories: ["Debugging"]
   in its own right and as an example of how to think when building
   tools.
 </p>
+</div>

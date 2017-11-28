@@ -1,21 +1,90 @@
-all : commands
+JEKYLL=bundle exec jekyll
+SITE=./_site
 
-## commands   : show all commands
-commands :
-	@grep -E '^##' Makefile | sed -e 's/## //g'
+REVIEWED_HTML=reviewed/index.html
+TODO_HTML=todo/index.html
 
-## categories : show known categories
-categories :
-	@python bin/categories.py $(POSTS)
+REVIEWED_BIB=bib/reviewed.bib
+TODO_BIB=bib/todo.bib
 
-## check      : build locally into _site directory for checking
-check :
-	make OUT=$(PWD)/_site build
+CROSSREF=authors/index.html
 
-## serve      : serve locally (builds files)
-serve :
-	jekyll serve --config _config.yml,_config_dev.yml
+CONFIG=_config.yml
+INCLUDES=$(wildcard _includes/*.html)
+LAYOUTS=$(wildcard _layouts/*.html)
+POSTS=$(wildcard _posts/*/*.md)
+PAGES=\
+	atom.xml\
+	index.html\
+	about/index.html\
+	bycategory/index.html\
+	bydate/index.html\
+	contributing/index.html
+STYLES=$(wildcard _sass/*/*.scss) $(wildcard css/*.css) $(wildcard css/*.scss)
 
-## clean      : clean up
-clean :
-	rm -rf _site $$(find . -name '*~' -print)
+.DEFAULT: commands
+
+## commands: show available commands
+commands:
+	@grep -h -E '^##' ${MAKEFILE_LIST} | sed -e 's/## //g' | column -t -s ':'
+
+## build: rebuild site without running server
+build: ${REVIEWED_HTML} ${TODO_HTML} ${CROSSREF}
+	${JEKYLL} build
+
+## serve: build site and run server
+serve: ${REVIEWED_HTML} ${TODO_HTML} ${CROSSREF}
+	${JEKYLL} serve
+
+# ---
+
+## crossref: cross-reference authors and bibliography entries
+crossref:
+	@mkdir -p authors
+	@echo "---" > ${CROSSREF}
+	@echo "layout: page" >> ${CROSSREF}
+	@echo "title: Authors" >> ${CROSSREF}
+	@echo "---" >> ${CROSSREF}
+	bin/authors.py --input bib/reviewed.bib >> ${CROSSREF}
+
+## reviewed: re-create HTML bibliography of reviewed articles
+reviewed: ${REVIEWED_HTML}
+
+## todo: re-create HTML bibliography of upcoming articles
+todo: ${TODO_HTML}
+
+## ----
+
+## categories: list files by category
+categories:
+	bin/categories.py _posts/*/*.html
+
+## check: check integrity of bibliography
+check:
+	bin/check.py --input bib/reviewed.bib
+
+## clean: clean up stray files
+clean:
+	@find . -name '*~' -exec rm {} \;
+
+## sterile: clean up and erase generated site
+sterile:
+	@make clean
+	@rm -rf ${SITE}
+
+# --------
+
+${REVIEWED_HTML}: ${REVIEWED_BIB}
+	@make TITLE="Reviewed" SLUG=reviewed html2bib > $@
+
+${TODO_HTML}: ${TODO_BIB}
+	@make TITLE="To Do" SLUG=todo html2bib > $@
+
+html2bib:
+	@mkdir -p ${SLUG}
+	@echo "---"
+	@echo "layout: page"
+	@echo "title: ${TITLE}"
+	@echo "---"
+	@echo '<p><a href="../bib/${SLUG}.bib">BibTeX</a></p>'
+	@cat bib/${SLUG}.bib | bib.py bib2md

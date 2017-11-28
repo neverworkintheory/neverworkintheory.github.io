@@ -6,12 +6,52 @@ date: 2012-05-17
 time: 05:14:01
 categories: ["Mining", "Open Source", "Quantitative Studies"]
 ---
-<p><em>Foutse Khomh, Tejinder Dhaliwal, Ying Zou, and Bram Adams: <strong>Do Faster Releases Improve Software Quality? An Empirical Case Study of Mozilla Firefox</strong>. MSR 2012</em></p>
-<blockquote><em>Nowadays, many software companies are shifting from the traditional 18-month release cycle to shorter release cycles. For example, Google Chrome and Mozilla Firefox release new versions every 6 weeks. These shorter release cycles reduce the users' waiting time for a new release and offer better marketing opportunities to companies, but it is unclear if the quality of the software product improves as well, since shorter release cycles result in shorter testing periods. In this paper, we empirically study the development process of Mozilla Firefox in 2010 and 2011, a period during which the project transitioned to a shorter release cycle. We compare crash rates, median uptime, and the proportion of post-release bugs of the versions that had a shorter release cycle with those having a traditional release cycle, to assess the relation between release cycle length and the software quality observed by the end user. We found that (1) with shorter release cycles, users do not experience significantly more post-release bugs and (2) bugs are fixed faster, yet (3) users experience these bugs earlier during software execution (the program crashes earlier).</em></blockquote>
-<p>Designing and building software is not like assembly-line manufacturing, but some aspects of it <em>can</em> be studied and improved like other industrial processes. In this upcoming paper, Khomh et al. examine the effects of Mozilla's switch from a yearly (or longer) release cycle to a much more frequent cycle. Their raw material is bug and crash data; their conclusions are:</p>
+<p id="Khomh2012" class="bibliography"><a class="bibliographykey" href="/bib/#Khomh2012">Khomh2012</a>
+  Foutse Khomh, Tejinder Dhaliwal, Ying Zou, and Bram Adams:
+  "<a href="https://doi.org/10.1109/msr.2012.6224279">Do faster releases improve software quality? An empirical case study of Mozilla Firefox</a>".
+  <em>2012 9th IEEE Working Conference on Mining Software Repositories (MSR)</em>,
+  <a class="doi" href="https://doi.org/10.1109/msr.2012.6224279">10.1109/msr.2012.6224279</a>.
+</p>
+<blockquote class="abstract">
+  <p>
+    Nowadays, many software companies are shifting from the
+    traditional 18-month release cycle to shorter release cycles. For
+    example, Google Chrome and Mozilla Firefox release new versions
+    every 6 weeks. These shorter release cycles reduce the users'
+    waiting time for a new release and offer better marketing
+    opportunities to companies, but it is unclear if the quality of
+    the software product improves as well, since shorter release
+    cycles result in shorter testing periods. In this paper, we
+    empirically study the development process of Mozilla Firefox in
+    2010 and 2011, a period during which the project transitioned to a
+    shorter release cycle. We compare crash rates, median uptime, and
+    the proportion of post-release bugs of the versions that had a
+    shorter release cycle with those having a traditional release
+    cycle, to assess the relation between release cycle length and the
+    software quality observed by the end user. We found that (1) with
+    shorter release cycles, users do not experience significantly more
+    post-release bugs and (2) bugs are fixed faster, yet (3) users
+    experience these bugs earlier during software execution (the
+    program crashes earlier).
+  </p>
+</blockquote>
+<div class="review">
+  <p>
+    Designing and building software is not like assembly-line
+    manufacturing, but some aspects of it <em>can</em> be studied and
+    improved like other industrial processes. In this upcoming paper,
+    Khomh et al. examine the effects of Mozilla's switch from a yearly
+    (or longer) release cycle to a much more frequent cycle. Their raw
+    material is bug and crash data; their conclusions are:
+  </p>
 <ol>
-	<li>Users experience crashes earlier during the execution of versions developed following a rapid release model.</li>
-	<li>The Firefox rapid release model fixes bugs faster than using the traditional model, but fixes proportionally less bugs.</li>
-	<li>With a rapid release model, users adopt new versions faster compared to the traditional release model.</li>
+  <li>Users experience crashes earlier during the execution of versions developed following a rapid release model.</li>
+  <li>The Firefox rapid release model fixes bugs faster than using the traditional model, but fixes proportionally less bugs.</li>
+  <li>With a rapid release model, users adopt new versions faster compared to the traditional release model.</li>
 </ol>
-<p>#3 is good news; #2 is (mostly) good, but #1 is a puzzle for which the authors don't have an explanation&mdash;at least, not yet. We'd welcome suggestions about why it might be.</p>
+  <p>
+    #3 is good news; #2 is (mostly) good, but #1 is a puzzle for which
+    the authors don't have an explanation—at least, not
+    yet. We'd welcome suggestions about why it might be.
+  </p>
+</div>
