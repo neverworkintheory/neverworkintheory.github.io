@@ -75,16 +75,16 @@ sterile:
 # --------
 
 ${REVIEWED_HTML}: ${REVIEWED_BIB}
-	@make TITLE="Reviewed" SLUG=reviewed html2bib > $@
+	@make TITLE="Reviewed" SLUG=reviewed bib2html > $@
 
 ${TODO_HTML}: ${TODO_BIB}
-	@make TITLE="To Do" SLUG=todo html2bib > $@
+	@make TITLE="To Do" SLUG=todo bib2html > $@
 
-html2bib:
+bib2html:
 	@mkdir -p ${SLUG}
 	@echo "---"
 	@echo "layout: page"
 	@echo "title: ${TITLE}"
 	@echo "---"
 	@echo '<p><a href="../bib/${SLUG}.bib">BibTeX</a></p>'
-	@cat bib/${SLUG}.bib | bib.py bib2md
+	@cat bib/${SLUG}.bib | ./bin/bib2html.py bib2md
