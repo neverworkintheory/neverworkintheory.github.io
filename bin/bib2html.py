@@ -124,7 +124,10 @@ REPLACEMENTS = (
     ('{', ''),
     ('}', ''),
     ('\\', ''),
-    ('  ', ' ')
+    ('  ', ' '),
+    ('&', '&amp;'),
+    ('<', '&lt;'),
+    ('>', '&gt;')
 )
 
 
@@ -289,8 +292,7 @@ YAML_TO_MARKDOWN = {
 def abstract(config, entry):
     check('abstract' in entry,
           f'Entry requires abstract: {str(entry)}')
-    abstract = unlatex(entry['abstract'])
-    return f'<span class="abstract">{abstract}</span>'
+    return f'<span class="abstract">{entry["abstract"]}</span>'
 
 
 def article_info(config, entry):
