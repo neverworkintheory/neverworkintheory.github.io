@@ -3,19 +3,131 @@ layout: page
 title: Contributing
 ---
 
+<p>
+  Contributions to this site are very welcome.
+  Our aim is to strengthen ties between research and practice,
+  so please write in the style of a popular science article
+  rather than in dry academic prose;
+  <a href="https://www.americanscientist.org/article/empirical-software-engineering">this article</a>
+  from <em>American Scientist</em> is a good example.
+  The final decision on contributions will be made by <a href="{{site.author.url}}">the current editor</a>;
+  we would be happy to talk with you about specifics and give feedback on drafts.
+</p>
+
 <h2>Guidelines</h2>
 
-<p>Contributions to this blog are very welcome provided the guidelines below are followed:</p>
+<ol>
+  <li>
+    <em>Would you express your opinion so strongly if the paper had come to the opposite conclusion?</em>
+    For example, if it had found that doing X actually did improve code quality, or that Y <em>wasn't</em> better than Z, would you write the same way?
+  </li>
+  <li>
+    <em>Are you criticizing the paper's actual claims?</em>
+    If it says that P holds for novices who are learning how to program, there is no point saying, "But no experienced programmer would do that!"
+  </li>
+  <li>
+    <em>Are your criticisms of the paper's statistics numerical?</em>
+    It's meaningless to say, "The paper's sample size is too small," without some quantification.
+  </li>
+  <li>
+    <em>Are you employing proof by rhetoric?</em>
+    The statement, "It's obvious that J," is verbal bullying, not proof. And many "obvious" things aren't actually true: that's why we do studies.
+  </li>
+</ol>
 
-<p><em>1. Would you express your opinion so strongly if the paper had come to the opposite conclusion?</em> For example, if it had found that doing X actually did improve code quality, or that Y <em>wasn't</em> better than Z, would you write the same way?</p>
+<h2>For Faculty and Students</h2>
 
-<p><em>2. Are you criticizing the paper's actual claims?</em> If it says that P holds for novices who are learning how to program, there is no point saying, "But no experienced programmer would do that!"</p>
+<p>
+  We encourage faculty to have students write popular summaries of papers as graded work in courses and to submit them to this site.
+  To avoid ethical concerns, we recommend that:
+</p>
 
-<p><em>3. Are your criticisms of the paper's statistics numerical?</em> It's meaningless to say, "The paper's sample size is too small," without some quantification.</p>
+<ol>
+  <li>
+    Students be told that their work <em>can</em> be submitted,
+    but that this is not a course requirement
+    and that whether or not they do this will not affect their grade.
+  </li>
+  <li>
+    Students do not indicate whether or not they're going to submit their work to this site until <em>after</em> it has been graded.
+  </li>
+</ol>
 
-<p><em>4. Are you employing proof by rhetoric?</em> The statement, "It's obvious that J," is verbal bullying, not proof. And many "obvious" things aren't actually true: that's why we do studies.</p>
+<p>
+  If your institution or your legal jurisdiction requires submissions to be handled in some other way,
+  please <a href="mailto:{{site.author.email}}">get in touch</a>:
+  we'd be happy to try to accommodate you.
+</p>
 
-<h2>Contributors</h2>
+<h2>How to Contribute</h2>
+
+<ol>
+  <li>
+    Fork <a href="{{site.repositoryurl}}">this repository</a> on GitHub.
+  </li>
+  <li>
+    Create a branch with a name like <code><em>author-year-short-title</em></code>, e.g., <code>wilson-2021-example-subject</code>.
+    Please use the surname of the paper's first author as the <code><em>author</em></code> field and a four-digit year.
+  </li>
+  <li>
+    If your paper is already in <code>bib/todo.bib</code>, move the entry to <code>bib/reviewed.bib</code>.
+    If you have chosen another paper, please enter its DOI into <a href="https://doi2bib.org/">https://doi2bib.org/</a>
+    and copy that BibTeX into <code>bib/reviewed.bib</code>.
+    (Please also consider donating to doi2bib: it's a great service to the community and could use your support.)
+    Don't worry about adding a <code>reviewed</code> field to the BibTeX entry—we'll take care of that—but please do
+    copy the paper's abstract into the <code>abstract</code> field.
+  </li>
+  <li>
+    Copy <code>template.html</code> to create <code>_posts/<em>YYYY</em>/<em>YYYY-MM-DD-short-title.html</em></code>,
+    where <code><em>YYYY-MM-DD</em></code> is the date of your post (<em>not</em> the publication date of the paper)
+    and <code><em>short-title</em></code> matches the short title of your branch (e.g., <code>example-subject</code>).
+  </li>
+  <li>
+    Fill in the HTML file (see below).
+  </li>
+  <li>
+    When you are done, create a pull request from your repository to <a href="{{site.repositoryurl}}">this one</a>
+    and <a href="mailto:{{site.author.email}}">email us</a> to let us know your post is ready for review.
+    Please also let us know what URL to use for you in the <a href="#contributors">contributors' list</a>.
+  </li>
+</ol>
+
+<p>
+  When filling in the HTML template:
+</p>
+
+<ul>
+  <li>
+    Replace <em>Your Name</em> with the name you would like to appear in the review.
+    Please note that we do will only accept anonymous or pseudonymous reviews by prior agreement:
+    please <a href="mailto:{{site.author.email}}">get in touch</a> if you want to do this.
+  </li>
+  <li>
+    Replace <em>Paper Title</em> with the paper's title (in double quotes).
+  </li>
+  <li>
+    Replace <em>YYYY-MM-DD</em> with the post's publication date (which should match the first part of your file's name).
+  </li>
+  <li>
+    Replace the list of categories with ones appropriate to your paper.
+    Please use <a href="{{ '/bycategory/' | relative_url }}">existing categories</a> if you can rather than adding new ones.
+  </li>
+  <li>
+    Replace all three occurrences of <cite>BibliographyKey</cite> with the BibTeX key of the paper you are reviewing
+    and fill in the bibliographic details inside the paragraph block.
+    We will reformat this for you if necessary when we merge your pull request.
+  </li>
+  <li>
+    Copy the full abstract of the paper into the <code>blockquote</code> below the citation.
+    If the abstract is written as several paragraphs in the paper,
+    please preserve that formatting.
+  </li>
+  <li>
+    Finally, write your review in the <code>div</code> below the abstract.
+  </li>
+</ul>
+
+<h2 id="contributors">Contributors</h2>
 
 <ul>
   <li><a href="https://cuevano.ca/">Jorge Aranda</a></li>

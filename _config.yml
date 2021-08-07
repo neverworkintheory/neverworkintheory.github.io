@@ -1,7 +1,8 @@
 title: It Will Never Work in Theory
 subtitle: Short summaries of recent results in empirical software engineering research
 url: https://neverworkintheory.org
-repository: gvwilson/neverworkintheory.github.com
+repository: neverworkintheory/neverworkintheory.github.com
+repositoryurl: https://github.com/neverworkintheory/neverworkintheory.github.io/
 
 markdown: kramdown
 highlighter: rouge
@@ -18,7 +19,7 @@ sass:
 
 author:
   name: Greg Wilson
-  url: third-bit.com
+  url: https://third-bit.com
   email: gvwilson@third-bit.com
 
 years:
