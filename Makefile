@@ -11,10 +11,10 @@ REVIEWED_HTML=reviewed/index.html
 TODO_HTML=todo/index.html
 SUPPORT_HTML=${AUTHORS_HTML} ${REVIEWED_HTML} ${TODO_HTML}
 
-BIB_PDF=print/nwit.pdf
+BIB_PDF=tex/nwit.pdf
 
-REVIEWED_BIB=bib/reviewed.bib
-TODO_BIB=bib/todo.bib
+REVIEWED_BIB=./tex/reviewed.bib
+TODO_BIB=./tex/todo.bib
 
 CONFIG=_config.yml
 INCLUDES=$(wildcard _includes/*.html)
@@ -76,6 +76,10 @@ check:
 ## clean: clean up stray files
 clean:
 	@find . -name '*~' -exec rm {} \;
+	@find . -name '*.aux' -exec rm {} \;
+	@find . -name '*.bbl' -exec rm {} \;
+	@find . -name '*.blg' -exec rm {} \;
+	@find . -name '*.log' -exec rm {} \;
 
 ## sterile: clean up and erase generated site
 sterile:
@@ -90,8 +94,8 @@ ${REVIEWED_HTML}: ${REVIEWED_BIB} ${BIB2HTML_BIN}
 ${TODO_HTML}: ${TODO_BIB} ${BIB2HTML_BIN}
 	@make TITLE="To Do" SLUG=todo bib2html > $@
 
-${BIB_PDF}: ${REVIEWED_BIB} ${TODO_BIB} print/nwit.tex
-	@cd print && ${LATEX_BIN} nwit && ${BIBTEX_BIN} nwit && ${LATEX_BIN} nwit && ${LATEX_BIN} nwit
+${BIB_PDF}: ${REVIEWED_BIB} ${TODO_BIB} tex/nwit.tex tex/abstract.bst
+	@cd tex && ${LATEX_BIN} nwit && ${BIBTEX_BIN} nwit && ${LATEX_BIN} nwit && ${LATEX_BIN} nwit
 
 bib2html:
 	@mkdir -p ${SLUG}
@@ -99,5 +103,5 @@ bib2html:
 	@echo "layout: page"
 	@echo "title: ${TITLE}"
 	@echo "---"
-	@echo '<p><a href="../bib/${SLUG}.bib">BibTeX</a></p>'
-	@cat bib/${SLUG}.bib | ${BIB2HTML_BIN} bib2md
+	@echo '<p><a href="../tex/${SLUG}.bib">BibTeX</a></p>'
+	@cat ./tex/${SLUG}.bib | ${BIB2HTML_BIN} bib2md
