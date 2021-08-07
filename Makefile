@@ -3,11 +3,13 @@ SITE=./_site
 
 AUTHORS_BIN=./bin/authors.py
 BIB2HTML_BIN=./bin/bib2html.py
+LATEX_BIN=pdflatex
+BIBTEX_BIN=bibtex
 
 AUTHORS_HTML=authors/index.html
 REVIEWED_HTML=reviewed/index.html
 TODO_HTML=todo/index.html
-SUPPORT_HTML=${REVIEWED_HTML} ${TODO_HTML} ${AUTHORS_HTML}
+SUPPORT_HTML=${AUTHORS_HTML} ${REVIEWED_HTML} ${TODO_HTML}
 
 BIB_PDF=print/nwit.pdf
 
@@ -34,7 +36,7 @@ commands:
 	@grep -h -E '^##' ${MAKEFILE_LIST} | sed -e 's/## //g' | column -t -s ':'
 
 ## build: rebuild site without running server
-build: ${SUPPORT_HTML}
+build: ${SUPPORT_HTML} ${BIB_PDF}
 	${JEKYLL} build
 
 ## serve: build site and run server
@@ -89,7 +91,7 @@ ${TODO_HTML}: ${TODO_BIB} ${BIB2HTML_BIN}
 	@make TITLE="To Do" SLUG=todo bib2html > $@
 
 ${BIB_PDF}: ${REVIEWED_BIB} ${TODO_BIB} print/nwit.tex
-	@cd print && pdflatex nwit && bibtex nwit && pdflatex nwit && pdflatex nwit
+	@cd print && ${LATEX_BIN} nwit && ${BIBTEX_BIN} nwit && ${LATEX_BIN} nwit && ${LATEX_BIN} nwit
 
 bib2html:
 	@mkdir -p ${SLUG}

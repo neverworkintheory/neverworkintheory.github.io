@@ -32,9 +32,14 @@ def main():
     entries = bibtexparser.loads(text).entries
     problems = {}
     for entry in entries:
-        for check in [check_reviewed, check_keywords]:
+        for check in [check_abstract, check_keywords, check_reviewed]:
             check(problems, entry)
     report(problems)
+
+
+def check_abstract(problems, entry):
+    if 'abstract' not in entry:
+        record_problem(problems, entry, 'does not have "abstract"')
 
 
 def check_keywords(problems, entry):
