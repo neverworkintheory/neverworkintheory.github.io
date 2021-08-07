@@ -1,13 +1,13 @@
 JEKYLL=bundle exec jekyll
 SITE=./_site
 
-AUTHORS=./bin/authors.py
-BIB2HTML=./bin/bib2html.py
+AUTHORS_BIN=./bin/authors.py
+BIB2HTML_BIN=./bin/bib2html.py
 
-CROSSREF_HTML=authors/index.html
+AUTHORS_HTML=authors/index.html
 REVIEWED_HTML=reviewed/index.html
 TODO_HTML=todo/index.html
-SUPPORT_HTML=${REVIEWED_HTML} ${TODO_HTML} ${CROSSREF_HTML}
+SUPPORT_HTML=${REVIEWED_HTML} ${TODO_HTML} ${AUTHORS_HTML}
 
 REVIEWED_BIB=bib/reviewed.bib
 TODO_BIB=bib/todo.bib
@@ -41,14 +41,14 @@ serve: ${SUPPORT_HTML}
 
 # ---
 
-## crossref: cross-reference authors and bibliography entries
-crossref:
+## authors: cross-reference authors and bibliography entries
+authors: ${AUTHORS_HTML} ${AUTHORS_BIN}
 	@mkdir -p authors
-	@echo "---" > ${CROSSREF_HTML}
-	@echo "layout: page" >> ${CROSSREF_HTML}
-	@echo "title: Authors" >> ${CROSSREF_HTML}
-	@echo "---" >> ${CROSSREF_HTML}
-	${AUTHORS} --input ${REVIEWED_BIB} >> ${CROSSREF_HTML}
+	@echo "---" > ${AUTHORS_HTML}
+	@echo "layout: page" >> ${AUTHORS_HTML}
+	@echo "title: Authors" >> ${AUTHORS_HTML}
+	@echo "---" >> ${AUTHORS_HTML}
+	${AUTHORS_BIN} --input ${REVIEWED_BIB} >> ${AUTHORS_HTML}
 
 ## reviewed: re-create HTML bibliography of reviewed articles
 reviewed: ${REVIEWED_HTML}
@@ -77,10 +77,10 @@ sterile:
 
 # --------
 
-${REVIEWED_HTML}: ${REVIEWED_BIB} ${BIB2HTML}
+${REVIEWED_HTML}: ${REVIEWED_BIB} ${BIB2HTML_BIN}
 	@make TITLE="Reviewed" SLUG=reviewed bib2html > $@
 
-${TODO_HTML}: ${TODO_BIB} ${BIB2HTML}
+${TODO_HTML}: ${TODO_BIB} ${BIB2HTML_BIN}
 	@make TITLE="To Do" SLUG=todo bib2html > $@
 
 bib2html:
@@ -90,4 +90,4 @@ bib2html:
 	@echo "title: ${TITLE}"
 	@echo "---"
 	@echo '<p><a href="../bib/${SLUG}.bib">BibTeX</a></p>'
-	@cat bib/${SLUG}.bib | ${BIB2HTML} bib2md
+	@cat bib/${SLUG}.bib | ${BIB2HTML_BIN} bib2md
