@@ -1,6 +1,6 @@
 ---
 layout: page
-title: By Date
+title: By Review Date
 ---
 <p>
   {% for year in site.years reversed %}<a href="#y{{year}}">{{year}}</a>{% unless forloop.last %} &middot; {% endunless %}{% endfor %}
