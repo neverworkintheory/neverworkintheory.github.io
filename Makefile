@@ -71,7 +71,7 @@ categories:
 
 ## check: check integrity of bibliography
 check:
-	bin/check.py --input ${REVIEWED_BIB}
+	bin/check.py --skip-keywords --input ${REVIEWED_BIB} ${TODO_BIB}
 
 ## clean: clean up stray files
 clean:

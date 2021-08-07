@@ -380,7 +380,8 @@
   author = {Filipe R. Cogo and Gustavo A. Oliva and Cor-Paul Bezemer and Ahmed E. Hassan},
   title = {An empirical study of same-day releases of popular packages in the npm ecosystem},
   journal = {Empirical Software Engineering},
-  reviewed = {NA}
+  reviewed = {NA},
+  abstract = {Within a software ecosystem, client packages can reuse provider packages as third-party libraries. The reuse relation between client and provider packages is called a dependency. When a client package depends on the code of a provider package, every change that is introduced in a release of the provider has the potential to impact the client package. Since a large number of dependencies exist within a software ecosystem, releases of a popular provider package can impact a large number of clients. Occasionally, multiple releases of a popular package need to be published on the same day, leading to a scenario in which the time available to revise, test, build, and document the release is restricted compared to releases published within a regular schedule. In this paper, our objective is to study the same-day releases that are published by popular packages in the npm ecosystem. We design an exploratory study to characterize the type of changes that are introduced in same-day releases, the prevalence of same-day releases in the npm ecosystem, and the adoption of same-day releases by client packages. A preliminary manual analysis of the existing release notes suggests that same-day releases introduce non-trivial changes (e.g., bug fixes). We then focus on three RQs. First, we study how often same-day releases are published. We found that the median proportion of regularly scheduled releases that are interrupted by a same-day release (per popular package) is 22\%, suggesting the importance of having timely and systematic procedures to cope with same-day releases. Second, we study the performed code changes in same-day releases. We observe that 32\% of the same-day releases have larger changes compared with their prior release, thus showing that some same-day releases can undergo significant maintenance activity despite their time-constrained nature. In our third RQ, we study how client packages react to same-day releases of their providers. We observe the vast majority of client packages that adopt the release preceding the same-day release would also adopt the latter without having to change their versioning statement (implicit updates). We also note that explicit adoptions of same-day releases (i.e., adoptions that require a change to the versioning statement of the provider in question) is significantly faster than the explicit adoption of regular releases. Based on our findings, we argue that (i) third-party tools that support the automation of dependency management (e.g., Dependabot) should consider explicitly flagging same-day releases, (ii) popular packages should strive for optimized release pipelines that can properly handle same-day releases, and (iii) future research should design scalable, ecosystem-ready tools that support provider packages in assessing the impact of their code changes on client packages.}
 }
 
 @article{Costa2019,
@@ -511,7 +512,8 @@
   author = {Armstrong Foundjem and Bram Adams},
   title = {Release synchronization in software ecosystems},
   journal = {Empirical Software Engineering},
-  reviewed = {foundjem-2021-release-synchronization.pdf}
+  reviewed = {foundjem-2021-release-synchronization.pdf},
+  abstract = {Software ecosystems bring value by integrating software projects related to a given domain, such as Linux distributions integrating upstream open-source projects or the Android ecosystem for mobile Apps. Since each project within an ecosystem may potentially have its release cycle and roadmap, this creates an enormous burden for users who must expend the effort to identify and install compatible project releases from the ecosystem manually. Thus, many ecosystems, such as the Linux distributions, take it upon them to release a polished, well-integrated product to the end-user. However, the body of knowledge lacks empirical evidence about the coordination and synchronization efforts needed at the ecosystem level to ensure such federated releases. This paper empirically studies the strategies used to synchronize releases of ecosystem projects in the context of the OpenStack ecosystem, in which a central release team manages the six-month release cycle of the overall OpenStack ecosystem product. We use qualitative analysis on the release team’s IRC-meeting logs that comprise two OpenStack releases (one-year long). Thus, we identified, cataloged, and documented ten major release synchronization activities, which we further validated through interviews with eight active OpenStack senior practitioners (members of either the release team or project teams). Our results suggest that even though an ecosystem’s power lies in the interaction of inter-dependent projects, release synchronization remains a challenge for both the release team and the project teams. Moreover, we found evidence (and reasons) of multiple release strategies co-existing within a complex ecosystem.}
 }
 
 @article{Fucci2020,
@@ -582,7 +584,8 @@
   author = {Boni Garc{\'{\i}}a and Mario Munoz-Organero and Carlos Alario-Hoyos and Carlos Delgado Kloos},
   title = {Automated driver management for Selenium {WebDriver}},
   journal = {Empirical Software Engineering},
-  reviewed = {NA}
+  reviewed = {NA},
+  abstract = {Selenium WebDriver is a framework used to control web browsers automatically. It provides a cross-browser Application Programming Interface (API) for different languages (e.g., Java, Python, or JavaScript) that allows automatic navigation, user impersonation, and verification of web applications. Internally, Selenium WebDriver makes use of the native automation support of each browser. Hence, a platform-dependent binary file (the so-called driver) must be placed between the Selenium WebDriver script and the browser to support this native communication. The management (i.e., download, setup, and maintenance) of these drivers is cumbersome for practitioners. This paper provides a complete methodology to automate this management process. Particularly, we present WebDriverManager, the reference tool implementing this methodology. WebDriverManager provides different execution methods: as a Java dependency, as a Command-Line Interface (CLI) tool, as a server, as a Docker container, and as a Java agent. To provide empirical validation of the proposed approach, we surveyed the WebDriverManager users. The aim of this study is twofold. First, we assessed the extent to which WebDriverManager is adopted and used. Second, we evaluated the WebDriverManager API following Clarke’s usability dimensions. A total of 148 participants worldwide completed this survey in 2020. The results show a remarkable assessment of the automation capabilities and API usability of WebDriverManager by Java users, but a scarce adoption for other languages.}
 }
 
 @inproceedings{Gerosa2021,
@@ -679,6 +682,7 @@
   author = {Juan Hoyos and Rabe Abdalkareem and Suhaib Mujahid and Emad Shihab and Albeiro Espinosa Bedoya},
   title = {On the Removal of Feature Toggles: A Study of Python Projects and Practitioners Motivations},
   journal = {Empirical Software Engineering},
+  reviewed = {NA},
   abstract = {Feature Toggling is a technique to control the execution of features in a software project. For example, practitioners using feature toggles can experiment with new features in a production environment by exposing them to a subset of users. Some of these toggles require additional maintainability efforts and are expected to be removed, whereas others are meant to remain for a long time. However, to date, very little is known about the removal of feature toggles, which is why we focus on this topic in our paper. We conduct an empirical study that focuses on the removal of feature toggles. We use source code analysis techniques to analyze 12 Python open source projects and surveyed 61 software practitioners to provide deeper insights on the topic. Our study shows that 75\% of the toggle components in the studied Python projects are removed within 49 weeks after introduction. However, eventually practitioners remove feature toggles to follow the life cycle of a feature when it becomes stable in production. We also find that not all long-term feature toggles are designed to live that long and not all feature toggles are removed from the source code, opening the possibilities to unwanted risks. Our study broadens the understanding of feature toggles by identifying reasons for their survival in practice and aims to help practitioners make better decisions regarding the way they manage and remove feature toggles.}
 }
 
@@ -755,7 +759,8 @@
   month = nov,
   year = {2020},
   url = {http://www.knosof.co.uk/ESEUR/},
-  reviewed = {NA}
+  reviewed = {NA},
+  abstract = {This book discusses what is currently known about software engineering, based on an analysis of all the publicly available data. This aim is not as ambitious as it sounds, because there is not a great deal of data publicly available. The intent is to provide material that is useful to professional developers working in industry; until recently researchers in software engineering have been more interested in vanity work, promoted by ego and bluster. The material is organized in two parts, the first covering software engineering and the second the statistics likely to be needed for the analysis of software engineering data.}
 }
 
 @comment{KKK}
@@ -797,6 +802,7 @@
   author = {Dong Jae Kim and Tse-Hsun Chen and Jinqiu Yang},
   title = {The secret life of test smells{\textemdash}an empirical study on test smell evolution and maintenance},
   journal = {Empirical Software Engineering},
+  reviewed = {NA},
   abstract = {In recent years, researchers and practitioners have been studying the impact of test smells in test maintenance. However, there is still limited empirical evidence on why developers remove test smells in software maintenance and the mechanism employed for addressing test smells. In this paper, we conduct an empirical study on 12 real-world open-source systems to study the evolution and maintenance of test smells and how test smells are related to software quality. Results show that: 1) Although the number of test smell instances increases, test smell density decreases as systems evolve. 2) However, our qualitative analysis on those removed test smells reveals that most test smell removal (83\%) is a by-product of feature maintenance activities. 45\% of the removed test smells relocate to other test cases due to refactoring, while developers deliberately address the only 17\% of test smells, consisting of largely Exception Catch/Throw and Sleepy Test. 3) Our statistical model shows that test smell metrics can provide additional explanatory power on post-release defects over traditional baseline metrics (an average of 8.25\% increase in AUC). However, most types of test smells have a minimal effect on post-release defects. Our study provides insight into developers' perception of test smells and current practices. Future studies on test smells may consider focusing on the specific types of test smells that may have a higher correlation with defect-proneness when helping developers with test code maintenance.}
 }
 
@@ -990,7 +996,9 @@
   number = {3},
   author = {Christian Macho and Stefanie Beyer and Shane McIntosh and Martin Pinzger},
   title = {The nature of build changes: An empirical study of Maven-based build systems},
-  journal = {Empirical Software Engineering}
+  journal = {Empirical Software Engineering},
+  reviewed = {NA},
+  abstract = {Build systems are an essential part of modern software projects. As software projects change continuously, it is crucial to understand how the build system changes because neglecting its maintenance can, at best, lead to expensive build breakage, or at worst, introduce user-reported defects due to incorrectly compiled, linked, packaged, or deployed official releases. Recent studies have investigated the (co-)evolution of build configurations and reasons for build breakage; however, the prior analysis focused on a coarse-grained outcome (i.e., either build changing or not). In this paper, we present BUILDDIFF, an approach to extract detailed build changes from MAVEN build files and classify them into 143 change types. In a manual evaluation of 400 build-changing commits, we show that BUILDDIFF can extract and classify build changes with average precision, recall, and f1-scores of 0.97, 0.98, and 0.97, respectively. We then present two studies using the build changes extracted from 144 open source Java projects to study the frequency and time of build changes. The results show that the top-10 most frequent change types account for 51\% of the build changes. Among them, changes to version numbers and changes to dependencies of the projects occur most frequently. We also observe frequently co-occurring changes, such as changes to the source code management definitions, and corresponding changes to the dependency management system and the dependency declaration. Furthermore, our results show that build changes frequently occur around release days. In particular, critical changes, such as updates to plugin configuration parts and dependency insertions, are performed before a release day. The contributions of this paper lay in the foundation for future research, such as for analyzing the (co-)evolution of build files with other artifacts, improving effort estimation approaches by incorporating necessary modifications to the build system specification, or automatic repair approaches for configuration code. Furthermore, our detailed change information enables improvements of refactoring approaches for build configurations and improvements of prediction models to identify error-prone build files.}
 }
 
 @article{Malik2019,
@@ -1033,7 +1041,8 @@
   year = {2019},
   url = {http://arxiv.org/abs/1904.09954},
   eprint = {1904.09954},
-  reviewed = {majumder-2019-hero-developers.pdf}
+  reviewed = {majumder-2019-hero-developers.pdf},
+  abstract = {A "hero" project is one where 80\% or more of the contributions are made by the 20\% of the developers. Those developers are called "hero" developers. In the literature, heroes projects are deprecated since they might cause bottlenecks in development and communication. However, there is little empirical evidence on this matter. Further, recent studies show that such hero projects are very prevalent. Accordingly, this paper explores the effect of having heroes in project, from a code quality perspective by analyzing 1000+ open source GitHub projects. Based on the analysis, this study finds that (a) majority of the projects are hero projects; and (b)the commits from "hero developers" (who contribute most to the code) result in far fewer bugs than other developers. That is, contrary to the literature, heroes are standard and very useful part of modern open source projects.}
 }
 
 @article{Mangano2015,
@@ -1182,6 +1191,7 @@
   author = {Jo{\~{a}}o Pedro Moraes and Ivanilton Polato and Igor Wiese and Filipe Saraiva and Gustavo Pinto},
   title = {From one to hundreds: multi-licensing in the {JavaScript} ecosystem},
   journal = {Empirical Software Engineering},
+  reviewed = {NA},
   abstract = {Open source licenses create a legal framework that plays a crucial role in the widespread adoption of open source projects. Without a license, any source code available on the internet could not be openly (re)distributed. Although recent studies provide evidence that most popular open source projects have a license, developers might lack confidence or expertise when they need to combine software licenses, leading to a mistaken project license unification.This license usage is challenged by the high degree of reuse that occurs in the heart of modern software development practices, in which third-party libraries and frameworks are easily and quickly integrated into a software codebase.This scenario creates what we call \"multi-licensed\" projects, which happens when one project has components that are licensed under more than one license. Although these components exist at the file-level, they naturally impact licensing decisions at the project-level. In this paper, we conducted a mix-method study to shed some light on these questions. We started by parsing 1,426,263 (source code and non-source code) files available on 1,552 JavaScript projects, looking for license information. Among these projects, we observed that 947 projects (61\%) employ more than one license. On average, there are 4.7 licenses per studied project (max: 256). Among the reasons for multi-licensing is to incorporate the source code of third-party libraries into the project's codebase. When doing so, we observed that 373 of the multi-licensed projects introduced at least one license incompatibility issue. We also surveyed with 83 maintainers of these projects aimed to cross-validate our findings. We observed that 63\% of the surveyed maintainers are not aware of the multi-licensing implications. For those that are aware, they adopt multiple licenses mostly to conform with third-party libraries' licenses.}
 }
 
@@ -1279,7 +1289,8 @@
   author = {Jesper Olsson and Erik Risfelt and Terese Besker and Antonio Martini and Richard Torkar},
   title = {Measuring affective states from technical debt},
   journal = {Empirical Software Engineering},
-  reviewed = {NA}
+  reviewed = {NA},
+  abstract = {Context: Software engineering is a human activity. Despite this, human aspects are under-represented in technical debt research, perhaps because they are challenging to evaluate. Objective: This study’s objective was to investigate the relationship between technical debt and affective states (feelings, emotions, and moods) from software practitioners. Method: Forty participants (N = 40) from twelve companies took part in a mixed-methods approach, consisting of a repeated-measures (r = 5) experiment (n = 200), a survey, and semi-structured interviews. From the qualitative data, it is clear that technical debt activates a substantial portion of the emotional spectrum and is psychologically taxing. Further, the practitioners’ reactions to technical debt appear to fall in different levels of maturity. Results: The statistical analysis shows that different design smells (strong indicators of technical debt) negatively or positively impact affective states. Conclusions: We argue that human aspects in technical debt are important factors to consider, as they may result in, e.g., procrastination, apprehension, and burnout.}
 }
 
 @inproceedings{Overney2020,
@@ -1353,6 +1364,7 @@
   author = {Sebasti{\'{a}}n Pizard and Fernando Acerenza and Ximena Otegui and Silvana Moreno and Diego Vallespir and Barbara Kitchenham},
   title = {Training students in evidence-based software engineering and systematic reviews: a systematic review and empirical study},
   journal = {Empirical Software Engineering},
+  reviewed = {NA},
   abstract = {Context Although influential in academia, evidence-based software engineering (EBSE) has had little impact on industry practice. We found that other disciplines have identified lack of training as a significant barrier to Evidence-Based Practice. Objective To build and assess an EBSE training proposal suitable for students with more than 3 years of computer science/software engineering university-level training. Method We performed a systematic literature review (SLR) of EBSE teaching initiatives and used the SLR results to help us to develop and evaluate an EBSE training proposal. The course was based on the theory of learning outcomes and incorporated a large practical content related to performing an SLR. We ran the course with 10 students and based course evaluation on student performance and opinions of both students and teachers. We assessed knowledge of EBSE principles from the mid-term and final tests, as well as evaluating the SLRs produced by the student teams. We solicited student opinions about the course and its value via a student survey, a team survey, and a focus group. The teachers' viewpoint was collected in a debriefing meeting. Results Our SLR identified 14 relevant primary studies. The primary studies emphasized the importance of practical examples (usually based on the SLR process) and used a variety of evaluation methods, but lacked any formal education methodology. We identified 54 learning outcomes covering aspects of EBSE and the SLR method. All 10 students passed the course. Our course evaluation showed that a large percentage of the learning outcomes established for training were accomplished. Conclusions The course proved suitable for students to understand the EBSE paradigm and to be able to apply it to a limited-scope practical assignment. Our learning outcomes, course structure, and course evaluation process should help to improve the effectiveness and comparability of future studies of EBSE training. However, future courses should increase EBSE training related to the use of SLR results.}
 }
 
@@ -1483,7 +1495,9 @@
   title = {Rethinking Productivity in Software Engineering},
   publisher = {Apress},
   year = {2019},
-  isbn = {978-1484242209}
+  isbn = {978-1484242209},
+  reviewed = {NA},
+  abstract = {This open access book collects the wisdom of the 2017 Dagstuhl seminar on productivity in software engineering, a meeting of community leaders, who came together with the goal of rethinking traditional definitions and measures of productivity. The results of their work, Rethinking Productivity in Software Engineering, includes chapters covering definitions and core concepts related to productivity, guidelines for measuring productivity in specific contexts, best practices and pitfalls, and theories and open questions on productivity. You'll benefit from the many short chapters, each offering a focused discussion on one aspect of productivity in software engineering.}
 }
 
 @inproceedings{Sarker2019,
@@ -1665,7 +1679,9 @@
   number = {3},
   author = {Simone V. Spiegler and Christoph Heinecke and Stefan Wagner},
   title = {An empirical study on changing leadership in agile teams},
-  journal = {Empirical Software Engineering}
+  journal = {Empirical Software Engineering},
+  reviewed = {NA},
+  abstract = {An increasing number of companies aim to enable their development teams to work in an agile manner. When introducing agile teams, companies face several challenges. This paper explores the kind of leadership needed to support teams to work in an agile way. One theoretical agile leadership concept describes a Scrum Master who is supposed to empower the team to lead itself. Empirical findings on such a leadership role are controversial. We still have not understood how leadership unfolds in a team that is by definition self-organizing. Further exploration is needed to better understand leadership in agile teams. Our goal is to explore how leadership changes while the team matures using the example of the Scrum Master. Through a grounded theory study containing 75 practitioners from 11 divisions at the Robert Bosch GmbH we identified a set of nine leadership roles that are transferred from the Scrum Master to the Development Team while it matures. We uncovered that a leadership gap and a supportive internal team climate are enablers of the role transfer process, whereas role conflicts may diminish the role transfer. To make the Scrum Master change in a mature team, team members need to receive trust and freedom to take on a leadership role which was previously filled by the Scrum Master. We conclude with practical implications for managers, Product Owners, Development Teams and Scrum Masters which they can apply in real settings.}
 }
 
 @article{Spinellis2021,

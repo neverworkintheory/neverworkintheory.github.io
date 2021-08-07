@@ -82,6 +82,10 @@ p.bibliography {
     content: "] ";
 }
 
+span.abstract::before {
+    content: "\A";
+    white-space: pre;
+}
 blockquote.abstract {
 }
 

@@ -24,48 +24,57 @@ MONTHS =     '''
 def main():
     options = get_options()
     if options.input:
-        with open(options.input, 'r') as reader:
-            text = reader.read()
+        for filename in options.input:
+            with open(filename, 'r') as reader:
+                text = reader.read()
+                check(options, filename, text)
     else:
         text = sys.stdin.read()
+        check(options, '<stdin>', text)
+
+
+def check(options, filename, text):
     text = MONTHS + text
     entries = bibtexparser.loads(text).entries
     problems = {}
     for entry in entries:
         for check in [check_abstract, check_keywords, check_reviewed]:
-            check(problems, entry)
-    report(problems)
+            check(options, problems, entry)
+    report(options, problems)
 
 
-def check_abstract(problems, entry):
+def check_abstract(options, problems, entry):
     if 'abstract' not in entry:
-        record_problem(problems, entry, 'does not have "abstract"')
+        record_problem(options, problems, entry, 'does not have "abstract"')
 
 
-def check_keywords(problems, entry):
+def check_keywords(options, problems, entry):
+    if options.skip_keywords:
+        return
     if 'keywords' not in entry:
-        record_problem(problems, entry, 'does not have "keywords"')
+        record_problem(options, problems, entry, 'does not have "keywords"')
 
 
-def check_reviewed(problems, entry):
+def check_reviewed(options, problems, entry):
     if 'reviewed' not in entry:
-        record_problem(problems, entry, 'does not have "reviewed"')
+        record_problem(options, problems, entry, 'does not have "reviewed"')
 
 
 def get_options():
     parser = argparse.ArgumentParser()
-    parser.add_argument('--input', help='specify input file')
+    parser.add_argument('--input', nargs='+', help='specify input file(s)')
+    parser.add_argument('--skip-keywords', action='store_true', help='do not check for keywords')
     return parser.parse_args()
 
 
-def record_problem(problems, entry, message):
+def record_problem(options, problems, entry, message):
     assert 'ID' in entry, f'entry {entry} does not have ID'
     if entry['ID'] not in problems:
         problems[entry['ID']] = []
     problems[entry['ID']].append(message)
 
 
-def report(problems):
+def report(options, problems):
     for key in sorted(problems.keys()):
         print(key)
         for message in problems[key]:

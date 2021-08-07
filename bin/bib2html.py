@@ -209,6 +209,7 @@ def article(config, entry):
         credit(config, entry),
         title(config, entry, True),
         article_info(config, entry),
+        abstract(config, entry),
         entry_end(config)
     ])
 
@@ -220,6 +221,7 @@ def book(config, entry):
         credit(config, entry),
         title(config, entry, False),
         book_info(config, entry),
+        abstract(config, entry),
         entry_end(config)
     ])
 
@@ -234,6 +236,7 @@ def incollection(config, entry):
         credit(config, entry, which='editor'),
         book_title(config, entry),
         book_info(config, entry),
+        abstract(config, entry),
         entry_end(config)
     ])
 
@@ -245,6 +248,7 @@ def inproceedings(config, entry):
         credit(config, entry),
         title(config, entry, True),
         proceedings_info(config, entry),
+        abstract(config, entry),
         entry_end(config)
     ])
 
@@ -255,6 +259,7 @@ def link(config, entry):
         entry_start(config, entry),
         credit(config, entry),
         title(config, entry, True),
+        abstract(config, entry),
         entry_end(config)
     ])
 
@@ -265,6 +270,7 @@ def techreport(config, entry):
         entry_start(config, entry),
         credit(config, entry),
         title(config, entry, True),
+        abstract(config, entry),
         entry_end(config)
     ])
 
@@ -278,6 +284,13 @@ YAML_TO_MARKDOWN = {
     'link': link,
     'techreport': techreport
 }
+
+
+def abstract(config, entry):
+    check('abstract' in entry,
+          f'Entry requires abstract: {str(entry)}')
+    abstract = unlatex(entry['abstract'])
+    return f'<span class="abstract">{abstract}</span>'
 
 
 def article_info(config, entry):
