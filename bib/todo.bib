@@ -369,15 +369,6 @@
   abstract = {Cognitive biases are hard-wired behaviors that influence developer actions and can set them on an incorrect course of action, necessitating backtracking. While researchers have found that cognitive biases occur in development tasks in controlled lab studies, we still don't know how these biases affect developers' everyday behavior. Without such an understanding, development tools and practices remain inadequate. To close this gap, we conducted a 2-part field study to examine the extent to which cognitive biases occur, the consequences of these biases on developer behavior, and the practices and tools that developers use to deal with these biases. About 70\% of observed actions that were reversed were associated with at least one cognitive bias. Further, even though developers recognized that biases frequently occur, they routinely are forced to deal with such issues with ad hoc processes and sub-optimal tool support. As one participant (IP12) lamented: There is no salvation!}
 }
 
-@preprint{Chinthanet2021
-  author = {Bodin Chinthanet and Brittany Reid and Christoph Treude and Markus Wagner and Raula Kula and Takashi Ishio and Kenichi Matsumoto},
-  year = {2021},
-  month = {06},
-  pages = {},
-  title = {What makes a good Node.js package? Investigating Users, Contributors, and Runnability},
-  reviewed = {chinthanet-2021-good-node-package.pdf}
-}
-
 @article{Cogo2021,
   doi = {10.1007/s10664-021-09980-6},
   url = {https://doi.org/10.1007/s10664-021-09980-6},
@@ -654,7 +645,7 @@
   abstract = {Daylight saving time (DST) is observed in many countries and regions. DST is not considered on some software systems at the beginning of their developments, for example, software systems developed in regions where DST is not observed. However, such systems may have to consider DST at the requests of their users. Before now, there has been no study about the impacts of DST on software development. In this paper, we study the impacts of DST on software development by mining the repositories on GitHub. We analyze the date when the code related to DST is changed, and we analyze the regions where the developers applied the changes live. Furthermore, we classify the changes into some patterns.}
 }
 
-@inproceedings{Hora2021,
+@inproceedings{Hora2021a,
   doi = {10.1109/msr52588.2021.00044},
   url = {https://doi.org/10.1109/msr52588.2021.00044},
   year = {2021},
@@ -667,7 +658,7 @@
   abstract = {Developers often search for software resources on the web. In practice, instead of going directly to websites (e.g., Stack Overflow), they rely on search engines (e.g., Google). Despite this being a common activity, we are not yet aware of what developers search from the perspective of popular software development websites and what search results are returned. With this knowledge, we can understand real-world queries, developers' needs, and the query impact on the search results. In this paper, we provide an empirical study to understand what developers search on the web and what they find. We assess 1.3M queries to popular programming websites and we perform thousands of queries on Google to explore search results. We find that (i) developers' queries typically start with keywords (e.g., Python, Android, etc.), are short (3 words), tend to omit functional words, and are similar among each other; (ii) minor changes to queries do not largely affect the Google search results, however, some cosmetic changes may have a non-negligible impact; and (iii) search results are dominated by Stack Overflow, but YouTube is also a relevant source nowadays. We conclude by presenting detailed implications for researchers and developers.}
 }
 
-@inproceedings{Hora2021,
+@inproceedings{Hora2021b,
   doi = {10.1109/msr52588.2021.00051},
   url = {https://doi.org/10.1109/msr52588.2021.00051},
   year = {2021},
@@ -1419,20 +1410,20 @@
   abstract = {Online code clones are code fragments that are copied from software projects or online sources to Stack Overflow as examples. Due to an absence of a checking mechanism after the code has been copied to Stack Overflow, they can become toxic code snippets, e.g., they suffer from being outdated or violating the original software license. We present a study of online code clones on Stack Overflow and their toxicity by incorporating two developer surveys and a large-scale code clone detection. A survey of 201 high-reputation Stack Overflow answerers (33 percent response rate) showed that 131 participants (65 percent) have ever been notified of outdated code and 26 of them (20 percent) rarely or never fix the code. 138 answerers (69 percent) never check for licensing conflicts between their copied code snippets and Stack Overflow's CC BY-SA 3.0. A survey of 87 Stack Overflow visitors shows that they experienced several issues from Stack Overflow answers: mismatched solutions, outdated solutions, incorrect solutions, and buggy code. 85 percent of them are not aware of CC BY-SA 3.0 license enforced by Stack Overflow, and 66 percent never check for license conflicts when reusing code snippets. Our clone detection found online clone pairs between 72,365 Java code snippets on Stack Overflow and 111 open source projects in the curated Qualitas corpus. We analysed 2,289 non-trivial online clone candidates. Our investigation revealed strong evidence that 153 clones have been copied from a Qualitas project to Stack Overflow. We found 100 of them (66 percent) to be outdated, of which 10 were buggy and harmful for reuse. Furthermore, we found 214 code snippets that could potentially violate the license of their original software and appear 7,112 times in 2,427 GitHub projects.}
 }
 
-@inproceedings{Rahman2020,
+@inproceedings{Rahman2020a,
   doi = {10.1145/3377811.3380409},
   url = {https://doi.org/10.1145/3377811.3380409},
   year = {2020},
   month = jun,
   publisher = {{ACM}},
   author = {Akond Rahman and Effat Farhana and Chris Parnin and Laurie Williams},
-  title = {Gang of eight},
+  title = {Gang of eight: a defect taxonomy for infrastructure as code scripts},
   booktitle = {Proceedings of the {ACM}/{IEEE} 42nd International Conference on Software Engineering},
   reviewed = {rahman-2020-infrastructure-as-code-defect-taxonomy.pdf},
   abstract = {Defects in infrastructure as code (IaC) scripts can have serious consequences, for example, creating large-scale system outages. A taxonomy of IaC defects can be useful for understanding the nature of defects, and identifying activities needed to fix and prevent defects in IaC scripts. The goal of this paper is to help practitioners improve the quality of infrastructure as code (IaC) scripts by developing a defect taxonomy for IaC scripts through qualitative analysis. We develop a taxonomy of IaC defects by applying qualitative analysis on 1,448 defect-related commits collected from open source software (OSS) repositories of the Openstack organization. We conduct a survey with 66 practitioners to assess if they agree with the identified defect categories included in our taxonomy. We quantify the frequency of identified defect categories by analyzing 80,425 commits collected from 291 OSS repositories spanning across 2005 to 2019. Our defect taxonomy for IaC consists of eight categories, including a category specific to IaC called idempotency (i.e., defects that lead to incorrect system provisioning when the same IaC script is executed multiple times). We observe the surveyed 66 practitioners to agree most with idempotency. The most frequent defect category is configuration data i.e., providing erroneous configuration data in IaC scripts. Our taxonomy and the quantified frequency of the defect categories may help in advancing the science of IaC script quality.}
 }
 
-@inproceedings{Rahman2020,
+@inproceedings{Rahman2020b,
   doi = {10.1109/icsme46990.2020.00063},
   url = {https://doi.org/10.1109/icsme46990.2020.00063},
   year = {2020},
@@ -1653,7 +1644,7 @@
   title = {Test-Driven Code Review: An Empirical Study},
   booktitle = {2019 {IEEE}/{ACM} 41st International Conference on Software Engineering ({ICSE})},
   reviewed = {spadini-2019-test-driven-code-review.pdf},
-  abstract = {Test-Driven Code Review (TDR) is a code review practice in which a reviewer inspects a patch by examining the changed test code before the changed production code. Although this practice has been mentioned positively by practitioners in informal literature and interviews, there is no systematic knowledge of its effects, prevalence, problems, and advantages. In this paper, we aim at empirically understanding whether this practice has an effect on code review effectiveness and how developers' perceive TDR. We conduct (i) a controlled experiment with 93 developers that perform more than 150 reviews, and (ii) 9 semi-structured interviews and a survey with 103 respondents to gather information on how TDR is perceived. Key results from the experiment show that developers adopting TDR find the same proportion of defects in production code, but more in test code, at the expenses of fewer maintainability issues in production code. Furthermore, we found that most developers prefer to review production code as they deem it more critical and tests should follow from it. Moreover, general poor test code quality and no tool support hinder the adoption of TDR. Public preprint: https://doi.org/10.5281/zenodo.2551217, data and materials: https://doi.org/10.5281/zenodo.2553139}
+  abstract = {Test-Driven Code Review (TDR) is a code review practice in which a reviewer inspects a patch by examining the changed test code before the changed production code. Although this practice has been mentioned positively by practitioners in informal literature and interviews, there is no systematic knowledge of its effects, prevalence, problems, and advantages. In this paper, we aim at empirically understanding whether this practice has an effect on code review effectiveness and how developers' perceive TDR. We conduct (i) a controlled experiment with 93 developers that perform more than 150 reviews, and (ii) 9 semi-structured interviews and a survey with 103 respondents to gather information on how TDR is perceived. Key results from the experiment show that developers adopting TDR find the same proportion of defects in production code, but more in test code, at the expenses of fewer maintainability issues in production code. Furthermore, we found that most developers prefer to review production code as they deem it more critical and tests should follow from it. Moreover, general poor test code quality and no tool support hinder the adoption of TDR.}
 }
 
 @inproceedings{Spadini2020,
@@ -1731,15 +1722,6 @@
   journal = {{ACM} Transactions on Computing Education},
   reviewed = {taipalus-2018-sql-errors.pdf},
   abstract = {SQL is taught in almost all university level database courses, yet SQL has received relatively little attention in educational research. In this study, we present a database management system independent categorization of SQL query errors that students make in an introductory database course. We base the categorization on previous literature, present a class of logical errors that has not been studied in detail, and review and complement these findings by analyzing over 33,000 SQL queries submitted by students. Our analysis verifies error findings presented in previous literature and reveals new types of errors, namely logical errors recurring in similar manners among different students. We present a listing of fundamental SQL query concepts we have identified and based our exercises on, a categorization of different errors and complications, and an operational model for designing SQL exercises.}
-}
-
-@preprint{Tamburri2020,
-  author = {Damian Tamburri and Rick Kazman and Hamed Fahimi},
-  year = {2020},
-  month = {04},
-  pages = {},
-  title = {Organisational Structure Patterns in Agile Teams: An Industrial Empirical Study},
-  reviewed = {tamburri-2020-organizational-structure-agile-teams.pdf}
 }
 
 @article{Tamburri2020,
@@ -1954,7 +1936,20 @@
   abstract = {Continuous Integration (CI) has been claimed to introduce several benefits in software development, including high software quality and reliability. However, recent work pointed out challenges, barriers and bad practices characterizing its adoption. This paper empirically investigates what are the bad practices experienced by developers applying CI. The investigation has been conducted by leveraging semi-structured interviews of 13 experts and mining more than 2,300 Stack Overflow posts. As a result, we compiled a catalog of 79 CI bad smells belonging to 7 categories related to different dimensions of a CI pipeline management and process. We have also investigated the perceived importance of the identified bad smells through a survey involving 26 professional developers, and discussed how the results of our study relate to existing knowledge about CI bad practices. Whilst some results, such as the poor usage of branches, confirm existing literature, the study also highlights uncovered bad practices, e.g., related to static analysis tools or the abuse of shell scripts, and contradict knowledge from existing literature, e.g., about avoiding nightly builds. We discuss the implications of our catalog of CI bad smells for (i) practitioners, e.g., favor specific, portable tools over hacking, and do not ignore nor hide build failures, (ii) educators, e.g., teach CI culture, not just technology, and teach CI by providing examples of what not to do, and (iii) researchers, e.g., developing support for failure analysis, as well as automated CI bad smell detectors.}
 }
 
-@article{Zhang2021,
+@article{Zhang2020,
+  doi = {10.1109/tse.2019.2954319},
+  url = {https://doi.org/10.1109/tse.2019.2954319},
+  year = {2020},
+  publisher = {Institute of Electrical and Electronics Engineers ({IEEE})},
+  pages = {1--1},
+  author = {Haoxiang Zhang and Shaowei Wang and Tse-Hsun Chen and Ahmed E. Hassan},
+  title = {Reading Answers on Stack Overflow: Not Enough!},
+  journal = {{IEEE} Transactions on Software Engineering},
+  reviewed = {zhang-2021-stack-overflow-not-enough.pdf},
+  abstract = {Stack Overflow is one of the most active communities for developers to share their programming knowledge. Answers posted on Stack Overflow help developers solve issues during software development. In addition to posting answers, users can also post comments to further discuss their associated answers. As of Aug 2017, there are 32.3 million comments that are associated with answers, forming a large collection of crowdsourced repository of knowledge on top of the commonly-studied Stack Overflow answers. In this study, we wish to understand how the commenting activities contribute to the crowdsourced knowledge. We investigate what users discuss in comments, and analyze the characteristics of the commenting dynamics, (i.e., the timing of commenting activities and the roles of commenters). We find that: 1) the majority of comments are informative and thus can enhance their associated answers from a diverse range of perspectives. However, some comments contain content that is discouraged by Stack Overflow. 2) The majority of commenting activities occur after the acceptance of an answer. More than half of the comments are fast responses occurring within one day of the creation of an answer, while later comments tend to be more informative. Most comments are rarely integrated back into their associated answers, even though such comments are informative. 3) Insiders (i.e., users who posted questions/answers before posting a comment in a question thread) post the majority of comments within one month, and outsiders (i.e., users who never posted any question/answer before posting a comment) post the majority of comments after one month. Inexperienced users tend to raise limitations and concerns while experienced users tend to enhance the answer through commenting. Our study provides insights into the commenting activities in terms of their content, timing, and the individuals who perform the commenting. For the purpose of long-term knowledge maintenance and effective information retrieval for developers, we also provide actionable suggestions to encourage Stack Overflow users/engineers/moderators to leverage our insights for enhancing the current Stack Overflow commenting system for improving the maintenance and organization of the crowdsourced knowledge.}
+}
+
+@article{Zhang2021a,
   doi = {10.1109/tse.2019.2919304},
   url = {https://doi.org/10.1109/tse.2019.2919304},
   year = {2021},
@@ -1970,20 +1965,7 @@
   abstract = {As one key resource to learn Application Programming Interfaces (APIs), a lot of API reference documentation lacks code samples with usage scenarios, thus heavily hindering developers from programming with APIs. Although researchers have investigated how to enrich API documentation with code samples from general code search engines, two main challenges remain to be resolved, including the quality challenge of acquiring high-quality code samples and the mapping challenge of matching code samples to usage scenarios. In this study, we propose a novel approach named ADECK towards enriching API documentation with code samples and corresponding usage scenarios by leveraging crowd knowledge from Stack Overflow, a popular technical Question and Answer (Q&A) website attracting millions of developers. Given an API related Q&A pair, a code sample in the answer is extensively evaluated by developers and targeted towards resolving the question under the specified usage scenario. Hence, ADECK can obtain high-quality code samples and map them to corresponding usage scenarios to address the above challenges. Extensive experiments on the Java SE and Android API documentation show that the number of code-sample-illustrated API types in the ADECK-enriched API documentation is 3.35 and 5.76 times as many as that in the raw API documentation. Meanwhile, the quality of code samples obtained by ADECK is better than that of code samples by the baseline approach eXoaDocs in terms of correctness, conciseness, and usability, e.g., the average correctness values of representative code samples obtained by ADECK and eXoaDocs are 4.26 and 3.28 on a 5-point scale in the enriched Java SE API documentation. In addition, an empirical study investigating the impacts of different types of API documentation on the productivity of developers shows that, compared against the raw and the eXoaDocs-enriched API documentation, the ADECK-enriched API documentation can help developers complete 23.81 and 14.29 percent more programming tasks and reduce the average completion time by 9.43 and 11.03 percent.}
 }
 
-@article{Zhang2020,
-  doi = {10.1109/tse.2019.2954319},
-  url = {https://doi.org/10.1109/tse.2019.2954319},
-  year = {2020},
-  publisher = {Institute of Electrical and Electronics Engineers ({IEEE})},
-  pages = {1--1},
-  author = {Haoxiang Zhang and Shaowei Wang and Tse-Hsun Chen and Ahmed E. Hassan},
-  title = {Reading Answers on Stack Overflow: Not Enough!},
-  journal = {{IEEE} Transactions on Software Engineering},
-  reviewed = {zhang-2021-stack-overflow-not-enough.pdf},
-  abstract = {Stack Overflow is one of the most active communities for developers to share their programming knowledge. Answers posted on Stack Overflow help developers solve issues during software development. In addition to posting answers, users can also post comments to further discuss their associated answers. As of Aug 2017, there are 32.3 million comments that are associated with answers, forming a large collection of crowdsourced repository of knowledge on top of the commonly-studied Stack Overflow answers. In this study, we wish to understand how the commenting activities contribute to the crowdsourced knowledge. We investigate what users discuss in comments, and analyze the characteristics of the commenting dynamics, (i.e., the timing of commenting activities and the roles of commenters). We find that: 1) the majority of comments are informative and thus can enhance their associated answers from a diverse range of perspectives. However, some comments contain content that is discouraged by Stack Overflow. 2) The majority of commenting activities occur after the acceptance of an answer. More than half of the comments are fast responses occurring within one day of the creation of an answer, while later comments tend to be more informative. Most comments are rarely integrated back into their associated answers, even though such comments are informative. 3) Insiders (i.e., users who posted questions/answers before posting a comment in a question thread) post the majority of comments within one month, and outsiders (i.e., users who never posted any question/answer before posting a comment) post the majority of comments after one month. Inexperienced users tend to raise limitations and concerns while experienced users tend to enhance the answer through commenting. Our study provides insights into the commenting activities in terms of their content, timing, and the individuals who perform the commenting. For the purpose of long-term knowledge maintenance and effective information retrieval for developers, we also provide actionable suggestions to encourage Stack Overflow users/engineers/moderators to leverage our insights for enhancing the current Stack Overflow commenting system for improving the maintenance and organization of the crowdsourced knowledge.}
-}
-
-@article{Zhang2021,
+@article{Zhang2021b,
   doi = {10.1109/tse.2019.2906315},
   url = {https://doi.org/10.1109/tse.2019.2906315},
   year = {2021},

@@ -9,6 +9,8 @@ REVIEWED_HTML=reviewed/index.html
 TODO_HTML=todo/index.html
 SUPPORT_HTML=${REVIEWED_HTML} ${TODO_HTML} ${AUTHORS_HTML}
 
+BIB_PDF=print/nwit.pdf
+
 REVIEWED_BIB=bib/reviewed.bib
 TODO_BIB=bib/todo.bib
 
@@ -50,6 +52,9 @@ authors: ${AUTHORS_HTML} ${AUTHORS_BIN}
 	@echo "---" >> ${AUTHORS_HTML}
 	${AUTHORS_BIN} --input ${REVIEWED_BIB} >> ${AUTHORS_HTML}
 
+## pdf: re-create PDF version of bibliography
+pdf: ${BIB_PDF}
+
 ## reviewed: re-create HTML bibliography of reviewed articles
 reviewed: ${REVIEWED_HTML}
 
@@ -82,6 +87,9 @@ ${REVIEWED_HTML}: ${REVIEWED_BIB} ${BIB2HTML_BIN}
 
 ${TODO_HTML}: ${TODO_BIB} ${BIB2HTML_BIN}
 	@make TITLE="To Do" SLUG=todo bib2html > $@
+
+${BIB_PDF}: ${REVIEWED_BIB} ${TODO_BIB} print/nwit.tex
+	@cd print && pdflatex nwit && bibtex nwit && pdflatex nwit && pdflatex nwit
 
 bib2html:
 	@mkdir -p ${SLUG}

@@ -7,3 +7,7 @@ Thumbs.db
 .rbenv-version
 .rvmrc
 *~
+*.aux
+*.bbl
+*.blg
+*.log
