@@ -115,6 +115,7 @@ REPLACEMENTS = (
     (r'\textquotedblright', "'"),
     (r'{\ldots}', '…'),
     (r'{\textemdash}', '—'),
+    (r'{\textendash}', '–'),
     ('{', ''),
     ('}', ''),
     ('\\', ''),

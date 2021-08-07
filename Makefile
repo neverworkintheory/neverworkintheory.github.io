@@ -1,13 +1,16 @@
 JEKYLL=bundle exec jekyll
 SITE=./_site
 
+AUTHORS=./bin/authors.py
+BIB2HTML=./bin/bib2html.py
+
+CROSSREF_HTML=authors/index.html
 REVIEWED_HTML=reviewed/index.html
 TODO_HTML=todo/index.html
+SUPPORT_HTML=${REVIEWED_HTML} ${TODO_HTML} ${CROSSREF_HTML}
 
 REVIEWED_BIB=bib/reviewed.bib
 TODO_BIB=bib/todo.bib
-
-CROSSREF=authors/index.html
 
 CONFIG=_config.yml
 INCLUDES=$(wildcard _includes/*.html)
@@ -29,11 +32,11 @@ commands:
 	@grep -h -E '^##' ${MAKEFILE_LIST} | sed -e 's/## //g' | column -t -s ':'
 
 ## build: rebuild site without running server
-build: ${REVIEWED_HTML} ${TODO_HTML} ${CROSSREF}
+build: ${SUPPORT_HTML}
 	${JEKYLL} build
 
 ## serve: build site and run server
-serve: ${REVIEWED_HTML} ${TODO_HTML} ${CROSSREF}
+serve: ${SUPPORT_HTML}
 	${JEKYLL} serve
 
 # ---
@@ -41,11 +44,11 @@ serve: ${REVIEWED_HTML} ${TODO_HTML} ${CROSSREF}
 ## crossref: cross-reference authors and bibliography entries
 crossref:
 	@mkdir -p authors
-	@echo "---" > ${CROSSREF}
-	@echo "layout: page" >> ${CROSSREF}
-	@echo "title: Authors" >> ${CROSSREF}
-	@echo "---" >> ${CROSSREF}
-	bin/authors.py --input bib/reviewed.bib >> ${CROSSREF}
+	@echo "---" > ${CROSSREF_HTML}
+	@echo "layout: page" >> ${CROSSREF_HTML}
+	@echo "title: Authors" >> ${CROSSREF_HTML}
+	@echo "---" >> ${CROSSREF_HTML}
+	${AUTHORS} --input ${REVIEWED_BIB} >> ${CROSSREF_HTML}
 
 ## reviewed: re-create HTML bibliography of reviewed articles
 reviewed: ${REVIEWED_HTML}
@@ -61,7 +64,7 @@ categories:
 
 ## check: check integrity of bibliography
 check:
-	bin/check.py --input bib/reviewed.bib
+	bin/check.py --input ${REVIEWED_BIB}
 
 ## clean: clean up stray files
 clean:
@@ -74,10 +77,10 @@ sterile:
 
 # --------
 
-${REVIEWED_HTML}: ${REVIEWED_BIB}
+${REVIEWED_HTML}: ${REVIEWED_BIB} ${BIB2HTML}
 	@make TITLE="Reviewed" SLUG=reviewed bib2html > $@
 
-${TODO_HTML}: ${TODO_BIB}
+${TODO_HTML}: ${TODO_BIB} ${BIB2HTML}
 	@make TITLE="To Do" SLUG=todo bib2html > $@
 
 bib2html:
@@ -87,4 +90,4 @@ bib2html:
 	@echo "title: ${TITLE}"
 	@echo "---"
 	@echo '<p><a href="../bib/${SLUG}.bib">BibTeX</a></p>'
-	@cat bib/${SLUG}.bib | ./bin/bib2html.py bib2md
+	@cat bib/${SLUG}.bib | ${BIB2HTML} bib2md
