@@ -292,7 +292,7 @@ YAML_TO_MARKDOWN = {
 def abstract(config, entry):
     check('abstract' in entry,
           f'Entry requires abstract: {str(entry)}')
-    return f'<span class="abstract">{entry["abstract"]}</span>'
+    return f'<p class="abstract">{entry["abstract"]}</p>'
 
 
 def article_info(config, entry):

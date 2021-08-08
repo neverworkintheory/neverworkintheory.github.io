@@ -67,6 +67,7 @@ p.citation {
     padding-left: 0.5rem;
     padding-right: 0.5rem;
 }
+
 p.bibliography {
     background-color: #F8F8F8;
     padding-left: 0.5rem;
@@ -82,10 +83,9 @@ p.bibliography {
     content: "] ";
 }
 
-span.abstract::before {
-    content: "\A";
-    white-space: pre;
+p.abstract {
 }
+
 blockquote.abstract {
 }
 
