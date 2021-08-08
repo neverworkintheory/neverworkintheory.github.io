@@ -71,7 +71,7 @@ categories:
 
 ## check: check integrity of bibliography
 check:
-	bin/check.py --skip-keywords --input ${REVIEWED_BIB} ${TODO_BIB}
+	bin/check.py --input ${REVIEWED_BIB} ${TODO_BIB}
 
 ## clean: clean up stray files
 clean:
@@ -95,7 +95,12 @@ ${TODO_HTML}: ${TODO_BIB} ${BIB2HTML_BIN}
 	@make TITLE="To Do" SLUG=todo bib2html > $@
 
 ${BIB_PDF}: ${REVIEWED_BIB} ${TODO_BIB} tex/nwit.tex tex/abstract.bst
-	@cd tex && ${LATEX_BIN} nwit && ${BIBTEX_BIN} nwit && ${LATEX_BIN} nwit && ${LATEX_BIN} nwit
+	@cd tex \
+	&& rm -f nwit.aux nwit.bbl \
+	&& ${LATEX_BIN} nwit \
+	&& ${BIBTEX_BIN} nwit \
+	&& ${LATEX_BIN} nwit \
+	&& ${LATEX_BIN} nwit
 
 bib2html:
 	@mkdir -p ${SLUG}

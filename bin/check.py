@@ -24,23 +24,36 @@ MONTHS =     '''
 def main():
     options = get_options()
     if options.input:
-        for filename in options.input:
-            with open(filename, 'r') as reader:
-                text = reader.read()
-                check(options, filename, text)
+        entries = [get_bib(options, f, open(f, 'r').read()) for f in options.input]
+        entries = [e for sublist in entries for e in sublist]
     else:
-        text = sys.stdin.read()
-        check(options, '<stdin>', text)
+        entries = get_bib(options, '<stdin>', sys.stdin.read())
+    check(options, entries)
 
 
-def check(options, filename, text):
+def get_bib(options, filename, text):
     text = MONTHS + text
     entries = bibtexparser.loads(text).entries
+    for e in entries:
+        e['FILENAME'] = filename
+    return entries
+
+
+def check(options, entries):
     problems = {}
     for entry in entries:
-        for check in [check_abstract, check_keywords, check_reviewed]:
+        for check in [check_abstract]:
             check(options, problems, entry)
+    check_overall(options, entries, problems)
     report(options, problems)
+
+
+def check_overall(options, entries, problems):
+    seenKeys = set()
+    for entry in entries:
+        if entry['ID'] in seenKeys:
+            record_problem(options, problems, entry, 'has duplicate key')
+        seenKeys.add(entry['ID'])
 
 
 def check_abstract(options, problems, entry):
@@ -48,22 +61,9 @@ def check_abstract(options, problems, entry):
         record_problem(options, problems, entry, 'does not have "abstract"')
 
 
-def check_keywords(options, problems, entry):
-    if options.skip_keywords:
-        return
-    if 'keywords' not in entry:
-        record_problem(options, problems, entry, 'does not have "keywords"')
-
-
-def check_reviewed(options, problems, entry):
-    if 'reviewed' not in entry:
-        record_problem(options, problems, entry, 'does not have "reviewed"')
-
-
 def get_options():
     parser = argparse.ArgumentParser()
     parser.add_argument('--input', nargs='+', help='specify input file(s)')
-    parser.add_argument('--skip-keywords', action='store_true', help='do not check for keywords')
     return parser.parse_args()
 
 
