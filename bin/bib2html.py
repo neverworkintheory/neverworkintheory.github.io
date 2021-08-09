@@ -2,6 +2,7 @@
 
 '''Convert BibTeX to HTML via YAML.'''
 
+import argparse
 import bibtexparser
 import re
 import sys
@@ -19,11 +20,11 @@ VERBS = {
 def main(args):
     '''Main driver.'''
     config = parseArgs(args)
-    check(config['verb'] in VERBS,
-          f'Unrecognized verb {config["verb"]}')
-    assert config['verb'] in globals(), \
-        f'Unknown verb {config["verb"]}'
-    result = globals()[config['verb']](config)
+    check(config.action in VERBS,
+          f'Unrecognized verb {config.action}')
+    assert config.action in globals(), \
+        f'Unknown verb {config.action}'
+    result = globals()[config.action](config)
     print(result)
 
 # ----------------------------------------------------------------------
@@ -40,9 +41,18 @@ def bib2yml(config, text=None):
     if text is None:
         text = sys.stdin.read()
     text = BIB_TO_YAML['add'] + text
-    bib = bibtexparser.loads(text).entries
+    bib = get_bib(config, text)
     bib = [cleanup(config, entry) for entry in bib]
     return yaml.dump(bib, width=10000)
+
+
+def get_bib(config, text):
+    '''Read bibliography, filtering if asked to do so.'''
+    entries = bibtexparser.loads(text).entries
+    if config.only:
+        only = set(config.only)
+        entries = [e for e in entries if e['ID'] in only]
+    return entries
 
 
 # Things to convert.
@@ -202,79 +212,79 @@ def yml2md(config, text=None):
               f'Unknown entry kind {entry["kind"]}')
         text = YAML_TO_MARKDOWN[entry['kind']](config, entry)
         entries.append(text)
-    return '\n'.join(entries)
+    return '\n\n'.join(entries)
 
 
 def article(config, entry):
     '''Convert article to Markdown.'''
     return '\n'.join([
-        entry_start(config, entry),
+        cite_start(config, entry),
         credit(config, entry),
         title(config, entry, True),
         article_info(config, entry),
-        abstract(config, entry),
-        entry_end(config)
+        cite_end(config),
+        abstract(config, entry)
     ])
 
 
 def book(config, entry):
     '''Convert book to Markdown.'''
     return '\n'.join([
-        entry_start(config, entry),
+        cite_start(config, entry),
         credit(config, entry),
         title(config, entry, False),
         book_info(config, entry),
-        abstract(config, entry),
-        entry_end(config)
+        cite_end(config),
+        abstract(config, entry)
     ])
 
 
 def incollection(config, entry):
     '''Convert chapter in collection to Markdown.'''
     return '\n'.join([
-        entry_start(config, entry),
+        cite_start(config, entry),
         credit(config, entry, which='author'),
         title(config, entry, True),
         'In ',
         credit(config, entry, which='editor'),
         book_title(config, entry),
         book_info(config, entry),
-        abstract(config, entry),
-        entry_end(config)
+        cite_end(config),
+        abstract(config, entry)
     ])
 
 
 def inproceedings(config, entry):
     '''Convert proceedings entry to Markdown.'''
     return '\n'.join([
-        entry_start(config, entry),
+        cite_start(config, entry),
         credit(config, entry),
         title(config, entry, True),
         proceedings_info(config, entry),
-        abstract(config, entry),
-        entry_end(config)
+        cite_end(config),
+        abstract(config, entry)
     ])
 
 
 def link(config, entry):
     '''Convert link to Markdown.'''
     return '\n'.join([
-        entry_start(config, entry),
+        cite_start(config, entry),
         credit(config, entry),
         title(config, entry, True),
-        abstract(config, entry),
-        entry_end(config)
+        cite_end(config),
+        abstract(config, entry)
     ])
 
 
 def techreport(config, entry):
     '''Convert techreport to Markdown.'''
     return '\n'.join([
-        entry_start(config, entry),
+        cite_start(config, entry),
         credit(config, entry),
         title(config, entry, True),
-        abstract(config, entry),
-        entry_end(config)
+        cite_end(config),
+        abstract(config, entry)
     ])
 
 
@@ -292,7 +302,7 @@ YAML_TO_MARKDOWN = {
 def abstract(config, entry):
     check('abstract' in entry,
           f'Entry requires abstract: {str(entry)}')
-    return f'<p class="abstract">{entry["abstract"]}</p>'
+    return f'<blockquote class="abstract">{entry["abstract"]}</blockquote>'
 
 
 def article_info(config, entry):
@@ -377,20 +387,17 @@ def title(config, entry, quote):
     return f'{title}{edition}.'
 
 
-def entry_start(config, entry):
+def cite_start(config, entry):
     '''Generate bibliography key in start of entry.'''
     check('key' in entry,
           'Every entry must have key')
-    if 'bibkey' in config:
-        bibkey = config['bibkey'].replace('@', entry['key'])
-    else:
-        bibkey = f'<span class="bibliographykey">{entry["key"]}</span>'
+    bibkey = f'<span class="bibliographykey">{entry["key"]}</span>'
     return f'<p id="{entry["key"]}" class="bibliography">{bibkey}'
 
 
-def entry_end(config):
+def cite_end(config):
     '''Finish an entry.'''
-    return '</p>\n'
+    return '</p>'
 
 # -------------------------------------------------------------------------------
 
@@ -408,19 +415,10 @@ def fail(msg):
 
 def parseArgs(args):
     '''Turn arguments into configuration object.'''
-    config = {
-        'verb': args[1]
-    }
-    check(('verb' in config) and (config['verb'] is not None),
-          'No verb provided')
-    for extra in args[2:]:
-        check('=' in extra,
-              f'Argument {extra} is not key=value')
-        key, value = extra.split('=', maxsplit=1)
-        check(key not in config,
-              f'key "{key}" specified multiple times')
-        config[key] = value
-    return config
+    parser = argparse.ArgumentParser()
+    parser.add_argument('--action', help=f'allowed actions {", ".join(sorted(VERBS))}')
+    parser.add_argument('--only', nargs='+', help=f'only convert specifies entries (by key)')
+    return parser.parse_args()
 
 # ----------------------------------------------------------------------
 

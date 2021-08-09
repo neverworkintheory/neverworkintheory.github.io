@@ -15,6 +15,7 @@ BIB_PDF=tex/nwit.pdf
 
 REVIEWED_BIB=./tex/reviewed.bib
 TODO_BIB=./tex/todo.bib
+ALL_BIB=${REVIEWED_BIB} ${TODO_BIB}
 
 CONFIG=_config.yml
 INCLUDES=$(wildcard _includes/*.html)
@@ -67,15 +68,19 @@ todo: ${TODO_HTML}
 
 ## categories: list files by category
 categories:
-	bin/categories.py _posts/*/*.html
+	@bin/categories.py _posts/*/*.html
 
 ## check: check integrity of bibliography
 check:
-	bin/check.py --inputs ${REVIEWED_BIB} ${TODO_BIB}
+	@bin/check.py --inputs ${REVIEWED_BIB} ${TODO_BIB}
+
+## entry: convert single entry (KEY=NameYear) to HTML
+entry:
+	@cat ${ALL_BIB} | ${BIB2HTML_BIN} --action bib2md --only ${KEY}
 
 ## used: check which papers have been used or not
 used:
-	bin/used.py --inputs ${REVIEWED_BIB} --pagedir _posts
+	@bin/used.py --inputs ${REVIEWED_BIB} --pagedir _posts
 
 ## clean: clean up stray files
 clean:
@@ -113,4 +118,4 @@ bib2html:
 	@echo "title: ${TITLE}"
 	@echo "---"
 	@echo '<p><a href="../tex/${SLUG}.bib">BibTeX</a></p>'
-	@cat ./tex/${SLUG}.bib | ${BIB2HTML_BIN} bib2md
+	@cat ./tex/${SLUG}.bib | ${BIB2HTML_BIN} --action bib2md

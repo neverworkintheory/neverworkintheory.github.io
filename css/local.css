@@ -87,6 +87,7 @@ p.abstract {
 }
 
 blockquote.abstract {
+    border-left: 0.5rem #F8F8F8;
 }
 
 /* Page navigation */
