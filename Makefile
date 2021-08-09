@@ -71,7 +71,11 @@ categories:
 
 ## check: check integrity of bibliography
 check:
-	bin/check.py --input ${REVIEWED_BIB} ${TODO_BIB}
+	bin/check.py --inputs ${REVIEWED_BIB} ${TODO_BIB}
+
+## used: check which papers have been used or not
+used:
+	bin/used.py --inputs ${REVIEWED_BIB} --pagedir _posts
 
 ## clean: clean up stray files
 clean:

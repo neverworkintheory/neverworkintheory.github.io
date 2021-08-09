@@ -1,42 +1,16 @@
 #!/usr/bin/env python
 
 import argparse
-import bibtexparser
 import sys
 
-
-MONTHS =     '''
-@string{jan = "1"}
-@string{feb = "2"}
-@string{mar = "3"}
-@string{apr = "4"}
-@string{may = "5"}
-@string{jun = "6"}
-@string{jul = "7"}
-@string{aug = "8"}
-@string{sep = "9"}
-@string{oct = "10"}
-@string{nov = "11"}
-@string{dec = "12"}
-'''
+import util
 
 
 def main():
     options = get_options()
-    if options.input:
-        entries = [get_bib(options, f, open(f, 'r').read()) for f in options.input]
-        entries = [e for sublist in entries for e in sublist]
-    else:
-        entries = get_bib(options, '<stdin>', sys.stdin.read())
-    check(options, entries)
-
-
-def get_bib(options, filename, text):
-    text = MONTHS + text
-    entries = bibtexparser.loads(text).entries
-    for e in entries:
-        e['FILENAME'] = filename
-    return entries
+    entries = util.get_entries(options.inputs)
+    problems = check(options, entries)
+    report(options, problems)
 
 
 def check(options, entries):
@@ -45,7 +19,7 @@ def check(options, entries):
         for check in [check_abstract]:
             check(options, problems, entry)
     check_overall(options, entries, problems)
-    report(options, problems)
+    return problems
 
 
 def check_overall(options, entries, problems):
@@ -63,7 +37,7 @@ def check_abstract(options, problems, entry):
 
 def get_options():
     parser = argparse.ArgumentParser()
-    parser.add_argument('--input', nargs='+', help='specify input file(s)')
+    parser.add_argument('--inputs', nargs='+', help='specify bibliography file(s)')
     return parser.parse_args()
 
 
