@@ -1,10 +1,11 @@
 JEKYLL=bundle exec jekyll
 SITE=./_site
 
+ABSTRACT_BIN=./bin/abstracts.sh
 AUTHORS_BIN=./bin/authors.py
 BIB2HTML_BIN=./bin/bib2html.py
-LATEX_BIN=pdflatex
 BIBTEX_BIN=bibtex
+LATEX_BIN=pdflatex
 
 AUTHORS_HTML=authors/index.html
 BIB_HTML=bib/index.html
@@ -38,7 +39,6 @@ commands:
 
 ## build: rebuild site without running server
 build: ${SUPPORT_HTML} ${PDF}
-	${JEKYLL} build
 
 ## serve: build site and run server
 serve: ${SUPPORT_HTML}
@@ -66,6 +66,16 @@ todo: ${TODO_HTML}
 
 ## ----
 
+## abstract: get abstract from DOI (DOI=value)
+abstract:
+	@echo ${DOI} | ${ABSTRACT_BIN}
+
+## entry: convert single entry (KEY=NameYear) to HTML
+entry:
+	@cat ${ALL_BIB} | ${BIB2HTML_BIN} --action bib2md --only ${KEY}
+
+## ----
+
 ## categories: list files by category
 categories:
 	@bin/categories.py _posts/*/*.html
@@ -73,10 +83,6 @@ categories:
 ## check: check integrity of bibliography
 check:
 	@bin/check.py --inputs ${BIB_BIB} ${TODO_BIB}
-
-## entry: convert single entry (KEY=NameYear) to HTML
-entry:
-	@cat ${ALL_BIB} | ${BIB2HTML_BIN} --action bib2md --only ${KEY}
 
 ## used: check which papers have been used or not
 used:
