@@ -1,0 +1,69 @@
+---
+layout: post
+author: Greg Wilson
+title: "Mea culpa: How developers fix their own simple bugs differently from other developers"
+date: 2021-08-10
+categories: ["Faults"]
+---
+<div class="review">
+  <p>
+    This paper from Zhu and Godfrey looks at single-statement bug fixes in Java
+    code: more specifically, at the differences between how bug are fixed by the
+    people who created them and how they are fixed by other people. The authors
+    found that people fix their own bugs more quickly than other people's, which
+    falls under the heading of "I would have predicted that, but it's nice to
+    have it validated".
+  </p>
+  <p>
+    What I <em>wouldn't</em> have predicted is that when people fix their own
+    bugs, they tend to create larger commits that also address other issues;
+    when they fix other people's bugs, their commits are smaller and more
+    tightly focused.  It's easy to say that this could have been predicted as
+    well, but its opposite would have been just as plausible after the fact: if
+    the authors had found that people are <em>more</em> focused when fixing
+    their own small bugs, I would also have said, "Yeah, that makes sense." This
+    is why I find empirical studies so valuable: in many cases "X" and "not X"
+    are equally easy to rationalize, so we need evidence to help us decide which
+    to believe.
+  </p>
+  <p>
+    Two more things to note about this paper. First, it relies on the SZZ
+    algorithm to align bugs and code fixes, so the results discussed above
+    depend on how well that algorithm does its job; a future post will dive into
+    that. Second, the dataset used in this paper is
+    <a href="https://paperswithcode.com/dataset/manysstubs4j">available
+    online</a> at <a href="https://paperswithcode.com">paperswithcode.com</a> so
+    that other people (like you) can explore it, reanalyze it, or use it in
+    courses. The frequency with which researchers make data available like this
+    is one of the biggest and most welcome changes in research during our
+    four-year hiatus (the other being the trend toward open access
+    publishing). We will try to link to datasets whenever we can; if we miss
+    any, please <a href="mailto:{{site.author.email}}">contact us</a>,
+    <a href="{{site.repositoryurl}}/issues">file an issue</a>,
+    or submit a pull request to help us do better.
+  </p>
+</div>
+<p id="Zhu2021" class="bib">
+  <a class="bibkey" href="/bib/#Zhu2021">Zhu2021</span>
+  Wenhan Zhu and Michael W. Godfrey:
+  "<a href="https://doi.org/10.1109/msr52588.2021.00065">Mea culpa: How developers fix their own simple bugs differently from other developers</a>".
+  <em>2021 IEEE/ACM 18th International Conference on Mining Software Repositories (MSR)</em>,
+  <a class="doi" href="https://doi.org/10.1109/msr52588.2021.00065">10.1109/msr52588.2021.00065</a>.
+</p>
+<blockquote class="abstract">
+  In this work, we study how the authorship of code affects bug-fixing commits
+  using the SStuBs dataset, a collection of single-statement bug fix changes in
+  popular Java Maven projects. More specifically, we study the differences in
+  characteristics between simple bug fixes by the original author—that is, the
+  developer who submitted the bug-inducing commit—and by different developers
+  (i.e., non-authors). Our study shows that nearly half (i.e., 44.3%) of simple
+  bugs are fixed by a different developer. We found that bug fixes by the
+  original author and by different developers differed qualitatively and
+  quantitatively. We observed that bug-fixing time by authors is much shorter
+  than that of other developers. We also found that bug-fixing commits by
+  authors tended to be larger in size and scope, and address multiple issues,
+  whereas bug-fixing commits by other developers tended to be smaller and more
+  focused on the bug itself. Future research can further study the different
+  patterns in bug-fixing and create more tailored tools based on the developer's
+  needs.
+</blockquote>
