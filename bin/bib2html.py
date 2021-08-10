@@ -391,8 +391,8 @@ def cite_start(config, entry):
     '''Generate bibliography key in start of entry.'''
     check('key' in entry,
           'Every entry must have key')
-    bibkey = f'<span class="bibliographykey">{entry["key"]}</span>'
-    return f'<p id="{entry["key"]}" class="bibliography">{bibkey}'
+    bibkey = f'<span class="bibkey">{entry["key"]}</span>'
+    return f'<p id="{entry["key"]}" class="bib">{bibkey}'
 
 
 def cite_end(config):

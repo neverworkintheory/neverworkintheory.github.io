@@ -7,15 +7,15 @@ LATEX_BIN=pdflatex
 BIBTEX_BIN=bibtex
 
 AUTHORS_HTML=authors/index.html
-REVIEWED_HTML=reviewed/index.html
+BIB_HTML=bib/index.html
 TODO_HTML=todo/index.html
-SUPPORT_HTML=${AUTHORS_HTML} ${REVIEWED_HTML} ${TODO_HTML}
+SUPPORT_HTML=${AUTHORS_HTML} ${BIB_HTML} ${TODO_HTML}
 
-BIB_PDF=tex/nwit.pdf
+PDF=tex/nwit.pdf
 
-REVIEWED_BIB=./tex/reviewed.bib
+BIB_BIB=./tex/bib.bib
 TODO_BIB=./tex/todo.bib
-ALL_BIB=${REVIEWED_BIB} ${TODO_BIB}
+ALL_BIB=${BIB_BIB} ${TODO_BIB}
 
 CONFIG=_config.yml
 INCLUDES=$(wildcard _includes/*.html)
@@ -37,7 +37,7 @@ commands:
 	@grep -h -E '^##' ${MAKEFILE_LIST} | sed -e 's/## //g' | column -t -s ':'
 
 ## build: rebuild site without running server
-build: ${SUPPORT_HTML} ${BIB_PDF}
+build: ${SUPPORT_HTML} ${PDF}
 	${JEKYLL} build
 
 ## serve: build site and run server
@@ -53,13 +53,13 @@ authors: ${AUTHORS_HTML} ${AUTHORS_BIN}
 	@echo "layout: page" >> ${AUTHORS_HTML}
 	@echo "title: Authors" >> ${AUTHORS_HTML}
 	@echo "---" >> ${AUTHORS_HTML}
-	${AUTHORS_BIN} --input ${REVIEWED_BIB} >> ${AUTHORS_HTML}
+	${AUTHORS_BIN} --input ${BIB_BIB} >> ${AUTHORS_HTML}
 
 ## pdf: re-create PDF version of bibliography
-pdf: ${BIB_PDF}
+pdf: ${PDF}
 
-## reviewed: re-create HTML bibliography of reviewed articles
-reviewed: ${REVIEWED_HTML}
+## bib: re-create HTML bibliography of reviewed articles
+bib: ${BIB_HTML}
 
 ## todo: re-create HTML bibliography of upcoming articles
 todo: ${TODO_HTML}
@@ -72,7 +72,7 @@ categories:
 
 ## check: check integrity of bibliography
 check:
-	@bin/check.py --inputs ${REVIEWED_BIB} ${TODO_BIB}
+	@bin/check.py --inputs ${BIB_BIB} ${TODO_BIB}
 
 ## entry: convert single entry (KEY=NameYear) to HTML
 entry:
@@ -80,7 +80,7 @@ entry:
 
 ## used: check which papers have been used or not
 used:
-	@bin/used.py --inputs ${REVIEWED_BIB} --pagedir _posts
+	@bin/used.py --inputs ${BIB_BIB} --pagedir _posts
 
 ## clean: clean up stray files
 clean:
@@ -97,13 +97,13 @@ sterile:
 
 # --------
 
-${REVIEWED_HTML}: ${REVIEWED_BIB} ${BIB2HTML_BIN}
-	@make TITLE="Reviewed" SLUG=reviewed bib2html > $@
+${BIB_HTML}: ${BIB_BIB} ${BIB2HTML_BIN}
+	@make TITLE="Bibliography" SLUG=bib bib2html > $@
 
 ${TODO_HTML}: ${TODO_BIB} ${BIB2HTML_BIN}
 	@make TITLE="To Do" SLUG=todo bib2html > $@
 
-${BIB_PDF}: ${REVIEWED_BIB} ${TODO_BIB} tex/nwit.tex tex/abstract.bst
+${PDF}: ${BIB_BIB} ${TODO_BIB} tex/nwit.tex tex/abstract.bst
 	@cd tex \
 	&& rm -f nwit.aux nwit.bbl \
 	&& ${LATEX_BIN} nwit \

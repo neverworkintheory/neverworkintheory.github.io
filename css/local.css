@@ -68,18 +68,18 @@ p.citation {
     padding-right: 0.5rem;
 }
 
-p.bibliography {
+p.bib {
     background-color: #F8F8F8;
     padding-left: 0.5rem;
     padding-right: 0.5rem;
 }
-.bibliographykey {
+.bibkey {
     font-weight: bold;
 }
-.bibliographykey::before {
+.bibkey::before {
     content: "[";
 }
-.bibliographykey::after {
+.bibkey::after {
     content: "] ";
 }
 
