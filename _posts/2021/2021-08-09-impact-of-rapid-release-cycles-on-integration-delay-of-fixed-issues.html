@@ -1,0 +1,65 @@
+---
+layout: post
+author: Greg Wilson
+title: "The Impact of Rapid Release Cycles on the Integration Delay of Fixed Issues"
+date: 2021-08-09
+categories: ["Agile Development", "Developer Operations", "Project Management"]
+---
+<div class="review">
+  <p>
+    Do short release cycles actually get features and bug fixes to users' more
+    quickly?  To find out, the authors of this paper looked at over 70,000
+    issues from the Firefox project and studied 37 programmers who contribute to
+    Firefox, Eclipse, and ArgoUML.  They found that traditional (long) release
+    cycles prioritize the integration of backlog issues, while rapid releases
+    prioritized issues that were fixed in the current cycle. In other words,
+    if project switches to a rapid release cycle, people who've been waiting a
+    long time for a bug fix will wait even longer. However, their results seem
+    to show that rapid releases increase software stability and user feedback,
+    so as with everything in engineering, the team has to make a tradeoff.
+  </p>
+</div>
+<p id="AlencarDaCosta2017" class="bibliography"><span class="bibliographykey">AlencarDaCosta2017</span>
+  Daniel Alencar da Costa, Shane McIntosh, Christoph Treude, Uirá Kulesza, and Ahmed E. Hassan:
+  "<a href="https://doi.org/10.1007/s10664-017-9548-7">The impact of rapid release cycles on the integration delay of fixed issues</a>".
+  <em>Empirical Software Engineering</em>, 23(2), 2017,
+  <a class="doi" href="https://doi.org/10.1007/s10664-017-9548-7">10.1007/s10664-017-9548-7</a>.
+</p>
+<blockquote class="abstract">
+  The release frequency of software projects has increased in recent years.
+  Adopters of so-called rapid releases—short release cycles, often on the order
+  of weeks, days, or even hours—claim that they can deliver fixed issues (i.e.,
+  implemented bug fixes and new features) to users more quickly. However, there
+  is little empirical evidence to support these claims. In fact, our prior work
+  shows that code integration phases may introduce delays for rapidly releasing
+  projects—98% of the fixed issues in the rapidly releasing Firefox project had
+  their integration delayed by at least one release. To better understand the
+  impact that rapid release cycles have on the integration delay of fixed
+  issues, we perform a comparative study of traditional and rapid release
+  cycles. Our comparative study has two parts: (i) a quantitative empirical
+  analysis of 72,114 issue reports from the Firefox project, and a (ii)
+  qualitative study involving 37 participants, who are contributors of the
+  Firefox, Eclipse, and ArgoUML projects. Our study is divided into quantitative
+  and qualitative analyses. Quantitative analyses reveal that, surprisingly,
+  fixed issues take a median of 54% (57 days) longer to be integrated in rapid
+  Firefox releases than the traditional ones. To investigate the factors that
+  are related to integration delay in traditional and rapid release cycles, we
+  train regression models that model whether a fixed issue will have its
+  integration delayed or not. Our explanatory models achieve good discrimination
+  (ROC areas of 0.80–0.84) and calibration scores (Brier scores of 0.05–0.16)
+  for rapid and traditional releases. Our explanatory models indicate that (i)
+  traditional releases prioritize the integration of backlog issues, while (ii)
+  rapid releases prioritize issues that were fixed in the current release
+  cycle. Complementary qualitative analyses reveal that participants' perception
+  about integration delay is tightly related to activities that involve decision
+  making, risk management, and team collaboration. Moreover, the allure of
+  shipping fixed issues faster is a main motivator for adopting rapid release
+  cycles among participants (although this motivation is not supported by our
+  quantitative analysis). Furthermore, to explain why traditional releases
+  deliver fixed issues more quickly, our participants point out the rush for
+  integration in traditional releases and the increased time that is invested on
+  polishing issues in rapid releases. Our results suggest that rapid release
+  cycles may not be a silver bullet for the rapid delivery of new content to
+  users. Instead, our results suggest that the benefits of rapid releases are
+  increased software stability and user feedback.
+</blockquote>
