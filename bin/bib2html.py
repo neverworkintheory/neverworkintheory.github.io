@@ -392,8 +392,12 @@ def cite_start(config, entry):
     '''Generate bibliography key in start of entry.'''
     check('key' in entry,
           'Every entry must have key')
-    bibkey = f'<span class="bibkey">{entry["key"]}</span>'
-    return f'<p id="{entry["key"]}" class="bib">{bibkey}'
+    key = entry["key"]
+    if config.link:
+        bibkey = f'<a class="bibkey" href="/bib/#{key}">{key}</a>'
+    else:
+        bibkey = f'<span class="bibkey">{key}</span>'
+    return f'<p id="{key}" class="bib">{bibkey}'
 
 
 def cite_end(config):
@@ -418,7 +422,8 @@ def parseArgs(args):
     '''Turn arguments into configuration object.'''
     parser = argparse.ArgumentParser()
     parser.add_argument('--action', help=f'allowed actions {", ".join(sorted(VERBS))}')
-    parser.add_argument('--only', nargs='+', help=f'only convert specifies entries (by key)')
+    parser.add_argument('--only', nargs='+', help='only convert specifies entries (by key)')
+    parser.add_argument('--link', action='store_true', help='use a link instead of a span for the citation key')
     return parser.parse_args()
 
 # ----------------------------------------------------------------------

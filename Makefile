@@ -72,7 +72,7 @@ abstract:
 
 ## entry: convert single entry (KEY=NameYear) to HTML
 entry:
-	@cat ${ALL_BIB} | ${BIB2HTML_BIN} --action bib2md --only ${KEY}
+	@cat ${ALL_BIB} | ${BIB2HTML_BIN} --action bib2md --only ${KEY} --link
 
 ## ----
 
