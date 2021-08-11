@@ -1,0 +1,36 @@
+%
+% Packages
+%
+\usepackage{letltxmacro} % for redefining \bibitem
+
+%
+% Widen the page.
+%
+\makeatletter
+\renewenvironment{thebibliography}[1]
+     {\section*{\refname}%
+      \@mkboth{\MakeUppercase\refname}{\MakeUppercase\refname}%
+      \list{\@biblabel{\@arabic\c@enumiv}}%
+           {%
+            \leftmargin10pt%
+            \advance\leftmargin\labelsep
+            \itemindent12pt
+            \@openbib@code
+            \usecounter{enumiv}%
+            \let\p@enumiv\@empty
+            \renewcommand\theenumiv{\@arabic\c@enumiv}}%
+      \sloppy
+      \clubpenalty4000
+      \@clubpenalty \clubpenalty
+      \widowpenalty4000%
+      \sfcode`\.\@m}
+     {\def\@noitemerr
+       {\@latex@warning{Empty `thebibliography' environment}}%
+      \endlist}
+\makeatother
+
+%
+% Display citation key in bold.
+%
+\LetLtxMacro{\OldBibItem}{\bibitem}
+\renewcommand{\bibitem}[2][MISSING]{\OldBibItem[{\textbf{#1}}]{#2}}

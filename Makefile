@@ -109,7 +109,7 @@ ${BIB_HTML}: ${BIB_BIB} ${BIB2HTML_BIN}
 ${TODO_HTML}: ${TODO_BIB} ${BIB2HTML_BIN}
 	@make TITLE="To Do" SLUG=todo bib2html > $@
 
-${PDF}: ${BIB_BIB} ${TODO_BIB} tex/nwit.tex tex/abstract.bst
+${PDF}: ${BIB_BIB} ${TODO_BIB} tex/nwit.tex tex/settings.tex tex/abstract.bst
 	@cd tex \
 	&& rm -f nwit.aux nwit.bbl \
 	&& ${LATEX_BIN} nwit \
