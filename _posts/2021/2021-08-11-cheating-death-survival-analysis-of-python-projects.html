@@ -1,0 +1,113 @@
+---
+layout: post
+author: Greg Wilson
+title: "Cheating Death: A Statistical Survival Analysis of Publicly Available Python Projects"
+date: 2021-08-11
+categories: ["Software Projects"]
+---
+<div class="review">
+  <p>
+    I need to start this review by confessing that I had to search
+    online to find out what
+    <a href="https://en.wikipedia.org/wiki/Kaplan%E2%80%93Meier_estimator">Kaplan-Meier analysis</a> a
+    and a
+    <a href="https://en.wikipedia.org/wiki/Proportional_hazards_model#The_Cox_model">Cox proportional-hazards model</a>
+    are, and I'm still fuzzy on the details. Despite that, I think I
+    understand enough of <a class="bibkey" href="/bib/#Ali2020">Ali2020</a>
+    to appreciate its findings: Python projects that have repositories
+    on two or more hosting services, explicitly publish major
+    releases, and have a large number of contributors are more likely
+    to have long lives than projects that don't match these
+    criteria. Digging into the details:
+  </p>
+  <blockquote>
+    <p>
+      …while the percentage of projects that do have major releases is
+      relatively low, the survival rate for such projects was
+      significantly higher than the projects that did not publish
+      noteworthy revisions [and] we estimate that projects with a
+      small core team are around six times more likely to become
+      inactive compared to those that boast a diverse set of core team
+      developers.
+    </p>
+  </blockquote>
+  <p>
+    The first point isn't particularly surprising: the authors don't
+    claim that major releases make a project live longer, just that
+    the two are correlated, and it's reasonable that a project that's
+    big enough or well-organized enough to do major releases would
+    have more momentum. The second finding was a bit of an eye-opener,
+    though: I would have assumed that a project with a small,
+    tightly-knit core team would do as well, longevity-wise, as one
+    with a large team.
+  </p>
+  <p>
+    Another useful aspect of this paper for me is that it enables more
+    precise answers to other questions. If long-lived projects differ
+    from short-lived projects in consistent ways then other analyses
+    can use those differences as features when making predictions,
+    just as knowing blood pressure can make predictions about the
+    likelihood of heart disease more accurate.
+  </p>
+  <p>
+    The final thing I took away from this paper was its mention of the
+    <a href="https://docs.softwareheritage.org/devel/swh-dataset/graph/">Software
+    Heritage Graph Dataset</a>, which is part of an open dataset full
+    of information from publicly-readable software repositories.
+    <a class="bibkey" href="/bib/#Pietri2019">Pietri2019</a> has
+    details; it looks like a great resource for people who want to do
+    stats on software projects, and I'm looking forward to digging
+    into it.
+  </p>
+</div>
+<p id="Ali2020" class="bib">
+  <a class="bibkey" href="/bib/#Ali2020">Ali2020</a>
+  Rao Hamza Ali, Chelsea Parlett-Pelleriti, and Erik Linstead:
+  "<a href="https://doi.org/10.1145/3379597.3387511">Cheating Death: A Statistical Survival Analysis of Publicly Available Python Projects</a>".
+  <em>Proceedings of the 17th International Conference on Mining Software Repositories</em>,
+  <a class="doi" href="https://doi.org/10.1145/3379597.3387511">10.1145/3379597.3387511</a>.
+</p>
+<blockquote class="abstract">
+  We apply survival analysis methods to a dataset of
+  publicly-available software projects in order to examine the
+  attributes that might lead to their inactivity over time. We ran a
+  Kaplan-Meier analysis and fit a Cox Proportional-Hazards model to a
+  subset of Software Heritage Graph Dataset, consisting of 3052
+  popular Python projects hosted on GitLab/GitHub, Debian, and PyPI,
+  over a period of 165 months. We show that projects with repositories
+  on multiple hosting services, a timeline of publishing major
+  releases, and a good network of developers, remain healthy over time
+  and should be worthy of the effort put in by developers and
+  contributors.
+</blockquote>
+<p id="Pietri2019" class="bib">
+  <a class="bibkey" href="/bib/#Pietri2019">Pietri2019</a>
+  Antoine Pietri, Diomidis Spinellis, and Stefano Zacchiroli:
+  "<a href="https://doi.org/10.1109/msr.2019.00030">The Software Heritage Graph Dataset: Public Software Development Under One Roof</a>".
+  <em>2019 IEEE/ACM 16th International Conference on Mining Software Repositories (MSR)</em>,
+  <a class="doi" href="https://doi.org/10.1109/msr.2019.00030">10.1109/msr.2019.00030</a>.
+</p>
+<blockquote class="abstract">
+  Software Heritage is the largest existing public archive of software
+  source code and accompanying development history: it currently spans
+  more than five billion unique source code files and one billion
+  unique commits, coming from more than 80 million software
+  projects. This paper introduces the Software Heritage graph dataset:
+  a fully-deduplicated Merkle DAG representation of the Software
+  Heritage archive. The dataset links together file content
+  identifiers, source code directories, Version Control System (VCS)
+  commits tracking evolution over time, up to the full states of VCS
+  repositories as observed by Software Heritage during periodic
+  crawls. The dataset's contents come from major development forges
+  (including GitHub and GitLab), FOSS distributions (e.g., Debian),
+  and language-specific package managers (e.g., PyPI). Crawling
+  information is also included, providing timestamps about when and
+  where all archived source code artifacts have been observed in the
+  wild. The Software Heritage graph dataset is available in multiple
+  formats, including downloadable CSV dumps and Apache Parquet files
+  for local use, as well as a public instance on Amazon Athena
+  interactive query service for ready-to-use powerful analytical
+  processing. Source code file contents are cross-referenced at the
+  graph leaves, and can be retrieved through individual requests using
+  the Software Heritage archive API.
+</blockquote>
