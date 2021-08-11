@@ -14,9 +14,9 @@ SUPPORT_HTML=${AUTHORS_HTML} ${BIB_HTML} ${TODO_HTML}
 
 PDF=tex/nwit.pdf
 
-BIB_BIB=./tex/bib.bib
+NWIT_BIB=./tex/nwit.bib
 TODO_BIB=./tex/todo.bib
-ALL_BIB=${BIB_BIB} ${TODO_BIB}
+ALL_BIB=${NWIT_BIB} ${TODO_BIB}
 
 CONFIG=_config.yml
 INCLUDES=$(wildcard _includes/*.html)
@@ -53,7 +53,7 @@ authors: ${AUTHORS_HTML} ${AUTHORS_BIN}
 	@echo "layout: page" >> ${AUTHORS_HTML}
 	@echo "title: Authors" >> ${AUTHORS_HTML}
 	@echo "---" >> ${AUTHORS_HTML}
-	${AUTHORS_BIN} --input ${BIB_BIB} >> ${AUTHORS_HTML}
+	${AUTHORS_BIN} --input ${NWIT_BIB} >> ${AUTHORS_HTML}
 
 ## pdf: re-create PDF version of bibliography
 pdf: ${PDF}
@@ -82,11 +82,11 @@ categories:
 
 ## check: check integrity of bibliography
 check:
-	@bin/check.py --inputs ${BIB_BIB} ${TODO_BIB}
+	@bin/check.py --inputs ${NWIT_BIB} ${TODO_BIB}
 
 ## used: check which papers have been used or not
 used:
-	@bin/used.py --inputs ${BIB_BIB} --pagedir _posts
+	@bin/used.py --inputs ${NWIT_BIB} --pagedir _posts
 
 ## clean: clean up stray files
 clean:
@@ -103,13 +103,13 @@ sterile:
 
 # --------
 
-${BIB_HTML}: ${BIB_BIB} ${BIB2HTML_BIN}
-	@make TITLE="Bibliography" SLUG=bib bib2html > $@
+${BIB_HTML}: ${NWIT_BIB} ${BIB2HTML_BIN}
+	@make TITLE="Bibliography" SLUG=nwit bib2html > $@
 
 ${TODO_HTML}: ${TODO_BIB} ${BIB2HTML_BIN}
 	@make TITLE="To Do" SLUG=todo bib2html > $@
 
-${PDF}: ${BIB_BIB} ${TODO_BIB} tex/nwit.tex tex/settings.tex tex/abstract.bst
+${PDF}: ${NWIT_BIB} ${TODO_BIB} tex/nwit.tex tex/settings.tex tex/abstract.bst
 	@cd tex \
 	&& rm -f nwit.aux nwit.bbl \
 	&& ${LATEX_BIN} nwit \
