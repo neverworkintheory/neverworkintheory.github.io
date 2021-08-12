@@ -1,0 +1,182 @@
+---
+layout: post
+author: Greg Wilson
+title: "On the Nature of Merge Conflicts"
+date: 2021-08-12
+categories: ["Version Control"]
+---
+<div class="review">
+  <p>
+    I'm going to start this review with a minor complaint, but end it
+    with praise. The abstracts of many software engineering papers are
+    like movie trailers rather than summaries: they tell you that
+    there are great things in the paper, but don't tell you precisely
+    what they are.  For example, <a class="bibkey"
+    href="/bib/#Ghiotto2020">Ghiotto2020</a>'s abstract closes with
+    the teaser, "Our results give rise to three primary
+    recommendations for future merge techniques, that—when
+    implemented—could on one hand help in automatically resolving
+    certain types of conflicts and on the other hand provide the
+    developer with tool-based assistance to more easily resolve other
+    types of conflicts that cannot be automatically resolved." As
+    someone skimming through several dozen papers to decide which ones
+    to read in depth, I wish those three recommendations were right
+    there in the abstract in the way that the main findings of
+    clinical medicine papers are. If you are a reviewer or an editor,
+    please ask authors to do this.
+  </p>
+  <p>
+    That minor gripe aside, this is a good paper about an important
+    topic. Its introduction sets the stage and asks good questions:
+  </p>
+  <blockquote>
+    …it has been reported that 10% to 20% of all merges fail, with some
+    projects experiencing rates of almost 50%. To spur the development
+    of new merge techniques that could potentially reduce the high
+    failure rate, we posit that it is necessary to take a deep dive
+    into the nature of merge conflicts and how they are resolved. What
+    do they look like, exactly? How do developers resolve them? Do any
+    relationships exist between the nature of certain merge conflicts
+    and the resolution strategies chosen by developers?
+  </blockquote>
+  <p>
+    The authors then make those questions much more precise:
+  </p>
+  <ol>
+    <li>
+      What is the distribution in number of conflicting chunks for merge failures?
+    </li>
+    <li>
+      What is the distribution in size of conflicting chunks, as measured in lines of code (LOC)?
+    </li>
+    <li>
+      What is the distribution in language constructs involved in conflicting chunks?
+    </li>
+    <li>
+      What, if any, patterns exist in the language constructs of failed merges involving multiple conflicting chunks?
+    </li>
+    <li>
+      What is the distribution of developer decisions?
+    </li>
+    <li>
+      What is the distribution in difficulty level of kinds of con- flicts?
+    </li>
+    <li>
+      What, if any, patterns exist between the language constructs of conflicting chunks and developers’ decisions?
+    </li>
+  </ol>
+  <p>
+    They are also precise in their classification of developer decisions:
+  </p>
+  <blockquote>
+    We study developer decisions on a conflicting chunk by conflicting
+    chunk basis, and identify six different ways of resolving a
+    conflict: (1) adopt the code of version 1 in the local repository,
+    (2) adopt the code of version 2 from the repository, (3)
+    concatenate both versions wholesale, in either order, (4)
+    incorporate in some interleaving order select lines of code from
+    both versions, without writing any new lines or modifying selected
+    lines, (5) mix existing code from one of both versions with newly
+    written code, and (6) use none of the versions, that is, the
+    developer discards both versions and adopts the base version
+    (original version before the parallel work).
+  </blockquote>
+  <p>
+    I found their answer to their fifth question to be most
+    interesting: developers usually pick one or the other of the
+    source code chunks, and writing new code to resolve a merge
+    conflict is less common than expected. This result led to the
+    authors rethinking the kinds of tools that would help developers
+    most:
+  </p>
+  <blockquote>
+    …across all 616 conflicting chunks studied in the manual analysis,
+    a primary choice that developers make is to select one of the
+    versions, either version 1 (V1, 21%) or version 2 (V2, 35%). This
+    was, to us, an unexpected result. Given all the commentary and
+    folklore surrounding the merge problem and how difficult it is
+    said to be to resolve merge conflicts…we had expected new code
+    (NC) to be the most common choice. It is not: only 19% of chunks
+    are resolved by writing some new code as part of the resolution.
+    This means that a full 81% of the conflicting chunks are resolved
+    using only the contents from the code contained within the chunk
+    without actually adding or editing lines of code (V1, V2, CC, and
+    CB; note that NN is negligible, because it occurs so
+    infrequently). While this does not necessarily mean that doing so
+    is trivial, it does mean that merge resolution through one of
+    these four strategies could be supported not by yet more
+    automation, but perhaps by tool support that assists developers in
+    making one of these four choices in the first place and, in case
+    of CC and CB, by helping them select and order the necessary lines
+    of code.
+  </blockquote>
+  <p>
+    Their breakdown of merge difficulty by language feature is also
+    interesting, and is the kind of thing that would feed directly
+    into tool design, which leads to the three key points that
+    motivate the recommendations mentioned at the start:
+  </p>
+  <ol>
+    <li>
+      <em>Conflicting chunks generally contain all the necessary
+      information to resolve them</em> (so a tool should allow users
+      to reshuffle things quickly, especially since 94% of conflicting
+      chunks were 50 lines long or less).
+    </li>
+    <li>
+      <em>Resolution order of conflicting chunks can matter.</em>
+      For example, how the user resolves a conflict in a method
+      signature can and should inform the options for resolving
+      conflicts in invocations of that method.
+    </li>
+    <li>
+      <em>Past choices of how conflicting chunks were resolved can
+	inform future choices.</em> There are patterns in how some
+	users resolve conflicts; that history can make resolution of
+	future conflicts faster.
+    </li>
+  </ol>
+  <p>
+    Findings and recommendations like these are why I think software
+    developers should pay attention to software engineering
+    research. I've done two large merges so far today, and expect to
+    do three more before the end of the week. If better tools can
+    make that easier, it will have a direct impact on my working
+    life, and studies like this one are how we'll get tools that are
+    actually better rather than merely different.
+  </p>
+</div>
+<p id="Ghiotto2020" class="bib">
+  <a class="bibkey" href="/bib/#Ghiotto2020">Ghiotto2020</a>
+  Gleiph Ghiotto, Leonardo Murta, Marcio Barros, and André van der Hoek:
+  "<a href="https://doi.org/10.1109/tse.2018.2871083">On the Nature of Merge Conflicts: A Study of 2,731 Open Source Java Projects Hosted by GitHub</a>".
+  <em>IEEE Transactions on Software Engineering</em>, 46(8), 2020,
+  <a class="doi" href="https://doi.org/10.1109/tse.2018.2871083">10.1109/tse.2018.2871083</a>.
+</p>
+<blockquote class="abstract">
+  When multiple developers change a software system in parallel, these
+  concurrent changes need to be merged to all appear in the software
+  being developed. Numerous merge techniques have been proposed to
+  support this task, but none of them can fully automate the merge
+  process. Indeed, it has been reported that as much as 10 to 20
+  percent of all merge attempts result in a merge conflict, meaning
+  that a developer has to manually complete the merge. To date, we
+  have little insight into the nature of these merge conflicts. What
+  do they look like, in detail? How do developers resolve them? Do any
+  patterns exist that might suggest new merge techniques that could
+  reduce the manual effort? This paper contributes an in-depth study
+  of the merge conflicts found in the histories of 2,731 open source
+  Java projects. Seeded by the manual analysis of the histories of
+  five projects, our automated analysis of all 2,731 projects: (1)
+  characterizes the merge conflicts in terms of number of chunks,
+  size, and programming language constructs involved, (2) classifies
+  the manual resolution strategies that developers use to address
+  these merge conflicts, and (3) analyzes the relationships between
+  various characteristics of the merge conflicts and the chosen
+  resolution strategies. Our results give rise to three primary
+  recommendations for future merge techniques, that—when
+  implemented—could on one hand help in automatically resolving
+  certain types of conflicts and on the other hand provide the
+  developer with tool-based assistance to more easily resolve other
+  types of conflicts that cannot be automatically resolved.
+</blockquote>
