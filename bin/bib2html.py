@@ -359,13 +359,13 @@ def credit(config, entry, which=None):
             which = 'author'
         elif 'editor' in entry:
             which = 'editor'
-    check(which,
+    check((which is not None) and (which in entry),
           f'Do not know author or editor for {entry}')
     if which == 'editor':
         suffix = ' (eds.)'
     names = entry[which]
     check(names is not None,
-          'Entry must have author or editor')
+          f'Entry must have author or editor: {entry}')
     if len(names) == 1:
         names = names[0]
     elif len(names) == 2:
