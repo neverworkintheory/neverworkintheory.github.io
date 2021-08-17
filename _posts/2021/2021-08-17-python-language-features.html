@@ -1,0 +1,102 @@
+---
+layout: post
+author: Greg Wilson
+title: "Two Papers on Python Language Features"
+date: 2021-08-17
+categories: ["Python", "Programming Languages"]
+---
+<div class="review">
+  <p>
+    Most languages work very hard to preserve backward compatibility, even at the expense of present ease of use.
+    The Python community's decision to release Python 3 in 2008 was therefore a step into the unknown,
+    and one that took many years to pay off
+    Ten years later, <a class="bibkey" href="/bib/#Malloy2018">Malloy2018</a> found that
+    most programmers were still using a backward-compatible subset of the language.
+    Even now, more than a year after the end of official support for Python 2,
+    I routinely encounter active projects that haven't upgraded and probably never will.
+    My takeaway is that even if the name stays the same,
+    something that is not backward-compatible is effectively a new language,
+    and its creators have to expect that it will take years for the changes to be adopted.
+  </p>
+  <p>
+    Rather than looking at the before and after,
+    <a class="bibkey" href="/bib/#Peng2021">Peng2021</a> looks at current usage (as of 2021).
+    Its authors scanned 35 projects from 8 application domains containing 4.3 million lines of code
+    to find out how often different features are used.
+    I wasn't surprised to see single inheritance at the top of the list,
+    but I <em>was</em> surprised that decorators came second.
+    Keyword arguments, for loops, and nested classes are practically tied for third place;
+    again, I wouldn't have predicted that nested classes were that heavily used,
+    which makes me wonder whether my personal Python style is atypical
+    or whether nested classes are just more common in domains I don't work in.
+  </p>
+  <p>
+    One cool thing about Peng et al's work is that
+    the tool they use to scan projects is <a href="https://github.com/S4Plus/PyScan">available on GitHub</a>
+    so that other researchers can extend it and/or re-do their analysis
+    to see how feature use changes over time.
+    I think programming languages would be more usable and more useful
+    if their design was informed by studies like this
+    and
+    <a href="{{'/2014/01/29/stefik-siebert-syntax.html' | relative_url}}">some of</a>
+    <a href="{{'/2016/06/13/polymorphism-in-python.html' | relative_url}}">the others</a>
+    we have covered in the past.
+  </p>
+</div>
+<p id="Malloy2018" class="bib">
+  <a class="bibkey" href="/bib/#Malloy2018">Malloy2018</a>
+  Brian A. Malloy and James F. Power:
+  "<a href="https://doi.org/10.1007/s10664-018-9637-2">An empirical analysis of the transition from Python 2 to Python 3</a>".
+  <em>Empirical Software Engineering</em>, 24(2), 2018,
+  <a class="doi" href="https://doi.org/10.1007/s10664-018-9637-2">10.1007/s10664-018-9637-2</a>.
+</p>
+<blockquote class="abstract">
+  Python is one of the most popular and widely adopted programming languages in
+  use today. In 2008 the Python developers introduced a new version of the
+  language, Python 3.0, that was not backward compatible with Python 2,
+  initiating a transitional phase for Python software developers. In this paper,
+  we describe a study that investigates the degree to which Python software
+  developers are making the transition from Python 2 to Python 3. We have
+  developed a Python compliance analyser, PyComply, and have analysed a
+  previously studied corpus of Python applications called Qualitas. We use
+  PyComply to measure and quantify the degree to which Python 3 features are
+  being used, as well as the rate and context of their adoption in the Qualitas
+  corpus. Our results indicate that Python software developers are not
+  exploiting the new features and advantages of Python 3, but rather are
+  choosing to retain backward compatibility with Python 2. Moreover, Python
+  developers are confining themselves to a language subset, governed by the
+  diminishing intersection of Python 2, which is not under development, and
+  Python 3, which is under development with new features being introduced as the
+  language continues to evolve.
+</blockquote>
+<p id="Peng2021" class="bib">
+  <a class="bibkey" href="/bib/#Peng2021">Peng2021</a>
+  Yun Peng, Yu Zhang, and Mingzhe Hu:
+  "<a href="https://doi.org/10.1109/saner50967.2021.00012">An Empirical Study for Common Language Features Used in Python Projects</a>".
+  <em>2021 IEEE International Conference on Software Analysis, Evolution and Reengineering (SANER)</em>,
+  <a class="doi" href="https://doi.org/10.1109/saner50967.2021.00012">10.1109/saner50967.2021.00012</a>.
+</p>
+<blockquote class="abstract">
+  As a dynamic programming language, Python is widely used in many fields. For
+  developers, various language features affect programming experience. For
+  researchers, they affect the difficulty of developing tasks such as bug
+  finding and compilation optimization. Former research has shown that programs
+  with Python dynamic features are more change-prone. However, we know little
+  about the use and impact of Python language features in real-world Python
+  projects. To resolve these issues, we systematically analyze Python language
+  features and propose a tool named PYSCAN to automatically identify the use of
+  22 kinds of common Python language features in 6 categories in Python source
+  code. We conduct an empirical study on 35 popular Python projects from eight
+  application domains, covering over 4.3 million lines of code, to investigate
+  the the usage of these language features in the project. We find that single
+  inheritance, decorator, keyword argument, for loops and nested classes are top
+  5 used language features. Meanwhile different domains of projects may prefer
+  some certain language features. For example, projects in DevOps use exception
+  handling frequently. We also conduct in-depth manual analysis to dig extensive
+  using patterns of frequently but differently used language features:
+  exceptions, decorators and nested classes/functions. We find that developers
+  care most about ImportError when handling exceptions. With the empirical
+  results and in-depth analysis, we conclude with some suggestions and a
+  discussion of implications for three groups of persons in Python community:
+  Python designers, Python compiler designers and Python developers.
+</blockquote>
