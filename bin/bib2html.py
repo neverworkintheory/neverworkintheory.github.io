@@ -8,6 +8,8 @@ import re
 import sys
 import yaml
 
+from util import MONTHS
+
 
 # What do we know how to do?
 VERBS = {
@@ -153,19 +155,7 @@ def unlatex(s):
 BIB_TO_YAML = {
 
     # String definitions to add.
-    'add': '''@string{jan = "1"}
-@string{feb = "2"}
-@string{mar = "3"}
-@string{apr = "4"}
-@string{may = "5"}
-@string{jun = "6"}
-@string{jul = "7"}
-@string{aug = "8"}
-@string{sep = "9"}
-@string{oct = "10"}
-@string{nov = "11"}
-@string{dec = "12"}
-''',
+    'add': MONTHS,
 
     'convert': {
         'author': split_names,
@@ -301,6 +291,8 @@ YAML_TO_MARKDOWN = {
 
 
 def abstract(config, entry):
+    if config.no_abstract:
+        return ''
     check('abstract' in entry,
           f'Entry requires abstract: {str(entry)}')
     return f'<blockquote class="abstract">{entry["abstract"]}</blockquote>'
@@ -424,6 +416,7 @@ def parseArgs(args):
     parser.add_argument('--action', help=f'allowed actions {", ".join(sorted(VERBS))}')
     parser.add_argument('--only', nargs='+', help='only convert specifies entries (by key)')
     parser.add_argument('--link', action='store_true', help='use a link instead of a span for the citation key')
+    parser.add_argument('--no_abstract', action='store_true', help='skip the abstract')
     return parser.parse_args()
 
 # ----------------------------------------------------------------------

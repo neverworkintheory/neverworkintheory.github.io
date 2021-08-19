@@ -74,6 +74,10 @@ abstract:
 entry:
 	@cat ${ALL_BIB} | ${BIB2HTML_BIN} --action bib2md --only ${KEY} --link
 
+## pick: select a random entry from the to-do list
+pick:
+	@cat ${TODO_BIB} | bin/pick.py
+
 ## ----
 
 ## categories: list files by category
