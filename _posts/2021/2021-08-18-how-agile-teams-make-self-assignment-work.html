@@ -1,0 +1,161 @@
+---
+layout: post
+author: Greg Wilson
+title: "How Agile Teams Make Self-Assignment Work"
+date: 2021-08-18
+categories: ["Agile Development", "Collaborative Development"]
+---
+<div class="review">
+  <p>
+    I <a href="{{'/2021/08/12/on-the-nature-of-merge-conflicts.html' | relative_url}}">complained</a>
+    a few days ago
+    about abstracts that are written as teasers rather than summarizing the paper's results.
+    The abstract for <a class="bibkey" href="/bib/#Masood2020">Masood2020</a> feels like one of those,
+    but once you get into the paper itself
+    you realize that a short summary isn't really possible.
+    Figure 5 (included at the bottom of this post—click for the full-size image)
+    shows just how complicated the forces and feedback loops are,
+    and that complexity is why researchers need to use both qualitative and quantitative methods.
+    As a reformed engineer my instinct is always to reach for the latter,
+    but working with some world-class qualitative researchers
+    taught me that close inspection of a few cases
+    can be as rigorous as statistics
+    and can produce insights that number crunching cannot.
+  </p>
+  <p>
+    The takeaway from this paper for me is the recommendations at the end,
+    some of this are listed below.
+    As is often the case, these are not surprising,
+    but in many cases the opposite conclusion would have been just as plausible;
+    what research like this does is tell us which believable alternative is true.
+  </p>
+  <ul>
+    <li>
+      Managers can ensure that the self-assignment decisions do not
+      lead to increased specializations or threaten
+      cross-functionality, rather assignment choices provide equal
+      opportunities to learn (technology, applications, and tools) to
+      maintain a balance of knowledge sharing (S4).
+    </li>
+    <li>
+      Managers can guide the team members if they feel they have
+      committed to something which is hard to accomplish. However,
+      they should avoid discouraging members to pick complex tasks.
+      Taking away tasks from the team members is also not recommended
+      (S4).
+    </li>
+    <li>
+      Once required information has been conveyed among the team and
+      estimates and task breakdown is done, the manager can step out
+      from the assignment sessions (S3).
+    </li>
+    <li>
+      If an urgent task comes in during a running sprint, the manager
+      can ask for volunteers rather than imposing tasks on someone.
+      Knowing the time pressure, it is likely that person with
+      relevant skills will pick such a task (S2).
+    </li>
+    <li>
+      If multiple people are interested in working on the same task,
+      they can either pair up (S12) or the manager can step in and let
+      one of them pick a task (S4), ensuring that the next time the
+      other one gets to select their preferred task (S13).
+    </li>
+    <li>
+      Managers can initially let the new team members observe the team
+      allocating their tasks and understand the task allocation
+      strategies. Other team members can help them choose easier
+      tasks (S4) or pair them up with senior members for better
+      understanding of the process (S12).
+    </li>
+    <li>
+      The team members miss updating their tasks on their preferred
+      project management platform, which can potentially lead to
+      issues, e.g., multiple people working on similar
+      tasks. Automatic reminders through tools or reminders in daily
+      stand-ups can be useful to remind them to update their tasks
+      regularly (S6).
+    </li>
+    <li>
+      Individuals can pick tasks in the presence of other team
+      members, e.g., at planning or at stand-up. This way other team
+      members who have more knowledge about the task can provide
+      assistance and transfer relevant knowledge if needed (S13).
+    </li>
+    <li>
+      The manager or team could include some 'stretch tasks' in every
+      sprint, i.e., a few extra tasks ready, elaborated and estimated,
+      in reserve, so team members can self-assign and complete them if
+      they happen to finish all the other tasks early (S5).
+    </li>
+    <li>
+      Teams starting with self-assignment can initially apply for a
+      part of their project, e.g., new development features,
+      enhancements etc., rather practicing for the entire project
+      (S4).
+    </li>
+  </ul>
+  <p>
+    The richness of this paper's results presents me with a problem.
+    As <a href="https://third-bit.com/ideas/seeba/">I have repeatedly written elsewhere</a>,
+    I think we should supplement or replace the "build a big piece of software in a team" course
+    in most undergraduate computer science programs
+    with an introduction to the methods and findings of empirical software engineering.
+    I know how to teach the quantitative side:
+    introduce <a href="https://pandas.pydata.org/">Pandas</a>,
+    have students analyze a few small datasets so that they get a feel for basic statistics,
+    and then have them recapitulate some of the findings from this site.
+  </p>
+  <p>
+    But how can we teach qualitative methods to this audience?
+    I think we should—I don't want to perpetuate today's biases and blindspots—but
+    what exercises could we give students?
+    Many researchers now make their quantitative data available online,
+    but I don't know of any archive of interviews and videos,
+    and suspect that it would be difficult to create one without violating ethical and privacy rules.
+    Having students analyze questions and responses from discussion forums
+    is the best thing I've been able to come up with;
+    if someone has a better idea, I'd be grateful if you could reach out.
+  </p>
+</div>
+<p id="Masood2020" class="bib">
+  <a class="bibkey" href="/bib/#Masood2020">Masood2020</a>
+  Zainab Masood, Rashina Hoda, and Kelly Blincoe:
+  "<a href="https://doi.org/10.1007/s10664-020-09876-x">How agile teams make self-assignment work: a grounded theory study</a>".
+  <em>Empirical Software Engineering</em>, 25(6), 2020,
+  <a class="doi" href="https://doi.org/10.1007/s10664-020-09876-x">10.1007/s10664-020-09876-x</a>.
+</p>
+<blockquote class="abstract">
+  Self-assignment, a self-directed method of task allocation in which
+  teams and individuals assign and choose work for themselves, is
+  considered one of the hallmark practices of empowered,
+  self-organizing agile teams. Despite all the benefits it promises,
+  agile software teams do not practice it as regularly as other agile
+  practices such as iteration planning and daily stand-ups, indicating
+  that it is likely not an easy and straighforward practice. There has
+  been very little empirical research on self-assignment. This
+  Grounded Theory study explores how self-assignment works in agile
+  projects. We collected data through interviews with 42 participants
+  representing 28 agile teams from 23 software companies and
+  supplemented these interviews with observations. Based on rigorous
+  application of Grounded Theory analysis procedures such as open,
+  axial, and selective coding, we present a comprehensive grounded
+  theory of making self-assignment work that explains the (a) context
+  and (b) causal conditions that give rise to the need for
+  self-assignment, (c) a set of facilitating conditions that mediate
+  how self-assignment may be enabled, (d) a set of constraining
+  conditions that mediate how self-assignment may be constrained and
+  which are overcome by a set of (e) strategies applied by agile
+  teams, which in turn result in (f) a set of consequences, all in an
+  attempt to make the central phenomenon, self-assignment, work. The
+  findings of this study will help agile practitioners and companies
+  understand different aspects of self-assignment and practice it with
+  confidence regularly as a valuable practice. Additionally, it will
+  help teams already practicing self-assignment to apply strategies to
+  overcome the challenges they face on an everyday basis.
+</blockquote>
+<p align="center">
+  <a href="{{'/files/2021/Masood2020-fig5.png' | relative_url}}">
+    <img src="{{'/files/2021/Masood2020-fig5.png' | relative_url}}" alt="How agile teams make self-assignment work" width="50%" />
+  </a>
+</p>
