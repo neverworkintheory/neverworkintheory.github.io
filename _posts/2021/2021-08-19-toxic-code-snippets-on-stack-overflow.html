@@ -1,0 +1,94 @@
+---
+layout: post
+author: Greg Wilson
+title: "Toxic Code Snippets on Stack Overflow"
+date: 2021-08-19
+categories: ["Social Coding", "Licensing"]
+---
+<div class="review">
+  <p>
+    GitHub's Copilot tool has brought the twin issues of software licensing
+    and the exploitation of open source contributors to the fore once again.
+    (See for example <a href="https://zephyrtronium.github.io/articles/copilot.html">this discussion</a>
+    and <a href="https://fossa.com/blog/analyzing-legal-implications-github-copilot/">this one</a>.)
+    For those who missed it,
+    GitHub used millions of lines of code from the repositories it hosts
+    to train a nuclear-strength autocompletion engine.
+    It's a cool idea,
+    but it would have been ever cooler if GitHub had asked
+    whether the licenses on those repositories allowed it to do what it did,
+    or offered some kind of compensation to the programmers whose labor they took advantage of.
+  </p>
+  <p>
+    Intellectual property isn't the only potential problem with Copilot;
+    as we've learned the hard way,
+    models are only as good as the data they're trained on.
+    <a class="bibkey" href="/bib/#Ragkhitwetsagul2021">Ragkhitwetsagul2021</a>
+    casts light on both of these concerns
+    by looking at the quality of code snippets posted to Stack Overflow.
+    Among its findings:
+  </p>
+  <ul>
+    <li>
+      69% of answerers never check for licensing conflicts between their copied code snippets
+      and SO's CC-BY-SA license.
+      (In fact, 85% of answerers are't even aware that SO enforces that license.)
+    </li>
+    <li>
+      66% of people don't check for licensing conflicts when <em>using</em> code snippets.
+    </li>
+    <li>
+      Of the 2,289 non-trivial clone candidates they studied,
+      214 (9.3%) could potentially violate the license of the original software.
+      These clones appear 7,112 times in 2,427 GitHub Projects.
+    </li>
+    <li>
+      153 of the clones had been copied from the <a href="http://qualitascorpus.com/">Qualitas corpus</a>
+      (a collection of Java code used for research).
+      Of those, 66% were outdated and 6.5% were buggy.
+    </li>
+  </ul>
+  <p>
+    Stack Overflow isn't GitHub,
+    but I'd struggle to believe that code taken from the latter
+    would be of higher quality than the answers on the former.
+    I would also be surprised if people who ignore licensing issues on one site
+    are scrupulous about them on another.
+    AI-assisted software tools are clearly coming our way;
+    no matter what else they do,
+    they will provide lots of material for discussion in software ethics classes.
+  </p>
+</div>
+<p id="Ragkhitwetsagul2021" class="bib">
+  <a class="bibkey" href="/bib/#Ragkhitwetsagul2021">Ragkhitwetsagul2021</a>
+  Chaiyong Ragkhitwetsagul, Jens Krinke, Matheus Paixao, Giuseppe Bianco, and Rocco Oliveto:
+  "<a href="https://doi.org/10.1109/tse.2019.2900307">Toxic Code Snippets on Stack Overflow</a>".
+  <em>IEEE Transactions on Software Engineering</em>, 47(3), 2021,
+  <a class="doi" href="https://doi.org/10.1109/tse.2019.2900307">10.1109/tse.2019.2900307</a>.
+</p>
+<blockquote class="abstract">
+  Online code clones are code fragments that are copied from software projects
+  or online sources to Stack Overflow as examples. Due to an absence of a
+  checking mechanism after the code has been copied to Stack Overflow, they can
+  become toxic code snippets, e.g., they suffer from being outdated or violating
+  the original software license. We present a study of online code clones on
+  Stack Overflow and their toxicity by incorporating two developer surveys and a
+  large-scale code clone detection. A survey of 201 high-reputation Stack
+  Overflow answerers (33 percent response rate) showed that 131 participants (65
+  percent) have ever been notified of outdated code and 26 of them (20 percent)
+  rarely or never fix the code. 138 answerers (69 percent) never check for
+  licensing conflicts between their copied code snippets and Stack Overflow's CC
+  BY-SA 3.0. A survey of 87 Stack Overflow visitors shows that they experienced
+  several issues from Stack Overflow answers: mismatched solutions, outdated
+  solutions, incorrect solutions, and buggy code. 85 percent of them are not
+  aware of CC BY-SA 3.0 license enforced by Stack Overflow, and 66 percent never
+  check for license conflicts when reusing code snippets. Our clone detection
+  found online clone pairs between 72,365 Java code snippets on Stack Overflow
+  and 111 open source projects in the curated Qualitas corpus. We analysed 2,289
+  non-trivial online clone candidates. Our investigation revealed strong
+  evidence that 153 clones have been copied from a Qualitas project to Stack
+  Overflow. We found 100 of them (66 percent) to be outdated, of which 10 were
+  buggy and harmful for reuse. Furthermore, we found 214 code snippets that
+  could potentially violate the license of their original software and appear
+  7,112 times in 2,427 GitHub projects.
+</blockquote>
