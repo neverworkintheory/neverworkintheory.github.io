@@ -1,0 +1,79 @@
+---
+layout: post
+author: Greg Wilson
+title: "Code and commit metrics of developer productivity: a study on team leaders perceptions"
+date: 2021-08-21
+categories: ["Productivity", "Metrics"]
+---
+<div class="review">
+  <p>
+    <a class="bibkey" href="/bib/#Oliveira2020">Oliveira2020</a>'s central proposition is straightforward:
+  </p>
+  <ol>
+    <li>Team leaders' perceptions are usually projects managers' primary source of information about development teams.</li>
+    <li>Those perceptions can be compared to metrics based on the code programmers write or to measures of their commits to the project repository.</li>
+    <li>It turns out that team leaders' perceptions correlate with the former (code) better than the latter (commits).</li>
+  </ol>
+  <p>
+    It's great to see a careful study of how programmers are evaluated:
+    every team does it explicitly or implicitly,
+    and knowing what factors influence those evaluations can help us make them fairer.
+    The authors are careful to point out that they're comparing metrics to <em>perceived</em> productivity
+    rather than making any claims about programmers' actual productivity.
+    The latter is probably the most difficult question in empirical software engineering:
+    an entire book was recently devoted to the topic
+    (<a class="bibkey" href="/bib/#Sadowski2019">Sadowski2019</a>,
+    which can be downloaded <a href="https://link.springer.com/book/10.1007%2F978-1-4842-4221-6">here</a>),
+    and <a class="bibkey" href="/bib/#Begel2014">Begel2014</a> found that
+    individual productivity is the topic programmers want studied <em>least</em>
+    because they're afraid findings will be mis-used.
+  </p>
+  <p>
+    I enjoyed this paper,
+    but I did come away with a question and a minor concern.
+    The question is how to square this with <a class="bibkey" href="/bib/#Rahman2013">Rahman2013</a>'s finding that
+    process metrics (which roughly align with Oliveira et al's commit metrics)
+    create better defect prediction models than code metrics
+    (see <a href="{{'/2013/07/07/how-and-why-process-metrics-are-better.html' | relative_url}}">here</a> for a review).
+    The minor concern is with one of the code metrics Oliveira et al used:
+    fancy measures of source code like Halstead's are no better than simply counting lines of code
+    (see <a class="bibkey" href="/bib/#ElEmam2001">ElEmam2001</a>,
+    summarized <a href="{{'/2011/07/07/the-confounding-effect-of-class-size-on-the-validity-of-object-oriented-metrics.html' | relative_url}}">here</a>),
+    and I think it's time to set them aside.
+  </p>
+</div>
+<p id="Oliveira2020" class="bib">
+  <a class="bibkey" href="/bib/#Oliveira2020">Oliveira2020</a>
+  Edson Oliveira, Eduardo Fernandes, Igor Steinmacher, Marco Cristo, Tayana Conte, and Alessandro Garcia:
+  "<a href="https://doi.org/10.1007/s10664-020-09820-z">Code and commit metrics of developer productivity: a study on team leaders perceptions</a>".
+  <em>Empirical Software Engineering</em>, 25(4), 2020,
+  <a class="doi" href="https://doi.org/10.1007/s10664-020-09820-z">10.1007/s10664-020-09820-z</a>.
+</p>
+<blockquote class="abstract">
+  <strong>Context:</strong> Developer productivity is essential to the success
+  of software development organizations. Team leaders use developer productivity
+  information for managing tasks in a software project. Developer productivity
+  metrics can be computed from software repositories data to support leaders'
+  decisions. We can classify these metrics in code-based metrics, which rely on
+  the amount of produced code, and commit-based metrics, which rely on commit
+  activity. Although metrics can assist a leader, organizations usually neglect
+  their usage and end up sticking to the leaders' subjective perceptions
+  only. <strong>Objective:</strong> We aim to understand whether productivity
+  metrics can complement the leaders' perceptions. We also aim to capture
+  leaders' impressions about relevance and adoption of productivity metrics in
+  practice. <strong>Method:</strong> This paper presents a multi-case empirical
+  study performed in two organizations active for more than 18 years. Eight
+  leaders of nine projects have ranked the developers of their teams by
+  productivity. We quantitatively assessed the correlation of leaders' rankings
+  versus metric-based rankings. As a complement, we interviewed leaders for
+  qualitatively understanding the leaders' impressions about relevance and
+  adoption of productivity metrics given the computed correlations.
+  <strong>Results:</strong> Our quantitative data suggest a greater correlation
+  of the leaders' perceptions with code-based metrics when compared to
+  commit-based metrics. Our qualitative data reveal that leaders have positive
+  impressions of code-based metrics and potentially would adopt
+  them. <strong>Conclusions:</strong> Data triangulation of productivity metrics
+  and leaders' perceptions can strengthen the organization conviction about
+  productive developers and can reveal productive developers not yet perceived
+  by team leaders and probably underestimated in the organization.
+</blockquote>
