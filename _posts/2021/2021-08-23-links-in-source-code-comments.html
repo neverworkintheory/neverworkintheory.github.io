@@ -1,0 +1,90 @@
+---
+layout: post
+author: Greg Wilson
+title: "9.6 Million Links in Source Code Comments: Purpose, Evolution, and Decay"
+date: 2021-08-23
+categories: ["Documentation", "Source Code"]
+---
+<div class="review">
+  <p>
+    The URL ranks up there with the Unix pipe as one of the great practical innovations in computing.
+    We use them in dozens of different ways without really noticing them any longer,
+    but calling them "links" isn't accurate:
+    they are pointers,
+    and the things they point to can change, move, or disappear over time.
+  </p>
+  <p>
+    This paper looks at URLs embedded in source code.
+    Over 80% of repositories contain at least one link;
+    licenses and projects' home pages are the most common "internal" links,
+    while links to external domains obey a long tail distribution
+    with GitHub, Stack Overflow, and Wikipedia being the most common.
+    Almost 10% of links are dead overall,
+    but the less common a site is as a link target in general,
+    the more likely it is that a link to it no longer works,
+    and links are rarely updated after they're committed.
+  </p>
+  <p>
+    So what are links used for?
+    In descending order:
+  </p>
+  <ul>
+    <li>
+      metadata, like the author, a related organization, or the license;
+    </li>
+    <li>
+      source/attribution: the link points to the source of an algorithm or something similar;
+    </li>
+    <li>
+      source code context: the link adds miscellaneous information to the source code;
+    </li>
+    <li>
+      see-also: the link points to additional reading material;
+    </li>
+    <li>
+      commented-out source code: the link is part of the source code, e.g., as a parameter value, but has been commented out;
+    </li>
+    <li>
+      link-only: the comment only contains the link;
+    </li>
+    <li>
+      self-admitted technical debt: bug-related, like workaround, under development, and so on; and
+    </li>
+    <li>
+      @see: the link is accompanied by “@see”, but no further explanation.
+    </li>
+  </ul>
+  <p>
+    One thing the paper doesn't discuss that I'd like to know is
+    how often programmers automate checks for the links in their source code.
+    I routinely use tools like <code>pylint</code> and <code>ESLint</code>
+    to check that my code conforms to style guidelines,
+    but to the best of my knowledge they don't check external links in comments.
+    It would be interesting to see what developers would do if dead links made CI jobs fail.
+  </p>
+</div>
+<p id="Hata2019" class="bib"><a class="bibkey" href="/bib/#Hata2019">Hata2019</a>
+  Hideaki Hata, Christoph Treude, Raula Gaikovina Kula, and Takashi Ishio:
+  "<a href="https://doi.org/10.1109/icse.2019.00123">9.6 Million Links in Source Code Comments: Purpose, Evolution, and Decay</a>".
+  <em>2019 IEEE/ACM 41st International Conference on Software Engineering (ICSE)</em>,
+  <a class="doi" href="https://doi.org/10.1109/icse.2019.00123">10.1109/icse.2019.00123</a>.
+</p>
+<blockquote class="abstract">
+  Links are an essential feature of the World Wide Web, and source code
+  repositories are no exception. However, despite their many undisputed
+  benefits, links can suffer from decay, insufficient versioning, and lack of
+  bidirectional traceability. In this paper, we investigate the role of links
+  contained in source code comments from these perspectives. We conducted a
+  large-scale study of around 9.6 million links to establish their prevalence,
+  and we used a mixed-methods approach to identify the links' targets, purposes,
+  decay, and evolutionary aspects. We found that links are prevalent in source
+  code repositories, that licenses, software homepages, and specifications are
+  common types of link targets, and that links are often included to provide
+  metadata or attribution. Links are rarely updated, but many link targets
+  evolve. Almost 10% of the links included in source code comments are dead. We
+  then submitted a batch of link-fixing pull requests to open source software
+  repositories, resulting in most of our fixes being merged successfully. Our
+  findings indicate that links in source code comments can indeed be fragile,
+  and our work opens up avenues for future work to address these
+  problems.
+</blockquote>
