@@ -36,12 +36,15 @@ def main():
 
 def add_credit(credit, entry):
     eid = entry['ID']
-    for author in [x.strip() for x in SPLIT.split(entry['author'])]:
-        author = unlatex(author)
-        author = normalize(author)
-        if author not in credit:
-            credit[author] = []
-        credit[author].append(eid)
+    assert ('author' in entry) or ('editor' in entry), \
+        f'No author or editor in {entry}'
+    source = entry['author'] if ('author' in entry) else entry['editor']
+    for person in [x.strip() for x in SPLIT.split(source)]:
+        person = unlatex(person)
+        person = normalize(person)
+        if person not in credit:
+            credit[person] = []
+        credit[person].append(eid)
 
 
 def get_options():
@@ -52,16 +55,16 @@ def get_options():
 
 def report(credit):
     print('<ul>')
-    for author in sorted(credit.keys()):
-        cites = [f'<a href="/bib/#{c}">{c}</a>' for c in credit[author]]
-        print(f'<li>{author}: {", ".join(cites)}</li>')
+    for person in sorted(credit.keys()):
+        cites = [f'<a href="/bib/#{c}">{c}</a>' for c in credit[person]]
+        print(f'<li>{person}: {", ".join(cites)}</li>')
     print('</ul>')
 
 
-def normalize(author):
-    if author in SPECIAL:
-        return SPECIAL[author]
-    front, back = author.rsplit(' ', 1)
+def normalize(person):
+    if person in SPECIAL:
+        return SPECIAL[person]
+    front, back = person.rsplit(' ', 1)
     return f'{back}, {front}'
 
         

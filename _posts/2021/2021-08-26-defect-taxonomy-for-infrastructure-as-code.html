@@ -1,0 +1,68 @@
+---
+layout: post
+author: Greg Wilson
+title: "Gang of eight: a defect taxonomy for infrastructure as code scripts"
+date: 2021-08-26
+categories: ["Design Patterns", "DevOps"]
+---
+<div class="review">
+  <p>
+    I enjoyed <a class="bibkey" href="/bib/#Rahman2020a">Rahman2020a</a> for two reasons.
+    The first is the taxonomy the authors develop:
+    cataloging the ways that infrastructure scripts go wrong
+    is a necessary first step toward building tools that prevent or detect those errors,
+    and if developers and admins could sanity check changes to deployment scripts,
+    they'd get more sleep.
+  </p>
+  <p>
+    The second reason I liked this paper is that
+    its pragmatic mix of qualitative and quantitative methods is more powerful than either approach on its own.
+    The authors looked at over 1400 detect-related commits to identify categories,
+    surveyed 66 practitioners to check that their categorization made sense,
+    then analyze over 80,000 commits from almost 300 projects to see how common these mistakes are.
+  </p>
+  <p>
+    So what errors did they identify?
+  </p>
+  <ul>
+    <li>Conditional errors (i.e., a logical error leads to executing the wrong branch in a script)</li>
+    <li>Erroneous configuration data (I once set a timeout to 07 seconds instead of 70 seconds and spent three days trying to track down the problem)</li>
+    <li>Missing or incorrect dependencies</li>
+    <li>Incorrect documentation ("We did exactly what the comments told us to do, but the comments were wrong")</li>
+    <li>Security, such as confidential data showing up in logs</li>
+    <li>Idempotency, meaning that executing the script multiple times doesn't have the same effect as executing it only once</li>
+  </ul>
+  <p>
+    I don't know if it's possible to automate checks for all of these problems,
+    but having them in a checklist or a training course
+    would help a lot of developers.
+  </p>
+</div>
+<p id="Rahman2020a" class="bib"><a class="bibkey" href="/bib/#Rahman2020a">Rahman2020a</a>
+  Akond Rahman, Effat Farhana, Chris Parnin, and Laurie Williams:
+  "<a href="https://doi.org/10.1145/3377811.3380409">Gang of eight: a defect taxonomy for infrastructure as code scripts</a>".
+  <em>Proceedings of the ACM/IEEE 42nd International Conference on Software Engineering</em>,
+  <a class="doi" href="https://doi.org/10.1145/3377811.3380409">10.1145/3377811.3380409</a>.
+</p>
+<blockquote class="abstract">
+  Defects in infrastructure as code (IaC) scripts can have serious consequences,
+  for example, creating large-scale system outages. A taxonomy of IaC defects
+  can be useful for understanding the nature of defects, and identifying
+  activities needed to fix and prevent defects in IaC scripts. The goal of this
+  paper is to help practitioners improve the quality of infrastructure as code
+  (IaC) scripts by developing a defect taxonomy for IaC scripts through
+  qualitative analysis. We develop a taxonomy of IaC defects by applying
+  qualitative analysis on 1,448 defect-related commits collected from open
+  source software (OSS) repositories of the Openstack organization. We conduct a
+  survey with 66 practitioners to assess if they agree with the identified
+  defect categories included in our taxonomy. We quantify the frequency of
+  identified defect categories by analyzing 80,425 commits collected from 291
+  OSS repositories spanning across 2005 to 2019. Our defect taxonomy for IaC
+  consists of eight categories, including a category specific to IaC called
+  idempotency (i.e., defects that lead to incorrect system provisioning when the
+  same IaC script is executed multiple times). We observe the surveyed 66
+  practitioners to agree most with idempotency. The most frequent defect
+  category is configuration data i.e., providing erroneous configuration data in
+  IaC scripts. Our taxonomy and the quantified frequency of the defect
+  categories may help in advancing the science of IaC script quality.
+</blockquote>

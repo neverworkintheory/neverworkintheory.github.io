@@ -1338,6 +1338,18 @@
   abstract = {Defect prediction techniques could potentially help us to focus quality-assurance efforts on the most defect-prone files. Modern statistical tools make it very easy to quickly build and deploy prediction models. Software metrics are at the heart of prediction models; understanding how and especially why different types of metrics are effective is very important for successful model deployment. In this paper we analyze the applicability and efficacy of process and code metrics from several different perspectives. We build many prediction models across 85 releases of 12 large open source projects to address the performance, stability, portability and stasis of different sets of metrics. Our results suggest that code metrics, despite widespread use in the defect prediction literature, are generally less useful than process metrics for prediction. Second, we find that code metrics have high stasis; they don't change very much from release to release. This leads to stagnation in the prediction models, leading to the same files being repeatedly predicted as defective; unfortunately, these recurringly defective files turn out to be comparatively less defect-dense.}
 }
 
+@inproceedings{Rahman2020a,
+  doi = {10.1145/3377811.3380409},
+  url = {https://doi.org/10.1145/3377811.3380409},
+  year = {2020},
+  month = jun,
+  publisher = {{ACM}},
+  author = {Akond Rahman and Effat Farhana and Chris Parnin and Laurie Williams},
+  title = {Gang of eight: a defect taxonomy for infrastructure as code scripts},
+  booktitle = {Proceedings of the {ACM}/{IEEE} 42nd International Conference on Software Engineering},
+  abstract = {Defects in infrastructure as code (IaC) scripts can have serious consequences, for example, creating large-scale system outages. A taxonomy of IaC defects can be useful for understanding the nature of defects, and identifying activities needed to fix and prevent defects in IaC scripts. The goal of this paper is to help practitioners improve the quality of infrastructure as code (IaC) scripts by developing a defect taxonomy for IaC scripts through qualitative analysis. We develop a taxonomy of IaC defects by applying qualitative analysis on 1,448 defect-related commits collected from open source software (OSS) repositories of the Openstack organization. We conduct a survey with 66 practitioners to assess if they agree with the identified defect categories included in our taxonomy. We quantify the frequency of identified defect categories by analyzing 80,425 commits collected from 291 OSS repositories spanning across 2005 to 2019. Our defect taxonomy for IaC consists of eight categories, including a category specific to IaC called idempotency (i.e., defects that lead to incorrect system provisioning when the same IaC script is executed multiple times). We observe the surveyed 66 practitioners to agree most with idempotency. The most frequent defect category is configuration data i.e., providing erroneous configuration data in IaC scripts. Our taxonomy and the quantified frequency of the defect categories may help in advancing the science of IaC script quality.}
+}
+
 @inproceedings{Rigby2011,
   doi = {10.1145/1985793.1985867},
   url = {https://doi.org/10.1145/1985793.1985867},
