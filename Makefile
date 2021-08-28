@@ -47,13 +47,7 @@ serve: ${SUPPORT_HTML}
 # ---
 
 ## authors: cross-reference authors and bibliography entries
-authors: ${AUTHORS_HTML} ${AUTHORS_BIN}
-	@mkdir -p authors
-	@echo "---" > ${AUTHORS_HTML}
-	@echo "layout: page" >> ${AUTHORS_HTML}
-	@echo "title: Authors" >> ${AUTHORS_HTML}
-	@echo "---" >> ${AUTHORS_HTML}
-	${AUTHORS_BIN} --input ${NWIT_BIB} >> ${AUTHORS_HTML}
+authors: ${AUTHORS_HTML}
 
 ## pdf: re-create PDF version of bibliography
 pdf: ${PDF}
@@ -106,6 +100,14 @@ sterile:
 	@rm -rf ${SITE}
 
 # --------
+
+${AUTHORS_HTML}: ${AUTHORS_BIN} ${NWIT_BIB}
+	@mkdir -p authors
+	@echo "---" > ${AUTHORS_HTML}
+	@echo "layout: page" >> ${AUTHORS_HTML}
+	@echo "title: Authors" >> ${AUTHORS_HTML}
+	@echo "---" >> ${AUTHORS_HTML}
+	${AUTHORS_BIN} --input ${NWIT_BIB} >> ${AUTHORS_HTML}
 
 ${BIB_HTML}: ${NWIT_BIB} ${BIB2HTML_BIN}
 	@make TITLE="Bibliography" SLUG=nwit bib2html > $@
