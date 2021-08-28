@@ -34,6 +34,7 @@ years:
 
 plugins:
   - jekyll-paginate
+  - jekyll-redirect-from
 
 exclude:
   - '*.sublime-*'

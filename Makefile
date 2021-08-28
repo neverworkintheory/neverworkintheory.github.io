@@ -39,6 +39,7 @@ commands:
 
 ## build: rebuild site without running server
 build: ${SUPPORT_HTML} ${PDF}
+	${JEKYLL} build
 
 ## serve: build site and run server
 serve: ${SUPPORT_HTML}
