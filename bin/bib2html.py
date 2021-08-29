@@ -5,6 +5,7 @@
 import argparse
 import bibtexparser
 import re
+import string
 import sys
 import yaml
 
@@ -193,17 +194,45 @@ def yml2md(config, text=None):
     if text is None:
         text = sys.stdin.read()
     data = yaml.load(text, Loader=yaml.FullLoader)
-    entries = []
+    entries = [make_toc()]
+    letter = chr(ord('A') - 1)
     for entry in data:
-        check('key' in entry,
-              f'Entries must have "key": {entry}')
-        check('kind' in entry,
-              f'Entries must have "kind": {entry}')
-        check(entry['kind'] in YAML_TO_MARKDOWN,
-              f'Unknown entry kind {entry["kind"]}')
+        check_entry(entry)
+        letter, heading = advance_heading(letter, entry)
+        if heading is not None:
+            entries.append(heading)
         text = YAML_TO_MARKDOWN[entry['kind']](config, entry)
         entries.append(text)
     return '\n\n'.join(entries)
+
+
+def make_toc():
+    '''Make A-Z table of contents for bibliography.'''
+    toc = [f'<a href="#{c}">{c}</a>' for c in string.ascii_uppercase]
+    return f'<p>{" ".join(toc)}</p>'
+
+
+def check_entry(entry):
+    '''Make sure YAML entry can be turned into Markdown.'''
+    check('key' in entry,
+          f'Entries must have "key": {entry}')
+    check('kind' in entry,
+          f'Entries must have "kind": {entry}')
+    check(entry['kind'] in YAML_TO_MARKDOWN,
+          f'Unknown entry kind {entry["kind"]}')
+
+
+def advance_heading(letter, entry):
+    '''Create the next heading(s)?'''
+    first = entry['key'][0]
+    if (first == letter):
+        return letter, None
+    result = []
+    letter = chr(ord(letter) + 1)
+    while letter <= first:
+        result.append(f'<h2 id="{letter}">{letter}</h2>')
+        letter = chr(ord(letter) + 1)
+    return first, '\n'.join(result)
 
 
 def article(config, entry):
