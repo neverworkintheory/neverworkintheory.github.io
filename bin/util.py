@@ -18,7 +18,7 @@ MONTHS =     '''
 '''
 
 
-def get_entries(inputs):
+def get_entries(*inputs):
     if not inputs:
         return get_bib('<stdin>', sys.stdin.read())
     entries = [get_bib(f, open(f, 'r').read()) for f in inputs]

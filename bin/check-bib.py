@@ -8,7 +8,7 @@ import util
 
 def main():
     options = get_options()
-    entries = util.get_entries(options.inputs)
+    entries = util.get_entries(*options.inputs)
     problems = check(options, entries)
     report(options, problems)
 

@@ -7,16 +7,16 @@ BIB2HTML_BIN=./bin/bib2html.py
 BIBTEX_BIN=bibtex
 LATEX_BIN=pdflatex
 
+NWIT_BIB=./tex/nwit.bib
+TODO_BIB=./tex/todo.bib
+ALL_BIB=${NWIT_BIB} ${TODO_BIB}
+
 AUTHORS_HTML=authors/index.html
 BIB_HTML=bib/index.html
 TODO_HTML=todo/index.html
 SUPPORT_HTML=${AUTHORS_HTML} ${BIB_HTML} ${TODO_HTML}
 
 PDF=tex/nwit.pdf
-
-NWIT_BIB=./tex/nwit.bib
-TODO_BIB=./tex/todo.bib
-ALL_BIB=${NWIT_BIB} ${TODO_BIB}
 
 CONFIG=_config.yml
 INCLUDES=$(wildcard _includes/*.html)
@@ -79,13 +79,18 @@ pick:
 categories:
 	@bin/categories.py _posts/*/*.html
 
-## check: check integrity of bibliography
+## check: run all checks
 check:
-	@bin/check.py --inputs ${NWIT_BIB} ${TODO_BIB}
+	@make check-bib
+	@make check-used
 
-## used: check which papers have been used or not
-used:
-	@bin/used.py --inputs ${NWIT_BIB} --pagedir _posts
+## check-bib: check integrity of bibliography
+check-bib:
+	@bin/check-bib.py --inputs ${NWIT_BIB} ${TODO_BIB}
+
+## check-used: check which papers have been used or not
+check-used:
+	@bin/check-used.py --pagedir _posts --used ${NWIT_BIB} --todo ${TODO_BIB}
 
 ## clean: clean up stray files
 clean:
@@ -111,10 +116,10 @@ ${AUTHORS_HTML}: ${AUTHORS_BIN} ${NWIT_BIB}
 	${AUTHORS_BIN} --input ${NWIT_BIB} >> ${AUTHORS_HTML}
 
 ${BIB_HTML}: ${NWIT_BIB} ${BIB2HTML_BIN}
-	@make TITLE="Bibliography" SLUG=nwit bib2html > $@
+	make TITLE="Bibliography" SLUG=nwit bib2html > $@
 
 ${TODO_HTML}: ${TODO_BIB} ${BIB2HTML_BIN}
-	@make TITLE="To Do" SLUG=todo bib2html > $@
+	make TITLE="To Do" SLUG=todo bib2html > $@
 
 ${PDF}: ${NWIT_BIB} ${TODO_BIB} tex/nwit.tex tex/settings.tex tex/abstract.bst
 	@cd tex \
