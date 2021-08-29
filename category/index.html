@@ -5,9 +5,9 @@ title: By Category
 {% assign sorted_cats = site.categories | sort %}
 <table class="table table-striped" width="100%">
   {% for category in sorted_cats %}
-  {% cycle '<tr width="25%">', '', '', '' %}
+  {% cycle '<tr width="25%">', '', '' %}
     <td><a href="#{{ category[0] | slugify}}">{{ category[0] }}</a> ({{ category[1] | size }})</td>
-  {% cycle '', '', '', '</tr>' %}
+  {% cycle '', '', '</tr>' %}
   {% endfor %}
 </table>
 {% for category in sorted_cats %}

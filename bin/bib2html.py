@@ -194,12 +194,12 @@ def yml2md(config, text=None):
     if text is None:
         text = sys.stdin.read()
     data = yaml.load(text, Loader=yaml.FullLoader)
-    entries = [make_toc()]
+    entries = [] if config.only else [make_toc()]
     letter = chr(ord('A') - 1)
     for entry in data:
         check_entry(entry)
         letter, heading = advance_heading(letter, entry)
-        if heading is not None:
+        if (not config.only) and (heading is not None):
             entries.append(heading)
         text = YAML_TO_MARKDOWN[entry['kind']](config, entry)
         entries.append(text)
