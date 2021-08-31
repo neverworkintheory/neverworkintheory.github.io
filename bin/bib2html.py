@@ -137,6 +137,7 @@ REPLACEMENTS = (
     (r'{\textendash}', '–'),
     ('{', ''),
     ('}', ''),
+    ('\$', '$'),
     ('\\', ''),
     ('  ', ' '),
     ('&', '&amp;'),
@@ -144,9 +145,15 @@ REPLACEMENTS = (
     ('>', '&gt;')
 )
 
+PATTERNS = [
+    re.compile(r'\\texttt{(.+?)}') # fragile: does not handle nested {}
+]
+
 
 def unlatex(s):
     '''Remove LaTeX isms.'''
+    for pattern in PATTERNS:
+        s = pattern.sub(lambda x: x.group(1), s)
     for (original, replacement) in REPLACEMENTS:
         s = s.replace(original, replacement)
     return s
