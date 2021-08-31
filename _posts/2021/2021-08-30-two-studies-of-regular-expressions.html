@@ -1,0 +1,107 @@
+---
+layout: post
+author: Greg Wilson
+title: "Two Studies of Regular Expressions"
+date: 2021-08-30
+categories: ["Regular Expressions"]
+---
+<div class="review">
+  <p>
+    Regular expressions are like <a href="{{'/2021/08/27/errors-in-sql-queries.html' | relative_url}}">SQL</a>:
+    most large applications use regex,
+    but they have been overlooked by most researchers until recently.
+    These two papers are therefore both very welcome additions to the literature.
+  </p>
+  <p>
+    <a class="bibkey" href="/bib/#Davis2019">Davis2019</a> examines how portable regex are
+    versus how portable programmers <em>think</em> they are.
+    The authors examined over half a million regex from programs in 8 different languages
+    and found that 15% behaved differently across languages.
+    Considering that 90% of programmers surveyed re-use regex found on the Internet or in other programs,
+    frequently without thinking about language differences,
+    this can be a fertile field for hard-to-find errors.
+    Along the way,
+    they found bugs in the regex engines of the V8 implementation of JavaScript,
+    as well as Python, Ruby, and Rust,
+    as well as significant performance differences that could be exploired for Denial of Service (DoS) attacks.
+  </p>
+  <p>
+    <a class="bibkey" href="/bib/#Wang2020">Wang2020</a> focuses on bugs in the regex themselves.
+    They found that almost half are due to incorrect regular expression behavior,
+    while just under 10% are caused by mis-using the regex API.
+    The hierarchical breakdown of these causes and others that they present is given
+    in a table too complex to easily reproduce here;
+    the authors also analyze the distribution of regex-related changes
+    and their relationship to different problems' root causes and manifestations.
+    Finally,
+    they present 10 patterns that will fix many common regex bugs,
+    ranging from extending the character class in a match
+    to check for null values in regex execution.
+  </p>
+  <p>
+    If the devil is in the details,
+    then so too are most opportunities for improving programmers' lives.
+    Knowing that a regex copied from a PHP program
+    is going to behave slightly differently in JavaScript
+    is a necessary first step toward building tools to detect, warn about, and correct the problem,
+    while knowing how programmers mis-use the <code>|</code> operator
+    is a first step toward generating a better error message.
+    I hope we see more papers from both groups.
+  </p>
+</div>
+<p id="Davis2019" class="bib"><a class="bibkey" href="/bib/#Davis2019">Davis2019</a>
+  James C. Davis, Louis G. Michael IV, Christy A. Coghlan, Francisco Servant, and Dongyoon Lee:
+  "<a href="https://doi.org/10.1145/3338906.3338909">Why aren't regular expressions a lingua franca? An empirical study on the re-use and portability of regular expressions</a>".
+  <em>Proceedings of the 2019 27th ACM Joint Meeting on European Software Engineering Conference and Symposium on the Foundations of Software Engineering</em>,
+  <a class="doi" href="https://doi.org/10.1145/3338906.3338909">10.1145/3338906.3338909</a>.
+</p>
+<blockquote class="abstract">
+  This paper explores the extent to which regular expressions (regexes) are
+  portable across programming languages. Many languages offer similar regex
+  syntaxes, and it would be natural to assume that regexes can be ported across
+  language boundaries. But can regexes be copy/pasted across language boundaries
+  while retaining their semantic and performance characteristics? In our survey
+  of 158 professional software developers, most indicated that they re-use
+  regexes across language boundaries and about half reported that they believe
+  regexes are a universal language. We experimentally evaluated the riskiness of
+  this practice using a novel regex corpus—537,806 regexes from 193,524 projects
+  written in JavaScript, Java, PHP, Python, Ruby, Go, Perl, and Rust. Using our
+  polyglot regex corpus, we explored the hitherto-unstudied regex portability
+  problems: logic errors due to semantic differences, and security
+  vulnerabilities due to performance differences. We report that developers’
+  belief in a regex lingua franca is understandable but unfounded. Though most
+  regexes compile across language boundaries, 15% exhibit semantic differences
+  across languages and 10% exhibit performance differences across languages. We
+  explained these differences using regex documentation, and further illuminate
+  our findings by investigating regex engine implementations. Along the way we
+  found bugs in the regex engines of JavaScript-V8, Python, Ruby, and Rust, and
+  potential semantic and performance regex bugs in thousands of modules.
+</blockquote>
+<p id="Wang2020" class="bib"><a class="bibkey" href="/bib/#Wang2020">Wang2020</a>
+  Peipei Wang, Chris Brown, Jamie A. Jennings, and Kathryn T. Stolee:
+  "<a href="https://doi.org/10.1145/3379597.3387464">An Empirical Study on Regular Expression Bugs</a>".
+  <em>Proceedings of the 17th International Conference on Mining Software Repositories</em>,
+  <a class="doi" href="https://doi.org/10.1145/3379597.3387464">10.1145/3379597.3387464</a>.
+</p>
+<blockquote class="abstract">
+  Understanding the nature of regular expression (regex) issues is important to
+  tackle practical issues developers face in regular expression usage. Knowledge
+  about the nature and frequency of various types of regular expression issues,
+  such as those related to performance, API misuse, and code smells, can guide
+  testing, inform documentation writers, and motivate refactoring
+  efforts. However, beyond ReDoS (Regular expression Denial of Service), little
+  is known about to what extent regular expression issues affect software
+  development and how these issues are addressed in practice. This paper
+  presents a comprehensive empirical study of 350 merged regex-related pull
+  requests from Apache, Mozilla, Facebook, and Google GitHub
+  repositories. Through classifying the root causes and manifestations of those
+  bugs, we show that incorrect regular expression behavior is the dominant root
+  cause of regular expression bugs (165/356, 46.3%). The remaining root causes
+  are incorrect API usage (9.3%) and other code issues that require regular
+  expression changes in the fix (29.5%). By studying the code changes of
+  regex-related pull requests, we observe that fixing regular expression bugs is
+  nontrivial as it takes more time and more lines of code to fix them compared
+  to the general pull requests. The results of this study contribute to a
+  broader understanding of the practical problems faced by developers when using
+  regular expressions.
+</blockquote>
