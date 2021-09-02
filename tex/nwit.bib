@@ -118,6 +118,18 @@
   abstract = {Peer code review is a cost-effective software defect detection technique. Tool assisted code review is a form of peer code review, which can improve both quality and quantity of reviews. However, there is a significant amount of human effort involved even in tool based code reviews. Using static analysis tools, it is possible to reduce the human effort by automating the checks for coding standard violations and common defect patterns. Towards this goal, we propose a tool called Review Bot for the integration of automatic static analysis with the code review process. Review Bot uses output of multiple static analysis tools to publish reviews automatically. Through a user study, we show that integrating static analysis tools with code review process can improve the quality of code review. The developer feedback for a subset of comments from automatic reviews shows that the developers agree to fix 93\% of all the automatically generated comments. There is only 14.71\% of all the accepted comments which need improvements in terms of priority, comment message, etc. Another problem with tool assisted code review is the assignment of appropriate reviewers. Review Bot solves this problem by generating reviewer recommendations based on change history of source code lines. Our experimental results show that the recommendation accuracy is in the range of 60\%-92\%, which is significantly better than a comparable method based on file change history.}
 }
 
+@inproceedings{Barik2018,
+  doi = {10.1145/3236024.3236040},
+  url = {https://doi.org/10.1145/3236024.3236040},
+  year = {2018},
+  month = oct,
+  publisher = {{ACM}},
+  author = {Titus Barik and Denae Ford and Emerson Murphy-Hill and Chris Parnin},
+  title = {How should compilers explain problems to developers?},
+  booktitle = {Proceedings of the 2018 26th {ACM} Joint Meeting on European Software Engineering Conference and Symposium on the Foundations of Software Engineering},
+  abstract = {Compilers primarily give feedback about problems to developers through the use of error messages. Unfortunately, developers routinely find these messages to be confusing and unhelpful. In this paper, we postulate that because error messages present poor explanations, theories of explanation---such as Toulmin's model of argument---can be applied to improve their quality. To understand how compilers should present explanations to developers, we conducted a comparative evaluation with 68 professional software developers and an empirical study of compiler error messages found in Stack Overflow questions across seven different programming languages. Our findings suggest that, given a pair of error messages, developers significantly prefer the error message that employs proper argument structure over a deficient argument structure when neither offers a resolution---but will accept a deficient argument structure if it provides a resolution to the problem. Human-authored explanations on Stack Overflow converge to one of the three argument structures: those that provide a resolution to the error, simple arguments, and extended arguments that provide additional evidence for the problem. Finally, we contribute three practical design principles to inform the design and evaluation of compiler error messages.}
+}
+
 @article{Barnett2011,
   doi = {10.1145/1953122.1953145},
   url = {https://doi.org/10.1145/1953122.1953145},
@@ -165,6 +177,18 @@
   title = {On the congruence of modularity and code coupling},
   booktitle = {Proceedings of the 19th {ACM} {SIGSOFT} symposium and the 13th European conference on Foundations of software engineering - {SIGSOFT}/{FSE} {\textquotesingle}11},
   abstract = {Software systems are modularized to make their inherent complexity manageable. While there exists a set of well-known principles that may guide software engineers to design the modules of a software system, we do not know which principles are followed in practice. In a study based on 16 open source projects, we look at different kinds of coupling concepts between source code entities, including structural dependencies, fan-out similarity, evolutionary coupling, code ownership, code clones, and semantic similarity. The congruence between these coupling concepts and the modularization of the system hints at the modularity principles used in practice. Furthermore, the results provide insights on how to support developers to modularize software systems.}
+}
+
+@inproceedings{Becker2019,
+  doi = {10.1145/3344429.3372508},
+  url = {https://doi.org/10.1145/3344429.3372508},
+  year = {2019},
+  month = dec,
+  publisher = {{ACM}},
+  author = {Brett A. Becker and Paul Denny and Raymond Pettit and Durell Bouchard and Dennis J. Bouvier and Brian Harrington and Amir Kamil and Amey Karkare and Chris McDonald and Peter-Michael Osera and Janice L. Pearce and James Prather},
+  title = {Compiler Error Messages Considered Unhelpful},
+  booktitle = {Proceedings of the Working Group Reports on Innovation and Technology in Computer Science Education},
+  abstract = {Diagnostic messages generated by compilers and interpreters such as syntax error messages have been researched for over half of a century. Unfortunately, these messages which include error, warning, and run-time messages, present substantial difficulty and could be more effective, particularly for novices. Recent years have seen an increased number of papers in the area including studies on the effectiveness of these messages, improving or enhancing them, and their usefulness as a part of programming process data that can be used to predict student performance, track student progress, and tailor learning plans. Despite this increased interest, the long history of literature is quite scattered and has not been brought together in any digestible form. In order to help the computing education community (and related communities) to further advance work on programming error messages, we present a comprehensive, historical and state-of-the-art report on research in the area. In addition, we synthesise and present the existing evidence for these messages including the difficulties they present and their effectiveness. We finally present a set of guidelines, curated from the literature, classified on the type of evidence supporting each one (historical, anecdotal, and empirical). This work can serve as a starting point for those who wish to conduct research on compiler error messages, runtime errors, and warnings. We also make the bibtex file of our 300+ reference corpus publicly available. Collectively this report and the bibliography will be useful to those who wish to design better messages or those that aim to measure their effectiveness, more effectively.}
 }
 
 @inproceedings{Begel2014,
