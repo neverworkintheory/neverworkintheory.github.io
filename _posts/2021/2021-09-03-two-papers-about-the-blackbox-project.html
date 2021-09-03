@@ -1,0 +1,82 @@
+---
+layout: post
+author: Greg Wilson
+title: "Two Papers About the Blackbox Project"
+date: 2021-09-03
+categories: ["Computing Education"]
+---
+<div class="review">
+  <p>
+    Back in 2016,
+    we <a href="{{'/2016/06/09/novice-programming-mistakes.html' | relative_url}}">reviewed</a>
+    <a class="bibliographykey" href="/bib/#Altadmri2015">Altadmri2015</a>,
+    which analyzed 37 million failed attempts by novices to compile Java programs.
+    Even then it was the largest and most detailed dataset of its kind,
+    but the team hasn't stopped:
+    their instrumentation continues to collect information about what novices actually struggle with,
+    and in doing so,
+    gives us invaluable and surprising insights that we cannot get by looking at their finished code.
+  </p>
+  <p>
+    <a class="bibkey" href="/bib/#Brown2018">Brown2018</a> was written three years after the paper cited above.
+    It explores the project's impact,
+    and along the way provides a lot of advice for anyone thinking about collecting and analyzing programming data.
+    The more recent <a class="bibkey" href="/bib/#WeillTessier2021">WeillTessier2021</a>
+    demonstrates just one use of this data
+    by showing how novices' use of different language features has changed over time.
+    Among their conclusions:
+    "…we do see decreased exception use
+    and a change in target application domains away from GUI programming
+    towards text processing.
+    We conclude that programming languages for novices could have fewer built-in types
+    but should retain rich libraries."
+    I don't know if the people building low-code and no-code tools for the general population
+    are paying attention to results like these,
+    but I do believe they should.
+  </p>
+</div>
+<p id="Brown2018" class="bib"><a class="bibkey" href="/bib/#Brown2018">Brown2018</a>
+  Neil C. C. Brown, Amjad Altadmri, Sue Sentance, and Michael Kölling:
+  "<a href="https://doi.org/10.1145/3230977.3230991">Blackbox, Five Years On: An Evaluation of a Large-scale Programming Data Collection Project</a>".
+  <em>Proceedings of the 2018 ACM Conference on International Computing Education Research</em>,
+  <a class="doi" href="https://doi.org/10.1145/3230977.3230991">10.1145/3230977.3230991</a>.
+</p>
+<blockquote class="abstract">
+  The Blackbox project has been collecting programming activity data from users
+  of BlueJ (a novice-targeted Java development environment) for nearly five
+  years. The resulting dataset of more than two terabytes of data has been made
+  available to interested researchers from the outset. In this paper, we assess
+  the impact of the Blackbox project: we perform a mapping study to assess
+  eighteen publications which have made use of the Blackbox data, and we report
+  on the advantages and difficulties experienced by researchers working with
+  this data, collected via a survey. We find that Blackbox has enabled pieces of
+  research which otherwise would not have been possible, but there remain
+  technical challenges in the analysis. Some of these---but not all---relate
+  to the scale of the data. We provide suggestions for the future use of
+  Blackbox, and reflections on the role of such data collection projects in
+  programming research.
+</blockquote>
+<p id="WeillTessier2021" class="bib"><a class="bibkey" href="/bib/#WeillTessier2021">WeillTessier2021</a>
+  Pierre Weill-Tessier, Alexandra Lucia Costache, and Neil C. C. Brown:
+  "<a href="https://doi.org/10.1145/3408877.3432408">Usage of the Java Language by Novices over Time: Implications for Tool and Language Design</a>".
+  <em>Proceedings of the 52nd ACM Technical Symposium on Computer Science Education</em>,
+  <a class="doi" href="https://doi.org/10.1145/3408877.3432408">10.1145/3408877.3432408</a>.
+</p>
+<blockquote class="abstract">
+  Java is a popular programming language for teaching at university level. BlueJ
+  is a popular tool for teaching Java to beginners. We provide several analyses
+  of Java use in BlueJ to answer three questions: what use is made of different
+  parts of Java by beginners when learning to program; how has this pattern of
+  use changed between 2013 and 2019 in a longstanding language such as Java; and
+  to what extent do beginners follow the specific style that BlueJ is designed
+  to guide them into? These analyses allow us to see what features are important
+  in object-oriented introductory programming languages, which could inform
+  language and tool designers—and see to what extent the design of these
+  programming tools can have an effect on the way the language is used. We find
+  that many beginners disobey the guidelines that BlueJ promotes, and that
+  patterns of Java use are generally stable over time—but we do see decreased
+  exception use and a change in target application domains away from GUI
+  programming towards text processing. We conclude that programming languages
+  for novices could have fewer built-in types but should retain rich
+  libraries.
+</blockquote>
