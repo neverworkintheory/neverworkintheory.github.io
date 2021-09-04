@@ -1,0 +1,72 @@
+---
+layout: post
+author: Greg Wilson
+title: "Do Software Developers Understand Open Source Licenses?"
+date: 2021-09-04
+categories: ["Licensing", "Open Source"]
+---
+<div class="review">
+  <p>
+    <a class="bibkey" href="/bib/#Almeida2017">Almeida2017</a>'s answer
+    to the question in this paper's title is,
+    "Yes when there's only one license,
+    no if two or more licenses are involved."
+    The authors got there by comparing developers' appraisals of various scenarios
+    with the opinion of a legal expert.
+    A typical scenario (in abbreviated form) is shown below;
+    the options in curly braces were presented as a table in the actual questionnaire.
+  </p>
+  <blockquote>
+    <p>
+      As the lead developer of a new product at GreatSoftware Inc.,
+      Laura decided to use an existing authentication library she found on the Web called SafeAuth.
+      She realizes that SafeAuth could be improved using a stronger cryptographic algorithm when storing users' information.
+      The product is going to be released under a commercial software license,
+      but Laura would like to release the improved version of SafeAuth as open source.
+      If SafeAuth is distributed under {GNU GPL 3.0, GNU LGPL 3.0, MPL 2.0},
+      would Laura and her team be allowed to release the improved version of SafeAuth under each of
+      the {GNU GPL 3.0, GNU LGPL 3.0, MPL 2.0} licenses?
+    </p>
+  </blockquote>
+  <p>
+    Re-reading this paper almost five years after the work was done
+    prompted me to check the licenses in a medium-sized JavaScript project I worked on a few months ago.
+    A cursory scan finds five different licenses,
+    and I'm sure that closer inspection would turn up at least one or two others
+    as well as a bunch of projects with no explicit license at all.
+    As with so much of modern software,
+    licensing seems to work primarily because we don't look at it too closely.
+  </p>
+  <p>
+    <em>
+      Note: I helped round up subjects for this study and proof-read the final paper,
+      but played no role in the actual analysis.
+    </em>
+  </p>
+</div>
+<p id="Almeida2017" class="bib"><a class="bibkey" href="/bib/#Almeida2017">Almeida2017</a>
+  Daniel A. Almeida, Gail C. Murphy, Greg Wilson, and Mike Hoye:
+  "<a href="https://doi.org/10.1109/icpc.2017.7">Do Software Developers Understand Open Source Licenses?</a>".
+  <em>2017 IEEE/ACM 25th International Conference on Program Comprehension (ICPC)</em>,
+  <a class="doi" href="https://doi.org/10.1109/icpc.2017.7">10.1109/icpc.2017.7</a>.
+</p>
+<blockquote class="abstract">
+  Software provided under open source licenses is widely used, from forming
+  high-profile stand-alone applications (e.g., Mozilla Firefox) to being
+  embedded in commercial offerings (e.g., network routers). Despite the high
+  frequency of use of open source licenses, there has been little work about
+  whether software developers understand the open source licenses they use. To
+  our knowledge, only one survey has been conducted, which focused on which
+  licenses developers choose and when they encounter problems with licensing
+  open source software. To help fill the gap of whether or not developers
+  understand the open source licenses they use, we conducted a survey that posed
+  development scenarios involving three popular open source licenses (GNU GPL
+  3.0, GNU LGPL 3.0 and MPL 2.0) both alone and in combination. The 375
+  respondents to the survey, who were largely developers, gave answers
+  consistent with those of a legal expert's opinion in 62% of 42 cases. Although
+  developers clearly understood cases involving one license, they struggled when
+  multiple licenses were involved. An analysis of the quantitative and
+  qualitative results of the study indicate a need for tool support to help
+  guide developers in understanding this critical information attached to
+  software components.
+</blockquote>
