@@ -1,0 +1,124 @@
+---
+layout: post
+author: Greg Wilson
+title: "Two Papers on Errors"
+date: 2021-09-05
+categories: ["Error Handling"]
+---
+<div class="review">
+  <p>
+    As regular readers will have gathered,
+    I think we can learn a lot of useful things by studying programmers' mistakes
+    and the inadequacies of the tools we have for detecting, reporting, handling, and correcting them.
+    The first of these papers,
+    <a class="bibkey" href="/bib/#Barbosa2014">Barbosa2014</a>,
+    presents an empirical taxonomy of the ways exceptions are mis-handled,
+    the first two entries in which have multiple sub-cases:
+  </p>
+  <ol>
+    <li>Information swallowed
+      <ul>
+        <li>Uninformative or wrong error message</li>
+        <li>Swallowed exception: the exception is caught and ignored, often just to silence compiler checks</li>
+        <li>Suppressed exception: the original exception is hidden by another exception raised in the same context</li>
+        <li>Missing log message: the exception is caught and handled but there's no record of it happening</li>
+        <li>Destructive remapping: an exception is caught, mapped to another <em>with information loss</em>, and rethrown</li>
+        <li>Uninformative generic type throws: the code throws a generic (and uninformative) exception rather than a more specific exception</li>
+      </ul>
+    </li>
+    <li>Improper continuation of execution
+      <ul>
+        <li>Missing throwing condition: a condition that should have led to an exception being thrown wasn't checked (e.g., it's missing from a multi-part logical test)</li>
+        <li>Wrong context configuration: bad exception handling leaves the system in an inconsistent state (e.g., without access to an external resource)</li>
+        <li>Wrong location of execution resumption: the statements after the <code>catch</code> shouldn't be executed if an exception occurred</li>
+        <li>Missing termination action: actions that should always take place whether there was an exception or not only take place if an exception was thrown</li>
+      </ul>
+    </li>
+    <li>Resource leak</li>
+    <li>Uncaught exception</li>
+    <li>Overly-generic catch block</li>
+    <li>Premature termination</li>
+    <li>Throwing wrong type</li>
+    <li>Overly protective try block</li>
+    <li>Exceptional loop break</li>
+    <li>Excessive throwing conditions</li>
+  </ol>
+  <p>
+    I don't any linting tools that check for cases like these,
+    but this list would be a great basis for a code review checklist
+    (or a starting point for exercises in a code review training course).
+  </p>
+  <p>
+    At 41 pages,
+    <a class="bibkey" href="/bib/#Coelho2016">Coelho2016</a> is harder to summarize,
+    but its results are just as valuable.
+    The two main questions its authors set out to answer are:
+  </p>
+  <ol>
+    <li>Can the information available in exception stack traces reveal exception handling bug hazards in both the Android applications and framework?</li>
+    <li>How do developers deal with the exception handling code in Android apps and what are the developers' perspectives about the main bug hazards found during the mining study?</li>
+  </ol>
+  <p>
+    Unsurprisingly, null pointer exceptions are the most common source of problems.
+    Depressingly, the authors found that runtime exceptions are often not documented;
+    in particular, they found checked exceptions thrown by native methods
+    that were not declared in the interface of the wrapper methods,
+    which would be a debugging nightmare.
+  </p>
+  <p>
+    One thing I particularly liked in this paper was
+    its shift from analyzing code to surveying and interviewing developers
+    to answer its second research question.
+    Far too many papers scrape GitHub and throw the results into a machine learning package
+    without checking whether the data, the questions, or the findings make any sense
+    to the people the work is supposedly for.
+    Asking programmers "Does this make sense?" and "Is it consistent with your experience?"
+    is a necessary and welcome corrective.
+  </p>
+</div>
+<p id="Barbosa2014" class="bib"><a class="bibkey" href="/bib/#Barbosa2014">Barbosa2014</a>
+  Eiji Adachi Barbosa, Alessandro Garcia, and Simone Diniz Junqueira Barbosa:
+  "<a href="https://doi.org/10.1109/sbes.2014.19">Categorizing Faults in Exception Handling: A Study of Open Source Projects</a>".
+  <em>2014 Brazilian Symposium on Software Engineering</em>,
+  <a class="doi" href="https://doi.org/10.1109/sbes.2014.19">10.1109/sbes.2014.19</a>.
+</p>
+<blockquote class="abstract">
+  Even though exception handling mechanisms have been proposed as a means to
+  improve software robustness, empirical evidence suggests that exception
+  handling code is still poorly implemented in industrial systems. Moreover, it
+  is often claimed that the poor quality of exception handling code can be a
+  source of faults in a software system. However, there is still a gap in the
+  literature in terms of better understanding exceptional faults, i.e., faults
+  whose causes regard to exception handling. In particular, there is still
+  little empirical knowledge about what are the specific causes of exceptional
+  faults in software systems. In this paper we start to fill this gap by
+  presenting a categorization of the causes of exceptional faults observed in
+  two mainstream open source projects. We observed ten different categories of
+  exceptional faults, most of which were never reported before in the
+  literature. Our results pinpoint that current verification and validation
+  mechanisms for exception handling code are still not properly addressing these
+  categories of exceptional faults.
+</blockquote>
+<p id="Coelho2016" class="bib"><a class="bibkey" href="/bib/#Coelho2016">Coelho2016</a>
+  Roberta Coelho, Lucas Almeida, Georgios Gousios, Arie van Deursen, and Christoph Treude:
+  "<a href="https://doi.org/10.1007/s10664-016-9443-7">Exception handling bug hazards in Android</a>".
+  <em>Empirical Software Engineering</em>, 22(3), 2016,
+  <a class="doi" href="https://doi.org/10.1007/s10664-016-9443-7">10.1007/s10664-016-9443-7</a>.
+</p>
+<blockquote class="abstract">
+  Adequate handling of exceptions has proven difficult for many software
+  engineers. Mobile app developers in particular, have to cope with
+  compatibility, middleware, memory constraints, and battery restrictions. The
+  goal of this paper is to obtain a thorough understanding of common exception
+  handling bug hazards that app developers face. To that end, we first provide a
+  detailed empirical study of over 6,000 Java exception stack traces we
+  extracted from over 600 open source Android projects. Key insights from this
+  study include common causes for system crashes, and common chains of wrappings
+  between checked and unchecked exceptions. Furthermore, we provide a survey
+  with 71 developers involved in at least one of the projects analyzed. The
+  results corroborate the stack trace findings, and indicate that developers are
+  unaware of frequently occurring undocumented exception handling
+  behavior. Overall, the findings of our study call for tool support to help
+  developers understand their own and third party exception handling and
+  wrapping logic.
+</blockquote>

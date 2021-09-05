@@ -130,6 +130,18 @@
   abstract = {Peer code review is a cost-effective software defect detection technique. Tool assisted code review is a form of peer code review, which can improve both quality and quantity of reviews. However, there is a significant amount of human effort involved even in tool based code reviews. Using static analysis tools, it is possible to reduce the human effort by automating the checks for coding standard violations and common defect patterns. Towards this goal, we propose a tool called Review Bot for the integration of automatic static analysis with the code review process. Review Bot uses output of multiple static analysis tools to publish reviews automatically. Through a user study, we show that integrating static analysis tools with code review process can improve the quality of code review. The developer feedback for a subset of comments from automatic reviews shows that the developers agree to fix 93\% of all the automatically generated comments. There is only 14.71\% of all the accepted comments which need improvements in terms of priority, comment message, etc. Another problem with tool assisted code review is the assignment of appropriate reviewers. Review Bot solves this problem by generating reviewer recommendations based on change history of source code lines. Our experimental results show that the recommendation accuracy is in the range of 60\%-92\%, which is significantly better than a comparable method based on file change history.}
 }
 
+@inproceedings{Barbosa2014,
+  doi = {10.1109/sbes.2014.19},
+  url = {https://doi.org/10.1109/sbes.2014.19},
+  year = {2014},
+  month = sep,
+  publisher = {{IEEE}},
+  author = {Eiji Adachi Barbosa and Alessandro Garcia and Simone Diniz Junqueira Barbosa},
+  title = {Categorizing Faults in Exception Handling: A Study of Open Source Projects},
+  booktitle = {2014 Brazilian Symposium on Software Engineering},
+  abstract = {Even though exception handling mechanisms have been proposed as a means to improve software robustness, empirical evidence suggests that exception handling code is still poorly implemented in industrial systems. Moreover, it is often claimed that the poor quality of exception handling code can be a source of faults in a software system. However, there is still a gap in the literature in terms of better understanding exceptional faults, i.e., faults whose causes regard to exception handling. In particular, there is still little empirical knowledge about what are the specific causes of exceptional faults in software systems. In this paper we start to fill this gap by presenting a categorization of the causes of exceptional faults observed in two mainstream open source projects. We observed ten different categories of exceptional faults, most of which were never reported before in the literature. Our results pinpoint that current verification and validation mechanisms for exception handling code are still not properly addressing these categories of exceptional faults.}
+}
+
 @inproceedings{Barik2018,
   doi = {10.1145/3236024.3236040},
   url = {https://doi.org/10.1145/3236024.3236040},
@@ -360,6 +372,21 @@
   title = {Experimental assessment of software metrics using automated refactoring},
   booktitle = {Proceedings of the {ACM}-{IEEE} international symposium on Empirical software engineering and measurement - {ESEM} {\textquotesingle}12},
   abstract = {A large number of software metrics have been proposed in the literature, but there is little understanding of how these metrics relate to one another. We propose a novel experimental technique, based on search-based refactoring, to assess software metrics and to explore relationships between them. Our goal is not to improve the program being refactored, but to assess the software metrics that guide the automated refactoring through repeated refactoring experiments. We apply our approach to five popular cohesion metrics using eight real-world Java systems, involving 300,000 lines of code and over 3,000 refactorings. Our results demonstrate that cohesion metrics disagree with each other in 55\% of cases, and show how our approach can be used to reveal novel and surprising insights into the software metrics under investigation.}
+}
+
+@article{Coelho2016,
+  doi = {10.1007/s10664-016-9443-7},
+  url = {https://doi.org/10.1007/s10664-016-9443-7},
+  year = {2016},
+  month = aug,
+  publisher = {Springer Science and Business Media {LLC}},
+  volume = {22},
+  number = {3},
+  pages = {1264--1304},
+  author = {Roberta Coelho and Lucas Almeida and Georgios Gousios and Arie van Deursen and Christoph Treude},
+  title = {Exception handling bug hazards in Android},
+  journal = {Empirical Software Engineering},
+  abstract = {Adequate handling of exceptions has proven difficult for many software engineers. Mobile app developers in particular, have to cope with compatibility, middleware, memory constraints, and battery restrictions. The goal of this paper is to obtain a thorough understanding of common exception handling bug hazards that app developers face. To that end, we first provide a detailed empirical study of over 6,000 Java exception stack traces we extracted from over 600 open source Android projects. Key insights from this study include common causes for system crashes, and common chains of wrappings between checked and unchecked exceptions. Furthermore, we provide a survey with 71 developers involved in at least one of the projects analyzed. The results corroborate the stack trace findings, and indicate that developers are unaware of frequently occurring undocumented exception handling behavior. Overall, the findings of our study call for tool support to help developers understand their own and third party exception handling and wrapping logic.}
 }
 
 @article{CruzLemus2009,
