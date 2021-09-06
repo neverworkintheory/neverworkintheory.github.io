@@ -69,9 +69,13 @@ abstract:
 entry:
 	@cat ${ALL_BIB} | ${BIB2HTML_BIN} --action bib2md --only ${KEY} --link
 
-## pick: select a random entry from the to-do list
+## pick: select a random entry from the to-do list (YEAR=yyyy optional)
 pick:
-	@cat ${TODO_BIB} | bin/pick.py
+	@cat ${TODO_BIB} | bin/pick.py ${YEAR}
+
+## show: show all entries from the to-do list (YEAR=yyyy optional)
+show:
+	@cat ${TODO_BIB} | bin/show.py ${YEAR}
 
 ## ----
 

@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 
-'''Select a paper at random.'''
+'''Show all papers (for a specified year).'''
 
 import bibtexparser
 import random
@@ -18,8 +18,8 @@ def main():
     if not entries:
         print('No entries available', file=sys.stderr)
     else:
-        entry = random.choice(entries)
-        print(entry['ID'], entry['title'])
+        for entry in entries:
+            print(f"{entry['ID']}: {entry['title']}")
 
 
 if __name__ == '__main__':
