@@ -513,6 +513,18 @@
 
 @comment{FFF}
 
+@inproceedings{Fischer2015,
+  doi = {10.1145/2816707.2816720},
+  url = {https://doi.org/10.1145/2816707.2816720},
+  year = {2015},
+  month = oct,
+  publisher = {{ACM}},
+  author = {Lars Fischer and Stefan Hanenberg},
+  title = {An empirical investigation of the effects of type systems and code completion on {API} usability using {TypeScript} and {JavaScript} in {MS} visual studio},
+  booktitle = {Proceedings of the 11th Symposium on Dynamic Languages},
+  abstract = {Recent empirical studies that compared static and dynamic type systems on API usability showed a positive impact of static type systems on developer productivity in most cases. Nevertheless, it is unclear how large this effect is in comparison to other factors. One obvious factor in programming is tooling: It is commonly accepted that modern IDEs have a large positive impact on developers, although it is not clear which parts of modern IDEs are responsible for that. One possible---and for most developers obvious candidate---is code completion. This paper describes a 2x2 randomized trial that compares JavaScript and Microsoft's statically typed alternative TypeScript with and without code completion in MS Visual Studio. While the experiment shows (in correspondence to previous experiments) a large positive effect of the statically typed language TypeScript, the code completion effect is not only marginal, but also just approaching statistical significance. This seems to be an indicator that the effect of static type systems is larger than often assumed, at least in comparison to code completion.}
+}
+
 @inproceedings{Ford2016,
   doi = {10.1145/2950290.2950331},
   url = {https://doi.org/10.1145/2950290.2950331},
@@ -550,6 +562,18 @@
 }
 
 @comment{GGG}
+
+@inproceedings{Gao2017,
+  doi = {10.1109/icse.2017.75},
+  url = {https://doi.org/10.1109/icse.2017.75},
+  year = {2017},
+  month = may,
+  publisher = {{IEEE}},
+  author = {Zheng Gao and Christian Bird and Earl T. Barr},
+  title = {To Type or Not to Type: Quantifying Detectable Bugs in {JavaScript}},
+  booktitle = {2017 {IEEE}/{ACM} 39th International Conference on Software Engineering ({ICSE})},
+  abstract = {JavaScript is growing explosively and is now used in large mature projects even outside the web domain. JavaScript is also a dynamically typed language for which static type systems, notably Facebook's Flow and Microsoft's TypeScript, have been written. What benefits do these static type systems provide? Leveraging JavaScript project histories, we select a fixed bug and check out the code just prior to the fix. We manually add type annotations to the buggy code and test whether Flow and TypeScript report an error on the buggy code, thereby possibly prompting a developer to fix the bug before its public release. We then report the proportion of bugs on which these type systems reported an error. Evaluating static type systems against public bugs, which have survived testing and review, is conservative: it understates their effectiveness at detecting bugs during private development, not to mention their other benefits such as facilitating code search/completion and serving as documentation. Despite this uneven playing field, our central finding is that both static type systems find an important percentage of public bugs: both Flow 0.30 and TypeScript 2.0 successfully detect 15\%!.}
+}
 
 @inproceedings{Gauthier2013,
   doi = {10.1109/icse.2013.6606670},
@@ -653,6 +677,21 @@
   title = {An experiment about static and dynamic type systems},
   booktitle = {Proceedings of the {ACM} international conference on Object oriented programming systems languages and applications - {OOPSLA} {\textquotesingle}10},
   abstract = {Although static type systems are an essential part in teach-ing and research in software engineering and computer science, there is hardly any knowledge about what the impact of static type systems on the development time or the resulting quality for a piece of software is. On the one hand there are authors that state that static type systems decrease an application's complexity and hence its development time (which means that the quality must be improved since developers have more time left in their projects). On the other hand there are authors that argue that static type systems increase development time (and hence decrease the code quality) since they restrict developers to express themselves in a desired way. This paper presents an empirical study with 49 subjects that studies the impact of a static type system for the development of a parser over 27 hours working time. In the experiments the existence of the static type system has neither a positive nor a negative impact on an application's development time (under the conditions of the experiment).}
+}
+
+@article{Hanenberg2013,
+  doi = {10.1007/s10664-013-9289-1},
+  url = {https://doi.org/10.1007/s10664-013-9289-1},
+  year = {2013},
+  month = dec,
+  publisher = {Springer Science and Business Media {LLC}},
+  volume = {19},
+  number = {5},
+  pages = {1335--1382},
+  author = {Stefan Hanenberg and Sebastian Kleinschmager and Romain Robbes and {\'{E}}ric Tanter and Andreas Stefik},
+  title = {An empirical study on the impact of static typing on software maintainability},
+  journal = {Empirical Software Engineering},
+  abstract = {Static type systems play an essential role in contemporary programming languages. Despite their importance, whether static type systems impact human software development capabilities remains open. One frequently mentioned argument in favor of static type systems is that they improve the maintainability of software systems—an often-used claim for which there is little empirical evidence. This paper describes an experiment that tests whether static type systems improve the maintainability of software systems, in terms of understanding undocumented code, fixing type errors, and fixing semantic errors. The results show rigorous empirical evidence that static types are indeed beneficial to these activities, except when fixing semantic errors. We further conduct an exploratory analysis of the data in order to understand possible reasons for the effect of type systems on the three kinds of tasks used in this experiment. From the exploratory analysis, we conclude that developers using a dynamic type system tend to look at different files more frequently when doing programming tasks—which is a potential reason for the observed differences in time.}
 }
 
 @article{Hannay2010,

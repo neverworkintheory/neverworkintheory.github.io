@@ -1,0 +1,76 @@
+---
+layout: post
+author: Greg Wilson
+title: "To Type or Not to Type: Quantifying Detectable Bugs in JavaScript"
+date: 2021-09-08
+categories: ["Programming Languages"]
+---
+<div class="review">
+  <p>
+    <a href="{{'/2012/10/25/an-experiment-about-static-and-dynamic-type-systems.html' | relative_url}}">Way back in 2012</a>
+    we reviewed <a class="bibkey" href="/bib/#Hanenberg2010">Hanenberg2010</a>,
+    which found that (under very specific and carefully explained circumstances)
+    the use of static typing did <em>not</em> make programmers more productive
+    than the use of dynamic typing.
+    However,
+    in a later paper (<a class="bibkey" href="/bib/#Hanenberg2013">Hanenberg2013</a>),
+    researchers looked at, "…whether static type systems improve the maintainability of software
+    systems, in terms of understanding undocumented code, fixing type errors,
+    and fixing semantic errors" and found that,
+    "…static types are indeed beneficial to these activities, except when
+    fixing semantic errors." Digging deeper, they found that, "…developers using a dynamic type system tend to
+    look at different files more frequently when doing programming tasks—which
+    is a potential reason for the observed differences in time."
+  </p>
+  <p>
+    The authors of <a class="bibkey" href="/bib/#Gao2017">Gao2017</a> took a different approach
+    to tackle the same underlying question. They look at bugs in production JavaScript systems,
+    then went back and added type annotations to the buggy code to see whether
+    static typing would have caught the error.
+    The answer was "yes" in 15% of cases,
+    which is either high or low depending on your perspective.
+    Their experiment doesn't tell us whether static typing is cost-effective
+    (e.g., whether any extra time taken to declare types
+    would find more bugs if it was spent writing unit tests),
+    but it's still a very useful answer,
+    and it would be great to see this experiment repeated for another language like Python.
+  </p>
+  <p>
+    <em>
+      Addendum: one other interesting study of static typing is
+      <a class="bibkey" href="/bib/#Fischer2015">Fischer2015</a>,
+      which looked at whether the benefits of static typing are due to better code completion in the IDE.
+      The answer appears to be "no",
+      i.e.,
+      whatever effect static typing has is because of the typing itself,
+      not because it helps a modern development tool do the right thing when you press the tab key.
+      Teasing apart possible confounding factors like this is central to any modern research program;
+      if anyone knows of an up-to-date summary of related research
+      we'd be grateful for pointers.
+    </em>
+  </p>
+</div>
+<p id="Gao2017" class="bib"><a class="bibkey" href="/bib/#Gao2017">Gao2017</a>
+  Zheng Gao, Christian Bird, and Earl T. Barr:
+  "<a href="https://doi.org/10.1109/icse.2017.75">To Type or Not to Type: Quantifying Detectable Bugs in JavaScript</a>".
+  <em>2017 IEEE/ACM 39th International Conference on Software Engineering (ICSE)</em>,
+  <a class="doi" href="https://doi.org/10.1109/icse.2017.75">10.1109/icse.2017.75</a>.
+</p>
+<blockquote class="abstract">
+  JavaScript is growing explosively and is now used in large mature projects
+  even outside the web domain. JavaScript is also a dynamically typed language
+  for which static type systems, notably Facebook's Flow and Microsoft's
+  TypeScript, have been written. What benefits do these static type systems
+  provide? Leveraging JavaScript project histories, we select a fixed bug and
+  check out the code just prior to the fix. We manually add type annotations to
+  the buggy code and test whether Flow and TypeScript report an error on the
+  buggy code, thereby possibly prompting a developer to fix the bug before its
+  public release. We then report the proportion of bugs on which these type
+  systems reported an error. Evaluating static type systems against public bugs,
+  which have survived testing and review, is conservative: it understates their
+  effectiveness at detecting bugs during private development, not to mention
+  their other benefits such as facilitating code search/completion and serving
+  as documentation. Despite this uneven playing field, our central finding is
+  that both static type systems find an important percentage of public bugs:
+  both Flow 0.30 and TypeScript 2.0 successfully detect 15%!.
+</blockquote>
