@@ -1,0 +1,92 @@
+---
+layout: post
+author: Greg Wilson
+title: "Why Software Projects need Heroes: Lessons Learned from 1100+ Projects"
+date: 2021-09-10
+categories: ["Code Ownership", "Software Projects"]
+---
+<div class="review">
+  <p>
+    Forty-five years ago,
+    Fred Brooks advocated a "chief programmer" model of development
+    similar to the "chief surgeon" model used in most hospitals.
+    It didn't catch on—at least not formally—but
+    as <a class="bibkey" href="/bib/#Majumder2019">Majumder2019</a> shows,
+    many projects use it in practice.
+    Their research questions and answers are:
+  </p>
+  <ol>
+    <li>
+      <em>How common are hero projects?</em>
+      They define a "hero project" as one in which 5% or fewer of developers
+      are responsible for 95% or more of interactions.
+      They don't just consider commits:
+      looking at both the code interaction graph and the social interaction graph,
+      they find that 80% of the projects they looked at on GitHub fit into this category.
+    </li>
+    <li>
+      <em>What impact does heroism have on code quality?</em>
+      Heroes commit far fewer bugs than non-heroes.
+    </li>
+    <li>
+      <em>Does team size alter these results?</em>
+      No.
+    </li>
+  </ol>
+  <p>
+    The authors then go on to say that
+    if two sections of code communicate
+    but the programmers of those sections don't,
+    the code section is more likely to be buggy.
+    They conclude that:
+  </p>
+  <blockquote>
+    The usual response to the above argument is to improve communication
+    by "smoothing it out", i.e. by deprecating heroes
+    since…that encourages more communication across an entire project…
+    [Our] results…suggest that it is time to explore another response:
+    the best way to reduce communication overhead and to decrease defects is
+    to <em>centralize the communicators</em> [emphasis in original].
+    In our data, commits with lower defects come from
+    the small number of hero developers who have learned how to talk to more people.
+    Hence,
+    we would encourage more research into better methods
+    for rapid, high-volume, communication in a one-to-many setting
+    (where the "one" is the hero and the "many" are everyone else).
+  </blockquote>
+  <p>
+    I don't like this conclusion:
+    elitism and exclusion are serious structural problems in tech,
+    and the history of meritocracy shows that if hero worship is condoned,
+    the heroes will wind up being the confident,
+    the well-connected,
+    and those with preparatory privilege
+    more often than the most intelligent or capable.
+    However,
+    it would be hypocritical to ask software developers to pay attention to research
+    and then dismiss an uncomfortable result.
+    As the authors say,
+    more research is needed.
+  </p>
+</div>
+<p id="Majumder2019" class="bib"><a class="bibkey" href="/bib/#Majumder2019">Majumder2019</a>
+  Suvodeep Majumder, Joymallya Chakraborty, Amritanshu Agrawal, and Tim Menzies:
+  "<a href="http://arxiv.org/abs/1904.09954">Why Software Projects need Heroes: Lessons Learned from 1100+ Projects</a>".
+  <em>arxiv.org</em>, abs/1904.09954, 2019.
+</p>
+<blockquote class="abstract">
+  A "hero" project is one where 80% or more of the contributions are
+  made by the 20% of the developers. Those developers are called
+  "hero" developers. In the literature, heroes projects are deprecated
+  since they might cause bottlenecks in development and
+  communication. However, there is little empirical evidence on this
+  matter. Further, recent studies show that such hero projects are
+  very prevalent. Accordingly, this paper explores the effect of
+  having heroes in project, from a code quality perspective by
+  analyzing 1000+ open source GitHub projects. Based on the analysis,
+  this study finds that (a) majority of the projects are hero
+  projects; and (b)the commits from "hero developers" (who contribute
+  most to the code) result in far fewer bugs than other
+  developers. That is, contrary to the literature, heroes are standard
+  and very useful part of modern open source projects.
+</blockquote>
