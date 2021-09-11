@@ -49,41 +49,16 @@ table.slim {
     width: auto;
 }
 
-/* Disclaimer about disabling comments */
-div.comments-disclaimer {
-    font-style: italic;
-    font-size: 80%;
-    text-align: center;
-}
-
 /* Footer */
 footer {
     border-top: solid 1px gray;
 }
 
 /* Citations and abstracts */
-p.citation {
-    background-color: #F8F8F8;
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
-}
-
 p.bib {
     background-color: #F8F8F8;
     padding-left: 0.5rem;
     padding-right: 0.5rem;
-}
-.bibkey {
-    font-weight: bold;
-}
-.bibkey::before {
-    content: "[";
-}
-.bibkey::after {
-    content: "] ";
-}
-
-p.abstract {
 }
 
 blockquote.abstract {

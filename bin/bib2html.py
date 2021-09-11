@@ -421,11 +421,7 @@ def cite_start(config, entry):
     check('key' in entry,
           'Every entry must have key')
     key = entry["key"]
-    if config.link:
-        bibkey = f'<a class="bibkey" href="/bib/#{key}">{key}</a>'
-    else:
-        bibkey = f'<span class="bibkey">{key}</span>'
-    return f'<p id="{key}" class="bib">{bibkey}'
+    return f'<p id="{key}" class="bib"><cite>{key}</cite>'
 
 
 def cite_end(config):

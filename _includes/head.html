@@ -3,9 +3,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
   <title>{% if page.title %}{{ page.title }} &middot; {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,400italic|Source+Code+Pro:400,700" type="text/css">
-  <script src="https://kit.fontawesome.com/4eee35f757.js"></script>
-  <link rel="stylesheet" href="{{ '/css/style.css' | relative_url }}" type="text/css">
-  <link rel="stylesheet" href="{{ '/css/local.css' | relative_url }}" type="text/css">
   <link rel="shortcut icon" type="image/x-icon" href="{{ '/favicon.ico' | relative_url }}">
   <link rel="alternate" type="application/atom+xml" title="{{ site.title }}" href="{{ '/atom.xml' | relative_url }}">
+  <script src="https://kit.fontawesome.com/4eee35f757.js"></script>
+  <link rel="stylesheet" href="{{ '/css/style.css' | relative_url }}" type="text/css">
+  <link rel="stylesheet" href="{{ '/static/site.css' | relative_url }}" type="text/css">
+  <script src="{{'/static/site.js' | relative_url}}"></script>
+  <script>window.onload = () => fixPage("{{page.url}}")</script>
 </head>
