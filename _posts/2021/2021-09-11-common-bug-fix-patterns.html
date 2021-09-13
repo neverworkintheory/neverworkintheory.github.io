@@ -1,0 +1,92 @@
+---
+layout: post
+author: Greg Wilson
+title: "Common Bug-Fix Patterns: A Large-Scale Observational Study"
+date: 2021-09-11
+categories: ["Faults"]
+---
+<div class="review">
+  <p>
+    We know a lot more about the mistakes programmers make and how often they make them
+    than most programmers realize.
+    <cite>Campos2017</cite> is an example:
+    its authors analyzed a dataset containing over 4 million bug-fix commits from over 100,000 Java projects
+    and checked their findings against a qualitative analysis of
+    manually curated bugs in a smaller dataset.
+    Using the taxonomy developed in <cite>Pan2008</cite>,
+    <cite>Campos2017</cite> found that
+    the five most common fixes were:
+  </p>
+  <ol>
+    <li>fixing the conditional in an <code>if</code> (4.2% of fixes);</li>
+    <li>fixing the value(s) passed in a method call (6.3%);</li>
+    <li>fixing the number or type of value(s) passed in a method call (4.1%);</li>
+    <li>changing the right-hand side of an assignment while leaving the left-hand side alone (11.1%); and</li>
+    <li>adding a <code>null</code> check where there wasn't one before (a whopping 29%).</li>
+  </ol>
+  <p>
+    As the authors say,
+    that last number is a pretty clear pointer to what bug detection and program repair work should focus on.
+  </p>
+</div>
+<p id="Campos2017" class="bib"><cite>Campos2017</cite>
+  Eduardo Cunha Campos and Marcelo de Almeida Maia:
+  "<a href="https://doi.org/10.1109/esem.2017.55">Common Bug-Fix Patterns: A Large-Scale Observational Study</a>".
+  <em>2017 ACM/IEEE International Symposium on Empirical Software Engineering and Measurement (ESEM)</em>,
+  <a class="doi" href="https://doi.org/10.1109/esem.2017.55">10.1109/esem.2017.55</a>.
+</p>
+<blockquote class="abstract">
+  [Background]: There are more bugs in real-world programs than human
+  programmers can realistically address. Several approaches have been proposed
+  to aid debugging. A recent research direction that has been increasingly
+  gaining interest to address the reduction of costs associated with defect
+  repair is automatic program repair. Recent work has shown that some kind of
+  bugs are more suitable for automatic repair techniques. [Aim]: The detection
+  and characterization of common bug-fix patterns in software repositories play
+  an important role in advancing the field of automatic program repair. In this
+  paper, we aim to characterize the occurrence of known bug-fix patterns in Java
+  repositories at an unprecedented large scale. [Method]: The study was
+  conducted for Java GitHub projects organized in two distinct data sets: the
+  first one (i.e., Boa data set) contains more than 4 million bug-fix commits
+  from 101,471 projects and the second one (i.e., Defects4J data set) contains
+  369 real bug fixes from five open-source projects. We used a domain-specific
+  programming language called Boa in the first data set and conducted a manual
+  analysis on the second data set in order to confront the results. [Results]:
+  We characterized the prevalence of the five most common bug-fix patterns
+  (identified in the work of Pan et al.) in those bug fixes. The combined
+  results showed direct evidence that developers often forget to add IF
+  preconditions in the code. Moreover, 76% of bug-fix commits associated with
+  the IF-APC bug-fix pattern are isolated from the other four bug-fix patterns
+  analyzed. [Conclusion]: Targeting on bugs that miss preconditions is a
+  feasible alternative in automatic repair techniques that would produce a
+  relevant payback.
+</blockquote>
+<p id="Pan2008" class="bib"><cite>Pan2008</cite>
+  Kai Pan, Sunghun Kim, and E. James Whitehead:
+  "<a href="https://doi.org/10.1007/s10664-008-9077-5">Toward an understanding of bug fix patterns</a>".
+  <em>Empirical Software Engineering</em>, 14(3), 2008,
+  <a class="doi" href="https://doi.org/10.1007/s10664-008-9077-5">10.1007/s10664-008-9077-5</a>.
+</p>
+<blockquote class="abstract">
+  Twenty-seven automatically extractable bug fix patterns are defined using the
+  syntax components and context of the source code involved in bug fix
+  changes. Bug fix patterns are extracted from the configuration management
+  repositories of seven open source projects, all written in Java (Eclipse,
+  Columba, JEdit, Scarab, ArgoUML, Lucene, and MegaMek). Defined bug fix
+  patterns cover 45.7% to 63.3% of the total bug fix hunk pairs in these
+  projects. The frequency of occurrence of each bug fix pattern is computed
+  across all projects. The most common individual patterns are MC-DAP (method
+  call with different actual parameter values) at 14.9–25.5%, IF-CC (change in
+  if conditional) at 5.6–18.6%, and AS-CE (change of assignment expression) at
+  6.0–14.2%. A correlation analysis on the extracted pattern instances on the
+  seven projects shows that six have very similar bug fix pattern
+  frequencies. Analysis of if conditional bug fix sub-patterns shows a trend
+  towards increasing conditional complexity in if conditional fixes. Analysis of
+  five developers in the Eclipse projects shows overall consistency with
+  project-level bug fix pattern frequencies, as well as distinct variations
+  among developers in their rates of producing various bug patterns. Overall,
+  data in the paper suggest that developers have difficulty with specific code
+  situations at surprisingly consistent rates. There appear to be broad
+  mechanisms causing the injection of bugs that are largely independent of the
+  type of software being produced.
+</blockquote>
