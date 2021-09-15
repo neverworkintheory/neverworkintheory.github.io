@@ -1,0 +1,62 @@
+---
+layout: post
+author: Greg Wilson
+title: "Categorizing the Content of GitHub README Files"
+date: 2021-09-15
+categories: ["Documentation"]
+---
+<div class="review">
+  <p>
+    Astronomers have to analyze the optical properties of the glass in their telescopes
+    in order to correct for things like chromatic aberration,
+    Equally,
+    software engineering researchers need to study and validate
+    the tools they build to collect and classify data
+    in order to know how reliable those tools are.
+  </p>
+  <p>
+    <cite>Prana2018</cite> is a good example of this.
+    Its authors built a classifier
+    to label the sections in the README files found in GitHub repositories as
+    What, Why, How, When, Who, References, Contribution, or Other.
+    They then evaluated the classifier numerically
+    (<a href="https://en.wikipedia.org/wiki/F-score">F-score</a> of 0.746)
+    and by having twenty programmers check whether the classification helped them find information.
+    Along the way they find that information discussing the What and How of repositories is very common,
+    but many README files don't talk about the purpose and status of the repository.
+    No one is going to start a billion-dollar business based on the result,
+    but it is careful, patient work like this
+    that builds a foundation for other researchers to stand on.
+  </p>
+</div>
+<p id="Prana2018" class="bib"><cite>Prana2018</cite>
+  Gede Artha Azriadi Prana, Christoph Treude, Ferdian Thung, Thushari Atapattu, and David Lo:
+  "<a href="https://doi.org/10.1007/s10664-018-9660-3">Categorizing the Content of GitHub README Files</a>".
+  <em>Empirical Software Engineering</em>, 24(3), 2018,
+  <a class="doi" href="https://doi.org/10.1007/s10664-018-9660-3">10.1007/s10664-018-9660-3</a>.
+</p>
+<blockquote class="abstract">
+  README files play an essential role in shaping a developer's first
+  impression of a software repo sitory and in documenting the software
+  project that the repository hosts. Yet, we lack a systematic
+  understanding of the content of a typical README file as well as
+  tools that can process these files automatically. To close this gap,
+  we conduct a qualitative study involving the manual annotation of
+  4,226 README file sections from 393 randomly sampled GitHub
+  repositories and we design and evaluate a classifier and a set of
+  features that can categorize these sections automatically. We find
+  that information discussing the 'What' and 'How' of a repository is
+  very common, while many README files lack information regarding the
+  purpose and status of a repository. Our multi-label classifier which
+  can predict eight different categories achieves an F1 score of
+  0.746. To evaluate the usefulness of the classification, we used the
+  automatically determined classes to label sections in GitHub README
+  files using badges and showed files with and without these badges to
+  twenty software professionals. The majority of participants
+  perceived the automated labeling of sections based on our classifier
+  to ease information discovery. This work enables the owners of
+  software repositories to improve the quality of their documentation
+  and it has the potential to make it easier for the software
+  development community to discover relevant information in GitHub
+  README files.
+</blockquote>
