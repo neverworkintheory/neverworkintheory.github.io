@@ -6,8 +6,8 @@ import re
 
 import util
 
-CITE = re.compile('<a.+?class="bibkey".+?>', re.MULTILINE + re.DOTALL)
-HREF = re.compile('href="/bib/#(.+?)"')
+
+CITE = re.compile('<cite>(.+?)</cite>', re.MULTILINE + re.DOTALL)
 
 
 def main():
@@ -24,12 +24,10 @@ def get_mentions(pagedir):
         with open(filename, 'r') as reader:
             text = reader.read()
             for cite in CITE.finditer(text):
-                href = HREF.search(cite.group(0))
-                assert href, f'Badly-formatted citation {cite}'
-                key = href.group(1)
-                if key not in mentions:
-                    mentions[key] = set()
-                mentions[key].add(filename)
+                for key in [k.strip() for k in cite.group(1).split(',')]:
+                    if key not in mentions:
+                        mentions[key] = set()
+                    mentions[key].add(filename)
     return mentions
 
 

@@ -1,0 +1,58 @@
+---
+layout: post
+author: Greg Wilson
+title: "Analyzing the effects of test driven development in GitHub"
+date: 2021-09-16
+categories: ["Testing", "Test-Driven Development"]
+---
+<div class="review">
+  <p>
+    <cite>Borle2017</cite> is yet another study showing that
+    test-driven development (TDD) doesn't have any significant impact.
+    The authors looked at Java projects on GitHub for evidence of TDD,
+    then looked for evidence that projects using TDD outperformed projects that didn't.
+    Their conclusions:
+    very few projects actually use it,
+    and those that do don't perform any better than those that don't.
+  </p>
+  <p>
+    This is our sixth post about TDD,
+    and the sixth time the conclusion has been that it doesn't make a difference.
+    The studies we've discussed have used different methods and different datasets,
+    but have all reached the same conclusion,
+    so until we see a paper indicating that TDD <em>does</em> work,
+    we're going to set this topic aside.
+  </p>
+</div>
+<p id="Borle2017" class="bib"><cite>Borle2017</cite>
+Neil C. Borle, Meysam Feghhi, Eleni Stroulia, Russell Greiner, and Abram Hindle:
+"<a href="https://doi.org/10.1007/s10664-017-9576-3">Analyzing the effects of test driven development in GitHub</a>".
+<em>Empirical Software Engineering</em>, 23(4), 2017,
+<a class="doi" href="https://doi.org/10.1007/s10664-017-9576-3">10.1007/s10664-017-9576-3</a>.
+</p>
+<blockquote class="abstract">
+  Testing is an integral part of the software development lifecycle,
+  approached with varying degrees of rigor by different process
+  models. Agile process models recommend Test Driven Development (TDD)
+  as a key practice for reducing costs and improving code quality. The
+  objective of this work is to perform a cost-benefit analysis of this
+  practice. To that end, we have conducted a comparative analysis of
+  GitHub repositories that adopts TDD to a lesser or greater extent,
+  in order to determine how TDD affects software development
+  productivity and software quality. We classified GitHub repositories
+  archived in 2015 in terms of how rigorously they practiced TDD, thus
+  creating a TDD spectrum. We then matched and compared various
+  subsets of these repositories on this TDD spectrum with control sets
+  of equal size. The control sets were samples from all GitHub
+  repositories that matched certain characteristics, and that
+  contained at least one test file. We compared how the TDD sets
+  differed from the control sets on the following characteristics:
+  number of test files, average commit velocity, number of
+  bug-referencing commits, number of issues recorded, usage of
+  continuous integration, number of pull requests, and distribution of
+  commits per author. We found that Java TDD projects were relatively
+  rare. In addition, there were very few significant differences in
+  any of the metrics we used to compare TDD-like and non-TDD projects;
+  therefore, our results do not reveal any observable benefits from
+  using TDD.
+</blockquote>
