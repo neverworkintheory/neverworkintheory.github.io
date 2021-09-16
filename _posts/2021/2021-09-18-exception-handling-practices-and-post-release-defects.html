@@ -1,0 +1,86 @@
+---
+layout: post
+author: Greg Wilson
+title: "Studying the relationship between exception handling practices and post-release defects"
+date: 2021-09-16
+categories: ["Faults", "Quality"]
+---
+<div class="review">
+  <p>
+    In this paper from 2018,
+    De Pádua and Shang look at the relationship between anti-patterns in exception handling
+    and error rates in the related code.
+    Unsurprisingly, they find that bad exception handling practices correlate with post-release defects.
+    What makes the work (much) more interesting is that only <em>some</em> anti-patterns correlate
+    in a statistically significant way:
+  </p>
+  <ul>
+    <li>
+      The longer the exception handling blocks in a file, the more likely the file is to contain bugs.
+      What's more, the length of the file and the length of its exception handling blocks aren't correlated,
+      so exception handler length really does contain novel information.
+    </li>
+    <li>
+      The <em>Dummy Handler</em> and <em>Generic Catch</em> anti-patterns
+      have a strong statistical relationship to defects.
+    </li>
+    <li>
+      The <em>Ignoring Interrupted Exception</em> and <em>Log and Throw</em> patterns
+      corelated with post-release defects in one of the projects they studied,
+      but not all.
+    </li>
+  </ul>
+  <p>
+    Studies like this one are why I pay attention to software engineering research.
+    Code review checklists tend to grow over time,
+    and the longer they get,
+    the less useful they are.
+    This paper doesn't claim that only four exception handling anti-patterns matter,
+    but since I don't have time to check everything I'd want to when I'm looking over someone's code,
+    knowing which anti-patterns are most important is a real help.
+    It would be great to see this work repeated on a larger sample of projects,
+    and even greater to see whether the same findings hold for programs in Python and other languages.
+  </p>
+  <p>
+    Finally, my usual grumble about the way abstracts are written in software engineering:
+    the first three sentences of this one are unnecessary,
+    as are the last two,
+    and the authors could have used that space to tell casual browsers
+    <em>which</em> exception handling anti-patterns correlate with post-release defects.
+  </p>
+</div>
+<p id="DePadua2018" class="bib"><cite>DePadua2018</cite>
+  Guilherme B. de Pádua and Weiyi Shang:
+  "<a href="https://doi.org/10.1145/3196398.3196435">Studying the relationship between exception handling practices and post-release defects</a>".
+  <em>Proceedings of the 15th International Conference on Mining Software Repositories</em>,
+  <a class="doi" href="https://doi.org/10.1145/3196398.3196435">10.1145/3196398.3196435</a>.
+</p>
+<blockquote class="abstract">
+  Modern programming languages, such as Java and C#, typically provide features
+  that handle exceptions. These features separate error-handling code from
+  regular source code and aim to assist in the practice of software
+  comprehension and maintenance. Nevertheless, their misuse can still cause
+  reliability degradation or even catastrophic software failures. Prior studies
+  on exception handling revealed the suboptimal practices of the exception
+  handling flows and the prevalence of their anti-patterns. However, little is
+  known about the relationship between exception handling practices and software
+  quality. In this work, we investigate the relationship between software
+  quality (measured by the probability of having post-release defects) and: (i)
+  exception flow characteristics and (ii) 17 exception handling
+  anti-patterns. We perform a case study on three Java and C# open-source
+  projects. By building statistical models of the probability of post-release
+  defects using traditional software metrics and metrics that are associated
+  with exception handling practice, we study whether exception flow
+  characteristics and exception handling anti-patterns have a statistically
+  significant relationship with post-release defects. We find that exception
+  flow characteristics in Java projects have a significant relationship with
+  post-release defects. In addition, although the majority of the exception
+  handing anti-patterns are not significant in the models, there exist
+  anti-patterns that can provide significant explanatory power to the
+  probability of post-release defects. Therefore, development teams should
+  consider allocating more resources to improving their exception handling
+  practices and avoid the anti-patterns that are found to have a relationship
+  with post-release defects. Our findings also highlight the need for techniques
+  that assist in handling exceptions in the software development
+  practice.
+</blockquote>
