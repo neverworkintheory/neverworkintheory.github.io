@@ -1,0 +1,83 @@
+---
+layout: post
+author: Greg Wilson
+title: "Why Do Developers Use Trivial Packages?"
+date: 2021-09-17
+categories: ["Packaging"]
+---
+<div class="review">
+  <p>
+    "Reduce, re-use, recycle" is probably the most useful advice someone can give a young programmer,
+    but is it possible to take re-use too far?
+    In particular, is it worth creating and sharing a library that contains only one small function?
+    Conversely, is it sensible to use such micro-libraries?
+  </p>
+  <p>
+    To find out,
+    the authors of <cite>Abdalkareem2017</cite> looked at 230,000 NPM packages
+    and 38,000 JavaScript applications.
+    At the time (four years ago) 16.8% of the packages used were trivial,
+    which they defined as having no more than 35 lines of code
+    and a McCabe complexity score no greater than 10.
+    (See <a href="{{'/2011/07/07/the-confounding-effect-of-class-size-on-the-validity-of-object-oriented-metrics.html' | relative_url}}">this review</a>
+    and <cite>Herraiz2010</cite> for discussion of why measuring complexity was probably redundant.)
+    Almost 11% of applications used trivial packages,
+    and 58% of developers thought this was a good practice:
+    in general,
+    they thought these packages were well implemented and well tested,
+    and that using them would increase productivity.
+  </p>
+  <p>
+    Developers only major concern with using trivial packages was the dependency overhead.
+    However,
+    the authors found that,
+    "Contrary to developers' perception, only 45.2% of trivial packages actually have tests."
+    Instead,
+    their reliability comes from being "deployment tested",
+    i.e.,
+    so many people use them that meaningful edge cases are found and fixed relatively quickly.
+  </p>
+  <p>
+    So should developers use trivial packages or not?
+    I think that framing misses the point.
+    Developers <em>do</em> use trivial packages;
+    telling them not to is as vacuous as saying that abstinence will solve the problem of teenage pregnancy.
+    What researchers can and should do is identify situations where using those packages is sensible
+    and help people do it better and more safely.
+    It would be fascinating to see this work repeated for other languages,
+    particularly ones like Python that are primarily used for server-side work.
+  </p>
+</div>
+<p id="Abdalkareem2017" class="bib"><cite>Abdalkareem2017</cite>
+  Rabe Abdalkareem, Olivier Nourry, Sultan Wehaibi, Suhaib Mujahid, and Emad Shihab:
+  "<a href="https://doi.org/10.1145/3106237.3106267">Why do developers use trivial packages? An empirical case study on NPM</a>".
+  <em>Proceedings of the 2017 11th Joint Meeting on Foundations of Software Engineering</em>,
+  <a class="doi" href="https://doi.org/10.1145/3106237.3106267">10.1145/3106237.3106267</a>.
+</p>
+<blockquote class="abstract">
+  Code reuse is traditionally seen as good practice. Recent trends
+  have pushed the concept of code reuse to an extreme, by using
+  packages that implement simple and trivial tasks, which we call
+  'trivial packages'. A recent incident where a trivial package led to
+  the breakdown of some of the most popular web applications such as
+  Facebook and Netflix made it imperative to question the growing use
+  of trivial packages. Therefore, in this paper, we mine more than
+  230,000 npm packages and 38,000 JavaScript applications in order to
+  study the prevalence of trivial packages. We found that trivial
+  packages are common and are increasing in popularity, making up
+  16.8% of the studied npm packages. We performed a survey with 88
+  Node.js developers who use trivial packages to understand the
+  reasons and drawbacks of their use. Our survey revealed that trivial
+  packages are used because they are perceived to be well implemented
+  and tested pieces of code. However, developers are concerned about
+  maintaining and the risks of breakages due to the extra dependencies
+  trivial packages introduce. To objectively verify the survey
+  results, we empirically validate the most cited reason and drawback
+  and find that, contrary to developers' beliefs, only 45.2% of
+  trivial packages even have tests. However, trivial packages appear
+  to be `deployment tested' and to have similar test, usage and
+  community interest as non-trivial packages. On the other hand, we
+  found that 11.5% of the studied trivial packages have more than 20
+  dependencies. Hence, developers should be careful about which
+  trivial packages they decide to use.
+</blockquote>
