@@ -128,6 +128,16 @@
   abstract = {An ongoing problem in revision control systems is how to resolve conflicts in a merge of independently developed revisions. Unstructured revision control systems are purely text-based and solve conflicts based on textual similarity. Structured revision control systems are tailored to specific languages and use language-specific knowledge for conflict resolution. We propose semistructured revision control systems that inherit the strengths of both: the generality of unstructured systems and the expressiveness of structured systems. The idea is to provide structural information of the underlying software artifacts --- declaratively, in the form of annotated grammars. This way, a wide variety of languages can be supported and the information provided can assist in the automatic resolution of two classes of conflicts: ordering conflicts and semantic conflicts. The former can be resolved independently of the language and the latter using specific conflict handlers. We have been developing a tool that supports semistructured merge and conducted an empirical study on 24 software projects developed in Java, C\#, and Python comprising 180 merge scenarios. We found that semistructured merge reduces the number of conflicts in 60\% of the sample merge scenarios by, on average, 34\%, compared to unstructured merge. We found also that renaming is challenging in that it can increase the number of conflicts during semistructured merge, and that a combination of unstructured and semistructured merge is a pragmatic way to go.}
 }
 
+@book{Aurora2019,
+  author = {Valerie Aurora and Mary Gardiner},
+  title = {How to Respond to Code of Conduct Reports},
+  publisher = {Frame Shift Consulting LLC},
+  edition = {Version 1.1},
+  year = {2019},
+  isbn = {978-1386922575},
+  abstract = {A detailed, experience-based guide to handling what is often the most difficult situation in any project.}
+}
+
 @comment{BBB}
 
 @inproceedings{Balachandran2013,
@@ -648,6 +658,16 @@
   title = {Beyond the code itself: how programmers really look at pull requests},
   booktitle = {2019 {IEEE}/{ACM} 41st International Conference on Software Engineering: Software Engineering in Society ({ICSE}-{SEIS})},
   abstract = {Developers in open source projects must make decisions on contributions from other community members, such as whether or not to accept a pull request. However, secondary factors-beyond the code itself-can influence those decisions. For example, signals from GitHub profiles, such as a number of followers, activity, names, or gender can also be considered when developers make decisions. In this paper, we examine how developers use these signals (or not) when making decisions about code contributions. To evaluate this question, we evaluate how signals related to perceived gender identity and code quality influenced decisions on accepting pull requests. Unlike previous work, we analyze this decision process with data collected from an eye-tracker. We analyzed differences in what signals developers said are important for themselves versus what signals they actually used to make decisions about others. We found that after the code snippet (x=57\%), the second place programmers spent their time fixating is on supplemental technical signals (x=32\%), such as previous contributions and popular repositories. Diverging from what participants reported themselves, we also found that programmers fixated on social signals more than recalled.}
+}
+
+@article{Freeman1972,
+  author = {Jo Freeman},
+  title = {The Tyranny of Structurelessness},
+  journal = {The Second Wave},
+  volume = {2},
+  number = {1},
+  year = {1972},
+  abstract = {An influential essay pointing out that every organization has a power structure; the only question is whether it's formal and accountable, or informal and unaccountable.}
 }
 
 @inproceedings{Fucci2016,
@@ -1970,6 +1990,18 @@
   title = {Revisiting code ownership and its relationship with software quality in the scope of modern code review},
   booktitle = {Proceedings of the 38th International Conference on Software Engineering},
   abstract = {Code ownership establishes a chain of responsibility for modules in large software systems. Although prior work uncovers a link between code ownership heuristics and software quality, these heuristics rely solely on the authorship of code changes. In addition to authoring code changes, developers also make important contributions to a module by reviewing code changes. Indeed, recent work shows that reviewers are highly active in modern code review processes, often suggesting alternative solutions or providing updates to the code changes. In this paper, we complement traditional code ownership heuristics using code review activity. Through a case study of six releases of the large Qt and OpenStack systems, we find that: (1) 67\%-86\% of developers did not author any code changes for a module, but still actively contributed by reviewing 21\%-39\% of the code changes, (2) code ownership heuristics that are aware of reviewing activity share a relationship with software quality, and (3) the proportion of reviewers without expertise shares a strong, increasing relationship with the likelihood of having post-release defects. Our results suggest that reviewing activity captures an important aspect of code ownership, and should be included in approximations of it in future studies.}
+}
+
+@inproceedings{Tourani2017,
+  doi = {10.1109/saner.2017.7884606},
+  url = {https://doi.org/10.1109/saner.2017.7884606},
+  year = {2017},
+  month = feb,
+  publisher = {{IEEE}},
+  author = {Parastou Tourani and Bram Adams and Alexander Serebrenik},
+  title = {Code of conduct in open source projects},
+  booktitle = {2017 {IEEE} 24th International Conference on Software Analysis,  Evolution and Reengineering ({SANER})},
+  abstract = {Open source projects rely on collaboration of members from all around the world using web technologies like GitHub and Gerrit. This mixture of people with a wide range of backgrounds including minorities like women, ethnic minorities, and people with disabilities may increase the risk of offensive and destroying behaviours in the community, potentially leading affected project members to leave towards a more welcoming and friendly environment. To counter these effects, open source projects increasingly are turning to codes of conduct, in an attempt to promote their expectations and standards of ethical behaviour. In this first of its kind empirical study of codes of conduct in open source software projects, we investigated the role, scope and influence of codes of conduct through a mixture of quantitative and qualitative analysis, supported by interviews with practitioners. We found that the top codes of conduct are adopted by hundreds to thousands of projects, while all of them share 5 common dimensions.}
 }
 
 @comment{UUU}
