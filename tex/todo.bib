@@ -529,6 +529,34 @@
 
 @comment{HHH}
 
+@article{Hatton1994,
+  doi = {10.1109/32.328993},
+  url = {https://doi.org/10.1109/32.328993},
+  year = {1994},
+  publisher = {Institute of Electrical and Electronics Engineers ({IEEE})},
+  volume = {20},
+  number = {10},
+  pages = {785--797},
+  author = {L. Hatton and A. Roberts},
+  title = {How accurate is scientific software?},
+  journal = {{IEEE} Transactions on Software Engineering},
+  abstract = {This paper describes some results of what, to the authors' knowledge, is the largest N-version programming experiment ever performed. The object of this ongoing four-year study is to attempt to determine just how consistent the results of scientific computation really are, and, from this, to estimate accuracy. The experiment is being carried out in a branch of the earth sciences known as seismic data processing, where 15 or so independently developed large commercial packages that implement mathematical algorithms from the same or similar published specifications in the same programming language (Fortran) have been developed over the last 20 years. The results of processing the same input dataset, using the same user-specified parameters, for nine of these packages is reported in this paper. Finally, feedback of obvious flaws was attempted to reduce the overall disagreement. The results are deeply disturbing. Whereas scientists like to think that their code is accurate to the precision of the arithmetic used, in this study, numerical disagreement grows at around the rate of 1\% in average absolute difference per 4000 fines of implemented code, and, even worse, the nature of the disagreement is nonrandom. Furthermore, the seismic data processing industry has better than average quality standards for its software development with both identifiable quality assurance functions and substantial test datasets.}
+}
+
+@incollection{Hatton1997,
+  doi = {10.1007/978-1-5041-2940-4_2},
+  url = {https://doi.org/10.1007/978-1-5041-2940-4_2},
+  year = {1997},
+  publisher = {Springer {US}},
+  pages = {12--31},
+  author = {L. Hatton},
+  title = {The T-experiments: errors in scientific software},
+  booktitle = {Quality of Numerical Software},
+  editor = {Ronald F. Boisvert},
+  isbn = {978-1-5041-2940-4},
+  abstract = {This paper covers two very large experiments carried out concurrently between 1990 and 1994, together known as the T-experiments. Experiment T1 had the objective of measuring the consistency of several million lines of scientific software written in C and Fortran 77 by static deep-flow analysis across many different industries and application areas, and experiment T2 had the objective of measuring the level of dynamic disagreement between independent implementations of the same algorithms acting on the same input data with the same parameters in just one of these industrial application areas. Experiment T1 showed that C and Fortran are riddled with statically detectable inconsistencies independent of the application area. For example, interface inconsistencies occur at the rate of one in every 7 interfaces on average in Fortran, and one in every 37 interfaces in C. They also show that Fortran components are typically 2.5 times bigger than C components, and that roughly 30\% of the Fortran population and 10\% of the C population would be deemed untestable by any standards. Experiment T2 was even more disturbing. Whereas scientists like to think that their results are accurate to the precision of the arithmetic used, in this study, the degree of agreement gradually degenerated from 6 significant figures to 1 significant figure during the computation. The reasons for this disagreement are laid squarely at the door of software failure, as other possible causes are considered and rejected. Taken with other evidence, these two experiments suggest that the results of scientific calculations involving significant amounts of software should be taken with several large pinches of salt.}
+}
+
 @inproceedings{Hayashi2019,
   doi = {10.1109/msr.2019.00076},
   url = {https://doi.org/10.1109/msr.2019.00076},
