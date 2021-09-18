@@ -64,7 +64,7 @@ todo: ${TODO_HTML}
 
 ## abstract: get abstract from DOI (DOI=value)
 abstract:
-	@echo ${DOI} | ${ABSTRACT_BIN}
+	@${ABSTRACT_BIN} ${DOI}
 
 ## entry: convert single entry (KEY=NameYear) to HTML
 entry:
