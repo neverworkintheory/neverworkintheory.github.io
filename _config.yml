@@ -43,3 +43,4 @@ exclude:
   - Gemfile.lock
   - Makefile
   - vendor/bundle
+  - bin

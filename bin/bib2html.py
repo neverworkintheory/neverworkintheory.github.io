@@ -446,7 +446,7 @@ def parseArgs(args):
     '''Turn arguments into configuration object.'''
     parser = argparse.ArgumentParser()
     parser.add_argument('--action', help=f'allowed actions {", ".join(sorted(VERBS))}')
-    parser.add_argument('--only', nargs='+', help='only convert specifies entries (by key)')
+    parser.add_argument('--only', nargs='+', help='only convert specified entries (by key)')
     parser.add_argument('--link', action='store_true', help='use a link instead of a span for the citation key')
     parser.add_argument('--no_abstract', action='store_true', help='skip the abstract')
     return parser.parse_args()
