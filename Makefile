@@ -3,7 +3,8 @@ SITE=./_site
 
 ABSTRACT_BIN=./bin/abstracts.sh
 AUTHORS_BIN=./bin/authors.py
-BIB2HTML_BIN=./bin/bib2html.py
+BIB2YAML_BIN=./bin/bib2yaml.py
+YAML2HTML_BIN=./bin/yaml2html.py
 BIBTEX_BIN=bibtex
 LATEX_BIN=pdflatex
 
@@ -63,11 +64,11 @@ todo: ${TODO_HTML}
 
 ## abstract: get abstract from DOI (DOI=value)
 abstract:
-	@echo ${DOI} | ${ABSTRACT_BIN}
+	@${ABSTRACT_BIN} ${DOI}
 
 ## entry: convert single entry (KEY=NameYear) to HTML
 entry:
-	@cat ${ALL_BIB} | ${BIB2HTML_BIN} --action bib2md --only ${KEY} --link
+	@cat ${ALL_BIB} | ${BIB2YAML_BIN} --only ${KEY} | ${YAML2HTML_BIN}
 
 ## pick: select a random entry from the to-do list (YEAR=yyyy optional)
 pick:
@@ -119,11 +120,11 @@ ${AUTHORS_HTML}: ${AUTHORS_BIN} ${NWIT_BIB}
 	@echo "---" >> ${AUTHORS_HTML}
 	${AUTHORS_BIN} --input ${NWIT_BIB} >> ${AUTHORS_HTML}
 
-${BIB_HTML}: ${NWIT_BIB} ${BIB2HTML_BIN}
-	make TITLE="Bibliography" SLUG=nwit bib2html > $@
+${BIB_HTML}: ${NWIT_BIB} ${BIB2YAML_BIN} ${YAML2HTML_BIN}
+	make TITLE="Bibliography" SLUG=nwit bib2yaml > $@
 
-${TODO_HTML}: ${TODO_BIB} ${BIB2HTML_BIN}
-	make TITLE="To Do" SLUG=todo bib2html > $@
+${TODO_HTML}: ${TODO_BIB} ${BIB2YAML_BIN}
+	make TITLE="To Do" SLUG=todo bib2yaml > $@
 
 ${PDF}: ${NWIT_BIB} ${TODO_BIB} tex/nwit.tex tex/settings.tex tex/abstract.bst
 	@cd tex \
@@ -133,11 +134,11 @@ ${PDF}: ${NWIT_BIB} ${TODO_BIB} tex/nwit.tex tex/settings.tex tex/abstract.bst
 	&& ${LATEX_BIN} nwit \
 	&& ${LATEX_BIN} nwit
 
-bib2html:
+bib2yaml:
 	@mkdir -p ${SLUG}
 	@echo "---"
 	@echo "layout: page"
 	@echo "title: ${TITLE}"
 	@echo "---"
 	@echo '<p><a href="../tex/${SLUG}.bib">BibTeX</a></p>'
-	@cat ./tex/${SLUG}.bib | ${BIB2HTML_BIN} --action bib2md
+	@cat ./tex/${SLUG}.bib | ${BIB2YAML_BIN} | ${YAML2HTML_BIN}

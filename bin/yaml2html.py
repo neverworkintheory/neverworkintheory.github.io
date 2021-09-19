@@ -1,205 +1,18 @@
 #!/usr/bin/env python
 
-'''Convert BibTeX to HTML via YAML.'''
+'''Convert YAML bibliography to HTML.'''
 
 import argparse
-import bibtexparser
 import re
 import string
 import sys
 import yaml
 
-from util import MONTHS
-
-
-# What do we know how to do?
-VERBS = {
-    'bib2md',
-    'bib2yml',
-    'yml2md'
-}
-
 
 def main(args):
     '''Main driver.'''
     config = parseArgs(args)
-    check(config.action in VERBS,
-          f'Unrecognized verb {config.action}')
-    assert config.action in globals(), \
-        f'Unknown verb {config.action}'
-    result = globals()[config.action](config)
-    print(result)
-
-# ----------------------------------------------------------------------
-
-def bib2md(config):
-    '''Convert .bib directly to .md.'''
-    temp = bib2yml(config)
-    return yml2md(config, temp)
-    
-# ----------------------------------------------------------------------
-
-def bib2yml(config, text=None):
-    '''Convert .bib to .yml.'''
-    if text is None:
-        text = sys.stdin.read()
-    text = BIB_TO_YAML['add'] + text
-    bib = get_bib(config, text)
-    bib = [cleanup(config, entry) for entry in bib]
-    return yaml.dump(bib, width=10000)
-
-
-def get_bib(config, text):
-    '''Read bibliography, filtering if asked to do so.'''
-    entries = bibtexparser.loads(text).entries
-    if config.only:
-        only = set(config.only)
-        entries = [e for e in entries if e['ID'] in only]
-    return entries
-
-
-# Things to convert.
-def number_if_possible(s):
-    '''Convert to number or return original string.'''
-    try:
-        return int(s)
-    except ValueError:
-        return s
-
-
-def split_names(s):
-    '''Split names on 'and'.'''
-    return BIB_TO_YAML['split'].split(s)
-
-
-def un_url(s):
-    '''Remove URL macro.'''
-    m = BIB_TO_YAML['url'].match(s)
-    return m.group(1) if m else s
-
-
-def cleanup(config, entry):
-    '''Clean up an entry.'''
-
-    for key in BIB_TO_YAML['replace']:
-        if key in entry:
-            entry[BIB_TO_YAML['replace'][key]] = entry[key]
-            del entry[key]
-
-    for key in BIB_TO_YAML['remove']:
-        if key in entry:
-            del entry[key]
-
-    for key in BIB_TO_YAML['convert']:
-        if key in entry:
-            entry[key] = BIB_TO_YAML['convert'][key](entry[key])
-
-    for key in entry:
-        if type(entry[key]) == str:
-            entry[key] = unlatex(entry[key])
-        elif type(entry[key]) == list:
-            entry[key] = [unlatex(s) for s in entry[key]]
-
-    return entry
-
-
-REPLACEMENTS = (
-    ('---', '—'),
-    (r'{\AA}', 'Å'),
-    (r'{\aa}', 'å'),
-    (r'\"{a}', 'ä'),
-    (r"\'{a}", 'á'),
-    (r"\'{c}", 'ć'),
-    (r"\'{e}", 'é'),
-    (r"\'{E}", 'É'),
-    (r"{\'{\i}}", 'í'),
-    (r"\'{i}", 'í'),
-    (r"\'{o}", 'ó'),
-    (r"\'{u}", 'ú'),
-    (r'\"{o}', 'ö'),
-    (r'\'{O}', 'Ó'),
-    (r'\'{o}', 'ó'),
-    (r'\"{u}', 'ü'),
-    (r'{\o}', 'ø'),
-    (r'\c{C}', 'Ç'),
-    (r'\c{c}', 'ç'),
-    (r"\'{S}", 'Ś'),
-    (r'\%', '%'),
-    (r'\#', '#'),
-    (r'${\approx}$', '≈'),
-    (r'${\pm}$', '±'),
-    (r'${\times}$', '×'),
-    (r'\textquotesingle', "'"),
-    (r'\textquotedblleft', "'"),
-    (r'\textquotedblright', "'"),
-    (r'{\ldots}', '…'),
-    (r'{\textemdash}', '—'),
-    (r'{\textendash}', '–'),
-    ('{', ''),
-    ('}', ''),
-    ('\$', '$'),
-    ('\\', ''),
-    ('  ', ' '),
-    ('&', '&amp;'),
-    ('<', '&lt;'),
-    ('>', '&gt;')
-)
-
-PATTERNS = [
-    re.compile(r'\\texttt{(.+?)}') # fragile: does not handle nested {}
-]
-
-
-def unlatex(s):
-    '''Remove LaTeX isms.'''
-    for pattern in PATTERNS:
-        s = pattern.sub(lambda x: x.group(1), s)
-    for (original, replacement) in REPLACEMENTS:
-        s = s.replace(original, replacement)
-    return s
-
-
-# Lookup values for .bib to .yml conversion.
-BIB_TO_YAML = {
-
-    # String definitions to add.
-    'add': MONTHS,
-
-    'convert': {
-        'author': split_names,
-        'editor': split_names,
-        'howpublished': un_url,
-        'number': number_if_possible,
-        'volume': number_if_possible,
-        'year': number_if_possible
-    },
-
-    # Things to remove.
-    'remove': {
-        'local',
-        'note'
-    },
-
-    # Keys to replace.
-    'replace': {
-        'ENTRYTYPE': 'kind',
-        'ID': 'key',
-        'link': 'url'
-    },
-
-    # Splitting author names.
-    'split': re.compile(r'\s+and\s+'),
-
-    # Match a URL.
-    'url': re.compile(r'\\url{(.+)}')
-}
-
-# ----------------------------------------------------------------------
-
-def yml2md(config, text=None):
-    '''Convert YAML bibliography to Markdown.'''
-    if text is None:
-        text = sys.stdin.read()
+    text = sys.stdin.read()
     data = yaml.load(text, Loader=yaml.FullLoader)
     entries = [] if config.only else [make_toc()]
     letter = chr(ord('A') - 1)
@@ -210,7 +23,8 @@ def yml2md(config, text=None):
             entries.append(heading)
         text = YAML_TO_MARKDOWN[entry['kind']](config, entry)
         entries.append(text)
-    return '\n\n'.join(entries)
+    result = '\n\n'.join(entries)
+    print(result)
 
 
 def make_toc():
@@ -428,7 +242,6 @@ def cite_end(config):
     '''Finish an entry.'''
     return '</p>'
 
-# -------------------------------------------------------------------------------
 
 def check(cond, msg):
     '''Conditional failure.'''
@@ -445,13 +258,9 @@ def fail(msg):
 def parseArgs(args):
     '''Turn arguments into configuration object.'''
     parser = argparse.ArgumentParser()
-    parser.add_argument('--action', help=f'allowed actions {", ".join(sorted(VERBS))}')
-    parser.add_argument('--only', nargs='+', help='only convert specifies entries (by key)')
-    parser.add_argument('--link', action='store_true', help='use a link instead of a span for the citation key')
+    parser.add_argument('--only', nargs='+', help='only convert specified entries (by key)')
     parser.add_argument('--no_abstract', action='store_true', help='skip the abstract')
     return parser.parse_args()
-
-# ----------------------------------------------------------------------
 
 if __name__ == '__main__':
     main(sys.argv)
