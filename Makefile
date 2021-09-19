@@ -68,7 +68,7 @@ abstract:
 
 ## entry: convert single entry (KEY=NameYear) to HTML
 entry:
-	@cat ${ALL_BIB} | ${BIB2YAML_BIN} --only ${KEY} | ${YAML2HTML_BIN}
+	@cat ${ALL_BIB} | ${BIB2YAML_BIN} --only ${KEY} | ${YAML2HTML_BIN} --notoc --template _template.html
 
 ## pick: select a random entry from the to-do list (YEAR=yyyy optional)
 pick:

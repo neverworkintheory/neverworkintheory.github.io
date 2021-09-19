@@ -12,19 +12,29 @@ import yaml
 def main(args):
     '''Main driver.'''
     config = parseArgs(args)
+    template = read_template(config)
     text = sys.stdin.read()
     data = yaml.load(text, Loader=yaml.FullLoader)
-    entries = [] if config.only else [make_toc()]
+    entries = [] if config.notoc else [make_toc()]
     letter = chr(ord('A') - 1)
     for entry in data:
         check_entry(entry)
         letter, heading = advance_heading(letter, entry)
-        if (not config.only) and (heading is not None):
+        if (not config.notoc) and (heading is not None):
             entries.append(heading)
         text = YAML_TO_MARKDOWN[entry['kind']](config, entry)
         entries.append(text)
     result = '\n\n'.join(entries)
+    print(template)
     print(result)
+
+
+def read_template(config):
+    '''Read template if any specified, or return empty string.'''
+    if config.template is None:
+        return ''
+    with open(config.template, 'r') as reader:
+        return reader.read().rstrip()
 
 
 def make_toc():
@@ -258,8 +268,9 @@ def fail(msg):
 def parseArgs(args):
     '''Turn arguments into configuration object.'''
     parser = argparse.ArgumentParser()
-    parser.add_argument('--only', nargs='+', help='only convert specified entries (by key)')
+    parser.add_argument('--notoc', action='store_true', help='do not create a table of contents')
     parser.add_argument('--no_abstract', action='store_true', help='skip the abstract')
+    parser.add_argument('--template', help='specify template file (default none)')
     return parser.parse_args()
 
 if __name__ == '__main__':
