@@ -140,5 +140,5 @@ bib2yaml:
 	@echo "layout: page"
 	@echo "title: ${TITLE}"
 	@echo "---"
-	@echo '<p><a href="../tex/${SLUG}.bib">BibTeX</a></p>'
+	@echo '<p><a href="../tex/${SLUG}.bib">BibTeX</a> | <a href="../tex/${SLUG}.pdf">PDF</a></p>'
 	@cat ./tex/${SLUG}.bib | ${BIB2YAML_BIN} | ${YAML2HTML_BIN}

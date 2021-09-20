@@ -38,6 +38,10 @@ plugins:
 
 exclude:
   - '*.sublime-*'
+  - '*.aux'
+  - '*.bbl'
+  - '*.blg'
+  - '*.log'
   - README.md
   - Gemfile
   - Gemfile.lock
