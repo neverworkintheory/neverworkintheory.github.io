@@ -1,0 +1,65 @@
+---
+layout: post
+author: Greg Wilson
+title: "Program comprehension of domain-specific and general-purpose languages"
+date: 2021-09-20
+categories: ["Domain-Specific Languages", "Program Comprehension"]
+---
+<div class="review">
+  <p>
+    Sometimes software engineering research is like studying supernovas:
+    repeatability isn't feasible (at least, not given current technology),
+    so you have to study the ones you can find.
+    Other times, though,
+    researchers <em>can</em> do controlled experiments and replicate the experiments of others.
+    <cite>Kosar2018</cite> is an example of that:
+    in it,
+    the authors replicate an experiment reported in <cite>Kosar2012</cite>
+    with several improvements to remove some threats to validity.
+    Their conclusion:
+    developers are signfiicantly better at tool-based program comprehension when using a DSL
+    than when using a general-purpose language.
+  </p>
+  <p>
+    This is an important result,
+    though the adjective "tool-based" does qualify it a bit.
+    <cite>Kosar2018</cite> required developers to use an IDE while trying to complete tasks
+    rather than (for example) reading printouts;
+    on the other hand,
+    their subjects were new to the DSL being used,
+    so if anything the results <em>underestimate</em> the possible performance improvement.
+    There is still lots of room for further analysis—I'd like to see someone look at well-designed versus poorly-designed DSLs,
+    for example,
+    because there are certainly lots of the latter—and
+    we can still argue about how scalable DSLs are in the absence of customized debuggers,
+    but at this point,
+    I think the onus is on people who argue that DSLs <em>don't</em> make life better
+    to prove their case.
+  </p>
+</div>
+<p id="Kosar2018" class="bib"><cite>Kosar2018</cite>
+  Tomaž Kosar, Savso Gaberc, Jeffrey C. Carver, and Marjan Mernik:
+  "<a href="https://doi.org/10.1007/s10664-017-9593-2">Program comprehension of domain-specific and general-purpose languages: replication of a family of experiments using integrated development environments</a>".
+  <em>Empirical Software Engineering</em>, 23(5), 2018,
+  <a class="doi" href="https://doi.org/10.1007/s10664-017-9593-2">10.1007/s10664-017-9593-2</a>.
+</p>
+<blockquote class="abstract">
+  Domain-specific languages (DSLs) allow developers to write code at a higher
+  level of abstraction compared with general-purpose languages
+  (GPLs). Developers often use DSLs to reduce the complexity of GPLs. Our
+  previous study found that developers performed program comprehension tasks
+  more accurately and efficiently with DSLs than with corresponding APIs in
+  GPLs. This study replicates our previous study to validate and extend the
+  results when developers use IDEs to perform program comprehension tasks. We
+  performed a dependent replication of a family of experiments. We made two
+  specific changes to the original study: (1) participants used IDEs to perform
+  the program comprehension tasks, to address a threat to validity in the
+  original experiment and (2) each participant performed program comprehension
+  tasks on either DSLs or GPLs, not both as in the original experiment. The
+  results of the replication are consistent with and expanded the results of the
+  original study. Developers are significantly more effective and efficient in
+  tool-based program comprehension when using a DSL than when using a
+  corresponding API in a GPL. The results indicate that, where a DSL is
+  available, developers will perform program comprehension better using the DSL
+  than when using the corresponding API in a GPL.
+</blockquote>
