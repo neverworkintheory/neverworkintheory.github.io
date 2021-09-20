@@ -1,0 +1,67 @@
+---
+layout: post
+author: Greg Wilson
+title: "Do Developers Read Compiler Error Messages?"
+date: 2021-09-20
+categories: ["Error Messages"]
+---
+<div class="review">
+  <p>
+    <a href="{{'/2021/09/02/compiler-error-messages-considered-unhelpful.html' | relative_url}}">Earlier this month</a>
+    we reviewed <cite>Becker2019</cite>,
+    which found that most of the error messages produced by compilers aren't particularly helpful.
+    One response was, "Well, but nobody reads them anyway."
+    <cite>Barik2017</cite> showed that this isn't true:
+    based on an eye-tracking study of 56 students writing Java with Eclipse,
+    they found that:
+  </p>
+  <ol>
+    <li>
+      "participants read error messages,
+      and the difficulty of reading these messages is comparable to the difficulty of reading source code",
+    </li>
+    <li>
+      "difficulty reading error messages significantly predicts participants' task performance"
+      (i.e., the harder the messages are to read, the longer it takes to fix the problem),
+      and
+    </li>
+    <li>
+      "participants allocate a substantial portion of their total task to reading error messages (13%-25%)."
+    </li>
+  </ol>
+  <p>
+    13-25% of someone's time roughly a day a week.
+    While the actual gain would be smaller (because programmers do a lot more than write code),
+    reducing this time would certainly make work more enjoyable,
+    and I suspect it would reduce the fault rate in shipped code as well.
+    As we've said before
+    (paraphrasing <a href="https://en.wikipedia.org/wiki/Nothing_in_Biology_Makes_Sense_Except_in_the_Light_of_Evolution">Dobzhansky</a>),
+    nothing in software engineering makes sense except in light of human psychology;
+    the more attention researchers and developers pay to that,
+    the faster our profession will make real progress.
+  </p>
+</div>
+<p id="Barik2017" class="bib"><cite>Barik2017</cite>
+  Titus Barik, Justin Smith, Kevin Lubick, Elisabeth Holmes, Jing Feng, Emerson Murphy-Hill, and Chris Parnin:
+  "<a href="https://doi.org/10.1109/icse.2017.59">Do Developers Read Compiler Error Messages?</a>".
+  <em>2017 IEEE/ACM 39th International Conference on Software Engineering (ICSE)</em>,
+  <a class="doi" href="https://doi.org/10.1109/icse.2017.59">10.1109/icse.2017.59</a>.
+</p>
+<blockquote class="abstract">
+  In integrated development environments, developers receive compiler error
+  messages through a variety of textual and visual mechanisms, such as popups
+  and wavy red underlines. Although error messages are the primary means of
+  communicating defects to developers, researchers have a limited understanding
+  on how developers actually use these messages to resolve defects. To
+  understand how developers use error messages, we conducted an eye tracking
+  study with 56 participants from undergraduate and graduate software
+  engineering courses at our university. The participants attempted to resolve
+  common, yet problematic defects in a Java code base within the Eclipse
+  development environment. We found that: 1) participants read error messages
+  and the difficulty of reading these messages is comparable to the difficulty
+  of reading source code, 2) difficulty reading error messages significantly
+  predicts participants' task performance, and 3) participants allocate a
+  substantial portion of their total task to reading error messages
+  (13%-25%). The results of our study offer empirical justification for the need
+  to improve compiler error messages for developers.
+</blockquote>
