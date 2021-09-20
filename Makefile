@@ -86,8 +86,14 @@ categories:
 
 ## check: run all checks
 check:
+	@make check-ascii
 	@make check-bib
 	@make check-used
+
+## check-ascii: check that all .bib files are 7-bit ASCII
+check-ascii:
+	@bin/check-ascii.py --inputs ${NWIT_BIB} ${TODO_BIB}
+
 
 ## check-bib: check integrity of bibliography
 check-bib:
