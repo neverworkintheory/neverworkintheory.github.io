@@ -32,7 +32,8 @@ def check_overall(options, entries, problems):
 
 def check_abstract(options, problems, entry):
     if 'abstract' not in entry:
-        record_problem(options, problems, entry, 'does not have "abstract"')
+        doi = f'{entry["doi"]} ' if 'doi' in entry else ''
+        record_problem(options, problems, entry, f'{doi}does not have "abstract"')
 
 
 def get_options():
