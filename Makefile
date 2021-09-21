@@ -129,7 +129,7 @@ ${AUTHORS_HTML}: ${AUTHORS_BIN} ${NWIT_BIB}
 ${BIB_HTML}: ${NWIT_BIB} ${BIB2YAML_BIN} ${YAML2HTML_BIN}
 	make TITLE="Bibliography" SLUG=nwit bib2yaml > $@
 
-${TODO_HTML}: ${TODO_BIB} ${BIB2YAML_BIN}
+${TODO_HTML}: ${TODO_BIB} ${BIB2YAML_BIN} ${YAML2HTML_BIN}
 	make TITLE="To Do" SLUG=todo bib2yaml > $@
 
 ${PDF}: ${NWIT_BIB} ${TODO_BIB} tex/nwit.tex tex/settings.tex tex/abstract.bst

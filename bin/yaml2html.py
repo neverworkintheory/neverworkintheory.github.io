@@ -22,7 +22,8 @@ def main(args):
         letter, heading = advance_heading(letter, entry)
         if (not config.notoc) and (heading is not None):
             entries.append(heading)
-        text = YAML_TO_MARKDOWN[entry['kind']](config, entry)
+        fields = YAML_TO_MARKDOWN[entry['kind']](config, entry)
+        text = '\n'.join([x for x in fields if x])
         entries.append(text)
     result = '\n\n'.join(entries)
     print(template)
@@ -68,31 +69,33 @@ def advance_heading(letter, entry):
 
 def article(config, entry):
     '''Convert article to Markdown.'''
-    return '\n'.join([
+    return [
         cite_start(config, entry),
         credit(config, entry),
         title(config, entry, True),
         article_info(config, entry),
+        reviewed(config, entry),
         cite_end(config),
         abstract(config, entry)
-    ])
+    ]
 
 
 def book(config, entry):
     '''Convert book to Markdown.'''
-    return '\n'.join([
+    return [
         cite_start(config, entry),
         credit(config, entry),
         title(config, entry, False),
         book_info(config, entry),
+        reviewed(config, entry),
         cite_end(config),
         abstract(config, entry)
-    ])
+    ]
 
 
 def incollection(config, entry):
     '''Convert chapter in collection to Markdown.'''
-    return '\n'.join([
+    return [
         cite_start(config, entry),
         credit(config, entry, which='author'),
         title(config, entry, True),
@@ -100,43 +103,47 @@ def incollection(config, entry):
         credit(config, entry, which='editor'),
         book_title(config, entry),
         book_info(config, entry),
+        reviewed(config, entry),
         cite_end(config),
         abstract(config, entry)
-    ])
+    ]
 
 
 def inproceedings(config, entry):
     '''Convert proceedings entry to Markdown.'''
-    return '\n'.join([
+    return [
         cite_start(config, entry),
         credit(config, entry),
         title(config, entry, True),
         proceedings_info(config, entry),
+        reviewed(config, entry),
         cite_end(config),
         abstract(config, entry)
-    ])
+    ]
 
 
 def link(config, entry):
     '''Convert link to Markdown.'''
-    return '\n'.join([
+    return [
         cite_start(config, entry),
         credit(config, entry),
         title(config, entry, True),
+        reviewed(config, entry),
         cite_end(config),
         abstract(config, entry)
-    ])
+    ]
 
 
 def techreport(config, entry):
     '''Convert techreport to Markdown.'''
-    return '\n'.join([
+    return [
         cite_start(config, entry),
         credit(config, entry),
         title(config, entry, True),
+        reviewed(config, entry),
         cite_end(config),
         abstract(config, entry)
-    ])
+    ]
 
 
 # Lookup table for entry handlers.
@@ -226,6 +233,15 @@ def credit(config, entry, which=None):
         front = ', '.join(names[0:-1])
         names = f'{front}, and {names[-1]}'
     return f'{names}{suffix}:'
+
+
+def reviewed(config, entry):
+    '''Include link to review (if any).'''
+    if 'reviewed' not in entry:
+        return ''
+    url = entry['reviewed'] # /YYYY/MM/DD/title.html
+    date = '-'.join(url.split('/')[1:4]) # YYYY-MM-DD
+    return f' (Reviewed <a href="{{{{\'{url}\' | relative_url}}}}">{date}</a>.)'
 
 
 def title(config, entry, quote):
