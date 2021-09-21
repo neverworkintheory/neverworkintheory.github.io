@@ -1,0 +1,80 @@
+---
+layout: post
+author: Greg Wilson
+title: "Syntax, Predicates, Idioms—What Really Affects Code Complexity?"
+date: 2021-09-21
+categories: ["Programming Languages", "Program Comprehension"]
+---
+<div class="review">
+  <p>
+    Are some programming constructs intrinsically more difficult to read and write than others?
+    <cite>Ajami2018</cite> explored this question
+    by having over 200 professional programmers look at code snippets
+    that did similar things in different ways.
+    Their findings include:
+  </p>
+  <ul>
+    <li>
+      for loops are harder for people to understand than if statements,
+    </li>
+    <li>
+      loops that count down are (slightly) harder to understand than loops that count up,
+    </li>
+    <li>
+      time taken and error rate don't necessarily correlate,
+      which means that the former cannot be used as a proxy for the latter.
+    </li>
+  </ul>
+  <p>
+    Like all results, these need to be interpreted carefully:
+    for example, the authors' tests used C-style for loops,
+    which are syntactically much more complex than the for loops of languages like Python.
+    However,
+    the paper spells out the statistical methods used in welcome detail,
+    and is careful to account for learning effects and other confounding factors.
+    (Sentences like, "More ranges also led to higher error rates,
+    but this was not significant after Bonferroni correction." make me very happy.)
+  </p>
+  <p>
+    I am a big fan of work like this,
+    which I first met through papers by <a href="https://web.cs.unlv.edu/stefika/">Andreas Stefik</a> and his team
+    on the readability and learnability of programming languages
+    (see <a href="{{'/2011/10/24/an-empirical-comparison-of-the-accuracy-rates-of-novices-using-the-quorum-perl-and-randomo-programming-languages.html' | relative_url}}">these</a>
+    <a href="{{'/2011/10/27/author-response-quorum-vs-perl-vs-randomo-novice-accuracy-rates.html' | relative_url}}">three</a>
+    <a href="{{'/2014/01/29/stefik-siebert-syntax.html' | relative_url}}">posts</a>
+    for examples).
+    It is very welcome to see other research groups doing studies like these as well,
+    and I hope one day that things like <a href="https://www.python.org/dev/peps/">Python Enhancement Proposals</a>
+    will routinely include studies like these.
+    Among other things,
+    it would be a great way to build bridges between researchers and practitioners.
+  </p>
+</div>
+<p id="Ajami2018" class="bib"><cite>Ajami2018</cite>
+  Shulamyt Ajami, Yonatan Woodbridge, and Dror G. Feitelson:
+  "<a href="https://doi.org/10.1007/s10664-018-9628-3">Syntax, predicates, idioms—what really affects code complexity?</a>".
+  <em>Empirical Software Engineering</em>, 24(1), 2018,
+  <a class="doi" href="https://doi.org/10.1007/s10664-018-9628-3">10.1007/s10664-018-9628-3</a>.
+  (Reviewed <a href="{{'/2021/09/21/syntax-predicates-idioms-what-really-affects-code-complexity.html' | relative_url}}">2021-09-21</a>.)
+</p>
+<blockquote class="abstract">
+  Program comprehension concerns the ability to understand code
+  written by others. But not all code is the same. We use an
+  experimental platform fashioned as an online game-like environment
+  to measure how quickly and accurately 220 professional programmers
+  can interpret code snippets with similar functionality but different
+  structures; snippets that take longer to understand or produce more
+  errors are considered harder. The results indicate, inter alia, that
+  for loops are significantly harder than ifs, that some but not all
+  negations make a predicate harder, and that loops counting down are
+  slightly harder than loops counting up. This demonstrates how the
+  effect of syntactic structures, different ways to express
+  predicates, and the use of known idioms can be measured empirically,
+  and that syntactic structures are not necessarily the most important
+  factor. We also found that the metrics of time to understanding and
+  errors made are not necessarily equivalent. Thus loops counting down
+  took slightly longer, but loops with unusual bounds caused many more
+  errors. By amassing many more empirical results like these it may be
+  possible to derive better code complexity metrics than we have
+  today, and also to better appreciate their limitations.
+</blockquote>
