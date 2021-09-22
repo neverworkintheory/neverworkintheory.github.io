@@ -13,9 +13,15 @@ CITE = re.compile('<cite>(.+?)</cite>', re.MULTILINE + re.DOTALL)
 def main():
     options = get_options()
     used = util.get_entries(options.used)
+    unreviewed = get_unreviewed(options.unreviewed)
     mentions = get_mentions(options.pagedir)
-    problems = check(options, used, mentions)
+    problems = check(options, used, mentions, unreviewed)
     report(options, problems)
+
+
+def get_unreviewed(filename):
+    with open(filename, 'r') as reader:
+        return set([key.strip() for key in reader])
 
 
 def get_mentions(pagedir):
@@ -31,10 +37,11 @@ def get_mentions(pagedir):
     return mentions
 
 
-def check(options, used, mentions):
+def check(options, used, mentions, unreviewed):
     problems = []
     check_missing(options, used, mentions, problems)
     check_unmentioned(options, used, mentions, problems)
+    check_unreviewed(options, used, unreviewed, problems)
     return problems
 
 
@@ -48,11 +55,20 @@ def check_unmentioned(options, used, mentions, problems):
     problems.extend([f'{key} not mentioned' for key in unmentioned])
 
 
+def check_unreviewed(options, used, unreviewed, problems):
+    for entry in used:
+        if entry['ID'] in unreviewed:
+            continue
+        if 'reviewed' in entry:
+            continue
+        problems.append(f'{entry["ID"]} does not have review date')
+
+
 def get_options():
     parser = argparse.ArgumentParser()
     parser.add_argument('--pagedir', help='specify root directory of HTML pages')
     parser.add_argument('--used', help='.bib file with used entries')
-    parser.add_argument('--todo', help='.bib file with todo entries')
+    parser.add_argument('--unreviewed', help='text file with one key per line indicating unreviewed entries')
     return parser.parse_args()
 
 

@@ -11,6 +11,7 @@ LATEX_BIN=pdflatex
 NWIT_BIB=./tex/nwit.bib
 TODO_BIB=./tex/todo.bib
 ALL_BIB=${NWIT_BIB} ${TODO_BIB}
+UNREVIEWED_TXT=./tex/unreviewed.txt
 
 AUTHORS_HTML=authors/index.html
 BIB_HTML=bib/index.html
@@ -101,7 +102,7 @@ check-bib:
 
 ## check-used: check which papers have been used or not
 check-used:
-	@bin/check-used.py --pagedir _posts --used ${NWIT_BIB} --todo ${TODO_BIB}
+	@bin/check-used.py --pagedir _posts --used ${NWIT_BIB} --unreviewed ${UNREVIEWED_TXT}
 
 ## clean: clean up stray files
 clean:
