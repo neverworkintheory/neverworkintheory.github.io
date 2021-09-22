@@ -1,0 +1,58 @@
+---
+layout: post
+author: Greg Wilson
+title: "Build Systems à la Carte"
+date: 2021-09-21
+categories: ["Tools", "Build Systems"]
+---
+<div class="review">
+  <p>
+    Many programmers of my generation learned how to design software
+    by reading the trilogy of books that Kernighan and colleagues wrote
+    in the early days of Unix:
+    <em>The Elements of Programming Style</em>,
+    <em>Software Tools in Pascal</em>,
+    and <em>The Unix Programming Environment</em>
+    <cite>Kernighan1979,Kernighan1981,Kernighan1983</cite>.
+    They showed us how to write readable programs and build the tools we ourselves used,
+    and by doing so,
+    helped us see the world of programming in a particular way.
+  </p>
+  <p>
+    <cite>Mokhov2018</cite> is very much in that spirit.
+    Its authors do a deep dive into one topic—build systems—and
+    show how a variety of existing systems can be reconstructed
+    by answering two questions that turn out to be independent of each other:
+    which tasks are executed and in what order?
+    To make their discussion concrete,
+    Mokhov et al build a small framework in Haskell
+    that allows different choices on these two axes to be mixed and matched.
+    Doing this enables them to be very precise about what claims like "correctness"
+    actually mean for a tool of this kind,
+    though at the cost of readability for anyone who isn't familiar with the language.
+  </p>
+  <p>
+    I wish there were many more papers like this one.
+    Rational reconstructions of existing tools within a single generalized explanatory framework
+    allows us to make sense of what we've done
+    and figure out what we might do next.
+    If we are ever going to have a useful theory of software architecture,
+    I believe it's going to come out of work like this.
+  </p>
+</div>
+<p id="Mokhov2018" class="bib"><cite>Mokhov2018</cite>
+  Andrey Mokhov, Neil Mitchell, and Simon Peyton Jones:
+  "<a href="https://doi.org/10.1145/3236774">Build systems à la carte</a>".
+  <em>Proceedings of the ACM on Programming Languages</em>, 2(ICFP), 2018,
+  <a class="doi" href="https://doi.org/10.1145/3236774">10.1145/3236774</a>.
+</p>
+<blockquote class="abstract">
+  Build systems are awesome, terrifying—and unloved. They are used by
+  every developer around the world, but are rarely the object of
+  study. In this paper we offer a systematic, and executable,
+  framework for developing and comparing build systems, viewing them
+  as related points in landscape rather than as isolated phenomena. By
+  teasing apart existing build systems, we can recombine their
+  components, allowing us to prototype new build systems with desired
+  properties.
+</blockquote>
