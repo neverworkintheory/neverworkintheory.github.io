@@ -1,0 +1,120 @@
+---
+layout: post
+author: Greg Wilson
+title: "Two Studies of Software Evolution"
+date: 2021-09-23
+categories: ["Software Evolution", "Programming Languages", "Operating Systems"]
+---
+<div class="review">
+  <p>
+    The opening sentence of <cite>Spinellis2016</cite>'s abstract
+    could serve as a byline for this entire site:
+    "Tracking long-term progress in engineering and applied science
+    allows us to take stock of things we have achieved,
+    appreciate the factors that led to them,
+    and set realistic goals for where we want to go."
+    It and <cite>Spinellis2021</cite> are careful, knowledgeable explorations
+    of the ways in which C programming practices and the Unix operating system
+    have evolved in tandem.
+    Among their many findings:
+  </p>
+  <ul>
+    <li>
+      Source line length has steadily increased as large screens have become more widely available.
+      At the same time,
+      code formatting has become more consistent,
+      possibly because of wider adoption of automated style checks.
+    </li>
+    <li>
+      The degree of modularity has increased as the code base has gotten larger
+      (presumably to keep complexity manageable).
+    </li>
+    <li>
+      New language features are adopted slowly, but they <em>are</em> adopted.
+    </li>
+    <li>
+      As the code base has grown from 13,000 to over 10 million lines of code,
+      the complexity of various subsystems has consistently followed a rise-and-fall pattern.
+    </li>
+  </ul>
+  <p>
+    The papers have much more detail than this,
+    allowing the authors to substantiate claims that
+    many core architectural decisions are taken at the beginning of a project,
+    that most of these survive throughout its lifetime,
+    and that a major source of technical debt is
+    architecture decisions offering features that are either similar to existing ones or remain under-used.
+    They also find that portability is a major driver of architectural evolution:
+    its intrinsic complexity forces architects to undertake changes they might otherwise have deferred.
+    On the other hand,
+    "the adoption of third-party subsystems facilitates evolution through reusability but incurs technical debt,"
+    and,
+    "Large subsystems form their own architecture, independently of the architecture of the encompassing system."
+  </p>
+  <p>
+    Our field doesn't yet have a rich vocabulary for talking about issues like these:
+    compared to film critics, restaurant reviewers, or building architects,
+    our discussions amongst ourselves all start from basics
+    instead of building on a shared body of critical understanding.
+    Works like these are how we will change that,
+    and I hope similar analyses of other foundational applications will be normal some day.
+  </p>
+</div>
+<p id="Spinellis2016" class="bib"><cite>Spinellis2016</cite>
+  Diomidis Spinellis, Panos Louridas, and Maria Kechagia:
+  "<a href="https://doi.org/10.1145/2884781.2884799">The Evolution of C Programming Practices</a>".
+  <em>Proceedings of the 38th International Conference on Software Engineering</em>,
+  <a class="doi" href="https://doi.org/10.1145/2884781.2884799">10.1145/2884781.2884799</a>.
+</p>
+<blockquote class="abstract">
+  Tracking long-term progress in engineering and applied science
+  allows us to take stock of things we have achieved, appreciate the
+  factors that led to them, and set realistic goals for where we want
+  to go. We formulate seven hypotheses associated with the long term
+  evolution of C programming in the Unix operating system, and examine
+  them by extracting, aggregating, and synthesising metrics from 66
+  snapshots obtained from a synthetic software configuration
+  management repository covering a period of four decades. We found
+  that over the years developers of the Unix operating system appear
+  to have evolved their coding style in tandem with advancements in
+  hardware technology, promoted modularity to tame rising complexity,
+  adopted valuable new language features, allowed compilers to
+  allocate registers on their behalf, and reached broad agreement
+  regarding code formatting. The progress we have observed appears to
+  be slowing or even reversing prompting the need for new sources of
+  innovation to be discovered and followed.
+</blockquote>
+<p id="Spinellis2021" class="bib"><cite>Spinellis2021</cite>
+  Diomidis Spinellis and Paris Avgeriou:
+  "<a href="https://doi.org/10.1109/tse.2019.2892149">Evolution of the Unix System Architecture: An Exploratory Case Study</a>".
+  <em>IEEE Transactions on Software Engineering</em>, 47(6), 2021,
+  <a class="doi" href="https://doi.org/10.1109/tse.2019.2892149">10.1109/tse.2019.2892149</a>.
+</p>
+<blockquote class="abstract">
+  Unix has evolved for almost five decades, shaping modern operating
+  systems, key software technologies, and development
+  practices. Studying the evolution of this remarkable system from an
+  architectural perspective can provide insights on how to manage the
+  growth of large, complex, and long-lived software systems. Along
+  main Unix releases leading to the FreeBSD lineage we examine core
+  architectural design decisions, the number of features, and code
+  complexity, based on the analysis of source code, reference
+  documentation, and related publications. We report that the growth
+  in size has been uniform, with some notable outliers, while
+  cyclomatic complexity has been religiously safeguarded. A large
+  number of Unix-defining design decisions were implemented right from
+  the very early beginning, with most of them still playing a major
+  role. Unix continues to evolve from an architectural perspective,
+  but the rate of architectural innovation has slowed down over the
+  system's lifetime. Architectural technical debt has accrued in the
+  forms of functionality duplication and unused facilities, but in
+  terms of cyclomatic complexity it is systematically being paid back
+  through what appears to be a self-correcting process. Some unsung
+  architectural forces that shaped Unix are the emphasis on
+  conventions over rigid enforcement, the drive for portability, a
+  sophisticated ecosystem of other operating systems and development
+  organizations, and the emergence of a federated architecture, often
+  through the adoption of third-party subsystems. These findings have
+  led us to form an initial theory on the architecture evolution of
+  large, complex operating system software.
+</blockquote>
