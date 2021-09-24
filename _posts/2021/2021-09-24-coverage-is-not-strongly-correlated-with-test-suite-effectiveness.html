@@ -1,0 +1,104 @@
+---
+layout: post
+author: Greg Wilson
+title: "Coverage Is Not Strongly Correlated with Test Suite Effectiveness"
+date: 2021-09-24
+categories: ["Testing"]
+---
+<div class="review">
+  <p>
+    One of my recent hobby projects was
+    <a href="https://tidyblocks.tech/">a blocks-based tool for doing basic data science</a>,
+    and I was very pleased when its test suite reached 100% line coverage.
+    However,
+    <cite>Inozemtseva2014</cite> found that code coverage
+    is a poor predictor of how effective a test suite is at detecting bugs
+    once the size of the test suite is accounted for.
+    Here's the method they used to reach this conclusion:
+  </p>
+  <ul>
+    <li>
+      The authors used five large open source Java projects as subjects
+      (where "large" means "on the order of 100K lines of code").
+      Each of these projects already had 1000 or more test methods.
+    </li>
+    <li>
+      They generated mutated versions of each program using a tool that
+      (for example) randomly replaced some <code>&gt;</code> comparisons
+      with <code>&gt;=</code> or vice versa.
+      Only the mutated programs that the project's original test suite <em>could</em> detect
+      were kept for further analysis.
+    </li>
+    <li>
+      Next,
+      they selected random subsets of the project's original test suite of varying sizes,
+      ran each against the buggy mutants,
+      and counted how often the subsetted test suite caught the bug.
+    </li>
+  </ul>
+  <p>
+    This method allowed the authors to tackle much larger programs and test suites
+    than they could otherwise examine.
+    Their conclusions?
+  </p>
+  <ol>
+    <li>
+      "…there is a moderate to very high correlation between
+      the effectiveness of a test suite
+      and the number of test methods it contains."
+    </li>
+    <li>
+      "…there is a moderate to high correlation between
+      the effectiveness and the coverage of a test suite when the influence of suite size is ignored."
+    </li>
+    <li>
+      "…the correlation between coverage and effectiveness drops when suite size is controlled for.
+      After this drop,
+      the correlation typically ranges from low to moderate,
+      meaning it is not generally safe to assume that effectiveness is correlated with coverage."
+    </li>
+  </ol>
+  <p>
+    In other words,
+    more tests do find more bugs,
+    but it's the number of tests and not their code coverage
+    that has most of the predictive value.
+    It's a surprising result,
+    so if you'll excuse me,
+    I have a couple of lecture slides on software testing I need to revise…
+  </p>
+</div>
+<p id="Inozemtseva2014" class="bib"><cite>Inozemtseva2014</cite>
+  Laura Inozemtseva and Reid Holmes:
+  "<a href="https://doi.org/10.1145/2568225.2568271">Coverage is not strongly correlated with test suite effectiveness</a>".
+  <em>Proceedings of the 36th International Conference on Software Engineering</em>,
+  <a class="doi" href="https://doi.org/10.1145/2568225.2568271">10.1145/2568225.2568271</a>.
+</p>
+<blockquote class="abstract">
+  The coverage of a test suite is often used as a proxy for its
+  ability to detect faults. However, previous studies that
+  investigated the correlation between code coverage and test suite
+  effectiveness have failed to reach a consensus about the nature and
+  strength of the relationship between these test suite
+  characteristics. Moreover, many of the studies were done with small
+  or synthetic programs, making it unclear whether their results
+  generalize to larger programs, and some of the studies did not
+  account for the confounding influence of test suite size. In
+  addition, most of the studies were done with adequate suites, which
+  are are rare in practice, so the results may not generalize to
+  typical test suites. We have extended these studies by evaluating
+  the relationship between test suite size, coverage, and
+  effectiveness for large Java programs. Our study is the largest to
+  date in the literature: we generated 31,000 test suites for five
+  systems consisting of up to 724,000 lines of source code. We
+  measured the statement coverage, decision coverage, and modified
+  condition coverage of these suites and used mutation testing to
+  evaluate their fault detection effectiveness. We found that there is
+  a low to moderate correlation between coverage and effectiveness
+  when the number of test cases in the suite is controlled for. In
+  addition, we found that stronger forms of coverage do not provide
+  greater insight into the effectiveness of the suite. Our results
+  suggest that coverage, while useful for identifying under-tested
+  parts of a program, should not be used as a quality target because
+  it is not a good indicator of test suite effectiveness.
+</blockquote>
