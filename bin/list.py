@@ -5,9 +5,13 @@
 import argparse
 import bibtexparser
 import random
+import re
 import sys
 
 import util
+
+
+SORT_KEY = re.compile(r'^(.+)(\d{4})(.*?)$')
 
 
 def main():
@@ -17,8 +21,16 @@ def main():
         entries = [e for e in entries if options.year in e['ID']]
     if options.random:
         entries = [random.choice(entries)]
+    entries.sort(key=sortKey)
     for e in entries:
         print(e['ID'], e['title'])
+
+
+def sortKey(entry):
+    '''Create a sorting key for an entry.'''
+    match = SORT_KEY.match(entry['ID'])
+    suffix = f'+{match.group(3)}' if match.group(3) else ''
+    return (match.group(2), match.group(1) + suffix)
 
 
 def get_options():
