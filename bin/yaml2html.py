@@ -229,7 +229,9 @@ def credit(config, entry, which=None):
         names = names[0]
     elif len(names) == 2:
         names = f'{names[0]} and {names[1]}'
-    elif len(names) > 2:
+    elif len(names) > 8:
+        names = f'{names[0]} and {len(names) - 1} others'
+    else:
         front = ', '.join(names[0:-1])
         names = f'{front}, and {names[-1]}'
     return f'{names}{suffix}:'

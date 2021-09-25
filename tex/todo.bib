@@ -650,34 +650,6 @@
   abstract = {Open source software has drawn more and more attention from researchers, developers and companies nowadays. Meanwhile, many Chinese technology companies are embracing open source and choosing to open source their projects. Nevertheless, most previous studies are concentrated on international companies such as Microsoft or Google, while the practical values of open source projects of Chinese technology companies remain unclear. To address this issue, we conduct a mixed-method study to investigate the landscape of projects open sourced by three large Chinese technology companies, namely Baidu, Alibaba, and Tencent (BAT). We study the categories and characteristics of open source projects, the developer's perceptions towards open sourcing effort for these companies, and the internationalization effort of their open source projects. We collected 1,000 open source projects that were open sourced by BAT in GitHub and performed an online survey that received 101 responses from developers of these projects. Some key findings include: 1) BAT prefer to open source frontend development projects, 2) 88\% of the respondents are positive towards open sourcing software projects in their respective companies, 3) 64\% of the respondents reveal that the most common motivations for BAT to open source their projects are the desire to gain fame, expand their influence and gain recruitment advantage, 4) respondents believe that the most common internationalization effort is \"providing an English version of readme files\", 5) projects with more internationalization effort (i.e., include an English readme file) are more popular. Our findings provide directions for software engineering researchers and provide practical suggestions to software developers and Chinese technology companies.}
 }
 
-@article{Hatton1994,
-  doi = {10.1109/32.328993},
-  url = {https://doi.org/10.1109/32.328993},
-  year = {1994},
-  publisher = {Institute of Electrical and Electronics Engineers ({IEEE})},
-  volume = {20},
-  number = {10},
-  pages = {785--797},
-  author = {L. Hatton and A. Roberts},
-  title = {How accurate is scientific software?},
-  journal = {{IEEE} Transactions on Software Engineering},
-  abstract = {This paper describes some results of what, to the authors' knowledge, is the largest N-version programming experiment ever performed. The object of this ongoing four-year study is to attempt to determine just how consistent the results of scientific computation really are, and, from this, to estimate accuracy. The experiment is being carried out in a branch of the earth sciences known as seismic data processing, where 15 or so independently developed large commercial packages that implement mathematical algorithms from the same or similar published specifications in the same programming language (Fortran) have been developed over the last 20 years. The results of processing the same input dataset, using the same user-specified parameters, for nine of these packages is reported in this paper. Finally, feedback of obvious flaws was attempted to reduce the overall disagreement. The results are deeply disturbing. Whereas scientists like to think that their code is accurate to the precision of the arithmetic used, in this study, numerical disagreement grows at around the rate of 1\% in average absolute difference per 4000 fines of implemented code, and, even worse, the nature of the disagreement is nonrandom. Furthermore, the seismic data processing industry has better than average quality standards for its software development with both identifiable quality assurance functions and substantial test datasets.}
-}
-
-@incollection{Hatton1997,
-  doi = {10.1007/978-1-5041-2940-4_2},
-  url = {https://doi.org/10.1007/978-1-5041-2940-4_2},
-  year = {1997},
-  publisher = {Springer {US}},
-  pages = {12--31},
-  author = {L. Hatton},
-  title = {The T-experiments: errors in scientific software},
-  booktitle = {Quality of Numerical Software},
-  editor = {Ronald F. Boisvert},
-  isbn = {978-1-5041-2940-4},
-  abstract = {This paper covers two very large experiments carried out concurrently between 1990 and 1994, together known as the T-experiments. Experiment T1 had the objective of measuring the consistency of several million lines of scientific software written in C and Fortran 77 by static deep-flow analysis across many different industries and application areas, and experiment T2 had the objective of measuring the level of dynamic disagreement between independent implementations of the same algorithms acting on the same input data with the same parameters in just one of these industrial application areas. Experiment T1 showed that C and Fortran are riddled with statically detectable inconsistencies independent of the application area. For example, interface inconsistencies occur at the rate of one in every 7 interfaces on average in Fortran, and one in every 37 interfaces in C. They also show that Fortran components are typically 2.5 times bigger than C components, and that roughly 30\% of the Fortran population and 10\% of the C population would be deemed untestable by any standards. Experiment T2 was even more disturbing. Whereas scientists like to think that their results are accurate to the precision of the arithmetic used, in this study, the degree of agreement gradually degenerated from 6 significant figures to 1 significant figure during the computation. The reasons for this disagreement are laid squarely at the door of software failure, as other possible causes are considered and rejected. Taken with other evidence, these two experiments suggest that the results of scientific calculations involving significant amounts of software should be taken with several large pinches of salt.}
-}
-
 @inproceedings{Hayashi2019,
   doi = {10.1109/msr.2019.00076},
   url = {https://doi.org/10.1109/msr.2019.00076},
@@ -1217,21 +1189,6 @@
   title = {The nature of build changes: An empirical study of Maven-based build systems},
   journal = {Empirical Software Engineering},
   abstract = {Build systems are an essential part of modern software projects. As software projects change continuously, it is crucial to understand how the build system changes because neglecting its maintenance can, at best, lead to expensive build breakage, or at worst, introduce user-reported defects due to incorrectly compiled, linked, packaged, or deployed official releases. Recent studies have investigated the (co-)evolution of build configurations and reasons for build breakage; however, the prior analysis focused on a coarse-grained outcome (i.e., either build changing or not). In this paper, we present BUILDDIFF, an approach to extract detailed build changes from MAVEN build files and classify them into 143 change types. In a manual evaluation of 400 build-changing commits, we show that BUILDDIFF can extract and classify build changes with average precision, recall, and f1-scores of 0.97, 0.98, and 0.97, respectively. We then present two studies using the build changes extracted from 144 open source Java projects to study the frequency and time of build changes. The results show that the top-10 most frequent change types account for 51\% of the build changes. Among them, changes to version numbers and changes to dependencies of the projects occur most frequently. We also observe frequently co-occurring changes, such as changes to the source code management definitions, and corresponding changes to the dependency management system and the dependency declaration. Furthermore, our results show that build changes frequently occur around release days. In particular, critical changes, such as updates to plugin configuration parts and dependency insertions, are performed before a release day. The contributions of this paper lay in the foundation for future research, such as for analyzing the (co-)evolution of build files with other artifacts, improving effort estimation approaches by incorporating necessary modifications to the build system specification, or automatic repair approaches for configuration code. Furthermore, our detailed change information enables improvements of refactoring approaches for build configurations and improvements of prediction models to identify error-prone build files.}
-}
-
-@article{Malik2019,
-  doi = {10.3390/geosciences9120516},
-  url = {https://doi.org/10.3390/geosciences9120516},
-  year = {2019},
-  month = dec,
-  publisher = {{MDPI} {AG}},
-  volume = {9},
-  number = {12},
-  pages = {516},
-  author = {Mashkoor Malik and Alexandre C. G. Schimel and Giuseppe Masetti and Marc Roche and Julian Le Deunf and Margaret F.J. Dolan and Jonathan Beaudoin and Jean-Marie Augustin and Travis Hamilton and Iain Parnum},
-  title = {Results from the First Phase of the Seafloor Backscatter Processing Software Inter-Comparison Project},
-  journal = {Geosciences},
-  abstract = {Seafloor backscatter mosaics are now routinely produced from multibeam echosounder data and used in a wide range of marine applications. However, large differences (>5 dB) can often be observed between the mosaics produced by different software packages processing the same dataset. Without transparency of the processing pipeline and the lack of consistency between software packages raises concerns about the validity of the final results. To recognize the source(s) of inconsistency between software, it is necessary to understand at which stage(s) of the data processing chain the differences become substantial. To this end, willing commercial and academic software developers were invited to generate intermediate processed backscatter results from a common dataset, for cross-comparison. The first phase of the study requested intermediate processed results consisting of two stages of the processing sequence: the one-value-per-beam level obtained after reading the raw data and the level obtained after radiometric corrections but before compensation of the angular dependence. Both of these intermediate results showed large differences between software solutions. This study explores the possible reasons for these differences and highlights the need for collaborative efforts between software developers and their users to improve the consistency and transparency of the backscatter data processing sequence.}
 }
 
 @article{Masood2020b,

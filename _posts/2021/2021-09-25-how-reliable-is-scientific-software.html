@@ -1,13 +1,95 @@
 ---
 layout: post
-author: Your Name
-title: "Paper Title"
-date: YYYY-MM-DD
-categories: ["First Category", "Second Category"]
+author: Greg Wilson
+title: "How Reliable is Scientific Software?"
+date: 2021-09-25
+categories: ["Scientific Computing", "Software Reliability"]
 ---
 <div class="review">
   <p>
-    Review goes here.
+    I started reading empirical software engineering research
+    because I was working with scientists
+    and became embarrassed by how many of the things I did and taught
+    were based on personal experience and anecdotes.
+    Was agile development really better than designing things up front?
+    Were some programming languages actually better than others?
+    And what exactly does "better" mean in sentences like that?
+    My friends and colleagues in physics, ecology, and public health
+    could cite evidence to back up their professional opinions;
+    all I could do was change the subject.
+  </p>
+  <p>
+    My interests have shifted over the years,
+    but software engineering and scientific computing have always been near the center,
+    which makes this set of papers a double pleasure to review.
+    The first,
+    <cite>Hatton1994</cite>,
+    is now a quartery of a century old,
+    but its conclusions are still fresh.
+    The authors fed the same data into nine commercial geophysical software packages
+    and compared the results;
+    they found that,
+    "numerical disagreement grows at around the rate of 1% in average absolute difference
+    per 4000 fines of implemented code,
+    and, even worse, the nature of the disagreement is nonrandom"
+    (i.e., the authors of different packages make similar mistakes).
+  </p>
+  <p>
+    <cite>Hatton1997</cite> revisited this result
+    while also reporting on a concurrent experiment
+    that analyzed large scientific applications written in C and Fortran.
+    This study found that,
+    "…C and Fortran are riddled with statically detectable inconsistencies
+    independent of the application area.
+    For example,
+    interface inconsistencies occur at the rate of one in every 7 interfaces on average in Fortran,
+    and one in every 37 interfaces in C.
+    They also show that…roughly 30% of the Fortran population and 10% of the C…would be deemed untestable
+    by any standards."
+  </p>
+  <p>
+    Over twenty years later,
+    <cite>Malik2019</cite> and <cite>Schweinsberg2021</cite>'s findings are equally sobering.
+    <cite>Malik2019</cite> compared five backscatter programs
+    and found that different ones would flag different inputs as invalid,
+    that each application reported different mean levels,
+    and so on;
+    its authors trace some of these differences in results back to different assumptions about the underlying science
+    and others back to different ways of doing calculations.
+  </p>
+  <p>
+    Rather than using existing software,
+    <cite>Schweinsberg2021</cite> had multiple independent teams use the same dataset
+    to set two hypotheses however they wanted.
+    They found that,
+    "Researchers reported radically different analyses and dispersed empirical outcomes,
+    in a number of cases obtaining significant effects in opposite directions for the same research question,"
+    and that,
+    "decisions about how to operationalize variables explain variability in outcomes above and beyond statistical choices."
+    In other words,
+    the differences between how researchers translated the question into specific tests
+    of specific variables extracted from the data
+    materially affected their conclusions.
+  </p>
+  <p>
+    One response to studies like these is
+    to say they prove that computational science doesn't meet the standards set for experimental science.
+    However,
+    a lot of experimental work is just as shaky when examined closely,
+    and if mathematicians insisted that every theorem proof actually had to be rigorous,
+    many fewer would be published.
+    The truth is that we don't know why <em>any</em> of this stuff works as well as it does—if you doubt that,
+    see how much of your faith survives a course on the philosophy of science.
+  </p>
+  <p>
+    What we <em>do</em> know is that the more open researchers are,
+    the more likely their results are to be correct.
+    <cite>Wicherts2011</cite> found a strong correlation between
+    researchers' willingness to share their data
+    and the number of errors in their analyses.
+    Making the software and data used to produce results freely available
+    doesn't guarantee that those results are correct,
+    but not doing so ensures that such checks are impossible.
   </p>
 </div>
 <p id="Hatton1994" class="bib"><cite>Hatton1994</cite>
@@ -96,4 +178,34 @@ categories: ["First Category", "Second Category"]
   possible reasons for these differences and highlights the need for
   collaborative efforts between software developers and their users to improve
   the consistency and transparency of the backscatter data processing sequence.
+</blockquote>
+<p id="Schweinsberg2021" class="bib"><cite>Schweinsberg2021</cite>
+  Martin Schweinsberg and 178 others:
+  "<a href="https://doi.org/10.1016/j.obhdp.2021.02.003">Same data, different conclusions: Radical dispersion in empirical results when independent analysts operationalize and test the same hypothesis</a>".
+  <em>Organizational Behavior and Human Decision Processes</em>, 165, 2021,
+  <a class="doi" href="https://doi.org/10.1016/j.obhdp.2021.02.003">10.1016/j.obhdp.2021.02.003</a>.
+</p>
+<blockquote class="abstract">
+  In this crowdsourced initiative, independent analysts used the same dataset to
+  test two hypotheses regarding the effects of scientists' gender and
+  professional status on verbosity during group meetings. Not only the analytic
+  approach but also the operationalizations of key variables were left
+  unconstrained and up to individual analysts. For instance, analysts could
+  choose to operationalize status as job title, institutional ranking, citation
+  counts, or some combination. To maximize transparency regarding the process by
+  which analytic choices are made, the analysts used a platform we developed
+  called DataExplained to justify both preferred and rejected analytic paths in
+  real time. Analyses lacking sufficient detail, reproducible code, or with
+  statistical errors were excluded, resulting in 29 analyses in the final
+  sample. Researchers reported radically different analyses and dispersed
+  empirical outcomes, in a number of cases obtaining significant effects in
+  opposite directions for the same research question. A Boba multiverse analysis
+  demonstrates that decisions about how to operationalize variables explain
+  variability in outcomes above and beyond statistical choices (e.g.,
+  covariates). Subjective researcher decisions play a critical role in driving
+  the reported empirical results, underscoring the need for open data,
+  systematic robustness checks, and transparency regarding both analytic paths
+  taken and not taken. Implications for organizations and leaders, whose
+  decision making relies in part on scientific findings, consulting reports, and
+  internal analyses by data scientists, are discussed.
 </blockquote>
