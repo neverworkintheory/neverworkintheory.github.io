@@ -792,18 +792,6 @@
   abstract = {Background: Hackathons have become popular events for teams to collaborate on projects and develop software prototypes. Most existing research focuses on activities during an event with limited attention to the evolution of the code brought to or created during a hackathon. Aim: We aim to understand the evolution of hackathon-related code, specifically, how much hackathon teams rely on pre-existing code or how much new code they develop during a hackathon. Moreover, we aim to understand if and where that code gets reused. Method: We collected information about 22,183 hackathon projects from Devpost---a hackathon database---and obtained related code (blobs), authors, and project characteristics from the World of Code. We investigated if code blobs in hackathon projects were created before, during, or after an event by identifying the original blob creation date and author, and also checked if the original author was a hackathon project member. We tracked code reuse by first identifying all commits containing blobs created during an event before determining all projects that contain those commits. Result: While only approximately 9.14\% of the code blobs are created during hackathons, this amount is still significant considering time and member constraints of such events. Approximately a third of these code blobs get reused in other projects. Conclusion: Our study demonstrates to what extent pre-existing code is used and new code is created during a hackathon and how much of it is reused elsewhere afterwards. Our findings help to better understand code reuse as a phenomenon and the role of hackathons in this context and can serve as a starting point for further studies in this area.}
 }
 
-@inproceedings{Inozemtseva2014,
-  doi = {10.1145/2568225.2568271},
-  url = {https://doi.org/10.1145/2568225.2568271},
-  year = {2014},
-  month = may,
-  publisher = {{ACM}},
-  author = {Laura Inozemtseva and Reid Holmes},
-  title = {Coverage is not strongly correlated with test suite effectiveness},
-  booktitle = {Proceedings of the 36th International Conference on Software Engineering},
-  abstract = {The coverage of a test suite is often used as a proxy for its ability to detect faults. However, previous studies that investigated the correlation between code coverage and test suite effectiveness have failed to reach a consensus about the nature and strength of the relationship between these test suite characteristics. Moreover, many of the studies were done with small or synthetic programs, making it unclear whether their results generalize to larger programs, and some of the studies did not account for the confounding influence of test suite size. In addition, most of the studies were done with adequate suites, which are are rare in practice, so the results may not generalize to typical test suites. We have extended these studies by evaluating the relationship between test suite size, coverage, and effectiveness for large Java programs. Our study is the largest to date in the literature: we generated 31,000 test suites for five systems consisting of up to 724,000 lines of source code. We measured the statement coverage, decision coverage, and modified condition coverage of these suites and used mutation testing to evaluate their fault detection effectiveness. We found that there is a low to moderate correlation between coverage and effectiveness when the number of test cases in the suite is controlled for. In addition, we found that stronger forms of coverage do not provide greater insight into the effectiveness of the suite. Our results suggest that coverage, while useful for identifying under-tested parts of a program, should not be used as a quality target because it is not a good indicator of test suite effectiveness.}
-}
-
 @comment{JJJ}
 
 @article{Jalote2021,
@@ -1244,21 +1232,6 @@
   title = {Results from the First Phase of the Seafloor Backscatter Processing Software Inter-Comparison Project},
   journal = {Geosciences},
   abstract = {Seafloor backscatter mosaics are now routinely produced from multibeam echosounder data and used in a wide range of marine applications. However, large differences (>5 dB) can often be observed between the mosaics produced by different software packages processing the same dataset. Without transparency of the processing pipeline and the lack of consistency between software packages raises concerns about the validity of the final results. To recognize the source(s) of inconsistency between software, it is necessary to understand at which stage(s) of the data processing chain the differences become substantial. To this end, willing commercial and academic software developers were invited to generate intermediate processed backscatter results from a common dataset, for cross-comparison. The first phase of the study requested intermediate processed results consisting of two stages of the processing sequence: the one-value-per-beam level obtained after reading the raw data and the level obtained after radiometric corrections but before compensation of the angular dependence. Both of these intermediate results showed large differences between software solutions. This study explores the possible reasons for these differences and highlights the need for collaborative efforts between software developers and their users to improve the consistency and transparency of the backscatter data processing sequence.}
-}
-
-@article{Mangano2015,
-  doi = {10.1109/tse.2014.2362924},
-  url = {https://doi.org/10.1109/tse.2014.2362924},
-  year = {2015},
-  month = feb,
-  publisher = {Institute of Electrical and Electronics Engineers ({IEEE})},
-  volume = {41},
-  number = {2},
-  pages = {135--156},
-  author = {Nicolas Mangano and Thomas D. LaToza and Marian Petre and Andre van der Hoek},
-  title = {How Software Designers Interact with Sketches at the Whiteboard},
-  journal = {{IEEE} Transactions on Software Engineering},
-  abstract = {Whiteboard sketches play a crucial role in software development, helping to support groups of designers in reasoning about a software design problem at hand. However, little is known about these sketches and how they support design `in the moment', particularly in terms of the relationships among sketches, visual syntactic elements within sketches, and reasoning activities. To address this gap, we analyzed 14 hours of design activity by eight pairs of professional software designers, manually coding over 4000 events capturing the introduction of visual syntactic elements into sketches, focus transitions between sketches, and reasoning activities. Our findings indicate that sketches serve as a rich medium for supporting design conversations. Designers often use general-purpose notations. Designers introduce new syntactic elements to record aspects of the design, or re-purpose sketches as the design develops. Designers constantly shift focus between sketches, using groups of sketches together that contain complementary information. Finally, sketches play an important role in supporting several types of reasoning activities (mental simulation, review of progress, consideration of alternatives). But these activities often leave no trace and rarely lead to sketch creation. We discuss the implications of these and other findings for the practice of software design at the whiteboard and for the creation of new electronic software design sketching tools.}
 }
 
 @article{Masood2020b,

@@ -1,0 +1,110 @@
+---
+layout: post
+author: Greg Wilson
+title: "How Software Designers Interact with Sketches at the Whiteboard"
+date: 2021-09-24
+categories: ["Design"]
+---
+<div class="review">
+  <p>
+    Back in 2011 <a href="{{'/2011/06/30/lets-go-to-the-whiteboard.html' | relative_url}}">we reviewed</a>
+    <cite>Cherubini2007</cite>,
+    which found that software designers almost always used whiteboard sketches
+    as a transient supplement to short-term memory
+    rather than for formal, archival purposes:
+    the drawing's purpose was to help them think in the moment
+    rather than to act as something like a blueprint or circuit diagram.
+    Two years later <a href="{{'/2013/06/13/uml-in-practice-2.html' | relative_url}}">we reviewed</a>
+    the award-winning <cite>Petre2013</cite>,
+    which found that most professionals either don't use the Unified Modeling Language (UML) at all
+    or use parts of it in the informal, <em>ad hoc</em> ways described in <cite>Cherubini2007</cite>.
+  </p>
+  <p>
+    <cite>Mangano2015</cite> reinforced these findings by studying 4000 events
+    recorded during 14 hours of design activity by 8 pairs of professional software designers.
+    They found that:
+  </p>
+  <ul>
+    <li>
+      sketches serve as a rich medium for supporting design conversations;
+    </li>
+    <li>
+      designers often use general-purpose notations
+      (e.g., generic boxes and arrows whose meaning is made up on the spot);
+    </li>
+    <li>
+      they introduce new elements or re-purpose existing ones on the fly;
+    </li>
+    <li>
+      they constantly shift focus between sketches,
+      using groups of sketches together that contain complementary information;
+      and
+    </li>
+    <li>
+      sketches play an important role in supporting mental simulation,
+      review of progress,
+      and consideration of alternatives,
+      but these activities often leave no trace.
+    </li>
+  </ul>
+  <p>
+    All of which leads to several questions:
+  </p>
+  <ol>
+    <li>
+      Are the shape palettes diagramming tools like <a href="https://app.diagrams.net/">diagrams.net</a>
+      trying to support a way of working that most developers don't actually use?
+      (Even when I have a palette of standard-compliant UML shapes or flowchart elements,
+      almost all of my diagrams just use boxes and arrows.)
+    </li>
+    <li>
+      As touch-screen devices become more common—in particular,
+      as laptops with touch screens become ubiquitous and/or people use tablets with keyboards
+      as gateways to cloud computing engines—will
+      developers use freehand sketching tools for <em>ad hoc</em> communication
+      in online meetings?
+      (I've been in meetings during COVID where people held hand-drawn sketches up to their webcam
+      to share their ideas…)
+    </li>
+    <li>
+      If the answer to #2 is "yes",
+      (how) can general-purpose sketching tools be enhanced
+      to support the things programmers actually want to do?
+      "OCR the shapes to automatically turn sketches into UML class diagrams"
+      feels wrong-headed (see #1);
+      is there anything else tool-builders could do?
+    </li>
+  </ol>
+</div>
+<p id="Mangano2015" class="bib"><cite>Mangano2015</cite>
+  Nicolas Mangano, Thomas D. LaToza, Marian Petre, and Andre van der Hoek:
+  "<a href="https://doi.org/10.1109/tse.2014.2362924">How Software Designers Interact with Sketches at the Whiteboard</a>".
+  <em>IEEE Transactions on Software Engineering</em>, 41(2), 2015,
+  <a class="doi" href="https://doi.org/10.1109/tse.2014.2362924">10.1109/tse.2014.2362924</a>.
+</p>
+<blockquote class="abstract">
+  Whiteboard sketches play a crucial role in software development,
+  helping to support groups of designers in reasoning about a software
+  design problem at hand. However, little is known about these
+  sketches and how they support design 'in the moment', particularly
+  in terms of the relationships among sketches, visual syntactic
+  elements within sketches, and reasoning activities. To address this
+  gap, we analyzed 14 hours of design activity by eight pairs of
+  professional software designers, manually coding over 4000 events
+  capturing the introduction of visual syntactic elements into
+  sketches, focus transitions between sketches, and reasoning
+  activities. Our findings indicate that sketches serve as a rich
+  medium for supporting design conversations. Designers often use
+  general-purpose notations. Designers introduce new syntactic
+  elements to record aspects of the design, or re-purpose sketches as
+  the design develops. Designers constantly shift focus between
+  sketches, using groups of sketches together that contain
+  complementary information. Finally, sketches play an important role
+  in supporting several types of reasoning activities (mental
+  simulation, review of progress, consideration of alternatives). But
+  these activities often leave no trace and rarely lead to sketch
+  creation. We discuss the implications of these and other findings
+  for the practice of software design at the whiteboard and for the
+  creation of new electronic software design sketching
+  tools.
+</blockquote>
