@@ -73,11 +73,11 @@ entry:
 
 ## pick: select a random entry from the to-do list (YEAR=yyyy optional)
 pick:
-	@cat ${TODO_BIB} | bin/pick.py ${YEAR}
+	bin/list.py --input ${TODO_BIB} --random --year ${YEAR}
 
-## show: show all entries from the to-do list (YEAR=yyyy optional)
+## show: show all entries from the to-do list in chronological order (YEAR=yyyy optional)
 show:
-	@cat ${TODO_BIB} | bin/show.py ${YEAR}
+	bin/list.py --input ${TODO_BIB} --year ${YEAR}
 
 ## ----
 

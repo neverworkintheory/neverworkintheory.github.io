@@ -14,24 +14,24 @@ from util import MONTHS
 
 def main(args):
     '''Main driver.'''
-    config = parseArgs(args)
+    options = get_options()
     text = BIB_TO_YAML['add'] + sys.stdin.read()
-    bib = get_bib(config, text)
-    bib = [cleanup(config, entry) for entry in bib]
+    bib = get_bib(options, text)
+    bib = [cleanup(options, entry) for entry in bib]
     result = yaml.dump(bib, width=10000)
     print(result)
 
 
-def get_bib(config, text):
+def get_bib(options, text):
     '''Read bibliography, filtering if asked to do so.'''
     entries = bibtexparser.loads(text).entries
-    if config.only:
-        only = set(config.only)
+    if options.only:
+        only = set(options.only)
         entries = [e for e in entries if e['ID'] in only]
     return entries
 
 
-def cleanup(config, entry):
+def cleanup(options, entry):
     '''Clean up an entry.'''
 
     for key in BIB_TO_YAML['replace']:
@@ -164,7 +164,7 @@ BIB_TO_YAML = {
 }
 
 
-def parseArgs(args):
+def get_options():
     '''Turn arguments into configuration object.'''
     parser = argparse.ArgumentParser()
     parser.add_argument('--only', nargs='+', help='only convert specified entries (by key)')
