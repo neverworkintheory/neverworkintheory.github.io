@@ -1,0 +1,72 @@
+---
+layout: post
+author: Greg Wilson
+title: "Are Delayed Issues Harder to Resolve?"
+date: 2021-09-26
+categories: ["Faults", "Development Process"]
+---
+<div class="review">
+  <p>
+    For over twenty years I've been teaching people about the figure shown below.
+    It shows that the cost of fixing a bug grows exponentially
+    as you move from one phase of development to another.
+    Putting it another way,
+    delaying work on an issue dramatically increases the cost of fixing it.
+  </p>
+  <p align="center">
+    <img src="{{'/files/2021/Menzies2016-boehm-curve.png' | relative_url}}" alt="Boehm Curve (from Menzies2016)" />
+  </p>
+  <p>
+    Turns out, it ain't so.
+    <cite>Menzies2016</cite> looked at data from 171 software projects
+    over an eight year period
+    and found that no,
+    the effort to resolve issues doesn't increase this way.
+    The authors are very careful in their definition of project phases,
+    the way they attribute defects to particular phases,
+    how they gathered and cleaned their data,
+    and why they chose the statistical tests they used.
+    It all culminates in a table showing how
+    the median time to resolve issues in each phase compares with the median times of earlier and later phases,
+    and no,
+    there isn't the kind of steep growth in later phases
+    that most developers believe there is.
+    (And yes, they checked that developers do believe that with a survey.)
+  </p>
+  <p>
+    I'm still digesting the implications of this finding and wondering how widely it generalizes,
+    but a quick check of the four undergraduate software engineering textbooks I still own
+    revealed that all of them teach the "exponential increase" theory.
+    That theory was based on careful analysis of the data available at the time,
+    but as is so often the case in science,
+    more and better data requires us to change our mind.
+  </p>
+</div>
+<p id="Menzies2016" class="bib"><cite>Menzies2016</cite>
+  Tim Menzies, William Nichols, Forrest Shull, and Lucas Layman:
+  "<a href="https://doi.org/10.1007/s10664-016-9469-x">Are delayed issues harder to resolve? Revisiting cost-to-fix of defects throughout the lifecycle</a>".
+  <em>Empirical Software Engineering</em>, 22(4), 2016,
+  <a class="doi" href="https://doi.org/10.1007/s10664-016-9469-x">10.1007/s10664-016-9469-x</a>.
+</p>
+<blockquote class="abstract">
+  Many practitioners and academics believe in a delayed issue effect
+  (DIE); i.e. the longer an issue lingers in the system, the more
+  effort it requires to resolve. This belief is often used to justify
+  major investments in new development processes that promise to
+  retire more issues sooner. This paper tests for the delayed issue
+  effect in 171 software projects conducted around the world in the
+  period from 2006--2014. To the best of our knowledge, this is the
+  largest study yet published on this effect. We found no evidence for
+  the delayed issue effect; i.e. the effort to resolve issues in a
+  later phase was not consistently or substantially greater than when
+  issues were resolved soon after their introduction. This paper
+  documents the above study and explores reasons for this mismatch
+  between this common rule of thumb and empirical data. In summary,
+  DIE is not some constant across all projects. Rather, DIE might be
+  an historical relic that occurs intermittently only in certain kinds
+  of projects. This is a significant result since it predicts that new
+  development processes that promise to faster retire more issues will
+  not have a guaranteed return on investment (depending on the context
+  where applied), and that a long-held truth in software engineering
+  should not be considered a global truism.
+</blockquote>
