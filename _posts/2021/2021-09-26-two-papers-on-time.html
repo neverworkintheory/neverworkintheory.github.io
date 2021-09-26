@@ -1,0 +1,121 @@
+---
+layout: post
+author: Greg Wilson
+title: "Two Papers on Time"
+date: 2021-09-26
+categories: ["Productivity", "Circadian Rhythms", "Daylight Savings Time"]
+---
+<div class="review">
+  <p>
+    I freely admit that writing short reviews of software engineering research papers is an odd hobby,
+    but surprises like
+    <a href="{{'/2021/09/26/are-delayed-issues-harder-to-resolve.html' | relative_url}}">today's other post</a>
+    make it worthwhile,
+    as do gems like the two papers summarized in this post.
+    <cite>Hayashi2019</cite> looked at how the shift to and from daylight saving time (DST)
+    affects software development and found that:
+  </p>
+  <ul>
+    <li>
+      more DST-related changes are made to software between March and October
+      (the months DST is in effect)
+      than at other times of the year,
+    </li>
+    <li>
+      most DST-related changes are made by developers in countries that observe DST,
+      and
+    </li>
+    <li>
+      the most common way to implement changes is to start using libraries for date and time calculations
+      rather than doing it by hand,
+      presumably because those libraries handle the insanity correctly.
+    </li>
+  </ul>
+  <p>
+    <cite>Zavgorodniaia2021</cite> looked at programmers rather than at they code they produce.
+    More specifically,
+    it used keystroke data to determine students chronotypes,
+    i.e.,
+    their preferred waking and working hours.
+    After clustering the data,
+    they found four types:
+    those who prefer to work in the morning,
+    to take a break in the middle of the day,
+    to work in the afternoon,
+    and to work in the evening.
+    Chronotype didn't correlate with exam scores for European students,
+    but did for American students,
+    with students who did their work earlier in the day
+    outperforming those who did their work later.
+    They also found that:
+  </p>
+  <blockquote>
+    …in every chronotype,
+    students in the European context work on their projects at least 25 hours earlier,
+    on average,
+    than students in the US context,
+    and European morning students work fully 50 hours earlier on average.
+    We propose two contextual differences contributing to this effect.
+    The first is the late-work policy.
+    In the US context students could turn in late work for reduced points.
+    In the European context,
+    late work was not accepted.
+    The second factor is project composition.
+    It has been shown that when projects are broken into multiple smaller pieces,
+    students tend to start earlier.
+    Indeed, our results support this conclusion:
+    in the US context the projects are broken into two sub-projects,
+    while the European context has tens of sub-projects due each week.
+  </blockquote>
+  <p>
+    Finally,
+    this paper found that only 1% of keystrokes occurred between midnight and 5:00 am,
+    from which the authors conclude that the stereotype of "night owl" programmers
+    has little basis in fact.
+  </p>
+</div>
+<p id="Hayashi2019" class="bib"><cite>Hayashi2019</cite>
+  Junichi Hayashi, Yoshiki Higo, Shinsuke Matsumoto, and Shinji Kusumoto:
+  "<a href="https://doi.org/10.1109/msr.2019.00076">Impacts of Daylight Saving Time on Software Development</a>".
+  <em>2019 IEEE/ACM 16th International Conference on Mining Software Repositories (MSR)</em>,
+  <a class="doi" href="https://doi.org/10.1109/msr.2019.00076">10.1109/msr.2019.00076</a>.
+</p>
+<blockquote class="abstract">
+  Daylight saving time (DST) is observed in many countries and
+  regions. DST is not considered on some software systems at the
+  beginning of their developments, for example, software systems
+  developed in regions where DST is not observed. However, such
+  systems may have to consider DST at the requests of their users.
+  Before now, there has been no study about the impacts of DST on
+  software development. In this paper, we study the impacts of DST on
+  software development by mining the repositories on GitHub. We
+  analyze the date when the code related to DST is changed, and we
+  analyze the regions where the developers applied the changes
+  live. Furthermore, we classify the changes into some patterns.
+</blockquote>
+<p id="Zavgorodniaia2021" class="bib"><cite>Zavgorodniaia2021</cite>
+  Albina Zavgorodniaia, Raj Shrestha, Juho Leinonen, Arto Hellas, and John Edwards:
+  "<a href="https://doi.org/10.1109/icse-seet52601.2021.00036">Morning or Evening? An Examination of Circadian Rhythms of CS1 Students</a>".
+  <em>2021 IEEE/ACM 43rd International Conference on Software Engineering: Software Engineering Education and Training (ICSE-SEET)</em>,
+  <a class="doi" href="https://doi.org/10.1109/icse-seet52601.2021.00036">10.1109/icse-seet52601.2021.00036</a>.
+</p>
+<blockquote class="abstract">
+  Circadian rhythms are the cycles of our internal clock that play a
+  key role in governing when we sleep and when we are active. A
+  related concept is chronotype, which is a person's natural tendency
+  toward activity at certain times of day and typically governs when
+  the individual is most alert and productive. In this work we
+  investigate chronotypes in the setting of an Introductory Computer
+  Programming (CS1) course. Using keystroke data collected from
+  students we investigate the existence of chronotypes through
+  unsupervised learning. The chronotypes we find align with those of
+  typical populations reported in the literature and our results
+  support correlations of certain chronotypes to academic
+  achievement. We also find a lack of support for the still-popular
+  stereotype of a computer programmer as a night owl. The analyses are
+  conducted on data from two universities, one in the US and one in
+  Europe, that use different teaching methods. In comparison of the
+  two contexts, we look into programming assignment design and
+  administration that may promote better programming practices among
+  students in terms of procrastination and effort.
+</blockquote>
