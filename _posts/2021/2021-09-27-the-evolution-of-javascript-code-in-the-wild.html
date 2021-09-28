@@ -1,0 +1,72 @@
+---
+layout: post
+author: Greg Wilson
+title: "The Evolution of JavaScript Code in the Wild"
+date: 2021-09-27
+categories: ["Software Evolution"]
+---
+<div class="review">
+  <p>
+    There's a <em>lot</em> of data behind <cite>Mitropoulos2019</cite>,
+    which is part of what makes the paper such a fascinating read.
+    The authors collected JavaScript from Alexa's Top 10000 websites every day for nine months
+    in order to study how production JS evolves over time.
+    That worked out to 7.5 GByte <em>per day</em>;
+    among other things,
+    they found that:
+  </p>
+  <ul>
+    <li>
+      most sites change something every few days;
+    </li>
+    <li>
+      many of those changes added new functionality,
+      but many others were related to configuration management
+      (e.g., deciding what code to load or run based on what browser is being used);
+    </li>
+    <li>
+      websites rely on a <em>lot</em> of third-party libraries,
+      many of which are loaded on the fly rather than bundled
+      (which means that an attacker who manages to take hold of something like jQuery,
+      even briefly,
+      could do a lot of harm); and
+    </li>
+    <li>
+      almost all sites' JavaScript includes some easily-detected faults and smells
+      throughout the study period.
+    </li>
+  </ul>
+  <p>
+    All of the data used in this paper is <a href="https://zenodo.org/record/2593266">available online</a>.
+    It's about 60 GByte compressed and 2 TByte (!) uncompressed,
+    but if you have the space and want to do your own analyses,
+    the authors have made that possible.
+  </p>
+</div>
+<p id="Mitropoulos2019" class="bib"><cite>Mitropoulos2019</cite>
+  Dimitris Mitropoulos, Panos Louridas, Vitalis Salis, and Diomidis Spinellis:
+  "<a href="https://doi.org/10.1109/msr.2019.00029">Time Present and Time Past: Analyzing the Evolution of JavaScript Code in the Wild</a>".
+  <em>2019 IEEE/ACM 16th International Conference on Mining Software Repositories (MSR)</em>,
+  <a class="doi" href="https://doi.org/10.1109/msr.2019.00029">10.1109/msr.2019.00029</a>.
+</p>
+<blockquote class="abstract">
+  JavaScript is one of the web's key building blocks. It is used by the majority
+  of web sites and it is supported by all modern browsers. We present the first
+  large-scale study of client-side JavaScript code over time. Specifically, we
+  have collected and analyzed a dataset containing daily snapshots of JavaScript
+  code coming from Alexa's Top 10000 web sites (~7.5 GB per day) for nine
+  consecutive months, to study different temporal aspects of web client code. We
+  found that scripts change often; typically every few days, indicating a rapid
+  pace in web applications development. We also found that the lifetime of web
+  sites themselves, measured as the time between JavaScript changes, is also
+  short, in the same time scale. We then performed a qualitative analysis to
+  investigate the nature of the changes that take place. We found that apart
+  from standard changes such as the introduction of new functions, many changes
+  are related to online configuration management. In addition, we examined
+  JavaScript code reuse over time and especially the widespread reliance on
+  third-party libraries. Furthermore, we observed how quality issues evolve by
+  employing established static analysis tools to identify potential software
+  bugs, whose evolution we tracked over time. Our results show that quality
+  issues seem to persist over time, while vulnerable libraries tend to
+  decrease.
+</blockquote>
