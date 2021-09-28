@@ -1,0 +1,125 @@
+---
+layout: post
+author: Greg Wilson
+title: "JavaScript Quality Assurance Tools and Usage Outcomes"
+date: 2021-09-28
+categories: ["Quality"]
+---
+<div class="review">
+  <p>
+    I believe in tool-based development
+    just as strongly as I believe that
+    we should base our working practices on the best available evidence.
+    I therefore enjoyed <cite>Kavaler2019</cite>,
+    which looks at how the adoption of linters, dependency managers, and coverage checkers
+    affect four aspects of a project:
+    code churn,
+    number of pull requests,
+    number of contributors,
+    and number of outstanding issues.
+    The specific questions they set out to answer are:
+  </p>
+  <ol>
+    <li>
+      How often do projects change between tools within the same task class?
+    </li>
+    <li>
+      Are there measurable changes,
+      in terms of monthly churn, pull requests, number of contributors, and issues,
+      associated with adopting a tool?
+      Are different tools within an equivalence class associated with different outcomes?
+    </li>
+    <li>
+      Are certain tool adoption sequences more associated with changes in our outcomes of interest than others?
+    </li>
+  </ol>
+  <p>
+    After collecting data from GitHub and building some mixed-effects models,
+    their conclusions are:
+  </p>
+  <ol>
+    <li>
+      "Most projects choose one tool within a task class and stick to it for their observed lifetime.
+      However,
+      when projects adopt additional tools within the same task class,
+      they often move in the same direction as other projects, e.g., JSHint to ESLint."
+    </li>
+    <li>
+      Their full analysis of impact fills a page and a half,
+      but the short version is,
+      "We find that there are measurable, but varied, associations
+      between tool adoption and monthly churn, PRs, and unique authors
+      for both immediate discontinuities and post-intervention slopes.
+      We find that tools within a task class are associated with changes in outcomes in the same direction,
+      with the exception of ESLint and coveralls for monthly churn.
+      For issues, in all significant cases,
+      tools are associated with a discontinuous increase in monthly issues;
+      however, all significant post-intervention slopes are negative (decreasing issues over time).
+      Regarding issue prevalence, standardJS, coveralls, and david stand out
+      as tools with significant and negative post-intervention slopes."
+    </li>
+    <li>
+      "Some sequences of tool adoptions are more associated with changes in our outcomes of interest than others.
+      [Translation: sometimes order matters, sometimes it doesn't.]
+      We find that some tool adoption sequences,
+      compared to others consisting of the same tools but in a different order,
+      are associated with changes in opposite directions.
+      [Translation: sometimes adopting A then B moves a metric up but adopting B then A moves the same metric down.]"
+    </li>
+  </ol>
+  <p>
+    Finally,
+    the authors are frank about possible threats to the validity of their work:
+  </p>
+  <blockquote>
+    The notion of goodness-of-fit in [mixed-effects models] is highly debated,
+    with many available metrics for assessment.
+    We note that our models for RQ2 have relatively low marginal <em>R<sup>2</sup></em> values.
+    However, our conditional <em>R<sup>2</sup></em> are much higher (44.8% to 58.9%),
+    suggesting appropriate fit when considering project-level differences.
+    We also note relatively small effect size for tool interventions and post-intervention slopes.
+    We believe this is expected,
+    as we have controls for multiple covariates that have been shown to highly associate with our outcomes;
+    thus,
+    these controls likely absorb variance that would otherwise be attributed to tools,
+    leading to smaller effect size for tool measures.
+    Finally, as with any statistical model,
+    we have the threat of missing confounds.
+    We attempted to control for multiple aspects which could affect our outcomes
+    and made a best-effort to gather data from as many projects as possible.
+  </blockquote>
+  <p>
+    Disclaimers like this are part of why I believe that
+    we cannot just present students with the results of empirical studies:
+    we must teach them the data science used to get those results
+    so that they can interpret and evaluate them.
+  </p>
+</div>
+<p id="Kavaler2019" class="bib"><cite>Kavaler2019</cite>
+  David Kavaler, Asher Trockman, Bogdan Vasilescu, and Vladimir Filkov:
+  "<a href="https://doi.org/10.1109/icse.2019.00060">Tool Choice Matters: JavaScript Quality Assurance Tools and Usage Outcomes in GitHub Projects</a>".
+  <em>2019 IEEE/ACM 41st International Conference on Software Engineering (ICSE)</em>,
+  <a class="doi" href="https://doi.org/10.1109/icse.2019.00060">10.1109/icse.2019.00060</a>.
+</p>
+<blockquote class="abstract">
+  Quality assurance automation is essential in modern software
+  development. In practice, this automation is supported by a
+  multitude of tools that fit different needs and require developers
+  to make decisions about which tool to choose in a given
+  context. Data and analytics of the pros and cons can inform these
+  decisions. Yet, in most cases, there is a dearth of empirical
+  evidence on the effectiveness of existing practices and tool
+  choices. We propose a general methodology to model the
+  time-dependent effect of automation tool choice on four outcomes of
+  interest: prevalence of issues, code churn, number of pull requests,
+  and number of contributors, all with a multitude of controls. On a
+  large data set of npm JavaScript projects, we extract the adoption
+  events for popular tools in three task classes: linters, dependency
+  managers, and coverage reporters. Using mixed methods approaches, we
+  study the reasons for the adoptions and compare the adoption effects
+  within each class, and sequential tool adoptions across classes. We
+  find that some tools within each group are associated with more
+  beneficial outcomes than others, providing an empirical perspective
+  for the benefits of each. We also find that the order in which some
+  tools are implemented is associated with varying outcomes.
+</blockquote>
