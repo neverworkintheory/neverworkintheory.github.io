@@ -1,0 +1,65 @@
+---
+layout: post
+author: Greg Wilson
+title: "Effects of Adopting Code Review Bots on Pull Requests to OSS Projects"
+date: 2021-09-30
+categories: ["Automation", "Code Review"]
+---
+<div class="review">
+  <p>
+    Several years ago,
+    I grumbled that software tooling had basically stalled in the 1980s—that
+    everything I used to write code today would have been familiar to my younger self.
+    <a href="https://www.margaretstorey.com/">Prof. Peggy Storey</a> corrected me,
+    pointing out that social coding tools like Stack Overflow and Slack bots
+    had changed programming every bit as much as linters and interactive debuggers.
+  </p>
+  <p>
+    <cite>Wessel2020</cite> is a good look at what happens when a team adopts one of those tools:
+    a bot that automatically runs code checks on pull requests
+    and sends the results back to the PR's author.
+    They found that adopting a code review bot:
+  </p>
+  <ol>
+    <li>
+      increases the number of monthly merged pull requests,
+    </li>
+    <li>
+      decreases monthly non-merged pull requests, but
+    </li>
+    <li>
+      decreases communication among developers.
+    </li>
+  </ol>
+  <p>
+    Looking at the third result more closely,
+    the authors find that the amount of communication <em>as comments on the PR</em> decreases.
+    This seems to be because the number of comments depends on how long the PR is open;
+    since adopting a code review bot leads to PRs being merged more quickly,
+    it's not surprising that the number of comments would go down.
+    In addition,
+    the authors weren't able to look at out-of-band communication
+    (e.g., via email or messaging),
+    so the simple statement that communication decreases should be unpacked before it's shared.
+  </p>
+</div>
+<p id="Wessel2020" class="bib"><cite>Wessel2020</cite>
+  Mairieli Wessel, Alexander Serebrenik, Igor Wiese, Igor Steinmacher, and Marco A. Gerosa:
+  "<a href="https://doi.org/10.1109/icsme46990.2020.00011">Effects of Adopting Code Review Bots on Pull Requests to OSS Projects</a>".
+  <em>2020 IEEE International Conference on Software Maintenance and Evolution (ICSME)</em>,
+  <a class="doi" href="https://doi.org/10.1109/icsme46990.2020.00011">10.1109/icsme46990.2020.00011</a>.
+</p>
+<blockquote class="abstract">
+  Software bots, which are widely adopted by Open Source Software (OSS)
+  projects, support developers on several activities, including code
+  review. However, as with any new technology adoption, bots may impact group
+  dynamics. Since understanding and anticipating such effects is important for
+  planning and management, we investigate how several activity indicators change
+  after the adoption of a code review bot. We employed a regression
+  discontinuity design on 1,194 software projects from GitHub. Our results
+  indicate that the adoption of code review bots increases the number of monthly
+  merged pull requests, decreases monthly non-merged pull requests, and
+  decreases communication among developers. Practitioners and maintainers may
+  leverage our results to understand, or even predict, bot effects on their
+  projects' social interactions.
+</blockquote>
