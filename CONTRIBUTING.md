@@ -126,6 +126,9 @@ We rely heavily on David Graf's [doi2bib.org](https://doi2bib.org),
 the [Semantic Scholar API](https://www.semanticscholar.org/product/api),
 and the work of [Alexandra Elbakyan](https://sci-hub.se/alexandra)
 to find papers and obtain bibliography entries for them.
+We use [Plausible Analytics](https://plausible.io/) to collect traffic statistics
+without using cookies or any gathering personal identifying information:
+please see [their website](https://plausible.io/privacy-focused-web-analytics) for details.
 
 <h2 id="footnote">A Footnote on Comments</h2>
 
