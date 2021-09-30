@@ -12,7 +12,7 @@ CITE = re.compile('<cite>(.+?)</cite>', re.MULTILINE + re.DOTALL)
 
 def main():
     options = get_options()
-    used = util.get_entries(options.used)
+    used = util.get_entries(options.strings, options.used)
     unreviewed = get_unreviewed(options.unreviewed)
     mentions = get_mentions(options.pagedir)
     problems = check(options, used, mentions, unreviewed)
@@ -67,6 +67,7 @@ def check_unreviewed(options, used, unreviewed, problems):
 def get_options():
     parser = argparse.ArgumentParser()
     parser.add_argument('--pagedir', help='specify root directory of HTML pages')
+    parser.add_argument('--strings', help='string definitions file (optional)')
     parser.add_argument('--used', help='.bib file with used entries')
     parser.add_argument('--unreviewed', help='text file with one key per line indicating unreviewed entries')
     return parser.parse_args()

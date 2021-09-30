@@ -8,7 +8,7 @@ import util
 
 def main():
     options = get_options()
-    entries = util.get_entries(*options.inputs)
+    entries = util.get_entries(options.strings, options.inputs)
     problems = check(options, entries)
     report(options, problems)
 
@@ -39,6 +39,7 @@ def check_abstract(options, problems, entry):
 def get_options():
     parser = argparse.ArgumentParser()
     parser.add_argument('--inputs', nargs='+', help='specify bibliography file(s)')
+    parser.add_argument('--strings', help='string definitions file (optional)')
     return parser.parse_args()
 
 

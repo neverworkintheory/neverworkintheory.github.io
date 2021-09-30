@@ -5,8 +5,8 @@ import bibtexparser
 import re
 import sys
 
+import util
 
-from util import MONTHS
 
 SPECIAL = {
     'K. El Emam': 'El Emam, K.',
@@ -21,13 +21,7 @@ SPLIT = re.compile(r'\band\b')
 
 def main():
     options = get_options()
-    if options.input:
-        with open(options.input, 'r') as reader:
-            text = reader.read()
-    else:
-        text = sys.stdin.read()
-    text = MONTHS + text
-    entries = bibtexparser.loads(text).entries
+    entries = util.get_entries(options.strings, options.input)
     credit = {}
     for entry in entries:
         add_credit(credit, entry)
@@ -50,6 +44,7 @@ def add_credit(credit, entry):
 def get_options():
     parser = argparse.ArgumentParser()
     parser.add_argument('--input', help='specify input file')
+    parser.add_argument('--strings', help='string definitions file')
     return parser.parse_args()
 
 

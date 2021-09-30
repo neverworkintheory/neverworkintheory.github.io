@@ -16,7 +16,7 @@ SORT_KEY = re.compile(r'^(.+)(\d{4})(.*?)$')
 
 def main():
     options = get_options()
-    entries = util.get_entries(*options.input)
+    entries = util.get_entries(options.strings, options.input)
     if options.year:
         entries = [e for e in entries if options.year in e['ID']]
     if options.random:
@@ -36,8 +36,9 @@ def sortKey(entry):
 def get_options():
     '''Turn arguments into configuration object.'''
     parser = argparse.ArgumentParser()
-    parser.add_argument('--input', nargs='+', help='specify input file(s)')
+    parser.add_argument('--input', help='specify input file')
     parser.add_argument('--random', action='store_true', help='select a single random entry')
+    parser.add_argument('--strings', help='string definitions file (optional)')
     parser.add_argument('--year', nargs='?', help='specify a year')
     return parser.parse_args()
 

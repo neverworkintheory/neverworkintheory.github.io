@@ -4,7 +4,6 @@ SITE=./_site
 ABSTRACT_BIN=./bin/abstracts.sh
 AUTHORS_BIN=./bin/authors.py
 BIB2YAML_BIN=./bin/bib2yaml.py
-BIB2YAML_CMD=./bin/bib2yaml.py  --strings ./tex/strings.bib
 YAML2HTML_BIN=./bin/yaml2html.py
 BIBTEX_BIN=bibtex
 LATEX_BIN=pdflatex
@@ -14,6 +13,8 @@ NWIT_BIB=./tex/nwit.bib
 TODO_BIB=./tex/todo.bib
 ALL_BIB=${STRINGS_BIB} ${NWIT_BIB} ${TODO_BIB}
 UNREVIEWED_TXT=./tex/unreviewed.txt
+
+STRINGS_OPTION = --strings ./tex/strings.bib
 
 AUTHORS_HTML=authors/index.html
 BIB_HTML=bib/index.html
@@ -71,15 +72,15 @@ abstract:
 
 ## entry: convert single entry (KEY=NameYear) to HTML
 entry:
-	@cat ${ALL_BIB} | ${BIB2YAML_CMD} --only ${KEY} | ${YAML2HTML_BIN} --notoc --template _template.html
+	@cat ${ALL_BIB} | ${BIB2YAML_BIN} ${STRINGS_OPTION} --only ${KEY} | ${YAML2HTML_BIN} --notoc --template _template.html
 
 ## pick: select a random entry from the to-do list (YEAR=yyyy optional)
 pick:
-	bin/list.py --input ${TODO_BIB} --random --year ${YEAR}
+	bin/list.py --strings ${STRINGS_BIB} --input ${TODO_BIB} --random --year ${YEAR}
 
 ## show: show all entries from the to-do list in chronological order (YEAR=yyyy optional)
 show:
-	bin/list.py --input ${TODO_BIB} --year ${YEAR}
+	bin/list.py --strings ${STRINGS_BIB} --input ${TODO_BIB} --year ${YEAR}
 
 ## ----
 
@@ -100,11 +101,11 @@ check-ascii:
 
 ## check-bib: check integrity of bibliography
 check-bib:
-	@bin/check-bib.py --inputs ${NWIT_BIB} ${TODO_BIB}
+	@bin/check-bib.py --strings ${STRINGS_BIB} --inputs ${NWIT_BIB} ${TODO_BIB}
 
 ## check-used: check which papers have been used or not
 check-used:
-	@bin/check-used.py --pagedir _posts --used ${NWIT_BIB} --unreviewed ${UNREVIEWED_TXT}
+	@bin/check-used.py --pagedir _posts --strings ${STRINGS_BIB} --used ${NWIT_BIB} --unreviewed ${UNREVIEWED_TXT}
 
 ## clean: clean up stray files
 clean:
@@ -127,7 +128,7 @@ ${AUTHORS_HTML}: ${AUTHORS_BIN} ${NWIT_BIB}
 	@echo "layout: page" >> ${AUTHORS_HTML}
 	@echo "title: Authors" >> ${AUTHORS_HTML}
 	@echo "---" >> ${AUTHORS_HTML}
-	${AUTHORS_BIN} --input ${NWIT_BIB} >> ${AUTHORS_HTML}
+	${AUTHORS_BIN} --strings ${STRINGS_BIB} --input ${NWIT_BIB} >> ${AUTHORS_HTML}
 
 ${BIB_HTML}: ${STRINGS_BIB} ${NWIT_BIB} ${BIB2YAML_BIN} ${YAML2HTML_BIN}
 	make TITLE="Bibliography" SLUG=nwit bib2yaml > $@
@@ -150,4 +151,4 @@ bib2yaml:
 	@echo "title: ${TITLE}"
 	@echo "---"
 	@echo '<p><a href="../tex/${SLUG}.bib">BibTeX</a> | <a href="../tex/${SLUG}.pdf">PDF</a></p>'
-	@cat ./tex/${SLUG}.bib | ${BIB2YAML_CMD} | ${YAML2HTML_BIN}
+	@cat ./tex/${SLUG}.bib | ${BIB2YAML_BIN} ${STRINGS_OPTION} | ${YAML2HTML_BIN}

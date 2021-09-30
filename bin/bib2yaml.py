@@ -13,6 +13,9 @@ import util
 
 # ----------------------------------------------------------------------
 
+# Tell YAML to dump full width (no wrapping).
+FULL_WIDTH = 100000
+
 # Keys to replace.
 REPLACE = {
     'ENTRYTYPE': 'kind',
@@ -112,26 +115,15 @@ LATEX_MACROS = [
 def main(args):
     '''Main driver.'''
     options = get_options()
-    stringdefs = get_stringdefs(options)
-    text = util.MONTHS + stringdefs + sys.stdin.read()
-    bib = get_bib(options, text)
-    bib = [cleanup(options, entry) for entry in bib]
-    result = yaml.dump(bib, width=10000)
+    entries = util.get_entries(options.strings)
+    entries = subset(options, entries)
+    entries = [cleanup(options, entry) for entry in entries]
+    result = yaml.dump(entries, width=FULL_WIDTH)
     print(result)
 
 
-def get_stringdefs(options):
-    '''Read string definitions file (if any).'''
-    result = ''
-    if options.strings:
-        with open(options.strings, 'r') as reader:
-            result = reader.read()
-    return result
-
-
-def get_bib(options, text):
-    '''Read bibliography, filtering if asked to do so.'''
-    entries = bibtexparser.loads(text).entries
+def subset(options, entries):
+    '''Select subset of entries if asked to do so.'''
     if options.only:
         only = set(options.only)
         entries = [e for e in entries if e['ID'] in only]
@@ -177,7 +169,7 @@ def get_options():
     parser = argparse.ArgumentParser()
     parser.add_argument('--only', nargs='+', help='only convert specified entries (by key)')
     parser.add_argument('--no_abstract', action='store_true', help='skip the abstract')
-    parser.add_argument('--strings', help='string definitions file (optional)')
+    parser.add_argument('--strings', help='string definitions file')
     return parser.parse_args()
 
 
