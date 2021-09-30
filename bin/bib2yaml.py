@@ -9,54 +9,24 @@ import string
 import sys
 import yaml
 
-from util import MONTHS
+import util
 
+# ----------------------------------------------------------------------
 
-def main(args):
-    '''Main driver.'''
-    options = get_options()
-    text = BIB_TO_YAML['add'] + sys.stdin.read()
-    bib = get_bib(options, text)
-    bib = [cleanup(options, entry) for entry in bib]
-    result = yaml.dump(bib, width=10000)
-    print(result)
+# Keys to replace.
+REPLACE = {
+    'ENTRYTYPE': 'kind',
+    'ID': 'key',
+    'link': 'url'
+}
 
+# Things to remove.
+REMOVE = {
+    'local',
+    'note'
+}
 
-def get_bib(options, text):
-    '''Read bibliography, filtering if asked to do so.'''
-    entries = bibtexparser.loads(text).entries
-    if options.only:
-        only = set(options.only)
-        entries = [e for e in entries if e['ID'] in only]
-    return entries
-
-
-def cleanup(options, entry):
-    '''Clean up an entry.'''
-
-    for key in BIB_TO_YAML['replace']:
-        if key in entry:
-            entry[BIB_TO_YAML['replace'][key]] = entry[key]
-            del entry[key]
-
-    for key in BIB_TO_YAML['remove']:
-        if key in entry:
-            del entry[key]
-
-    for key in BIB_TO_YAML['convert']:
-        if key in entry:
-            entry[key] = BIB_TO_YAML['convert'][key](entry[key])
-
-    for key in entry:
-        if type(entry[key]) == str:
-            entry[key] = unlatex(entry[key])
-        elif type(entry[key]) == list:
-            entry[key] = [unlatex(s) for s in entry[key]]
-
-    return entry
-
-
-def number_if_possible(s):
+def _number_if_possible(s):
     '''Convert to number or return original string.'''
     try:
         return int(s)
@@ -64,18 +34,30 @@ def number_if_possible(s):
         return s
 
 
-def split_names(s):
+PAT_SPLIT = re.compile(r'\s+and\s+')
+def _split_names(s):
     '''Split names on 'and'.'''
-    return BIB_TO_YAML['split'].split(s)
+    return PAT_SPLIT.split(s)
 
 
-def un_url(s):
+PAT_URL = re.compile(r'\\url{(.+)}')
+def _un_url(s):
     '''Remove URL macro.'''
-    m = BIB_TO_YAML['url'].match(s)
+    m = PAT_URL.match(s)
     return m.group(1) if m else s
 
 
-REPLACEMENTS = (
+# Things to convert.
+CONVERT = {
+    'author': _split_names,
+    'editor': _split_names,
+    'howpublished': _un_url,
+    'number': _number_if_possible,
+    'volume': _number_if_possible,
+    'year': _number_if_possible
+}
+
+LATEX_CHARS = (
     ('---', '—'),
     (r"\'{E}", 'É'),
     (r"\'{S}", 'Ś'),
@@ -121,49 +103,63 @@ REPLACEMENTS = (
     ('>', '&gt;')
 )
 
-PATTERNS = [
+LATEX_MACROS = [
     re.compile(r'\\texttt{(.+?)}') # fragile: does not handle nested {}
 ]
+
+# ----------------------------------------------------------------------
+
+def main(args):
+    '''Main driver.'''
+    options = get_options()
+    text = util.MONTHS + sys.stdin.read()
+    bib = get_bib(options, text)
+    bib = [cleanup(options, entry) for entry in bib]
+    result = yaml.dump(bib, width=10000)
+    print(result)
+
+
+def get_bib(options, text):
+    '''Read bibliography, filtering if asked to do so.'''
+    entries = bibtexparser.loads(text).entries
+    if options.only:
+        only = set(options.only)
+        entries = [e for e in entries if e['ID'] in only]
+    return entries
+
+
+def cleanup(options, entry):
+    '''Clean up an entry.'''
+
+    for key in REPLACE:
+        if key in entry:
+            entry[REPLACE[key]] = entry[key]
+            del entry[key]
+
+    for key in REMOVE:
+        if key in entry:
+            del entry[key]
+
+    for key in CONVERT:
+        if key in entry:
+            entry[key] = CONVERT[key](entry[key])
+
+    for key in entry:
+        if type(entry[key]) == str:
+            entry[key] = unlatex(entry[key])
+        elif type(entry[key]) == list:
+            entry[key] = [unlatex(s) for s in entry[key]]
+
+    return entry
 
 
 def unlatex(s):
     '''Remove LaTeX isms.'''
-    for pattern in PATTERNS:
+    for pattern in LATEX_MACROS:
         s = pattern.sub(lambda x: x.group(1), s)
-    for (original, replacement) in REPLACEMENTS:
+    for (original, replacement) in LATEX_CHARS:
         s = s.replace(original, replacement)
     return s
-
-
-# Lookup values for .bib to .yml conversion.
-BIB_TO_YAML = {
-    # String definitions to add.
-    'add': MONTHS,
-    # Things to convert.
-    'convert': {
-        'author': split_names,
-        'editor': split_names,
-        'howpublished': un_url,
-        'number': number_if_possible,
-        'volume': number_if_possible,
-        'year': number_if_possible
-    },
-    # Things to remove.
-    'remove': {
-        'local',
-        'note'
-    },
-    # Keys to replace.
-    'replace': {
-        'ENTRYTYPE': 'kind',
-        'ID': 'key',
-        'link': 'url'
-    },
-    # Splitting author names.
-    'split': re.compile(r'\s+and\s+'),
-    # Match a URL.
-    'url': re.compile(r'\\url{(.+)}')
-}
 
 
 def get_options():
