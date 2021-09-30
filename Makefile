@@ -4,13 +4,15 @@ SITE=./_site
 ABSTRACT_BIN=./bin/abstracts.sh
 AUTHORS_BIN=./bin/authors.py
 BIB2YAML_BIN=./bin/bib2yaml.py
+BIB2YAML_CMD=./bin/bib2yaml.py  --strings ./tex/strings.bib
 YAML2HTML_BIN=./bin/yaml2html.py
 BIBTEX_BIN=bibtex
 LATEX_BIN=pdflatex
 
+STRINGS_BIB=./tex/strings.bib
 NWIT_BIB=./tex/nwit.bib
 TODO_BIB=./tex/todo.bib
-ALL_BIB=${NWIT_BIB} ${TODO_BIB}
+ALL_BIB=${STRINGS_BIB} ${NWIT_BIB} ${TODO_BIB}
 UNREVIEWED_TXT=./tex/unreviewed.txt
 
 AUTHORS_HTML=authors/index.html
@@ -69,7 +71,7 @@ abstract:
 
 ## entry: convert single entry (KEY=NameYear) to HTML
 entry:
-	@cat ${ALL_BIB} | ${BIB2YAML_BIN} --only ${KEY} | ${YAML2HTML_BIN} --notoc --template _template.html
+	@cat ${ALL_BIB} | ${BIB2YAML_CMD} --only ${KEY} | ${YAML2HTML_BIN} --notoc --template _template.html
 
 ## pick: select a random entry from the to-do list (YEAR=yyyy optional)
 pick:
@@ -127,10 +129,10 @@ ${AUTHORS_HTML}: ${AUTHORS_BIN} ${NWIT_BIB}
 	@echo "---" >> ${AUTHORS_HTML}
 	${AUTHORS_BIN} --input ${NWIT_BIB} >> ${AUTHORS_HTML}
 
-${BIB_HTML}: ${NWIT_BIB} ${BIB2YAML_BIN} ${YAML2HTML_BIN}
+${BIB_HTML}: ${STRINGS_BIB} ${NWIT_BIB} ${BIB2YAML_BIN} ${YAML2HTML_BIN}
 	make TITLE="Bibliography" SLUG=nwit bib2yaml > $@
 
-${TODO_HTML}: ${TODO_BIB} ${BIB2YAML_BIN} ${YAML2HTML_BIN}
+${TODO_HTML}: ${STRINGS_BIB} ${TODO_BIB} ${BIB2YAML_BIN} ${YAML2HTML_BIN}
 	make TITLE="To Do" SLUG=todo bib2yaml > $@
 
 ${PDF}: ${NWIT_BIB} ${TODO_BIB} tex/nwit.tex tex/settings.tex tex/abstract.bst
@@ -148,4 +150,4 @@ bib2yaml:
 	@echo "title: ${TITLE}"
 	@echo "---"
 	@echo '<p><a href="../tex/${SLUG}.bib">BibTeX</a> | <a href="../tex/${SLUG}.pdf">PDF</a></p>'
-	@cat ./tex/${SLUG}.bib | ${BIB2YAML_BIN} | ${YAML2HTML_BIN}
+	@cat ./tex/${SLUG}.bib | ${BIB2YAML_CMD} | ${YAML2HTML_BIN}

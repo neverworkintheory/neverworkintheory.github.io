@@ -201,11 +201,12 @@ def book_title(config, entry):
 
 def proceedings_info(config, entry):
     '''Generate proceedings entry information.'''
-    check('booktitle' in entry,
-          f'Entry requires booktitle {entry}')
+    check(('booktitle' in entry) and ('year' in entry),
+          f'Entry requires booktitle and year {entry}')
+    year = entry['year']
     doi = f', <a class="doi" href="https://doi.org/{entry["doi"]}">{entry["doi"]}</a>' \
         if 'doi' in entry else ''
-    return f'<em>{entry["booktitle"]}</em>{doi}.'
+    return f'<em>{entry["booktitle"]}</em>, {year}{doi}.'
 
 
 def credit(config, entry, which=None):

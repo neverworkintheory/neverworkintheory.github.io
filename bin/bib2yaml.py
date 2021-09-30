@@ -112,11 +112,21 @@ LATEX_MACROS = [
 def main(args):
     '''Main driver.'''
     options = get_options()
-    text = util.MONTHS + sys.stdin.read()
+    stringdefs = get_stringdefs(options)
+    text = util.MONTHS + stringdefs + sys.stdin.read()
     bib = get_bib(options, text)
     bib = [cleanup(options, entry) for entry in bib]
     result = yaml.dump(bib, width=10000)
     print(result)
+
+
+def get_stringdefs(options):
+    '''Read string definitions file (if any).'''
+    result = ''
+    if options.strings:
+        with open(options.strings, 'r') as reader:
+            result = reader.read()
+    return result
 
 
 def get_bib(options, text):
@@ -167,6 +177,7 @@ def get_options():
     parser = argparse.ArgumentParser()
     parser.add_argument('--only', nargs='+', help='only convert specified entries (by key)')
     parser.add_argument('--no_abstract', action='store_true', help='skip the abstract')
+    parser.add_argument('--strings', help='string definitions file (optional)')
     return parser.parse_args()
 
 
