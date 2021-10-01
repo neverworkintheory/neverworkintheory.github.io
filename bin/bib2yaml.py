@@ -116,17 +116,17 @@ def main(args):
     '''Main driver.'''
     options = get_options()
     entries = util.get_entries(options.strings)
-    entries = subset(options, entries)
+    entries = subset(options.only, entries)
     entries = [cleanup(options, entry) for entry in entries]
     result = yaml.dump(entries, width=FULL_WIDTH)
     print(result)
 
 
-def subset(options, entries):
+def subset(desired, entries):
     '''Select subset of entries if asked to do so.'''
-    if options.only:
-        only = set(options.only)
-        entries = [e for e in entries if e['ID'] in only]
+    if desired:
+        desired = set(desired)
+        entries = [e for e in entries if e['ID'] in desired]
     return entries
 
 
