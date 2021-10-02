@@ -37,7 +37,7 @@
   pages = {287--328},
   author = {Shulamyt Ajami and Yonatan Woodbridge and Dror G. Feitelson},
   title = {Syntax, predicates, idioms{\textemdash}what really affects code complexity?},
-  journal = {Empirical Software Engineering},
+  journal = ese,
   abstract = {Program comprehension concerns the ability to understand code written by others. But not all code is the same. We use an experimental platform fashioned as an online game-like environment to measure how quickly and accurately 220 professional programmers can interpret code snippets with similar functionality but different structures; snippets that take longer to understand or produce more errors are considered harder. The results indicate, inter alia, that for loops are significantly harder than ifs, that some but not all negations make a predicate harder, and that loops counting down are slightly harder than loops counting up. This demonstrates how the effect of syntactic structures, different ways to express predicates, and the use of known idioms can be measured empirically, and that syntactic structures are not necessarily the most important factor. We also found that the metrics of time to understanding and errors made are not necessarily equivalent. Thus loops counting down took slightly longer, but loops with unusual bounds caused many more errors. By amassing many more empirical results like these it may be possible to derive better code complexity metrics than we have today, and also to better appreciate their limitations.},
   reviewed = {/2021/09/21/syntax-predicates-idioms-what-really-affects-code-complexity.html}
 }
@@ -53,7 +53,7 @@
   pages = {114--128},
   author = {Beatrice {\AA}kerblom and Tobias Wrigstad},
   title = {Measuring polymorphism in {Python} programs},
-  journal = {{ACM} {SIGPLAN} Notices},
+  journal = sigplan-notices,
   abstract = {Following the increased popularity of dynamic languages and their increased use in critical software, there have been many proposals to retrofit static type system to these languages to improve possibilities to catch bugs and improve performance. A key question for any type system is whether the types should be structural, for more expressiveness, or nominal, to carry more meaning for the programmer. For retrofitted type systems, it seems the current trend is using structural types. This paper attempts to answer the question to what extent this extra expressiveness is needed, and how the possible polymorphism in dynamic code is used in practise. We study polymorphism in 36 real-world open source Python programs and approximate to what extent nominal and structural types could be used to type these programs. The study is based on collecting traces from multiple runs of the programs and analysing the polymorphic degrees of targets at more than 7 million call-sites. Our results show that while polymorphism is used in all programs, the programs are to a great extent monomorphic. The polymorphism found is evenly distributed across libraries and program-specific code and occur both during program start-up and normal execution. Most programs contain a few 'megamorphic' call-sites where receiver types vary widely. The non-monomorphic parts of the programs can to some extent be typed with nominal or structural types, but none of the approaches can type entire programs.},
   reviewed = {/2016/06/13/polymorphism-in-python.html}
 }
@@ -69,7 +69,7 @@
   pages = {835--904},
   author = {Daniel {Alencar da Costa} and Shane McIntosh and Christoph Treude and Uir{\'{a}} Kulesza and Ahmed E. Hassan},
   title = {The impact of rapid release cycles on the integration delay of fixed issues},
-  journal = {Empirical Software Engineering},
+  journal = ese,
   abstract = {The release frequency of software projects has increased in recent years. Adopters of so-called rapid releases---short release cycles, often on the order of weeks, days, or even hours---claim that they can deliver fixed issues (i.e., implemented bug fixes and new features) to users more quickly. However, there is little empirical evidence to support these claims. In fact, our prior work shows that code integration phases may introduce delays for rapidly releasing projects---98\% of the fixed issues in the rapidly releasing Firefox project had their integration delayed by at least one release. To better understand the impact that rapid release cycles have on the integration delay of fixed issues, we perform a comparative study of traditional and rapid release cycles. Our comparative study has two parts: (i) a quantitative empirical analysis of 72,114 issue reports from the Firefox project, and a (ii) qualitative study involving 37 participants, who are contributors of the Firefox, Eclipse, and ArgoUML projects. Our study is divided into quantitative and qualitative analyses. Quantitative analyses reveal that, surprisingly, fixed issues take a median of 54\% (57 days) longer to be integrated in rapid Firefox releases than the traditional ones. To investigate the factors that are related to integration delay in traditional and rapid release cycles, we train regression models that model whether a fixed issue will have its integration delayed or not. Our explanatory models achieve good discrimination (ROC areas of 0.80--0.84) and calibration scores (Brier scores of 0.05--0.16) for rapid and traditional releases. Our explanatory models indicate that (i) traditional releases prioritize the integration of backlog issues, while (ii) rapid releases prioritize issues that were fixed in the current release cycle. Complementary qualitative analyses reveal that participants' perception about integration delay is tightly related to activities that involve decision making, risk management, and team collaboration. Moreover, the allure of shipping fixed issues faster is a main motivator for adopting rapid release cycles among participants (although this motivation is not supported by our quantitative analysis). Furthermore, to explain why traditional releases deliver fixed issues more quickly, our participants point out the rush for integration in traditional releases and the increased time that is invested on polishing issues in rapid releases. Our results suggest that rapid release cycles may not be a silver bullet for the rapid delivery of new content to users. Instead, our results suggest that the benefits of rapid releases are increased software stability and user feedback.},
   reviewed = {/2021/08/09/impact-of-rapid-release-cycles-on-integration-delay-of-fixed-issues.html}
 }
@@ -137,7 +137,7 @@
   pages = {407--429},
   author = {B.C.D. Anda and D.I.K. Sj{\o}berg and Audris Mockus},
   title = {Variability and reproducibility in software engineering: a study of four companies that developed the same system},
-  journal = {{IEEE} Transactions on Software Engineering},
+  journal = ieee-tse,
   abstract = {The scientific study of a phenomenon requires it to be reproducible. Mature engineering industries are recognized by projects and products that are, to some extent, reproducible. Yet, reproducibility in software engineering (SE) has not been investigated thoroughly, despite the fact that lack of reproducibility has both practical and scientific consequences. We report a longitudinal multiple-case study of variations and reproducibility in software development, from bidding to deployment, on the basis of the same requirement specification. In a call for tender to 81 companies, 35 responded. Four of them developed the system independently. The firm price, planned schedule, and planned development process, had, respectively, ldquolow,rdquo ldquolow,rdquo and ldquomediumrdquo reproducibilities. The contractor's costs, actual lead time, and schedule overrun of the projects had, respectively, ldquomedium,rdquo ldquohigh,rdquo and ldquolowrdquo reproducibilities. The quality dimensions of the delivered products, reliability, usability, and maintainability had, respectively, ldquolow,rdquo \"high,rdquo and ldquolowrdquo reproducibilities. Moreover, variability for predictable reasons is also included in the notion of reproducibility. We found that the observed outcome of the four development projects matched our expectations, which were formulated partially on the basis of SE folklore. Nevertheless, achieving more reproducibility in SE remains a great challenge for SE research, education, and industry.},
   reviewed = {/2011/09/22/variability-and-reproducibility-in-software-engineering-a-study-of-four-companies-that-developed-the-same-system.html}
 }
@@ -241,7 +241,7 @@
   pages = {81--91},
   author = {Mike Barnett and Manuel F\"{a}hndrich and K. Rustan M. Leino and Peter M\"{u}ller and Wolfram Schulte and Herman Venter},
   title = {Specification and verification: the {Spec\#} experience},
-  journal = {Communications of the {ACM}},
+  journal = cacm,
   abstract = {Can a programming language really help programmers write better programs?},
   reviewed = {/2011/06/30/specification-and-verification-the-spec-experience.html}
 }
@@ -370,7 +370,7 @@
   pages = {261--284},
   author = {Moritz Beller and Georgios Gousios and Annibale Panichella and Sebastian Proksch and Sven Amann and Andy Zaidman},
   title = {Developer Testing in the {IDE}: Patterns, Beliefs, and Behavior},
-  journal = {{IEEE} Transactions on Software Engineering},
+  journal = ieee-tse,
   abstract = {Software testing is one of the key activities to achieve software quality in practice. Despite its importance, however, we have a remarkable lack of knowledge on how developers test in real-world projects. In this paper, we report on a large-scale field study with 2,443 software engineers whose development activities we closely monitored over 2.5 years in four integrated development environments (IDEs). Our findings, which largely generalized across the studied IDEs and programming languages Java and C\#, question several commonly shared assumptions and beliefs about developer testing: half of the developers in our study do not test; developers rarely run their tests in the IDE; most programming sessions end without any test execution; only once they start testing, do they do it extensively; a quarter of test cases is responsible for three quarters of all test failures; 12 percent of tests show flaky behavior; Test-Driven Development (TDD) is not widely practiced; and software developers only spend a quarter of their time engineering tests, whereas they think they test half of their time. We summarize these practices of loosely guiding one's development efforts with the help of testing in an initial summary on Test-Guided Development (TGD), a behavior we argue to be closer to the development reality of most developers than TDD.},
   reviewed = {/2021/09/12/developer-testing-in-the-ide.html}
 }
@@ -386,7 +386,7 @@
   pages = {375--384},
   author = {Mordechai Ben-Ari and Roman Bednarik and Ronit Ben-Bassat Levy and Gil Ebel and Andr{\'{e}}s Moreno and Niko Myller and Erkki Sutinen},
   title = {A decade of research and development on program animation: the {Jeliot} experience},
-  journal = {Journal of Visual Languages {\&} Computing},
+  journal = jvlc,
   abstract = {Jeliot is a program animation system for teaching and learning elementary programming that has been developed over the past decade, building on the Eliot animation system developed several years before. Extensive pedagogical research has been done on various aspects of the use of Jeliot including improvements in learning, effects on attention, and acceptance by teachers. This paper surveys this research and development, and summarizes the experience and the lessons learned.},
   reviewed = {/2011/12/10/a-decade-of-research-and-development-on-program-animation-the-jeliot-experience.html}
 }
@@ -454,7 +454,7 @@
   pages = {1931--1958},
   author = {Neil C. Borle and Meysam Feghhi and Eleni Stroulia and Russell Greiner and Abram Hindle},
   title = {Analyzing the effects of test driven development in {GitHub}},
-  journal = {Empirical Software Engineering},
+  journal = ese,
   abstract = {Testing is an integral part of the software development lifecycle, approached with varying degrees of rigor by different process models. Agile process models recommend Test Driven Development (TDD) as a key practice for reducing costs and improving code quality. The objective of this work is to perform a cost-benefit analysis of this practice. To that end, we have conducted a comparative analysis of GitHub repositories that adopts TDD to a lesser or greater extent, in order to determine how TDD affects software development productivity and software quality. We classified GitHub repositories archived in 2015 in terms of how rigorously they practiced TDD, thus creating a TDD spectrum. We then matched and compared various subsets of these repositories on this TDD spectrum with control sets of equal size. The control sets were samples from all GitHub repositories that matched certain characteristics, and that contained at least one test file. We compared how the TDD sets differed from the control sets on the following characteristics: number of test files, average commit velocity, number of bug-referencing commits, number of issues recorded, usage of continuous integration, number of pull requests, and distribution of commits per author. We found that Java TDD projects were relatively rare. In addition, there were very few significant differences in any of the metrics we used to compare TDD-like and non-TDD projects; therefore, our results do not reveal any observable benefits from using TDD.},
   reviewed = {/2021/09/16/analyzing-the-effects-of-tdd-in-github.html}
 }
@@ -561,7 +561,7 @@
   pages = {1264--1304},
   author = {Roberta Coelho and Lucas Almeida and Georgios Gousios and Arie van Deursen and Christoph Treude},
   title = {Exception handling bug hazards in {Android}},
-  journal = {Empirical Software Engineering},
+  journal = ese,
   abstract = {Adequate handling of exceptions has proven difficult for many software engineers. Mobile app developers in particular, have to cope with compatibility, middleware, memory constraints, and battery restrictions. The goal of this paper is to obtain a thorough understanding of common exception handling bug hazards that app developers face. To that end, we first provide a detailed empirical study of over 6,000 Java exception stack traces we extracted from over 600 open source Android projects. Key insights from this study include common causes for system crashes, and common chains of wrappings between checked and unchecked exceptions. Furthermore, we provide a survey with 71 developers involved in at least one of the projects analyzed. The results corroborate the stack trace findings, and indicate that developers are unaware of frequently occurring undocumented exception handling behavior. Overall, the findings of our study call for tool support to help developers understand their own and third party exception handling and wrapping logic.},
   reviewed = {/2021/09/05/two-papers-on-errors.html}
 }
@@ -577,7 +577,7 @@
   pages = {685--719},
   author = {Jos\'{e} A. Cruz-Lemus and Marcela Genero and M. Esperanza Manso and Sandro Morasca and Mario Piattini},
   title = {Assessing the understandability of {UML} statechart diagrams with composite states{\textemdash}a family of empirical studies},
-  journal = {Empirical Software Engineering},
+  journal = ese,
   abstract = {The main goal of this work is to present a family of empirical studies that we have carried out to investigate whether the use of composite states may improve the understandability of UML statechart diagrams derived from class diagrams. Our hypotheses derive from conventional wisdom, which says that hierarchical modeling mechanisms are helpful in mastering the complexity of a software system. In our research, we have carried out three empirical studies, consisting of five experiments in total. The studies differed somewhat as regards the size of the UML statechart models, though their size and the complexity of the models were chosen so that they could be analyzed by the subjects within a limited time period. The studies also differed with respect to the type of subjects (students vs. professionals), the familiarity of the subjects with the domains of the diagrams, and other factors. To integrate the results obtained from each of the five experiments, we performed a meta-analysis study which allowed us to take into account the differences between studies and to obtain the overall effect that the use of composite states has on the understandability of UML statechart diagrams throughout all the experiments. The results obtained are not completely conclusive. They cast doubts on the usefulness of composite states for a better understanding and memorizing of UML statechart diagrams. Composite states seem only to be helpful for acquiring knowledge from the diagrams. At any rate, it should be noted that these results are affected by the previous experience of the subjects on modeling, as well as by the size and complexity of the UML statechart diagrams we used, so care should be taken when generalizing our results.},
   reviewed = {/2011/08/17/three-empirical-evaluations-of-uml.html}
 }
@@ -645,7 +645,7 @@
   pages = {455--492},
   author = {Andrea De Lucia and Carmine Gravino and Rocco Oliveto and Genoveffa Tortora},
   title = {An experimental comparison of {ER} and {UML} class diagrams for data modelling},
-  journal = {Empirical Software Engineering},
+  journal = ese,
   abstract = {We present the results of three sets of controlled experiments aimed at analysing whether UML class diagrams are more comprehensible than ER diagrams during data models maintenance. In particular, we considered the support given by the two notations in the comprehension and interpretation of data models, comprehension of the change to perform to meet a change request, and detection of defects contained in a data model. The experiments involved university students with different levels of ability and experience. The results demonstrate that using UML class diagrams subjects achieved better comprehension levels. With regard to the support given by the two notations during maintenance activities the results demonstrate that the two notations give the same support, while in general UML class diagrams provide a better support with respect to ER diagrams during verification activities.},
   reviewed = {/2011/08/17/three-empirical-evaluations-of-uml.html}
 }
@@ -674,7 +674,7 @@
   pages = {407--432},
   author = {W.J. Dzidek and E. Arisholm and L.C. Briand},
   title = {A realistic empirical evaluation of the costs and benefits of {UML} in software maintenance},
-  journal = {{IEEE} Transactions on Software Engineering},
+  journal = ieee-tse,
   abstract = {The Unified Modeling Language (UML) is the de facto standard for object-oriented software analysis and design modeling. However, few empirical studies exist that investigate the costs and evaluate the benefits of using UML in realistic contexts. Such studies are needed so that the software industry can make informed decisions regarding the extent to which they should adopt UML in their development practices. This is the first controlled experiment that investigates the costs of maintaining and the benefits of using UML documentation during the maintenance and evolution of a real, non-trivial system, using professional developers as subjects, working with a state-of-the-art UML tool during an extended period of time. The subjects in the control group had no UML documentation. In this experiment, the subjects in the UML group had on average a practically and statistically significant 54\% increase in the functional correctness of changes (p=0.03), and an insignificant 7\% overall improvement in design quality (p=0.22) - though a much larger improvement was observed on the first change task (56\%) - at the expense of an insignificant 14\% increase in development time caused by the overhead of updating the UML documentation (p=0.35).},
   reviewed = {/2011/08/17/three-empirical-evaluations-of-uml.html}
 }
@@ -705,7 +705,7 @@
   pages = {630--650},
   author = {K. El Emam and S. Benlarbi and N. Goel and S.N. Rai},
   title = {The confounding effect of class size on the validity of object-oriented metrics},
-  journal = {{IEEE} Transactions on Software Engineering},
+  journal = ieee-tse,
   abstract = {Much effort has been devoted to the development and empirical validation of object-oriented metrics. The empirical validations performed thus far would suggest that a core set of validated metrics is close to being identified. However, none of these studies allow for the potentially confounding effect of class size. We demonstrate a strong size confounding effect and question the results of previous object-oriented metrics validation studies. We first investigated whether there is a confounding effect of class size in validation studies of object-oriented metrics and show that, based on previous work, there is reason to believe that such an effect exists. We then describe a detailed empirical methodology for identifying those effects. Finally, we perform a study on a large C++ telecommunications framework to examine if size is really a confounder. This study considered the Chidamber and Kemerer metrics and a subset of the Lorenz and Kidd metrics. The dependent variable was the incidence of a fault attributable to a field failure (fault-proneness of a class). Our findings indicate that, before controlling for size, the results are very similar to previous studies. The metrics that are expected to be validated are indeed associated with fault-proneness.},
   reviewed = {/2011/07/07/the-confounding-effect-of-class-size-on-the-validity-of-object-oriented-metrics.html}
 }
@@ -825,7 +825,7 @@
   pages = {892--915},
   author = {Gleiph Ghiotto and Leonardo Murta and Marcio Barros and Andr\'{e} van der Hoek},
   title = {On the nature of merge conflicts: a study of 2,731 open source {Java} projects hosted by {GitHub}},
-  journal = {{IEEE} Transactions on Software Engineering},
+  journal = ieee-tse,
   abstract = {When multiple developers change a software system in parallel, these concurrent changes need to be merged to all appear in the software being developed. Numerous merge techniques have been proposed to support this task, but none of them can fully automate the merge process. Indeed, it has been reported that as much as 10 to 20 percent of all merge attempts result in a merge conflict, meaning that a developer has to manually complete the merge. To date, we have little insight into the nature of these merge conflicts. What do they look like, in detail? How do developers resolve them? Do any patterns exist that might suggest new merge techniques that could reduce the manual effort? This paper contributes an in-depth study of the merge conflicts found in the histories of 2,731 open source Java projects. Seeded by the manual analysis of the histories of five projects, our automated analysis of all 2,731 projects: (1) characterizes the merge conflicts in terms of number of chunks, size, and programming language constructs involved, (2) classifies the manual resolution strategies that developers use to address these merge conflicts, and (3) analyzes the relationships between various characteristics of the merge conflicts and the chosen resolution strategies. Our results give rise to three primary recommendations for future merge techniques, that---when implemented---could on one hand help in automatically resolving certain types of conflicts and on the other hand provide the developer with tool-based assistance to more easily resolve other types of conflicts that cannot be automatically resolved.},
   reviewed = {/2021/08/12/on-the-nature-of-merge-conflicts.html}
 }
@@ -865,7 +865,7 @@
   pages = {e289},
   author = {Daniel Graziotin and Xiaofeng Wang and Pekka Abrahamsson},
   title = {Happy software developers solve problems better: psychological measurements in empirical software engineering},
-  journal = {{PeerJ}},
+  journal = peerj-cs,
   abstract = {For more than thirty years, it has been claimed that a way to improve software developers' productivity and software quality is to focus on people and to provide incentives to make developers satisfied and happy. This claim has rarely been verified in software engineering research, which faces an additional challenge in comparison to more traditional engineering fields: software development is an intellectual activity and is dominated by often-neglected human factors (called human aspects in software engineering research). Among the many skills required for software development, developers must possess high analytical problem-solving skills and creativity for the software construction process. According to psychology research, affective states---emotions and moods---deeply influence the cognitive processing abilities and performance of workers, including creativity and analytical problem solving. Nonetheless, little research has investigated the correlation between the affective states, creativity, and analytical problem-solving performance of programmers. This article echoes the call to employ psychological measurements in software engineering research. We report a study with 42 participants to investigate the relationship between the affective states, creativity, and analytical problem-solving skills of software developers. The results offer support for the claim that happy developers are indeed better problem solvers in terms of their analytical abilities. The following contributions are made by this study: (1) providing a better understanding of the impact of affective states on the creativity and analytical problem-solving capacities of developers, (2) introducing and validating psychological measurements, theories, and concepts of affective states, creativity, and analytical-problem-solving skills in empirical software engineering, and (3) raising the need for studying the human factors of software engineering by employing a multidisciplinary viewpoint.},
   reviewed = {/2014/03/31/happy-sw-devs-solve-problems-better.html}
 }
@@ -881,7 +881,7 @@
   pages = {131--174},
   author = {Thomas R. G. Green and Marian Petre},
   title = {Usability analysis of visual programming environments: a 'cognitive dimensions' framework},
-  journal = {Journal of Visual Languages {\&} Computing},
+  journal = jvlc,
   abstract = {Abstract The cognitive dimensions framework is a broad-brush evaluation technique for interactive devices and for non-interactive notations. It sets out a small vocabulary of terms designed to capture the cognitively-relevant aspects of structure, and shows how they can be traded off against each other. The purpose of this paper is to propose the framework as an evaluation technique for visual programming environments. We apply it to two commercially-available dataflow languages (with further examples from other systems) and conclude that it is effective and insightful; other HCI-based evaluation techniques focus on different aspects and would make good complements. Insofar as the examples we used are representative, current VPLs are successful in achieving a good 'closeness of match', but designers need to consider the 'viscosity ' (resistance to local change) and the 'secondary notation' (possibility of conveying extra meaning by choice of layout, colour, etc.).},
   reviewed = {/2012/06/25/usability-analysis-of-visual-programming-environments-a-cognitive-dimensions-framework.html}
 }
@@ -924,7 +924,7 @@
   pages = {1335--1382},
   author = {Stefan Hanenberg and Sebastian Kleinschmager and Romain Robbes and {\'{E}}ric Tanter and Andreas Stefik},
   title = {An empirical study on the impact of static typing on software maintainability},
-  journal = {Empirical Software Engineering},
+  journal = ese,
   abstract = {Static type systems play an essential role in contemporary programming languages. Despite their importance, whether static type systems impact human software development capabilities remains open. One frequently mentioned argument in favor of static type systems is that they improve the maintainability of software systems---an often-used claim for which there is little empirical evidence. This paper describes an experiment that tests whether static type systems improve the maintainability of software systems, in terms of understanding undocumented code, fixing type errors, and fixing semantic errors. The results show rigorous empirical evidence that static types are indeed beneficial to these activities, except when fixing semantic errors. We further conduct an exploratory analysis of the data in order to understand possible reasons for the effect of type systems on the three kinds of tasks used in this experiment. From the exploratory analysis, we conclude that developers using a dynamic type system tend to look at different files more frequently when doing programming tasks---which is a potential reason for the observed differences in time.}
 }
 
@@ -939,7 +939,7 @@
   pages = {61--80},
   author = {J.E. Hannay and E. Arisholm and H. Engvik and D.I.K. Sj{\o}berg},
   title = {Effects of personality on pair programming},
-  journal = {{IEEE} Transactions on Software Engineering},
+  journal = ieee-tse,
   abstract = {Personality tests in various guises are commonly used in recruitment and career counseling industries. Such tests have also been considered as instruments for predicting the job performance of software professionals both individually and in teams. However, research suggests that other human-related factors such as motivation, general mental ability, expertise, and task complexity also affect the performance in general. This paper reports on a study of the impact of the Big Five personality traits on the performance of pair programmers together with the impact of expertise and task complexity. The study involved 196 software professionals in three countries forming 98 pairs. The analysis consisted of a confirmatory part and an exploratory part. The results show that: (1) Our data do not confirm a meta-analysis-based model of the impact of certain personality traits on performance and (2) personality traits, in general, have modest predictive value on pair programming performance compared with expertise, task complexity, and country. We conclude that more effort should be spent on investigating other performance-related predictors such as expertise, and task complexity, as well as other promising predictors, such as programming skill and learning. We also conclude that effort should be spent on elaborating on the effects of personality on various measures of collaboration, which, in turn, may be used to predict and influence performance. Insights into such malleable, rather than static, factors may then be used to improve pair programming performance.},
   reviewed = {/2011/07/26/effects-of-personality-on-pair-programming.html}
 }
@@ -980,7 +980,7 @@
   pages = {785--797},
   author = {L. Hatton and A. Roberts},
   title = {How accurate is scientific software?},
-  journal = {{IEEE} Transactions on Software Engineering},
+  journal = ieee-tse,
   abstract = {This paper describes some results of what, to the authors' knowledge, is the largest N-version programming experiment ever performed. The object of this ongoing four-year study is to attempt to determine just how consistent the results of scientific computation really are, and, from this, to estimate accuracy. The experiment is being carried out in a branch of the earth sciences known as seismic data processing, where 15 or so independently developed large commercial packages that implement mathematical algorithms from the same or similar published specifications in the same programming language (Fortran) have been developed over the last 20 years. The results of processing the same input dataset, using the same user-specified parameters, for nine of these packages is reported in this paper. Finally, feedback of obvious flaws was attempted to reduce the overall disagreement. The results are deeply disturbing. Whereas scientists like to think that their code is accurate to the precision of the arithmetic used, in this study, numerical disagreement grows at around the rate of 1\% in average absolute difference per 4000 fines of implemented code, and, even worse, the nature of the disagreement is nonrandom. Furthermore, the seismic data processing industry has better than average quality standards for its software development with both identifiable quality assurance functions and substantial test datasets.},
   reviewed = {/2021/09/23/the-secret-life-of-bugs.html}
 }
@@ -1110,7 +1110,7 @@
   pages = {122--131},
   author = {Abram Hindle and Earl T. Barr and Mark Gabel and Zhendong Su and Premkumar Devanbu},
   title = {On the naturalness of software},
-  journal = {Communications of the {ACM}},
+  journal = cacm,
   abstract = {Natural languages like English are rich, complex, and powerful. The highly creative and graceful use of languages like English and Tamil, by masters like Shakespeare and Avvaiyar, can certainly delight and inspire. But in practice, given cognitive constraints and the exigencies of daily life, most human utterances are far simpler and much more repetitive and predictable. In fact, these utterances can be very usefully modeled using modern statistical methods. This fact has led to the phenomenal success of statistical approaches to speech recognition, natural language translation, question-answering, and text mining and comprehension. We begin with the conjecture that most software is also natural, in the sense that it is created by humans at work, with all the attendant constraints and limitations - and thus, like natural language, it is also likely to be repetitive and predictable. We then proceed to ask whether a) code can be usefully modeled by statistical language models and b) such models can be leveraged to support software engineers. Using the widely adopted n-gram model, we provide empirical evidence supportive of a positive answer to both these questions. We show that code is also very repetitive, and in fact even more so than natural languages. As an example use of the model, we have developed a simple code completion engine for Java that, despite its simplicity, already improves Eclipse's built-in completion capability. We conclude the paper by laying out a vision for future research in this area.},
   reviewed = {/2012/04/26/on-the-naturalness-of-software.html}
 }
@@ -1191,7 +1191,7 @@
   pages = {695--707},
   author = {Magne J{\o}rgensen and Stein Grimstad},
   title = {the impact of irrelevant and misleading information on software development effort estimates: a randomized controlled field experiment},
-  journal = {{IEEE} Transactions on Software Engineering},
+  journal = ieee-tse,
   abstract = {Studies in laboratory settings report that software development effort estimates can be strongly affected by effort-irrelevant and misleading information. To increase our knowledge about the importance of these effects in field settings, we paid 46 outsourcing companies from various countries to estimate the required effort of the same five software development projects. The companies were allocated randomly to either the original requirement specification or a manipulated version of the original requirement specification. The manipulations were as follows: 1) reduced length of requirement specification with no change of content, 2) information about the low effort spent on the development of the old system to be replaced, 3) information about the client's unrealistic expectations about low cost, and 4) a restriction of a short development period with start up a few months ahead. We found that the effect sizes in the field settings were much smaller than those found for similar manipulations in laboratory settings. Our findings suggest that we should be careful about generalizing to field settings the effect sizes found in laboratory settings. While laboratory settings can be useful to demonstrate the existence of an effect and better understand it, field studies may be needed to study the size and importance of these effects.},
   reviewed = {/2011/10/18/the-impact-of-irrelevant-and-misleading-information.html}
 }
@@ -1207,7 +1207,7 @@
   pages = {677--693},
   author = {Magne J{\o}rgensen and Stein Grimstad},
   title = {Software development estimation biases: the role of interdependence},
-  journal = {{IEEE} Transactions on Software Engineering},
+  journal = ieee-tse,
   abstract = {Software development effort estimates are frequently too low, which may lead to poor project plans and project failures. One reason for this bias seems to be that the effort estimates produced by software developers are affected by information that has no relevance for the actual use of effort. We attempted to acquire a better understanding of the underlying mechanisms and the robustness of this type of estimation bias. For this purpose, we hired 374 software developers working in outsourcing companies to participate in a set of three experiments. The experiments examined the connection between estimation bias and developer dimensions: self-construal (how one sees oneself), thinking style, nationality, experience, skill, education, sex, and organizational role. We found that estimation bias was present along most of the studied dimensions. The most interesting finding may be that the estimation bias increased significantly with higher levels of interdependence, i.e., with stronger emphasis on connectedness, social context, and relationships. We propose that this connection may be enabled by an activation of one's self-construal when engaging in effort estimation, and a connection between a more interdependent self-construal and increased search for indirect messages, lower ability to ignore irrelevant context, and a stronger emphasis on socially desirable responses.},
   reviewed = {/2012/06/12/software-development-estimation-biases-the-role-of-interdependence.html}
 }
@@ -1235,7 +1235,7 @@
   pages = {645--692},
   author = {Cory J. Kapser and Michael W. Godfrey},
   title = {{\textquotedblleft}Cloning considered harmful{\textquotedblright} considered harmful: patterns of cloning in software},
-  journal = {Empirical Software Engineering},
+  journal = ese,
   abstract = {Literature on the topic of code cloning often asserts that duplicating code within a software system is a bad practice, that it causes harm to the system's design and should be avoided. However, in our studies, we have found significant evidence that cloning is often used in a variety of ways as a principled engineering tool. For example, one way to evaluate possible new features for a system is to clone the affected subsystems and introduce the new features there, in a kind of sandbox testbed. As features mature and become stable within the experimental subsystems, they can be migrated incrementally into the stable code base; in this way, the risk of introducing instabilities in the stable version is minimized. This paper describes several patterns of cloning that we have observed in our case studies and discusses the advantages and disadvantages associated with using them. We also examine through a case study the frequencies of these clones in two medium-sized open source software systems, the Apache web server and the Gnumeric spreadsheet application. In this study, we found that as many as 71\% of the clones could be considered to have a positive impact on the maintainability of the software system.},
   reviewed = {/2011/08/16/cloning-considered-harmful-considered-harmful.html}
 }
@@ -1357,7 +1357,7 @@
   pages = {111--116},
   author = {Kinshuman Kinshumann and Kirk Glerum and Steve Greenberg and Gabriel Aul and Vince Orgovan and Greg Nichols and David Grant and Gretchen Loihle and Galen Hunt},
   title = {Debugging in the (very) large: ten years of implementation and experience},
-  journal = {Communications of the {ACM}},
+  journal = cacm,
   abstract = {Windows Error Reporting (WER) is a distributed system that automates the processing of error reports coming from an installed base of a billion machines. WER has collected billions of error reports in 10 years of operation. It collects error data automatically and classifies errors into buckets, which are used to prioritize developer effort and report fixes to users. WER uses a progressive approach to data collection, which minimizes overhead for most reports yet allows developers to collect detailed information when needed. WER takes advantage of its scale to use error statistics as a tool in debugging; this allows developers to isolate bugs that cannot be found at smaller scale. WER has been designed for efficient operation at large scale: one pair of database servers records all the errors that occur on all Windows computers worldwide.},
   reviewed = {/2011/07/18/debugging-in-the-very-large.html}
 }
@@ -1373,7 +1373,7 @@
   pages = {1403--1416},
   author = {Ekrem Kocaguneli and Tim Menzies and Jacky W. Keung},
   title = {On the value of ensemble effort estimation},
-  journal = {{IEEE} Transactions on Software Engineering},
+  journal = ieee-tse,
   abstract = {Background: Despite decades of research, there is no consensus on which software effort estimation methods produce the most accurate models. Aim: Prior work has reported that, given M estimation methods, no single method consistently outperforms all others. Perhaps rather than recommending one estimation method as best, it is wiser to generate estimates from ensembles of multiple estimation methods. Method: Nine learners were combined with 10 preprocessing options to generate 9${\times}$10 = 90 solo methods. These were applied to 20 datasets and evaluated using seven error measures. This identified the best n (in our case n = 13) solo methods that showed stable performance across multiple datasets and error measures. The top 2, 4, 8, and 13 solo methods were then combined to generate 12 multimethods, which were then compared to the solo methods. Results: 1) The top 10 (out of 12) multimethods significantly outperformed all 90 solo methods. 2) The error rates of the multimethods were significantly less than the solo methods. 3) The ranking of the best multimethod was remarkably stable. Conclusion: While there is no best single effort estimation method, there exist best combinations of such effort estimation methods.},
   reviewed = {/2012/04/17/ensemble-effort-estimation.html}
 }
@@ -1389,7 +1389,7 @@
   pages = {276--304},
   author = {Toma{\v{z}} Kosar and Marjan Mernik and Jeffrey C. Carver},
   title = {Program comprehension of domain-specific and general-purpose languages: comparison using a family of experiments},
-  journal = {Empirical Software Engineering},
+  journal = ese,
   abstract = {Domain-specific languages (DSLs) are often argued to have a simpler notation than general-purpose languages (GPLs), since the notation is adapted to the specific problem domain. Consequently, the impact of domain relevance on the creation of the problem representation is believed to improve programmers' efficiency and accuracy when using DSLs compared with using similar solutions like application libraries in GPLs. Most of the common beliefs have been based upon qualitative conclusions drawn by developers. Rather than implementing the same problem in a DSL and in a GPL and comparing the efficiency and accuracy of each approach, developers often compare the implementation of a new program in a DSL to their previous experiences implementing similar programs in GPLs. Such a conclusion may or may not be valid. This paper takes a more skeptical approach to acceptance of those beliefs. By reporting on a family of three empirical studies comparing DSLs and GPLs in different domains. The results of the studies showed that when using a DSL, developers are more accurate and more efficient in program comprehension than when using a GPL. These results validate some of the long-held beliefs of the DSL community that until now were only supported by anecdotal evidence.}
 }
 
@@ -1404,7 +1404,7 @@
   pages = {2734--2763},
   author = {Toma{\v{z}} Kosar and Sa{\v{s}}o Gaberc and Jeffrey C. Carver and Marjan Mernik},
   title = {Program comprehension of domain-specific and general-purpose languages: replication of a family of experiments using integrated development environments},
-  journal = {Empirical Software Engineering},
+  journal = ese,
   abstract = {Domain-specific languages (DSLs) allow developers to write code at a higher level of abstraction compared with general-purpose languages (GPLs). Developers often use DSLs to reduce the complexity of GPLs. Our previous study found that developers performed program comprehension tasks more accurately and efficiently with DSLs than with corresponding APIs in GPLs. This study replicates our previous study to validate and extend the results when developers use IDEs to perform program comprehension tasks. We performed a dependent replication of a family of experiments. We made two specific changes to the original study: (1) participants used IDEs to perform the program comprehension tasks, to address a threat to validity in the original experiment and (2) each participant performed program comprehension tasks on either DSLs or GPLs, not both as in the original experiment. The results of the replication are consistent with and expanded the results of the original study. Developers are significantly more effective and efficient in tool-based program comprehension when using a DSL than when using a corresponding API in a GPL. The results indicate that, where a DSL is available, developers will perform program comprehension better using the DSL than when using the corresponding API in a GPL.},
   reviewed = {/2021/09/20/program-comprehension-of-domain-specific-and-general-purpose-languages.html}
 }
@@ -1420,7 +1420,7 @@
   pages = {302--321},
   author = {Jonathan L. Krein and Lutz Prechelt and Natalia Juristo and Aziz Nanthaamornphong and Jeffrey C. Carver and Sira Vegas and Charles D. Knutson and Kevin D. Seppi and Dennis L. Eggett},
   title = {A multi-site joint replication of a design patterns experiment using moderator variables to generalize across contexts},
-  journal = {{IEEE} Transactions on Software Engineering},
+  journal = ieee-tse,
   abstract = {Context. Several empirical studies have explored the benefits of software design patterns, but their collective results are highly inconsistent. Resolving the inconsistencies requires investigating moderators---i.e., variables that cause an effect to differ across contexts. Objectives. Replicate a design patterns experiment at multiple sites and identify sufficient moderators to generalize the results across prior studies. Methods. We perform a close replication of an experiment investigating the impact (in terms of time and quality) of design patterns (Decorator and Abstract Factory) on software maintenance. The experiment was replicated once previously, with divergent results. We execute our replication at four universities---spanning two continents and three countries---using a new method for performing distributed replications based on closely coordinated, small-scale instances ("joint replication"). We perform two analyses: 1) a post-hoc analysis of moderators, based on frequentist and Bayesian statistics; 2) an a priori analysis of the original hypotheses, based on frequentist statistics. Results. The main effect differs across the previous instances of the experiment and across the sites in our distributed replication. Our analysis of moderators (including developer experience and pattern knowledge) resolves the differences sufficiently to allow for cross-context (and cross-study) conclusions. The final conclusions represent 126 participants from five universities and 12 software companies, spanning two continents and at least four countries. Conclusions. The Decorator pattern is found to be preferable to a simpler solution during maintenance, as long as the developer has at least some prior knowledge of the pattern. For Abstract Factory, the simpler solution is found to be mostly equivalent to the pattern solution. Abstract Factory is shown to require a higher level of knowledge and/or experience than Decorator for the pattern to be beneficial.},
   reviewed = {/2016/09/09/replicating-design-patterns-experiment.html}
 }
@@ -1523,7 +1523,7 @@
   pages = {1--37},
   author = {Walid Maalej and Rebecca Tiarks and Tobias Roehm and Rainer Koschke},
   title = {On the comprehension of program comprehension},
-  journal = {{ACM} Transactions on Software Engineering and Methodology},
+  journal = acm-tosem,
   abstract = {Research in program comprehension has evolved considerably over the past decades. However, only little is known about how developers practice program comprehension in their daily work. This article reports on qualitative and quantitative research to comprehend the strategies, tools, and knowledge used for program comprehension. We observed 28 professional developers, focusing on their comprehension behavior, strategies followed, and tools used. In an online survey with 1,477 respondents, we analyzed the importance of certain types of knowledge for comprehension and where developers typically access and share this knowledge. We found that developers follow pragmatic comprehension strategies depending on context. They try to avoid comprehension whenever possible and often put themselves in the role of users by inspecting graphical interfaces. Participants confirmed that standards, experience, and personal communication facilitate comprehension. The team size, its distribution, and open-source experience influence their knowledge sharing and access behavior. While face-to-face communication is preferred for accessing knowledge, knowledge is frequently shared in informal comments. Our results reveal a gap between research and practice, as we did not observe any use of comprehension tools and developers seem to be unaware of them. Overall, our findings call for reconsidering the research agendas towards context-aware tool support.},
   reviewed = {/2015/02/14/on-comprehension-of-program-comprehension.html}
 }
@@ -1582,7 +1582,7 @@
   pages = {751--778},
   author = {Brian A. Malloy and James F. Power},
   title = {An empirical analysis of the transition from {Python} 2 to {Python} 3},
-  journal = {Empirical Software Engineering},
+  journal = ese,
   abstract = {Python is one of the most popular and widely adopted programming languages in use today. In 2008 the Python developers introduced a new version of the language, Python 3.0, that was not backward compatible with Python 2, initiating a transitional phase for Python software developers. In this paper, we describe a study that investigates the degree to which Python software developers are making the transition from Python 2 to Python 3. We have developed a Python compliance analyser, PyComply, and have analysed a previously studied corpus of Python applications called Qualitas. We use PyComply to measure and quantify the degree to which Python 3 features are being used, as well as the rate and context of their adoption in the Qualitas corpus. Our results indicate that Python software developers are not exploiting the new features and advantages of Python 3, but rather are choosing to retain backward compatibility with Python 2. Moreover, Python developers are confining themselves to a language subset, governed by the diminishing intersection of Python 2, which is not under development, and Python 3, which is under development with new features being introduced as the language continues to evolve.},
   reviewed = {/2021/08/17/python-language-features.html}
 }
@@ -1598,7 +1598,7 @@
   pages = {135--156},
   author = {Nicolas Mangano and Thomas D. LaToza and Marian Petre and Andre van der Hoek},
   title = {How Software Designers Interact with Sketches at the Whiteboard},
-  journal = {{IEEE} Transactions on Software Engineering},
+  journal = ieee-tse,
   abstract = {Whiteboard sketches play a crucial role in software development, helping to support groups of designers in reasoning about a software design problem at hand. However, little is known about these sketches and how they support design 'in the moment', particularly in terms of the relationships among sketches, visual syntactic elements within sketches, and reasoning activities. To address this gap, we analyzed 14 hours of design activity by eight pairs of professional software designers, manually coding over 4000 events capturing the introduction of visual syntactic elements into sketches, focus transitions between sketches, and reasoning activities. Our findings indicate that sketches serve as a rich medium for supporting design conversations. Designers often use general-purpose notations. Designers introduce new syntactic elements to record aspects of the design, or re-purpose sketches as the design develops. Designers constantly shift focus between sketches, using groups of sketches together that contain complementary information. Finally, sketches play an important role in supporting several types of reasoning activities (mental simulation, review of progress, consideration of alternatives). But these activities often leave no trace and rarely lead to sketch creation. We discuss the implications of these and other findings for the practice of software design at the whiteboard and for the creation of new electronic software design sketching tools.},
   reviewed = {/2021/09/24/how-software-designers-interact-with-sketches-at-the-whiteboard.html}
 }
@@ -1626,7 +1626,7 @@
   pages = {4962--5005},
   author = {Zainab Masood and Rashina Hoda and Kelly Blincoe},
   title = {How agile teams make self-assignment work: a grounded theory study},
-  journal = {Empirical Software Engineering},
+  journal = ese,
   abstract = {Self-assignment, a self-directed method of task allocation in which teams and individuals assign and choose work for themselves, is considered one of the hallmark practices of empowered, self-organizing agile teams. Despite all the benefits it promises, agile software teams do not practice it as regularly as other agile practices such as iteration planning and daily stand-ups, indicating that it is likely not an easy and straighforward practice. There has been very little empirical research on self-assignment. This Grounded Theory study explores how self-assignment works in agile projects. We collected data through interviews with 42 participants representing 28 agile teams from 23 software companies and supplemented these interviews with observations. Based on rigorous application of Grounded Theory analysis procedures such as open, axial, and selective coding, we present a comprehensive grounded theory of making self-assignment work that explains the (a) context and (b) causal conditions that give rise to the need for self-assignment, (c) a set of facilitating conditions that mediate how self-assignment may be enabled, (d) a set of constraining conditions that mediate how self-assignment may be constrained and which are overcome by a set of (e) strategies applied by agile teams, which in turn result in (f) a set of consequences, all in an attempt to make the central phenomenon, self-assignment, work. The findings of this study will help agile practitioners and companies understand different aspects of self-assignment and practice it with confidence regularly as a valuable practice. Additionally, it will help teams already practicing self-assignment to apply strategies to overcome the challenges they face on an everyday basis.},
   reviewed = {/2021/08/18/how-agile-teams-make-self-assignment-work.html}
 }
@@ -1684,7 +1684,7 @@
   pages = {1--56},
   author = {Laurie McLeod and Stephen G. MacDonell},
   title = {Factors that affect software systems development project outcomes},
-  journal = {{ACM} Computing Surveys},
+  journal = acm-surveys,
   abstract = {Determining the factors that have an influence on software systems development and deployment project outcomes has been the focus of extensive and ongoing research for more than 30 years. We provide here a survey of the research literature that has addressed this topic in the period 1996--2006, with a particular focus on empirical analyses. On the basis of this survey we present a new classification framework that represents an abstracted and synthesized view of the types of factors that have been asserted as influencing project outcomes.},
   reviewed = {/2011/12/21/factors-that-affect-software-systems-development-project-outcomes.html}
 }
@@ -1725,7 +1725,7 @@
   pages = {1903--1935},
   author = {Tim Menzies and William Nichols and Forrest Shull and Lucas Layman},
   title = {Are delayed issues harder to resolve? Revisiting cost-to-fix of defects throughout the lifecycle},
-  journal = {Empirical Software Engineering},
+  journal = ese,
   abstract = {Many practitioners and academics believe in a delayed issue effect (DIE); i.e. the longer an issue lingers in the system, the more effort it requires to resolve. This belief is often used to justify major investments in new development processes that promise to retire more issues sooner. This paper tests for the delayed issue effect in 171 software projects conducted around the world in the period from 2006--2014. To the best of our knowledge, this is the largest study yet published on this effect. We found no evidence for the delayed issue effect; i.e. the effort to resolve issues in a later phase was not consistently or substantially greater than when issues were resolved soon after their introduction. This paper documents the above study and explores reasons for this mismatch between this common rule of thumb and empirical data. In summary, DIE is not some constant across all projects. Rather, DIE might be an historical relic that occurs intermittently only in certain kinds of projects. This is a significant result since it predicts that new development processes that promise to faster retire more issues will not have a guaranteed return on investment (depending on the context where applied), and that a long-held truth in software engineering should not be considered a global truism.},
   reviewed = {/2021/09/26/are-delayed-issues-harder-to-resolve.htm}
 }
@@ -1777,7 +1777,7 @@
   pages = {1--1},
   author = {Barton Miller and Mengxiao Zhang and Elisa Heymann},
   title = {The Relevance of Classic Fuzz Testing: Have We Solved This One?},
-  journal = {{IEEE} Transactions on Software Engineering},
+  journal = ieee-tse,
   abstract = {As fuzz testing has passed its 30th anniversary, and in the face of the incredible progress in fuzz testing techniques and tools, the question arises if the classic, basic fuzz technique is still useful and applicable? In that tradition, we have updated the basic fuzz tools and testing scripts and applied them to a large collection of Unix utilities on Linux, FreeBSD, and MacOS. As before, our failure criteria was whether the program crashed or hung. We found that 9 crash or hang out of 74 utilities on Linux, 15 out of 78 utilities on FreeBSD, and 12 out of 76 utilities on MacOS. A total of 24 different utilities failed across the three platforms. We note that these failure rates are somewhat higher than our in previous 1995, 2000, and 2006 studies of the reliability of command line utilities. In the basic fuzz tradition, we debugged each failed utility and categorized the causes the failures. Classic categories of failures, such as pointer and array errors and not checking return codes, were still broadly present in the current results. In addition, we found a couple of new categories of failures appearing. We present examples of these failures to illustrate the programming practices that allowed them to happen. As a side note, we tested the limited number of utilities available in a modern programming language (Rust) and found them to be of no better reliability than the standard ones.},
   reviewed = {/2021/10/01/the-relevance-of-classic-fuzz-testing.html}
 }
@@ -1818,7 +1818,7 @@
   pages = {480--491},
   author = {Nils Brede Moe and Torgeir Dings{\o}yr and Tore Dyb{\aa}},
   title = {A teamwork model for understanding an agile team: A case study of a {Scrum} project},
-  journal = {Information and Software Technology},
+  journal = ist,
   abstract = {Context: Software development depends significantly on team performance, as does any process that involves human interaction. Objective: Most current development methods argue that teams should self-manage. Our objective is thus to provide a better understanding of the nature of self-managing agile teams, and the teamwork challenges that arise when introducing such teams. Method: We conducted extensive fieldwork for 9months in a software development company that introduced Scrum. We focused on the human sensemaking, on how mechanisms of teamwork were understood by the people involved. Results: We describe a project through Dickinson and McIntyre's teamwork model, focusing on the interrelations between essential teamwork components. Problems with team orientation, team leadership and coordination in addition to highly specialized skills and corresponding division of work were important barriers for achieving team effectiveness. Conclusion: Transitioning from individual work to self-managing teams requires a reorientation not only by developers but also by management. This transition takes time and resources, but should not be neglected. In addition to Dickinson and McIntyre's teamwork components, we found trust and shared mental models to be of fundamental importance.},
   reviewed = {/2011/08/02/a-teamwork-model-for-understanding-an-agile-team.html}
 }
@@ -1834,7 +1834,7 @@
   pages = {1--29},
   author = {Andrey Mokhov and Neil Mitchell and Simon Peyton Jones},
   title = {Build systems {\`{a}} la carte},
-  journal = {Proceedings of the {ACM} on Programming Languages},
+  journal = acm-pl,
   abstract = {Build systems are awesome, terrifying---and unloved. They are used by every developer around the world, but are rarely the object of study. In this paper we offer a systematic, and executable, framework for developing and comparing build systems, viewing them as related points in landscape rather than as isolated phenomena. By teasing apart existing build systems, we can recombine their components, allowing us to prototype new build systems with desired properties.},
   reviewed = {/2021/09/21/build-systems-a-la-carte.html}
 }
@@ -1865,7 +1865,7 @@
   pages = {289--302},
   author = {Nachiappan Nagappan and E. Michael Maximilien and Thirumalesh Bhat and Laurie Williams},
   title = {Realizing quality improvement through test driven development: results and experiences of four industrial teams},
-  journal = {Empirical Software Engineering},
+  journal = ese,
   abstract = {Test-driven development (TDD) is a software development practice that has been used sporadically for decades. With this practice, a software engineer cycles minute-by-minute between writing failing unit tests and writing implementation code to pass those tests. Test-driven development has recently re-emerged as a critical enabling practice of agile software development methodologies. However, little empirical evidence supports or refutes the utility of this practice in an industrial context. Case studies were conducted with three development teams at Microsoft and one at IBM that have adopted TDD. The results of the case studies indicate that the pre-release defect density of the four products decreased between 40\% and 90\% relative to similar projects that did not use the TDD practice. Subjectively, the teams experienced a 15--35\% increase in initial development time after adopting TDD.},
   reviewed = {/2012/01/25/realizing-quality-improvement-through-test-driven-development.html}
 }
@@ -1920,7 +1920,7 @@
   pages = {1418--1457},
   author = {Sebastian Nielebock and Dariusz Krolikowski and Jacob Kr\"{u}ger and Thomas Leich and Frank Ortmeier},
   title = {Commenting source code: is it worth it for small programming tasks?},
-  journal = {Empirical Software Engineering},
+  journal = ese,
   abstract = {Maintaining a program is a time-consuming and expensive task in software engineering. Consequently, several approaches have been proposed to improve the comprehensibility of source code. One of such approaches are comments in the code that enable developers to explain the program with their own words or predefined tags. Some empirical studies indicate benefits of comments in certain situations, while others find no benefits at all. Thus, the real effect of comments on software development remains uncertain. In this article, we describe an experiment in which 277 participants, mainly professional software developers, performed small programming tasks on differently commented code. Based on quantitative and qualitative feedback, we i) partly replicate previous studies, ii) investigate performances of differently experienced participants when confronted with varying types of comments, and iii) discuss the opinions of developers on comments. Our results indicate that comments seem to be considered more important in previous studies and by our participants than they are for small programming tasks. While other mechanisms, such as proper identifiers, are considered more helpful by our participants, they also emphasize the necessity of comments in certain situations.},
   reviewed = {/2021/09/06/commenting-source-code.html}
 }
@@ -1950,7 +1950,7 @@
   pages = {2519--2549},
   author = {Edson Oliveira and Eduardo Fernandes and Igor Steinmacher and Marco Cristo and Tayana Conte and Alessandro Garcia},
   title = {Code and commit metrics of developer productivity: a study on team leaders perceptions},
-  journal = {Empirical Software Engineering},
+  journal = ese,
   abstract = {Context Developer productivity is essential to the success of software development organizations. Team leaders use developer productivity information for managing tasks in a software project. Developer productivity metrics can be computed from software repositories data to support leaders' decisions. We can classify these metrics in code-based metrics, which rely on the amount of produced code, and commit-based metrics, which rely on commit activity. Although metrics can assist a leader, organizations usually neglect their usage and end up sticking to the leaders' subjective perceptions only. Objective We aim to understand whether productivity metrics can complement the leaders' perceptions. We also aim to capture leaders' impressions about relevance and adoption of productivity metrics in practice. Method This paper presents a multi-case empirical study performed in two organizations active for more than 18 years. Eight leaders of nine projects have ranked the developers of their teams by productivity. We quantitatively assessed the correlation of leaders' rankings versus metric-based rankings. As a complement, we interviewed leaders for qualitatively understanding the leaders' impressions about relevance and adoption of productivity metrics given the computed correlations. Results Our quantitative data suggest a greater correlation of the leaders' perceptions with code-based metrics when compared to commit-based metrics. Our qualitative data reveal that leaders have positive impressions of code-based metrics and potentially would adopt them. Conclusions Data triangulation of productivity metrics and leaders' perceptions can strengthen the organization conviction about productive developers and can reveal productive developers not yet perceived by team leaders and probably underestimated in the organization.},
   reviewed = {/2021/08/21/metrics-and-team-leaders-perceptions-of-productivity.html}
 }
@@ -1968,7 +1968,7 @@
   pages = {286--315},
   author = {Kai Pan and Sunghun Kim and E. James Whitehead},
   title = {Toward an understanding of bug fix patterns},
-  journal = {Empirical Software Engineering},
+  journal = ese,
   abstract = {Twenty-seven automatically extractable bug fix patterns are defined using the syntax components and context of the source code involved in bug fix changes. Bug fix patterns are extracted from the configuration management repositories of seven open source projects, all written in Java (Eclipse, Columba, JEdit, Scarab, ArgoUML, Lucene, and MegaMek). Defined bug fix patterns cover 45.7\% to 63.3\% of the total bug fix hunk pairs in these projects. The frequency of occurrence of each bug fix pattern is computed across all projects. The most common individual patterns are MC-DAP (method call with different actual parameter values) at 14.9--25.5\%, IF-CC (change in if conditional) at 5.6--18.6\%, and AS-CE (change of assignment expression) at 6.0--14.2\%. A correlation analysis on the extracted pattern instances on the seven projects shows that six have very similar bug fix pattern frequencies. Analysis of if conditional bug fix sub-patterns shows a trend towards increasing conditional complexity in if conditional fixes. Analysis of five developers in the Eclipse projects shows overall consistency with project-level bug fix pattern frequencies, as well as distinct variations among developers in their rates of producing various bug patterns. Overall, data in the paper suggest that developers have difficulty with specific code situations at surprisingly consistent rates. There appear to be broad mechanisms causing the injection of bugs that are largely independent of the type of software being produced.},
   reviewed = {/2021/09/11/common-bug-fix-patterns.html}
 }
@@ -2135,7 +2135,7 @@
   pages = {1296--1327},
   author = {Gede Artha Azriadi Prana and Christoph Treude and Ferdian Thung and Thushari Atapattu and David Lo},
   title = {Categorizing the Content of {GitHub} {README} Files},
-  journal = {Empirical Software Engineering},
+  journal = ese,
   abstract = {README files play an essential role in shaping a developer's first impression of a software repository and in documenting the software project that the repository hosts. Yet, we lack a systematic understanding of the content of a typical README file as well as tools that can process these files automatically. To close this gap, we conduct a qualitative study involving the manual annotation of 4,226 README file sections from 393 randomly sampled GitHub repositories and we design and evaluate a classifier and a set of features that can categorize these sections automatically. We find that information discussing the 'What' and 'How' of a repository is very common, while many README files lack information regarding the purpose and status of a repository. Our multi-label classifier which can predict eight different categories achieves an F1 score of 0.746. To evaluate the usefulness of the classification, we used the automatically determined classes to label sections in GitHub README files using badges and showed files with and without these badges to twenty software professionals. The majority of participants perceived the automated labeling of sections based on our classifier to ease information discovery. This work enables the owners of software repositories to improve the quality of their documentation and it has the potential to make it easier for the software development community to discover relevant information in GitHub README files.},
   reviewed = {/2021/09/15/categorizing-the-content-of-github-readme-files.html}
 }
@@ -2181,7 +2181,7 @@
   pages = {560--581},
   author = {Chaiyong Ragkhitwetsagul and Jens Krinke and Matheus Paixao and Giuseppe Bianco and Rocco Oliveto},
   title = {Toxic code snippets on {Stack Overflow}},
-  journal = {{IEEE} Transactions on Software Engineering},
+  journal = ieee-tse,
   abstract = {Online code clones are code fragments that are copied from software projects or online sources to Stack Overflow as examples. Due to an absence of a checking mechanism after the code has been copied to Stack Overflow, they can become toxic code snippets, e.g., they suffer from being outdated or violating the original software license. We present a study of online code clones on Stack Overflow and their toxicity by incorporating two developer surveys and a large-scale code clone detection. A survey of 201 high-reputation Stack Overflow answerers (33 percent response rate) showed that 131 participants (65 percent) have ever been notified of outdated code and 26 of them (20 percent) rarely or never fix the code. 138 answerers (69 percent) never check for licensing conflicts between their copied code snippets and Stack Overflow's CC BY-SA 3.0. A survey of 87 Stack Overflow visitors shows that they experienced several issues from Stack Overflow answers: mismatched solutions, outdated solutions, incorrect solutions, and buggy code. 85 percent of them are not aware of CC BY-SA 3.0 license enforced by Stack Overflow, and 66 percent never check for license conflicts when reusing code snippets. Our clone detection found online clone pairs between 72,365 Java code snippets on Stack Overflow and 111 open source projects in the curated Qualitas corpus. We analysed 2,289 non-trivial online clone candidates. Our investigation revealed strong evidence that 153 clones have been copied from a Qualitas project to Stack Overflow. We found 100 of them (66 percent) to be outdated, of which 10 were buggy and harmful for reuse. Furthermore, we found 214 code snippets that could potentially violate the license of their original software and appear 7,112 times in 2,427 GitHub projects.},
   reviewed = {/2021/08/19/toxic-code-snippets-on-stack-overflow.html}
 }
@@ -2275,7 +2275,7 @@
   pages = {703--732},
   author = {Martin P. Robillard and Rob DeLine},
   title = {A field study of {API} learning obstacles},
-  journal = {Empirical Software Engineering},
+  journal = ese,
   abstract = {Large APIs can be hard to learn, and this can lead to decreased programmer productivity. But what makes APIs hard to learn? We conducted a mixed approach, multi-phased study of the obstacles faced by Microsoft developers learning a wide variety of new APIs. The study involved a combination of surveys and in-person interviews, and collected the opinions and experiences of over 440 professional developers. We found that some of the most severe obstacles faced by developers learning new APIs pertained to the documentation and other learning resources. We report on the obstacles developers face when learning new APIs, with a special focus on obstacles related to API documentation. Our qualitative analysis elicited five important factors to consider when designing API documentation: documentation of intent; code examples; matching APIs with scenarios; penetrability of the API; and format and presentation. We analyzed how these factors can be interpreted to prioritize API documentation development efforts},
   reviewed = {/2011/11/08/a-field-study-of-api-learning-obstacles.html}
 }
@@ -2291,7 +2291,7 @@
   pages = {47--56},
   author = {Christopher J. Rossbach and Owen S. Hofmann and Emmett Witchel},
   title = {Is transactional programming actually easier?},
-  journal = {{ACM} {SIGPLAN} Notices},
+  journal = sigplan-notices,
   abstract = {Chip multi-processors (CMPs) have become ubiquitous, while tools that ease concurrent programming have not. The promise of increased performance for all applications through ever more parallel hardware requires good tools for concurrent programming, especially for average programmers. Transactional memory (TM) has enjoyed recent interest as a tool that can help programmers program concurrently. The transactional memory (TM) research community is heavily invested in the claim that programming with transactional memory is easier than alternatives (like locks), but evidence for or against the veracity of this claim is scant. In this paper, we describe a user-study in which 237 undergraduate students in an operating systems course implement the same programs using coarse and fine-grain locks, monitors, and transactions. We surveyed the students after the assignment, and examined their code to determine the types and frequency of programming errors for each synchronization technique. Inexperienced programmers found baroque syntax a barrier to entry for transactional programming. On average, subjective evaluation showed that students found transactions harder to use than coarse-grain locks, but slightly easier to use than fine-grained locks. Detailed examination of synchronization errors in the students' code tells a rather different story. Overwhelmingly, the number and types of programming errors the students made was much lower for transactions than for locks. On a similar programming problem, over 70\% of students made errors with fine-grained locking, while less than 10\% made errors with transactions.},
   reviewed = {/2011/08/24/is-transactional-programming-actually-easier.html}
 }
@@ -2319,7 +2319,7 @@
   pages = {1--43},
   author = {Giuseppe Scanniello and Michele Risi and Porfirio Tramontana and Simone Romano},
   title = {Fixing faults in {C} and {Java} source code},
-  journal = {{ACM} Transactions on Software Engineering and Methodology},
+  journal = acm-tosem,
   abstract = {We carried out a family of controlled experiments to investigate whether the use of abbreviated identifier names, with respect to full-word identifier names, affects fault fixing in C and Java source code. This family consists of an original (or baseline) controlled experiment and three replications. We involved 100 participants with different backgrounds and experiences in total. Overall results suggested that there is no difference in terms of effort, effectiveness, and efficiency to fix faults, when source code contains either only abbreviated or only full-word identifier names. We also conducted a qualitative study to understand the values, beliefs, and assumptions that inform and shape fault fixing when identifier names are either abbreviated or full-word. We involved in this qualitative study six professional developers with 1--3 years of work experience. A number of insights emerged from this qualitative study and can be considered a useful complement to the quantitative results from our family of experiments. One of the most interesting insights is that developers, when working on source code with abbreviated identifier names, adopt a more methodical approach to identify and fix faults by extending their focus point and only in a few cases do they expand abbreviated identifiers.},
   reviewed = {/2021/08/09/abbreviated-vs-full-names.html}
 }
@@ -2363,7 +2363,7 @@
   pages = {786--804},
   author = {Helen Sharp and Yvonne Dittrich and Cleidson R. B. de Souza},
   title = {The role of ethnographic studies in empirical software engineering},
-  journal = {{IEEE} Transactions on Software Engineering},
+  journal = ieee-tse,
   abstract = {Ethnography is a qualitative research method used to study people and cultures. It is largely adopted in disciplines outside software engineering, including different areas of computer science. Ethnography can provide an in-depth understanding of the socio-technological realities surrounding everyday software development practice, i.e., it can help to uncover not only what practitioners do, but also why they do it. Despite its potential, ethnography has not been widely adopted by empirical software engineering researchers, and receives little attention in the related literature. The main goal of this paper is to explain how empirical software engineering researchers would benefit from adopting ethnography. This is achieved by explicating four roles that ethnography can play in furthering the goals of empirical software engineering: to strengthen investigations into the social and human aspects of software engineering; to inform the design of software engineering tools; to improve method and process development; and to inform research programmes. This article introduces ethnography, explains its origin, context, strengths and weaknesses, and presents a set of dimensions that position ethnography as a useful and usable approach to empirical software engineering research. Throughout the paper, relevant examples of ethnographic studies of software practice are used to illustrate the points being made.},
   reviewed = {/2016/09/08/ethnography-in-ese.html}
 }
@@ -2393,7 +2393,7 @@
   pages = {1134--1163},
   author = {Diomidis Spinellis and Paris Avgeriou},
   title = {Evolution of the Unix System Architecture: An Exploratory Case Study},
-  journal = {{IEEE} Transactions on Software Engineering},
+  journal = ieee-tse,
   abstract = {Unix has evolved for almost five decades, shaping modern operating systems, key software technologies, and development practices. Studying the evolution of this remarkable system from an architectural perspective can provide insights on how to manage the growth of large, complex, and long-lived software systems. Along main Unix releases leading to the FreeBSD lineage we examine core architectural design decisions, the number of features, and code complexity, based on the analysis of source code, reference documentation, and related publications. We report that the growth in size has been uniform, with some notable outliers, while cyclomatic complexity has been religiously safeguarded. A large number of Unix-defining design decisions were implemented right from the very early beginning, with most of them still playing a major role. Unix continues to evolve from an architectural perspective, but the rate of architectural innovation has slowed down over the system's lifetime. Architectural technical debt has accrued in the forms of functionality duplication and unused facilities, but in terms of cyclomatic complexity it is systematically being paid back through what appears to be a self-correcting process. Some unsung architectural forces that shaped Unix are the emphasis on conventions over rigid enforcement, the drive for portability, a sophisticated ecosystem of other operating systems and development organizations, and the emergence of a federated architecture, often through the adoption of third-party subsystems. These findings have led us to form an initial theory on the architecture evolution of large, complex operating system software.},
   reviewed = {/2021/09/23/two-studies-of-software-evolution.html}
 }
@@ -2434,7 +2434,7 @@
   pages = {1--40},
   author = {Andreas Stefik and Susanna Siebert},
   title = {An empirical investigation into programming language syntax},
-  journal = {{ACM} Transactions on Computing Education},
+  journal = acm-tce,
   abstract = {Recent studies in the literature have shown that syntax remains a significant barrier to novice computer science students in the field. While this syntax barrier is known to exist, whether and how it varies across programming languages has not been carefully investigated. For this article, we conducted four empirical studies on programming language syntax as part of a larger analysis into the, so called, programming language wars. We first present two surveys conducted with students on the intuitiveness of syntax, which we used to garner formative clues on what words and symbols might be easy for novices to understand. We followed up with two studies on the accuracy rates of novices using a total of six programming languages: Ruby, Java, Perl, Python, Randomo, and Quorum. Randomo was designed by randomly choosing some keywords from the ASCII table (a metaphorical placebo). To our surprise, we found that languages using a more traditional C-style syntax (both Perl and Java) did not afford accuracy rates significantly higher than a language with randomly generated keywords, but that languages which deviate (Quorum, Python, and Ruby) did. These results, including the specifics of syntax that are particularly problematic for novices, may help teachers of introductory programming courses in choosing appropriate first languages and in helping students to overcome the challenges they face with syntax.},
   reviewed = {/2014/01/29/stefik-siebert-syntax.html}
 }
@@ -2478,7 +2478,7 @@
   pages = {1--29},
   author = {Toni Taipalus and Mikko Siponen and Tero Vartiainen},
   title = {Errors and complications in {SQL} query formulation},
-  journal = {{ACM} Transactions on Computing Education},
+  journal = acm-tce,
   abstract = {SQL is taught in almost all university level database courses, yet SQL has received relatively little attention in educational research. In this study, we present a database management system independent categorization of SQL query errors that students make in an introductory database course. We base the categorization on previous literature, present a class of logical errors that has not been studied in detail, and review and complement these findings by analyzing over 33,000 SQL queries submitted by students. Our analysis verifies error findings presented in previous literature and reveals new types of errors, namely logical errors recurring in similar manners among different students. We present a listing of fundamental SQL query concepts we have identified and based our exercises on, a categorization of different errors and complications, and an operational model for designing SQL exercises.},
   reviewed = {/2021/08/27/errors-in-sql-queries.html}
 }
@@ -2645,7 +2645,7 @@
   pages = {547--560},
   author = {Jerod W. Wilkerson and Jay F. Nunamaker and Rick Mercer},
   title = {Comparing the defect reduction benefits of code inspection and test-driven development},
-  journal = {{IEEE} Transactions on Software Engineering},
+  journal = ieee-tse,
   abstract = {This study is a quasi experiment comparing the software defect rates and implementation costs of two methods of software defect reduction: code inspection and test-driven development. We divided participants, consisting of junior and senior computer science students at a large Southwestern university, into four groups using a two-by-two, between-subjects, factorial design and asked them to complete the same programming assignment using either test-driven development, code inspection, both, or neither. We compared resulting defect counts and implementation costs across groups. We found that code inspection is more effective than test-driven development at reducing defects, but that code inspection is also more expensive. We also found that test-driven development was no more effective at reducing defects than traditional programming methods.},
   reviewed = {/2011/08/31/comparing-the-defect-reduction-benefits-of-code-inspection-and-test-driven-development.html}
 }
@@ -2713,7 +2713,7 @@
   pages = {1--1},
   author = {Haoxiang Zhang and Shaowei Wang and Tse-Hsun Chen and Ahmed E. Hassan},
   title = {Reading Answers on Stack Overflow: Not Enough!},
-  journal = {{IEEE} Transactions on Software Engineering},
+  journal = ieee-tse,
   abstract = {Stack Overflow is one of the most active communities for developers to share their programming knowledge. Answers posted on Stack Overflow help developers solve issues during software development. In addition to posting answers, users can also post comments to further discuss their associated answers. As of Aug 2017, there are 32.3 million comments that are associated with answers, forming a large collection of crowdsourced repository of knowledge on top of the commonly-studied Stack Overflow answers. In this study, we wish to understand how the commenting activities contribute to the crowdsourced knowledge. We investigate what users discuss in comments, and analyze the characteristics of the commenting dynamics, (i.e., the timing of commenting activities and the roles of commenters). We find that: 1) the majority of comments are informative and thus can enhance their associated answers from a diverse range of perspectives. However, some comments contain content that is discouraged by Stack Overflow. 2) The majority of commenting activities occur after the acceptance of an answer. More than half of the comments are fast responses occurring within one day of the creation of an answer, while later comments tend to be more informative. Most comments are rarely integrated back into their associated answers, even though such comments are informative. 3) Insiders (i.e., users who posted questions/answers before posting a comment in a question thread) post the majority of comments within one month, and outsiders (i.e., users who never posted any question/answer before posting a comment) post the majority of comments after one month. Inexperienced users tend to raise limitations and concerns while experienced users tend to enhance the answer through commenting. Our study provides insights into the commenting activities in terms of their content, timing, and the individuals who perform the commenting. For the purpose of long-term knowledge maintenance and effective information retrieval for developers, we also provide actionable suggestions to encourage Stack Overflow users/engineers/moderators to leverage our insights for enhancing the current Stack Overflow commenting system for improving the maintenance and organization of the crowdsourced knowledge.},
   reviewed = {/2021/09/19/reading-answers-on-stack-overflow-not-enough.html}
 }

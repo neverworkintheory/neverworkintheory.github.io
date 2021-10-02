@@ -595,7 +595,7 @@ FUNCTION {format.url}
 FUNCTION {format.doi}
 { DOI empty$
     { "" }
-    { "{\bf DOI} \verb`" DOI * "`" *}
+    { "DOI \verb`" DOI * "`" *}
   if$
 }
 
