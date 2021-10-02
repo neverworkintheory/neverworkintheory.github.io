@@ -5,6 +5,7 @@ ABSTRACT_BIN=./bin/abstracts.sh
 AUTHORS_BIN=./bin/authors.py
 BIB2YAML_BIN=./bin/bib2yaml.py
 YAML2HTML_BIN=./bin/yaml2html.py
+YEARS_BIN=./bin/years.py
 BIBTEX_BIN=bibtex
 LATEX_BIN=pdflatex
 
@@ -19,7 +20,8 @@ STRINGS_OPTION=--strings ./tex/strings.bib
 AUTHORS_HTML=authors/index.html
 BIB_HTML=bib/index.html
 TODO_HTML=todo/index.html
-SUPPORT_HTML=${AUTHORS_HTML} ${BIB_HTML} ${TODO_HTML}
+YEARS_SVG=files/years-histogram.svg
+SUPPORT_FILES=${AUTHORS_HTML} ${BIB_HTML} ${TODO_HTML} ${YEARS_SVG}
 
 PDF=tex/nwit.pdf
 
@@ -43,11 +45,11 @@ commands:
 	@grep -h -E '^##' ${MAKEFILE_LIST} | sed -e 's/## //g' | column -t -s ':'
 
 ## build: rebuild site without running server
-build: ${SUPPORT_HTML} ${PDF}
+build: ${SUPPORT_FILES} ${PDF}
 	${JEKYLL} build
 
 ## serve: build site and run server
-serve: ${SUPPORT_HTML}
+serve: ${SUPPORT_FILES}
 	${JEKYLL} serve
 
 # ---
@@ -63,6 +65,9 @@ bib: ${BIB_HTML}
 
 ## todo: re-create HTML bibliography of upcoming articles
 todo: ${TODO_HTML}
+
+## years: regenerate plot of publication years of reviewed articles
+years: ${YEARS_SVG}
 
 ## ----
 
@@ -136,6 +141,9 @@ ${BIB_HTML}: ${STRINGS_BIB} ${NWIT_BIB} ${BIB2YAML_BIN} ${YAML2HTML_BIN}
 ${TODO_HTML}: ${STRINGS_BIB} ${TODO_BIB} ${BIB2YAML_BIN} ${YAML2HTML_BIN}
 	make TITLE="To Do" SLUG=todo bib2yaml > $@
 
+${YEARS_SVG}: ${NWIT_BIB} ${YEARS_BIN}
+	${YEARS_BIN} ${STRINGS_OPTION} --input ${NWIT_BIB} --output $@
+
 ${PDF}: ${NWIT_BIB} ${TODO_BIB} tex/nwit.tex tex/settings.tex tex/abstract.bst
 	@cd tex \
 	&& rm -f nwit.aux nwit.bbl \
@@ -151,4 +159,4 @@ bib2yaml:
 	@echo "title: ${TITLE}"
 	@echo "---"
 	@echo '<p><a href="../tex/${SLUG}.bib">BibTeX</a> | <a href="../tex/${SLUG}.pdf">PDF</a></p>'
-	@cat ./tex/${SLUG}.bib | ${BIB2YAML_BIN} ${STRINGS_OPTION} | ${YAML2HTML_BIN}
+	cat ./tex/${SLUG}.bib | ${BIB2YAML_BIN} ${STRINGS_OPTION} | ${YAML2HTML_BIN}

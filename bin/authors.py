@@ -1,7 +1,6 @@
 #!/usr/bin/env python
 
 import argparse
-import bibtexparser
 import re
 import sys
 
