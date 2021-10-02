@@ -1,0 +1,90 @@
+---
+layout: post
+author: Greg Wilson
+title: "Reproducibility and Credibility in Empirical Software Engineering"
+date: 2021-10-02
+categories: ["Research Methods"]
+---
+<div class="review">
+  <p>
+    The answers you get are only as good as the tools and methods you use to produce them,
+    so just as astronomers need to study optics,
+    software engineering researchers need to study how they gather and analyze data.
+    A case in point is the problem of figuring out which lines of code are responsible for which bugs.
+    Sixteen years ago,
+    <cite>Sliwerski2005</cite> proposed that attributed a bug to the lines of code that were modified to fix it.
+    This algorithm is now known as SZZ (after the authors' initials)
+    and has been used in many subsequent studies;
+    it isn't trivial to implement,
+    but it's doable and plausible,
+    and using it enables people to compare their findings to each other.
+  </p>
+  <p>
+    But how accurate is it?
+    <cite>RodriguezPerez2018</cite> looked closely at 116 bugs in two open source projects
+    and compared manual attribution of each bug's root cause
+    with the answers given by four different implementations of SZZ.
+    They concluded that SZZ is only moderately good at identifying the actual source of the problem:
+    <a href="https://en.wikipedia.org/wiki/F-score">F-scores</a> varied from 0.44 to 0.77,
+    while none of the four implementations correctly identified more than 63% of issues' sources.
+  </p>
+  <p>
+    This doesn't necessarily invalidate the conclusions of studies that use SZZ,
+    any more than chromatic aberration in early telescopes meant that
+    the stars and planets astronomers were seeing weren't actually there.
+    It <em>does</em> mean that those studies should be revisited
+    once we have better bug attribution methods,
+    and that developing such methods ought to be a more urgent focus of current research.
+  </p>
+</div>
+<p id="RodriguezPerez2018" class="bib"><cite>RodriguezPerez2018</cite>
+  Gema Rodríguez-Pérez, Gregorio Robles, and Jesús M. González-Barahona:
+  "<a href="https://doi.org/10.1016/j.infsof.2018.03.009">Reproducibility and credibility in empirical software engineering: A case study based on a systematic literature review of the use of the SZZ algorithm</a>".
+  <em>Information and Software Technology</em>, 99, 2018,
+  <a class="doi" href="https://doi.org/10.1016/j.infsof.2018.03.009">10.1016/j.infsof.2018.03.009</a>.
+</p>
+<blockquote class="abstract">
+  When identifying the origin of software bugs, many studies assume that "a bug
+  was introduced by the lines of code that were modified to fix it". However,
+  this assumption does not always hold and at least in some cases, these
+  modified lines are not responsible for introducing the bug. For example, when
+  the bug was caused by a change in an external API. The lack of empirical
+  evidence makes it impossible to assess how important these cases are and
+  therefore, to which extent the assumption is valid. To advance in this
+  direction, and better understand how bugs "are born", we propose a model for
+  defining criteria to identify the first snapshot of an evolving software
+  system that exhibits a bug. This model, based on the perfect test idea,
+  decides whether a bug is observed after a change to the software. Furthermore,
+  we studied the model's criteria by carefully analyzing how 116 bugs were
+  introduced in two different open source software projects. The manual analysis
+  helped classify the root cause of those bugs and created manually curated
+  datasets with bug-introducing changes and with bugs that were not introduced
+  by any change in the source code. Finally, we used these datasets to evaluate
+  the performance of four existing SZZ-based algorithms for detecting
+  bug-introducing changes. We found that SZZ-based algorithms are not very
+  accurate, especially when multiple commits are found; the F-Score varies from
+  0.44 to 0.77, while the percentage of true positives does not exceed 63%. Our
+  results show empirical evidence that the prevalent assumption, "a bug was
+  introduced by the lines of code that were modified to fix it", is just one
+  case of how bugs are introduced in a software system. Finding what introduced
+  a bug is not trivial: bugs can be introduced by the developers and be in the
+  code, or be created irrespective of the code. Thus, further research towards a
+  better understanding of the origin of bugs in software projects could help to
+  improve design integration tests and to design other procedures to make
+  software development more robust.
+</blockquote>
+<p id="Sliwerski2005" class="bib"><cite>Sliwerski2005</cite>
+  Jacek Śliwerski, Thomas Zimmermann, and Andreas Zeller:
+  "<a href="https://doi.org/10.1145/1083142.1083147">When do changes induce fixes?</a>".
+  <em>Proc. International Conference on Mining Software Repositories (MSR)</em>,
+  2005, <a class="doi" href="https://doi.org/10.1145/1083142.1083147">10.1145/1083142.1083147</a>.
+</p>
+<blockquote class="abstract">
+  As a software system evolves, programmers make changes that sometimes cause
+  problems. We analyze CVS archives for fix-inducing changes—changes that lead
+  to problems, indicated by fixes. We show how to automatically locate
+  fix-inducing changes by linking a version archive (such as CVS) to a bug
+  database (such as Bugzilla). In a first investigation of the Mozilla and
+  Eclipse history, it turns out that fix-inducing changes show distinct patterns
+  with respect to their size and the day of week they were applied.
+</blockquote>
