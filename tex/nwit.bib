@@ -1839,6 +1839,19 @@
   reviewed = {/2021/09/21/build-systems-a-la-carte.html}
 }
 
+@inproceedings{Moldon2021,
+  doi = {10.1109/icse43902.2021.00058},
+  url = {https://doi.org/10.1109/icse43902.2021.00058},
+  year = {2021},
+  month = may,
+  publisher = {{IEEE}},
+  author = {Lukas Moldon and Markus Strohmaier and Johannes Wachs},
+  title = {How Gamification Affects Software Developers: Cautionary Evidence from a Natural Experiment on {GitHub}},
+  booktitle = icse,
+  abstract = {We examine how the behavior of software developers changes in response to removing gamification elements from GitHub, an online platform for collaborative programming and software development. We find that the unannounced removal of daily activity streak counters from the user interface (from user profile pages) was followed by significant changes in behavior. Long-running streaks of activity were abandoned and became less common. Weekend activity decreased and days in which developers made a single contribution became less common. Synchronization of streaking behavior in the platform's social network also decreased, suggesting that gamification is a powerful channel for social influence. Focusing on a set of software developers that were publicly pursuing a goal to make contributions for 100 days in a row, we find that some of these developers abandon this quest following the removal of the public streak counter. Our findings provide evidence for the significant impact of gamification on the behavior of developers on large collaborative programming and software development platforms. They urge caution: gamification can steer the behavior of software developers in unexpected and unwanted directions.},
+  reviewed = {/2021/10/03/how-gamification-affects-software-developers.html}
+}
+
 @inproceedings{Muhammad2019,
   doi = {10.1145/3365137.3365402},
   url = {https://doi.org/10.1145/3365137.3365402},
@@ -2291,7 +2304,8 @@
   author = {Gema Rodr{\'{\i}}guez-P{\'{e}}rez and Gregorio Robles and Jes{\'{u}}s M. Gonz{\'{a}}lez-Barahona},
   title = {Reproducibility and credibility in empirical software engineering: A case study based on a systematic literature review of the use of the {SZZ} algorithm},
   journal = ist,
-  abstract = {When identifying the origin of software bugs, many studies assume that "a bug was introduced by the lines of code that were modified to fix it". However, this assumption does not always hold and at least in some cases, these modified lines are not responsible for introducing the bug. For example, when the bug was caused by a change in an external API. The lack of empirical evidence makes it impossible to assess how important these cases are and therefore, to which extent the assumption is valid. To advance in this direction, and better understand how bugs "are born", we propose a model for defining criteria to identify the first snapshot of an evolving software system that exhibits a bug. This model, based on the perfect test idea, decides whether a bug is observed after a change to the software. Furthermore, we studied the model's criteria by carefully analyzing how 116 bugs were introduced in two different open source software projects. The manual analysis helped classify the root cause of those bugs and created manually curated datasets with bug-introducing changes and with bugs that were not introduced by any change in the source code. Finally, we used these datasets to evaluate the performance of four existing SZZ-based algorithms for detecting bug-introducing changes. We found that SZZ-based algorithms are not very accurate, especially when multiple commits are found; the F-Score varies from 0.44 to 0.77, while the percentage of true positives does not exceed 63\%. Our results show empirical evidence that the prevalent assumption, "a bug was introduced by the lines of code that were modified to fix it", is just one case of how bugs are introduced in a software system. Finding what introduced a bug is not trivial: bugs can be introduced by the developers and be in the code, or be created irrespective of the code. Thus, further research towards a better understanding of the origin of bugs in software projects could help to improve design integration tests and to design other procedures to make software development more robust.}
+  abstract = {When identifying the origin of software bugs, many studies assume that "a bug was introduced by the lines of code that were modified to fix it". However, this assumption does not always hold and at least in some cases, these modified lines are not responsible for introducing the bug. For example, when the bug was caused by a change in an external API. The lack of empirical evidence makes it impossible to assess how important these cases are and therefore, to which extent the assumption is valid. To advance in this direction, and better understand how bugs "are born", we propose a model for defining criteria to identify the first snapshot of an evolving software system that exhibits a bug. This model, based on the perfect test idea, decides whether a bug is observed after a change to the software. Furthermore, we studied the model's criteria by carefully analyzing how 116 bugs were introduced in two different open source software projects. The manual analysis helped classify the root cause of those bugs and created manually curated datasets with bug-introducing changes and with bugs that were not introduced by any change in the source code. Finally, we used these datasets to evaluate the performance of four existing SZZ-based algorithms for detecting bug-introducing changes. We found that SZZ-based algorithms are not very accurate, especially when multiple commits are found; the F-Score varies from 0.44 to 0.77, while the percentage of true positives does not exceed 63\%. Our results show empirical evidence that the prevalent assumption, "a bug was introduced by the lines of code that were modified to fix it", is just one case of how bugs are introduced in a software system. Finding what introduced a bug is not trivial: bugs can be introduced by the developers and be in the code, or be created irrespective of the code. Thus, further research towards a better understanding of the origin of bugs in software projects could help to improve design integration tests and to design other procedures to make software development more robust.},
+  reviewed = {/2021/10/02/reproducibility-and-credibility-in-empirical-software-engineering.html}
 }
 
 @article{Rossbach2010,
@@ -2382,6 +2396,22 @@
   reviewed = {/2016/09/08/ethnography-in-ese.html}
 }
 
+@article{Sholler2019,
+  doi = {10.1371/journal.pcbi.1007296},
+  url = {https://doi.org/10.1371/journal.pcbi.1007296},
+  year = {2019},
+  month = sep,
+  publisher = {Public Library of Science ({PLoS})},
+  volume = {15},
+  number = {9},
+  pages = {e1007296},
+  author = {Dan Sholler and Igor Steinmacher and Denae Ford and Mara Averick and Mike Hoye and Greg Wilson},
+  editor = {Scott Markel},
+  title = {Ten simple rules for helping newcomers become contributors to open projects},
+  journal = {{PLOS} Computational Biology},
+  abstract = {To survive and thrive, a community must attract new members, retain them, and help them be productive. As openness becomes the norm in research, software development, and education, knowing how to do this has become a essential skill for principal investigators and community managers alike. A growing body of knowledge in sociology, anthropology, education, and software engineering can guide decisions about how to facilitate this.}
+}
+
 @inproceedings{Sliwerski2005,
   doi = {10.1145/1083142.1083147},
   url = {https://doi.org/10.1145/1083142.1083147},
@@ -2390,7 +2420,8 @@
   author = {Jacek {\'{S}}liwerski and Thomas Zimmermann and Andreas Zeller},
   title = {When do changes induce fixes?},
   booktitle = msr,
-  abstract = {As a software system evolves, programmers make changes that sometimes cause problems. We analyze CVS archives for fix-inducing changes---changes that lead to problems, indicated by fixes. We show how to automatically locate fix-inducing changes by linking a version archive (such as CVS) to a bug database (such as Bugzilla). In a first investigation of the Mozilla and Eclipse history, it turns out that fix-inducing changes show distinct patterns with respect to their size and the day of week they were applied.}
+  abstract = {As a software system evolves, programmers make changes that sometimes cause problems. We analyze CVS archives for fix-inducing changes---changes that lead to problems, indicated by fixes. We show how to automatically locate fix-inducing changes by linking a version archive (such as CVS) to a bug database (such as Bugzilla). In a first investigation of the Mozilla and Eclipse history, it turns out that fix-inducing changes show distinct patterns with respect to their size and the day of week they were applied.},
+  reviewed = {/2021/10/02/reproducibility-and-credibility-in-empirical-software-engineering.html}
 }
 
 @inproceedings{Spinellis2016,
@@ -2544,6 +2575,20 @@
   booktitle = saner,
   abstract = {Open source projects rely on collaboration of members from all around the world using web technologies like GitHub and Gerrit. This mixture of people with a wide range of backgrounds including minorities like women, ethnic minorities, and people with disabilities may increase the risk of offensive and destroying behaviours in the community, potentially leading affected project members to leave towards a more welcoming and friendly environment. To counter these effects, open source projects increasingly are turning to codes of conduct, in an attempt to promote their expectations and standards of ethical behaviour. In this first of its kind empirical study of codes of conduct in open source software projects, we investigated the role, scope and influence of codes of conduct through a mixture of quantitative and qualitative analysis, supported by interviews with practitioners. We found that the top codes of conduct are adopted by hundreds to thousands of projects, while all of them share 5 common dimensions.},
   reviewed = {/2021/09/18/code-of-conduct-in-open-source-projects.html}
+}
+
+@article{Trang2021,
+  doi = {10.1016/j.chb.2020.106644},
+  url = {https://doi.org/10.1016/j.chb.2020.106644},
+  year = {2021},
+  month = mar,
+  publisher = {Elsevier {BV}},
+  volume = {116},
+  pages = {106644},
+  author = {Simon Trang and Welf H. Weiger},
+  title = {The perils of gamification: Does engaging with gamified services increase users' willingness to disclose personal information?},
+  journal = {Computers in Human Behavior},
+  abstract = {The increasing use of gamification in the digital service landscape has caught the attention of practitioners and marketers alike. Alarmingly, most of the empirical research has attested to the benefits of such gamified service (e.g. apps) use while neglecting to address potential drawbacks. This research suggests that users of gamified apps end up being more likely to share private information with firms, thus threatening their own personal information privacy. Against this background, the present study links gamification to information disclosure and demonstrates that if a gamified service conveys experiences of, for instance, social comparison, it can indeed lead to greater willingness to disclose personal information. This relationship can be explained by the users' increased resource depletion through cognitive absorption (i.e. the concentration of one's entire affective, cognitive, and physical resources on the task at hand). The results further indicate that engaging with gamified apps indeed affects the situational processing of privacy-related decisions (i.e. calculating benefits vs. risks) and the role of dispositional antecedents: In states of deep cognitive absorption, users disclose even more information when they perceive privacy benefits (i.e., situational) and even less when they have high privacy concerns (i.e., dispositional).}
 }
 
 @inproceedings{Tregubov2017,

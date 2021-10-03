@@ -10,3 +10,5 @@ Kernighan1983
 Kosar2011
 PerezDeRosso2013
 Sadowski2019
+Sholler2019
+Trang2021

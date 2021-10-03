@@ -3,6 +3,7 @@ layout: page
 title: Bibliography
 ---
 <p><a href="../tex/nwit.bib">BibTeX</a> | <a href="../tex/nwit.pdf">PDF</a></p>
+cat ./tex/nwit.bib | ./bin/bib2yaml.py --strings ./tex/strings.bib | ./bin/yaml2html.py
 
 <p><a href="#A">A</a> <a href="#B">B</a> <a href="#C">C</a> <a href="#D">D</a> <a href="#E">E</a> <a href="#F">F</a> <a href="#G">G</a> <a href="#H">H</a> <a href="#I">I</a> <a href="#J">J</a> <a href="#K">K</a> <a href="#L">L</a> <a href="#M">M</a> <a href="#N">N</a> <a href="#O">O</a> <a href="#P">P</a> <a href="#Q">Q</a> <a href="#R">R</a> <a href="#S">S</a> <a href="#T">T</a> <a href="#U">U</a> <a href="#V">V</a> <a href="#W">W</a> <a href="#X">X</a> <a href="#Y">Y</a> <a href="#Z">Z</a></p>
 
@@ -1143,6 +1144,14 @@ Andrey Mokhov, Neil Mitchell, and Simon Peyton Jones:
 </p>
 <blockquote class="abstract">Build systems are awesome, terrifying—and unloved. They are used by every developer around the world, but are rarely the object of study. In this paper we offer a systematic, and executable, framework for developing and comparing build systems, viewing them as related points in landscape rather than as isolated phenomena. By teasing apart existing build systems, we can recombine their components, allowing us to prototype new build systems with desired properties.</blockquote>
 
+<p id="Moldon2021" class="bib"><cite>Moldon2021</cite>
+Lukas Moldon, Markus Strohmaier, and Johannes Wachs:
+"<a href="https://doi.org/10.1109/icse43902.2021.00058">How Gamification Affects Software Developers: Cautionary Evidence from a Natural Experiment on GitHub</a>".
+<em>Proc. International Conference on Software Engineering (ICSE)</em>, 2021, <a class="doi" href="https://doi.org/10.1109/icse43902.2021.00058">10.1109/icse43902.2021.00058</a>.
+ (Reviewed <a href="{{'/2021/10/03/how-gamification-affects-software-developers.html' | relative_url}}">2021-10-03</a>.)
+</p>
+<blockquote class="abstract">We examine how the behavior of software developers changes in response to removing gamification elements from GitHub, an online platform for collaborative programming and software development. We find that the unannounced removal of daily activity streak counters from the user interface (from user profile pages) was followed by significant changes in behavior. Long-running streaks of activity were abandoned and became less common. Weekend activity decreased and days in which developers made a single contribution became less common. Synchronization of streaking behavior in the platform's social network also decreased, suggesting that gamification is a powerful channel for social influence. Focusing on a set of software developers that were publicly pursuing a goal to make contributions for 100 days in a row, we find that some of these developers abandon this quest following the removal of the public streak counter. Our findings provide evidence for the significant impact of gamification on the behavior of developers on large collaborative programming and software development platforms. They urge caution: gamification can steer the behavior of software developers in unexpected and unwanted directions.</blockquote>
+
 <p id="Muhammad2019" class="bib"><cite>Muhammad2019</cite>
 Hisham Muhammad, Lucas C. Villa Real, and Michael Homer:
 "<a href="https://doi.org/10.1145/3365137.3365402">Taxonomy of Package Management in Programming Languages and Operating Systems</a>".
@@ -1419,6 +1428,7 @@ Gema Rodríguez-Pérez, Gregorio Robles, and Jesús M. González-Barahona:
 "<a href="https://doi.org/10.1016/j.infsof.2018.03.009">Reproducibility and credibility in empirical software engineering: A case study based on a systematic literature review of the use of the SZZ algorithm</a>".
 <em>Information and Software Technology</em>, 99, 2018,
 <a class="doi" href="https://doi.org/10.1016/j.infsof.2018.03.009">10.1016/j.infsof.2018.03.009</a>.
+ (Reviewed <a href="{{'/2021/10/02/reproducibility-and-credibility-in-empirical-software-engineering.html' | relative_url}}">2021-10-02</a>.)
 </p>
 <blockquote class="abstract">When identifying the origin of software bugs, many studies assume that "a bug was introduced by the lines of code that were modified to fix it". However, this assumption does not always hold and at least in some cases, these modified lines are not responsible for introducing the bug. For example, when the bug was caused by a change in an external API. The lack of empirical evidence makes it impossible to assess how important these cases are and therefore, to which extent the assumption is valid. To advance in this direction, and better understand how bugs "are born", we propose a model for defining criteria to identify the first snapshot of an evolving software system that exhibits a bug. This model, based on the perfect test idea, decides whether a bug is observed after a change to the software. Furthermore, we studied the model's criteria by carefully analyzing how 116 bugs were introduced in two different open source software projects. The manual analysis helped classify the root cause of those bugs and created manually curated datasets with bug-introducing changes and with bugs that were not introduced by any change in the source code. Finally, we used these datasets to evaluate the performance of four existing SZZ-based algorithms for detecting bug-introducing changes. We found that SZZ-based algorithms are not very accurate, especially when multiple commits are found; the F-Score varies from 0.44 to 0.77, while the percentage of true positives does not exceed 63%. Our results show empirical evidence that the prevalent assumption, "a bug was introduced by the lines of code that were modified to fix it", is just one case of how bugs are introduced in a software system. Finding what introduced a bug is not trivial: bugs can be introduced by the developers and be in the code, or be created irrespective of the code. Thus, further research towards a better understanding of the origin of bugs in software projects could help to improve design integration tests and to design other procedures to make software development more robust.</blockquote>
 
@@ -1475,10 +1485,19 @@ Helen Sharp, Yvonne Dittrich, and Cleidson R. B. de Souza:
 </p>
 <blockquote class="abstract">Ethnography is a qualitative research method used to study people and cultures. It is largely adopted in disciplines outside software engineering, including different areas of computer science. Ethnography can provide an in-depth understanding of the socio-technological realities surrounding everyday software development practice, i.e., it can help to uncover not only what practitioners do, but also why they do it. Despite its potential, ethnography has not been widely adopted by empirical software engineering researchers, and receives little attention in the related literature. The main goal of this paper is to explain how empirical software engineering researchers would benefit from adopting ethnography. This is achieved by explicating four roles that ethnography can play in furthering the goals of empirical software engineering: to strengthen investigations into the social and human aspects of software engineering; to inform the design of software engineering tools; to improve method and process development; and to inform research programmes. This article introduces ethnography, explains its origin, context, strengths and weaknesses, and presents a set of dimensions that position ethnography as a useful and usable approach to empirical software engineering research. Throughout the paper, relevant examples of ethnographic studies of software practice are used to illustrate the points being made.</blockquote>
 
+<p id="Sholler2019" class="bib"><cite>Sholler2019</cite>
+Dan Sholler, Igor Steinmacher, Denae Ford, Mara Averick, Mike Hoye, and Greg Wilson:
+"<a href="https://doi.org/10.1371/journal.pcbi.1007296">Ten simple rules for helping newcomers become contributors to open projects</a>".
+<em>PLOS Computational Biology</em>, 15(9), 2019,
+<a class="doi" href="https://doi.org/10.1371/journal.pcbi.1007296">10.1371/journal.pcbi.1007296</a>.
+</p>
+<blockquote class="abstract">To survive and thrive, a community must attract new members, retain them, and help them be productive. As openness becomes the norm in research, software development, and education, knowing how to do this has become a essential skill for principal investigators and community managers alike. A growing body of knowledge in sociology, anthropology, education, and software engineering can guide decisions about how to facilitate this.</blockquote>
+
 <p id="Sliwerski2005" class="bib"><cite>Sliwerski2005</cite>
 Jacek Śliwerski, Thomas Zimmermann, and Andreas Zeller:
 "<a href="https://doi.org/10.1145/1083142.1083147">When do changes induce fixes?</a>".
 <em>Proc. International Conference on Mining Software Repositories (MSR)</em>, 2005, <a class="doi" href="https://doi.org/10.1145/1083142.1083147">10.1145/1083142.1083147</a>.
+ (Reviewed <a href="{{'/2021/10/02/reproducibility-and-credibility-in-empirical-software-engineering.html' | relative_url}}">2021-10-02</a>.)
 </p>
 <blockquote class="abstract">As a software system evolves, programmers make changes that sometimes cause problems. We analyze CVS archives for fix-inducing changes—changes that lead to problems, indicated by fixes. We show how to automatically locate fix-inducing changes by linking a version archive (such as CVS) to a bug database (such as Bugzilla). In a first investigation of the Mozilla and Eclipse history, it turns out that fix-inducing changes show distinct patterns with respect to their size and the day of week they were applied.</blockquote>
 
@@ -1574,6 +1593,14 @@ Parastou Tourani, Bram Adams, and Alexander Serebrenik:
  (Reviewed <a href="{{'/2021/09/18/code-of-conduct-in-open-source-projects.html' | relative_url}}">2021-09-18</a>.)
 </p>
 <blockquote class="abstract">Open source projects rely on collaboration of members from all around the world using web technologies like GitHub and Gerrit. This mixture of people with a wide range of backgrounds including minorities like women, ethnic minorities, and people with disabilities may increase the risk of offensive and destroying behaviours in the community, potentially leading affected project members to leave towards a more welcoming and friendly environment. To counter these effects, open source projects increasingly are turning to codes of conduct, in an attempt to promote their expectations and standards of ethical behaviour. In this first of its kind empirical study of codes of conduct in open source software projects, we investigated the role, scope and influence of codes of conduct through a mixture of quantitative and qualitative analysis, supported by interviews with practitioners. We found that the top codes of conduct are adopted by hundreds to thousands of projects, while all of them share 5 common dimensions.</blockquote>
+
+<p id="Trang2021" class="bib"><cite>Trang2021</cite>
+Simon Trang and Welf H. Weiger:
+"<a href="https://doi.org/10.1016/j.chb.2020.106644">The perils of gamification: Does engaging with gamified services increase users' willingness to disclose personal information?</a>".
+<em>Computers in Human Behavior</em>, 116, 2021,
+<a class="doi" href="https://doi.org/10.1016/j.chb.2020.106644">10.1016/j.chb.2020.106644</a>.
+</p>
+<blockquote class="abstract">The increasing use of gamification in the digital service landscape has caught the attention of practitioners and marketers alike. Alarmingly, most of the empirical research has attested to the benefits of such gamified service (e.g. apps) use while neglecting to address potential drawbacks. This research suggests that users of gamified apps end up being more likely to share private information with firms, thus threatening their own personal information privacy. Against this background, the present study links gamification to information disclosure and demonstrates that if a gamified service conveys experiences of, for instance, social comparison, it can indeed lead to greater willingness to disclose personal information. This relationship can be explained by the users' increased resource depletion through cognitive absorption (i.e. the concentration of one's entire affective, cognitive, and physical resources on the task at hand). The results further indicate that engaging with gamified apps indeed affects the situational processing of privacy-related decisions (i.e. calculating benefits vs. risks) and the role of dispositional antecedents: In states of deep cognitive absorption, users disclose even more information when they perceive privacy benefits (i.e., situational) and even less when they have high privacy concerns (i.e., dispositional).</blockquote>
 
 <p id="Tregubov2017" class="bib"><cite>Tregubov2017</cite>
 Alexey Tregubov, Barry Boehm, Natalia Rodchenko, and Jo Ann Lane:
