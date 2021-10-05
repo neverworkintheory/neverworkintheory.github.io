@@ -1,0 +1,174 @@
+---
+layout: post
+author: Greg Wilson
+title: "Three Papers on Readability"
+date: 2021-10-05
+categories: ["Readability"]
+---
+<div class="review">
+  <p>
+    Every well-run software project has a coding style guide,
+    and these days,
+    most projects adopt one that is already widely used
+    and supported by linting tools.
+    The aim of these guides is to make code easier to read,
+    but what factors actually influence that,
+    and can we measure the readability of code automatically?
+  </p>
+  <p>
+    To answer these questions,
+    <cite>Scalabrino2018</cite> built a sophisticated model of the textual and structural properties of source code,
+    ranging from line length to the number of concepts defined or used by a code fragment,
+    then compared that model's predictions with the number of complaints produced by FindBugs
+    (a widely-used code checker for Java)
+    and with manual ratings from several thousand developers.
+    Their model outperformed previous models,
+    with a mean <a href="https://en.wikipedia.org/wiki/Receiver_operating_characteristic#Area_under_the_curve">AUC</a> above 0.7
+    for all but one of FindBugs' categories.
+  </p>
+  <p>
+    But does this really mean those models can tell us whether code is easy to understand or not?
+    To answer that question,
+    <cite>Scalabrino2021</cite> look at how well 121 different metrics
+    correlated with evaluations of 444 code fragments from 63 different developers.
+    Their surprising finding was that <em>none</em> of the metrics examined
+    captured code understandability.
+    Combinations of metrics did slightly better,
+    but even those predictions aren't yet good enough to use in practice.
+  </p>
+  <p>
+    In between these two papers,
+    <cite>Piantadosi2020</cite> looked at how readability changes as software evolves.
+    They built a simple Markov model with four states,
+    which they tuned using commits in which developers explicitly mentioned
+    that they had improved the code's readability.
+    Their conclusions were that:
+  </p>
+  <ol>
+    <li>
+      Most files are created in a readable state:
+      in 18 out of 25 projects studied,
+      less than 10% of files were unreadable when created.
+      However,
+      there were notable exceptions:
+      in two projects about a quarter of files were initially unreadable,
+      while in a third the proportion was as high as 40%.
+    </li>
+    <li>
+      Files tend to stay in the same state,
+      i.e.,
+      readable code stays readable
+      and unreadable code stays unreadable.
+      The authors acknowledge that,
+      "The probabilities of readability changes we reported regard a single commit.
+      It could be argued that readability changes are unlikely simply because most of the changes are small
+      and thus they may affect readability only in the long run."
+      Looking more closely,
+      they found that less than 5% of files change state during the lifetime of a project.
+    </li>
+  </ol>
+  <p>
+    Finally,
+    there was one other finding from this paper that I'm still mulling over:
+  </p>
+  <blockquote>
+    …we found that 26.2% of the participants stated that they consider
+    readability more when writing code than when reviewing code
+    written by their peers, while the opposite happens only in 13.1%
+    of the cases. This suggests that developers understand the
+    importance of readability, but they consider it not a priority
+    while peer-reviewing code.
+  </blockquote>
+</div>
+<p id="Scalabrino2018" class="bib"><cite>Scalabrino2018</cite>
+  Simone Scalabrino, Mario Linares-Vásquez, Rocco Oliveto, and Denys Poshyvanyk:
+  "<a href="https://doi.org/10.1002/smr.1958">A comprehensive model for code readability</a>".
+  <em>Journal of Software: Evolution and Process</em>, 30(6), 2018,
+  <a class="doi" href="https://doi.org/10.1002/smr.1958">10.1002/smr.1958</a>.
+</p>
+<blockquote class="abstract">
+  Unreadable code could compromise program comprehension, and it could
+  cause the introduction of bugs. Code consists of mostly natural
+  language text, both in identifiers and comments, and it is a
+  particular form of text. Nevertheless, the models proposed to
+  estimate code readability take into account only structural aspects
+  and visual nuances of source code, such as line length and alignment
+  of characters. In this paper, we extend our previous work in which
+  we use textual features to improve code readability models. We
+  introduce 2 new textual features, and we reassess the readability
+  prediction power of readability models on more than 600 code
+  snippets manually evaluated, in terms of readability, by 5K+
+  people. We also replicate a study by Buse and Weimer on the
+  correlation between readability and FindBugs warnings, evaluating
+  different models on 20 software systems, for a total of 3M lines of
+  code. The results demonstrate that (1) textual features complement
+  other features and (2) a model containing all the features achieves
+  a significantly higher accuracy as compared with all the other
+  state-of-the-art models. Also, readability estimation resulting from
+  a more accurate model, ie, the combined model, is able to predict
+  more accurately FindBugs warnings.
+</blockquote>
+<p id="Scalabrino2021" class="bib"><cite>Scalabrino2021</cite>
+  Simone Scalabrino, Gabriele Bavota, Christopher Vendome, Mario Linares-Vasquez, Denys Poshyvanyk, and Rocco Oliveto:
+  "<a href="https://doi.org/10.1109/tse.2019.2901468">Automatically Assessing Code Understandability</a>".
+  <em>IEEE Transactions on Software Engineering</em>, 47(3), 2021,
+  <a class="doi" href="https://doi.org/10.1109/tse.2019.2901468">10.1109/tse.2019.2901468</a>.
+</p>
+<blockquote class="abstract">
+  Understanding software is an inherent requirement for many
+  maintenance and evolution tasks. Without a thorough understanding of
+  the code, developers would not be able to fix bugs or add new
+  features timely. Measuring code understandability might be useful to
+  guide developers in writing better code, and could also help in
+  estimating the effort required to modify code components.
+  Unfortunately, there are no metrics designed to assess the
+  understandability of code snippets. In this work, we perform an
+  extensive evaluation of 121 existing as well as new code-related,
+  documentation-related, and developer-related metrics. We try to (i)
+  correlate each metric with understandability and (ii) build models
+  combining metrics to assess understandability. To do this, we use
+  444 human evaluations from 63 developers and we obtained a bold
+  negative result: none of the 121 experimented metrics is able to
+  capture code understandability, not even the ones assumed to assess
+  quality attributes apparently related, such as code readability and
+  complexity. While we observed some improvements while combining
+  metrics in models, their effectiveness is still far from making them
+  suitable for practical applications. Finally, we conducted
+  interviews with five professional developers to understand the
+  factors that influence their ability to understand code snippets,
+  aiming at identifying possible new metrics.
+</blockquote>
+<p id="Piantadosi2020" class="bib"><cite>Piantadosi2020</cite>
+  Valentina Piantadosi, Fabiana Fierro, Simone Scalabrino, Alexander Serebrenik, and Rocco Oliveto:
+  "<a href="https://doi.org/10.1007/s10664-020-09886-9">How does code readability change during software evolution?</a>".
+  <em>Empirical Software Engineering</em>, 25(6), 2020,
+  <a class="doi" href="https://doi.org/10.1007/s10664-020-09886-9">10.1007/s10664-020-09886-9</a>.
+</p>
+<blockquote class="abstract">
+  Code reading is one of the most frequent activities in software
+  maintenance. Such an activity aims at acquiring information from the
+  code and, thus, it is a prerequisite for program comprehension:
+  developers need to read the source code they are going to modify
+  before implementing changes. As the code changes, so does its
+  readability; however, it is not clear yet how code readability
+  changes during software evolution. To understand how code
+  readability changes when software evolves, we studied the history of
+  25 open source systems. We modeled code readability evolution by
+  defining four states in which a file can be at a certain point of
+  time (non-existing, other-name, readable, and unreadable). We used
+  the data gathered to infer the probability of transitioning from one
+  state to another one. In addition, we also manually checked a
+  significant sample of transitions to compute the performance of the
+  state-of-the-art readability prediction model we used to calculate
+  the transition probabilities. With this manual analysis, we found
+  that the tool correctly classifies all the transitions in the
+  majority of the cases, even if there is a loss of accuracy compared
+  to the single-version readability estimation. Our results show that
+  most of the source code files are created readable. Moreover, we
+  observed that only a minority of the commits change the readability
+  state. Finally, we manually carried out qualitative analysis to
+  understand what makes code unreadable and what developers do to
+  prevent this. Using our results we propose some guidelines (i) to
+  reduce the risk of code readability erosion and (ii) to promote best
+  practices that make code readable.
+</blockquote>
