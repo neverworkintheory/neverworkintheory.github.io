@@ -1,0 +1,79 @@
+---
+layout: post
+author: Greg Wilson
+title: "Software Documentation Issues Unveiled"
+date: 2021-10-06
+categories: ["Documentation"]
+---
+<div class="review">
+  <p>
+    One of the smartest things a mid-sized tech company can do is hire a librarian.
+    You probably don't need one if you're two dozen people who all know each other
+    and have at least a vague idea of what one another are doing,
+    but by the time you have a hundred staff,
+    someone needs to be responsible for figuring out how the wiki and Google Docs should be organized,
+    what tags every repo should have,
+    and so on.
+    Without that,
+    entropy slowly takes over
+    and you spend an ever-increasing amount of time trying to find the design docs
+    that you're sure someone wrote last year
+    except maybe they were under their personal account and we no longer have access.
+  </p>
+  <p>
+    <cite>Aghajani2019</cite> doesn't tackle this problem directly.
+    Instead,
+    it does the essential pre-work of taxonomizing the problems people have with software documentation
+    by scraping data from GitHub issues, pull requests, mailing lists, and Stack Overflow.
+    The result is the sort of evidence-based categorization that librarians (and the authors of linting tools) swoon over—you can
+    click on the figure to get the full-sized version:
+  </p>
+  <div align="center">
+    <a href="{{'/files/2021/Aghajani2019-taxonomy.svg' | relative_url}}">
+      <img src="{{'/files/2021/Aghajani2019-taxonomy.svg' | relative_url}}" alt="Taxonomy of documentation issues" width="80%" />
+    </a>
+  </div>
+  <p>
+    The full paper explains what each category and sub-category means,
+    how common it is,
+    and the evidence the authors have to justify its inclusion.
+    As a bonus,
+    they have made <a href="https://github.com/REVEAL-ICSE19-DocIssues/ReplicationPackage">a replication package on GitHub</a>
+    if you'd like to explore their data yourself.
+    It's the kind of quiet foundational contribution that our field needs more of,
+    and I hope it will lead to tools that automatically warn developers about common problems.
+  </p>
+  <p>
+    <em>
+      For more on how to make things findable,
+      please see <cite>Lin2020</cite>.
+    </em>
+  </p>
+</div>
+<p id="Aghajani2019" class="bib"><cite>Aghajani2019</cite>
+  Emad Aghajani, Csaba Nagy, Olga Lucero Vega-Marquez, Mario Linares-Vasquez, Laura Moreno, Gabriele Bavota, and Michele Lanza:
+  "<a href="https://doi.org/10.1109/icse.2019.00122">Software Documentation Issues Unveiled</a>".
+  <em>Proc. International Conference on Software Engineering (ICSE)</em>,
+  2019,
+  <a class="doi" href="https://doi.org/10.1109/icse.2019.00122">10.1109/icse.2019.00122</a>.
+</p>
+<blockquote class="abstract">
+  (Good) Software documentation provides developers and users with a
+  description of what a software system does, how it operates, and how
+  it should be used. For example, technical documentation (e.g., an
+  API reference guide) aids developers during evolution/maintenance
+  activities, while a user manual explains how users are to interact
+  with a system. Despite its intrinsic value, the creation and the
+  maintenance of documentation is often neglected, negatively
+  impacting its quality and usefulness, ultimately leading to a
+  generally unfavourable take on documentation. Previous studies
+  investigating documentation issues have been based on surveying
+  developers, which naturally leads to a somewhat biased view of
+  problems affecting documentation. We present a large scale empirical
+  study, where we mined, analyzed, and categorized 878
+  documentation-related artifacts stemming from four different
+  sources, namely mailing lists, Stack Overflow discussions, issue
+  repositories, and pull requests. The result is a detailed taxonomy
+  of documentation issues from which we infer a series of actionable
+  proposals both for researchers and practitioners.
+</blockquote>
