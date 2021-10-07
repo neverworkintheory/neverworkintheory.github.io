@@ -1,0 +1,69 @@
+---
+layout: post
+author: Greg Wilson
+title: "How Do Software Developers Use GitHub Actions?"
+date: 2021-10-07
+categories: ["Automation"]
+---
+<div class="review">
+  <p>
+    Today is my fourth day in the first full-time programming job I've had in ten years.
+    Some things have stayed the same (meetings, t-shirts, and package management problems),
+    but others have changed:
+    I'm finally going to have to learn how to use Docker and cloud-based microservices,
+    and where pre- and post-commit hooks were a rarity a decade ago,
+    almost every step of development is now supported by automated checks.
+  </p>
+  <p>
+    <cite>Kinsman2021</cite> looks at how teams use GitHub Actions
+    to implement those checks and support development workflows in other ways.
+    They found that the most common operations are (in order)
+    continuous integration,
+    miscellaneous utilities (such as reading configuration files),
+    deployment,
+    publishing,
+    and code quality/code review,
+    with a long tail of other kinds of actions.
+    (Almost 40% of the actions they found fell into the "Uncategorized" bucket.)
+    As for impact,
+    they found that after adopting GitHub Actions,
+    projects had more rejected pull requests and fewer commits on merged pull requests;
+    adopting Actions <em>didn't</em> affect the number of merged pull requests,
+    the rate of comments on PRs,
+    or several other variables.
+  </p>
+  <p>
+    Actions were still fairly new when the study was done,
+    so I hope the authors will do a follow-up.
+    Better yet,
+    I hope they will automate their data collection and analysis to provide continuous updates,
+    which would be in the spirit of what they are studying.
+  </p>
+</div>
+<p id="Kinsman2021" class="bib"><cite>Kinsman2021</cite>
+  Timothy Kinsman, Mairieli Wessel, Marco A. Gerosa, and Christoph Treude:
+  "<a href="https://doi.org/10.1109/msr52588.2021.00054">How Do Software Developers Use GitHub Actions to Automate Their Workflows?</a>".
+  <em>Proc. International Conference on Mining Software Repositories (MSR)</em>,
+  2021,
+  <a class="doi" href="https://doi.org/10.1109/msr52588.2021.00054">10.1109/msr52588.2021.00054</a>.
+</p>
+<blockquote class="abstract">
+  Automated tools are frequently used in social coding repositories to
+  perform repetitive activities that are part of the distributed
+  software development process. Recently, GitHub introduced GitHub
+  Actions, a feature providing automated work-flows for repository
+  maintainers. Although several Actions have been built and used by
+  practitioners, relatively little has been done to evaluate
+  them. Understanding and anticipating the effects of adopting such
+  kind of technology is important for planning and management. Our
+  research is the first to investigate how developers use Actions and
+  how several activity indicators change after their adoption. Our
+  results indicate that, although only a small subset of repositories
+  adopted GitHub Actions to date, there is a positive perception of
+  the technology. Our findings also indicate that the adoption of
+  GitHub Actions increases the number of monthly rejected pull
+  requests and decreases the monthly number of commits on merged pull
+  requests. These results are especially relevant for practitioners to
+  understand and prevent undesirable effects on their
+  projects.
+</blockquote>
