@@ -33,7 +33,7 @@ def add_credit(credit, entry):
         f'No author or editor in {entry}'
     source = entry['author'] if ('author' in entry) else entry['editor']
     for person in [x.strip() for x in SPLIT.split(source)]:
-        person = unlatex(person)
+        person = util.unlatex(person)
         person = normalize(person)
         if person not in credit:
             credit[person] = []
@@ -62,38 +62,5 @@ def normalize(person):
     return f'{back}, {front}'
 
         
-def unlatex(s):
-    '''Remove LaTeX isms.'''
-    return s\
-        .replace('---', '—')\
-        .replace(r'{\AA}', 'Å')\
-        .replace(r'{\aa}', 'å')\
-        .replace(r'\"{a}', 'ä')\
-        .replace(r"\'{a}", 'á')\
-        .replace(r"\'{c}", 'ć')\
-        .replace(r"\'{e}", 'é')\
-        .replace(r"\'{E}", 'É')\
-        .replace(r"{\'{\i}}", 'í')\
-        .replace(r"\'{i}", 'í')\
-        .replace(r"\'{o}", 'ó')\
-        .replace(r"\'{u}", 'ú')\
-        .replace(r'\"{o}', 'ö')\
-        .replace(r'\'{O}', 'Ó')\
-        .replace(r'\'{o}', 'ó')\
-        .replace(r'\"{u}', 'ü')\
-        .replace(r'{\o}', 'ø')\
-        .replace(r'\c{C}', 'Ç')\
-        .replace(r'\c{c}', 'ç')\
-        .replace(r'\textquotesingle', "'")\
-        .replace(r'\textquotedblleft', "'")\
-        .replace(r'\textquotedblright', "'")\
-        .replace(r'{\ldots}', '…')\
-        .replace(r'{\textemdash}', '—')\
-        .replace('{', '')\
-        .replace('}', '')\
-        .replace('\\', '')\
-        .replace('  ', ' ')
-
-
 if __name__ == '__main__':
     main()
