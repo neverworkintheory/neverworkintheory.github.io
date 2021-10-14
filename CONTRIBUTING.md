@@ -110,6 +110,7 @@ Our entries have been written by:
 - [Felienne Hermans](https://www.felienne.com/)
 - [Lorin Hochstein](http://lorinhochstein.org/)
 - [Fayola Peters](https://lero.ie/lero-15/fayola-peters)
+- [Eddie Antonio Santos](https://eddieantonio.ca/)
 - [Leif Singer](https://leif.me/)
 - [Andreas Stefik](http://web.cs.unlv.edu/stefika/)
 - [Christoph Treude](https://ctreude.ca/)
