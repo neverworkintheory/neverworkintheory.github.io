@@ -114,6 +114,7 @@ Our entries have been written by:
 - [Andreas Stefik](http://web.cs.unlv.edu/stefika/)
 - [Christoph Treude](https://ctreude.ca/)
 - [Greg Wilson](https://third-bit.com/)
+- [Donny Winston](https://donnywinston.com/)
 
 We are also grateful to [Shashi Kumar](https://www.linkedin.com/in/shashi-kumar-371b2649/)
 and [Bailey Harrington](https://github.com/baileythegreen)

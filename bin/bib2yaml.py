@@ -60,56 +60,6 @@ CONVERT = {
     'year': _number_if_possible
 }
 
-LATEX_CHARS = (
-    ('---', '—'),
-    (r"\'{E}", 'É'),
-    (r"\'{S}", 'Ś'),
-    (r"\'{a}", 'á'),
-    (r"\'{c}", 'ć'),
-    (r"\'{e}", 'é'),
-    (r"\'{i}", 'í'),
-    (r"\'{o}", 'ó'),
-    (r"\'{u}", 'ú'),
-    (r"{\'{\i}}", 'í'),
-    (r'\"{a}', 'ä'),
-    (r'\"{o}', 'ö'),
-    (r'\"{u}', 'ü'),
-    (r'\'{O}', 'Ó'),
-    (r'\'{o}', 'ó'),
-    (r'\c{C}', 'Ç'),
-    (r'\c{c}', 'ç'),
-    (r'\v{r}', 'ř'),
-    (r'\v{z}', 'ž'),
-    (r'\~{a}', 'ã'),
-    (r'\~{n}', 'ñ'),
-    (r'{\AA}', 'Å'),
-    (r'{\aa}', 'å'),
-    (r'{\o}', 'ø'),
-    (r'\%', '%'),
-    (r'\#', '#'),
-    (r'${\approx}$', '≈'),
-    (r'${\pm}$', '±'),
-    (r'${\times}$', '×'),
-    (r'\textquotesingle', "'"),
-    (r'\textquotedblleft', "'"),
-    (r'\textquotedblright', "'"),
-    (r'{\ldots}', '…'),
-    (r'{\textemdash}', '—'),
-    (r'{\textendash}', '–'),
-    ('{', ''),
-    ('}', ''),
-    ('\$', '$'),
-    ('\\', ''),
-    ('  ', ' '),
-    ('&', '&amp;'),
-    ('<', '&lt;'),
-    ('>', '&gt;')
-)
-
-LATEX_MACROS = [
-    re.compile(r'\\texttt{(.+?)}') # fragile: does not handle nested {}
-]
-
 # ----------------------------------------------------------------------
 
 def main(args):
@@ -148,20 +98,11 @@ def cleanup(options, entry):
 
     for key in entry:
         if type(entry[key]) == str:
-            entry[key] = unlatex(entry[key])
+            entry[key] = util.unlatex(entry[key])
         elif type(entry[key]) == list:
-            entry[key] = [unlatex(s) for s in entry[key]]
+            entry[key] = [util.unlatex(s) for s in entry[key]]
 
     return entry
-
-
-def unlatex(s):
-    '''Remove LaTeX isms.'''
-    for pattern in LATEX_MACROS:
-        s = pattern.sub(lambda x: x.group(1), s)
-    for (original, replacement) in LATEX_CHARS:
-        s = s.replace(original, replacement)
-    return s
 
 
 def get_options():
