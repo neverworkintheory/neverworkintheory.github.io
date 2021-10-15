@@ -1,0 +1,60 @@
+---
+layout: post
+author: Greg Wilson
+title: "Authorship Attribution of Source Code"
+date: 2021-10-15
+categories: ["Authorship", "Machine Learning"]
+---
+<div class="review">
+  <p>
+    The question, "Who actually wrote this code?" comes up in many contexts,
+    from plagiarism detection in schoolwork to design recovery in legacy systems.
+    <cite>Bogomolov2021</cite> presents two machine learning approaches to the problem
+    using <a href="https://en.wikipedia.org/wiki/Neural_network">neural networks</a>
+    and <a href="https://en.wikipedia.org/wiki/Random_forest">random forests</a>.
+    Unlike most earlier work,
+    these models operate on paths through the source code's <a href="https://en.wikipedia.org/wiki/Abstract_syntax_tree">abstract syntax tree</a> (AST).
+    The authors find that:
+  </p>
+  <ul>
+    <li>
+      their random forest approach outperforms the previous best result on C++,
+    </li>
+    <li>
+      it matches the best performance of previous systems on Python, and
+    </li>
+    <li>
+      both of their approaches outperform previous results on Java.
+    </li>
+  </ul>
+  <p>
+    I have reservations about how eagerly and uncritically some researchers are applying machine learning to software engineering problems,
+    but this study seems to have been well designed and well controlled,
+    and their use of ASTs to make their tools language-agnostic is really interesting.
+    I look forward to hearing more from this team.
+  </p>
+</div>
+<p id="Bogomolov2021" class="bib"><cite>Bogomolov2021</cite>
+  Egor Bogomolov, Vladimir Kovalenko, Yurii Rebryk, Alberto Bacchelli, and Timofey Bryksin:
+  "<a href="https://doi.org/10.1145/3468264.3468606">Authorship attribution of source code: a language-agnostic approach and applicability in software engineering</a>".
+  <em>Proc. European Software Engineering Conference/International Symposium on the Foundations of Software Engineering (ESEC/FSE)</em>, 2021, <a class="doi" href="https://doi.org/10.1145/3468264.3468606">10.1145/3468264.3468606</a>.
+</p>
+<blockquote class="abstract">
+  Authorship attribution (i.e., determining who is the author of a
+  piece of source code) is an established research
+  topic. State-of-the-art results for the authorship attribution
+  problem look promising for the software engineering field, where
+  they could be applied to detect plagiarized code and prevent legal
+  issues. With this article, we first introduce a new
+  language-agnostic approach to authorship attribution of source
+  code. Then, we discuss limitations of existing synthetic datasets
+  for authorship attribution, and propose a data collection approach
+  that delivers datasets that better reflect aspects important for
+  potential practical use in software engineering. Finally, we
+  demonstrate that high accuracy of authorship attribution models on
+  existing datasets drastically drops when they are evaluated on more
+  realistic data. We outline next steps for the design and evaluation
+  of authorship attribution models that could bring the research
+  efforts closer to practical use for software
+  engineering.
+</blockquote>
