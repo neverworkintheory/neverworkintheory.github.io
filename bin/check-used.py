@@ -13,15 +13,10 @@ CITE = re.compile('<cite>(.+?)</cite>', re.MULTILINE + re.DOTALL)
 def main():
     options = get_options()
     used = util.get_entries(options.strings, options.used)
-    unreviewed = get_unreviewed(options.unreviewed)
+    unreviewed = util.get_unreviewed(options.unreviewed)
     mentions = get_mentions(options.pagedir)
     problems = check(options, used, mentions, unreviewed)
     report(options, problems)
-
-
-def get_unreviewed(filename):
-    with open(filename, 'r') as reader:
-        return set([key.strip() for key in reader])
 
 
 def get_mentions(pagedir):

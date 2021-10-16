@@ -76,6 +76,13 @@ def get_bib(filename, strings, text):
         e['FILENAME'] = filename
     return entries
 
+
+def get_unreviewed(filename):
+    '''Get set of unreviewed bibliography entries.'''
+    with open(filename, 'r') as reader:
+        return set([key.strip() for key in reader])
+
+
 def unlatex(s):
     '''Remove LaTeX isms.'''
     for pattern in LATEX_MACROS:
