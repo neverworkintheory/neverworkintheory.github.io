@@ -54,18 +54,16 @@ def get_options():
 
 
 def report(credit):
-    print('<ul>')
+    print('<table>')
+    print('<tr><th>Name</th><th>Citation</th><th>Reviewed</th></tr>')
     for person in sorted(credit.keys()):
-        cites = [report_cite(*c) for c in credit[person]]
-        print(f'<li>{person}: {", ".join(cites)}</li>')
-    print('</ul>')
-
-
-def report_cite(key, reviewed):
-    key = f'<a href="/bib/#{key}">{key}</a>'
-    _, year, month, day, _ = reviewed.split('/')
-    reviewed = f'<a href="{{{{\'{reviewed}\' | relative_url}}}}">{year}-{month}-{day}</a>'
-    return f'{key} ({reviewed})'
+        for (i, (key, reviewed)) in enumerate(credit[person]):
+            p_col = f'<td>{person}</td>' if (i == 0) else '<td></td>'
+            k_col = f'<td><a href="/bib/#{key}">{key}</a></td>'
+            _, year, month, day, _ = reviewed.split('/')
+            r_col = f'<td><a href="{{{{\'{reviewed}\' | relative_url}}}}">{year}-{month}-{day}</a></td>'
+            print(f'<tr>{p_col}{k_col}{r_col}</tr>')
+    print('</table>')
 
 
 def normalize(person):
