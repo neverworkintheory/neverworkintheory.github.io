@@ -108,6 +108,10 @@ check-ascii:
 check-bib:
 	@bin/check-bib.py ${STRINGS_OPTION} --inputs ${NWIT_BIB} ${TODO_BIB}
 
+## check-pdf: check that PDFs exist (use PDFDIR=<path>)
+check-pdf:
+	@bin/check-pdf.py ${STRINGS_OPTION} --inputs ${NWIT_BIB} ${TODO_BIB} --pdfdir ${PDFDIR}
+
 ## check-used: check which papers have been used or not
 check-used:
 	@bin/check-used.py --pagedir _posts ${STRINGS_OPTION} --used ${NWIT_BIB} --unreviewed ${UNREVIEWED_TXT}
