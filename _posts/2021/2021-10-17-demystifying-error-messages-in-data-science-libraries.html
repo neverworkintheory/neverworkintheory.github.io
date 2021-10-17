@@ -1,0 +1,103 @@
+---
+layout: post
+author: Eddie Antonio Santos
+title: "Demystifying 'Bad' Error Messages in Data Science Libraries"
+date: 2021-10-17
+categories: ["Data Science", "Error Messages"]
+---
+<div class="review">
+  <p>
+    As a computing educator and an occasional software library developer I
+    often feel that a big portion of novice frustration when coding can be
+    resolved by developers writing "better" error messages.
+    <cite>Tao2021</cite> provides evidence that dashes my dreams, but
+    also provides actionable suggestions.
+  </p>
+  <p>
+    The authors mined errors that were raised by six popular
+    Python data science libraries: NumPy, Panadas, SciPy, scikit-learn,
+    TensorFlow, and Gensim. With this large list of possible errors, they found
+    possible fixes by doing what most people I know would do: search that
+    error message on StackOverflow. They categorize each error messages as
+    being either <strong>clear</strong>, <strong>uninformative</strong>, or
+    <strong>misleading</strong>. Note that people still asked for help for
+    resolving "clear" messages under this categorization.
+  </p>
+  <p>
+    They conclude that some error messages are <strong>inevitably misleading
+    or uninformative</strong>, due to the libraries being unable to
+    understand <strong>user intent</strong> or do not have access to
+    understand <strong>external errors</strong> such as mistakes that occur
+    outside of the library, but are detected once interacting with the library
+    code.
+  </p>
+  <p>
+    All hope is not lost—the authors provide a few suggestions:
+    For <strong>library users</strong>:
+  </p>
+  <ul>
+    <li>
+      The library does not understand your ultimate goal,
+      and this makes some direct explanations impossible.
+      With this in mind:
+    </li>
+    <li>improve your understating of the problem domain at hand,</li>
+    <li>improve your understanding of the programming language, and</li>
+    <li>read relevant library documentation.</li>
+  </ul>
+  <p>
+    For <strong>library developers</strong>:
+  </p>
+  <ul>
+    <li>
+      Have your library fail fast and add robust error handling to prevent
+      internal errors from creeping out of the library code and confusing
+      users.
+    </li>
+    <li>
+      Error messages should focus on "completeness", such as providing the
+      relevant runtime values that caused an error.
+    </li>
+    <li>
+      Add actionable instructions on how to resolve the error.
+    </li>
+    <li>
+      Instead of stating that some value or state is not allowed,
+      state what <em>is</em> allowed.
+    </li>
+    <li>
+      Remember: messages that are clear to developers are not always clear to end users.
+    </li>
+  </ul>
+</div>
+<p id="Tao2021" class="bib"><cite>Tao2021</cite>
+  Yida Tao, Zhihui Chen, Yepang Liu, Jifeng Xuan, Zhiwu Xu, and Shengchao Qin:
+  "<a href="https://doi.org/10.1145/3468264.3468560">Demystifying 'bad' error messages in data science libraries</a>".
+  <em>Proc. European Software Engineering Conference/International Symposium on the Foundations of Software Engineering (ESEC/FSE)</em>, 2021, <a class="doi" href="https://doi.org/10.1145/3468264.3468560">10.1145/3468264.3468560</a>.
+</p>
+<blockquote class="abstract">
+  <p>
+    Error messages are critical starting points for debugging. Unfortunately,
+    they seem to be notoriously cryptic, confusing, and uninformative. Yet, it
+    still remains a mystery why error messages receive such bad reputations,
+    especially given that they are merely very short pieces of natural
+    language text. In this paper, we empirically demystify the causes and
+    fixes of "bad" error messages, by qualitatively studying 201 Stack
+    Overflow threads and 335 GitHub issues. We specifically focus on error
+    messages encountered in data science development, which is an increasingly
+    important but not well studied domain.
+  </p>
+  <p>
+    We found that the causes of "bad" error messages are far more complicated
+    than poor phrasing or flawed articulation of error message content. Many
+    error messages are inherently and inevitably misleading or uninformative,
+    since libraries do not know user intentions and cannot "see" external
+    errors. Fixes to error-message-related issues mostly involve source code
+    changes, while exclusive message content updates only take up a small
+    portion. In addition, whether an error message is informative or helpful
+    is not always clear-cut; even error messages that clearly pinpoint faults
+    and resolutions can still cause confusion for certain users. These
+    findings thus call for a more in-depth investigation on how error messages
+    should be evaluated and improved in the future.
+  </p>
+</blockquote>
