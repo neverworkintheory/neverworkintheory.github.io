@@ -1,0 +1,64 @@
+---
+layout: post
+author: Greg Wilson
+title: "Bad Practices in Continuous Integration"
+date: 2021-10-18
+categories: ["Continuous Integration"]
+---
+<div class="review">
+  <p>
+    The slow but steady normalization of continuous integration (CI)
+    has changed software development just as profoundly as reliance on Q&amp;A sites:
+    by the time I have merged a pull request into the <code>main</code> branch
+    of one of the project's I'm working on,
+    a dozen different checks and actions have run automatically,
+    at least half of which could reject the merge.
+    I believe this automation has made developers more productive,
+    but like any tool it can be used badly,
+    so <cite>Zampetti2020</cite> used interviews and mined Stack Overflow posts to find out how.
+    Their <a href="{{'/files/2021/Zampetti2020-catalog.pdf' | relative_url}}">complete catalog</a>
+    divides 79 distinct smells into seven categories—repository issues,
+    infrastructure choices,
+    build process organization,
+    build maintainability,
+    quality assurance,
+    delivery process,
+    and culture—and the underlying data is
+    <a href="http://home.ing.unisannio.it/fiorella.zampetti/datasets/CIBadPractices.zip">available online</a>.
+    As with evidence-based taxonomies in other domains,
+    I hope this work will be taken up by people building CI tools
+    (and linters for those tools).
+  </p>
+</div>
+<p id="Zampetti2020" class="bib"><cite>Zampetti2020</cite>
+  Fiorella Zampetti, Carmine Vassallo, Sebastiano Panichella, Gerardo Canfora, Harald Gall, and Massimiliano Di Penta:
+  "<a href="https://doi.org/10.1007/s10664-019-09785-8">An empirical characterization of bad practices in continuous integration</a>".
+  <em>Empirical Software Engineering</em>, 25(2), 2020,
+  <a class="doi" href="https://doi.org/10.1007/s10664-019-09785-8">10.1007/s10664-019-09785-8</a>.
+</p>
+<blockquote class="abstract">
+  Continuous Integration (CI) has been claimed to introduce several
+  benefits in software development, including high software quality
+  and reliability. However, recent work pointed out challenges,
+  barriers and bad practices characterizing its adoption. This paper
+  empirically investigates what are the bad practices experienced by
+  developers applying CI. The investigation has been conducted by
+  leveraging semi-structured interviews of 13 experts and mining more
+  than 2,300 Stack Overflow posts. As a result, we compiled a catalog
+  of 79 CI bad smells belonging to 7 categories related to different
+  dimensions of a CI pipeline management and process. We have also
+  investigated the perceived importance of the identified bad smells
+  through a survey involving 26 professional developers, and discussed
+  how the results of our study relate to existing knowledge about CI
+  bad practices. Whilst some results, such as the poor usage of
+  branches, confirm existing literature, the study also highlights
+  uncovered bad practices, e.g., related to static analysis tools or
+  the abuse of shell scripts, and contradict knowledge from existing
+  literature, e.g., about avoiding nightly builds. We discuss the
+  implications of our catalog of CI bad smells for (i) practitioners,
+  e.g., favor specific, portable tools over hacking, and do not ignore
+  nor hide build failures, (ii) educators, e.g., teach CI culture, not
+  just technology, and teach CI by providing examples of what not to
+  do, and (iii) researchers, e.g., developing support for failure
+  analysis, as well as automated CI bad smell detectors.
+</blockquote>
