@@ -3,6 +3,9 @@ layout: page
 title: Contributing
 permalink: /contributing/
 ---
+<div align="center">
+  <img src="https://imgs.xkcd.com/comics/clinical_trials.png" alt="XKCD cartoon on clinical trials" />
+</div>
 
 <ul>
   <li><a href="#guidelines">Guidelines</a></li>
