@@ -1,0 +1,64 @@
+---
+layout: post
+author: Greg Wilson
+title: "Restarted and Flaky Builds on Travis CI"
+date: 2021-10-19
+categories: ["Continuous Integration"]
+---
+<div class="review">
+  <p>
+    As noted <a href="{{'/2021/10/18/bad-practices-in-continuous-integration.html' | relative_url}}">yesterday</a>,
+    the spread of continuous integration (CI) has changed software development
+    just as much as reliance on Q&amp;A sites.
+    The study of failing and restarted CI jobs reported in <cite>Durieux2020</cite>
+    gives us yet more insight into how it actually works:
+  </p>
+  <ul>
+    <li>
+      More mature and more complex projects are more likely to include restarted builds.
+    </li>
+    <li>
+      Builds are mostly restarted because of a failing test,
+      network problem,
+      or Travis CI limitation such as execution timeout.
+    </li>
+    <li>
+      In over half of the restarted builds,
+      the developers analyze and restart a build within an hour of the initial build execution,
+      which suggests developers interrupt their workflow to wait for CI results.
+    </li>
+    <li>
+      Restarted builds slow down the merging of pull requests by a factor of three,
+      bringing median merging time from 16 hours to 48 hours.
+    </li>
+  </ul>
+</div>
+<p id="Durieux2020" class="bib"><cite>Durieux2020</cite>
+  Thomas Durieux, Claire Le Goues, Michael Hilton, and Rui Abreu:
+  "<a href="https://doi.org/10.1145/3379597.3387460">Empirical Study of Restarted and Flaky Builds on Travis CI</a>".
+  <em>Proc. International Conference on Mining Software Repositories (MSR)</em>, 2020, <a class="doi" href="https://doi.org/10.1145/3379597.3387460">10.1145/3379597.3387460</a>.
+</p>
+<blockquote class="abstract">
+  Continuous Integration (CI) is a development practice where
+  developers frequently integrate code into a common codebase. After
+  the code is integrated, the CI server runs a test suite and other
+  tools to produce a set of reports (e.g., the output of linters and
+  tests). If the result of a CI test run is unexpected, developers
+  have the option to manually restart the build, re-running the same
+  test suite on the same code; this can reveal build flakiness, if the
+  restarted build outcome differs from the original build. In this
+  study, we analyze restarted builds, flaky builds, and their impact
+  on the development workflow. We observe that developers restart at
+  least 1.72% of builds, amounting to 56,522 restarted builds in our
+  Travis CI dataset. We observe that more mature and more complex
+  projects are more likely to include restarted builds. The restarted
+  builds are mostly builds that are initially failing due to a test,
+  network problem, or a Travis CI limitations such as execution
+  timeout. Finally, we observe that restarted builds have an impact on
+  development workflow. Indeed, in 54.42% of the restarted builds, the
+  developers analyze and restart a build within an hour of the initial
+  build execution. This suggests that developers wait for CI results,
+  interrupting their workflow to address the issue. Restarted builds
+  also slow down the merging of pull requests by a factor of three,
+  bringing median merging time from 16h to 48h.
+</blockquote>
