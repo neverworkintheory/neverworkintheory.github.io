@@ -1,0 +1,74 @@
+---
+layout: post
+author: Greg Wilson
+title: "What's Wrong With my Benchmark Results?"
+date: 2021-10-19
+categories: ["Benchmarking"]
+---
+<div class="review">
+  <p>
+    Years ago, I briefly worked with a team that cared a <em>lot</em> about software performance.
+    They had a comprehensive set of unit tests to check the correctness of their software,
+    but unlike any other team I'd ever worked with,
+    they automatically recorded the runtime of each of those tests
+    so that they could spot performance regressions right away.
+    It was a clever idea,
+    and they'd put a lot of work into it,
+    but unfortunately it didn't save them from releasing a new version of their code
+    that ran half as fast for their users as the previous version.
+    Their unit tests weren't representative of actual workloads,
+    so they didn't catch interaction effects that turned out to be common in the real world.
+  </p>
+  <p>
+    The moral of the story is that benchmarking is hard;
+    speaking as a former professor,
+    I think we make it harder by not teaching people how to do it properly.
+    Research like that reported in <cite>Costa2019</cite> is therefore very welcome.
+    The authors start by identifying
+    five bad practices associated with use of Java's Microbenchmark Harness:
+  </p>
+  <table>
+    <tr><th>ID</th><th>Bad JMH Practice Description</th><th>Undesired Effect</th></tr>
+    <tr><td>RETU</td><td>Not using a returned computation</td><td>Dead code elimination</td></tr>
+    <tr><td>LOOP</td><td>Using accumulation to consume values inside a loop</td><td>Loop optimization</td></tr>
+    <tr><td>FINAL</td><td>Using a final primitive for benchmark input</td><td>Constant folding</td></tr>
+    <tr><td>INVO</td><td>Running fixture methods for each benchmark method invocation</td><td>JMH overhead</td></tr>
+    <tr><td>FORK</td><td>Configuring benchmarks with zero forks</td><td>Profile-guided optimization</td></tr>
+  </table>
+  <p>
+    They then look at over a hundred open source Java projects
+    and find that (a) all of these are common in the real world
+    and (b) they have significant (misleading) impact on benchmark results.
+    All of them are fixable—the authors submitted patches to several projects—but
+    their findings leave little doubt that
+    there's a lot of room for improvement in most projects' performance measurements.
+  </p>
+</div>
+<p id="Costa2019" class="bib"><cite>Costa2019</cite>
+  Diego Elias Damasceno Costa, Cor-Paul Bezemer, Philip Leitner, and Artur Andrzejak:
+  "<a href="https://doi.org/10.1109/tse.2019.2925345">What's Wrong With My Benchmark Results? Studying Bad Practices in JMH Benchmarks</a>".
+  <em>IEEE Transactions on Software Engineering</em>, 2019,
+  <a class="doi" href="https://doi.org/10.1109/tse.2019.2925345">10.1109/tse.2019.2925345</a>.
+</p>
+<blockquote class="abstract">
+  Microbenchmarking frameworks, such as Java's Microbenchmark Harness
+  (JMH), allow developers to write fine-grained performance test
+  suites at the method or statement level. However, due to the
+  complexities of the Java Virtual Machine, developers often struggle
+  with writing expressive JMH benchmarks which accurately represent
+  the performance of such methods or statements. In this paper, we
+  empirically study bad practices of JMH benchmarks. We present a tool
+  that leverages static analysis to identify 5 bad JMH practices. Our
+  empirical study of 123 open source Java-based systems shows that
+  each of these 5 bad practices are prevalent in open source
+  software. Further, we conduct several experiments to quantify the
+  impact of each bad practice in multiple case studies, and find that
+  bad practices often significantly impact the benchmark results. To
+  validate our experimental results, we constructed seven patches that
+  fix the identified bad practices for six of the studied open source
+  projects, of which six were merged into the main branch of the
+  project. In this paper, we show that developers struggle with
+  accurate Java microbenchmarking, and provide several recommendations
+  to developers of microbenchmarking frameworks on how to improve
+  future versions of their framework.
+</blockquote>
