@@ -7,7 +7,38 @@ categories: ["Crowdsourcing", "Documentation"]
 ---
 <div class="review">
   <p>
-    Review goes here.
+    If you are a developer or programmer, seeking for an API(Application Programming Interface) code sample from <em>StackOverflow</em> to solve a scenario mustn't be a novel activity to you.
+    But why this trend of searching has grown popular rather than consulting the official documentations of the APIs? Simply, those documents only have the API
+    definitions, but lacks usage scenarios and a relevant implemented example. <a href="https://ieeexplore-ieee-org.login.ezproxy.library.ualberta.ca/document/8723145">Zhang2021a</a>
+    attempts to try mitigating this lacking by introducing <em>ADECK</em>, an algorithm to provide usage scenario enriched API documentaions mined from crowdsourcing platform
+    like- <em>StackOverflow</em>.
+  </p>
+  
+  <p>
+    <em>ADECK</em> mines different API classes from their official documentations, scrapes thrpugh StackOverflow data to filter out <b>Questions</b>(Usage Scenario) and
+    <b>Answer</b>(Code-Sample) pairs based on the mined API classes, and then clusters the similar Question-Answer pairs based on use-cases. The algorithm eventually
+    builds an enriched API documentation from these clustered "(<em>usage-scenario, code-sample</em>)" pairs. The authors carried out evaluations with human participants
+    (<b>graduate students</b>) to mimic real world scenario, and shared their results against an algorithm <em>eXoaDocs</em> with the same objective. Note that <em>ADECK</em> is trying to 
+    shift the focus from consulting crowdsource platforms for help to doucmented API use-cases with the help from a crowdsourced platform(<em>StackOverflow</em>). 
+    Interesting, isn't it? The findings of the study are:
+    <ul>
+      <li> Number of <em>ADECK</em>'s code-sample-illustrated API type is much higher than the raw documentation for <em>Java SE</em> and <em>Android AP</em>.</li>
+      <li> The code samples collected by <em>ADECK</em> is more concise, correct, and usable than <em>eXoaDocs</em>. </li>
+      <li> WIth graduate students performing, it is shown that <em>ADECK</em> enriched documentation is more productive for developers than the raw and <em>eXoaDoc</em> ones for APIs.</li>
+    </ul>
+  </p>
+  
+  <p>
+    The authors concluded with some threats to their work's validity, and future directions for improving ADECK. This clearly indicates that the approach is only
+    the very first step towards the final goal which is quite uncertain given the popularity of the crowdsourced platforms. It is, at this moment of time, unclear 
+    how ADECK can be better in popularity than StackOverflow in the future. A evaluation between ADECK's documentation and StackOverflow's Q&As would have given us some 
+    kind of notion in that regard.
+  </p>
+  
+  <p>
+    Thus, for a developer or programmer, there is a lot to take from the study. But it is with doubt that using ADECK can start mitigating the use of crowd-sourced
+    platforms, and increase using documentations for API usage helps. Although ADECK does not lack promises for the future, for time being it is not ready for the real
+    world scenario.
   </p>
 </div>
 <p id="Zhang2021a" class="bib"><cite>Zhang2021a</cite>
