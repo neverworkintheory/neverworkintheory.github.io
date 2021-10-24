@@ -8,6 +8,7 @@ Herraiz2010
 Kernighan1979
 Kernighan1981
 Kernighan1983
+Kim2013b
 Kosar2011
 Lin2020
 PerezDeRosso2013
