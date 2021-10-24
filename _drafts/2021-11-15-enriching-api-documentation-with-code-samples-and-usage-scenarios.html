@@ -7,37 +7,27 @@ categories: ["Crowdsourcing", "Documentation"]
 ---
 <div class="review">
   <p>
-    If you are a programmer, trying to find an Application Programming Interface (API) code sample on StackOverflow to solve a problem won't be a novel activity.
+    If you are a programmer, trying to find an Application Programming Interface (API) code sample on Stack Overflow to solve a problem won't be a novel activity.
     But why is searching more popular than consulting the official documentations of the APIs?
     Simply, that documentation often only has the API definitions, but lacks usage scenarios and a relevant implemented example.
-    <cite>Zhang2021a</cite> attempts to mitigate this lack by introducing ADECK, an algorithm to provide usage scenario enriched API documentaion by mining crowdsourcing platforms like Stack Overflow.
+    <cite>Zhang2021a</cite> attempts to mitigate this lack by introducing ADECK, an algorithm to provide usage scenario enriched API documentaion by mining a crowdsourcing platforms.
   </p>
   
   <p>
-    <em>ADECK</em> mines different API classes from their official documentations, scrapes thrpugh StackOverflow data to filter out <b>Questions</b>(Usage Scenario) and
-    <b>Answer</b>(Code-Sample) pairs based on the mined API classes, and then clusters the similar Question-Answer pairs based on use-cases. The algorithm eventually
+    ADECK mines different API classes from their official documentations, scrapes thrpugh Stack Overflow data to filter out Questions (Usage-Scenario) and
+    Answer (Code-Sample) pairs based on the mined API classes, and then clusters the similar Question-Answer pairs based on use-cases. The algorithm eventually
     builds an enriched API documentation from these clustered "(<em>usage-scenario, code-sample</em>)" pairs. The authors carried out evaluations with human participants
-    (<b>graduate students</b>) to mimic real world scenario, and shared their results against an algorithm <em>eXoaDocs</em> with the same objective. Note that <em>ADECK</em> is trying to 
-    shift the focus from consulting crowdsource platforms for help to doucmented API use-cases with the help from a crowdsourced platform(<em>StackOverflow</em>). 
-    Interesting, isn't it? The findings of the study are:
+    (graduate students) to mimic real world scenario, and shared results against an algorithm <em>eXoaDocs</em> with the same objective. Note that ADECK is trying to 
+    shift the focus from consulting crowdsource platforms for help to doucmented API use-cases with the help of a crowdsourced platform. 
+  </p>
+  
+  <p>
+While ADECK is not yet ready for real-world use, the findings of the study still show its potential:
     <ul>
-      <li> Number of <em>ADECK</em>'s code-sample-illustrated API type is much higher than the raw documentation for <em>Java SE</em> and <em>Android AP</em>.</li>
+      <li> The amount of code-sample-illustrated API type in the documentation produced by ADECK is much higher than the raw documentation for Java SE and Android AP.</li>
       <li> The code samples collected by ADECK are more concise, correct, and usable than those collected by eXoaDocs. </li>
-      <li> WIth graduate students performing, it is shown that <em>ADECK</em> enriched documentation is more productive for developers than the raw and <em>eXoaDoc</em> ones for APIs.</li>
+      <li> ADECK-enriched documentation is more productive for these subjects and APIs than the raw and eXoaDoc ones.</li>
     </ul>
-  </p>
-  
-  <p>
-    The authors concluded with some threats to their work's validity, and future directions for improving ADECK. This clearly indicates that the approach is only
-    the very first step towards the final goal which is quite uncertain given the popularity of the crowdsourced platforms. It is, at this moment of time, unclear 
-    how ADECK can be better in popularity than StackOverflow in the future. A evaluation between ADECK's documentation and StackOverflow's Q&As would have given us some 
-    kind of notion in that regard.
-  </p>
-  
-  <p>
-    Thus, for a developer or programmer, there is a lot to take from the study. But it is with doubt that using ADECK can start mitigating the use of crowd-sourced
-    platforms, and increase using documentations for API usage helps. Although ADECK does not lack promises for the future, for time being it is not ready for the real
-    world scenario.
   </p>
 </div>
 <p id="Zhang2021a" class="bib"><cite>Zhang2021a</cite>
