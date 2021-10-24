@@ -134,6 +134,11 @@ def link(config, entry):
     ]
 
 
+def misc(config, entry):
+    '''Convert misc to Markdown.'''
+    return link(config, entry)
+
+
 def techreport(config, entry):
     '''Convert techreport to Markdown.'''
     return [
@@ -153,6 +158,7 @@ YAML_TO_MARKDOWN = {
     'incollection': incollection,
     'inproceedings': inproceedings,
     'link': link,
+    'misc': misc,
     'techreport': techreport
 }
 

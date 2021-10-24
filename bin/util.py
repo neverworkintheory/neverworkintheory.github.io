@@ -54,8 +54,8 @@ LATEX_MACROS = [
 ]
 
 
-def get_entries(strings, source=None):
-    strings = open(strings, 'r').read()
+def get_entries(strings=None, source=None):
+    strings = open(strings, 'r').read() if (strings is not None) else ''
 
     if source is None:
         return get_bib('<stdin>', strings, sys.stdin.read())
