@@ -1,0 +1,61 @@
+---
+layout: post
+author: Eddie Antonio Santos
+title: "Error Messages in Relational Database Systems"
+date: 2021-10-28
+categories: ["Error Messages", "Databases"]
+---
+<div class="review">
+  <p>
+    When I was first introduced to SQL in my undergraduate database course, we
+    were trained on an Oracle SQL instance. <cite>Taipalus2021</cite> provides
+    evidence that I may have been just a bit happier had we used PostgreSQL
+    instead.
+  </p>
+  <p>
+    <cite>Taipalus2021</cite> studied how choice of database management system
+    (DBMS) affected the effectiveness and subjective experience of novices
+    when correcting SQL syntax errors. Overall, novices reported that the
+    error messages produced by PostgreSQL and Microsoft SQL Server were more
+    useful than error messages from MySQL, meanwhile Oracle’s error messages
+    were usually deemed the least useful — perhaps because its messages
+    generally do a poor job of indicating where an error occurs in a query.
+    However the practical differences are slight: to put it in perspective,
+    expect a 3/5 star rating for Oracle’s error messages to a 4/5 rating for
+    PostgreSQL and SQL Server.
+  </p>
+  <p>
+    In almost all cases, the choice of DBMS and their associated error
+    messages had little effect on whether the novices could actually fix the
+    error. So even if you choose PostgreSQL over MySQL for your next project,
+    you’ll still need to spend time training juniors how to write queries.
+  </p>
+</div>
+<p id="Taipalus2021" class="bib"><cite>Taipalus2021</cite>
+  Toni Taipalus, Hilkka Grahn, and Hadi Ghanbari:
+  "<a href="https://doi.org/10.1016/j.jss.2021.111034">Error messages in relational database management systems: A comparison of effectiveness, usefulness, and user confidence</a>".
+  <em>Journal of Systems and Software</em>, 181, 2021,
+  <a class="doi" href="https://doi.org/10.1016/j.jss.2021.111034">10.1016/j.jss.2021.111034</a>.
+</p>
+<blockquote class="abstract">
+  The database and the database management system (DBMS) are two of
+  the main components of any information system. Structured Query
+  Language (SQL) is the most popular query language for retrieving
+  data from the database, as well as for many other data management
+  tasks. During system development and maintenance, software
+  developers use a considerable amount of time to interpret compiler
+  error messages. The quality of these error messages has been
+  demonstrated to affect software development effectiveness, and
+  correctly formulating queries and fixing them when needed is an
+  important task for many software developers. In this study, we set
+  out to investigate how participants (N = 152) experienced the
+  qualities of error messages of four popular DBMSs in terms of error
+  message effectiveness, perceived usefulness for finding and fixing
+  errors, and error recovery confidence. Our results show differences
+  between the DBMSs by three of the four metrics, and indicate a
+  discrepancy between objective effectiveness and subjective
+  usefulness. The results suggest that although error messages have
+  perceived differences in terms of usefulness for finding and fixing
+  errors, these differences may not necessarily result in differences
+  in query fixing success rates.
+</blockquote>
