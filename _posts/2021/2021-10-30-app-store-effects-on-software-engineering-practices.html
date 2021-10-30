@@ -1,0 +1,74 @@
+---
+layout: post
+author: Greg Wilson
+title: "App Store Effects on Software Engineering Practices"
+date: 2021-10-30
+categories: ["App Store", "Development Practices"]
+---
+<div class="review">
+  <p>
+    I once heard an athletics coach say,
+    "If you change the ball, you have to change the game."
+    What she meant was that you can't play football with a tennis ball or vice versa,
+    and something similar is proving true in software engineering.
+    Once enough people have reliable high-bandwidth connections,
+    chat tools and package repositories become feasible,
+    and development practices inevitably change in response.
+  </p>
+  <p>
+    <cite>AlSubaihin2021</cite> looks at the influence one innovation—app stores—are
+    having on how developers work.
+    The biggest impact is on requirements and design:
+    most developers look in app stores to gauge the feasibility of their idea
+    and for UI design ideas,
+    and are most influenced by user reviews and screenshots.
+    Later in the cycle,
+    problem reports on the app store have significant impact on bug prioritization,
+    and the ability to send update notifications through the app store
+    enables more rapid release cycles.
+  </p>
+  <p>
+    One thing I wish the paper had included was
+    a discussion of how app stores are changing the way that
+    developers think about the ethics of data collection.
+    The authors report that:
+  </p>
+  <blockquote>
+    <p>
+      …[a]pp permissions are a worrying factor during development as importing unnecessary APIs
+      might bloat the permissions list thus making an app less desirable.
+      Furthermore,
+      during the construction phase,
+      developers settle on tracking strategy in order to implant tracking code within the app.
+    </p>
+  </blockquote>
+  <p>
+    but as far as I can see,
+    there was nothing about looking at existing apps to figure out
+    how little data could be collected or how it could be anonymized.
+    We recently started tracking traffic to this site using <a href="https://plausible.io/">Plausible</a>,
+    an open-source, <a href="https://plausible.io/privacy-focused-web-analytics">privacy-first</a> metrics tool,
+    so an empirical analysis of how the growth of app stores is affecting
+    how developers think about surveillance
+    would be a great extension to Al-Subaihin et al's work.
+  </p>
+</div>
+<p id="AlSubaihin2021" class="bib"><cite>AlSubaihin2021</cite>
+  Afnan A. Al-Subaihin, Federica Sarro, Sue Black, Licia Capra, and Mark Harman:
+  "<a href="https://doi.org/10.1109/tse.2019.2891715">App Store Effects on Software Engineering Practices</a>".
+  <em>IEEE Transactions on Software Engineering</em>, 47(2), 2021,
+  <a class="doi" href="https://doi.org/10.1109/tse.2019.2891715">10.1109/tse.2019.2891715</a>.
+</p>
+<blockquote class="abstract">
+  In this paper, we study the app store as a phenomenon from the
+  developers' perspective to investigate the extent to which app
+  stores affect software engineering tasks. Through developer
+  interviews and questionnaires, we uncover findings that highlight
+  and quantify the effects of three high-level app store themes:
+  bridging the gap between developers and users, increasing market
+  transparency and affecting mobile release management. Our findings
+  have implications for testing, requirements engineering and mining
+  software repositories research fields. These findings can help guide
+  future research in supporting mobile app developers through a deeper
+  understanding of the app store-developer interaction.
+</blockquote>
