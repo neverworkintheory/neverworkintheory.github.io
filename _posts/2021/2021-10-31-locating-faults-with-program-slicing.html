@@ -1,0 +1,72 @@
+---
+layout: post
+author: Greg Wilson
+title: "Locating Faults with Program Slicing"
+date: 2021-10-31
+categories: ["Debugging", "Program Slicing"]
+---
+<div class="review">
+  <p>
+    Most programmers spend more time debugging than writing new code,
+    but books and courses on debugging are few and far between,
+    and testing tools to help people figure out if code is buggy or not
+    are much more common than ones to help them figure out where the bugs are.
+  </p>
+  <p>
+    Thankfully, there is a growing body of research on isolating and repairing bugs.
+    One interesting approach is statistical fault localization:
+    given a set of tests that pass and another set that fail,
+    look at the correlation between statements that are executed by failing tests
+    but <em>not</em> by passing tests
+    in order to identify problematic regions.
+    Another is dynamic slicing:
+    starting from the statement where the fault occurred,
+    trace backward recursively through a trace of the program's execution
+    to find where the variables used in that statement were set
+    to narrow the search space for the error.
+    <cite>Zeller2009</cite> and the more recent <cite>Zeller2021</cite>
+    are excellent introductions to these techniques and others;
+    what <cite>Soremekun2021</cite> explored was how effective statistical methods are
+    when compared to dynamic program slicing.
+  </p>
+  <p>
+    Looking at over 450 bugs in 46 open source C programs,
+    they found that slicing worked better when a single statement was responsible for the problem,
+    but statistical analysis worked better when the fault was caused by multiple errors interacting.
+    However,
+    a hybrid approach was better than either on its own,
+    regardless of which statistical method was used.
+    I hope these findings will spur the developers of IDEs and testing harnesses
+    to include support for both kinds of debugging.
+  </p>
+</div>
+<p id="Soremekun2021" class="bib"><cite>Soremekun2021</cite>
+  Ezekiel Soremekun, Lukas Kirschner, Marcel Böhme, and Andreas Zeller:
+  "<a href="https://doi.org/10.1007/s10664-020-09931-7">Locating faults with program slicing: an empirical analysis</a>".
+  <em>Empirical Software Engineering</em>, 26(3), 2021,
+  <a class="doi" href="https://doi.org/10.1007/s10664-020-09931-7">10.1007/s10664-020-09931-7</a>.
+</p>
+<blockquote class="abstract">
+  Statistical fault localization is an easily deployed technique for
+  quickly determining candidates for faulty code locations. If a human
+  programmer has to search the fault beyond the top candidate
+  locations, though, more traditional techniques of following
+  dependencies along dynamic slices may be better suited. In a large
+  study of 457 bugs (369 single faults and 88 multiple faults) in 46
+  open source C programs, we compare the effectiveness of statistical
+  fault localization against dynamic slicing. For single faults, we
+  find that dynamic slicing was eight percentage points more effective
+  than the best performing statistical debugging formula; for 66% of
+  the bugs, dynamic slicing finds the fault earlier than the best
+  performing statistical debugging formula. In our evaluation, dynamic
+  slicing is more effective for programs with single fault, but
+  statistical debugging performs better on multiple faults. Best
+  results, however, are obtained by a hybrid approach : If programmers
+  first examine at most the top five most suspicious locations from
+  statistical debugging, and then switch to dynamic slices, on
+  average, they will need to examine 15% (30 lines) of the code. These
+  findings hold for 18 most effective statistical debugging formulas
+  and our results are independent of the number of faults (i.e. single
+  or multiple faults) and error type (i.e. artificial or real
+  errors).
+</blockquote>

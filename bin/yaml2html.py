@@ -189,9 +189,13 @@ def article_info(config, entry):
 
 def book_info(config, entry):
     '''Generate book information.'''
-    check(('publisher' in entry) and ('year' in entry) and ('isbn' in entry),
-          f'Entry requires publisher, year, and ISBN: {entry}')
-    return f'{entry["publisher"]}, {entry["year"]}, {entry["isbn"]}.'
+    check(('publisher' in entry) and ('year' in entry),
+          f'Entry requires publisher and year: {entry}')
+    check(('isbn' in entry) or ('howpublished' in entry),
+          f'Entry requires ISBN or howpublished: {entry}')
+    details = entry["isbn"] if 'isbn' in entry \
+        else f'<a href="{entry["howpublished"]}">{entry["howpublished"]}</a>'
+    return f'{entry["publisher"]}, {entry["year"]}, {details}.'
 
 
 def book_title(config, entry):

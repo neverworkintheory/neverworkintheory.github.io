@@ -2746,6 +2746,21 @@
   reviewed = {/2021/10/02/reproducibility-and-credibility-in-empirical-software-engineering.html}
 }
 
+@article{Soremekun2021,
+  doi = {10.1007/s10664-020-09931-7},
+  url = {https://doi.org/10.1007/s10664-020-09931-7},
+  year = {2021},
+  month = apr,
+  publisher = {Springer Science and Business Media {LLC}},
+  volume = {26},
+  number = {3},
+  author = {Ezekiel Soremekun and Lukas Kirschner and Marcel B\"{o}hme and Andreas Zeller},
+  title = {Locating faults with program slicing: an empirical analysis},
+  journal = ese,
+  abstract = {Statistical fault localization is an easily deployed technique for quickly determining candidates for faulty code locations. If a human programmer has to search the fault beyond the top candidate locations, though, more traditional techniques of following dependencies along dynamic slices may be better suited. In a large study of 457 bugs (369 single faults and 88 multiple faults) in 46 open source C programs, we compare the effectiveness of statistical fault localization against dynamic slicing. For single faults, we find that dynamic slicing was eight percentage points more effective than the best performing statistical debugging formula; for 66\% of the bugs, dynamic slicing finds the fault earlier than the best performing statistical debugging formula. In our evaluation, dynamic slicing is more effective for programs with single fault, but statistical debugging performs better on multiple faults. Best results, however, are obtained by a hybrid approach : If programmers first examine at most the top five most suspicious locations from statistical debugging, and then switch to dynamic slices, on average, they will need to examine 15\% (30 lines) of the code. These findings hold for 18 most effective statistical debugging formulas and our results are independent of the number of faults (i.e. single or multiple faults) and error type (i.e. artificial or real errors).},
+  reviewed = {/2021/10/30/locating-faults-with-program-slicing.html}
+}
+
 @inproceedings{Spinellis2016,
   doi = {10.1145/2884781.2884799},
   url = {https://doi.org/10.1145/2884781.2884799},
@@ -3139,6 +3154,26 @@
   booktitle = icse,
   abstract = {Circadian rhythms are the cycles of our internal clock that play a key role in governing when we sleep and when we are active. A related concept is chronotype, which is a person's natural tendency toward activity at certain times of day and typically governs when the individual is most alert and productive. In this work we investigate chronotypes in the setting of an Introductory Computer Programming (CS1) course. Using keystroke data collected from students we investigate the existence of chronotypes through unsupervised learning. The chronotypes we find align with those of typical populations reported in the literature and our results support correlations of certain chronotypes to academic achievement. We also find a lack of support for the still-popular stereotype of a computer programmer as a night owl. The analyses are conducted on data from two universities, one in the US and one in Europe, that use different teaching methods. In comparison of the two contexts, we look into programming assignment design and administration that may promote better programming practices among students in terms of procrastination and effort.},
   reviewed = {/2021/09/26/two-papers-on-time.html}
+}
+
+@book{Zeller2009,
+  author = {Andreas Zeller},
+  title = {Why Programs Fail: A Guide to Systematic Debugging},
+  edition = {second},
+  year = {2009},
+  publisher = {Morgan Kaufmann},
+  isbn = {9780123745156},
+  abstract = {Proof that debugging has graduated from a black art to a systematic discipline. It demystifies one of the toughest aspects of software programming, showing clearly how to discover what caused software failures, and fix them with minimal muss and fuss.}
+}
+
+@book{Zeller2021,
+  author = {Andreas Zeller and Rahul Gopinath and Marcel B{\"o}hme and Gordon Fraser and Christian Holler},
+  title = {The Fuzzing Book},
+  year = {2021},
+  publisher = {CISPA Helmholtz Center for Information Security},
+  howpublished = {\url{https://www.fuzzingbook.org/}},
+  url = {https://www.fuzzingbook.org/},
+  abstract = {A live book explaining how to automate software testing by generating tests automatically.}
 }
 
 @article{Zhang2020,
