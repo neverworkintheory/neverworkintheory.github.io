@@ -8,6 +8,7 @@
 .jekyll-metadata
 .rbenv-version
 .rvmrc
+Gemfile.lock
 Thumbs.db
 __pycache__
 _site
