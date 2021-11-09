@@ -1,17 +1,5 @@
 @comment{AAA}
 
-@inproceedings{Tomassi2019,
-  doi = {10.1109/icse.2019.00048},
-  url = {https://doi.org/10.1109/icse.2019.00048},
-  year = {2019},
-  month = may,
-  publisher = {{IEEE}},
-  author = {David A. Tomassi and Naji Dmeiri and Yichen Wang and Antara Bhowmick and Yen-Chuan Liu and Premkumar T. Devanbu and Bogdan Vasilescu and Cindy Rubio-Gonzalez},
-  title = {{BugSwarm}: Mining and Continuously Growing a Dataset of Reproducible Failures and Fixes},
-  booktitle = icse,
-  abstract = {Fault-detection, localization, and repair methods are vital to software quality; but it is difficult to evaluate their generality, applicability, and current effectiveness. Large, diverse, realistic datasets of durably-reproducible faults and fixes are vital to good experimental evaluation of approaches to software quality, but they are difficult and expensive to assemble and keep current. Modern continuous-integration (CI) approaches, like TRAVIS-CI, which are widely used, fully configurable, and executed within custom-built containers, promise a path toward much larger defect datasets. If we can identify and archive failing and subsequent passing runs, the containers will provide a substantial assurance of durable future reproducibility of build and test. Several obstacles, however, must be overcome to make this a practical reality. We describe BUGSWARM, a toolset that navigates these obstacles to enable the creation of a scalable, diverse, realistic, continuously growing set of durably reproducible failing and passing versions of real-world, open-source systems. The BUGSWARM toolkit has already gathered 3,091 fail-pass pairs, in Java and Python, all packaged within fully reproducible containers. Furthermore, the toolkit can be run periodically to detect fail-pass activities, thus growing the dataset continually.}
-}
-
 @inproceedings{Abad2018,
   doi = {10.1145/3210459.3210471},
   url = {https://doi.org/10.1145/3210459.3210471},
@@ -2939,6 +2927,19 @@
   booktitle = icse,
   abstract = {Code ownership establishes a chain of responsibility for modules in large software systems. Although prior work uncovers a link between code ownership heuristics and software quality, these heuristics rely solely on the authorship of code changes. In addition to authoring code changes, developers also make important contributions to a module by reviewing code changes. Indeed, recent work shows that reviewers are highly active in modern code review processes, often suggesting alternative solutions or providing updates to the code changes. In this paper, we complement traditional code ownership heuristics using code review activity. Through a case study of six releases of the large Qt and OpenStack systems, we find that: (1) 67\%-86\% of developers did not author any code changes for a module, but still actively contributed by reviewing 21\%-39\% of the code changes, (2) code ownership heuristics that are aware of reviewing activity share a relationship with software quality, and (3) the proportion of reviewers without expertise shares a strong, increasing relationship with the likelihood of having post-release defects. Our results suggest that reviewing activity captures an important aspect of code ownership, and should be included in approximations of it in future studies.},
   reviewed = {/2016/06/07/code-ownership-revisited.html}
+}
+
+@inproceedings{Tomassi2019,
+  doi = {10.1109/icse.2019.00048},
+  url = {https://doi.org/10.1109/icse.2019.00048},
+  year = {2019},
+  month = may,
+  publisher = {{IEEE}},
+  author = {David A. Tomassi and Naji Dmeiri and Yichen Wang and Antara Bhowmick and Yen-Chuan Liu and Premkumar T. Devanbu and Bogdan Vasilescu and Cindy Rubio-Gonzalez},
+  title = {{BugSwarm}: Mining and Continuously Growing a Dataset of Reproducible Failures and Fixes},
+  booktitle = icse,
+  abstract = {Fault-detection, localization, and repair methods are vital to software quality; but it is difficult to evaluate their generality, applicability, and current effectiveness. Large, diverse, realistic datasets of durably-reproducible faults and fixes are vital to good experimental evaluation of approaches to software quality, but they are difficult and expensive to assemble and keep current. Modern continuous-integration (CI) approaches, like TRAVIS-CI, which are widely used, fully configurable, and executed within custom-built containers, promise a path toward much larger defect datasets. If we can identify and archive failing and subsequent passing runs, the containers will provide a substantial assurance of durable future reproducibility of build and test. Several obstacles, however, must be overcome to make this a practical reality. We describe BUGSWARM, a toolset that navigates these obstacles to enable the creation of a scalable, diverse, realistic, continuously growing set of durably reproducible failing and passing versions of real-world, open-source systems. The BUGSWARM toolkit has already gathered 3,091 fail-pass pairs, in Java and Python, all packaged within fully reproducible containers. Furthermore, the toolkit can be run periodically to detect fail-pass activities, thus growing the dataset continually.},
+  reviewed = {/2021/11/10/my-kingdom-for-a-dataset.html}
 }
 
 @inproceedings{Tourani2017,

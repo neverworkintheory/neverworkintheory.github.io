@@ -113,6 +113,7 @@ Our entries have been written by:
 - [Sakib Hasan](https://www.linkedin.com/in/sakib-hasan-071a05152/)
 - [Felienne Hermans](https://www.felienne.com/)
 - [Lorin Hochstein](http://lorinhochstein.org/)
+- [Alexandru Ianta](https://github.com/aianta/)
 - [Fayola Peters](https://lero.ie/lero-15/fayola-peters)
 - [Eddie Antonio Santos](https://eddieantonio.ca/)
 - [Leif Singer](https://leif.me/)
