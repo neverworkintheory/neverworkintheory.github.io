@@ -1,0 +1,27 @@
+---
+layout: post
+author: Rohan Verma
+title: "BugSwarm: Mining and Continuously Growing a Dataset of Reproducible Failures and Fixes"
+date: 2021-11-09
+categories: ["Debugging", "Program Analysis"]
+---
+<div class="review">
+  <p>
+    If you are a software developer who wants to evaluate a program repair, analysis or testing technique, but cannot find a good dataset, then let me introduce you to BugSwarm. 
+	Tomassi et al.[2019] presented the BugSwarm toolset, along with a dataset of 3091 fault-fix pairs for Java and Python, which can be used for evaluation of software testing, fault detection and repair methods. 
+	They also analyzed the feasibility of creating datasets with fault-fix pairs and found that due to errors like invalid URL, Assertion error and failure to install dependencies, only 5.56% of fault-fix pairs are reproducible. 
+	BugSwarm extracts data from Travis-CI, a Continuous Integration service for Github, therefore, it will continuously grow, will have reproducible fault-fix pairs, indicate real-world fixes to code, and will be diverse. Moreover, the BugSwarm dataset can potentially be extended to all 900k Travis-CI supported projects on Github. 
+	While authors continue to mine and reproduce additional pairs, I think that BugSwarm is a good dataset that will reduce the time and effort required to evaluate program analysis and testing methodologies while also encouraging new research and large-scale software studies.
+  
+  @INPROCEEDINGS{8812141,
+  author={Tomassi, David A. and Dmeiri, Naji and Wang, Yichen and Bhowmick, Antara and Liu, Yen-Chuan and Devanbu, Premkumar T. and Vasilescu, Bogdan and Rubio-González, Cindy},
+  booktitle={2019 IEEE/ACM 41st International Conference on Software Engineering (ICSE)}, 
+  title={BugSwarm: Mining and Continuously Growing a Dataset of Reproducible Failures and Fixes}, 
+  year={2019},
+  volume={},
+  number={},
+  pages={339-349},
+  doi={10.1109/ICSE.2019.00048}}
+  
+  </p>
+</div>
