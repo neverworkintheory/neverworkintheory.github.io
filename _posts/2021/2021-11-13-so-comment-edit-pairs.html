@@ -5,6 +5,29 @@ title: "On using Stack Overflow comment-edit pairs to recommend code maintenance
 date: 2021-11-13
 categories: ["Stack Overflow", "Usability", "Maintenance"]
 ---
+<div class="review">
+  <p>
+    Have you ever developed any software without the help of Stack Overflow? I cannot even think of it. In its 13 years of journey, Stack Overflow has become a big platform to get help in programming-related problems. It has also become a source of data for researchers to solve many existing problems in software engineering. However, [Tang et al.] are the first to evaluate Stack Overflow post edits with their related comments to solve the software maintenance problems. Their main goal was to find out how useful Stack Overflow comment-edit pairs are in making supporting tools for code maintenance like program repair, code recommender systems etc.
+  </p>
+  <p>
+    The authors used SOTorrent to automatically extract edits of code blocks in answers and mapped a comment as an invoker of the edit. The answers were selected from five popular tags of Stack Overflow: Java, JavaScript, PHP, Python and Android, and the edit-invoker comment was selected based on three conditions: 1) the comment has been made before the edit 2) the comment contains a code term that has been added to or removed from a code snippet in the edit and 3) the editor and the commenter are different users. The authors prepared a ground truth by manual analysis and evaluated the effectiveness of their automated process on the ground truth by calculating precision and recall. The precision of the automated process is relatively good, however, the recall is low. In this context, the authors gave more priority to having high precision because their goal is not to find all possible comment-edit pairs but to ensure that the identified pairs are actual. After ensuring high precision, the authors run their automated data extraction process on the full dataset.
+  </p>
+  <p>
+    The authors manually analyzed comment-edit pairs from different contexts to find out their usefulness. First, they explored the comment-edit pairs for tangled change. A tangled change is changing code in a single edit for resolving multiple issues raised by multiple comments. The tangled change in edits reduces the reusability of the comment-edit pairs as the comment for which a part of the edit occurred becomes untraceable. Next, the authors categorized the comments of the pairs to understand in what way the dataset can be useful. Finally, the authors considered a comment-edit pair as useful if 1) an edit takes place to an existing code block so that there is a before and an after version of a code block, and 2) the comment for the edit is understandable without any context to make it reusable.
+  </p>
+  <p>
+    At the time of the research, the five tags contained a total of around 11.12 million answers, 12.13 million comments, and 4.32 million edits. To make the manual analysis feasible, they randomly selected 382 pairs from each tag, resulting in a total of 1,910 comment-edit pairs. The overall findings of the authors are as follows:
+    <ul>
+      <li>The precision of the automated comment-edit mapping algorithm is 78%, which resulted in 1,482 valid pairs.</li>
+      <li>Code changes in edits are rarely tangled.</li>
+      <li>The authors found nine categories to be applicable for edit-invoking comments from all the Stack Overflow comment categories identified by a previous study. The most common categories of the comments in the comment-edit pairs are Error, followed by Request, and Correction.</li>
+      <li>They found 27% of the 1,482 comment-edit pairs to be potentially useful. Many edits add new code blocks or the comments are contextual, which are against the rule of being useful and thus the total number of useful pairs is very low. The authors also manually changed the code of 15 GitHub repositories and submitted pull requests, out of which 10 were accepted. They used the before-after version of the edits to change code and provide reasoning using the comment from 15 comment-edit pairs.</li>
+    </ul>
+  </p>
+  <p>
+    The authors showed a new path for researchers to solve problems in software maintenance, more specifically code maintenance though this study. This paper would also be good reading for researchers to find a direction to extend the work in this area.
+  </p>
+</div>
 <p id="Tang2021" class="bib"><cite>Tang2021</cite>
   Henry Tang and Sarah Nadi:
   "<a href="https://doi.org/10.1007/s10664-021-09954-8">On using Stack Overflow comment-edit pairs to recommend code maintenance changes</a>".
@@ -14,8 +37,3 @@ categories: ["Stack Overflow", "Usability", "Maintenance"]
 <blockquote class="abstract">
   Code maintenance data sets typically consist of a before version of the code and an after version that contains the improvement or fix. Such data sets are important for various software engineering support tools related to code maintenance, such as program repair, code recommender systems, or Application Programming Interface (API) misuse detection. Most of the current data sets are typically constructed from mining commit history in versioncontrol systems or issues in issue-tracking systems. In this paper, we investigate whether Stack Overflow can be used as an additional source for building code maintenance data sets. Comments on Stack Overflow provide an effective way for developers to point out problems with existing answers, alternative solutions, or pitfalls. Given its crowd-sourced nature, answers are then updated to incorporate these suggestions. In this paper, we mine commentedit pairs from Stack Overflow and investigate their potential usefulness for constructing the above data sets. These comment-edit pairs have the added benefit of having concrete descriptions/explanations of why the change is needed as well as potentially having less tangled changes to deal with. We first design a technique to extract related comment-edit pairs and then qualitatively and quantitatively investigate the nature of these pairs. We find that the majority of comment-edit pairs are not tangled, but find that only 27% of the studied pairs are potentially useful for the above applications. We categorize the types of mined pairs and find that the highest ratio of useful pairs come from those categorized as Correction, Obsolete, Flaw, and Extension. These categories can provide data for both corrective and preventative maintenance activities. To demonstrate the effectiveness of our extracted pairs, we submitted 15 pull requests to popular GitHub repositories, 10 of which have been accepted to widely used repositories such as Apache Beam (https://beam.apache.org/) and NLTK (https://www.nltk.org/). Our work is the first to investigate Stack Overflow commentedit pairs and opens the door for future work in this direction. Based on our findings and observations, we provide concrete suggestions on how to potentially identify a larger set of useful comment-edit pairs, which can also be facilitated by our shared data.
 </blockquote>
-<div class="review">
-  <p>
-    Review goes here.
-  </p>
-</div>
