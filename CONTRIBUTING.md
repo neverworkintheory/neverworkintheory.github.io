@@ -119,6 +119,7 @@ Our entries have been written by:
 - [Leif Singer](https://leif.me/)
 - [Andreas Stefik](http://web.cs.unlv.edu/stefika/)
 - [Christoph Treude](https://ctreude.ca/)
+- [Rohan Verma](https://www.linkedin.com/in/therohanverma/)
 - [Greg Wilson](https://third-bit.com/)
 - [Donny Winston](https://donnywinston.com/)
 
