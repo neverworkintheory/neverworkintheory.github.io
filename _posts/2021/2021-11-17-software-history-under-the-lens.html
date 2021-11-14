@@ -1,0 +1,71 @@
+---
+layout: post
+author: Rohan Verma
+title: "Software History under the Lens: A Study on Why and How Developers Examine It"
+date: 2021-11-12
+categories: ["Software Evolution", "Version Control", "Tools"]
+---
+	
+<div class="review">
+  <p>
+    If you have ever wondered why and how developers analyze software
+    history, or if you are a tool builder who is unsure of which
+    features to include in your software history tool,
+    then <cite>Codoban2015</cite> may have some answers for you.  They
+    interviewed 14 experienced developers to examine developers'
+    motivation, needs, and strategy for software history analysis, as
+    well as the challenges they face during analysis. The authors then
+    surveyed 217 people to extend these interviews' findings.
+  </p>
+  <p>
+    <cite>Codoban2015</cite> found that reasons like debugging,
+    reverse engineering, understanding the ongoing work, keeping up
+    with changes, or analyzing the impact of a change can motivate the
+    developers to analyze the software history. Moreover, for
+    analysis, developers follow strategies like narrowing down the
+    search space for commit by looking at the task, followed by
+    identifying interesting commits, and finally analyzing the intent
+    of the commit.
+  </p>
+  <p>
+    The paper also talk about the challenges faced by developers in
+    analyzing the software history. For example, developers always
+    suffer simultaneously from both a lack of informative commit
+    messages <em>and</em> information overload.  Limited tool
+    functionality, understanding the reasons for changes, and tracing
+    older versions are also problems; when asked, they want to be able
+    to filter changes, group commits, get selective change
+    notifications and trace previous versions in a better way.
+  </p>
+  <p>
+    But the authors did not just look at where we are: they also
+    introduced what they call a 3-lens history model that suggests
+    measures that tool builders can use to ensure their tool does
+    everything developers want.  This model subsumes the isolated
+    measures developed by previous researchers, and FIXME: EXPLAIN
+    WHAT THE "3 LENSES" ARE.
+  </p>
+</div>
+<p id="Codoban2015" class="bib"><cite>Codoban2015</cite>
+  Mihai Codoban, Sruti Srinivasa Ragavan, Danny Dig, and Brian Bailey:
+  "<a href="https://doi.org/10.1109/icsm.2015.7332446">Software history under the lens: A study on why and how developers examine it</a>".
+  <em>Proc. International Conference on Software Maintenance (ICSM)</em>,
+  2015,
+  <a class="doi" href="https://doi.org/10.1109/icsm.2015.7332446">10.1109/icsm.2015.7332446</a>.
+</p>
+<blockquote class="abstract">
+  Despite software history being indispensable for developers, there
+  is little empirical knowledge about how they examine software
+  history. Without such knowledge, researchers and tool builders are
+  in danger of making wrong assumptions and building inadequate
+  tools. In this paper we present an in-depth empirical study about
+  the motivations developers have for examining software history, the
+  strategies they use, and the challenges they encounter. To learn
+  these, we interviewed 14 experienced developers from industry, and
+  then extended our findings by surveying 217 developers. We found
+  that history does not begin with the latest commit but with
+  uncommitted changes. Moreover, we found that developers had
+  different motivations for examining recent and old history. Based on
+  these findings we propose 3-LENS HISTORY, a novel unified model for
+  reasoning about software history.
+</blockquote>
