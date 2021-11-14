@@ -1,0 +1,94 @@
+---
+layout: post
+author: Alexandru Ianta
+title: "BugSwarm: Mining and Continuously Growing a Dataset of Reproducible Failures and Fixes"
+date: 2021-11-08
+categories: ["DevOps", "Benchmarking", "Bug Reports"]
+---
+<div class="review">
+  <p>
+    A dataset! A dataset! My kingdom for a dataset! The sentiment
+    behind the King Richard's famous cries is perhaps shared, in a
+    different context, by contemporary researchers who have their
+    sights set on developing bug detection or automatic repair
+    systems. Luckily <cite>Tomassi2019</cite> have put shovels in the
+    ground and made impressive headway towards a hyper-scale,
+    real-world, current, and reproducible dataset of bugs and their
+    corresponding fixes. The progress takes the form of BugSwarm, a
+    continuous integration (CI) harvesting toolkit that aims to take
+    failed CI pipelines and turn them into data samples.
+  </p>
+  <p>
+    Before BugSwarm, the datasets that were available for researchers
+    to develop their detection/repair tools were hand curated
+    collections of bugs and their corresponding patches. This meant
+    that the scope and scale of the datasets were often necessarily
+    limited. Without extensive manual labor the datasets would also
+    soon become stale and less reflective of defects that would appear
+    in modern code.
+  </p>
+  <p>
+    BugSwarm alleviates these problems by exploiting the explosion in
+    popularity of CI systems. These systems spring into action upon
+    new commits to a software repository and, amongst many other dev
+    ops tasks, run test suites on the submitted changes. If a build
+    fails these tests, the CI pipeline fails, notifying developers of
+    the issue. Once alerted, developers work on a patch and commit
+    it. The CI system takes the patch and re-runs the tests, which
+    hopefully pass this time. <cite>Tomassi2019</cite> observed that a
+    byproduct of this process is the identification of code containing
+    some defect (the failing commit) and the code that resolved the
+    issue (the passing commit).
+  </p>
+  <p>
+    BugSwarm scours GitHub for open-source projects leveraging
+    TravisCI and harvests pass-fail pairs from the CI history. It
+    automatically captures the passing and failing source code and
+    packages them into docker containers.  These containers attempt to
+    mimic the CI environment an artifact was in when it passed or
+    failed. BugSwarm's reproducer then executes the CI job several
+    times on the containerized pair to ensure the failure and
+    corresponding pass are reproducible, e.g., by filtering out
+    failures due to lack of response from some third-party web API.
+    The result is a growing collection of real-world, reproducible
+    exemplars of bugs and their fixes.
+  </p>
+  <p>
+    There's still some way left to go in creating a definitive
+    benchmark that bug detection/repair techniques can be compared
+    against, though. An interested researcher must still pre-process
+    the dockerized pairs to attempt to classify the reason for a build
+    failure, to isolate and extract the buggy code, as well as the
+    corresponding patch. But thanks to this fresh approach in defect
+    dataset construction, such a benchmark feels within striking
+    distance.
+  </p>
+</div>
+<p id="Tomassi2019" class="bib"><cite>Tomassi2019</cite>
+  David A. Tomassi and Naji Dmeiri and Yichen Wang and Antara Bhowmick and Yen-Chuan Liu and Premkumar T. Devanbu and Bogdan Vasilescu and Cindy Rubio-Gonzalez:
+  "<a href="https://doi.org/10.1109/icse.2019.00048">BugSwarm: Mining and Continuously Growing a Dataset of Reproducible Failures and Fixes</a>".
+  <em>ICSE</em>, 2019,
+  <a class="doi" href="https://doi.org/10.1109/icse.2019.00048">10.1109/ICSE.2019.00048</a>.
+</p>
+<blockquote class="abstract">
+  Fault-detection, localization, and repair methods are vital to
+  software quality; but it is difficult to evaluate their generality,
+  applicability, and current effectiveness. Large, diverse, realistic
+  datasets of durably-reproducible faults and fixes are vital to good
+  experimental evaluation of approaches to software quality, but they
+  are difficult and expensive to assemble and keep current. Modern
+  continuous-integration (CI) approaches, like Travis-CI, which are
+  widely used, fully configurable, and executed within custom-built
+  containers, promise a path toward much larger defect datasets. If we
+  can identify and archive failing and subsequent passing runs, the
+  containers will provide a substantial assurance of durable future
+  reproducibility of build and test. Several obstacles, however, must
+  be overcome to make this a practical reality. We describe BugSwarm,
+  a toolset that navigates these obstacles to enable the creation of a
+  scalable, diverse, realistic, continuously growing set of durably
+  reproducible failing and passing versions of real-world, open-source
+  systems. The BugSwarm toolkit has already gathered 3,091 fail-pass
+  pairs, in Java and Python, all packaged within fully reproducible
+  containers. Furthermore, the toolkit can be run periodically to
+  detect fail-pass activities, thus growing the dataset continually.
+</blockquote>

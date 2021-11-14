@@ -3,7 +3,6 @@
 '''Convert BibTeX to YAML.'''
 
 import argparse
-import bibtexparser
 import re
 import string
 import sys
