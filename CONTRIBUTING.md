@@ -118,6 +118,7 @@ Our entries have been written by:
 - [Eddie Antonio Santos](https://eddieantonio.ca/)
 - [Leif Singer](https://leif.me/)
 - [Andreas Stefik](http://web.cs.unlv.edu/stefika/)
+- [Tajkia Rahman Toma](https://www.linkedin.com/in/trtoma/)
 - [Christoph Treude](https://ctreude.ca/)
 - [Rohan Verma](https://www.linkedin.com/in/therohanverma/)
 - [Greg Wilson](https://third-bit.com/)
