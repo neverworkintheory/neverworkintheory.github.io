@@ -1,0 +1,95 @@
+---
+layout: post
+author: Ravika Nagpal
+title: "SOAR: A Synthesis Approach for Data Science API Refactoring"
+date: 2021-11-19
+categories: ["Automation", "Maintenance", "Data Science"]
+---
+<div class="review">
+  <p>
+    Everything that has been constructed eventually needs maintenance:
+    homes, parks, offices---and code.
+    Refactoring is one way programmers do this.
+    Though the idea is simple,
+    it can quickly become a programmer's nightmare,
+    as manual refactoring is tedious and error-prone.
+  </p>
+  <p>
+    <cite>Ni2021</cite> introduce an automated refactoring technique called SOAR
+    that combines natural language processing with program synthesis
+    to automatically migrate and refactor between different versions of APIs.
+    It begins by constructing an API matching model
+    based on available documentation for the source and target libraries
+    to find potential replacement calls for each API call in the source program.
+    It then employs program synthesis to build the whole target method call
+    that closely resembles the original behavior.
+    Retaining the behavior ensures that the program's functionality is preserved.
+  </p>
+  <p>
+    The authors chose two well-documented libraries---TensorFlow to Pytorch---for evaluations.
+    Similarly,
+    as an example of library migration between different languages,
+    the authors looked at migrating from dplyr in R to pandas in Python.
+    These examples are easy to follow and help readers understand
+    how SOAR stands out from other work in this area:
+  </p>
+  <ul>
+    <li>
+      Prior work in automatic API migration mostly focused on  example-based migration techniques,
+      that is,
+      on learning API migration patterns using code examples.
+      SOAR can migrate without existing code examples.
+    </li>
+    <li>
+      Earlier works relied on the training data for cross-language API mappings,
+      whereas SOAR leverages migration documentation.
+    </li>
+    <li>
+      SOAR uses interpreter error messages
+      to restrict the domain of the parameters and prune the search space,
+      not to refine type information.
+    </li>
+  </ul>
+  <p>
+    SOAR shows that library refactoring automation in data science is both feasible and helpful.
+    We look forward to seeing where the field goes next.
+  </p>
+</div>
+<p id="Ni2021" class="bib"><cite>Ni2021</cite>
+  Ansong Ni, Daniel Ramos, Aidan Z. H. Yang, Ines Lynce, Vasco Manquinho, Ruben Martins, and Claire Le Goues:
+  "<a href="https://doi.org/10.1109/icse43902.2021.00023">SOAR: A Synthesis Approach for Data Science API Refactoring</a>".
+  <em>Proc. International Conference on Software Engineering (ICSE)</em>,
+  2021,
+  <a class="doi" href="https://doi.org/10.1109/icse43902.2021.00023">10.1109/icse43902.2021.00023</a>.
+</p>
+<blockquote class="abstract">
+  With the growth of the open-source data science community, both the
+  number of data science libraries and the number of versions for the
+  same library are increasing rapidly. To match the evolving APIs from
+  those libraries, open-source organizations often have to exert
+  manual effort to refactor the APIs used in the code base. Moreover,
+  due to the abundance of similar open-source libraries, data
+  scientists working on a certain application may have an abundance of
+  libraries to choose, maintain and migrate between. The manual
+  refactoring between APIs is a tedious and error-prone task. Although
+  recent research efforts were made on performing automatic API
+  refactoring between different languages, previous work relies on
+  statistical learning with collected pairwise training data for the
+  API matching and migration. Using large statistical data for
+  refactoring is not ideal because such training data will not be
+  available for a new library or a new version of the same library. We
+  introduce Synthesis for OpenSource API Refactoring (SOAR), a novel
+  technique that requires no training data to achieve API migration
+  and refactoring. SOAR relies only on the documentation that is
+  readily available at the release of the library to learn API
+  representations and mapping between libraries. Using program
+  synthesis, SOAR automatically computes the correct configuration of
+  arguments to the APIs and any glue code required to invoke those
+  APIs. SOAR also uses the interpreter's error messages when running
+  refactored code to generate logical constraints that can be used to
+  prune the search space. Our empirical evaluation shows that SOAR can
+  successfully refactor 80% of our benchmarks corresponding to deep
+  learning models with up to 44 layers with an average run time of
+  97.23 seconds, and 90% of the data wrangling benchmarks with an
+  average run time of 17.31 seconds.
+</blockquote>
