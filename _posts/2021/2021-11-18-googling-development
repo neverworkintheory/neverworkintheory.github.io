@@ -1,0 +1,87 @@
+---
+layout: post
+author: Kushankur Ghosh
+title: "Googling for Software Development: What Developers Search For and What They Find"
+date: 2021-11-18
+categories: ["Data Science", "Development Practices"]
+---
+<div class="review">
+  <p>
+    Googling serves as a base to solve problems and has become 
+    an inseparable part of our regular life. Developers in the 
+    software industry also rely on extracting relevant information 
+    from Google to maximize their efficiency. A comprehensive 
+    illustration of the web-search queries from the perspective 
+    of software developers is provided in <cite>Hora2021a</cite>. 
+    By analyzing a total of 1.3M search queries from developers, 
+    the authors found that:
+  </p>
+  <ul>
+    <li>
+      Almost half of the queries (54.5%) from the developer’s 
+      end refer to programming languages and software technologies
+    </li>
+    <li>
+      Queries are short and are mostly focused on searching APIs 
+      and code examples that can be reused
+    </li>
+    <li>
+      Over 80% of the queries are formed of content words comprising 
+      of nouns, adjectives, adverbs, and verbs and developers possibly 
+      believe that function words such as prepositions and conjunctions 
+      won’t affect the search results
+    </li>
+    <li>
+      60% of the queries have at least one other similar query
+    </li>
+    <li>
+      Stack Overflow is the most popular source for software resources 
+      followed by YouTube and W3Schools
+    </li>
+    <li>
+      The order of the search results are likely to change due to 
+      minor query change such as swapping the position of words, 
+      removing a word, or using synonymous words or queries
+    </li>
+  </ul>
+  <p>
+  Studies like this can establish a proper understanding of the 
+  requirements of software developers and will also highlight the 
+  impact of popular search engines like Google. It should be noted 
+  that even developers prefer short straightforward queries and 
+  ignore function words. Optimizing the search engines to capture 
+  the contents from short queries and minimizing the deviations in 
+  the search results can be the focus to assist the software developers 
+  in incrementing their production.
+  </p>
+</div>
+
+<p id="Hora2021a" class="bib"><cite>Hora2021a</cite>
+  Andre Hora:
+  "<a href="https://doi.org/10.1109/MSR52588.2021.00044">Googling for Software Development: What Developers Search For and What They Find</a>".
+  <em>2021 IEEE/ACM 18th International Conference on Mining Software Repositories (MSR)</em>,
+  2021,
+  <a class="doi" href="https://doi.org/10.1109/MSR52588.2021.00044">10.1109/MSR52588.2021.00044</a>.
+</p>
+<blockquote class="abstract">
+Developers often search for software resources on the web. 
+In practice, instead of going directly to websites (e.g.,
+Stack Overflow), they rely on search engines (e.g., Google).
+Despite this being a common activity, we are not yet aware of
+what developers search from the perspective of popular software
+development websites and what search results are returned.
+With this knowledge, we can understand real-world queries,
+developers’ needs, and the query impact on the search results.
+In this paper, we provide an empirical study to understand what
+developers search on the web and what they find. We assess
+1.3M queries to popular programming websites and we perform
+thousands of queries on Google to explore search results. We
+find that (i) developers’ queries typically start with keywords
+(e.g., Python, Android, etc.), are short (3 words), tend to omit
+functional words, and are similar among each other; (ii) minor
+changes to queries do not largely affect the Google search results,
+however, some cosmetic changes may have a non-negligible
+impact; and (iii) search results are dominated by Stack Overflow,
+but YouTube is also a relevant source nowadays. We conclude by
+presenting detailed implications for researchers and developers.
+</blockquote>
