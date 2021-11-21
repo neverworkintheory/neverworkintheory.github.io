@@ -110,6 +110,7 @@ Our entries have been written by:
 
 - [Jorge Aranda](https://cuevano.ca/)
 - [Neil Ernst](https://www.neilernst.net/)
+- [Kushankur Ghosh](https://sites.google.com/view/kayghosh/kush)
 - [Sakib Hasan](https://www.linkedin.com/in/sakib-hasan-071a05152/)
 - [Felienne Hermans](https://www.felienne.com/)
 - [Lorin Hochstein](http://lorinhochstein.org/)
