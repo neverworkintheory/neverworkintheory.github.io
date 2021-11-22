@@ -115,6 +115,7 @@ Our entries have been written by:
 - [Lorin Hochstein](http://lorinhochstein.org/)
 - [Alexandru Ianta](https://github.com/aianta/)
 - [Ravika Nagpal]( https://www.linkedin.com/in/ravika-nagpal-b1636220)
+- [Brij Patel](https://www.linkedin.com/in/brijspatel/)
 - [Fayola Peters](https://lero.ie/lero-15/fayola-peters)
 - [Eddie Antonio Santos](https://eddieantonio.ca/)
 - [Leif Singer](https://leif.me/)
