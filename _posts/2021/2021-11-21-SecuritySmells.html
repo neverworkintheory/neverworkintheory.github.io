@@ -1,0 +1,75 @@
+---
+layout: post
+author: Brij Patel
+title: "The Seven Sins: Security Smells in Infrastructure as Code Scripts"
+date: 2021-11-21
+categories: ["Devops", "Infrastucture as code","Security Smell"]
+---
+<div class="review">
+  <p>
+    Infrastructure as code (IaC) scripts is used by practitioners to provision servers and development environments. 
+    Practitioners may unintentionally add security smells while writing IaC programs. 
+    The purpose of this paper is to help practitioners avoid insecure coding practices when developing infrastructure as code (IaC) scripts, 
+    by conducting an empirical study of seven security smells, 
+    and developing a static analysis tool called Security Linter for Infrastructure as Code Scripts (SLIC) 
+    to automatically identify the occurrence of these security smells in 15,232 IAC scripts.
+  </p>
+ 
+  <p>
+    For the data collection, the authors have collected 1,726 Puppet scripts from the master branches of 
+    74 repositories which were from organizations Mozilla, Open-stack, and Wikimedia Commons. 
+    After performing a qualitative analysis on 1,726 IAC scripts, authors have also generalized the 
+    pipeline by making a tool called Security Linter for Infrastructure as Code Scripts (SLIC) to 
+    identify the occurrence of each smell on 15,2322 IAC collected from 293 open source repositories.
+  </p>
+
+  <p>
+    For the evaluation of the detection accuracy of SLIC, 
+    authors constructed an oracle dataset consisting of 140 scripts which are being manually 
+    checked for security smells by 28 graduate students at each script is reviewed by at least two 
+    students. fair’. In the case of disagreements between raters for 61 scripts, the first author 
+    resolved the disagreements. For the oracle dataset, the average precision and recall of SLIC are 0.99.  
+  </p>
+  
+  <p>
+    Some of the challenges mentioned in the paper focus on seven security smells acknowledging that other 
+    security smells may exist. In the future, authors will aim to expand their investigation if more
+    security smells exist. Furthermore, because the current dataset is focused on Puppet, which
+     utilizes declarative language, it may not apply to IaC scripts that use imperative language.
+  </p>
+<p>
+  Overall the authors have considered seven security smells: 
+  <ul>
+   <li>admin by default</li>
+   <li>empty password</li>
+   <li>hard-coded secret</li>
+   <li>invalid IP address binding</li>
+   <li> suspicious comment </li>
+   <li> use of HTTP without TLS</li>
+   <li>use of weak cryptography algorithms </li>
+ </ul>
+ and analyzed 15,232 IaC scripts to determine which security smells occur and used a tool called SLIC, 
+ to automatically identify security smells that occur in IaC scripts.
+
+</p>
+   
+
+</div>
+<p id="Rahman2019" class="bib"><cite>Rahman2019</cite>
+  Akond Rahman and Chris Parnin and Laurie Williams:
+  "<a href="https://doi.org/10.1109/icse.2019.00033">The Seven Sins: Security Smells in Infrastructure as Code Scripts</a>".
+  <em>IEEE Transactions on Software Engineering</em>,
+  <a class="doi" href="https://doi.org/10.1109/icse.2019.00033">10.1109/icse.2019.00033</a>.
+</p>
+<blockquote class="abstract">
+  Practitioners use infrastructure as code (IaC) scripts
+  to provision servers and development environments. While developing
+  IaC scripts, practitioners may inadvertently introduce
+  security smells. Security smells are recurring coding patterns that
+  are indicative of security weakness and can potentially lead to
+  security breaches. The goal of this paper is to help practitioners
+  avoid insecure coding practices while developing infrastructure as
+  code (IaC) scripts through an empirical study of security smells in
+  IaC scripts.
+</blockquote>
+
