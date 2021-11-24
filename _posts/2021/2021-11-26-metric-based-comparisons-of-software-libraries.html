@@ -1,0 +1,81 @@
+---
+layout: post
+author: Samridhi Vaid
+title: "An Empirical Study of Metric-based Comparisons of Software Libraries"
+date: 2021-11-26
+categories: ["Metrics", "Development Practices"]
+---
+<div class="review">
+  <p>
+    Selecting the best software libraries for a task is a crucial step in programming,
+    but often difficult and confusing
+    because there are gazillions of Q&amp;A websites with conflicting or out-of-date advice.
+    These websites do not provide comprehensive descriptions of libraries' features
+    and usually do not provide comparative data on different libraries.
+  </p>
+  <p>
+    <cite>Lopez2018</cite> tackled this problem
+    by implementing and assessing a metric-based comparison of software libraries.
+    They calculated nine software metrics for 34 open-source Java libraries
+    belonging to ten popular domains,
+    such as testing, databases, and cryptography.
+    They then surveyed 61 participants of varied backgrounds
+    to determine how useful the metric-based comparison was.
+    They found that:
+  </p>
+  <ul>
+    <li>
+      Developers found  a metric-based comparison of libraries useful.
+    </li>
+    <li>
+      Performance, Popularity, and Security were the most popular metrics when choosing a libraries.
+    </li>
+    <li>
+      Metrics related to the documentation and usability of a library were highly desired.
+    </li>
+  </ul>
+  <p>
+    While there are good reasons to be skeptical about software metrics in general
+    (see <a href="{{'/2011/07/07/the-confounding-effect-of-class-size-on-the-validity-of-object-oriented-metrics.html' | relative_url}}">this post</a> for discussion),
+    <cite>Lopez2018</cite> used data extracted from multiple sources
+    (open source repositories, issue-tracking systems, and Stack Overflow)
+    and combined several metrics for comparing the libraries,
+    which makes their approach and findings more useful than earlier work in this area.
+  </p>
+</div>
+<p id="Lopez2018" class="bib"><cite>Lopez2018</cite>
+  Fernando López de la Mora and Sarah Nadi:
+  "<a href="https://doi.org/10.1145/3273934.3273937">An Empirical Study of Metric-based Comparisons of Software Libraries</a>".
+  <em>Proc. International Conference on Predictive Models and Data Analytics in Software Engineering (PROMISE)</em>,
+  2018,
+  <a class="doi" href="https://doi.org/10.1145/3273934.3273937">10.1145/3273934.3273937</a>.
+</p>
+<blockquote class="abstract">
+  Software libraries provide a set of reusable functionality, which
+  helps developers write code in a systematic and timely
+  manner. However, selecting the appropriate library to use is often
+  not a trivial task. AIMS: In this paper, we investigate the
+  usefulness of software metrics in helping developers choose
+  libraries.Different developers care about different aspects of a
+  library and two developers looking for a library in a given domain
+  may not necessarily choose the same library. Thus, instead of
+  directly recommending a library to use, we provide developers with a
+  metric-based comparison of libraries in the same domain to empower
+  them with the information they need to make an informed
+  decision. METHOD:We use software data analytics from several sources
+  of information to create quantifiable metric-based comparisons of
+  software libraries. For evaluation, we select 34 open-source Java
+  libraries from 10 popular domains and extract nine metrics related
+  to these libraries. We then conduct a survey of 61 developers to
+  evaluate whether our proposed metric-based comparison is useful, and
+  to understand which metrics developers care about. RESULTS: Our
+  results show that developers find that the proposed technique
+  provides useful information when selecting libraries. We observe
+  that developers care the most about metrics related to the
+  popularity, security, and performance of libraries. We also find
+  that the usefulness of some metrics may vary according to the
+  domain. CONCLUSIONS:Our survey results showed that our proposed
+  technique is useful.We are currently building a public website for
+  metric-based library comparisons, while incorporating the feedback
+  we obtained from our survey participants.
+</blockquote>

@@ -123,6 +123,7 @@ Our entries have been written by:
 - [Andreas Stefik](http://web.cs.unlv.edu/stefika/)
 - [Tajkia Rahman Toma](https://www.linkedin.com/in/trtoma/)
 - [Christoph Treude](https://ctreude.ca/)
+- [Samridhi Vaid](https://www.linkedin.com/in/samridhi-vaid-b1754495/)
 - [Rohan Verma](https://www.linkedin.com/in/therohanverma/)
 - [Greg Wilson](https://third-bit.com/)
 - [Donny Winston](https://donnywinston.com/)
