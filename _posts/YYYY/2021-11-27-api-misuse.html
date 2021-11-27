@@ -3,7 +3,7 @@ layout: post
 author: Maliha Sultana
 title: "Investigating Next Steps in Static API-Misuse Detection"
 date: 2019-08-29
-categories: ["API Misuse", "Code Review"]
+categories: ["API Misuse", "Code Smells"]
 ---
 <div class="review">
   <p>
@@ -39,11 +39,11 @@ categories: ["API Misuse", "Code Review"]
   
 Developers often use Application Programming Interfaces (APIs) to effortlessly access data, server software or other applications. But misuse of APIs can lead to serious consequences like software crashes, data-loss and what not. Although a lot of API misuse detectors exist in the market, most of them suffer from low precision and recall. 
 
-Fortunately, [SvenAmman2018] have come to the rescue by proposing MUDETECT- an API misuse detector which builds on the strengths and addresses many of the weaknesses of the existing detectors. It outperforms the previous detectors with a 2 times higher recall and 2.5 times higher precision rate. Moreover, it can work in cross project settings and mining patterns across projects, rather than from only the target project.
+Fortunately, [Sven2019] have come to the rescue by proposing MUDETECT- an API misuse detector which builds on the strengths and addresses many of the weaknesses of the existing detectors. It outperforms the previous detectors with a 2 times higher recall and 2.5 times higher precision rate. Moreover, it can work in cross project settings and mining patterns across projects, rather than from only the target project.
 
 MUDETECT begins by encoding API usages as API-Usage Graphs (AUGs) to capture properties that can separate misuses from correct usages. It then applies a new detection algorithm to sufficiently mine and identify the violating patterns. It also uses an optimized ranking strategy to effectively rank true positives and thus, improves precision.  
 
-  MUDETECT was evaluated and compared with 4 other API detection tools namely; JADET, GROUMINER, TIKANGA, and DMMC and was found to have out-performed them all with recall of 20.9%, and precision of 21.9% in the typical per-project setting. More impressively, MUDETECT’s recall and precision reached 42.2% and 33.0% in a cross-project setting. 
+MUDETECT was evaluated and compared with 4 other API detection tools namely; JADET, GROUMINER, TIKANGA, and DMMC and was found to have out-performed them all with recall of 20.9%, and precision of 21.9% in the typical per-project setting. More impressively, MUDETECT’s recall and precision reached 42.2% and 33.0% in a cross-project setting. 
 
   
   </p>
