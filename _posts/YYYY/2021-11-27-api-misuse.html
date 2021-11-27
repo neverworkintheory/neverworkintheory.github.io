@@ -1,0 +1,50 @@
+---
+layout: post
+author: Maliha Sultana
+title: "Investigating Next Steps in Static API-Misuse Detection"
+date: 2019-08-29
+categories: ["API Misuse", "Code Review"]
+---
+<div class="review">
+  <p>
+    @inproceedings{Sven2019,
+  doi = {10.1109/msr.2019.00053},
+  url = {https://doi.org/10.1109/msr.2019.00053},
+  year = {2019},
+  month = may,
+  publisher = {{IEEE}},
+  author = {Amann Sven and Hoan Anh Nguyen and Sarah Nadi and Tien N. Nguyen and Mira Mezini},
+  title = {Investigating Next Steps in Static {API}-Misuse Detection},
+  booktitle = {2019 {IEEE}/{ACM} 16th International Conference on Mining Software Repositories ({MSR})}
+}
+  <blockquote> 
+  
+   Application Programming Interfaces (APIs) often
+  impose constraints such as call order or preconditions. API misuses, i.e., usages violating these constraints, may cause software
+  crashes, data-loss, and vulnerabilities. Researchers developed
+  several approaches to detect API misuses, typically still resulting
+  in low recall and precision. In this work, we investigate ways
+  to improve API-misuse detection. We design MUDETECT, an
+  API-misuse detector that builds on the strengths of existing
+  detectors and tries to mitigate their weaknesses. MUDETECT
+  uses a new graph representation of API usages that captures
+  different types of API misuses and a systematically designed
+  ranking strategy that effectively improves precision. Evaluation
+  shows that MUDETECT identifies real-world API misuses with
+  twice the recall of previous detectors and 2.5x higher precision. It
+  even achieves almost 4x higher precision and recall, when mining
+  patterns across projects, rather than from only the target project.
+    
+  </blockquote>
+  
+Developers often use Application Programming Interfaces (APIs) to effortlessly access data, server software or other applications. But misuse of APIs can lead to serious consequences like software crashes, data-loss and what not. Although a lot of API misuse detectors exist in the market, most of them suffer from low precision and recall. 
+
+Fortunately, [SvenAmman2018] have come to the rescue by proposing MUDETECT- an API misuse detector which builds on the strengths and addresses many of the weaknesses of the existing detectors. It outperforms the previous detectors with a 2 times higher recall and 2.5 times higher precision rate. Moreover, it can work in cross project settings and mining patterns across projects, rather than from only the target project.
+
+MUDETECT begins by encoding API usages as API-Usage Graphs (AUGs) to capture properties that can separate misuses from correct usages. It then applies a new detection algorithm to sufficiently mine and identify the violating patterns. It also uses an optimized ranking strategy to effectively rank true positives and thus, improves precision.  
+
+  MUDETECT was evaluated and compared with 4 other API detection tools namely; JADET, GROUMINER, TIKANGA, and DMMC and was found to have out-performed them all with recall of 20.9%, and precision of 21.9% in the typical per-project setting. More impressively, MUDETECT’s recall and precision reached 42.2% and 33.0% in a cross-project setting. 
+
+  
+  </p>
+</div>
