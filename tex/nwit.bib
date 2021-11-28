@@ -1,31 +1,5 @@
 @comment{AAA}
 
-@inproceedings{Sven2019,
-  doi = {10.1109/msr.2019.00053},
-  url = {https://doi.org/10.1109/msr.2019.00053},
-  year = {2019},
-  month = may,
-  publisher = {{IEEE}},
-  author = {Amann Sven and Hoan Anh Nguyen and Sarah Nadi and Tien N. Nguyen and Mira Mezini},
-  title = {Investigating Next Steps in Static {API}-Misuse Detection},
-  booktitle = {2019 {IEEE}/{ACM} 16th International Conference on Mining Software Repositories ({MSR})},
-  abstract = {Application Programming Interfaces (APIs) often
-  impose constraints such as call order or preconditions. API misuses, i.e., usages violating these constraints, may cause software
-  crashes, data-loss, and vulnerabilities. Researchers developed
-  several approaches to detect API misuses, typically still resulting
-  in low recall and precision. In this work, we investigate ways
-  to improve API-misuse detection. We design MUDETECT, an
-  API-misuse detector that builds on the strengths of existing
-  detectors and tries to mitigate their weaknesses. MUDETECT
-  uses a new graph representation of API usages that captures
-  different types of API misuses and a systematically designed
-  ranking strategy that effectively improves precision. Evaluation
-  shows that MUDETECT identifies real-world API misuses with
-  twice the recall of previous detectors and 2.5x higher precision. It
-  even achieves almost 4x higher precision and recall, when mining
-  patterns across projects, rather than from only the target project.}
-}
-
 @inproceedings{Abad2018,
   doi = {10.1145/3210459.3210471},
   url = {https://doi.org/10.1145/3210459.3210471},
@@ -2947,6 +2921,19 @@
   booktitle = icse,
   abstract = {The usability of APIs is increasingly important to programmer productivity. Based on experience with usability studies of specific APIs, techniques were explored for studying the usability of design choices common to many APIs. A comparative study was performed to assess how professional programmers use APIs with required parameters in objects' constructors as opposed to parameterless ``default'' constructors. It was hypothesized that required parameters would create more usable and self- documenting APIs by guiding programmers toward the correct use of objects and preventing errors. However, in the study, it was found that, contrary to expectations, programmers strongly preferred and were more effective with APIs that did not require constructor parameters. Participants' behavior was analyzed using the cognitive dimensions framework, and revealing that required constructor parameters interfere with common learning strategies, causing undesirable premature commitment.},
   reviewed = {/2011/07/26/usability-implications-of-requiring-parameters-in-objects-constructors.html}
+}
+
+@inproceedings{Sven2019,
+  doi = {10.1109/msr.2019.00053},
+  url = {https://doi.org/10.1109/msr.2019.00053},
+  year = {2019},
+  month = may,
+  publisher = {{IEEE}},
+  author = {Amann Sven and Hoan Anh Nguyen and Sarah Nadi and Tien N. Nguyen and Mira Mezini},
+  title = {Investigating Next Steps in Static {API}-Misuse Detection},
+  booktitle = msr,
+  abstract = {Application Programming Interfaces (APIs) often impose constraints such as call order or preconditions. API misuses, i.e., usages violating these constraints, may cause software crashes, data-loss, and vulnerabilities. Researchers developed several approaches to detect API misuses, typically still resulting in low recall and precision. In this work, we investigate ways to improve API-misuse detection. We design MUDetect, an API-misuse detector that builds on the strengths of existing detectors and tries to mitigate their weaknesses. MUDetect uses a new graph representation of API usages that captures different types of API misuses and a systematically designed ranking strategy that effectively improves precision. Evaluation shows that MUDetect identifies real-world API misuses with twice the recall of previous detectors and 2.5x higher precision. It even achieves almost 4x higher precision and recall, when mining patterns across projects, rather than from only the target project.},
+  reviewed = {/2021/11/29/next-steps-in-static-api-misuse-detection.html}
 }
 
 @comment{TTT}

@@ -121,6 +121,7 @@ Our entries have been written by:
 - [Eddie Antonio Santos](https://eddieantonio.ca/)
 - [Leif Singer](https://leif.me/)
 - [Andreas Stefik](http://web.cs.unlv.edu/stefika/)
+- [Maliha Sultana](https://www.researchgate.net/profile/Maliha-Sultana-2)
 - [Tajkia Rahman Toma](https://www.linkedin.com/in/trtoma/)
 - [Christoph Treude](https://ctreude.ca/)
 - [Samridhi Vaid](https://www.linkedin.com/in/samridhi-vaid-b1754495/)
