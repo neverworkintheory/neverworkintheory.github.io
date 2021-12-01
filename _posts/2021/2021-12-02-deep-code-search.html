@@ -1,0 +1,86 @@
+---
+layout: post
+author: Hamza Alvi
+title: "Deep Code Search"
+date: 2021-12-02
+categories: ["Code Search", "Deep Learning"]
+---
+<div class="review">
+  <p>
+    Kim is a developer, and while implementing a new feature, they
+    remember that they wrote something similar in another
+    project. They open that project and starts searching for the code;
+    It takes some time, but finding that code makes their current
+    task easier. They wonder if the time spent searching was
+    worth it, because they might have taken the same amount of time to reimplement the feature.
+  </p>
+  <p>
+    To help developers with tasks like this, <cite>Gu2018</cite>
+    proposes a tool called DeepCS that takes natural language queries
+    and searches for relevant code in a large codebase.
+    The CODEnn model that DeepCS uses to find relevant code snippets consists of three modules:
+    <ol>
+      <li>
+	A code embedding network (CoNN) that learns to embed code into vectors.
+      </li>
+      <li>
+	A description embedding network (DeNN) that learns to embed natural language descriptions into vectors.
+      </li>
+      <li>
+	A similarity module that measures the similarity between code and description vectors.
+      </li>
+    </ol>
+    CoNN and DeNN use recurrent neural networks to embed inputs into vectors, while
+    the similarity module uses cosine similarity measure to find the closeness between
+    embedded inputs. <cite>Gu2018</cite> used more than 18 million methods
+    extracted from Java projects on GitHub to train the CODEnn model with Hinge
+    loss as a loss function. (Hinge loss ensures that the learned vectors for description
+    are close to the vector of corresponding code and far from vectors other code.)
+  </p>
+  <p>
+    DeepCS works in three steps. In the first, DeepCS takes a codebase as
+    input and computes code vectors of methods using the CoNN module.
+    It then takes a user query and computes the embedding vector using the DeNN
+    module, and finally finds cosine similarity between query and code vectors obtained
+    in previous steps and returns the ten methods with the highest similarity. To
+    evaluate its performance, the authors collected 9950 projects having at least 20 stars
+    from GitHub that contained more than 16 million methods. As a query, the authors used
+    the top 50 voted Java questions from Stack Overflow. DeepCS had relevant code snippets
+    present in the top 10 results for 86% of queries, compared to 66% for the previous
+    state-of-the-art system. DeepCS also had 49% relevant code snippets in the top 10 results
+    compared to only 28% for previous tools.
+  </p>
+</div>
+<p id="Gu2018" class="bib"><cite>Gu2018</cite>
+  Xiaodong Gu, Hongyu Zhang, and Sunghun Kim:
+  "<a href="https://doi.org/10.1145/3180155.3180167">Deep Code Search</a>".
+  <em>Proc. International Conference on Software Engineering (ICSE)</em>,
+  2018,
+  <a class="doi" href="https://doi.org/10.1145/3180155.3180167">10.1145/3180155.3180167</a>.
+</p>
+<blockquote class="abstract">
+  To implement a program functionality, developers can reuse
+  previously written code snippets by searching through a large-scale
+  codebase. Over the years, many code search tools have been proposed
+  to help developers. The existing approaches often treat source code
+  as textual documents and utilize information retrieval models to
+  retrieve relevant code snippets that match a given query. These
+  approaches mainly rely on the textual similarity between source code
+  and natural language query. They lack a deep understanding of the
+  semantics of queries and source code. In this paper, we propose a
+  novel deep neural network named CODEnn (Code-Description Embedding
+  Neural Network). Instead of matching text similarity, CODEnn jointly
+  embeds code snippets and natural language descriptions into a
+  high-dimensional vector space, in such a way that code snippet and
+  its corresponding description have similar vectors. Using the
+  unified vector representation, code snippets related to a natural
+  language query can be retrieved according to their
+  vectors. Semantically related words can also be recognized and
+  irrelevant/noisy keywords in queries can be handled. As a
+  proof-of-concept application, we implement a code search tool named
+  DeepCS using the proposed CODEnn model. We empirically evaluate
+  DeepCS on a large scale codebase collected from GitHub. The
+  experimental results show that our approach can effectively retrieve
+  relevant code snippets and outperforms previous
+  techniques.
+</blockquote>

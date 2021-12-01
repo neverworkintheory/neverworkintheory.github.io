@@ -108,6 +108,7 @@ We can translate for you if necessary.
 
 Our entries have been written by:
 
+- [Hamza Alvi](https://github.com/hamzaMAlvi/)
 - [Jorge Aranda](https://cuevano.ca/)
 - [Neil Ernst](https://www.neilernst.net/)
 - [Kushankur Ghosh](https://sites.google.com/view/kayghosh/kush)
