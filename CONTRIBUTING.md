@@ -119,6 +119,7 @@ Our entries have been written by:
 - [Ravika Nagpal]( https://www.linkedin.com/in/ravika-nagpal-b1636220)
 - [Brij Patel](https://www.linkedin.com/in/brijspatel/)
 - [Fayola Peters](https://lero.ie/lero-15/fayola-peters)
+- [Naszmus Sakeef](https://github.com/NazmusSakeef)
 - [Eddie Antonio Santos](https://eddieantonio.ca/)
 - [Leif Singer](https://leif.me/)
 - [Andreas Stefik](http://web.cs.unlv.edu/stefika/)
