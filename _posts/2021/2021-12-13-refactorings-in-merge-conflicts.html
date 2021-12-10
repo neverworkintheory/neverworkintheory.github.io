@@ -1,0 +1,76 @@
+---
+layout: post
+author: Nazmus Sakeef
+title: "Are Refactorings to Blame? An Empirical Study of Refactorings in Merge Conflicts"
+date: 2021-12-13
+categories: ["Code Smells", "Benchmarking"]
+---
+<div class="review">
+  <p>
+    Merge conflicts are one of the biggest difficulties developers face when using separate development branches.
+    Many developers believe that code refactoring makes the situation worse,
+    but are the refactorings solely to blame?
+    How big of a difference do they make when it comes to merge conflicts?
+  </p>
+  <p>
+    Using data from roughly 3000 open-source Java software repositories,
+    <cite>Mahmoudi2019</cite> examined the association between merge conflicts and 15 prominent refactoring patterns,
+    and at how difficult it is to settle refactoring-related disagreements.
+    They used a tool called RefactoringMiner to detect refactorings
+    and investigated the relationship between refactorings and merge conflicts;
+    they also developed and presented methods to detect complicated refactorings
+    from refactoring and evolutionary change overlap.
+    When assessing whether a conflict is caused by refactoring or by other modifications that are intertwined with refactoring,
+    the authors refrained from declaring that the refactoring directly created the conflict,
+    which I believe is a crucial and logical statement from the author.
+  </p>
+  <p>
+    <cite>Mahmoudi2019</cite> found that:
+  </p>
+  <ul>
+    <li>
+      Refactorings are used in 22% of merging circumstances with at least one conflicting Java file.
+      More specifically, 11% of conflicting regions contain at least one refactoring.
+    </li>
+    <li>
+      Conflicting areas with refactorings are typically more complex than conflicting regions without refactorings.
+      Furthermore,
+      conflicting merge cases including refactorings contain more evolutionary changes than conflicts without refactorings.
+    </li>
+    <li>
+      Conflicts are more involved in cases of "Extract Interface" and "Extract Superclass",
+      albeit with minimal effect sizes.
+    </li>
+  </ul>
+</div>
+<p id="Mahmoudi2019" class="bib"><cite>Mahmoudi2019</cite>
+  Mehran Mahmoudi, Sarah Nadi, Nikolaos Tsantalis:
+  "<a href="https://ieeexplore.ieee.org/document/8668012">Are Refactorings to Blame? An Empirical Study of Refactorings in Merge Conflicts</a>".
+  <em>2019 IEEE 26th International Conference on Software Analysis, Evolution and Reengineering (SANER)</em>
+  <a class="doi" href="https://ieeexplore.ieee.org/document/8668012">10.1109/SANER.2019.8668012</a>.
+</p>
+<blockquote class="abstract">
+  With the rise of distributed software development, branching has
+  become a popular approach that facilitates collaboration between
+  software developers. One of the biggest challenges that developers
+  face when using multiple development branches is dealing with merge
+  conflicts. Conflicts occur when inconsistent changes happen to the
+  code. Resolving these conflicts can be a cumbersome task as it
+  requires prior knowledge about the changes in each of the
+  development branches. A type of change that could potentially lead
+  to complex conflicts is code refactoring. Previous studies have
+  proposed techniques for facilitating conflict resolution in the
+  presence of refactorings. However, the magnitude of the impact that
+  refactorings have on merge conflicts has never been empirically
+  evaluated. In this paper, we perform an empirical study on almost
+  3,000 wellengineered open-source Java software repositories and
+  investigate the relation between merge conflicts and 15 popular
+  refactoring types. Our results show that refactoring operations are
+  involved in 22% of merge conflicts, which is remarkable taking into
+  account that we investigated a relatively small subset of all
+  possible refactoring types. Furthermore, certain refactoring types,
+  such as EXTRACT METHOD, tend to be more problematic for merge
+  conflicts. Our results also suggest that conflicts that involve
+  refactored code are usually more complex, compared to conflicts with
+  no refactoring changes.
+</blockquote>
