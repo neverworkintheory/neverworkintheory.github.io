@@ -1,0 +1,56 @@
+---
+layout: post
+author: Nazmus Sakeef
+title: "Are Refactorings to Blame? An Empirical Study of Refactorings in Merge Conflicts"
+date: 2021-12-09
+categories: ["Code Smells", "Benchmarking"]
+---
+<div class="review">
+  <p>
+    When using separate development branches, dealing with merge conflicts is one of the most difficult difficulties that developers face. When the code is modified in an inconsistent manner, conflicts develop. Many developers believe that code refactoring has made these issues more complicated. Are the refactorings, however, solely to blame? How big of a difference do refactorings make when it comes to merge conflicts? The magnitude of refactorings' impact on merge conflicts has never been objectively measured. However, using data from roughly 3,000 well-engineered open-source Java software repositories, the authors are the first to examine the association between merge conflicts and 15 prominent refactoring patterns
+  </p>
+  <p>
+    <cite>Mahmoudi2019</cite> wanted to see if refactoring changes are involved in Java file conflicts. They also looked at how difficult it is to settle refactoring-related disagreements. They used the RefacotringMiner tool to detect refactorings and investigated the relationship between refactorings and merge conflicts at the conflicting region level for the study. In addition, the authors presented methods for detecting involved refactoring from refactoring and evolutionary change overlap.
+  </p>
+  <p>
+    The authors' contributions help readers see how the work differs from other work in this field. Following are the contributions of this paper:
+  </p>
+  <ul>
+    <li>
+      A large-scale first-of-its-kind empirical investigation of the role of refactoring procedures in merge conflicts, involving over 3,000 opensource Java projects.
+    </li>
+    <li>
+      A method for spotting evolutionary refactorings that result in merge conflicts.
+    </li>
+    <li>
+      An open-source implementation of methodology to help with verification and replication.
+    </li>
+  </ul>
+  <p>
+    The authors provided the results as a mean and standard deviation for both with and without involved refactoring. Furthermore, the authors showed the distribution of each refactoring type into involved and overall refactorings, taking into account their varying rates of occurrence and impact on conflicting regions. Following the methodology and implementation, the overall findings of the study were:
+  </p>
+  <ul>
+    <li>
+      Refactorings are used in 22\% of merging circumstances with at least one conflicting Java file. More specifically, 11\% of conflicting regions have at least one refactoring project.
+    </li>
+    <li>
+      Conflicting areas with refactorings are typically more complex than conflicting regions without refactorings. Furthermore, conflicting merge cases including refactorings contain more evolutionary changes than conflicting with no refactorings.
+    </li>
+    <li>
+      Conflicts are more involved in EXTRACT INTERFACE and EXTRACT SUPERCLASS, albeit with minimal effect sizes.
+    </li>
+  </ul>
+  <p>
+  The authors used an approach to look for refactoring operations in evolutionary commits that resulted in conflicts. While assessing whether the conflict is caused by refactoring or other modifications that are intertwined with refactoring, the authors refrained from declaring that they directly created the conflicts, which I believe is a crucial and logical statement from the author. Finally, the authors concluded with some threats to the work's validity, and future directions for developers to use refactoring-aware merging tools and methodologies to aid in the merging process.
+  </p>
+  
+</div>
+<p id="Mahmoudi2019" class="bib"><cite>Mahmoudi2019</cite>
+  Mehran Mahmoudi, Sarah Nadi, Nikolaos Tsantalis:
+  "<a href="https://ieeexplore.ieee.org/document/8668012">Are Refactorings to Blame? An Empirical Study of Refactorings in Merge Conflicts</a>".
+  <em>2019 IEEE 26th International Conference on Software Analysis, Evolution and Reengineering (SANER)</em>
+  <a class="doi" href="https://ieeexplore.ieee.org/document/8668012">10.1109/SANER.2019.8668012</a>.
+</p>
+<blockquote class="abstract">
+  With the rise of distributed software development, branching has become a popular approach that facilitates collaboration between software developers. One of the biggest challenges that developers face when using multiple development branches is dealing with merge conflicts. Conflicts occur when inconsistent changes happen to the code. Resolving these conflicts can be a cumbersome task as it requires prior knowledge about the changes in each of the development branches. A type of change that could potentially lead to complex conflicts is code refactoring. Previous studies have proposed techniques for facilitating conflict resolution in the presence of refactorings. However, the magnitude of the impact that refactorings have on merge conflicts has never been empirically evaluated. In this paper, we perform an empirical study on almost 3,000 wellengineered open-source Java software repositories and investigate the relation between merge conflicts and 15 popular refactoring types. Our results show that refactoring operations are involved in 22% of merge conflicts, which is remarkable taking into account that we investigated a relatively small subset of all possible refactoring types. Furthermore, certain refactoring types, such as EXTRACT METHOD, tend to be more problematic for merge conflicts. Our results also suggest that conflicts that involve refactored code are usually more complex, compared to conflicts with no refactoring changes.
+</blockquote>
