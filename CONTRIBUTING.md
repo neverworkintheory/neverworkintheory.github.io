@@ -116,6 +116,7 @@ Our entries have been written by:
 - [Felienne Hermans](https://www.felienne.com/)
 - [Lorin Hochstein](http://lorinhochstein.org/)
 - [Alexandru Ianta](https://github.com/aianta/)
+- [Wenxin Jiang](https://wenxin-jiang.github.io/)
 - [Ravika Nagpal]( https://www.linkedin.com/in/ravika-nagpal-b1636220)
 - [Brij Patel](https://www.linkedin.com/in/brijspatel/)
 - [Fayola Peters](https://lero.ie/lero-15/fayola-peters)

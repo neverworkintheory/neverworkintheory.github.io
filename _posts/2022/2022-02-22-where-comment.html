@@ -2,37 +2,33 @@
 layout: post
 author: Wenxin Jiang
 title: "Where should I comment my code? A dataset and model for predicting locations that need comments"
-date: 2022-02-13
+date: 2022-02-22
 categories: ["Maintenance", "Machine Learning"]
 ---
 <div class="review">
   <p>
-    Writing appropriate code comments are essential to high-quality software.
-    Though it is highly suggested to write the code and comments at the same time,
-    many programs still lack sufficient comments.  
-    <cite>Louis2020</cite> proposed the research questions on "where to write comments".
-    The first step towards the research goal is to guilde engineers to efficiently write comments in the correct locations.
-    Furthermore, the authors proposed a future direction on automatically writing comments.
-  </p> 
-  <p>
-    They created a dataset of 41506 snippets of C/C++ source code, and use a boolean label to indicate whether there should be a comment within each snippet.
+    Every programmer knows that they're supposed to write the code and comments at the same time,
+    but most programs still contain fewer than they should.
+    To help programmers figure out where comments are most effective,
+    <cite>Louis2020</cite> created a dataset of 41506 snippets of C/C++ source code
+    along with labels to indicate whether there should be a comment within each snippet.
     Using this dataset, they evaluated and compared the performance of three machine learning models:
     LOC model, sequence model, and hierarchical sequence models.
   </p>
-    
   <p>
-    <cite>Louis2020</cite> proposed that:
+    Based on both accuracy and the model's generalization ability on unseen data,
+    The authors found that:
+    hierarchical models are the best choice.
+    In particular,
+    a hierarchical sequence model can reach a precision of 74% and recall of 13%,
+    though with only shallow captures of the content of code.
   </p>
-  <ul>
-    <li>
-      Based on both accuracy and the model’s generalization ability on unseen data, hierarchical models emerges as the best choice.
-      Hierarchical sequence model can reach a precision of 74% and recall of 13%, though shallowly captures the content of code.
-    </li>
-    <li>
-      Short-term goal is to incorporate background knowledge and ‘surprise’-capturing features into the models.
-      Future directions will be focused on automatically segment the code into snippets rather than using the blank-line heuristic.
-    </li>
-  </ul>
+  <p>
+    Their current tool is available at <a href="http://groups.inf.ed.ac.uk/cup/comment-locator/">http://groups.inf.ed.ac.uk/cup/comment-locator/</a>.
+    The authors' short-term goal is to incorporate background knowledge and 'surprise'-capturing features into the models.
+    In future they plan to focus on automatically segmenting the code into snippets
+    rather than using the blank-line heuristic.
+  </p>
 </div>
 <p id="Louis2020" class="bib"><cite>Louis2020</cite>
   Annie Louis, Santanu Kumar Dash, Earl T. Barr, Michael D. Ernst, Chales Sutton:
@@ -42,5 +38,4 @@ categories: ["Maintenance", "Machine Learning"]
 </p>
 <blockquote class="abstract">
   Programmers should write code comments, but not on every line of code. We have created a machine learning model that suggests locations where a programmer should write a code comment. We trained it on existing commented code to learn locations that are chosen by developers. Once trained, the model can predict locations in new code. Our models achieved precision of 74% and recall of 13% in identifying comment-worthy locations. This first success opens the door to future work, both in the new where-to-comment problem and in guiding comment generation. Our code and data is available at http://groups.inf.ed.ac.uk/cup/comment-locator/.
-
 </blockquote>

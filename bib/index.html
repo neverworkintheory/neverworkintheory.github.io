@@ -24,29 +24,6 @@ Rabe Abdalkareem, Olivier Nourry, Sultan Wehaibi, Suhaib Mujahid, and Emad Shiha
 </p>
 <blockquote class="abstract">Code reuse is traditionally seen as good practice. Recent trends have pushed the concept of code reuse to an extreme, by using packages that implement simple and trivial tasks, which we call 'trivial packages'. A recent incident where a trivial package led to the breakdown of some of the most popular web applications such as Facebook and Netflix made it imperative to question the growing use of trivial packages. Therefore, in this paper, we mine more than 230,000 npm packages and 38,000 JavaScript applications in order to study the prevalence of trivial packages. We found that trivial packages are common and are increasing in popularity, making up 16.8% of the studied npm packages. We performed a survey with 88 Node.js developers who use trivial packages to understand the reasons and drawbacks of their use. Our survey revealed that trivial packages are used because they are perceived to be well implemented and tested pieces of code. However, developers are concerned about maintaining and the risks of breakages due to the extra dependencies trivial packages introduce. To objectively verify the survey results, we empirically validate the most cited reason and drawback and find that, contrary to developers' beliefs, only 45.2% of trivial packages even have tests. However, trivial packages appear to be 'deployment tested' and to have similar test, usage and community interest as non-trivial packages. On the other hand, we found that 11.5% of the studied trivial packages have more than 20 dependencies. Hence, developers should be careful about which trivial packages they decide to use.</blockquote>
 
-<h2 id="B">B</h2>
-<h2 id="C">C</h2>
-<h2 id="D">D</h2>
-<h2 id="E">E</h2>
-<h2 id="F">F</h2>
-<h2 id="G">G</h2>
-<h2 id="H">H</h2>
-<h2 id="I">I</h2>
-<h2 id="J">J</h2>
-<h2 id="K">K</h2>
-<h2 id="L">L</h2>
-<h2 id="M">M</h2>
-
-<p id="Mahmoudi2019" class="bib"><cite>Mahmoudi2019</cite>
-Mehran Mahmoudi, Sarah Nadi, and Nikolaos Tsantalis:
-"<a href="https://doi.org/10.1109/saner.2019.8668012">Are Refactorings to Blame? An Empirical Study of Refactorings in Merge Conflicts</a>".
-<em>Proc. International Conference on Software Analysis, Evolution and Reengineering (SANER)</em>, 2019, <a class="doi" href="https://doi.org/10.1109/saner.2019.8668012">10.1109/saner.2019.8668012</a>.
- (Reviewed <a href="{{'/2021/12/13/refactorings-in-merge-conflicts.html' | relative_url}}">2021-12-13</a>.)
-</p>
-<blockquote class="abstract">With the rise of distributed software development, branching has become a popular approach that facilitates collaboration between software developers. One of the biggest challenges that developers face when using multiple development branches is dealing with merge conflicts. Conflicts occur when inconsistent changes happen to the code. Resolving these conflicts can be a cumbersome task as it requires prior knowledge about the changes in each of the development branches. A type of change that could potentially lead to complex conflicts is code refactoring. Previous studies have proposed techniques for facilitating conflict resolution in the presence of refactorings. However, the magnitude of the impact that refactorings have on merge conflicts has never been empirically evaluated. In this paper, we perform an empirical study on almost 3,000 wellengineered open-source Java software repositories and investigate the relation between merge conflicts and 15 popular refactoring types. Our results show that refactoring operations are involved in 22% of merge conflicts, which is remarkable taking into account that we investigated a relatively small subset of all possible refactoring types. Furthermore, certain refactoring types, such as EXTRACT METHOD, tend to be more problematic for merge conflicts. Our results also suggest that conflicts that involve refactored code are usually more complex, compared to conflicts with no refactoring changes.</blockquote>
-
-
-
 <p id="Aghajani2019" class="bib"><cite>Aghajani2019</cite>
 Emad Aghajani, Csaba Nagy, Olga Lucero Vega-Marquez, Mario Linares-Vasquez, Laura Moreno, Gabriele Bavota, and Michele Lanza:
 "<a href="https://doi.org/10.1109/icse.2019.00122">Software Documentation Issues Unveiled</a>".
@@ -1108,6 +1085,14 @@ Sarah Lin, Ibraheem Ali, and Greg Wilson:
 </p>
 <blockquote class="abstract">The distribution of scholarly content today happens in the context of an immense deluge of information found on the internet. As a result, researchers face serious challenges when archiving and finding information that relates to their work. Library science principles provide a framework for navigating information ecosystems in order to help researchers improve findability of their professional output. Here, we describe the information ecosystem which consists of users, context, and content, all 3 of which must be addressed to make information findable and usable. We provide a set of tips that can help researchers evaluate who their users are, how to archive their research outputs to encourage findability, and how to leverage structural elements of software to make it easier to find information within and beyond their publications. As scholars evaluate their research communication strategies, they can use these steps to improve how their research is discovered and reused.</blockquote>
 
+<p id="Louis2020" class="bib"><cite>Louis2020</cite>
+Annie Louis, Santanu Kumar Dash, Earl T. Barr, Michael D. Ernst, and Charles Sutton:
+"<a href="https://doi.org/10.1145/3377816.3381736">Where should I comment my code?: a dataset and model for predicting locations that need comments</a>".
+<em>Proc. International Conference on Software Engineering (ICSE)</em>, 2020, <a class="doi" href="https://doi.org/10.1145/3377816.3381736">10.1145/3377816.3381736</a>.
+ (Reviewed <a href="{{'/2022/02/22/where-comments.html' | relative_url}}">2022-02-22</a>.)
+</p>
+<blockquote class="abstract">Programmers should write code comments, but not on every line of code. We have created a machine learning model that suggests locations where a programmer should write a code comment. We trained it on existing commented code to learn locations that are chosen by developers. Once trained, the model can predict locations in new code. Our models achieved precision of 74% and recall of 13% in identifying comment-worthy locations. This first success opens the door to future work, both in the new where-to-comment problem and in guiding comment generation. Our code and data is available at http://groups.inf.ed.ac.uk/cup/comment-locator/.</blockquote>
+
 <p id="Lo2015" class="bib"><cite>Lo2015</cite>
 David Lo, Nachiappan Nagappan, and Thomas Zimmermann:
 "<a href="https://doi.org/10.1145/2786805.2786809">How practitioners perceive the relevance of software engineering research</a>".
@@ -1143,6 +1128,14 @@ Hanna Mäenpää, Simo Mäkinen, Terhi Kilamo, Tommi Mikkonen, Tomi Männistö, 
  (Reviewed <a href="{{'/2021/09/09/organizing-for-openness.html' | relative_url}}">2021-09-09</a>.)
 </p>
 <blockquote class="abstract">This article examines organization and governance of commercially influenced Open Source Software development communities by presenting a multiple-case study of six contemporary, hybrid OSS projects. The findings provide in-depth understanding on how to design the participatory nature of the software development process, while understanding the factors that influence the delicate balance of openness, motivations, and governance. The results lay ground for further research on how to organize and manage developer communities where needs of the stakeholders are competing, yet complementary.</blockquote>
+
+<p id="Mahmoudi2019" class="bib"><cite>Mahmoudi2019</cite>
+Mehran Mahmoudi, Sarah Nadi, and Nikolaos Tsantalis:
+"<a href="https://doi.org/10.1109/saner.2019.8668012">Are Refactorings to Blame? An Empirical Study of Refactorings in Merge Conflicts</a>".
+<em>Proc. International Conference on Software Analysis, Evolution and Reengineering (SANER)</em>, 2019, <a class="doi" href="https://doi.org/10.1109/saner.2019.8668012">10.1109/saner.2019.8668012</a>.
+ (Reviewed <a href="{{'/2021/12/13/refactorings-in-merge-conflicts.html' | relative_url}}">2021-12-13</a>.)
+</p>
+<blockquote class="abstract">With the rise of distributed software development, branching has become a popular approach that facilitates collaboration between software developers. One of the biggest challenges that developers face when using multiple development branches is dealing with merge conflicts. Conflicts occur when inconsistent changes happen to the code. Resolving these conflicts can be a cumbersome task as it requires prior knowledge about the changes in each of the development branches. A type of change that could potentially lead to complex conflicts is code refactoring. Previous studies have proposed techniques for facilitating conflict resolution in the presence of refactorings. However, the magnitude of the impact that refactorings have on merge conflicts has never been empirically evaluated. In this paper, we perform an empirical study on almost 3,000 wellengineered open-source Java software repositories and investigate the relation between merge conflicts and 15 popular refactoring types. Our results show that refactoring operations are involved in 22% of merge conflicts, which is remarkable taking into account that we investigated a relatively small subset of all possible refactoring types. Furthermore, certain refactoring types, such as EXTRACT METHOD, tend to be more problematic for merge conflicts. Our results also suggest that conflicts that involve refactored code are usually more complex, compared to conflicts with no refactoring changes.</blockquote>
 
 <p id="Majumder2019" class="bib"><cite>Majumder2019</cite>
 Suvodeep Majumder, Joymallya Chakraborty, Amritanshu Agrawal, and Tim Menzies:
