@@ -1,19 +1,5 @@
 @comment{AAA}
 
-@article{Nakajo1991,
-  doi = {10.1109/32.83917},
-  url = {https://doi.org/10.1109/32.83917},
-  year = {1991},
-  publisher = {Institute of Electrical and Electronics Engineers ({IEEE})},
-  volume = {17},
-  number = {8},
-  pages = {830--838},
-  author = {T. Nakajo and H. Kume},
-  title = {A case history analysis of software error cause-effect relationships},
-  journal = {{IEEE} Transactions on Software Engineering},
-  abstract = {Approximately 700 errors in four commercial measuring-control software products were analyzed, and the cause-effect relationships of errors occurring during software development were identified. The analysis method used defined appropriate observation points along the path leading from cause to effect of a software error and gathered the corresponding data by analyzing each error using fault tree analysis. Each observation point's data were categorized, and the relationships between two adjoining points were summarized using a cross-indexing table. Four major error-occurrence mechanisms were identified; two are related to hardware and software interface specification misunderstandings, while the other two are related to system and module function misunderstandings. The effects of structured analysis and structured design methods on software errors were evaluated.}
-}
-
 @inproceedings{Abad2018,
   doi = {10.1145/3210459.3210471},
   url = {https://doi.org/10.1145/3210459.3210471},
@@ -38,19 +24,6 @@
   booktitle = esec-fse,
   abstract = {Code reuse is traditionally seen as good practice. Recent trends have pushed the concept of code reuse to an extreme, by using packages that implement simple and trivial tasks, which we call 'trivial packages'. A recent incident where a trivial package led to the breakdown of some of the most popular web applications such as Facebook and Netflix made it imperative to question the growing use of trivial packages. Therefore, in this paper, we mine more than 230,000 npm packages and 38,000 JavaScript applications in order to study the prevalence of trivial packages. We found that trivial packages are common and are increasing in popularity, making up 16.8\% of the studied npm packages. We performed a survey with 88 Node.js developers who use trivial packages to understand the reasons and drawbacks of their use. Our survey revealed that trivial packages are used because they are perceived to be well implemented and tested pieces of code. However, developers are concerned about maintaining and the risks of breakages due to the extra dependencies trivial packages introduce. To objectively verify the survey results, we empirically validate the most cited reason and drawback and find that, contrary to developers' beliefs, only 45.2\% of trivial packages even have tests. However, trivial packages appear to be 'deployment tested' and to have similar test, usage and community interest as non-trivial packages. On the other hand, we found that 11.5\% of the studied trivial packages have more than 20 dependencies. Hence, developers should be careful about which trivial packages they decide to use.},
   reviewed = {/2021/09/17/why-do-developers-use-trivial-packages.html}
-}
-
-@inproceedings{Mahmoudi2019,
-  doi = {10.1109/saner.2019.8668012},
-  url = {https://doi.org/10.1109/saner.2019.8668012},
-  year = {2019},
-  month = feb,
-  publisher = {{IEEE}},
-  author = {Mehran Mahmoudi and Sarah Nadi and Nikolaos Tsantalis},
-  title = {Are Refactorings to Blame? An Empirical Study of Refactorings in Merge Conflicts},
-  booktitle = saner,
-  abstract = {With the rise of distributed software development, branching has become a popular approach that facilitates collaboration between software developers. One of the biggest challenges that developers face when using multiple development branches is dealing with merge conflicts. Conflicts occur when inconsistent changes happen to the code. Resolving these conflicts can be a cumbersome task as it requires prior knowledge about the changes in each of the development branches. A type of change that could potentially lead to complex conflicts is code refactoring. Previous studies have proposed techniques for facilitating conflict resolution in the presence of refactorings. However, the magnitude of the impact that refactorings have on merge conflicts has never been empirically evaluated. In this paper, we perform an empirical study on almost 3,000 wellengineered open-source Java software repositories and investigate the relation between merge conflicts and 15 popular refactoring types. Our results show that refactoring operations are involved in 22\% of merge conflicts, which is remarkable taking into account that we investigated a relatively small subset of all possible refactoring types. Furthermore, certain refactoring types, such as EXTRACT METHOD, tend to be more problematic for merge conflicts. Our results also suggest that conflicts that involve refactored code are usually more complex, compared to conflicts with no refactoring changes.},
-  reviewed = {/2021/12/13/refactorings-in-merge-conflicts.html}
 }
 
 @inproceedings{Aghajani2019,
@@ -839,7 +812,7 @@
   title = {Working in Public: The Making and Maintenance of Open Source Software},
   publisher = {Stripe Press},
   year = {2020},
-  isbn = {9780578675862}, 
+  isbn = {9780578675862},
   abstract = {An inside look at modern open source software developers and their applications to, and influence on, our online social world.}
 }
 
@@ -1088,6 +1061,20 @@
   booktitle = icse,
   abstract = {To implement a program functionality, developers can reuse previously written code snippets by searching through a large-scale codebase. Over the years, many code search tools have been proposed to help developers. The existing approaches often treat source code as textual documents and utilize information retrieval models to retrieve relevant code snippets that match a given query. These approaches mainly rely on the textual similarity between source code and natural language query. They lack a deep understanding of the semantics of queries and source code. In this paper, we propose a novel deep neural network named CODEnn (Code-Description Embedding Neural Network). Instead of matching text similarity, CODEnn jointly embeds code snippets and natural language descriptions into a high-dimensional vector space, in such a way that code snippet and its corresponding description have similar vectors. Using the unified vector representation, code snippets related to a natural language query can be retrieved according to their vectors. Semantically related words can also be recognized and irrelevant/noisy keywords in queries can be handled. As a proof-of-concept application, we implement a code search tool named DeepCS using the proposed CODEnn model. We empirically evaluate DeepCS on a large scale codebase collected from GitHub. The experimental results show that our approach can effectively retrieve relevant code snippets and outperforms previous techniques.},
   reviewed = {/2021/12/02/deep-code-search.html}
+}
+
+@inproceedings{Guler2019,
+  doi = {10.5555/3361338.3361472},
+  url = {https://www.usenix.org/conference/usenixsecurity19/presentation/guler},
+  year = {2019},
+  month = aug,
+  author = {Emre G\"{u}ler and Cornelius Aschermann and Ali Abbasi and Thorsten Holz},
+  booktitle = usenix-sec,
+  title = {{AntiFuzz}: Impeding Fuzzing Audits of Binary Executables},
+  isbn = {978-1-939133-06-9},
+  pages = {1931--1947},
+  abstract = {A general defense strategy in computer security is to increase the cost of successful attacks in both computational resources as well as human time. In the area of binary security, this is commonly done by using obfuscation methods to hinder reverse engineering and the search for software vulnerabilities. However, recent trends in automated bug finding changed the modus operandi. Nowadays it is very common for bugs to be found by various fuzzing tools. Due to ever-increasing amounts of automation and research on better fuzzing strategies, large-scale, dragnet-style fuzzing of many hundreds of targets becomes viable. As we show, current obfuscation techniques are aimed at increasing the cost of human understanding and do little to slow down fuzzing. In this paper, we introduce several techniques to protect a binary executable against an analysis with automated bug f inding approaches that are based on fuzzing, symbolic/concolic execution, and taint-assisted fuzzing (commonly known as hybrid fuzzing). More specifically, we perform a systematic analysis of the fundamental assumptions of bug finding tools and develop general countermeasures for each assumption. Note that these techniques are not designed to target specific implementations of fuzzing tools, but address general assumptions that bug finding tools necessarily depend on. Our evaluation demonstrates that these techniques effectively impede fuzzing audits, while introducing a negligible performance overhead. Just as obfuscation techniques increase the amount of human labor needed to find a vulnerability, our techniques render automated fuzzing-based approaches futile.},
+  reviewed = {/2022/02/21/antifuzz.html}
 }
 
 @inproceedings{Gulzar2016,
@@ -1771,6 +1758,19 @@
   abstract = {The distribution of scholarly content today happens in the context of an immense deluge of information found on the internet. As a result, researchers face serious challenges when archiving and finding information that relates to their work. Library science principles provide a framework for navigating information ecosystems in order to help researchers improve findability of their professional output. Here, we describe the information ecosystem which consists of users, context, and content, all 3 of which must be addressed to make information findable and usable. We provide a set of tips that can help researchers evaluate who their users are, how to archive their research outputs to encourage findability, and how to leverage structural elements of software to make it easier to find information within and beyond their publications. As scholars evaluate their research communication strategies, they can use these steps to improve how their research is discovered and reused.}
 }
 
+@inproceedings{Louis2020,
+  doi = {10.1145/3377816.3381736},
+  url = {https://doi.org/10.1145/3377816.3381736},
+  year = {2020},
+  month = jun,
+  publisher = {{ACM}},
+  author = {Annie Louis and Santanu Kumar Dash and Earl T. Barr and Michael D. Ernst and Charles Sutton},
+  title = {Where should I comment my code?: a dataset and model for predicting locations that need comments},
+  booktitle = icse,
+  abstract = {Programmers should write code comments, but not on every line of code. We have created a machine learning model that suggests locations where a programmer should write a code comment. We trained it on existing commented code to learn locations that are chosen by developers. Once trained, the model can predict locations in new code. Our models achieved precision of 74\% and recall of 13\% in identifying comment-worthy locations. This first success opens the door to future work, both in the new where-to-comment problem and in guiding comment generation. Our code and data is available at http://groups.inf.ed.ac.uk/cup/comment-locator/.},
+  reviewed = {/2022/02/22/where-comments.html}
+}
+
 @inproceedings{Lo2015,
   doi = {10.1145/2786805.2786809},
   url = {https://doi.org/10.1145/2786805.2786809},
@@ -1828,6 +1828,19 @@
   journal = {Journal of Internet Services and Applications},
   abstract = {This article examines organization and governance of commercially influenced Open Source Software development communities by presenting a multiple-case study of six contemporary, hybrid OSS projects. The findings provide in-depth understanding on how to design the participatory nature of the software development process, while understanding the factors that influence the delicate balance of openness, motivations, and governance. The results lay ground for further research on how to organize and manage developer communities where needs of the stakeholders are competing, yet complementary.},
   reviewed = {/2021/09/09/organizing-for-openness.html}
+}
+
+@inproceedings{Mahmoudi2019,
+  doi = {10.1109/saner.2019.8668012},
+  url = {https://doi.org/10.1109/saner.2019.8668012},
+  year = {2019},
+  month = feb,
+  publisher = {{IEEE}},
+  author = {Mehran Mahmoudi and Sarah Nadi and Nikolaos Tsantalis},
+  title = {Are Refactorings to Blame? An Empirical Study of Refactorings in Merge Conflicts},
+  booktitle = saner,
+  abstract = {With the rise of distributed software development, branching has become a popular approach that facilitates collaboration between software developers. One of the biggest challenges that developers face when using multiple development branches is dealing with merge conflicts. Conflicts occur when inconsistent changes happen to the code. Resolving these conflicts can be a cumbersome task as it requires prior knowledge about the changes in each of the development branches. A type of change that could potentially lead to complex conflicts is code refactoring. Previous studies have proposed techniques for facilitating conflict resolution in the presence of refactorings. However, the magnitude of the impact that refactorings have on merge conflicts has never been empirically evaluated. In this paper, we perform an empirical study on almost 3,000 wellengineered open-source Java software repositories and investigate the relation between merge conflicts and 15 popular refactoring types. Our results show that refactoring operations are involved in 22\% of merge conflicts, which is remarkable taking into account that we investigated a relatively small subset of all possible refactoring types. Furthermore, certain refactoring types, such as EXTRACT METHOD, tend to be more problematic for merge conflicts. Our results also suggest that conflicts that involve refactored code are usually more complex, compared to conflicts with no refactoring changes.},
+  reviewed = {/2021/12/13/refactorings-in-merge-conflicts.html}
 }
 
 @article{Majumder2019,
@@ -2210,6 +2223,21 @@
   booktitle = fse,
   abstract = {It is nearly 50 years since Dijkstra argued that goto obscures the flow of control in program execution and urged programmers to abandon the goto statement. While past research has shown that goto is still in use, little is known about whether goto is used in the unrestricted manner that Dijkstra feared, and if it is 'harmful' enough to be a part of a post-release bug. We, therefore, conduct a two part empirical study - (1) qualitatively analyze a statistically rep- resentative sample of 384 files from a population of almost 250K C programming language files collected from over 11K GitHub repositories and find that developers use goto in C files for error handling (80.21${\pm}$5\%) and cleaning up resources at the end of a procedure (40.36${\pm}$5\%); and (2) quantitatively analyze the commit history from the release branches of six OSS projects and find that no goto statement was re- moved/modified in the post-release phase of four of the six projects. We conclude that developers limit themselves to using goto appropriately in most cases, and not in an unrestricted manner like Dijkstra feared, thus suggesting that goto does not appear to be harmful in practice.},
   reviewed = {/2016/06/09/goto-in-c.html}
+}
+
+@article{Nakajo1991,
+  doi = {10.1109/32.83917},
+  url = {https://doi.org/10.1109/32.83917},
+  year = {1991},
+  publisher = {Institute of Electrical and Electronics Engineers ({IEEE})},
+  volume = {17},
+  number = {8},
+  pages = {830--838},
+  author = {Takeshi Nakajo and Hitoshi Kume},
+  title = {A case history analysis of software error cause-effect relationships},
+  journal = ieee-tse,
+  abstract = {Approximately 700 errors in four commercial measuring-control software products were analyzed, and the cause-effect relationships of errors occurring during software development were identified. The analysis method used defined appropriate observation points along the path leading from cause to effect of a software error and gathered the corresponding data by analyzing each error using fault tree analysis. Each observation point's data were categorized, and the relationships between two adjoining points were summarized using a cross-indexing table. Four major error-occurrence mechanisms were identified; two are related to hardware and software interface specification misunderstandings, while the other two are related to system and module function misunderstandings. The effects of structured analysis and structured design methods on software errors were evaluated.},
+  reviewed = {/2022/03/01/software-error-cause-effect.html}
 }
 
 @inproceedings{Nakshatri2016,

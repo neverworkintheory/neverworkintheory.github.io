@@ -1,0 +1,58 @@
+---
+layout: post
+author: Geoff Cramer
+title: "A case history analysis of software error cause-effect relationships"
+date: 2022-03-01
+categories: ["Development Process", "Program Analysis"]
+---
+<div class="review">
+  <p>
+    Where do software errors come from?
+    Almost thirty years ago,
+    <cite>Nakajo1991</cite> analyzed approximately 700 software errors in four commercial measuring-control products
+    and used a restricted version of fault tree analysis (FTA) to capture meaningful cause-effect failure patterns.
+    The authors observed failures at chosen points along a cause-effect process of software errors;
+    selected points are highlighted below:
+  </p>
+  <ol>
+    <li>inappropriate management of work system</li>
+    <li>work system flaw (<b>process</b>, individual, environmental flaws)</li>
+    <li><b>human error</b></li>
+    <li><b>program fault</b></li>
+    <li>system failure</li>
+  </ol>
+  <p>
+    The methodology in this paper provides a systematic way to map software failures to their ultimate cause
+    and leverages statistical analysis to draw conclusions about rates of particular errors across projects.
+    However, the study only analyzed two system products and two firmware products
+    and was not able to study either individual or environmental paths
+    along its own defined error cause-effect process.
+  </p>
+  <p>
+    <cite>Nakajo1991</cite> concluded that:
+  </p>
+  <ol>
+    <li>Two major error patterns resulted from hardware or software interface misunderstandings.</li>
+    <li>Two more common error sources emerged from system and module function misconceptions.</li>
+    <li>
+      Structured Analysis and Structured Design (SA/SD) methods were effective in mitigating the first two
+      but not the last two sources of errors.
+    </li>
+  </ol>
+  <p>
+    Thirty years is a long time in our industry,
+    but this work shows that systematic analysis of errors,
+    and of strategies to mitigate them,
+    was possible long before the internet made "big data" about software available.
+    The question the paper doesn't ask,
+    but we should,
+    is, "Why aren't analyses like these an everyday thing?"
+  </p>
+</div>
+<p id="Nakajo1991" class="bib"><cite>Nakajo1991</cite>
+  Takeshi Nakajo and Hitoshi Kume:
+  "<a href="https://doi.org/10.1109/32.83917">A case history analysis of software error cause-effect relationships</a>".
+  <em>IEEE Transactions on Software Engineering</em>, 17(8), 1991,
+  <a class="doi" href="https://doi.org/10.1109/32.83917">10.1109/32.83917</a>.
+</p>
+<blockquote class="abstract">Approximately 700 errors in four commercial measuring-control software products were analyzed, and the cause-effect relationships of errors occurring during software development were identified. The analysis method used defined appropriate observation points along the path leading from cause to effect of a software error and gathered the corresponding data by analyzing each error using fault tree analysis. Each observation point's data were categorized, and the relationships between two adjoining points were summarized using a cross-indexing table. Four major error-occurrence mechanisms were identified; two are related to hardware and software interface specification misunderstandings, while the other two are related to system and module function misunderstandings. The effects of structured analysis and structured design methods on software errors were evaluated.</blockquote>
