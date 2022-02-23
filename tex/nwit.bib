@@ -1,19 +1,5 @@
 @comment{AAA}
 
-@article{Nakajo1991,
-  doi = {10.1109/32.83917},
-  url = {https://doi.org/10.1109/32.83917},
-  year = {1991},
-  publisher = {Institute of Electrical and Electronics Engineers ({IEEE})},
-  volume = {17},
-  number = {8},
-  pages = {830--838},
-  author = {T. Nakajo and H. Kume},
-  title = {A case history analysis of software error cause-effect relationships},
-  journal = {{IEEE} Transactions on Software Engineering},
-  abstract = {Approximately 700 errors in four commercial measuring-control software products were analyzed, and the cause-effect relationships of errors occurring during software development were identified. The analysis method used defined appropriate observation points along the path leading from cause to effect of a software error and gathered the corresponding data by analyzing each error using fault tree analysis. Each observation point's data were categorized, and the relationships between two adjoining points were summarized using a cross-indexing table. Four major error-occurrence mechanisms were identified; two are related to hardware and software interface specification misunderstandings, while the other two are related to system and module function misunderstandings. The effects of structured analysis and structured design methods on software errors were evaluated.}
-}
-
 @inproceedings{Abad2018,
   doi = {10.1145/3210459.3210471},
   url = {https://doi.org/10.1145/3210459.3210471},
@@ -2237,6 +2223,21 @@
   booktitle = fse,
   abstract = {It is nearly 50 years since Dijkstra argued that goto obscures the flow of control in program execution and urged programmers to abandon the goto statement. While past research has shown that goto is still in use, little is known about whether goto is used in the unrestricted manner that Dijkstra feared, and if it is 'harmful' enough to be a part of a post-release bug. We, therefore, conduct a two part empirical study - (1) qualitatively analyze a statistically rep- resentative sample of 384 files from a population of almost 250K C programming language files collected from over 11K GitHub repositories and find that developers use goto in C files for error handling (80.21${\pm}$5\%) and cleaning up resources at the end of a procedure (40.36${\pm}$5\%); and (2) quantitatively analyze the commit history from the release branches of six OSS projects and find that no goto statement was re- moved/modified in the post-release phase of four of the six projects. We conclude that developers limit themselves to using goto appropriately in most cases, and not in an unrestricted manner like Dijkstra feared, thus suggesting that goto does not appear to be harmful in practice.},
   reviewed = {/2016/06/09/goto-in-c.html}
+}
+
+@article{Nakajo1991,
+  doi = {10.1109/32.83917},
+  url = {https://doi.org/10.1109/32.83917},
+  year = {1991},
+  publisher = {Institute of Electrical and Electronics Engineers ({IEEE})},
+  volume = {17},
+  number = {8},
+  pages = {830--838},
+  author = {Takeshi Nakajo and Hitoshi Kume},
+  title = {A case history analysis of software error cause-effect relationships},
+  journal = ieee-tse,
+  abstract = {Approximately 700 errors in four commercial measuring-control software products were analyzed, and the cause-effect relationships of errors occurring during software development were identified. The analysis method used defined appropriate observation points along the path leading from cause to effect of a software error and gathered the corresponding data by analyzing each error using fault tree analysis. Each observation point's data were categorized, and the relationships between two adjoining points were summarized using a cross-indexing table. Four major error-occurrence mechanisms were identified; two are related to hardware and software interface specification misunderstandings, while the other two are related to system and module function misunderstandings. The effects of structured analysis and structured design methods on software errors were evaluated.},
+  reviewed = {/2022/03/01/software-error-cause-effect.html}
 }
 
 @inproceedings{Nakshatri2016,
