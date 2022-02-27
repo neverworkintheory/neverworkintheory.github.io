@@ -137,7 +137,7 @@ ${AUTHORS_HTML}: ${AUTHORS_BIN} ${NWIT_BIB}
 	@echo "layout: page" >> ${AUTHORS_HTML}
 	@echo "title: Authors" >> ${AUTHORS_HTML}
 	@echo "---" >> ${AUTHORS_HTML}
-	${AUTHORS_BIN} ${STRINGS_OPTION} --unreviewed ${UNREVIEWED_TXT} --input ${NWIT_BIB} >> ${AUTHORS_HTML}
+	@cat ${STRINGS_BIB} ${NWIT_BIB} | ${AUTHORS_BIN} ${UNREVIEWED_TXT} >> ${AUTHORS_HTML}
 
 ${BIB_HTML}: ${STRINGS_BIB} ${NWIT_BIB} ${BIB2YAML_BIN} ${YAML2HTML_BIN}
 	make TITLE="Bibliography" SLUG=nwit bib2yaml > $@

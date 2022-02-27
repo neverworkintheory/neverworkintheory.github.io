@@ -2,12 +2,13 @@
 layout: page
 title: By Review Date
 ---
-<p>
-  {% for year in site.years reversed %}<a href="#y{{year}}">{{year}}</a>{% unless forloop.last %} &middot; {% endunless %}{% endfor %}
-</p>
-
 <div align="center">
-  <img src="{{'/files/years-histogram.svg' | relative_url}}" alt="Histogram of publication years of papers reviewed" />
+  <p>
+    {% for year in site.years reversed %}<a href="#y{{year}}">{{year}}</a>{% unless forloop.last %} &middot; {% endunless %}{% endfor %}
+  </p>
+  <p>
+    <img src="{{'/files/years-histogram.svg' | relative_url}}" alt="Histogram of publication years of papers reviewed" />
+  </p>
 </div>
 
 {% for post in site.posts %}

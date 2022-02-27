@@ -1,77 +1,56 @@
 #!/usr/bin/env python
 
-import argparse
-import re
+"""Construct table of articles by author."""
+
 import sys
+from pybtex.database import parse_string
 
-import util
-
-
-SPECIAL = {
-    'K. El Emam': 'El Emam, K.',
-    'Guilherme Renna Rodrigues': 'Renna Rodrigues, Guilherme',
-    'Mel Ó Cinnéide': 'Ó Cinnéide, Mel',
-    'Santiago Perez De Rosso': 'Perez De Rosso, Santiago',
-    'Arie van Deursen': 'van Deursen, Arie'
-}
-
-SPLIT = re.compile(r'\band\b')
-
+from util import LATEX_CHARS
 
 def main():
-    options = get_options()
-    unreviewed = util.get_unreviewed(options.unreviewed)
-    entries = util.get_entries(options.strings, options.input)
-    entries = [e for e in entries if e['ID'] not in unreviewed]
-    credit = {}
-    for entry in entries:
-        add_credit(credit, entry)
-    report(credit)
+    text = sys.stdin.read()
+    bib = parse_string(text, "bibtex")
+    bib = bib.entries
 
+    unreviewed = {x.strip() for x in open(sys.argv[1], "r").readlines()}
 
-def add_credit(credit, entry):
-    eid = entry['ID']
-    assert ('author' in entry) or ('editor' in entry), \
-        f'No author or editor in {entry}'
-    assert 'reviewed' in entry, \
-        f'No review listed in {entry}'
-    reviewed = entry['reviewed']
-    source = entry['author'] if ('author' in entry) else entry['editor']
-    for person in [x.strip() for x in SPLIT.split(source)]:
-        person = util.unlatex(person)
-        person = normalize(person)
-        if person not in credit:
-            credit[person] = []
-        credit[person].append((eid, reviewed))
+    seen = {}
+    for key in sorted(bib.keys()):
+        if key in unreviewed:
+            continue
 
+        if "reviewed" not in bib[key].fields:
+            print(f"entry {key} missing 'reviewed'")
+            sys.exit(1)
 
-def get_options():
-    parser = argparse.ArgumentParser()
-    parser.add_argument('--input', help='specify input file')
-    parser.add_argument('--strings', help='string definitions file')
-    parser.add_argument('--unreviewed', help='text file with one key per line indicating unreviewed entries')
-    return parser.parse_args()
+        reviewed = bib[key].fields["reviewed"]
+        for p in bib[key].persons:
+            for name in bib[key].persons[p]:
+                seen.setdefault(_clean(name), set()).add((key, reviewed))
 
-
-def report(credit):
-    print('<table>')
+    print("<table>")
     print('<tr><th>Name</th><th>Citation</th><th>Reviewed</th></tr>')
-    for person in sorted(credit.keys()):
-        for (i, (key, reviewed)) in enumerate(credit[person]):
-            p_col = f'<td>{person}</td>' if (i == 0) else '<td></td>'
-            k_col = f'<td><a href="/bib/#{key}">{key}</a></td>'
+    for name in sorted(seen.keys(), key=lambda x: _sort(x)):
+        first = name
+        for (key, reviewed) in sorted(seen[name]):
             _, year, month, day, _ = reviewed.split('/')
-            r_col = f'<td><a href="{{{{\'{reviewed}\' | relative_url}}}}">{year}-{month}-{day}</a></td>'
-            print(f'<tr>{p_col}{k_col}{r_col}</tr>')
-    print('</table>')
+            key = f'<a href="/bib/#{key}">{key}</a>'
+            reviewed = f'<a href="{{{{\'{reviewed}\' | relative_url}}}}">{year}-{month}-{day}</a>'
+            print(f"<tr><td>{first}</td><td>{key}</td><td>{reviewed}</td></tr>")
+            first = ""
+    print("</table>")
 
 
-def normalize(person):
-    if person in SPECIAL:
-        return SPECIAL[person]
-    front, back = person.rsplit(' ', 1)
-    return f'{back}, {front}'
+def _clean(name):
+    name = str(name)
+    for (latex, html) in LATEX_CHARS:
+        name = name.replace(latex, html)
+    return name
 
-        
-if __name__ == '__main__':
+
+def _sort(name):
+    return name.replace("Å", "A").replace("É", "E").replace("Ś", "S").lower()
+
+
+if __name__ == "__main__":
     main()

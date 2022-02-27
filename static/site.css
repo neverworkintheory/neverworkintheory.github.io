@@ -65,6 +65,11 @@ blockquote.abstract {
     border-left: 0.5rem #F8F8F8;
 }
 
+/* Page titles */
+.page-title {
+    text-align: center;
+}
+
 /* Page navigation */
 .page-navigation {
   font-size: 14px;
