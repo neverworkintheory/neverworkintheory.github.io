@@ -5,7 +5,7 @@ layout: page
   <h1>{{site.title}}</h1>
   <p><em>{{site.subtitle}}</em></p>
 </div>
-{% for post in site.posts limit:10 %}
+{% for post in site.posts limit:20 %}
 <p>
   <strong><a href="{{post.url | relative_url}}">{{post.date | date: '%F'}}: {{post.title}}</a></strong>
   <br/>
