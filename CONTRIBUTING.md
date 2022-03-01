@@ -111,6 +111,7 @@ Our entries have been written by:
 - [Hamza Alvi](https://github.com/hamzaMAlvi/)
 - [Jorge Aranda](https://cuevano.ca/)
 - [Paschal C. Amusuo](https://www.linkedin.com/in/paschal-amusuo-134146b3/)
+- [Geoff Cramer](https://www.linkedin.com/in/geoff-cramer-85b430129/)
 - [Neil Ernst](https://www.neilernst.net/)
 - [Kushankur Ghosh](https://sites.google.com/view/kayghosh/kush)
 - [Sakib Hasan](https://www.linkedin.com/in/sakib-hasan-071a05152/)

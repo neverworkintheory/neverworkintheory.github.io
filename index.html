@@ -192,3 +192,17 @@ tickets: https://www.eventbrite.com/e/it-will-never-work-in-theory-tickets-26825
   </li>
 
 </ul>
+
+<hr/>
+
+<h2>Recent Reviews</h2>
+
+{% for post in site.posts limit:20 %}
+<p>
+  <strong><a href="{{post.url | relative_url}}">{{post.date | date: '%F'}}: {{post.title}}</a></strong>
+  <br/>
+  Keywords: {{ post.categories | sort | join: ', ' }}
+  <br/>
+  Reviewed by: {{ post.author }}
+</p>
+{% endfor %}
