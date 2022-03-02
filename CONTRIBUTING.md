@@ -109,6 +109,7 @@ We can translate for you if necessary.
 Our entries have been written by:
 
 - [Hamza Alvi](https://github.com/hamzaMAlvi/)
+- [Dharun Anandayuvaraj](https://www.linkedin.com/in/dharunanand/)
 - [Jorge Aranda](https://cuevano.ca/)
 - [Paschal C. Amusuo](https://www.linkedin.com/in/paschal-amusuo-134146b3/)
 - [Neil Ernst](https://www.neilernst.net/)
