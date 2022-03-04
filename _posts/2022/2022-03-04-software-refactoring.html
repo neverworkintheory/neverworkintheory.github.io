@@ -1,0 +1,54 @@
+---
+layout: post
+author: Greg Wilson
+title: "A Large-scale Survey of Software Refactoring"
+date: 2022-03-04
+categories: ["Refactoring"]
+---
+<div class="review">
+  <p>
+    Modern IDEs like <a href="https://www.jetbrains.com/idea/">IDEA</a>
+    and <a href="https://code.visualstudio.com/">VS Code</a> are far more than editors:
+    they are the foundations of plugin ecosystems that provide thousands of useful tools.
+    However,
+    most programmers only use a fraction of their power:
+    they still use <code>print</code> statements to debug,
+    indent code by hand,
+    and search files for functions instead of jumping directly to definitions.
+  </p>
+  <p>
+    This study by the makers of IDEA looks at its refactoring tools
+    and how they're used.
+    They find that programmers spend a lot of time doing the things
+    those tools could do for them automatically,
+    and that the main reasons for this are the complexity of the tools
+    and a lack of training.
+    The former may be hard to solve—some tasks really are complicated—but
+    in my opinion,
+    the latter could be addressed by requiring students in programming courses
+    to demonstrate proficiency with tools,
+    just as students in biology or engineering are required to demonstrate
+    that they know how to use lab equipment properly.
+    Having students submit short screen recordings of themselves refactoring
+    (or using a breakpointing debugger, or other tools)
+    is technically feasiable,
+    could be done without violating privacy,
+    would be easy to grade,
+    and would allow instructors to give feedback on the "how" of programming
+    as well as the "what".
+    If you're interested in trying this out,
+    please get in touch.
+  </p>
+</div>
+<p id="Golubev2021" class="bib">
+  Yaroslav Golubev, Zarina Kurbatova, Eman&nbsp;Abdullah AlOmar, Timofey Bryksin, and Mohamed&nbsp;Wiem Mkaouer.
+  One thousand and one stories: a large-scale survey of software refactoring.
+  In <em>Proc. ESEC/FSE</em>, 2021,
+  <a href="https://doi.org/10.1145/3468264.3473924">doi:10.1145/3468264.3473924</a>.
+</p>
+<blockquote class="abstract">
+  <p>
+    Despite the availability of refactoring as a feature in popular IDEs, recent studies revealed that developers are reluctant to use them, and still prefer the manual refactoring of their code. At JetBrains, our goal is to fully support refactoring features in IntelliJ-based IDEs and improve their adoption in practice. Therefore, we start by raising the following main questions. How exactly do people refactor code? What refactorings are the most popular? Why do some developers tend not to use convenient IDE refactoring tools? In this paper, we investigate the raised questions through the design and implementation of a survey targeting 1,183 users of IntelliJ-based IDEs. Our quantitative and qualitative analysis of the survey results shows that almost two-thirds of developers spend more than one hour in a single session refactoring their code; that refactoring types vary greatly in popularity; and that a lot of developers would like to know more about IDE refactoring features but lack the means to do so. These results serve us internally to support the next generation of refactoring features, as well as can help our research community to establish new directions in the refactoring usability research.
+  </p>
+</blockquote>
+
