@@ -77,7 +77,7 @@ abstract:
 
 ## entry: convert single entry (KEY=NameYear) to HTML
 entry:
-	@cat ${NWIT_BIB} ${TODO_BIB} | ${BIB2YAML_BIN} ${STRINGS_OPTION} --only ${KEY} | ${YAML2HTML_BIN} --notoc --template _template.html
+	@cat ${STRINGS_BIB} ${NWIT_BIB} ${TODO_BIB} | bin/entry.py ${KEY} _template.html
 
 ## pick: select a random entry from the to-do list (YEAR=yyyy optional)
 pick:

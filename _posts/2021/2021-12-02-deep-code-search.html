@@ -19,17 +19,19 @@ categories: ["Code Search", "Deep Learning"]
     proposes a tool called DeepCS that takes natural language queries
     and searches for relevant code in a large codebase.
     The CODEnn model that DeepCS uses to find relevant code snippets consists of three modules:
-    <ol>
-      <li>
-	A code embedding network (CoNN) that learns to embed code into vectors.
-      </li>
-      <li>
-	A description embedding network (DeNN) that learns to embed natural language descriptions into vectors.
-      </li>
-      <li>
-	A similarity module that measures the similarity between code and description vectors.
-      </li>
-    </ol>
+  </p>
+  <ol>
+    <li>
+      A code embedding network (CoNN) that learns to embed code into vectors.
+    </li>
+    <li>
+      A description embedding network (DeNN) that learns to embed natural language descriptions into vectors.
+    </li>
+    <li>
+      A similarity module that measures the similarity between code and description vectors.
+    </li>
+  </ol>
+  <p>
     CoNN and DeNN use recurrent neural networks to embed inputs into vectors, while
     the similarity module uses cosine similarity measure to find the closeness between
     embedded inputs. <cite>Gu2018</cite> used more than 18 million methods
