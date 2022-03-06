@@ -7,7 +7,45 @@ categories: ["Stack Overflow"]
 ---
 <div class="review">
   <p>
-    Review goes here.
+    I've been writing extensions to
+    a little static site generator called <a href="https://www.dmulholl.com/docs/ivy/dev/">Ivy</a>
+    for some of my side projects.
+    At one point I had half a dozen tabs open on <a href="https://stackoverflow.com/">Stack Overflow</a>
+    while figuring out the right way to customize code highlighting.
+    The problem wasn't finding an answer:
+    the problem was finding an answer that was up to date.
+    Libraries change over time,
+    but it takes a while for old answers with lots of upvotes
+    to be superceded by newer, more accurate answers.
+  </p>
+  <p>
+    <cite>Zhang2021b</cite> looks at this phenomenon quantitatively.
+    I wasn't surprised by their finding that only 20% of obsolete answers are ever updated;
+    I <em>was</em> surprised to learn that
+    more than half of obsolete answers were out of date even when they were first posted.
+  </p>
+  <p>
+    As evidenced by the figures shown below,
+    this paper contains a wealth of information.
+    And while some of its suggestions
+    (e.g., telling answer seekers to check comments carefully for signs of obsolescence)
+    fall into the same category as, "You really should eat more vegetables,"
+    many of its proposals are actionable:
+    for example,
+    the authors point out that many obsolete answers could be detected
+    <em>as they are being typed in</em>.
+    If our live event in April goes well,
+    I hope we will have a second session later in the year,
+    and I hope that these results will be featured then.
+  </p>
+  <p>
+    <img src="{{'/files/2022/zhang2021b-fig4.png' | relative_url}}" alt="Figure 4" width="60%"/>
+  </p>
+  <p>
+    <img src="{{'/files/2022/zhang2021b-fig8.png' | relative_url}}" alt="Figure 8" width="60%"/>
+  </p>
+  <p>
+    <img src="{{'/files/2022/zhang2021b-fig10.png' | relative_url}}" alt="Figure 10" width="60%"/>
   </p>
 </div>
 <p id="Zhang2021b" class="bib">
@@ -18,7 +56,7 @@ categories: ["Stack Overflow"]
 </p>
 <blockquote class="abstract">
   <p>
-    Stack Overflow accumulates an enormous amount of software engineering knowledge. However, as time passes, certain knowledge in answers may become obsolete. Such obsolete answers, if not identified or documented clearly, may mislead answer seekers and cause unexpected problems (e.g., using an out-dated security protocol). In this paper, we investigate how the knowledge in answers becomes obsolete and identify the characteristics of such obsolete answers. We find that: 1) More than half of the obsolete answers (58.4 percent) were probably already obsolete when they were first posted. 2) When an obsolete answer is observed, only a small proportion (20.5 percent) of such answers are ever updated. 3) Answers to questions in certain tags (e.g., node.js, ajax, android, and objective-c) are more likely to become obsolete. Our findings suggest that Stack Overflow should develop mechanisms to encourage the whole community to maintain answers (to avoid obsolete answers) and answer seekers are encouraged to carefully go through all information (e.g., comments) in answer threads.
+    Stack Overflow accumulates an enormous amount of software engineering knowledge. However, as time passes, certain knowledge in answers may become obsolete. Such obsolete answers, if not identified or documented clearly, may mislead answer seekers and cause unexpected problems (e.g., using an out-dated security protocol). In this paper, we investigate how the knowledge in answers becomes obsolete and identify the characteristics of such obsolete answers. We find that: 1) More than half of the obsolete answers (58.4%) were probably already obsolete when they were first posted. 2) When an obsolete answer is observed, only a small proportion (20.5%) of such answers are ever updated. 3) Answers to questions in certain tags (e.g., <code>node.js</code>, <code>ajax</code>, <code>android</code>, and <code>objective-c</code>) are more likely to become obsolete. Our findings suggest that Stack Overflow should develop mechanisms to encourage the whole community to maintain answers (to avoid obsolete answers) and answer seekers are encouraged to carefully go through all information (e.g., comments) in answer threads.
   </p>
 </blockquote>
 
