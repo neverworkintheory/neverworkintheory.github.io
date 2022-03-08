@@ -1,13 +1,69 @@
 ---
 layout: post
 author: "Greg Wilson"
-title: "Paper Title"
+title: "Characterizing Single-Statement Bugs in Popular Open-Source Python Projects"
 date: 2022-03-11
 categories: ["Python", "Open Source", "Bugs"]
 ---
 <div class="review">
   <p>
-    Review goes here.
+    I spent most of an afternoon last week tracking down a bug
+    caused by having two decorators stacked on a function in the wrong order.
+    The fix was small,
+    but the impact was not.
+    Reading this paper has got me wondering how often this happens—how often
+    it turns out that just one line in a program needs to change to make it right.
+  </p>
+  <p>
+    Kamienski and colleagues set out to answer two questions:
+    what are the most common single-statement bugs in Python projects,
+    and how do they differ from those in Java projects?
+    After harvesting code from World of Code,
+    they used diffs to identify single-statement fixes.
+    The findings and differences are both interesting:
+  </p>
+  <table>
+    <tr><th>Pattern name</th>			<th>Python</th>	<th>%</th>	<th>Java</th>	<th>%</th></tr>
+    <tr><td>Same Function More Args</td>	<td>9,958</td>	<td>14</td>	<td>5,100</td>	<td>8</td></tr>
+    <tr><td>Wrong Function/Method Name</td>	<td>9,901</td>	<td>12</td>	<td>10,179</td>	<td>16</td></tr>
+    <tr><td>Change Identifier Used</td>		<td>8,973</td>	<td>12</td>	<td>22,668</td>	<td>35</td></tr>
+    <tr><td>Add Function Around Expression</td>	<td>6,363</td>	<td>9</td>	<td>0</td>	<td>0</td></tr>
+    <tr><td>Change Attribute Used</td>		<td>5,229</td>	<td>7</td>	<td>0</td>	<td>0</td></tr>
+    <tr><td>Change Numeric Literal</td>		<td>4,775</td>	<td>7</td>	<td>5,447</td>	<td>8</td></tr>
+    <tr><td>Change Operand</td>			<td>4,657</td>	<td>6</td>	<td>807</td>	<td>1</td></tr>
+    <tr><td>Same Function Less Args</td>	<td>3,381</td>	<td>5</td>	<td>1,588</td>	<td>2</td></tr>
+    <tr><td>Add Method Call</td>		<td>3,338</td>	<td>5</td>	<td>0</td>	<td>0</td></tr>
+    <tr><td>Add Elements to Iterable</td>	<td>2,541</td>	<td>3</td>	<td>0</td>	<td>0</td></tr>
+    <tr><td>More Specific If</td>		<td>2,443</td>	<td>3</td>	<td>2,381</td>	<td>4</td></tr>
+    <tr><td>Change Constant Type</td>		<td>2,199</td>	<td>3</td>	<td>0</td>	<td>0</td></tr>
+    <tr><td>Change Unary Operator</td>		<td>2,187</td>	<td>3</td>	<td>1,016</td>	<td>2</td></tr>
+    <tr><td>Change Keyword Argument Used</td>	<td>1,554</td>	<td>2</td>	<td>0</td>	<td>0</td></tr>
+    <tr><td>Change Boolean Literal</td>		<td>1,466</td>	<td>2</td>	<td>1,842</td>	<td>3</td></tr>
+    <tr><td>Add Attribute Access</td>		<td>1,439</td>	<td>2</td>	<td>0</td>	<td>0</td></tr>
+    <tr><td>Same Function Wrong Caller</td>	<td>1,163</td>	<td>2</td>	<td>1,504</td>	<td>2</td></tr>
+    <tr><td>Change Binary Operator</td>		<td>976</td>	<td>1</td>	<td>2,241</td>	<td>5</td></tr>
+    <tr><td>Less Specific If</td>		<td>943</td>	<td>1</td>	<td>2,813</td>	<td>4</td></tr>
+    <tr><td>Same Function Swap Args</td>	<td>336</td>	<td>&gt;1</td>	<td>612</td>	<td>1</td></tr>
+    <tr><td>Change Modifier</td>		<td>0</td>	<td>0</td>	<td>5,011</td>	<td>8</td></tr>
+    <tr><td>Delete Throws Exception</td>	<td>0</td>	<td>0</td>	<td>508</td>	<td>1</td></tr>
+    <tr><td>Missing Throws Exception</td>	<td>0</td>	<td>0</td>	<td>206</td>	<td>&gt;1</td></tr>
+  </table>
+  <p>
+    Viewed graphically:
+  </p>
+  <p>
+    <img src="{{'/files/2022/kamienski-percentages.png' | relative_url}}" alt="Kamienski et al percentages" />
+  </p>
+  <p>
+    The fact that some errors only make sense in one language or the other,
+    and that new categories were added in the Python analysis,
+    both weaken the correlation,
+    but even given that,
+    there's very little correspondence.
+    What is perhaps more interesting is the way that a handful of errors dominate each language:
+    this suggests that tools could focus on them,
+    or that future languages could be designed to make these errors impossible
+    (or at least less likely).
   </p>
 </div>
 <p id="Kamienski2021" class="bib">
