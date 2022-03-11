@@ -1,0 +1,79 @@
+---
+layout: post
+author: "Greg Wilson"
+title: "A First Look at the Deprecation of RESTful APIs"
+date: 2022-03-09
+categories: ["APIs", "Maintenance"]
+---
+<div class="review">
+  <p>
+    I hope that programmers will eventually get over their fascination with microservices.
+    Until then,
+    what you want will probably be on the other end of an HTTP request,
+    most of those requests will be to some sort of REST API,
+    and the odds are good that as your system evolves,
+    some of those endpoints will introduce breaking changes.
+  </p>
+  <p>
+    <cite>Yasmin2020</cite> created a framework for automatically identifying elements of REST APIs
+    that have fallen out of use
+    using <a href="https://www.openapis.org/">OpenAPI</a> specifications.
+    As they point out,
+    "There exists no standard way to deprecate RESTful APIs,
+    which means that API providers will adopt different deprecation strategies."
+    Digging into their data, they found that:
+  </p>
+  <blockquote>
+    <p>
+      On average, 46% of the operations within a target RESTFul API are deprecation-related.
+      The ratio of deprecation-related operations varies among APIs:
+      all operations in 71 out of 219 target APIs are affected by deprecated API elements,
+      while 102 APIs have less than 25% API operations affected.
+      GET operations are more likely to be deprecation-related.
+      Most deprecation-related operations (46%) have deprecated request parameters.
+    </p>
+  </blockquote>
+  <p>
+    They also looked at how developers signal deprecation using:
+  </p>
+  <ul>
+    <li>
+      Replacement Message: alternatives are recommended to replace the deprecating API elements.
+    </li>
+    <li>
+      External Reference: API providers may include detailed deprecation information in external documents.
+    </li>
+    <li>
+      Explanation: API providers may explain the reasons behind deprecation.
+    </li>
+    <li>
+      Deprecation Time: the time/version when one API element starts to deprecate may be specified.
+    </li>
+    <li>
+      Removal Time: API providers may indicate the official removal time of a deprecating API element
+      so the consumers can plan for it.
+    </li>
+  </ul>
+  <p>
+    Overall,
+    this is a useful look at an important engineering problem,
+    and I hope that sites like <a href="https://apis.guru/">APIs.guru</a>
+    will start adding automated deprecation checks to the APIs they catalog.
+  </p>
+</div>
+<p id="Yasmin2020" class="bib">
+  <cite>Yasmin2020</cite>
+  Jerin Yasmin, Yuan Tian, and Jinqiu Yang:
+  A first look at the deprecation of RESTful APIs: an empirical study.
+  In <em>Proc. ICSME 2020</em>,
+  <a href="https://doi.org/10.1109/icsme46990.2020.00024">doi:10.1109/icsme46990.2020.00024</a>.
+</p>
+<blockquote class="abstract">
+  <p>
+    REpresentational State Transfer (REST) is considered as one standard software architectural style to build web APIs that can integrate software systems over the internet. However, while connecting systems, RESTful APIs might also break the dependent applications that rely on their services when they introduce breaking changes, e.g., an older version of the API is no longer supported. To warn developers promptly and thus prevent critical impact on downstream applications, a deprecated-removed model should be followed, and deprecation-related information such as alternative approaches should also be listed. While API deprecation analysis as a theme is not new, most existing work focuses on non-web APIs, such as the ones provided by Java and Android.
+  </p>
+  <p>
+    To investigate RESTful API deprecation, we propose a framework called RADA (RESTful API Deprecation Analyzer). RADA is capable of automatically identifying deprecated API elements and analyzing impacted operations from an OpenAPI specification, a machine-readable profile for describing RESTful web service. We apply RADA on 2,224 OpenAPI specifications of 1,368 RESTful APIs collected from APIs.guru, the largest directory of OpenAPI specifications. Based on the data mined by RADA, we perform an empirical study to investigate how the deprecated-removed protocol is followed in RESTful APIs and characterize practices in RESTful API deprecation. The results of our study reveal several severe deprecation-related problems in existing RESTful APIs. Our implementation of RADA and detailed empirical results are publicly available for future intelligent tools that could automatically identify and migrate usage of deprecated RESTful API operations in client code.
+  </p>
+</blockquote>
+
