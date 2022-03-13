@@ -2701,6 +2701,19 @@
   reviewed = {/2021/08/26/defect-taxonomy-for-infrastructure-as-code.html}
 }
 
+@inproceedings{RakAmnouykit2020,
+  doi = {10.1145/3426422.3426981},
+  url = {https://doi.org/10.1145/3426422.3426981},
+  year = {2020},
+  month = nov,
+  publisher = {{ACM}},
+  author = {Ingkarat Rak-amnouykit and Daniel McCrevan and Ana Milanova and Martin Hirzel and Julian Dolby},
+  title = {Python 3 types in the wild: a tale of two type systems},
+  booktitle = isdl,
+  abstract = {Python 3 is a highly dynamic language, but it has introduced a syntax for expressing types with PEP484. This paper ex- plores how developers use these type annotations, the type system semantics provided by type checking and inference tools, and the performance of these tools. We evaluate the types and tools on a corpus of public GitHub repositories. We review MyPy and PyType, two canonical static type checking and inference tools, and their distinct approaches to type analysis. We then address three research questions: (i) How often and in what ways do developers use Python 3 types? (ii) Which type errors do developers make? (iii) How do type errors from different tools compare? Surprisingly, when developers use static types, the code rarely type-checks with either of the tools. MyPy and PyType exhibit false positives, due to their static nature, but also flag many useful errors in our corpus. Lastly, MyPy and PyType embody two distinct type systems, flagging different errors in many cases. Understanding the usage of Python types can help guide tool-builders and researchers. Understanding the performance of popular tools can help increase the adoption of static types and tools by practitioners, ultimately leading to more correct and more robust Python code.},
+  reviewed = {/2022/03/18/python-3-types-in-the-wild.html}
+}
+
 @book{Riccomini2021,
   author = {Chris Riccomini and Dmitriy Ryaboy},
   title = {The Missing README: A Guide for the New Software Engineer},
