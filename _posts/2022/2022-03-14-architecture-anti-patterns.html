@@ -7,7 +7,62 @@ categories: ["Software Architecture", "Anti-patterns"]
 ---
 <div class="review">
   <p>
-    Review goes here.
+    The introduction to this paper lays out an ambitious agenda:
+  </p>
+  <blockquote>
+    <p>
+      After examining the source code and revision histories of over 100 open-source and industrial software projects,
+      we have observed that there are just a few distinct types of architecture anti-patterns
+      that occur in all the projects we have studied.
+      We will show that files involved in these anti-patterns tend to have more bugs,
+      more changes,
+      and consume more effort,
+      and thus they should be identified.
+      To improve the quality and productivity of a project,
+      the architectural problems behind these file groups should be fixed first.
+    </p>
+  </blockquote>
+  <p>
+    The six anti-patterns the authors focus on are:
+  </p>
+  <ol>
+    <li>
+      <strong>Unstable interfaces</strong> (i.e., a widely-used interface that changes frequently).
+    </li>
+    <li>
+      <strong>Modularity violation groups</strong>,
+      which are groups of modules that change in tandem
+      even though they have no apparent structural dependencies.
+    </li>
+    <li>
+      An <strong>unhealthy inheritance hierarchy</strong>
+      that violates the Liskov Substitution Principle
+      or Dependency Inversion Principle.
+    </li>
+    <li>
+      A <strong>crossing</strong>,
+      which they define as a file with both high fan-in and high fan-out.
+    </li>
+    <li>
+      <strong>Cliques</strong> of files with cyclic dependencies.
+    </li>
+    <li>
+      <strong>Package cycles</strong> that violate strictly hierarchical structure.
+    </li>
+  </ol>
+  <p>
+    The paper describes algorithmic rules that operationalize these concepts
+    and presents an example of each kind of issue.
+    It then goes on to show that the frequency and churn of both bugs and changes
+    is measurably higher for files with these anti-patterns
+    than for files without them.
+  </p>
+  <p>
+    While I am generally skeptical of software metrics
+    (see <a href="{{'/2011/07/07/the-confounding-effect-of-class-size-on-the-validity-of-object-oriented-metrics.html' | relative_url}}">this post</a> for discussion),
+    this work shows that it is possible to measure things
+    in a project's source code and history
+    that can help teams focus their effort where it will have the most impact.
   </p>
 </div>
 <p id="Mo2021" class="bib">

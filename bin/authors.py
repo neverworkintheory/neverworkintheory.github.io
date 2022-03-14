@@ -20,7 +20,7 @@ def main():
             continue
 
         if "reviewed" not in bib[key].fields:
-            print(f"entry {key} missing 'reviewed'")
+            print(f"entry {key} missing 'reviewed'", file=sys.stderr)
             sys.exit(1)
 
         reviewed = bib[key].fields["reviewed"]
