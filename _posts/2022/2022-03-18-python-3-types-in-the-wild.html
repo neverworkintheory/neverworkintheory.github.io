@@ -7,7 +7,38 @@ categories: ["Programming Languages"]
 ---
 <div class="review">
   <p>
-    Review goes here.
+    Python used to be the kind of language you could pick up in a couple of days,
+    but "used to be" was many years ago.
+    Coming back to developing products with it after 11 years away,
+    I've been a little overwhelmed by how many features have been added,
+    and how hard it is to make sense of a modern code base without understanding all of them.
+  </p>
+  <p>
+    One of the biggest changes has been the addition of type annotations,
+    which allow developers to say that a function returns
+    <code>Dict[List[Set[FrozenSet[int]]], str]</code>
+    (i.e., a dictionary that maps lists of sets of frozensets of integers onto strings).
+    <cite>RakAmnouykit2020</cite> takes an empirical look at how programmers use these annotations,
+    and turns up some surprising results.
+    For one,
+    the most common kind of type annotation is a user-defined type:
+  </p>
+  <p>
+    <img src="{{'/files/2022/rakamnouykit-histogram.png' | relative_url}}" alt="Histogram of Python type annotation types"/>
+  </p>
+  <p>
+    What's more interesting is that when the authors stripped annotations out of files
+    and asked <a href="https://google.github.io/pytype/">PyType</a> to infer them,
+    it failed to do so in 77% of cases,
+    which means that the user-written annotations were capturing information
+    that automatic tools couldn't.
+    On the other hand,
+    <a href="http://mypy-lang.org/">MyPy</a> found that
+    only 15% of the 2,678 repositories examined were type-correct;
+    this may be a result of MyPy being very conservative and producing false positives.
+    More troubling are the disagreements between these different tools,
+    but studies like these are exactly what we need
+    to make those tools more consistent and more helpful.
   </p>
 </div>
 <p id="RakAmnouykit2020" class="bib">
