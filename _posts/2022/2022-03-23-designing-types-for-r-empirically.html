@@ -1,0 +1,65 @@
+---
+layout: post
+author: Greg Wilson
+title: "Designing Types for R Empirically"
+date: 2022-03-23
+categories: ["Programming Languages"]
+---
+<div class="review">
+  <p>
+    I have a love-hate relationship with R.
+    On the one hand,
+    it's a lot easier to teach data science and plotting to novices with R's tidyverse libraries
+    than it is using Python's Pandas.
+    On the other hand,
+    the underlying language isn't just quirky:
+    it's downright eccentric,
+    and those eccentricities are an endless source of frustration.
+  </p>
+  <p>
+    I don't think R itself will ever be changed in significant ways,
+    but work like <cite>Turcotte2020</cite> can guide incremental improvements
+    and shape an evidence-based design of whatever eventually comes next.
+    As the authors say:
+  </p>
+  <blockquote>
+    <p>
+      We implemented Typetracer,
+      an automated tool for extracting types from execution traces of R programs.
+      The goal of this tool is to output a tuple <code>⟨f ,t<sub>1</sub>, . . . ,t<sub>n</sub>,t⟩</code>
+      for each function call during the execution of a program,
+      where <code>f</code> is an identifier for a function,
+      <code>t<sub>i</sub></code> are type-level summaries of the arguments
+      and <code>t</code> is a summary of the return value.
+      While seemingly simple,
+      the details and their proverbial devil are surprisingly tricky to get right at scale.
+    </p>
+  </blockquote>
+  <p>
+    They then selected over 400 packages containing more than 750K lines of R
+    and half a million lines of native code in C and Fortran
+    and checked function signatures for 792 code kernels downloaded from Kaggle.
+    With that data in hand,
+    they examined how well their proposed typing system could capture
+    the types used in real-world settings.
+    The discussion section then explores design alternatives
+    suggested by what their proposed system couldn't do
+    or couldn't do well.
+    As with
+    <a href="{{'/2022/03/18/python-3-types-in-the-wild.html' | relative_url}}">the recently-reviewed article on Python 3 types</a>,
+    this work shows that programming language design is moving from "theory plus strong opinions"
+    to being an empirically-grounded discipline.
+  </p>
+</div>
+<p id="Turcotte2020" class="bib">
+  <cite>Turcotte2020</cite>
+  Alexi Turcotte, Aviral Goel, Filip Křikava, and Jan Vitek:
+  Designing types for R, empirically.
+  <em>Proc. OOPSLA 2020</em>, <a href="https://doi.org/10.1145/3428249">doi:10.1145/3428249</a>.
+</p>
+<blockquote class="abstract">
+  <p>
+    The R programming language is widely used in a variety of domains. It was designed to favor an interactive style of programming with minimal syntactic and conceptual overhead. This design is well suited to data analysis, but a bad fit for tools such as compilers or program analyzers. In particular, R has no type annotations, and all operations are dynamically checked at run-time. The starting point for our work are the two questions: what expressive power is needed to accurately type R code? and which type system is the R community willing to adopt? Both questions are difficult to answer without actually experimenting with a type system. The goal of this paper is to provide data that can feed into that design process. To this end, we perform a large corpus analysis to gain insights in the degree of polymorphism exhibited by idiomatic R code and explore potential benefits that the R community could accrue from a simple type system. As a starting point, we infer type signatures for 25,215 functions from 412 packages among the most widely used open source R libraries. We then conduct an evaluation on 8,694 clients of these packages, as well as on end-user code from the Kaggle data science competition website.
+  </p>
+</blockquote>
+
