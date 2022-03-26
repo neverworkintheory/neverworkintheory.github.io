@@ -1,0 +1,82 @@
+---
+layout: post
+author: Greg Wilson
+title: "Strategies to Improve Continuous Integration"
+date: 2022-03-21
+categories: ["Continuous Integration"]
+---
+<div class="review">
+  <p>
+    Every time I create or modify a pull request at work,
+    Circle&nbsp;CI runs half a dozen jobs
+    to check that the code and commit message are formatted correctly,
+    that the unit tests pass,
+    that the integration tests pass,
+    and so on.
+    It takes a little over two minutes,
+    but I've worked on systems where continuous integration would run for hours after every change,
+    which was a significant drag on development.
+  </p>
+  <p>
+    In this paper, Jin and Servant
+    "…perform the first exhaustive comparison of techniques to improve CI,
+    evaluating 14 variants of 10 techniques
+    using selection and prioritization strategies on build and test granularity.
+    We evaluate their strengths and weaknesses with 10 different cost and time-to-feedback saving metrics
+    on 100 real-world projects."
+    The selection and prioritization strategies they use are drawn from existing research,
+    and do things like skip tests that cannot reach changed files based on conservative dependency analysis.
+    To measure effectiveness,
+    they look at build and test time saved,
+    and at the number of builds and number of tests that were skipped.
+    Among other things,
+    they found that there's a tradeoff between saving time by skipping some build steps
+    and missing tests that would have failed if they had been run.
+    While this is intuitively sensible,
+    validating it provides a baseline for future expectations.
+  </p>
+  <p>
+    Among their other conclusions are:
+  </p>
+  <ul>
+    <li>
+      Cost-saving techniques focused on skipping passing builds and tests,
+      but did not specifically target those that would provide the highest savings
+      (i.e., slower tests and slower builds),
+      so there is room for improvement.
+    </li>
+    <li>
+      Training cost-saving techniques across projects harmed their predictions:
+      in other words,
+      statistical models to predict which tests or builds can be skipped
+      need to be retrained for each project.
+    </li>
+    <li>
+      Trying to predict seemingly-safe builds and tests is particularly useful.
+    </li>
+    <li>
+      Skipping full builds paid high dividends,
+      since build preparation time takes a large proportion of total build time.
+    </li>
+    <li>
+      The best techniques to provide early feedback to developers were test-prioritization techniques.
+    </li>
+  </ul>
+  <p>
+    <cite>Jin2021</cite> is both a careful, detailed comparison of existing work
+    and evidence of how mature this research area has become;
+    I hope we'll see some of these ideas become commonplace in production soon.
+  </p>
+</div>
+<p id="Jin2021" class="bib">
+  <cite>Jin2021</cite>
+  Xianhao Jin and Francisco Servant:
+  What helped, and what did not? an evaluation of the strategies to improve continuous integration.
+  In <em>Proc. ICSE 2021<em>, <a href="https://doi.org/10.1109/icse43902.2021.00031">doi:10.1109/icse43902.2021.00031</a>.
+</p>
+<blockquote class="abstract">
+  <p>
+    Continuous integration (CI) is a widely used practice in modern software engineering. Unfortunately, it is also an expensive practice—Google and Mozilla estimate their CI systems in millions of dollars. There are a number of techniques and tools designed to or having the potential to save the cost of CI or expand its benefit—reducing time to feedback. However, their benefits in some dimensions may also result in drawbacks in others. They may also be beneficial in other scenarios where they are not designed to help. In this paper, we perform the first exhaustive comparison of techniques to improve CI, evaluating 14 variants of 10 techniques using selection and prioritization strategies on build and test granularity. We evaluate their strengths and weaknesses with 10 different cost and time-to-feedback saving metrics on 100 real-world projects. We analyze the results of all techniques to understand the design decisions that helped different dimensions of benefit. We also synthesized those results to lay out a series of recommendations for the development of future research techniques to advance this area.
+  </p>
+</blockquote>
+
