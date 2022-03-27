@@ -7,10 +7,56 @@ categories: ["Software Evolution"]
 ---
 <div class="review">
   <p>
-    Review goes here.
+    Why do developers break backward compatibility?
+    When do they do this,
+    and do different communities make decisions the same way
+    or do values and practices differ from one group to the next?
+    <cite>Bogart2021</cite> performed two studies to answer these questions.
+    In the first,
+    they conducted a multiple case study of the Eclipse, R/CRAN, and Node.js/npm ecosystems.
+    They found substantial differences between them,
+    and showed that:
+  </p>
+  <blockquote>
+    <p>
+      …these differences arise from different values in each community
+      and are reinforced through peer pressure, policies, and tooling.
+      For example, long-term stability is a central value of the Eclipse community,
+      achieved by their "prime directive" practice of never permitting breaking changes.
+      This practice imposes costs on upstream developers,
+      who may accept substantial opportunity costs and technical debt to avoid breaking client code.
+      In contrast,
+      the Node.js/npm community values ease and simplicity for upstream developers
+      and has a technical infrastructure in which breaking changes are accepted,
+      but signaled clearly through version numbering.
+    </p>
+  </blockquote>
+  <p>
+    Their second study looked at a larger set of 18 ecosystems
+    using data mining of software repositories,
+    document analysis,
+    and a large-scale survey.
+    This study found that values and practices are cohesive within any particular ecosystem,
+    but diverse across different ecosystems,
+    and that even when ecosystems share similar values,
+    they often achieve them in different ways
+    (or fail to achieve it at all).
+    Someone joining a new development community may therefore find that
+    learning the technology is only part of the challenge:
+    figuring out what their new peers expect and why can be just as hard.
+  </p>
+  <p>
+    At 56 pages, this is one of the longest papers we've reviewed,
+    but it repays careful reading.
+    The best part, though,
+    is that the authors have made their data available for reanalysis
+    (<a href="https://doi.org/10.1184/R1/5108716.v1">https://doi.org/10.1184/R1/5108716.v1</a>)
+    and have built a website to share their findings
+    (<a href="http://breakingapis.org/">http://breakingapis.org/</a>).
   </p>
 </div>
 <p id="Bogart2021" class="bib">
+  <cite>Bogart2021</cite>
   Chris Bogart, Christian Kästner, James Herbsleb, and Ferdian Thung:
   When and how to make breaking changes.
   <em>ACM Trans. Software Engineering and Methodology</em>, 30(4), 2021,
