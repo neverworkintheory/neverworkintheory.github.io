@@ -1464,6 +1464,19 @@
   reviewed = {/2013/08/12/review-essence-of-software-engineering.html}
 }
 
+@inproceedings{Jin2021,
+  doi = {10.1109/icse43902.2021.00031},
+  url = {https://doi.org/10.1109/icse43902.2021.00031},
+  year = {2021},
+  month = may,
+  publisher = {{IEEE}},
+  author = {Xianhao Jin and Francisco Servant},
+  title = {What Helped, and what did not? An Evaluation of the Strategies to Improve Continuous Integration},
+  booktitle = icse,
+  abstract = {Continuous integration (CI) is a widely used practice in modern software engineering. Unfortunately, it is also an expensive practice - Google and Mozilla estimate their CI systems in millions of dollars. There are a number of techniques and tools designed to or having the potential to save the cost of CI or expand its benefit - reducing time to feedback. However, their benefits in some dimensions may also result in drawbacks in others. They may also be beneficial in other scenarios where they are not designed to help. In this paper, we perform the first exhaustive comparison of techniques to improve CI, evaluating 14 variants of 10 techniques using selection and prioritization strategies on build and test granularity. We evaluate their strengths and weaknesses with 10 different cost and time-tofeedback saving metrics on 100 real-world projects. We analyze the results of all techniques to understand the design decisions that helped different dimensions of benefit. We also synthesized those results to lay out a series of recommendations for the development of future research techniques to advance this area.},
+  reviewed = {/2022/03/21/strategies-to-improve-continuous-integration.html}
+}
+
 @article{Jorgensen2011,
   doi = {10.1109/tse.2010.78},
   url = {https://doi.org/10.1109/tse.2010.78},
@@ -3218,7 +3231,7 @@
   year = {2019},
   month = may,
   publisher = {{IEEE}},
-  author = {David A. Tomassi and Naji Dmeiri and Yichen Wang and Antara Bhowmick and Yen-Chuan Liu and Premkumar T. Devanbu and Bogdan Vasilescu and Cindy Rubio-Gonzalez},
+  author = {David Tomassi and Naji Dmeiri and Yichen Wang and Antara Bhowmick and Yen-Chuan Liu and Premkumar Devanbu and Bogdan Vasilescu and Cindy Rubio-Gonzalez},
   title = {{BugSwarm}: Mining and Continuously Growing a Dataset of Reproducible Failures and Fixes},
   booktitle = icse,
   abstract = {Fault-detection, localization, and repair methods are vital to software quality; but it is difficult to evaluate their generality, applicability, and current effectiveness. Large, diverse, realistic datasets of durably-reproducible faults and fixes are vital to good experimental evaluation of approaches to software quality, but they are difficult and expensive to assemble and keep current. Modern continuous-integration (CI) approaches, like TRAVIS-CI, which are widely used, fully configurable, and executed within custom-built containers, promise a path toward much larger defect datasets. If we can identify and archive failing and subsequent passing runs, the containers will provide a substantial assurance of durable future reproducibility of build and test. Several obstacles, however, must be overcome to make this a practical reality. We describe BUGSWARM, a toolset that navigates these obstacles to enable the creation of a scalable, diverse, realistic, continuously growing set of durably reproducible failing and passing versions of real-world, open-source systems. The BUGSWARM toolkit has already gathered 3,091 fail-pass pairs, in Java and Python, all packaged within fully reproducible containers. Furthermore, the toolkit can be run periodically to detect fail-pass activities, thus growing the dataset continually.},
@@ -3263,6 +3276,22 @@
   booktitle = icssp,
   abstract = {Software developers often work on multiple projects and tasks throughout a work day, which may affect their productivity and quality of work. Knowing how working on several projects at a time affects productivity can improve cost and schedule estimations. It also can provide additional insights for better work scheduling and the development process. We want to achieve a better productivity without losing the benefits of work interruptions and multitasking for developers involved in the process. To understand how the development process can be improved, first, we identify work interruptions that mostly have a negative effect on productivity, second, we need to quantitatively evaluate impact of multitasking (task switching, work context switching) and work interruptions on productivity. In this research we study cross-project multitasking among the developers working on multiple projects in an educational setting. We propose a way to evaluate the number of cross-project interruptions among software developers using self-reported work logs. This paper describes the research that found: a) software developers involved in two or more projects on average spend 17\% of their development effort on cross-project interruptions, b) the amount of effort spent on interruptions is overestimated by the G. Weinberg's heuristic, c) the correlation between the number of projects and effort spent by developers on cross-project interruptions is relatively weak, and d) there is strong correlation between the number of projects and the number of interruptions developers reported.},
   reviewed = {/2021/09/19/impact-of-task-switching-and-work-interruptions.html}
+}
+
+@article{Turcotte2020,
+  doi = {10.1145/3428249},
+  url = {https://doi.org/10.1145/3428249},
+  year = {2020},
+  month = nov,
+  publisher = {Association for Computing Machinery ({ACM})},
+  volume = {4},
+  number = {{OOPSLA}},
+  pages = {1--25},
+  author = {Alexi Turcotte and Aviral Goel and Filip K\v{r}ikava and Jan Vitek},
+  title = {Designing types for {R}, empirically},
+  journal = acm-pl,
+  abstract = {The R programming language is widely used in a variety of domains. It was designed to favor an interactive style of programming with minimal syntactic and conceptual overhead. This design is well suited to data analysis, but a bad fit for tools such as compilers or program analyzers. In particular, R has no type annotations, and all operations are dynamically checked at run-time. The starting point for our work are the two questions: what expressive power is needed to accurately type R code? and which type system is the R community willing to adopt? Both questions are difficult to answer without actually experimenting with a type system. The goal of this paper is to provide data that can feed into that design process. To this end, we perform a large corpus analysis to gain insights in the degree of polymorphism exhibited by idiomatic R code and explore potential benefits that the R community could accrue from a simple type system. As a starting point, we infer type signatures for 25,215 functions from 412 packages among the most widely used open source R libraries. We then conduct an evaluation on 8,694 clients of these packages, as well as on end-user code from the Kaggle data science competition website.},
+  reviewed = {/2022/03/23/designing-types-for-r-empirically.html}
 }
 
 @comment{UUU}
