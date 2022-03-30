@@ -235,21 +235,6 @@
   abstract = {Continuous Integration (CI) is the process of automatically compiling, building, and testing code changes in the hope of catching bugs as they are introduced into the code base. With bug fixing being a core and increasingly costly task in software development, the community has adopted CI to mitigate this issue and improve the quality of their software products. Bug fixing is a core task in software development and becomes increasingly costly over time. However, little is known about how effective CI is at detecting simple, single-statement bugs.In this paper, we analyze the effectiveness of CI in 14 popular open source Java-based projects to warn about 318 single-statement bugs (SStuBs). We analyze the build status at the commits that introduce SStuBs and before the SStuBs were fixed. We then investigate how often CI indicates the presence of these bugs, through test failure. Our results show that only 2\% of the commits that introduced SStuBs have builds with failed tests and 7.5\% of builds before the fix reported test failures. Upon close manual inspection, we found that none of the failed builds actually captured SStuBs, indicating that CI is not the right medium to capture the SStuBs we studied. Our results suggest that developers should not rely on CI to catch SStuBs or increase their CI pipeline coverage to detect single-statement bugs.}
 }
 
-@article{Lemire2021,
-  doi = {10.1002/spe.2984},
-  url = {https://doi.org/10.1002/spe.2984},
-  year = {2021},
-  month = may,
-  publisher = {Wiley},
-  volume = {51},
-  number = {8},
-  pages = {1700--1727},
-  author = {Daniel Lemire},
-  title = {Number parsing at a gigabyte per second},
-  journal = spe,
-  abstract = {With disks and networks providing gigabytes per second, parsing decimal numbers from strings becomes a bottleneck. We consider the problem of parsing decimal numbers to the nearest binary floating-point value. The general problem requires variable-precision arithmetic. However, we need at most 17 digits to represent 64-bit standard floating-point numbers (IEEE 754). Thus, we can represent the decimal significand with a single 64-bit word. By combining the significand and precomputed tables, we can compute the nearest floating-point number using as few as one or two 64-bit multiplications. Our implementation can be several times faster than conventional functions present in standard C libraries on modern 64-bit systems (Intel, AMD, ARM, and POWER9). Our work is available as open source software used by major systems such as Apache Arrow and Yandex ClickHouse. The Go standard library has adopted a version of our approach.}
-}
-
 @article{Lima2021,
   doi = {10.1007/s10664-021-09983-3},
   url = {https://doi.org/10.1007/s10664-021-09983-3},

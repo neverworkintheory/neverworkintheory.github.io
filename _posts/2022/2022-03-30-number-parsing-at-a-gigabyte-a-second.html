@@ -1,0 +1,45 @@
+---
+layout: post
+author: Greg Wilson
+title: "Number Parsing at a Gigabyte a Second"
+date: 2022-03-30
+categories: ["Performance"]
+---
+<div class="review">
+  <p>
+    They say the devil's in the details, but angels live there too.
+    Case in point:
+    by combining a deep understanding of how computers represent numbers
+    with some pragmatic engineering decisions,
+    <cite>Lemire2021</cite> shows that,
+    "we can reach high parsing speeds (e.g., 1 GiB/s) on current 64-bit processors
+    without sacrificing accuracy
+    by focusing on optimizing the common number-parsing scenario
+    where we have no more than 19 digits."
+    Its analysis of tradeoffs (e.g., the size of lookup tables vs. the size of compiled code)
+    and its careful benchmarking
+    should warm every engineer's heart.
+  </p>
+  <p>
+    And on a related note,
+    we'd like to congratulate Jack Dongarra,
+    this year's winner of the <a href="https://www.acm.org/media-center/2022/march/turing-award-2021">Turing Award</a>.
+    He has devoted his career to designing, building, testing, and sharing high-performance software
+    that has directly impacted the lives of countless researchers,
+    and has been an inspiration to many of us.
+    Congratulations, Jack.
+  </p>
+</div>
+<p id="Lemire2021" class="bib">
+  <cite>Lemire2021</cite>
+  Daniel Lemire:
+  Number parsing at a gigabyte per second.
+  <em>Software: Practice and Experience</em>, 51(8):1700–1727, 2021,
+  <a href="https://doi.org/10.1002/spe.2984">doi:10.1002/spe.2984</a>.
+</p>
+<blockquote class="abstract">
+  <p>
+    With disks and networks providing gigabytes per second, parsing decimal numbers from strings becomes a bottleneck. We consider the problem of parsing decimal numbers to the nearest binary floating-point value. The general problem requires variable-precision arithmetic. However, we need at most 17 digits to represent 64-bit standard floating-point numbers (IEEE 754). Thus, we can represent the decimal significand with a single 64-bit word. By combining the significand and precomputed tables, we can compute the nearest floating-point number using as few as one or two 64-bit multiplications. Our implementation can be several times faster than conventional functions present in standard C libraries on modern 64-bit systems (Intel, AMD, ARM, and POWER9). Our work is available as open source software used by major systems such as Apache Arrow and Yandex ClickHouse. The Go standard library has adopted a version of our approach.
+  </p>
+</blockquote>
+
