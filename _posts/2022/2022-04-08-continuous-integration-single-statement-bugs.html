@@ -1,0 +1,24 @@
+---
+layout: post
+author: Greg Wilson
+title: "How Effective is Continuous Integration in Indicating Single-Statement Bugs?"
+date: 2022-04-08
+categories: ["Continuous Integration", "Software Quality"]
+---
+<div class="review">
+  <p>
+    Review goes here.
+  </p>
+</div>
+<p id="Latendresse2021" class="bib">
+  <cite>Latendresse2021</cite>
+  Jasmine Latendresse, Rabe Abdalkareem, Diego Elias Costa, and Emad Shihab.
+  How effective is continuous integration in indicating single-statement bugs?
+  In <em>Proc. MSR 2021</em>, <a href="https://doi.org/10.1109/msr52588.2021.00062">doi:10.1109/msr52588.2021.00062</a>.
+</p>
+<blockquote class="abstract">
+  <p>
+    Continuous Integration (CI) is the process of automatically compiling, building, and testing code changes in the hope of catching bugs as they are introduced into the code base. With bug fixing being a core and increasingly costly task in software development, the community has adopted CI to mitigate this issue and improve the quality of their software products. Bug fixing is a core task in software development and becomes increasingly costly over time. However, little is known about how effective CI is at detecting simple, single-statement bugs.In this paper, we analyze the effectiveness of CI in 14 popular open source Java-based projects to warn about 318 single-statement bugs (SStuBs). We analyze the build status at the commits that introduce SStuBs and before the SStuBs were fixed. We then investigate how often CI indicates the presence of these bugs, through test failure. Our results show that only 2% of the commits that introduced SStuBs have builds with failed tests and 7.5% of builds before the fix reported test failures. Upon close manual inspection, we found that none of the failed builds actually captured SStuBs, indicating that CI is not the right medium to capture the SStuBs we studied. Our results suggest that developers should not rely on CI to catch SStuBs or increase their CI pipeline coverage to detect single-statement bugs.
+  </p>
+</blockquote>
+
