@@ -1,0 +1,55 @@
+---
+layout: post
+author: Greg Wilson
+title: "A Large Scale Study of Long-Time Contributor Prediction for GitHub Projects"
+date: 2022-04-04
+categories: ["Open Source"]
+---
+<div class="review">
+  <p>
+    Long-term contributors (LTCs) are essential to the survival of open source software projects,
+    but any study of them has to start with two questions:
+    what exactly <em>is</em> an LTC,
+    and (how) can we identify them automatically?
+  </p>
+  <p>
+    <cite>Bao2021</cite> answers the first by looking at people who contribute to popular GitHub projects
+    over a period of 1, 2, and 3 years,
+    and then experiment with several differen statistical classification tools
+    to see which ones do the best job of predicting contributorship
+    when fed data about things like developer profiles, monthly activity, and collaboration networks.
+    They also surveyed 26 LTCs and 122 non-LTCs to see if the features being measured
+    lined up with what programmers think are important.
+  </p>
+  <p>
+    Some of the results are unsurprising
+    (which is not the same as saying "predictable":
+    most research results make sense once you know them,
+    but their absence or opposite would have made just as much sense).
+    Others are more intriguing:
+    for example,
+    the number of followers a developer has correlates strongly with long-term contributorship.
+    What troubles me a bit, though,
+    is the variety of machine learning techniques used in the analysis.
+    Naive Bayes, k-nearest neighbors, decision trees, support vector machines, and random forests
+    have different intellectual foundations and work quite differently;
+    I would have liked more explanation of why each method was considered
+    and how (or whether) their assumptions relate to specific characteristics of the problem domain.
+  </p>
+</div>
+<p id="Bao2021" class="bib">
+  <cite>Bao2021</cite>
+  Lingfeng Bao, Xin Xia, David Lo, and Gail C. Murphy.
+  A large scale study of long-time contributor prediction for GitHub projects.
+  <em>IEEE Trans. Software Engineering</em>, 47(6), 2021,
+  <a href="https://doi.org/10.1109/tse.2019.2918536">doi:10.1109/tse.2019.2918536</a>.
+</p>
+<blockquote class="abstract">
+  <p>
+    The continuous contributions made by long time contributors (LTCs) are a key factor enabling open source software (OSS) projects to be successful and survival. We study Github as it has a large number of OSS projects and millions of contributors, which enables the study of the transition from newcomers to LTCs. In this paper, we investigate whether we can effectively predict newcomers in OSS projects to be LTCs based on their activity data that is collected from Github. We collect Github data from GHTorrent, a mirror of Github data. We select the most popular 917 projects, which contain 75,046 contributors. We determine a developer as a LTC of a project if the time interval between his/her first and last commit in the project is larger than a certain time <em>T</em>. In our experiment, we use three different settings on the time interval: 1, 2, and 3 years. There are 9,238, 3,968, and 1,577 contributors who become LTCs of a project in three settings of time interval, respectively.
+  </p>
+  <p>
+    To build a prediction model, we extract many features from the activities of developers on Github, which group into five dimensions: developer profile, repository profile, developer monthly activity, repository monthly activity, and collaboration network. We apply several classifiers including naive Bayes, SVM, decision tree, kNN and random forest. We find that random forest classifier achieves the best performance with AUCs of more than 0.75 in all three settings of time interval for LTCs. We also investigate the most important features that differentiate newcomers who become LTCs from newcomers who stay in the projects for a short time. We find that the number of followers is the most important feature in all three settings of the time interval studied. We also find that the programming language and the average number of commits contributed by other developers when a newcomer joins a project also belong to the top 10 most important features in all three settings of time interval for LTCs. Finally, we provide several implications for action based on our analysis results to help OSS projects retain newcomers.
+  </p>
+</blockquote>
+
