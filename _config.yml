@@ -31,6 +31,7 @@ years:
   - 2016
   - 2017
   - 2021
+  - 2022
 
 plugins:
   - jekyll-paginate
