@@ -1,0 +1,75 @@
+---
+layout: post
+author: Greg Wilson
+title: "The Adoption of JavaScript Linters in Practice: A Case Study on ESLint"
+date: 2022-04-06
+categories: ["Quality", "Static Analysis"]
+---
+<div class="review">
+  <p>
+    I haven't gotten to the point of having a keyboard shortcut for
+    <code>pip install black flake8 isort pydocstyle</code>,
+    but linting tools are always the second thing I set up
+    after adding a README, a license, and a code of conduct.
+    I see most other developers doing the same thing these days,
+    and while I have no idea how to measure it,
+    I suspect these tools boost productivity more cost-effectively than unit testing.
+  </p>
+  <p>
+    Based on interviews, a survey, and analysis of ESLint configuration files,
+    <cite>Tomasdottir2020</cite> looked at how JavaScript developers actually use linters
+    and what they find challenging.
+    They find that people use linters to maintain code consistency,
+    prevent errors,
+    and save discussion time;
+    learning about the language and avoiding negative code review comments are less important:
+  </p>
+  <p>
+    <img src="{{ '/files/2022/tomasdottir-lint.png' | relative_url }}" alt="Why Developers Use JavaScript Linters" />
+  </p>
+  <p>
+    They also found that 70% of developers use an existing pre-set configurations;
+    "project fit" and "just the defaults" are the next most common strategies,
+    while at the bottom end,
+    automatically-generated configurations are used only 7% of the time.
+    When asked what they find challenging,
+    developers said that agreeing on rules as a team is the biggest problem
+    (which may be why using the defaults is such a popular strategy).
+    Creating and maintaining configurations came next;
+    that surprised me a bit,
+    but on the other hand,
+    the team I'm on uses default settings
+    so maintenance is not an issue.
+    Of the other challenges,
+    one is social (enforcing the rules),
+    while others like false positives are targets for future technical work.
+  </p>
+  <p>
+    <img src="{{ '/files/2022/tomasdottir-challenges.png' | relative_url }}" alt="Challenges of Using JavaScript Linters" />
+  </p>
+  <p>
+    In a sense,
+    papers like this do for open source what product managers do for commercial projects:
+    gather, organize, and prioritize feedback about how the software helps or frustrates its users.
+    I hope our lightning talks on April 27 will lead to more researchers helping more projects in this way.
+  </p>
+</div>
+<p id="Tomasdottir2020" class="bib">
+  <cite>Tomasdottir2020</cite>
+  Kristín Fjóla Tómasdóttir, Maurício Aniche, and Arie van Deursen:
+  The adoption of JavaScript linters in practice: a case study on ESLint.
+  <em>IEEE Trans. Software Engineering</em>, 46(8), 2020,
+  <a href="https://doi.org/10.1109/tse.2018.2871058">doi:10.1109/tse.2018.2871058</a>.
+</p>
+<blockquote class="abstract">
+  <p>
+    A linter is a static analysis tool that warns software developers about possible code errors or violations to coding standards. By using such a tool, errors can be surfaced early in the development process when they are cheaper to fix. For a linter to be successful, it is important to understand the needs and challenges of developers when using a linter.
+  </p>
+  <p>
+    In this paper, we examine developers' perceptions on JavaScript linters. We study why and how developers use linters along with the challenges they face while using such tools. For this purpose we perform a case study on ESLint, the most popular JavaScript linter. We collect data with three different methods where we interviewed 15 developers from well-known open source projects, analyzed over 9,500 ESLint configuration files, and surveyed 337 developers from the JavaScript community.
+  </p>
+  <p>
+    Our results provide practitioners with reasons for using linters in their JavaScript projects as well as several configuration strategies and their advantages. We also provide a list of linter rules that are often enabled and disabled, which can be interpreted as the most important rules to reason about when configuring linters. Finally, we propose several feature suggestions for tool makers and future work for researchers.
+  </p>
+</blockquote>
+

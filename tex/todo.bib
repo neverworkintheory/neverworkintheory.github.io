@@ -258,18 +258,6 @@
   abstract = {Automation tools like continuous integration services, code coverage reporters, style checkers, dependency managers, etc. are all known to provide significant improvements in developer productivity and software quality. Some of these tools are widespread, others are not. How do these automation ``best practices'' spread? And how might we facilitate the diffusion process for those that have seen slower adoption? In this paper, we rely on a recent innovation in transparency on code hosting platforms like GitHub---the use of repository badges---to track how automation tools spread in open-source ecosystems through different social and technical mechanisms over time. Using a large longitudinal data set, multivariate network science techniques, and survival analysis, we study which socio-technical factors can best explain the observed diffusion process of a number of popular automation tools. Our results show that factors such as social exposure, competition, and observability affect the adoption of tools significantly, and they provide a roadmap for software engineers and researchers seeking to propagate best practices and tools.}
 }
 
-@inproceedings{Latendresse2021,
-  doi = {10.1109/msr52588.2021.00062},
-  url = {https://doi.org/10.1109/msr52588.2021.00062},
-  year = {2021},
-  month = may,
-  publisher = {{IEEE}},
-  author = {Jasmine Latendresse and Rabe Abdalkareem and Diego Elias Costa and Emad Shihab},
-  title = {How Effective is Continuous Integration in Indicating Single-Statement Bugs?},
-  booktitle = msr,
-  abstract = {Continuous Integration (CI) is the process of automatically compiling, building, and testing code changes in the hope of catching bugs as they are introduced into the code base. With bug fixing being a core and increasingly costly task in software development, the community has adopted CI to mitigate this issue and improve the quality of their software products. Bug fixing is a core task in software development and becomes increasingly costly over time. However, little is known about how effective CI is at detecting simple, single-statement bugs.In this paper, we analyze the effectiveness of CI in 14 popular open source Java-based projects to warn about 318 single-statement bugs (SStuBs). We analyze the build status at the commits that introduce SStuBs and before the SStuBs were fixed. We then investigate how often CI indicates the presence of these bugs, through test failure. Our results show that only 2\% of the commits that introduced SStuBs have builds with failed tests and 7.5\% of builds before the fix reported test failures. Upon close manual inspection, we found that none of the failed builds actually captured SStuBs, indicating that CI is not the right medium to capture the SStuBs we studied. Our results suggest that developers should not rely on CI to catch SStuBs or increase their CI pipeline coverage to detect single-statement bugs.}
-}
-
 @article{Lima2021,
   doi = {10.1007/s10664-021-09983-3},
   url = {https://doi.org/10.1007/s10664-021-09983-3},
@@ -421,21 +409,6 @@
   title = {{\textquotedblleft}The Canary in the Coal Mine{\ldots}{\textquotedblright} A cautionary tale from the decline of {SourceForge}},
   journal = spe,
   abstract = {Forges are online collaborative platforms to support the development of distributed open source software. While once mighty keepers of open source vitality, software forges are rapidly becoming less and less relevant. For example, of the top 10 forges in 2011, only one survives today---SourceForge---the biggest of them all, but its numbers are dropping and its community is tenuous at best. Through mixed-methods research, this article chronicles and analyze the software practice and experiences of the project's history---in particular its architectural and community/organizational decisions. We discovered a number of suboptimal social and architectural decisions and circumstances that, may have led to SourceForge's demise. In addition, we found evidence suggesting that the impact of such decisions could have been monitored, reduced, and possibly avoided altogether. The use of sociotechnical insights needs to become a basic set of design and software/organization monitoring principles that tell a cautionary tale on what to measure and what not to do in the context of large-scale software forge and community design and management.}
-}
-
-@article{Tomasdottir2020,
-  doi = {10.1109/tse.2018.2871058},
-  url = {https://doi.org/10.1109/tse.2018.2871058},
-  year = {2020},
-  month = aug,
-  publisher = {Institute of Electrical and Electronics Engineers ({IEEE})},
-  volume = {46},
-  number = {8},
-  pages = {863--891},
-  author = {Krist\'{i}n Fj\'{o}la T\'{o}masd\'{o}ttir and Maur\'{\i}cio Aniche and Arie van Deursen},
-  title = {The Adoption of {JavaScript} Linters in Practice: A Case Study on {ESLint}},
-  journal = ieee-tse,
-  abstract = {A linter is a static analysis tool that warns software developers about possible code errors or violations to coding standards. By using such a tool, errors can be surfaced early in the development process when they are cheaper to fix. For a linter to be successful, it is important to understand the needs and challenges of developers when using a linter. In this paper, we examine developers' perceptions on JavaScript linters. We study why and how developers use linters along with the challenges they face while using such tools. For this purpose we perform a case study on ESLint, the most popular JavaScript linter. We collect data with three different methods where we interviewed 15 developers from well-known open source projects, analyzed over 9,500 ESLint configuration files, and surveyed 337 developers from the JavaScript community. Our results provide practitioners with reasons for using linters in their JavaScript projects as well as several configuration strategies and their advantages. We also provide a list of linter rules that are often enabled and disabled, which can be interpreted as the most important rules to reason about when configuring linters. Finally, we propose several feature suggestions for tool makers and future work for researchers.}
 }
 
 @comment{UUU}

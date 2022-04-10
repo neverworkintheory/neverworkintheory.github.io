@@ -1797,6 +1797,19 @@
 
 @comment{LLL}
 
+@inproceedings{Latendresse2021,
+  doi = {10.1109/msr52588.2021.00062},
+  url = {https://doi.org/10.1109/msr52588.2021.00062},
+  year = {2021},
+  month = may,
+  publisher = {{IEEE}},
+  author = {Jasmine Latendresse and Rabe Abdalkareem and Diego Elias Costa and Emad Shihab},
+  title = {How Effective is Continuous Integration in Indicating Single-Statement Bugs?},
+  booktitle = msr,
+  abstract = {Continuous Integration (CI) is the process of automatically compiling, building, and testing code changes in the hope of catching bugs as they are introduced into the code base. With bug fixing being a core and increasingly costly task in software development, the community has adopted CI to mitigate this issue and improve the quality of their software products. Bug fixing is a core task in software development and becomes increasingly costly over time. However, little is known about how effective CI is at detecting simple, single-statement bugs.In this paper, we analyze the effectiveness of CI in 14 popular open source Java-based projects to warn about 318 single-statement bugs (SStuBs). We analyze the build status at the commits that introduce SStuBs and before the SStuBs were fixed. We then investigate how often CI indicates the presence of these bugs, through test failure. Our results show that only 2\% of the commits that introduced SStuBs have builds with failed tests and 7.5\% of builds before the fix reported test failures. Upon close manual inspection, we found that none of the failed builds actually captured SStuBs, indicating that CI is not the right medium to capture the SStuBs we studied. Our results suggest that developers should not rely on CI to catch SStuBs or increase their CI pipeline coverage to detect single-statement bugs.},
+  reviewed = {/2022/04/08/continuous-integration-single-statement-bugs.html}
+}
+
 @article{Leitao2019,
   doi = {10.1080/07370024.2019.1685883},
   url = {https://doi.org/10.1080/07370024.2019.1685883},
@@ -3284,6 +3297,22 @@
   booktitle = icse,
   abstract = {Code ownership establishes a chain of responsibility for modules in large software systems. Although prior work uncovers a link between code ownership heuristics and software quality, these heuristics rely solely on the authorship of code changes. In addition to authoring code changes, developers also make important contributions to a module by reviewing code changes. Indeed, recent work shows that reviewers are highly active in modern code review processes, often suggesting alternative solutions or providing updates to the code changes. In this paper, we complement traditional code ownership heuristics using code review activity. Through a case study of six releases of the large Qt and OpenStack systems, we find that: (1) 67\%-86\% of developers did not author any code changes for a module, but still actively contributed by reviewing 21\%-39\% of the code changes, (2) code ownership heuristics that are aware of reviewing activity share a relationship with software quality, and (3) the proportion of reviewers without expertise shares a strong, increasing relationship with the likelihood of having post-release defects. Our results suggest that reviewing activity captures an important aspect of code ownership, and should be included in approximations of it in future studies.},
   reviewed = {/2016/06/07/code-ownership-revisited.html}
+}
+
+@article{Tomasdottir2020,
+  doi = {10.1109/tse.2018.2871058},
+  url = {https://doi.org/10.1109/tse.2018.2871058},
+  year = {2020},
+  month = aug,
+  publisher = {Institute of Electrical and Electronics Engineers ({IEEE})},
+  volume = {46},
+  number = {8},
+  pages = {863--891},
+  author = {Krist\'{i}n Fj\'{o}la T\'{o}masd\'{o}ttir and Maur\'{\i}cio Aniche and Arie van Deursen},
+  title = {The Adoption of {JavaScript} Linters in Practice: A Case Study on {ESLint}},
+  journal = ieee-tse,
+  abstract = {A linter is a static analysis tool that warns software developers about possible code errors or violations to coding standards. By using such a tool, errors can be surfaced early in the development process when they are cheaper to fix. For a linter to be successful, it is important to understand the needs and challenges of developers when using a linter. In this paper, we examine developers' perceptions on JavaScript linters. We study why and how developers use linters along with the challenges they face while using such tools. For this purpose we perform a case study on ESLint, the most popular JavaScript linter. We collect data with three different methods where we interviewed 15 developers from well-known open source projects, analyzed over 9,500 ESLint configuration files, and surveyed 337 developers from the JavaScript community. Our results provide practitioners with reasons for using linters in their JavaScript projects as well as several configuration strategies and their advantages. We also provide a list of linter rules that are often enabled and disabled, which can be interpreted as the most important rules to reason about when configuring linters. Finally, we propose several feature suggestions for tool makers and future work for researchers.},
+  reviewed = {/2022/04/06/adoption-of-javascript-linters.html}
 }
 
 @inproceedings{Tomassi2019,
