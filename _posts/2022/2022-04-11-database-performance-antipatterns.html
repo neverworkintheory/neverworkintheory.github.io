@@ -1,0 +1,47 @@
+---
+layout: post
+author: Greg Wilson
+title: "Database-Access Performance Antipatterns in Database-Backed Web Applications"
+date: 2022-04-11
+categories: ["Databases", "Performance"]
+---
+<div class="review">
+  <p>
+    Years ago,
+    a friend of mine who was studying civil engineering
+    took a course on structural failure.
+    Every week they looked at why a bridge had collapsed or a dam had failed,
+    or (in less exciting weeks) why a highway in the Canadian north
+    was unusable by anything with wheels just a couple of winters after being finished.
+    As his professor said,
+    a clever idea could save you millions of dollars,
+    but not repeating someone else's mistakes could save lives and your career.
+  </p>
+  <p>
+    <cite>Shao2020</cite> reminded me of that long-ago course.
+    After presenting two dozen previously-reported antipatterns that impact database performance in web applications
+    (with multiple citations to original sources for each),
+    the authors present ten more that range from
+    not leveraging existing indices in the database
+    to using subqueries where joins would work just as well.
+    These patterns are mined from applications like Bugzilla and WordPress,
+    and the paper presents strategies for tackling each one.
+    The result is more than just a very useful checklist:
+    I think it would be a great starting point for a second course on databases,
+    because understanding why each problem <em>is</em> a problem
+    and why the fix is a fix
+    would give programmers fresh insight into the systems they use.
+  </p>
+</div>
+<p id="Shao2020" class="bib">
+  <cite>Shao2020</cite>
+  Shudi Shao, Zhengyi Qiu, Xiao Yu, Wei Yang, Guoliang Jin, Tao Xie, and Xintao Wu.
+  Database-access performance antipatterns in database-backed web applications.
+  <em>Proc. ICSME 2020</em>, <a href="https://doi.org/10.1109/icsme46990.2020.00016">doi:10.1109/icsme46990.2020.00016</a>.
+</p>
+<blockquote class="abstract">
+  <p>
+    Database-backed web applications are prone to performance bugs related to database accesses. While much work has been conducted on database-access antipatterns with some recent work focusing on performance impact, there still lacks a comprehensive view of database-access performance antipatterns in database-backed web applications. To date, no existing work systematically reports known antipatterns in the literature, and no existing work has studied database-access performance bugs in major types of web applications that access databases differently.To address this issue, we first summarize all known database-access performance antipatterns found through our literature survey, and we report all of them in this paper. We further collect database-access performance bugs from web applications that access databases through language-provided SQL interfaces, which have been largely ignored by recent work, to check how extensively the known antipatterns can cover these bugs. For bugs not covered by the known antipatterns, we extract new database-access performance antipatterns based on real-world performance bugs from such web applications. Our study in total reports 24 known and 10 new database-access performance antipatterns. Our results can guide future work to develop effective tool support for different types of web applications.
+  </p>
+</blockquote>
+
