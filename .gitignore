@@ -5,6 +5,7 @@
 *.log
 *~
 .DS_Store
+.jekyll-cache
 .jekyll-metadata
 .rbenv-version
 .rvmrc

@@ -1,13 +1,36 @@
 ---
 layout: post
 author: Greg Wilson
-title: "Database-access performance antipatterns in database-backed web applications"
+title: "Database-Access Performance Antipatterns in Database-Backed Web Applications"
 date: 2022-04-11
 categories: ["Databases", "Performance"]
 ---
 <div class="review">
   <p>
-    Review goes here.
+    Years ago,
+    a friend of mine who was studying civil engineering
+    took a course on structural failure.
+    Every week they looked at why a bridge had collapsed or a dam had failed,
+    or (in less exciting weeks) why a highway in the Canadian north
+    was unusable by anything with wheels just a couple of winters after being finished.
+    As his professor said,
+    a clever idea could save you millions of dollars,
+    but not repeating someone else's mistakes could save lives and your career.
+  </p>
+  <p>
+    <cite>Shao2020</cite> reminded me of that long-ago course.
+    After presenting two dozen previously-reported antipatterns that impact database performance in web applications
+    (with multiple citations to original sources for each),
+    the authors present ten more that range from
+    not leveraging existing indices in the database
+    to using subqueries where joins would work just as well.
+    These patterns are mined from applications like Bugzilla and WordPress,
+    and the paper presents strategies for tackling each one.
+    The result is more than just a very useful checklist:
+    I think it would be a great starting point for a second course on databases,
+    because understanding why each problem <em>is</em> a problem
+    and why the fix is a fix
+    would give programmers fresh insight into the systems they use.
   </p>
 </div>
 <p id="Shao2020" class="bib">
