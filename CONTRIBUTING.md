@@ -72,7 +72,7 @@ we'd be happy to try to accommodate you.
    and <code><em>short-title</em></code> matches the short title of your branch (e.g., `example-subject`).
 1. Fill in the HTML file (see below).
 1. When you are done, create a pull request from your repository to [this one]({{site.repositoryurl}})
-   and [email us]((mailto:{{site.author.email}}) to let us know your post is ready for review.
+   and [email us](mailto:{{site.author.email}}) to let us know your post is ready for review.
    Please also let us know what URL to use for you in the [acknowledgments](#acknowledgments).
 
 When filling in the HTML template:
