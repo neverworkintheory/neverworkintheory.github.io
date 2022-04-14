@@ -73,4 +73,85 @@ categories: ["Interviewing", "Research Methods"]
     Recruiting professional programmers in sufficient numbers for research studies can be challenging because they often cannot spare the time, or due to their geographical distribution and potentially the cost involved. Online platforms such as Clickworker or Qualtrics do provide options to recruit participants with programming skill; however, misunderstandings and fraud can be an issue. This can result in participants without programming skill taking part in studies and surveys. If these participants are not detected, they can cause detrimental noise in the survey data. In this paper, we develop screener questions that are easy and quick to answer for people with programming skill but difficult to answer correctly for those without. In order to evaluate our questionnaire for efficacy and efficiency, we recruited several batches of participants with and without programming skill and tested the questions. In our batch 42% of Clickworkers stating that they have programming skill did not meet our criteria and we would recommend filtering these from studies. We also evaluated the questions in an adversarial setting. We conclude with a set of recommended questions which researchers can use to recruit participants with programming skill from online platforms.
   </p>
 </blockquote>
+<em>
+  <p>
+    The six questions this paper recommended in the end are:
+  </p>
+  <ol>
+    <li value="2">Which of these websites do you most frequently use as aid when programming?
+      <ul>
+        <li>Wikipedia</li>
+        <li>LinkedIn</li>
+        <li>Stack Overflow</li>
+        <li>Memory Alpha</li>
+        <li>I have not used any of the websites above for programming</li>
+        <li>I don't program</li>
+      </ul>
+    </li>
+    <li value="3">Choose the answer that best fits the description of a compiler’s function.
+      <ul>
+        <li>Refactoring code</li>
+        <li>Connecting to the network</li>
+        <li>Aggregating user data</li>
+        <li>I don't know</li>
+        <li>Translating code into executable instructions</li>
+        <li>Collecting user data</li>
+      </ul>
+    </li>
+    <li value="4">Choose the answer that best fits the definition of a recursive function.
+      <ul>
+        <li>I don't know</li>
+        <li>A function that runs for an infinite time</li>
+        <li>A function that does not have a return value</li>
+        <li>A function that can be called from other functions</li>
+        <li>A function that calls itself</li>
+        <li>A function that does not require any inputs</li>
+      </ul>
+    </li>
+    <li value="6">Which of these values would be the most fitting for a Boolean?
+      <ul>
+        <li>Small</li>
+        <li>I don't know</li>
+        <li>Solid</li>
+        <li>Quadratic</li>
+        <li>Red</li>
+        <li>True</li>
+      </ul>
+    </li>
+    <li value="15">What is the parameter of the function [in the code shown below]?
+      <ul>
+	<li><code>String out</code></li>
+	<li><code>String in</code></li>
+	<li>I don't know</li>
+	<li><code>int i=x-1; i>=0; i--</code></li>
+	<li>Outputting a <code>String</code></li>
+	<li><code>int x = len(in)</code></li>
+      </ul>
+    </li>
+    <li value="16">Please select the returned value of the pseudo code [shown below].
+      <ul>
+	<li><code>hello world</code></li>
+	<li><code>hello world 10</code></li>
+	<li><code>dlrow olleh</code></li>
+	<li><code>world hello</code></li>
+	<li><code>HELLO WORLD</code></li>
+	<li>I don't know</li>
+	<li><code>hello world hello world hello world hello world</code></li>
+      </ul>
+    </li>
+  </ol>
+<pre>
+  main {
+    print(func("hello world"))
+  }
 
+  String func(String in) {
+    int x = len(in)
+    String out = ""
+    for (int i=x-1; i>=0; i--) {
+      out.append(in[i])
+    }
+    return out
+  }
+</pre>
+</em>
