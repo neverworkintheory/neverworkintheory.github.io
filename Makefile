@@ -97,6 +97,7 @@ categories:
 check:
 	@make check-ascii
 	@make check-bib
+	@make check-dates
 	@make check-used
 
 ## check-ascii: check that all .bib files are 7-bit ASCII
@@ -107,6 +108,10 @@ check-ascii:
 ## check-bib: check integrity of bibliography
 check-bib:
 	@bin/check-bib.py ${STRINGS_OPTION} --inputs ${NWIT_BIB} ${TODO_BIB}
+
+## check-dates: make sure the dates in posts line up with filenames
+check-dates:
+	@bin/check-dates.py --root _posts
 
 ## check-pdf: check that PDFs exist (use PDFDIR=<path>)
 check-pdf:

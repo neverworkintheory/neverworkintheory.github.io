@@ -7,7 +7,29 @@ categories: ["Testing", "Open Source"]
 ---
 <div class="review">
   <p>
-    Review goes here.
+    Eight years ago,
+    <cite>Yuan2014</cite> found that many of the failures in data-intensive systems
+    were a result of people not testing the error handling,
+    i.e.,
+    they didn't check that the alarms actually worked as designed.
+    Subsequent research in several different contexts has confirmed this:
+    programmers are less likely to test the "unhappy path" through their code,
+    not least because of the difficulty of simulating things like timeouts,
+    dropped network connections,
+    and permission errors.
+  </p>
+  <p>
+    <cite>Lima2021</cite> is therefore welcome news.
+    They examined the test suites of 27 well-known open-source Java libraries,
+    and while they did find that instructions and branches in catch blocks and throw instructions
+    aren't covered as well as "main" code,
+    most of the libraries' test suites could detect more than 70% of artificially-injected faults.
+    That's a much higher percentage than I would have predicted;
+    I'd be curious to see a companion study looking at
+    whether books like Aniche's <em><a href="https://www.manning.com/books/effective-software-testing">Effective Software Testing</a></em>
+    devote more to this topic than their predecessors did twenty years ago,
+    and if so,
+    whether that coverage preceded or followed improvements in practice.
   </p>
 </div>
 <p id="Lima2021" class="bib">
