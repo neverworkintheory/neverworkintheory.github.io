@@ -59,18 +59,6 @@
   abstract = {Abstract This paper reflects on the evolution (past, present and future) of the 'psychology of programming' over the 50 year period of this anniversary issue. The International Journal of Human-Computer Studies (IJHCS) has been a key venue for much seminal work in this field, including its first foundations, and we review the changing research concerns seen in publications over these five decades. We relate this thematic evolution to research taking place over the same period within more specialist communities, especially the Psychology of Programming Interest Group (PPIG), the Empirical Studies of Programming series (ESP), and the ongoing community in Visual Languages and Human-Centric Computing (VL/HCC). Many other communities have interacted with psychology of programming, both influenced by research published within the specialist groups, and in turn influencing research priorities. We end with an overview of the core theories that have been developed over this period, as an introductory resource for new researchers, and also with the authors' own analysis of key priorities for future research.}
 }
 
-@article{Butler2019,
-  doi = {10.1109/tse.2019.2919305},
-  url = {https://doi.org/10.1109/tse.2019.2919305},
-  year = {2019},
-  publisher = {Institute of Electrical and Electronics Engineers ({IEEE})},
-  pages = {1--1},
-  author = {Simon Butler and Jonas Gamalielsson and Bjorn Lundell and Christoffer Brax and Johan Sjoberg and Anders Mattsson and Tomas Gustavsson and Jonas Feist and Erik Lonroth},
-  title = {On Company Contributions to Community Open Source Software Projects},
-  journal = ieee-tse,
-  abstract = {The majority of contributions to community open source software (OSS) projects are made by practitioners acting on behalf of companies and other organisations. Previous research has addressed the motivations of both individuals and companies to engage with OSS projects. However, limited research has been undertaken that examines and explains the practical mechanisms or work practices used by companies and their developers to pursue their commercial and technical objectives when engaging with OSS projects. This research investigates the variety of work practices used in public communication channels by company contributors to engage with and contribute to eight community OSS projects. Through interviews with contributors to the eight projects we draw on their experiences and insights to explore the motivations to use particular methods of contribution. We find that companies utilise work practices for contributing to community projects which are congruent with the circumstances and their capabilities that support their short- and long-term needs. We also find that companies contribute to community OSS projects in ways that may not always be apparent from public sources, such as employing core project developers, making donations, and joining project steering committees in order to advance strategic interests. The factors influencing contributor work practices can be complex and are often dynamic arising from considerations such as company and project structure, as well as technical concerns and commercial strategies. The business context in which software created by the OSS project is deployed is also found to influence contributor work practices.}
-}
-
 @comment{CCC}
 
 @comment{DDD}
@@ -150,7 +138,7 @@
   abstract = {Android parental control applications are used by parents to monitor and limit their children's mobile behaviour (e.g., mobile apps usage, web browsing, calling, and texting). In order to offer this service, parental control apps require privileged access to sys-tem resources and access to sensitive data. This may significantly reduce the dangers associated with kids' online activities, but it raises important privacy con-cerns. These concerns have so far been overlooked by organizations providing recommendations regarding the use of parental control applications to the public. We conduct the first in-depth study of the Android parental control app's ecosystem from a privacy and regulatory point of view. We exhaustively study 46 apps from 43 developers which have a combined 20M installs in the Google Play Store. Using a combination of static and dynamic analysis we find that: these apps are on average more permissions-hungry than the top 150 apps in the Google Play Store, and tend to request more dangerous permissions with new releases; 11\% of the apps transmit personal data in the clear; 34\% of the apps gather and send personal information without appropriate consent; and 72\% of the apps share data with third parties (including online advertising and analytics services) without mentioning their presence in their privacy policies. In summary, parental control applications lack transparency and lack compliance with reg ulatory requirements. This holds even for those applications recommended by European and other national security centers.}
 }
 
-@article{Ferreira2021,
+@article{Ferreira2022,
   doi = {10.1002/spe.3044},
   url = {https://doi.org/10.1002/spe.3044},
   year = {2021},
@@ -252,20 +240,6 @@ Methods: We performed a scenario-based evaluation to identify how participants u
   abstract = {Automation tools like continuous integration services, code coverage reporters, style checkers, dependency managers, etc. are all known to provide significant improvements in developer productivity and software quality. Some of these tools are widespread, others are not. How do these automation ``best practices'' spread? And how might we facilitate the diffusion process for those that have seen slower adoption? In this paper, we rely on a recent innovation in transparency on code hosting platforms like GitHub---the use of repository badges---to track how automation tools spread in open-source ecosystems through different social and technical mechanisms over time. Using a large longitudinal data set, multivariate network science techniques, and survival analysis, we study which socio-technical factors can best explain the observed diffusion process of a number of popular automation tools. Our results show that factors such as social exposure, competition, and observability affect the adoption of tools significantly, and they provide a roadmap for software engineers and researchers seeking to propagate best practices and tools.}
 }
 
-@article{Lima2021,
-  doi = {10.1007/s10664-021-09983-3},
-  url = {https://doi.org/10.1007/s10664-021-09983-3},
-  year = {2021},
-  month = jun,
-  publisher = {Springer Science and Business Media {LLC}},
-  volume = {26},
-  number = {5},
-  author = {Luan P. Lima and Lincoln S. Rocha and Carla I. M. Bezerra and Matheus Paixao},
-  title = {Assessing exception handling testing practices in open-source libraries},
-  journal = ese,
-  abstract = {Modern programming languages (e.g., Java and C\#) provide features to separate error-handling code from regular code, seeking to enhance software comprehensibility and maintainability. Nevertheless, the way exception handling (EH) code is structured in such languages may lead to multiple, different, and complex control flows, which may affect the software testability. Previous studies have reported that EH code is typically neglected, not well tested, and its misuse can lead to reliability degradation and catastrophic failures. However, little is known about the relationship between testing practices and EH testing effectiveness. In this exploratory study, we (i) measured the adequacy degree of EH testing concerning code coverage (instruction, branch, and method) criteria; and (ii) evaluated the effectiveness of the EH testing by measuring its capability to detect artificially injected faults (i.e., mutants) using 7 EH mutation operators. Our study was performed using test suites of 27 long-lived Java libraries from open-source ecosystems. Our results show that instructions and branches within catch blocks and throw instructions are less covered, with statistical significance, than the overall instructions and branches. Nevertheless, most of the studied libraries presented test suites capable of detecting more than 70\% of the injected faults. From a total of 12, 331 mutants created in this study, the test suites were able to detect 68\% of them.}
-}
-
 @comment{MMM}
 
 @article{May2019,
@@ -319,6 +293,21 @@ Methods: We performed a scenario-based evaluation to identify how participants u
   abstract = {Code smells are poor implementation choices applied by developers during software evolution that often lead to critical flaws or failure. Much in the same way, community smells reflect the presence of organizational and socio-technical issues within a software community that may lead to additional project costs. Recent empirical studies provide evidence that community smells are often---if not always---connected to circumstances such as code smells. In this paper we look deeper into this connection by conducting a mixed-methods empirical study of 117 releases from 9 open-source systems. The qualitative and quantitative sides of our mixed-methods study were run in parallel and assume a mutually-confirmative connotation. On the one hand, we survey 162 developers of the 9 considered systems to investigate whether developers perceive relationship between community smells and the code smells found in those projects. On the other hand, we perform a fine-grained analysis into the 117 releases of our dataset to measure the extent to which community smells impact code smell intensity (i.e., criticality). We then propose a code smell intensity prediction model that relies on both technical and community-related aspects. The results of both sides of our mixed-methods study lead to one conclusion: community-related factors contribute to the intensity of code smells. This conclusion supports the joint use of community and code smells detection as a mechanism for the joint management of technical and social problems around software development communities.}
 }
 
+@article{Poulos2021,
+  doi = {10.1002/spe.3022},
+  url = {https://doi.org/10.1002/spe.3022},
+  year = {2021},
+  month = sep,
+  publisher = {Wiley},
+  volume = {52},
+  number = {2},
+  pages = {619--635},
+  author = {Alexandra Poulos and Sally A. McKee and Jon C. Calhoun},
+  title = {Posits and the state of numerical representations in the age of exascale and edge computing},
+  journal = {Software: Practice and Experience},
+  abstract = {Growing constraints on memory utilization, power consumption, and I/O throughput have increasingly become limiting factors to the advancement of high performance computing (HPC) and edge computing applications. IEEE-754 floating-point types have been the de facto standard for floating-point number systems for decades, but the drawbacks of this numerical representa- tion leave much to be desired. Alternative representations are gaining traction, both in HPC and machine learning environments. Posits have recently been proposed as a drop-in replacement for the IEEE-754 floating-point representa- tion. We survey the state-of-the-art and state-of-the-practice in the development and use of posits in edge computing and HPC. The current literature supports posits as a promising alternative to traditional floating-point systems, both as a stand-alone replacement and in a mixed-precision environment. Development and standardization of the posit type is ongoing, and much research remains to explore the application of posits in different domains, how to best implement them in hardware, and where they fit with other numerical representations.}
+}
+
 @comment{QQQ}
 
 @comment{RRR}
@@ -366,6 +355,39 @@ Methods: We performed a scenario-based evaluation to identify how participants u
 
 @comment{TTT}
 
+<<<<<<< HEAD
+=======
+@article{Tamburri2020,
+  doi = {10.1002/spe.2874},
+  url = {https://doi.org/10.1002/spe.2874},
+  year = {2020},
+  month = jul,
+  publisher = {Wiley},
+  volume = {50},
+  number = {10},
+  pages = {1930--1951},
+  author = {Damian Andrew Tamburri and Kelly Blincoe and Fabio Palomba and Rick Kazman},
+  title = {{\textquotedblleft}The Canary in the Coal Mine{\ldots}{\textquotedblright} A cautionary tale from the decline of {SourceForge}},
+  journal = spe,
+  abstract = {Forges are online collaborative platforms to support the development of distributed open source software. While once mighty keepers of open source vitality, software forges are rapidly becoming less and less relevant. For example, of the top 10 forges in 2011, only one survives today---SourceForge---the biggest of them all, but its numbers are dropping and its community is tenuous at best. Through mixed-methods research, this article chronicles and analyze the software practice and experiences of the project's history---in particular its architectural and community/organizational decisions. We discovered a number of suboptimal social and architectural decisions and circumstances that, may have led to SourceForge's demise. In addition, we found evidence suggesting that the impact of such decisions could have been monitored, reduced, and possibly avoided altogether. The use of sociotechnical insights needs to become a basic set of design and software/organization monitoring principles that tell a cautionary tale on what to measure and what not to do in the context of large-scale software forge and community design and management.}
+}
+
+@article{Turk2021,
+  doi = {10.1002/spe.3027},
+  url = {https://doi.org/10.1002/spe.3027},
+  year = {2021},
+  month = sep,
+  publisher = {Wiley},
+  volume = {52},
+  number = {2},
+  pages = {415--426},
+  author = {Toma{\v{z}} Turk},
+  title = {{SDFunc}: Modular spreadsheet design with sheet-defined functions in Microsoft Excel},
+  journal = {Software: Practice and Experience},
+  abstract = {The goal of the SDFunc tool is to enable spreadsheet developers to build their model computations in Microsoft Excel according to the modular design approach, that is, the separation of the functionalities into independent, inter- changeable modules with interfaces that provide input and output elements. This concept has been theoretically developed in recent years and is known as sheet-defined functions in the literature. In this article, we are presenting our implementation of the tool and the evaluation steps that we took to make the tool interesting and suitable for the assessment of the modular approach in spreadsheet development by the industry, specifically within organizational and companies’ settings where the spreadsheet developers and end-users involved in experiments expect to use a well-established spreadsheet platform. We also demonstrated that sheet-defined functions can be implemented by development tools already present in Microsoft Excel.}
+}
+
+>>>>>>> main
 @comment{UUU}
 
 @comment{VVV}

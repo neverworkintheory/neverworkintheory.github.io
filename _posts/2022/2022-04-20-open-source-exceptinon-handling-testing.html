@@ -1,0 +1,47 @@
+---
+layout: post
+author: Greg Wilson
+title: "Assessing Exception Handling Testing Practices in Open-Source Libraries"
+date: 2022-04-20
+categories: ["Testing", "Open Source"]
+---
+<div class="review">
+  <p>
+    Eight years ago,
+    <cite>Yuan2014</cite> found that many of the failures in data-intensive systems
+    were a result of people not testing the error handling,
+    i.e.,
+    they didn't check that the alarms actually worked as designed.
+    Subsequent research in several different contexts has confirmed this:
+    programmers are less likely to test the "unhappy path" through their code,
+    not least because of the difficulty of simulating things like timeouts,
+    dropped network connections,
+    and permission errors.
+  </p>
+  <p>
+    <cite>Lima2021</cite> is therefore welcome news.
+    They examined the test suites of 27 well-known open-source Java libraries,
+    and while they did find that instructions and branches in catch blocks and throw instructions
+    aren't covered as well as "main" code,
+    most of the libraries' test suites could detect more than 70% of artificially-injected faults.
+    That's a much higher percentage than I would have predicted;
+    I'd be curious to see a companion study looking at
+    whether books like Aniche's <em><a href="https://www.manning.com/books/effective-software-testing">Effective Software Testing</a></em>
+    devote more to this topic than their predecessors did twenty years ago,
+    and if so,
+    whether that coverage preceded or followed improvements in practice.
+  </p>
+</div>
+<p id="Lima2021" class="bib">
+  <cite>Lima2021</cite>
+  Luan P. Lima, Lincoln S. Rocha, Carla I. M. Bezerra, and Matheus Paixao.
+  Assessing exception handling testing practices in open-source libraries.
+  <em>Empirical Software Engineering</em>, 6, 2021,
+  <a href="https://doi.org/10.1007/s10664-021-09983-3">doi:10.1007/s10664-021-09983-3</a>.
+</p>
+<blockquote class="abstract">
+  <p>
+    Modern programming languages (e.g., Java and C#) provide features to separate error-handling code from regular code, seeking to enhance software comprehensibility and maintainability. Nevertheless, the way exception handling (EH) code is structured in such languages may lead to multiple, different, and complex control flows, which may affect the software testability. Previous studies have reported that EH code is typically neglected, not well tested, and its misuse can lead to reliability degradation and catastrophic failures. However, little is known about the relationship between testing practices and EH testing effectiveness. In this exploratory study, we (i) measured the adequacy degree of EH testing concerning code coverage (instruction, branch, and method) criteria; and (ii) evaluated the effectiveness of the EH testing by measuring its capability to detect artificially injected faults (i.e., mutants) using 7 EH mutation operators. Our study was performed using test suites of 27 long-lived Java libraries from open-source ecosystems. Our results show that instructions and branches within catch blocks and throw instructions are less covered, with statistical significance, than the overall instructions and branches. Nevertheless, most of the studied libraries presented test suites capable of detecting more than 70% of the injected faults. From a total of 12, 331 mutants created in this study, the test suites were able to detect 68% of them.
+  </p>
+</blockquote>
+
