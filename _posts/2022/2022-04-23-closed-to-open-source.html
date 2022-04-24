@@ -1,0 +1,66 @@
+---
+layout: post
+author: Greg Wilson
+title: "Moving From Closed to Open Source"
+date: 2022-04-23
+categories: ["Open Source"]
+---
+<div class="review">
+  <p>
+    We often talk about commercial versus open source software,
+    but in reality there has always been a continuum
+    and a lot of migration in both directions:
+    Many people have built successful businesses around open source software,
+    and it is increasingly common for companies to take code they have developed in house
+    and release it to (or in some cases, inflict it upon) the world.
+  </p>
+  <p>
+    <cite>Kochhar2019</cite> looks at how six internal Microsoft projects made that journey.
+    Through interviews with stakeholders,
+    surveys of developers working on the projects,
+    and quantitative analysis of their contributors and communities,
+    the authors explore the decisions that were made and the impact they had.
+    Among the reasons they identify for open sourcing code were
+    building a larger community that would respond to questions and file bug reports faster,
+    getting more programmers involved,
+    identifying potential future employees,
+    and working around limited in-house resources.
+    The transition itself also comes under scrutiny:
+    preparing the code and documentation for a wider audience takes effort,
+    as does communicating the fact that the code is now available.
+    Finally,
+    the paper's analysis of what happened afterward can help set a baseline
+    for others who are interested in walking the same road:
+    in some cases,
+    Microsoft employees continued to be major contributors,
+    while in others,
+    the balance is closer to 50/50.
+  </p>
+  <p>
+    I enjoyed this paper,
+    and will recommend it to engineering managers and others
+    who are thinking of open sourcing their code.
+    However,
+    I would have liked some discussion of the fact that
+    large companies get a lot of value out of open source,
+    while many of the projects they depend on struggle to be sustainable.
+    Many of the reasons given for open sourcing projects
+    boil down to externalizing development costs;
+    while nobody is forcing people to volunteer their time to work on those projects,
+    more analysis of what they get out of it
+    and whether it's actually worthwhile for them
+    would have been a welcome counterpoint.
+  </p>
+</div>
+<p id="Kochhar2019" class="bib">
+  <cite>Kochhar2019</cite>
+  Pavneet Singh Kochhar, Eirini Kalliamvakou, Nachiappan Nagappan, Thomas Zimmermann, and Christian Bird.
+  Moving from closed to open source: observations from six transitioned projects to GitHub.
+  <em>IEEE Trans. Software Engineering</em>, 2019,
+  <a href="https://doi.org/10.1109/tse.2019.2937025">doi:10.1109/tse.2019.2937025</a>.
+</p>
+<blockquote class="abstract">
+  <p>
+    Open source software systems have gained a lot of attention in the past few years. With the emergence of open source platforms like GitHub, developers can contribute, store, and manage their projects with ease. Large organizations like Microsoft, Google, and Facebook are open sourcing their in-house technologies in an effort to more broadly involve the community in the development of software systems. Although closed source and open source systems have been studied extensively, there has been little research on the transition from closed source to open source systems. Through this study we aim to: a) provide guidance and insights for other teams planning to open source their projects and b) to help them avoid pitfalls during the transition process. We studied six different Microsoft systems, which were recently open-sourced i.e., CoreFX, CoreCLR, Roslyn, Entity Framework, MVC, and Orleans. This paper presents the transition from the viewpoints of both Microsoft and the open source community based on interviews with eleven Microsoft developer, five Microsoft senior managers involved in the decision to open source, and eleven open-source developers. From Microsoft's perspective we discuss the reasons for the transition, experiences of developers involved, and the transition's outcomes and challenges. Our results show that building a vibrant community, prompt answers, developing an open source culture, security regulations and business opportunities are the factors which persuade companies to open source their products. We also discuss the transition outcomes on processes such as code reviews, version control systems, continuous integration as well as developers' perception of these changes. From the open source community's perspective, we illustrate the response to the open-sourcing initiative through contributions and interactions with the internal developers and provide guidelines for other projects planning to go open source.
+  </p>
+</blockquote>
