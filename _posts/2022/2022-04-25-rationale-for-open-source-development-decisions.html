@@ -7,7 +7,33 @@ categories: ["Open Source"]
 ---
 <div class="review">
   <p>
-    Review goes here.
+    I've never tried to measure how much of my time I spend
+    staring at a screen full of code and wondering,
+    "Why the hell is it doing <em>that</em>?"
+    Even small teams with little turnover can struggle to keep track of
+    the reasons for particular decisions,
+    and newcomers frequently have to recapitulate their predecessors' journeys of discovery
+    in order to figure out why alpha has to be re-initialized at that particular moment.
+  </p>
+  <p>
+    <cite>Sharma2021</cite> explores how well decision rationales can be extracted
+    after the fact
+    from Python's email archives.
+    The authors combine term patterns such as Proposal-State-Reason,
+    proximity-based heuristics,
+    role-based heuristics,
+    and the presence of special terms like "BDFL pronouncement"
+    to identify promising messages,
+    then scored how well parameterized combinations of those heuristics did
+    compared to a manually-curated set of messages.
+    They found that,
+    "If we consider the top 10 ranked results,
+    [aggregating at the message level] captures 74% and 86% of rationale sentences, respectively;
+    and top 15 increases this further to 82% and 91%, respectively."
+    That's much better than I would have expected,
+    and I hope the authors will make their tool available
+    as a specialized search engine
+    for practitioners to try out.
   </p>
 </div>
 <p id="Sharma2021" class="bib">
