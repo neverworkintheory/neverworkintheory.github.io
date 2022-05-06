@@ -1,0 +1,75 @@
+---
+layout: post
+author: Greg Wilson
+title: "Not Quite Modern"
+date: 2022-05-06
+categories: ["Book Review"]
+---
+<p>
+  Despite its title,
+  David Farley's new book
+  <a href="https://www.pearson.com/us/higher-education/program/Farley-Modern-Software-Engineering-Doing-What-Works-to-Build-Better-Software-Faster/PGM100003045442.html"><em>Modern Software Engineering</em></a> feels a bit old-fashioned.
+  The author is best known for his advocacy of dev ops and continuous delivery,
+  and his starting point is the following definition (pg 17):
+</p>
+<blockquote>
+  <p>
+    Engineering is the application of an empirical, scientific approach
+    to finding efficient, economic solutions to practical problems.
+  </p>
+</blockquote>
+<p>
+  I strongly agree that our field needs more of this;
+  I was therefore disappointed that Farley proceeds to leave out
+  almost everything that empirical, scientific study of programs, programming, and programmers
+  has uncovered in the last three decades.
+  As just one example, consider test-driven development.
+  On pg 98,
+  Farley writes:
+</p>
+<blockquote>
+  <p>
+    There are several studies, academic and informal, on the impact of TDD on defect reduction.
+    Most studies agree that defect reduction is in a range from 40 percent to well over 250 percent.
+  </p>
+</blockquote>
+<p>
+  He includes
+  <a href="https://ieeexplore.ieee.org/document/1251029">these</a>
+  <a href="https://www.computer.org/csdl/magazine/so/2007/03/s3024/13rRUygT7kK">three</a>
+  <a href="http://ibiai.mg.gov.br/wp-content/uploads/2019/08/05750007-1.pdf">links</a>
+  to articles from 2003, 2007, and 2012 respectively.
+  What he doesn't include is Turhan et al's meta-analysis in 2011's
+  <a href="https://www.oreilly.com/library/view/making-software/9780596808310/"><em>Making Software</em></a>,
+  which found that (a) the more rigorous the study, the weaker the evidence for or against TDD
+  and (b) overall, there is no evidence that TDD makes anything better or worse.
+  There's also no mention of the more recent (and very careful) work of Fucci et al.
+  (which <a href="{{ '/2016/10/05/test-driven-development.html' | relative_url }}">we reviewed</a> in 2016),
+  which found that (a) there's no difference between test-first and test-after but
+  (b) interleaving short bursts of coding and testing is more effective
+  than working in longer iterations.
+  If people started working in shorter cycles when they adopted TDD
+  they might well ascribe any benefits they experience to the wrong cause;
+  that's exactly the sort of question careful study could answer.
+</p>
+<p>
+  I went through the footnotes in this book twice
+  looking for any mentions of research findings from the last ten years.
+  I came up empty,
+  and I think that's a shame.
+  I'm the first to admit<sup><a href="#footnote-1">1</a></sup>
+  that most academic studies in software engineering are irrelevant to most working programmers,
+  but there are a lot of gems.
+  We know so much about how programmers actually do code reviews,
+  whether code clones are actually harmful,
+  what difference static typing actually makes,
+  and where hiring and onboarding go wrong;
+  I think a modern introduction to software engineering should include all of that and more.
+</p>
+<ol>
+  <li id="footnote-1">
+    "Admit" is putting it mildly:
+    "shout repeatedly" is probably a more accurate description of how often and how loudly
+    I've complained about this.
+  </li>
+</ol>
