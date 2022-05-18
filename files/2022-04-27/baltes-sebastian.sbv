@@ -1,0 +1,296 @@
+0:00:06.000,0:00:11.920
+Let's jump into the talk. First of all a bit of background as Mike mentioned Ii'm working for
+
+0:00:11.920,0:00:17.120
+SAP as well as being an adjunct lecturer from the University of Adelaide and this work I'm
+
+0:00:17.120,0:00:23.760
+going to present here was when I was still a full-time lecturer in Adelaide in 2019.
+
+0:00:26.720,0:00:30.640
+Since i assume that not all of you know where exactly Papua New Guinea is located
+
+0:00:30.640,0:00:37.120
+I want to start with a brief overview of where PNG is located and some basic statistics. PNG is
+
+0:00:37.120,0:00:42.640
+located in the Pacific close to Australia as you can see here the capital city is Port Moresby.
+
+0:00:43.840,0:00:47.040
+There are about nine million people in PNG
+
+0:00:48.000,0:00:53.120
+and when you look at the GDP and the HDI or the human development index you see that it's still
+
+0:00:53.120,0:01:00.080
+a developing country. It gained independence from Australia in 1975 and at the same time
+
+0:01:00.080,0:01:08.000
+it was also a German colony which made it quite interesting for me being German working
+
+0:01:08.000,0:01:15.280
+in Australia. Back then when we visited we organized a workshop there in Port Moresby
+
+0:01:16.000,0:01:23.440
+to to study the challenges and opportunities for software engineering in PNG. One of my co-authors
+
+0:01:25.040,0:01:31.600
+is from PNG and he agreed to prepare a short intro video and I'm going to show that now.
+
+0:01:32.640,0:01:39.040
+Hello my name is Raula Gaikovina Kula I'm an assistant professor at Nara Institute of
+
+0:01:39.040,0:01:47.360
+Science and Technology in Japan. So today i was asked to provide some background into why
+
+0:01:48.240,0:01:56.800
+we started the Bridges Initiative which was the first international workshop on bridging the
+
+0:01:56.800,0:02:05.200
+divide between globally engineered software. So this workshop was - actually it started
+
+0:02:05.200,0:02:11.920
+off - first I'm from Papua New Guinea and I've been fortunate enough to be exposed to different
+
+0:02:11.920,0:02:19.040
+software engineering concepts or global software engineering research and also practitioners
+
+0:02:19.680,0:02:26.800
+so I also wanted to go back to my country and see the differences. I saw some differences but how
+
+0:02:26.800,0:02:33.120
+to characterize these differences was something that I was really interested in. So what i did is-
+
+0:02:34.240,0:02:43.520
+we were able to get some funding with the Nara Institute of Science and Technology
+
+0:02:43.520,0:02:48.880
+also with the UPNG which is the local university and different sponsors and
+
+0:02:48.880,0:02:55.120
+we were able to hold the international workshop. We had some participants - I was able to invite
+
+0:02:57.040,0:03:00.480
+different experts in the field especially in software engineering.
+
+0:03:00.480,0:03:07.760
+As you know one of them is Sebastian Baltes so he's going to be giving the talk. We
+
+0:03:07.760,0:03:13.120
+we had a two-day program - i won't go into all the details because i think Sebastian will give
+
+0:03:13.120,0:03:19.200
+that - and these are the supporters. So we had a lot of - as well as academic we had a lot of
+
+0:03:19.760,0:03:29.520
+industry support from the local industry so that was the main motivation and then we we planned to
+
+0:03:29.520,0:03:38.960
+do 2020 and 2021, 2022. Unfortunately due to the corona pandemic we were unable to continue those
+
+0:03:38.960,0:03:47.680
+but I'm hoping that this year or next year we can kick-start this project again. I hope you
+
+0:03:47.680,0:03:53.360
+are interested in this and maybe you can come see us too as well. So thank you very much.
+
+0:03:55.280,0:04:00.400
+Yes so Raula mentioned we organized this workshop. Our main question was as I said
+
+0:04:00.400,0:04:04.800
+in the beginning to identify challenges of the opportunities for software engineering in PNG
+
+0:04:05.520,0:04:11.760
+and just very briefly the results or the selection of results I'm going to present are based on that
+
+0:04:11.760,0:04:17.760
+workshop. There are several parts like any large conference and we handed out surveys, did focus
+
+0:04:17.760,0:04:25.280
+group interviews, and that's the data we used to distill those challenges and opportunities.
+
+0:04:25.280,0:04:31.840
+So first of all there are very basic challenges infrastructure-related challenges. The economy in
+
+0:04:31.840,0:04:37.760
+PNG is currently dominated by the primary sector. 75 percent of population rely on subsistence
+
+0:04:37.760,0:04:43.760
+economy and internet access is a problem: only 30 percent of the population have access to internet
+
+0:04:43.760,0:04:50.960
+and even though compared to neighboring countries such as Fiji there is improvement - recently
+
+0:04:50.960,0:04:55.760
+there was a new sea cable installed to Australia to increase the bandwidth but
+
+0:04:55.760,0:05:01.200
+also people usually don't have computers at home and they often access the internet via phones.
+
+0:05:02.080,0:05:07.440
+So in summary internet is expensive and slow. It's really used on mobile devices and there
+
+0:05:07.440,0:05:13.120
+are very few flat rates. I took this picture here on the right while we visited PNG and
+
+0:05:13.120,0:05:19.360
+you see there for an actual flat rate internet connection it would be about 250 us dollars.
+
+0:05:21.520,0:05:25.840
+Another thing we observed is the importance of school and universities because there are
+
+0:05:25.840,0:05:30.640
+computers there. There's internet access there and people go to schools and universities to
+
+0:05:30.640,0:05:36.320
+access the internet and to use computers and what we also noticed is that for quite a few people
+
+0:05:37.280,0:05:42.880
+the internet is specific apps such as Facebook so then when they say they use the internet
+
+0:05:42.880,0:05:51.120
+they usually refer to specific apps. And to provide some context for those internet costs
+
+0:05:51.120,0:05:56.880
+it's hard to find numbers but i did an estimation. So let's say the lower
+
+0:05:58.080,0:06:06.400
+threshold for middle income in PNG is 325 kina which is local currency and on the right you see
+
+0:06:07.520,0:06:13.360
+a picture we took back then in 2019 about how much it is for internet connection on a mobile device.
+
+0:06:13.920,0:06:21.440
+And so for 30 gigabyte for a month you already have to pay almost half of this monthly income.
+
+0:06:22.000,0:06:28.080
+And this translates to about 22 hours of Zoom calls which is not that much if you
+
+0:06:28.080,0:06:34.800
+think about how much you spend in Zoom or Teams or whatever video call software sessions every day.
+
+0:06:37.120,0:06:44.560
+There's another challenge related to education and also trust. So adult literacy is quite low in png
+
+0:06:44.560,0:06:50.720
+63% as of 2015 and actually quite a few participants mentioned that
+
+0:06:51.360,0:06:56.640
+improving the school and university curriculum in terms of software engineering would be a good
+
+0:06:56.640,0:07:02.960
+way to quickly improve the situation. And the education - in terms of software engineering and
+
+0:07:02.960,0:07:11.040
+PNG, education and trust are also related because since there are these problems with education
+
+0:07:11.040,0:07:16.640
+in PNG in terms of software development. The government and local companies don't trust local
+
+0:07:16.640,0:07:23.760
+software engineers being educated in PNG and give the contracts to foreign companies and workers and
+
+0:07:23.760,0:07:30.160
+this again leads to a lack of local expertise in terms of software development which could then be
+
+0:07:30.160,0:07:35.680
+leveraged to improve the curricula at schools and universities so that's a bit of a problem.
+
+0:07:38.080,0:07:42.480
+But despite these major challenges a local software engineering community community is
+
+0:07:42.480,0:07:52.960
+forming so we visited the PNG digital ICT cluster and its small companies - startups - are working
+
+0:07:52.960,0:07:59.200
+on the main of software development and there's also a Facebook group for ICT
+
+0:07:59.200,0:08:04.800
+jobs in PNG so there is something starting up but it's limited to the urban areas and
+
+0:08:04.800,0:08:11.840
+mainly to the capital city of Port Moresby because the infrastructure is better there.
+
+0:08:12.640,0:08:18.720
+There is however a huge potential for software engineering in PNG because software needs to be
+
+0:08:18.720,0:08:25.920
+adapted for example to local legislation in terms of the tax system etc. And the government and
+
+0:08:25.920,0:08:31.680
+companies need software but as of now there are very few local software developers and therefore
+
+0:08:31.680,0:08:38.880
+they depend on foreign companies - a foreign workforce - and this incurs huge costs because as
+
+0:08:38.880,0:08:46.880
+we learned in PNG if you live in PNG as an expat developer you are paid quite well - competitive
+
+0:08:46.880,0:08:52.480
+salaries on an international level - which as I mentioned increase huge costs for local companies
+
+0:08:52.480,0:08:57.280
+and government. So there are opportunities first of all for the government to invest
+
+0:08:57.280,0:09:01.600
+in building a local engineering community. And the way to start this could be focusing
+
+0:09:01.600,0:09:08.720
+on customization of standard software to the local environment. And also in terms of development aid,
+
+0:09:08.720,0:09:13.840
+the national universities can help revise the curriculum schools at schools and universities
+
+0:09:14.480,0:09:18.160
+in terms of software engineering and this was something we wanted to kickstart but
+
+0:09:18.160,0:09:23.840
+as I mentioned due to the pandemic it was a bit slowed down but we hope to pick it up again now.
+
+0:09:26.320,0:09:32.800
+So what can you as an individual do? First of all if you have software that might be used in PNG
+
+0:09:32.800,0:09:35.840
+think about customization adaptation of the software from the beginning.
+
+0:09:38.240,0:09:41.920
+Make sure that your software and also documentation is accessible for users with
+
+0:09:41.920,0:09:47.440
+limited resources. For example if you have auto playing videos on your landing page,
+
+0:09:48.800,0:09:55.520
+that can incur quite a lot of cost for somebody in PNG. As i've outlined before provide alternatives:
+
+0:09:55.520,0:10:00.880
+for example video tutorials and some form of written tutorials that people can access.
+
+0:10:02.320,0:10:08.080
+And consider also these limitations in case you communicate somebody in PNG for example consider
+
+0:10:08.080,0:10:12.960
+that a Zoom call might be quite expensive and sometimes a traditional phone call might be
+
+0:10:12.960,0:10:20.240
+preferable. And jwhen you design your software or when you design your web app consider this
+
+0:10:20.240,0:10:27.520
+persona of somebody living in PNG or another developing country with limited bandwidth and
+
+0:10:27.520,0:10:33.920
+the internet being accessed on phones primarily and also on shared hardware because people have
+
+0:10:33.920,0:10:39.040
+to go to schools and universities to use computers. So this shared usage is
+
+0:10:39.040,0:10:43.600
+something to consider as well. Just have this persona in mind when you design your software.
+
+0:10:44.480,0:10:46.560
+That's my main message for this talk.
+
+0:10:47.440,0:10:52.080
+If you want to dig a bit deeper the paper is publicly available in the website of the workshop
+
+0:10:52.080,0:10:59.840
+as well and feel free to reach out to me if you have any further questions thank you very much.

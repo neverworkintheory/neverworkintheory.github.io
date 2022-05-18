@@ -1,0 +1,205 @@
+0:00:04.960,0:00:10.960
+What I would like to present to you today are the implications of using GitHub Actions as Mike
+
+0:00:10.960,0:00:18.160
+mentioned and how to avoid unexpected effects on your development workflow and group dynamics.
+
+0:00:20.400,0:00:27.360
+So historically there is a lot of manual work that has been automatically - automatically detected,
+
+0:00:27.360,0:00:37.440
+and that has been automated - sorry - by automation workflows tools also for software bots
+
+0:00:37.440,0:00:45.360
+and continuous integration tools, and recently GitHub also introduced it to help during this
+
+0:00:45.360,0:00:52.320
+process of automating issues and pull request workflows has introduced it, so GitHub Actions.
+
+0:00:53.520,0:01:01.360
+And we all probably know what a GitHub action is, but what we don't know, and what we don't
+
+0:01:01.360,0:01:08.160
+understand, is what it does, and what are the implications of using it on your project,
+
+0:01:08.160,0:01:14.080
+in your repositories. So basically GitHub Actions was created to automate
+
+0:01:14.720,0:01:20.240
+tasks based on various triggers. For example, the creation of a new branch,
+
+0:01:20.240,0:01:26.240
+or comments, pull requests, and also comments on these requests and comments,
+
+0:01:26.240,0:01:33.680
+and it can be easily shared from one repository to another making it easier to automate how we build,
+
+0:01:33.680,0:01:41.840
+test, and deploy software projects. So it's really easy to use, and to use in different projects.
+
+0:01:41.840,0:01:50.720
+so it's - it is intended to help developers to automate the workflow. And this is a typical
+
+0:01:50.720,0:01:59.920
+example of a welcoming action: we can see that actions are treated as code. So we have these
+
+0:01:59.920,0:02:07.280
+configuration files, so we expect that we are going to interact with it and also deal with it
+
+0:02:07.280,0:02:14.640
+as code. And this code can generate some outputs in our projects, for example, this GitHub Action,
+
+0:02:15.280,0:02:20.400
+this welcoming action, creates a comment in our project.
+
+0:02:21.680,0:02:28.560
+But then how do developers use this action? This is one thing that we studied. So by looking at
+
+0:02:28.560,0:02:37.200
+the configuration files of these actions for 3000 projects - different projects -
+
+0:02:37.200,0:02:47.120
+we found 700 different actions being used there. And these actions are spread across 20 categories,
+
+0:02:47.120,0:02:52.640
+and these are the most common ones. So continuous integration actions, utilities,
+
+0:02:52.640,0:02:59.840
+deployment, publishing, and code quality. And we also found that a typical action is added twice
+
+0:03:00.640,0:03:07.520
+and never removed or modified, which means that almost nobody revisit this configuration,
+
+0:03:07.520,0:03:15.040
+in this decision. So once you include the action almost nobody revisits. However some specific
+
+0:03:15.040,0:03:23.440
+actions are removed, their arguments are changed many times. So since I mentioned that we expect
+
+0:03:23.440,0:03:30.800
+to treat it as code, here we see that we are not treating it as code, because once we add a
+
+0:03:30.800,0:03:38.080
+new action to our project we are adding a new dependency. So every time we need to maintain
+
+0:03:38.080,0:03:46.560
+this action we need to revisit and we need to keep it up to date, so it's a new dependency we add.
+
+0:03:47.920,0:03:54.400
+And I also look at how developers are discussing what they are saying about these actions.
+
+0:03:55.840,0:04:05.040
+So basically, developers discuss about the maintenance of these actions
+
+0:04:05.040,0:04:11.760
+and also the implementation. So for them it's really important how the - how it is maintained
+
+0:04:11.760,0:04:17.840
+because it's a new dependency, right, and also how to implement - how to create a new
+
+0:04:17.840,0:04:24.960
+one based on their needs, so it also includes discussions about switching from one automation
+
+0:04:25.680,0:04:33.440
+to another, for example CI/CD tools, to actions, and also some suggestions on how to implement
+
+0:04:33.440,0:04:42.960
+this action and also requesting new actions.
+So again here we see that once we add a new action
+
+0:04:42.960,0:04:49.120
+we are not just adding a new piece of code that I'm going to automate our workflow:
+
+0:04:49.120,0:04:57.360
+we are adding a new dependency. So we believe we are adding code, and we are dealing with code,
+
+0:04:57.920,0:05:04.480
+but we are discussing - we are treating it differently and we are discussing about
+
+0:05:04.480,0:05:14.720
+it - how its dependencies and tooling.
+And also, it's important for us to
+
+0:05:14.720,0:05:21.680
+know what is the impact of adding this new dependence to our project. So I was looking at
+
+0:05:22.800,0:05:29.840
+different repositories, what they did before the introduction of these actions, and how was it
+
+0:05:29.840,0:05:36.400
+after introducing this action. I can go in more details later if you want to know more about it,
+
+0:05:36.400,0:05:40.560
+but basically we look at this - a lot of different metrics before and after,
+
+0:05:41.280,0:05:47.040
+and we see that there are two interesting things here. First, there is an increase in the number
+
+0:05:47.680,0:05:54.080
+of rejected contributions. So you have, after adding these actions, you can see
+
+0:05:54.080,0:06:01.040
+more rejected pull requests on your project. Is it something that you are expecting? Do you want to
+
+0:06:01.040,0:06:07.120
+reject more? And why you are rejecting more? So it's important to keep it in mind. And also
+
+0:06:07.120,0:06:14.720
+there's a decrease in the number of commits that the merged requests are required to have. So
+
+0:06:14.720,0:06:23.600
+these two things, at least these two impacts, you are going to see in your project. So basically,
+
+0:06:25.600,0:06:32.640
+it is important to keep in mind that we have first one perception and the reality. The perception
+
+0:06:32.640,0:06:42.000
+that we have is that we are adding a new tooling, but actually adopting GitHub Actions is taking a
+
+0:06:42.000,0:06:53.280
+dependency, and then we need to treat it as a new dependency to our to our project. And also, using
+
+0:06:53.280,0:07:02.240
+GitHub Actions might also impact how the community work. So the amount of work that developers need
+
+0:07:02.240,0:07:08.800
+to do for each new pull request, for each new contribution that they want to do in your project,
+
+0:07:09.360,0:07:16.400
+and how they interact. So these two things might be different from what you are expecting
+
+0:07:16.400,0:07:23.360
+when you add a new dependency, so you need to take care. And what I suggest is that
+
+0:07:23.360,0:07:29.520
+you have to measure the difference. So if you want to understand what is going on and what
+
+0:07:29.520,0:07:34.960
+you are going to see in your project, and if you want to understand, if you are not having
+
+0:07:34.960,0:07:42.720
+any unexpected results from these actions, you have to measure what is going on with your
+
+0:07:42.720,0:07:49.440
+projects - with your projects. So for example if you are considering using GitHub Actions and you
+
+0:07:49.440,0:07:56.880
+care about performance - the performance of your code - you need to measure changes in the code.
+
+0:07:57.440,0:08:05.840
+How was it before and how is it after adding these new actions. And if you care about community,
+
+0:08:07.520,0:08:13.680
+how the developers communicate to each other, and how much work they need to do, and how
+
+0:08:13.680,0:08:20.800
+the development workflow changes and how it impacts the developers, then you have to measure
+
+0:08:21.680,0:08:28.880
+the developers' communication and the amount of work and how they are doing it before and after
+
+0:08:29.920,0:08:38.720
+the introduction of these actions. So this is what I want you to show today and
+
+0:08:40.640,0:08:50.320
+if you have any questions I'm happy to answer them. Thank you.
