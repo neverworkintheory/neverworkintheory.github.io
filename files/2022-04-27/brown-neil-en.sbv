@@ -1,0 +1,403 @@
+0:00:06.160,0:00:12.160
+I'm going to talk to you today about how your mind 
+learns to program. So learning is an essential
+
+0:00:12.160,0:00:16.640
+part of being a software developer, both when we 
+initially learn to program before we begin our
+
+0:00:16.640,0:00:21.760
+career but also throughout our career as we learn 
+new technologies, new frameworks, new programming
+
+0:00:21.760,0:00:26.800
+languages. But how does our learning actually 
+work? That's what I'm going to talk about today.
+
+0:00:28.480,0:00:35.120
+So learning involves storing and thinking concrete 
+facts. So for example when you're very young you
+
+0:00:35.120,0:00:40.000
+learn numbers - you learn how to count - so you 
+learn one two three four. Then later when you
+
+0:00:40.000,0:00:45.120
+come to learn programming you're probably going to 
+learn that whole numbers are also called integers.
+
+0:00:45.120,0:00:50.480
+So your mind stores these facts and it also links 
+together facts that it thinks are related so that
+
+0:00:51.200,0:00:56.480
+you can associate these two things together. 
+So that's concrete facts, but a lot of what we
+
+0:00:56.480,0:01:02.000
+do in programming is actually learning abstract 
+concepts. So think for example about trying to
+
+0:01:02.000,0:01:06.240
+learn about the concept of values or the concept 
+of types when you're initially learning how to
+
+0:01:06.240,0:01:12.720
+program. So how can we learn this? One possibility 
+is for example to go to Wikipedia - the start of
+
+0:01:12.720,0:01:16.720
+the article "Values" there says that the value 
+is the representation of some entity that can
+
+0:01:16.720,0:01:21.840
+be manipulated by a program. The members of a 
+type are the values of that type. But this isn't
+
+0:01:21.840,0:01:26.160
+very useful for our learning: it's kind of very 
+abstract and fuzzy and it kind of slips through
+
+0:01:26.160,0:01:31.440
+your fingers as you try and reread it to actually 
+understand it. So it's quite difficult to learn
+
+0:01:31.440,0:01:38.000
+abstract concepts concepts by directly reading 
+just a description of them. What works better
+
+0:01:38.000,0:01:44.960
+is if we use examples. So if you learn instead 
+that "hello" and "bye" are string values, 0,
+
+0:01:44.960,0:01:49.760
+12, -5 are integer values, and 
+true and false are Boolean values,
+
+0:01:49.760,0:01:52.960
+and then once you've learned these facts 
+your brain can then start linking them
+
+0:01:52.960,0:01:56.720
+together to say, all these are different 
+kinds of values - they have different types.
+
+0:01:56.720,0:02:00.320
+And this way you can actually start to 
+get a handle on the abstract concepts.
+
+0:02:01.680,0:02:05.760
+So abstraction is learned by 
+linking these examples together:
+
+0:02:05.760,0:02:11.440
+that's the best way for your brain to learn. So 
+our first lesson is that you should study varied
+
+0:02:11.440,0:02:16.320
+examples if you want to learn abstract concepts. 
+And also, if you're having to explain this to
+
+0:02:16.320,0:02:19.920
+somebody else, perhaps to a junior developer, 
+you should use examples when explaining,
+
+0:02:19.920,0:02:23.600
+because that's going to be easier for 
+them to learn the idea of the abstraction.
+
+0:02:26.000,0:02:30.560
+So let's talk now about how memory is 
+organized. So memory is roughly split
+
+0:02:30.560,0:02:35.600
+into sort of two different systems. So we 
+have long-term memory, which is what we sort
+
+0:02:35.600,0:02:39.040
+of classically think of as memory, where we 
+store all these facts and link them together.
+
+0:02:39.600,0:02:44.480
+But we also have something called working 
+memory. So long-term memory is essentially
+
+0:02:44.480,0:02:49.920
+unlimited and can store all these different types 
+of facts, whereas working memory actually has a
+
+0:02:49.920,0:02:54.240
+very small capacity. You might have heard of 
+this before: the idea that you can only keep,
+
+0:02:54.240,0:03:00.640
+sort of, around five things, four to six numbers 
+- estimates vary - in your working memory at any
+
+0:03:00.640,0:03:06.560
+one time. So that's a very small sort of limited 
+fixed capacity. And it's not something that you
+
+0:03:06.560,0:03:11.280
+can train to improve: it seems to just be sort of 
+biologically inherent. So you can never increase
+
+0:03:11.280,0:03:18.160
+your working memory capacity across your lifetime.
+So what things are actually held in the working
+
+0:03:18.160,0:03:23.680
+memory? Well, it's essentially the concepts 
+pulled in from long-term memory. So each of the
+
+0:03:23.680,0:03:28.400
+items held in working memory is something that 
+you've learned and stored previously into your
+
+0:03:28.400,0:03:34.240
+long-term memory. But you might then think, okay, 
+well if working memory is kind of so limited,
+
+0:03:34.240,0:03:39.760
+how can we ever sort of get smarter? How can we 
+improve our capacity? How can we get better at
+
+0:03:39.760,0:03:44.320
+solving sort of increasingly complex problems? 
+And the answer to that lies in the long-term
+
+0:03:44.320,0:03:49.200
+memory. So we're pulling in sort of one item, 
+something called a "chunk", from long-term memory,
+
+0:03:50.240,0:03:54.480
+but they don't all have to be necessarily the 
+same size. You can learn more about something
+
+0:03:54.480,0:03:58.000
+and increase the size of an item in your 
+long-term memory. You could learn about
+
+0:03:58.000,0:04:01.680
+related things in your long-term memory such 
+that they effectively get merged together.
+
+0:04:02.560,0:04:06.320
+So by learning more we get larger 
+items in our long-term memory
+
+0:04:06.320,0:04:10.240
+and that means that our working memory 
+can actually hold more knowledge overall
+
+0:04:10.880,0:04:17.360
+so that we end up with some spare capacity to 
+hold even more things. So our lesson there is
+
+0:04:18.320,0:04:22.880
+increasing your knowledge actually increases your 
+processing capacity for dealing with problems.
+
+0:04:25.840,0:04:31.840
+So your brain is very eager to link related facts 
+together in order to fulfill this process. So
+
+0:04:31.840,0:04:35.600
+for example when I was showing this slide a 
+moment ago you may well have been thinking,
+
+0:04:35.600,0:04:40.400
+ah, so working memory is a bit like CPU registers 
+or like a cache, and then there's these kind of
+
+0:04:40.400,0:04:45.120
+pointers pointing off to long-term memory which 
+is this sort of other data structure. So you're
+
+0:04:45.120,0:04:49.520
+very keen to kind of link your existing knowledge 
+about compute - how computers work - to knowledge
+
+0:04:49.520,0:04:54.320
+about how the brain works. But we have to be a bit 
+careful: your brain does not work exactly like a
+
+0:04:54.320,0:05:00.400
+computer. The sort of differences - it's not quite 
+as neat as the way that the computer is organized,
+
+0:05:00.400,0:05:05.040
+and it can have sort of different capabilities 
+that the computer. And this is an example of
+
+0:05:05.040,0:05:09.920
+a more general point, which is that sometimes 
+existing knowledge can trip you up. You can form
+
+0:05:09.920,0:05:14.080
+bad links between things you already know and 
+things you're trying to learn. So for example,
+
+0:05:14.080,0:05:19.360
+you might learn how inheritance works in Java 
+then you come to learn inheritance in C++, you
+
+0:05:19.360,0:05:23.760
+try and sort of use all your existing knowledge, 
+and later you realize that actually there's some
+
+0:05:23.760,0:05:27.920
+finer points that don't match up and there's some 
+key differences there, but your brain was very
+
+0:05:27.920,0:05:33.040
+eager to sort of link all this together and so 
+it can lead you into sort of incorrect knowledge.
+
+0:05:35.840,0:05:41.200
+So the last thing I'm going to talk about is to do 
+with problem solving. So a common misconception as
+
+0:05:41.200,0:05:46.000
+to how this works - so there's various domains 
+where you might need to solve a problem,
+
+0:05:46.000,0:05:49.680
+so in your programmer - in your day-to-day 
+life you might want to fix the performance
+
+0:05:49.680,0:05:54.240
+of a web service, for example, but there might be 
+other things you want to do that involves solving
+
+0:05:54.240,0:05:58.640
+problems. You might want to make a move in a 
+chess game, or you might want to solve a brain
+
+0:05:58.640,0:06:03.760
+teaser - so weighing a jumbo jet was kind of a 
+common interview question a few years ago, an
+
+0:06:03.760,0:06:09.200
+example of sort of these teaser type problems. So 
+the misconception that people have about problem
+
+0:06:09.200,0:06:14.000
+solving is that you have sort of one problem 
+solving process in your brain and it's like a
+
+0:06:14.000,0:06:17.920
+sort of procedure that you can apply to all these 
+different things that you might need to tackle.
+
+0:06:19.120,0:06:23.440
+And the implication of this was, therefore, 
+people thought that maybe if you, for example,
+
+0:06:23.440,0:06:27.600
+learned more about how to do chess that improves 
+your problem solving and therefore will improve
+
+0:06:27.600,0:06:33.440
+your programming. Also, they might think that by 
+testing you on how good you are at brain teasers
+
+0:06:33.440,0:06:37.680
+they can test your problem solving module and 
+thus test how good you are at programming.
+
+0:06:38.320,0:06:45.440
+But this is not the correct model of how things 
+work - so this is wrong. How it actually works
+
+0:06:45.440,0:06:51.120
+is that we have totally separate domains and we 
+learn problem solving per domain. So if you want
+
+0:06:51.120,0:06:55.520
+to fix the performance of a web service then 
+you learn how to solve that problem, but your
+
+0:06:55.520,0:06:59.680
+knowledge is specifically constructed around 
+that domain and your problem-solving ability
+
+0:06:59.680,0:07:04.400
+is based in that domain. It's then separate 
+from how good you are at making a chess move,
+
+0:07:04.400,0:07:10.080
+and separate again from how good you are at brain 
+teaser problems. So learning one won't improve
+
+0:07:10.080,0:07:15.840
+the other and testing one won't necessarily 
+reveal very much about one of the others.
+
+0:07:17.760,0:07:22.480
+So this leads to our third lesson which 
+is that problem solving is not a generic
+
+0:07:22.480,0:07:26.880
+skill that's applied across all different 
+domains. It's actually acquired per domain
+
+0:07:26.880,0:07:33.360
+through generally practicing on that domain.
+So how can we use all these lessons to sort
+
+0:07:33.360,0:07:37.520
+of supercharge our ability and to sort 
+of learn functions and solve problems?
+
+0:07:38.560,0:07:42.240
+So the lessons we had were to use 
+varied examples to learn and explain
+
+0:07:42.240,0:07:47.280
+abstract concepts - your brain likes to learn the 
+abstract by joining together concrete examples.
+
+0:07:48.640,0:07:52.720
+We could increase our processing capacity by 
+increasing and strengthening our knowledge,
+
+0:07:52.720,0:07:57.040
+so by learning more in long-term memory and 
+increasing the sort of size of the items in
+
+0:07:57.040,0:08:01.200
+our long term memory, we can actually 
+free up working memory capacity to deal
+
+0:08:01.840,0:08:06.800
+with more problems. And this is another way 
+that you know your brain is not like a computer:
+
+0:08:06.800,0:08:11.840
+this is quite sort of counter-intuitive if you 
+think of it from a, sort of, how a CPU functions.
+
+0:08:13.680,0:08:18.480
+And finally you can improve problem solving 
+within a specific domain but it's not shared
+
+0:08:18.480,0:08:22.480
+between different domains, and if you want to know 
+how good somebody is at solving problems within
+
+0:08:22.480,0:08:26.720
+a domain - a particular programming language or 
+framework or whatever - then you should look at
+
+0:08:26.720,0:08:31.120
+that specific skill, not by trying to test it 
+- by sort of coming at it from another angle.
+
+0:08:32.320,0:08:35.360
+So those are my lessons and 
+there's my contact details
+
+0:08:35.360,0:08:39.840
+in case you want to know any more 
+about this. Thank you for listening.
