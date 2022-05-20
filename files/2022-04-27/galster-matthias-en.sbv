@@ -1,0 +1,326 @@
+0:00:06.000,0:00:09.840
+I think my talk will be a little bit different compared to the other talks because I'm not
+
+0:00:09.840,0:00:15.280
+talking about one particular research project. The content of my talk is based on a special
+
+0:00:15.280,0:00:21.840
+issue that a couple of colleagues of mine and I published last year which was on value
+
+0:00:21.840,0:00:26.720
+and waste in software engineering. So in this talk I'm going to present some of the
+
+0:00:26.720,0:00:35.200
+research presented in papers and I also try to explain why we should care why it matters. I think
+
+0:00:35.200,0:00:41.680
+I will stay rather at a high level but I include a URL here so if you're interested in the details of
+
+0:00:43.120,0:00:48.400
+of the work that I'm going to present you can go to the URL and all the papers - they should
+
+0:00:48.400,0:00:55.280
+not be behind a pay wall so you should be able to read and go into the actual technical inquiries of
+
+0:00:55.280,0:01:00.800
+the actual research. If you can't remember the URL I also included it in the footnote
+
+0:01:01.840,0:01:07.520
+if you want to refer to it. Okay but what's the big picture - what's the maybe motivation for
+
+0:01:07.520,0:01:13.120
+my talk. So well we have value and waste but in practice it may be challenging to really
+
+0:01:13.120,0:01:17.840
+think about value and think about waste and think about how we can reduce waste or how we can
+
+0:01:18.400,0:01:22.960
+increase value if we don't really have a conceptualization of these
+
+0:01:23.840,0:01:29.760
+terms of these ideas. So this is what I want to do - to think about well how can we conceptualize
+
+0:01:29.760,0:01:36.320
+waste how we can reconceptualize value and then use these more concrete definitions to actually
+
+0:01:37.360,0:01:40.560
+proactively address value and waste in development. So
+
+0:01:42.240,0:01:46.000
+to start off so one paper that actually did not appear in this special issue but I think
+
+0:01:46.000,0:01:53.280
+it is still relevant is a paper that presents some research that looks into what actually is waste
+
+0:01:53.280,0:01:59.760
+and for each of the findings I present also at the bottom the source of the evidence, so
+
+0:01:59.760,0:02:04.480
+if you wonder well what is the space on what I'm going to talk about and there is a brief summary
+
+0:02:04.480,0:02:10.400
+in the blue boxes at the bottom of each slide. So there was one study that looked into,
+
+0:02:11.280,0:02:16.640
+well, what is waste and it came up with a definition of waste in software engineering
+
+0:02:16.640,0:02:23.680
+and also nine categories of waste including their cause. So why do we even have the types of waste
+
+0:02:24.320,0:02:30.640
+and I will refer to some of these types later on. But well you may wonder okay what's the point of
+
+0:02:30.640,0:02:35.840
+of knowing this. Well, if we know these points or if you know these types of waste we can actually
+
+0:02:36.560,0:02:41.440
+talk about them in our team we can actively address them and maybe consider them
+
+0:02:41.440,0:02:49.520
+in our planning in our projects in how we design and develop software. So let's have a look at the
+
+0:02:49.520,0:02:56.480
+first waste-related issue here. So code reviews, I think a lot of things have been written about code
+
+0:02:56.480,0:03:02.160
+reviews a lot of blogs out there a lot of people have opinions about code reviews and I think there
+
+0:03:02.160,0:03:07.920
+will be some more talks also in the context of this series of talks about code reviews.
+
+0:03:08.960,0:03:12.880
+So we do actually know a lot already about code reviews, so what I would like to
+
+0:03:14.480,0:03:20.800
+highlight in the context of waste is that bad code reviews can be a source of waste
+
+0:03:20.800,0:03:26.720
+and to address this or to mitigate or to reduce waste in the context of code reviews,
+
+0:03:26.720,0:03:31.600
+well, we can actually look at what makes a bad code review. And there is a lot of empirical
+
+0:03:31.600,0:03:38.240
+evidence out there about what is classified as a bad code review and well this study, it identified
+
+0:03:39.120,0:03:47.200
+so-called review smells, for example lack of review or "looks good to me" which means
+
+0:03:47.200,0:03:50.560
+reviewers don't really review the code in the first place or they just
+
+0:03:50.560,0:03:54.160
+reviewed superficially which could then lead to the waste of rework,
+
+0:03:54.160,0:03:58.640
+that we need to later need to go back and rework what we have done in the design of the code.
+
+0:04:00.400,0:04:07.200
+Review buddies is another review smell which means that we just ask our friends to review our code,
+
+0:04:07.200,0:04:11.200
+maybe just the people who work on the same parts of the code so there is not really a
+
+0:04:11.200,0:04:15.280
+knowledge sharing going on or code review doesn't really help knowledge sharing with
+
+0:04:15.280,0:04:19.600
+a team. There are some other reviews like ping pong which then leads to in efficient
+
+0:04:19.600,0:04:24.880
+communication when the reviewer and the author of code just go back and forth to discuss the code.
+
+0:04:26.560,0:04:31.200
+Or sleeping, which is a interesting smell, which means that the reviews are not even
+
+0:04:31.200,0:04:36.080
+replying so it's another source of waste because we have to wait so the developer who wrote the
+
+0:04:36.080,0:04:43.120
+code needs to wait until the review comes back and the two remaining smells would be, well,
+
+0:04:43.120,0:04:50.240
+we have large change sets so for example the amount of changes in the code that we have to
+
+0:04:50.240,0:04:55.520
+review is very large or we've simply missed the context of the change just made to the code that
+
+0:04:55.520,0:05:01.280
+we're going to review which then could lead to to to a very high cognitive load and again in the end
+
+0:05:01.280,0:05:06.400
+probably a waste of time in the long term. Now again the question is why does this matter? Well,
+
+0:05:06.400,0:05:12.560
+if we are aware of these types of smells we can actually plan our review activities - we can
+
+0:05:12.560,0:05:16.560
+communicate expectations for code reviews and we can even use these
+
+0:05:17.520,0:05:24.160
+anti-patterns or smells of reviews to train new reviewers in our organization.
+
+0:05:24.160,0:05:31.600
+Okay let's stay at the code level another form of waste I think is technical debt, and again
+
+0:05:31.600,0:05:36.560
+a lot has been written about technical debt but one question that often or actually I think
+
+0:05:36.560,0:05:42.240
+always comes up is, well, what do we actually fix? How do we fix it and who should fix it?
+
+0:05:43.040,0:05:51.920
+Well, this contribution to this special issue we published found that not all types of technical
+
+0:05:51.920,0:05:58.480
+are actually fixed the same way and some types of technical debt are fixed by those who introduce
+
+0:05:58.480,0:06:04.400
+them and some types are fixed by other people and some types of technical that maybe are never fixed
+
+0:06:05.280,0:06:12.000
+okay what can we do with this well if we know that some types are less likely to be self-fixed. So
+
+0:06:12.000,0:06:20.240
+for example design debt we probably need to come up with dedicated activities or maybe dedicated
+
+0:06:21.120,0:06:27.760
+maybe time in our development to fix these types of technical debt. For other types of debt,
+
+0:06:27.760,0:06:34.240
+for example code debt or defect debt it's often the developer who introduces it then also fixes
+
+0:06:34.240,0:06:41.280
+it. So for these ones we may actually not plan fixing initiatives or fixing activities. Also,
+
+0:06:41.280,0:06:47.840
+well, what can we draw from this is that when it comes to types of technical debt that are not
+
+0:06:50.160,0:06:56.800
+self-fixed we probably need to assign them to people - to dedicated people - and this
+
+0:06:58.000,0:07:03.040
+research argues well design debt for example we probably should assign it
+
+0:07:03.040,0:07:07.440
+to more senior people because those who introduce design debt if they are
+
+0:07:07.440,0:07:11.040
+junior ones they're also often not really interested in fixing it in the first place.
+
+0:07:12.720,0:07:19.360
+Okay so these were two examples and the last the third and last example is a little bit different
+
+0:07:20.000,0:07:26.320
+and it looks at what value but it looks at value from a different perspective. It's not about value
+
+0:07:27.120,0:07:35.440
+in terms of money or value in terms of features or value in terms of time we save but it's value in
+
+0:07:35.440,0:07:42.480
+terms of human values and the question is well how can we integrate human values in software because
+
+0:07:44.080,0:07:48.880
+as a responsible professionals or as software developers we should not only make sure that we
+
+0:07:48.880,0:07:54.640
+build software that is useful for our clients or customers but we also should build systems that
+
+0:07:56.880,0:08:02.720
+support or at least do not violate human values. Now there are lots of literature
+
+0:08:02.720,0:08:08.400
+out there on human values and taxonomies, definitions, but it might be quite difficult
+
+0:08:08.400,0:08:12.160
+for a software engineer or software developer to understand, well, how do I translate
+
+0:08:12.800,0:08:21.760
+human values into something that we can represent in code? And this is where this contribution comes
+
+0:08:21.760,0:08:27.440
+in - this paper at the bottom - because what this paper tried to do is, well, it looked at
+
+0:08:27.440,0:08:35.520
+how human values are discussed amongst developers of software projects and then it tried to
+
+0:08:35.520,0:08:41.920
+come up with conceptualized descriptions of these human values so that they are more actionable or
+
+0:08:43.040,0:08:48.240
+operational - can be operationalized by by software engineers. So just to give an example for
+
+0:08:48.240,0:08:53.200
+two human values - I mean, there are more - I just put two examples here, dignity and inclusiveness.
+
+0:08:53.200,0:08:59.920
+So they could be conceptualized into for example a dignity into maintaining honor and respect for
+
+0:08:59.920,0:09:06.640
+users and once we have that contextualized description of that human value we can then
+
+0:09:06.640,0:09:11.360
+go one step further and define actual requirements. So for example based on
+
+0:09:11.920,0:09:16.800
+this description we could think of, hey, what what kind of user information do we keep in our app,
+
+0:09:16.800,0:09:22.000
+how is it shared, how can users unsubscribe, do users have ownership, for example about
+
+0:09:22.000,0:09:28.080
+their information, so then this high level, maybe abstract, concept "dignity" which maps
+
+0:09:28.080,0:09:32.960
+to human value becomes something much more concrete. And the same for inclusiveness: so
+
+0:09:33.680,0:09:36.880
+what the research found is we can translate inclusiveness into
+
+0:09:37.600,0:09:42.800
+facilitate different origins languages cultures and knowledge and then based on that we can
+
+0:09:42.800,0:09:49.840
+go one step further to come up with complete requirements or constraints for our software.
+
+0:09:50.960,0:09:58.480
+Okay so that's all I wanted to talk about, just to summarize, we do already know a lot
+
+0:09:58.480,0:10:04.480
+about value and waste and in this talk I just wanted to give you some examples and, well,
+
+0:10:05.200,0:10:12.320
+what are the takeaways? Well we know a lot about review smells so why don't we use that knowledge
+
+0:10:12.320,0:10:18.240
+in order to plan our reviews, in order to train maybe novice developers or in order to also
+
+0:10:18.240,0:10:24.880
+communicate the expectations about reviews within our organization? When it comes to technical debt,
+
+0:10:24.880,0:10:30.560
+well, we can use our empirically grounded knowledge on technical debt to decide how to
+
+0:10:30.560,0:10:37.280
+fix it and we can decide what kind of activities we focus on. So for example if for whatever reason
+
+0:10:37.280,0:10:42.400
+we would like to have - we would like to spend a day or two on fixing technical debt, it's probably
+
+0:10:43.280,0:10:48.400
+better spent on fixing design that then on fixing code debt because code debt tends to
+
+0:10:48.400,0:10:54.160
+be fixed well fixed by developers. And the last but not least, when it comes to human values,
+
+0:10:54.160,0:11:01.680
+well, we now have a contextualized description of human values and we can use that to identify
+
+0:11:01.680,0:11:05.680
+more concrete product requirements and in the end to build a responsible software.
+
+0:11:07.280,0:11:13.040
+Yeah, so if you have any questions feel free to email me or if you want to know more feel
+
+0:11:13.040,0:11:25.680
+free to email or just leave a question with Mike, and, yeah, that's all I had for today.
