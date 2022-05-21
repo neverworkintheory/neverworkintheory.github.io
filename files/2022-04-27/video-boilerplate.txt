@@ -1,0 +1,10 @@
+On April 27, 2022, It Will Never Work in Theory ran its first live event: lightning talks from leading software engineering researchers presenting immediate, actionable results from their work. Our audience learned:
+- powerful new ways to test modern software
+- how to do better, smarter code reviews,
+- what effective remote onboarding means during the pandemic,
+- whether test-driven development actually makes you more productive,
+- and what "productive" really means for programmers.
+
+Their slides, and over 250 reviews of software engineering research papers, are all available on https://neverworkintheory.org.
+
+We are grateful to Strange Loop, Mozilla, and Taylor & Francis for their support, and we hope you'll join us at Strange Loop 2022 in September for more insights. 

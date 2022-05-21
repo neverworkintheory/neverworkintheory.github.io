@@ -1,0 +1,265 @@
+0:00:05.360,0:00:10.160
+Hoy me gustaría contarles lo que hemos descubierto sobre la eficacia de la revisión del código mediante una investigación
+
+0:00:10.160,0:00:17.120
+empírica de ingeniería del software. Espero poder inspirar tu práctica. Así que primero voy
+
+0:00:17.120,0:00:21.760
+a decirte que consideramos como revisión de código. En este caso me refiero a la forma más extendida de
+
+0:00:21.760,0:00:27.920
+revisión de código, en la que básicamente una persona que desarrolla trabaja en un sistema de software y realiza algunos cambios que
+
+0:00:27.920,0:00:35.040
+luego envía a una o más personas revisoras. Estas personas revisoras inspeccionan el cambio, hacen algunos comentarios,
+
+0:00:35.040,0:00:40.800
+y los envían de vuelta a la persona autora y esto crea el ciclo de revisión de código que continúa
+
+0:00:40.800,0:00:48.640
+hasta que todo el mundo está de acuerdo con el cambio y el cambio se integra en el código base. Así que
+
+0:00:48.640,0:00:55.120
+en lo que nos centramos hoy es en cómo podemos hacer esta parte -la revisión real del código- más efectiva
+
+0:00:55.120,0:01:02.000
+para que quienes desarrollan software encuentren, por ejemplo, más errores. Bueno, no sé si estoy predicando al coro,
+
+0:01:02.000,0:01:08.480
+pero la revisión de código es tan utilizada que cualquier mejora en la práctica puede tener efectos importantes, después
+
+0:01:08.480,0:01:15.840
+de todo estamos hablando de encontrar errores antes de que lleguen a producción. Bien, así que en primer lugar, me gustaría
+
+0:01:15.840,0:01:21.520
+pedirte que dieras un vistazo a estas herramientas ejemplares de revisión de código. Todas son muy similares,
+
+0:01:22.160,0:01:28.400
+¿cierto?, todas son muy parecidas entre sí, pero permítanme llamar su atención sobre
+
+0:01:28.400,0:01:35.680
+un aspecto. Por favor, miren la lista de archivos que están bajo revisión. ¿Cuál es su orden?,
+
+0:01:35.680,0:01:42.400
+¿verdad? Bueno más precisamente alfabético y como desarrolladores/as entendemos por qué llegaron
+
+0:01:42.400,0:01:48.880
+a esa implementación específica. Pero la pregunta es ¿podría esta elección tener un efecto en la revisión de código?
+
+0:01:50.000,0:01:55.840
+Instrumentando una herramienta de revisión de código en una empresa descubrimos que el comportamiento de quien revisa está
+
+0:01:55.840,0:02:01.680
+influenciado por esto. Así, en más del 50 por ciento de las revisiones que analizamos, quien revisa comenzó
+
+0:02:01.680,0:02:07.440
+con el archivo presentado en primer lugar, y en casi el 40 por ciento de la navegación en la revisión - la
+
+0:02:07.440,0:02:13.200
+persona que revisa fue al siguiente archivo en el orden. Bueno, esto no es un problema, ¿verdad?, porque los nombres
+
+0:02:13.200,0:02:20.240
+de los paquetes son algo aleatorio, por lo que están ordenados al azar. Bueno, excepto cuando no lo están.
+
+0:02:20.960,0:02:29.040
+Los archivos de test están casi siempre después de los archivos de producción que prueban. ¿Podría ser esto un problema? Si
+
+0:02:29.040,0:02:36.080
+juntamos esto con el hecho de que quienes desarrollan consideran que los archivos de prueba son menos importantes, pues tal vez. De hecho,
+
+0:02:36.080,0:02:42.480
+hemos examinado los datos de revisión del código y hemos descubierto que las pruebas se comentan mucho menos. Pero esto podría ser
+
+0:02:42.480,0:02:48.160
+el resultado del sesgo hacia los test. ¿Qué pasaría si la herramienta utilizara un orden diferente? 
+
+0:02:49.600,0:02:55.920
+Así que hicimos un experimento para comprobarlo. Configuramos una herramienta de revisión de código en línea y pedimos a los/as desarrolladores/as
+
+0:02:55.920,0:03:01.280
+que revisaran algo de código. Teníamos dos archivos, uno de producción y otro de prueba, en los que pusimos algunos 
+
+0:03:01.280,0:03:08.640
+errores. Entonces decidimos que estos/as desarrolladores/as formaran dos grupos. A un grupo se le presentó primero el archivo de producción
+
+0:03:09.760,0:03:18.080
+y al otro grupo el archivo de prueba. Luego observamos su capacidad para encontrar errores.
+
+0:03:18.080,0:03:21.680
+En lo que respecta a los errores en producción, no hubo diferencias entre los grupos,
+
+0:03:22.640,0:03:34.720
+pero el grupo al que se le presentó primero el archivo de test tuvo un 250% más de probabilidades de encontrar el error en la prueba. Simplemente
+
+0:03:34.720,0:03:38.640
+modificando el orden -cambiando el orden- en el que miraban estos archivos.
+
+0:03:40.240,0:03:45.520
+Este es un resultado interesante si te importan los archivos de test, y deberíamos, cierto, porque nos
+
+0:03:45.520,0:03:52.160
+ayudan a encontrar errores en producción. Sin embargo, podría ser que lo que vemos es que este orden va en contra
+
+0:03:52.160,0:04:00.400
+del prejuicio que tenemos sobre los archivos de prueba. Así que es sólo una manera de contrarrestar este sesgo inicial. Pero
+
+0:04:01.200,0:04:09.360
+este efecto puede o no existir para el código de producción. Tal vez no. Así que investigamos eso también.
+
+0:04:10.160,0:04:15.920
+Lo primero que hicimos fue analizar los comentarios de revisión de doscientas mil pull requests
+
+0:04:15.920,0:04:21.920
+de proyectos muy populares en GitHub y encontramos algo muy notable. Miren esto:
+
+0:04:21.920,0:04:28.640
+si tomamos el número de comentarios que se ponen en una revisión por posición de archivo - digamos que
+
+0:04:28.640,0:04:33.920
+tomas todos los pull requests con cinco archivos y sumas todos los comentarios que reciben a través
+
+0:04:33.920,0:04:40.400
+de todos estos pull requests con cinco archivos - esto es lo que ves. Los archivos en las primeras posiciones
+
+0:04:40.400,0:04:46.480
+reciben significativamente más comentarios que los archivos en las últimas posiciones. Y, por supuesto, también lo 
+
+0:04:46.480,0:04:51.840
+comprobamos manualmente. Tal vez hagas un comentario al principio y digas arregla esto en todos los
+
+0:04:51.840,0:04:57.360
+otros archivos también, pero esto sucede muy, muy raramente, así que estos son comentarios originales que no
+
+0:04:57.360,0:05:04.480
+tienen mucho que ver entre sí y así es como se ven. Y aún más notable es que
+
+0:05:04.480,0:05:10.720
+esto es cierto en todos los casos diferentes. Como puedes ver en estos gráficos para dos, cinco, cuatro, por 
+
+0:05:10.720,0:05:15.440
+pull request, con dos archivos, con siete archivos, diez archivos, ya se ve esta tendencia.
+
+0:05:17.120,0:05:20.960
+Bueno, pero estos son comentarios, ¿verdad?, la mayoría no son sobre errores. Lo sabemos porque
+
+0:05:20.960,0:05:26.160
+hacemos revisiones de código. Así que tal vez no es un efecto importante. Para probar, lo que hicimos
+
+0:05:27.120,0:05:33.840
+fue otro experimento donde realmente queríamos ver si había tal efecto y si eso era
+
+0:05:33.840,0:05:40.000
+importante para nuestra efectividad. Así que usamos una configuración de línea similar a la anterior, pedimos
+
+0:05:40.000,0:05:46.240
+a las personas que revisara un código y preparamos algunos códigos especiales, creamos cinco archivos de producción
+
+0:05:46.800,0:05:52.560
+e introdujimos errores en dos de ellos, el primero y el último. Los errores son diferentes:
+
+0:05:53.120,0:05:57.600
+uno de ellos es un break que falta, que es similar a un error de sintaxis,
+
+0:05:57.600,0:06:02.080
+así que no se necesita mucha comprensión para ver si falta, si es realmente
+
+0:06:02.080,0:06:08.880
+un problema. El otro en cambio requiere una lectura más cuidadosa de la documentación y tienes que 
+
+0:06:08.880,0:06:14.160
+compararlo con la implementación real. Lo llamamos caso de borde, esto es un error de límite,
+
+0:06:14.160,0:06:21.520
+muy común, pero requiere una mayor comprensión.
+Así que asignamos los archivos ordenados de forma diferente
+
+0:06:21.520,0:06:26.800
+a las personas desarrolladoras: uno tenía este orden y el otro grupo tenía el orden invertido.
+
+0:06:28.880,0:06:34.400
+Y comparamos cómo les fue en la búsqueda de esos errores. Cuando hablo de orden significa que
+
+0:06:34.400,0:06:40.240
+es una revisión normal, pero ordenamos los archivos uno tras otro de forma diferente, de modo que el primer
+
+0:06:40.240,0:06:47.200
+grupo ve primero el archivo A y el segundo ve primero el archivo B. Así que comparamos los resultados:
+
+0:06:47.760,0:06:53.440
+para el error simple de sintaxis no había ninguna diferencia en los dos grupos - tenían
+
+0:06:53.440,0:06:59.360
+la misma probabilidad de encontrar los errores, independientemente de si era el primero o el último en la
+
+0:06:59.360,0:07:06.000
+lista de archivos. En cambio, para el caso borde, el grupo que lo recibió en el primer archivo presentado
+
+0:07:06.640,0:07:15.760
+tenía un 175% más de probabilidades de encontrar el error en comparación con el otro grupo. Este era el fallo 
+
+0:07:15.760,0:07:24.240
+que requería más atención y comprensión.
+Bien, permítanme dar un paso atrás para analizar esto.
+
+0:07:25.040,0:07:31.440
+Entonces, buscamos una manera de mejorar la eficacia en la revisión de código. Consideramos las herramientas que se
+
+0:07:31.440,0:07:37.680
+utilizan en el mundo real y prestamos atención a cómo se ordenaron los archivos. Encontramos primero, datos
+
+0:07:37.680,0:07:44.320
+interesantes sobre los test, y haciendo un experimento, vimos que tener un test más adelante tiene un efecto
+
+0:07:44.320,0:07:49.680
+que no se puede contrarrestar. Moverlos primero no tiene mayores efectos secundarios y sí muchos beneficios.
+
+0:07:50.800,0:07:56.560
+Luego nos trasladamos a los archivos de producción y encontramos un patrón notable en el número de comentarios,
+
+0:07:57.520,0:08:03.600
+y en base a esto, ejecutamos un experimento, y aquí también el efecto de la posición de los archivos - la forma en
+
+0:08:03.600,0:08:09.200
+que se ven los archivos en una revisión de código - es importante para la eficacia de la revisión de código.
+
+0:08:11.440,0:08:17.120
+Creo que podemos sacar algo útil para nuestra práctica de estos resultados. Por ejemplo,
+
+0:08:18.240,0:08:25.200
+quienes revisan, perdón, quienes revisan deberían ser conscientes de este efecto y decidir por dónde empezar la
+
+0:08:25.200,0:08:30.000
+revisión de una manera basada en criterios, mirándola desde una perspectiva de alto nivel y entendiendo por dónde
+
+0:08:30.000,0:08:37.040
+empezar. Las personas autoras pueden guiar a quienes revisan hacia las partes más difíciles de su cambio. Después de todo,
+
+0:08:37.040,0:08:44.400
+ellos hicieron los cambios, es su cambio, muy bien, pueden detallarlo en el mensaje de descripción
+
+0:08:44.400,0:08:51.760
+o añadir comentarios de revisión para guiar a quienes revisan. Y quienes fabrican herramientas deberían realmente tratar de empoderar a los/as usuarios/as
+
+0:08:51.760,0:09:00.320
+para que elijan cómo ordenar sus cambios, y también ofrecer otras características que reflejen el hecho de que 
+
+0:09:01.040,0:09:08.480
+la configuración por defecto que tenemos en nuestras herramientas, tiene un poder muy fuerte en lo que hacemos.
+
+0:09:08.480,0:09:14.560
+Esto es después de todo sobre el poder de la configuración por defecto en la eficacia de la revisión de código.
+
+0:09:15.440,0:09:21.680
+Así que gracias por su atención. Me gustaría agradecer a mis estudiantes y colaboradores/as de
+
+0:09:21.680,0:09:26.400
+mi grupo de investigación que hicieron posible este trabajo. Este fue un trabajo realizado a lo largo de varios años,
+
+0:09:26.400,0:09:31.200
+hacemos mucho trabajo en esta línea, tratamos de entender a las personas que desarrollan software, su trabajo, y encontrar
+
+0:09:31.200,0:09:36.160
+formas en las que se puede mejorar, formas de criterio y posiblemente con soluciones simples como 
+
+0:09:36.160,0:09:46.000
+estas. Así que si estás interesado en saber más por favor ponte en contacto. Muchas gracias.

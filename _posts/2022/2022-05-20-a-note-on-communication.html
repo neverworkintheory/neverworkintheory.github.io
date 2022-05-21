@@ -1,0 +1,110 @@
+---
+layout: post
+author: Greg Wilson
+title: "A Note on Communication"
+date: 2022-05-20
+categories: ["Editorial"]
+---
+<div class="review">
+  <p>
+    I've been working full-time with experimental biologists for about seven months now,
+    and the experience has reminded me
+    of just how bad most software engineering researchers are at writing abstracts.
+    An abstract isn't supposed to be like a movie trailer,
+    designed to lure me into paying $13 to watch the whole thing;
+    it's supposed to summarize the actual findings
+    so that (a) I know a couple of things I didn't before,
+    and (b) I can make an informed judgment about whether it's worth reading the whole thing.
+  </p>
+  <p>
+    For example,
+    the abstract of one bio paper I looked at recently was,
+    "We show that wild-type PfMDR1 transports diverse pharmacons,
+    including lumefantrine, mefloquine, dihydroartemisinin, piperaquine, amodiaquine, methylene blue,
+    and chloroquine (but not the antiviral drug amantadine).
+    Field-derived mutant isoforms of PfMDR1 differ from the wild-type protein,
+    and each other,
+    in their capacities to transport these drugs,
+    indicating that PfMDR1-induced changes in the distribution of drugs
+    between the parasite's digestive vacuole (DV) and the cytosol
+    are a key driver of both antimalarial resistance and the variability between multidrug resistance phenotypes."
+  </p>
+  <p>
+    Compare that to the abstracts of the two papers cited below.
+    I enjoyed the papers themselves—they both contain interesting, actionable results—but
+    but their abstracts describe what they're going to say rather than actually saying it:
+  </p>
+  <ul>
+    <li>
+      "We quantify the prevalence of 0.y.z releases…"
+      Great: give me a couple of key numbers here in the abstract, please.
+    </li>
+    <li>
+      "…we explore how long packages remain in the initial development stage…"
+      And found that…?
+    </li>
+    <li>
+      "…we compare the update frequency of 0.y.z and ≥1.0.0 package releases…"
+      And found that…?
+    </li>
+    <li>
+      "…we assess whether semantic versioning is respected for dependencies towards them…"
+      Is it?
+    </li>
+  </ul>
+  <p>
+    The abstract of the first paper does include some specific findings,
+    though it saves them for the end when they should be the opening.
+    The abstract for the second paper doesn't even do this:
+    a sentence like,
+    "We explore to what extent ecosystem-specific characteristics or policies influence the degree of compliance."
+    could and should be replaced with a line or two telling me what was found.
+  </p>
+  <p>
+    Another thing I've noticed about software engineering papers' abstracts
+    is that they assume much less background knowledge than the abstracts of papers in other domains.
+    Again,
+    the two papers below are better than many,
+    but the opening two sentences of each of their abstracts
+    say things that every plausible reader will already know.
+  </p>
+  <p>
+    I don't know why software engineering abstracts are written this way.
+    What I <em>do</em> know is that researchers and practitioners alike are drowning in noise these days;
+    everyone has to decide in the first fifty words
+    whether the next hundred are worth reading
+    because in the time it takes to read those fifty
+    another five thousand have piled up.
+    A paper isn't like a joke:
+    it won't be spoiled if you lead with the punchline.
+    Instead,
+    I think people will be more likely to read it
+    if they know up front what you're going to say.
+  </p>
+</div>
+<p id="Decan2021a" class="bib">
+  <cite>Decan2021a</cite>
+  Alexandre Decan and Tom Mens:
+  Lost in zero space—an empirical comparison of 0.y.z releases in software package distributions.
+  <em>Science of Computer Programming</em>, 208:102656, 2021,
+  <a href="https://doi.org/10.1016/j.scico.2021.102656">https://doi.org/10.1016/j.scico.2021.102656</a>.
+</p>
+<blockquote class="abstract">
+  <p>
+    Distributions of open source software packages dedicated to specific programming languages facilitate software development by allowing software projects to depend on the functionality provided by such reusable packages. The health of a software project can be affected by the maturity of the packages on which it depends. The version numbers of the used package releases provide an indication of their maturity. Packages with a 0.y.z version number are commonly assumed to be under initial development, suggesting that they are likely to be less stable, and depending on them may be considered as less healthy. In this paper, we empirically study, for four open source package distributions (Cargo, npm, Packagist and RubyGems) to which extent 0.y.z package releases and ≥1.0.0 package releases behave differently. We quantify the prevalence of 0.y.z releases, we explore how long packages remain in the initial development stage, we compare the update frequency of 0.y.z and ≥1.0.0 package releases, we study how often 0.y.z releases are required by other packages, we assess whether semantic versioning is respected for dependencies towards them, and we compare some characteristics of 0.y.z and ≥1.0.0 package repositories hosted on GitHub. Among others, we observe that package distributions are more permissive than what semantic versioning dictates for 0.y.z releases, and that many of the 0.y.z releases can actually be regarded as mature packages. As a consequence, the version number does not provide a good indication of the maturity of a package release.
+  </p>
+</blockquote>
+
+<p id="Decan2021b" class="bib">
+  <cite>Decan2021b</cite>
+  Alexandre Decan and Tom Mens:
+  What do package dependencies tell us about semantic versioning?
+  <em>IEEE Trans. Software Engineering</em>, 47(6), 2021,
+  <a href="https://doi.org/10.1109/tse.2019.2918315">https://doi.org/10.1109/tse.2019.2918315</a>.
+</p>
+<blockquote class="abstract">
+  <p>
+    The semantic versioning (semver) policy is commonly accepted by open source package management systems to inform whether new releases of software packages introduce possibly backward incompatible changes. Maintainers depending on such packages can use this information to avoid or reduce the risk of breaking changes in their own packages by specifying version constraints on their dependencies. Depending on the amount of control a package maintainer desires to have over her package dependencies, these constraints can range from very permissive to very restrictive. This article empirically compares semver compliance of four software packaging ecosystems (Cargo, npm, Packagist and Rubygems), and studies how this compliance evolves over time. We explore to what extent ecosystem-specific characteristics or policies influence the degree of compliance. We also propose an evaluation based on the "wisdom of the crowds" principle to help package maintainers decide which type of version constraints they should impose on their dependencies.
+  </p>
+</blockquote>
+
