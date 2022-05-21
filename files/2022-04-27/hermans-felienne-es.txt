@@ -1,0 +1,101 @@
+Buenos días, tardes o noches dondequiera que estén, mi nombre es Felienne.
+Soy profesora asociada de la Universidad de Leiden y, efectivamente, hoy voy a hablar de cómo
+- que es el problema más difícil en la ciencia de la computación - así que permítanme ayudarte
+a mejorar como nombrar cosas, porque esta es una cuestión con la que muchas personas luchan.
+En primer lugar, un poco de contexto. Los nombres tienen tanto contenido como forma. Así que el contenido de un nombre es algo
+como lo que...lo que el nombre representa, ¿correcto?, asi que el nombre, son los ingredientes en el nombre de la 
+variable. Pero los nombres de las variables también tienen una forma determinada, puedes usar, por ejemplo, Camel Case
+donde una letra mayúscula indica la siguiente palabra, pero algunos lenguajes de programación prefieren snake_case
+donde se utilizan guiones bajos para dividir las palabras. Esa parte de la denominación de la variable es la forma, y
+daremos... daré algunos consejos para estas dos partes de la denominación de variables en la charla de hoy.
+Empecemos por el contenido: ¿qué ponemos realmente en el nombre de la variable? Supongo que la mayoría
+de ustedes están familiarizados con la idea de los olores del código. Es la definición de Fowler para las partes del código queno son,
+ya sabes, no son necesariamente un error o una equivocación, pero no están 
+estructuradas lo suficientemente bien. Así que los olores de código son métodos largos, por ejemplo, tienes un 
+método muy, muy largo de 100 o 200 líneas, que simplemente no está estructurado de manera óptima. Sin embargo, oh, lo siento aparentemente
+mi cámara no está encendida - ahí estoy.
+
+Así que el olor del código, tienes, como,
+un método muy largo que es de 100 líneas, donde tienes una lista larguísima de parámetros, ¿si?, Asi que hay
+10 20 30 parámetros en un método. Estos son los olores de código, y como he dicho, estas son partes de código
+que no son tan felices.
+Los olores de código tradicionales, tal y como los conocemos,
+son olores estructurales, es decir, hablan de la estructura del código. Pero los trabajos más reciente también
+hablan de olores de código específicos en los nombres de las variables, llamados olores lingüísticos. Así que son como
+los olores de código en el sentido de que no son perfectos, pero hablan de nombres en lugar de
+la estructura. Por ejemplo, imagina que tienes una función que es - o método - que se llama
+"isValid" y toma algún tipo de ID externo y el método va a comprobar,
+es este un ID válido. Pregunta que traje a mi amigo, el Panda de Participación,
+si tenemos el Panda de la Participación en la pantalla significa que el público tiene que hacer algo.
+
+Así que la pregunta para ustedes, si ves un método como este isValid, ¿qué crees que el tipo que retorna
+podría ser? Te voy a dar unos segundos para que pienses cuál es el tipo de retorno aquí.
+Bueno, supongo que la mayoría pensó, oh, esto probablemente será un booleano, ¿verdad? Porque
+isValid da la idea de que se devolverá un booleano. A menudo este es el caso, pero
+a veces tratamos de ser inteligentes, ¿verdad?, si tienes un ejemplo como este donde tienes un ID externo
+que va a ser validado, tal vez hacemos algún tipo de conversión, ¿no?, usted toma nuestra ID externo,
+como un número de cliente o número de estudiante, tratamos de convertirlo en un ID interno, algo
+que tal vez usamos en la base de datos. Si esta conversión tiene éxito, entonces tenemos este ID interno,
+y tratamos de ser inteligentes, no sólo decimos aquí es Verdadero, también damos este ID interno de vuelta. Esto es
+fácil porque entonces en el sitio de llamada, tenemos este ID que luego se puede usar para consultar la base de datos.
+Esto es bastante común, pero, por supuesto, es engañoso si estas en la llamada y piensas,
+oh esto va a ser un booleano, pero es algo ligeramente diferente de un booleano,
+entonces puedes obtener un código confuso. En el documento sobre olores de código lingüístico, se definen seis
+categorías diferentes de estos olores. Métodos que hacen más de lo que dicen, métodos que hacen
+menos de lo que dicen y métodos que hacen lo contrario de lo que dicen. A veces tienes un
+openConnection que en realidad cierra una conexión y por alguna razón histórica el código terminó
+de esa manera. Así que estas son las cosas que se desea evitar porque lo hacen más confuso.
+Además de los métodos, a veces los identificadores también pueden tener olores lingüísticos de código, donde tienes
+algo como allCustomers donde se esperarías una lista, pero luego sólo contiene el
+siguiente cliente en la línea. El código a veces también puede estar estructurado de esa manera, ya sea porque es
+un error o por alguna razón histórica donde el código simplemente terminó de esa manera y todo el mundo
+sabe cómo funciona. Así que los identificadores también pueden sufrir olores lingüísticos en el código.
+Además del trabajo que ha definido los olores de código, también existen investigaciones que analizaron
+cuál es el impacto de los olores de código. Por supuesto, tenemos la sensación de que esto es confuso,
+así que podemos decir, que los olores lingüístico de código son confusos, pero esto ha sido estudiado.
+Hay un artículo muy bueno por Fakhoury et al. que ha puesto un tipo de escáner cerebral
+en las cabezas de las personas mientras miran códigos con olores de códigos lingüísticos. Y sus resultados muestran
+que los olores lingüísticos en realidad aumentan la carga cognitiva. Esto significa que tu cerebro tiene que trabajar
+más duro para procesar el código que tiene este tipo de olores de código. Así que eso no es lo que queremos.
+Te prometí dos cosas, bien, hasta ahora hemos visto el contenido de los nombres - qué palabras - cuál
+es el significado de las palabras que ponemos en los nombres de las variables - pero la forma, la forma del nombre de la variable
+también importa. No se trata sólo de las palabras. Un Panda más para ustedes, espero que sigas
+participando. Supongamos que almacenamos el máximo número de pedidos en un mes. ¿Cuál sería un buen
+nombre de variable?. Te voy a dar unos segundos, escribe esto, tal vez en el chat si quieres,
+o en un papel, sólo piensa en qué nombre de variable elegirías aquí.
+Así que mi suposición es que hay una gran variedad de cosas diferentes que la gente escribió. Y tal vez
+esto podría ser max_orders_monthly o month - mes o monthly_orders_max o maximum_monthly_orders.
+Todas estas cosas son un poco sensatas, y puede que dependa también de cuál sea tu propia lengua 
+materna: lo que piensas que es un orden que encaja más o menos con tu forma de pensar.
+No hay nada malo en ninguno de ellos, pero no es muy cómodo, por supuesto si
+el cuantificador, máximo o mínimo, a veces está al principio, a veces está al final,
+a veces es una abreviatura, y a veces no lo es, y lo mismo ocurre con el orden:
+podría estar en cualquier lugares del nombre de la variable, pero si está en diferentes lugares
+te puedes imaginar que esto hace que sea más difícil de producir, de procesar los nombres de las variables.
+La idea que describimos aquí se llama "molde de nombres" en un artículo de Feitelson et al.
+Describen un molde como el que se utiliza para hacer una estatua de bronce, un molde en el que caben los nombres.
+Así que otra pregunta Panda para ustedes: imaginen que dos personas que desarrollan tienen que elegir un nombre de variable.
+¿Qué posibilidades crees que hay de que las dos personas elijan el mismo nombre de variable
+para una pregunta como la que acabo de hacer?. ¿Qué probabilidad crees que existe?
+No es muy alta, espero que no sea más baja de lo que pensabas - la probabilidad es en realidad sólo
+del siete por ciento. Así que si no haces ningún otro acuerdo sobre la forma de estructurar los
+nombres de las variables, sólo tienes un siete por ciento de posibilidades de elegir el mismo nombre. Eso...eso no es
+muy alto. Pero este artículo también muestra, lo que es un resultado muy, muy bueno,
+si te pones de acuerdo en los moldes - si como equipo dices, este es el molde que elegimos y entonces
+siempre usas esa misma estructura, entonces la calidad de los nombres mejora. Y han hecho que expertos externos
+verifiquen la calidad de los nombres, por lo que la calidad de los nombres aumenta si se acuerdan los moldes de los nombres.
+Así que, para resumir, ¿qué puedes hacer ahora, inmediatamente, para mejorar al nombrar cosas? Y 
+quiero señalar, como, de forma gratuita, a la derecha, algunos de los documentos que se ven en algunas cosas en la programación
+es como, oh, tienes que descargar esta herramienta o tienes que hacer esto o tienes que aprender algo
+que es realmente difícil. Pero esta cosa del molde del nombre, y este olor del código lingüístico, es súper fácil,
+¿verdad?. Mañana puedes ir a tu código base y pensar, oye, ¿tienes algún olor de código lingüístico?
+Puedes ver si empieza con "es" (is) y asegurarte de que es un booleano. Y como equipo puedes
+hablar de los moldes de nombres, puede decir, bien, ¿qué hacemos? ¿ponemos el cuantificador siempre
+al principio o siempre al final?. ¿Cuál es nuestro plan aquí? Y sólo con un poco de refactorización
+puedes realmente aumentar la calidad de los nombres en su código base. Es una intervención relativamente sencilla,
+que puedes hacer para mejorar tu código base.
+Eso es todo, estoy en twitter como "felienne"
+convenientemente mi handle es solo mi nombre de pila. También puedes ir a felienne.com si quieres
+saber más sobre mí - específicamente si quieres saber más de estos resultados, de programación
+y de la ingeniería de software aplicada a la vida cotidiana de una persona que programa, podría interesarte
+revisar mi libro, "El cerebro del programador", puedes comprarlo a través de felienne.com/book.
