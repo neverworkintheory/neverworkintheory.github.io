@@ -66,185 +66,185 @@ mirar el mensaje de error de nuestro compilador, yo diría que no hemos avanzado
 desde esta afirmación: el mensaje de error sigue siendo todo sobre lo que el compilador estaba tratando de hacer.
 
 0:02:03.680,0:02:09.440
-Now back in 1976 if you encountered a compiler error message there wasn't really a lot of places
+Ahora bien, en 1976, si te encontrabas con un mensaje de error del compilador, no había muchos lugares
 
 0:02:09.440,0:02:14.240
-you could go to for help. Maybe there was a textbook, "A Discipline of Programming" by
+a los que pudieras acudir en busca de ayuda. Tal vez había un libro de texto, "A Discipline of Programming" por
 
 0:02:14.240,0:02:20.720
-edsger Dijkstra published in the same year, also 1976, arguably long before Python came around.
+edsger Dijkstra publicado en el mismo año, también 1976, posiblemente mucho antes de que apareciera Python.
 
 0:02:21.760,0:02:26.400
-But that has changed quite a bit. So nowadays if we encounter a compiler error message
+Pero eso ha cambiado bastante. Hoy en día, si nos encontramos con un mensaje de error del compilador,
 
 0:02:27.600,0:02:32.160
-we can do a lot of things thanks to the Internet. We can complain about it on Twitter, of course,
+podemos hacer muchas cosas gracias a Internet. Podemos quejarnos en Twitter, por supuesto,
 
 0:02:32.160,0:02:37.280
-that's very important, but we can also go to the official Python documentation that we have
+eso es muy importante, pero también podemos ir a la documentación oficial de Python que tenemos
 
 0:02:37.280,0:02:42.560
-accessible to us very easily. We can look for similar code on GitHub that perhaps
+accesible muy fácilmente. Podemos buscar código similar en GitHub que quizás
 
 0:02:42.560,0:02:47.200
-also try to remove duplicates from the list, and of course we have everybody's
+también intente eliminar los duplicados de la lista y por supuesto tenemos
 
 0:02:47.200,0:02:53.680
-favorite question answer forum Stack Overflow.
-And in this particular case, indeed, there is
+el foro de respuestas a preguntas favorito de todo el mundo, Stack Overflow.
+Y en este caso concreto, efectivamente, hay un
 
 0:02:53.680,0:02:59.200
-a Stack Overflow thread that tells us perfectly well what the problem is with our code: Don't use
+hilo de Stack Overflow que nos dice perfectamente cuál es el problema de nuestro código: No utilices
 
 0:02:59.200,0:03:04.160
-tuple, list, or other special names as variable name, that's probably what's causing your problem.
+tuple, list u otros nombres especiales como nombre de variable, eso es probablemente lo que está causando tu problema.
 
 0:03:04.720,0:03:11.360
-Accepted answer, 939 upvotes, looks very good, and indeed that's exactly the problem of the code.
+Respuesta aceptada, 939 votaciones positivas, se ve muy bien, y efectivamente ese es exactamente el problema del código.
 
 0:03:11.360,0:03:15.680
-If I renamed the list variable into anything other than list or another
+Si cambié el nombre de la variable list por otro que no fuera list u otra
 
 0:03:15.680,0:03:22.160
-reserved keyword, the code works perfectly fine.
-So, coming into this situation as researchers,
+palabra clave reservada, el código funciona perfectamente.
+Así que, al llegar a esta situación como investigadores,
 
 0:03:23.120,0:03:28.000
-we were wondering well if the - if the good error message is so far away, and we need to Google,
+nos preguntamos bien si el - si el mensaje de error bueno está tan lejos, y tenemos que buscar en Google,
 
 0:03:28.000,0:03:32.400
-and we need to read lots of Stack Overflow threads to find it, what can we do to make
+y tenemos que leer un montón de hilos de Stack Overflow para encontrarlo, ¿qué podemos hacer para hacer
 
 0:03:32.400,0:03:37.760
-this easier? Can we put this better error message - I would argue - straight into the IDE?
+esto más fácil? ¿Podemos mejorar el mensaje de error - yo diría - directamente en el IDE?
 
 0:03:38.640,0:03:44.400
-And that's what I'd like to talk about today.
-We do this in a number of steps. The first
+Y de eso es de lo que me gustaría hablar hoy.
+Lo hacemos en una serie de pasos. Lo primero
 
 0:03:44.400,0:03:49.840
-thing we do is, we parse the error message. So in this example, "type error list object is
+que hacemos es analizar el mensaje de error. En este ejemplo, "error de tipo el objeto list
 
 0:03:49.840,0:03:55.840
-not callable." Then we use this error message to construct the query that we automatically
+ no es llamable". Luego usamos este mensaje de error para construir la consulta que enviamos automáticamente
 
 0:03:55.840,0:04:01.120
-send to Stack Overflow. And it turns out, we experimented with this a bit, it turns out that
+a Stack Overflow. Y resulta, experimentamos con esto un poco, resulta que
 
 0:04:01.120,0:04:05.440
-depending on the error sometimes it makes sense to send the detailed error message, sometimes
+dependiendo del error a veces tiene sentido enviar el mensaje de error detallado, a veces
 
 0:04:05.440,0:04:09.600
-it makes sense to send a little bit of code, and sometimes it makes sense to only send the type.
+tiene sentido enviar un poco de código, y a veces tiene sentido sólo enviar el tipo.
 
 0:04:10.320,0:04:16.880
-In any case, we construct a query that we send to Stack Overflow. We select an answer based
+En cualquier caso, construimos una consulta que enviamos a Stack Overflow. Seleccionamos una respuesta basándonos
 
 0:04:16.880,0:04:22.960
-on characteristics such as, has the answer been accepted, is there code in it, how has it been
+en características como, si la respuesta ha sido aceptada, si hay código en ella, cómo ha sido
 
 0:04:22.960,0:04:29.280
-received through upvotes and downvotes. Then we customize the answer a little bit, because many
+recibida a través de votaciones positivas y negativas. Luego personalizamos un poco la respuesta, porque muchas
 
 0:04:29.280,0:04:34.240
-answers refer to specific variable names which might be quite different to the variable names
+respuestas se refieren a nombres de variables específicas que pueden ser muy diferentes a los nombres de variables
 
 0:04:34.240,0:04:40.560
-that we see in our IDE, so we replace, to the extent possible, variable names that we see in
+que vemos en nuestro IDE, así que reemplazamos, en la medida de lo posible, los nombres de variables que vemos en
 
 0:04:40.560,0:04:46.080
-the answer with variable names that have actually been used by the user. And finally we summarize
+la respuesta con nombres de variables que realmente han sido utilizados por el usuario. Y finalmente resumimos
 
 0:04:46.080,0:04:50.720
-the whole thing, because as you know, some of the answers on Stack Overflow are quite long.
+todo, porque como sabes, algunas de las respuestas en Stack Overflow son bastante largas.
 
 0:04:51.680,0:04:55.840
-And as a result, in this case indeed we can produce a much better error message,
+Y como resultado, en este caso sí que podemos producir un mensaje de error mucho mejor,
 
 0:04:55.840,0:05:01.040
-I would argue, instead of saying the list is not callable we can now say, don't use
+yo diría que en lugar de decir que la lista no es invocable ahora podemos decir, no uses
 
 0:05:01.040,0:05:07.920
-list or other special names as a variable name.
-We implemented all of this in a tool called Pycee
+list u otros nombres especiales como nombre de variable.
+Implementamos todo esto en una herramienta llamada Pycee,
 
 0:05:07.920,0:05:15.040
-which is just short for Python compiler error enhancer, and that's exactly the output of Pycee.
+que es la abreviatura de Python compiler error enhancer, y esa es exactamente la salida de Pycee.
 
 0:05:16.480,0:05:22.560
-So because we're researchers we also wanted to evaluate whether this works. It works in the one
+Así que, como somos investigadores, también queríamos evaluar si esto funciona. Funciona en el
 
 0:05:22.560,0:05:27.600
-example that I just walked through, but does it work in a more general setting? To do this
+ejemplo que acabo de ver, pero ¿funciona en un entorno más general? Para ello,
 
 0:05:28.240,0:05:34.960
-we recruited a total of 16 professional software developers and we gave each of them two tasks.
+reclutamos a un total de 16 desarrolladores de software profesionales y le dimos a cada uno de ellos dos tareas.
 
 0:05:34.960,0:05:39.920
-We took these tasks from one of those Python programming exercise websites, in this case
+Tomamos estas tareas de uno de esos sitios web de ejercicios de programación en Python, en este caso
 
 0:05:39.920,0:05:46.320
-PracticePython.org I think, which has lots of little exercises such as Fibonacci and so on.
+PracticePython.org creo, que tiene un montón de pequeños ejercicios como Fibonacci y así sucesivamente.
 
 0:05:48.080,0:05:53.920
-And then, so half of the participant - no, for half of the tasks, so each participant did two
+Y entonces, la mitad de los participantes - no, para la mitad de las tareas, por lo que cada participante hizo dos
 
 0:05:53.920,0:05:59.920
-tasks. For one of the tasks they used our Stack Overflow Pycee version, and for the other one they
+tareas. Para una de las tareas se utilizó nuestra versión de Stack Overflow Pycee, y para la otra se utilizó 
 
 0:05:59.920,0:06:04.800
-used the baseline, because we wanted to have something to compare to. And in this case we
+la línea de base, porque queríamos tener algo para comparar. Y en este caso
 
 0:06:04.800,0:06:10.800
-chose as the baseline the official documentation from, from Python about these error messages.
+elegimos como línea de base la documentación oficial de, de Python sobre estos mensajes de error.
 
 0:06:11.920,0:06:17.280
-In total our participants or each of the 16 participants worked on two tasks. They encountered
+En total, nuestros participantes, o cada uno de los 16 participantes, trabajaron en dos tareas. Encontraron
 
 0:06:17.280,0:06:23.280
-a total of 115 compiler errors as part of working on these tasks, which as you know is quite normal,
+un total de 115 errores de compilación como parte del trabajo en estas tareas, lo que como saben es bastante normal, 
 
 0:06:23.280,0:06:27.440
-usually when we program something, we will encounter compiler errors even if we're
+normalmente cuando programamos algo, nos encontraremos con errores de compilación incluso si somos
 
 0:06:27.440,0:06:33.840
-pretty good at it. They encountered 115 compiler errors, about half with our improved version of
+bastante buenos en ello. Se encontraron con 115 errores del compilador, alrededor de la mitad con nuestra versión mejorada de
 
 0:06:33.840,0:06:39.360
-the compiler errors and about half with the baseline that we are trying to compare to.
+los errores del compilador y alrededor de la mitad con la línea de base con la que estamos tratando de comparar.
 
 0:06:40.880,0:06:45.520
-So in this case fortunately the results of Pycee on the right hand side,
+Así que en este caso, afortunadamente, los resultados de Pycee en el lado derecho,
 
 0:06:46.080,0:06:51.200
-fortunately, in terms of the perceived helpfulness they generally agreed that our error messages
+afortunadamente, en términos de la utilidad percibida en general, estuvieron de acuerdo en que nuestros mensajes de error
 
 0:06:51.200,0:06:56.800
-were more helpful than the baseline and they also agreed that our error messages helped
+eran más útiles que la línea de base y también estuvieron de acuerdo en que nuestros mensajes de error les ayudaron
 
 0:06:56.800,0:07:01.840
-them save time compared to the baseline the difference in this case isn't quite that big.
+a ahorrar tiempo en comparación con la línea de base la diferencia en este caso no es tan grande.
 
 0:07:02.480,0:07:09.680
-So, what would I like you to take away from this? Two things. The first one, crowdsource your error
+Entonces, ¿qué me gustaría que sacaran de esto? Dos cosas. La primera, que los mensajes de error
 
 0:07:09.680,0:07:15.520
-messages. I think our study was a really nice example that shows that the power of the crowd,
+sean de uso colectivo. Creo que nuestro estudio fue un buen ejemplo que muestra que el poder de la multitud,
 
 0:07:15.520,0:07:21.040
-in this case on Stack Overflow, can produce better error messages and better explanations
+en este caso en Stack Overflow, puede producir mejores mensajes de error y mejores explicaciones
 
 0:07:21.040,0:07:27.360
-of error messages than the information that we have available in the official documentation
+de los mensajes de error que la información que tenemos disponible en la documentación oficial
 
 0:07:27.360,0:07:32.800
-that was written by a much smaller number of people of course. Crowdsource your error messages,
+que fue escrita por un número mucho menor de personas, por supuesto. Si los mensajes de error son de origen colectivo,
 
 0:07:32.800,0:07:37.680
-of course, they aren't all correct, but then we can develop automated tools
+por supuesto, no son todos correctos, pero entonces podemos desarrollar herramientas automatizadas
 
 0:07:37.680,0:07:42.400
-that help filter this data and produce the right error messages at the right time.
+que ayuden a filtrar estos datos y producir los mensajes de error correctos en el momento adecuado.
 
 0:07:43.360,0:07:47.680
-That's it for me - thank you very much for listening.
+Eso es todo para mí - muchas gracias por escuchar.
