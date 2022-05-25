@@ -1,0 +1,62 @@
+My talk is called...
+Coding in the Dark, which is actually a quote from a developer that I interviewed about their daily experience at a big tech company on a fancy team.
+They said that they felt like they went into work and they had to sit in the dark and code that way despite all of their resources.
+So I want to talk to you about why that happens to people, and I want to start with a story rather than starting with data, and this story will probably sound kind of familiar to you.
+I want us all to imagine that that we are junior software engineers.
+Imagine that you've just started working on an unfamiliar code base.
+Now maybe you have a little bit of ramp up - you got to meet with some senior engineers who wrote a lot of the code that you'll be working on, and it's a pretty good meeting - they tell you a little bit about their decisions.
+You're not tracking all of it but you think you've got the handle on it.
+And maybe something you've really benefited from before in similar onboarding situations is paired programming, so you suggest it, but you get a really strong negative reaction from one of the senior engineers.
+Maybe they even say something like, oh, we kind of think that's a waste of time here.
+So you feel a little embarrassed and you go back to your desk, but you dig in - you dig into the code, and as you do your plan of attack falls apart.
+The code is a lot more complicated than you thought it would be and you end up spending a lot more time exploring dead ends.
+During this time you also feel a little bit anxious, because remember, you're a junior engineer, so you're not just thinking about the code, you're thinking about things like, are other people working as fast as I am, am I making a good showing on this team?
+But you learn a lot and you even start noting down what you're learning, noticing some interesting ways your mental model didn't match what you found, and you maybe even write some of that down.
+Now imagine you go into your first code review again.
+It's with somebody you've never met before, and it's okay but it doesn't go great.
+This senior engineer has a lot more context on the code base than you do, and relevant to the talk we just heard, let's imagine they criticize your choices a little bit.
+You end up feeling kind of defensive and you mention, hey, you know, I also spent a lot of time bettering my mental model of the code base, I didn't understand all of these trade-offs, and I'm even working on an onboarding doc for the next person who's joining the team.
+But again the senior engineer is a little dismissive and you get the sense that this was a waste of time.
+So you go back to work but you've taken some really important messages with you.
+First, you stopped writing that documentation you were working on that you were going to give to your next junior colleague.
+Second, you decide you're going to be a little bit more guarded and careful about making suggestions about what would help your learning.
+And third, you think to yourself, I have to start sounding like these senior engineers, because this is what I'm supposed to sound like.
+Now, we could focus on a lot of pieces of this, and there's a lot of great research across these sessions on different pieces - code review, how to give feedback - but I would like to draw your attention to the secret tool that I use as a learning scientist to kind of sort through all of these features, and that's thinking about the culture that we put people in for learning.
+People are always looking around them, all the time, for clues about whether or not they're in a safe place to learn, and we know that in order to create the code that we need - that works in the world - we need people to be continually learning.
+But what I have found in my work with developers is that we are creating instead a cycle of learning debt.
+Learning debt is a - is a metaphor that I use, similar to how we talk about tech debt.
+It can be understood as a long-term cycle of damage that happens when developers face an environment where they feel that learning is necessary but it's discouraged.
+The study that I'm mentioning in this talk, which I'm only going to, you know, skate across the surface for - we interviewed 25 different developers.
+We had a lot of different content with these developers.
+You can see it at the link here, but in short we had a reflective piece where we went into in-depth interviews where we talked about their collaboration experiences - how they got feedback, barriers to learning - and we also had a real problem-solving moment.
+So I sat there as a researcher and listened to them talk out loud as they tried to write code, as they ramped up on an unfamiliar code base, as they did research, and with those two artifacts together - the reflective and the kind of active process - we ended up with over 30 hours of conversation that we could do a thematic analysis over.
+So see our report for a lot more details where we link all of this to different learning science mechanisms that we observed, but in short, we found this learning debt cycle was almost ubiquitous for developers across all of these conversations.
+We explored stories where developers first experienced this active learning moment where they needed to build mental models of the code base, and they were also noticing that they were not being given enough learning support.
+They took that conflict with them into code reviews where they weren't sure whether or not they were supposed to share this learning.
+And when those formal processes of feedback gave them negative messages about learning they shut down.
+And here's the really interesting part: in the third stage they go back into their environment and they replicate exactly what they experienced.
+So this cycle changes people's behavior: they keep their own work hidden, they make choices to share less about what they've learned, and it perpetuates the environment onto the next person.
+There are a lot of quotes and details in the report, but I just want to share the real voices of some developers here.
+One of the people - people that I interviewed said, "We tried to advocate for more paired programming and we got a lot of pushback."
+Another quote, "Ideally we were supposed to comment code, yeah, yeah, you know, of course we're supposed to do this, but actually in reality less than 10 percent of our code was actually well commented."
+And this was very, very common, so even though we might believe all these best practices, we might know them, people made mention of them in the interviews, other things are winning on the ground.
+Okay, so you might say to yourself, you know, good news, doing good stuff is hard, it's just really hard to sustain a good culture: we have time pressure, we have barriers, we all know this, but I want to give you a slightly different framework to think about this from social science.
+It is actually very easy to create culture.
+We actually do this by default.
+We're just creating the wrong culture on developer teams.
+What we're creating is something that we call a performance culture.
+When we only measure performance and output in terms of these explicit markers, people learn that what they're supposed to share is only performance.
+They see moments of feedback and review and reflection as actually just moments where they need to defend against criticism.
+And they take away these kinds of feelings: no one else is going to feel like I do, no one else is probably learning like I do, no one else is struggling like I do.
+I cannot emphasize to you enough how interesting it is to sit there as a researcher and hear 25 different people tell you the same thing, and then say, no one else thinks this thing, and I think part of this happens because these teams told me, we are investing a lot in technology but we're sort of assuming this human stuff, it's magically just going to work.
+so what is the opposite of this?
+What would happen if we allowed ourselves to really commit to learning?
+I'm going to give you another secret from learning science, and that is that real long-term sustainable learning actually looks worse before it looks better.
+What I mean by that is that when we learn, we make mistakes, and exploration - creativity - making mistakes - all of those things are dampened by a culture that focuses on short-term performance but they're crucial to real long-term learning.
+So I want you to imagine this shift: if we think back to that junior software engineer, we might realize it's not just about the fact that they didn't get support from senior engineers.
+The senior engineers also missed something really important and critical, and that's - that could have been very valuable to the organization, and that was a moment that the junior engineer was learning and was ready to share about their learning.
+See a learning scientist perspective on collaborative work is that all of these mistakes are really valuable sources of learning whether they come from juniors or seniors.
+So I'll end finally with calling back to this learning culture environment.
+If we really want to care about it our environment needs to protect it.
+We can protect it by measuring it, recognizing it, and rewarding it, no matter where it comes from.
+Thank you.
