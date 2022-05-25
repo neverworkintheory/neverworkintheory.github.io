@@ -1,202 +1,68 @@
-Hoy voy a hablarte de cómo tu mente 
-aprende a programar. Así que el aprendizaje es una parte esencial 
-de ser desarrolladores de software, tanto 
-cuando inicialmente aprendemos a programar antes de empezar nuestra
-carrera pero también a lo largo de nuestra carrera a medida que aprendemos 
-nuevas tecnologías, nuevos marcos de trabajo, nuevos lenguajes 
-de programación. Pero, ¿cómo funciona realmente nuestro 
-aprendizaje funciona? De eso voy a hablar hoy.
-Por lo tanto, el aprendizaje implica almacenar y pensar en hechos concretos. 
-Así que, por ejemplo, cuando eres muy joven 
-aprendez los números, aprendes como contar, entonces 
-aprendes, uno, dos, tres, cuatro. Mas adelante cuando 
-vienes a aprender a programar probablemente  
-aprenderás que números enteros también se llaman integers.
-Así que tu mente almacena estos hechos y también vincula
-hechos que piensa que están relacionados para que
-puedas asociar estas dos cosas juntas. 
-Así que eso son hechos concretos, pero mucho de lo que
-hacemos en programación es aprender conceptos 
-abstractos. Piensa, por ejemplo, en tratar de
-aprender sobre el concepto de valores o el concepto 
-de los tipos cuando estás empezando a aprender a
-¿Cómo podemos aprender esto? Una posibilidad es, 
-por ejemplo, acudir a Wikipedia, el inicio de
-el artículo "Valores" dice que el valor 
-es la representación de alguna entidad que puede
-ser manipulada por un programa. Los miembros de un 
-tipo son los valores de ese tipo. Pero esto no es
-muy útil para nuestro aprendizaje: es algo muy 
-abstracto y difuso y se te escurre entre
-los dedos cuando intentas releerlo para realmente 
-entenderlo. Así que es bastante difícil de aprender
-conceptos abstractos leyendo directamente sólo 
-una descripción de los mismos. Lo que funciona mejor
-es utilizar ejemplos. Así que si aprendes en cambio 
-que "hola" y "adiós" son valores de cadena, 0
-12, -5 son valores enteros y que
-true y false son valores booleanos,
-y una vez que hayas aprendido estos hechos 
-tu cerebro puede empezar a relacionarlos
-para decir, todos estos son diferentes 
-clases de valores - tienen diferentes tipos.
-Y de esta forma puedes empezar a 
-manejar los conceptos abstractos.
-Así que la abstracción se aprende 
-al relacionar estos ejemplos.
-esa es la mejor manera de que tu cerebro aprenda. Así que
-nuestra primera lección es que debes estudiar ejemplos
-ariados si quieres aprender conceptos abstractos.
-Y también, si tienes que explicar esto a
-otra persona, quizás a un desarrollador junior, 
-deberías usar ejemplos cuando lo expliques,
-porque eso va a ser más fácil para 
-aprender la idea de la abstracción.
-Hablemos ahora de cómo se organiza la memoria. 
-La memoria se divide en
-dos sistemas diferentes. Así que tenemos tenemos 
-la memoria a largo plazo, que es lo que
-clásicamente pensamos como memoria, donde 
-almacenamos todos estos hechos y los unimos.
-Pero también tenemos algo llamado la memoria de
-trabajo. Así que la memoria a largo plazo es esencialmente
-ilimitada y puede almacenar todos estos diferentes tipos de hechos, 
-mientras que la memoria de trabajo tiene en realidad una
-capacidad muy pequeña. Es posible que ya hayas oído hablar 
-de esto: la idea de que sólo se puede mantener,
-más o menos, alrededor de cinco cosas, cuatro a seis números 
-- las estimaciones varían - en tu memoria de trabajo en cualquier
-momento. Así que es una capacidad fija muy 
-pequeña y limitada. Y no es algo que
-se pueda entrenar para mejorar: parece ser algo 
-biológicamente inherente. Así que nunca se puede aumentar
-tu capacidad de memoria de trabajo a lo largo de tu vida.
-Entonces, ¿qué cosas se guardan en la memoria 
-de trabajo? Bueno, se trata básicamente de los 
-conceptos extraídos de la memoria a largo plazo. Así que cada uno de
-los elementos mantenidos en la memoria de trabajo 
-es algo que que has aprendido y almacenado previamente en tu
-Pero entonces podrías pensar, bueno, 
-si la memoria de trabajo es tan limitada,
-¿cómo podemos ser más inteligentes? ¿Cómo podemos mejorar 
-nuestra capacidad? ¿Cómo ser mejores para 
-resolver problemas cada vez más complejos? 
-Y la respuesta a esto se encuentra en la memoria 
-Así que estamos sacando una especie de elemento, algo llamado 
-"chunk", de la memoria a largo plazo, 
-pero no todos tienen que ser necesariamente 
-del mismo tamaño. Puedes aprender más sobre algo
-y aumentar el tamaño de un elemento en tu 
-memoria a largo plazo. Podrías aprender sobre
-cosas relacionadas en tu memoria a largo plazo de manera 
-que se fusionen efectivamente.
-Así que al aprender más conseguimos mayores 
-elementos en nuestra memoria a largo plazo
-y eso significa que nuestra memoria de trabajo 
-puede contener más conocimientos en general
-para que acabemos con algo de capacidad de sobra para 
-para contener aún más cosas. Así que nuestra lección es
-aumentar tus conocimientos en realidad aumenta tu 
-capacidad de procesamiento para afrontar problemas.
-Así que su cerebro está muy ansioso por vincular hechos relacionados 
-con el fin de cumplir con este proceso. Así que
-por ejemplo, cuando estaba mostrando esta diapositiva 
-hace un momento, tal vez pensaste,
-ah, así que la memoria de trabajo es un poco como los registros de la CPU 
-o como un caché, y luego hay este tipo de
-punteros que apuntan a la memoria a largo plazo que 
-es esta especie de estructura de datos. Así que estás
-muy interesado en vincular tu conocimiento existente 
-sobre computación - cómo funcionan los ordenadores - con el conocimiento
-sobre como funciona el cerebro. Pero tenemos que tener un 
-poco de cuidado: tu cerebro no funciona exactamente como una
-El tipo de diferencias - no es tan clara como 
-la forma en que la computadora se organiza,
-y puede tener tipo de capacidades diferentes 
-que la computadora. Y esto es un ejemplo de
-un punto más general, que es que a veces el conocimiento 
-existente puede hacerte tropezar. Puedes formar
-vínculos incorrectos entre las cosas que ya sabes y 
-cosas que estás tratando de aprender. Así, por ejemplo,
-puedes aprender cómo funciona la herencia en Java 
-y luego viene a aprender la herencia en C++, 
-tratas de usar todo tu conocimiento existente y 
-más tarde te das cuenta de que en realidad hay algunos
-hay algunos puntos más finos que no coinciden y hay algunas 
-diferencias clave, pero tu cerebro estaba muy
-ansioso por vincular todo esto y así puede 
-llevarte a un conocimiento incorrecto.
-Así que la última cosa de la que voy a hablar tiene que ver 
-con la resolución de problemas. Así que un error común 
-en cuanto a cómo funciona esto - por lo que hay varios dominios 
-en los que podrías necesitar resolver un problema,
-en tu día a día como programador/a 
-puedes querer arreglar el rendimiento
-de un servicio web, por ejemplo, pero puede haber 
-otras cosas que quieras hacer que impliquen resolver
-problemas. Puede que quieras hacer un movimiento en una 
-partida de ajedréz o resolver un rompecabezas.
-Pesar un jumbo era una pregunta habitual en las 
-entrevistas de hace unos años, un 
-ejemplo de estos problemas de tipo rompecabezas. La idea errónea 
-que tiene la gente sobre la resolución de 
-es que tienes una especie de proceso de 
-resolución de problemas en tu cerebro y que es como
-un tipo de procedimiento que se puede aplicar a todos 
-estos diferentes tipo de cosas que necesitas resolver.
-Y la consecuencia de esto fue, por lo tanto, que la 
-gente pensó que tal vez si, por ejemplo, 
-aprendes más sobre cómo jugar al ajedrez, eso mejora 
-tu resolución de problemas y por lo tanto mejorará 
-tu programación. Además, pueden pensar que al probar que tan 
-bien resuelves rompecabezas
-pueden poner a prueba tu módulo de resolución de problemas y, 
-por lo tanto, comprobar lo bueno que eres programando. 
-Pero este no es el modelo correcto de cómo funcionan las cosas, 
-por lo que es un error. La forma en que funciona realmente
-es que tenemos dominios totalmente separados y 
-aprendemos a resolver problemas por dominio. Así que si quieres 
-arreglar el rendimiento de un servicio web, 
-entonces aprendes a resolver ese problema, pero tu
-conocimiento se construye específicamente en torno a 
-ese dominio y tu habilidad para resolver problemas 
-se basa en ese dominio. Por lo tanto, es diferente 
-de que tan bien puedes hacer una jugada de ajedrez,
-y también de lo bueno que eres para resolver problemas de ingenio.
-Por lo que aprender uno de estos temas no hará que mejores
-en el otro y hacerte pruebas en uno no va a revelar
-demasiado sobre los otros.
-Esto nos lleva a la tercera lección, que es que la resolución 
-de problemas no es una habilidad genérica 
-que se aplique en todos los ámbitos.  
-En realidad, se adquiere en cada ámbito 
-a través de la práctica general en ese ámbito.
-Entonces, ¿cómo podemos utilizar todas estas lecciones para 
-potenciar nuestra capacidad de aprender 
-funciones y resolver problemas? 
-Así que las lecciones que tuvimos fueron utilizar 
-ejemplos variados para aprender y explicar
-conceptos abstractos - a tu cerebro le gusta aprender 
-lo abstracto uniendo ejemplos concretos. 
-Podríamos aumentar nuestra capacidad de procesamiento 
-incrementando y reforzando nuestros conocimientos,
-de modo que si aprendemos más en la memoria a largo plazo 
-y aumentamos el tamaño de los elementos de nuestra 
-memoria a largo plazo, podemos liberar la 
-capacidad de la memoria de trabajo para hacer frente 
-a más problemas. Y esta es otra forma de saber 
-que tu cerebro no es como una computadora:
-esto es bastante contrario a la intuición si se 
-piensa en ello desde cómo funciona una CPU.
-Y por último, se puede mejorar la resolución de problemas 
-dentro de un dominio específico, pero no se comparte
-entre diferentes dominios, y si quieres saber lo bueno 
-que es alguien en la resolución de problemas dentro de
-n dominio - un lenguaje de programación particular o 
-o lo que sea, entonces deberías mirar 
-esa habilidad específica, no tratando de probarla, 
-sino viéndola desde otro ángulo.
-Así que esas son mis lecciones y 
-ahí están mis datos de contacto
-por si quieres saber algo más 
-sobre esto. Gracias por escuchar.
+Hoy voy a hablarte de cómo tu mente aprende a programar.
+Así que el aprendizaje es una parte esencial de ser desarrolladores de software, tanto cuando inicialmente aprendemos a programar antes de empezar nuestra carrera pero también a lo largo de nuestra carrera a medida que aprendemos nuevas tecnologías, nuevos marcos de trabajo, nuevos lenguajes de programación.
+Pero, ¿cómo funciona realmente nuestro aprendizaje funciona?
+De eso voy a hablar hoy.
+Por lo tanto, el aprendizaje implica almacenar y pensar en hechos concretos.
+Así que, por ejemplo, cuando eres muy joven aprendez los números, aprendes como contar, entonces aprendes, uno, dos, tres, cuatro.
+Mas adelante cuando vienes a aprender a programar probablemente aprenderás que números enteros también se llaman integers.
+Así que tu mente almacena estos hechos y también vincula hechos que piensa que están relacionados para que puedas asociar estas dos cosas juntas.
+Así que eso son hechos concretos, pero mucho de lo que hacemos en programación es aprender conceptos abstractos.
+Piensa, por ejemplo, en tratar de aprender sobre el concepto de valores o el concepto de los tipos cuando estás empezando a aprender a ¿Cómo podemos aprender esto?
+Una posibilidad es, por ejemplo, acudir a Wikipedia, el inicio de el artículo "Valores" dice que el valor es la representación de alguna entidad que puede ser manipulada por un programa.
+Los miembros de un tipo son los valores de ese tipo.
+Pero esto no es muy útil para nuestro aprendizaje: es algo muy abstracto y difuso y se te escurre entre los dedos cuando intentas releerlo para realmente entenderlo.
+Así que es bastante difícil de aprender conceptos abstractos leyendo directamente sólo una descripción de los mismos.
+Lo que funciona mejor es utilizar ejemplos.
+Así que si aprendes en cambio que "hola" y "adiós" son valores de cadena, 0 12, -5 son valores enteros y que true y false son valores booleanos, y una vez que hayas aprendido estos hechos tu cerebro puede empezar a relacionarlos para decir, todos estos son diferentes clases de valores - tienen diferentes tipos.
+Y de esta forma puedes empezar a manejar los conceptos abstractos.
+Así que la abstracción se aprende al relacionar estos ejemplos.
+esa es la mejor manera de que tu cerebro aprenda.
+Así que nuestra primera lección es que debes estudiar ejemplos ariados si quieres aprender conceptos abstractos.
+Y también, si tienes que explicar esto a otra persona, quizás a un desarrollador junior, deberías usar ejemplos cuando lo expliques, porque eso va a ser más fácil para aprender la idea de la abstracción.
+Hablemos ahora de cómo se organiza la memoria.
+La memoria se divide en dos sistemas diferentes.
+Así que tenemos tenemos la memoria a largo plazo, que es lo que clásicamente pensamos como memoria, donde almacenamos todos estos hechos y los unimos.
+Pero también tenemos algo llamado la memoria de trabajo.
+Así que la memoria a largo plazo es esencialmente ilimitada y puede almacenar todos estos diferentes tipos de hechos, mientras que la memoria de trabajo tiene en realidad una capacidad muy pequeña.
+Es posible que ya hayas oído hablar de esto: la idea de que sólo se puede mantener, más o menos, alrededor de cinco cosas, cuatro a seis números - las estimaciones varían - en tu memoria de trabajo en cualquier momento.
+Así que es una capacidad fija muy pequeña y limitada.
+Y no es algo que se pueda entrenar para mejorar: parece ser algo biológicamente inherente.
+Así que nunca se puede aumentar tu capacidad de memoria de trabajo a lo largo de tu vida.
+Entonces, ¿qué cosas se guardan en la memoria de trabajo?
+Bueno, se trata básicamente de los conceptos extraídos de la memoria a largo plazo.
+Así que cada uno de los elementos mantenidos en la memoria de trabajo es algo que que has aprendido y almacenado previamente en tu Pero entonces podrías pensar, bueno, si la memoria de trabajo es tan limitada, ¿cómo podemos ser más inteligentes?
+¿Cómo podemos mejorar nuestra capacidad?
+¿Cómo ser mejores para resolver problemas cada vez más complejos?
+Y la respuesta a esto se encuentra en la memoria Así que estamos sacando una especie de elemento, algo llamado "chunk", de la memoria a largo plazo, pero no todos tienen que ser necesariamente del mismo tamaño.
+Puedes aprender más sobre algo y aumentar el tamaño de un elemento en tu memoria a largo plazo.
+Podrías aprender sobre cosas relacionadas en tu memoria a largo plazo de manera que se fusionen efectivamente.
+Así que al aprender más conseguimos mayores elementos en nuestra memoria a largo plazo y eso significa que nuestra memoria de trabajo puede contener más conocimientos en general para que acabemos con algo de capacidad de sobra para para contener aún más cosas.
+Así que nuestra lección es aumentar tus conocimientos en realidad aumenta tu capacidad de procesamiento para afrontar problemas.
+Así que su cerebro está muy ansioso por vincular hechos relacionados con el fin de cumplir con este proceso.
+Así que por ejemplo, cuando estaba mostrando esta diapositiva hace un momento, tal vez pensaste, ah, así que la memoria de trabajo es un poco como los registros de la CPU o como un caché, y luego hay este tipo de punteros que apuntan a la memoria a largo plazo que es esta especie de estructura de datos.
+Así que estás muy interesado en vincular tu conocimiento existente sobre computación - cómo funcionan los ordenadores - con el conocimiento sobre como funciona el cerebro.
+Pero tenemos que tener un poco de cuidado: tu cerebro no funciona exactamente como una El tipo de diferencias - no es tan clara como la forma en que la computadora se organiza, y puede tener tipo de capacidades diferentes que la computadora.
+Y esto es un ejemplo de un punto más general, que es que a veces el conocimiento existente puede hacerte tropezar.
+Puedes formar vínculos incorrectos entre las cosas que ya sabes y cosas que estás tratando de aprender.
+Así, por ejemplo, puedes aprender cómo funciona la herencia en Java y luego viene a aprender la herencia en C++, tratas de usar todo tu conocimiento existente y más tarde te das cuenta de que en realidad hay algunos hay algunos puntos más finos que no coinciden y hay algunas diferencias clave, pero tu cerebro estaba muy ansioso por vincular todo esto y así puede llevarte a un conocimiento incorrecto.
+Así que la última cosa de la que voy a hablar tiene que ver con la resolución de problemas.
+Así que un error común en cuanto a cómo funciona esto - por lo que hay varios dominios en los que podrías necesitar resolver un problema, en tu día a día como programador/a puedes querer arreglar el rendimiento de un servicio web, por ejemplo, pero puede haber otras cosas que quieras hacer que impliquen resolver problemas.
+Puede que quieras hacer un movimiento en una partida de ajedréz o resolver un rompecabezas.
+Pesar un jumbo era una pregunta habitual en las entrevistas de hace unos años, un ejemplo de estos problemas de tipo rompecabezas.
+La idea errónea que tiene la gente sobre la resolución de es que tienes una especie de proceso de resolución de problemas en tu cerebro y que es como un tipo de procedimiento que se puede aplicar a todos estos diferentes tipo de cosas que necesitas resolver.
+Y la consecuencia de esto fue, por lo tanto, que la gente pensó que tal vez si, por ejemplo, aprendes más sobre cómo jugar al ajedrez, eso mejora tu resolución de problemas y por lo tanto mejorará tu programación.
+Además, pueden pensar que al probar que tan bien resuelves rompecabezas pueden poner a prueba tu módulo de resolución de problemas y, por lo tanto, comprobar lo bueno que eres programando.
+Pero este no es el modelo correcto de cómo funcionan las cosas, por lo que es un error.
+La forma en que funciona realmente es que tenemos dominios totalmente separados y aprendemos a resolver problemas por dominio.
+Así que si quieres arreglar el rendimiento de un servicio web, entonces aprendes a resolver ese problema, pero tu conocimiento se construye específicamente en torno a ese dominio y tu habilidad para resolver problemas se basa en ese dominio.
+Por lo tanto, es diferente de que tan bien puedes hacer una jugada de ajedrez, y también de lo bueno que eres para resolver problemas de ingenio.
+Por lo que aprender uno de estos temas no hará que mejores en el otro y hacerte pruebas en uno no va a revelar demasiado sobre los otros.
+Esto nos lleva a la tercera lección, que es que la resolución de problemas no es una habilidad genérica que se aplique en todos los ámbitos.
+En realidad, se adquiere en cada ámbito a través de la práctica general en ese ámbito.
+Entonces, ¿cómo podemos utilizar todas estas lecciones para potenciar nuestra capacidad de aprender funciones y resolver problemas?
+Así que las lecciones que tuvimos fueron utilizar ejemplos variados para aprender y explicar conceptos abstractos - a tu cerebro le gusta aprender lo abstracto uniendo ejemplos concretos.
+Podríamos aumentar nuestra capacidad de procesamiento incrementando y reforzando nuestros conocimientos, de modo que si aprendemos más en la memoria a largo plazo y aumentamos el tamaño de los elementos de nuestra memoria a largo plazo, podemos liberar la capacidad de la memoria de trabajo para hacer frente a más problemas.
+Y esta es otra forma de saber que tu cerebro no es como una computadora: esto es bastante contrario a la intuición si se piensa en ello desde cómo funciona una CPU.
+Y por último, se puede mejorar la resolución de problemas dentro de un dominio específico, pero no se comparte entre diferentes dominios, y si quieres saber lo bueno que es alguien en la resolución de problemas dentro de n dominio - un lenguaje de programación particular o o lo que sea, entonces deberías mirar esa habilidad específica, no tratando de probarla, sino viéndola desde otro ángulo.
+Así que esas son mis lecciones y ahí están mis datos de contacto por si quieres saber algo más sobre esto.
+Gracias por escuchar.
