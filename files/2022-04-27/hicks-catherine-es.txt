@@ -1,0 +1,62 @@
+Mi charla se llama...
+Codificación en la oscuridad, que es en realidad la cita de un desarrollador que entrevisté sobre su experiencia diaria en una gran empresa de tecnología en un equipo de lujo.
+Dijeron que sentían que iban al trabajo y tenían que sentarse en la oscuridad y codificar de esa manera a pesar de todos sus recursos.
+Así que quiero hablarles de por qué le pasa eso a la gente, y quiero empezar con una historia en lugar de empezar con datos, y esta historia probablemente les sonará familiar.
+Quiero que todos imaginemos que somos ingenieros de software junior.
+Imagina que acabas de empezar a trabajar en un código base desconocido.
+Ahora tal vez tienes un poco de impulso - tienes que reunirte con algunos ingenieros senior que escribieron gran parte del código en el que vas a trabajar, y es una reunión bastante buena - te cuentan un poco sobre sus decisiones.
+No estás siguiendo todo, pero crees que lo tienes controlado.
+Y tal vez algo de lo que te has beneficiado antes en situaciones de incorporación similares es la programación por parejas, así que lo sugieres, pero obtienes una reacción negativa muy fuerte de uno de los ingenieros superiores.
+Tal vez incluso digan algo así como, oh, aquí creemos que es una pérdida de tiempo.
+Así que te sientes un poco avergonzado y vuelves a tu escritorio, pero profundizas en el código, y mientras lo haces tu plan de ataque se desmorona.
+El código es mucho más complicado de lo que pensabas y acabas pasando mucho más tiempo explorando callejones sin salida.
+Durante este tiempo también te sientes un poco ansioso, porque recuerda que eres un ingeniero junior, así que no sólo estás pensando en el código, estás pensando en cosas como, ¿están los demás trabajando tan rápido como yo, estoy haciendo un buen papel en este equipo?
+Pero aprendes mucho e incluso empiezas a notar lo que aprendes, notando algunas formas interesantes en las que tu modelo mental no coincide con lo que encontraste, y tal vez incluso escribas algo de eso.
+Ahora imagina que vas a tu primera revisión de código de nuevo.
+Es con alguien que nunca has conocido, y está bien pero no va tan bien.
+Este ingeniero senior tiene mucho más contexto del código base que tú, y en relación con la charla que acabamos de escuchar, imaginemos que critica un poco tus decisiones.
+Terminas sintiéndote un poco a la defensiva y mencionas, oye, ya sabes, también pasé mucho tiempo mejorando mi modelo mental del código base, no entendí todas estas compensaciones, e incluso estoy trabajando en un documento de incorporación para la próxima persona que se une al equipo.
+Pero, de nuevo, el ingeniero principal se muestra un poco despectivo y tienes la sensación de que esto ha sido una pérdida de tiempo.
+Así que vuelves al trabajo, pero te has llevado algunos mensajes realmente importantes.
+En primer lugar, dejas de escribir esa documentación en la que estabas trabajando y que ibas a entregar a tu próximo colega junior.
+En segundo lugar, decides que vas a ser un poco más cauto y cuidadoso a la hora de hacer sugerencias sobre lo que te ayudaría a aprender.
+Y en tercer lugar, piensas: tengo que empezar a sonar como estos ingenieros senior, porque así es como se supone que debo sonar.
+Ahora, podríamos centrarnos en muchas partes de esto, y hay una gran cantidad de investigación a través de estas sesiones en diferentes piezas - revisión de código, cómo dar retroalimentación - pero me gustaría llamar tu atención sobre la herramienta secreta que utilizo como una científica de aprendizaje para ordenar a través de todas estas características, y eso es pensar en la cultura que tenemos relacionada al aprendizaje.
+La gente siempre está mirando a su alrededor, todo el tiempo, en busca de pistas sobre si están o no en un lugar seguro para aprender, y sabemos que para crear el código que necesitamos -que funciona en el mundo- necesitamos que la gente esté continuamente aprendiendo.
+Pero lo que he encontrado en mi trabajo con los desarrolladores es que estamos creando un ciclo de deuda de aprendizaje.
+La deuda de aprendizaje es una metáfora que utilizo, similar a la forma en que hablamos de la deuda tecnológica.
+Puede entenderse como un ciclo de daños a largo plazo que se produce cuando los desarrolladores se enfrentan a un entorno en el que sienten que el aprendizaje es necesario pero se desanima.
+El estudio que estoy mencionando en esta charla, que sólo voy a, ya sabes, rascar la superficie - entrevistamos a 25 desarrolladores diferentes.
+Tuvimos muchos contenidos diferentes con estos desarrolladores.
+Se puede ver en el enlace aquí, pero en resumen tuvimos una parte reflexiva en la que hicimos entrevistas en profundidad donde hablamos de sus experiencias de colaboración - cómo obtuvieron retroalimentación, las barreras para el aprendizaje - y también tuvimos un momento real de resolución de problemas.
+Así que me senté allí como investigadora y los escuché hablar en voz alta mientras trataban de escribir código, mientras avanzaban en un código base desconocido, mientras investigaban, y con esos dos artefactos juntos -el proceso reflexivo y el tipo de proceso activo- terminamos con más de 30 horas de conversación sobre las que pudimos hacer un análisis temático.
+Por lo tanto, consulte nuestro informe para obtener más detalles en los que vinculamos todo esto a los diferentes mecanismos de la ciencia del aprendizaje que observamos, pero en resumen, encontramos que este ciclo de deuda de aprendizaje era casi omnipresente para los desarrolladores en todas estas conversaciones.
+Exploramos historias en las que los desarrolladores experimentaron por primera vez este momento de aprendizaje activo en el que necesitaban construir modelos mentales del código base, y también se dieron cuenta de que no se les estaba dando suficiente apoyo para el aprendizaje.
+Llevaron ese conflicto a las revisiones de código, donde no estaban seguros de si debían o no compartir este aprendizaje.
+Y cuando esos procesos formales de retroalimentación les daban mensajes negativos sobre el aprendizaje, se cerraban.
+Y aquí está la parte realmente interesante: en la tercera etapa vuelven a su entorno y replican exactamente lo que experimentaron.
+Así que este ciclo cambia el comportamiento de las personas: mantienen su propio trabajo oculto, toman la decisión de compartir menos lo que han aprendido y perpetúa el entorno en la siguiente persona.
+Hay muchas citas y detalles en el informe, pero aquí sólo quiero compartir las voces reales de algunos desarrolladores.
+Una de las personas que entrevisté dijo: "Intentamos abogar por más programación por parejas y recibimos muchas críticas".
+Otra cita, "Lo ideal sería comentar el código, sí, sí, ya sabes, por supuesto que se supone que debemos hacer esto, pero en realidad menos del 10 por ciento de nuestro código estaba bien comentado".
+Y esto era muy, muy común, por lo que a pesar de que podríamos creer en todas estas mejores prácticas, podríamos conocerlas, la gente hizo mención de ellas en las entrevistas, otras cosas están ganando en la práctica.
+De acuerdo, puede que te digas a ti mismo, ya sabes, buenas noticias, hacer cosas buenas es difícil, es realmente difícil mantener una buena cultura: tenemos presión de tiempo, tenemos barreras, todos lo sabemos, pero quiero darte un marco ligeramente diferente para pensar en esto desde las ciencias sociales.
+En realidad es muy fácil crear cultura.
+De hecho, lo hacemos por defecto.
+Sólo estamos creando la cultura equivocada en los equipos de desarrolladores.
+Lo que estamos creando es algo que llamamos una cultura de rendimiento.
+Cuando sólo medimos el rendimiento y la producción en términos de estos marcadores explícitos, la gente aprende que lo que se supone que deben compartir es sólo el rendimiento.
+Consideran que los momentos de retroalimentación y revisión y reflexión son en realidad sólo momentos en los que tienen que defenderse de las críticas.
+Y se llevan este tipo de sentimientos: nadie más se va a sentir como yo, nadie más está probablemente aprendiendo como yo, nadie más está luchando como yo.
+No puedo enfatizar lo suficiente lo interesante que es sentarse ahí como investigador y escuchar a 25 personas diferentes que te dicen lo mismo, y luego decir, nadie más piensa esto, y creo que parte de esto sucede porque estos equipos me dijeron, estamos invirtiendo mucho en tecnología pero estamos como asumiendo que estas cuestiones humanas, mágicamente van a funcionar.
+Entonces, ¿qué es lo opuesto a esto?
+¿Qué pasaría si nos permitiéramos comprometernos realmente con el aprendizaje?
+Voy a contarte otro secreto de la ciencia del aprendizaje, y es que el verdadero aprendizaje sostenible a largo plazo en realidad tiene un aspecto peor antes de mejorar.
+Lo que quiero decir es que cuando aprendemos, cometemos errores, y la exploración, la creatividad, el cometer errores, todas estas cosas se ven amortiguadas por una cultura que se centra en el rendimiento a corto plazo, pero son cruciales para el verdadero aprendizaje a largo plazo.
+Así que quiero que imaginen este cambio: si pensamos en ese ingeniero de software junior, podríamos darnos cuenta de que no se trata sólo del hecho de que no recibieron apoyo de los ingenieros senior.
+Los ingenieros senior también se perdieron algo realmente importante y crítico, y eso es - que podría haber sido muy valioso para la organización, y fue el momento en que el ingeniero junior estaba aprendiendo y estaba listo para compartir sobre su aprendizaje.
+La perspectiva de una científica del aprendizaje sobre el trabajo colaborativo es que todos estos errores son fuentes de aprendizaje realmente valiosas, tanto si provienen de los jóvenes como de los veteranos.
+Así que voy a terminar llamando de nuevo a este entorno de la cultura del aprendizaje.
+Si realmente queremos preocuparnos por ella, nuestro entorno debe protegerla.
+Podemos protegerlo midiéndolo, reconociéndolo y recompensándolo, venga de donde venga.
+Gracias.
