@@ -8,7 +8,7 @@ Ahora tal vez tienes un poco de impulso - tienes que reunirte con algunos ingeni
 No estás siguiendo todo, pero crees que lo tienes controlado.
 Y tal vez algo de lo que te has beneficiado antes en situaciones de incorporación similares es la programación por parejas, así que lo sugieres, pero obtienes una reacción negativa muy fuerte de uno de los ingenieros superiores.
 Tal vez incluso digan algo así como, oh, aquí creemos que es una pérdida de tiempo.
-Así que te sientes un poco avergonzado y vuelves a tu mesa, pero profundizas en el código, y mientras lo haces tu plan de ataque se desmorona.
+Así que te sientes un poco avergonzado y vuelves a tu escritorio, pero profundizas en el código, y mientras lo haces tu plan de ataque se desmorona.
 El código es mucho más complicado de lo que pensabas y acabas pasando mucho más tiempo explorando callejones sin salida.
 Durante este tiempo también te sientes un poco ansioso, porque recuerda que eres un ingeniero junior, así que no sólo estás pensando en el código, estás pensando en cosas como, ¿están los demás trabajando tan rápido como yo, estoy haciendo un buen papel en este equipo?
 Pero aprendes mucho e incluso empiezas a notar lo que aprendes, notando algunas formas interesantes en las que tu modelo mental no coincide con lo que encontraste, y tal vez incluso escribas algo de eso.
@@ -51,7 +51,7 @@ Y se llevan este tipo de sentimientos: nadie más se va a sentir como yo, nadie 
 No puedo enfatizar lo suficiente lo interesante que es sentarse ahí como investigador y escuchar a 25 personas diferentes que te dicen lo mismo, y luego decir, nadie más piensa esto, y creo que parte de esto sucede porque estos equipos me dijeron, estamos invirtiendo mucho en tecnología pero estamos como asumiendo que estas cuestiones humanas, mágicamente van a funcionar.
 Entonces, ¿qué es lo opuesto a esto?
 ¿Qué pasaría si nos permitiéramos comprometernos realmente con el aprendizaje?
-Voy a darte otro secreto de la ciencia del aprendizaje, y es que el verdadero aprendizaje sostenible a largo plazo en realidad  tiene un aspecto peor antes de mejorar.
+Voy a contarte otro secreto de la ciencia del aprendizaje, y es que el verdadero aprendizaje sostenible a largo plazo en realidad tiene un aspecto peor antes de mejorar.
 Lo que quiero decir es que cuando aprendemos, cometemos errores, y la exploración, la creatividad, el cometer errores, todas estas cosas se ven amortiguadas por una cultura que se centra en el rendimiento a corto plazo, pero son cruciales para el verdadero aprendizaje a largo plazo.
 Así que quiero que imaginen este cambio: si pensamos en ese ingeniero de software junior, podríamos darnos cuenta de que no se trata sólo del hecho de que no recibieron apoyo de los ingenieros senior.
 Los ingenieros senior también se perdieron algo realmente importante y crítico, y eso es - que podría haber sido muy valioso para la organización, y fue el momento en que el ingeniero junior estaba aprendiendo y estaba listo para compartir sobre su aprendizaje.
