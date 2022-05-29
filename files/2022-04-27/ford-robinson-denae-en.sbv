@@ -1,0 +1,597 @@
+0:00:05.200,0:00:10.720
+Hi everyone, thank you so much for inviting me 
+here today, it's a pleasure to speak to you all.
+
+0:00:11.440,0:00:14.720
+I'm Denae Ford Robinson, a 
+researcher at the intersection of
+
+0:00:15.280,0:00:18.800
+online community, software engineering, 
+and human computer interaction,
+
+0:00:19.520,0:00:22.080
+and today I guess my talk takes 
+a little bit of a different twist
+
+0:00:22.080,0:00:26.000
+from what others have been talking about.
+I'm going to be really consolidating some
+
+0:00:26.000,0:00:31.360
+findings from prior research of other amazing 
+scholars and researchers looking into safety.
+
+0:00:32.080,0:00:35.360
+So i want to take this time to talk 
+about how we can keep developers safe,
+
+0:00:35.360,0:00:39.680
+drawing on their work, and in this talk I'll be 
+sharing findings from their research, and in the
+
+0:00:39.680,0:00:45.120
+hope that we can help to devise interventions 
+that can better support the developer community
+
+0:00:45.120,0:00:49.280
+and really understand how we can keep 
+people safe and the community safe at scale.
+
+0:00:50.640,0:00:54.320
+Safety is something that many 
+of us often take for granted.
+
+0:00:55.440,0:01:00.000
+Unfortunately it isn't until we're on 
+the other side of an uncomfortable or
+
+0:01:00.000,0:01:06.080
+unsettling situation that we begin to think 
+of why it is important to have processes or
+
+0:01:06.080,0:01:11.680
+tools in place to keep us protected.
+So this article that i have shared on the screen
+
+0:01:11.680,0:01:17.840
+here is from the Atlantic really highlighted that.
+In a series of studies of online engagement
+
+0:01:17.840,0:01:22.080
+they were really finding - in diving 
+deeper into how this small number of people
+
+0:01:22.080,0:01:26.720
+can often silence the dominating view 
+or the silent view in online forums.
+
+0:01:26.720,0:01:29.360
+So thinking back to some of the work 
+that's already been presented today
+
+0:01:29.360,0:01:34.240
+from Kelly Blinco and others about how that 
+criticism - how that harassment can really be
+
+0:01:34.240,0:01:40.320
+discouraging to folks, sometimes it's 
+easier to do this in certain settings.
+
+0:01:40.320,0:01:43.840
+Likewise a Pew Research 
+Center study conducted in 2017
+
+0:01:44.560,0:01:49.120
+found that four in 10 americans have 
+experienced some form of harassment online.
+
+0:01:49.920,0:01:54.080
+So this type of harassment I'm describing 
+includes name calling, doxxing, stalking,
+
+0:01:54.080,0:01:58.240
+or really just spamming, right, being 
+disrespectful, not being as welcoming.
+
+0:01:59.120,0:02:04.160
+These types of online harassments can especially 
+dam - can be especially damaging for open source
+
+0:02:04.160,0:02:09.840
+communities, the maintainers and marginalized 
+people specifically, as it makes it difficult
+
+0:02:09.840,0:02:15.280
+for them to productively participate in these 
+online spaces especially when working publicly.
+
+0:02:16.000,0:02:19.520
+So when we translate this activity to open source
+
+0:02:20.080,0:02:25.120
+we really have to think about how this can impact 
+the people who build systems in the public eye.
+
+0:02:26.320,0:02:29.520
+So some of the ones I've previously 
+investigated were centered around
+
+0:02:29.520,0:02:33.680
+open source software for social good.
+So the projects I have on the screen
+
+0:02:34.400,0:02:37.920
+are kind of - really centered around how 
+people are building tools - developers are
+
+0:02:37.920,0:02:42.320
+building tools to support a broad societal 
+good, to help a specific population.
+
+0:02:42.320,0:02:48.160
+So the one on the left here is Little Window 
+which is centered around supporting victims
+
+0:02:48.160,0:02:54.480
+of intimate partner violence and the one on the 
+right is refuge restrooms which helps non-binary,
+
+0:02:54.480,0:02:58.080
+genderqueer, and intersex 
+folks find safe restrooms.
+
+0:02:59.600,0:03:07.200
+Developers and contributors who work on these 
+types of projects can have quite polarizing views,
+
+0:03:07.840,0:03:11.120
+and the people who are observing and using 
+this project can see that there have been
+
+0:03:11.680,0:03:15.120
+quite polarizing political 
+perspectives and thus are at risk.
+
+0:03:16.480,0:03:22.320
+And like many other socio-technical forums these 
+conversations around these projects can get heated
+
+0:03:22.320,0:03:24.800
+and sometimes sink to the next level and even
+
+0:03:24.800,0:03:27.280
+often times get out of - out of 
+context to become quite harmful.
+
+0:03:30.560,0:03:33.280
+So this is where psychological 
+safety really matters.
+
+0:03:34.080,0:03:39.760
+So developers feeling unsafe can directly 
+impact your quality of work and thus the
+
+0:03:39.760,0:03:44.480
+quality systems and tools that you build.
+So a survey from the Global Wellness
+
+0:03:44.480,0:03:50.480
+Institute reported that 62 percent of US workers 
+- found that when workers felt immensely unwell
+
+0:03:51.040,0:03:56.080
+it significantly impacted their work performance 
+and how they see their growth overall.
+
+0:03:57.680,0:04:02.320
+Safety ultimately provides a level of confidence 
+that makes you feel more comfortable engaging.
+
+0:04:03.360,0:04:08.000
+So I like to think of safety in relation 
+to going outside in below freezing weather.
+
+0:04:08.720,0:04:11.680
+So you could still go outside as 
+you are in a t-shirt or shorts
+
+0:04:12.800,0:04:17.120
+but with a jacket or a blanket around you you 
+feel a bit more protected from the elements
+
+0:04:17.120,0:04:19.840
+while you're out there.
+So you can still contribute to
+
+0:04:19.840,0:04:24.320
+open source and engage in the broader developer 
+community but with safety precautions and safety
+
+0:04:24.320,0:04:27.840
+mechanisms, you know, you can feel a 
+bit more protected in that journey.
+
+0:04:28.480,0:04:32.640
+So the question I really have here - I want to 
+post the community into our broader developer
+
+0:04:32.640,0:04:38.000
+community here - is how do we recreate the safety 
+and assurance in online programming communities.
+
+0:04:39.200,0:04:43.200
+Because if you don't feel safe and supported 
+then honestly why would you engage?
+
+0:04:44.240,0:04:47.920
+So long story short, when it comes 
+to products, safety is the minimum,
+
+0:04:48.480,0:04:51.840
+and it's important that developers feel 
+like they are psychologically safe.
+
+0:04:52.800,0:04:55.840
+Without feeling safe again 
+you cannot be effective,
+
+0:04:56.400,0:04:58.400
+and the quality of your work 
+that you need to produce.
+
+0:04:59.840,0:05:04.160
+What I also have on the screen there at the 
+bottom is a report from - Stuart Geiger's
+
+0:05:04.160,0:05:09.840
+report of the 2017 GitHub survey where they talk a 
+lot about some of the approaches people have used
+
+0:05:10.400,0:05:15.200
+to kind of circumvent or resolve some of their 
+harassment and unwelcoming experiences that
+
+0:05:15.200,0:05:20.320
+they've - they have experienced on the platform.
+I'm hoping that throughout this talk I'll kind
+
+0:05:20.320,0:05:22.880
+of be giving a couple of nuggets 
+from prior empirical research
+
+0:05:23.920,0:05:28.240
+that can inspire some ongoing work that you as the 
+developer community can start building on as well.
+
+0:05:31.280,0:05:35.680
+So when we try to answer this question for the 
+developer community it's extremely important
+
+0:05:35.680,0:05:39.520
+that we leverage prior studies that have 
+been investigating this in other settings.
+
+0:05:40.320,0:05:44.320
+So there's been several studies that look 
+at what collective action looks like for
+
+0:05:44.320,0:05:49.440
+community members to feel safe and protected.
+So I draw on a lot of scholars from a broader
+
+0:05:50.320,0:05:56.160
+computer-supported cooperative work systems and 
+forums like Amy Zhang who has worked on this
+
+0:05:56.160,0:06:01.680
+tool called Squad Box which is really geared at 
+trying to support people who have faced harassment
+
+0:06:01.680,0:06:06.240
+and allowing them to collectively grab the group 
+of peers to contribute - to support others.
+
+0:06:07.360,0:06:10.000
+Another one I highlight here 
+on the slide is iHeartMob
+
+0:06:10.720,0:06:14.800
+which is again a community dedicated to 
+offering support of the victims of harassment,
+
+0:06:15.600,0:06:19.600
+so again collectively gathering 
+your peers, your colleagues as well,
+
+0:06:19.600,0:06:24.320
+to come up with your own system to feel - 
+victims feel supported - help people feel
+
+0:06:24.320,0:06:29.440
+supported, and thus encourage them engaging.
+So again the big question here I have is,
+
+0:06:29.440,0:06:34.080
+how do we - what does it look like for 
+developers trying to engage in communities.
+
+0:06:34.080,0:06:37.520
+And when I do that, I also want to 
+highlight what has been quite successful.
+
+0:06:38.080,0:06:43.040
+So I want to call out things on the slide here 
+which are from GitHub's community safety team.
+
+0:06:43.600,0:06:47.600
+So for those of you in the audience may be 
+familiar with folks - this was a previous team,
+
+0:06:47.600,0:06:54.800
+like, at GitHub, other members of the team include 
+Lexi Galantino, Danielle Leong, Caroline Ada
+
+0:06:54.800,0:06:59.360
+Ehmke, February Keaney, a slew of others.
+I mean they've been tasked with building
+
+0:06:59.360,0:07:01.840
+tools to figure out how to keep 
+people safe on these platforms.
+
+0:07:02.400,0:07:07.280
+So one of them is these temporary interaction 
+limits where you can caution or give people or
+
+0:07:07.280,0:07:12.320
+encourage people to take a beat when they may 
+be spamming issues, as well as thinking about
+
+0:07:12.320,0:07:17.120
+different reporting mechanisms that can report to 
+the admins or the maintainers of the organization,
+
+0:07:17.120,0:07:23.440
+versus what content may be more appropriate 
+to share to the GitHub support overall.
+
+0:07:23.440,0:07:27.680
+So thinking about seeing these successful 
+features that have been built on infrastructure or
+
+0:07:27.680,0:07:31.920
+in situ in the platform but think about 
+what we can do broadly at a level of
+
+0:07:31.920,0:07:35.600
+different scale within each organization 
+is what I want us to charge to look at.
+
+0:07:36.960,0:07:40.720
+So the Code of Conduct research - there's 
+been significant Code of Conduct research
+
+0:07:40.720,0:07:44.560
+in developer settings as well as in 
+research academic research settings
+
+0:07:44.560,0:07:49.840
+looking at how we can encourage folks to engage.
+So on the slide here I have the Python Code of
+
+0:07:49.840,0:07:54.400
+Conduct as well as the Contributor Covenant which 
+has been really successful at adopting - folks
+
+0:07:54.400,0:08:00.080
+have been adopting some of these wishes and 
+these guidelines for how people should engage.
+
+0:08:00.800,0:08:04.960
+But there's also been not as much of growth 
+in these areas as we would have hoped to see,
+
+0:08:05.680,0:08:10.160
+so Renee Li and Hana Frluckaj and Laura 
+Dabbish had done some really interesting work
+
+0:08:10.160,0:08:14.320
+analyzing how developers and repos have 
+been talking about the Code of Conduct,
+
+0:08:15.120,0:08:19.520
+and after removing some of the noise and machine 
+commits and conversations that were happening,
+
+0:08:20.400,0:08:25.120
+of their sample of 3800 Code of Conduct 
+conversations they were seeing that 32
+
+0:08:25.120,0:08:30.480
+percent of them - conversations were centered 
+around creation, and - which is actually
+
+0:08:30.480,0:08:34.000
+quite low still, because the Contributor 
+Covenant has been around for some years now.
+
+0:08:34.720,0:08:38.080
+But there's also a significant amount of 
+conversation as well happening around how to
+
+0:08:38.080,0:08:42.720
+moderate these communities, how to keep people 
+safe, and again engage in collective action,
+
+0:08:42.720,0:08:47.680
+what it means to keep folks engaged, safe, 
+and ultimately sustainable communities.
+
+0:08:49.600,0:08:52.960
+So what I want to charge you all to look 
+at is, thinking about what this looks like
+
+0:08:52.960,0:08:56.640
+for the next generation of developers, or 
+the next generation of community safety.
+
+0:08:57.840,0:09:02.640
+One way this could be or we can think 
+about how we can support and grow folks
+
+0:09:02.640,0:09:05.680
+is by highlighting those who 
+have been doing successful
+
+0:09:05.680,0:09:09.920
+and desirable activities and behavior.
+Again we're separating this from the
+
+0:09:09.920,0:09:13.040
+actor - from the individual versus their behavior 
+- because we want to be able to promote them.
+
+0:09:14.560,0:09:18.320
+Another perspective as well is, think 
+about how are we are engaging with human
+
+0:09:18.320,0:09:22.480
+and automated approaches to sanction 
+and discourage undesired behaviors.
+
+0:09:24.640,0:09:29.040
+So that said, I want to charge us to think 
+about what we can do today to help support
+
+0:09:29.040,0:09:35.680
+community safety with a quick one-on-one.
+First I want to run through and say that if
+
+0:09:35.680,0:09:39.440
+we can - if people care about - if communities 
+care about it then it should be measured.
+
+0:09:40.960,0:09:45.040
+Second, if it's important, there should 
+be a person accountable for it, so not
+
+0:09:45.040,0:09:48.640
+just enough to be about lip service that we're 
+trying to create and foster a great community,
+
+0:09:48.640,0:09:53.360
+we want to have human and automated processes, 
+that we have a person to point to and can help
+
+0:09:53.360,0:09:58.960
+us mitigate some of those gray area situations.
+Likewise, if there is accountability for this
+
+0:09:58.960,0:10:02.000
+process, there should be a reason 
+- there's an approach to track it.
+
+0:10:02.000,0:10:06.000
+So we want to be able to have and be 
+transparent about the process for how
+
+0:10:06.000,0:10:10.720
+people may be sanctioned and how we are promoting 
+and encouraging positive behavior on platforms.
+
+0:10:13.040,0:10:16.320
+There is the CHAOSS community, which 
+many of you may be familiar with,
+
+0:10:16.320,0:10:19.760
+where folks are really looking for 
+developers, researchers as well,
+
+0:10:19.760,0:10:22.800
+interested in testing out these 
+interventions at a broader scale.
+
+0:10:22.800,0:10:27.200
+So I want to charge you all to look at 
+different ways of, like, psychological safety
+
+0:10:27.200,0:10:32.480
+beyond just reducing harassment or reducing 
+recidivism but thinking about we can challenge
+
+0:10:32.480,0:10:36.160
+safety - contributor safety - think about how 
+we can grow learners as well in this space.
+
+0:10:38.320,0:10:43.040
+So, as I close here, I want to leave you 
+all with a few things that you can do today.
+
+0:10:43.840,0:10:47.680
+First of all, you can make sure 
+your project has a Code of Conduct.
+
+0:10:48.240,0:10:52.400
+If it doesn't, you know, it's already a 
+sign - it's a signal for many contributors.
+
+0:10:52.400,0:10:57.280
+You can ask the project maintainers why they don't 
+have one, better yet, ask them how it is enforced.
+
+0:10:58.480,0:11:02.480
+Second, if your project does not have a 
+Code of Conduct, propose they adopt one.
+
+0:11:02.480,0:11:06.080
+The Contributor Covenant is a great place 
+to start - several projects have adopted
+
+0:11:06.080,0:11:10.640
+this and made it make sense on their own.
+So again thinking about you can adopt broader
+
+0:11:10.640,0:11:14.880
+systems and rules to be bespoke for your project, 
+and a lot of the research I mentioned before is
+
+0:11:14.880,0:11:20.320
+about the evaluative and iterative process for how 
+these Contributors - Contributors' Covenants grew.
+
+0:11:21.760,0:11:25.840
+Third, I want to encourage folks to be 
+transparent about the safety procedures in place.
+
+0:11:26.400,0:11:31.520
+When you're not, you often put contributors at 
+risk, and if you want to grow your community and
+
+0:11:31.520,0:11:35.280
+also increase the diversity of contributors 
+you have to be sure you're ready for them,
+
+0:11:36.160,0:11:40.880
+so have these procedures in place and then 
+the people will come, because in fact when
+
+0:11:40.880,0:11:45.200
+it's - it can be more dangerous to promise people 
+safety that you honestly cannot offer them.
+
+0:11:46.640,0:11:52.960
+And I also do want to - also put on a call here 
+as an FYI that we are working on some approaches
+
+0:11:52.960,0:11:57.360
+to think about how we can support community 
+safety and sustainability growth at scale,
+
+0:11:58.000,0:12:00.400
+so I wanted to make sure you all 
+on the lookout for that as well.
+
+0:12:01.280,0:12:08.400
+And with that I'll close and 
+thank you all for your time.
