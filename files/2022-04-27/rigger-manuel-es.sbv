@@ -1,0 +1,406 @@
+0:00:06.640,0:00:12.400
+So, in this talk I'm going to tell 
+you the story behind SQLancer,
+
+0:00:12.400,0:00:16.640
+which is a tool that we designed and developed to 
+automatically test database management systems.
+
+0:00:17.520,0:00:22.400
+Now I assume that many of you are not directly 
+working on developing database management systems,
+
+0:00:22.400,0:00:27.040
+which is why I will focus on general 
+insights that you might be able to
+
+0:00:27.040,0:00:31.840
+apply on testing your project.
+So just to ensure that we're all
+
+0:00:31.840,0:00:37.760
+on the same page - in our work we wanted to test 
+database management systems that expect queries
+
+0:00:37.760,0:00:43.760
+or statements written in the structured query 
+language or for short SQL. As perhaps most of
+
+0:00:43.760,0:00:49.040
+you know, we can for example use this language to 
+create tables, to insert data into them, and then
+
+0:00:49.040,0:00:54.880
+again fetch data using a select statement.
+Now in the previous talks we already heard
+
+0:00:54.880,0:01:00.960
+a bit about testing, so how can we write 
+test cases that could test such systems?
+
+0:01:03.120,0:01:08.480
+Well, one approach would be to just write them in 
+SQL. We could for example specify the test case,
+
+0:01:08.480,0:01:14.000
+such as here taken from the MySQL test to 
+it, and then in a separate file specify
+
+0:01:14.000,0:01:20.480
+the expected output. And while there are some 
+frameworks that make this process a bit easier,
+
+0:01:20.480,0:01:25.680
+I would argue that it's still always challenging 
+and time consuming to write manual test cases,
+
+0:01:25.680,0:01:30.400
+especially considering for such complex 
+systems where we need a huge test suites.
+
+0:01:31.600,0:01:37.200
+So in our work we ask ourselves, can we automate 
+the test process? And this brings us to two
+
+0:01:37.200,0:01:42.880
+challenges. First of all, if we want to have an 
+automated testing approach, we need a test case,
+
+0:01:42.880,0:01:47.280
+and in our case this means that we need to 
+generate a database and a query that we can then
+
+0:01:47.280,0:01:53.520
+validate. So looking into what's already out 
+there, we can find tools such as for example
+
+0:01:53.520,0:02:00.080
+SQLsmith. SQLsmith is an effective and widely 
+used brand new query generation tool that mutates
+
+0:02:00.080,0:02:06.000
+and generates complex SQL statements that might 
+cause for example a crash in the database system
+
+0:02:06.000,0:02:12.400
+that developers can then fix. So I would say that 
+this is already a solved challenge, so we can use
+
+0:02:12.400,0:02:16.320
+either this random generation approach or 
+another one to generate the test cases.
+
+0:02:18.160,0:02:23.760
+Now what was still an open challenge is the 
+so-called test oracle problem, namely we want
+
+0:02:23.760,0:02:30.240
+to validate the query's result. So what's a test 
+oracle? A test oracle is basically the mechanism
+
+0:02:30.240,0:02:35.360
+that determines whether a test has passed or 
+failed, and for regression testing for writing
+
+0:02:35.360,0:02:41.120
+manual test cases, we typically as the developer 
+or developers are - or provided the test oracle.
+
+0:02:42.240,0:02:46.480
+But this is often difficult, even for manually 
+written test cases, and I want to illustrate
+
+0:02:46.480,0:02:51.360
+this based on a concrete example. You can 
+see here a test case that actually allowed
+
+0:02:51.360,0:02:58.000
+us to find and report a bug in MySQL. You can 
+see here that we have two tables t0 and t1,
+
+0:02:58.000,0:03:03.040
+each of which holds a floating point value, 
+namely a positive zero and a negative zero.
+
+0:03:03.600,0:03:08.240
+And then we instruct MySQL to fetch the cross 
+product of all records from these two tables
+
+0:03:08.240,0:03:12.320
+where the column evaluates to the same value.
+Now what's the expected output here?
+
+0:03:15.520,0:03:20.160
+I would argue that it's disputable whether the 
+predicate here should evaluate to true or false
+
+0:03:20.880,0:03:25.360
+because we could for example look at the binary 
+representation of these two floating point numbers
+
+0:03:25.360,0:03:29.520
+to realize that the sign bit differs. And 
+based on this it would make sense that the
+
+0:03:29.520,0:03:35.600
+equality operator evaluates to false and MySQL 
+for this case would return an empty result.
+
+0:03:37.520,0:03:43.360
+But most programming languages such as Java, C, 
+and so on, they actually define the semantics that
+
+0:03:43.360,0:03:50.480
+this equality operator should evaluate to true 
+for - for these values. And in this case MySQL
+
+0:03:50.480,0:03:57.360
+would fetch a row. So at this point in a talk you 
+have to trust me, actually MySQL is expected to
+
+0:03:57.360,0:04:04.000
+fetch the record. But when we tested the latest 
+version of it, it still failed to do so. We
+
+0:04:04.000,0:04:09.280
+reported this as a bug to the developers who then 
+fixed it for the next release of MySQL. But the
+
+0:04:09.280,0:04:15.920
+point here is actually that we could find this 
+bug without having an idea on whether a predicate
+
+0:04:15.920,0:04:20.320
+should evaluate to true or not and whether 
+any results or any records should be fetched.
+
+0:04:21.280,0:04:27.920
+We basically had this test oracle that told 
+us that the result returned was correct.
+
+0:04:27.920,0:04:31.760
+Now we actually developed a couple of test 
+oracles, the one I'm going to present today
+
+0:04:31.760,0:04:37.840
+is termed logic partitioning or short TLB. And if 
+I had to explain the approach in half a sentence I
+
+0:04:37.840,0:04:43.040
+would basically say, the idea is to test the 
+database management system against itself.
+
+0:04:44.640,0:04:50.000
+The idea is quite generous I want to explain 
+it based on an analogy. So if we ever meet in
+
+0:04:50.000,0:04:53.920
+person it will it's very likely that this will 
+be in the coffee kitchen because I like to drink
+
+0:04:53.920,0:05:01.120
+lots of coffee. And let's also assume that there 
+is a bowl with fruits containing both tangerines
+
+0:05:01.120,0:05:07.520
+and also clementines. Now I'm actually very bad 
+at telling these different citrus fruits apart,
+
+0:05:07.520,0:05:12.160
+they all look the same to me, so this is what 
+I tell you in order to start some small talk.
+
+0:05:12.960,0:05:17.680
+And you might actually respond that you can 
+clearly tell the difference. So I challenge you to
+
+0:05:17.680,0:05:23.440
+show me, but how can I test your understanding of 
+tangerines versus clementines without even having
+
+0:05:23.440,0:05:30.480
+this understanding myself? Well the strategy 
+that I would apply would be the following.First
+
+0:05:30.480,0:05:33.760
+I would ask you to please bring me all 
+the clementines and you would go ahead
+
+0:05:33.760,0:05:38.480
+and fetch perhaps two of the fruits. I 
+would then put them back into the bowl,
+
+0:05:38.480,0:05:42.800
+shuffle them around, and then ask you to 
+bring me all foods that are not clementines.
+
+0:05:43.840,0:05:48.320
+You would bring the apple which I could recognize, 
+along with the other orange-looking fruits.
+
+0:05:49.520,0:05:53.360
+And I believe that already some of you see where 
+this is going because you brought me two fruits
+
+0:05:54.240,0:05:59.440
+first and then you brought me four fruits, so 
+overall six fruits, but there are only five fruits
+
+0:05:59.440,0:06:05.840
+in the bowl, meaning that you likely classified a 
+fruit as being both a tangerine and a clementine.
+
+0:06:07.040,0:06:11.120
+So the high level insight here is that every 
+object in the universe and also in the bowl
+
+0:06:11.120,0:06:15.840
+is either a clementine or not a climate and we 
+use this insight to basically partition all the
+
+0:06:16.560,0:06:22.320
+objects in the bowl. Of course you could always 
+say - you could always consistently classify
+
+0:06:22.320,0:06:27.440
+tangerines as clementines and the other way 
+around, meaning that we cannot detect all
+
+0:06:27.440,0:06:33.840
+the bugs, but neither can test - test cases, so 
+this is a limitation that we have to live with.
+
+0:06:35.200,0:06:42.480
+How do we now apply this to SQL? Now we have any 
+kind of given predicate P and a row R rather than
+
+0:06:42.480,0:06:47.840
+a fruit, but exactly one of the following 
+must hold the predicate evaluates to true,
+
+0:06:48.400,0:06:51.120
+not the predicate or is the true 
+meaning that it evaluates to false,
+
+0:06:51.760,0:06:56.560
+and then since in SQL we also have to deal with 
+null values, we have to deal with the case where
+
+0:06:56.560,0:07:03.040
+P might evaluate to null. And based on this we can 
+now take any kind of data in our table - any kind
+
+0:07:03.040,0:07:06.720
+of intermediate result - and partition it into 
+three parts: then we do those for the predicate
+
+0:07:06.720,0:07:10.920
+where it's true, those where it evaluates to 
+false, and those where it evaluates to null.
+
+0:07:11.760,0:07:16.160
+How did this now allow us to detect 
+the bug from the motivating example?
+
+0:07:16.160,0:07:22.080
+Well, we first generated this query that 
+basically corresponds to counting the number of
+
+0:07:23.040,0:07:26.880
+fruits in the bowl. So we simply fetch the cross 
+product of all values from these two tables.
+
+0:07:27.680,0:07:34.720
+And there MySQL returned a single record. Then 
+we generated this more complex three queries
+
+0:07:34.720,0:07:39.120
+based on this random predicate P. You can see 
+here that we have the non-negated version, the
+
+0:07:39.120,0:07:44.640
+negated version, and this null version. Overall we 
+expect that this should compute the same result.
+
+0:07:45.760,0:07:51.680
+However MySQL returned an empty result set here, 
+which allowed us to find and report the bug.
+
+0:07:53.520,0:07:56.880
+The technique is actually quite versatile 
+in the sense that we can test multiple
+
+0:07:56.880,0:08:00.240
+different kind of SQL features, 
+here only focused on where clauses.
+
+0:08:02.000,0:08:06.960
+So we basically had this random generation 
+approach to tackle this test case generation
+
+0:08:06.960,0:08:14.240
+problem, and now we propose ternary logic 
+partitioning to tackle this test oracle problem.
+
+0:08:15.680,0:08:20.800
+Can such a simple technique be effective is 
+the next natural question? well I used SQL
+
+0:08:20.800,0:08:28.160
+answer TLB being one of these approaches that we 
+proposed to find over 450 unique and previously
+
+0:08:28.160,0:08:32.400
+unknown bugs in Baidu's database management 
+systems that you have all heard of or know.
+
+0:08:34.560,0:08:38.320
+And what should you take away from 
+this talk? Well, while the specific
+
+0:08:38.320,0:08:43.440
+technique data partitioning primarily works for 
+data-oriented systems, it is based actually on
+
+0:08:43.440,0:08:52.560
+a more generic - more general kind of technique. 
+Namely if we look at this from an abstract level,
+
+0:08:52.560,0:08:57.360
+we basically can realize that we had a test 
+case that we executed to obtain a result
+
+0:08:58.240,0:09:03.120
+and based on this we derived a new test case 
+for which we could then provide a test oracle.
+
+0:09:04.080,0:09:11.760
+And this does metamorphic testing. Now what you 
+can do is, you could try of course to come up with
+
+0:09:11.760,0:09:16.960
+a metamorphic testing technique for yourself 
+but an alternative would also be to check if
+
+0:09:16.960,0:09:22.560
+there are any already existing approaches, 
+for example by looking on Google Scholar.
+
+0:09:25.360,0:09:28.000
+And with that, I'll summarize. And the takeaways,
+
+0:09:28.720,0:09:32.880
+so manually writing test cases is time 
+intensive and requires detailed domain
+
+0:09:32.880,0:09:36.160
+knowledge and you might actually 
+face a similar problem in your work.
+
+0:09:37.040,0:09:43.120
+So what we propose is to couple random test case 
+generation with metamorphic testing which turned
+
+0:09:43.120,0:09:49.840
+out to effectively complement manually written 
+test cases. With that, thank you for listening.
