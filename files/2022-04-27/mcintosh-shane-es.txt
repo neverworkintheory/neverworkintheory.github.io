@@ -1,0 +1,66 @@
+Así que mi primera pregunta es, ¿reconoces a esta gente?
+Puede que no, así que te daré algunas pistas.
+Esta persona de la izquierda es probablemente la más famosa de las dos -se llama Ícaro- y es famosa por estar asociada a rasgos humanos como el exceso de confianza, y puede que hayas oído la frase, no vueles demasiado cerca del sol.
+Pero hoy me voy a centrar en un personaje diferente de la historia, y es su padre Dédalo.
+Es un personaje con el que conecto más personalmente porque es un maestro artesano, y ya sabes, digamos, un maestro artesano.
+Pero sus inventos suelen tener consecuencias no deseadas y yo también tengo inventos que tienen consecuencias no deseadas.
+Y hoy voy a hablar de algunas de las consecuencias no deseadas del trabajo que hemos estado haciendo en los sistemas de construcción de software de minería, y vamos a utilizar esta metáfora de Ícaro y Dédalo para ayudar a hacer esa explicación clara.
+
+Así que empecemos con nuestra historia.
+Así que Ícaro y Dédalo están atrapados en la isla de Creta porque Dédalo ha creado algunos inventos que han enfadado a los dioses.
+Así que están en esta isla prisión, pero Dédalo tiene un plan.
+Así que Dédalo es famoso por usar lo que puede conseguir para crear soluciones.
+Así que encontró algunas plumas y algo de cera de las velas y va a tratar de fabricar algunas alas sin más.
+Hacemos lo mismo cuando estamos minando los repositorios de software.
+Así que voy a poner esto con un ejemplo.
+El otro día estoy codificando - imagina que estoy escribiendo algo de código - y escribí algo de código como esto.
+Y necesito un sistema de construcción para convertirlo en un formato ejecutable.
+Así que escribo un pequeño archivo de Maven y luego me pongo a ejecutar la construcción donde, por supuesto, me encuentro con un fallo de construcción.
+
+Y empiezo a cuestionar mi elección de carrera y empiezo a sentir algunos sentimientos de los que quizás no estoy demasiado orgulloso, pero decido seguir avanzando.
+Y empiezo a ver más mensajes que me hacen sentir otros sentimientos sobre mi elección de carrera, pero aún así decido seguir avanzando.
+Y eventualmente empiezo a notar un patrón - empiezo a notar, que parece que la resolución de clases no está ocurriendo correctamente y probablemente es porque un paquete no está siendo incorporado.
+Y específicamente parece que falta Log4j.
+
+Y cuando vuelvo a mi código me doy cuenta de que tengo Log4j incluido en mi especificación, así que ¿qué podría estar mal?
+Bueno, resulta que log4j cambió ligeramente la forma en que el paquete es referenciado en la central de Maven.
+Así que después de hacer este cambio ejecuto mi construcción de nuevo y empiezo a recuperar la confianza en mí mismo.
+Pero entonces el investigador que hay en mí empieza a despertarse - empiezo a preguntarme, ¿por qué tuve que arreglar eso a mano?
+¿Por qué mi herramienta de construcción no puede arreglar esto automáticamente?
+
+Y pensando en términos más amplios, ¿por qué los sistemas de construcción no pueden sostenerse a sí mismos y qué podría significar eso?
+Así que si tuviéramos un sistema de construcción auto-sostenible necesitaríamos diferentes piezas de tecnología para que eso suceda.
+Podríamos necesitar algunas herramientas para detectar cuando - cuando las dependencias están incorrectamente o sub-especificadas, podríamos necesitar algunas herramientas para detectar cuando los cambios de construcción son necesarios y anticiparse a ellos, y podríamos necesitar algunas herramientas para automatizar la aplicación de correcciones a los scripts de construcción.
+
+Ahora bien, todas estas son áreas diferentes en las que mi grupo en la Universidad de Waterloo está trabajando, pero hoy voy a centrarme un poco en la reparación automatizada de los scripts de construcción, de acuerdo, y específicamente voy a hablarles de esta solución de cera y pluma que se nos ocurrió llamar Build Medic.
+
+Bien, Build Medic opera en un registro de fallos de construcción y, a un nivel muy alto, se divide en tres fases.
+En primer lugar, intentamos clasificar el registro de fallos en función del tipo de problema que se está produciendo y, a continuación, seleccionamos una estrategia de reparación que podríamos probar, y luego aplicamos la estrategia y evaluamos la revisión.
+Ahora hay dos resultados posibles: obtenemos el mismo u otro fallo, en cuyo caso volvemos a intentarlo, o hemos resuelto el problema y la compilación se arregla automáticamente por nosotros.
+
+Así que tenemos nuestra solución, y Dédalo e Ícaro, su solución es construir estas alas y se dirigen al cielo para salir de la isla, correcto, así que el siguiente paso es - así que despegaron y están volando lejos de su prisión, y ahora estamos en una etapa en la que estamos listos para probar nuestra solución de cera y plumas también.
+Y lo que encontramos cuando probamos nuestra solución es que la solución de Build Medic es de hecho bastante buena.
+
+Así que lo probamos en 84 pares de fallos no vistos, y fuimos a buscar en el historial de los proyectos de código abierto para encontrar ejemplos de commits en los que la construcción se rompió y luego se arregló inmediatamente, y lo que encontramos es que un poco más de la mitad de las soluciones podrían ser arregladas inmediatamente por nuestra herramienta Build Medic, y tres cuartas partes de esos éxitos se hacen en una sola iteración.
+Así que no necesitamos un retorno para intentar múltiples correcciones.
+
+Incluso más que eso, no sólo estamos haciendo pasar la compilación, sino que a menudo estamos haciendo exactamente lo que hicieron los propios desarrolladores.
+Así que en esas soluciones correctas, un tercio de las veces hacemos exactamente lo que hicieron los desarrolladores, y otro 44% de las veces modificamos los mismos elementos que los desarrolladores modificaron, pero cambiamos las cosas de forma ligeramente diferente.
+Entonces, ¿cuál es la siguiente parte de nuestra historia?
+
+Así que en la siguiente parte de nuestra historia sabemos que Ícaro y Dédalo - hay una limitación en sus alas, y es que la cera de las alas se derrite cuando - cuando Ícaro o Dédalo se acercan demasiado al sol.
+Y al igual que nuestra evaluación tiene algunas limitaciones, correcto, nuestras limitaciones son que estamos confiando en errores históricos y estamos asumiendo que esos errores son importantes - estamos asumiendo que cuando se produce un error de compilación los desarrolladores se apresuran como estos bomberos para apagar el fuego.
+Pero lo que sucede cuando echamos un vistazo más de cerca a algunos de estos datos históricos de compilación es que hay un par de razones por las que es imperfecto.
+
+En primer lugar, hay fallos ignorados activamente, y lo que observamos es que alrededor del 12% de las construcciones que pasan tienen al menos un trabajo que falla activamente ignorado y no es sólo uno o dos trabajos, a menudo es hasta el 87% de lo que ha estado fallando.
+También descubrimos que hay fallos ignorados pasivamente, por lo que dos tercios de las compilaciones que fallan son en realidad antiguas y se puede ver aquí que hay una variedad de características de proyectos diferentes: algunos están arreglando las compilaciones en un día, otros tardan una semana, otros tardan meses o incluso años.
+
+Así que sabemos por el mito de Dédalo e Ícaro que Ícaro termina en el mar, correcto, y puede que salgas de esta charla sintiendo que algo está horriblemente mal, y no quiero dejarte con ese mensaje, correcto, así que creo que esta visión de una construcción autosostenible no está muerta.
+Vale, hay dos mensajes que deberías llevarte.
+Uno es, si eres malvado - el malvado Shane podría decir la conclusión número uno y el ángel Shane podría decir la conclusión número dos.
+Así que la conclusión número uno es que nuestra evaluación es correcta y sus datos están rotos, de acuerdo, si eso es lo que sientes bien tenemos una solución propuesta.
+Deberíamos mirar cuánto ruido hay en los datos de construcción y y hacer un seguimiento de los mismos.
+Y la conclusión número dos es que nuestra evaluación es incorrecta, en cuyo caso espero que ustedes por ahí nos ayuden a arreglarlo.
+
+Así que necesitamos que los desarrolladores y otros usuarios nos ayuden a evaluar nuestras herramientas y espero que nos tiendan una mano.
+Gracias.
