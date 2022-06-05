@@ -1,0 +1,321 @@
+0:00:05.120,0:00:08.800
+So to start I just want to bring up an important thing that we all should
+
+0:00:09.680,0:00:15.520
+should know and I don't think everyone knows.
+A few years ago, well, 2010, so pre-pandemic,
+
+0:00:15.520,0:00:21.680
+pre-remote work, some research - researchers found that it can take up to a minimum of three
+
+0:00:21.680,0:00:26.240
+years to become fluent in a project.
+And so that's a long time, but, like,
+
+0:00:26.240,0:00:33.840
+the bigger problem is that the - on the turnover rate and employees switching companies has been
+
+0:00:33.840,0:00:39.520
+about less than two years - most companies are below two years, between one and two,
+
+0:00:39.520,0:00:44.640
+and again pre-pandemic pre this - great resignation period of time we are in.
+
+0:00:45.200,0:00:50.320
+And so this is a problem because that means people are moving around companies and having
+
+0:00:50.320,0:00:55.200
+to learn new projects constantly and are never really onboarding fully or being up to speed.
+
+0:00:56.720,0:00:59.920
+So today I'm going to talk about remote onboarding of software developers.
+
+0:00:59.920,0:01:05.760
+I'm Paige and I want to define onboarding first.
+So onboarding is the period of time when
+
+0:01:05.760,0:01:09.760
+programmers become familiar with their new project, their source code,
+
+0:01:09.760,0:01:16.640
+and their team that they're working with.
+So I want to talk about a little bit of - about
+
+0:01:16.640,0:01:21.520
+a story that happened to me during COVID and I think a lot of you can relate to this.
+
+0:01:21.520,0:01:24.800
+I've also onboarded at other companies - I've worked at many different companies
+
+0:01:24.800,0:01:33.200
+and onboarded - but when COVID hit in March 2020 I was hired the November before to work at Microsoft
+
+0:01:34.080,0:01:36.160
+as a visiting researcher.
+So I was really excited,
+
+0:01:36.160,0:01:42.000
+I was getting to move to seattle, like, from the east coast to the west coast and get to
+
+0:01:42.000,0:01:47.200
+explore Seattle and work with awesome people.
+So I'm, like, ready to start my job come May,
+
+0:01:48.080,0:01:52.960
+so like very pumped, it's marked on my calendar but then COVID hit and so I found
+
+0:01:52.960,0:02:00.880
+myself sitting at home onboarding from my couch.
+At times I literally had a table for a desk, a
+
+0:02:01.920,0:02:07.600
+flimsy table at that time and I had to work from home for the entire period of working there.
+
+0:02:07.600,0:02:16.080
+And so unlike my expectations from November to March I now was sitting at home onboarding.
+
+0:02:17.280,0:02:25.360
+And so it's important to note that job satisfaction is includes - equals productivity.
+
+0:02:25.360,0:02:27.920
+So if you're more satisfied with your job you're more productive.
+
+0:02:27.920,0:02:32.720
+And so onboarding remotely it's more difficult to become satisfied with their job because people
+
+0:02:32.720,0:02:37.440
+are on different time zones, they're working with people they don't know.
+
+0:02:38.080,0:02:44.960
+And so when I went to Microsoft I decided that I would study the onboarding during the pandemic
+
+0:02:44.960,0:02:50.960
+and how the developers onboarded remotely.
+Well I also went through the onboarding process.
+
+0:02:52.640,0:02:58.080
+So it turns out there's no standard practice of onboarding remotely at Microsoft.
+
+0:02:58.080,0:03:02.960
+It's mainly, or it was mainly in person work, and so there was no
+
+0:03:02.960,0:03:06.160
+standard remote onboarding practice.
+And, like, different teams were doing
+
+0:03:06.160,0:03:13.520
+different things, trying new things, etc.
+And so I first identified some areas of
+
+0:03:13.520,0:03:15.760
+need with onboarding.
+I talked to HR,
+
+0:03:15.760,0:03:18.080
+I connected with employees,
+I had a lot of different
+
+0:03:18.640,0:03:24.080
+calls trying to figure out what everyone was doing with onboarding their teammates et cetera.
+
+0:03:25.040,0:03:30.880
+And I then developed a survey trying to study the remote onboarding experience of Microsoft
+
+0:03:30.880,0:03:37.200
+software developers that onboarded between the beginning of the pandemic through July 2020,
+
+0:03:37.920,0:03:42.880
+and asked a bunch of questions about the challenges and what teams are doing
+
+0:03:42.880,0:03:47.440
+and interactions with the teams and connectedness - social connectedness.
+
+0:03:48.640,0:03:52.880
+I'm not going to go to - into detail on these because I want to talk about what
+
+0:03:52.880,0:03:57.360
+we take away from this, this work, but we did send over a thousand emails out.
+
+0:03:57.360,0:04:03.760
+We had 267 responses collected and all of these were employees at Microsoft in
+
+0:04:03.760,0:04:11.520
+North America just due to the different timelines of COVID happening and - all of the people who
+
+0:04:11.520,0:04:17.360
+were surveyed were people who were onboarding from home and or had onboarded from home at the time.
+
+0:04:19.520,0:04:25.600
+But from all of this, there's some papers about it, but the most important thing really is just
+
+0:04:26.160,0:04:33.840
+the simple rules for remote onboarding - and the rules for remote onboarding - remote
+
+0:04:33.840,0:04:38.960
+onboarding are so important because you do want to have that job satisfaction early on
+
+0:04:38.960,0:04:43.360
+so that the team member is productive, so they're not jumping ship to company to company,
+
+0:04:43.360,0:04:47.520
+because we're seeing that every day.
+My Twitter is full of people going back and
+
+0:04:47.520,0:04:54.880
+forth to different companies right now, and so we have seven simple remote onboarding rules that we
+
+0:04:54.880,0:04:59.840
+know empirically work, and so these are the seven.
+I'm going to talk about them more in detail in a
+
+0:04:59.840,0:05:04.480
+second but I do want to note that onboarding is the entire team's responsibility: it's not the
+
+0:05:04.480,0:05:09.600
+manager's responsibility and it's definitely not the new hires responsibility, it's everyone's.
+
+0:05:09.600,0:05:16.240
+So these rules go for everyone on the team.
+So what you should do, the first thing is,
+
+0:05:16.240,0:05:20.320
+your camera should be on during all meetings: it should be the default culture.
+
+0:05:21.120,0:05:23.600
+Managers should encourage this by having their cameras on.
+
+0:05:23.600,0:05:26.960
+Of course there can be some rules, like, you know, if you're eating or something's going
+
+0:05:26.960,0:05:31.760
+on you don't have to have it on, but having cameras on helps people match a face to a name
+
+0:05:31.760,0:05:37.840
+to a person talking, and build social connectedness between team members.
+
+0:05:40.240,0:05:44.080
+Also you should promote proactive communication, and this comes from
+
+0:05:44.080,0:05:50.800
+the manager but also from the entire team.
+New hires can feel anxious when they start and
+
+0:05:50.800,0:05:55.840
+they might not know the right way to communicate with the team and how they normally go about that,
+
+0:05:55.840,0:06:00.880
+so promoting that is imperative early on.
+And some of the other things you can do
+
+0:06:00.880,0:06:04.400
+with that are schedule one-on-one meetings with all team members.
+
+0:06:04.400,0:06:10.480
+And this should be the manager scheduling the meetings with each teammate with the new hire,
+
+0:06:10.480,0:06:14.400
+so everyone should have a one-on-one with the new hire, not just the manager,
+
+0:06:14.400,0:06:18.800
+ideally in, like, the first week.
+Additionally we found that a lot
+
+0:06:18.800,0:06:23.440
+of people didn't understand where they fit in at the company, so explaining the organization chart
+
+0:06:24.000,0:06:30.400
+is imperative so that someone knows who to go to - to ask different questions or get advice,
+
+0:06:31.360,0:06:34.160
+or, you know, dig into some code with them.
+
+0:06:34.160,0:06:39.280
+So explaining that early on is very helpful.
+Having an actual diagram to give them even better.
+
+0:06:42.560,0:06:45.920
+Another thing you should do on day one - day one - you should
+
+0:06:45.920,0:06:50.560
+come in with an onboarding buddy for your new hire and a technical mentor - two different people.
+
+0:06:50.560,0:06:54.880
+The onboarding buddy should be from some other team maybe, not even in the same org,
+
+0:06:54.880,0:06:59.360
+but in the company technical management - should be someone on their team.
+
+0:06:59.360,0:07:03.600
+And the difference is, the onboarding buddy helps them with, like, the general things like HR,
+
+0:07:04.560,0:07:09.520
+meeting new people, networking, and the technical manager or mentor is
+
+0:07:09.520,0:07:12.800
+someone who can actually go into the code with them and help them
+
+0:07:12.800,0:07:18.480
+on their tasks and explain how their workflow works for that team etc.
+
+0:07:19.440,0:07:25.040
+Another thing is to assign multiple onboardings or be able to support multiple onboarding speeds.
+
+0:07:25.040,0:07:30.960
+So if you take someone from college who had just graduated versus someone who is leaving a big tech
+
+0:07:30.960,0:07:36.000
+company to another one, they are going to need different speeds for onboarding, because someone
+
+0:07:36.000,0:07:41.840
+could have been working in the company - in big tech and big companies for 20 years or more - they
+
+0:07:41.840,0:07:47.680
+know a lot of the things that they already need to know and can easily pick up onboarding, versus a
+
+0:07:47.680,0:07:53.120
+new graduate from a university with a bachelor's who has never worked in industry, they're going
+
+0:07:53.120,0:07:58.160
+to need a little bit more help in onboarding.
+And then finally a assigning a simple first
+
+0:07:58.160,0:08:05.200
+task so that the new hire can quickly learn the workflow, can make a pull request very quickly
+
+0:08:05.200,0:08:11.440
+and feel productive and also be able to sit into meetings with the team and understand what is
+
+0:08:11.440,0:08:15.520
+going on, because they've already been in that code, their hands are dirty in the code, they,
+
+0:08:16.880,0:08:20.160
+you know, hopefully have been able to complete this task in the first week or two.
+
+0:08:22.880,0:08:26.800
+So my question for you all is, do you have a checklist containing these rules?
+
+0:08:28.400,0:08:34.640
+Because I really hope you do, and if not I hope your recruiters are excellent because
+
+0:08:34.640,0:08:38.800
+you're going to need them in the near future, and you'll be relying on them to help you recruit
+
+0:08:38.800,0:08:42.880
+during this great resignation.
+So I hope you have this checklist,
+
+0:08:43.920,0:08:47.520
+and if you have any questions or want to chat more
+
+0:08:47.520,0:08:51.600
+about onboarding or remote onboarding feel free to contact me at my email.
+
+0:08:51.600,0:08:57.200
+And this is just some of the work that's been published based on this - we have some work on
+
+0:08:57.200,0:09:02.560
+remote onboarding and allyship and remote onboarding of new hires, it's all public,
+
+0:09:03.120,0:09:07.840
+and I'd love to talk more about it.
+Thank you very much.
