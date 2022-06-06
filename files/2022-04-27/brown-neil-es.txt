@@ -17,7 +17,7 @@ Así que si aprendes en cambio que "hola" y "adiós" son valores de cadena, 0 12
 Y de esta forma puedes empezar a manejar los conceptos abstractos.
 Así que la abstracción se aprende al relacionar estos ejemplos.
 esa es la mejor manera de que tu cerebro aprenda.
-Así que nuestra primera lección es que debes estudiar ejemplos ariados si quieres aprender conceptos abstractos.
+Así que nuestra primera lección es que debes estudiar ejemplos variados si quieres aprender conceptos abstractos.
 Y también, si tienes que explicar esto a otra persona, quizás a un desarrollador junior, deberías usar ejemplos cuando lo expliques, porque eso va a ser más fácil para aprender la idea de la abstracción.
 Hablemos ahora de cómo se organiza la memoria.
 La memoria se divide en dos sistemas diferentes.
