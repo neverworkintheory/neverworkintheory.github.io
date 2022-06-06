@@ -4,7 +4,7 @@ Esta persona de la izquierda es probablemente la más famosa de las dos -se llam
 Pero hoy me voy a centrar en un personaje diferente de la historia, y es su padre Dédalo.
 Es un personaje con el que conecto más personalmente porque es un maestro artesano, y ya sabes, digamos, un maestro artesano.
 Pero sus inventos suelen tener consecuencias no deseadas y yo también tengo inventos que tienen consecuencias no deseadas.
-Y hoy voy a hablar de algunas de las consecuencias no deseadas del trabajo que hemos estado haciendo en los sistemas de construcción de software de minería, y vamos a utilizar esta metáfora de Ícaro y Dédalo para ayudar a hacer esa explicación clara.
+Y hoy voy a hablar de algunas de las consecuencias no deseadas del trabajo que hemos estado haciendo minando los sistemas de compilación de software, y vamos a utilizar esta metáfora de Ícaro y Dédalo para ayudar a hacer esa explicación clara.
 
 Así que empecemos con nuestra historia.
 Así que Ícaro y Dédalo están atrapados en la isla de Creta porque Dédalo ha creado algunos inventos que han enfadado a los dioses.
@@ -26,7 +26,7 @@ Y cuando vuelvo a mi código me doy cuenta de que tengo Log4j incluido en mi esp
 Bueno, resulta que log4j cambió ligeramente la forma en que el paquete es referenciado en la central de Maven.
 Así que después de hacer este cambio ejecuto mi construcción de nuevo y empiezo a recuperar la confianza en mí mismo.
 Pero entonces el investigador que hay en mí empieza a despertarse - empiezo a preguntarme, ¿por qué tuve que arreglar eso a mano?
-¿Por qué mi herramienta de construcción no puede arreglar esto automáticamente?
+¿Por qué mi herramienta de compilación no puede arreglar esto automáticamente?
 
 Y pensando en términos más amplios, ¿por qué los sistemas de construcción no pueden sostenerse a sí mismos y qué podría significar eso?
 Así que si tuviéramos un sistema de construcción auto-sostenible necesitaríamos diferentes piezas de tecnología para que eso suceda.
@@ -42,20 +42,20 @@ Así que tenemos nuestra solución, y Dédalo e Ícaro, su solución es construi
 Y lo que encontramos cuando probamos nuestra solución es que la solución de Build Medic es de hecho bastante buena.
 
 Así que lo probamos en 84 pares de fallos no vistos, y fuimos a buscar en el historial de los proyectos de código abierto para encontrar ejemplos de commits en los que la construcción se rompió y luego se arregló inmediatamente, y lo que encontramos es que un poco más de la mitad de las soluciones podrían ser arregladas inmediatamente por nuestra herramienta Build Medic, y tres cuartas partes de esos éxitos se hacen en una sola iteración.
-Así que no necesitamos un retorno para intentar múltiples correcciones.
+Así que no necesitamos intentar múltiples correcciones.
 
 Incluso más que eso, no sólo estamos haciendo pasar la compilación, sino que a menudo estamos haciendo exactamente lo que hicieron los propios desarrolladores.
 Así que en esas soluciones correctas, un tercio de las veces hacemos exactamente lo que hicieron los desarrolladores, y otro 44% de las veces modificamos los mismos elementos que los desarrolladores modificaron, pero cambiamos las cosas de forma ligeramente diferente.
 Entonces, ¿cuál es la siguiente parte de nuestra historia?
 
 Así que en la siguiente parte de nuestra historia sabemos que Ícaro y Dédalo - hay una limitación en sus alas, y es que la cera de las alas se derrite cuando - cuando Ícaro o Dédalo se acercan demasiado al sol.
-Y al igual que nuestra evaluación tiene algunas limitaciones, correcto, nuestras limitaciones son que estamos confiando en errores históricos y estamos asumiendo que esos errores son importantes - estamos asumiendo que cuando se produce un error de compilación los desarrolladores se apresuran como estos bomberos para apagar el fuego.
+Y al igual que nuestra evaluación tiene algunas limitaciones, verdad, nuestras limitaciones son que estamos confiando en errores históricos y estamos asumiendo que esos errores son importantes - estamos asumiendo que cuando se produce un error de compilación los desarrolladores se apresuran como estos bomberos para apagar el fuego.
 Pero lo que sucede cuando echamos un vistazo más de cerca a algunos de estos datos históricos de compilación es que hay un par de razones por las que es imperfecto.
 
-En primer lugar, hay fallos ignorados activamente, y lo que observamos es que alrededor del 12% de las construcciones que pasan tienen al menos un trabajo que falla activamente ignorado y no es sólo uno o dos trabajos, a menudo es hasta el 87% de lo que ha estado fallando.
+En primer lugar, hay fallos ignorados activamente, y lo que observamos es que alrededor del 12% de las compilaciones que pasan tienen al menos un trabajo que falla activamente ignorado y no es sólo uno o dos trabajos, a menudo es hasta el 87% de lo que ha estado fallando.
 También descubrimos que hay fallos ignorados pasivamente, por lo que dos tercios de las compilaciones que fallan son en realidad antiguas y se puede ver aquí que hay una variedad de características de proyectos diferentes: algunos están arreglando las compilaciones en un día, otros tardan una semana, otros tardan meses o incluso años.
 
-Así que sabemos por el mito de Dédalo e Ícaro que Ícaro termina en el mar, correcto, y puede que salgas de esta charla sintiendo que algo está horriblemente mal, y no quiero dejarte con ese mensaje, correcto, así que creo que esta visión de una construcción autosostenible no está muerta.
+Así que sabemos por el mito de Dédalo e Ícaro que Ícaro termina en el mar, correcto, y puede que salgas de esta charla sintiendo que algo está horriblemente mal, y no quiero dejarte con ese mensaje, bien, así que creo que esta visión de una construcción autosostenible no está muerta.
 Vale, hay dos mensajes que deberías llevarte.
 Uno es, si eres malvado - el malvado Shane podría decir la conclusión número uno y el ángel Shane podría decir la conclusión número dos.
 Así que la conclusión número uno es que nuestra evaluación es correcta y sus datos están rotos, de acuerdo, si eso es lo que sientes bien tenemos una solución propuesta.
