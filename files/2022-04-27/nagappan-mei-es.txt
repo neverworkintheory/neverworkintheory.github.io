@@ -1,0 +1,60 @@
+Gracias por tenerme aquí.
+Este es un trabajo que hice con mi estudiante de maestría Reza y mi postdoc Gema que ahora es un profesor en UBC Okanagan.
+Queríamos ver el sesgo cuando la gente está evaluando la contribución de código en el software de código abierto, y si hay sesgo, lo que la población de las personas que contribuyen en el software de código abierto es.
+Creo que voy a empezar.
+El software de código abierto a menudo piensa en sí mismo como una meritocracia y a menudo lo es, pero - y piensan que, ya sabes, la calidad de la contribución es la clave aquí y no importa quién está contribuyendo, de dónde están contribuyendo, y eso es - eso es popular -.
+Nuestras investigaciones anteriores han demostrado que hay algunas asalvedades sobre esto.
+Han encontrado que el género tiene un papel que desempeñar cuando se evalúan las contribuciones de código abierto.
+La investigación también ha demostrado que las contribuciones de diferentes países pueden tener diferentes probabilidades de ser aceptadas.
+
+Pero una cosa que no vimos es la raza, y - y hay algunas pruebas de que los desarrolladores entienden la raza y el origen étnico de otros miembros en sus proyectos de código abierto, incluso si no se han reunido con ellos, incluso si es completamente remoto, ¿verdad?
+Hoy en día la empresa o la investigación industrial - el desarrollo industrial ocurre a distancia, pero el software de código abierto ha estado ocurriendo de forma remota desde hace décadas, ¿verdad?, e incluso en ese caso son conscientes de la etnia de los miembros de su equipo.
+Y en esa encuesta también encontraron que alrededor del 30 por ciento de ellos han enfrentado algún tipo de experiencia negativa debido a su identidad.
+
+Y lo que queríamos ver era si la etnia de la persona que hace la contribución tiene algún impacto en la aceptación de su contribución.
+Y lo que pensamos es que al conocer esa etnia -al ver un nombre- algo en mi cerebro se activa y algún prejuicio que podría tener hacia esa raza o etnia podría entrar en acción, y podría ver esa contribución como algo no muy bueno, ¿no?
+En este caso, simplemente mirando mi nombre y diciendo, oh esto parece un contribuyente del sur de Asia, por lo que este va a ser un buen, o algo así, y luego aceptar la contribución.
+Así que lo que queríamos era recoger pruebas cuantitativas de si esto se produce o no.
+Así que tomamos alrededor de 46.000 proyectos de GitHub, que tenían al menos 10 estrellas, y eran no triviales en algún sentido - no eran proyectos de estudiantes.
+
+Obtuvimos alrededor de 2,5 millones de pull requests de los mismos, y tomamos los nombres de las personas que hicieron estas contribuciones, y utilizando una herramienta llamada NamePrism extrajimos la raza y el origen étnico del nombre.
+Así que obtuvimos la raza y el origen étnico de unos 493.000 desarrolladores.
+Así que uno podría - quiero decir, la herramienta da un tipo de salida y dice que este nombre suena hispano con una probabilidad del 97 por ciento o este por ciento este nombre suena blanco con una probabilidad del 51 por ciento.
+Ahora se puede pensar, oye, va a haber problemas aquí, y va a haber problemas aquí, ya sabes un muy - Juan Pérez podría ser un nombre y no se sabe qué raza o etnia que podría ser.
+Podrías pensar que en realidad es una persona blanca aunque no lo sea.
+
+Pero descubrimos que siempre que la herramienta se equivoca sobre la raza o la etnia de alguien, los humanos también cometen el mismo error sobre la raza o la etnia de esa persona.
+Así que la herramienta es tan buena como las personas a la hora de determinar la raza o la etnia de una persona a partir de su nombre.
+Así que tomamos eso y el primer resultado sorprendente que obtuvimos fue que menos del 10 por ciento de las contribuciones que pudimos identificar provenían de un desarrollador no blanco, y eso incluye a los desarrolladores asiáticos, hispanos y negros juntos, ¿verdad?
+Encontramos un desarrollador de Alaska o un nativo americano en todo el conjunto de datos, que es en sí mismo - podríamos haber detenido el estudio aquí y decir, sabes qué, esto es - esto es bastante malo, ya que menos del 10 por ciento de las contribuciones provienen de desarrolladores no blancos, o percibidos como no blancos.
+Queríamos ver, teniendo en cuenta esta población más pequeña, si hay un impacto aún mayor en si sus contribuciones están siendo aceptadas o no.
+
+Y lo que hicimos es que recopilamos toda una serie de métricas además de su raza o etnia, como, ya sabes, su experiencia, cuánto tiempo han estado trabajando en ese proyecto en particular, cuántos archivos han cambiado, un montón de otras variables.
+Y construimos este modelo de regresión para averiguar si su contribución sería aceptada o no.
+¿Podemos predecir si la contribución de alguien será aceptada - aceptada o no, y encontrar la probabilidad de que su contribución sea aceptada?
+Lo que encontramos es que hay una relación entre la raza o etnia de alguien a partir de sus nombres y si sus contribuciones van a ser aceptadas.
+Así que lo que encontramos es que los desarrolladores hispanos tienen alrededor de un seis por ciento menos de probabilidades de obtener su pull request aceptada.
+Tenga en cuenta que esto es el control de su experiencia y varias otras métricas, así
+Y los desarrolladores de API que son asiáticos o de las islas del Pacífico tienen un 10% menos de probabilidades de que se acepte su pull request.
+Así que hay una - hay una fuerte evidencia de que las personas no blancas tienen sus contribuciones aceptadas en una tasa más baja.
+También queríamos ver si esto era cierto cuando se tiene en cuenta la etnia de la persona que integra el código.
+Y encontramos que los desarrolladores no blancos son en realidad más propensos a obtener sus contribuciones aceptadas cuando el integrador es también de la misma etnia, a la derecha, y para dar algunos resultados, cuando se trata de hispanos - un desarrollador hispano va a tener un 75 por ciento más de probabilidades de obtener su pull request aceptado cuando el integrador también se estima como hispano.
+
+Y cuando se trata de asiáticos e isleños del Pacífico es un 36% más alto.
+Esto es en comparación con cuando el integrador es un promotor blanco.
+Y el resultado más marcado es cuando se trata de un desarrollador negro y aquí no es el nueve por ciento es en realidad nueve veces más probabilidades por lo que es el 900 por ciento, bien, así que esto es una cantidad muy, muy considerable de - un resultado considerable aquí, bien.
+Así que sabemos a partir de estos resultados que una - que la representación es desproporcionada a la población de personas y que inconsciente - el sesgo inconsciente puede existir.
+Ahora bien, no puede ser que alguien está diciendo, oh, esta persona es asiática y por lo tanto voy a rechazar su solicitud de extracción, o esta persona es hispana voy a rechazar su pull request.
+Pero puede haber otros factores que alguien podría asociar con ellos, bien, el Inglés no es bueno en su comentario o no entiendo, ya sabes, los nombres de las variables que han utilizado, o, ya sabes, o que esta persona no es tan experimentada como yo pensaba que era, que no es algo que vimos en la primera diapositiva - vimos que - es - sólo la contribución importa y no tanto los otros factores, ¿verdad?.
+
+
+¿Y ahora qué?
+¿Hacemos, por ejemplo, una evaluación ciega del autor en GitHub,
+simplemente eliminar el nombre para que no se sepa quién es?
+No lo creo - Creo que podemos utilizar los nombres de los autores y apoyar activamente a un grupo diverso de contribuyentes - contribuyendo en sus proyectos.
+Así que saber que esta persona es de un lugar o etnia diferente,
+saber que puede ser un nuevo usuario,
+ayúdales a que esa contribución sea aceptada,
+no lo ignores, no lo rechaces, incluso si lo vas a rechazar, por favor, dales una retroalimentación constructiva para que la próxima vez puedan conseguir que su pull request sea aceptada.
+Así que con eso voy a compartir algunos de los documentos que tenemos.
+Esto - estos documentos tienen más detalles sobre los proyectos que hicimos y todos los ajustes experimentales específicos, todos nuestros datos y las secuencias de comandos están disponibles si quieres tomar esto y ejecutar esto en tus propios repositorios o compararlo puedes. Los scripts del modelo también están disponibles en los documentos y si quieres contactar con Gema y mis direcciones de correo electrónico están ahí y mi cuenta de Twitter también está aquí, así que gracias.
