@@ -1,0 +1,65 @@
+Así que una vez más es un placer estar aquí Greg, gracias por invitarme, es una gran oportunidad estar en este evento.
+Así que hoy voy a hablar de un informe que he llevado a cabo con algunos colegas de la Universidad Federal de Amazona, y es sobre el control y la negociación y las estimaciones de software.
+Así que es bien - es bien conocido en la ingeniería de software, las partes interesadas toman el esfuerzo necesario para ejecutar una tarea, así un proyecto, o para predecir el valor que se puede entregar al cliente, para que puedan tener el resultado que están esperando.
+
+Los estimadores, traen esta perspectiva sobre los factores que afectarían de alguna manera las estimaciones, buscando mejorar la precisión cuando están discutiendo cuánto esfuerzo y cuánto tiempo necesitarán poner - necesitarán tomar para desarrollar lo que - lo que necesitan para la próxima versión.
+Es importante entender aquí que este proceso de estimación, ocurre en entornos sociales, y como todo lo que hago, implica algo relacionado con el comportamiento y los aspectos sociales dentro del proceso de ingeniería de software.
+Entonces, ¿por qué es social?
+
+Porque no sólo implica a las personas que trabajan en ello, sino también el contexto en el que están, en el que están inmersos.
+Así que la literatura sobre las estimaciones es extensa.
+Así que podemos encontrar artículos desde los años 70 hasta artículos de la semana pasada que hablan de las estimaciones de software.
+Y lo que encontramos al buscar en la literatura es que hay una amplia gama de factores que afectan a las estimaciones, de hecho desde la estimación temprana, por lo que al principio del proyecto tienen la estimación temprana - las estimaciones que vienen, y esto se tiene en cuenta cuando se están definiendo las estimaciones para la próxima versión o el próximo sprint, lo que ustedes - ustedes llaman, hasta cosas relacionadas con los cambios en los requisitos, el cambio en el alcance, la flexibilidad del proyecto, etc.
+
+Y esto pasa por un montón de - un montón de cosas que suceden en el proyecto, como cuando estás estimando, estás ejecutando, realizando esta - estimación, este proceso de estimación.
+Y en este punto, tenemos un montón de cosas sociales sucediendo, cosas contextuales sucediendo, que incluye, por ejemplo, la presión de la alta dirección, de los clientes, de la PO.
+
+Incluye el propio equipo, cómo es la relación entre la experiencia del equipo, la antigüedad de donde provienen estas personas, así que hay múltiples tipos de factores que afectan a la forma en que la gente estima el software.
+Para entender mejor este fenómeno de una manera más reciente, llevamos a cabo algunos estudios de observación y un par de entrevistas - algunas entrevistas con personas de diferentes países, diferentes empresas, diferentes equipos.
+Nos tomamos como tres meses observando a cuatro equipos diferentes durante sus sesiones de estimación, y nuestro objetivo era entender cómo se utilizaban las estimaciones de software para establecer compromisos comunes en relación con los valores del negocio.
+Así que sólo queríamos entender como, lo que es - lo que está atando estas dos cosas - las estimaciones y lo que se está entregando, lo que ha sido - lo que el equipo se ha comprometido a hacer.
+
+Y al final descubrimos que la negociación de presupuestos y el acolchado eran cosas clave que ocurrían en el proceso.
+Así que fue bastante impresionante la cantidad de cosas que pudimos relacionar con la negociación y el relleno durante este proceso.
+Así que lo que vemos es que - lo que vio es que los equipos que analizamos y las personas que hablamos después, porque hablamos con muchas más personas de tres empresas diferentes más tarde, es que todos ellos siguen algún tipo de prácticas ágiles, como la planificación de las estimaciones basadas en el póquer, donde la gente viene con las estimaciones del equipo, por lo que discuten la tarea y cada uno de los miembros viene con una estimación, y discuten para - para llegar a un consenso.
+
+De acuerdo, y cada uno de los equipos tiene un tipo diferente de estrategia de resolución cuando tienes, por ejemplo, desacuerdos en términos de estimaciones.
+Pero al final del día, lo que entendimos es que el PO y el líder del equipo sólo quieren saber los argumentos que tienen que tener para discutir con la - la siguiente capa, con la alta dirección o el cliente.
+Así que buscan entender cómo pueden crear un compromiso aportando los argumentos que los desarrolladores están aportando.
+Y, curiosamente, algunas personas ni siquiera discuten.
+
+Algunas personas, dependiendo de lo que las otras personas que están estimando y lo que el PO tiene que decir, ni siquiera están en desacuerdo, sólo van a decir, bien, puedo cambiar mis mis estimaciones si esto es mejor.
+Así que a veces lo que vimos es que hay una especie de relación de poder.
+Es como si, de acuerdo, tenemos que entregar esto para la próxima semana, así que si no... si no cambiamos las estimaciones no seremos capaces de hacerlo.
+
+O a veces hay una persona muy veterana que dice: "Vale, esto es muy difícil y sé que es difícil", y otras personas, más junior, simplemente aceptan, sin argumentar en contra o a favor de algo.
+Así que la forma en que los estimadores defienden es muy importante porque esto es lo que está dando la - la munición para las siguientes capas, y vimos que, al final del proceso de estimación, hablamos con los PO y otras capas para entender, digamos, lo que estaba pasando.
+Y vimos que había una especie de desajuste, y cada capa tiene sus propios objetivos con lo que estaba pasando en el proceso de estimación.
+Así que una cosa que notamos, que jugaron según las reglas cuando estábamos hablando de la gestión de proyectos.
+Como sabes que la gestión del riesgo es algo importante, y para gestionar mejor el riesgo, es común apostar un poco.
+
+Así que tenemos un búfer de contingencia, a veces, como se puede ver aquí en los ejemplos, cuando no podemos definir la característica muy bien, cuando hay algunos aspectos ocultos que no sabemos, es una API diferente que tenemos que consumir, de acuerdo, no sabemos qué tipo de problemas que tenemos que enfrentar en esta versión.
+Así que esto es un común - y esto es completamente comprensible.
+Sin embargo, lo que nos llamó la atención es que estamos haciendo más que eso.
+
+Para cada - todo lo que hablamos y observamos, pudimos ver que estamos haciendo diferentes - diferentes cosas que resultan en el control y muy a menudo - y lo que estamos haciendo es realmente ocultar los detalles del siguiente nivel.
+Así que, por ejemplo, encontramos un par de casos en los que la gente simplemente dijo que, de acuerdo, no pudimos terminar lo que prometimos en la versión anterior en el sprint anterior, así que vamos a añadir un poco más de tiempo aquí a esta tarea para que seamos capaces de terminar algo más.
+
+O tenemos que ajustar lo que sea - lo que sea en la interfaz de usuario de la función anterior que entregaron, así que vamos a añadir algo aquí para que podamos hacer eso.
+Ahora tenemos que configurar un nuevo servidor, así que por qué no añadir algo de tiempo a esto - esto y estas tareas.
+Y también cosas relacionadas con la deuda técnica, por ejemplo, o la mejora de la calidad general, la mantenibilidad del proceso.
+Así que era bastante habitual escuchar como, de acuerdo, vamos a hacer esto porque tenemos que refactorizar un par de artefactos, así que vamos a añadir un poco de tiempo aquí añadir un poco de esfuerzo allí.
+
+Lo que - lo que está detrás de eso, como, todo el mundo está ocultando desde el siguiente nivel sólo porque tienen que entregar algo que no es un tipo directo de beneficio o valor de negocio que se puede mostrar fácilmente al cliente.
+Así que lo que he aprendido aquí es que el control se utiliza de forma correcta en muchos casos, pero a veces se utiliza como una forma social de ocultar cosas.
+Así que la gente miente informalmente para hacer que las cosas encajen porque saben que hay otras cosas que pueden hacer y todo el mundo que está escuchando aquí, que está viendo esta charla debe ser como, de acuerdo, hacemos que es común, sí es común, pero es una especie de mal olor si pensamos en el proceso - del proceso de software.
+
+Y la precisión se ve perjudicada cuando se piensa en ello, porque no sabemos exactamente lo que estamos haciendo, y no sabemos exactamente el rendimiento de nuestro equipo.
+¿Qué tenemos que hacer?
+Tenemos que vender todo como valor de negocio, y esto tiene que venir desde abajo.
+Así que tenemos que exponer las razones como estimadores, como desarrolladores, decir, como lo que estamos haciendo, estamos refactorizando, estamos mejorando la mantenibilidad, lo que estamos haciendo?
+Y en el siguiente nivel, como el nivel de PO, el nivel de líder de equipo, tenemos que describir estas razones que los desarrolladores nos dieron como de alguna manera el valor del cliente.
+Así que en la próxima versión esto será algo mejor, mejoraremos nuestro rendimiento, el - el producto tendrá un mejor rendimiento.
+
+Y para el siguiente el último nivel de gestión, cuando estamos en contacto con el cliente, tenemos que educarlos - que hay algunas cosas que no son exactamente nuevas características, que no son exactamente beneficios directos para el producto como ellos ven, pero es algo relacionado con el proceso que lo hará mejor a partir de ese momento.
+Espero que os haya gustado y muchas gracias de nuevo a Greg y Mike por invitarme.
