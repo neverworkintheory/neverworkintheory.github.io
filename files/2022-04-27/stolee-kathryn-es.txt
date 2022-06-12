@@ -29,7 +29,7 @@ A veces se puede responder con comentarios, a veces no.
 
 En qué parte de la base de código se encuentra algo, esto es una pregunta de localización, tengo este mensaje de error y quiero saber de dónde viene.
 Eso es alrededor del 16 por ciento de las búsquedas.
-Y luego las preguntas de por qué: por qué está sucediendo algo fue otro 16 por ciento.
+Y luego las preguntas por qué: por qué está sucediendo algo fue otro 16 por ciento.
 Así que quiero centrarme aquí al principio en estas preguntas de cómo, porque es la mayoría de las preguntas.
 Así que cuando tienes una pregunta de cómo, normalmente tienes algo de información y quieres algo de información.
 Con nuestras herramientas actuales, a pesar de Copilot, normalmente tenemos una consulta textual o formulamos nuestra pregunta como una consulta textual, pero lo que realmente podríamos querer es un código de ejemplo.
@@ -77,7 +77,7 @@ Entonces con el código de ejemplo, queriendo saber preguntas Cómo, esto se pue
 Si quieres hacer Qué, si quieres hacer preguntas de respuesta a Qué, una cuarta parte de las veces son preguntas de comprensión de código, esto no es una búsqueda.
 Y, de hecho, si le preguntas a tu motor de búsqueda qué hace tu código, le estás pidiendo que te diga algo sobre el código -que te cuente una historia sobre el código que podría no ser cierta- y, por lo tanto, estás asumiendo cierto riesgo y te estás permitiendo un posible malentendido, por lo que probablemente no sea la mejor pregunta para hacer con un buscador.
 
-Las preguntas Dónde en el IDE, hablando de la navegación de código, esto es naturalmente apoyado, pero las preguntas de por qué: cuando estamos hablando de por qué el código se comporta de esta manera, estamos hablando de la causalidad, estamos hablando de análisis de impacto, y tal vez la prueba causal de Brittany Johnson podría ser un mejor enfoque para ese tipo de preguntas.
+Las preguntas Dónde en el IDE, hablando de la navegación de código, esto es naturalmente apoyado, pero las preguntas por qué: cuando estamos hablando de por qué el código se comporta de esta manera, estamos hablando de la causalidad, estamos hablando de análisis de impacto, y tal vez la prueba causal de Brittany Johnson podría ser un mejor enfoque para ese tipo de preguntas.
 Así que debido a estas situaciones de búsqueda de código, donde la búsqueda de código no es necesariamente la herramienta adecuada para la pregunta, ocurre en el 40 por ciento de las preguntas basadas en los datos que estudiamos, es realmente importante saber por qué estás buscando.
 
 La búsqueda de código se realiza 12 veces al día, lleva mucho tiempo, lleva muchas consultas, así que si estás preguntando cómo o dónde, la búsqueda de código es tu amiga.
