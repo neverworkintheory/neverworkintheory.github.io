@@ -1,0 +1,90 @@
+Así que hoy, soy Katie, y vamos a estar hablando de mi investigación que es en la búsqueda, pero como somos desarrolladores estamos enfocando esto en no cualquier búsqueda, pero la búsqueda de código.
+Así que la búsqueda de código es un término que estoy usando para describir el proceso de utilizar la búsqueda en un IDE, en un navegador, en otra interfaz a medida, para localizar algún artefacto relacionado con el código.
+Y hay muchas maneras - muchas interfaces que existen para la búsqueda de código.
+La más común es el Google genérico, y todos lo hemos hecho.
+
+Queremos un código de ejemplo, queremos saber cómo utilizar una API, queremos más información sobre algo relacionado con el código, como un mensaje de error, así que vamos directamente a Google, lanzamos una consulta textual y, con suerte, encontramos el resultado entre los primeros resultados, las primeras consultas.
+Hay otros tipos de interfaces que están aumentando su sofisticación.
+Un ejemplo es el ecosistema de GitHub, tenemos una consulta textual aquí con varias formas - puedes filtrar lo que quieres, si quieres un commit, si quieres un tema, si quieres una discusión, y también formas de filtrar basadas en APIs de lenguaje, cosas así.
+También fuera de GitHub en el espacio de búsqueda de código alejándose de la consulta textual, está entrando en la consulta de comentario a código, o esto es Copilot de GitHub, o un poco de búsqueda de código a código aquí.
+
+Y luego también hay un montón de interfaces que están dentro de IDEs dentro de las empresas específicas esta es una que es similar a, por ejemplo, la búsqueda de Google - herramienta de búsqueda de código que existía hace varios años.
+Así que la búsqueda de código resulta que sucede todo el tiempo, e hicimos un estudio de los desarrolladores en Google, y resulta que ocurría 12 veces por desarrollador por día.
+Y esto puede no parecer mucho, excepto que cuando estoy hablando de 12 veces al día, me refiero a las sesiones de búsqueda, y cada - no a la consulta individual.
+Así que una sesión de búsqueda implica un promedio de tres a cuatro consultas, un montón de clics, algo de navegación, muchos minutos, es más que una sola búsqueda, y esto significa que está tomando mucho tiempo.
+
+Y luego, cuando examinamos las herramientas específicas de Google, es decir, la búsqueda genérica de información en Google, y segmentamos los registros de búsqueda en función de la búsqueda sin código y la búsqueda con código, resultó que las consultas de búsqueda con código requerían más tiempo, más clics y más reformulaciones, lo que significa más esfuerzo.
+Y cuando analizamos las cosas que requieren más esfuerzo, significa que hay una oportunidad para mejorar el soporte.
+En nuestra investigación sobre la búsqueda de códigos, descubrimos que hay cuatro necesidades distintas que surgieron como las más comunes.
+Así que quiero hablar de ellas.
+
+Una de ellas -la razón más común por la que los desarrolladores buscaban- eran las preguntas Cómo.
+Cómo puedo utilizar esta API, puedo tener algún código de ejemplo que me muestre cómo hacer algo.
+Se trata de un tercio de las búsquedas.
+Y obtuvimos esta información encuestando a los desarrolladores mientras utilizaban las herramientas de búsqueda de código.
+El segundo tipo de pregunta más común era una pregunta Qué: ¿qué hace este código?
+Una especie de pregunta de comprensión.
+Y esto es aproximadamente una cuarta parte de las veces.
+A veces se puede responder con comentarios, a veces no.
+
+En qué parte de la base de código se encuentra algo, esto es una pregunta de localización, tengo este mensaje de error y quiero saber de dónde viene.
+Eso es alrededor del 16 por ciento de las búsquedas.
+Y luego las preguntas de por qué: por qué está sucediendo algo fue otro 16 por ciento.
+Así que quiero centrarme aquí al principio en estas preguntas de cómo, porque es la mayoría de las preguntas.
+Así que cuando tienes una pregunta de cómo, normalmente tienes algo de información y quieres algo de información.
+Con nuestras herramientas actuales, a pesar de Copilot, normalmente tenemos una consulta textual o formulamos nuestra pregunta como una consulta textual, pero lo que realmente podríamos querer es un código de ejemplo.
+
+Otro - y esto es bien - esto es bien soportado hoy en día.
+Otro método de búsqueda de código de ejemplo podría ser tener una función como tu consulta y quieres una función como tu resultado.
+Esto sería una búsqueda de código a código.
+Esto puede ser útil en la educación si estás buscando implementaciones alternativas del mismo algoritmo.
+También puede ser útil para aprender un nuevo lenguaje de programación o hacer una traducción.
+Aquí tenemos un ejemplo de traducción: tenemos una consulta en un lenguaje y un resultado en otro.
+
+Así que para facilitar la búsqueda de código a código, se requiere - especialmente a través de los lenguajes - un análisis independiente del lenguaje.
+Así que lo ideal es que exista una caja misteriosa -me encantaría que existiera esta caja misteriosa- en la que la entrada es una consulta, y lo que sale es un código que se comporta igual, en el mismo lenguaje, tal vez en otro lenguaje, y en realidad lo más ideal es que no sea sólo un resultado, sino que sean muchos resultados.
+Así que esto es lo que la búsqueda de código a código podría ser en un entorno ideal, donde tenemos el análisis multilingüe y somos capaces de decir, este comportamiento es el mismo que este otro comportamiento.
+Pero para hacer esto precisamente debemos tener garantías - debemos garantizar que para cualquier dos bloques de código se comportan igual y por lo tanto terminan.
+Y así nos encontramos con el Problema de la Parada.
+
+Así que, de hecho, si queremos que la búsqueda de código a código sea precisa, nunca funcionará en teoría, pero hay algunas pruebas de que puede funcionar en la práctica.
+Así que esto es lo que hemos estado haciendo.
+En la búsqueda de código a código, tenemos un montón de código fuente a nuestra disposición.
+Hemos tenido un montón de conversaciones hoy en la minería GitHub, que es donde nos dirigimos.
+
+Y digamos que tenemos un montón de fragmentos, y estos fragmentos todos existen en GitHub, y tienen algunas - tienen algunas similitudes - por lo que hay - por lo que hay tres lenguajes que están representados aquí, algunos de ellos tienen similar - tienen el mismo comportamiento, otros tienen comportamientos similares, y bajo algunas entradas se comportan igual, bajo otras entradas se comportan de manera diferente, y luego tenemos otros, como, dependiendo de cómo se divide, el comportamiento también puede ser el mismo.
+Y luego también tenemos la similitud a través de la estructura.
+Así que con todos estos niveles de similitud, somos capaces de trazar paralelismos entre las diferentes áreas del código fuente y explotar estas similitudes para crear una búsqueda efectiva.
+
+Lo que hicimos fue tomar el código fuente e indexarlo utilizando tres dimensiones diferentes para crear un análisis de similitud multidimensional.
+Usamos tokens o contexto porque la gente puede escribir código con cualquier nombre de variable que quieran, pero resulta que tienden a hacerlo de una manera bastante natural, y podemos usar esa información.
+Tomamos el comportamiento utilizando fuzzing, y tomamos la estructura utilizando un lenguaje agnóstico AST - abstracto - árbol de sintaxis abstracto.
+Y combinamos todo eso en un análisis multidimensional utilizando la ordenación no dominante, así que dada una consulta obtuvimos un montón de código similar, y fue bueno.
+Los resultados eran de muy alta precisión, funcionaba exactamente como queríamos excepto en una dimensión:
+era terriblemente lento.
+
+Y... y entonces tuvimos que volver a la mesa de dibujo, porque era tan lento que no era práctico.
+Bueno, resulta que como la gente escribe el código de forma natural podemos aprovechar los patrones.
+Así que cuando reemplazamos nuestro lento algoritmo con algo realmente súper rápido para el aprendizaje automático y las incorporaciones,
+tenemos que eliminar la pieza de comportamiento a comportamiento, pero resulta que no importa, porque lo que tenemos aquí es un enfoque rápido para la búsqueda de código a código sin una pérdida de precisión, y eso es debido a los patrones que existen en el código fuente.
+Así que la búsqueda de código a código está llegando y nos ayuda a responder a una de estas necesidades - nos ayuda a responder a las preguntas sobre el cómo.
+Pero hay otras preguntas que los desarrolladores se hacen, y utilizan la búsqueda para explicarlas: preguntas Qué, preguntas Dónde y preguntas Por qué.
+Y la búsqueda de código no es buena para todas estas necesidades.
+
+La búsqueda de códigos es un martillo y no todas estas preguntas son un clavo.
+Así que vamos a ver uno por uno.
+Entonces con el código de ejemplo, queriendo saber preguntas Cómo, esto se puede hacer en la práctica con la búsqueda que ya has hecho por ti mismo con GitHub, con Google, te he mostrado cómo se puede hacer con la búsqueda de código a código - un nuevo tipo de modalidad de búsqueda.
+Si quieres hacer Qué, si quieres hacer preguntas de respuesta a Qué, una cuarta parte de las veces son preguntas de comprensión de código, esto no es una búsqueda.
+Y, de hecho, si le preguntas a tu motor de búsqueda qué hace tu código, le estás pidiendo que te diga algo sobre el código -que te cuente una historia sobre el código que podría no ser cierta- y, por lo tanto, estás asumiendo cierto riesgo y te estás permitiendo un posible malentendido, por lo que probablemente no sea la mejor pregunta para hacer con un buscador.
+
+Las preguntas Dónde en el IDE, hablando de la navegación de código, esto es naturalmente apoyado, pero las preguntas de por qué: cuando estamos hablando de por qué el código se comporta de esta manera, estamos hablando de la causalidad, estamos hablando de análisis de impacto, y tal vez la prueba causal de Brittany Johnson podría ser un mejor enfoque para ese tipo de preguntas.
+Así que debido a estas situaciones de búsqueda de código, donde la búsqueda de código no es necesariamente la herramienta adecuada para la pregunta, ocurre en el 40 por ciento de las preguntas basadas en los datos que estudiamos, es realmente importante saber por qué estás buscando.
+
+La búsqueda de código se realiza 12 veces al día, lleva mucho tiempo, lleva muchas consultas, así que si estás preguntando cómo o dónde, la búsqueda de código es tu amiga.
+Si quieres hacer una pregunta de qué -qué hace el código- probablemente no te convenga empezar por el buscador.
+Es mejor que llames por teléfono a un amigo y le pidas que te ayude a programar en pareja.
+Las preguntas de por qué es mejor replantearlas empezando por el dónde, que se responde más naturalmente con el motor de búsqueda.
+Así que la búsqueda de código no va a desaparecer.
+Hay muchas - puede haber muchas maneras en el futuro para responder a estas preguntas qué y por qué con más investigación, así que manténgase atentos a esto.
+Gracias por escuchar.
+
