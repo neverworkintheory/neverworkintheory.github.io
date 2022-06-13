@@ -1,0 +1,59 @@
+Voy a hablar de un estudio sobre las percepciones y los impactos de las críticas destructivas en la revisión de código de software, y espero poder convencerte de que seas más cuidadoso a la hora de no hacer críticas no constructiva en tus revisiones de código.
+Creo que todos saben lo que es la revisión de código de software: es cuando los desarrolladores revisan las contribuciones de código fuente de otras personas.
+Y este tweet ilustra un punto de vista potencialmente problemático sobre la revisión de código, dice que la revisión de código puede ser honesta o amable, y solo puedes elegir una, lo que indica que no se puede tener una revisión de código que sea honesta y amable.
+Y el objetivo de mi estudio era comprobar si, ya sabes, lo que realmente son las percepciones de la revisión de código no constructiva, que es una revisión de código que es tanto desconsiderada como no específica.
+
+Y quería ver, ya sabes, si había diferentes percepciones en torno a estos sinceros - crítica no constructiva - los que no están considerando las partes agradables de revisión de código.
+Y para eso utilizamos un cuestionario en línea - utilizamos preguntas de estilo viñeta.
+Así que básicamente desarrollamos estos escenarios hipotéticos y pedimos a los desarrolladores - nuestros participantes - que miraran un fragmento de código, imaginando que acababan de enviar este fragmento de código para su revisión, y que recibían algunos comentarios.
+Y así, algunos de los desarrolladores vieron la versión de retroalimentación constructiva y otros participantes vieron la versión no constructiva de la retroalimentación, y todos los participantes vieron dos escenarios diferentes, así que vieron uno con comentarios constructivos y otro con comentarios no constructivos.
+
+Y les hicimos una serie de preguntas sobre cómo reaccionarían a la retroalimentación - cómo la perciben - y voy a mostrarles algunas diferencias entre las percepciones constructivas y las negativas.
+Y aquí ves estos dos gráficos.
+El primero, en la parte superior, muestra las percepciones de las reacciones de la crítica constructiva y el inferior muestra la crítica negativa.
+Así que las tres primeras preguntas que hicimos en torno a la retroalimentación que recibieron en estos escenarios hipotéticos fue, ¿esta retroalimentación ayudaría a mejorar su código, es válida, y es apropiada?
+Y se ve en la parte superior - la crítica constructiva - el gráfico es principalmente verde.
+
+So green indicates the participants are agreeing with these statements.
+So at the bottom you see a lot more gold, which is indicating that our participants are disagreeing with these statements.
+So participants see destructive criticism particularly as less appropriate.
+They did agree that it was mostly valid criticism but that it wouldn't help them improve their code.
+They were disagreeing that it would improve their code even though the feedback is valid because it's presented in an inappropriate manner.
+We also asked them how motivated they would be to continue working.
+And so here you see at the top we've got again constructive and at the bottom destructive.
+
+And we see that overwhelmingly our participants are motivated to continue working on the task with the developer and on the project after receiving constructive criticism.
+On the other hand for destructive criticism we see that participants report being much less motivated to continue working, particularly for the developer, but even on the task and on the project as a whole.
+So if you have this culture of destructive criticism, what we learned from these two slides that I just showed, you know, people are less likely to improve their code, even if they're getting good critiques of the code, if it's not presented in the right way.
+They're less likely to actually improve the code and they're also less likely to stay and continue working on the project.
+So we've shown that destructive criticism doesn't have the best impact on your team.
+We also looked at demographic differences so we asked participants some demographic questions and we saw some differences.
+So particularly women, they perceived destructive criticism - less motivated to continue working particularly with the developer, but also on the project after receiving destructive criticism.
+I think this finding is particularly important because we know that women are less than 25 percent in big tech companies, and so this could have implications on retention of women if you have a culture of destructive criticism on your team.
+Another interesting difference that we saw is, less experienced developers were less likely to call out this bad behavior.
+So we asked the participants to also, you know, write a response - if you were to to write something in response to the feedback that you were given, what would you write?
+We saw that our more experienced developers were more likely to say, you know, this feedback is not appropriate, it should be written in a more considerate manner, whereas our less experienced developers were actually more likely to apologize for writing the bad code and to agree with the feedback even when it was destructive.
+So again this can have important implications for retention on your teams.
+Okay, we also asked about the frequency of destructive criticism.
+We asked participants how often they gave destructive criticism and also how often they received it.
+And you can see that our participants reported to receive much more destructive criticism than they reported to give.
+So 22 percent of participants said that they received some inconsiderate feedback in the last year, whereas only one of our participants or one percent said that they gave destructive criticism - inconsiderate destructive criticism.
+Now this can be for a variety of reasons, but one of them could be that people just don't know when they're giving destructive criticism.
+So we need more awareness mechanisms to know how our feedback is being received by the recipient.
+And finally we asked about general opinions of destructive criticism, and this one's interesting because we see some differences here.
+So the first two questions ask, destructive criticism is harmful and destructive criticism will cause a negative reaction for this recipient, and these are lines A and B on the chart.
+And you see that overwhelmingly the participants agree with these statements: destructive criticism is not great, right, when you ask it generically, but then when you ask a slightly more nuanced question - so question C says, when receiving code review comments I don't mind getting inconsiderate feedback as long as the feedback helps to improve the code quality.
+And here we see a much bigger difference.
+So there's a good number of people that are disagreeing with this statement but still a significant number of participants that agree with this statement: they're happy to be abused and get inconsiderate feedback as long as it's going to improve the code base.
+We saw quite similar comments in our open-ended responses.
+So we asked some open-ended questions about opinions as well, and we saw some comments to these questions along the lines of, like, I don't mind getting inconsiderate feedback, I just prefer direct wording and easier to parse feedback, whereas other participants said things like, it always needs to be constructive, you really need to have considerate feedback every time you give feedback.
+And so what are the big implications that I'd like you to take out of this is how you treat people matters.
+So if you have a culture of destructive criticism people are less likely to improve the code and they're less likely to stay on your project, so your code quality will suffer.
+I also think you need to have pathways for feedback.
+So we saw that much less people reported giving inconsiderate feedback, so we might need ways to help people understand when they are giving inconsiderate feedback so that they can improve in how they give their feedback.
+I also think that there's not a one-size-fits-all approach to code review.
+So you saw that there were differences in opinions in how destructive criticism can be accepted, and some people prefer direct feedback whereas others would rather have feedback that helps them learn.
+So considering the needs of the person that you're giving the feedback to is also really important.
+And finally you have to be careful with what is made public: some of the comments - the open-ended comments - also pointed that destructive criticism is particularly harmful when it's being made in a public venue, so considering the type of feedback that you're giving and whether it really is appropriate to be transparently shared across the entire team or if it needs to be discussed in private with the person that you're giving the feedback to.
+And thanks again, I'm very happy to discuss this study, my contact information is here.
+Thanks to all of my co-authors on this paper - Sanuri, Peter, Isabelle, Lola, and Emerson - and thanks to Google for funding this work.
