@@ -47,11 +47,11 @@ Así que, de nuevo, la gran pregunta que me hago es cómo podemos... cómo se ve
 
 Y cuando hago eso, también quiero destacar lo que ha sido bastante exitoso.
 Así que quiero llamar tu atención a esta diapositiva aquí, que son del equipo de seguridad de la comunidad de GitHub.
-Así que para aquellos de ustedes en la audiencia pueden estar familiarizados con la gente - esto era un equipo anterior, como, en GitHub, otros miembros del equipo incluyen Lexi Galantino, Danielle Leong, Caroline Ada Ehmke, febrero Keaney, un montón de otros.
+Así que para aquellos de ustedes en la audiencia pueden estar familiarizados con la gente - esto era un equipo anterior, como, en GitHub, otros miembros del equipo incluyen Lexi Galantino, Danielle Leong, Caroline Ada Ehmke, febrero Keaney, un montón de otras personas.
 Quiero decir que se han encargado de construir herramientas para averiguar cómo mantener a la gente segura en estas plataformas.
-Así que uno de ellos es estos límites de interacción temporal donde se puede advertir o dar a la gente o animar a la gente a tomar un ritmo cuando pueden ser cuestiones de spam, así como pensar en diferentes mecanismos de información que pueden informar a los administradores o los mantenedores de la organización, frente a lo que el contenido puede ser más apropiado para compartir al soporte de GitHub en general.
+Así que uno de ellos es estos límites de interacción temporal donde se puede advertir o dar a la gente o alentar a la gente a tomar un ritmo cuando pueden ser cuestiones de spam, así como pensar en diferentes mecanismos de información que pueden informar a los administradores o los mantenedores de la organización, frente a lo que el contenido puede ser más apropiado para compartir al soporte de GitHub en general.
 
-Así que pensar en ver estas características exitosas que se han construido en la infraestructura o in situ en la plataforma, pero pensar en lo que podemos hacer ampliamente a un nivel de diferente escala dentro de cada organización es lo que quiero que carguemos para mirar.
+Así que pensar en ver estas características exitosas que se han construido en la infraestructura o in situ en la plataforma, pero pensar en lo que podemos hacer ampliamente a un nivel de diferente escala dentro de cada organización es lo que quiero que miremos.
 Así que la investigación del Código de Conducta - ha habido una importante investigación del Código de Conducta en los entornos de los desarrolladores, así como en los entornos de investigación académica de investigación que buscan cómo podemos animar a la gente a participar.
 Así que en la diapositiva aquí tengo el Código de Conducta de Python, así como el Pacto de Colaboradores (Contributor Covenant) que ha sido realmente exitoso en su adopción - la gente ha estado adoptando algunos de estos deseos y estas directrices de cómo la gente debe participar.
 
