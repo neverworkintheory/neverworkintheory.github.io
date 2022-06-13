@@ -1,0 +1,87 @@
+Hola a todos, muchas gracias por invitarme hoy, es un placer hablar con todos ustedes.
+Soy Denae Ford Robinson, una investigadora en la intersección de la comunidad en línea, la ingeniería de software, y la interacción humano-ordenador, y creo que mi charla de hoy toma un giro un poco diferente de lo que otros han estado presentando.
+Voy a recopilar algunos hallazgos de investigaciones anteriores de otros investigadores y académicos increíbles que estudian la seguridad.
+
+Así que quiero aprovechar este momento para hablar de cómo podemos mantener la seguridad de los desarrolladores, basándome en su trabajo, y en esta charla compartiré los resultados de sus investigaciones, con la esperanza de que podamos ayudar a diseñar intervenciones que puedan apoyar mejor a la comunidad de desarrolladores y entender realmente cómo podemos mantener a las personas y a la comunidad seguras a mayor escala.
+La seguridad es algo que muchos de nosotros damos por sentado.
+
+Desgraciadamente, no es hasta que nos encontramos en el otro lado de una situación incómoda o inquietante cuando empezamos a pensar en por qué es importante tener procesos o herramientas para mantenernos protegidos.
+Así que este artículo que he compartido en la pantalla es del Atlantic y realmente destacó eso.
+En una serie de estudios sobre la participación en línea encontraron realmente - al profundizar en cómo este pequeño número de personas a menudo puede silenciar la opinión dominante o la opinión silenciosa en los foros en línea.
+
+Así que pensando en algunos de los trabajos que ya se han presentado hoy de Kelly Blinco y otros sobre cómo esa crítica - cómo ese acoso puede ser realmente desalentador para las personas, a veces es más fácil hacerlo en ciertos entornos.
+Asimismo, un estudio del Pew Research Center realizado en 2017 encontró que cuatro de cada 10 estadounidenses han experimentado alguna forma de acoso en línea.
+Así que este tipo de acoso que estoy describiendo incluye insultos, doxeo, acoso, o realmente sólo spam, bien, ser irrespetuoso, no ser tan amable.
+
+Este tipo de acoso en línea puede perjudicar especialmente a las comunidades de código abierto, a las personas que mantienen y a las personas marginadas en concreto, ya que les dificulta la participación productiva en estos espacios en línea, especialmente cuando trabajan públicamente.
+Así que cuando trasladamos esta actividad al código abierto tenemos que pensar realmente en cómo esto puede afectar a las personas que construyen sistemas a la vista del público.
+Algunos de los que he investigado anteriormente se centraban en el software de código abierto para el bien social.
+
+Así que los proyectos que tengo en la pantalla son una especie de - realmente centrado en cómo la gente está construyendo herramientas - los desarrolladores están construyendo herramientas para apoyar un bien social amplio, para ayudar a una población específica.
+El de la izquierda es Little Window, centrado en el apoyo a las víctimas de la violencia de pareja, y el de la derecha es Refugio de baños, que ayuda a las personas no binarias, de género diferente e intersexuales a encontrar baños seguros.
+
+Los desarrolladores y colaboradores que trabajan en este tipo de proyectos pueden tener puntos de vista bastante polarizados, y las personas que observan y utilizan este proyecto pueden ver que ha habido perspectivas políticas bastante polarizadas y, por lo tanto, están en riesgo.
+Y al igual que muchos otros foros sociotécnicos, estas conversaciones en torno a estos proyectos pueden acalorarse y, a veces, pasar al siguiente nivel e incluso salirse de contexto para convertirse en algo bastante dañino.
+Así que aquí es donde la seguridad psicológica realmente importa.
+Así que los desarrolladores que se sientan inseguros pueden impactar directamente en la calidad de su trabajo y, por tanto, en la calidad de los sistemas y herramientas que construyen.
+
+Así, una encuesta del Global Wellness Institute informó de que el 62% de los trabajadores de EE.UU. - constató que cuando los trabajadores se sentían inmensamente mal repercutían significativamente en su rendimiento laboral y en cómo veían su crecimiento en general.
+La seguridad, en última instancia, proporciona un nivel de confianza que hace que te sientas más cómodo comprometiéndote.
+Así que me gusta pensar en la seguridad en relación con salir a la calle cuando hace mucho frío.
+Puedes salir a la calle en camiseta o pantalones cortos, pero con una chaqueta o una manta te sientes un poco más protegido de los elementos mientras estás ahí fuera.
+Así que puedes seguir contribuyendo al código abierto y participar en la comunidad de desarrolladores en general, pero con precauciones y mecanismos de seguridad, ya sabes, puedes sentirte un poco más protegido en ese viaje.
+
+Así que la pregunta que realmente me hago - quiero publicar la comunidad en nuestra comunidad de desarrolladores más amplia - es cómo recrear la seguridad y la garantía en las comunidades de programación en línea.
+Porque si no te sientes seguro y apoyado, entonces, honestamente, ¿por qué te comprometerías?
+En resumen, cuando se trata de productos, la seguridad es lo mínimo, y es importante que los desarrolladores se sientan psicológicamente seguros.
+Si no se sienten seguros, no pueden ser eficaces, y la calidad del trabajo que necesitan producir.
+
+Lo que también tengo en la pantalla en la parte inferior es un informe de - informe de Stuart Geiger de la encuesta GitHub 2017 donde se habla mucho de algunos de los enfoques que la gente ha utilizado para eludir o resolver algunos de sus acosos y experiencias poco agradables que han - que han experimentado en la plataforma.
+Espero que a lo largo de esta charla estaré dando un par de pistas de la investigación empírica anterior que puede inspirar un poco de trabajo en curso que ustedes como la comunidad de desarrolladores pueden empezar a construir también.
+Así que cuando tratamos de responder a esta pregunta para la comunidad de desarrolladores es extremadamente importante que aprovechemos los estudios previos que se han estado investigando este tema en otros espacios.
+Hay varios estudios que analizan cómo es la acción colectiva para que los miembros de la comunidad se sientan seguros y protegidos.
+
+Así que me baso en un montón de estudios de los sistemas de trabajo cooperativo con soporte informático y foros como Amy Zhang, que ha trabajado en esta herramienta llamada Squad Box, que está realmente orientada a tratar de apoyar a las personas que se han enfrentado al acoso y permitirles tomar colectivamente el grupo de compañeros para contribuir - para apoyar a los demás.
+Otra herramienta que destaco aquí en la diapositiva es iHeartMob, que también es una comunidad dedicada a ofrecer apoyo a las víctimas de acoso, así que de nuevo reuniendo colectivamente a tus compañeros, a tus colegas también, para llegar a tu propio sistema para sentirte - las víctimas se sienten apoyadas - ayudar a la gente a sentirse apoyada, y así animarles a participar.
+Así que, de nuevo, la gran pregunta que me hago es cómo podemos... cómo se ven los desarrolladores que intentan participar en las comunidades.
+
+Y cuando hago eso, también quiero destacar lo que ha sido bastante exitoso.
+Así que quiero llamar tu atención a esta diapositiva aquí, que son del equipo de seguridad de la comunidad de GitHub.
+Así que para aquellos de ustedes en la audiencia pueden estar familiarizados con la gente - esto era un equipo anterior, como, en GitHub, otros miembros del equipo incluyen Lexi Galantino, Danielle Leong, Caroline Ada Ehmke, febrero Keaney, un montón de otras personas.
+Quiero decir que se han encargado de construir herramientas para averiguar cómo mantener a la gente segura en estas plataformas.
+Así que uno de ellos es estos límites de interacción temporal donde se puede advertir o dar a la gente o alentar a la gente a tomar un ritmo cuando pueden ser cuestiones de spam, así como pensar en diferentes mecanismos de información que pueden informar a los administradores o los mantenedores de la organización, frente a lo que el contenido puede ser más apropiado para compartir al soporte de GitHub en general.
+
+Así que pensar en ver estas características exitosas que se han construido en la infraestructura o in situ en la plataforma, pero pensar en lo que podemos hacer ampliamente a un nivel de diferente escala dentro de cada organización es lo que quiero que miremos.
+Así que la investigación del Código de Conducta - ha habido una importante investigación del Código de Conducta en los entornos de los desarrolladores, así como en los entornos de investigación académica de investigación que buscan cómo podemos animar a la gente a participar.
+Así que en la diapositiva aquí tengo el Código de Conducta de Python, así como el Pacto de Colaboradores (Contributor Covenant) que ha sido realmente exitoso en su adopción - la gente ha estado adoptando algunos de estos deseos y estas directrices de cómo la gente debe participar.
+
+Pero tampoco ha habido tanto crecimiento en estas áreas como hubiéramos esperado ver, por lo que Renee Li y Hana Frluckaj y Laura Dabbish habían hecho un trabajo realmente interesante analizando cómo los desarrolladores y los repos han estado hablando sobre el Código de Conducta, y después de eliminar parte del ruido y los commits y conversaciones de la máquina que estaban sucediendo, de su muestra de 3800 conversaciones sobre el Código de Conducta vieron que el 32 por ciento de ellos - las conversaciones se centraron en la creación, y - que en realidad es bastante bajo todavía, porque el Pacto de Colaboradores ha existido desde hace algunos años.
+
+Pero también hay una gran cantidad de conversaciones en torno a cómo moderar estas comunidades, cómo mantener a la gente segura, y de nuevo participar en la acción colectiva, lo que significa mantener a la gente comprometida, segura, y en última instancia, las comunidades sostenibles.
+Así que lo que quiero pedirles a todos ustedes es que piensen en cómo se ve esto para la próxima generación de desarrolladores, o la próxima generación de seguridad comunitaria.
+Una forma de hacerlo o de pensar en cómo podemos apoyar y hacer crecer a la gente es destacando a aquellos que han estado realizando actividades y comportamientos exitosos y deseables.
+
+De nuevo, estamos separando esto del actor -del individuo frente a su comportamiento- porque queremos ser capaces de promoverlo.
+Otra perspectiva es la de pensar en cómo nos comprometemos con los enfoques humanos y automatizados para sancionar y desalentar los comportamientos no deseados.
+Dicho esto, quiero pedirnos que pensemos en lo que podemos hacer hoy para ayudar a la seguridad de la comunidad con un rápido cara a cara.
+En primer lugar, quiero decir que si podemos, si la gente se preocupa, si las comunidades se preocupan por ello, hay que medirlo.
+
+En segundo lugar, si es importante, debería haber una persona responsable de ello, así que no basta con decir que estamos tratando de crear y fomentar una gran comunidad, queremos tener procesos humanos y automatizados, que tengamos una persona a la que señalar y que pueda ayudarnos a mitigar algunas de esas situaciones de zona gris.
+Del mismo modo, si hay responsabilidad para este proceso, debe haber una razón - hay un enfoque para realizar un seguimiento.
+Así que queremos ser capaces de tener y ser transparentes sobre el proceso de cómo las personas pueden ser sancionadas y cómo estamos promoviendo y fomentando el comportamiento positivo en las plataformas.
+
+Existe la comunidad CHAOSS, con la que muchos de ustedes pueden estar familiarizados, donde se buscan desarrolladores, investigadores también, interesados en probar estas intervenciones a una escala más amplia.
+Así que quiero pedirles que busquen diferentes maneras de, por ejemplo, la seguridad psicológica más allá de la reducción del acoso o la reducción de la reincidencia, sino que piensen en cómo podemos desafiar la seguridad, la seguridad de los colaboradores, pensar en cómo podemos hacer crecer a los estudiantes también en este espacio.
+Así que, para terminar, quiero dejarles con algunas cosas que pueden hacer hoy.
+En primer lugar, pueden asegurarse de que su proyecto tiene un Código de Conducta.
+Si no lo tiene, ya es una señal - es una señal para muchos participantes.
+Puedes preguntar a los responsables del proyecto por qué no tienen uno, y mejor aún, pregúntales cómo se hace cumplir.
+En segundo lugar, si tu proyecto no tiene un Código de Conducta, propon que adopten uno.
+
+El Contributor Covenant es un buen punto de partida: varios proyectos lo han adoptado y le han dado sentido por sí mismos.
+Así que, de nuevo, hay que pensar en que se pueden adoptar sistemas y normas más amplios a la medida de su proyecto, y gran parte de la investigación que he mencionado antes trata del proceso evaluativo e iterativo de cómo crecieron estos Pactos de Colaboradores.
+En tercer lugar, quiero animar a la gente a ser transparente sobre los procedimientos de seguridad establecidos.
+Cuando no lo son, a menudo ponen a los colaboradores en riesgo, y si quieren hacer crecer su comunidad y también aumentar la diversidad de los participantes, tienen que estar seguros de que están preparados para ellos, así que tengan estos procedimientos establecidos y entonces la gente vendrá, porque de hecho puede ser más peligroso prometer a la gente una seguridad que honestamente no se les puede ofrecer.
+Y también quiero... también poner en una llamada aquí como un aviso de que estamos trabajando en algunos enfoques para pensar en cómo podemos apoyar la seguridad de la comunidad y el crecimiento de la sostenibilidad a escala, así que quería asegurarme de que todos ustedes estén atentos a eso también.
+Y con esto termino y les agradezco a todos su tiempo.
+
