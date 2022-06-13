@@ -9,7 +9,7 @@ Desgraciadamente, no es hasta que nos encontramos en el otro lado de una situaci
 Así que este artículo que he compartido en la pantalla es del Atlantic y realmente destacó eso.
 En una serie de estudios sobre la participación en línea encontraron realmente - al profundizar en cómo este pequeño número de personas a menudo puede silenciar la opinión dominante o la opinión silenciosa en los foros en línea.
 
-So thinking back to some of the work that's already been presented today from Kelly Blinco and others about how that Así que pensando en algunos de los trabajos que ya se han presentado hoy de Kelly Blinco y otros sobre cómo esa crítica - cómo ese acoso puede ser realmente desalentador para las personas, a veces es más fácil hacerlo en ciertos entornos.
+Así que pensando en algunos de los trabajos que ya se han presentado hoy de Kelly Blinco y otros sobre cómo esa crítica - cómo ese acoso puede ser realmente desalentador para las personas, a veces es más fácil hacerlo en ciertos entornos.
 Asimismo, un estudio del Pew Research Center realizado en 2017 encontró que cuatro de cada 10 estadounidenses han experimentado alguna forma de acoso en línea.
 Así que este tipo de acoso que estoy describiendo incluye insultos, doxeo, acoso, o realmente sólo spam, bien, ser irrespetuoso, no ser tan amable.
 
@@ -38,15 +38,15 @@ Si no se sienten seguros, no pueden ser eficaces, y la calidad del trabajo que n
 
 Lo que también tengo en la pantalla en la parte inferior es un informe de - informe de Stuart Geiger de la encuesta GitHub 2017 donde se habla mucho de algunos de los enfoques que la gente ha utilizado para eludir o resolver algunos de sus acosos y experiencias poco agradables que han - que han experimentado en la plataforma.
 Espero que a lo largo de esta charla estaré dando un par de pistas de la investigación empírica anterior que puede inspirar un poco de trabajo en curso que ustedes como la comunidad de desarrolladores pueden empezar a construir también.
-Así que cuando tratamos de responder a esta pregunta para la comunidad de desarrolladores es extremadamente importante que aprovechemos los estudios previos que han estado investigando este tema en otros entornos.
+Así que cuando tratamos de responder a esta pregunta para la comunidad de desarrolladores es extremadamente importante que aprovechemos los estudios previos que se han estado investigando este tema en otros espacios.
 Hay varios estudios que analizan cómo es la acción colectiva para que los miembros de la comunidad se sientan seguros y protegidos.
 
-Así que me baso en un montón de estudiosos de los sistemas de trabajo cooperativo con soporte informático y foros como Amy Zhang, que ha trabajado en esta herramienta llamada Squad Box, que está realmente orientada a tratar de apoyar a las personas que se han enfrentado al acoso y permitirles tomar colectivamente el grupo de compañeros para contribuir - para apoyar a los demás.
+Así que me baso en un montón de estudios de los sistemas de trabajo cooperativo con soporte informático y foros como Amy Zhang, que ha trabajado en esta herramienta llamada Squad Box, que está realmente orientada a tratar de apoyar a las personas que se han enfrentado al acoso y permitirles tomar colectivamente el grupo de compañeros para contribuir - para apoyar a los demás.
 Otra herramienta que destaco aquí en la diapositiva es iHeartMob, que también es una comunidad dedicada a ofrecer apoyo a las víctimas de acoso, así que de nuevo reuniendo colectivamente a tus compañeros, a tus colegas también, para llegar a tu propio sistema para sentirte - las víctimas se sienten apoyadas - ayudar a la gente a sentirse apoyada, y así animarles a participar.
 Así que, de nuevo, la gran pregunta que me hago es cómo podemos... cómo se ven los desarrolladores que intentan participar en las comunidades.
 
 Y cuando hago eso, también quiero destacar lo que ha sido bastante exitoso.
-Así que quiero llamar a las cosas en la diapositiva aquí que son del equipo de seguridad de la comunidad de GitHub.
+Así que quiero llamar tu atención a esta diapositiva aquí, que son del equipo de seguridad de la comunidad de GitHub.
 Así que para aquellos de ustedes en la audiencia pueden estar familiarizados con la gente - esto era un equipo anterior, como, en GitHub, otros miembros del equipo incluyen Lexi Galantino, Danielle Leong, Caroline Ada Ehmke, febrero Keaney, un montón de otros.
 Quiero decir que se han encargado de construir herramientas para averiguar cómo mantener a la gente segura en estas plataformas.
 Así que uno de ellos es estos límites de interacción temporal donde se puede advertir o dar a la gente o animar a la gente a tomar un ritmo cuando pueden ser cuestiones de spam, así como pensar en diferentes mecanismos de información que pueden informar a los administradores o los mantenedores de la organización, frente a lo que el contenido puede ser más apropiado para compartir al soporte de GitHub en general.
