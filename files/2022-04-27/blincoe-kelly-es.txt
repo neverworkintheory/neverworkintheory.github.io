@@ -30,7 +30,7 @@ Así que hemos demostrado que la crítica negativa no tiene el mejor impacto en 
 
 También observamos las diferencias demográficas, por lo que hicimos a los participantes algunas preguntas demográficas y vimos algunas diferencias.
 En particular, las mujeres perciben las críticas negativas, es decir, están menos motivadas para seguir trabajando, en particular con el desarrollador, pero también en el proyecto después de recibir críticas negativas.
-Creo que este hallazgo es particularmente importante porque sabemos que las mujeres son menos del 25 por ciento en las grandes empresas de tecnología, por lo que esto podría tener implicaciones en la retención de las mujeres si tienes una cultura de crítica no constructiva en tu equipo.
+Creo que este hallazgo es particularmente importante porque sabemos que las mujeres son menos del 25 por ciento en las grandes empresas de tecnología, por lo que esto podría tener implicancias en la retención de las mujeres si tienes una cultura de crítica no constructiva en tu equipo.
 Otra diferencia interesante que vimos es que los desarrolladores menos experimentados eran menos propensos a denunciar este mal comportamiento.
 
 Así que les pedimos a los participantes que también, ya sabes, escribieran una respuesta - si tuvieras que escribir algo en respuesta a la retroalimentación que te dieron, ¿qué escribirías?
