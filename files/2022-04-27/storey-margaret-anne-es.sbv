@@ -23,99 +23,79 @@ más atención a la mejora y la comprensión de la experiencia de los desarrolla
 hoy varias veces, y por qué hacerlo puede mejorar el espacio de la productividad en general.
 
 0:00:49.040,0:00:55.600
-But first let's talk about productivity.
-So if you want to turn a boring meeting with
+Pero primero hablemos de productividad.
+Si quieres convertir una reunión aburrida con
 
 0:00:55.600,0:00:59.600
-software developers and their managers 
-into an exciting one just bring up the
+desarrolladores de software y sus gerentes en una emocionante, sólo tienes que sacar a colación el
 
 0:00:59.600,0:01:04.160
-concept of developer productivity and 
-suggest how it should be measured.
+concepto de productividad de los desarrolladores y sugerir cómo debería medirse.
 
 0:01:04.160,0:01:07.200
-And you'll find that the people in 
-the room have very different views
+Y descubrirás que las personas presentes en la sala tienen puntos de vista muy diferentes
 
 0:01:07.200,0:01:12.320
-of what productivity means to them and how 
-productivity should be measured, if at all.
+sobre lo que significa la productividad para ellos y sobre cómo debería medirse la productividad, si es que se mide.
 
 0:01:12.320,0:01:18.640
-And we may also hear that - in those meetings that 
-software company leaders and managers care about
+Y también podemos escuchar que, en esas reuniones, los líderes y gerentes de las empresas de software se preocupan
 
 0:01:18.640,0:01:24.800
-productivity because they assume that if they have 
-higher developer productivity that will help them
+por la productividad porque suponen que si tienen una mayor productividad de los desarrolladores, eso les ayudará
 
 0:01:24.800,0:01:30.560
-deliver value to their customers more quickly.
-And developers care about productivity because
+a ofrecer valor a sus clientes más rápidamente.
+Y los desarrolladores se preocupan por la productividad porque
 
 0:01:30.560,0:01:34.560
-having impact and feeling their work 
-brings value will make them happier.
+tener impacto y sentir que su trabajo aporta valor les hará más felices.
 
 0:01:35.200,0:01:40.320
-But what does developer productivity 
-really mean to managers and developers?
+Pero, ¿qué significa realmente la productividad de los desarrolladores para los directivos y los desarrolladores?
 
 0:01:40.320,0:01:44.960
-Well it so happens that together with my 
-colleagues Brian and Tom from Microsoft we
+Pues resulta que, junto con mis colegas Brian y Tom de Microsoft,
 
 0:01:44.960,0:01:50.080
-asked managers and developers how they define 
-productivity through an open-ended survey.
+hemos preguntado a directivos y desarrolladores cómo definen la productividad mediante una encuesta abierta.
 
 0:01:51.200,0:01:56.240
-And we heard many varied definitions.
-In fact managers were more likely to
+Y escuchamos definiciones muy variadas.
+De hecho, los directivos son más propensos a
 
 0:01:56.240,0:02:02.000
-talk about productivity in terms of performance 
-outcomes but many of these managers also gave
+hablar de la productividad en términos de resultados de rendimiento, pero muchos de ellos también nos dieron
 
 0:02:02.000,0:02:07.520
-us rich definitions of productivity that were not 
-just about keeping their customers happy but also
+definiciones ricas de productividad que no se limitaban a mantener a sus clientes contentos, sino que también
 
 0:02:07.520,0:02:11.600
-included the well-being of their developers 
-and building a positive work culture.
+incluían el bienestar de sus desarrolladores y la construcción de una cultura de trabajo positiva.
 
 0:02:12.640,0:02:16.160
-From developers we also heard 
-very varied definitions,
+Los desarrolladores también nos dieron definiciones muy variadas,
 
 0:02:16.720,0:02:22.880
-but they - compared with their managers were more 
-likely to define productivity in terms of activity
+pero ellos -en comparación con sus directivos- eran más propensos a definir la productividad en términos de resultados
 
 0:02:22.880,0:02:27.760
-outputs and the time they can spend doing their 
-work without interruptions and in a state of flow.
+de la actividad y del tiempo que pueden pasar haciendo su trabajo sin interrupciones y en un estado de flujo.
 
 0:02:28.480,0:02:33.600
-But many developers also shared that 
-productivity was not just about activity and flow
+Sin embargo, muchos desarrolladores también compartieron que la productividad no se limitaba a la actividad y el flujo,
 
 0:02:33.600,0:02:39.120
-but was also about the impact of their work 
-- helping others and learning for the future.
+sino que también se refería al impacto de su trabajo: ayudar a los demás y aprender para el futuro.
 
 0:02:40.720,0:02:46.720
-So defining productivity is important but leaders 
-- and I would say even some developers - want to
+Así que definir la productividad es importante, pero los líderes -y yo diría que incluso algunos desarrolladores- quieren ser
 
 0:02:46.720,0:02:51.120
-be able to measure productivity so 
-that they can understand the impact
+capaces de medir la productividad para poder entender el impacto 
 
 0:02:51.120,0:02:54.640
-changes in tools, processes, and goals may have.
+que pueden tener los cambios en las herramientas, los procesos y los objetivos.
 
 0:02:54.640,0:02:58.160
 And we saw this of course especially 
