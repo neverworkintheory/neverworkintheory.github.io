@@ -98,164 +98,134 @@ capaces de medir la productividad para poder entender el impacto
 que pueden tener los cambios en las herramientas, los procesos y los objetivos.
 
 0:02:54.640,0:02:58.160
-And we saw this of course especially 
-during the past two years of work from
+Y esto lo vimos, por supuesto, especialmente durante los dos últimos años de trabajo desde 
 
 0:02:58.160,0:03:02.880
-home and the recent call for hybrid work.
-And in fact early attempts to understand
+casa y el reciente impulso del trabajo híbrido.
+Y, de hecho, los primeros intentos de comprender
 
 0:03:02.880,0:03:08.000
-productivity in terms of telemetry 
-data such as number of pull requests
+la productividad en términos de datos de telemetría, como el número de pull request,
 
 0:03:08.000,0:03:13.200
-and even through surveying developers gave 
-us the early impression that productivity
+e incluso a través de encuestas a los desarrolladores, nos dieron la primera impresión de que la productividad 
 
 0:03:13.200,0:03:17.840
-had potentially improved or stayed the same.
-But of course it wasn't quite that simple.
+había mejorado potencialmente o se había mantenido igual.
+Pero, por supuesto, no era tan sencillo.
 
 0:03:19.280,0:03:23.840
-So as we and others discovered when we 
-surveyed developers in the first few months
+Así que, como descubrimos nosotros y otros cuando encuestamos a los desarrolladores en los primeros meses
 
 0:03:23.840,0:03:30.160
-of the pandemic many reported higher perceived 
-productivity but at the cost of potential burnout,
+de la pandemia, muchos informaron de una mayor productividad percibida, pero a costa de un posible agotamiento, 
 
 0:03:30.720,0:03:35.760
-while others were struggling to work at all.
-And we also learned that teamwork was more
+mientras que otros tenían dificultades para trabajar.
+Y también aprendimos que el trabajo en equipo era más
 
 0:03:35.760,0:03:40.880
-challenging and that interruptions and in fact 
-the nature of these interruptions had increased.
+desafiante y que las interrupciones y, de hecho, la naturaleza de estas interrupciones habían aumentado.
 
 0:03:42.480,0:03:46.720
-But how to make sense of all of this research?
-So there were a bunch of us studying
+Pero, ¿cómo dar sentido a toda esta investigación?
+Así que éramos varios los que estudiábamos
 
 0:03:46.720,0:03:51.360
-productivity during the pandemic 
-and we recognized that we needed
+la productividad durante la pandemia y reconocimos que necesitábamos
 
 0:03:51.360,0:03:57.120
-a better way to frame developer productivity.
-So building on years of research, not just the
+una forma mejor de enmarcar la productividad de los desarrolladores.
+Así que, basándonos en años de investigación, no sólo en la
 
 0:03:57.120,0:04:03.920
-research we did, we developed the SPACE framework 
-that synthesizes the main five dimensions of
+que nosotros realizamos, desarrollamos el marco SPACE, que sintetiza las cinco dimensiones principales de
 
 0:04:03.920,0:04:08.560
-productivity that we saw emerging from the 
-various studies of developer productivity.
+la productividad que vimos surgir de los diversos estudios sobre la productividad de los desarrolladores.
 
 0:04:09.200,0:04:15.040
-And SPACE helps us articulate that developer 
-productivity doesn't just come down to speed
+Y SPACE nos ayuda a articular que la productividad de los desarrolladores no se reduce a la velocidad
 
 0:04:15.040,0:04:19.520
-or output and that there are many different 
-aspects of productivity that we need to consider.
+o al rendimiento y que hay muchos aspectos diferentes de la productividad que debemos considerar.
 
 0:04:20.240,0:04:23.520
-Let me talk about these five 
-dimensions a little bit in more detail.
+Permítanme hablar de estas cinco dimensiones con un poco más de detalle.
 
 0:04:24.800,0:04:30.720
-The first dimension satisfaction and well-being, 
-looks at how fulfilled and happy developers are.
+La primera dimensión, la satisfacción y el bienestar, examina el grado de satisfacción y felicidad de los desarrolladores.
 
 0:04:31.360,0:04:37.040
-Our earlier research shows that satisfaction 
-and perceived productivity, although not quite
+Nuestra investigación anterior muestra que la satisfacción y la productividad percibida, aunque no son
 
 0:04:37.040,0:04:42.160
-the same, they are correlated, and it's 
-crucial to look at how developers feel
+exactamente lo mismo, están correlacionadas, y es crucial observar cómo se sienten los desarrolladores
 
 0:04:42.160,0:04:46.240
-in order to get a holistic 
-understanding of their productivity.
+para obtener una comprensión holística de su productividad.
 
 0:04:46.240,0:04:50.960
-This is something that is often measured 
-through surveys to gain the subjective data.
+Esto es algo que a menudo se mide a través de encuestas para obtener los datos subjetivos.
 
 0:04:52.400,0:04:55.360
-The next dimension of the 
-SPACE framework is performance.
+La siguiente dimensión del marco SPACE es el rendimiento.
 
 0:04:55.360,0:05:00.720
-This refers to the outcomes of a system or 
-process, and it is the aspect of productivity
+Se refiere a los resultados de un sistema o proceso, y es el aspecto de la productividad 
 
 0:05:00.720,0:05:04.800
-that many leaders care about the most.
-And you might think well evaluating
+que más preocupa a muchos líderes.
+Y se podría pensar que evaluar
 
 0:05:04.800,0:05:10.480
-performance is easy, but actually even though 
-there are some objective measures there are
+el rendimiento es fácil, pero en realidad, aunque hay algunas medidas objetivas, hay
 
 0:05:10.480,0:05:15.680
-very many variables that we need to consider.
-So for example a lot of code doesn't necessarily
+muchas variables que debemos considerar.
+Por ejemplo, una gran cantidad de código no significa necesariamente
 
 0:05:15.680,0:05:20.560
-mean it's high quality, and high quality code 
-doesn't necessarily mean happy customers,
+que sea de alta calidad, y un código de alta calidad no significa necesariamente que los clientes
 
 0:05:20.560,0:05:24.480
-and even happy customers doesn't 
-necessarily mean more revenue for a company.
+estén contentos, e incluso los clientes contentos no significan necesariamente más ingresos para una empresa.
 
 0:05:25.760,0:05:29.840
-The third dimension we added to 
-SPACE is activity and outputs.
+La tercera dimensión que añadimos a SPACE es la actividad y los resultados.
 
 0:05:29.840,0:05:33.440
-Of course this is an important metric 
-to look at and it's one developers may
+Por supuesto, se trata de una métrica importante y es una de 
 
 0:05:33.440,0:05:37.360
-often think about first, but as 
-we've been alluding to so far in
+las primeras en las que piensan los desarrolladores,
+pero, como hemos dicho hasta ahora
 
 0:05:37.360,0:05:40.320
-this talk it's not the be-all 
-and end-all of productivity.
+en esta charla, no es la clave de la productividad.
 
 0:05:40.880,0:05:45.600
-And in fact the activities developers 
-perform are also complex and diverse,
+Y, de hecho, las actividades que realizan los desarrolladores también son complejas y diversas,
 
 0:05:45.600,0:05:50.320
-and we may be able to measure some, so for 
-example pull requests or number of code reviews,
+y podemos medir algunas, por ejemplo, las pull request o el número de revisiones de código,
 
 0:05:50.320,0:05:54.480
-but other activities, such as attending 
-meetings, are helping other developers
+pero otras actividades, como la asistencia a reuniones, están ayudando a otros desarrolladores
 
 0:05:54.480,0:05:59.120
-that are onboarding or learning for the future.
-These things are hard to put into into numbers.
+que se están incorporando o aprendiendo para el futuro.
+Estas cosas son difíciles de poner en números.
 
 0:06:00.480,0:06:03.920
-The next dimension in SPACE is about 
-communication and collaboration,
+La siguiente dimensión de SPACE se refiere a la comunicación y la colaboración,
 
 0:06:03.920,0:06:08.240
-something we've heard a lot about today as well.
-This dimension emphasizes that software
+algo de lo que también hemos oído hablar mucho hoy.
+Esta dimensión subraya que el desarrollo de software
 
 0:06:08.240,0:06:13.120
-development is a team activity and an 
-inherently creative and collaborative process.
+es una actividad de equipo y un proceso inherentemente creativo y colaborativo.
 
 0:06:14.080,0:06:19.200
 And then the final dimension that we added to 
