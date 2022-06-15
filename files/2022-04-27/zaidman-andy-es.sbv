@@ -1,0 +1,201 @@
+0:00:05.040,0:00:11.600
+Programador de día, tester de noche: ¿qué quiero decir realmente con esto? Bueno, habiendo mirado las
+
+0:00:11.600,0:00:16.880
+presentaciones que me precedieron, creo que hay una conexión muy lógica con lo que algunas de las personas que están
+
+0:00:16.880,0:00:22.880
+trabajando en testing que estamos viendo como Maurício y Manuel, pero también con lo que Igor
+
+0:00:22.880,0:00:31.520
+acaba de decir sobre estimaciones, así que vamos a meternos en la cocina, porque, en realidad, bueno si mis
+
+0:00:31.520,0:00:40.800
+diapositivas se movieran... En realidad me gusta usar la cocina como un universo paralelo al universo de la programación
+
+0:00:40.800,0:00:47.680
+en el que normalmente trabajamos como desarrolladores. Así que personalmente, me encanta cocinar,
+
+0:00:47.680,0:00:56.480
+y me gusta hacer platos intrincados y - y ponerlos en la mesa, pero como se puede imaginar, esta
+
+0:00:56.480,0:01:03.040
+parte del trabajo en la cocina no me suele gustar mucho. Y creo que mucha gente estaría de 
+
+0:01:03.040,0:01:09.680
+acuerdo conmigo, que esto es realmente lo que tratas de retrasar tanto como sea posible, y bueno, tal vez
+
+0:01:09.680,0:01:16.000
+tienes un lavavajillas, y no es tan malo, pero, bueno, definitivamente no es mi parte favorita del trabajo.
+
+0:01:17.600,0:01:23.680
+Así que si te preguntara cuánto tiempo cuesta realmente hacer este hermoso plato,
+
+0:01:23.680,0:01:29.600
+y tal vez alguien diría que 30 minutos, y si te preguntara cuánto tiempo pasarías
+
+0:01:29.600,0:01:37.840
+lavando los platos, probablemente sería bastante más tiempo del que te lleva cocinar. Así que desde ese
+
+0:01:37.840,0:01:42.240
+punto de vista, hay un mensaje que llega, así que voy a ver si eso es algo
+
+0:01:43.040,0:01:51.440
+para mí... No... Así que desde esa perspectiva, hemos estado observando cómo la gente percibe
+
+0:01:51.440,0:01:57.840
+el tiempo que se tarda en hacer las tareas que disfrutas, frente a las tareas que quizás no disfrutas
+
+0:01:57.840,0:02:02.560
+tanto. En realidad hay un término para eso que es la cronocepción, pero también es - es una especie de
+
+0:02:02.560,0:02:06.320
+forma abreviada de la crono-percepción el tiempo que se tarda en hacer algo.
+
+0:02:08.960,0:02:16.240
+Y lo que realmente nos preguntamos en los estudios que hemos hecho es, cómo la gente ve
+
+0:02:16.240,0:02:26.880
+las pruebas de software, y cuánto tiempo están gastando en las pruebas de software. Así que mis diapositivas se mueven
+
+0:02:26.880,0:02:33.200
+en realidad lo hicimos - creamos una herramienta un plug-in para algunos entornos de desarrollo populares. Lo
+
+0:02:33.200,0:02:40.800
+lanzamos a 2442 desarrolladores de muchos países, pero la clave es que al tener
+
+0:02:40.800,0:02:48.240
+esta herramienta instalada durante varios meses, pudimos recoger 150 años-persona de desarrollo
+
+0:02:48.240,0:02:53.920
+durante el estudio. Así que esto nos da una amplia base para ver realmente cómo la gente está haciendo pruebas.
+
+0:02:55.120,0:03:00.720
+Ahora, durante la instalación que tenía este asistente de lujo y estábamos pidiendo a la gente,
+
+0:03:00.720,0:03:05.360
+hacer pruebas, hacer que en el IDE, hacer otros tipos de pruebas,
+
+0:03:06.480,0:03:12.560
+cualquier otra opinión que la gente pueda tener en las pruebas. Así que una de las preguntas clave era cuánto
+
+0:03:12.560,0:03:18.240
+tiempo crees que estás gastando en la ingeniería de código de prueba frente a la ingeniería
+
+0:03:18.240,0:03:26.640
+de lo que llamamos código de producción en el IDE. Y las respuestas - la respuesta media de todos los 2443
+
+0:03:27.360,0:03:34.000
+desarrolladores que instalaron la herramienta fue aproximadamente 50-50. Así que el 49,5 por ciento de su tiempo
+
+0:03:34.720,0:03:39.920
+se dedicó a la ingeniería de código de prueba y el 50,5 por ciento se dedicó a la ingeniería
+
+0:03:39.920,0:03:44.800
+de código de producción. Ahora hay algo realmente extraño aquí, porque hay un
+
+0:03:45.520,0:03:52.480
+libro realmente famoso - The Mythical Man Month de Frederick Brooks - y en ese libro está escrito que
+
+0:03:52.480,0:03:58.400
+las pruebas toman aproximadamente el 50 por ciento de nuestro tiempo. Así que es realmente muy extraño que el
+
+0:03:58.400,0:04:06.640
+libro de - que fue publicado a finales de la década de 1970 - en realidad predijo los resultados de esta
+
+0:04:06.640,0:04:13.840
+primera pregunta en nuestro estudio. Así que tal vez haya algo de folclore en nuestra profesión.
+
+0:04:14.480,0:04:21.360
+Ahora, la pregunta clave es, obviamente, que después de observar a estos desarrolladores, tras un mínimo de cinco
+
+0:04:21.360,0:04:27.200
+meses y potencialmente incluso dos años o más, ¿cuál sería la respuesta? ¿Cuánto tiempo se 
+
+0:04:27.200,0:04:33.280
+dedicaría realmente a la ingeniería del código de prueba? Esto es dramáticamente diferente de las estimaciones.
+
+0:04:34.160,0:04:41.040
+Una cuarta parte de su tiempo -de estos desarrolladores- se dedicó a la ingeniería del código de prueba en el IDE
+
+0:04:41.040,0:04:44.960
+y el 75 por ciento se dedicó a la ingeniería del código de producción.
+
+0:04:46.320,0:04:53.600
+¿A qué se debe esto? Bueno, siguen siendo suposiciones, pero el hecho de que las pruebas de software son realmente
+
+0:04:53.600,0:04:58.560
+una actividad destructiva, mientras que la ingeniería del código de producción es en realidad algo que da vida,
+
+0:04:58.560,0:05:02.640
+algo que probablemente se disfruta más, al igual que la cocina frente a lavar los platos,
+
+0:05:03.200,0:05:09.840
+podría ser una razón aquí por la que la gente sobreestima sus esfuerzos de prueba.
+
+0:05:11.600,0:05:17.520
+Pero hay más en este estudio, porque también examinamos cómo la gente hace el desarrollo dirigido por pruebas,
+
+0:05:17.520,0:05:23.920
+y esto realmente toca lo que Davide estaba diciendo unas cuantas presentaciones antes. Así que creo
+
+0:05:23.920,0:05:29.360
+que todos sabemos lo que es el desarrollo dirigido por pruebas - es la idea central de que escribes tus pruebas primero y
+
+0:05:29.360,0:05:36.880
+luego implementas partes del código de producción para que tus pruebas pasen. Y esto realmente requiere
+
+0:05:36.880,0:05:43.120
+este ciclo en el que tienes una prueba que falla, la haces pasar, la refactorizas, y continúas haciendo
+
+0:05:43.120,0:05:50.800
+eso. Así que de los 574 desarrolladores, que es como poco menos del 20 por ciento de los desarrolladores en nuestro
+
+0:05:50.800,0:05:58.080
+estudio, que afirmaron hacer TDD, en realidad sólo había 47 que realmente hicieron TDD. Ahora podrías decir,
+
+0:05:58.080,0:06:03.280
+bueno, tal vez lo hicieron fuera de la observación - período de observación, que podría ser,
+
+0:06:03.280,0:06:08.960
+pero creo que el mensaje clave aquí es que mucha gente piensa que lo hacen, pero en la práctica
+
+0:06:08.960,0:06:14.640
+no lo hacen tan a menudo. Porque incluso para los desarrolladores que observamos que 
+
+0:06:14.640,0:06:21.200
+estaban haciendo TDD sólo lo hicieron en casos muy específicos, probablemente porque no es tan fácil de hacer.
+
+0:06:23.440,0:06:30.720
+¿A qué nos lleva esto realmente? Bueno, la primera conclusión es que lo que los desarrolladores creen
+
+0:06:30.720,0:06:38.080
+que hacen o calculan sus esfuerzos no es lo que realmente hacen en la práctica. Así que
+
+0:06:38.080,0:06:43.200
+la cronocepción de las tareas de ingeniería de software es algo con lo que tenemos que tener cuidado.
+
+0:06:43.200,0:06:53.920
+Y en segundo lugar, tal vez una petición es que tenemos que entender mejor las tareas de ingeniería de software: ¿cómo
+
+0:06:53.920,0:07:01.840
+lo hacemos?, y también el esfuerzo que se necesita para hacerlas. Y necesitamos tener mejores herramientas para estimar 
+
+0:07:02.400,0:07:05.680
+cuánto tiempo se necesita para probar, cuánto tiempo realmente se necesita para
+
+0:07:05.680,0:07:12.560
+implementar la característica. Así que mi petición aquí es realmente utilizar también el análisis de software durante los desarrollos
+
+0:07:12.560,0:07:18.720
+para entender mejor lo que usted y su equipo están haciendo y también crear estimaciones más fiables.
+
+0:07:20.960,0:07:26.880
+Así que, finalmente, las dos conclusiones de mi charla: la cronopercepción - tener en cuenta
+
+0:07:26.880,0:07:33.200
+que ciertas cosas llevan más o menos tiempo dependiendo de ciertos factores de tu personalidad.
+
+0:07:33.840,0:07:43.840
+Y una petición general de hacer más análisis de software para ser un mejor programador. Gracias.
+
