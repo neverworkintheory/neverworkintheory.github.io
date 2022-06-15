@@ -1,0 +1,329 @@
+0:00:05.200,0:00:09.840
+Voy a hablar de un estudio sobre las percepciones y los impactos de
+
+0:00:09.840,0:00:15.200
+las críticas destructivas en la revisión de código de software, y espero poder convencerte de
+
+0:00:15.200,0:00:18.640
+que seas más cuidadoso a la hora de no hacer críticas no constructiva en tus revisiones de código.
+
+0:00:20.960,0:00:28.560
+Creo que todos saben lo que es la revisión de código de software: es cuando los desarrolladores revisan
+
+0:00:28.560,0:00:35.040
+las contribuciones de código fuente de otras personas.
+Y este tweet ilustra un punto de vista potencialmente
+
+0:00:35.040,0:00:40.480
+problemático sobre la revisión de código, dice que la revisión de código puede ser
+
+0:00:40.480,0:00:46.960
+honesta o amable, y solo puedes elegir una, lo que indica que no se puede tener una revisión de código que sea honesta y amable.
+
+0:00:49.360,0:00:54.160
+Y el objetivo de mi estudio era comprobar si, ya sabes, lo que realmente son las percepciones de
+
+0:00:54.160,0:01:01.120
+la revisión de código no constructiva, que es una revisión de código que es tanto desconsiderada como no específica.
+
+0:01:01.920,0:01:06.320
+Y quería ver, ya sabes, si había diferentes percepciones en torno a
+
+0:01:06.320,0:01:12.480
+estos sinceros - crítica no constructiva - los que no están considerando las partes agradables de revisión de código.
+
+0:01:13.920,0:01:19.280
+Y para eso utilizamos un cuestionario en línea - utilizamos preguntas de estilo viñeta.
+
+0:01:19.280,0:01:24.800
+Así que básicamente desarrollamos estos escenarios hipotéticos y pedimos a los desarrolladores - nuestros
+
+0:01:24.800,0:01:30.800
+participantes - que miraran un fragmento de código, imaginando que acababan de enviar este fragmento de código
+
+0:01:30.800,0:01:37.120
+para su revisión, y que recibían algunos comentarios.
+Y así, algunos de los desarrolladores vieron la versión de
+
+0:01:37.120,0:01:43.120
+retroalimentación constructiva y otros participantes vieron la versión no constructiva de la retroalimentación, y todos
+
+0:01:43.120,0:01:49.120
+los participantes vieron dos escenarios diferentes, así que vieron uno con comentarios constructivos y otro con comentarios no constructivos.
+
+0:01:49.120,0:01:53.200
+Y les hicimos una serie de preguntas sobre cómo reaccionarían a la retroalimentación - cómo
+
+0:01:53.200,0:01:56.720
+la perciben - y voy a mostrarles algunas diferencias entre 
+
+0:01:56.720,0:02:02.960
+las percepciones constructivas y las negativas.
+Y aquí ves estos dos gráficos.
+
+0:02:02.960,0:02:10.000
+El primero, en la parte superior, muestra las percepciones de las reacciones de la crítica constructiva y
+
+0:02:10.000,0:02:16.080
+el inferior muestra la crítica negativa.
+Así que las tres primeras preguntas que hicimos en torno a
+
+0:02:16.080,0:02:19.440
+la retroalimentación que recibieron en estos escenarios hipotéticos fue,
+
+0:02:19.440,0:02:24.240
+¿esta retroalimentación ayudaría a mejorar su código, es válida, y es apropiada?
+
+0:02:25.840,0:02:30.480
+Y se ve en la parte superior - la crítica constructiva - el gráfico es principalmente verde.
+
+0:02:30.480,0:02:33.760
+El verde indica que los participantes están de acuerdo con estas afirmaciones.
+
+0:02:34.640,0:02:38.240
+En la parte inferior se ve mucho más dorado, lo que indica que nuestros participantes 
+
+0:02:38.240,0:02:41.760
+están en desacuerdo con estas afirmaciones.
+Así que los participantes ven la crítica negativa
+
+0:02:41.760,0:02:47.440
+particularmente como menos apropiada.
+Estuvieron de acuerdo en que la mayoría de las veces era una crítica válida,
+
+0:02:48.000,0:02:51.920
+pero que no les ayudaría a mejorar su código.
+Estaban en desacuerdo con que mejoraría su
+
+0:02:51.920,0:02:56.880
+código aunque la crítica es válida porque se presenta de forma inapropiada.
+
+0:02:59.760,0:03:04.720
+También les preguntamos qué motivación tendrían para seguir trabajando.
+
+0:03:04.720,0:03:09.040
+Y aquí se ve en la parte superior tenemos de nuevo constructiva y en la parte inferior no constructiva.
+
+0:03:09.040,0:03:13.360
+Y vemos que la inmensa mayoría de nuestros participantes están motivados para seguir trabajando en la tarea
+
+0:03:13.360,0:03:17.840
+con el desarrollador y en el proyecto después de recibir una crítica constructiva.
+
+0:03:19.040,0:03:24.560
+Por otro lado, en el caso de la crítica negativa, vemos que los participantes están mucho menos
+
+0:03:24.560,0:03:29.280
+motivados para seguir trabajando, especialmente con el desarrollador, pero incluso en la tarea
+
+0:03:29.280,0:03:33.040
+y en el proyecto en su conjunto.
+Así que si tienes esta cultura de
+
+0:03:33.040,0:03:37.520
+la crítica negativa, lo que hemos aprendido de estas dos diapositivas que acabo de mostrar,
+
+0:03:38.240,0:03:43.760
+ya sabes, la gente es menos probable que mejore su código, incluso si están recibiendo buenas críticas del
+
+0:03:43.760,0:03:47.760
+código, si no se presenta de la manera correcta.
+Son menos propensos a mejorar el código
+
+0:03:48.480,0:03:52.800
+y también son menos propensos a permanecer y seguir trabajando en el proyecto.
+
+0:03:52.800,0:03:58.160
+Así que hemos demostrado que la crítica negativa no tiene el mejor impacto en su equipo.
+
+0:03:59.760,0:04:05.120
+También observamos las diferencias demográficas, por lo que hicimos a los participantes algunas preguntas demográficas
+
+0:04:05.120,0:04:08.640
+y vimos algunas diferencias.
+En particular, las mujeres
+
+0:04:13.520,0:04:16.320
+perciben las críticas negativas, es decir, están menos motivadas para seguir trabajando,
+
+0:04:16.320,0:04:20.720
+en particular con el desarrollador, pero también en el proyecto después de recibir críticas negativas.
+
+0:04:21.680,0:04:25.120
+Creo que este hallazgo es particularmente importante porque sabemos que
+
+0:04:25.760,0:04:30.880
+las mujeres son menos del 25 por ciento en las grandes empresas de tecnología, por lo que esto podría tener
+
+0:04:30.880,0:04:36.160
+implicancias en la retención de las mujeres si tienes una cultura de crítica no constructiva en tu equipo.
+
+0:04:37.600,0:04:41.280
+Otra diferencia interesante que vimos es que los desarrolladores menos experimentados 
+
+0:04:41.280,0:04:47.200
+eran menos propensos a denunciar este mal comportamiento.
+Así que les pedimos a los participantes que también,
+
+0:04:48.160,0:04:52.720
+ya sabes, escribieran una respuesta - si tuvieras que escribir algo en respuesta a la retroalimentación
+
+0:04:52.720,0:04:56.960
+que te dieron, ¿qué escribirías?
+Vimos que nuestros desarrolladores más experimentados
+
+0:04:56.960,0:05:02.320
+eran más propensos a decir, ya sabes, esta retroalimentación no es apropiada, debe ser escrito de una manera más 
+
+0:05:02.320,0:05:08.080
+considerada, mientras que nuestros desarrolladores menos experimentados eran en realidad más propensos a disculparse
+
+0:05:08.960,0:05:14.960
+por escribir el código malo y estar de acuerdo con la retroalimentación, incluso cuando era negativa.
+
+0:05:14.960,0:05:18.320
+Así que, de nuevo, esto puede tener importantes implicaciones para la retención en sus equipos.
+
+0:05:20.400,0:05:23.840
+Bien, también preguntamos por la frecuencia de las críticas negativas.
+
+0:05:24.400,0:05:28.720
+Preguntamos a los participantes con qué frecuencia daban críticas negativas 
+
+0:05:28.720,0:05:32.720
+y también con qué frecuencia las recibían.
+Y puedes ver que nuestros participantes 
+
+0:05:32.720,0:05:38.080
+reportaron recibir mucho más críticas destructivas de las que reportaron dar.
+
+0:05:38.080,0:05:43.760
+Así, el 22% de los participantes dijo que había recibido algún comentario desconsiderado en el
+
+0:05:43.760,0:05:50.080
+último año, mientras que sólo uno de nuestros participantes, el 1%, dijo que había hecho una crítica negativa,
+
+0:05:50.080,0:05:55.920
+una crítica negativa desconsiderada.
+Esto puede deberse a varias razones,
+
+0:05:55.920,0:06:01.280
+pero una de ellas podría ser que la gente no sabe cuándo está haciendo una crítica negativa.
+
+0:06:01.280,0:06:06.960
+Así que necesitamos más mecanismos de sensibilización para saber cómo está recibiendo nuestro feedback el receptor.
+
+0:06:09.120,0:06:12.240
+Por último, preguntamos por las opiniones generales sobre las críticas negativas
+
+0:06:12.880,0:06:15.360
+ y esto es interesante porque vemos algunas diferencias.
+
+0:06:15.360,0:06:20.880
+Las dos primeras preguntas se refieren a si la crítica negativa es perjudicial y a si la crítica negativa 
+
+0:06:20.880,0:06:25.200
+provocará una reacción negativa en el receptor, y estas son las líneas A y B del gráfico.
+
+0:06:26.000,0:06:29.280
+Y se ve que la inmensa mayoría de los participantes están de acuerdo con estas afirmaciones:
+
+0:06:29.280,0:06:34.560
+la crítica no constructiva no es buena, verdad, cuando se pregunta de forma genérica, pero luego cuando se hace una pregunta
+
+0:06:34.560,0:06:40.400
+un poco más matizada -así que la pregunta C dice, cuando se reciben comentarios de revisión de código no me 
+
+0:06:40.400,0:06:45.040
+importa recibir comentarios desconsiderados siempre y cuando los comentarios ayuden a mejorar la calidad del código.
+
+0:06:46.400,0:06:51.120
+Y aquí vemos una diferencia mucho mayor.
+Así que hay un buen número de personas que están
+
+0:06:51.120,0:06:55.280
+en desacuerdo con esta declaración, pero todavía un número significativo de participantes que están de acuerdo con
+
+0:06:55.280,0:07:01.040
+esta declaración: no tienen problema de ser maltratado y recibir comentarios desconsiderados, siempre y cuando se
+
+0:07:01.040,0:07:05.200
+vaya a mejorar la el código.
+Vimos comentarios bastante similares
+
+0:07:06.000,0:07:10.240
+en nuestras respuestas abiertas.
+También hicimos algunas preguntas abiertas sobre las
+
+0:07:10.240,0:07:17.200
+opiniones, y vimos algunos comentarios a estas preguntas en la línea de, como, no me
+
+0:07:17.200,0:07:22.720
+importa recibir comentarios desconsiderados, prefiero una redacción directa y más fácil de analizar en los comentarios,
+
+0:07:22.720,0:07:28.000
+mientras que otros participantes dijeron cosas como, siempre tiene que ser constructivo,
+
+0:07:28.000,0:07:31.600
+realmente necesitas tener comentarios considerados cada vez que das comentarios.
+
+0:07:33.200,0:07:37.760
+Así que las mayores implicancias que me gustaría que sacaran de esto es
+
+0:07:37.760,0:07:42.160
+que la forma de tratar a la gente es importante.
+Así que si tienes una cultura de la crítica no constructiva 
+
+0:07:42.160,0:07:46.640
+es menos probable que la gente mejore el código y es menos probable que se quede en tu proyecto,
+
+0:07:46.640,0:07:50.400
+por lo que la calidad de tu código se verá afectada.
+También creo que hay que tener
+
+0:07:50.400,0:07:53.760
+vías para la retroalimentación.
+Así que vimos que mucha menos
+
+0:07:53.760,0:07:58.800
+gente reportó dar retroalimentación desconsiderada, por lo que podríamos necesitar formas de ayudar a la gente a entender cuando
+
+0:07:58.800,0:08:04.800
+están dando retroalimentación desconsiderada para que puedan mejorar en la forma en que dan su retroalimentación.
+
+0:08:05.600,0:08:09.360
+También creo que no hay un enfoque único para la revisión del código.
+
+0:08:09.360,0:08:15.440
+Así que vimos que había diferencias de opinión en cuanto a la aceptación de las críticas no constructivas y
+
+0:08:15.440,0:08:21.360
+que algunas personas prefieren un feedback directo mientras que otras prefieren un feedback que les ayude a aprender.
+
+0:08:21.360,0:08:26.160
+Por eso es muy importante tener en cuenta las necesidades de la persona a la que se da la opinión.
+
+0:08:26.160,0:08:30.720
+Y, por último, hay que tener cuidado con lo que se hace público: algunos de los comentarios -los comentarios abiertos
+
+0:08:30.720,0:08:35.120
+ambién señalaban que la crítica negativa es particularmente dañina cuando se hace en
+
+0:08:35.120,0:08:40.080
+un lugar público, así que hay que considerar el tipo de feedback que se da y si realmente es
+
+0:08:40.080,0:08:44.960
+apropiado compartirlo de forma transparente con todo el equipo o si hay que
+
+0:08:45.520,0:08:48.080
+discutirlo en privado con la persona a la que se da el feedback.
+
+0:08:48.720,0:08:53.680
+Y gracias de nuevo, estoy muy contenta de discutir este estudio, mi información de contacto está aquí.
+
+0:08:53.680,0:08:57.680
+Gracias a todos mis coautores en este trabajo - Sanuri, Peter, Isabelle,
+
+0:08:57.680,0:09:06.000
+Lola y Emerson - y gracias a Google por financiar este trabajo.
+

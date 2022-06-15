@@ -1,0 +1,67 @@
+Voy a hablar de un estudio sobre las percepciones y los impactos de las críticas destructivas en la revisión de código de software, y espero poder convencerte de que seas más cuidadoso a la hora de no hacer críticas no constructiva en tus revisiones de código.
+Creo que todos saben lo que es la revisión de código de software: es cuando los desarrolladores revisan las contribuciones de código fuente de otras personas.
+Y este tweet ilustra un punto de vista potencialmente problemático sobre la revisión de código, dice que la revisión de código puede ser honesta o amable, y solo puedes elegir una, lo que indica que no se puede tener una revisión de código que sea honesta y amable.
+Y el objetivo de mi estudio era comprobar si, ya sabes, lo que realmente son las percepciones de la revisión de código no constructiva, que es una revisión de código que es tanto desconsiderada como no específica.
+
+Y quería ver, ya sabes, si había diferentes percepciones en torno a estos sinceros - crítica no constructiva - los que no están considerando las partes agradables de revisión de código.
+Y para eso utilizamos un cuestionario en línea - utilizamos preguntas de estilo viñeta.
+Así que básicamente desarrollamos estos escenarios hipotéticos y pedimos a los desarrolladores - nuestros participantes - que miraran un fragmento de código, imaginando que acababan de enviar este fragmento de código para su revisión, y que recibían algunos comentarios.
+Y así, algunos de los desarrolladores vieron la versión de retroalimentación constructiva y otros participantes vieron la versión no constructiva de la retroalimentación, y todos los participantes vieron dos escenarios diferentes, así que vieron uno con comentarios constructivos y otro con comentarios no constructivos.
+
+Y les hicimos una serie de preguntas sobre cómo reaccionarían a la retroalimentación - cómo la perciben - y voy a mostrarles algunas diferencias entre las percepciones constructivas y las negativas.
+Y aquí ves estos dos gráficos.
+El primero, en la parte superior, muestra las percepciones de las reacciones de la crítica constructiva y el inferior muestra la crítica negativa.
+Así que las tres primeras preguntas que hicimos en torno a la retroalimentación que recibieron en estos escenarios hipotéticos fue, ¿esta retroalimentación ayudaría a mejorar su código, es válida, y es apropiada?
+Y se ve en la parte superior - la crítica constructiva - el gráfico es principalmente verde.
+
+El verde indica que los participantes están de acuerdo con estas afirmaciones.
+En la parte inferior se ve mucho más dorado, lo que indica que nuestros participantes están en desacuerdo con estas afirmaciones.
+Así que los participantes ven la crítica negativa particularmente como menos apropiada.
+Estuvieron de acuerdo en que la mayoría de las veces era una crítica válida, pero que no les ayudaría a mejorar su código.
+Estaban en desacuerdo con que mejoraría su código aunque la crítica es válida porque se presenta de forma inapropiada.
+También les preguntamos qué motivación tendrían para seguir trabajando.
+Y aquí se ve en la parte superior tenemos de nuevo constructiva y en la parte inferior no constructiva.
+
+Y vemos que la inmensa mayoría de nuestros participantes están motivados para seguir trabajando en la tarea con el desarrollador y en el proyecto después de recibir una crítica constructiva.
+Por otro lado, en el caso de la crítica negativa, vemos que los participantes están mucho menos motivados para seguir trabajando, especialmente con el desarrollador, pero incluso en la tarea y en el proyecto en su conjunto.
+Así que si tienes esta cultura de la crítica negativa, lo que hemos aprendido de estas dos diapositivas que acabo de mostrar, ya sabes, la gente es menos probable que mejore su código, incluso si están recibiendo buenas críticas del código, si no se presenta de la manera correcta.
+Son menos propensos a mejorar el código y también son menos propensos a permanecer y seguir trabajando en el proyecto.
+Así que hemos demostrado que la crítica negativa no tiene el mejor impacto en su equipo.
+
+También observamos las diferencias demográficas, por lo que hicimos a los participantes algunas preguntas demográficas y vimos algunas diferencias.
+En particular, las mujeres perciben las críticas negativas, es decir, están menos motivadas para seguir trabajando, en particular con el desarrollador, pero también en el proyecto después de recibir críticas negativas.
+Creo que este hallazgo es particularmente importante porque sabemos que las mujeres son menos del 25 por ciento en las grandes empresas de tecnología, por lo que esto podría tener implicancias en la retención de las mujeres si tienes una cultura de crítica no constructiva en tu equipo.
+Otra diferencia interesante que vimos es que los desarrolladores menos experimentados eran menos propensos a denunciar este mal comportamiento.
+
+Así que les pedimos a los participantes que también, ya sabes, escribieran una respuesta - si tuvieras que escribir algo en respuesta a la retroalimentación que te dieron, ¿qué escribirías?
+Vimos que nuestros desarrolladores más experimentados eran más propensos a decir, ya sabes, esta retroalimentación no es apropiada, debe ser escrito de una manera más considerada, mientras que nuestros desarrolladores menos experimentados eran en realidad más propensos a disculparse por escribir el código malo y estar de acuerdo con la retroalimentación, incluso cuando era negativa.
+Así que, de nuevo, esto puede tener importantes implicaciones para la retención en sus equipos.
+Bien, también preguntamos por la frecuencia de las críticas negativas.
+Preguntamos a los participantes con qué frecuencia daban críticas negativas y también con qué frecuencia las recibían.
+Y puedes ver que nuestros participantes reportaron recibir mucho más críticas destructivas de las que reportaron dar.
+
+Así, el 22% de los participantes dijo que había recibido algún comentario desconsiderado en el último año, mientras que sólo uno de nuestros participantes, el 1%, dijo que había hecho una crítica negativa, una crítica negativa desconsiderada.
+Esto puede deberse a varias razones, pero una de ellas podría ser que la gente no sabe cuándo está haciendo una crítica negativa.
+Así que necesitamos más mecanismos de sensibilización para saber cómo está recibiendo nuestro feedback el receptor.
+Por último, preguntamos por las opiniones generales sobre las críticas negativas, y esto es interesante porque vemos algunas diferencias.
+Las dos primeras preguntas se refieren a si la crítica negativa es perjudicial y a si la crítica negativa provocará una reacción negativa en el receptor, y estas son las líneas A y B del gráfico.
+
+Y se ve que la inmensa mayoría de los participantes están de acuerdo con estas afirmaciones: la crítica no constructiva no es buena, verdad, cuando se pregunta de forma genérica, pero luego cuando se hace una pregunta un poco más matizada -así que la pregunta C dice, cuando se reciben comentarios de revisión de código no me importa recibir comentarios desconsiderados siempre y cuando los comentarios ayuden a mejorar la calidad del código.
+Y aquí vemos una diferencia mucho mayor.
+Así que hay un buen número de personas que están en desacuerdo con esta declaración, pero todavía un número significativo de participantes que están de acuerdo con esta declaración: no tienen problema de ser maltratado y recibir comentarios desconsiderados, siempre y cuando se vaya a mejorar la el código.
+Vimos comentarios bastante similares en nuestras respuestas abiertas.
+
+También hicimos algunas preguntas abiertas sobre las opiniones, y vimos algunos comentarios a estas preguntas en la línea de, como, no me importa recibir comentarios desconsiderados, prefiero una redacción directa y más fácil de analizar en los comentarios, mientras que otros participantes dijeron cosas como, siempre tiene que ser constructivo, realmente necesitas tener comentarios considerados cada vez que das comentarios.
+Así que las mayores implicancias que me gustaría que sacaran de esto es que la forma de tratar a la gente es importante.
+Así que si tienes una cultura de la crítica no constructiva es menos probable que la gente mejore el código y es menos probable que se quede en tu proyecto, por lo que la calidad de tu código se verá afectada.
+
+También creo que hay que tener vías para la retroalimentación.
+Así que vimos que mucha menos gente reportó dar retroalimentación desconsiderada, por lo que podríamos necesitar formas de ayudar a la gente a entender cuando están dando retroalimentación desconsiderada para que puedan mejorar en la forma en que dan su retroalimentación.
+También creo que no hay un enfoque único para la revisión del código.
+Así que vimos que había diferencias de opinión en cuanto a la aceptación de las críticas no constructivas, y que algunas personas prefieren un feedback directo mientras que otras prefieren un feedback que les ayude a aprender.
+Por eso es muy importante tener en cuenta las necesidades de la persona a la que se da la opinión.
+
+Y, por último, hay que tener cuidado con lo que se hace público: algunos de los comentarios -los comentarios abiertos- también señalaban que la crítica negativa es particularmente dañina cuando se hace en un lugar público, así que hay que considerar el tipo de feedback que se da y si realmente es apropiado compartirlo de forma transparente con todo el equipo o si hay que discutirlo en privado con la persona a la que se da el feedback.
+Y gracias de nuevo, estoy muy contenta de discutir este estudio, mi información de contacto está aquí.
+Gracias a todos mis coautores en este trabajo - Sanuri, Peter, Isabelle, Lola y Emerson - y gracias a Google por financiar este trabajo.
+
