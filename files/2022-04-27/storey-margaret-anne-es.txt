@@ -70,6 +70,6 @@ Para terminar, estas son mis principales conclusiones.
 La productividad es más complicada de lo que creemos.
 Significa cosas diferentes para cada persona y no existe una métrica de productividad universal o incluso un conjunto universal de métricas.
 SPACE puede ayudarnos a seleccionar algunas métricas, pero primero tenemos que articular claramente nuestros objetivos antes de seleccionar cualquiera.
-Y, por último, sugiero que, como industria, debemos centrarnos mucho más en la comprensión y la mejora de la experiencia de los desarrolladores, ya que esto conducirá a mejoras en la calidad del producto y la velocidad de la ingeniería, todos ellos objetivos importantes dentro del espacio de la productividad.
+Y, por último, sugiero que, como industria, debemos centrarnos mucho más en entender y mejorar la experiencia de los desarrolladores, ya que esto conducirá a mejoras en la calidad del producto y la velocidad de la ingeniería, todos ellos objetivos importantes dentro del espacio de la productividad.
 Así que gracias y espero que algunos de ustedes se pongan en contacto conmigo por correo electrónico o Twitter si tienen preguntas o pensamientos para compartir y me encantaría escucharlos.
 
