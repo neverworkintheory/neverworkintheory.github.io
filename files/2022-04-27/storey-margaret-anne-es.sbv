@@ -1,0 +1,485 @@
+0:00:04.960,0:00:10.240
+Gracias a Greg y Mike por organizar esta increíble serie de charlas.
+
+0:00:10.240,0:00:14.480
+Muchas de las cosas que voy a tocar durante los próximos 10 minutos ya se han mencionado
+
+0:00:14.480,0:00:20.640
+en algunas de las charlas anteriores y me gustaría tener más tiempo para tal vez crear más enlaces a las
+
+0:00:20.640,0:00:26.480
+ideas anteriores que se compartieron, pero en los próximos nueve a diez minutos voy a discutir por qué
+
+0:00:26.480,0:00:32.640
+la productividad de los desarrolladores es más complicada de lo que podemos pensar y por qué la medición de la productividad puede ser
+
+0:00:32.640,0:00:37.760
+contraproducente, y también voy a tratar de convencerte de que debemos centrarnos y prestar
+
+0:00:37.760,0:00:42.800
+más atención a la mejora y la comprensión de la experiencia de los desarrolladores, algo que ya hemos oído
+
+0:00:42.800,0:00:48.480
+hoy varias veces, y por qué hacerlo puede mejorar el espacio de la productividad en general.
+
+0:00:49.040,0:00:55.600
+But first let's talk about productivity.
+So if you want to turn a boring meeting with
+
+0:00:55.600,0:00:59.600
+software developers and their managers 
+into an exciting one just bring up the
+
+0:00:59.600,0:01:04.160
+concept of developer productivity and 
+suggest how it should be measured.
+
+0:01:04.160,0:01:07.200
+And you'll find that the people in 
+the room have very different views
+
+0:01:07.200,0:01:12.320
+of what productivity means to them and how 
+productivity should be measured, if at all.
+
+0:01:12.320,0:01:18.640
+And we may also hear that - in those meetings that 
+software company leaders and managers care about
+
+0:01:18.640,0:01:24.800
+productivity because they assume that if they have 
+higher developer productivity that will help them
+
+0:01:24.800,0:01:30.560
+deliver value to their customers more quickly.
+And developers care about productivity because
+
+0:01:30.560,0:01:34.560
+having impact and feeling their work 
+brings value will make them happier.
+
+0:01:35.200,0:01:40.320
+But what does developer productivity 
+really mean to managers and developers?
+
+0:01:40.320,0:01:44.960
+Well it so happens that together with my 
+colleagues Brian and Tom from Microsoft we
+
+0:01:44.960,0:01:50.080
+asked managers and developers how they define 
+productivity through an open-ended survey.
+
+0:01:51.200,0:01:56.240
+And we heard many varied definitions.
+In fact managers were more likely to
+
+0:01:56.240,0:02:02.000
+talk about productivity in terms of performance 
+outcomes but many of these managers also gave
+
+0:02:02.000,0:02:07.520
+us rich definitions of productivity that were not 
+just about keeping their customers happy but also
+
+0:02:07.520,0:02:11.600
+included the well-being of their developers 
+and building a positive work culture.
+
+0:02:12.640,0:02:16.160
+From developers we also heard 
+very varied definitions,
+
+0:02:16.720,0:02:22.880
+but they - compared with their managers were more 
+likely to define productivity in terms of activity
+
+0:02:22.880,0:02:27.760
+outputs and the time they can spend doing their 
+work without interruptions and in a state of flow.
+
+0:02:28.480,0:02:33.600
+But many developers also shared that 
+productivity was not just about activity and flow
+
+0:02:33.600,0:02:39.120
+but was also about the impact of their work 
+- helping others and learning for the future.
+
+0:02:40.720,0:02:46.720
+So defining productivity is important but leaders 
+- and I would say even some developers - want to
+
+0:02:46.720,0:02:51.120
+be able to measure productivity so 
+that they can understand the impact
+
+0:02:51.120,0:02:54.640
+changes in tools, processes, and goals may have.
+
+0:02:54.640,0:02:58.160
+And we saw this of course especially 
+during the past two years of work from
+
+0:02:58.160,0:03:02.880
+home and the recent call for hybrid work.
+And in fact early attempts to understand
+
+0:03:02.880,0:03:08.000
+productivity in terms of telemetry 
+data such as number of pull requests
+
+0:03:08.000,0:03:13.200
+and even through surveying developers gave 
+us the early impression that productivity
+
+0:03:13.200,0:03:17.840
+had potentially improved or stayed the same.
+But of course it wasn't quite that simple.
+
+0:03:19.280,0:03:23.840
+So as we and others discovered when we 
+surveyed developers in the first few months
+
+0:03:23.840,0:03:30.160
+of the pandemic many reported higher perceived 
+productivity but at the cost of potential burnout,
+
+0:03:30.720,0:03:35.760
+while others were struggling to work at all.
+And we also learned that teamwork was more
+
+0:03:35.760,0:03:40.880
+challenging and that interruptions and in fact 
+the nature of these interruptions had increased.
+
+0:03:42.480,0:03:46.720
+But how to make sense of all of this research?
+So there were a bunch of us studying
+
+0:03:46.720,0:03:51.360
+productivity during the pandemic 
+and we recognized that we needed
+
+0:03:51.360,0:03:57.120
+a better way to frame developer productivity.
+So building on years of research, not just the
+
+0:03:57.120,0:04:03.920
+research we did, we developed the SPACE framework 
+that synthesizes the main five dimensions of
+
+0:04:03.920,0:04:08.560
+productivity that we saw emerging from the 
+various studies of developer productivity.
+
+0:04:09.200,0:04:15.040
+And SPACE helps us articulate that developer 
+productivity doesn't just come down to speed
+
+0:04:15.040,0:04:19.520
+or output and that there are many different 
+aspects of productivity that we need to consider.
+
+0:04:20.240,0:04:23.520
+Let me talk about these five 
+dimensions a little bit in more detail.
+
+0:04:24.800,0:04:30.720
+The first dimension satisfaction and well-being, 
+looks at how fulfilled and happy developers are.
+
+0:04:31.360,0:04:37.040
+Our earlier research shows that satisfaction 
+and perceived productivity, although not quite
+
+0:04:37.040,0:04:42.160
+the same, they are correlated, and it's 
+crucial to look at how developers feel
+
+0:04:42.160,0:04:46.240
+in order to get a holistic 
+understanding of their productivity.
+
+0:04:46.240,0:04:50.960
+This is something that is often measured 
+through surveys to gain the subjective data.
+
+0:04:52.400,0:04:55.360
+The next dimension of the 
+SPACE framework is performance.
+
+0:04:55.360,0:05:00.720
+This refers to the outcomes of a system or 
+process, and it is the aspect of productivity
+
+0:05:00.720,0:05:04.800
+that many leaders care about the most.
+And you might think well evaluating
+
+0:05:04.800,0:05:10.480
+performance is easy, but actually even though 
+there are some objective measures there are
+
+0:05:10.480,0:05:15.680
+very many variables that we need to consider.
+So for example a lot of code doesn't necessarily
+
+0:05:15.680,0:05:20.560
+mean it's high quality, and high quality code 
+doesn't necessarily mean happy customers,
+
+0:05:20.560,0:05:24.480
+and even happy customers doesn't 
+necessarily mean more revenue for a company.
+
+0:05:25.760,0:05:29.840
+The third dimension we added to 
+SPACE is activity and outputs.
+
+0:05:29.840,0:05:33.440
+Of course this is an important metric 
+to look at and it's one developers may
+
+0:05:33.440,0:05:37.360
+often think about first, but as 
+we've been alluding to so far in
+
+0:05:37.360,0:05:40.320
+this talk it's not the be-all 
+and end-all of productivity.
+
+0:05:40.880,0:05:45.600
+And in fact the activities developers 
+perform are also complex and diverse,
+
+0:05:45.600,0:05:50.320
+and we may be able to measure some, so for 
+example pull requests or number of code reviews,
+
+0:05:50.320,0:05:54.480
+but other activities, such as attending 
+meetings, are helping other developers
+
+0:05:54.480,0:05:59.120
+that are onboarding or learning for the future.
+These things are hard to put into into numbers.
+
+0:06:00.480,0:06:03.920
+The next dimension in SPACE is about 
+communication and collaboration,
+
+0:06:03.920,0:06:08.240
+something we've heard a lot about today as well.
+This dimension emphasizes that software
+
+0:06:08.240,0:06:13.120
+development is a team activity and an 
+inherently creative and collaborative process.
+
+0:06:14.080,0:06:19.200
+And then the final dimension that we added to 
+the SPACE framework is about efficiency and flow.
+
+0:06:19.200,0:06:21.040
+Efficiency and flow is the ability
+
+0:06:21.040,0:06:23.760
+to work without interruption.
+These are topics that have been
+
+0:06:23.760,0:06:27.520
+studied extensively in our research 
+community over the past few years
+
+0:06:27.520,0:06:32.960
+years, and this dimension captures the importance 
+of flow for individual developers and the negative
+
+0:06:32.960,0:06:38.800
+impact interruptions may have on their work.
+But this dimension also captures how well
+
+0:06:38.800,0:06:43.600
+teams are orchestrating their different activities 
+and how often they're making continuous progress.
+
+0:06:45.120,0:06:50.160
+So SPACE gives us a much richer and a more 
+nuanced way to think about productivity
+
+0:06:50.800,0:06:56.160
+but can it help us measure productivity, something 
+leaders as I mentioned in particular care about.
+
+0:06:56.800,0:07:01.520
+Fortunately these days it is now recognized 
+that there is no universal metric
+
+0:07:01.520,0:07:05.840
+for measuring productivity, and SPACE 
+can help us and plays a role here
+
+0:07:05.840,0:07:11.920
+in helping us choose at least several metrics from 
+different dimensions of productivity, and actually
+
+0:07:11.920,0:07:17.280
+our paper describes this in a bit more detail.
+But we're not done: choosing these metrics is
+
+0:07:17.280,0:07:22.720
+still challenging and I believe that we need 
+to do a lot more to understand how to measure
+
+0:07:22.720,0:07:27.440
+different aspects of productivity or otherwise 
+we run the risk of being counterproductive.
+
+0:07:28.720,0:07:33.360
+This is especially important to be cautious 
+about because, well, let's face it,
+
+0:07:33.360,0:07:37.200
+engineers have been trained and 
+conditioned to consider objective data
+
+0:07:37.200,0:07:42.320
+and metrics that are easier to quantify before 
+considering qualitative and subjective data,
+
+0:07:43.280,0:07:50.320
+so before choosing metrics we need to first pause, 
+take a step back, and focus on what are the goals,
+
+0:07:51.440,0:07:58.080
+that is, are we trying to measure productivity in 
+terms of improving the quality of the product, or
+
+0:07:58.080,0:08:03.520
+are we trying to improve quality productivity in 
+terms of the velocity of our engineering process
+
+0:08:03.520,0:08:09.680
+and being able to continuously deliver code, or 
+are we looking at the experience of the developer
+
+0:08:10.240,0:08:17.040
+or perhaps it's all three.
+Now for product quality and process quality we do
+
+0:08:17.040,0:08:21.520
+already have some well-defined objective and 
+validated quantitative metrics for these,
+
+0:08:21.520,0:08:26.560
+but as I mentioned earlier, even these - measuring 
+these is not simple, and they need to be - we need
+
+0:08:26.560,0:08:31.680
+to carefully consider the context of the project 
+and the developers before choosing these metrics.
+
+0:08:32.400,0:08:39.120
+The third one here, developer experience, in 
+contrast relies much more on subjective metrics
+
+0:08:39.120,0:08:45.600
+which can be harder to measure, but I'm 
+proposing today that it is critical that we
+
+0:08:45.600,0:08:50.720
+understand and improve developer experience, 
+because we know from previous research that
+
+0:08:50.720,0:08:55.920
+improving developer experience will lead to 
+improvements in product quality and process
+
+0:08:55.920,0:09:00.080
+velocity and vice versa.
+But what do I mean when I say
+
+0:09:00.080,0:09:03.520
+developer experience, you may wonder.
+It is also complicated.
+
+0:09:03.520,0:09:07.200
+From a study I recently did with 
+my colleagues Michaela and Abi,
+
+0:09:07.200,0:09:13.360
+we define developer experience as how developers 
+think about, feel about, and value their work.
+
+0:09:14.080,0:09:19.040
+And in this study we conducted in-depth interviews 
+with 21 developers from across the industry
+
+0:09:19.040,0:09:22.880
+to understand which factors have 
+the most impact on their experience.
+
+0:09:22.880,0:09:29.680
+And we learned about key six factors - six 
+key categories of factors: developer flow
+
+0:09:29.680,0:09:36.240
+and fulfillment, how they collaborate with others 
+and their culture at work, how their team and
+
+0:09:36.240,0:09:41.120
+their product is managed, and the quality of the 
+tools and the engineering processes they use.
+
+0:09:41.680,0:09:45.520
+But we also found that the impact 
+these different factors have
+
+0:09:46.080,0:09:49.840
+really depends on their specific context 
+of the project and on their work.
+
+0:09:50.640,0:09:55.440
+And these factors can help us pick 
+specific goals and in turn metrics
+
+0:09:55.440,0:10:00.000
+that can improve developer experience and 
+in turn developer productivity overall.
+
+0:10:01.440,0:10:07.280
+So in closing here are my main takeaways.
+Productivity is more complicated than we think.
+
+0:10:07.280,0:10:13.280
+It means different things to different people and 
+there is no universal productivity metric or even
+
+0:10:13.280,0:10:17.680
+a universal set of metrics.
+Space can help us select
+
+0:10:17.680,0:10:22.160
+some metrics but first we need to clearly 
+articulate our goals before selecting any.
+
+0:10:22.720,0:10:28.960
+And lastly we need I suggest that as an industry 
+we need to place a lot more focus on understanding
+
+0:10:28.960,0:10:34.000
+and improving developer experience, as doing 
+so will lead to improvements in product quality
+
+0:10:34.000,0:10:38.080
+and engineering velocity, all important 
+goals within the space of productivity.
+
+0:10:38.880,0:10:43.120
+So thank you and I hope that you some 
+of you might reach out to me by email
+
+0:10:43.120,0:10:52.160
+or twitter if you have questions or thoughts 
+to share and I would love to hear from you.
