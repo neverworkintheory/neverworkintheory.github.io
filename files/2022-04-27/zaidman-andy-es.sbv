@@ -1,0 +1,249 @@
+0:00:05.040,0:00:11.600
+Programador de día, tester de noche: ¿qué quiero decir realmente con esto? Bueno, habiendo mirado las
+
+0:00:11.600,0:00:16.880
+presentaciones que me precedieron, creo que hay una conexión muy lógica con lo que algunas de las personas que están
+
+0:00:16.880,0:00:22.880
+trabajando en testing que estamos viendo como Maurício y Manuel, pero también con lo que Igor
+
+0:00:22.880,0:00:31.520
+acaba de decir sobre estimaciones, así que vamos a meternos en la cocina, porque, en realidad, bueno si mis
+
+0:00:31.520,0:00:40.800
+diapositivas se movieran... En realidad me gusta usar la cocina como un universo paralelo al universo de la programación
+
+0:00:40.800,0:00:47.680
+en el que normalmente trabajamos como desarrolladores. Así que personalmente, me encanta cocinar,
+
+0:00:47.680,0:00:56.480
+y me gusta hacer platos intrincados y - y ponerlos en la mesa, pero como se puede imaginar, esta
+
+0:00:56.480,0:01:03.040
+parte del trabajo en la cocina no me suele gustar mucho. Y creo que mucha gente estaría de 
+
+0:01:03.040,0:01:09.680
+acuerdo conmigo, que esto es realmente lo que tratas de retrasar tanto como sea posible, y bueno, tal vez
+
+0:01:09.680,0:01:16.000
+tienes un lavavajillas, y no es tan malo, pero, bueno, definitivamente no es mi parte favorita del trabajo.
+
+0:01:17.600,0:01:23.680
+Así que si te preguntara cuánto tiempo cuesta realmente hacer este hermoso plato,
+
+0:01:23.680,0:01:29.600
+y tal vez alguien diría que 30 minutos, y si te preguntara cuánto tiempo pasarías
+
+0:01:29.600,0:01:37.840
+lavando los platos, probablemente sería bastante más tiempo del que te lleva cocinar. Así que desde ese
+
+0:01:37.840,0:01:42.240
+punto de vista, hay un mensaje que llega, así que voy a ver si eso es algo
+
+0:01:43.040,0:01:51.440
+para mí... No... Así que desde esa perspectiva, hemos estado observando cómo la gente percibe
+
+0:01:51.440,0:01:57.840
+el tiempo que se tarda en hacer las tareas que disfrutas, frente a las tareas que quizás no disfrutas
+
+0:01:57.840,0:02:02.560
+tanto. En realidad hay un término para eso que es la cronocepción, pero también es - es una especie de
+
+0:02:02.560,0:02:06.320
+forma abreviada de la crono-percepción el tiempo que se tarda en hacer algo.
+
+0:02:08.960,0:02:16.240
+And what we were really wondering in the 
+studies that we've done is, how do people look
+
+0:02:16.240,0:02:26.880
+at software testing, and how much time are they 
+spending on software testing. So my slides move -
+
+0:02:26.880,0:02:33.200
+we actually did - we created a tool a plug-in 
+for some popular development environments. We
+
+0:02:33.200,0:02:40.800
+unleashed that on 2442 developers from many 
+countries, but the key thing is that by having
+
+0:02:40.800,0:02:48.240
+this tool installed for several months, we were 
+able to collect 150 person-years of development
+
+0:02:48.240,0:02:53.920
+during the study. So this gives us a broad basis 
+to really look at how people are doing testing.
+
+0:02:55.120,0:03:00.720
+Now, during the installation we had this 
+fancy wizard and we were asking people,
+
+0:03:00.720,0:03:05.360
+do you do testing, do you do that in the 
+IDE, do you do other types of testing,
+
+0:03:06.480,0:03:12.560
+any other opinions that people might have on 
+testing. So one of the key questions was how
+
+0:03:12.560,0:03:18.240
+much time do you think you're spending time 
+on engineering test code versus engineering
+
+0:03:18.240,0:03:26.640
+what we call production code in the IDE. And the 
+answers - the average answer over all the 2443
+
+0:03:27.360,0:03:34.000
+developers that installed the tool was 
+about 50-50. So 49.5 percent of their time
+
+0:03:34.720,0:03:39.920
+was spent on engineering test code and 
+50.5 percent was spent on engineering
+
+0:03:39.920,0:03:44.800
+production code. Now there is something really 
+strange going on here, because there is this
+
+0:03:45.520,0:03:52.480
+really famous book - The Mythical Man Month from 
+Frederick Brooks - and in that book it's written
+
+0:03:52.480,0:03:58.400
+that testing takes approximately 50 percent of 
+our time. So it's actually very strange that the
+
+0:03:58.400,0:04:06.640
+book from - that was published at the end of the 
+1970s - actually premonitioned the results of this
+
+0:04:06.640,0:04:13.840
+first question in our study. So maybe there is 
+actually some folklore going on in our profession.
+
+0:04:14.480,0:04:21.360
+Now the key question obviously is that after 
+observing these developers, after minimally five
+
+0:04:21.360,0:04:27.200
+months and potentially even two years or more, 
+what would be the answer? How much time would
+
+0:04:27.200,0:04:33.280
+actually be spent on engineering test code? That 
+is dramatically different from the estimations.
+
+0:04:34.160,0:04:41.040
+One quarter of their time - of these developers 
+- was spent on engineering test code in the IDE
+
+0:04:41.040,0:04:44.960
+and 75 percent was spent on 
+engineering the production code.
+
+0:04:46.320,0:04:53.600
+Why is that? Well, these remain assumptions, 
+but the fact that software testing is really a
+
+0:04:53.600,0:04:58.560
+destructive activity, while engineering production 
+code is actually something that you bring to life,
+
+0:04:58.560,0:05:02.640
+something that you probably enjoy more, just 
+like the cooking versus doing the dishes,
+
+0:05:03.200,0:05:09.840
+could be a reason here why people 
+overestimate their testing efforts.
+
+0:05:11.600,0:05:17.520
+But there is more to this study because we also 
+looked at how people do test driven development,
+
+0:05:17.520,0:05:23.920
+and this really touches upon what Davide was 
+telling a few presentations before. So I think
+
+0:05:23.920,0:05:29.360
+we all know what test driven development is - it's 
+the core idea that you write your tests first and
+
+0:05:29.360,0:05:36.880
+then implement parts of the production code so 
+that your tests pass. And this really requires
+
+0:05:36.880,0:05:43.120
+this cycle where you have a failing test, you make 
+it pass, your refactor, and you continue doing
+
+0:05:43.120,0:05:50.800
+that. So from the 574 developers, which is like 
+just under 20 percent of the developers in our
+
+0:05:50.800,0:05:58.080
+study, that claimed to do TDD, there were actually 
+only 47 that really did TDD. Now you can say,
+
+0:05:58.080,0:06:03.280
+well, maybe they did it outside of the observation 
+- observation period, that could all well be,
+
+0:06:03.280,0:06:08.960
+but I think the key message here is that a lot 
+of people think they do it, but in practice
+
+0:06:08.960,0:06:14.640
+they don't do it that often. Because even for 
+those developers that we did observe that they
+
+0:06:14.640,0:06:21.200
+were doing TDD they only did it in very specific 
+cases, probably because it's not that easy to do.
+
+0:06:23.440,0:06:30.720
+So what does that really bring us to? Well, 
+the first takeaway is what developers think
+
+0:06:30.720,0:06:38.080
+they do or they estimate their efforts on, is 
+typically not what they really do in practice. So
+
+0:06:38.080,0:06:43.200
+the chronoception of software engineering tasks 
+is really something that we need to be careful
+
+0:06:43.200,0:06:53.920
+for. And secondly, maybe a plea is that we need to 
+understand software engineering tasks better: how
+
+0:06:53.920,0:07:01.840
+we do it, and also the effort that it takes to do 
+them. And we need to have better tools to estimate
+
+0:07:02.400,0:07:05.680
+how much time does it take to test, 
+how much time does it really take to
+
+0:07:05.680,0:07:12.560
+implement the feature. So my plea here is really 
+to also use software analytics during developments
+
+0:07:12.560,0:07:18.720
+to better understand what you and your team are 
+doing and also create more reliable estimations.
+
+0:07:20.960,0:07:26.880
+So finally the two takeaways of my talk: 
+the chrono perception - take into account
+
+0:07:26.880,0:07:33.200
+that certain things take more or less time 
+depending on certain factors in your personality.
+
+0:07:33.840,0:07:43.840
+And a general plea to do more software 
+analytics to become a better programmer. Thanks.
