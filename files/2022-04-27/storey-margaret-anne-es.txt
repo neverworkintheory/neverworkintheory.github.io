@@ -53,19 +53,23 @@ Así que SPACE nos ofrece una forma mucho más rica y matizada de pensar en la p
 Afortunadamente, hoy en día se reconoce que no existe una métrica universal para medir la productividad, y SPACE puede ayudarnos y desempeña un papel en este sentido al ayudarnos a elegir al menos varias métricas de diferentes dimensiones de la productividad, y de hecho nuestro documento describe esto con un poco más de detalle.
 Pero no hemos terminado: la elección de estas métricas sigue siendo un reto y creo que tenemos que hacer mucho más para entender cómo medir los diferentes aspectos de la productividad o, de lo contrario, corremos el riesgo de ser contraproducentes.
 
-This is especially important to be cautious about because, well, let's face it, engineers have been trained and conditioned to consider objective data and metrics that are easier to quantify before considering qualitative and subjective data, so before choosing metrics we need to first pause, take a step back, and focus on what are the goals, that is, are we trying to measure productivity in terms of improving the quality of the product, or are we trying to improve quality productivity in terms of the velocity of our engineering process and being able to continuously deliver code, or are we looking at the experience of the developer or perhaps it's all three.
-Now for product quality and process quality we do already have some well-defined objective and validated quantitative metrics for these, but as I mentioned earlier, even these - measuring these is not simple, and they need to be - we need to carefully consider the context of the project and the developers before choosing these metrics.
-The third one here, developer experience, in contrast relies much more on subjective metrics which can be harder to measure, but I'm proposing today that it is critical that we understand and improve developer experience, because we know from previous research that improving developer experience will lead to improvements in product quality and process velocity and vice versa.
-But what do I mean when I say developer experience, you may wonder.
-It is also complicated.
-From a study I recently did with my colleagues Michaela and Abi, we define developer experience as how developers think about, feel about, and value their work.
-And in this study we conducted in-depth interviews with 21 developers from across the industry to understand which factors have the most impact on their experience.
-And we learned about key six factors - six key categories of factors: developer flow and fulfillment, how they collaborate with others and their culture at work, how their team and their product is managed, and the quality of the tools and the engineering processes they use.
-But we also found that the impact these different factors have really depends on their specific context of the project and on their work.
-And these factors can help us pick specific goals and in turn metrics that can improve developer experience and in turn developer productivity overall.
-So in closing here are my main takeaways.
-Productivity is more complicated than we think.
-It means different things to different people and there is no universal productivity metric or even a universal set of metrics.
-Space can help us select some metrics but first we need to clearly articulate our goals before selecting any.
-And lastly we need I suggest that as an industry we need to place a lot more focus on understanding and improving developer experience, as doing so will lead to improvements in product quality and engineering velocity, all important goals within the space of productivity.
-So thank you and I hope that you some of you might reach out to me by email or twitter if you have questions or thoughts to share and I would love to hear from you.
+Esto es especialmente importante para ser cauteloso porque, bueno, seamos sinceros, los ingenieros han sido entrenados y condicionados a considerar los datos objetivos y las métricas que son más fáciles de cuantificar antes de considerar los datos cualitativos y subjetivos, por lo que antes de elegir las métricas necesitamos primero hacer una pausa, dar un paso atrás y centrarnos en cuáles son los objetivos, es decir, ¿estamos tratando de medir la productividad en términos de mejora de la calidad del producto, o estamos tratando de mejorar la productividad de la calidad en términos de la velocidad de nuestro proceso de ingeniería y ser capaz de entregar continuamente el código, o estamos mirando la experiencia del desarrollador o tal vez es los tres.
+Ahora bien, para la calidad del producto y la calidad del proceso ya tenemos algunas métricas cuantitativas objetivas y validadas bien definidas para ellos, pero como he mencionado antes, incluso estos - la medición de estos no es simple, y tienen que ser - tenemos que considerar cuidadosamente el contexto del proyecto y los desarrolladores antes de elegir estas métricas.
+
+La tercera, la experiencia del desarrollador, en cambio, se basa mucho más en métricas subjetivas que pueden ser más difíciles de medir, pero hoy propongo que es fundamental que entendamos y mejoremos la experiencia del desarrollador, porque sabemos por investigaciones anteriores que la mejora de la experiencia del desarrollador conducirá a mejoras en la calidad del producto y la velocidad del proceso y viceversa.
+Pero a qué me refiero cuando digo experiencia del desarrollador, se preguntarán.
+También es complicado.
+
+A partir de un estudio que realicé recientemente con mis colegas Michaela y Abi, definimos la experiencia del desarrollador como la forma en que los desarrolladores piensan, sienten y valoran su trabajo.
+Y en este estudio realizamos entrevistas en profundidad con 21 desarrolladores de toda la industria para entender qué factores tienen el mayor impacto en su experiencia.
+Y descubrimos seis factores clave, seis categorías de factores clave: el flujo y la satisfacción de los desarrolladores, cómo colaboran con los demás y su cultura en el trabajo, cómo se gestiona su equipo y su producto, y la calidad de las herramientas y los procesos de ingeniería que utilizan.
+Pero también descubrimos que el impacto que tienen estos diferentes factores depende realmente de su contexto específico del proyecto y de su trabajo.
+Y estos factores pueden ayudarnos a elegir objetivos específicos y, a su vez, métricas que pueden mejorar la experiencia de los desarrolladores y, a su vez, la productividad general de los mismos.
+
+Para terminar, estas son mis principales conclusiones.
+La productividad es más complicada de lo que creemos.
+Significa cosas diferentes para cada persona y no existe una métrica de productividad universal o incluso un conjunto universal de métricas.
+SPACE puede ayudarnos a seleccionar algunas métricas, pero primero tenemos que articular claramente nuestros objetivos antes de seleccionar cualquiera.
+Y, por último, sugiero que, como industria, debemos centrarnos mucho más en la comprensión y la mejora de la experiencia de los desarrolladores, ya que esto conducirá a mejoras en la calidad del producto y la velocidad de la ingeniería, todos ellos objetivos importantes dentro del espacio de la productividad.
+Así que gracias y espero que algunos de ustedes se pongan en contacto conmigo por correo electrónico o Twitter si tienen preguntas o pensamientos para compartir y me encantaría escucharlos.
+
