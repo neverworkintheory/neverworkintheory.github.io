@@ -134,89 +134,68 @@ algo que probablemente se disfruta más, al igual que la cocina frente a lavar l
 podría ser una razón aquí por la que la gente sobreestima sus esfuerzos de prueba.
 
 0:05:11.600,0:05:17.520
-But there is more to this study because we also 
-looked at how people do test driven development,
+Pero hay más en este estudio, porque también examinamos cómo la gente hace el desarrollo dirigido por pruebas,
 
 0:05:17.520,0:05:23.920
-and this really touches upon what Davide was 
-telling a few presentations before. So I think
+y esto realmente toca lo que Davide estaba diciendo unas cuantas presentaciones antes. Así que creo
 
 0:05:23.920,0:05:29.360
-we all know what test driven development is - it's 
-the core idea that you write your tests first and
+que todos sabemos lo que es el desarrollo dirigido por pruebas - es la idea central de que escribes tus pruebas primero y
 
 0:05:29.360,0:05:36.880
-then implement parts of the production code so 
-that your tests pass. And this really requires
+luego implementas partes del código de producción para que tus pruebas pasen. Y esto realmente requiere
 
 0:05:36.880,0:05:43.120
-this cycle where you have a failing test, you make 
-it pass, your refactor, and you continue doing
+este ciclo en el que tienes una prueba que falla, la haces pasar, la refactorizas, y continúas haciendo
 
 0:05:43.120,0:05:50.800
-that. So from the 574 developers, which is like 
-just under 20 percent of the developers in our
+eso. Así que de los 574 desarrolladores, que es como poco menos del 20 por ciento de los desarrolladores en nuestro
 
 0:05:50.800,0:05:58.080
-study, that claimed to do TDD, there were actually 
-only 47 that really did TDD. Now you can say,
+estudio, que afirmaron hacer TDD, en realidad sólo había 47 que realmente hicieron TDD. Ahora podrías decir,
 
 0:05:58.080,0:06:03.280
-well, maybe they did it outside of the observation 
-- observation period, that could all well be,
+bueno, tal vez lo hicieron fuera de la observación - período de observación, que podría ser,
 
 0:06:03.280,0:06:08.960
-but I think the key message here is that a lot 
-of people think they do it, but in practice
+pero creo que el mensaje clave aquí es que mucha gente piensa que lo hacen, pero en la práctica
 
 0:06:08.960,0:06:14.640
-they don't do it that often. Because even for 
-those developers that we did observe that they
+no lo hacen tan a menudo. Porque incluso para los desarrolladores que observamos que 
 
 0:06:14.640,0:06:21.200
-were doing TDD they only did it in very specific 
-cases, probably because it's not that easy to do.
+estaban haciendo TDD sólo lo hicieron en casos muy específicos, probablemente porque no es tan fácil de hacer.
 
 0:06:23.440,0:06:30.720
-So what does that really bring us to? Well, 
-the first takeaway is what developers think
+¿A qué nos lleva esto realmente? Bueno, la primera conclusión es que lo que los desarrolladores creen
 
 0:06:30.720,0:06:38.080
-they do or they estimate their efforts on, is 
-typically not what they really do in practice. So
+que hacen o calculan sus esfuerzos no es lo que realmente hacen en la práctica. Así que
 
 0:06:38.080,0:06:43.200
-the chronoception of software engineering tasks 
-is really something that we need to be careful
+la cronocepción de las tareas de ingeniería de software es algo con lo que tenemos que tener cuidado.
 
 0:06:43.200,0:06:53.920
-for. And secondly, maybe a plea is that we need to 
-understand software engineering tasks better: how
+Y en segundo lugar, tal vez una petición es que tenemos que entender mejor las tareas de ingeniería de software: ¿cómo
 
 0:06:53.920,0:07:01.840
-we do it, and also the effort that it takes to do 
-them. And we need to have better tools to estimate
+lo hacemos?, y también el esfuerzo que se necesita para hacerlas. Y necesitamos tener mejores herramientas para estimar 
 
 0:07:02.400,0:07:05.680
-how much time does it take to test, 
-how much time does it really take to
+cuánto tiempo se necesita para probar, cuánto tiempo realmente se necesita para
 
 0:07:05.680,0:07:12.560
-implement the feature. So my plea here is really 
-to also use software analytics during developments
+implementar la característica. Así que mi petición aquí es realmente utilizar también el análisis de software durante los desarrollos
 
 0:07:12.560,0:07:18.720
-to better understand what you and your team are 
-doing and also create more reliable estimations.
+para entender mejor lo que usted y su equipo están haciendo y también crear estimaciones más fiables.
 
 0:07:20.960,0:07:26.880
-So finally the two takeaways of my talk: 
-the chrono perception - take into account
+Así que, finalmente, las dos conclusiones de mi charla: la cronopercepción - tener en cuenta
 
 0:07:26.880,0:07:33.200
-that certain things take more or less time 
-depending on certain factors in your personality.
+que ciertas cosas llevan más o menos tiempo dependiendo de ciertos factores de tu personalidad.
 
 0:07:33.840,0:07:43.840
-And a general plea to do more software 
-analytics to become a better programmer. Thanks.
+Y una petición general de hacer más análisis de software para ser un mejor programador. Gracias.
+
