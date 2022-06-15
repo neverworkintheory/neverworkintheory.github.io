@@ -228,208 +228,165 @@ Esta dimensión subraya que el desarrollo de software
 es una actividad de equipo y un proceso inherentemente creativo y colaborativo.
 
 0:06:14.080,0:06:19.200
-And then the final dimension that we added to 
-the SPACE framework is about efficiency and flow.
+Y la última dimensión que hemos añadido al marco SPACE se refiere a la eficacia y la fluidez.
 
 0:06:19.200,0:06:21.040
-Efficiency and flow is the ability
+La eficiencia y la fluidez es la capacidad
 
 0:06:21.040,0:06:23.760
-to work without interruption.
-These are topics that have been
+de trabajar sin interrupciones.
+Estos son temas que se han
 
 0:06:23.760,0:06:27.520
-studied extensively in our research 
-community over the past few years
+estudiado ampliamente en nuestra comunidad de investigación en los últimos años,
 
 0:06:27.520,0:06:32.960
-years, and this dimension captures the importance 
-of flow for individual developers and the negative
+y esta dimensión capta la importancia del flujo para los desarrolladores individuales y el impacto negativo 
 
 0:06:32.960,0:06:38.800
-impact interruptions may have on their work.
-But this dimension also captures how well
+que las interrupciones pueden tener en su trabajo.
+Pero esta dimensión también capta lo bien
 
 0:06:38.800,0:06:43.600
-teams are orchestrating their different activities 
-and how often they're making continuous progress.
+que los equipos orquestan sus diferentes actividades y la frecuencia con la que progresan continuamente.
 
 0:06:45.120,0:06:50.160
-So SPACE gives us a much richer and a more 
-nuanced way to think about productivity
+Así que SPACE nos ofrece una forma mucho más rica y matizada de pensar en la productividad,
 
 0:06:50.800,0:06:56.160
-but can it help us measure productivity, something 
-leaders as I mentioned in particular care about.
+pero puede ayudarnos a medir la productividad, algo que preocupa especialmente a los directivos, como he mencionado.
 
 0:06:56.800,0:07:01.520
-Fortunately these days it is now recognized 
-that there is no universal metric
+Afortunadamente, hoy en día se reconoce que no existe una métrica universal
 
 0:07:01.520,0:07:05.840
-for measuring productivity, and SPACE 
-can help us and plays a role here
+para medir la productividad, y SPACE puede ayudarnos y desempeña un papel en este sentido
 
 0:07:05.840,0:07:11.920
-in helping us choose at least several metrics from 
-different dimensions of productivity, and actually
+al ayudarnos a elegir al menos varias métricas de diferentes dimensiones de la productividad, y de hecho
 
 0:07:11.920,0:07:17.280
-our paper describes this in a bit more detail.
-But we're not done: choosing these metrics is
+nuestro documento describe esto con un poco más de detalle.
+Pero no hemos terminado: la elección de estas métricas sigue
 
 0:07:17.280,0:07:22.720
-still challenging and I believe that we need 
-to do a lot more to understand how to measure
+siendo un reto y creo que tenemos que hacer mucho más para entender cómo medir
 
 0:07:22.720,0:07:27.440
-different aspects of productivity or otherwise 
-we run the risk of being counterproductive.
+los diferentes aspectos de la productividad o, de lo contrario, corremos el riesgo de ser contraproducentes.
 
 0:07:28.720,0:07:33.360
-This is especially important to be cautious 
-about because, well, let's face it,
+Esto es especialmente importante para ser cauteloso porque, bueno, seamos sinceros,
 
 0:07:33.360,0:07:37.200
-engineers have been trained and 
-conditioned to consider objective data
+los ingenieros han sido entrenados y condicionados a considerar los datos objetivos
 
 0:07:37.200,0:07:42.320
-and metrics that are easier to quantify before 
-considering qualitative and subjective data,
+y las métricas que son más fáciles de cuantificar antes de considerar los datos cualitativos y subjetivos,
 
 0:07:43.280,0:07:50.320
-so before choosing metrics we need to first pause, 
-take a step back, and focus on what are the goals,
+por lo que antes de elegir las métricas necesitamos primero hacer una pausa, dar un paso atrás y centrarnos en cuáles son los objetivos,
 
 0:07:51.440,0:07:58.080
-that is, are we trying to measure productivity in 
-terms of improving the quality of the product, or
+es decir, ¿estamos tratando de medir la productividad en términos de mejora de la calidad del producto, o
 
 0:07:58.080,0:08:03.520
-are we trying to improve quality productivity in 
-terms of the velocity of our engineering process
+estamos tratando de mejorar la productividad de la calidad en términos de la velocidad de nuestro proceso de ingeniería 
 
 0:08:03.520,0:08:09.680
-and being able to continuously deliver code, or 
-are we looking at the experience of the developer
+y ser capaz de entregar continuamente el código, o estamos mirando la experiencia del desarrollador 
 
 0:08:10.240,0:08:17.040
-or perhaps it's all three.
-Now for product quality and process quality we do
+o tal vez es los tres.
+Ahora bien, para la calidad del producto y la calidad del proceso ya
 
 0:08:17.040,0:08:21.520
-already have some well-defined objective and 
-validated quantitative metrics for these,
+tenemos algunas métricas cuantitativas objetivas y validadas bien definidas para ellos,
 
 0:08:21.520,0:08:26.560
-but as I mentioned earlier, even these - measuring 
-these is not simple, and they need to be - we need
+pero como he mencionado antes, incluso estos - la medición de estos no es simple, y tienen que ser - tenemos que
 
 0:08:26.560,0:08:31.680
-to carefully consider the context of the project 
-and the developers before choosing these metrics.
+considerar cuidadosamente el contexto del proyecto y los desarrolladores antes de elegir estas métricas.
 
 0:08:32.400,0:08:39.120
-The third one here, developer experience, in 
-contrast relies much more on subjective metrics
+La tercera, la experiencia del desarrollador, en cambio, se basa mucho más en métricas subjetivas
 
 0:08:39.120,0:08:45.600
-which can be harder to measure, but I'm 
-proposing today that it is critical that we
+que pueden ser más difíciles de medir, pero hoy propongo que es fundamental que
 
 0:08:45.600,0:08:50.720
-understand and improve developer experience, 
-because we know from previous research that
+entendamos y mejoremos la experiencia del desarrollador, porque sabemos por investigaciones anteriores que
 
 0:08:50.720,0:08:55.920
-improving developer experience will lead to 
-improvements in product quality and process
+la mejora de la experiencia del desarrollador conducirá a mejoras en la calidad del producto y la velocidad
 
 0:08:55.920,0:09:00.080
-velocity and vice versa.
-But what do I mean when I say
+del proceso y viceversa.
+Pero a qué me refiero cuando digo
 
 0:09:00.080,0:09:03.520
-developer experience, you may wonder.
-It is also complicated.
+experiencia del desarrollador, se preguntarán.
+También es complicado.
 
 0:09:03.520,0:09:07.200
-From a study I recently did with 
-my colleagues Michaela and Abi,
+A partir de un estudio que realicé recientemente con mis colegas Michaela y Abi,
 
 0:09:07.200,0:09:13.360
-we define developer experience as how developers 
-think about, feel about, and value their work.
+definimos la experiencia del desarrollador como la forma en que los desarrolladores piensan, sienten y valoran su trabajo.
 
 0:09:14.080,0:09:19.040
-And in this study we conducted in-depth interviews 
-with 21 developers from across the industry
+Y en este estudio realizamos entrevistas en profundidad con 21 desarrolladores de toda la industria 
 
 0:09:19.040,0:09:22.880
-to understand which factors have 
-the most impact on their experience.
+para entender qué factores tienen el mayor impacto en su experiencia.
 
 0:09:22.880,0:09:29.680
-And we learned about key six factors - six 
-key categories of factors: developer flow
+Y descubrimos seis factores clave, seis categorías de factores clave: el flujo 
 
 0:09:29.680,0:09:36.240
-and fulfillment, how they collaborate with others 
-and their culture at work, how their team and
+y la satisfacción de los desarrolladores, cómo colaboran con los demás y su cultura en el trabajo, cómo se gestiona
 
 0:09:36.240,0:09:41.120
-their product is managed, and the quality of the 
-tools and the engineering processes they use.
+su equipo y su producto, y la calidad de las herramientas y los procesos de ingeniería que utilizan.
 
 0:09:41.680,0:09:45.520
-But we also found that the impact 
-these different factors have
+Pero también descubrimos que el impacto que tienen estos diferentes factores 
 
 0:09:46.080,0:09:49.840
-really depends on their specific context 
-of the project and on their work.
+depende realmente de su contexto específico del proyecto y de su trabajo.
 
 0:09:50.640,0:09:55.440
-And these factors can help us pick 
-specific goals and in turn metrics
+Y estos factores pueden ayudarnos a elegir objetivos específicos y, a su vez, métricas 
 
 0:09:55.440,0:10:00.000
-that can improve developer experience and 
-in turn developer productivity overall.
+que pueden mejorar la experiencia de los desarrolladores y, a su vez, la productividad general de los mismos.
 
 0:10:01.440,0:10:07.280
-So in closing here are my main takeaways.
-Productivity is more complicated than we think.
+Para terminar, estas son mis principales conclusiones.
+La productividad es más complicada de lo que creemos.
 
 0:10:07.280,0:10:13.280
-It means different things to different people and 
-there is no universal productivity metric or even
+Significa cosas diferentes para cada persona y no existe una métrica de productividad universal o incluso 
 
 0:10:13.280,0:10:17.680
-a universal set of metrics.
-Space can help us select
+un conjunto universal de métricas.
+SPACE puede ayudarnos a seleccionar
 
 0:10:17.680,0:10:22.160
-some metrics but first we need to clearly 
-articulate our goals before selecting any.
+ algunas métricas, pero primero tenemos que articular claramente nuestros objetivos antes de seleccionar cualquiera.
 
 0:10:22.720,0:10:28.960
-And lastly we need I suggest that as an industry 
-we need to place a lot more focus on understanding
+Y, por último, sugiero que, como industria, debemos centrarnos mucho más en entender
 
 0:10:28.960,0:10:34.000
-and improving developer experience, as doing 
-so will lead to improvements in product quality
+y mejorar la experiencia de los desarrolladores, ya que esto conducirá a mejoras en la calidad del producto
 
 0:10:34.000,0:10:38.080
-and engineering velocity, all important 
-goals within the space of productivity.
+y la velocidad de la ingeniería, todos ellos objetivos importantes dentro del espacio de la productividad.
 
 0:10:38.880,0:10:43.120
-So thank you and I hope that you some 
-of you might reach out to me by email
+Así que gracias y espero que algunos de ustedes se pongan en contacto conmigo por correo electrónico 
 
 0:10:43.120,0:10:52.160
-or twitter if you have questions or thoughts 
-to share and I would love to hear from you.
+o Twitter si tienen preguntas o pensamientos para compartir y me encantaría escucharlos.
