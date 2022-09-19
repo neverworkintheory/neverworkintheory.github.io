@@ -1,0 +1,121 @@
+---
+layout: post
+author: Kolja Pluemer
+title: "Do Developers Really Know How to Use Git Commands? A Large-Scale Study Using Stack Overflow"
+date: 2022-09-19
+categories: ["Tools", "Stack Overflow", "Usability"]
+---
+<div class="review">
+  <p>
+    Git, aptly described by the paper as <q>a cross-platform and open-source distributed version control tool</q>, is as
+    popular as it is confusing and misunderstood. At least, that is an often expressed sentiment in the
+    software development community. Now, the authors attempt
+    to move this lament from a meme towards a quantitatively established web of validated effects. And they do a good
+    job! In a way, this study
+    may be seen as a complement to <a href="https://neverworkintheory.org/2016/09/30/rethinking-git.html">more
+      qualitative approaches to the question of Git's usability</a>.
+  </p>
+  <figure>
+    <img src="https://imgs.xkcd.com/comics/git.png"
+      alt="Two figures in front of a laptop having the following conversation: 'This is Git. It tracks collaborative work on projects through a beautiful distributed graph theory tree model.' - 'Cool. How do we use it?' - 'No idea. Just memorize these shell commands and type them to sync up. If you get errors, save your work elsewhere, delete the project, and download a fresh copy.'">
+    <figcaption>
+      <small>
+        Comic expressing the cynical attitude many developers employ towards Git.
+      </small>
+    </figcaption>
+  </figure>
+  <p>
+    Yang, Zhang, Pan, Xu, Zhou and Huang use the popular developer Q&A platform Stack Overflow as well as a survey to
+    attain large
+    quantities of data. Armed with that, they express the following five aims:
+  <ol>
+    <li>Establish how many questions (on Stack Overflow) relate to Git commands and how this changes over the years.
+    </li>
+    <li>Find out who is asking these questions: novices or seasoned devs?</li>
+    <li>List which Git commands elicit the most questions.</li>
+    <li>Furthermore, find out for which commands it is hardest to get questions answered about.</li>
+    <li>Get an idea how devs approach learning Git and how they are doing.</li>
+  </ol>
+
+  To these ends, the researches use a fairly complex and well-described pipeline of statistical tools. As far as I am
+  able to tell they follow best practices, including the discussion of limitations, potential pitfalls and
+  irregularities in the data. Thus, the paper may serve as a positive example of eliciting answers from large data sets.
+  </p>
+  <p>
+    Let us then take a peek at the findings in
+    regards to the five goals described above:
+  <ol>
+    <li>Over 80.000 questions relate to Git commands at the time of writing. That's a lot! The percentage of Git-related
+      questions on SO remains fairly stable over time, with their view count being far above that of the average question.</li>
+    <li>
+      Over 40% of people asking questions about Git have been on SO for over four years, suggesting this is not what we
+      could call a "noob problem".
+    </li>
+    <li>
+      The most viewed questions relate to <code>git revert</code> and <code>git reflog</code>, with <code>stash</code>,
+      <code>clean</code> and <code>reset</code> being close contenders. Relatable, I would say.
+    </li>
+    <li>
+      Threads with no <em>Accepted Answer</em> are unsurprisingly dominated by rarely used commands such as
+      <code>pack-redundant</code>. When filtering for more commonly commands, threads that discuss complex scenarios
+      relating to commands like <code>git submodule</code> turn out to be the least answered.
+    </li>
+    <li>
+      Supported by a survey, the authors find that almost all devs use a self-learning approach to Git. They often
+      stress
+      the importance of learning Git properly, while describing themselves mostly as 'advanced beginner' or
+      'competent'.
+    </li>
+  </ol>
+
+
+
+  </p>
+  <p>
+    With these findings in mind, the authors give some recommendations to researchers, educators and devs: Firstly,
+    using
+    SO public data is confirmed to be a potent data source for such studies. They both encourage others to use the very
+    data
+    they found as well as building upon the research. Findings such as the list of most 'difficult' commands may be used
+    to
+    design and adapt teaching programs, whether these are university courses or self-learning curricula. I definitely
+    agree that
+    there is a dire need for more and better targeted Git courses - the fact that most developers teach themselves
+    <em>and</em> the
+    fact that understanding of Git is widely elusive shows that there is indeed room for improvement!
+  </p>
+
+  <p>Overall, I can only repeat that this paper does a very thorough job at collecting relevant data. These findings can
+    be readily used to
+    aid the improvement of your own development skills, the design of learning material or even Git itself. I can only
+    hope more studies
+    which also formulate solutions will follow.
+  </p>
+</div>
+<p id="Yang2022" class="bib">
+  <cite>Yang2022</cite>
+  Yang, W., Zhang, C., Pan, M., Xu, C., Zhou, Y., & Huang, Z.:
+  "<a href="https://doi.org/10.1145/1122445.1122456">Do Developers Really Know How to Use Git Commands? A Large-Scale Study Using Stack Overflow</a>"
+  <em>ACM Transactions on Software Engineering and Methodology (TOSEM) 31.3 (2022): 1-29.</em>
+  <a class="doi" href="https://doi.org/10.1145/1122445.1122456">10.1145/1122445.1122456</a>
+</p>
+
+<blockquote class="abstract">
+  <p>
+    Git, a cross-platform and open-source distributed version control tool, provides strong support for non-linear
+    development and is capable of handling everything from small to large projects with speed and efficiency. It has
+    become an indispensable tool for millions of software developers and is the de facto standard of version control in
+    software development nowadays. However, despite its widespread use, developers still frequently face difficulties
+    when using various Git commands to manage projects and collaborate. To better help developers use Git, it is
+    necessary to understand the issues and difficulties that they may encounter when using Git. Unfortunately, this
+    problem has not yet been comprehensively studied. To fill this knowledge gap, in this paper, we conduct a
+    large-scale study on Stack Overflow, a popular Q\&A forum for developers. We extracted and analyzed 80,370 relevant
+    questions from Stack Overflow, and reported the increasing popularity of the Git command questions. By analyzing the
+    questions, we identified the Git commands that are frequently asked and those that are associated with difficult
+    questions on Stack Overflow to help understand the difficulties developers may encounter when using Git commands. In
+    addition, we conducted a survey to understand how developers learn Git commands in practice, showing that
+    self-learning is the primary learning approach. These findings provide a range of actionable implications for
+    researchers, educators, and developers.
+
+  </p>
+</blockquote>
