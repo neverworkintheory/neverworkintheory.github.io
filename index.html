@@ -3,29 +3,40 @@ layout: page
 title: "It Will Never Work in Theory"
 ---
 
-<p>
-  Our second live event
-  in conjunction with the <a href="https://thestrangeloop.com/">Strange Loop</a> conference
-  was a success:
-  see <a href="{{'/2022/04/30/that-went-well.html' | relative_url}}">this post</a>
-  for a quick summary.
-  We will post videos of the talks here as they become available.
-</p>
-
-<br/>
-
-<div align="center">
-  <img src="{{ '/files/2022-04-27/splash.jpg' | relative_url }}" alt="Splash image" width="80%" />
-</div>
-
-<h2>Recent</h2>
-
-{% for post in site.posts limit:20 %}
-<p>
-  <strong><a href="{{post.url | relative_url}}">{{post.date | date: '%F'}}: {{post.title}}</a></strong>
-  <br/>
-  Keywords: {{ post.categories | sort | join: ', ' }}
-  <br/>
-  Reviewed by: {{ post.author }}
-</p>
+{% for session in site.talks reversed %}
+<h2>{{session.title}} ({{session.date}})</h2>
+<table>
+  <tr>
+  {% assign column = 'left' %}
+  {% for talk in session.talks %}
+    <td><a href="{{talk.video}}"><img src="{{'/files/thumbnails/' | append: talk.thumbnail | relative_url}}" alt="{{talk.title}}"/></a></td>
+    <td><a href="{{talk.homepage}}">{{talk.speaker}}</a>:<br/><a href="{{talk.video}}">{{talk.title}}</a></td>
+    {% if column == 'left' %}
+      {% assign column = 'right' %}
+    {% else %}
+      </tr>
+      <tr>
+      {% assign column = 'left' %}
+    {% endif %}
+  {% endfor %}
+  {% if column == 'right' %}
+  <td></td>
+  {% endif %}
+  </tr>
+</table>
 {% endfor %}
+
+<h2>Recent Posts</h2>
+<table>
+  <tr><th>Date</th><th>Title</th><th>Keywords</th><th>Byline</th></tr>
+  {% for post in site.posts limit:50 %}
+    {% unless post.lightning %}
+    <tr>
+      <td style="white-space: nowrap;">{{post.date | date: '%F'}}</td>
+      <td><a href="{{post.url | relative_url}}">{{post.title}}</a></td>
+      <td>{{ post.categories | sort | join: ', ' }}</td>
+      <td style="white-space: nowrap;">{{ post.author }}</td>
+    </tr>
+    {% endunless %}
+  {% endfor %}
+</table>
