@@ -1,0 +1,330 @@
+0:00:09.360,0:00:13.860
+Gracias a todos, buenos días, soy Sarah Nadi, soy profesora asociada en la Universidad de
+
+0:00:13.860,0:00:18.660
+Alberta, y hoy les hablaré de algunas de las investigaciones que mi grupo y yo hemos realizado
+
+0:00:19.320,0:00:22.680
+con la esperanza de evitar algunas de las experiencias frustrantes que ustedes pueden estar teniendo
+
+0:00:22.680,0:00:28.200
+al utilizar la biblioteca y su API o interfaz de programación de aplicaciones. Veamos un ejemplo de
+
+0:00:28.200,0:00:32.940
+cómo sería esa experiencia. Digamos que Alice es una desarrolladora, que está trabajando
+
+0:00:32.940,0:00:39.060
+en una aplicación web, está usando microperfil, que es un conjunto de especificaciones y APIs para
+
+0:00:39.060,0:00:43.920
+desarrollar aplicaciones basadas en microservicios, y sólo una especie de prueba simple, ella quiere
+
+0:00:43.920,0:00:49.020
+definir una definición de OpenAPI para uno de sus puntos finales. Así que ella encuentra esta anotación 
+
+0:00:49.020,0:00:55.080
+@OpenAPIDefinition, ya saben, sigue lo que encuentra y piensa que todo va a estar bien, pero
+
+0:00:55.080,0:01:00.420
+ningún cambio se refleja en la especificación de la API. Sigue leyendo la documentación tratando de
+
+0:01:00.420,0:01:05.820
+averiguar lo que está pasando, no lo entiende, por lo que, como la mayoría de nosotros, va a su recurso
+
+0:01:05.820,0:01:11.160
+favorito Stack Overflow y postea la pregunta. Y le respuesta es, ¿sabes qué?,
+
+0:01:12.960,0:01:17.460
+allí vamos, trata de poner la anotación en una clase de aplicación JAX-RS. Así que en otras palabras,
+
+0:01:17.460,0:01:24.180
+esta anotación sólo funciona si se pone en una clase que extiende a Application. Esto no es realmente
+
+0:01:24.180,0:01:29.460
+un ejemplo hipotético, esto es realmente de Stack Overflow, y en el comentario de aquí vemos
+
+0:01:29.460,0:01:35.040
+oh sí, esa solución funcionó, por desgracia no parece bien documentado. Y estoy segura de que
+
+0:01:35.040,0:01:39.180
+algunos de ustedes se encontraron con problemas similares con diferentes bibliotecas y diferentes APIs
+
+0:01:39.180,0:01:45.240
+y la cuestión es que hay realmente una especie de tres mundos, o tres puntos de vista sobre la API. Esta
+
+0:01:45.240,0:01:51.120
+el diseñador de la API, lo que quería que la gente hiciera, cómo esperaba que la gente usara la API, así que, sus
+
+0:01:51.120,0:01:56.760
+intenciones. Está la documentación de la API que, con suerte, tiene todas estas intenciones documentadas,
+
+0:01:56.760,0:02:02.280
+y luego está la comprensión de la API que tienen los usuarios basada en la lectura de la documentación, 
+
+0:02:02.280,0:02:08.880
+tal vez basada en información de bibliotecas similares que han utilizado. Y en un mundo ideal estos tres
+
+0:02:08.880,0:02:15.060
+se superpondrían y no tendríamos ningún problema. Pero en la práctica las cosas se ven un poco
+
+0:02:15.060,0:02:21.000
+así. Y es en estos límites donde se producen estos problemas. Voy a usar esto.
+
+0:02:21.000,0:02:26.820
+Y estos problemas son una especie de tipos de bugs o tipos de errores, y son muy específicos. Me refiero
+
+0:02:26.820,0:02:32.520
+al problema del que voy a hablarles hoy como mal uso de la API, y este es el comportamiento incorrecto 
+
+0:02:32.520,0:02:38.460
+o inesperado de una API o el comportamiento inesperado que se obtiene debido a no usar la API correctamente
+
+0:02:38.460,0:02:43.380
+por algunos problemas como los que hemos visto: intenciones ocultas o intenciones no documentadas.
+
+0:02:44.220,0:02:48.480
+Entonces alguien puede decir, de acuerdo, pero hay herramientas que pueden ayudarme con eso. Hay muchas
+
+0:02:48.480,0:02:54.720
+herramientas por ahí que escanear su código y señalan algunos problemas de APIs de uso frecuente o
+
+0:02:54.720,0:03:01.200
+bibliotecas de uso común. Voy a decir que es cierto, y la forma en que estas herramientas trabajan es que 
+
+0:03:01.200,0:03:05.820
+se centran en errores comunes o patrones de errores. Así que, básicamente, alguien en el fondo, sea
+
+0:03:05.820,0:03:11.340
+el diseñador de la API o un experto, alguien muy familiarizado con ella, viendo el problema varias veces dice, bien,
+
+0:03:11.340,0:03:15.720
+esto es una regla de uso, algo que necesitamos documentar, algo que necesitamos que estas herramientas
+
+0:03:15.720,0:03:21.900
+revisen. Y esto es genial, pero también es mucho esfuerzo manual y la dependencia de estos expertos
+
+0:03:21.900,0:03:27.600
+para codificarlas en las reglas. La pregunta entonces es, ¿podemos descubrir estas reglas de uso de la API o
+
+0:03:27.600,0:03:33.060
+estas expectativas automáticamente? Y nosotros consideramos que debíamos hacerlo. Y lo que hicimos fue
+
+0:03:33.060,0:03:39.360
+fijarnos en el código del cliente, básicamente proyectos que utilizan esta biblioteca o API, 
+
+0:03:39.360,0:03:44.700
+y examinamos los usos de la API, digamos muy simplemente aquí esta una API que se conecta la base de datos, 
+
+0:03:44.700,0:03:50.340
+miramos cómo todo el mundo lo está utilizando, y buscamos patrones frecuentes allí. Decimos, bien, aquí está el
+
+0:03:50.340,0:03:54.120
+patrón, se conecta a la base de datos, se ejecuta la consulta, y se cierra la conexión con la base de datos.
+
+0:03:54.780,0:04:00.060
+Y la idea es que usando este patrón podemos encontrar cosas que se desvían del patrón. En este
+
+0:04:00.060,0:04:05.160
+caso específico marcaríamos este tercer uso aquí como un mal uso de la API, algo que se desvió de este
+
+0:04:05.160,0:04:12.180
+patrón de uso de la API. Que queríamos ver cómo funcionaba en la práctica, así que tomamos un punto de refencia
+
+0:04:12.180,0:04:18.480
+- benchmark -, que es un set que tenemos de usos indebidos, conocidos, de la API, y decidimos medir cuántos
+
+0:04:18.480,0:04:24.840
+o qué porcentaje de estos usos indebidos puede encontrar nuestro detector basado en este patrón,
+
+0:04:24.840,0:04:30.240
+eso es la exhaustividad o recall, y qué porcentaje de las cosas que informamos al desarrollador, los usos
+
+0:04:30.240,0:04:34.920
+indebidos que señalamos, son usos incorrectos reales por los que la gente se preocupa, eso es la precisión.
+
+0:04:36.060,0:04:42.060
+Y en la práctica encontramos que, de acuerdo, podemos detectar el 42% del benchmark, pero nuestra precisión
+
+0:04:42.060,0:04:47.880
+es de alrededor del 34%, lo que significa que una de cada tres advertencias que damos a un desarrollador sea
+
+0:04:47.880,0:04:52.320
+probablemente algo que realmente no quieren arreglar. Y las razones para ello son cosas como los modismos,
+
+0:04:52.320,0:04:56.580
+así que a veces se extraen patrones que son sólo modismos, la gente los usa con frecuencia pero
+
+0:04:56.580,0:05:02.880
+no significa que no utilizarlos es un problema, ¿no?. Hasta ahora he presentado estas dos
+
+0:05:02.880,0:05:07.980
+especies de mundos. Hay minería de patrones, que es completamente automatizada y se puede utilizar como base
+
+0:05:07.980,0:05:13.080
+para la detección de reglas y uso indebido, pero el problema es, que sufre de esta baja precisión y exhaustividad,
+
+0:05:13.800,0:05:19.500
+dependiendo de qué APIs y eso. Y luego esta escribir las reglas de uso de la API en estas
+
+0:05:19.500,0:05:24.360
+herramientas, codificarlas manualmente, pero consume mucho tiempo y requiere de mucho esfuerzo.
+
+0:05:25.440,0:05:28.440
+Y así lo que terminamos haciendo es tratar de combinar
+
+0:05:28.440,0:05:32.460
+lo mejor de estos dos mundos. Así que queremos hacer más fácil para el desarrollador de la API,
+
+0:05:32.460,0:05:37.320
+perdón, el diseñador de la API para codificar estas expectativas rápidamente, y queremos hacer más fácil
+
+0:05:37.320,0:05:41.160
+para los usuarios de la API tener verificadores para ellos que puedan, ya sabes, decirles si han hecho algo mal.
+
+0:05:41.760,0:05:46.320
+Y así hacemos un ligero cambio en esta cadena en que introducimos al humano en el enfoque de bucle.
+
+0:05:46.920,0:05:51.420
+Así que, básicamente, empezamos con la misma idea de, vamos a minar estos patrones, pero decimos
+
+0:05:51.420,0:05:55.620
+estas son las reglas candidatas, estos son los puntos de partida para la creación de reglas. Y la cosa es que
+
+0:05:55.620,0:06:00.420
+queremos dárselos a los diseñadores de la API en un formato que sea fácil de entender para ellos y fácil para
+
+0:06:00.420,0:06:05.040
+que cambien y digan oh sí, eso es algo que realmente quiero que se verifique, o no, ignoren esto.
+
+0:06:05.700,0:06:09.660
+Así que diseñamos esta herramienta de validación de reglas, y en un minuto les mostraré cómo funciona,
+
+0:06:10.200,0:06:14.160
+donde el diseñador de la API todas estas reglas candidatas y decir, bien, esto es realmente
+
+0:06:14.160,0:06:19.620
+una especificación o una regla a la que quiero que la gente se adhiera, o esto es algo que no me importa
+
+0:06:19.620,0:06:25.500
+o esta es la mejor práctica. Una vez que tenemos estas reglas de uso de la API generamos automáticamente
+
+0:06:25.500,0:06:30.600
+comprobaciones para ellas, es decir, comprobaciones de análisis estático que incluímos en una herramienta fácil 
+
+0:06:30.600,0:06:35.100
+de usar, un plugin de Maven que mostraré en un minuto, y entonces se puede usar esto para escanear el código
+
+0:06:35.100,0:06:40.380
+de los desarrolladores e identificar el uso incorrecto de la API o cualquier problema que tienen en su código.
+
+0:06:41.100,0:06:47.880
+Así que vamos a echar un vistazo a cómo se ve esto desde ambos lados. Como un diseñador de la API. Oh,
+
+0:06:47.880,0:06:52.320
+lo siento, esta resolución aquí es bastante mala, bien, espero que puedan ver algo allí.
+
+0:06:53.400,0:06:57.900
+Si tienen en el lado izquierdo, aquí, el editor de creación de reglas, que presenta estas reglas
+
+0:06:57.900,0:07:06.180
+en un lenguaje específico de dominio como el inglés, así que por ejemplo, la Clase X, si la Clase X tiene la
+
+0:07:06.180,0:07:12.120
+anotación Foo entonces debe tener la anotación Bar, por ejemplo. Y en el lado derecho es el código que refleja
+
+0:07:12.120,0:07:16.380
+cómo sería el código para esta regla. Se ve tanto una descripción Inglés y el código.
+
+0:07:17.040,0:07:22.260
+Y así la idea es que aquí el desarrollador - el experto en API mire estas
+
+0:07:22.260,0:07:26.760
+reglas y luego decida, "bien, déjame comprobar esta documentación rápidamente, ¿cuál era esta API
+
+0:07:26.760,0:07:32.820
+de nuevo?, de acuerdo, sí, así que esto no es una regla, voy a saltar esto", entonces mira esto y dice "bien, eso es
+
+0:07:32.820,0:07:38.100
+un buen punto de partida, pero no es exactamente lo que queremos, déjame editar esto un poco", y pueden ver
+
+0:07:38.100,0:07:42.720
+que refleja allí, "y una vez que estoy feliz con esto voy a confirmar que se trata de una regla".
+
+0:07:43.440,0:07:47.700
+Una de las otras tal vez sólo decir, "oh que es una regla ya, no necesito cambiar nada para
+
+0:07:47.700,0:07:52.920
+ello". Y tal vez para algunas, "esto es una buena práctica, no es realmente una violación". También tenemos
+
+0:07:52.920,0:07:57.360
+documentación sobre cómo utilizar esto y sobre las diferentes partes de este lenguaje de dominio
+
+0:07:57.360,0:08:03.060
+específico que pueden revisar y luego algunas cosas para ayudarles a escribir las
+
+0:08:03.060,0:08:10.080
+reglas, como el formato y demás, para hacer que se vea bonito. Entonces revisaron
+
+0:08:10.080,0:08:13.620
+estas reglas candidatas que se han minado, algunas de ellas son buenas, otras las editaron, ahora
+
+0:08:13.620,0:08:17.700
+tienen un conjunto de reglas confirmadas que quieren que cualquiera que use su biblioteca adhiera a ellas.
+
+0:08:18.240,0:08:24.000
+y una vez que han hecho eso generamos automáticamente un plug-in de Maven que
+
+0:08:25.020,0:08:29.940
+el desarrollador del cliente puede utilizar, el usuario de la API puede utilizar, por lo que todo lo que necesitan 
+
+0:08:29.940,0:08:35.160
+es escanear su código utilizando esta detección de violación, y va a decirles lo que está mal con el código. 
+
+0:08:35.160,0:08:40.320
+En este caso hay una clase que tiene una función con la anotación "query", y en ese caso la clase para
+
+0:08:40.320,0:08:45.060
+que esto funcione debe tener una anotación "GraphQL API" y les está diciendo lo que falta ahí,
+
+0:08:45.060,0:08:51.840
+números de línea. Así que, básicamente, lo que hace este tipo de pipeline es que, estamos empezando una
+
+0:08:51.840,0:08:56.520
+conversación entre el diseñador de la API y su usuario, y es una conversación automatizada que puede
+
+0:08:56.520,0:09:02.100
+seguir adelante. Así que dandole al diseñador de la API - diciéndole cómo la gente está usando su API - ayudándole,
+
+0:09:02.100,0:09:07.260
+a crear estas expectativas, a hacerlas más explícitas, pueden ayudar al usuario de la API a
+
+0:09:07.260,0:09:12.240
+utilizarla correctamente y el ciclo puede continuar. A medida que la API evoluciona pueden descubrir si
+
+0:09:12.240,0:09:17.100
+las personas han cambiado su forma de usarla, cuáles son los usos frecuentes, y al final esto nos hace
+
+0:09:17.100,0:09:22.080
+a todos felices porque evita el software con errores. Y antes de terminar, sólo quiero agradecer a todos
+
+0:09:22.080,0:09:26.640
+los que han participado en este trabajo, ya sean estudiantes de mi grupo, colaboradores externos, también nuestro
+
+0:09:26.640,0:09:32.100
+colaboradores de IBM con los que trabajamos en el tema de los microperfiles. Y con esto me gustaría agradecer a
+
+0:09:32.100,0:09:36.660
+a todos ustedes, animarles a, ya saben, probar esto. Tenemos dos conjuntos de herramientas: uno que se centra en
+
+0:09:36.660,0:09:41.640
+patrones de uso de la API dentro de los métodos, cosas la conexión de la base de datos
+
+0:09:41.640,0:09:46.860
+cerrada, por lo que se centra en el control y el flujo de datos, y otro que es la pipeline completa que se centra
+
+0:09:46.860,0:09:52.680
+en los patrones de uso de Java basados en anotaciones, los usos indebidos y la validación de los mismos. Muchas gracias.
+
+0:09:52.680,0:09:57.351
+Estaré encantada de responder preguntas o, ya sabes, charlar durante el almuerzo o las pausas para el café. Muchas gracias.
+

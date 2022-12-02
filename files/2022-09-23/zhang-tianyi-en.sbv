@@ -1,0 +1,197 @@
+0:00:09.360,0:00:14.760
+So you guys have heard about Dr Foutse Khomh talking about how to find bugs from deep learning
+
+0:00:14.760,0:00:21.660
+programs, and I will then talk about how to figure out what goes wrong - figure out the root causes of the these bugs.
+
+0:00:21.660,0:00:29.160
+So this says AI artificial intelligence has been increasingly embedded
+
+0:00:29.160,0:00:35.700
+into modern software applications and systems and the key enabler behind this is deep learning. And
+
+0:00:35.700,0:00:40.500
+you know deep learning is quite different from traditional software engineering. In traditional
+
+0:00:40.500,0:00:46.380
+software development we programmers manually write the program logic in source code, right,
+
+0:00:46.380,0:00:53.400
+but in deep learning the models actually learn their own logic from the training data. And also,
+
+0:00:53.400,0:01:00.840
+in traditional software development everything is encoded in symbolic representations, right,
+
+0:01:00.840,0:01:08.280
+data structures etc. etc. But in deep learning, things are encoded into high-dimensional arrays and there
+
+0:01:08.280,0:01:14.340
+is a lot of calculus and linear algebra operations over these arrays to make the inference.
+
+0:01:16.020,0:01:19.260
+This brings a lot of challenges to debug deep learning models.
+
+0:01:19.800,0:01:25.680
+You know, in the old world, traditional software, if we want to debug our errors, we basically set a
+
+0:01:25.680,0:01:30.960
+breakpoint and we can step through each line of code to figure out the root cause of this error.
+
+0:01:31.980,0:01:36.000
+But in deep learning, for neural nets, how do we even set a breakpoint?
+
+0:01:37.200,0:01:42.600
+Even if sometimes we can actually peek into the internals, you know, a specific layer or
+
+0:01:42.600,0:01:47.400
+neuron in the neural net, but what can we get from at the runtime? The runtime values we get
+
+0:01:47.400,0:01:52.560
+from this neural net are high dimensional arrays which are hard to interpret, right?
+
+0:01:54.720,0:01:59.640
+All right, let's actually look at one example. Suppose you're a programmer and you actually
+
+0:01:59.640,0:02:06.060
+trained this recurrent neural network to classify Reddit comments to positive or negative opinions,
+
+0:02:06.660,0:02:11.460
+and you find out the model accuracy is pretty low, and you are wondering why,
+
+0:02:11.460,0:02:17.460
+right? So for example, this comment clearly shares a negative opinion, but the model
+
+0:02:17.460,0:02:24.300
+misclassifies it as positive. So it's really hard to tell exactly what happens inside the model,
+
+0:02:24.300,0:02:29.880
+right, and why this error occurs. And this is actually why some people, you know,
+
+0:02:29.880,0:02:35.640
+actually call deep learning "alchemy", right? People don't know exactly why something works
+
+0:02:35.640,0:02:41.820
+and why something doesn't work. Okay, it's like a giant black box to us - to programmers.
+
+0:02:42.840,0:02:49.140
+Our solution is to transform this complex and familiar neural network back to something we
+
+0:02:49.140,0:02:54.480
+are familiar with, right, like, uh, finite state machine, and in this way we can bring back all the
+
+0:02:54.480,0:03:00.480
+good stuff we have in the traditional programming world, like, people can step through each state
+
+0:03:00.480,0:03:07.680
+in the finite state machine and inspect the state value in the in the finite state machine. So
+
+0:03:07.680,0:03:12.480
+based on this idea we actually build a debugging tool called the DeepSeer. In the middle of this
+
+0:03:12.480,0:03:18.120
+interface is a visualization of the finite state machine abstracted from an RN model,
+
+0:03:18.120,0:03:23.580
+and it provides programmers a bird's eye view of what's already going on in the internal decision
+
+0:03:23.580,0:03:31.260
+making process of the model. As the model reads each word in our input text it will transit into
+
+0:03:31.260,0:03:38.520
+different state until it reach to the end of the text to make it the final decision. And if you
+
+0:03:38.520,0:03:43.920
+click on state you can actually see the frequent words and phrases associated with this state.
+
+0:03:43.920,0:03:48.000
+So in this way we convert those uninterpretable high dimensional
+
+0:03:48.000,0:03:52.740
+arrays into a symbolic representation that are interpretable to programmers.
+
+0:03:54.000,0:03:59.700
+And you can also dig into individual data points in the training data, search and filter and
+
+0:03:59.700,0:04:05.520
+trace all the way back to the state diagram. Going back to the previous misclassification
+
+0:04:05.520,0:04:11.520
+example, with DeepSeer you can actually enter this misclassified text into DeepSeer and DeepSeer
+
+0:04:11.520,0:04:18.600
+will immediately produce a state trace that reflects the intermediate decisions made by the RN
+
+0:04:18.600,0:04:26.220
+model after reading each word in the input text. Here, red means negative and blue means positive.
+
+0:04:26.220,0:04:33.000
+Similar to how you step through a program - the source code - you can step through this state trace
+
+0:04:33.000,0:04:39.900
+and look at what happens after, you know, the model reads each word in the input text. And we can see
+
+0:04:39.900,0:04:44.460
+that, you know, this RN model actually changes minus several times when it's reading the input
+
+0:04:44.460,0:04:49.800
+text and in particular after, you know, it reads this word quarters at the end of the sentence,
+
+0:04:49.800,0:04:57.240
+the model suddenly changes its mind from negative to positive right and never change it back. So
+
+0:04:57.240,0:05:01.740
+it actually provides us some good hints for further debugging - for further investigation.
+
+0:05:01.740,0:05:08.580
+When we actually search this keyword quarters in the training data, right, we can see that the data
+
+0:05:08.580,0:05:14.760
+is quite imbalanced. There are 28 sentences that mention these quarters and 27 of them are
+
+0:05:14.760,0:05:20.820
+labeled as positive only one of them is labeled as negative, so that means the model actually
+
+0:05:20.820,0:05:26.580
+learns a superficial correlation between this word quarters and a positive opinion, right?
+
+0:05:26.580,0:05:30.480
+So this is very likely to be the root cause of this misclassification.
+
+0:05:31.980,0:05:37.140
+To further confirm the usefulness of this idea we actually did a user study with 28
+
+0:05:37.140,0:05:42.420
+CS students and asked them to debug two different models trained on two different data sets using
+
+0:05:42.420,0:05:48.540
+DeepSeer versus another popular debugging - deep learning debugging tool called Lime and
+
+0:05:48.540,0:05:53.400
+we found that students using DeepSeer provided more reasonable insights about the root causes.
+
+0:05:53.400,0:05:59.100
+And we also found more error-inducing keywords in the input sentence compared with using Lime.
+
+0:06:00.180,0:06:06.000
+So OK takeaways. You know, I think given the opaqueness of deep learning, I think it's
+
+0:06:06.000,0:06:12.540
+quite important for us programmers to understand what we are building and be responsible for the
+
+0:06:12.540,0:06:18.600
+model errors. And to achieve this goal we actually need to build new debugging tools that account for
+
+0:06:18.600,0:06:24.960
+the unique characteristics of deep learning. And to make these tools usable to the broad
+
+0:06:24.960,0:06:30.600
+population of programmers we need to transform the internals of a deep learning model into something
+
+0:06:30.600,0:06:36.180
+that we are familiar with that are interpretable to programmers rather than something that only
+
+0:06:36.180,0:06:42.660
+makes sense to machine learning experts and machine learning theorists. Finally I want to give
+
+0:06:42.660,0:06:47.040
+a shout out to my collaborators at the University of Alberta and thank you all for listening.

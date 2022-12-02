@@ -1,0 +1,167 @@
+0:00:09.420,0:00:14.340
+Hi everybody, so my name is Justin Smith I'm an assistant professor of computer science
+
+0:00:14.340,0:00:18.540
+at Lafayette College and I'm so excited so be here talking to you about my research in
+
+0:00:18.540,0:00:24.420
+which I explore how automated tools can help us communicate better fixes, and more importantly,
+
+0:00:24.420,0:00:29.340
+better strategies for fixing the bugs that they detect. So the thing that we strive for -
+
+0:00:29.340,0:00:34.800
+to strive to do as software to developers is to rise up to a higher level of abstraction.
+
+0:00:35.940,0:00:41.400
+For example, we don't think anymore about moving electrons through circuits in order to just add
+
+0:00:41.400,0:00:46.980
+two numbers together. Instead we want to focus on the more important and more interesting higher
+
+0:00:46.980,0:00:52.800
+level problems like building bots that use hidden Markov models to automatically generate startups.
+
+0:00:55.440,0:01:03.060
+But the problem is, many of our tools that detect defects in our software systems are stuck in the
+
+0:01:03.060,0:01:08.880
+Dark Ages. We have tons and tons of tools that are really good at finding problems. We have security
+
+0:01:08.880,0:01:15.180
+tools, we have linters, we have compilers, we have API misuse detectors, we have static analysis
+
+0:01:15.180,0:01:20.400
+tools... But these tools don't do a very good job of helping us think at a high level about how to
+
+0:01:20.400,0:01:28.500
+solve the problems that they detect. To illustrate this problem, let's look at an example. So this is a
+
+0:01:28.500,0:01:34.500
+common variety of error that students in intro to programming courses might might encounter. So
+
+0:01:34.500,0:01:40.320
+here the novice programmer is trying to store a value of 1.5 in an integer variable called thing.
+
+0:01:41.160,0:01:46.140
+And this might seem a really simple error to you, but imagine this programmer is new
+
+0:01:46.140,0:01:50.760
+to type systems, or new to programming, or perhaps they're new to processing.
+
+0:01:51.360,0:01:57.660
+So the defect detection tool that we're looking at here is the compiler, which is finding a syntax
+
+0:01:57.660,0:02:03.000
+error, and it's throwing up a big red flag and saying, you cannot convert from float to int.
+
+0:02:03.540,0:02:07.740
+So this novice programmer, they don't know what to do, so they do what all of us do, they
+
+0:02:07.740,0:02:13.380
+type this error message into Google, they click on the first result which is Stack Overflow, and they
+
+0:02:13.380,0:02:20.640
+see that someone else has had another instance of a very similar problem. So that's good. They go and
+
+0:02:20.640,0:02:25.860
+check the accepted answer for that problem, and the answer says that they need to change the return
+
+0:02:25.860,0:02:33.060
+type to float in order to return decimal values. Okay so they change the return type of their setup
+
+0:02:33.060,0:02:40.320
+method to float and now they're in an even bigger mess than they were when they started. Okay, so what
+
+0:02:40.320,0:02:47.160
+went wrong? First, there was no explanation: the defect detection tool told the developer "big red
+
+0:02:47.160,0:02:51.120
+flag, there's a problem" but it didn't explain how they should go about fixing that problem.
+
+0:02:53.280,0:02:59.280
+Second, there was a bit of a mismatch between the example we saw on Stack Overflow and this
+
+0:02:59.280,0:03:05.400
+developer's particular instance of the problem. So on Stack Overflow we used variable names like
+
+0:03:05.400,0:03:11.160
+mutate, and new x, and x, and in this example we use variable names like thing and a method name
+
+0:03:11.160,0:03:17.460
+called setup. So the developer has to do this cognitively difficult task of finding a match
+
+0:03:17.460,0:03:24.240
+between these two similar but different concepts. And finally, most importantly, we had different root
+
+0:03:24.240,0:03:30.000
+causes. So the root cause of the defect here is that there is a mismatch in the assignment types - the
+
+0:03:30.000,0:03:34.860
+variable assignment - and the mismatch in the Stack Overflow example was a wrong return type.
+
+0:03:35.760,0:03:40.260
+So I know you all have bigger, bigger problems, right, you're not worrying about converting floats
+
+0:03:40.260,0:03:46.080
+to ints, but I would argue that your problems are kind of the same. When you get an error that
+
+0:03:46.080,0:03:51.000
+doesn't make sense, you have to work out all of the low level steps in order to fix that error.
+
+0:03:51.600,0:03:58.020
+So what we need is to turn our error messages into something that, one, helps you solve the particular
+
+0:03:58.020,0:04:04.140
+instance of a problem that you're facing at any given point in time, and, two, teaches you a more
+
+0:04:04.140,0:04:09.540
+effective strategy for fixing problems like that in the future. So that's what we need, and
+
+0:04:09.540,0:04:15.300
+that's what we did. We built a tool that does just this. So what it does - our tool is called
+
+0:04:15.300,0:04:20.700
+MatchingRef - it analyzes your code and it analyzes the particular instance of an error message
+
+0:04:20.700,0:04:27.060
+that you've encountered and it, first, helps you to identify the root cause of the problem that
+
+0:04:27.060,0:04:32.700
+is generating - that is causing that error to occur. And then it suggests an expert strategy
+
+0:04:32.700,0:04:39.120
+for fixing those types of defects. So this is what MatchingRef would generate for the example that
+
+0:04:39.120,0:04:45.060
+we've been looking at so far, and so now we're at that next level of abstraction up. Instead of
+
+0:04:45.060,0:04:50.280
+worrying about the low level details of how we'd fix an individual problem, we can think about the
+
+0:04:50.280,0:04:58.560
+higher level strategies that we would choose to fix problems like it. Okay, and this tool and
+
+0:04:58.560,0:05:04.020
+our approach is not just for type mismatch errors. So this is a mock-up of what MatchingRef
+
+0:05:04.020,0:05:09.540
+or the - or this idea would look like for a more complex set of errors, for example, finding
+
+0:05:09.540,0:05:14.580
+path traversal vulnerabilities and security - security vulnerabilities like a path traversal
+
+0:05:14.580,0:05:21.180
+vulnerability, and sharing an effective strategy for fixing that vulnerability. Okay, so here are a
+
+0:05:21.180,0:05:26.100
+few places you can go if you want to check out the tool. I hope that you'll try it out, if not only to
+
+0:05:26.100,0:05:31.320
+just satisfy your curiosity, but it also in hopes that it inspires you to think about the tools that
+
+0:05:31.320,0:05:36.960
+you create and the tools that you use and how you can help developers think more strategically and
+
+0:05:36.960,0:05:42.883
+more abstractly about solving the problems that they - that they detect. Thank you.

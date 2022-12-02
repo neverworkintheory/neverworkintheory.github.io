@@ -1,0 +1,245 @@
+0:00:09.360,0:00:14.580
+my name is Chris Brown I'm at Virginia Tech and I'm excited to be here today to discuss
+
+0:00:15.180,0:00:19.140
+how to recommend tools for finding and fixing software errors or
+
+0:00:19.680,0:00:26.160
+overcoming the unwise monkeys of tool adoption. So what is this about? So finding and fixing
+
+0:00:26.160,0:00:31.560
+software errors is hard. You've all probably had experience with that. Why is it so hard? Well one
+
+0:00:31.560,0:00:36.660
+reason is because changing code is hard. You have to find where an error might exist in your code
+
+0:00:36.660,0:00:42.720
+make the change and verify the changes are correct. To help with this researchers and toolsmiths have
+
+0:00:42.720,0:00:46.980
+introduced a wide variety of development tools to help automate this process and there's a problem.
+
+0:00:47.880,0:00:54.660
+Often the tools can be even more frustrating to adapt than doing it yourself. So for an anecdotal
+
+0:00:54.660,0:00:59.520
+example let's say there's a bug in your code. You could use the debugger and this example is VS Code
+
+0:00:59.520,0:01:03.960
+So to break point, step through line by line, find where your error is, or you could
+
+0:01:03.960,0:01:09.420
+print "here" or whatever else you want to do and I'll give you a second to think about that.
+
+0:01:12.360,0:01:22.200
+Right, so tools are hard to use. How do we overcome this problem? To share three experiences that we
+
+0:01:22.200,0:01:28.560
+tried I'll use this analogy of the three monkeys, hear no evil, see no evil, and speak no evil.
+
+0:01:28.560,0:01:36.240
+In the tool adoption case, hear about no tools, see no tools, and speak about no tools. All right, first
+
+0:01:36.240,0:01:41.100
+thing we tried was automated emails. We sent emails to developers recommending static analysis tools
+
+0:01:41.100,0:01:46.980
+for Python. And right off the bat we see this was not a good idea. In fact we received more
+
+0:01:46.980,0:01:53.100
+emails back complaining about receiving our email than people who actually adopted the tool. So we
+
+0:01:53.100,0:01:57.600
+see right off the way - or immediately people don't want to hear about tools, especially through email.
+
+0:01:59.220,0:02:04.140
+So we tried to beef it up a bit and did automated pull requests on GitHub. We developed a bot to
+
+0:02:04.140,0:02:09.060
+recommend static analysis tools for Java projects and automatically added this tool
+
+0:02:09.060,0:02:15.480
+to the pom.xml file for tools - for projects using Maven. We also saw this was ineffective
+
+0:02:15.480,0:02:19.740
+as well for a different reason. So we received a lot of complaints: this has a lot of errors, the builds
+
+0:02:19.740,0:02:25.260
+are breaking, build time is increased, and we see developers also don't want to see tools because
+
+0:02:25.260,0:02:29.220
+it makes more work for them if they see this tools providing more errors on their project.
+
+0:02:30.960,0:02:35.580
+All right, the last thing to kind of share really quick, is the idea of peer interaction, so learning about
+
+0:02:35.580,0:02:40.620
+tools through normal work activities. And research actually shows this is effective. So prior work
+
+0:02:40.620,0:02:45.720
+compares different modes of tool discovery and shows that recommendations from peers is the most
+
+0:02:45.720,0:02:50.940
+effective way to learn about new tools. We did a follow-up study where we paired participants
+
+0:02:50.940,0:02:56.160
+together and had them work on tasks and we found that 50% of the time, when a user made a
+
+0:02:56.160,0:03:00.840
+recommendation for a tool, the partner adopted the tool, and this is a lot higher than nearly
+
+0:03:00.840,0:03:08.700
+zero for emails and automated pull requests. But, again, more problems, and that's even though
+
+0:03:08.700,0:03:13.920
+pure interactions are effective they're the least frequently used mode of tool discovery in practice.
+
+0:03:15.000,0:03:19.920
+So there are many reasons why opportunities for peer interaction are in decline, and you've probably
+
+0:03:19.920,0:03:25.200
+experienced some of these as well, but ultimately there's the problem of, now developers don't speak
+
+0:03:25.200,0:03:31.380
+about tools. So what have we learned? No matter how great your tool is, it could be the best tool with
+
+0:03:31.380,0:03:37.860
+the most awesome features, if you're not able to actually engage with users, then it's ineffective
+
+0:03:37.860,0:03:42.960
+and people aren't going to use them. So what was my proposed solution? This idea of nudge theory,
+
+0:03:42.960,0:03:48.360
+which is a behavioral science concept, to encourage humans to adopt better behaviors without offering
+
+0:03:48.360,0:03:54.060
+incentives or banning alternative actions. One example is the design of a grocery store. In this
+
+0:03:54.060,0:03:58.980
+case, if you put fruits and vegetables at the front of your grocery store, you're nudging shoppers to
+
+0:03:58.980,0:04:04.440
+adopt better behaviors by buying more fruits and vegetables, rather than having them buy donuts or
+
+0:04:04.440,0:04:09.300
+whatever junk food is in the front. And the idea behind nudge theory is this concept of choice
+
+0:04:09.300,0:04:15.180
+architecture, which suggests the way decisions are presented to humans impacts the choices they make.
+
+0:04:16.800,0:04:21.720
+So what does this have to do with developers? In my PhD dissertation I introduce developer
+
+0:04:21.720,0:04:26.400
+recommendation choice architectures as a framework for designing recommendations to
+
+0:04:26.400,0:04:31.200
+integrate into developers' workflow. And the three concepts are actionability, which is basically
+
+0:04:31.200,0:04:36.240
+automating things, feedback - what information is provided, and locality - looking at the timing
+
+0:04:36.240,0:04:40.560
+and placement, again within the development workflow, of how recommendations are made.
+
+0:04:41.220,0:04:47.160
+And our hypothesis was, this is going to work, we can help people or adopt better tools, and
+
+0:04:47.160,0:04:52.920
+ultimately improve code quality and productivity. But earlier this summer a paper came out
+
+0:04:52.920,0:04:58.920
+saying there's actually no evidence for nudge theory and it might not even work. But this
+
+0:04:58.920,0:05:04.920
+is the Never Work in Theory Workshop event, so we don't work in theory. The question is, does this
+
+0:05:04.920,0:05:09.360
+work in practice and I think we're still a long ways away from answering this question but I'll
+
+0:05:09.360,0:05:14.220
+share a couple things briefly and with some takeaways. And yes, we are talking about practice.
+
+0:05:15.960,0:05:21.300
+All right, actionable recommendations: we sent developers two types of recommendations, one
+
+0:05:21.300,0:05:25.560
+static one and one actionable one, which is basically, you can automatically apply
+
+0:05:25.560,0:05:31.980
+whatever recommendation is being made, and 100% of the developers who took this survey preferred
+
+0:05:31.980,0:05:35.580
+the actionable recommendation. These are people from different companies, different teams, different
+
+0:05:35.580,0:05:40.800
+programming languages, tool stacks, all these things came into account, but all of them agreed that if
+
+0:05:40.800,0:05:45.660
+you have an actionable recommendation it's better than a static one. So right now we're
+
+0:05:45.660,0:05:50.940
+currently looking at ways to automate these actionable recommendations by building bots in order to help
+
+0:05:50.940,0:05:55.740
+integrate things into the normal workflow of developers. So the bot that you're seeing here
+
+0:05:55.740,0:06:02.340
+automatically does suggestions to fix pilot issues on GitHub pull requests and in the future we hope
+
+0:06:02.340,0:06:06.480
+to extend this to future tools, other types of tools like security issues and things like that.
+
+0:06:08.520,0:06:15.600
+All right, so what do we do about these three monkeys? First, if you're a researcher or someone
+
+0:06:15.600,0:06:22.320
+building a tool, build better tools. Justin just talked about how output from tools isn't
+
+0:06:22.320,0:06:29.940
+that great, thank you, but yeah, so, less false positives, more efficiency, things that are kind
+
+0:06:29.940,0:06:36.480
+of obvious but need to be done. Consider ways to integrate into the workflow of developers, so we
+
+0:06:36.480,0:06:41.280
+saw with our earlier studies, if you send things via email or things that interrupt developers'
+
+0:06:41.280,0:06:46.260
+workflow they'll immediately ignore it, so find ways to integrate into existing processes. And
+
+0:06:46.260,0:06:51.420
+then finally consider some of these recommendation choices - choice architectures for how you make and
+
+0:06:51.420,0:06:58.980
+design your recommendations. For developers, use tools, so the first talk - our second talk from
+
+0:06:58.980,0:07:02.820
+Muhammad talked about how people don't use refactoring tools. There's a lot of work out there that
+
+0:07:02.820,0:07:09.240
+says developers actually don't use tools, most notably by Dr Brittany Johnson who is hosting this.
+
+0:07:09.840,0:07:14.220
+Share tools with your co-workers: so I know things are weird now with COVID and people being remote,
+
+0:07:14.220,0:07:19.320
+but if you find a new tool make sure to share it with your friends. Consider different ways to
+
+0:07:19.320,0:07:24.060
+integrate tools into your existing processes in your team: so for example, if you're an agile team,
+
+0:07:24.060,0:07:29.580
+consider a sprint to where maybe one person tries a tool and reports back to their team. The "Culture
+
+0:07:29.580,0:07:34.380
+of Learning" talk has a lot of ideas of ways to do that. And then finally just get involved, so
+
+0:07:34.380,0:07:38.220
+if there's a tool that you like or don't like, provide feedback, get involved with the research
+
+0:07:38.220,0:07:43.860
+process when tools are being evaluated and studied and overall we can hope to work together to build
+
+0:07:43.860,0:07:49.146
+better tools to help find and fix errors more efficiently. Thank you for your time.

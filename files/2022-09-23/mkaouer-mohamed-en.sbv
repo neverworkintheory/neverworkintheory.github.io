@@ -1,0 +1,206 @@
+0:00:09.420,0:00:16.080
+So good morning everyone my name is Muhammad Wiem Mkauer I'm an assistant professor at the
+
+0:00:16.080,0:00:20.160
+department of software engineering at Rochester Institute of Technology and today I'm going to
+
+0:00:20.160,0:00:26.400
+talk about refactoring: two challenges and two takeaways. So this all started when one of my
+
+0:00:26.400,0:00:32.160
+students came to me and said, Muhammad I noticed that whenever I am pushing a refactoring pull
+
+0:00:32.160,0:00:39.300
+request it typically takes longer for me to get it accepted, right. And for me that was a
+
+0:00:39.300,0:00:45.540
+bit confusing, because by definition refactoring is the art of improving the code software design and
+
+0:00:45.540,0:00:51.240
+cool source code without altering its behavior. So I would expect that to be something quicker
+
+0:00:51.240,0:00:56.160
+to be accepted by code reviewers. But since he mentioned this to me I said, why not, let's try
+
+0:00:56.160,0:01:01.920
+to see whether this is true or not, right. So what we have done is we have taken - at Xerox - we have
+
+0:01:01.920,0:01:08.400
+taken 171 pull requests that were purely about refactoring, we have identified all the developers
+
+0:01:08.400,0:01:15.540
+who did those pull requests - the authors of the pull requests - we also selected another set of 171
+
+0:01:16.200,0:01:19.980
+non-refactoring pull requests - either they're fixing a bugs or adding features -
+
+0:01:20.520,0:01:26.220
+and then we compare them in terms of how long it takes to make a decision, whether they get accepted
+
+0:01:26.220,0:01:32.160
+or rejected versus also how much discussion this triggers between the code authors and the
+
+0:01:32.160,0:01:37.680
+reviewers. And the results were interesting to us - they were challenging. So actually what we notice
+
+0:01:37.680,0:01:45.720
+is indeed, refactoring could - refactor or reviewing code - refactored code would take longer to be made
+
+0:01:45.720,0:01:50.820
+a decision of - they either accepted or rejected - and also it typically triggers a longer discussion
+
+0:01:51.420,0:01:58.260
+going back and forth between the code authors and the reviewers to be actually accepted or rejected.
+
+0:01:58.920,0:02:05.700
+And here this becomes a challenge for people to refactor their code and therefore we come
+
+0:02:05.700,0:02:09.780
+up with one recommendation. So this is the first challenge. The recommendation that we come up with
+
+0:02:09.780,0:02:14.940
+is, when you are submitting your refactoring pull requests keep in mind the three I's.
+
+0:02:15.660,0:02:22.080
+The first I is the intent, okay. The intent is answering the what - what exactly
+
+0:02:22.080,0:02:25.740
+are you doing with your refactoring, right, so you can be removing dead code or for
+
+0:02:25.740,0:02:30.300
+example removing or refactoring duplicate code right. And then also mention the how.
+
+0:02:31.200,0:02:36.240
+How are you refactoring your code, like, what are you doing? Are you renaming, are you extracting,
+
+0:02:36.240,0:02:41.580
+are you inling, are you moving, and explain exactly what are the code elements being involved
+
+0:02:41.580,0:02:47.160
+in your refactoring. And then of course you have to give the reviewers the way to assess
+
+0:02:47.160,0:02:53.220
+and evaluate your change by telling them exactly what you expect this refactoring to do, right. Is it
+
+0:02:53.220,0:02:58.860
+improving readability, reducing complexity, reducing coupling? Tell them exactly what this
+
+0:02:58.860,0:03:05.160
+is going to imply, and this is how they can also understand how to evaluate the intent through
+
+0:03:05.160,0:03:09.180
+the - through the why with the refactoring and then all the way to the implications.
+
+0:03:09.900,0:03:16.440
+Okay, so this is my first recommendation. When I used to live in France I used to cross this
+
+0:03:16.440,0:03:28.020
+railroad which says here "un train peut en cacher un autre" and which means, one train may hide another one, right, so this
+
+0:03:28.020,0:03:32.640
+problem that we noticed with your refactoring documentation may not necessarily be the only
+
+0:03:32.640,0:03:38.400
+problem we are facing when it comes to refactoring. Actually, many studies have been showing that
+
+0:03:38.400,0:03:45.060
+refactoring is getting misused and even underused. We talk about developers still refactoring things
+
+0:03:45.060,0:03:50.160
+manually. We talk about the lack of trust of anything that automatically refactor our code, and
+
+0:03:50.160,0:03:56.280
+as we can just we have just seen, we also have no formal documentation for refactoring, so are we
+
+0:03:56.280,0:04:02.640
+truly suffering from a lack of refactoring culture here okay? And in one of those studies they talked
+
+0:04:02.640,0:04:08.940
+about IntelliJ being one of the main IEs that developers use when they refactor their code, and
+
+0:04:08.940,0:04:16.200
+that's what triggers us to - RIT researchers to put - to join forces with JetBrains Research to
+
+0:04:16.200,0:04:23.100
+understand exactly how developers refactor their code using IntelliJ. And this is - was in a nutshell
+
+0:04:23.100,0:04:27.480
+our investigation is, we want to see how developers use IntelliJ to refactor their code. Okay, so what
+
+0:04:27.480,0:04:33.780
+we have done is, we went and we interviewed over a thousand developers. Many of them were, you know,
+
+0:04:33.780,0:04:39.600
+between three to over 16 years of experience with the development and we were asking them basically
+
+0:04:39.600,0:04:45.600
+this question: how do you refactor your code using IntelliJ, right? And also the results were again
+
+0:04:45.600,0:04:51.300
+showing another interesting challenge, right. So what we have found here is when the developers
+
+0:04:51.300,0:04:58.860
+typically rename code like they're renaming methods or classes, they actually use the IDE to do that. Maybe
+
+0:04:58.860,0:05:03.780
+this is because of that, you know, keyboard shortcut that makes things easier for you as developer to
+
+0:05:03.780,0:05:08.100
+rename things quickly, right. And this is good news because they are actually using the built-in
+
+0:05:08.100,0:05:12.240
+feature of IntelliJ which guarantees that your code would not introduce any regression when you
+
+0:05:12.240,0:05:17.880
+do this kind of changes, right. So this is a good - this is a good news. But on the other hand, when it
+
+0:05:17.880,0:05:23.580
+comes to extracting stuff, splitting a method into two for example, right, developers - half of
+
+0:05:23.580,0:05:29.580
+them actually use the IDE and the other half are still using the manual way of, maybe you know, copy
+
+0:05:29.580,0:05:35.580
+pasting, splitting manually, or creating a duplicate code then removing stuff here and there. So it's
+
+0:05:35.580,0:05:41.460
+not a perfect or healthy way of refactoring the code. And this may introduce errors in the code.
+
+0:05:42.060,0:05:47.880
+So this for us was a bit alarming. And even worse, when it comes to moving stuff,
+
+0:05:48.720,0:05:54.600
+you know, only one third of them, they are relying on the IDE to do that, right, and this becomes
+
+0:05:54.600,0:05:59.760
+really a problem for us to try to work on, right, so this is exactly what we have been finding and this
+
+0:05:59.760,0:06:05.760
+becomes the challenge, right. It is a challenge because we all are dealing with technical debt.
+
+0:06:05.760,0:06:11.340
+Okay, we had a whole workshop yesterday about technical debt and how we should manage it,
+
+0:06:11.340,0:06:19.020
+right, and obviously refactoring is one of the de facto tools to manage technical that we all have
+
+0:06:19.020,0:06:23.460
+been dealing with, we will be dealing with in the future of this piece of code that nobody has to
+
+0:06:23.460,0:06:29.100
+touch, right, and we should not - we should try to avoid even reaching that level, right, and this is
+
+0:06:29.100,0:06:35.400
+the challenge - technical debt is there, it will not never go away, and one way for us to start dealing
+
+0:06:35.400,0:06:43.260
+with this is to, next time when we open our IDE, we go to that menu "refactor", right, and let's get
+
+0:06:43.260,0:06:47.760
+familiar with it, and let's start learning how to use these features. Why? Because these features
+
+0:06:47.760,0:06:53.940
+can allow us to refactor our code in a more healthy way. If you want to know more details
+
+0:06:53.940,0:06:59.413
+about our study these are the references. With that being said, thank you very much.

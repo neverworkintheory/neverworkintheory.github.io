@@ -1,0 +1,207 @@
+﻿0:00:09.420,0:00:16.080
+Buenos días a todos, mi nombre es Muhammad Wiem Mkauer soy profesor asistente 
+
+0:00:16.080,0:00:20.160
+en el departamento de ingeniería de software en el Instituto de Tecnología de Rochester y hoy 
+
+0:00:20.160,0:00:26.400
+voy a hablar de Refactorización: dos desafíos y dos conclusiones. Todo esto comenzó cuando uno de mis
+
+
+0:00:26.400,0:00:32.160
+estudiantes vino y me dijo, Muhammad me di cuenta de que cada vez que estoy haciendo un pull request de refactorización 
+
+0:00:32.160,0:00:39.300 
+por lo general toma más tiempo que se acepte, bien. Y para mí, esto fue un poco
+
+0:00:39.300,0:00:45.540 
+un poco confuso, porque por definición la refactorización es el arte de mejorar el diseño de software de código y 
+
+0:00:45.540,0:00:51.240 
+refrescar el código fuente sin alterar su comportamiento. Así que yo esperaría que fuera algo más rápido 
+
+0:00:51.240,0:00:56.160 
+para ser aceptado por los revisores de código. Pero desde que me mencionó esto me dije, por qué no? vamos a probar 
+
+0:00:56.160,0:01:01.920 
+si esto es cierto o no, correcto? Así que lo que hemos hecho es que hemos tomado - en Xerox - hemos 
+
+0:01:01.920,0:01:08.400 
+tomado 171 pull requests que eran puramente de refactorización, hemos identificado todos los desarrolladores 
+
+0:01:08.400,0:01:15.540 
+que hicieron esos pull requests - los autores de los pull requests - también seleccionamos otro conjunto de 171 
+
+0:01:16.200,0:01:19.980 
+pull requests que no fueran de refactorización - ya sea que estén arreglando un error o agregando características - 
+
+0:01:20.520,0:01:26.220 
+y luego los comparamos en términos de cuánto tiempo se tarda en tomar una decisión, ya sea que se acepte 
+
+0:01:26.220,0:01:32.160 
+o se rechace versus la cantidad de discusiones que se disparan entre los autores del código y los revisores
+
+0:01:32.160,0:01:37.680
+Y los resultados fueron interesantes para nosotros - fueron un reto. En realidad lo que notamos es que,
+
+0:01:37.680,0:01:45.720
+efectivamente, la refactorización podría... - refactorizar o revisar el código, el código refactorizado, llevaria más tiempo para tomar
+
+0:01:45.720,0:01:50.820
+una decisión - ya sea que se acepte o se rechace - y típicamente desencadena una discusión más larga
+
+0:01:51.420,0:01:58.260
+de ida y vuelta entre los autores y los revisores para ser aceptado o rechazado.
+
+0:01:58.920,0:02:05.700
+Y aquí esto convierte a la refactorización del código a en un desafío para la gente y por lo tanto tenemos
+
+0:02:05.700,0:02:09.780
+una recomendación. Este es el primer desafío. La recomendación que tenemos es
+
+0:02:09.780,0:02:14.940
+cuando estás enviando tus pull requests de refactorización ten en cuenta estas tres "i".
+
+0:02:15.660,0:02:22.080
+La primera "i" es la intención, bien?. La intención es responder el qué - ¿qué exactamente
+
+0:02:22.080,0:02:25.740
+está haciendo con su refactorización, correcto? puede ser la eliminación de código muerto o por ejemplo
+
+0:02:25.740,0:02:30.300
+la eliminación o refactorización de código duplicado. Y luego también mencionar el cómo.
+
+0:02:31.200,0:02:36.240
+¿Cómo estás refactorizando tu código, ¿qué estás haciendo? ¿Estás renombrando, estás haciendo una extracción,
+
+0:02:36.240,0:02:41.580
+¿estás aclarando o estás moviendo código, y explicar exactamente cuáles son los elementos de código que están involucrados
+
+0:02:41.580,0:02:47.160
+en tu refactorización. Y luego, por supuesto, tienes que dar a los revisores la forma de revisar
+
+0:02:47.160,0:02:53.220
+y evaluar tu cambio diciéndoles exactamente lo que esperas que haga esta refactorización, ¿cierto? 
+
+0:02:53.220,0:02:58.860
+Es mejorar la legibilidad, reducir la complejidad, reducir el acoplamiento? Díles exactamente 
+
+0:02:58.860,0:03:05.160
+lo que va a implicar, y así es como también pueden entender cómo evaluar la intención 
+
+0:03:05.160,0:03:09.180
+a través del por qué de la refactorización y luego hacer todo el camino a sus implicancias.
+
+0:03:09.900,0:03:16.440
+Bien, esta es mi primera recomendación. Cuando vivía en Francia solía cruzar 
+
+0:03:16.440,0:03:28.020
+una via de tren que decia "un train peut en cacher un autre" y que significa, un tren puede ocultar a otro, así que este
+
+0:03:28.020,0:03:32.640
+problema que notamos con su documentación de refactorización puede no ser necesariamente el único
+
+0:03:32.640,0:03:38.400
+problema al que nos enfrentamos cuando se trata de refactorizar. En realidad, muchos estudios han demostrado que
+
+0:03:38.400,0:03:45.060
+la refactorización está siendo mal utilizada e incluso subutilizada. Hablamos de que los desarrolladores siguen refactorizando cosas
+
+0:03:45.060,0:03:50.160
+manualmente. Hablamos de la falta de confianza de cualquier cosa que refactoricé automaticamente nuestro código, y
+
+0:03:50.160,0:03:56.280
+como acabamos de ver, tampoco tenemos documentación formal para la refactorización, así que estamos
+
+0:03:56.280,0:04:02.640
+realmente sufriendo de una falta de cultura de refactorización aquí, ¿de acuerdo? En uno de esos estudios hablaron
+
+0:04:02.640,0:04:08.940
+acerca de IntelliJ como uno de los principales IE que los desarrolladores utilizan cuando refactorizar su código, y
+
+0:04:08.940,0:04:16.200
+eso es lo que nos lleva a - los investigadores del RIT - a unir fuerzas con JetBrains Research para
+
+0:04:16.200,0:04:23.100
+entender exactamente cómo los desarrolladores refactorizan su código utilizando IntelliJ. En pocas palabras, esta es
+
+0:04:23.100,0:04:27.480
+nuestra investigación, queremos ver cómo los desarrolladores utilizan IntelliJ para refactorizar su código. Bueno, así que 
+
+0:04:27.480,0:04:33.780
+fuimos y entrevistamos a más de mil desarrolladores. Muchos de ellos tenian, ya sabes,
+
+0:04:33.780,0:04:39.600
+entre tres y más de 16 años de experiencia con el desarrollo y les preguntamos básicamente
+
+0:04:39.600,0:04:45.600
+lo siguiente: ¿cómo refactorizas tu código utilizando IntelliJ, Y los resultados mostraron
+
+0:04:45.600,0:04:51.300
+nuevamente otro reto interesante. Así que lo que hemos encontrado aquí es que cuando los desarrolladores
+
+0:04:51.300,0:04:58.860
+típicamente renombran el código, renombrando métodos o clases, en realidad utilizan el IDE para hacer eso. Tal vez
+
+0:04:58.860,0:05:03.780
+esto es debido a los atajos de teclado que te las cosas más fáciles como desarrollador para
+
+0:05:03.780,0:05:08.100
+renombrar las cosas rápidamente, ya sabes. Y esto es una buena noticia porque en realidad están utilizando el built-in
+
+0:05:08.100,0:05:12.240
+de IntelliJ, que garantiza que su código no introducirá ninguna regresión cuando
+
+0:05:12.240,0:05:17.880
+hagas este tipo de cambios, bien? Así que esto es una buena noticia. Pero por otro lado, cuando
+
+0:05:17.880,0:05:23.580
+viene a la extracción de cosas, la división de un método en dos por ejemplo, bueno, la mitad de los desarrolladores
+
+0:05:23.580,0:05:29.580
+utilizan el IDE y la otra mitad sigue utilizando la forma manual de copiar y pegar,
+
+0:05:29.580,0:05:35.580
+dividiendo manualmente, o creando un código duplicado y eliminando cosas aquí y allá. Así que es
+
+0:05:35.580,0:05:41.460
+es una forma imperfecta o poco saludable de refactorizar el código. Y esto puede introducir errores en el código.
+
+0:05:42.060,0:05:47.880
+Así que esto para nosotros fue un poco alarmante. Y aún peor, cuando se trata de mover cosas,
+
+0:05:48.720,0:05:54.600
+sólo un tercio de ellos, confían en el IDE para hacer eso, bien, y esto se convierte en
+
+0:05:54.600,0:05:59.760
+un verdadero problema para nosotros para tratar de trabajar, bien, así que esto es exactamente lo que hemos estado encontrando y esto
+
+0:05:59.760,0:06:05.760
+se convierte en el desafío, correcto. Es un reto porque todos estamos tratando con una deuda técnica.
+
+0:06:05.760,0:06:11.340
+Bien, ayer tuvimos todo un taller sobre la deuda técnica y cómo debemos gestionarla,
+
+0:06:11.340,0:06:19.020
+y, obviamente, la refactorización es una de las herramientas de hecho para gestionar la deuda técnica con la que todos 
+
+0:06:19.020,0:06:23.460
+hemos estado tratando, vamos a estar tratando en el futuro de este pedazo de código que nadie tiene 
+
+0:06:23.460,0:06:29.100
+que tocar, bien, y no debemos - debemos tratar de evitar incluso llegar a ese nivel, bien y esto es
+
+0:06:29.100,0:06:35.400
+el desafio- la deuda técnica está ahí, no va a desaparecer nunca, y una forma de empezar a tratar
+
+0:06:35.400,0:06:43.260
+con esto es, la próxima vez cuando abrimos nuestro IDE, vamos a ese menú "refactorizar", bien, y vamos a estar
+
+0:06:43.260,0:06:47.760
+familiarizados con él, y vamos a empezar a aprender cómo utilizar estos atributos. ¿Por qué? Porque estos atributos
+
+0:06:47.760,0:06:53.940
+pueden permitirnos refactorizar nuestro código de una manera más saludable. Si quieres saber más detalles
+
+0:06:53.940,0:06:59.413
+sobre nuestro estudio estas son las referencias. Dicho esto, muchas gracias.

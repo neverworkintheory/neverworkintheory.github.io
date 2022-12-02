@@ -1,0 +1,224 @@
+0:00:09.360,0:00:13.080
+Gracias por invitarme y gracias a todos por unirse y por asistir a la
+
+0:00:13.080,0:00:19.500
+charla. Soy Foutse Khom de la Polytechnique de Montreal, bien, con mi equipo nos hemos centrado
+
+0:00:19.500,0:00:24.000
+recientemente en el aseguramiento de la calidad de los sistemas de aprendizaje automático, por lo que el objetivo
+
+0:00:24.000,0:00:30.300
+de la investigación que estamos tratando de hacer es permitir que ustedes y la comunidad diseñen y construyan
+
+0:00:30.300,0:00:36.780
+sistemas fiables basados en el aprendizaje automático. Y todos sabemos que con esta nueva especificidad del
+
+0:00:36.780,0:00:41.880
+sistema, con la dependencia de los datos, hay mucho más problemas que surgen con la naturaleza del sistema
+
+0:00:42.540,0:00:49.140
+por lo que estamos tratando de abordar esas cuestiones y las cuestiones relacionadas con la calidad de los datos
+
+0:00:49.140,0:00:55.380
+en las especificaciones, implementaciones, etc. Así que hoy les daré un vistazo a algunas
+
+0:00:55.380,0:00:59.640
+de las cosas que hemos estado haciendo. Las ayudas para el aprendizaje automático han estado listas desde hace tiempo
+
+0:00:59.640,0:01:04.320
+así que ya he estado desplegando varios sistemas. Estoy bastante seguro de que la mayoría de nosotros
+
+0:01:04.320,0:01:12.960
+hemos estado utilizando algunos de esos sistemas, pero deben ser fiables. Y normalmente para
+
+0:01:12.960,0:01:17.220
+producir el modelo que embebemos en los sistemas realmente generamos mucho código, bien, 
+
+0:01:17.220,0:01:24.420
+este es un típico pipeline para un sistema de Deep Learning en el que tienes que producir código para obtener
+
+0:01:24.420,0:01:29.940
+tus datos, para automatizar el proceso de aprendizaje, y luego tienes que entrenar; probar y validar
+
+0:01:29.940,0:01:36.120
+hasta que puedas hacer el deploy. Entonces, a lo largo de este proceso, en realidad escribimos códigos para generar
+
+0:01:36.120,0:01:41.640
+modelos y luego, como cualquier tipo de programa, a menudo fallan y fallan de manera un poco diferente
+
+0:01:41.640,0:01:48.300
+de lo que hacemos o lo que vemos en los programas tradicionales. Así que a diferencia de los programas tradicionales el
+
+0:01:48.300,0:01:53.880
+espacio de los fracasos para estos sistemas es un poco más amplio, bien, por lo que puedes tener problemas relacionados con
+
+0:01:54.600,0:01:59.700
+el proceso de modelado, problemas de especificación insuficiente, y luego también tenemos
+
+0:01:59.700,0:02:04.440
+cuestiones de aplicación porque tenemos que escribir todo el código que realmente automatiza el
+
+0:02:04.440,0:02:09.660
+proceso de aprendizaje. Y tenemos muchos problemas con la calidad de los datos, correcto, así que tenemos que realmente ser capaces de
+
+0:02:09.660,0:02:14.760
+detectar esos problemas. Y lo que intento compartir con ustedes son algunas de las herramientas que hemos 
+
+0:02:14.760,0:02:20.160
+construido para ayudar con esto, porque creemos que sólo la automatización puede ayudar realmente a ir a través de
+
+0:02:20.160,0:02:24.420
+este proceso, bien - si has estado tratando de jugar con algún modelo puedes saber que depurar
+
+0:02:24.420,0:02:28.740
+un pipeline de Machine Learning puede ser realmente muy complicado porque a veces la diferencia entre un
+
+0:02:28.740,0:02:34.320
+modelo de última generación y un modelo de muy bajo rendimiento puede ser tan simple como las tasas de aprendizaje, bien.
+
+0:02:34.320,0:02:38.760
+Así que es muy difícil encontrar realmente esas perillas cuando se trata de engañar al modelo por lo que tratamos de
+
+0:02:38.760,0:02:46.080
+automatizar esto. ¿Qué hacemos? En esta charla hablaré de dos enfoques que proponemos.
+
+0:02:46.080,0:02:50.580
+Uno de ellos se basa en el análisis estático, por lo que hemos introducido el análisis estático en el problema.
+
+0:02:51.600,0:02:57.240
+Por qué pensamos en esto, porque todos sabemos que es rápido, bien, es un poco más barato y
+
+0:02:57.240,0:03:02.280
+puede ser muy eficaz si se hace correctamente en primera instancia. Así que tenemos una herramienta que hemos construido que
+
+0:03:02.280,0:03:08.460
+es el NeuralLint que es realmente muy eficaz y realmente te animo a probarlo.
+
+0:03:08.460,0:03:12.780
+Así que la herramienta puede ser probada, tienen el detalle en la publicación - No voy a hablar de la
+
+0:03:12.780,0:03:18.240
+la publicación- pero lo que puedo decir, es cómo funciona la herramienta. ¿Cómo construimos las herramientas?
+
+0:03:18.240,0:03:23.880
+La herramienta se basa en dos componentes clave, tenemos un meta-modelo del programa de aprendizaje que teníamos que construir
+
+0:03:23.880,0:03:30.120
+y también tenemos una taxonomía de fallos típicos en un programa de Deep Learning. Así que
+
+0:03:30.120,0:03:35.280
+en la herramienta básicamente automatizamos la detección de estos fallos basándonos en la representación de un
+
+0:03:35.280,0:03:41.460
+programa de Deep Learning que construimos, basado en este metamodelo. Simple. Bien, así que el flujo de trabajo
+
+0:03:41.460,0:03:45.720
+se parece a esto - si usted tiene un programa y, a continuación, desea utilizar nuestra herramienta, básicamente lo que
+
+0:03:45.720,0:03:50.220
+que hacemos es, extraemos de su programa todas las diferentes características y componentes que necesitamos
+
+0:03:50.220,0:03:54.120
+cumplir con la especificación del metamodelo, entonces construimos una representación de su programa,
+
+0:03:54.720,0:03:59.940
+y luego sobre la base de nuestro conjunto de reglas que especificamos para detectar los diferentes problemas,
+
+0:03:59.940,0:04:07.200
+podemos ejecutar las detecciones en el programa y proporcionar un conjunto de controles. Funciona y 
+
+0:04:07.200,0:04:12.540
+bastante rápido, de acuerdo, pero el problema con esto es que con el análisis estático no podemos realmente abordar
+
+0:04:12.540,0:04:17.220
+la interacción con los datos y la dinamica que hay en el proceso, bien. Así que para ayudar con
+
+0:04:17.220,0:04:24.720
+ese aspecto intentamos algo más que todos hacemos: análisis dinámico. Así que decidimos en realidad
+
+0:04:25.800,0:04:30.960
+explorar -que es lo que se hace- decidimos inspeccionar el proceso de entrenamiento del programa y extraer
+
+0:04:30.960,0:04:35.100
+información sobre el comportamiento del programa durante el proceso de entrenamiento, y sobre la base de esta
+
+0:04:35.100,0:04:39.000
+información podríamos comprobar cierta propiedad específica que podría ser una señal del problema
+
+0:04:39.000,0:04:45.300
+con el modelo de entrenamiento. Así que tenemos este enfoque, que también es bastante eficaz 
+
+0:04:45.300,0:04:50.460
+Hemos sido comparados con SageMaker que hace una cosa bastante similar, y la buena noticia es
+
+0:04:50.460,0:04:55.800
+que este enfoque lo hace un poco mejor, por lo que realmente los animo a probarlo. Puede detectar un 30% más
+
+0:04:55.800,0:05:00.900
+errores que SageMaker, nos vimos un poco obligados a comparar esto para la publicación, de lo contrario
+
+0:05:00.900,0:05:06.120
+no aceptarían el trabajo. Entonces, ¿cómo se ven algunas de las reglas en las que realmente confiamos?
+
+0:05:06.120,0:05:11.760
+Entonces, la herramienta implementa una variedad de comprobaciones, cierto, por lo que algunas de las comprobaciones pueden ser tan simples como 
+
+0:05:11.760,0:05:17.940
+verificar problemas relacionados con los parámetros o problemas más complejos relacionados con la optimización, bien, 
+
+0:05:17.940,0:05:21.900
+un ejemplo de problema relacionado con los parámetros, puede verificar parámetros no entrenados y esto es muy fácil de
+
+0:05:21.900,0:05:25.320
+cambiar, para que puedas extraer la información durante el proceso de entrenamiento y luego sólo
+
+0:05:25.320,0:05:31.740
+realizar algunas verificaciones, bien, algunos componentes. Y luego un ejemplo de cuestiones relacionadas con la activación
+
+0:05:31.740,0:05:36.300
+por lo que podemos comprobar los rangos, bien? Esto es común si usted ha trabajado con  problemas de 
+
+0:05:36.300,0:05:40.440
+Deep Learning, puede que sepas que esto es algo que ocurre con mucha frecuencia y luego
+
+0:05:40.440,0:05:45.960
+la herramienta puede informarte con bastante facilidad. También tenemos un montón de controles relacionados
+
+0:05:45.960,0:05:51.900
+a los problemas de optimización, por lo que puedes comprobar si se está ajustando la muestra de datos, 
+
+0:05:51.900,0:05:57.240
+si estás teniendo un desvanecimiento de gradiente, un gradiente inestable, etc. Así que todos los controles
+
+0:05:57.240,0:06:01.920
+se han implementado en la herramienta, que recomiendo fuertemente probar. Y el flujo es muy simple, entonces
+
+0:06:01.920,0:06:06.480
+hay una pequeña sobrecarga que viene con el uso de la herramienta porque estamos en realidad la instrumentación de
+
+0:06:06.480,0:06:09.720
+su proceso de modo que estamos extrayendo información durante el proceso de entrenamiento, entonces hay una sobrecarga que
+
+0:06:09.720,0:06:14.100
+viene con eso, pero a través de la experimentación y validación que hicimos el promedio es en realidad
+
+0:06:14.700,0:06:23.880
+flexiblemente manejable. Muy bien, así que, prueben las herramientas y eso es todo para mí, supongo.
+
+0:06:23.880,0:06:30.000
+Así que quería llamar su atención sobre los fallos que se producen con frecuencia en esos sistemas
+
+0:06:30.000,0:06:34.980
+y el hecho de que el espacio de fracaso en este sistema es en realidad bastante grande en comparación con
+
+0:06:34.980,0:06:39.900
+los sistemas tradicionales, y que realmente necesitamos la automatización para navegar por este espacio. Y es de esperar que
+
+0:06:39.900,0:06:45.420
+estas herramientas que estamos construyendo y liberando realmente nos ayudarán a evitar esas
+
+0:06:45.420,0:06:51.060
+trampas y tal vez, mantenerse por encima de la linea de flotación. Creo que esto es de Mike. ¿Alguna pregunta?
+
+0:06:54.840,0:06:55.800
+Así que eso es todo.

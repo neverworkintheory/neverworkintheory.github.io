@@ -1,0 +1,447 @@
+0:00:09.360,0:00:15.180
+Mi nombre es Kat Hicks. Soy la directora de un laboratorio de investigación en un lugar llamado Pluralsight,
+
+0:00:15.180,0:00:22.440
+el nombre de nuestro laboratorio es el Developer Insights Lab y esta es nuestra primera vez en Strange Loop
+
+
+0:00:22.440,0:00:28.020
+así que muchas gracias por recibirme. Hoy voy a estar hablándoles acerca de un trabajo de investigación 
+
+0:00:28.020,0:00:33.720
+que hice llamado "Es como codear en la oscuridad" y el subtitulo de esto es "La necesidad de culturas de aprendizaje
+
+0:00:33.720,0:00:39.660
+dentro de los equipos de codeo". Y creo que esto se desprende muy bien de la charla que acabamos de tener, 
+
+0:00:39.660,0:00:45.000
+en realidad, así que me siento bien preparada para esto. Pero voy a empezar con una historia. Marian contó
+
+0:00:45.000,0:00:50.640
+un montón de historias y me encanta esa forma de hablar de cosas sociales complejas. Quiero que imaginen
+
+0:00:50.640,0:00:56.940
+que son ingenieros de software junior y acaban de empezar a trabajar en un código fuente desconocido.
+
+0:00:56.940,0:01:02.820
+Debe resultarles un historia muy familiar ¿verdad?. Ahora imaginemos que no están completamente en la
+
+0:01:02.820,0:01:08.280
+oscuridad todavía, de hecho conocieron a algunos ingenieros de alto nivel que escribieron gran parte del código
+
+0:01:08.280,0:01:14.940
+con el que están trabajando. Están entusiasmados, eso es genial, y tal vez algo de lo que se han beneficiado antes es
+
+0:01:14.940,0:01:20.160
+la programación de a pares. Ustedes tienen muchas prácticas que disfrutan en torno a eso, y digamos que sugieren que
+
+0:01:20.160,0:01:24.420
+en la reunión, como, hey, me encantaría un poco de esto en mi onboarding. Pero 
+
+0:01:24.420,0:01:29.040
+digamos que también reciben una reacción negativa muy fuerte de uno de los ingenieros, tal vez dicen algo así como
+
+0:01:29.040,0:01:35.100
+"creemos que es una pérdida de tiempo", si?. Así que se sienten un poco avergonzados, pero tienen
+
+0:01:35.100,0:01:39.420
+un plan de ataque - sienten que saben lo que estás haciendo - vuelven y trabajan en el código
+
+0:01:40.140,0:01:46.620
+y mientras lo hacen, el plan que tenían se desmorona, porque todo es más complicado
+
+0:01:46.620,0:01:52.260
+de lo que pensaban. Acaban teniendo que hacer mucha investigación -mucho ir y venir- y
+
+0:01:52.260,0:01:56.400
+empiezan a pensar en cosas como, ya saben, voy a anotar mucho de todo esto porque sé
+
+0:01:56.400,0:02:01.080
+que otras tres personas se van a unir a nuestro equipo dentro de dos semanas y van a pasar por este
+
+0:02:01.080,0:02:05.220
+mismo proceso. Ustedes están interesados en la documentación, por lo que empiezan a hacer un poco de eso. 
+
+0:02:05.220,0:02:11.280
+Ahora imaginen que entran en su primera revisión de código y es con alguien que no conocen
+
+0:02:11.280,0:02:16.680
+- no estaba en las reuniones anteriores - y francamente esta revisión de código apesta un poco.
+
+0:02:17.220,0:02:22.860
+Tal vez no es la peor que han tenido, pero, esta persona trae una gran cantidad de contexto para el
+
+0:02:22.860,0:02:27.240
+código, que ustedes ni siquiera escucharon. Se sienten un poco abrumados con las cosas que está
+
+0:02:27.240,0:02:31.440
+diciendo, la jerga que utiliza, está criticando sus decisiones, algunas de estas cosas son al nivel
+
+0:02:31.440,0:02:36.360
+de la superficie pero algunas son, como, cuestiones arquitectónicas profundas que están
+
+0:02:36.360,0:02:40.320
+emocionados de aprender, pero no saben cómo preguntar porque tienes las cosas de superficie mal, como que 
+
+0:02:40.320,0:02:46.320
+estás abrumados. Así que, ya saben, sienten como: Quiero explicar lo que hice aquí
+
+0:02:46.320,0:02:50.820
+por lo que mencionan que ustedes hicieron toda esta investigación y comenzaron a escribirla
+
+0:02:50.820,0:02:55.740
+y ustedes se emocionaron un poco acerca de lo que habían escrito y digamos que este ingeniero, que 
+
+0:02:55.740,0:03:01.320
+está ocupado, ya saben, tal vez barajando muchas de revisiones de código, dice, hey, mira, esto fue una 
+
+0:03:01.320,0:03:07.800
+pérdida de tiempo, como, sólo enfocate. Así que vuelven al trabajo, pero se han llevado algunos mensajes
+
+0:03:07.800,0:03:13.320
+realmente importantes, y esos mensajes van a cambiar su comportamiento. Primero, dejan inmediatamente 
+
+0:03:13.320,0:03:18.060
+de anotar todo lo que estaban registrando para compartir con la gente. En segundo lugar, deciden
+
+0:03:18.720,0:03:24.060
+que tienen que ser un poco más cautelosos -un poco más cuidadosos- a la hora de tratar de llevar estas ideas
+
+0:03:24.060,0:03:29.340
+a este tipo de reuniones, no son para eso. Y en tercer lugar, piensan "la revisión de código es 
+
+0:03:29.340,0:03:33.960
+una cosa que tengo que aprender a hacer bien, y la forma de hacerlo bien es que coincida con 
+
+0:03:33.960,0:03:38.820
+todo lo que me están diciendo y dejar de preocuparme un poco acerca de lo que es de superficie y lo que es
+
+0:03:38.820,0:03:44.340
+profundo, porque, yo no entiendo eso realmente. Ahora, hay un montón de piezas en que podríamos centrarnos
+
+0:03:44.340,0:03:50.640
+aquí, pero quiero llamar su atención sobre una forma en que pienso en esto como una científica social, una especie 
+
+0:03:50.640,0:03:56.280
+de herramienta secreta para ayudarles a pensar acerca de todas estas diferentes características socio-técnicas 
+
+0:03:56.280,0:04:00.600
+que tienen que atravezar mientras estan tratando de escribir código con otras personas, y eso es pensar 
+
+0:04:00.600,0:04:07.440
+en la cultura de aprendizaje. Y más específicamente, es pensar en este concepto de deuda de aprendizaje.  
+
+0:04:08.760,0:04:14.880
+Así que Marian habló de todas las formas productivas que necesitamos para resolver problemas, aprender y enfrentarnos 
+
+0:04:14.880,0:04:19.800
+al error juntos. Quiero destacar un concepto diferente que ha surgido de mi investigación, que es esta idea
+
+0:04:19.800,0:04:25.980
+de que cuando no apoyamos el aprendizaje que la gente necesita para hacer su trabajo, creamos
+
+0:04:25.980,0:04:32.040
+este ciclo de daño a largo plazo, y he llamado a este ciclo deuda de aprendizaje. Ahora, hay algo 
+
+0:04:32.040,0:04:37.020
+que puedo decir desde las ciencias sociales y es que todos vivimos dentro de entornos sociales todo
+
+0:04:37.020,0:04:42.960
+el tiempo, y estamos escaneando esos entornos, específicamente desde la ciencia del aprendizaje, de la investigación
+
+0:04:42.960,0:04:48.360
+en educación, de la investigación acerca de los logros, y de la ciencia cognitiva sobre cómo la gente resuelve
+
+0:04:48.360,0:04:54.060
+problemas, sabemos que realmente importa si sentimos que estamos en un lugar que es seguro para el aprendizaje.
+
+0:04:54.060,0:05:00.180
+Y también sabemos, por el trabajo que he hecho con los desarrolladores, que el trabajo de código 
+
+0:05:00.180,0:05:06.420
+requiere un aprendizaje activo continuo todo el tiempo. Así que algo que he observado en mi investigación 
+
+0:05:06.420,0:05:11.460
+es este ciclo de deuda de aprendizaje que ocurre cuando los desarrolladores saben que necesitan hacer 
+
+0:05:11.460,0:05:17.820
+este aprendizaje, pero se sienten bombardeados por los mensajes de su entorno sobre cómo esas cosas son una 
+
+0:05:17.820,0:05:24.720
+pérdida de tiempo o no son tan valoradas como el resultado. ¿De dónde viene este trabajo? Hay un enlace al final 
+
+0:05:24.720,0:05:28.740
+de la diapositiva para más detalle. Con respecto a todo el panel no voy a profundizar en él, 
+
+0:05:28.740,0:05:34.620
+pero hay una gran cantidad de trabajo cualitativo en el centro de mi estudio. Así que hice 25
+
+0:05:34.620,0:05:40.620
+entrevistas en profundidad con los desarrolladores - que estaban en todo tipo de situaciones diferentes, 
+
+0:05:40.620,0:05:47.340
+principalmente en grandes empresas tecnológicas, y también me senté a su lado mientras hacían lo que llamo
+
+0:05:47.340,0:05:54.360
+resolución activa de problemas, hice que los desarrolladores hablaran en voz alta mientras estaban haciendo 
+
+0:05:54.360,0:06:00.480
+investigación para su trabajo o resolviendo errores en el código. Y a partir de esto, en mi informe 
+
+0:06:00.480,0:06:06.240
+se puede encontrar un análisis temático de estos datos cualitativos, pero también se basa en teorías realmente
+
+0:06:06.240,0:06:12.120
+rigurosas y bien respaldadas que provienen de las ciencias sociales y nos ayudan a entender estas dinámicas:
+
+0:06:12.120,0:06:17.160
+¿por qué es tan difícil preocuparse por el aprendizaje cuando todos decimos que nos preocupamos por él?
+
+0:06:18.660,0:06:23.940
+Y como gran resumen de todas estas conversaciones, he identificado este ciclo de deuda 
+
+0:06:23.940,0:06:28.560
+de aprendizaje. Para simplificar, pueden imaginar que se trata de un ciclo que la gente 
+
+0:06:28.560,0:06:32.760
+suele atravesar si se encuentra en un entorno que no apoya realmente su aprendizaje. 
+
+0:06:33.420,0:06:38.460
+Primero, están haciendo un aprendizaje activo. Están haciendo diagnóstico de errores, están haciendo esa 
+
+0:06:38.460,0:06:42.540
+ida y vuelta en la investigación, realmente están haciendo muchas cosas que la gente considera el corazón y 
+
+0:06:42.540,0:06:48.480
+el alma de descubrir qué código quieren escribir, y en mi informe tengo un montón de detalles sobre esto, 
+
+0:06:48.480,0:06:53.160
+pero los escritores de código tienen que pasar por el proceso de construír y checkear modelos mentales,
+
+0:06:53.160,0:06:57.900
+y no todo lo que hacen aquí se traduce en líneas de código. De hecho, 
+
+0:06:57.900,0:07:02.460
+aquí es donde se podría pensar en el clásico ejemplo en el que me llevó dos semanas escribir
+
+0:07:02.460,0:07:06.840
+una línea de código, pero ¡que linea de código!, era la línea de código correcta. 
+
+0:07:07.680,0:07:12.240
+Y entonces tomas ese hermoso y brillante aprendizaje activo, ese muy estratégico aprendizaje activo, 
+
+0:07:12.240,0:07:17.220
+y en un entorno que no está apoyando tu aprendizaje - vas a algo como una revisión de código - 
+
+0:07:17.220,0:07:21.840
+las revisiones de código surgieron mucho - no es el único lugar en el que esto sucede, pero es un 
+
+0:07:21.840,0:07:29.040
+muy buen ejemplo de ello - y te das cuenta de que estás encontrando algo de hipocresía. La gente puede 
+
+0:07:29.040,0:07:33.120
+decir que se preocupa por tu aprendizaje y luego puede decirte que es una pérdida de tiempo en la 
+
+0:07:33.120,0:07:39.600
+misma conversación. Esto es algo realmente perjudicial para la gente, incluso cuando no pensamos que 
+
+0:07:39.600,0:07:44.220
+estamos transmitiendo ese mensaje. A veces pienso en esto como el problema del cartel en la pared. 
+
+0:07:44.220,0:07:48.840
+Un póster en la pared que dice "todo el mundo puede aprender, todo el mundo puede cometer errores" y luego
+
+0:07:48.840,0:07:52.860
+vas a una revisión de código y tienes la sensación de que no estaba bien cometer este error en particular.
+
+0:07:54.780,0:08:00.660
+Y entonces, lo realmente importante es que vuelves a tu entorno y te conviertes en parte
+
+0:08:00.660,0:08:06.660
+de este ciclo. Así que ¿cómo sucede esto a pesar de que nos preocupamos por ello? No es una cuestión de nosotros 
+
+0:08:06.660,0:08:14.940
+contra ellos. Nuestras estrategias cambian. Volvemos a nuestro trabajo en solitario, encontramos formas estretégicas 
+
+0:08:14.940,0:08:21.180
+de hacer nuestra propia investigación y mantenerla para nosotros mismos, y así lo que queda fuera de esta imagen
+
+0:08:21.180,0:08:27.420
+es la colaboración, es hacer ese tipo de trabajo que implica una inversión a largo plazo en el aprendizaje. 
+
+0:08:27.420,0:08:33.180
+Así es como el ciclo de la deuda de aprendizaje se perpetúa. No puedo decirles 
+
+0:08:33.180,0:08:38.280
+lo extraño que es, ya sabes, y algo maravilloso como científico social, pero doloroso, sentarse con 25
+
+0:08:38.280,0:08:45.300
+desarrolladores diferentes y que todos digan: "apuesto a que a nadie le cuesta tanto como a mi, no?".
+
+0:08:48.180,0:08:52.620
+Esta es una figuro muy simplificada de mi informe. Tengo un montón de citas, soy una gran
+
+0:08:52.620,0:08:57.900
+creyente en que la voz del desarrollador debe ir al desarrollador por lo que siéntanse bienvenidos
+
+0:08:57.900,0:09:03.480
+a comprobarlo, pero voy a compartir un par de citas. Un desarrollador junior diciendo: "tratamos de abogar por
+
+0:09:03.480,0:09:08.820
+más programación de a pares - tuvimos mucha resistencia. Y luego este fracaso de las cosas que decimos
+
+0:09:08.820,0:09:14.520
+son nuestra mejor práctica. Idealmente dijimos, de acuerdo, vamos a comentar nuestro código, vamos a hacer esto 
+
+0:09:14.520,0:09:19.920
+porque nos está tirando abajo no hacerlo, pero en realidad menos del 10% de nuestro código está bien comentado.
+
+0:09:19.920,0:09:25.800
+Probablemente no sea una sorpresa para algunos de ustedes. Una pregunta que me resulta muy útil para  
+
+0:09:25.800,0:09:30.420
+los managers de ingeniería que están por ahí: le pregunto a alguien cómo hacen algo 
+
+0:09:31.140,0:09:35.760
+y luego los escucho decir, "oh, hacemos esto y esto, y todas estas cosas", y luego dices 
+
+0:09:35.760,0:09:43.080
+"genial, impresionante, ¿con qué frecuencia sucede con éxito?" Y la gente dice que es el cinco
+
+0:09:43.080,0:09:47.880
+por ciento de las veces - números realmente bajos, no?. Elemento de acción inmediata para todos ustedes. 
+
+0:09:49.260,0:09:56.520
+Bien, sólo para dejar en claro este punto, ¿por qué es tan difícil hacer esto? Podemos sentarnos aquí y hablar 
+
+0:09:56.520,0:10:01.920
+de lo mucho que nos gusta escribir código, aprender, y lo mucho que queremos tener estos equipos. 
+
+0:10:01.920,0:10:08.580
+Bueno, en realidad estamos compitiendo contra un tipo de cultura diferente. Es útil entender desde las ciencias 
+
+0:10:08.580,0:10:13.560
+sociales, desde trabajos sobre cómo la gente aprende, que tenemos muchos diferentes incentivos y metas 
+
+0:10:13.560,0:10:18.180
+y cosas que debemos buscar en estos entornos. Y una de las cosas que pueden surgir, y que creo 
+
+0:10:18.180,0:10:22.500
+que a menudo sobreestimamos, es algo que yo llamaría cultura del rendimiento. Podemos imaginar 
+
+0:10:22.500,0:10:28.500
+que tenemos una cultura del aprendizaje, pero también tenemos una cultura del rendimiento. La cultura del rendimiento
+
+0:10:28.500,0:10:33.840
+surge cuando la gente siente que su productividad es lo único que importa. El proceso subyacente 
+
+0:10:33.840,0:10:39.660
+a la productividad, el esfuerzo, los errores productivos, que conducen a resultados hermosos 
+
+0:10:39.660,0:10:44.700
+dentro de seis meses pero no en este trimestre, como una de las preguntas de la conferencia, esas cosas 
+
+0:10:44.700,0:10:49.980
+no se capturan en la cultura del rendimiento. Y pienso que muchas cosas conducen a eso. Piensen acerca
+
+0:10:49.980,0:10:55.500
+de su propio entorno. Siento realmente que estoy teniendo una conversación con feedback
+
+0:10:55.500,0:11:01.380
+o estoy teniendo una conversación en la que tengo que defender mi reputación? Esa es una buena señal 
+
+0:11:01.380,0:11:06.720
+de si estas en una cultura del rendimiento. Todo lo que se escucha de los ICs, los desarrolladores, especialmente
+
+0:11:06.720,0:11:12.660
+de los compañeros juniors, de personas marginalizadas en tecnología, se escuchan cosas como: nadie se siente 
+
+0:11:12.660,0:11:18.960
+como yo - una profunda desconección y alienación. Esto es importante hacerlo bien - construir
+
+0:11:18.960,0:11:23.940
+la tecnología que queremos bien. Y quiero dejarlos con otra arma secreta 
+
+0:11:23.940,0:11:30.120
+de la forma en que los científicos sociales pensamos esto. Es difícil para nosotrs motivarnos
+
+0:11:30.120,0:11:36.900
+a invertir en aprendizaje, y una de las razones, es que da miedo. Podemos tener el poster en la pared
+
+0:11:36.900,0:11:42.360
+pero para crear una cultura real del aprendizaje, tenemos que creer que cometer errores está bien. 
+
+0:11:43.200,0:11:49.200
+Y creo que todos le tememos un poco a eso. Permítanme compartir con ustedes que cuando están aprendiendo
+
+0:11:49.200,0:11:57.000
+se verá peor antes de que se vea mejor, ¿si? y eso puede resultar muy confuso, porque  
+
+0:11:57.000,0:12:01.800
+es como feedback que deberías frenar, que no deberías compartir, ¿no?. Pero que pasaría
+
+0:12:01.800,0:12:07.380
+si realmente nos permitiéramos comprometernos con el aprendizaje y dejáramos que eso definiera nuestro enfoque.
+
+0:12:08.940,0:12:14.880
+Quiero proponer que si hacemos eso tenemos un camino hacia algo aún más radical. Recuerden que 
+
+0:12:14.880,0:12:18.900
+les conté la historia de un desarrollador junior, y puede que hayan escuchado esa historia y hayan 
+
+0:12:18.900,0:12:24.300
+pensado que el coste real aquí -el coste para mi organización, el coste para mi tecnología- es el hecho 
+
+0:12:24.300,0:12:29.280
+de que no hemos hecho crecer a este desarrollador junior tan rápido como podríamos haberlo hecho. 
+
+0:12:29.280,0:12:33.840
+Eso es algo real, que queremos ayudar a la gente a ser eficiente en sus carreras. Pero no es
+
+0:12:33.840,0:12:41.040
+un camino lineal. Se trata de las interacciones dentro de los equipos. Así que los ingenieros de alto nivel
+
+0:12:41.040,0:12:46.920
+- que se perdieron algo en esas conversaciones - algo que podría haber sido muy esclarecedor, la manera en 
+
+0:12:46.920,0:12:52.200
+que una nueva perspectiva podría haberles dado información sobre su base de código. Así que realmente quiero
+
+0:12:52.200,0:12:58.380
+que vean la cultura de aprendizaje como una cosa que es emergente para todos nosotros y no sólo asociado a
+
+0:12:58.380,0:13:04.500
+"algunas personas están aquí abajo y tienen que subir hasta aquí", todos construimos juntos. Por último, tengo 
+
+0:13:04.500,0:13:09.720
+más recomendaciones e ideas para los líderes, para los gerentes, pero pensé en listar algunas. 
+
+0:13:09.720,0:13:15.840
+¿Cómo sabes si estás en el camino de construír una cultura del aprendizaje? Bueno, empezarás a ver
+
+0:13:15.840,0:13:21.720
+que las personas tienen capacidad de acción. Creo profundamente que las personas necesitan co-crear sus
+
+0:13:21.720,0:13:28.620
+definiciones de éxito. Las investigaciones y las ciencias sociales dicen lo mismo. Veran que las personas pueden desarrollarse. 
+
+0:13:28.620,0:13:34.080
+Una recomendación que doy a casi todas las organizaciones tecnológicas es, adviertan si toda conversación 
+
+0:13:34.080,0:13:39.420
+es sobre las personas defendiendo su reputación, presentandose para promoción o algo así. 
+
+0:13:39.420,0:13:45.840
+Ese no es un espacio seguro para hablar sobre desarrollo de habilidades. Verán que reflejar y transmitir 
+
+0:13:45.840,0:13:51.420
+conocimiento es reconocido y cuenta, cuenta como técnico. Es un punto importante para muchos equipos. 
+
+0:13:51.960,0:13:57.960
+Verán más celebración, frecuentemente nos centramos en lo negativo, lo que no estamos haciendo. 
+
+0:13:57.960,0:14:03.000
+Creo que una gran herramienta que tenemos para construir una cultura del aprendizaje es simplemente celebrarla. 
+
+0:14:03.000,0:14:08.551
+Las personas han descubierto como hacer esto en su organización, recompensémoslo. Muchas gracias. 

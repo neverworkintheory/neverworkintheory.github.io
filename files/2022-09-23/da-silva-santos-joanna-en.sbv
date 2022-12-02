@@ -1,0 +1,194 @@
+0:00:09.360,0:00:13.320
+So good morning everyone I'm Joanna, I'm an assistant professor in the department of
+
+0:00:13.320,0:00:16.620
+computer science and engineering at Notre Dame. I actually just joined last year that's why
+
+0:00:16.620,0:00:21.480
+Brittany is confused with my affiliation. And today I'd like to talk about a little bit on code smells
+
+0:00:21.480,0:00:27.180
+and automatically generated code. So remember back in 2015, 2016 I was a Master's student
+
+0:00:27.180,0:00:32.400
+and I saw this tweet online which basically says, hey, please, machine, please make a website with my
+
+0:00:32.400,0:00:38.160
+favorite fonts. Amazing, amazing, big performance, and of course, please, no bugs right that's great,
+
+0:00:38.160,0:00:43.620
+this would be a an amazing programming language. But of course that was a joke back then, but
+
+0:00:43.620,0:00:48.900
+the reality is that, is it really a joke nowadays? I don't think so. Because last year you probably
+
+0:00:48.900,0:00:53.040
+saw the release of GitHub Copilot in which now you can just write your function signature,
+
+0:00:53.040,0:00:57.420
+you know, just write your code comments, and then you say what you call - you want your code to be.
+
+0:00:57.420,0:01:02.100
+And GitHub Copilot will generate a few recommendations for you. And that's awesome,
+
+0:01:02.100,0:01:06.480
+it's really great, it really helps you a lot and improve your - is going to improve your
+
+0:01:06.480,0:01:12.660
+productivity. And previous work have been focusing a lot on the functionality of that code, of that
+
+0:01:12.660,0:01:17.760
+generated code, so meaning that the code will do what it's supposed to be doing, the functionality,
+
+0:01:17.760,0:01:24.600
+but how about the quality of the generated code? Is the code correct, but is it also free of code
+
+0:01:24.600,0:01:31.560
+smells, is it also free of security flaws, so that's really not clear. So right off the bat me and my
+
+0:01:31.560,0:01:36.720
+research - my PhD students - we have been looking at code smells in this ultimately automatically
+
+0:01:36.720,0:01:42.120
+generated code. And code smells as you already probably know are just basically symptoms that
+
+0:01:42.120,0:01:47.040
+may indicate that this system has flaws. And these code smells can generate maintainability
+
+0:01:47.040,0:01:53.520
+problems, technical debts, and also security issues over time, which we refer to as security smells.
+
+0:01:54.600,0:02:01.320
+So in light of that gap, what we have done is, well, first of all, let's take a look at
+
+0:02:01.320,0:02:07.260
+the training sets that are used to train these machine learning models that generate code. So
+
+0:02:07.260,0:02:13.260
+for that reason we looked at three different data sets that are commonly used for - by these machine
+
+0:02:13.260,0:02:19.920
+learning models, and then we we say, like, the Python samples from those data sets, and we use two static
+
+0:02:19.920,0:02:25.980
+analysis tools which was Pylint and Bandit. And the whole idea here is to see, do these training
+
+0:02:25.980,0:02:31.200
+sets contain code smells or not? and the answer to this question is actually yes they do
+
+0:02:31.200,0:02:35.580
+contain code smells, and in fact you as you can see in this table right here, you can see that
+
+0:02:35.580,0:02:43.860
+CodeXGlue which is one very large data set 97% of those Python samples did had code smells that were
+
+0:02:43.860,0:02:49.380
+reported by those two static analyzers. And if you look in terms of security smells they - these
+
+0:02:49.380,0:02:54.780
+code snippets also have security smells as well, such as for example, Code Clippy has 10% of
+
+0:02:54.780,0:03:02.280
+its Python samples with security smells. So that's quite alarming but in the end of the day these are
+
+0:03:02.280,0:03:08.040
+just the training sets, it doesn't necessarily mean that the generated code will have those issues.
+
+0:03:08.040,0:03:14.640
+So in light of that we also investigated if there are code smells in the generated code.
+
+0:03:14.640,0:03:22.080
+So we follow the systematic process that basically we use GitHub Copilot, we had a list of prompts, we
+
+0:03:22.080,0:03:29.100
+gave to GitHub Copilot and we also gave the same prompts, the same comments, to Code Clippy which is an
+
+0:03:29.100,0:03:34.560
+open source version of GitHub Copilot, and then we also run the static analyzers Pylint and
+
+0:03:34.560,0:03:42.000
+Bandit to see if the generated code has code smells or not. So after we have done that what we
+
+0:03:42.000,0:03:47.700
+have noticed indeed, we did find code smells and security smells in also the automatically generated
+
+0:03:47.700,0:03:53.400
+code. So for example in terms of code smells we found undefined variables as the most problematic
+
+0:03:53.400,0:04:00.840
+code smells, lines too long, duplicated code as well, unused arguments, and more importantly we
+
+0:04:00.840,0:04:06.540
+also find security problems that can be quite severe and can make your system insecure, such
+
+0:04:06.540,0:04:12.360
+as the use of the eval function - that means that you can execute code and an attacker might exploit
+
+0:04:12.360,0:04:18.540
+that to remotely execute code - and also the use of weak hash functions as well such as md5.
+
+0:04:19.620,0:04:24.780
+So here is an example of what we found. So for example here I have a function in Python that
+
+0:04:24.780,0:04:30.720
+says, show users, and I have a code comment that says, hey, I would like to query my database and
+
+0:04:30.720,0:04:35.580
+get user information given a username. That's pretty cool and that's what they call that
+
+0:04:35.580,0:04:42.300
+GitHub Copilot generated. As you can see in line 10, we have here a cursor designation of that SQL
+
+0:04:42.300,0:04:49.260
+command which seems to be correct and indeed it is correct, but this is prone to SQL injection.
+
+0:04:49.260,0:04:53.760
+If you do have any sort of security knowledge you know already that username you could inject some
+
+0:04:53.760,0:04:59.460
+SQL code in there, and you're able to, for example, drop the database completely. So this is going to
+
+0:04:59.460,0:05:04.980
+introduce SQL injection, right. Another issue we're having here is that the credentials in this code
+
+0:05:04.980,0:05:12.720
+snippet at line 6 for example are also hard coded which is another security smell as well. So how
+
+0:05:12.720,0:05:17.880
+can you - what can you do about it now that you know that, it is great to use these AI based tools but
+
+0:05:17.880,0:05:24.240
+with great powers comes great responsibilities, right, so what can you do about it? I think the
+
+0:05:24.240,0:05:27.840
+whole point here is that, you know, that's the case I would like to make to you as a developer, is
+
+0:05:28.680,0:05:33.720
+please use these AI based tools, they are awesome, they will help you with your productivity, but
+
+0:05:33.720,0:05:38.760
+also take - take with a grain of salt whatever they are generating for you. Make big use
+
+0:05:38.760,0:05:43.020
+of linters - Pylint, Bandit, or whatever else that is available for the language that
+
+0:05:43.020,0:05:50.880
+you're using, because at the end of the day, why should you care? And the reason is well, exactly,
+
+0:05:53.340,0:05:57.780
+yeah, you're right, so you already know that's what I want to say. Because at the end of the
+
+0:05:57.780,0:06:02.040
+day that code that has been pushed to the repo, when you do "git blame" it's not going to say that
+
+0:06:02.040,0:06:05.940
+the blame is on GitHub Copilot, it's going to say that the blame is on you - you are the person that
+
+0:06:05.940,0:06:10.560
+posted that code, it was your responsibility to make sure that it was free of vulnerabilities
+
+0:06:10.560,0:06:16.020
+and free of code smells. Okay, so with that being said, I would like to thank you for your attention,
+
+0:06:16.020,0:06:20.220
+and if you want to know more please scan the QR code and you can read the paper. Thank you so much.
