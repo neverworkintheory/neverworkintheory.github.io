@@ -1,57 +1,509 @@
-Hi everyone good afternoon, evening, or morning depending on where you are right now - super excited to be here - beyond excited to talk to you guys about some work that I have done and I'm continuing to work on that I think will be of interest - to all parties here and that is the work that I've been doing on causal testing - understanding defects' root causes.
-So today specifically I'm going to talk to you all about, first, how we - and by we I mean me - how I got here to talk to you about causal testing today.
-I'm going to talk to you about causal testing, which at its foundation is just a method for improving what you already do with what already exists.
-I'm going to talk about other areas and ways that causal testing can be used in practice, and I'm going to talk a little bit about whether it's actually found to be useful, starting with how we got here, what's the back story, right, like how how do we even get to talking about causal testing today.
-Well it all started with a study that I collaborated on ten years ago this year or next year - coming up on 10 years ago - which is absolutely outrageous to think about, but in my PhD we - at the beginning of my PhD we were really interested in getting a kind of foundational understanding of - in the space of all the tools that are available for developers, why do they use the ones they do use, and why don't they use the ones that they don't use, right?
-And so this is a really fun study to run - and from that we found a few things.
-So we found that some of the major issues that developers have with the tools that are available to them are around the tool output, so issues around digesting and understanding the output, more specifically understanding the results that the tool provides and answering questions like, why?
+0:00:05.280,0:00:09.280
+Hi everyone good afternoon, evening, or 
+morning depending on where you are right
+
+0:00:09.280,0:00:14.640
+now - super excited to be here - beyond excited 
+to talk to you guys about some work that I have
+
+0:00:14.640,0:00:20.160
+done and I'm continuing to work on that I think 
+will be of interest - to all parties here and
+
+0:00:20.160,0:00:25.040
+that is the work that I've been doing on causal 
+testing - understanding defects' root causes.
+
+0:00:26.800,0:00:31.200
+So today specifically I'm going 
+to talk to you all about, first,
+
+0:00:31.200,0:00:36.880
+how we - and by we I mean me - how I got here 
+to talk to you about causal testing today.
+
+0:00:37.520,0:00:40.880
+I'm going to talk to you about causal 
+testing, which at its foundation
+
+0:00:40.880,0:00:45.360
+is just a method for improving what you 
+already do with what already exists.
+
+0:00:45.920,0:00:50.080
+I'm going to talk about other areas and ways 
+that causal testing can be used in practice,
+
+0:00:50.640,0:00:54.320
+and I'm going to talk a little bit about 
+whether it's actually found to be useful,
+
+0:00:56.000,0:01:00.240
+starting with how we got here, 
+what's the back story, right, like
+
+0:01:00.240,0:01:03.200
+how how do we even get to talking 
+about causal testing today.
+
+0:01:03.920,0:01:12.000
+Well it all started with a study that I 
+collaborated on ten years ago this year or
+
+0:01:12.000,0:01:17.280
+next year - coming up on 10 years ago - which is 
+absolutely outrageous to think about, but in my
+
+0:01:17.280,0:01:23.520
+PhD we - at the beginning of my PhD we were really 
+interested in getting a kind of foundational
+
+0:01:23.520,0:01:28.560
+understanding of - in the space of all the 
+tools that are available for developers, why
+
+0:01:28.560,0:01:33.200
+do they use the ones they do use, and why don't 
+they use the ones that they don't use, right?
+
+0:01:33.920,0:01:39.120
+And so this is a really fun study to run 
+- and from that we found a few things.
+
+0:01:39.120,0:01:43.840
+So we found that some of the major issues that 
+developers have with the tools that are available
+
+0:01:43.840,0:01:51.840
+to them are around the tool output, so issues 
+around digesting and understanding the output,
+
+0:01:51.840,0:01:55.440
+more specifically understanding 
+the results that the tool provides
+
+0:01:55.440,0:01:58.640
+and answering questions like, why?
 Why is this a problem?
+
+0:01:58.640,0:02:00.560
 Why should I care?
 What do I do differently?
-Tool design issues - which I think we can all agree - the list here probably goes on and on, but different things cited under there, and then also workflow integration tools that are - that seem awesome and maybe could be great, but require some overhead to integrate into their current processes.
-And so from the study I went on a mission to provide what would be considered useful, usable, and most importantly validated as being such, and interventions for improving software practice.
-So now fast forward some years to a post PhD, I ended up getting an opportunity to do a postdoc, and in that postdoc I was given the opportunity to work in the testing space, which was actually extremely exciting for me because in my PhD I spent a lot of time focused on static analysis, and really only got to touch a little bit on the dynamic analysis side of things.
+
+0:02:02.080,0:02:06.560
+Tool design issues - which I think we can all 
+agree - the list here probably goes on and on,
+
+0:02:07.520,0:02:12.000
+but different things cited under there, 
+and then also workflow integration
+
+0:02:12.000,0:02:15.920
+tools that are - that seem awesome 
+and maybe could be great, but require
+
+0:02:15.920,0:02:18.640
+some overhead to integrate 
+into their current processes.
+
+0:02:20.560,0:02:26.880
+And so from the study I went on a mission to 
+provide what would be considered useful, usable,
+
+0:02:26.880,0:02:32.320
+and most importantly validated as being such, and 
+interventions for improving software practice.
+
+0:02:34.000,0:02:41.520
+So now fast forward some years to a post PhD, I 
+ended up getting an opportunity to do a postdoc,
+
+0:02:41.520,0:02:46.400
+and in that postdoc I was given the opportunity 
+to work in the testing space, which was actually
+
+0:02:46.400,0:02:51.440
+extremely exciting for me because in my PhD I 
+spent a lot of time focused on static analysis,
+
+0:02:52.160,0:02:55.280
+and really only got to touch a little bit 
+on the dynamic analysis side of things.
+
+0:02:55.280,0:02:57.280
 So I was really excited to have this opportunity.
-And of course we already know that testing is a powerful and commonly used way of assessing and validating and/or improving software quality, but some of the - a couple things that emerged, or that I got a deeper understanding of as I did this work, or at least started doing this work, was that there are a lot of testing techniques that are available for you.
-Some have come from research, some are from practice, some are a nice balance of both, but there are a lot out there.
-And I also noticed that traditional testing alone doesn't actually answer the question, why is this happening?
-Right, it'll help us find a defect, it'll help us even locate it in our code to some extent, but it doesn't always - it almost never answers the question, why did this behavior happen?
-And so from doing some of this kind of background work and reading, I came to a question of, can we take what developers are already doing and the work that's already being done, to provide insights that existing tools don't currently provide, specifically in this case, helping answer the why question - why is this happening?
-And so to this question we provided a possible solution that we - I'll talk more in depth about, in terms of why it is a solution, and that would be causal testing.
-So this is where causal testing comes in, right, so causal testing is a method for conducting automated causal experiments.
-And this process starts with your existing test cases and uses existing debugging techniques such as fuzzing and automated test generation, with a goal of providing developers with minimally-different passing and failing executions that help reason about why that failing behavior happened to begin with.
+
+0:02:58.320,0:03:04.640
+And of course we already know that testing is 
+a powerful and commonly used way of assessing
+
+0:03:04.640,0:03:10.800
+and validating and/or improving software quality, 
+but some of the - a couple things that emerged,
+
+0:03:10.800,0:03:15.920
+or that I got a deeper understanding of as I did 
+this work, or at least started doing this work,
+
+0:03:16.640,0:03:22.160
+was that there are a lot of testing 
+techniques that are available for you.
+
+0:03:22.160,0:03:25.520
+Some have come from research, some 
+are from practice, some are a nice
+
+0:03:25.520,0:03:32.560
+balance of both, but there are a lot out there.
+And I also noticed that traditional testing alone
+
+0:03:32.560,0:03:35.600
+doesn't actually answer the 
+question, why is this happening?
+
+0:03:36.160,0:03:41.360
+Right, it'll help us find a defect, it'll help 
+us even locate it in our code to some extent,
+
+0:03:42.080,0:03:45.840
+but it doesn't always - it almost never answers 
+the question, why did this behavior happen?
+
+0:03:47.840,0:03:51.840
+And so from doing some of this kind 
+of background work and reading,
+
+0:03:51.840,0:03:58.160
+I came to a question of, can we take what 
+developers are already doing and the work
+
+0:03:58.160,0:04:03.920
+that's already being done, to provide insights 
+that existing tools don't currently provide,
+
+0:04:03.920,0:04:07.680
+specifically in this case, helping answer 
+the why question - why is this happening?
+
+0:04:09.600,0:04:14.320
+And so to this question we provided a 
+possible solution that we - I'll talk
+
+0:04:14.320,0:04:19.120
+more in depth about, in terms of why it is a 
+solution, and that would be causal testing.
+
+0:04:19.120,0:04:23.920
+So this is where causal testing comes in, 
+right, so causal testing is a method for
+
+0:04:23.920,0:04:29.200
+conducting automated causal experiments.
+And this process starts with your existing
+
+0:04:29.200,0:04:35.040
+test cases and uses existing debugging techniques 
+such as fuzzing and automated test generation,
+
+0:04:35.680,0:04:39.760
+with a goal of providing developers with 
+minimally-different passing and failing
+
+0:04:39.760,0:04:44.240
+executions that help reason about why that 
+failing behavior happened to begin with.
+
+0:04:45.600,0:04:48.640
 So how does causal testing do that?
 How does that work?
-Let's dig a little deeper and talk about the - the process of using causal testing.
-Right, so say you have a test suite and maybe you have some continuous integration set up or something like that where a test fails, and you get notified of it.
-So say you have this notification or bug report that comes up: directions from this location to that location are wrong, right, and so let's say we got that bug report because this specific test failed.
-So what causal testing does is, it takes this failing test and it takes the inputs from this failing test and it attempts to perturb them in meaningful ways to produce additional valid tests that we can execute and determine - and keep track of whether they are passing or they're failing.
-Once we have a set of passing and failing tests, causal testing compares these tests to the original using both the input to the test as well as the execution path that it takes in order to present the developer with the most similar tests, assuming that that means that these are the most relevant to that original failing execution.
-And so in this example, given these similar passing and failing tests, we pretty quickly are able to determine that our passing tests are starting and ending in the same country, whereas our failing tests are starting and ending in different countries.
-And so now we have a better understanding with minimal effort of why this test failed to now go and address it.
-So you might be thinking - I'm hoping you're thinking - wow, that's, like, so simple and so cool.
+
+0:04:48.640,0:04:53.600
+Let's dig a little deeper and talk about 
+the - the process of using causal testing.
+
+0:04:53.600,0:04:59.280
+Right, so say you have a test suite and 
+maybe you have some continuous integration
+
+0:04:59.280,0:05:03.120
+set up or something like that where a 
+test fails, and you get notified of it.
+
+0:05:03.120,0:05:06.640
+So say you have this notification 
+or bug report that comes up:
+
+0:05:06.640,0:05:10.320
+directions from this location 
+to that location are wrong,
+
+0:05:10.320,0:05:14.720
+right, and so let's say we got that bug 
+report because this specific test failed.
+
+0:05:15.520,0:05:20.960
+So what causal testing does is, it takes this 
+failing test and it takes the inputs from this
+
+0:05:20.960,0:05:27.680
+failing test and it attempts to perturb them in 
+meaningful ways to produce additional valid tests
+
+0:05:28.240,0:05:32.960
+that we can execute and determine - and keep track 
+of whether they are passing or they're failing.
+
+0:05:34.240,0:05:40.080
+Once we have a set of passing and failing tests, 
+causal testing compares these tests to the
+
+0:05:40.080,0:05:46.320
+original using both the input to the test as well 
+as the execution path that it takes in order to
+
+0:05:46.320,0:05:51.920
+present the developer with the most similar tests, 
+assuming that that means that these are the most
+
+0:05:51.920,0:05:57.920
+relevant to that original failing execution.
+And so in this example, given these similar
+
+0:05:57.920,0:06:03.760
+passing and failing tests, we pretty quickly 
+are able to determine that our passing tests
+
+0:06:03.760,0:06:07.360
+are starting and ending in the same 
+country, whereas our failing tests are
+
+0:06:07.360,0:06:11.520
+starting and ending in different countries.
+And so now we have a better understanding
+
+0:06:11.520,0:06:15.440
+with minimal effort of why this test 
+failed to now go and address it.
+
+0:06:18.960,0:06:21.920
+So you might be thinking - I'm 
+hoping you're thinking - wow,
+
+0:06:21.920,0:06:25.600
+that's, like, so simple and so cool.
 I know, it got me excited too.
-And you might also be thinking, what else can we do with this: also what I'm thinking.
+
+0:06:26.240,0:06:30.240
+And you might also be thinking, what else 
+can we do with this: also what I'm thinking.
+
+0:06:30.240,0:06:32.480
 So let's talk about it.
 What else can causal testing do?
-Is it a one-trick pony or can it be applied other places?
-Well a couple of directions that we're looking at are, first, causal fairness testing, and so - and this work we actually have published as a demo and there is a prototype that has been developed at the link provided here, but, so, causal fairness testing takes this causal experimentation approach in the context of detecting bias.
-So let's say, for example, we have some software and that software takes some inputs.
-For simplicity's sake, yeah, let's say it's some loan software that takes these four inputs to make a decision.
-What causal fairness testing does is, it automatically generates tests that look something like this.
-We have some input based on our input space, it goes into the loan software, and we observe, what is the outcome of that input based on that test.
-Causal testing makes small singular changes to the input,
-so for example changing green Brittany's race to orange Brittany, right, and conducts the same test where we feed it into the software and observe the outcome - flip one additional attribute - one singular attribute - observe the outcome.
-And we do that over and over and over again within some threshold to help answer questions, such as, how often is the outcome of my software different just because of race, right.
-So providing a method for - for kind of - if you're worried about software that may have liability concerns or accountability concerns around bias or fairness, providing a method for you to not have to create those tests on your own - to be able to automatically generate tests, that can help speak to those types of concerns.
-So that's one space where causal fairness testing could be useful, or causal testing.
-Another space that we're looking at that I think is really important to - to really dig into - is this idea of testing machine learning based software.
-And so the work we're doing right now is looking at - so for example, say you have some software and that software integrates some trained machine learning model that aids in the decision making, right, and into that software, or some sets of inputs let's say for this software we care about name, race, zip code, and the degree that they have, right, and then presumably there is either some concrete set of outputs or classes of outputs.
-Since we are using a machine learning model here, we want to make sure our software is - is - is complying with - with respect to our expectations, right, so what we're starting right now is, what does it look like to test this type of software, particularly in the mode of testing that we typically use - that being assertions, right, so can we write assertions that look something like this where we assert equal output or outcomes for two sets of inputs, and then another example asserting true that for some input we end up in a class or some specific output.
-And if this is something that we can do, then we can actually start to think about causal testing being beneficial in this context as well for us to be able to - for example, see that if we change April to Adam, right, our assertion doesn't break, versus here it is breaking, right.
-If we keep doing that and we get enough tests then we can start to reason about why something about this input space is causing unexpected behavior, all right, just another step in the information chain that's required not only to understand behavior but to actually rectify it.
-So two directions, super excited about we're working on in our lab right now, but you might be of course wondering - what you should be wondering - is it actually useful? Can I take this technique and do something meaningful with it in practice?
-And we developed a proof of concept implementation to evaluate exactly this, where we found that in terms of improving the ability to detect root cause - fixing these defects and being useful - causal testing checks all the boxes, and more specifically in terms of being useful, these similar passing tests point to the cause in terms of our - according to our participants.
-And so in summary causal testing is a useful technique that provides more insight into faulty executions with code that you've already written.
-So don't hesitate look into the work, talk to me about it, let's figure out how causal testing can become a part of your testing process.
+
+0:06:32.480,0:06:34.800
+Is it a one-trick pony or can 
+it be applied other places?
+
+0:06:35.440,0:06:40.320
+Well a couple of directions that we're looking 
+at are, first, causal fairness testing,
+
+0:06:41.280,0:06:46.720
+and so - and this work we actually have published 
+as a demo and there is a prototype that has been
+
+0:06:46.720,0:06:52.080
+developed at the link provided here, but, 
+so, causal fairness testing takes this causal
+
+0:06:52.880,0:06:56.400
+experimentation approach in 
+the context of detecting bias.
+
+0:06:57.600,0:07:02.080
+So let's say, for example, we have some 
+software and that software takes some inputs.
+
+0:07:02.080,0:07:05.280
+For simplicity's sake, yeah, let's 
+say it's some loan software that takes
+
+0:07:05.280,0:07:10.400
+these four inputs to make a decision.
+What causal fairness testing does is,
+
+0:07:10.400,0:07:14.480
+it automatically generates tests 
+that look something like this.
+
+0:07:14.480,0:07:18.720
+We have some input based on our input 
+space, it goes into the loan software,
+
+0:07:18.720,0:07:24.160
+and we observe, what is the outcome 
+of that input based on that test.
+
+0:07:24.160,0:07:27.920
+Causal testing makes small 
+singular changes to the input,
+
+0:07:27.920,0:07:34.480
+so for example changing green Brittany's race to 
+orange Brittany, right, and conducts the same test
+
+0:07:34.480,0:07:39.440
+where we feed it into the software and observe 
+the outcome - flip one additional attribute - one
+
+0:07:39.440,0:07:44.320
+singular attribute - observe the outcome.
+And we do that over and over and over again within
+
+0:07:44.320,0:07:50.480
+some threshold to help answer questions, such as, 
+how often is the outcome of my software different
+
+0:07:50.480,0:07:55.360
+just because of race, right.
+So providing a method for - for kind
+
+0:07:55.360,0:08:01.120
+of - if you're worried about software that may 
+have liability concerns or accountability concerns
+
+0:08:01.120,0:08:06.320
+around bias or fairness, providing a method for 
+you to not have to create those tests on your
+
+0:08:06.320,0:08:10.320
+own - to be able to automatically generate tests, 
+that can help speak to those types of concerns.
+
+0:08:11.360,0:08:16.000
+So that's one space where causal fairness 
+testing could be useful, or causal testing.
+
+0:08:16.000,0:08:18.240
+Another space that we're 
+looking at that I think is
+
+0:08:18.880,0:08:25.520
+really important to - to really dig into - is this 
+idea of testing machine learning based software.
+
+0:08:25.520,0:08:29.120
+And so the work we're doing right 
+now is looking at - so for example,
+
+0:08:29.120,0:08:34.400
+say you have some software and that software 
+integrates some trained machine learning model
+
+0:08:34.400,0:08:38.720
+that aids in the decision making, right, and 
+into that software, or some sets of inputs
+
+0:08:38.720,0:08:42.800
+let's say for this software we care about name, 
+race, zip code, and the degree that they have,
+
+0:08:43.360,0:08:49.360
+right, and then presumably there is either some 
+concrete set of outputs or classes of outputs.
+
+0:08:49.360,0:08:51.200
+Since we are using a machine learning model here,
+
+0:08:52.640,0:08:57.840
+we want to make sure our software is - is - is 
+complying with - with respect to our expectations,
+
+0:08:58.400,0:09:03.840
+right, so what we're starting right now is, what 
+does it look like to test this type of software,
+
+0:09:03.840,0:09:08.960
+particularly in the mode of testing that 
+we typically use - that being assertions,
+
+0:09:08.960,0:09:14.000
+right, so can we write assertions that look 
+something like this where we assert equal output
+
+0:09:14.000,0:09:21.760
+or outcomes for two sets of inputs, and then 
+another example asserting true that for some input
+
+0:09:21.760,0:09:27.840
+we end up in a class or some specific output.
+And if this is something that we can do,
+
+0:09:27.840,0:09:32.640
+then we can actually start to think about causal 
+testing being beneficial in this context as well
+
+0:09:32.640,0:09:36.960
+for us to be able to - for example, 
+see that if we change April to Adam,
+
+0:09:36.960,0:09:41.600
+right, our assertion doesn't break, 
+versus here it is breaking, right.
+
+0:09:41.600,0:09:45.360
+If we keep doing that and we get enough 
+tests then we can start to reason about
+
+0:09:45.360,0:09:52.320
+why something about this input space is causing 
+unexpected behavior, all right, just another step
+
+0:09:52.320,0:09:58.040
+in the information chain that's required not only 
+to understand behavior but to actually rectify it.
+
+0:09:58.640,0:10:03.760
+So two directions, super excited about 
+we're working on in our lab right now,
+
+0:10:03.760,0:10:08.880
+but you might be of course wondering - what you 
+should be wondering - is it actually useful?
+
+0:10:08.880,0:10:13.200
+Can I take this technique and do 
+something meaningful with it in practice?
+
+0:10:14.080,0:10:20.480
+And we developed a proof of concept implementation 
+to evaluate exactly this, where we found that in
+
+0:10:20.480,0:10:26.480
+terms of improving the ability to detect root 
+cause - fixing these defects and being useful -
+
+0:10:26.480,0:10:30.160
+causal testing checks all the boxes, and 
+more specifically in terms of being useful,
+
+0:10:30.160,0:10:35.040
+these similar passing tests point to the cause 
+in terms of our - according to our participants.
+
+0:10:36.480,0:10:40.240
+And so in summary causal testing 
+is a useful technique that provides
+
+0:10:40.240,0:10:44.080
+more insight into faulty executions 
+with code that you've already written.
+
+0:10:44.720,0:10:50.320
+So don't hesitate look into the work, talk to me 
+about it, let's figure out how causal testing can
+
+0:10:50.320,0:10:59.200
+become a part of your testing process.
 Thank you so much for your time.

@@ -1,52 +1,309 @@
+0:00:05.040,0:00:09.280
 Thank you for having me here.
-So this is work that I did with my master's student Reza and my postdoc Gema who's now a professor at UBC Okanagan.
-So we wanted to look at bias when people are evaluating code contribution in open source software, and if there is bias, what the population of the people contributing in open source software is.
+So this is work that I did with my
+
+0:00:09.840,0:00:16.320
+master's student Reza and my postdoc Gema who's now a professor at UBC Okanagan.
+
+0:00:17.040,0:00:22.000
+So we wanted to look at bias when people are evaluating code contribution in open
+
+0:00:22.000,0:00:27.520
+source software, and if there is bias, what the population of the people
+
+0:00:27.520,0:00:36.000
+contributing in open source software is.
 And so I think I'm going to just go.
-So open source software often thinks of itself as a meritocracy and oftentimes it is but - and they think that, you know, the quality of the contribution is the key here and it doesn't matter who is contributing, where they're contributing from, and that's - that's that's a popular -.
+
+0:00:37.680,0:00:45.840
+So open source software often thinks of itself as a meritocracy and oftentimes it is but - and
+
+0:00:45.840,0:00:50.320
+they think that, you know, the quality of the contribution is the key here and it doesn't matter
+
+0:00:50.320,0:00:57.160
+who is contributing, where they're contributing from, and that's - that's that's a popular -.
+
+0:00:57.840,0:01:03.680
 Our past research has kind of shown that there are caveats to this.
+
+0:01:03.680,0:01:11.920
 They've found that gender has a role to play when open source contributions are being evaluated.
-Research has also shown that contributions from different countries may have different likelihoods of their contributions getting accepted.
-But one thing that we didn't quite see is race, and - and there is some evidence that developers do understand the race and ethnicity of other members in their open source projects even if they have not met them, even if it's completely remote, right.
-Today company or industrial research - industrial development happens remotely, but open source software has been happening remotely for decades now, right, and even in that case they kind of are aware of the ethnicity of the members in their team.
-And in that survey they also found that about 30 percent of them have faced some kind of negative experience due to their diversity.
-And so what we wanted to see was, we wanted to see if the ethnicity of the person making the contribution has any impact on whether their contribution is going to be accepted.
-And what we think is that by knowing that ethnicity - by looking at a name - something in my brain gets activated and some bias that I might have towards that race or ethnicity might kick in, and I might view that contribution as something not great, right.
-In this case just looking at my name and saying, oh this looks like a south asian contributor, so this is going to be a good one, or something like that, and then accepting the contribution.
+
+0:01:11.920,0:01:18.800
+Research has also shown that contributions from different countries may have different likelihoods
+
+0:01:18.800,0:01:24.080
+of their contributions getting accepted.
+But one thing that we didn't quite see is
+
+0:01:24.880,0:01:31.040
+race, and - and there is some evidence that developers do understand
+
+0:01:31.600,0:01:36.960
+the race and ethnicity of other members in their open source projects even if they have not met
+
+0:01:36.960,0:01:45.600
+them, even if it's completely remote, right.
+Today company or industrial research - industrial
+
+0:01:46.160,0:01:49.600
+development happens remotely, but open source software has been happening
+
+0:01:49.600,0:01:54.880
+remotely for decades now, right, and even in that case they kind of are aware of the
+
+0:01:54.880,0:01:59.680
+ethnicity of the members in their team.
+And in that survey they also found that
+
+0:01:59.680,0:02:08.400
+about 30 percent of them have faced some kind of negative experience due to their diversity.
+
+0:02:09.440,0:02:19.040
+And so what we wanted to see was, we wanted to see if the ethnicity of the person making
+
+0:02:19.040,0:02:25.360
+the contribution has any impact on whether their contribution is going to be accepted.
+
+0:02:25.360,0:02:31.280
+And what we think is that by knowing that ethnicity - by looking at a name - something
+
+0:02:31.280,0:02:36.080
+in my brain gets activated and some bias that I might have towards that race or
+
+0:02:36.080,0:02:44.320
+ethnicity might kick in, and I might view that contribution as something not great, right.
+
+0:02:44.320,0:02:49.520
+In this case just looking at my name and saying, oh this looks like a south asian contributor,
+
+0:02:49.520,0:02:54.880
+so this is going to be a good one, or something like that, and then accepting the contribution.
+
+0:02:56.400,0:03:03.840
 So what we wanted to see was, collect quantitative evidence of whether this exists or not.
-So we took about 46,000 projects from GitHub, all of which had at least 10 stars, and they were non-trivial in some sense - they were not like student projects.
-We got about 2.5 million pull requests from these, and we took the names of the people who made these contributions, and using a tool called NamePrism we kind of extracted the race and ethnicity from the name.
+
+0:03:04.400,0:03:10.640
+So we took about 46,000 projects from GitHub, all of which had at least 10 stars,
+
+0:03:10.640,0:03:14.000
+and they were non-trivial in some sense - they were not like student projects.
+
+0:03:14.640,0:03:21.280
+We got about 2.5 million pull requests from these, and we took the names of the people who
+
+0:03:21.280,0:03:25.840
+made these contributions, and using a tool called NamePrism we kind of
+
+0:03:26.400,0:03:29.040
+extracted the race and ethnicity from the name.
+
+0:03:29.600,0:03:35.360
 So we got the race and ethnicity for about 493,000 developers.
-So one might - so I mean, the tool kind of gives an output and says that this name sounds hispanic with a 97 percent probability or this percent this name sounds white with a 51 percent probability.
-Now you may think, hey there's going to be problems here, and there are going to be problems here, you know a very - john doe might be a name and you wouldn't know which race or ethnicity that might be.
-You might think that it's actually a white person even if it may not be.
-But we found that whenever the tool makes mistakes about someone's race or ethnicity humans make the same mistake about the race or ethnicity of that person as well.
-So the tool is about as good as humans in determining what the race or ethnicity of a person is from the name.
-So we took that and the first striking result that we got was that less than 10 percent of the contributions that we were able to identify came from a non-white developer, and that includes Asians, Hispanic, and Black developers put together, right.
-We found one Alaskan or Native American developer in the whole data set, which is in itself - we could have stopped the study here and said, you know what, this is - this is a bad enough, like, less than 10 percent of the contributions are coming from non-white developers, or perceived non-white developers.
-We wanted to see, given this smaller population, is there an even further impact on whether their contributions are being accepted or not.
-And so what we did is, we collected a whole set of other metrics other than just their race or ethnicity, like, you know, their experience they have - how long have they been working in that particular project, how many files have they changed, a lot of other variables.
-And we built this regression model to find out whether their contribution would be accepted or not.
-Can we predict whether someone's contribution be accepted - accepted or not, and find the likelihood of their contribution being accepted?
-What we did find is that there is a relationship between someone's race or ethnicity from their names and whether their contributions are going to be accepted.
-So what we found is that Hispanic developers have about six percent lower odds of getting their pull request accepted.
+
+0:03:36.000,0:03:43.360
+So one might - so I mean, the tool kind of gives an output and says that this name sounds hispanic
+
+0:03:43.360,0:03:51.040
+with a 97 percent probability or this percent this name sounds white with a 51 percent probability.
+
+0:03:51.040,0:03:54.800
+Now you may think, hey there's going to be problems here, and there are going to be
+
+0:03:54.800,0:04:01.360
+problems here, you know a very - john doe might be a name and you wouldn't
+
+0:04:01.360,0:04:04.800
+know which race or ethnicity that might be.
+You might think that it's actually a white
+
+0:04:05.360,0:04:10.240
+person even if it may not be.
+But we found that whenever the
+
+0:04:10.240,0:04:15.040
+tool makes mistakes about someone's race or ethnicity humans make the same mistake about the
+
+0:04:16.000,0:04:20.240
+race or ethnicity of that person as well.
+So the tool is about as good as humans
+
+0:04:20.240,0:04:23.280
+in determining what the race or ethnicity of a person is from the name.
+
+0:04:24.560,0:04:30.320
+So we took that and the first striking result that we got was that less than 10 percent of
+
+0:04:30.320,0:04:38.560
+the contributions that we were able to identify came from a non-white developer, and that includes
+
+0:04:38.560,0:04:45.760
+Asians, Hispanic, and Black developers put together, right.
+
+0:04:47.600,0:04:55.680
+We found one Alaskan or Native American developer in the whole data set, which is
+
+0:04:55.680,0:04:59.440
+in itself - we could have stopped the study here and said, you know what, this is - this
+
+0:04:59.440,0:05:04.560
+is a bad enough, like, less than 10 percent of the contributions are coming from non-white
+
+0:05:04.560,0:05:12.240
+developers, or perceived non-white developers.
+We wanted to see, given this smaller population,
+
+0:05:12.240,0:05:17.920
+is there an even further impact on whether their contributions are being accepted or not.
+
+0:05:17.920,0:05:23.360
+And so what we did is, we collected a whole set of other metrics other than just their race or
+
+0:05:23.360,0:05:31.120
+ethnicity, like, you know, their experience they have - how long have they been working
+
+0:05:31.120,0:05:35.680
+in that particular project, how many files have they changed, a lot of other variables.
+
+0:05:35.680,0:05:39.280
+And we built this regression model to find out whether
+
+0:05:41.520,0:05:45.760
+their contribution would be accepted or not.
+Can we predict whether someone's contribution
+
+0:05:45.760,0:05:50.560
+be accepted - accepted or not, and find the likelihood of their contribution being accepted?
+
+0:05:51.520,0:05:55.280
+What we did find is that there is a relationship
+
+0:05:55.920,0:06:00.720
+between someone's race or ethnicity from their names and whether their contributions
+
+0:06:00.720,0:06:03.600
+are going to be accepted.
+So what we found is that
+
+0:06:03.600,0:06:09.280
+Hispanic developers have about six percent lower odds of getting their pull request accepted.
+
+0:06:09.920,0:06:16.080
 Keep in mind that this is controlling for their experience and various other metrics as well
-And API developers which is Asian or Pacific Islander have about 10 percent lower odds of getting their pull request accepted.
-So there is a - there is strong evidence that they have that non-white people have their contributions accepted at a lower rate.
-We also wanted to see whether this was true when taking the ethnicity of the person integrating the code as well is taken into account.
-And we found that non-white developers are actually more likely to get their contributions accepted when the integrator is also of the same ethnicity, right, and to give some results, when it's Hispanic - a Hispanic developer is going to have a 75 percent higher odds of getting their pull request accepted when the integrator is also estimated as Hispanic.
+
+0:06:16.880,0:06:22.240
+And API developers which is Asian or Pacific Islander have about 10 percent lower odds
+
+0:06:22.240,0:06:28.000
+of getting their pull request accepted.
+So there is a - there is strong evidence
+
+0:06:28.000,0:06:34.080
+that they have that non-white people have their contributions accepted at a lower rate.
+
+0:06:34.080,0:06:39.360
+We also wanted to see whether this was true when taking the ethnicity of the
+
+0:06:41.040,0:06:44.880
+person integrating the code as well is taken into account.
+
+0:06:45.600,0:06:50.720
+And we found that non-white developers are actually more likely to get their contributions
+
+0:06:50.720,0:06:58.240
+accepted when the integrator is also of the same ethnicity, right, and to give some results,
+
+0:06:58.800,0:07:05.040
+when it's Hispanic - a Hispanic developer is going to have a 75 percent higher odds
+
+0:07:05.040,0:07:10.560
+of getting their pull request accepted when the integrator is also estimated as Hispanic.
+
+0:07:11.120,0:07:15.920
 And when it comes to Asian Pacific Islander it's about 36 percent higher.
+
+0:07:15.920,0:07:20.080
 This is in comparison to when the integrator is a white developer.
-And the most stark result is when it's a Black developer and here it's not nine percent it's actually nine times higher odds so that's 900 percent, right, so this is very, very considerable amount of - considerable result here, right.
-So we know from these results that a - that representation is disproportional to the population of people and that unconscious - unconscious bias may exist.
-Now it may not be that someone is saying, oh, this person is Asian and therefore I'm going to reject their pull request, or this person is Hispanic I'm going to reject their pull request.
-But there might be other factors that someone might associate with them, right, the English is not great in their comment or I don't understand, you know, the variable names that they've used, or, you know, or that this person is not as experienced as I thought they were, which is not something that we saw in the first slide - we saw that it - it - only the contribution matters and not so much the other factors, right.
+
+0:07:20.880,0:07:28.240
+And the most stark result is when it's a Black developer and here it's not nine percent
+
+0:07:28.240,0:07:33.520
+it's actually nine times higher odds so that's 900 percent,
+
+0:07:33.520,0:07:43.280
+right, so this is very, very considerable amount of - considerable result here, right.
+
+0:07:43.280,0:07:51.040
+So we know from these results that a - that representation is disproportional
+
+0:07:51.040,0:07:57.840
+to the population of people and that unconscious - unconscious bias may exist.
+
+0:07:58.480,0:08:04.400
+Now it may not be that someone is saying, oh, this person is Asian and therefore I'm going
+
+0:08:04.400,0:08:08.480
+to reject their pull request, or this person is Hispanic I'm going to reject their pull request.
+
+0:08:09.200,0:08:13.120
+But there might be other factors that someone might associate with them, right,
+
+0:08:14.080,0:08:21.600
+the English is not great in their comment or I don't understand, you know,
+
+0:08:22.480,0:08:28.320
+the variable names that they've used, or, you know, or that this person is not as experienced
+
+0:08:28.320,0:08:33.040
+as I thought they were, which is not something that we saw in the first slide - we saw that
+
+0:08:33.040,0:08:37.840
+it - it - only the contribution matters and not so much the other factors, right.
+
+0:08:38.640,0:08:42.640
 So what now?
-Do we just do, like, an author blinded evaluation in GitHub,
-just remove the name so that you don't know who it is?
-I don't think so - I think we can actually use the author names and actively support a diverse group of contributors - contributing in their projects.
+Do we just do, like,
+
+0:08:42.640,0:08:46.240
+an author blinded evaluation in GitHub,
+just remove the name so that
+
+0:08:46.240,0:08:51.920
+you don't know who it is?
+I don't think so - I think we can actually use the
+
+0:08:51.920,0:08:59.200
+author names and actively support a diverse group of contributors - contributing in their projects.
+
+0:08:59.200,0:09:02.960
 So know that this person is from a different place or ethnicity,
+
+0:09:02.960,0:09:07.120
 know that they might be a new user,
 help them get that contribution accepted,
-don't just ignore it, don't just reject, it even if you're going to reject it please give them constructive feedback so that the next time around they can get their pull request accepted.
+
+0:09:07.120,0:09:11.120
+don't just ignore it, don't just reject, it even if you're going to reject it please give
+
+0:09:11.120,0:09:15.280
+them constructive feedback so that the next time around they can get their pull request accepted.
+
+0:09:16.240,0:09:19.520
 So with that I'll share some of the papers that we have.
-This - these papers have more details on the projects that we did and all the specific experimental settings, all our data and scripts are available if you want to take this and run this on your own repositories or compare it you can. The model scripts are also available in the papers and if you want to reach Gema and my email addresses are there and my Twitter handle is also here so thank you.
+
+0:09:19.520,0:09:21.840
+This - these papers have more details on
+
+0:09:22.880,0:09:26.960
+the projects that we did and all the specific experimental settings,
+
+0:09:27.520,0:09:32.880
+all our data and scripts are available if you want to take this and run this on your own repositories
+
+0:09:32.880,0:09:37.760
+or compare it you can. The model scripts are also available in the papers and if you want to reach
+
+0:09:38.720,0:09:49.840
+Gema and my email addresses are there and my Twitter handle is also here so thank you.

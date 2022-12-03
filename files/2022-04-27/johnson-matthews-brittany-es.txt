@@ -1,57 +1,509 @@
-Hola a todos, buenas tardes, noches o mañanas, dependiendo de dónde se encuentren en este momento. Estoy muy emocionada de estar aquí, más que emocionada de hablar con ustedes sobre un trabajo que he hecho y en el que continúo trabajando y que creo que será de interés para todas las partes presentes, y es el trabajo que he estado haciendo sobre las pruebas causales, la comprensión de las causas raíz de los defectos.
-Así que hoy específicamente voy a hablar con todos ustedes sobre, en primer lugar, cómo nosotros - y por nosotros me refiero a mí - cómo llegué aquí para hablar con ustedes sobre las pruebas causales hoy.
-Voy a hablarles de la prueba causal, que en su base es sólo un método para mejorar lo que ya se hace con lo que ya existe.
-Voy a hablar de otras áreas y formas en que las pruebas causales se pueden utilizar en la práctica, y voy a hablar un poco acerca de si realmente se encuentra para ser útil, a partir de cómo llegamos aquí, cuál es la historia de fondo, ¿verdad?, cómo, la forma en que incluso llegamos a hablar de pruebas causales hoy.
-Bueno, todo comenzó con un estudio en el que colaboré hace diez años, este año o el próximo, hace diez años, lo que es absolutamente indignante de pensar, pero en mi doctorado, al principio de mi doctorado estábamos realmente interesados en obtener una especie de comprensión fundamental de, en el espacio de todas las herramientas que están disponibles para los desarrolladores, por qué utilizan las que utilizan, y por qué no utilizan las que no utilizan, ¿verdad?
-Así que este es un estudio muy divertido para realizar - y a partir de eso encontramos algunas cosas.
-Descubrimos que algunos de los principales problemas que tienen los desarrolladores con las herramientas disponibles están relacionados con los resultados de las mismas, es decir, con la comprensión de los resultados, más concretamente con la comprensión de los resultados que proporciona la herramienta y la respuesta a preguntas como ¿por qué?
+0:00:05.280,0:00:09.280
+Hola a todos, buenas tardes, noches o mañanas, 
+dependiendo de dónde se encuentren en este momento.
+
+0:00:09.280,0:00:14.640
+Estoy muy emocionada de estar aquí, más que emocionada 
+de hablar con ustedes sobre un trabajo que he
+
+0:00:14.640,0:00:20.160
+hecho y en el que continúo trabajando y que creo 
+que será de interés para todas las partes presentes,
+
+0:00:20.160,0:00:25.040
+y es el trabajo que he estado haciendo sobre las pruebas causales,
+la comprensión de las causas raíz de los defectos.
+
+0:00:26.800,0:00:31.200
+Así que hoy específicamente voy a hablar con 
+todos ustedes sobre, en primer lugar,
+
+0:00:31.200,0:00:36.880
+cómo nosotros - y por nosotros me refiero a mí - cómo llegué 
+aquí para hablar con ustedes sobre las pruebas causales hoy.
+
+0:00:37.520,0:00:40.880
+I'm going to talk to you about causal 
+testing, which at its foundation
+
+0:00:40.880,0:00:45.360
+Voy a hablarles de la prueba causal, que en su base es sólo 
+un método para mejorar lo que ya se hace con lo que ya existe.
+
+0:00:45.920,0:00:50.080
+Voy a hablar de otras áreas y formas en que las pruebas 
+causales se pueden utilizar en la práctica,
+
+0:00:50.640,0:00:54.320
+y voy a hablar un poco acerca de si 
+realmente se encuentra para ser útil,
+
+0:00:56.000,0:01:00.240
+a partir de cómo llegamos aquí, 
+cuál es la historia de fondo, ¿verdad?, cómo,
+
+0:01:00.240,0:01:03.200
+la forma en que incluso llegamos a hablar 
+de pruebas causales hoy.
+
+0:01:03.920,0:01:12.000
+Bueno, todo comenzó con un estudio en el que 
+colaboré hace diez años, este año
+
+0:01:12.000,0:01:17.280
+o el próximo, hace diez años, lo que es 
+absolutamente indignante de pensar, pero en mi
+
+0:01:17.280,0:01:23.520
+doctorado, al principio de mi doctorado estábamos realmente 
+interesados en obtener una especie de comprensión fundamental
+
+0:01:23.520,0:01:28.560
+de, en el espacio de todas las herramientas que 
+están disponibles para los desarrolladores, por qué
+
+0:01:28.560,0:01:33.200
+utilizan las que utilizan, y por qué no 
+utilizan las que no utilizan, ¿verdad?
+
+0:01:33.920,0:01:39.120
+Así que este es un estudio muy divertido para realizar 
+- y a partir de eso encontramos algunas cosas.
+
+0:01:39.120,0:01:43.840
+Descubrimos que algunos de los principales problemas que 
+tienen los desarrolladores con las herramientas disponibles 
+
+0:01:43.840,0:01:51.840
+están relacionados con los resultados de las mismas, es decir, 
+con la comprensión de los resultados,
+
+0:01:51.840,0:01:55.440
+más concretamente con la comprensión 
+de los resultados que proporciona la herramienta
+
+0:01:55.440,0:01:58.640
+y la respuesta a preguntas como ¿por qué?
 ¿Por qué es un problema?
+
+0:01:58.640,0:02:00.560
 ¿Por qué debería preocuparme?
 ¿Qué debo hacer de forma diferente?
-Cuestiones de diseño de la herramienta - que creo que todos podemos estar de acuerdo - la lista aquí probablemente sigue y sigue, pero diferentes cosas citadas allí, y luego también las herramientas de integración de flujo de trabajo que son - que parece impresionante y tal vez podría ser genial, pero requieren algunos esfuerzos para integrar en sus procesos actuales.
-Y así, a partir del estudio fui en una misión para proporcionar lo que sería considerado útil, usable, y lo más importante validado como tal, y las intervenciones para mejorar la práctica de software.
-Así que, avanzando unos años, ter,iné teniendo la oportunidad de hacer un postdoctorado, y en ese postdoctorado se me dio la oportunidad de trabajar en el ámbito de las pruebas, lo que fue realmente muy emocionante para mí porque en mi doctorado pasé mucho tiempo centrado en el análisis estático, y realmente sólo llegué a tocar un poco el lado del análisis dinámico de las cosas.
+
+0:02:02.080,0:02:06.560
+Cuestiones de diseño de la herramienta - que creo que todos 
+podemos estar de acuerdo - la lista aquí probablemente sigue y sigue,
+
+0:02:07.520,0:02:12.000
+pero diferentes cosas citadas allí, y luego también 
+las herramientas de integración de flujo de trabajo 
+
+0:02:12.000,0:02:15.920
+que son - que parece impresionante 
+y tal vez podría ser genial, pero requieren
+
+0:02:15.920,0:02:18.640
+algunos esfuerzos para integrar 
+en sus procesos actuales.
+
+0:02:20.560,0:02:26.880
+Y así, a partir del estudio fui en una misión para 
+proporcionar lo que sería considerado útil, usable,
+
+0:02:26.880,0:02:32.320
+y lo más importante validado como tal, y las 
+intervenciones para mejorar la práctica de software.
+
+0:02:34.000,0:02:41.520
+Así que, avanzando unos años, terminé teniendo 
+la oportunidad de hacer un postdoctorado,
+
+0:02:41.520,0:02:46.400
+y en ese postdoctorado se me dio la oportunidad de 
+trabajar en el ámbito de las pruebas, lo que fue realmente
+
+0:02:46.400,0:02:51.440
+muy emocionante para mí porque en mi doctorado 
+pasé mucho tiempo centrado en el análisis estático,
+
+0:02:52.160,0:02:55.280
+y realmente sólo llegué a tocar un poco 
+el lado del análisis dinámico de las cosas.
+
+0:02:55.280,0:02:57.280
 Así que me emocionó mucho tener esta oportunidad.
-Y, por supuesto, ya sabemos que las pruebas son una forma poderosa y comúnmente utilizada para evaluar y validar y/o mejorar la calidad del software, pero algunas de las cosas que surgieron, o que obtuve una comprensión más profunda cuando hice este trabajo, o al menos empecé a hacer este trabajo, fue que hay un montón de técnicas de prueba que están disponibles para ustedes.
-Algunas proceden de la investigación, otras de la práctica, otras son un buen equilibrio de ambas, pero hay muchas por ahí.
-Y también me di cuenta de que las pruebas tradicionales por sí solas no responden a la pregunta, ¿por qué está sucediendo esto?
-Bien, nos ayudarán a encontrar un defecto, nos ayudarán incluso a localizarlo en nuestro código hasta cierto punto, pero no siempre... casi nunca responden a la pregunta, ¿por qué se produce este comportamiento?
-Y así, de hacer algo de este tipo de trabajo de base y la lectura, llegué a una pregunta de, podemos tomar lo que los desarrolladores ya están haciendo y el trabajo que ya se está haciendo, para proporcionar conocimientos que las herramientas existentes no proporcionan actualmente, específicamente en este caso, ayuda para responder a la pregunta por qué - ¿por qué está sucediendo esto?
-Y para esta pregunta proporcionamos una posible solución de la que hablaré más a fondo, en términos de por qué es una solución, y que sería la prueba causal.
-Así que aquí es donde entra la prueba causal, verdad, así que la prueba causal es un método para llevar a cabo experimentos causales automatizados.
-Y este proceso comienza con tus casos de prueba existentes y utiliza las técnicas de depuración existentes, tales como fuzzing y la generación de pruebas automatizadas, con el objetivo de proporcionar a los desarrolladores con ejecuciones mínimamente diferentes que pasan y fallan que ayudan a razonar acerca de por qué ese comportamiento fallido ocurrió para empezar.
+
+0:02:58.320,0:03:04.640
+Y, por supuesto, ya sabemos que las pruebas son 
+una forma poderosa y comúnmente utilizada para evaluar
+
+0:03:04.640,0:03:10.800
+y validar y/o mejorar la calidad del software, 
+pero algunas de las cosas que surgieron,
+
+0:03:10.800,0:03:15.920
+o que obtuve una comprensión más profunda cuando hice este trabajo, 
+o al menos empecé a hacer este trabajo,
+
+0:03:16.640,0:03:22.160
+fue que hay un montón de técnicas de prueba 
+que están disponibles para ustedes.
+
+0:03:22.160,0:03:25.520
+Algunas proceden de la investigación, 
+otras de la práctica, otras son un buen 
+
+0:03:25.520,0:03:32.560
+equilibrio de ambas, pero hay muchas por ahí.
+Y también me di cuenta de que las pruebas tradicionales por sí solas
+
+0:03:32.560,0:03:35.600
+no responden a la pregunta, 
+¿por qué está sucediendo esto?
+
+0:03:36.160,0:03:41.360
+Bien, nos ayudarán a encontrar un defecto, nos ayudarán incluso 
+a localizarlo en nuestro código hasta cierto punto, 
+
+0:03:42.080,0:03:45.840
+pero no siempre... casi nunca responden a la pregunta, 
+¿por qué se produce este comportamiento?
+
+0:03:47.840,0:03:51.840
+Y así, de hacer algo de este tipo 
+de trabajo de base y la lectura,
+
+0:03:51.840,0:03:58.160
+llegué a una pregunta de, podemos tomar lo que 
+los desarrolladores ya están haciendo y el trabajo
+
+0:03:58.160,0:04:03.920
+que ya se está haciendo, para proporcionar conocimientos 
+que las herramientas existentes no proporcionan actualmente,
+
+0:04:03.920,0:04:07.680
+específicamente en este caso, ayuda para responder 
+a la pregunta por qué - ¿por qué está sucediendo esto?
+
+0:04:09.600,0:04:14.320
+Y para esta pregunta proporcionamos una 
+posible solución de la que hablaré
+
+0:04:14.320,0:04:19.120
+más a fondo, en términos de por qué es una solución,
+y que sería la prueba causal.
+
+0:04:19.120,0:04:23.920
+Así que aquí es donde entra la prueba causal, 
+verdad, así que la prueba causal es un método para
+
+0:04:23.920,0:04:29.200
+llevar a cabo experimentos causales automatizados.
+Y este proceso comienza con tus casos de prueba 
+
+0:04:29.200,0:04:35.040
+y utiliza las técnicas de depuración existentes, 
+tales como fuzzing y la generación de pruebas automatizadas,
+
+0:04:35.680,0:04:39.760
+con el objetivo de proporcionar a los desarrolladores con 
+ejecuciones mínimamente diferentes que pasan y fallan
+
+0:04:39.760,0:04:44.240
+que ayudan a razonar acerca de por qué ese 
+comportamiento fallido ocurrió para empezar.
+
+0:04:45.600,0:04:48.640
 Entonces, ¿cómo hace eso la prueba causal?
 ¿Cómo funciona?
-Profundicemos un poco más y hablemos del proceso de uso de las pruebas causales.
-Bien, digamos que tienes un conjunto de pruebas y tal vez tienes alguna integración continua configurada o algo así donde una prueba falla, y te notifican de ello.
-Así que digamos que tienes esta notificación o informe de error del que surge: las direcciones de este lugar a ese lugar son erróneas, ¿verdad? y digamos que tenemos ese informe de error porque esta prueba específica falló.
-Así que lo que hace la prueba causal es tomar esta prueba fallida y tomar las entradas de esta prueba fallida y tratar de perturbarlas de manera significativa para producir pruebas válidas adicionales que podemos ejecutar y determinar - y hacer un seguimiento de si están pasando o están fallando.
-Una vez que tenemos un conjunto de pruebas que pasan y que fallan, las pruebas causales comparan estas pruebas con la original utilizando tanto la entrada de la prueba como la ruta de ejecución que toma para presentar al desarrollador las pruebas más similares, asumiendo que eso significa que son las más relevantes para esa ejecución original que falla.
-Así, en este ejemplo, teniendo en cuenta estas pruebas similares que pasan y fallan, podemos determinar rápidamente que nuestras pruebas que pasan empiezan y terminan en el mismo país, mientras que nuestras pruebas que fallan empiezan y terminan en países diferentes.
-Así que ahora tenemos una mejor comprensión con un esfuerzo mínimo de por qué esta prueba falló para poder ir a abordarlo.
-Así que podrías estar pensando - espero que estés pensando - wow, eso es, como, tan simple y tan genial.
+
+0:04:48.640,0:04:53.600
+Profundicemos un poco más y hablemos 
+del proceso de uso de las pruebas causales.
+
+0:04:53.600,0:04:59.280
+Bien, digamos que tienes un conjunto de pruebas 
+y tal vez tienes alguna integración continua configurada 
+
+0:04:59.280,0:05:03.120
+o algo así donde una prueba falla, 
+y te notifican de ello.
+
+0:05:03.120,0:05:06.640
+Así que digamos que tienes esta notificación 
+o informe de error del que surge:
+
+0:05:06.640,0:05:10.320
+las direcciones de este lugar 
+a ese lugar son erróneas,
+
+0:05:10.320,0:05:14.720
+¿verdad? y digamos que tenemos ese informe
+de error porque esta prueba específica falló.
+
+0:05:15.520,0:05:20.960
+Así que lo que hace la prueba causal es tomar 
+esta prueba fallida y tomar las entradas de esta
+
+0:05:20.960,0:05:27.680
+prueba fallida y tratar de perturbarlas de manera 
+significativa para producir pruebas válidas adicionales
+
+0:05:28.240,0:05:32.960
+que podemos ejecutar y determinar - y hacer un seguimiento 
+de si están pasando o están fallando.
+
+0:05:34.240,0:05:40.080
+Una vez que tenemos un conjunto de pruebas que pasan y 
+que fallan, las pruebas causales comparan estas pruebas con la 
+
+0:05:40.080,0:05:46.320
+original utilizando tanto la entrada de la prueba 
+como la ruta de ejecución que toma para
+
+0:05:46.320,0:05:51.920
+presentar al desarrollador las pruebas más similares, 
+asumiendo que eso significa que son las más
+
+0:05:51.920,0:05:57.920
+relevantes para esa ejecución original que falla.
+Así, en este ejemplo, teniendo en cuenta
+
+0:05:57.920,0:06:03.760
+estas pruebas similares que pasan y fallan, podemos determinar 
+rápidamente que nuestras pruebas que pasan
+
+0:06:03.760,0:06:07.360
+empiezan y terminan en el mismo país, 
+mientras que nuestras pruebas que fallan
+
+0:06:07.360,0:06:11.520
+empiezan y terminan en países diferentes.
+Así que ahora tenemos una mejor comprensión
+
+0:06:11.520,0:06:15.440
+con un esfuerzo mínimo de por qué esta prueba
+falló para poder ir a abordarlo.
+
+0:06:18.960,0:06:21.920
+Así que podrías estar pensando - 
+espero que estés pensando - wow,
+
+0:06:21.920,0:06:25.600
+eso es, como, tan simple y tan genial.
 Lo sé, a mí también me emocionó.
-Y también podrías estar pensando, qué más podemos hacer con esto: también lo estoy pensando.
+
+0:06:26.240,0:06:30.240
+Y también podrías estar pensando, qué más 
+podemos hacer con esto: también lo estoy pensando.
+
+0:06:30.240,0:06:32.480
 Así que vamos a hablar sobre eso.
 ¿Qué más puede hacer la prueba causal?
-¿Es un pony de un solo truco o se puede aplicar en otros lugares?
-Bueno, un par de direcciones que estamos viendo son, en primer lugar, la prueba de equidad causal, y así - y este trabajo que realmente hemos publicado como una demostración y hay un prototipo que se ha desarrollado en este enlace, así que, la prueba de equidad causal toma este enfoque de experimentación causal en el contexto de la detección de sesgo.
-Así que digamos, por ejemplo, que tenemos un software y ese software toma algunas entradas.
-Para simplificar, sí, digamos que es un software de préstamos que toma estas cuatro entradas para tomar una decisión.
-Lo que hace la prueba de equidad causal es que genera automáticamente pruebas que se parecen a esto.
-Tenemos alguna entrada basada en nuestro espacio de entrada, va en el software de préstamo, y observamos, cuál es el resultado de esa entrada basada en esa prueba.
-Las pruebas causales hacen pequeños cambios singulares en la entrada,
-así, por ejemplo, cambiar la raza de Brittany verde a Brittany naranja, y lleva a cabo la misma prueba en la que se alimenta en el software y observar el resultado - cambiar un atributo adicional - un atributo singular - observar el resultado.
-Y lo hacemos una y otra vez dentro de un umbral para ayudar a responder a las preguntas, tales como, ¿con qué frecuencia es el resultado de mi software diferente sólo por la raza, ¿verdad?
-Así que proporcionando un método para... para el tipo de... si te preocupa el software que puede tener problemas de responsabilidad o problemas de transparencia en torno a la parcialidad o la equidad, proporcionar un método para que no tengas que crear esas pruebas por tu cuenta - para ser capaz de generar automáticamente las pruebas, que puede ayudarte a hablar de ese tipo de preocupaciones.
-Este es un ámbito en el que las pruebas de equidad causal podrían ser útiles, o las pruebas causales.
-Otro espacio que estamos mirando que creo que es realmente importante para - para profundizar en - es esta idea de pruebas de software basadas en el aprendizaje automático.
-Y el trabajo que estamos haciendo en este momento es mirar - por ejemplo, digamos que tienes un software y que el software integra algún modelo de aprendizaje automático entrenado que ayuda en la toma de decisiones, bien, y en ese software, o algunos conjuntos de entradas digamos que para este software nos preocupamos por el nombre, la raza, el código postal, y el título que tienen, bien, y entonces presumiblemente hay algún conjunto concreto de salidas o clases de salidas.
-Dado que estamos utilizando un modelo de aprendizaje automático, queremos asegurarnos que nuestro software es - es - está cumpliendo con - con respecto a nuestras expectativas, ¿verdad?, así que lo que estamos empezando ahora es, ¿cómo es probar este tipo de software?, en particular en el modo de prueba que normalmente utilizamos - que es aserciones, ¿no?, por lo que podemos escribir aserciones que se parecen a esto donde afirmamos la igualdad de la salida o los resultados de dos conjuntos de entradas, y luego otro ejemplo afirmando verdadero que para alguna entrada terminamos en una clase o alguna salida específica.
-Y si esto es algo que podemos hacer, entonces podemos empezar a pensar en la prueba causal es beneficiosa en este contexto también, así para que seamos capaces de - por ejemplo, ver que si cambiamos de Abril a Adán, bien, nuestra afirmación no se rompe, en comparación con la de aquí que se si se rompe, ¿verdad?
-Si seguimos haciendo eso y obtenemos suficientes pruebas, entonces podemos empezar a razonar sobre por qué algo de este espacio de entrada está causando un comportamiento inesperado, de acuerdo, sólo otro paso en la cadena de información que se requiere no sólo para entender el comportamiento, sino para rectificarlo realmente.
-Así que dos direcciones, súper entusiasmados con lo que estamos trabajando en nuestro laboratorio en este momento, pero podrías estar, por supuesto, preguntándote - lo que deberías estar preguntándote - ¿es realmente útil? ¿Puedo tomar esta técnica y hacer algo significativo con ella en la práctica?
-Y desarrollamos una prueba de concepto para evaluar exactamente esto, donde encontramos que en términos de mejorar la capacidad de detectar la causa raíz, arreglar estos defectos y ser útil, las pruebas causales cumplen con todos los requisitos, y más específicamente en términos de ser útiles, estas pruebas similares que pasan apuntan a la causa en términos de nuestros - según nuestros participantes.
-Y así, en resumen, las pruebas causales son una técnica útil que proporciona más información sobre las ejecuciones defectuosas con el código que ya has escrito.
-Así que no dudes en buscar el trabajo, háblame de ello, vamos a averiguar cómo las pruebas causales pueden convertirse en una parte de tu proceso de pruebas.
+
+0:06:32.480,0:06:34.800
+¿Es un pony de un solo truco o 
+se puede aplicar en otros lugares?
+
+0:06:35.440,0:06:40.320
+Bueno, un par de direcciones que estamos viendo son,
+en primer lugar, la prueba de equidad causal,
+
+0:06:41.280,0:06:46.720
+y así - y este trabajo que realmente hemos publicado 
+como una demostración y hay un prototipo que se ha 
+
+0:06:46.720,0:06:52.080
+desarrollado en este enlace, así que, 
+la prueba de equidad causal toma este
+
+0:06:52.880,0:06:56.400
+enfoque de experimentación causal 
+en el contexto de la detección de sesgo.
+
+0:06:57.600,0:07:02.080
+Así que digamos, por ejemplo, que tenemos un 
+software y ese software toma algunas entradas.
+
+0:07:02.080,0:07:05.280
+Para simplificar, sí, digamos que es 
+un software de préstamos que toma
+
+0:07:05.280,0:07:10.400
+estas cuatro entradas para tomar una decisión.
+Lo que hace la prueba de equidad causal es
+
+0:07:10.400,0:07:14.480
+que genera automáticamente 
+pruebas que se parecen a esto.
+
+0:07:14.480,0:07:18.720
+Tenemos alguna entrada basada en nuestro espacio 
+de entrada, va en el software de préstamo,
+
+0:07:18.720,0:07:24.160
+y observamos, cuál es el resultado 
+de esa entrada basada en esa prueba.
+
+0:07:24.160,0:07:27.920
+Las pruebas causales hacen pequeños 
+cambios singulares en la entrada,
+
+0:07:27.920,0:07:34.480
+así, por ejemplo, cambiar la raza de Brittany verde a 
+Brittany naranja, y lleva a cabo la misma prueba
+
+0:07:34.480,0:07:39.440
+en la que se alimenta en el software y observar 
+el resultado - cambiar un atributo adicional - un
+
+0:07:39.440,0:07:44.320
+atributo singular - observar el resultado.
+Y lo hacemos una y otra vez dentro de
+
+0:07:44.320,0:07:50.480
+un umbral para ayudar a responder a las preguntas, tales como, 
+¿con qué frecuencia es el resultado de mi software
+
+0:07:50.480,0:07:55.360
+diferente sólo por la raza, ¿verdad?
+Así que proporcionando un método para... para el tipo de
+
+0:07:55.360,0:08:01.120
+si te preocupa el software que puede tener problemas 
+de responsabilidad o problemas de transparencia
+
+0:08:01.120,0:08:06.320
+en torno a la parcialidad o la equidad, proporcionar un método 
+para que no tengas que crear esas pruebas por tu
+
+0:08:06.320,0:08:10.320
+cuenta - para ser capaz de generar automáticamente las pruebas, 
+que puede ayudarte a hablar de ese tipo de preocupaciones.
+
+0:08:11.360,0:08:16.000
+Este es un ámbito en el que las pruebas de equidad 
+causal podrían ser útiles, o las pruebas causales.
+
+0:08:16.000,0:08:18.240
+Otro espacio que estamos mirando 
+que creo que es
+
+0:08:18.880,0:08:25.520
+realmente importante para - para profundizar en - es esta idea 
+de pruebas de software basadas en el aprendizaje automático.
+
+0:08:25.520,0:08:29.120
+Y el trabajo que estamos haciendo en 
+este momento es mirar - por ejemplo,
+
+0:08:29.120,0:08:34.400
+digamos que tienes un software y que el software 
+integra algún modelo de aprendizaje automático entrenado
+
+0:08:34.400,0:08:38.720
+que ayuda en la toma de decisiones, bien, y en 
+ese software, o algunos conjuntos de entradas
+
+0:08:38.720,0:08:42.800
+digamos que para este software nos preocupamos por el nombre, 
+la raza, el código postal, y el título que tienen,
+
+0:08:43.360,0:08:49.360
+bien, y entonces presumiblemente hay algún conjunto 
+concreto de salidas o clases de salidas.
+
+0:08:49.360,0:08:51.200
+Dado que estamos utilizando un modelo de aprendizaje automático,
+
+0:08:52.640,0:08:57.840
+queremos asegurarnos que nuestro software es - es - 
+está cumpliendo con - con respecto a nuestras expectativas,
+
+0:08:58.400,0:09:03.840
+¿verdad?, así que lo que estamos empezando ahora es, 
+¿cómo es probar este tipo de software?,
+
+0:09:03.840,0:09:08.960
+en particular en el modo de prueba que 
+normalmente utilizamos - que es aserciones,
+
+0:09:08.960,0:09:14.000
+¿no?, por lo que podemos escribir aserciones que se parecen 
+a esto donde afirmamos la igualdad de la salida
+
+0:09:14.000,0:09:21.760
+o los resultados de dos conjuntos de entradas, y luego 
+otro ejemplo afirmando verdadero que para alguna entrada
+
+0:09:21.760,0:09:27.840
+terminamos en una clase o alguna salida específica.
+Y si esto es algo que podemos hacer,
+
+0:09:27.840,0:09:32.640
+entonces podemos empezar a pensar en la prueba
+causal es beneficiosa en este contexto también,
+
+0:09:32.640,0:09:36.960
+así para que seamos capaces de - por ejemplo, 
+ver que si cambiamos de Abril a Adán,
+
+0:09:36.960,0:09:41.600
+bien, nuestra afirmación no se rompe, en 
+comparación con la de aquí que si se rompe, ¿verdad?
+
+0:09:41.600,0:09:45.360
+Si seguimos haciendo eso y obtenemos suficientes pruebas, 
+entonces podemos empezar a razonar sobre
+
+0:09:45.360,0:09:52.320
+por qué algo de este espacio de entrada está causando un 
+comportamiento inesperado, de acuerdo, sólo otro paso
+
+0:09:52.320,0:09:58.040
+en la cadena de información que se requiere no sólo para 
+entender el comportamiento, sino para rectificarlo realmente.
+
+0:09:58.640,0:10:03.760
+Así que dos direcciones, súper entusiasmados con lo que 
+estamos trabajando en nuestro laboratorio en este momento, 
+
+0:10:03.760,0:10:08.880
+pero podrías estar, por supuesto, preguntándote - 
+lo que deberías estar preguntándote - ¿es realmente útil?
+
+0:10:08.880,0:10:13.200
+¿Puedo tomar esta técnica y hacer 
+algo significativo con ella en la práctica?
+
+0:10:14.080,0:10:20.480
+Y desarrollamos una prueba de concepto para evaluar 
+exactamente esto, donde encontramos que en
+
+0:10:20.480,0:10:26.480
+términos de mejorar la capacidad de detectar la causa raíz, 
+arreglar estos defectos y ser útil,
+
+0:10:26.480,0:10:30.160
+las pruebas causales cumplen con todos los requisitos, y 
+más específicamente en términos de ser útiles,
+
+0:10:30.160,0:10:35.040
+estas pruebas similares que pasan apuntan a la causa 
+en términos de nuestros - según nuestros participantes.
+
+0:10:36.480,0:10:40.240
+Y así, en resumen, las pruebas causales 
+son una técnica útil que proporciona
+
+0:10:40.240,0:10:44.080
+más información sobre las ejecuciones 
+defectuosas con el código que ya has escrito.
+
+0:10:44.720,0:10:50.320
+Así que no dudes en buscar el trabajo, háblame de ello, 
+vamos a averiguar cómo las pruebas causales pueden
+
+0:10:50.320,0:10:59.200
+convertirse en una parte de tu proceso de pruebas.
 Muchas gracias por su tiempo.

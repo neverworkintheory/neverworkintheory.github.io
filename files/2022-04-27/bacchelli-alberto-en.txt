@@ -1,9 +1,266 @@
-Today I'd like to tell you what we found about code review effectiveness by doing empirical software engineering research. My hope is that it can inspire your practice. So first let me tell you what I consider as code review. Here I'm talking about the most widespread form of code review where basically a developer works on a software system and makes some changes that then it sends out to one or more reviewers. These reviewers inspect the change, make some comments, and send them back to the author and this creates the code review cycle that continues until everybody is satisfied with the change and change is integrated in the code base. So what we focus here today is how can we make this part - the actual review of the code - more effective so that developers find for example more errors.
-Well I don't know if I'm preaching to the choir but code review is used so much that any improvement can have important effects- after all we are talking about finding bugs before they reach production. Right, so first thing, I'd like to ask you to have a look at these exemplary code review tools. They are all very similar, right, they all look very similar to each other, but please allow me to direct your attention to one aspect. Please look at the - at the list of files that are under review. What's their order, right? Or well more precisely alphabetical and as developers we understand why they reached that specific implementation. But the question is could this choice have an effect on code review? By instrumenting a code review tool at a company we found out that the reviewer's behavior is influenced by this. So in more than 50 percent of the reviews that we analyzed, the reviewer started with the file presented first, and in almost 40 percent of the navigation the review - the reviewer went to the next file in order. Well this is not a problem, right, because package names are kind of random so they are randomly ordered. Well, except when they are not. So test files are almost always after the production files they test. Could this be a problem? If we couple this with the fact that developers consider test files are less important, well maybe. In fact we looked at code review data and we found that tests are way less commented. But this could be the results of the bias against tests. But what would happen if the tool used a different order? So we did an experiment to test this. We set up an online code review tool and asked developers to review some code. So we had two files, one production and one test, where we injected some bugs. Then we decided these developers forming two groups. One group had production presented first and one group had the test file presented first. Then we looked at their ability of finding bugs. Concerning the bugs in production there was no difference between the groups, but the test first group was 250 percent more likely to find the test bug. Just by sweeping the order - switching the order - in which they were looking at these files.
-This is an interesting result if you care about test files, and we should, right, because they help us find bugs in production. But it could be that what we see is that this order goes against the prejudice we have against test files. So it's just a way to counteract this initial bias. But this effect may or may not exist for production code. Maybe not. So we looked into that as well.
-The first thing we did was analyzing review comments for two hundred thousand requests from very popular projects in GitHub and we found something very remarkable. Look at this: if we took the number of comments that are put in a review by file position - let's say you pick all the pull requests with five files and you sum up all the comments they receive across all these pull requests with five files - this is what you see. The files in the first positions receive significantly more comments than the files in the last positions. And of course we checked this manually as well. Maybe you put a comment at the beginning and say fix these in all the other files as well, but these happens very, very rarely, so these are genuine comments that don't have much to do with one another and this is how they look like. And even more remarkable is that this was true across all different cases. As you can see in these graphs for two, five, four, per request with two files, with seven files, ten files, you already see this trend.
-Well but these are comments, right, most are not about bugs. We know that because we do code reviews. So maybe it's just not an important effect. To see, so what we did was another experiment where we really wanted to see if there was such an effect and if that was important for our effectiveness. So we use a similar line setting as before, we asked people to review some code and we prepared some special codes, so we created five production files and injected bugs in two of them, the first and the last. The bugs are different: so one is a missing break, which is kind of similar to a syntax error, right, so not a lot of understanding needed to see if it's missing, if it's really a problem. And one instead requires a more careful reading of the documentation and you have to compare it against the actual implementation. We call it corner case, this is boundary bug, very common, yet it requires more understanding.
-So we assigned the files ordered differently to developers: one had this order and the other group had the order reversed. And we compared how they fared in finding those bugs. When I talk about order it means that it's a normal review but we order the files one after the other in different ways, so the first group sees file A first and the second group sees file B first. So we compare the results: for the missing break the simple syntax-like error there was no difference in the two groups - they had the same likelihood of finding the bugs regardless of whether it was first or last in the file list. So instead, for the corner case, the group who received it in the first presented fire was 175 percent more likely to find the bug compared to the other group. This was the bug that required more attention and understanding.
-Okay so let me take a step back here to see this. So we looked at a way to improve effectiveness in code review. We consider the tools that are used in real world and pay attention to how the files were ordered. We found first, interesting data about tests, and running an experiment, we saw that having a test later has an effect that you can't counteract. Moving them first without major side effects and a lot of benefits. Then we moved to production files and found a remarkable pattern in the number of comments, and based on this, we run an experiment, and here as well the effect of file position - the way in which you see the files in a code review - is important for your code review effectiveness.
-So I think that we can take something for practice from these findings. So for example, reviewers - sorry - reviewers should be aware of this effect and decide where to start the review in a principled way, looking at it from a high-level perspective and understanding where to start. Authors can guide the reviewers toward the most challenging parts of their change. After all, they changed their part, their change, very well, so they can describe it in the description message or add review comments to guide the reviewers. And tool builders should really try to empower users to choose how to order their changes, and also offer other features that reflect on the fact that the default settings that we have in our tools, in what we do, have a very strong power, and this is after all about the power of the default settings in code review effectiveness.
-So thank you for your attention. I would like to thank all my students and collaborators at my research group who made this work possible. This was work done through the years, we do a lot of work along these lines, we try to understand developers, their work, and finding ways in which it can be improved, principled ways and possibly with simple solutions like these ones. So if you're interested in hearing more please get in touch. Thank you very much.
+0:00:05.360,0:00:10.160
+Today I'd like to tell you what we found about code review effectiveness by doing empirical
+
+0:00:10.160,0:00:17.120
+software engineering research. My hope is that it can inspire your practice. So first let me
+
+0:00:17.120,0:00:21.760
+tell you what I consider as code review. Here I'm talking about the most widespread form of
+
+0:00:21.760,0:00:27.920
+code review where basically a developer works on a software system and makes some changes that
+
+0:00:27.920,0:00:35.040
+then it sends out to one or more reviewers. These reviewers inspect the change, make some comments,
+
+0:00:35.040,0:00:40.800
+and send them back to the author and this creates the code review cycle that continues
+
+0:00:40.800,0:00:48.640
+until everybody is satisfied with the change and change is integrated in the code base. So what
+
+0:00:48.640,0:00:55.120
+we focus here today is how can we make this part - the actual review of the code - more effective
+
+0:00:55.120,0:01:02.000
+so that developers find for example more errors.
+Well I don't know if I'm preaching to the choir
+
+0:01:02.000,0:01:08.480
+but code review is used so much that any improvement can have important effects- after
+
+0:01:08.480,0:01:15.840
+all we are talking about finding bugs before they reach production. Right, so first thing, I'd like
+
+0:01:15.840,0:01:21.520
+to ask you to have a look at these exemplary code review tools. They are all very similar,
+
+0:01:22.160,0:01:28.400
+right, they all look very similar to each other, but please allow me to direct your attention to
+
+0:01:28.400,0:01:35.680
+one aspect. Please look at the - at the list of files that are under review. What's their order,
+
+0:01:35.680,0:01:42.400
+right? Or well more precisely alphabetical and as developers we understand why they reached
+
+0:01:42.400,0:01:48.880
+that specific implementation. But the question is could this choice have an effect on code review?
+
+0:01:50.000,0:01:55.840
+By instrumenting a code review tool at a company we found out that the reviewer's behavior is
+
+0:01:55.840,0:02:01.680
+influenced by this. So in more than 50 percent of the reviews that we analyzed, the reviewer started
+
+0:02:01.680,0:02:07.440
+with the file presented first, and in almost 40 percent of the navigation the review - the
+
+0:02:07.440,0:02:13.200
+reviewer went to the next file in order. Well this is not a problem, right, because package
+
+0:02:13.200,0:02:20.240
+names are kind of random so they are randomly ordered. Well, except when they are not. So
+
+0:02:20.960,0:02:29.040
+test files are almost always after the production files they test. Could this be a problem? If we
+
+0:02:29.040,0:02:36.080
+couple this with the fact that developers consider test files are less important, well maybe. In fact
+
+0:02:36.080,0:02:42.480
+we looked at code review data and we found that tests are way less commented. But this could be
+
+0:02:42.480,0:02:48.160
+the results of the bias against tests. But what would happen if the tool used a different order?
+
+0:02:49.600,0:02:55.920
+So we did an experiment to test this. We set up an online code review tool and asked developers
+
+0:02:55.920,0:03:01.280
+to review some code. So we had two files, one production and one test, where we injected some
+
+0:03:01.280,0:03:08.640
+bugs. Then we decided these developers forming two groups. One group had production presented first
+
+0:03:09.760,0:03:18.080
+and one group had the test file presented first. Then we looked at their ability of finding bugs.
+
+0:03:18.080,0:03:21.680
+Concerning the bugs in production there was no difference between the groups,
+
+0:03:22.640,0:03:34.720
+but the test first group was 250 percent more likely to find the test bug. Just by
+
+0:03:34.720,0:03:38.640
+sweeping the order - switching the order - in which they were looking at these files.
+
+0:03:40.240,0:03:45.520
+This is an interesting result if you care about test files, and we should, right, because they
+
+0:03:45.520,0:03:52.160
+help us find bugs in production. But it could be that what we see is that this order goes against
+
+0:03:52.160,0:04:00.400
+the prejudice we have against test files. So it's just a way to counteract this initial bias. But
+
+0:04:01.200,0:04:09.360
+this effect may or may not exist for production code. Maybe not. So we looked into that as well.
+
+0:04:10.160,0:04:15.920
+The first thing we did was analyzing review comments for two hundred thousand requests
+
+0:04:15.920,0:04:21.920
+from very popular projects in GitHub and we found something very remarkable. Look at this:
+
+0:04:21.920,0:04:28.640
+if we took the number of comments that are put in a review by file position - let's say you
+
+0:04:28.640,0:04:33.920
+pick all the pull requests with five files and you sum up all the comments they receive across
+
+0:04:33.920,0:04:40.400
+all these pull requests with five files - this is what you see. The files in the first positions
+
+0:04:40.400,0:04:46.480
+receive significantly more comments than the files in the last positions. And of course we checked
+
+0:04:46.480,0:04:51.840
+this manually as well. Maybe you put a comment at the beginning and say fix these in all the
+
+0:04:51.840,0:04:57.360
+other files as well, but these happens very, very rarely, so these are genuine comments that don't
+
+0:04:57.360,0:05:04.480
+have much to do with one another and this is how they look like. And even more remarkable is that
+
+0:05:04.480,0:05:10.720
+this was true across all different cases. As you can see in these graphs for two, five, four, per
+
+0:05:10.720,0:05:15.440
+request with two files, with seven files, ten files, you already see this trend.
+
+0:05:17.120,0:05:20.960
+Well but these are comments, right, most are not about bugs. We know that because
+
+0:05:20.960,0:05:26.160
+we do code reviews. So maybe it's just not an important effect. To see, so what we did
+
+0:05:27.120,0:05:33.840
+was another experiment where we really wanted to see if there was such an effect and if that was
+
+0:05:33.840,0:05:40.000
+important for our effectiveness. So we use a similar line setting as before, we asked
+
+0:05:40.000,0:05:46.240
+people to review some code and we prepared some special codes, so we created five production files
+
+0:05:46.800,0:05:52.560
+and injected bugs in two of them, the first and the last. The bugs are different:
+
+0:05:53.120,0:05:57.600
+so one is a missing break, which is kind of similar to a syntax error, right,
+
+0:05:57.600,0:06:02.080
+so not a lot of understanding needed to see if it's missing, if it's really
+
+0:06:02.080,0:06:08.880
+a problem. And one instead requires a more careful reading of the documentation and you have to
+
+0:06:08.880,0:06:14.160
+compare it against the actual implementation. We call it corner case, this is boundary bug,
+
+0:06:14.160,0:06:21.520
+very common, yet it requires more understanding.
+So we assigned the files ordered differently
+
+0:06:21.520,0:06:26.800
+to developers: one had this order and the other group had the order reversed.
+
+0:06:28.880,0:06:34.400
+And we compared how they fared in finding those bugs. When I talk about order it means that
+
+0:06:34.400,0:06:40.240
+it's a normal review but we order the files one after the other in different ways, so the first
+
+0:06:40.240,0:06:47.200
+group sees file A first and the second group sees file B first. So we compare the results:
+
+0:06:47.760,0:06:53.440
+for the missing break the simple syntax-like error there was no difference in the two groups - they
+
+0:06:53.440,0:06:59.360
+had the same likelihood of finding the bugs regardless of whether it was first or last in the
+
+0:06:59.360,0:07:06.000
+file list. So instead, for the corner case, the group who received it in the first presented fire
+
+0:07:06.640,0:07:15.760
+was 175 percent more likely to find the bug compared to the other group. This was the bug
+
+0:07:15.760,0:07:24.240
+that required more attention and understanding.
+Okay so let me take a step back here to see this.
+
+0:07:25.040,0:07:31.440
+So we looked at a way to improve effectiveness in code review. We consider the tools that are
+
+0:07:31.440,0:07:37.680
+used in real world and pay attention to how the files were ordered. We found first, interesting
+
+0:07:37.680,0:07:44.320
+data about tests, and running an experiment, we saw that having a test later has an effect
+
+0:07:44.320,0:07:49.680
+that you can't counteract. Moving them first without major side effects and a lot of benefits.
+
+0:07:50.800,0:07:56.560
+Then we moved to production files and found a remarkable pattern in the number of comments,
+
+0:07:57.520,0:08:03.600
+and based on this, we run an experiment, and here as well the effect of file position - the way in
+
+0:08:03.600,0:08:09.200
+which you see the files in a code review - is important for your code review effectiveness.
+
+0:08:11.440,0:08:17.120
+So I think that we can take something for practice from these findings. So for example,
+
+0:08:18.240,0:08:25.200
+reviewers - sorry - reviewers should be aware of this effect and decide where to start the
+
+0:08:25.200,0:08:30.000
+review in a principled way, looking at it from a high-level perspective and understanding where to
+
+0:08:30.000,0:08:37.040
+start. Authors can guide the reviewers toward the most challenging parts of their change. After all,
+
+0:08:37.040,0:08:44.400
+they changed their part, their change, very well, so they can describe it in the description message
+
+0:08:44.400,0:08:51.760
+or add review comments to guide the reviewers. And tool builders should really try to empower users
+
+0:08:51.760,0:09:00.320
+to choose how to order their changes, and also offer other features that reflect on the fact that
+
+0:09:01.040,0:09:08.480
+the default settings that we have in our tools, in what we do, have a very strong power,
+
+0:09:08.480,0:09:14.560
+and this is after all about the power of the default settings in code review effectiveness.
+
+0:09:15.440,0:09:21.680
+So thank you for your attention. I would like to thank all my students and collaborators at
+
+0:09:21.680,0:09:26.400
+my research group who made this work possible. This was work done through the years,
+
+0:09:26.400,0:09:31.200
+we do a lot of work along these lines, we try to understand developers, their work, and finding
+
+0:09:31.200,0:09:36.160
+ways in which it can be improved, principled ways and possibly with simple solutions like
+
+0:09:36.160,0:09:46.000
+these ones. So if you're interested in hearing more please get in touch. Thank you very much.

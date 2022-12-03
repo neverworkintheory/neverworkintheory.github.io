@@ -1,7 +1,339 @@
-My name is Davide, hello from southern Sweden, and I would like to start telling a little bit about my personal story with - with test driven development. This started when I was a graduate student, and as any graduate student, I had some side projects I was working on, mainly using Ruby on Rails. And if you're familiar with the framework and the community behind that framework, this is kind of the community that swears - and it's devout to unit testing - and specifically to test-driven development. Also the same time I was deciding about the topic for my dissertation, and I found it interesting to study something that the practitioner community came up - with something that they invented, and then adopted, rather than coming up with something academic and that maybe you - no one will ever end up using in practice. And, let's start with one of the hidden costs, perhaps, maybe false advertisement of what test-driven development is. This is usually how TDD is presented to you: it's a simple, iterative, three-step process. We have a red and green phase that kind of map on the colors of the test frameworks usually used to indicate failing or passing the test suite. We start by writing a failing test case, so, we are in the so-called red phase, and then we move on to the green phase by writing enough code to make the test pass. Then we have an additional blue phase where we can refactor, and the cycle continues by adding new new failing test cases and so on.
-In reality I believe that that's an oversimplification, and actually honestly a misconception of what TDD is. In fact it looks a bit more like this: There's two distinct phases with different function: One driven by unit test cases as contracts that you need to fulfill where a lot of things can go wrong. You need to backtrack, you need to make changes to test cases, you need to fight against your desire to write more test code than actually necessary just because you know you're going to write it eventually anyways. And then there's a second part where you try to align the need of your code, or the need that your code may have, with the design, and usually we call this refactor. And this brings its own set of complications. So for example depending on the refactoring you may need to align your old test cases with the new code design, you might need to fix some regression bugs that you you cause during refactoring... Another important decision is actually for the developer to decide when they are satisfied with the quality of the code so that they can move on to the next TDD cycle.
-And so here my first hidden cost is that TDD may not be as simple as it seemed. And when looking at the real - looking at the real complexity of TDD I kind of felt, like, okay, why would anybody do that? And I turn out - it turned out I wasn't alone, there are other researchers that have looked into how steep is the TDD learning curve, how much of an overhead it's perceived to be, how it leads the developer to actually focus on happy tests rather than testing sad paths, and all this claim collided with the benefits, or the claimed benefits of TDD, so the fact that test driven development improves design, leads to lower defects, improves developers' productivity as developers now can rely on this extensive safety net made of unit test.
-So for us, this kind of begged the question, "Are developers who claim to do TDD actually doing it?" So we performed a study with professional developers that were trained on TDD and asked them to add new features to a legacy system. Now this system is a real-world system, not the kata kind of exercise that people usually employ to practice test-driven development, and has a full-fledged architecture, dependency on external APIs, complicated XML parsing, and so on. Plus, we instrumented the developers IDEs with a plug-in which collects activities happening in the IDE itself, and which we could eventually map into the TDD activities and into TDD phases. And we started looking the results and this is what we get. Here i'm showing just an example of how different the different activities are supposed to be in a TDD fashion. Each activity has a type and a duration, so for example here you can see that this person started with implementing tests first, shown in yellow, then he moved on to adding test cases without the counterpart production code in orange, and then there was a lapse, and this person switched for roughly half an hour to a test-last kind of approach shown in red. And then he added more cycles - he continued developing using test first and doing refactoring which are showing in light blue only at the end.
-And so we put all these measurements together, hours of development from more than 60 professional developers, and run this data through some statistical model and what did we learn? Well we observed that the major benefit of doing test driven development is, so the only things, or the things that counts, that explains the perceived benefits or the claim benefits of TDD, like whether code quality as well as productivity, well that thing is not the rigid, religious adherence to test driven development cycle, but rather how fine-grained are the activities in the process. So the fact that each activity such as writing code and writing tests, or the other way around, even, writing testing code and then refactoring, are kept within a short and consistent time interval. So that's the secret sauce of TDD. And notice that this granularity is a by-product of test driven development: it's not enforced by it. It's recommended to keep the cycle short - within five to ten minutes - although we observe that very few people do that, especially in the case of legacy code. And importantly this rhythm of TDD is directly impacted by the scope of the test cases defined to initiate each cycle. So one suggestion here is to be really conscious on the scope of the test case - it's really working in baby steps that's what helps. So, we have now, we now know that you can benefit from TDD, although not directly because of this test first approach but rather because it makes more compelling to write small unit tests.
-Finally another aspect we have started and that I actually found quite interesting was to understand how developers actually are enjoying the TDD as a process. Here on the one hand we have existing knowledge, existing literature in software engineering that tells us that happy developers are better at problem solving. And on the other hand we have this: a typical different way of developing software where unit tests kind of control and guide developers' decisions. So we conducted a small experiment this time with students, novices and TDD developers, comparing comparing them to non-TDD developers, and we asked them to perform a series of development tasks, but also asked them to report their perceived emotional state using this pictorial mannequin here called Sam. Basically they could mark on the mannequin what corresponds to their states such as happiness, excitement, frustration, boredom, etc. And here we observe another hidden cost of test driven development: we observe that TDDrs are not as happy as other developers. And when investigating this, we find out that the reason is that TDD forces programmers into this mind-numbing cycle that actually clips their creative wings, and especially in the case of novices, they are just uncomfortable with the TDD counter-intuitive test them right production code kind of thinking. So this is my third takeaway here, so yes, although TDD is not as simple as it might seem, it works if you follow baby step, but nonetheless it comes with an emotional cost which - which you should be aware of.
-And that's really all I have for you today. Thank you, you can of course approach me and ask me more and connect with me this is my email and my Twitter handle. Thank you for your time.
+0:00:05.520,0:00:12.320
+My name is Davide, hello from southern Sweden, 
+and I would like to start telling a little bit
+
+0:00:12.320,0:00:17.200
+about my personal story with - with test 
+driven development. This started when I was
+
+0:00:17.200,0:00:22.240
+a graduate student, and as any graduate student, 
+I had some side projects I was working on,
+
+0:00:22.240,0:00:26.480
+mainly using Ruby on Rails. And if you're 
+familiar with the framework and the community
+
+0:00:26.480,0:00:31.200
+behind that framework, this is kind of the 
+community that swears - and it's devout to
+
+0:00:31.760,0:00:36.320
+unit testing - and specifically to test-driven 
+development. Also the same time I was deciding
+
+0:00:36.320,0:00:42.000
+about the topic for my dissertation, and I 
+found it interesting to study something that the
+
+0:00:42.000,0:00:47.200
+practitioner community came up - with something 
+that they invented, and then adopted, rather than
+
+0:00:47.200,0:00:52.960
+coming up with something academic and that maybe 
+you - no one will ever end up using in practice.
+
+0:00:53.920,0:00:59.680
+And, let's start with one of the hidden costs, 
+perhaps, maybe false advertisement of what
+
+0:00:59.680,0:01:05.280
+test-driven development is. This is usually how 
+TDD is presented to you: it's a simple, iterative,
+
+0:01:05.280,0:01:09.600
+three-step process. We have a red and green 
+phase that kind of map on the colors of
+
+0:01:10.320,0:01:16.400
+the test frameworks usually used to indicate 
+failing or passing the test suite. We start by
+
+0:01:16.400,0:01:21.680
+writing a failing test case, so, we are in the 
+so-called red phase, and then we move on to the
+
+0:01:21.680,0:01:27.360
+green phase by writing enough code to make the 
+test pass. Then we have an additional blue phase
+
+0:01:27.360,0:01:33.280
+where we can refactor, and the cycle continues 
+by adding new new failing test cases and so on.
+
+0:01:34.160,0:01:38.800
+In reality I believe that that's an 
+oversimplification, and actually honestly
+
+0:01:38.800,0:01:45.920
+a misconception of what TDD is. In fact it looks 
+a bit more like this: There's two distinct phases
+
+0:01:45.920,0:01:51.280
+with different function: One driven by unit 
+test cases as contracts that you need to fulfill
+
+0:01:51.280,0:01:55.840
+where a lot of things can go wrong. You need to 
+backtrack, you need to make changes to test cases,
+
+0:01:55.840,0:02:00.560
+you need to fight against your desire to 
+write more test code than actually necessary
+
+0:02:00.560,0:02:05.120
+just because you know you're going to write it 
+eventually anyways. And then there's a second part
+
+0:02:05.120,0:02:10.000
+where you try to align the need of your code, or 
+the need that your code may have, with the design,
+
+0:02:10.000,0:02:16.160
+and usually we call this refactor. And this brings 
+its own set of complications. So for example
+
+0:02:16.160,0:02:20.880
+depending on the refactoring you may need to align 
+your old test cases with the new code design,
+
+0:02:20.880,0:02:26.320
+you might need to fix some regression bugs 
+that you you cause during refactoring...
+
+0:02:26.320,0:02:31.040
+Another important decision is actually 
+for the developer to decide when they
+
+0:02:31.040,0:02:36.560
+are satisfied with the quality of the code so 
+that they can move on to the next TDD cycle.
+
+0:02:37.200,0:02:44.800
+And so here my first hidden cost is that TDD may 
+not be as simple as it seemed. And when looking at
+
+0:02:44.800,0:02:50.160
+the real - looking at the real complexity of TDD 
+I kind of felt, like, okay, why would anybody do
+
+0:02:50.160,0:02:55.680
+that? And I turn out - it turned out I wasn't 
+alone, there are other researchers that have
+
+0:02:55.680,0:03:01.600
+looked into how steep is the TDD learning curve, 
+how much of an overhead it's perceived to be,
+
+0:03:01.600,0:03:08.560
+how it leads the developer to actually focus 
+on happy tests rather than testing sad paths,
+
+0:03:08.560,0:03:14.320
+and all this claim collided with the benefits, 
+or the claimed benefits of TDD, so the fact that
+
+0:03:14.320,0:03:19.280
+test driven development improves design, 
+leads to lower defects, improves developers'
+
+0:03:19.280,0:03:24.640
+productivity as developers now can rely on 
+this extensive safety net made of unit test.
+
+0:03:25.200,0:03:30.800
+So for us, this kind of begged the question, "Are 
+developers who claim to do TDD actually doing it?"
+
+0:03:31.600,0:03:35.920
+So we performed a study with professional 
+developers that were trained on TDD
+
+0:03:35.920,0:03:40.880
+and asked them to add new features to a legacy 
+system. Now this system is a real-world system,
+
+0:03:40.880,0:03:47.040
+not the kata kind of exercise that people usually 
+employ to practice test-driven development,
+
+0:03:47.600,0:03:53.680
+and has a full-fledged architecture, dependency 
+on external APIs, complicated XML parsing, and so
+
+0:03:53.680,0:04:00.400
+on. Plus, we instrumented the developers IDEs with 
+a plug-in which collects activities happening in
+
+0:04:00.400,0:04:07.440
+the IDE itself, and which we could eventually map 
+into the TDD activities and into TDD phases. And
+
+0:04:07.440,0:04:12.080
+we started looking the results and this is what 
+we get. Here i'm showing just an example of how
+
+0:04:12.080,0:04:18.640
+different the different activities are supposed to 
+be in a TDD fashion. Each activity has a type and
+
+0:04:18.640,0:04:23.280
+a duration, so for example here you can see that 
+this person started with implementing tests first,
+
+0:04:23.280,0:04:29.040
+shown in yellow, then he moved on to adding 
+test cases without the counterpart production
+
+0:04:29.040,0:04:35.680
+code in orange, and then there was a lapse, and 
+this person switched for roughly half an hour
+
+0:04:35.680,0:04:43.520
+to a test-last kind of approach shown in red. 
+And then he added more cycles - he continued
+
+0:04:43.520,0:04:48.880
+developing using test first and doing refactoring 
+which are showing in light blue only at the end.
+
+0:04:49.520,0:04:54.640
+And so we put all these measurements together, 
+hours of development from more than 60
+
+0:04:54.640,0:04:59.840
+professional developers, and run this data through 
+some statistical model and what did we learn?
+
+0:05:00.720,0:05:04.640
+Well we observed that the major benefit 
+of doing test driven development
+
+0:05:05.200,0:05:10.880
+is, so the only things, or the things that counts, 
+that explains the perceived benefits or the claim
+
+0:05:10.880,0:05:17.440
+benefits of TDD, like whether code quality as well 
+as productivity, well that thing is not the rigid,
+
+0:05:17.440,0:05:23.120
+religious adherence to test driven development 
+cycle, but rather how fine-grained are the
+
+0:05:23.120,0:05:28.080
+activities in the process. So the fact that each 
+activity such as writing code and writing tests,
+
+0:05:28.080,0:05:33.600
+or the other way around, even, writing testing 
+code and then refactoring, are kept within a short
+
+0:05:33.600,0:05:40.080
+and consistent time interval. So that's the secret 
+sauce of TDD. And notice that this granularity is
+
+0:05:40.080,0:05:45.280
+a by-product of test driven development: it's not 
+enforced by it. It's recommended to keep the cycle
+
+0:05:45.280,0:05:50.400
+short - within five to ten minutes - although we 
+observe that very few people do that, especially
+
+0:05:50.400,0:05:57.040
+in the case of legacy code. And importantly this 
+rhythm of TDD is directly impacted by the scope
+
+0:05:57.040,0:06:03.280
+of the test cases defined to initiate each cycle. 
+So one suggestion here is to be really conscious
+
+0:06:03.280,0:06:07.680
+on the scope of the test case - it's really 
+working in baby steps that's what helps. So,
+
+0:06:08.640,0:06:13.600
+we have now, we now know that you can benefit 
+from TDD, although not directly because
+
+0:06:13.600,0:06:19.840
+of this test first approach but rather because it 
+makes more compelling to write small unit tests.
+
+0:06:21.680,0:06:28.640
+Finally another aspect we have started and that I 
+actually found quite interesting was to understand
+
+0:06:28.640,0:06:34.800
+how developers actually are enjoying the TDD as 
+a process. Here on the one hand we have existing
+
+0:06:34.800,0:06:40.320
+knowledge, existing literature in software 
+engineering that tells us that happy developers
+
+0:06:40.320,0:06:46.080
+are better at problem solving. And on the other 
+hand we have this: a typical different way of
+
+0:06:46.080,0:06:50.560
+developing software where unit tests kind 
+of control and guide developers' decisions.
+
+0:06:51.360,0:06:57.520
+So we conducted a small experiment this time with 
+students, novices and TDD developers, comparing
+
+0:06:57.520,0:07:05.760
+comparing them to non-TDD developers, and we asked 
+them to perform a series of development tasks,
+
+0:07:05.760,0:07:11.920
+but also asked them to report their perceived 
+emotional state using this pictorial mannequin
+
+0:07:11.920,0:07:18.160
+here called Sam. Basically they could mark on the 
+mannequin what corresponds to their states such as
+
+0:07:18.160,0:07:25.440
+happiness, excitement, frustration, boredom, 
+etc. And here we observe another hidden cost of
+
+0:07:25.440,0:07:30.240
+test driven development: we observe that 
+TDDrs are not as happy as other developers.
+
+0:07:30.240,0:07:36.240
+And when investigating this, we find out that 
+the reason is that TDD forces programmers into
+
+0:07:36.240,0:07:42.240
+this mind-numbing cycle that actually clips 
+their creative wings, and especially in the
+
+0:07:42.240,0:07:49.360
+case of novices, they are just uncomfortable 
+with the TDD counter-intuitive test them right
+
+0:07:50.080,0:07:56.720
+production code kind of thinking. So 
+this is my third takeaway here, so yes,
+
+0:07:56.720,0:08:01.600
+although TDD is not as simple as it might 
+seem, it works if you follow baby step,
+
+0:08:01.600,0:08:07.040
+but nonetheless it comes with an emotional 
+cost which - which you should be aware of.
+
+0:08:07.680,0:08:13.920
+And that's really all I have for you today. 
+Thank you, you can of course approach me and
+
+0:08:13.920,0:08:24.960
+ask me more and connect with me this is my email 
+and my Twitter handle. Thank you for your time.

@@ -1,75 +1,392 @@
+0:00:04.960,0:00:10.240
 Gracias a Greg y Mike por organizar esta increíble serie de charlas.
-Muchas de las cosas que voy a tocar durante los próximos 10 minutos ya se han mencionado en algunas de las charlas anteriores y me gustaría tener más tiempo para tal vez crear más enlaces a las ideas anteriores que se compartieron, pero en los próximos nueve a diez minutos voy a discutir por qué la productividad de los desarrolladores es más complicada de lo que podemos pensar y por qué la medición de la productividad puede ser contraproducente, y también voy a tratar de convencerte de que debemos centrarnos y prestar más atención a la mejora y la comprensión de la experiencia de los desarrolladores, algo que ya hemos oído hoy varias veces, y por qué hacerlo puede mejorar el espacio de la productividad en general.
 
+0:00:10.240,0:00:14.480
+Muchas de las cosas que voy a tocar durante los próximos 10 minutos ya se han mencionado
+
+0:00:14.480,0:00:20.640
+en algunas de las charlas anteriores y me gustaría tener más tiempo para tal vez crear más enlaces a las
+
+0:00:20.640,0:00:26.480
+ideas anteriores que se compartieron, pero en los próximos nueve a diez minutos voy a discutir por qué
+
+0:00:26.480,0:00:32.640
+la productividad de los desarrolladores es más complicada de lo que podemos pensar y por qué la medición de la productividad puede ser
+
+0:00:32.640,0:00:37.760
+contraproducente, y también voy a tratar de convencerte de que debemos centrarnos y prestar
+
+0:00:37.760,0:00:42.800
+más atención a la mejora y la comprensión de la experiencia de los desarrolladores, algo que ya hemos oído
+
+0:00:42.800,0:00:48.480
+hoy varias veces, y por qué hacerlo puede mejorar el espacio de la productividad en general.
+
+0:00:49.040,0:00:55.600
 Pero primero hablemos de productividad.
-Si quieres convertir una reunión aburrida con desarrolladores de software y sus gerentes en una emocionante, sólo tienes que sacar a colación el concepto de productividad de los desarrolladores y sugerir cómo debería medirse.
-Y descubrirás que las personas presentes en la sala tienen puntos de vista muy diferentes sobre lo que significa la productividad para ellos y sobre cómo debería medirse la productividad, si es que se mide.
-Y también podemos escuchar que, en esas reuniones, los líderes y gerentes de las empresas de software se preocupan por la productividad porque suponen que si tienen una mayor productividad de los desarrolladores, eso les ayudará a ofrecer valor a sus clientes más rápidamente.
-Y los desarrolladores se preocupan por la productividad porque tener impacto y sentir que su trabajo aporta valor les hará más felices.
+Si quieres convertir una reunión aburrida con
+
+0:00:55.600,0:00:59.600
+desarrolladores de software y sus gerentes en una emocionante, sólo tienes que sacar a colación el
+
+0:00:59.600,0:01:04.160
+concepto de productividad de los desarrolladores y sugerir cómo debería medirse.
+
+0:01:04.160,0:01:07.200
+Y descubrirás que las personas presentes en la sala tienen puntos de vista muy diferentes
+
+0:01:07.200,0:01:12.320
+sobre lo que significa la productividad para ellos y sobre cómo debería medirse la productividad, si es que se mide.
+
+0:01:12.320,0:01:18.640
+Y también podemos escuchar que, en esas reuniones, los líderes y gerentes de las empresas de software se preocupan
+
+0:01:18.640,0:01:24.800
+por la productividad porque suponen que si tienen una mayor productividad de los desarrolladores, eso les ayudará
+
+0:01:24.800,0:01:30.560
+a ofrecer valor a sus clientes más rápidamente.
+Y los desarrolladores se preocupan por la productividad porque
+
+0:01:30.560,0:01:34.560
+tener impacto y sentir que su trabajo aporta valor les hará más felices.
+
+0:01:35.200,0:01:40.320
 Pero, ¿qué significa realmente la productividad de los desarrolladores para los directivos y los desarrolladores?
-Pues resulta que, junto con mis colegas Brian y Tom de Microsoft, hemos preguntado a directivos y desarrolladores cómo definen la productividad mediante una encuesta abierta.
 
+0:01:40.320,0:01:44.960
+Pues resulta que, junto con mis colegas Brian y Tom de Microsoft,
+
+0:01:44.960,0:01:50.080
+hemos preguntado a directivos y desarrolladores cómo definen la productividad mediante una encuesta abierta.
+
+0:01:51.200,0:01:56.240
 Y escuchamos definiciones muy variadas.
-De hecho, los directivos son más propensos a hablar de la productividad en términos de resultados de rendimiento, pero muchos de ellos también nos dieron definiciones ricas de productividad que no se limitaban a mantener a sus clientes contentos, sino que también incluían el bienestar de sus desarrolladores y la construcción de una cultura de trabajo positiva.
-Los desarrolladores también nos dieron definiciones muy variadas, pero ellos -en comparación con sus directivos- eran más propensos a definir la productividad en términos de resultados de la actividad y del tiempo que pueden pasar haciendo su trabajo sin interrupciones y en un estado de flujo.
-Sin embargo, muchos desarrolladores también compartieron que la productividad no se limitaba a la actividad y el flujo, sino que también se refería al impacto de su trabajo: ayudar a los demás y aprender para el futuro.
+De hecho, los directivos son más propensos a
 
+0:01:56.240,0:02:02.000
+hablar de la productividad en términos de resultados de rendimiento, pero muchos de ellos también nos dieron
 
-Así que definir la productividad es importante, pero los líderes -y yo diría que incluso algunos desarrolladores- quieren ser capaces de medir la productividad para poder entender el impacto que pueden tener los cambios en las herramientas, los procesos y los objetivos.
-Y esto lo vimos, por supuesto, especialmente durante los dos últimos años de trabajo desde casa y el reciente impulso del trabajo híbrido.
-Y, de hecho, los primeros intentos de comprender la productividad en términos de datos de telemetría, como el número de pull request, e incluso a través de encuestas a los desarrolladores, nos dieron la primera impresión de que la productividad había mejorado potencialmente o se había mantenido igual.
+0:02:02.000,0:02:07.520
+definiciones ricas de productividad que no se limitaban a mantener a sus clientes contentos, sino que también
+
+0:02:07.520,0:02:11.600
+incluían el bienestar de sus desarrolladores y la construcción de una cultura de trabajo positiva.
+
+0:02:12.640,0:02:16.160
+Los desarrolladores también nos dieron definiciones muy variadas,
+
+0:02:16.720,0:02:22.880
+pero ellos -en comparación con sus directivos- eran más propensos a definir la productividad en términos de resultados
+
+0:02:22.880,0:02:27.760
+de la actividad y del tiempo que pueden pasar haciendo su trabajo sin interrupciones y en un estado de flujo.
+
+0:02:28.480,0:02:33.600
+Sin embargo, muchos desarrolladores también compartieron que la productividad no se limitaba a la actividad y el flujo,
+
+0:02:33.600,0:02:39.120
+sino que también se refería al impacto de su trabajo: ayudar a los demás y aprender para el futuro.
+
+0:02:40.720,0:02:46.720
+Así que definir la productividad es importante, pero los líderes -y yo diría que incluso algunos desarrolladores- quieren ser
+
+0:02:46.720,0:02:51.120
+capaces de medir la productividad para poder entender el impacto 
+
+0:02:51.120,0:02:54.640
+que pueden tener los cambios en las herramientas, los procesos y los objetivos.
+
+0:02:54.640,0:02:58.160
+Y esto lo vimos, por supuesto, especialmente durante los dos últimos años de trabajo desde 
+
+0:02:58.160,0:03:02.880
+casa y el reciente impulso del trabajo híbrido.
+Y, de hecho, los primeros intentos de comprender
+
+0:03:02.880,0:03:08.000
+la productividad en términos de datos de telemetría, como el número de pull request,
+
+0:03:08.000,0:03:13.200
+e incluso a través de encuestas a los desarrolladores, nos dieron la primera impresión de que la productividad 
+
+0:03:13.200,0:03:17.840
+había mejorado potencialmente o se había mantenido igual.
 Pero, por supuesto, no era tan sencillo.
-Así que, como descubrimos nosotros y otros cuando encuestamos a los desarrolladores en los primeros meses de la pandemia, muchos informaron de una mayor productividad percibida, pero a costa de un posible agotamiento, mientras que otros tenían dificultades para trabajar.
 
-Y también aprendimos que el trabajo en equipo era más desafiante y que las interrupciones y, de hecho, la naturaleza de estas interrupciones habían aumentado.
+0:03:19.280,0:03:23.840
+Así que, como descubrimos nosotros y otros cuando encuestamos a los desarrolladores en los primeros meses
+
+0:03:23.840,0:03:30.160
+de la pandemia, muchos informaron de una mayor productividad percibida, pero a costa de un posible agotamiento, 
+
+0:03:30.720,0:03:35.760
+mientras que otros tenían dificultades para trabajar.
+Y también aprendimos que el trabajo en equipo era más
+
+0:03:35.760,0:03:40.880
+desafiante y que las interrupciones y, de hecho, la naturaleza de estas interrupciones habían aumentado.
+
+0:03:42.480,0:03:46.720
 Pero, ¿cómo dar sentido a toda esta investigación?
-Así que éramos varios los que estudiábamos la productividad durante la pandemia y reconocimos que necesitábamos una forma mejor de enmarcar la productividad de los desarrolladores.
-Así que, basándonos en años de investigación, no sólo en la que nosotros realizamos, desarrollamos el marco SPACE, que sintetiza las cinco dimensiones principales de la productividad que vimos surgir de los diversos estudios sobre la productividad de los desarrolladores.
-Y SPACE nos ayuda a articular que la productividad de los desarrolladores no se reduce a la velocidad o al rendimiento y que hay muchos aspectos diferentes de la productividad que debemos considerar.
+Así que éramos varios los que estudiábamos
 
+0:03:46.720,0:03:51.360
+la productividad durante la pandemia y reconocimos que necesitábamos
+
+0:03:51.360,0:03:57.120
+una forma mejor de enmarcar la productividad de los desarrolladores.
+Así que, basándonos en años de investigación, no sólo en la
+
+0:03:57.120,0:04:03.920
+que nosotros realizamos, desarrollamos el marco SPACE, que sintetiza las cinco dimensiones principales de
+
+0:04:03.920,0:04:08.560
+la productividad que vimos surgir de los diversos estudios sobre la productividad de los desarrolladores.
+
+0:04:09.200,0:04:15.040
+Y SPACE nos ayuda a articular que la productividad de los desarrolladores no se reduce a la velocidad
+
+0:04:15.040,0:04:19.520
+o al rendimiento y que hay muchos aspectos diferentes de la productividad que debemos considerar.
+
+0:04:20.240,0:04:23.520
 Permítanme hablar de estas cinco dimensiones con un poco más de detalle.
+
+0:04:24.800,0:04:30.720
 La primera dimensión, la satisfacción y el bienestar, examina el grado de satisfacción y felicidad de los desarrolladores.
-Nuestra investigación anterior muestra que la satisfacción y la productividad percibida, aunque no son exactamente lo mismo, están correlacionadas, y es crucial observar cómo se sienten los desarrolladores para obtener una comprensión holística de su productividad.
+
+0:04:31.360,0:04:37.040
+Nuestra investigación anterior muestra que la satisfacción y la productividad percibida, aunque no son
+
+0:04:37.040,0:04:42.160
+exactamente lo mismo, están correlacionadas, y es crucial observar cómo se sienten los desarrolladores
+
+0:04:42.160,0:04:46.240
+para obtener una comprensión holística de su productividad.
+
+0:04:46.240,0:04:50.960
 Esto es algo que a menudo se mide a través de encuestas para obtener los datos subjetivos.
+
+0:04:52.400,0:04:55.360
 La siguiente dimensión del marco SPACE es el rendimiento.
-Se refiere a los resultados de un sistema o proceso, y es el aspecto de la productividad que más preocupa a muchos líderes.
 
-Y se podría pensar que evaluar el rendimiento es fácil, pero en realidad, aunque hay algunas medidas objetivas, hay muchas variables que debemos considerar.
-Por ejemplo, una gran cantidad de código no significa necesariamente que sea de alta calidad, y un código de alta calidad no significa necesariamente que los clientes estén contentos, e incluso los clientes contentos no significan necesariamente más ingresos para una empresa.
+0:04:55.360,0:05:00.720
+Se refiere a los resultados de un sistema o proceso, y es el aspecto de la productividad 
+
+0:05:00.720,0:05:04.800
+que más preocupa a muchos líderes.
+Y se podría pensar que evaluar
+
+0:05:04.800,0:05:10.480
+el rendimiento es fácil, pero en realidad, aunque hay algunas medidas objetivas, hay
+
+0:05:10.480,0:05:15.680
+muchas variables que debemos considerar.
+Por ejemplo, una gran cantidad de código no significa necesariamente
+
+0:05:15.680,0:05:20.560
+que sea de alta calidad, y un código de alta calidad no significa necesariamente que los clientes
+
+0:05:20.560,0:05:24.480
+estén contentos, e incluso los clientes contentos no significan necesariamente más ingresos para una empresa.
+
+0:05:25.760,0:05:29.840
 La tercera dimensión que añadimos a SPACE es la actividad y los resultados.
-Por supuesto, se trata de una métrica importante y es una de las primeras en las que piensan los desarrolladores, pero, como hemos dicho hasta ahora en esta charla, no es la clave de la productividad.
 
-Y, de hecho, las actividades que realizan los desarrolladores también son complejas y diversas, y podemos medir algunas, por ejemplo, las solicitudes de extracción o el número de revisiones de código, pero otras actividades, como la asistencia a reuniones, están ayudando a otros desarrolladores que se están incorporando o aprendiendo para el futuro.
+0:05:29.840,0:05:33.440
+Por supuesto, se trata de una métrica importante y es una de 
+
+0:05:33.440,0:05:37.360
+las primeras en las que piensan los desarrolladores,
+pero, como hemos dicho hasta ahora
+
+0:05:37.360,0:05:40.320
+en esta charla, no es la clave de la productividad.
+
+0:05:40.880,0:05:45.600
+Y, de hecho, las actividades que realizan los desarrolladores también son complejas y diversas,
+
+0:05:45.600,0:05:50.320
+y podemos medir algunas, por ejemplo, las pull request o el número de revisiones de código,
+
+0:05:50.320,0:05:54.480
+pero otras actividades, como la asistencia a reuniones, están ayudando a otros desarrolladores
+
+0:05:54.480,0:05:59.120
+que se están incorporando o aprendiendo para el futuro.
 Estas cosas son difíciles de poner en números.
-La siguiente dimensión de SPACE se refiere a la comunicación y la colaboración, algo de lo que también hemos oído hablar mucho hoy.
-Esta dimensión subraya que el desarrollo de software es una actividad de equipo y un proceso inherentemente creativo y colaborativo.
+
+0:06:00.480,0:06:03.920
+La siguiente dimensión de SPACE se refiere a la comunicación y la colaboración,
+
+0:06:03.920,0:06:08.240
+algo de lo que también hemos oído hablar mucho hoy.
+Esta dimensión subraya que el desarrollo de software
+
+0:06:08.240,0:06:13.120
+es una actividad de equipo y un proceso inherentemente creativo y colaborativo.
+
+0:06:14.080,0:06:19.200
 Y la última dimensión que hemos añadido al marco SPACE se refiere a la eficacia y la fluidez.
-La eficiencia y la fluidez es la capacidad de trabajar sin interrupciones.
 
-Estos son temas que se han estudiado ampliamente en nuestra comunidad de investigación en los últimos años, y esta dimensión capta la importancia del flujo para los desarrolladores individuales y el impacto negativo que las interrupciones pueden tener en su trabajo.
-Pero esta dimensión también capta lo bien que los equipos orquestan sus diferentes actividades y la frecuencia con la que progresan continuamente.
-Así que SPACE nos ofrece una forma mucho más rica y matizada de pensar en la productividad, pero puede ayudarnos a medir la productividad, algo que preocupa especialmente a los directivos, como he mencionado.
+0:06:19.200,0:06:21.040
+La eficiencia y la fluidez es la capacidad
 
-Afortunadamente, hoy en día se reconoce que no existe una métrica universal para medir la productividad, y SPACE puede ayudarnos y desempeña un papel en este sentido al ayudarnos a elegir al menos varias métricas de diferentes dimensiones de la productividad, y de hecho nuestro documento describe esto con un poco más de detalle.
-Pero no hemos terminado: la elección de estas métricas sigue siendo un reto y creo que tenemos que hacer mucho más para entender cómo medir los diferentes aspectos de la productividad o, de lo contrario, corremos el riesgo de ser contraproducentes.
+0:06:21.040,0:06:23.760
+de trabajar sin interrupciones.
+Estos son temas que se han
 
-Esto es especialmente importante para ser cauteloso porque, bueno, seamos sinceros, los ingenieros han sido entrenados y condicionados a considerar los datos objetivos y las métricas que son más fáciles de cuantificar antes de considerar los datos cualitativos y subjetivos, por lo que antes de elegir las métricas necesitamos primero hacer una pausa, dar un paso atrás y centrarnos en cuáles son los objetivos, es decir, ¿estamos tratando de medir la productividad en términos de mejora de la calidad del producto, o estamos tratando de mejorar la productividad de la calidad en términos de la velocidad de nuestro proceso de ingeniería y ser capaz de entregar continuamente el código, o estamos mirando la experiencia del desarrollador o tal vez es los tres.
-Ahora bien, para la calidad del producto y la calidad del proceso ya tenemos algunas métricas cuantitativas objetivas y validadas bien definidas para ellos, pero como he mencionado antes, incluso estos - la medición de estos no es simple, y tienen que ser - tenemos que considerar cuidadosamente el contexto del proyecto y los desarrolladores antes de elegir estas métricas.
+0:06:23.760,0:06:27.520
+estudiado ampliamente en nuestra comunidad de investigación en los últimos años,
 
-La tercera, la experiencia del desarrollador, en cambio, se basa mucho más en métricas subjetivas que pueden ser más difíciles de medir, pero hoy propongo que es fundamental que entendamos y mejoremos la experiencia del desarrollador, porque sabemos por investigaciones anteriores que la mejora de la experiencia del desarrollador conducirá a mejoras en la calidad del producto y la velocidad del proceso y viceversa.
-Pero a qué me refiero cuando digo experiencia del desarrollador, se preguntarán.
+0:06:27.520,0:06:32.960
+y esta dimensión capta la importancia del flujo para los desarrolladores individuales y el impacto negativo 
+
+0:06:32.960,0:06:38.800
+que las interrupciones pueden tener en su trabajo.
+Pero esta dimensión también capta lo bien
+
+0:06:38.800,0:06:43.600
+que los equipos orquestan sus diferentes actividades y la frecuencia con la que progresan continuamente.
+
+0:06:45.120,0:06:50.160
+Así que SPACE nos ofrece una forma mucho más rica y matizada de pensar en la productividad,
+
+0:06:50.800,0:06:56.160
+pero puede ayudarnos a medir la productividad, algo que preocupa especialmente a los directivos, como he mencionado.
+
+0:06:56.800,0:07:01.520
+Afortunadamente, hoy en día se reconoce que no existe una métrica universal
+
+0:07:01.520,0:07:05.840
+para medir la productividad, y SPACE puede ayudarnos y desempeña un papel en este sentido
+
+0:07:05.840,0:07:11.920
+al ayudarnos a elegir al menos varias métricas de diferentes dimensiones de la productividad, y de hecho
+
+0:07:11.920,0:07:17.280
+nuestro documento describe esto con un poco más de detalle.
+Pero no hemos terminado: la elección de estas métricas sigue
+
+0:07:17.280,0:07:22.720
+siendo un reto y creo que tenemos que hacer mucho más para entender cómo medir
+
+0:07:22.720,0:07:27.440
+los diferentes aspectos de la productividad o, de lo contrario, corremos el riesgo de ser contraproducentes.
+
+0:07:28.720,0:07:33.360
+Esto es especialmente importante para ser cauteloso porque, bueno, seamos sinceros,
+
+0:07:33.360,0:07:37.200
+los ingenieros han sido entrenados y condicionados a considerar los datos objetivos
+
+0:07:37.200,0:07:42.320
+y las métricas que son más fáciles de cuantificar antes de considerar los datos cualitativos y subjetivos,
+
+0:07:43.280,0:07:50.320
+por lo que antes de elegir las métricas necesitamos primero hacer una pausa, dar un paso atrás y centrarnos en cuáles son los objetivos,
+
+0:07:51.440,0:07:58.080
+es decir, ¿estamos tratando de medir la productividad en términos de mejora de la calidad del producto, o
+
+0:07:58.080,0:08:03.520
+estamos tratando de mejorar la productividad de la calidad en términos de la velocidad de nuestro proceso de ingeniería 
+
+0:08:03.520,0:08:09.680
+y ser capaz de entregar continuamente el código, o estamos mirando la experiencia del desarrollador 
+
+0:08:10.240,0:08:17.040
+o tal vez es los tres.
+Ahora bien, para la calidad del producto y la calidad del proceso ya
+
+0:08:17.040,0:08:21.520
+tenemos algunas métricas cuantitativas objetivas y validadas bien definidas para ellos,
+
+0:08:21.520,0:08:26.560
+pero como he mencionado antes, incluso estos - la medición de estos no es simple, y tienen que ser - tenemos que
+
+0:08:26.560,0:08:31.680
+considerar cuidadosamente el contexto del proyecto y los desarrolladores antes de elegir estas métricas.
+
+0:08:32.400,0:08:39.120
+La tercera, la experiencia del desarrollador, en cambio, se basa mucho más en métricas subjetivas
+
+0:08:39.120,0:08:45.600
+que pueden ser más difíciles de medir, pero hoy propongo que es fundamental que
+
+0:08:45.600,0:08:50.720
+entendamos y mejoremos la experiencia del desarrollador, porque sabemos por investigaciones anteriores que
+
+0:08:50.720,0:08:55.920
+la mejora de la experiencia del desarrollador conducirá a mejoras en la calidad del producto y la velocidad
+
+0:08:55.920,0:09:00.080
+del proceso y viceversa.
+Pero a qué me refiero cuando digo
+
+0:09:00.080,0:09:03.520
+experiencia del desarrollador, se preguntarán.
 También es complicado.
 
-A partir de un estudio que realicé recientemente con mis colegas Michaela y Abi, definimos la experiencia del desarrollador como la forma en que los desarrolladores piensan, sienten y valoran su trabajo.
-Y en este estudio realizamos entrevistas en profundidad con 21 desarrolladores de toda la industria para entender qué factores tienen el mayor impacto en su experiencia.
-Y descubrimos seis factores clave, seis categorías de factores clave: el flujo y la satisfacción de los desarrolladores, cómo colaboran con los demás y su cultura en el trabajo, cómo se gestiona su equipo y su producto, y la calidad de las herramientas y los procesos de ingeniería que utilizan.
-Pero también descubrimos que el impacto que tienen estos diferentes factores depende realmente de su contexto específico del proyecto y de su trabajo.
-Y estos factores pueden ayudarnos a elegir objetivos específicos y, a su vez, métricas que pueden mejorar la experiencia de los desarrolladores y, a su vez, la productividad general de los mismos.
+0:09:03.520,0:09:07.200
+A partir de un estudio que realicé recientemente con mis colegas Michaela y Abi,
 
+0:09:07.200,0:09:13.360
+definimos la experiencia del desarrollador como la forma en que los desarrolladores piensan, sienten y valoran su trabajo.
+
+0:09:14.080,0:09:19.040
+Y en este estudio realizamos entrevistas en profundidad con 21 desarrolladores de toda la industria 
+
+0:09:19.040,0:09:22.880
+para entender qué factores tienen el mayor impacto en su experiencia.
+
+0:09:22.880,0:09:29.680
+Y descubrimos seis factores clave, seis categorías de factores clave: el flujo 
+
+0:09:29.680,0:09:36.240
+y la satisfacción de los desarrolladores, cómo colaboran con los demás y su cultura en el trabajo, cómo se gestiona
+
+0:09:36.240,0:09:41.120
+su equipo y su producto, y la calidad de las herramientas y los procesos de ingeniería que utilizan.
+
+0:09:41.680,0:09:45.520
+Pero también descubrimos que el impacto que tienen estos diferentes factores 
+
+0:09:46.080,0:09:49.840
+depende realmente de su contexto específico del proyecto y de su trabajo.
+
+0:09:50.640,0:09:55.440
+Y estos factores pueden ayudarnos a elegir objetivos específicos y, a su vez, métricas 
+
+0:09:55.440,0:10:00.000
+que pueden mejorar la experiencia de los desarrolladores y, a su vez, la productividad general de los mismos.
+
+0:10:01.440,0:10:07.280
 Para terminar, estas son mis principales conclusiones.
 La productividad es más complicada de lo que creemos.
-Significa cosas diferentes para cada persona y no existe una métrica de productividad universal o incluso un conjunto universal de métricas.
-SPACE puede ayudarnos a seleccionar algunas métricas, pero primero tenemos que articular claramente nuestros objetivos antes de seleccionar cualquiera.
-Y, por último, sugiero que, como industria, debemos centrarnos mucho más en entender y mejorar la experiencia de los desarrolladores, ya que esto conducirá a mejoras en la calidad del producto y la velocidad de la ingeniería, todos ellos objetivos importantes dentro del espacio de la productividad.
-Así que gracias y espero que algunos de ustedes se pongan en contacto conmigo por correo electrónico o Twitter si tienen preguntas o pensamientos para compartir y me encantaría escucharlos.
 
+0:10:07.280,0:10:13.280
+Significa cosas diferentes para cada persona y no existe una métrica de productividad universal o incluso 
+
+0:10:13.280,0:10:17.680
+un conjunto universal de métricas.
+SPACE puede ayudarnos a seleccionar
+
+0:10:17.680,0:10:22.160
+ algunas métricas, pero primero tenemos que articular claramente nuestros objetivos antes de seleccionar cualquiera.
+
+0:10:22.720,0:10:28.960
+Y, por último, sugiero que, como industria, debemos centrarnos mucho más en entender
+
+0:10:28.960,0:10:34.000
+y mejorar la experiencia de los desarrolladores, ya que esto conducirá a mejoras en la calidad del producto
+
+0:10:34.000,0:10:38.080
+y la velocidad de la ingeniería, todos ellos objetivos importantes dentro del espacio de la productividad.
+
+0:10:38.880,0:10:43.120
+Así que gracias y espero que algunos de ustedes se pongan en contacto conmigo por correo electrónico 
+
+0:10:43.120,0:10:52.160
+o Twitter si tienen preguntas o pensamientos para compartir y me encantaría escucharlos.

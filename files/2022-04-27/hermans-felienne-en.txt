@@ -1,15 +1,293 @@
-Good morning afternoon or evening wherever you are my name is Felienne. I'm an associate professor at Leiden University and indeed I'm going to talk today about how to get better at naming things. You know, naming things is sometimes said to be the hardest program - that's really the hardest problem in computer science - so let me help you to get better at naming things because this is a question many people struggle with.
-Firstly some context. Names have both content and also form. So the content of a name is something like what - what the name depicts, right, so is name, that's the the ingredients in the variable name. But variable names also have a certain form, you might use, for example, camel case where a capital letter indicates the next word, but some programming languages prefer snake case where you use underscores to divide words. That part of the variable naming is the form, and we will give - I will give some advice for both these parts of variable naming in the talk today.
-Let's start with the contents: what do we actually put in the variable name? I guess most of you are familiar with the idea of code smells. Fowler's definition for parts of code that aren't, you know, they aren't necessarily a mistake or an error, but they're just not really structured nice enough. So code smells are long methods, for example, you have a very, very long method 100 or 200 lines, that's just not structured optimally. However, oh sorry apparently my camera is not on - there I am.
-So code smells, you have, like, a very long method that's 100 lines, where you have a long perimeter parameter list, right, so 10 20 30 parameters in a method. These are code smells, and as I said, these are parts of code that you're just not so very happy about.
-The traditional code smells as we know them are structural smells, so they talk about what the structure of code is. But newer work also talks about specific code smells in variable names called linguistic smells. So they're like code smells in the sense that they're just not perfect, but they talk about names rather than about structure. For example, imagine you have a function that's - or method - that's called "isValid" and it takes some sort of external ID and the method is going to check, is this a valid ID. Question I brought my friend, the Participation Panda, if we have the Participation Panda on screen it means you audience have to do something. So question for you, if you see a method like this isValid, what do you think the return type might be? I'll give you just a few seconds to think about what the return type is here.
-Okay so I guess most of you said, oh this is probably going to be a Boolean, right? Because isValid gives the idea that a Boolean will be returned. Often this is the case but sometimes we try to be smart, right, if you have an example like this where you have an external ID that is going to be validated, maybe we do some sort of conversion, right, you take our external ID like a customer number or student number, we try to convert it to an internal ID, something maybe we use in the database. If this conversion succeeds, then we have this internal ID, and we try to be smart, we don't just say here's True, we also give this internal ID back. This is easy because then in the call site, you have this ID that you can then use to query the database.
-This is quite common but of course it is misleading if you're at the call site you think, oh this is going to be a Boolean, but it's something slightly different from a Boolean, then you can get confusing code. In the paper about linguistic code smells, six different categories of these smells are defined. Methods that do more than they say, methods that do less than they say, and methods that do the reverse of what they say. Sometimes you have an openConnection that actually closes a connection for some historical reason the code ended up that way. So these are things you want to avoid because they make it more confusing.
-In addition to methods, sometimes identifiers can also have linguistic code smells, where you have something like allCustomers where you would expect a list but then you it only holds the next customer in line. Code can sometimes also be structured in that way, either because it's a mistake or because of some historical reason the code just ended up that way and everyone knows how it works. So identifiers can also suffer from linguistic code smells.
-In addition to work that has defined the code smells, there's also been research that has looked at what is the impact of code smells. Of course we have this sense that this is confusing, right, so we can say, oh linguistic code smells are confusing but this has actually been studied. So there's a super nice paper by Fakhoury et al that has actually put a type of brain scanner on people's heads while they look at codes with linguistic code smells. And their results show that linguistic smells actually increase cognitive load. So that just means, your brain has to work harder to process code that has these type of code smells. So that's not what we want.
-I promised you two things, right, so, so far we've looked at the content of names - what words - what are the meaning of words that we put into variable names - but shape, the form of the variable name also matters. It's not just about the words. One more panda for you, so I hope that you are still participating. Suppose we are storing the maximum number of orders in a month. What would be a good variable name. I'll just give you a few seconds, write this down, maybe in the chat if you want to, or on a piece of paper, just think about what variable name would you pick here.
-So my guess is that there is a wide variety of different things that people wrote down. And maybe this could be max_orders_monthly or month - month or monthly_orders_max or maximum_monthly_orders. All of these things are somewhat sensible, and it might depends also on what your own native language is - what do you think an order is that sort of fits with how you think. There's nothing wrong with either of them, but it's just not very comfortable, of course if the quantifier, maximum or minimum, sometimes is in the beginning, sometimes it's in the end, sometimes it's an abbreviation, and sometimes it is not, and the same is true for orders: it could sort of live in all places in the variable name but if it's in different places, you can imagine this makes it harder to produce - to process the variable names.
-The idea that we describe here is called a "name mold" in a paper by Feitelson et al. They describe a mold like a thing you use to make a bronze statue, a mold in which names can fit. so another panda question for you: imagine two developers have to pick a variable name. What chance do you think there is of the two developers picking the same variable name, for such a prompt just like the one I just gave you. What is your guess for how big this chance is?
-So it's not very high, I hope it isn't lower than you thought - the chance is actually only seven percent. So if you don't make any further agreements on how to structure your variable names, you just have a seven percent chance of picking the same name. That - that's just not very high. But this paper also shows, which is I think a really, really nice result, that if you agree on molds - if as a team you say, this is the mold that we pick and then you always use that same structure, then naming quality improves. And they had external experts verify the quality of the names, so name quality just goes up if you agree on the name molds.
-So just to summarize, what can you do now, immediately, to get better at naming things? And I want to point out, like, for free, right, some of the papers that look at some things in programming is like, oh, you have to download this tool or you have to do this or you have to learn something that's really hard. But this name mold stuff, and this linguistic code smell, it's super easy, right. Tomorrow you can go to your code base and think, hey do you have any linguistic code smells. You can just see is it - does it start with "is" let's make sure it's a Boolean. And as a team you can talk about name molds, you can say, okay, what do we do - do we always do the quantifier in the beginning or at the end. What is our plan here? And just with a little bit of refactoring you can really increase the naming quality in your code base. So it's relatively easy intervention, you can really do to make your code base better.
-That's it, I'm on twitter I'm at "felienne" conveniently my handle is just my first name. You can also go to felienne.com if you want to know more about me - specifically if you want to know more of these results - of programming and software engineering applies to the daily life of a programmer, you might be interested in checking out my book, "The Programmer's Brain", you can buy that through felienne.com/book.
+0:00:05.120,0:00:08.800
+Good morning afternoon or evening wherever you are my name is Felienne.
+
+0:00:08.800,0:00:12.880
+I'm an associate professor at Leiden University and indeed I'm going to talk today about how to
+
+0:00:12.880,0:00:18.160
+get better at naming things. You know, naming things is sometimes said to be the hardest
+
+0:00:18.160,0:00:22.000
+program - that's really the hardest problem in computer science - so let me help you
+
+0:00:22.000,0:00:26.000
+to get better at naming things because this is a question many people struggle with.
+
+0:00:27.040,0:00:36.400
+Firstly some context. Names have both content and also form. So the content of a name is something
+
+0:00:36.400,0:00:43.280
+like what - what the name depicts, right, so is name, that's the the ingredients in the variable
+
+0:00:43.280,0:00:48.720
+name. But variable names also have a certain form, you might use, for example, camel case
+
+0:00:48.720,0:00:53.680
+where a capital letter indicates the next word, but some programming languages prefer snake case
+
+0:00:53.680,0:00:59.520
+where you use underscores to divide words. That part of the variable naming is the form, and
+
+0:00:59.520,0:01:04.720
+we will give - I will give some advice for both these parts of variable naming in the talk today.
+
+0:01:05.360,0:01:11.040
+Let's start with the contents: what do we actually put in the variable name? I guess most
+
+0:01:11.040,0:01:17.280
+of you are familiar with the idea of code smells. Fowler's definition for parts of code that aren't,
+
+0:01:17.280,0:01:21.040
+you know, they aren't necessarily a mistake or an error, but they're just not really
+
+0:01:21.040,0:01:28.000
+structured nice enough. So code smells are long methods, for example, you have a very,
+
+0:01:28.000,0:01:38.640
+very long method 100 or 200 lines, that's just not structured optimally. However, oh sorry apparently
+
+0:01:38.640,0:01:42.400
+my camera is not on - there I am.
+So code smells, you have, like,
+
+0:01:42.400,0:01:47.280
+a very long method that's 100 lines, where you have a long perimeter parameter list, right, so
+
+0:01:48.800,0:01:54.080
+10 20 30 parameters in a method. These are code smells, and as I said, these are parts of code
+
+0:01:54.080,0:01:59.120
+that you're just not so very happy about.
+The traditional code smells as we know them
+
+0:01:59.120,0:02:05.280
+are structural smells, so they talk about what the structure of code is. But newer work also
+
+0:02:05.280,0:02:11.280
+talks about specific code smells in variable names called linguistic smells. So they're like
+
+0:02:11.280,0:02:15.680
+code smells in the sense that they're just not perfect, but they talk about names rather than
+
+0:02:15.680,0:02:21.680
+about structure. For example, imagine you have a function that's - or method - that's called
+
+0:02:21.680,0:02:26.160
+"isValid" and it takes some sort of external ID and the method is going to check,
+
+0:02:26.160,0:02:32.000
+is this a valid ID. Question I brought my friend, the Participation Panda,
+
+0:02:32.000,0:02:36.720
+if we have the Participation Panda on screen it means you audience have to do something.
+
+0:02:36.720,0:02:42.320
+So question for you, if you see a method like this isValid, what do you think the return type
+
+0:02:42.320,0:02:49.840
+might be? I'll give you just a few seconds to think about what the return type is here.
+
+0:02:51.520,0:02:57.200
+Okay so I guess most of you said, oh this is probably going to be a Boolean, right? Because
+
+0:02:57.200,0:03:02.720
+isValid gives the idea that a Boolean will be returned. Often this is the case but
+
+0:03:02.720,0:03:07.920
+sometimes we try to be smart, right, if you have an example like this where you have an external ID
+
+0:03:08.640,0:03:13.200
+that is going to be validated, maybe we do some sort of conversion, right, you take our external
+
+0:03:13.200,0:03:18.480
+ID like a customer number or student number, we try to convert it to an internal ID, something
+
+0:03:18.480,0:03:24.320
+maybe we use in the database. If this conversion succeeds, then we have this internal ID,
+
+0:03:24.320,0:03:29.440
+and we try to be smart, we don't just say here's True, we also give this internal ID back. This is
+
+0:03:29.440,0:03:33.760
+easy because then in the call site, you have this ID that you can then use to query the database.
+
+0:03:34.720,0:03:38.800
+This is quite common but of course it is misleading if you're at the call site you think,
+
+0:03:38.800,0:03:42.960
+oh this is going to be a Boolean, but it's something slightly different from a Boolean,
+
+0:03:42.960,0:03:49.200
+then you can get confusing code. In the paper about linguistic code smells, six different
+
+0:03:49.200,0:03:56.320
+categories of these smells are defined. Methods that do more than they say, methods that do
+
+0:03:56.320,0:04:02.240
+less than they say, and methods that do the reverse of what they say. Sometimes you have an
+
+0:04:02.800,0:04:07.120
+openConnection that actually closes a connection for some historical reason the code ended up
+
+0:04:07.120,0:04:11.600
+that way. So these are things you want to avoid because they make it more confusing.
+
+0:04:12.480,0:04:17.360
+In addition to methods, sometimes identifiers can also have linguistic code smells, where you have
+
+0:04:17.360,0:04:23.440
+something like allCustomers where you would expect a list but then you it only holds the
+
+0:04:23.440,0:04:28.320
+next customer in line. Code can sometimes also be structured in that way, either because it's
+
+0:04:28.320,0:04:32.960
+a mistake or because of some historical reason the code just ended up that way and everyone
+
+0:04:32.960,0:04:37.280
+knows how it works. So identifiers can also suffer from linguistic code smells.
+
+0:04:37.920,0:04:42.560
+In addition to work that has defined the code smells, there's also been research that has
+
+0:04:42.560,0:04:47.760
+looked at what is the impact of code smells. Of course we have this sense that this is confusing,
+
+0:04:47.760,0:04:52.240
+right, so we can say, oh linguistic code smells are confusing but this has actually been studied.
+
+0:04:52.240,0:04:59.440
+So there's a super nice paper by Fakhoury et al that has actually put a type of brain scanner
+
+0:04:59.440,0:05:04.640
+on people's heads while they look at codes with linguistic code smells. And their results show
+
+0:05:04.640,0:05:10.560
+that linguistic smells actually increase cognitive load. So that just means, your brain has to work
+
+0:05:10.560,0:05:15.600
+harder to process code that has these type of code smells. So that's not what we want.
+
+0:05:17.600,0:05:22.400
+I promised you two things, right, so, so far we've looked at the content of names - what words - what
+
+0:05:22.400,0:05:28.960
+are the meaning of words that we put into variable names - but shape, the form of the variable name
+
+0:05:28.960,0:05:35.600
+also matters. It's not just about the words. One more panda for you, so I hope that you are still
+
+0:05:35.600,0:05:43.120
+participating. Suppose we are storing the maximum number of orders in a month. What would be a good
+
+0:05:43.120,0:05:47.200
+variable name. I'll just give you a few seconds, write this down, maybe in the chat if you want to,
+
+0:05:47.200,0:05:51.840
+or on a piece of paper, just think about what variable name would you pick here.
+
+0:05:57.840,0:06:03.280
+So my guess is that there is a wide variety of different things that people wrote down. And maybe
+
+0:06:03.280,0:06:10.720
+this could be max_orders_monthly or month - month or monthly_orders_max or maximum_monthly_orders.
+
+0:06:11.360,0:06:16.560
+All of these things are somewhat sensible, and it might depends also on what your own native
+
+0:06:16.560,0:06:20.160
+language is - what do you think an order is that sort of fits with how you think.
+
+0:06:20.800,0:06:26.160
+There's nothing wrong with either of them, but it's just not very comfortable, of course if
+
+0:06:26.160,0:06:31.200
+the quantifier, maximum or minimum, sometimes is in the beginning, sometimes it's in the end,
+
+0:06:31.200,0:06:35.680
+sometimes it's an abbreviation, and sometimes it is not, and the same is true for orders:
+
+0:06:35.680,0:06:40.960
+it could sort of live in all places in the variable name but if it's in different places,
+
+0:06:40.960,0:06:48.000
+you can imagine this makes it harder to produce - to process the variable names.
+
+0:06:48.000,0:06:54.800
+The idea that we describe here is called a "name mold" in a paper by Feitelson et al.
+
+0:06:54.800,0:07:01.840
+They describe a mold like a thing you use to make a bronze statue, a mold in which names can fit.
+
+0:07:03.280,0:07:10.960
+so another panda question for you: imagine two developers have to pick a variable name.
+
+0:07:10.960,0:07:17.760
+What chance do you think there is of the two developers picking the same variable name, for
+
+0:07:17.760,0:07:23.040
+such a prompt just like the one I just gave you. What is your guess for how big this chance is?
+
+0:07:29.120,0:07:33.520
+So it's not very high, I hope it isn't lower than you thought - the chance is actually only
+
+0:07:33.520,0:07:38.080
+seven percent. So if you don't make any further agreements on how to structure your
+
+0:07:38.080,0:07:43.520
+variable names, you just have a seven percent chance of picking the same name. That - that's
+
+0:07:43.520,0:07:49.760
+just not very high. But this paper also shows, which is I think a really, really nice result,
+
+0:07:49.760,0:07:54.480
+that if you agree on molds - if as a team you say, this is the mold that we pick and then
+
+0:07:54.480,0:08:00.880
+you always use that same structure, then naming quality improves. And they had external experts
+
+0:08:00.880,0:08:09.200
+verify the quality of the names, so name quality just goes up if you agree on the name molds.
+
+0:08:09.200,0:08:14.960
+So just to summarize, what can you do now, immediately, to get better at naming things? And I
+
+0:08:14.960,0:08:20.880
+want to point out, like, for free, right, some of the papers that look at some things in programming
+
+0:08:20.880,0:08:25.040
+is like, oh, you have to download this tool or you have to do this or you have to learn something
+
+0:08:25.040,0:08:29.920
+that's really hard. But this name mold stuff, and this linguistic code smell, it's super easy,
+
+0:08:29.920,0:08:34.400
+right. Tomorrow you can go to your code base and think, hey do you have any linguistic code smells.
+
+0:08:34.400,0:08:40.720
+You can just see is it - does it start with "is" let's make sure it's a Boolean. And as a team you
+
+0:08:40.720,0:08:44.560
+can talk about name molds, you can say, okay, what do we do - do we always do the quantifier
+
+0:08:44.560,0:08:49.040
+in the beginning or at the end. What is our plan here? And just with a little bit of refactoring
+
+0:08:49.040,0:08:54.880
+you can really increase the naming quality in your code base. So it's relatively easy intervention,
+
+0:08:54.880,0:09:00.880
+you can really do to make your code base better.
+That's it, I'm on twitter I'm at "felienne"
+
+0:09:00.880,0:09:05.760
+conveniently my handle is just my first name. You can also go to felienne.com if you want to
+
+0:09:05.760,0:09:10.400
+know more about me - specifically if you want to know more of these results - of programming
+
+0:09:11.120,0:09:15.760
+and software engineering applies to the daily life of a programmer, you might be interested in
+
+0:09:15.760,0:09:21.840
+checking out my book, "The Programmer's Brain", you can buy that through felienne.com/book.

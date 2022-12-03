@@ -1,10 +1,218 @@
-Hello everybody my name is Mauricio and I'm here to stand up for code coverage today. Why is that? Well, because I'm pretty sure we all heard stuff like, "Code coverage is useless because it can be tricked, or because it forces me to write useless tests, or because, you know, if you write tests without assertions your coverage will be high but your tests will not be testing anything, or 100 code coverage, it doesn't mean your tests are goods, blah blah blah." But let me tell you something: if you really believe on that, it's just because you are not using it properly, you know, make drop time, and that's it. No worries there's a way to use code coverage and let's talk about it now.
-First of all, code coverage should be used to augment - to improve your test suites, and not as something you just have to have, right? What do i mean by augment the test suites? So think of how developers write software. So you get some functionality to implement. You then start some loop of implementing a little bit of production codes then a little bit of test code - it doesn't matter if you do test driven development or not - at some point you're just kind of done, and then a big question arises, and the question is, "Is this testing enough? Did I test everything I had to test?" And this is precisely where code coverage kicks in, because you can get the information from it. And then how do you do this? Well, you run your code coverage tool, you see what you covered, what you didn't cover, you reflect about it, you may write more tests, you repeat the cycle until you feel you're done, and when you're done you're done, right?
-Let me talk a little bit more about this, how we how we know we are done, right? Usually the questions I ask myself is, when I look at the line that is not covered, for example, I ask myself, why isn't this covered? Because when I was writing the tests with the specification in mind, why did I miss this line, right? Maybe there's a reason for that. Maybe I just forgot about it, then I just write the test. But maybe it's just because it is something that doesn't really deserve to be tested, maybe it's just a getter method that I don't feel like testing right now because, you know, writing a test for it will not really be a strong test - it will never reveal a bug or something, right, so this is how I answer this, "Is this enough?" And the last bullet point there, you know, this is something you should always avoid, you should not write a test just because, you know, you want to increase your coverage number, that's not a good reason to write a test.
-Cool so you know code coverage is used to augment your tests, and what we just saw is also the code coverage should help you taking the decision of writing tests - more tests - or not, but it should not be the one taking the decision for you, right, you are in control. Code coverage is just giving you information. Then the one million dollar question: does higher coverage really lead to better software. So I never researched code coverage myself, but a lot of smart people have done, and I'm going to just walk you through some of the papers that I like.
-So for example the first one by hutchins and colleagues from 1994, so a long time ago, they compared different test suites with different coverage, and they saw the effectiveness of these test suites. And the findings are that the test suites that achieve over 90 percent coverage are better at detecting faults than the suites that don't achieve that much coverage. And that makes sense, right, the more you coverage - the more you cover - the more bugs you can find, therefore it's just better.
-And another interesting finding that also matches with our perception is that 100 coverage alone is not reliable - it's not enough to indicate if your test suite is good enough. So this means if you have 100 coverage that doesn't mean your tests are perfect or something like that.
-Then another piece of research from 2009 - and - interesting findings as well. One of them is, if you just keep adding tests by itself, this is not an efficient strategy. What do you need to do you need to write tests for things you didn't test yet. So you look at the coverage and then you write a test for that, and these tests will be more likely to find new faults than if you just keep adding tests for things you tested already. That makes a lot of sense, right, and that actually matches with the procedure I just gave you before: so you write tests based on the specification when you're implementing your feature. Once you're done you augment your test suites using coverage.
-One more piece of research, so in this piece of paper - in this work - the authors found that coverage is not always related to effectiveness, so maybe high coverage doesn't really mean that your tests are good, but the authors conclude that coverage is super good to identify under-tested parts of the system, right, but super bad if you're using this as a quality target. So what what do I get from this is, you should never define a coverage target, you know, if your company has that magical number you should always go for, let's say, 90 coverage or whatever, this is maybe not a very good idea.
-Finally, we have all sorts of different coverage criteria - line coverage, branch coverage, condition branch coverage, MCDC, path coverage, etc etc etc, but maybe you don't need all those fancy criteria. Statement coverage seems to be a very good indicator of how good your tests are, right? The simplest one - statement coverage - any tool can calculate that, it doesn't really matter the programming language, so you don't have to really go for super fancy stuff: basic stuff always works, right, and I love that.
-A final piece of advice, something we also got from these papers, is that high coverage may not mean much, right, 100 percent coverage doesn't mean your tests are perfect, but low coverage means a lot, right, it means your test suite is weak - it may not reveal all the bugs you want to reveal. Shameless self-promotion, I just wrote a book on software testing, there's an entire chapter about this. Let me sum up my talk, so, don't hate code coverage because code coverage doesn't hate. You - we just have to use it properly. How do we do this? We use coverage to augment our test suite, we use coverage to inform the decision of should I test a little bit more or not, but it doesn't take the decision for you, and finally, high coverage may not mean much, but low coverage does mean a lot. Thank you so much.
+0:00:05.200,0:00:10.640
+Hello everybody my name is Mauricio and I'm here to stand up for code coverage today.
+
+0:00:11.680,0:00:17.600
+Why is that? Well, because I'm pretty sure we all heard stuff like, "Code coverage is useless
+
+0:00:17.600,0:00:22.960
+because it can be tricked, or because it forces me to write useless tests, or because, you know,
+
+0:00:22.960,0:00:26.080
+if you write tests without assertions your coverage will be high but your
+
+0:00:26.080,0:00:31.600
+tests will not be testing anything, or 100 code coverage, it doesn't mean your tests are goods,
+
+0:00:32.160,0:00:37.920
+blah blah blah." But let me tell you something: if you really believe on that, it's just because
+
+0:00:37.920,0:00:47.600
+you are not using it properly, you know, make drop time, and that's it. No worries there's a way to
+
+0:00:47.600,0:00:54.960
+use code coverage and let's talk about it now.
+First of all, code coverage should be used to
+
+0:00:54.960,0:01:01.040
+augment - to improve your test suites, and not as something you just have to have, right? What do
+
+0:01:01.040,0:01:07.360
+i mean by augment the test suites? So think of how developers write software. So you get some
+
+0:01:07.360,0:01:12.640
+functionality to implement. You then start some loop of implementing a little bit of production
+
+0:01:12.640,0:01:17.440
+codes then a little bit of test code - it doesn't matter if you do test driven development or
+
+0:01:17.440,0:01:24.720
+not - at some point you're just kind of done, and then a big question arises, and the question is,
+
+0:01:24.720,0:01:30.400
+"Is this testing enough? Did I test everything I had to test?" And this is precisely where
+
+0:01:30.400,0:01:35.760
+code coverage kicks in, because you can get the information from it. And then how do you
+
+0:01:35.760,0:01:41.520
+do this? Well, you run your code coverage tool, you see what you covered, what you didn't cover,
+
+0:01:41.520,0:01:48.240
+you reflect about it, you may write more tests, you repeat the cycle until you feel you're done,
+
+0:01:48.240,0:01:53.840
+and when you're done you're done, right?
+Let me talk a little bit more about this,
+
+0:01:55.040,0:01:59.600
+how we how we know we are done, right? Usually the questions I ask myself is,
+
+0:02:00.640,0:02:05.440
+when I look at the line that is not covered, for example, I ask myself, why isn't this covered?
+
+0:02:05.440,0:02:12.640
+Because when I was writing the tests with the specification in mind, why did I miss this line,
+
+0:02:12.640,0:02:16.720
+right? Maybe there's a reason for that. Maybe I just forgot about it, then I just write the test.
+
+0:02:17.680,0:02:22.400
+But maybe it's just because it is something that doesn't really deserve to be tested,
+
+0:02:22.400,0:02:26.240
+maybe it's just a getter method that I don't feel like testing right now because, you know, writing
+
+0:02:26.240,0:02:31.360
+a test for it will not really be a strong test - it will never reveal a bug or something, right,
+
+0:02:32.560,0:02:39.760
+so this is how I answer this, "Is this enough?" And the last bullet point there, you know,
+
+0:02:39.760,0:02:43.120
+this is something you should always avoid, you should not write a test just because, you know,
+
+0:02:43.120,0:02:47.200
+you want to increase your coverage number, that's not a good reason to write a test.
+
+0:02:48.880,0:02:54.320
+Cool so you know code coverage is used to augment your tests, and what we just saw is
+
+0:02:54.320,0:02:59.520
+also the code coverage should help you taking the decision of writing tests - more tests - or not,
+
+0:02:59.520,0:03:04.480
+but it should not be the one taking the decision for you, right, you are in control. Code coverage
+
+0:03:04.480,0:03:12.640
+is just giving you information. Then the one million dollar question: does higher coverage
+
+0:03:12.640,0:03:18.640
+really lead to better software. So I never researched code coverage myself, but a lot
+
+0:03:18.640,0:03:24.880
+of smart people have done, and I'm going to just walk you through some of the papers that I like.
+
+0:03:24.880,0:03:31.840
+So for example the first one by hutchins and colleagues from 1994, so a long time ago,
+
+0:03:32.800,0:03:38.160
+they compared different test suites with different coverage, and they saw the effectiveness of these
+
+0:03:38.160,0:03:43.920
+test suites. And the findings are that the test suites that achieve over 90 percent coverage
+
+0:03:43.920,0:03:50.720
+are better at detecting faults than the suites that don't achieve that much coverage. And that
+
+0:03:50.720,0:03:55.520
+makes sense, right, the more you coverage - the more you cover - the more bugs you can find,
+
+0:03:56.160,0:04:00.720
+therefore it's just better.
+And another interesting finding that also matches
+
+0:04:00.720,0:04:09.200
+with our perception is that 100 coverage alone is not reliable - it's not enough to indicate if
+
+0:04:09.200,0:04:13.840
+your test suite is good enough. So this means if you have 100 coverage that doesn't mean
+
+0:04:14.800,0:04:19.680
+your tests are perfect or something like that.
+Then another piece of research from
+
+0:04:19.680,0:04:27.840
+2009 - and - interesting findings as well. One of them is, if you just keep adding tests by itself,
+
+0:04:27.840,0:04:32.400
+this is not an efficient strategy. What do you need to do you need to write tests for
+
+0:04:32.400,0:04:38.080
+things you didn't test yet. So you look at the coverage and then you write a test for that,
+
+0:04:38.080,0:04:43.440
+and these tests will be more likely to find new faults than if you just keep adding tests for
+
+0:04:43.440,0:04:47.440
+things you tested already. That makes a lot of sense, right, and that actually matches
+
+0:04:47.440,0:04:52.640
+with the procedure I just gave you before: so you write tests based on the specification when you're
+
+0:04:52.640,0:04:57.680
+implementing your feature. Once you're done you augment your test suites using coverage.
+
+0:05:00.400,0:05:06.400
+One more piece of research, so in this piece of paper - in this work - the authors found that
+
+0:05:06.400,0:05:11.040
+coverage is not always related to effectiveness, so maybe high coverage doesn't really mean
+
+0:05:11.040,0:05:17.200
+that your tests are good, but the authors conclude that coverage is super good to identify
+
+0:05:17.200,0:05:21.920
+under-tested parts of the system, right, but super bad if you're using this as a quality target. So
+
+0:05:23.280,0:05:27.760
+what what do I get from this is, you should never define a coverage target, you know,
+
+0:05:27.760,0:05:33.680
+if your company has that magical number you should always go for, let's say, 90 coverage or whatever,
+
+0:05:33.680,0:05:41.600
+this is maybe not a very good idea.
+Finally, we have all sorts of different
+
+0:05:41.600,0:05:46.640
+coverage criteria - line coverage, branch coverage, condition branch coverage,
+
+0:05:46.640,0:05:52.320
+MCDC, path coverage, etc etc etc, but maybe you don't need all those fancy criteria.
+
+0:05:52.880,0:05:58.080
+Statement coverage seems to be a very good indicator of how good your tests are,
+
+0:05:58.080,0:06:02.480
+right? The simplest one - statement coverage - any tool can calculate that, it doesn't
+
+0:06:02.480,0:06:06.640
+really matter the programming language, so you don't have to really go for super fancy stuff:
+
+0:06:09.680,0:06:17.120
+basic stuff always works, right, and I love that.
+A final piece of advice, something we also got
+
+0:06:17.120,0:06:21.600
+from these papers, is that high coverage may not mean much, right, 100 percent coverage doesn't
+
+0:06:21.600,0:06:27.360
+mean your tests are perfect, but low coverage means a lot, right, it means your test suite is
+
+0:06:27.360,0:06:35.360
+weak - it may not reveal all the bugs you want to reveal. Shameless self-promotion,
+
+0:06:35.360,0:06:41.120
+I just wrote a book on software testing, there's an entire chapter about this. Let me sum up my
+
+0:06:41.120,0:06:47.680
+talk, so, don't hate code coverage because code coverage doesn't hate. You - we just have to use
+
+0:06:47.680,0:06:54.960
+it properly. How do we do this? We use coverage to augment our test suite, we use coverage to inform
+
+0:06:54.960,0:06:59.280
+the decision of should I test a little bit more or not, but it doesn't take the decision for you,
+
+0:07:00.240,0:07:13.120
+and finally, high coverage may not mean much, but low coverage does mean a lot. Thank you so much.

@@ -1,7 +1,339 @@
-Mi nombre es Davide, hola desde el sur de Suecia, y me gustaría empezar a contar un poco mi historia personal con - con el desarrollo dirigido por pruebas. Esto comenzó cuando yo era un estudiante de posgrado, y como cualquier estudiante de posgrado, tenía algunos proyectos secundarios en los que estaba trabajando, principalmente utilizando Ruby on Rails. Y si estás familiarizado con el marco de trabajo y la comunidad detrás de ese marco de trabajo, este es el tipo de comunidad que jura - y es devota a las pruebas unitarias - y específicamente al desarrollo dirigido por pruebas. También, al mismo tiempo, estaba decidiendo sobre el tema de mi disertación, y me pareció interesante estudiar algo que a la comunidad de profesionales se le ocurrió - con algo que inventaron, y luego adoptó, en lugar de venir con algo académico y que tal vez - nadie va a terminar usando en la práctica. Y, comencemos con uno de los costos ocultos, tal vez, la falsa publicidad de lo que es el desarrollo dirigido por pruebas. Así es como normalmente se te presenta TDD: es un proceso simple, iterativo, de tres pasos. Tenemos una fase roja y otra verde que se asemejan a los colores de los marcos de pruebas que se suelen utilizar para indicar si se falla o se pasa el conjunto de pruebas. Empezamos escribiendo un caso de prueba que falla, así que estamos en la llamada fase roja, y luego pasamos a la fase verde escribiendo suficiente código para hacer que la prueba pase. Luego tenemos una fase azul adicional en la que podemos refactorizar, y el ciclo continúa añadiendo nuevos casos de prueba que fallan y así sucesivamente.
-En realidad creo que eso es una simplificación excesiva, y en realidad una idea errónea de lo que es TDD. De hecho se parece un poco más a esto: Hay dos fases distintas con diferente función: Una impulsada por los casos de pruebas unitarias como contratos que necesitas cumplir donde muchas cosas pueden ir mal. Tienes que retroceder, tienes que hacer cambios en los casos de prueba, tienes que luchar contra tu deseo de escribir más código de prueba del que realmente es necesario sólo porque sabes que vas a escribirlo eventualmente de todos modos. Y luego hay una segunda parte en la que intentas alinear la necesidad de tu código, o la necesidad que puede tener tu código, con el diseño y normalmente lo llamamos refactorización. Y esto trae su propio conjunto de complicaciones. Así que, por ejemplo, dependiendo de la refactorización, puede que tengas que alinear tus antiguos casos de prueba con el nuevo diseño del código, puede que tengas que arreglar algunos errores de regresión que hayas causado durante la refactorización... Otra decisión importante es que el desarrollador decida cuándo está satisfecho con la calidad del código para poder pasar al siguiente ciclo TDD.
-Y aquí mi primer costo oculto es que TDD puede no ser tan simple como parecía. Y al mirar la complejidad real de TDD, me sentí como, ¿por qué alguien haría eso? Y resulta que no era el único, hay otros investigadores que han estudiado lo empinada que es la curva de aprendizaje de TDD, lo mucho que se percibe como una sobrecarga, cómo lleva al desarrollador a centrarse en las pruebas satisfactorias en lugar de probar caminos difíciles, y todas estas afirmaciones chocan con los beneficios, o los supuestos beneficios de TDD, por lo que el hecho de que el desarrollo dirigido por pruebas mejora el diseño, conduce a la reducción de los defectos, mejora la productividad de los desarrolladores, ya que los desarrolladores ahora pueden confiar en esta amplia red de seguridad hecha de pruebas unitarias.
-Así que para nosotros, esto nos llevó a preguntarnos: "¿Los desarrolladores que dicen hacer TDD realmente lo hacen?". Entonces realizamos un estudio con desarrolladores profesionales que fueron formados en TDD y les pedimos que añadieran nuevas características a un sistema heredado. Ahora bien, este sistema es un sistema del mundo real, no el tipo de ejercicio de kata que la gente suele emplear para practicar el desarrollo dirigido por pruebas, y tiene una arquitectura completa, dependencia de APIs externas, un complicado análisis de XML, etc. Además, instrumentamos los IDEs de los desarrolladores con un plug-in que recoge las actividades que ocurren en el propio IDE, y que eventualmente podríamos mapear en las actividades TDD y en las fases TDD. Y empezamos a ver los resultados y esto es lo que obtuvimos. Aquí estoy mostrando sólo un ejemplo de cómo se supone que son las diferentes actividades en forma de TDD. Cada actividad tiene un tipo y una duración, así que por ejemplo aquí se puede ver que esta persona comenzó con la implementación de pruebas en primer lugar, que se muestra en amarillo, luego pasó a agregar casos de prueba sin la contraparte de código de producción en naranja, y luego hubo un lapso, y esta persona cambió durante aproximadamente media hora a un tipo de enfoque de prueba-última que se muestra en rojo. Y luego añadió más ciclos - continuó desarrollando usando primero las pruebas y haciendo refactorizaciones que se muestran en azul claro sólo al final.
-Así que pusimos todas estas medidas juntas, las horas de desarrollo de más de 60 desarrolladores profesionales, y pasamos estos datos a través de un modelo estadístico y ¿qué aprendimos? Bueno, observamos que el principal beneficio de hacer el desarrollo dirigido por pruebas es, por lo que las únicas cosas, o de las cosas que cuenta, que explica los beneficios percibidos o los beneficios declarados de TDD, como la calidad del código, así como la productividad, bueno, esa cosa no es la rígida, la adhesión religiosa al ciclo del desarrollo impulsado por pruebas, sino más bien la granularidad que tienen las actividades en el proceso. Así que el hecho de que cada actividad, como la escritura de código y la escritura de pruebas, o al revés, incluso, la escritura de código de pruebas y luego la refactorización, se mantienen dentro de un intervalo de tiempo corto y consistente. Así que esa es la salsa secreta de TDD. Hay que tener en cuenta que esta granularidad es un subproducto del desarrollo guiado por pruebas: no está impuesta por él. Se recomienda mantener un ciclo corto -de cinco a diez minutos- aunque observamos que muy poca gente lo hace, especialmente en el caso del código heredado. Y lo que es más importante, este ritmo de TDD se ve directamente afectado por el alcance de los casos de prueba definidos para iniciar cada ciclo. Así que una sugerencia aquí es ser realmente consciente del alcance del caso de prueba - lo que realmente ayuda es trabajar en pasos pequeños. Así que, ahora tenemos, ahora sabemos que se puede beneficiar de TDD, aunque no directamente debido a este enfoque de la prueba primero, sino más bien porque hace más convincente escribir pequeñas pruebas unitarias.
-Por último, otro aspecto que hemos comenzado y que realmente me pareció bastante interesante fue entender cómo los desarrolladores realmente están recibiendo el TDD como un proceso. Aquí, por un lado, tenemos el conocimiento existente, la literatura existente en la ingeniería de software que nos dice que los desarrolladores que se sienten a gusto son mejores en la resolución de problemas. Y por otro lado tenemos esto: una forma diferente de desarrollar software donde las pruebas unitarias controlan y guían las decisiones de los desarrolladores. Así que realizamos un pequeño experimento esta vez con estudiantes, novatos y desarrolladores TDD, comparándolos con desarrolladores no TDD, y les pedimos que realizaran una serie de tareas de desarrollo, pero también les pedimos que informaran de su estado emocional percibido utilizando este maniquí pictórico aquí llamado Sam. Básicamente, podían marcar en el maniquí lo que correspondía a sus estados, como felicidad, excitación, frustración, aburrimiento, etc. Y aquí observamos otro coste oculto del desarrollo dirigido por pruebas: observamos que quienes desarrollan usando TDDs no son tan felices como otros desarrolladores. Y cuando investigamos esto, descubrimos que la razón es que TDD obliga a los programadores a entrar en este ciclo de adormecimiento mental que en realidad corta sus alas creativas, y especialmente en el caso de los novatos, simplemente se sienten incómodos con el tipo de pensamiento contraintuitivo de TDD de probar el código de producción correcto. Así que esta es mi tercera conclusión, así que sí, aunque TDD no es tan simple como podría parecer, funciona si lo usas con ciclos pequeños, pero, sin embargo, viene con un costo emocional del cual debes ser consciente.
-Y esto es todo lo que tengo para ti hoy. Gracias, por supuesto puedes acercarte y preguntarme más y conectarte conmigo, este es mi correo electrónico y mi Twitter. Gracias por tu tiempo.
+0:00:05.520,0:00:12.320
+Mi nombre es Davide, hola desde el sur de Suecia, 
+y me gustaría empezar a contar un poco mi
+
+0:00:12.320,0:00:17.200
+historia personal con - con el desarrollo dirigido 
+por pruebas. Esto comenzó cuando yo era
+
+0:00:17.200,0:00:22.240
+un estudiante de posgrado, y como cualquier estudiante de posgrado, 
+tenía algunos proyectos secundarios en los que estaba trabajando,
+
+0:00:22.240,0:00:26.480
+principalmente utilizando Ruby on Rails. Y si estás familiarizado 
+con el marco de trabajo y la comunidad
+
+0:00:26.480,0:00:31.200
+detrás de ese marco de trabajo, este es el tipo 
+de comunidad que jura - y es devota a
+
+0:00:31.760,0:00:36.320
+las pruebas unitarias - y específicamente al desarrollo dirigido por pruebas. 
+También, al mismo tiempo, estaba decidiendo
+
+0:00:36.320,0:00:42.000
+sobre el tema de mi disertación, y me 
+pareció interesante estudiar algo que
+
+0:00:42.000,0:00:47.200
+a la comunidad de profesionales se le ocurrió - con algo que 
+inventaron, y luego adoptó, en lugar de
+
+0:00:47.200,0:00:52.960
+venir con algo académico y que tal vez - 
+nadie va a terminar usando en la práctica.
+
+0:00:53.920,0:00:59.680
+Y, comencemos con uno de los costos ocultos, 
+tal vez, la falsa publicidad de lo que
+
+0:00:59.680,0:01:05.280
+es el desarrollo dirigido por pruebas. Así es como 
+normalmente se te presenta TDD: es un proceso simple, iterativo,
+
+0:01:05.280,0:01:09.600
+de tres pasos. Tenemos una fase roja y otra verde 
+que se asemejan a los colores de
+
+0:01:10.320,0:01:16.400
+los marcos de pruebas que se suelen utilizar para indicar 
+si se falla o se pasa el conjunto de pruebas. Empezamos
+
+0:01:16.400,0:01:21.680
+escribiendo un caso de prueba que falla, así que 
+estamos en la llamada fase roja, y luego pasamos a 
+
+0:01:21.680,0:01:27.360
+la fase verde escribiendo suficiente código para hacer 
+que la prueba pase. Luego tenemos una fase azul adicional
+
+0:01:27.360,0:01:33.280
+en la que podemos refactorizar, y el ciclo continúa añadiendo 
+nuevos casos de prueba que fallan y así sucesivamente.
+
+0:01:34.160,0:01:38.800
+En realidad creo que eso es una simplificación excesiva, 
+y en realidad una 
+
+0:01:38.800,0:01:45.920
+idea errónea de lo que es TDD. De hecho se parece un 
+poco más a esto: Hay dos fases distintas 
+
+0:01:45.920,0:01:51.280
+con diferente función: Una impulsada por los casos de 
+pruebas unitarias como contratos que necesitas cumplir
+
+0:01:51.280,0:01:55.840
+donde muchas cosas pueden ir mal. Tienes que retroceder, tienes que 
+hacer cambios en los casos de prueba,
+
+0:01:55.840,0:02:00.560
+tienes que luchar contra tu deseo de escribir más 
+código de prueba del que realmente es necesario
+
+0:02:00.560,0:02:05.120
+sólo porque sabes que vas a escribirlo eventualmente
+de todos modos. Y luego hay una segunda parte
+
+0:02:05.120,0:02:10.000
+en la que intentas alinear la necesidad de tu código, o la 
+necesidad que puede tener tu código, con el diseño
+
+0:02:10.000,0:02:16.160
+y normalmente lo llamamos refactorización. Y esto trae 
+su propio conjunto de complicaciones. Así que, por ejemplo,
+
+0:02:16.160,0:02:20.880
+dependiendo de la refactorización, puede que tengas que alinear 
+tus antiguos casos de prueba con el nuevo diseño del código,
+
+0:02:20.880,0:02:26.320
+puede que tengas que arreglar algunos errores de regresión 
+que hayas causado durante la refactorización... 
+
+0:02:26.320,0:02:31.040
+Otra decisión importante es que el 
+desarrollador decida cuándo está
+
+0:02:31.040,0:02:36.560
+satisfecho con la calidad del código para 
+poder pasar al siguiente ciclo TDD.
+
+0:02:37.200,0:02:44.800
+Y aquí mi primer costo oculto es que TDD puede 
+no ser tan simple como parecía. Y al mirar la
+
+0:02:44.800,0:02:50.160
+complejidad real de TDD, me sentí como, 
+¿por qué alguien haría
+
+0:02:50.160,0:02:55.680
+eso? Y resulta que no era el único, 
+hay otros investigadores que han
+
+0:02:55.680,0:03:01.600
+estudiado lo empinada que es la curva de aprendizaje de TDD, 
+lo mucho que se percibe como una sobrecarga,
+
+0:03:01.600,0:03:08.560
+cómo lleva al desarrollador a centrarse en las pruebas 
+satisfactorias en lugar de probar caminos difíciles,
+
+0:03:08.560,0:03:14.320
+y todas estas afirmaciones chocan con los beneficios, 
+o los supuestos beneficios de TDD, por lo que el hecho de que
+
+0:03:14.320,0:03:19.280
+el desarrollo dirigido por pruebas mejora el diseño, 
+conduce a la reducción de los defectos, mejora la productividad
+
+0:03:19.280,0:03:24.640
+de los desarrolladores, ya que los desarrolladores ahora pueden confiar en 
+esta amplia red de seguridad hecha de pruebas unitarias.
+
+0:03:25.200,0:03:30.800
+Así que para nosotros, esto nos llevó a preguntarnos: "¿Los 
+desarrolladores que dicen hacer TDD realmente lo hacen?".
+
+0:03:31.600,0:03:35.920
+Entonces realizamos un estudio con desarrolladores 
+profesionales que fueron formados en TDD
+
+0:03:35.920,0:03:40.880
+y les pedimos que añadieran nuevas características a un sistema heredado. 
+Ahora bien, este sistema es un sistema del mundo real,
+
+0:03:40.880,0:03:47.040
+no el tipo de ejercicio de kata que la gente suele emplear 
+para practicar el desarrollo dirigido por pruebas,
+
+0:03:47.600,0:03:53.680
+y tiene una arquitectura completa, dependencia de 
+APIs externas, un complicado análisis de XML, etc.
+
+0:03:53.680,0:04:00.400
+Además, instrumentamos los IDEs de los desarrolladores con 
+un plug-in que recoge las actividades que ocurren en
+
+0:04:00.400,0:04:07.440
+el propio IDE, y que eventualmente podríamos mapear en 
+las actividades TDD y en las fases TDD. Y
+
+0:04:07.440,0:04:12.080
+empezamos a ver los resultados y esto es lo que obtuvimos. 
+Aquí estoy mostrando sólo un ejemplo de cómo
+
+0:04:12.080,0:04:18.640
+se supone que son las diferentes actividades en forma 
+de TDD. Cada actividad tiene un tipo y
+
+0:04:18.640,0:04:23.280
+una duración, así que por ejemplo aquí se puede ver que esta 
+persona comenzó con la implementación de pruebas en primer lugar,
+
+0:04:23.280,0:04:29.040
+que se muestra en amarillo, luego pasó a agregar 
+casos de prueba sin la contraparte de código de producción
+
+0:04:29.040,0:04:35.680
+en naranja, y luego hubo un lapso, y esta persona 
+cambió durante aproximadamente media hora
+
+0:04:35.680,0:04:43.520
+a un tipo de enfoque de prueba-última que se muestra en rojo. 
+Y luego añadió más ciclos - continuó
+
+0:04:43.520,0:04:48.880
+desarrollando usando primero las pruebas y haciendo refactorizaciones 
+que se muestran en azul claro sólo al final.
+
+0:04:49.520,0:04:54.640
+Así que pusimos todas estas medidas juntas, 
+las horas de desarrollo de más de 60
+
+0:04:54.640,0:04:59.840
+desarrolladores profesionales, y pasamos estos datos a 
+través de un modelo estadístico y ¿qué aprendimos?
+
+0:05:00.720,0:05:04.640
+Bueno, observamos que el principal beneficio 
+de hacer el desarrollo dirigido por pruebas es,
+
+0:05:05.200,0:05:10.880
+por lo que las únicas cosas, o de las cosas que cuenta, 
+que explica los beneficios percibidos o los beneficios
+
+0:05:10.880,0:05:17.440
+declarados de TDD, como la calidad del código, así como la productividad, 
+bueno, esa cosa no es la rígida,
+
+0:05:17.440,0:05:23.120
+la adhesión religiosa al ciclo del desarrollo impulsado 
+por pruebas, sino más bien la granularidad que tienen
+
+0:05:23.120,0:05:28.080
+las actividades en el proceso. Así que el hecho de que cada 
+actividad, como la escritura de código y la escritura de pruebas,
+
+0:05:28.080,0:05:33.600
+o al revés, incluso, la escritura de código de pruebas y 
+luego la refactorización, se mantienen dentro de un intervalo de tiempo corto
+
+0:05:33.600,0:05:40.080
+y consistente. Así que esa es la salsa secreta de TDD. 
+Hay que tener en cuenta que esta granularidad es
+
+0:05:40.080,0:05:45.280
+un subproducto del desarrollo guiado por pruebas: 
+no está impuesta por él. Se recomienda mantener un ciclo
+
+0:05:45.280,0:05:50.400
+corto -de cinco a diez minutos- aunque observamos 
+que muy poca gente lo hace, especialmente
+
+0:05:50.400,0:05:57.040
+en el caso del código heredado. Y lo que es más importante, este 
+ritmo de TDD se ve directamente afectado por el alcance
+
+0:05:57.040,0:06:03.280
+de los casos de prueba definidos para iniciar cada ciclo. 
+Así que una sugerencia aquí es ser realmente consciente
+
+0:06:03.280,0:06:07.680
+del alcance del caso de prueba - lo que realmente 
+ayuda es trabajar en pasos pequeños. Así que,
+
+0:06:08.640,0:06:13.600
+ahora tenemos, ahora sabemos que se puede beneficiar 
+de TDD, aunque no directamente debido
+
+0:06:13.600,0:06:19.840
+a este enfoque de la prueba primero, sino más bien porque 
+hace más convincente escribir pequeñas pruebas unitarias.
+
+0:06:21.680,0:06:28.640
+Por último, otro aspecto que hemos comenzado y 
+que realmente me pareció bastante interesante fue entender
+
+0:06:28.640,0:06:34.800
+cómo los desarrolladores realmente están recibiendo el TDD 
+como un proceso. Aquí, por un lado, tenemos el conocimiento
+
+0:06:34.800,0:06:40.320
+existente, la literatura existente en la ingeniería de 
+software que nos dice que los desarrolladores que se sienten a gusto
+
+0:06:40.320,0:06:46.080
+son mejores en la resolución de problemas. Y por otro lado 
+tenemos esto: una forma diferente de
+
+0:06:46.080,0:06:50.560
+desarrollar software donde las pruebas unitarias 
+controlan y guían las decisiones de los desarrolladores.
+
+0:06:51.360,0:06:57.520
+Así que realizamos un pequeño experimento esta vez con 
+estudiantes, novatos y desarrolladores TDD, comparándolos
+
+0:06:57.520,0:07:05.760
+con desarrolladores no TDD, y les pedimos que 
+realizaran una serie de tareas de
+
+0:07:05.760,0:07:11.920
+desarrollo, pero también les pedimos que informaran de su estado 
+emocional percibido utilizando este maniquí pictórico
+
+0:07:11.920,0:07:18.160
+aquí llamado Sam. Básicamente, podían marcar en el 
+maniquí lo que correspondía a sus estados, como
+
+0:07:18.160,0:07:25.440
+felicidad, excitación, frustración, aburrimiento, 
+etc. Y aquí observamos otro coste oculto del
+
+0:07:25.440,0:07:30.240
+desarrollo dirigido por pruebas: observamos que quienes 
+desarrollan usando TDDs no son tan felices como otros desarrolladores.
+
+0:07:30.240,0:07:36.240
+Y cuando investigamos esto, descubrimos que la 
+razón es que TDD obliga a los programadores a entrar
+
+0:07:36.240,0:07:42.240
+en este ciclo de adormecimiento mental que en realidad corta 
+sus alas creativas, y especialmente en el
+
+0:07:42.240,0:07:49.360
+caso de los novatos, simplemente se sienten incómodos 
+con el tipo de pensamiento contraintuitivo de TDD de probar el código de producción
+
+0:07:50.080,0:07:56.720
+correcto. Así que esta es mi tercera 
+conclusión, así que sí,
+
+0:07:56.720,0:08:01.600
+aunque TDD no es tan simple como podría parecer, 
+funciona si lo usas con ciclos pequeños,
+
+0:08:01.600,0:08:07.040
+pero, sin embargo, viene con un costo 
+emocional del cual debes ser consciente.
+
+0:08:07.680,0:08:13.920
+Y esto es todo lo que tengo para ti hoy. 
+Gracias, por supuesto puedes acercarte y
+
+0:08:13.920,0:08:24.960
+preguntarme más y conectarte conmigo, este es mi correo electrónico 
+y mi Twitter. Gracias por tu tiempo.

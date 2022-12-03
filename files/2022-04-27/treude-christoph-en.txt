@@ -1,14 +1,250 @@
-I'd like to start with talking about three lines of Python code that you can hopefully all see on my screen now. Pretty straightforward code: I have three lines, I have a list of integers, and I'd like to remove duplicates from this list of integers in Python. We can do this with the fromkeys method of dictionary and then we can return the result back into a list. And then we want to print our new deduplicated list.
-Now if you've done a little bit of Python programming you might know that this code doesn't actually work. It gives me a compiler error message. And this is what the compiler error message looks like: it tells me that the list object is not callable. Now i'm not trying to call a list object - I have a list of integers and I want to remove duplicates from it - so this error message I would argue is not super useful. I'm not trying to call a list, I want to deduplicate a list, so what's wrong?
-What's wrong is that the error message is all about what the compiler was trying to do rather than what I was trying to do. And before I tell you what the problem with the code is, let me tell you how old this problem is. And to do this we have to go back to the time when computer science papers were written in typewriter. This is 1976, and we're looking here at a paper with a wonderful title, "How to design languages to make programming as difficult as possible", written by Richard Wexelblat, who incidentally was the first person in the world to ever earn a PhD in a computer science department. This was in the 60s and then in 1976 he wrote this paper, "How to design languages to make programming as difficult as possible". One of the more interesting paragraphs in this paper is, "To maximize difficulty for the user it is important that error messages reflect what the program did rather than what the user did." And looking at our compiler error message here again, I would argue that we haven't really advanced that much from this statement - the error message is still all about what the compiler was trying to do.
-Now back in 1976 if you encountered a compiler error message there wasn't really a lot of places you could go to for help. Maybe there was a textbook, "A Discipline of Programming" by edsger Dijkstra published in the same year, also 1976, arguably long before Python came around. But that has changed quite a bit. So nowadays if we encounter a compiler error message we can do a lot of things thanks to the Internet. We can complain about it on Twitter, of course, that's very important, but we can also go to the official Python documentation that we have accessible to us very easily. We can look for similar code on GitHub that perhaps also try to remove duplicates from the list, and of course we have everybody's favorite question answer forum Stack Overflow.
-And in this particular case, indeed, there is a Stack Overflow thread that tells us perfectly well what the problem is with our code: Don't use tuple, list, or other special names as variable name, that's probably what's causing your problem. Accepted answer, 939 upvotes, looks very good, and indeed that's exactly the problem of the code. If I renamed the list variable into anything other than list or another reserved keyword, the code works perfectly fine.
-So, coming into this situation as researchers, we were wondering well if the - if the good error message is so far away, and we need to Google, and we need to read lots of Stack Overflow threads to find it, what can we do to make this easier? Can we put this better error message - I would argue - straight into the IDE? And that's what I'd like to talk about today.
-We do this in a number of steps. The first thing we do is, we parse the error message. So in this example, "type error list object is not callable." Then we use this error message to construct the query that we automatically send to Stack Overflow. And it turns out, we experimented with this a bit, it turns out that depending on the error sometimes it makes sense to send the detailed error message, sometimes it makes sense to send a little bit of code, and sometimes it makes sense to only send the type.
-In any case, we construct a query that we send to Stack Overflow. We select an answer based on characteristics such as, has the answer been accepted, is there code in it, how has it been received through upvotes and downvotes. Then we customize the answer a little bit, because many answers refer to specific variable names which might be quite different to the variable names that we see in our IDE, so we replace, to the extent possible, variable names that we see in the answer with variable names that have actually been used by the user. And finally we summarize the whole thing, because as you know, some of the answers on Stack Overflow are quite long.
-And as a result, in this case indeed we can produce a much better error message, I would argue, instead of saying the list is not callable we can now say, don't use list or other special names as a variable name.
-We implemented all of this in a tool called Pycee which is just short for Python compiler error enhancer, and that's exactly the output of Pycee.
-So because we're researchers we also wanted to evaluate whether this works. It works in the one example that I just walked through, but does it work in a more general setting? To do this we recruited a total of 16 professional software developers and we gave each of them two tasks. We took these tasks from one of those Python programming exercise websites, in this case PracticePython.org I think, which has lots of little exercises such as Fibonacci and so on. And then, so half of the participant - no, for half of the tasks, so each participant did two tasks. For one of the tasks they used our Stack Overflow Pycee version, and for the other one they used the baseline, because we wanted to have something to compare to. And in this case we chose as the baseline the official documentation from, from Python about these error messages.
-In total our participants or each of the 16 participants worked on two tasks. They encountered a total of 115 compiler errors as part of working on these tasks, which as you know is quite normal, usually when we program something, we will encounter compiler errors even if we're pretty good at it. They encountered 115 compiler errors, about half with our improved version of the compiler errors and about half with the baseline that we are trying to compare to. So in this case fortunately the results of Pycee on the right hand side, fortunately, in terms of the perceived helpfulness they generally agreed that our error messages were more helpful than the baseline and they also agreed that our error messages helped them save time compared to the baseline the difference in this case isn't quite that big.
-So, what would I like you to take away from this? Two things. The first one, crowdsource your error messages. I think our study was a really nice example that shows that the power of the crowd, in this case on Stack Overflow, can produce better error messages and better explanations of error messages than the information that we have available in the official documentation that was written by a much smaller number of people of course. Crowdsource your error messages, of course, they aren't all correct, but then we can develop automated tools that help filter this data and produce the right error messages at the right time.
+0:00:02.400,0:00:06.880
+I'd like to start with talking about three lines of Python code that you can hopefully all see on
+
+0:00:06.880,0:00:13.040
+my screen now. Pretty straightforward code: I have three lines, I have a list of integers,
+
+0:00:13.040,0:00:17.840
+and I'd like to remove duplicates from this list of integers in Python. We can do this with the
+
+0:00:17.840,0:00:23.840
+fromkeys method of dictionary and then we can return the result back into a list. And then
+
+0:00:23.840,0:00:28.880
+we want to print our new deduplicated list.
+Now if you've done a little bit of Python
+
+0:00:28.880,0:00:31.920
+programming you might know that this code doesn't actually work.
+
+0:00:31.920,0:00:37.040
+It gives me a compiler error message. And this is what the compiler error message looks like:
+
+0:00:37.680,0:00:44.000
+it tells me that the list object is not callable. Now i'm not trying to call a list object - I have
+
+0:00:44.000,0:00:49.760
+a list of integers and I want to remove duplicates from it - so this error message I would argue is
+
+0:00:49.760,0:00:54.640
+not super useful. I'm not trying to call a list, I want to deduplicate a list, so what's wrong?
+
+0:00:55.520,0:01:00.240
+What's wrong is that the error message is all about what the compiler was trying to do
+
+0:01:00.240,0:01:07.040
+rather than what I was trying to do. And before I tell you what the problem with the code is,
+
+0:01:07.040,0:01:12.320
+let me tell you how old this problem is. And to do this we have to go back to the time when computer
+
+0:01:12.320,0:01:18.320
+science papers were written in typewriter. This is 1976, and we're looking here at a paper with
+
+0:01:18.320,0:01:23.280
+a wonderful title, "How to design languages to make programming as difficult as possible",
+
+0:01:24.160,0:01:28.640
+written by Richard Wexelblat, who incidentally was the first person in the world to ever
+
+0:01:28.640,0:01:35.040
+earn a PhD in a computer science department. This was in the 60s and then in 1976 he wrote this
+
+0:01:35.600,0:01:40.480
+paper, "How to design languages to make programming as difficult as possible". One of the
+
+0:01:40.480,0:01:46.080
+more interesting paragraphs in this paper is, "To maximize difficulty for the user it is important
+
+0:01:46.080,0:01:51.360
+that error messages reflect what the program did rather than what the user did." And looking at
+
+0:01:51.360,0:01:57.360
+our compiler error message here again, I would argue that we haven't really advanced that much
+
+0:01:57.360,0:02:02.240
+from this statement - the error message is still all about what the compiler was trying to do.
+
+0:02:03.680,0:02:09.440
+Now back in 1976 if you encountered a compiler error message there wasn't really a lot of places
+
+0:02:09.440,0:02:14.240
+you could go to for help. Maybe there was a textbook, "A Discipline of Programming" by
+
+0:02:14.240,0:02:20.720
+edsger Dijkstra published in the same year, also 1976, arguably long before Python came around.
+
+0:02:21.760,0:02:26.400
+But that has changed quite a bit. So nowadays if we encounter a compiler error message
+
+0:02:27.600,0:02:32.160
+we can do a lot of things thanks to the Internet. We can complain about it on Twitter, of course,
+
+0:02:32.160,0:02:37.280
+that's very important, but we can also go to the official Python documentation that we have
+
+0:02:37.280,0:02:42.560
+accessible to us very easily. We can look for similar code on GitHub that perhaps
+
+0:02:42.560,0:02:47.200
+also try to remove duplicates from the list, and of course we have everybody's
+
+0:02:47.200,0:02:53.680
+favorite question answer forum Stack Overflow.
+And in this particular case, indeed, there is
+
+0:02:53.680,0:02:59.200
+a Stack Overflow thread that tells us perfectly well what the problem is with our code: Don't use
+
+0:02:59.200,0:03:04.160
+tuple, list, or other special names as variable name, that's probably what's causing your problem.
+
+0:03:04.720,0:03:11.360
+Accepted answer, 939 upvotes, looks very good, and indeed that's exactly the problem of the code.
+
+0:03:11.360,0:03:15.680
+If I renamed the list variable into anything other than list or another
+
+0:03:15.680,0:03:22.160
+reserved keyword, the code works perfectly fine.
+So, coming into this situation as researchers,
+
+0:03:23.120,0:03:28.000
+we were wondering well if the - if the good error message is so far away, and we need to Google,
+
+0:03:28.000,0:03:32.400
+and we need to read lots of Stack Overflow threads to find it, what can we do to make
+
+0:03:32.400,0:03:37.760
+this easier? Can we put this better error message - I would argue - straight into the IDE?
+
+0:03:38.640,0:03:44.400
+And that's what I'd like to talk about today.
+We do this in a number of steps. The first
+
+0:03:44.400,0:03:49.840
+thing we do is, we parse the error message. So in this example, "type error list object is
+
+0:03:49.840,0:03:55.840
+not callable." Then we use this error message to construct the query that we automatically
+
+0:03:55.840,0:04:01.120
+send to Stack Overflow. And it turns out, we experimented with this a bit, it turns out that
+
+0:04:01.120,0:04:05.440
+depending on the error sometimes it makes sense to send the detailed error message, sometimes
+
+0:04:05.440,0:04:09.600
+it makes sense to send a little bit of code, and sometimes it makes sense to only send the type.
+
+0:04:10.320,0:04:16.880
+In any case, we construct a query that we send to Stack Overflow. We select an answer based
+
+0:04:16.880,0:04:22.960
+on characteristics such as, has the answer been accepted, is there code in it, how has it been
+
+0:04:22.960,0:04:29.280
+received through upvotes and downvotes. Then we customize the answer a little bit, because many
+
+0:04:29.280,0:04:34.240
+answers refer to specific variable names which might be quite different to the variable names
+
+0:04:34.240,0:04:40.560
+that we see in our IDE, so we replace, to the extent possible, variable names that we see in
+
+0:04:40.560,0:04:46.080
+the answer with variable names that have actually been used by the user. And finally we summarize
+
+0:04:46.080,0:04:50.720
+the whole thing, because as you know, some of the answers on Stack Overflow are quite long.
+
+0:04:51.680,0:04:55.840
+And as a result, in this case indeed we can produce a much better error message,
+
+0:04:55.840,0:05:01.040
+I would argue, instead of saying the list is not callable we can now say, don't use
+
+0:05:01.040,0:05:07.920
+list or other special names as a variable name.
+We implemented all of this in a tool called Pycee
+
+0:05:07.920,0:05:15.040
+which is just short for Python compiler error enhancer, and that's exactly the output of Pycee.
+
+0:05:16.480,0:05:22.560
+So because we're researchers we also wanted to evaluate whether this works. It works in the one
+
+0:05:22.560,0:05:27.600
+example that I just walked through, but does it work in a more general setting? To do this
+
+0:05:28.240,0:05:34.960
+we recruited a total of 16 professional software developers and we gave each of them two tasks.
+
+0:05:34.960,0:05:39.920
+We took these tasks from one of those Python programming exercise websites, in this case
+
+0:05:39.920,0:05:46.320
+PracticePython.org I think, which has lots of little exercises such as Fibonacci and so on.
+
+0:05:48.080,0:05:53.920
+And then, so half of the participant - no, for half of the tasks, so each participant did two
+
+0:05:53.920,0:05:59.920
+tasks. For one of the tasks they used our Stack Overflow Pycee version, and for the other one they
+
+0:05:59.920,0:06:04.800
+used the baseline, because we wanted to have something to compare to. And in this case we
+
+0:06:04.800,0:06:10.800
+chose as the baseline the official documentation from, from Python about these error messages.
+
+0:06:11.920,0:06:17.280
+In total our participants or each of the 16 participants worked on two tasks. They encountered
+
+0:06:17.280,0:06:23.280
+a total of 115 compiler errors as part of working on these tasks, which as you know is quite normal,
+
+0:06:23.280,0:06:27.440
+usually when we program something, we will encounter compiler errors even if we're
+
+0:06:27.440,0:06:33.840
+pretty good at it. They encountered 115 compiler errors, about half with our improved version of
+
+0:06:33.840,0:06:39.360
+the compiler errors and about half with the baseline that we are trying to compare to.
+
+0:06:40.880,0:06:45.520
+So in this case fortunately the results of Pycee on the right hand side,
+
+0:06:46.080,0:06:51.200
+fortunately, in terms of the perceived helpfulness they generally agreed that our error messages
+
+0:06:51.200,0:06:56.800
+were more helpful than the baseline and they also agreed that our error messages helped
+
+0:06:56.800,0:07:01.840
+them save time compared to the baseline the difference in this case isn't quite that big.
+
+0:07:02.480,0:07:09.680
+So, what would I like you to take away from this? Two things. The first one, crowdsource your error
+
+0:07:09.680,0:07:15.520
+messages. I think our study was a really nice example that shows that the power of the crowd,
+
+0:07:15.520,0:07:21.040
+in this case on Stack Overflow, can produce better error messages and better explanations
+
+0:07:21.040,0:07:27.360
+of error messages than the information that we have available in the official documentation
+
+0:07:27.360,0:07:32.800
+that was written by a much smaller number of people of course. Crowdsource your error messages,
+
+0:07:32.800,0:07:37.680
+of course, they aren't all correct, but then we can develop automated tools
+
+0:07:37.680,0:07:42.400
+that help filter this data and produce the right error messages at the right time.
+
+0:07:43.360,0:07:47.680
 That's it for me - thank you very much for listening.
