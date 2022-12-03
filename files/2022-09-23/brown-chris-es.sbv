@@ -1,0 +1,245 @@
+﻿0:00:09.360,0:00:14.580
+mi nombre es Chris Brown estoy en Virginia Tech y estoy emocionado de estar aquí hoy para discutir
+
+0:00:15.180,0:00:19.140
+cómo recomendar herramientas para encontrar y corregir errores de software o
+
+0:00:19.680,0:00:26.160
+la superación de los monos ignorantes de la adopción de herramientas. ¿De qué se trata? Pues de encontrar y arreglar
+
+0:00:26.160,0:00:31.560
+errores de software es difícil. Todos ustedes probablemente han tenido experiencia con eso. ¿Por qué es tan difícil? Bueno, una
+
+0:00:31.560,0:00:36.660
+razón es que cambiar el código es difícil. Tienes que encontrar dónde puede haber un error en tu código
+
+0:00:36.660,0:00:42.720
+hacer el cambio y verificar que los cambios sean correctos. Para ayudar a esto, los investigadores y los fabricantes de herramientas han
+
+0:00:42.720,0:00:46.980
+introducido una gran variedad de herramientas de desarrollo para ayudar a automatizar este proceso y hay un problema.
+
+0:00:47.880,0:00:54.660
+A menudo las herramientas pueden ser incluso más frustrantes de adaptar que hacerlo uno mismo. Así que como ejemplo
+
+0:00:54.660,0:00:59.520
+anecdótico digamos que hay un error en su código. Usted podría utilizar el depurador y este ejemplo es VS Code
+
+0:00:59.520,0:01:03.960
+Así que para podrias ir línea por línea, encontrar donde está su error, o podrías
+
+0:01:03.960,0:01:09.420
+imprimir aquí o cualquier otra cosa que quiera hacer, les daré un segundo para que lo piensen.
+
+0:01:12.360,0:01:22.200
+Bien, así que las herramientas son difíciles de usar. ¿Cómo superamos este problema? Para compartir tres experiencias que
+
+0:01:22.200,0:01:28.560
+probamos usaré esta analogía de los tres monos, no escuchar el mal, no ver el mal y no hablar el mal.
+
+0:01:28.560,0:01:36.240
+En el caso de la adopción de herramientas, no oír hablar de herramientas, no ver herramientas y no hablar de herramientas. Muy bien, lo primero
+
+0:01:36.240,0:01:41.100s
+que probamos fueron los emails automatizados. Enviamos emails a los desarrolladores recomendando herramientas de análisis estático
+
+0:01:41.100,0:01:46.980
+para Python. Y de buenas a primeras vimos que no era una buena idea. De hecho, recibimos más
+
+0:01:46.980,0:01:53.100
+emails de vuelta quejándose de la recepción de nuestro email que las personas que realmente adoptaron la herramienta. Así que
+
+0:01:53.100,0:01:57.600
+vemos de inmediato que la gente no quiere oir sobre las herramientas, especialmente a través del email.
+
+0:01:59.220,0:02:04.140
+Así que tratamos de reforzarlo un poco e hicimos pull requests automatizados en GitHub. Desarrollamos un bot para
+
+0:02:04.140,0:02:09.060
+recomendar herramientas de análisis estático para proyectos de Java que añadió automáticamente esta herramienta
+
+0:02:09.060,0:02:15.480
+al archivo pom.xml para herramientas - para proyectos que utilizan Maven. También vimos que esto era ineficaz
+
+0:02:15.480,0:02:19.740
+por una razón diferente. Recibimos un montón de quejas: esto tiene un montón de errores, las construcciones
+
+0:02:19.740,0:02:25.260
+se están rompiendo, el tiempo de construcción se incrementa, y vemos que los desarrolladores tampoco quieren ver las herramientas porque
+
+0:02:25.260,0:02:29.220
+les da más trabajo si ven que estas herramientas proporcionan errores en su proyecto.
+
+0:02:30.960,0:02:35.580
+Muy bien, la última cosa a compartir realmente rápido, es la idea de la interacción entre pares, el aprendizaje de
+
+0:02:35.580,0:02:40.620
+herramientas a través de las actividades normales de trabajo. Y las investigaciones demuestran que esto es eficaz. Así que el trabajo previo
+
+0:02:40.620,0:02:45.720
+compara diferentes modos de descubrimiento de herramientas y muestra que las recomendaciones de los compañeros son el modo más
+
+0:02:45.720,0:02:50.940
+eficaz para conocer nuevas herramientas. Hicimos un estudio de seguimiento en el que emparejamos a los participantes
+
+0:02:50.940,0:02:56.160
+y los pusimos a trabajar en las tareas y encontramos que el 50% de las veces, cuando un usuario hizo una
+
+0:02:56.160,0:03:00.840
+recomendación para una herramienta, el compañero adoptaba la herramienta, y esto es mucho más alto que casi
+
+0:03:00.840,0:03:08.700
+cero para los emails y las pull requests automatizadas. Pero, de nuevo, más problemas, a pesar de que
+
+0:03:08.700,0:03:13.920
+las interacciones puras son efectivas, son el modo de descubrimiento de herramientas menos utilizado en la práctica.
+
+0:03:15.000,0:03:19.920
+Así que hay muchas razones por las que las oportunidades de interacción entre pares están disminuyendo, y probablemente
+
+0:03:19.920,0:03:25.200
+hayas experimentado algo de esto también, pero en última instancia existe el problema de que ahora los desarrolladores no hablan
+
+0:03:25.200,0:03:31.380
+sobre las herramientas. ¿Entones qué hemos aprendido? No importa lo grandiosa que sea tu herramienta, podría ser la mejor herramienta con
+
+0:03:31.380,0:03:37.860
+las características más impresionantes, si no es capaz de conectar realmente con los usuarios, entonces es ineficaz
+
+0:03:37.860,0:03:42.960
+y la gente no va a usarlas. Entonces, ¿cuál fue la solución que propuse? Esta idea de la teoría del empujón,
+
+0:03:42.960,0:03:48.360
+que es un concepto de la ciencia del comportamiento, para animar a los seres humanos a adoptar mejores comportamientos sin ofrecer
+
+0:03:48.360,0:03:54.060
+incentivos o prohibir acciones alternativas. Un ejemplo es el diseño de una tienda de comestibles. En este
+
+0:03:54.060,0:03:58.980
+caso, si se colocan frutas y verduras en la parte delantera de la tienda de comestibles, se está incitando a los compradores a
+
+0:03:58.980,0:04:04.440
+adoptar mejores comportamientos comprando más frutas y verduras, en lugar de que compren donuts o
+
+0:04:04.440,0:04:09.300
+cualquier comida chatarra que esté en el frente. Y la idea detrás de la teoría del empujón es este concepto de arquitectura
+
+0:04:09.300,0:04:15.180
+de elección, lo que sugiere que la forma en que las decisiones se presentan a los seres humanos afecta a las elecciones que hacen.
+
+0:04:16.800,0:04:21.720
+¿Y qué tiene que ver esto con los desarrolladores? En mi tesis doctoral introduzco al desarrollador de
+
+0:04:21.720,0:04:26.400
+arquitecturas de elección de recomendaciones como marco para el diseño de recomendaciones para
+
+0:04:26.400,0:04:31.200
+integrar en el flujo de trabajo de los desarrolladores. Y los tres conceptos son la accionabilidad, que es básicamente
+
+0:04:31.200,0:04:36.240
+automatizar las cosas, retroalimentación - lo que la información proporciona y localidad - mirando el tiempo
+
+0:04:36.240,0:04:40.560
+y la ubicación, de nuevo, dentro del flujo de trabajo de desarrollo, de cómo se hacen las recomendaciones.
+
+0:04:41.220,0:04:47.160
+Y nuestra hipótesis era, esto va a funcionar, podemos ayudar a la gente o adoptar mejores herramientas, y
+
+0:04:47.160,0:04:52.920
+en última instancia, mejorar la calidad del código y la productividad. Pero a principios de este verano un documento salió
+
+0:04:52.920,0:04:58.920
+diciendo que en realidad no hay evidencia para la teoría del empujón y que incluso podría no funcionar. Pero esto
+
+0:04:58.920,0:05:04.920
+es el evento del taller "Nunca trabajes en teoría", así que no trabajamos en teoría. La pregunta es si esto
+
+0:05:04.920,0:05:09.360
+funciona en la práctica y creo que todavía estamos muy lejos de responder a esta pregunta, pero voy a 
+
+0:05:09.360,0:05:14.220
+compartir un par de cosas brevemente, con algunos puntos de partida. Y sí, estamos hablando de la práctica.
+
+0:05:15.960,0:05:21.300
+Muy bien, recomendaciones prácticas: enviamos a los desarrolladores dos tipos de recomendaciones, una
+
+0:05:21.300,0:05:25.560
+estática y una procesable, que es básicamente, usted puede aplicar automáticamente
+
+0:05:25.560,0:05:31.980
+cualquier recomendación que se hace, y el 100% de los desarrolladores que tomaron esta encuesta prefirió
+
+0:05:31.980,0:05:35.580
+la recomendación procesables. Estas son personas de diferentes empresas, diferentes equipos, diferentes
+
+0:05:35.580,0:05:40.800
+lenguajes de programación, pilas de herramientas, todas estas cosas vinieron en cuenta, pero todos ellos coincidieron en que si
+
+0:05:40.800,0:05:45.660
+tienes una recomendación procesable es mejor que una estática. Así que ahora mismo estamos
+
+0:05:45.660,0:05:50.940
+buscando formas de automatizar estas recomendaciones procesables mediante la construcción de bots con el fin de ayudar a
+
+0:05:50.940,0:05:55.740
+integrar las cosas en el flujo de trabajo normal de los desarrolladores. Así que el bot que estás viendo aquí
+
+0:05:55.740,0:06:02.340
+hace sugerencias automáticamente para arreglar problemas piloto en las pull requests de GitHub y en el futuro esperamos
+
+0:06:02.340,0:06:06.480
+ampliar esto a futuras herramientas, otros tipos de herramientas como los problemas de seguridad y cosas por el estilo.
+
+0:06:08.520,0:06:15.600
+Muy bien, ¿qué hacemos con estos tres monos? En primer lugar, si tu eres un investigador o alguien
+
+0:06:15.600,0:06:22.320
+construyendo una herramienta, construye mejores herramientas. Justin acaba de hablar de cómo el resultado de las herramientas no es
+
+0:06:22.320,0:06:29.940
+tan bueno, gracias, pero sí, por lo que, menos falsos positivos, más eficiencia, las cosas que son algo
+
+0:06:29.940,0:06:36.480
+obvias pero que hay que hacer. Considere la posibilidad de integrar en el flujo de trabajo de los desarrolladores, por lo que
+
+0:06:36.480,0:06:41.280
+vimos con nuestros estudios anteriores, si se envían cosas por correo electrónico o cosas que interrumpen el flujo de trabajo
+
+0:06:41.280,0:06:46.260
+de los desarrolladores, lo ignorarán inmediatamente, así que hay que encontrar la forma de integrarlo en los procesos existentes. Y
+
+0:06:46.260,0:06:51.420
+finalmente considerar algunas de estas opciones de recomendación,  arquitecturas de elección para la forma de hacer y
+
+0:06:51.420,0:06:58.980
+diseñar tus recomendaciones. Para los desarrolladores, utilicen herramientas, la primera charla - nuestra segunda charla de
+
+0:06:58.980,0:07:02.820
+Muhammad habló de cómo la gente no utiliza herramientas de refactorización. Hay un montón de trabajo por ahí que
+
+0:07:02.820,0:07:09.240
+dice que los desarrolladores en realidad no utilizan herramientas, sobre todo por el Dr. Brittany Johnson, que es el anfitrión de esto.
+
+0:07:09.840,0:07:14.220
+Comparte herramientas con tus compañeros de trabajo: ya sé que las cosas son raras ahora con el COVID y la gente a distancia,
+
+0:07:14.220,0:07:19.320
+pero si encuentras una nueva herramienta asegúrate de compartirla con tus amigos. Considera diferentes formas de
+
+0:07:19.320,0:07:24.060
+integrar las herramientas en los procesos existentes en tu equipo: así, por ejemplo, si eres un equipo ágil
+
+0:07:24.060,0:07:29.580
+considera un sprint en el que quizá una persona pruebe una herramienta e informe a su equipo. La "Cultura
+
+0:07:29.580,0:07:34.380
+of Learning" tiene muchas ideas sobre cómo hacerlo. Y, por último, simplemente participar, por lo que
+
+0:07:34.380,0:07:38.220
+si hay una herramienta que te gusta o no te gusta, da tu opinión, participa en el proceso  
+
+0:07:38.220,0:07:43.860
+de investigación cuando se evalúan y estudian las herramientas y, en general, podemos esperar trabajar juntos para construir
+
+0:07:43.860,0:07:49.146
+mejores herramientas para ayudar a encontrar y corregir errores de manera más eficiente. Gracias por su tiempo.

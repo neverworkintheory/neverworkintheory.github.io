@@ -1,0 +1,167 @@
+0:00:09.420,0:00:14.340
+Hola a todos, mi nombre es Justin Smith, soy un profesor asistente de ciencias de la computación
+
+0:00:14.340,0:00:18.540
+en Lafayette College y estoy muy emocionado de estar aquí hablando con usted acerca de mi investigación en la
+
+0:00:18.540,0:00:24.420
+que exploro cómo las herramientas automatizadas pueden ayudarnos a comunicar mejores soluciones, y lo que es más 
+
+0:00:24.420,0:00:29.340
+importante, mejores estrategias para arreglar los errores que detectan. Lo que nos esforzamos por
+
+0:00:29.340,0:00:34.800
+lograr como desarrolladores de software es alcanzar niveles mayores de abstracción.
+
+0:00:35.940,0:00:41.400
+Por ejemplo, ya no pensamos en mover electrones a través de los circuitos para simplemente sumar
+
+0:00:41.400,0:00:46.980
+dos números. En su lugar, queremos centrarnos en problemas de alto nivel que on más importantes y más 
+
+0:00:46.980,0:00:52.800
+interesantes, como la construcción de bots que utilizan modelos ocultos de Markov para la creación automática de startups.
+
+0:00:55.440,0:01:03.060
+Pero el problema es que muchas de nuestras herramientas que detectan errores en nuestros sistemas de software están atascadas en el
+
+0:01:03.060,0:01:08.880
+Edad Media. Tenemos toneladas de herramientas que son realmente buenas para encontrar problemas. Tenemos herramientas
+
+0:01:08.880,0:01:15.180
+de seguridad, tenemos linters, tenemos compiladores, tenemos detectores de mal uso de APIs, tenemos herramientas
+
+0:01:15.180,0:01:20.400
+de análisis estático... Pero estas herramientas no hacen un buen trabajo en ayudarnos a pensar en un nivel alto 
+
+0:01:20.400,0:01:28.500
+sobre cómo resolver los problemas que detectan. Para ilustrar este problema, veamos un ejemplo. Esta es un
+
+0:01:28.500,0:01:34.500
+variedad común de error que los estudiantes en los cursos de introducción a la programación podrían encontrar. 
+
+0:01:34.500,0:01:40.320
+Aquí el programador novato está tratando de almacenar un valor de 1.5 en una variable entera llamada cosa.
+
+0:01:41.160,0:01:46.140
+Y esto puede parecerles un error muy simple, pero imaginen que este programador es nuevo
+
+0:01:46.140,0:01:50.760
+en los sistemas de tipos, o nuevo en la programación, o tal vez nuevo en el procesamiento.
+
+0:01:51.360,0:01:57.660
+Así que la herramienta de detección de errores que estamos viendo aquí es el compilador, que encontró un error
+
+0:01:57.660,0:02:03.000
+de sintaxis, y está alzando una gran bandera roja y diciendo, no se puede convertir de float a int.
+
+0:02:03.540,0:02:07.740
+Así que este programador novato, no sabe qué hacer, por lo que hace lo que todos hacemos, 
+
+0:02:07.740,0:02:13.380
+escribir este mensaje de error en Google, hacen click en el primer resultado que es Stack Overflow, y ven
+
+0:02:13.380,0:02:20.640
+que alguien más ha tenido otra instancia de un problema muy similar. Así que eso es bueno. Van y
+
+0:02:20.640,0:02:25.860
+miran la respuesta aceptada para ese problema, y la respuesta dice que tienen que cambiar el tipo devuelto
+
+0:02:25.860,0:02:33.060
+a float para poder devolver valores decimales. Bien, así que cambian el tipo de retorno de su método
+
+0:02:33.060,0:02:40.320
+setup a float y ahora están en un lío aún mayor que cuando empezaron. Bien, entonces, ¿qué
+
+0:02:40.320,0:02:47.160
+salió mal? En primer lugar, no hubo ninguna explicación: la herramienta de detección de errores le dijo al desarrollador 
+
+0:02:47.160,0:02:51.120
+"gran bander roja, hay un problema", pero no explicaba cómo solucionar ese problema.
+
+0:02:53.280,0:02:59.280
+En segundo lugar, había algunas diferencias entre el ejemplo que vimos en Stack Overflow y la instancia
+
+0:02:59.280,0:03:05.400
+particular del problema que tuvo este desarrollador. Así que en Stack Overflow usamos nombres de variables como
+
+0:03:05.400,0:03:11.160
+mutate, y newx, y x, y en este ejemplo utilizamos nombres de variables como cosa y un nombre de método
+
+0:03:11.160,0:03:17.460
+llamado setup. Así que el desarrollador tiene que hacer esta tarea cognitivamente difícil de encontrar una coincidencia
+
+0:03:17.460,0:03:24.240
+entre estos dos conceptos similares pero diferentes. Y, por último, lo más importante, tuvimos diferentes 
+
+0:03:24.240,0:03:30.000
+causas. Así que la causa raíz del error aquí es que no hay coincidencia en los tipos de asignación - la
+
+0:03:30.000,0:03:34.860
+asignación de variables - y la inconsistencia en el ejemplo de Stack Overflow era de tipo retorno incorrecto.
+
+0:03:35.760,0:03:40.260
+Así que sé que todos ustedes tienen problemas más grandes, no se preocupan por la conversión de floats
+
+0:03:40.260,0:03:46.080
+a ints, pero yo diría que sus problemas son más o menos lo mismo. Cuando obtienen un error que
+
+0:03:46.080,0:03:51.000
+no tiene sentido, tienen que revisar todos los pasos de bajo nivel con el fin de solucionar ese error.
+
+0:03:51.600,0:03:58.020
+Entonces, lo que necesitamos es convertir nuestros mensajes de error en algo que, en primer lugar, los ayude a 
+
+0:03:58.020,0:04:04.140
+resolver la instancia particular del problema al que se enfrentan en un momento dado, y, dos, les enseñe una 
+
+0:04:04.140,0:04:09.540
+estrategia más eficaz para solucionar problemas como ese en el futuro. Eso es lo que necesitamos, y
+
+0:04:09.540,0:04:15.300
+eso es lo que hicimos. Construimos una herramienta que hace precisamente esto. Nuestra herramienta se llama
+
+0:04:15.300,0:04:20.700
+MatchingRef - analiza su código y analiza la instancia particular de un mensaje de error
+
+0:04:20.700,0:04:27.060
+que hayan encontrado y, por un lado, los ayuda a identificar la causa del problema que
+
+0:04:27.060,0:04:32.700
+está generando el error. Y luego sugiere una estrategia experta
+
+0:04:32.700,0:04:39.120
+para arreglar ese tipo de errores. Así que esto es lo que MatchingRef generaría para el ejemplo que
+
+0:04:39.120,0:04:45.060
+hemos estado viendo hasta ahora, y ahora estamos en ese siguiente nivel de abstracción. En lugar de
+
+0:04:45.060,0:04:50.280
+preocuparse por los detalles de bajo nivel de cómo arreglar un problema individual, podemos pensar en las
+
+0:04:50.280,0:04:58.560
+estrategias de alto nivel que elegiríamos para arreglar problemas como ese. Esta herramienta y
+
+0:04:58.560,0:05:04.020
+nuestro enfoque no es sólo para los errores de tipo de dato. Esta es un modelo de como 
+
+0:05:04.020,0:05:09.540
+MatchingRef se vería para un conjunto más complejo de errores, por ejemplo, encontrar
+
+0:05:09.540,0:05:14.580
+vulnerabilidades de path traversal y vulnerabilidades de seguridad como una vulnerabilidad
+
+0:05:14.580,0:05:21.180
+path traversal, y compartir una estrategia eficaz resolverla. Bien, aquí hay algunos lugares
+
+0:05:21.180,0:05:26.100
+a dónde pueden ir si desean consultar la herramienta. Espero que la prueben, aunque no sólo sea para
+
+0:05:26.100,0:05:31.320
+satisfacer su curiosidad, sino también con la esperanza de que los inspire a pensar en las herramientas que
+
+0:05:31.320,0:05:36.960
+ustedes crean y utilizan y cómo pueden ayudar a los desarrolladores a pensar más estratégicamente y
+
+0:05:36.960,0:05:42.883
+de forma más abstracta sobre cómo resolver los problemas que... que detectan. Gracias.

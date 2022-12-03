@@ -1,0 +1,446 @@
+0:00:09.360,0:00:15.180
+My name is Kat Hicks I'm the director of a research lab at a place called Pluralsight,
+
+0:00:15.180,0:00:22.440
+hello, the name of our lab is the Developer Insights Lab and this is our first time at Strange Loop so
+
+0:00:22.440,0:00:28.020
+thank you so much for having me. I'm going to be talking to you today about a piece of research
+
+0:00:28.020,0:00:33.720
+I did called "It's like coding in the dark" and the subtitle of this is, "The need for learning cultures
+
+0:00:33.720,0:00:39.660
+within coding teams." And I think that this flows really nicely from the keynote that we just had,
+
+0:00:39.660,0:00:45.000
+actually, so I feel well set up for this. But I'm going to start you off with a story. Marian told
+
+0:00:45.000,0:00:50.640
+a lot of stories and I love that way of talking about complex social things. I want you to imagine
+
+0:00:50.640,0:00:56.940
+that you are a junior software engineer and you've just started working on an unfamiliar code base.
+
+0:00:56.940,0:01:02.820
+This should feel like a very familiar story, right. Now let's imagine you're not completely in the
+
+0:01:02.820,0:01:08.280
+dark yet, you actually got to me meet some senior engineers who wrote a lot of the code you're
+
+0:01:08.280,0:01:14.940
+working with. You're excited, that's great, and maybe something that you've benefited from before is pair
+
+0:01:14.940,0:01:20.160
+programming. You have a lot of practices that you enjoy around that, and let's say you suggest that
+
+0:01:20.160,0:01:24.420
+at the meeting, like, hey, you know I'd love a little bit of this in my onboarding. But let's
+
+0:01:24.420,0:01:29.040
+say you also get a really strong negative reaction from one of the engineers, maybe they say something
+
+0:01:29.040,0:01:35.100
+like, oh we kind of think that's a waste of time, right. So you feel a little embarrassed, but you
+
+0:01:35.100,0:01:39.420
+have a plan of attack - you feel like you know what you're doing - you go back and you dig into the code
+
+0:01:40.140,0:01:46.620
+and as you do your plan of what you're going to do falls apart, because everything is more complicated
+
+0:01:46.620,0:01:52.260
+than you thought it would be. You end up having to do a lot of research - a lot of backtracking - and
+
+0:01:52.260,0:01:56.400
+you start to think about things like, you know, I'm going to write a lot of this down because I know
+
+0:01:56.400,0:02:01.080
+that three other people are joining our team in two weeks from now and they're going to go through
+
+0:02:01.080,0:02:05.220
+this same process. You're kind of interested in documentation, so you start to do a little bit
+
+0:02:05.220,0:02:11.280
+of that. Now imagine you go into your first code review and it's with someone that you've never
+
+0:02:11.280,0:02:16.680
+met before - they weren't at the previous meetings - and frankly this code review just kind of sucks.
+
+0:02:17.220,0:02:22.860
+It goes - well, it's maybe not the worst you've ever had but, this person brings a lot of context to the
+
+0:02:22.860,0:02:27.240
+code that you just - you just didn't even hear. You feel a little overwhelmed with, like, the things
+
+0:02:27.240,0:02:31.440
+they're saying, the jargon, they're criticizing your choices you feel like some of it's, like, up
+
+0:02:31.440,0:02:36.360
+here at the surface level, but some of it's, like, deep kind of architectural things that you're
+
+0:02:36.360,0:02:40.320
+excited to learn but you don't know how to ask because you got the surface stuff wrong right, like,
+
+0:02:40.320,0:02:46.320
+you're overwhelmed. And so you try to, you know, you feel a little bit of, like, I - I want to explain what
+
+0:02:46.320,0:02:50.820
+I did here and so you mention that you did all this research and you started writing it down and
+
+0:02:50.820,0:02:55.740
+you got kind of, you know, excited about what you'd written down and let's say this engineer, who's
+
+0:02:55.740,0:03:01.320
+busy, you know, and, like, shuffling through a lot of code reviews maybe, says, hey, look, that was kind of
+
+0:03:01.320,0:03:07.800
+a waste of time, like, just focus. So you go back to work, but you've taken some really important
+
+0:03:07.800,0:03:13.320
+messages with you, and those messages are going to change your behavior. First, you immediately stop
+
+0:03:13.320,0:03:18.060
+writing down all the stuff you were writing down to share with people. Second, you decide,
+
+0:03:18.720,0:03:24.060
+I need to be a little more guarded - a little more careful - about trying to like bring these ideas to
+
+0:03:24.060,0:03:29.340
+these kinds of meetings - that's not what they're for. And third, you think, oh, code review is, you
+
+0:03:29.340,0:03:33.960
+know, a thing I have to learn how to get right, and the way to get it right is to match everything
+
+0:03:33.960,0:03:38.820
+that they're telling me, right, and stop worrying a little bit about what surface and what's, you know,
+
+0:03:38.820,0:03:44.340
+deep, because, I don't - I don't really, you know, get that. Now there's a lot of pieces we could focus
+
+0:03:44.340,0:03:50.640
+on here, but I want to draw your attention to a way that I think about this as a social scientist, kind
+
+0:03:50.640,0:03:56.280
+of like a secret tool to help you think through all these different socio-technical features that
+
+0:03:56.280,0:04:00.600
+you have to get through while you're trying to write code with other people, and that's thinking
+
+0:04:00.600,0:04:07.440
+about learning culture. And more specifically, it's thinking about this concept of learning debt.
+
+0:04:08.760,0:04:14.880
+So Marian talked about all of the productive ways that we need to problem solve, learn, and face error
+
+0:04:14.880,0:04:19.800
+together. I want to highlight a different concept that's emerged from my research, which is this idea
+
+0:04:19.800,0:04:25.980
+that when we don't support the learning that people need to do for their work, we create
+
+0:04:25.980,0:04:32.040
+this long-term cycle of damage, and I've called this cycle learning debt. Now there's something
+
+0:04:32.040,0:04:37.020
+that I can tell you from social science and that's that we all live inside of social environments all
+
+0:04:37.020,0:04:42.960
+the time, and we are scanning those environments, specifically from learning science, from education
+
+0:04:42.960,0:04:48.360
+research, from achievement research, and from cognitive science on how people problem solve, we
+
+0:04:48.360,0:04:54.060
+know that it really matters whether or not we feel like we're in a place that is safe for learning.
+
+0:04:54.060,0:05:00.180
+And we also know - we know from the work that I've done with developers, I know this, that code work
+
+0:05:00.180,0:05:06.420
+requires continuous active learning all the time. So something that I've observed in my research is
+
+0:05:06.420,0:05:11.460
+this cycle of learning debt that happens when developers know they need to do this learning,
+
+0:05:11.460,0:05:17.820
+but they feel somewhat bombarded by messages from their environment about how that stuff is a waste
+
+0:05:17.820,0:05:24.720
+of time or not as valued as the output. Where does this work come from? There's a link at the bottom
+
+0:05:24.720,0:05:28.740
+of the slide for a lot more detail. In respect of the whole panel I'm not going to go super
+
+0:05:28.740,0:05:34.620
+deep into it, but there's a lot of qualitative work at the center of my study. So I did 25
+
+0:05:34.620,0:05:40.620
+in-depth interviews with developers - they were in all kinds of different situations, primarily
+
+0:05:40.620,0:05:47.340
+in large tech companies, and I also sat next to these developers as they did what I called active
+
+0:05:47.340,0:05:54.360
+problem solving, so - or research observation - so I had developers talk out loud as they were doing
+
+0:05:54.360,0:06:00.480
+actual research for their job or an actual bug solving. And from that in my report what you can
+
+0:06:00.480,0:06:06.240
+find is a thematic analysis of this qualitative data, but also grounding this in some really
+
+0:06:06.240,0:06:12.120
+rigorously well-supported theories that come from social science that help us understand what are
+
+0:06:12.120,0:06:17.160
+the dynamics - why is it so hard to care about learning when we all say that we care about it?
+
+0:06:18.660,0:06:23.940
+And as a large summary across all of these conversations, I identified this learning
+
+0:06:23.940,0:06:28.560
+debt cycle. For simplicity's sake you can kind of imagine this is a cycle that people
+
+0:06:28.560,0:06:32.760
+often go through if they're in an environment that's not really supporting their learning.
+
+0:06:33.420,0:06:38.460
+First you're doing active learning. You're doing that error diagnosis, you're doing that back and
+
+0:06:38.460,0:06:42.540
+forth research, you're doing really a lot of stuff that people consider the heart and the
+
+0:06:42.540,0:06:48.480
+soul of figuring out what code you want to write, and in my report I have a lot of detail on this
+
+0:06:48.480,0:06:53.160
+but code writers have to go through a process of building mental models and checking them,
+
+0:06:53.160,0:06:57.900
+and not everything that you do here, right, results in lines of code. Actually, you know
+
+0:06:57.900,0:07:02.460
+this is where you might think about the classic thing where it took me two two weeks to write,
+
+0:07:02.460,0:07:06.840
+you know, one line of code that was - but it was, what a line of code, right, it was the right one.
+
+0:07:07.680,0:07:12.240
+And then you take that beautiful brilliant wonderful active learning, that very strategic
+
+0:07:12.240,0:07:17.220
+active learning, and in an environment that's not supporting your learning - you go into something
+
+0:07:17.220,0:07:21.840
+like a code review - code reviews came up a lot - it's not the only place this happens but it's
+
+0:07:21.840,0:07:29.040
+a really good exemplar of it - and you realize that you're meeting some hypocrisy. People can
+
+0:07:29.040,0:07:33.120
+say they care about your learning and then they can tell you it's a waste of time in the same
+
+0:07:33.120,0:07:39.600
+conversation. This is a really damaging thing for people to experience even when we don't think
+
+0:07:39.600,0:07:44.220
+we're passing on this message. I think of this sometimes like the poster on the wall problem
+
+0:07:44.220,0:07:48.840
+too. A poster on the wall that says "everyone can learn, everyone can make mistakes" and then you
+
+0:07:48.840,0:07:52.860
+go into a code review and you get the sense that it was not okay to make this particular mistake.
+
+0:07:54.780,0:08:00.660
+And then the - the really important thing is, you go back to your environment and you become part
+
+0:08:00.660,0:08:06.660
+of this cycle. Right, so how does this happen even though we care about it? It's not really just an us
+
+0:08:06.660,0:08:14.940
+versus them thing. Our strategies change. We go back to our solo work, we find strategic ways to do our
+
+0:08:14.940,0:08:21.180
+own research and keep it for ourselves, and so what gets cut out of this picture is collaborating, what
+
+0:08:21.180,0:08:27.420
+gets cut out of this picture is, you know, doing that kind of long-term investment work in learning.
+
+0:08:27.420,0:08:33.180
+And this is where the learning debt cycle really perpetuates. Because you'll get - I can't
+
+0:08:33.180,0:08:38.280
+tell you how strange it is, you know, and somewhat wonderful as a social scientist but painful to
+
+0:08:38.280,0:08:45.300
+sit with 25 different developers and everyone says, I bet no one struggles like I do, right.
+
+0:08:48.180,0:08:52.620
+So this is a much-simplified figure from my report. I have a lot of quotes, I'm a big
+
+0:08:52.620,0:08:57.900
+believer in like voice of the developer should go to the developer so do feel welcome to check
+
+0:08:57.900,0:09:03.480
+it out but I'll share a couple of quotes, right, a junior developer saying, we tried to advocate for
+
+0:09:03.480,0:09:08.820
+more pair programming - we got a lot of pushback. And then this failure of things that we claim
+
+0:09:08.820,0:09:14.520
+are our best practice, right. Ideally we said, okay, we're going to comment our code, we're going to do
+
+0:09:14.520,0:09:19.920
+this because it's it's dragging us down to not do this but in reality less than 10% of our code is
+
+0:09:19.920,0:09:25.800
+well commented. Probably not a surprise to some of you. A very helpful question for engineering
+
+0:09:25.800,0:09:30.420
+managers out there - a helpful question to me is, I ask someone how they do something
+
+0:09:31.140,0:09:35.760
+and then I listen to them say, oh, we do this and this and this and all this stuff, and then
+
+0:09:35.760,0:09:43.080
+you say great, awesome, how often does that successfully happen, right? And people say it's
+
+0:09:43.080,0:09:47.880
+five percent of the time - really low numbers, right. So immediate action item for y'all.
+
+0:09:49.260,0:09:56.520
+Okay, so just to nail this point home, why is it so hard to do this? We can sit here and talk about how
+
+0:09:56.520,0:10:01.920
+much we love writing code, how much we want to learn, how much we want to have these teams. Well,
+
+0:10:01.920,0:10:08.580
+we are actually competing against a different kind of culture. It's helpful to understand from social
+
+0:10:08.580,0:10:13.560
+science, from work in how people learn, that we have lots of different incentives and goals and
+
+0:10:13.560,0:10:18.180
+things we need to pursue in these environments. And one of the things that can emerge, that I
+
+0:10:18.180,0:10:22.500
+think we often overweight, is something that I would call performance culture. So you can
+
+0:10:22.500,0:10:28.500
+imagine we have learning culture but we also have performance culture. Performance culture emerges
+
+0:10:28.500,0:10:33.840
+when people feel like their productivity is the only thing that matters. The process underneath
+
+0:10:33.840,0:10:39.660
+that productivity, the effort, the productive mistakes, right, that lead to some beautiful outcome
+
+0:10:39.660,0:10:44.700
+six months from now but not in this one quarter, as one of the questions in the keynote was, that stuff
+
+0:10:44.700,0:10:49.980
+doesn't get captured in performance culture. And I think a lot of things lead into it, right. You can
+
+0:10:49.980,0:10:55.500
+think about your own environment, like, do I feel like I'm actually having a feedback conversation
+
+0:10:55.500,0:11:01.380
+here, or am I having to defend my reputation conversation here? That's a good signal for
+
+0:11:01.380,0:11:06.720
+whether you're in a performance culture. And you'll hear from the ICs, from the developers, especially
+
+0:11:06.720,0:11:12.660
+from the junior teammates, from marginalized people in tech, you'll hear things like, no one feels like
+
+0:11:12.660,0:11:18.960
+I do - a profound disconnection and alienation. So this stuff is important to get right - to build
+
+0:11:18.960,0:11:23.940
+the technology we want to get right. And I want to leave you with another sort of secret weapon
+
+0:11:23.940,0:11:30.120
+from the way social scientists think of this. It's hard for us to keep motivating ourselves
+
+0:11:30.120,0:11:36.900
+to invest in learning, and one of the reasons is, it's scary. You can have the posters on the wall
+
+0:11:36.900,0:11:42.360
+but in order to really build learning culture, you have to believe that making mistakes is okay.
+
+0:11:43.200,0:11:49.200
+And I think we all are somewhat afraid of that. So let me share from you when you're learning
+
+0:11:49.200,0:11:57.000
+it will look worse before it looks better, right, and that can just feel very confusing, because
+
+0:11:57.000,0:12:01.800
+it's like maybe feedback that you should stop, feedback that you shouldn't share, right. But what
+
+0:12:01.800,0:12:07.380
+would happen if we really allowed ourselves to commit to learning and let that define our focus.
+
+0:12:08.940,0:12:14.880
+I want to propose that if we do that we have a pathway to something even more radical. Remember
+
+0:12:14.880,0:12:18.900
+I told you the story about a junior developer, and you might have listened to that story and
+
+0:12:18.900,0:12:24.300
+thought okay, the real cost here - the cost of my organization, the cost of my technology - is the
+
+0:12:24.300,0:12:29.280
+fact that we haven't ramped this junior developer up as fast as we could have. And that's a real - a
+
+0:12:29.280,0:12:33.840
+real thing that we want to help people do efficiently in their careers. But it's not
+
+0:12:33.840,0:12:41.040
+just about linear journeys. It's about interactions within teams. So those senior engineers - they were
+
+0:12:41.040,0:12:46.920
+missing something in those conversations - something that might have been really insightful, some way
+
+0:12:46.920,0:12:52.200
+that a fresh perspective could have given them insight about their code base. So I really want you to
+
+0:12:52.200,0:12:58.380
+see learning culture as a thing that is emergent for all of us and not just tied to, some people are
+
+0:12:58.380,0:13:04.500
+down here and they need to get up here, right, we all build together. Finally I have recommendations.
+
+0:13:04.500,0:13:09.720
+There are more recommendations and thoughts for leaders, for managers, but I thought I'd call a
+
+0:13:09.720,0:13:15.840
+few out. How do you know if you're on the path to building learning culture? Well, you'll start to see
+
+0:13:15.840,0:13:21.720
+that people can exercise some agency. I believe profoundly that people need to co-create their
+
+0:13:21.720,0:13:28.620
+definitions of success. Research and social science says this too. You'll see that people can develop.
+
+0:13:28.620,0:13:34.080
+A recommendation I give to almost every tech org is, notice if every conversation people have is
+
+0:13:34.080,0:13:39.420
+only about defending their reputation or going up for promotion or something like that, right.
+
+0:13:39.420,0:13:45.840
+That's not a safe space to talk about developing skills. You'll see that reflecting and passing on
+
+0:13:45.840,0:13:51.420
+knowledge is honored and it counts, right, it counts as technical. It's a big point for a lot of teams.
+
+0:13:51.960,0:13:57.960
+And you'll see more celebration, okay, we often focus on the negative what we're not doing. I
+
+0:13:57.960,0:14:03.000
+think a huge lever we have to build learning culture is just to celebrate it. People have
+
+0:14:03.000,0:14:08.551
+figured out how to do this in your organizations, so let's reward it. Thanks so much.

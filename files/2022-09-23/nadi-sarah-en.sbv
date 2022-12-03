@@ -1,0 +1,329 @@
+0:00:09.360,0:00:13.860
+Thank you everybody, good morning, I'm Sarah Nadi, I'm an associate professor at the University of
+
+0:00:13.860,0:00:18.660
+Alberta, and today I'll talk to you about some of the research my group and I have done to
+
+0:00:19.320,0:00:22.680
+hopefully avoid some of the frustrating experiences some of you might be getting
+
+0:00:22.680,0:00:28.200
+when using the library and its API or application programming interface. So let's take an example of
+
+0:00:28.200,0:00:32.940
+what such an experience would be like. So let's say Alice here is a developer, she's working
+
+0:00:32.940,0:00:39.060
+on a web application, she's using microprofile, which is a set of specifications and APIs for
+
+0:00:39.060,0:00:43.920
+developing microservices-based applications, and just kind of a simple test, she wants to
+
+0:00:43.920,0:00:49.020
+define an OpenAPI definition for one of her endpoints. So she finds this annotation OpenAPI
+
+0:00:49.020,0:00:55.080
+definition, you know, follows what she finds and thinks everything will be great, but really
+
+0:00:55.080,0:01:00.420
+no change is reflected in the API specification. She keeps reading the documentation trying to
+
+0:01:00.420,0:01:05.820
+figure out what's going on, can't figure it out, so as most of us will do turns to her favorite
+
+0:01:05.820,0:01:11.160
+resource Stack Overflow and post the question. And the answer comes back saying, you know what,
+
+0:01:12.960,0:01:17.460
+there we go, try putting the annotation on a JAX-RS application class. So in other words,
+
+0:01:17.460,0:01:24.180
+this annotation only works if it's put on a class that extends Application. And so this is not really
+
+0:01:24.180,0:01:29.460
+a hypothetical example, this is really from Stack Overflow, and kind of from the comment here we see
+
+0:01:29.460,0:01:35.040
+oh yeah, that solution worked, unfortunately it just doesn't seem well documented. And I'm sure
+
+0:01:35.040,0:01:39.180
+some of you ran into such problems with different types of libraries and different APIs you've used.
+
+0:01:39.180,0:01:45.240
+and the issue is that there's really kind of these three worlds, or three points of view on API. There's
+
+0:01:45.240,0:01:51.120
+the API designer, what they wanted people to do, how they expected people to use the API, so, their
+
+0:01:51.120,0:01:56.760
+intentions. There's the API documentation which hopefully has all these intentions documented,
+
+0:01:56.760,0:02:02.280
+and then there's the API users' understanding based on reading the documentation, maybe based on, kind
+
+0:02:02.280,0:02:08.880
+of, other information of similar libraries they have used. And in an ideal world all these three
+
+0:02:08.880,0:02:15.060
+would be kind of overlapping and we wouldn't have any problems. But in practice things look somewhat
+
+0:02:15.060,0:02:21.000
+like that. And it's at these boundaries that these problems happen. I'm just gonna use this.
+
+0:02:21.000,0:02:26.820
+And these problems are kind of types of bugs or types of errors, and they're very specific. So the
+
+0:02:26.820,0:02:32.520
+problem I'm talking about today I refer to as API misuses, and this is the incorrect or unexpected
+
+0:02:32.520,0:02:38.460
+behavior of an API or, like, unexpected behavior you get because of misusing the API or not correctly
+
+0:02:38.460,0:02:43.380
+using it because of some problems like we've seen: hidden intentions or undocumented intentions.
+
+0:02:44.220,0:02:48.480
+And so somebody can say, okay, but there's tools that can help me with that. So there's a lot of
+
+0:02:48.480,0:02:54.720
+tools out there that scan your code and point to some problems of very commonly used APIs or
+
+0:02:54.720,0:03:01.200
+very commonly used libraries. I'll say that's true, and the way these tools work is that they focus
+
+0:03:01.200,0:03:05.820
+on common mistakes or bug patterns. So basically somebody in the background, whether this is the
+
+0:03:05.820,0:03:11.340
+API designer or API expert, somebody very familiar with it, seeing the problem several times says, okay,
+
+0:03:11.340,0:03:15.720
+this is a usage rule, this is something we need to document, this is something we need these tools to
+
+0:03:15.720,0:03:21.900
+check for. And this is great, but it's also a lot of manual effort and reliance on these experts
+
+0:03:21.900,0:03:27.600
+to encode these in the rules. And so the question becomes, can we discover these API usage rules or
+
+0:03:27.600,0:03:33.060
+these expectations automatically? And we thought, let's set out to do this. And so what we did was
+
+0:03:33.060,0:03:39.360
+we looked at client code, so basically projects that use this library or API, and lots of it, and we
+
+0:03:39.360,0:03:44.700
+looked through the API usages, so let's say very simply here is an API that connects the database, we look at
+
+0:03:44.700,0:03:50.340
+how everybody's using it, and we look for frequent patterns there. So we say, okay, here there's the
+
+0:03:50.340,0:03:54.120
+pattern, you connect to the database, you execute the query, and you close the database connection.
+
+0:03:54.780,0:04:00.060
+And so the idea is that using this pattern we can find things that deviate from the pattern. So in
+
+0:04:00.060,0:04:05.160
+this specific case we would flag this third usage here as an API misuse, something that deviated from
+
+0:04:05.160,0:04:12.180
+this API usage pattern. And so we wanted to see how this works in practice. And so we took a set of - a
+
+0:04:12.180,0:04:18.480
+benchmark, which is a set of known API misuses we have, and we said, okay, let's measure how many
+
+0:04:18.480,0:04:24.840
+or what percentage of these known misuses can our detector find based on this pattern-based
+
+0:04:24.840,0:04:30.240
+detector, so that's recall, and what percentage of the things that we report to the developer,
+
+0:04:30.240,0:04:34.920
+the misuses that we flag, are actually real misuses people will care about, so that's precision.
+
+0:04:36.060,0:04:42.060
+And in practice we found that, okay, we can detect 42% of the benchmark but our precision
+
+0:04:42.060,0:04:47.880
+is around 34% which means that one out of every three warnings we give a developer is probably
+
+0:04:47.880,0:04:52.320
+something they don't really want to fix. And the reasons for that are things like idioms,
+
+0:04:52.320,0:04:56.580
+so sometimes you mine patterns that are just idioms, people are frequently using them but it
+
+0:04:56.580,0:05:02.880
+doesn't mean that those who don't use it, it's a problem, right, and so, so far I presented these
+
+0:05:02.880,0:05:07.980
+kind of two worlds. There's pattern mining, which is completely automated and you can use it as a basis
+
+0:05:07.980,0:05:13.080
+for rules and misuse detection, but the problem is, it suffers from this low precision and recall,
+
+0:05:13.800,0:05:19.500
+depending on, kind of, which APIs and so on. And then there's writing API usage rules in these
+
+0:05:19.500,0:05:24.360
+tools, so manually encoding them, but that's kind of time consuming and relies on so much effort.
+
+0:05:25.440,0:05:28.440
+And so what we ended up doing is trying to kind of combine
+
+0:05:28.440,0:05:32.460
+the best of these two worlds. So we want to make it easier for the API developer,
+
+0:05:32.460,0:05:37.320
+sorry, the API designer to encode these expectations quickly, and we want to make it easier
+
+0:05:37.320,0:05:41.160
+for API users to have checkers for them that can, you know, tell them if they've done something wrong.
+
+0:05:41.760,0:05:46.320
+And so we do a slight change in this pipeline in that we introduce the human in the loop approach.
+
+0:05:46.920,0:05:51.420
+So basically we start with the same idea of, we're going to mine these patterns, but we say
+
+0:05:51.420,0:05:55.620
+these are candidate rules, these are starting points for rule authoring. And the thing is, we
+
+0:05:55.620,0:06:00.420
+want to give them to API designers in a format that's easy for them to understand and easy for
+
+0:06:00.420,0:06:05.040
+them to change and say oh yeah, that's something I actually want to be checked, or no, ignore this.
+
+0:06:05.700,0:06:09.660
+And so we designed this rule validation tool, and I'll show you in a minute how it works,
+
+0:06:10.200,0:06:14.160
+where the API designer can go through all these candidate rules and say, okay, this is actually
+
+0:06:14.160,0:06:19.620
+a specification or a rule that I want people to adhere to, or this is something I don't care
+
+0:06:19.620,0:06:25.500
+about, or this is the best practice. Once we have these API usage rules we automatically generate
+
+0:06:25.500,0:06:30.600
+checks from them, so static analysis checks that we ship in a easy to use tool, basically
+
+0:06:30.600,0:06:35.100
+a Maven plugin that I'll show in a minute, and then you can just use this to scan developers'
+
+0:06:35.100,0:06:40.380
+code and flag any API misuses or any problems that they have in their code using this right.
+
+0:06:41.100,0:06:47.880
+So let's take a look at how kind of this looks like from both sides. So as an API designer, oh
+
+0:06:47.880,0:06:52.320
+I'm sorry this resolution here is pretty bad, okay, hopefully you can see something there.
+
+0:06:53.400,0:06:57.900
+If you have on the left hand side here the rule authoring editor, which presents these rules
+
+0:06:57.900,0:07:06.180
+in an English-like domain specific language, so for example, Class X, if Class X has annotation Foo
+
+0:07:06.180,0:07:12.120
+then it must have annotation Bar, for example. And on the right hand side is the code that reflects
+
+0:07:12.120,0:07:16.380
+what code would look like for this rule. So you see both kind of an English description and code.
+
+0:07:17.040,0:07:22.260
+And so the idea is that here the developer would - the API expert would look at these
+
+0:07:22.260,0:07:26.760
+rules and then decide, okay, let me just check this documentation quickly, what was this API
+
+0:07:26.760,0:07:32.820
+again, okay, yeah, so this is not a rule, I'm going to skip this, then look at this and say okay, that's
+
+0:07:32.820,0:07:38.100
+a good starting point, but it's not exactly what we want, let me just edit this a bit, and you can see
+
+0:07:38.100,0:07:42.720
+it reflecting there, and once I'm happy with it I'm going to confirm that this is a rule.
+
+0:07:43.440,0:07:47.700
+One of the other ones maybe just say, oh that's a rule already, I don't need to change anything for
+
+0:07:47.700,0:07:52.920
+it. And maybe for some, this is a best practice, it's not like really a violation. We also have
+
+0:07:52.920,0:07:57.360
+documentation on how to use this and kind of what the different parts of this domain
+
+0:07:57.360,0:08:03.060
+specific language is that you can check out and then just kind of things to help you author the
+
+0:08:03.060,0:08:10.080
+rules like formatting and so on, so, like just make it look pretty. Okay so then you've went through
+
+0:08:10.080,0:08:13.620
+these candidate rules that have been mined, some of them are good, some of them you've edited, now
+
+0:08:13.620,0:08:17.700
+you have a set of confirmed rules that you want, you know, anybody using your library to adhere to.
+
+0:08:18.240,0:08:24.000
+and so once you've done that we automatically generate, basically a Maven plug-in that
+
+0:08:25.020,0:08:29.940
+the client developer can use, so the API user can use, so all they need is to say, you know, scan my
+
+0:08:29.940,0:08:35.160
+code using this violation detection, and it's going to tell them what's wrong with the code. So in this
+
+0:08:35.160,0:08:40.320
+case there's a class that has a function with annotation "query", and in that case the class for
+
+0:08:40.320,0:08:45.060
+this to work must have an annotation "GraphQL API" and it's telling you what's missing there,
+
+0:08:45.060,0:08:51.840
+line numbers and so on. So basically what this kind of pipeline does is that, we are starting a
+
+0:08:51.840,0:08:56.520
+conversation between the API designer and the API user, and it's an automated conversation that can
+
+0:08:56.520,0:09:02.100
+go on, right. So by giving the API designer - telling them how people are using their API - helping them,
+
+0:09:02.100,0:09:07.260
+you know, create these expectations, make them more explicit, they can then help the API user
+
+0:09:07.260,0:09:12.240
+use this correctly and the cycle can go on, like, as the API evolves you can figure out, okay, have
+
+0:09:12.240,0:09:17.100
+people changed how they're using this, what are the frequent usages, and in the end this, you know, makes
+
+0:09:17.100,0:09:22.080
+us all happy because it avoids buggy software. And before I wrap up, I just want to thank everybody
+
+0:09:22.080,0:09:26.640
+who's been involved in this work, whether students in my group, external collaborators, also our IBM
+
+0:09:26.640,0:09:32.100
+collaborators who we worked with on the microprofile stuff. And with that I'd like to thank
+
+0:09:32.100,0:09:36.660
+you all, encourage you to, you know, try this out. We have two sets of tools: one that focuses on
+
+0:09:36.660,0:09:41.640
+really, kind of, API usage patterns inside methods, so things like the close database
+
+0:09:41.640,0:09:46.860
+connection, so it focuses on control and data flow, and another that's the whole pipeline that focuses
+
+0:09:46.860,0:09:52.680
+on annotation-based Java usage patterns, misuses and validating those. Thank you so much, I'd be
+
+0:09:52.680,0:09:57.351
+happy to take questions or you know chat during lunch or coffee breaks. Thanks a lot.

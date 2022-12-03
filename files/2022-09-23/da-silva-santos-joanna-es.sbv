@@ -1,0 +1,194 @@
+0:00:09.360,0:00:13.320
+Buenos días a todos, soy Joanna, soy una profesora asistente en el departamento de
+
+0:00:13.320,0:00:16.620
+ciencias de la computación e ingeniería de Notre Dame. En realidad, apenas ingresé el año pasado por eso
+
+0:00:16.620,0:00:21.480
+Brittany se confunde con mi afiliación. Y hoy me gustaría hablar un poco sobre los code smells
+
+0:00:21.480,0:00:27.180
+y el código generado automáticamente. Así que recuerden que allá por el 2015, 2016 yo era una estudiante de maestría
+
+0:00:27.180,0:00:32.400
+y vi este tweet que básicamente dice, "oye, por favor, máquina, por favor haz un sitio web con mi
+
+0:00:32.400,0:00:38.160
+fuentes favoritas. Increíble, increíble, gran desempeño, y por supuesto, por favor, sin bugs" ¿no? Es genial,
+
+0:00:38.160,0:00:43.620
+esto sería un lenguaje de programación increíble. Pero, por supuesto, eso era una broma en ese momento, pero
+
+0:00:43.620,0:00:48.900
+la realidad es que, ¿es realmente una broma hoy en día? No lo creo. Porque el año pasado probablemente
+
+0:00:48.900,0:00:53.040
+vieron el lanzamiento de GitHub Copilot en el que ahora pueden simplemente escribir la firma de su función,
+
+0:00:53.040,0:00:57.420
+ya saben, sólo tienen que escribir sus comentarios de código, y luego dicen lo que quieren que su código sea.
+
+0:00:57.420,0:01:02.100
+Y GitHub Copilot generará algunas recomendaciones para ustedes. Y eso es increíble,
+
+0:01:02.100,0:01:06.480
+es realmente genial, que realmente nos ayuda mucho a mejorar nuestra
+
+0:01:06.480,0:01:12.660
+productividad. Y trabajos anteriores se han centrado mucho en la funcionalidad de ese código, de ese
+
+0:01:12.660,0:01:17.760
+código generado, es decir que el código vaya a hacer lo que se supone que debe hacer, la funcionalidad,
+
+0:01:17.760,0:01:24.600
+¿pero qué hay de la calidad del código generado? ¿Es el código correcto, pero es también libre de code
+
+0:01:24.600,0:01:31.560
+smells?, ¿está también libre de fallos de seguridad?, eso no está realmente claro. Así que de entrada yo y mi
+
+0:01:31.560,0:01:36.720
+investigación - mis estudiantes de doctorado - hemos estado buscando los code smells en código generado
+
+0:01:36.720,0:01:42.120
+automáticamente. Y los code smells, como usted ya deben saber, son básicamente los síntomas que
+
+0:01:42.120,0:01:47.040
+pueden indicar que este sistema tiene defectos. Y estos code smells pueden generar problemas en la sostenibilidad,
+
+0:01:47.040,0:01:53.520
+deudas técnicas, y también, con el tiempo, problemas de seguridad a los que nos referimos como security smells.
+
+0:01:54.600,0:02:01.320
+Así que a la luz de déficit, lo que hemos hecho es, bueno, en primer lugar, echar mirar los conjuntos
+
+0:02:01.320,0:02:07.260
+de entrenamiento que se utilizan para entrenar estos modelos de aprendizaje automático que generan código. 
+
+0:02:07.260,0:02:13.260
+Revisamos tres conjuntos de datos diferentes que son utilizados comunmente por estos modelos
+
+0:02:13.260,0:02:19.920
+de aprendizaje automático, y luego las muestras de Python de esos conjuntos de datos, y utilizamos dos herramientas
+
+0:02:19.920,0:02:25.980
+estáticas de análisis, Pylint y Bandit. Y la idea aquí es ver si esos conjuntos de datos 
+
+0:02:25.980,0:02:31.200
+de entrenamiento contienen code smells y la respuesta a esta pregunta es que sí
+
+0:02:31.200,0:02:35.580
+contienen code smells, y de hecho, como se puede ver en esta tabla de aquí,
+
+0:02:35.580,0:02:43.860
+CodeXGlue, que es un conjunto de datos muy grande, el 97% de esas muestras de Python tenían code smells
+
+0:02:43.860,0:02:49.380
+reportados por esos dos analizadores estáticos. Y si nos fijamos en términos de security smells estos
+
+0:02:49.380,0:02:54.780
+fragmentos de código también tienen security smells, por ejemplo, Code Clippy tiene 10% de
+
+0:02:54.780,0:03:02.280
+sus muestras de Python con security smells. Así que eso es bastante alarmante, pero al final del día estos son
+
+0:03:02.280,0:03:08.040
+sólo los conjuntos de entrenamiento, no significa necesariamente que el código generado tendrá esos problemas.
+
+0:03:08.040,0:03:14.640
+Con eso en mente también investigamos si hay code smells en el código generado.
+
+0:03:14.640,0:03:22.080
+Así que seguimos un proceso sistemático en el que, básicamente, utilizamos GitHub Copilot, teníamos una lista de 
+
+0:03:22.080,0:03:29.100
+indicaciones que le dimos a GitHub Copilot y le dimos las mismas indicaciones a Code Clippy que es una
+
+0:03:29.100,0:03:34.560
+versión de código abierto de GitHub Copilot, y luego también ejecutamos los analizadores estáticos Pylint y
+
+0:03:34.560,0:03:42.000
+Bandit para ver si el código generado tenía code smells o no. Así que después de haber hecho eso 
+
+0:03:42.000,0:03:47.700
+hemos encontrado code smells y security smells también en el código el generado automáticamente.
+
+0:03:47.700,0:03:53.400
+Por ejemplo, en términos de code smells encontramos variables indefinidas como los code smells más problemáticos,
+
+0:03:53.400,0:04:00.840
+líneas de código demasiado largas, código duplicado, argumentos no utilizados, y más importante,
+
+0:04:00.840,0:04:06.540
+también encontramos problemas de seguridad que pueden ser bastante graves y hacer que su sistema sea inseguro,
+
+0:04:06.540,0:04:12.360
+como el uso de la función eval - que significa que se puede ejecutar código y un atacante podría explotar
+
+0:04:12.360,0:04:18.540
+esto para ejecutar código de forma remota - y también el uso de funciones hash débiles, así como md5. 
+
+0:04:19.620,0:04:24.780
+Aquí está un ejemplo de lo que encontramos. Por ejemplo, aquí tengo una función en Python que dice 
+
+0:04:24.780,0:04:30.720
+"mostrar los usuarios", y tengo un comentario de código que dice, "hey, me gustaría consultar mi base de datos
+
+0:04:30.720,0:04:35.580
+y obtener información del usuario dado un nombre de usuario". Eso es bastante genial y eso es lo esa llamada
+
+0:04:35.580,0:04:42.300
+a GitHub Copilot genera. Como se puede ver en la línea 10, tenemos aquí una designación del cursor de ese SQL
+
+0:04:42.300,0:04:49.260
+que parece ser correcta y, de hecho, es correcta, pero esto es propenso a la inyección de SQL.
+
+0:04:49.260,0:04:53.760
+Si tienen algún tipo de conocimiento de seguridad ya saben que en el nombre de usuario podrían inyectar algún
+
+0:04:53.760,0:04:59.460
+código SQL, y podrían, por ejemplo, descartar la base de datos por completo. Así que esto va a
+
+0:04:59.460,0:05:04.980
+introducir la inyección de SQL, no?. Otro problema que tenemos aquí es que las credenciales en este código
+
+0:05:04.980,0:05:12.720
+en la línea 6, por ejemplo, también están quemadas, lo cual es otro problema de seguridad. Entonces, 
+
+0:05:12.720,0:05:17.880
+que pueden hacer ustedes al respecto? Ahora que saben que es genial utilizar estas herramientas basadas en la IA, pero
+
+0:05:17.880,0:05:24.240
+un gran poder conlleva una gran desponsabilidad, así que ¿qué se puede hacer al respecto? Creo que el
+
+0:05:24.240,0:05:27.840
+punto aquí, lo que me gustaría plantearles como desarrolladores, es que por favor utilicen
+
+0:05:28.680,0:05:33.720
+estas herramientas basadas en la IA, son increíbles, los ayudarán con su productividad, pero
+
+0:05:33.720,0:05:38.760
+también tomen con un grano de sal lo que están generando para ustedes. Hagan uso de 
+
+0:05:38.760,0:05:43.020
+linters, Pylint, Bandit, o cualquier otra cosa que está disponible para el lenguaje que
+
+0:05:43.020,0:05:50.880
+están usando, porque, al final del día, ¿por qué debería importarles? Y la razón es, bueno, 
+
+0:05:53.340,0:05:57.780
+sí, tienen razón, ya saben lo que quiero decir. Porque al final del
+
+0:05:57.780,0:06:02.040
+día ese código que han subido al repo, cuando ustedes hacen git blame no va a decir que
+
+0:06:02.040,0:06:05.940
+la culpa es de GitHub Copilot, va a decir que la culpa es de ustedes - ustedes son quienes
+
+0:06:05.940,0:06:10.560
+postearon ese código, era su responsabilidad asegurarse de que estaba libre de vulnerabilidades
+
+0:06:10.560,0:06:16.020
+y libre de code smells. Bien, dicho esto, me gustaría agradecerles su atención,
+
+0:06:16.020,0:06:20.220
+y si quieren saber más, por favor, escaneen el código QR y podrán leer el artículo. Muchas gracias.

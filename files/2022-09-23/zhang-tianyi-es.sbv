@@ -1,0 +1,198 @@
+0:00:09.360,0:00:14.760
+Ustedes han oído al Dr. Foutse Khomh hablando de cómo encontrar errores en programas de Deep Learning
+
+0:00:14.760,0:00:21.660
+y yo voy a hablar de cómo averiguar lo que falla- averiguar las causas fundamentales de esos errores.
+
+0:00:21.660,0:00:29.160
+Entonces, la AI, la inteligencia artificial ha sido cada vez más incrustada
+
+0:00:29.160,0:00:35.700
+en las aplicaciones y sistemas de software modernos y la clave detrás de esto es el Deep Learning. 
+
+0:00:35.700,0:00:40.500
+Y sabes que el Deep Learning es bastante diferente que la ingeniería de software tradicional. En el desarrollo de software
+
+0:00:40.500,0:00:46.380
+tradicional, nosotros los programadores escribimos manualmente la lógica del programa en el código fuente, bien,
+
+0:00:46.380,0:00:53.400
+pero en el Deep Learning los modelos realmente aprenden su propia lógica a partir de los datos de entrenamiento. Y también,
+
+0:00:53.400,0:01:00.840
+en el desarrollo de software tradicional todo se codifica en representaciones simbólicas, cierto,
+
+0:01:00.840,0:01:08.280
+estructuras de datos, etc, etc. Pero en el Deep Learning, las cosas se codifican en matrices de alta dimensionalidad y allí
+
+0:01:08.280,0:01:14.340
+suceden un montón de operaciones de cálculo y álgebra lineal sobre estas matrices para hacer la inferencia.
+
+0:01:16.020,0:01:19.260
+Esto conlleva muchos desafíos para depurar los modelos de Deep Learning.
+
+0:01:19.800,0:01:25.680
+Ya sabes, en el viejo mundo del software tradicional, si queremos depurar nuestros errores, básicamente establecemos un
+
+0:01:25.680,0:01:30.960
+breakpoint y podemos pasar por cada línea de código para averiguar la causa de este error.
+
+0:01:31.980,0:01:36.000
+Pero en Deep Learning, para las redes neuronales, ¿cómo podemos siquiera establecer un breakpoint?
+
+0:01:37.200,0:01:42.600
+Incluso si a veces podemos echar un vistazo interno, ya sabes, a una capa específica o
+
+0:01:42.600,0:01:47.400
+a una neurona en la red neuronal, pero ¿qué podemos obtener en el momento de ejecución? Los valores  que obtenemos
+
+0:01:47.400,0:01:52.560
+de esta red neuronal son matrices de alta dimensionalidad que son difíciles de interpretar, ¿verdad?
+
+0:01:54.720,0:01:59.640
+Muy bien, veamos un ejemplo. Supongamos que eres un programador y que en realidad
+
+0:01:59.640,0:02:06.060
+entrenaste esta red neuronal recurrente para clasificar los comentarios de Reddit en opiniones positivas o negativas,
+
+0:02:06.660,0:02:11.460
+y descubres que la precisión del modelo es bastante baja, y te preguntas por qué,
+
+0:02:11.460,0:02:17.460
+¿verdad? Así, por ejemplo, este comentario claramente comparte una opinión negativa, pero el modelo
+
+0:02:17.460,0:02:24.300
+lo clasifica erróneamente como positivo. Así que es realmente difícil decir exactamente lo que sucede dentro del modelo,
+
+0:02:24.300,0:02:29.880
+cierto, y por qué se produce este error. Y esto es realmente por lo qué algunas personas,
+
+0:02:29.880,0:02:35.640
+llaman al Deep Learning "alquimia", ¿verdad? La gente no sabe exactamente por qué algo funciona
+
+0:02:35.640,0:02:41.820
+y por qué algo no funciona. Bien, para nosotros - para los programadores es como una gigantesca caja negra 
+
+0:02:42.840,0:02:49.140
+Nuestra solución es transformar esta compleja y familiar red neuronal en algo con lo que
+
+0:02:49.140,0:02:54.480
+estemos familiarizados , bien, como una máquina de estado finito, y de esta manera podamos traer de vuelta todos las
+
+0:02:54.480,0:03:00.480
+cosas buenas que tenemos en el mundo de la programación tradicional, la gente puede pasar por cada estado
+
+0:03:00.480,0:03:07.680
+en la máquina de estado finito e inspeccionar el valor del estado. Así que
+
+0:03:07.680,0:03:12.480
+basándonos en esta idea construimos una herramienta de depuración llamada DeepSeer. En medio de esta
+
+0:03:12.480,0:03:18.120
+interfaz hay una visualización de la máquina de estado finito abstraído de un modelo RNN,
+
+0:03:18.120,0:03:23.580
+que proporciona a los programadores una vista amplia de lo que ya está pasando en
+el proceso interno
+
+0:03:23.580,0:03:31.260
+de toma de decisiones del modelo. A medida que el modelo lee cada palabra de nuestro texto, pasará a
+
+0:03:31.260,0:03:38.520
+a un estado diferente hasta llegar al final del texto para tomar la decisión definitiva. Y si
+
+0:03:38.520,0:03:43.920
+haces click en el estado realmente puede ver las palabras y frases frecuentes asociados con este estado.
+
+0:03:43.920,0:03:48.000
+Así que de esta manera convertimos esas matrices de alta dimensionalidad ininterpretables
+
+0:03:48.000,0:03:52.740
+en una representación simbólica interpretable por los programadores.
+
+0:03:54.000,0:03:59.700
+Y también puedes indagar en los datos individuales en el set de entrenamiento, buscar y el filtrar y
+
+0:03:59.700,0:04:05.520
+rastrear todo el camino hasta el diagrama de estado. Volviendo al ejemplo anterior 
+
+0:04:05.520,0:04:11.520
+de clasificación errónea, con DeepSeer puedes introducir este texto mal clasificado y DeepSeer
+
+0:04:11.520,0:04:18.600
+producirá inmediatamente una traza de estado que refleje las decisiones intermedias tomadas por el modelo RNN
+
+0:04:18.600,0:04:26.220
+después de leer cada palabra del texto de entrada. En este caso, el rojo significa negativo y el azul positivo.
+
+0:04:26.220,0:04:33.000
+De forma similar a como se recorre un programa -el código fuente- puedes recorrer esta ruta de estado
+
+0:04:33.000,0:04:39.900
+y ver lo que sucede después de que, ya sabes, el modelo lee cada palabra en el texto. Y podemos ver
+
+0:04:39.900,0:04:44.460
+que, este modelo RNN realmente cambia varias veces cuando está leyendo el texto
+
+0:04:44.460,0:04:49.800
+y en particular, después de, ya sabes, leer esta palabra 'quarters' al final de la frase,
+
+0:04:49.800,0:04:57.240
+el modelo de repente cambia de negativo a positivo y no vuelve a cambiar. Así que
+
+0:04:57.240,0:05:01.740
+en realidad nos proporciona algunas buenas pistas para un mayor depuración - para una mayor investigación.
+
+0:05:01.740,0:05:08.580
+Cuando realmente buscamos esta palabra clave 'quarters' en los datos de entrenamiento, cierto, podemos ver que los datos
+
+0:05:08.580,0:05:14.760
+están bastante desequilibrados. Hay 28 frases que mencionan estos 'quarters' y 27 de ellas son
+
+0:05:14.760,0:05:20.820
+etiquetadas como positivo sólo una de ellas es etiquetada como negativo, lo que significa que el modelo en realidad
+
+0:05:20.820,0:05:26.580
+aprende una correlación superficial entre esta palabra 'quarters' y una opinión positiva, ¿verdad?
+
+0:05:26.580,0:05:30.480
+Así que es muy probable que esta sea la causa de esta clasificación errónea.
+
+0:05:31.980,0:05:37.140
+Para confirmar aún más la utilidad de esta idea, hicimos un estudio de usuarios con 28
+
+0:05:37.140,0:05:42.420
+estudiantes CS, se les pidió depurar dos modelos diferentes entrenados con dos conjuntos de datos diferentes utilizando
+
+0:05:42.420,0:05:48.540
+DeepSeer versus otra herramienta popular de depuración de Deep Learning llamada Lime y
+
+0:05:48.540,0:05:53.400
+descubrimos que los estudiantes que utilizaban DeepSeer proporcionaban conocimientos más razonables sobre las causas fundamentales.
+
+0:05:53.400,0:05:59.100
+Y también encontramos más palabras clave inductoras de errores en la frase de entrada en comparación con el uso de Lime.
+
+0:06:00.180,0:06:06.000
+Así que, de acuerdo, lo que hay que tener en cuenta. Sabes, creo que dada la opacidad del Deep Learning, creo que es
+
+0:06:06.000,0:06:12.540
+bastante importante para nosotros los programadores entender lo que estamos construyendo y ser responsables de los
+
+0:06:12.540,0:06:18.600
+errores del modelo.  Para lograr este objetivo en realidad tenemos que construir nuevas herramientas de depuración que tengan en cuenta
+
+0:06:18.600,0:06:24.960
+las características únicas del Deep Learning. Y para que estas herramientas sean utilizables para la mayoría 
+
+0:06:24.960,0:06:30.600
+de la población de programadores tenemos que transformar los aspectos internos de un modelo de Deep Learning en algo
+
+0:06:30.600,0:06:36.180
+que nos resulte familiar y que sea interpretable para los programadores en lugar de algo que sólo
+
+0:06:36.180,0:06:42.660
+tenga sentido para los expertos y teóricos del Machine Learning. Por último, quiero dar
+
+0:06:42.660,0:06:47.040
+un saludo a mis colaboradores de la Universidad de Alberta y agradecerles a todos por escuchar.
