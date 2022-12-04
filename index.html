@@ -4,7 +4,7 @@ title: "It Will Never Work in Theory"
 ---
 
 {% for session in site.talks reversed %}
-<h2>{{session.title}} ({{session.date}})</h2>
+<h2 id="{{session.slug}}">{{session.title}} ({{session.date}})</h2>
 <table>
   <tr>
   {% assign column = 'left' %}

@@ -40,7 +40,7 @@ probamos usaré esta analogía de los tres monos, no escuchar el mal, no ver el 
 0:01:28.560,0:01:36.240
 En el caso de la adopción de herramientas, no oír hablar de herramientas, no ver herramientas y no hablar de herramientas. Muy bien, lo primero
 
-0:01:36.240,0:01:41.100s
+0:01:36.240,0:01:41.100
 que probamos fueron los emails automatizados. Enviamos emails a los desarrolladores recomendando herramientas de análisis estático
 
 0:01:41.100,0:01:46.980
