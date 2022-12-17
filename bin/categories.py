@@ -1,37 +1,46 @@
-#!/usr/bin/env python
+"""Extract information from posts."""
 
-import re
+import argparse
+import frontmatter
 import sys
-
-
-CATEGORIES = re.compile(r'^categories:\s*\[(.+?)\]', re.MULTILINE)
+import yaml
 
 
 def main():
-    categories = {}
-    for filename in sys.argv[1:]:
-        get_categories(categories, filename)
-    report(categories)
+    config = _parse_args()
+    categories = _get_categories(config)
+    yaml.dump(categories, sys.stdout)
 
 
-def get_categories(categories, filename):
-    with open(filename, 'r') as reader:
-        text = reader.read()
-        match = CATEGORIES.search(text)
-        if not match:
-            print(f'No categories in {filename}', file=sys.stderr)
-            return
-        for cat in [x.strip().strip('"') for x in match.group(1).split(',')]:
-            if cat not in categories:
-                categories[cat] = set()
-            categories[cat].add(filename)
+def _get_categories(config):
+    """Extract post categories."""
+    accum = {}
+
+    for filename in config.posts:
+        info = frontmatter.load(filename)
+        if "categories" not in info:
+            print(f"{filename} has no categories", file=sys.stderr)
+        else:
+            stripped = filename.replace(config.prefix, "", 1).replace(".md", ".html")
+            date = info["date"].strftime("%Y-%m-%d")
+            for cat in info["categories"]:
+                accum.setdefault(cat, set()).add((date, stripped, info["title"]))
+
+    result = []
+    for name in sorted(accum.keys()):
+        entries = list(sorted(accum[name]))
+        entries = [{"date": i[0], "reviewed": i[1], "title": i[2]} for i in entries]
+        result.append({"name": name, "entries": entries})
+
+    return result
 
 
-def report(categories):
-    for cat in sorted(categories.keys()):
-        print(f'{cat}: {len(categories[cat])}')
-        for filename in sorted(categories[cat]):
-            print(f'  {filename}')
+def _parse_args():
+    """Parse command-line arguments."""
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--prefix", help="Path prefix to remove from filenames")
+    parser.add_argument("posts", nargs="+", help="Paths to blog posts")
+    return parser.parse_args()
 
 
 if __name__ == '__main__':

@@ -1,0 +1,5450 @@
+- entries:
+  - date: '2021-08-09'
+    key: Abad2018
+    reviewed: /2021/08/09/task-interruption-in-software-development-projects.html
+  name: Abad, Zahra Shakeri Hossein
+- entries:
+  - date: '2022-02-21'
+    key: Guler2019
+    reviewed: /2022/02/21/antifuzz.html
+  name: Abbasi, Ali
+- entries:
+  - date: '2021-09-17'
+    key: Abdalkareem2017
+    reviewed: /2021/09/17/why-do-developers-use-trivial-packages.html
+  - date: '2022-04-08'
+    key: Latendresse2021
+    reviewed: /2022/04/08/continuous-integration-single-statement-bugs.html
+  name: Abdalkareem, Rabe
+- entries:
+  - date: '2014-03-31'
+    key: Graziotin2014
+    reviewed: /2014/03/31/happy-sw-devs-solve-problems-better.html
+  name: Abrahamsson, Pekka
+- entries:
+  - date: '2021-10-19'
+    key: Durieux2020
+    reviewed: /2021/10/19/restarted-and-flaky-builds-on-travis-ci.html
+  name: Abreu, Rui
+- entries:
+  - date: '2011-08-09'
+    key: McIntosh2011
+    reviewed: /2011/08/09/an-empirical-study-of-build-maintenance-effort.html
+  - date: '2012-05-17'
+    key: Khomh2012
+    reviewed: /2012/05/17/do-faster-releases-improve-software-quality.html
+  - date: '2021-09-18'
+    key: Tourani2017
+    reviewed: /2021/09/18/code-of-conduct-in-open-source-projects.html
+  name: Adams, Bram
+- entries:
+  - date: '2021-09-25'
+    key: Schweinsberg2021
+    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
+  name: Adie, Prestone
+- entries:
+  - date: '2011-12-04'
+    key: Hundhausen2011
+    reviewed: /2011/12/04/online-vs-face-to-face-pedagogical-code-reviews-an-empirical-comparison.html
+  name: Agarwal, Pawan
+- entries:
+  - date: '2012-04-10'
+    key: Philip2012
+    reviewed: /2012/04/10/component-reuse-vs-snippet-remixing.html
+  name: Agarwala, Megha
+- entries:
+  - date: '2021-10-06'
+    key: Aghajani2019
+    reviewed: /2021/10/06/software-documentation-issues-unveiled.html
+  name: Aghajani, Emad
+- entries:
+  - date: '2021-09-10'
+    key: Majumder2019
+    reviewed: /2021/09/10/why-software-projects-need-heroes.html
+  name: Agrawal, Amritanshu
+- entries:
+  - date: '2016-08-14'
+    key: Hermans2016
+    reviewed: /2016/08/14/novice-smells.html
+  - date: '2021-08-27'
+    key: Miedema2021
+    reviewed: /2021/08/27/errors-in-sql-queries.html
+  name: Aivaloglou, Efthimia
+- entries:
+  - date: '2021-09-21'
+    key: Ajami2018
+    reviewed: /2021/09/21/syntax-predicates-idioms-what-really-affects-code-complexity.html
+  name: Ajami, Shulamyt
+- entries:
+  - date: '2016-06-13'
+    key: Akerblom2016
+    reviewed: /2016/06/13/polymorphism-in-python.html
+  name: "\xC5kerblom, Beatrice"
+- entries:
+  - date: '2021-10-30'
+    key: AlSubaihin2021
+    reviewed: /2021/10/30/app-store-effects-on-software-engineering-practices.html
+  name: Al-Subaihin, Afnan A.
+- entries:
+  - date: '2021-09-25'
+    key: Schweinsberg2021
+    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
+  name: Alaburda, Paulius
+- entries:
+  - date: '2021-10-10'
+    key: Alkhabaz2021
+    reviewed: /2021/10/10/mongodb-homework.html
+  name: Alawini, Abdussalam
+- entries:
+  - date: '2021-09-25'
+    key: Schweinsberg2021
+    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
+  name: Albers, Casper
+- entries:
+  - date: '2021-08-09'
+    key: AlencarDaCosta2017
+    reviewed: /2021/08/09/impact-of-rapid-release-cycles-on-integration-delay-of-fixed-issues.html
+  name: Alencar da Costa, Daniel
+- entries:
+  - date: '2021-09-25'
+    key: Schweinsberg2021
+    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
+  name: Ali, Amal (Akmal) Ridhwan Omar
+- entries:
+  - date: '2021-08-11'
+    key: Ali2020
+    reviewed: /2021/08/11/cheating-death-survival-analysis-of-python-projects.html
+  name: Ali, Rao Hamza
+- entries:
+  - date: '2021-10-10'
+    key: Alkhabaz2021
+    reviewed: /2021/10/10/mongodb-homework.html
+  name: Alkhabaz, Ridha
+- entries:
+  - date: '2021-09-04'
+    key: Almeida2017
+    reviewed: /2021/09/04/do-software-developers-understand-open-source-licenses.html
+  name: Almeida, Daniel A.
+- entries:
+  - date: '2021-09-05'
+    key: Coelho2016
+    reviewed: /2021/09/05/two-papers-on-errors.html
+  name: Almeida, Lucas
+- entries:
+  - date: '2022-03-04'
+    key: Golubev2021
+    reviewed: /2022/03/04/software-refactoring.html
+  name: AlOmar, Eman Abdullah
+- entries:
+  - date: '2021-09-25'
+    key: Schweinsberg2021
+    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
+  name: Alspaugh, Sara
+- entries:
+  - date: '2021-09-25'
+    key: Schweinsberg2021
+    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
+  name: Alstott, Jeff
+- entries:
+  - date: '2016-06-11'
+    key: Altadmri2015
+    reviewed: /2016/06/11/novice-programming-mistakes.html
+  - date: '2021-09-03'
+    key: Brown2018
+    reviewed: /2021/09/03/two-papers-about-the-blackbox-project.html
+  name: Altadmri, Amjad
+- entries:
+  - date: '2021-09-25'
+    key: Schweinsberg2021
+    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
+  name: Althoff, Tim
+- entries:
+  - date: '2021-09-12'
+    key: Beller2019
+    reviewed: /2021/09/12/developer-testing-in-the-ide.html
+  - date: '2022-03-13'
+    key: Glanz2020
+    reviewed: /2022/03/13/obfuscated-strings-and-privacy.html
+  name: Amann, Sven
+- entries:
+  - date: '2012-11-06'
+    key: Ameller2012
+    reviewed: /2012/11/06/how-do-software-architects-consider-non-functional-requirements.html
+  name: Ameller, David
+- entries:
+  - date: '2021-10-11'
+    key: Ames2018
+    reviewed: /2021/10/11/a-critical-history-of-logo-and-constructionist-learning.html
+  name: Ames, Morgan G.
+- entries:
+  - date: '2021-09-25'
+    key: Schweinsberg2021
+    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
+  name: Amireh, Hashem
+- entries:
+  - date: '2011-09-22'
+    key: Anda2009
+    reviewed: /2011/09/22/variability-and-reproducibility-in-software-engineering-a-study-of-four-companies-that-developed-the-same-system.html
+  name: Anda, B.C.D.
+- entries:
+  - date: '2013-06-13'
+    key: Staples2013
+    reviewed: /2013/06/13/formal-specifications-better-than-function-points-for-code-sizing.html
+  name: Andronick, June
+- entries:
+  - date: '2021-10-19'
+    key: Costa2019
+    reviewed: /2021/10/19/whats-wrong-with-my-benchmark-results.html
+  name: Andrzejak, Artur
+- entries:
+  - date: '2022-04-06'
+    key: Tomasdottir2020
+    reviewed: /2022/04/06/adoption-of-javascript-linters.html
+  name: "Aniche, Maur\xEDcio"
+- entries:
+  - date: '2022-03-13'
+    key: Glanz2020
+    reviewed: /2022/03/13/obfuscated-strings-and-privacy.html
+  name: Anthonysamy, Pauline
+- entries:
+  - date: '2011-10-22'
+    key: Apel2011
+    reviewed: /2011/10/22/three-empirical-studies-from-esecfse11.html
+  name: Apel, Sven
+- entries:
+  - date: '2021-09-23'
+    key: Aranda2009
+    reviewed: /2021/09/23/the-secret-life-of-bugs.html
+  name: Aranda, Jorge
+- entries:
+  - date: '2011-07-26'
+    key: Hannay2010
+    reviewed: /2011/07/26/effects-of-personality-on-pair-programming.html
+  - date: '2011-08-17'
+    key: Dzidek2008
+    reviewed: /2011/08/17/three-empirical-evaluations-of-uml.html
+  name: Arisholm, E.
+- entries:
+  - date: '2021-09-25'
+    key: Schweinsberg2021
+    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
+  name: "Ari\xF1o de la Rubia, Eduardo"
+- entries:
+  - date: '2021-09-25'
+    key: Schweinsberg2021
+    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
+  name: Arzi, Adbi
+- entries:
+  - date: '2022-02-21'
+    key: Guler2019
+    reviewed: /2022/02/21/antifuzz.html
+  name: Aschermann, Cornelius
+- entries:
+  - date: '2021-09-15'
+    key: Prana2018
+    reviewed: /2021/09/15/categorizing-the-content-of-github-readme-files.html
+  name: Atapattu, Thushari
+- entries:
+  - date: '2012-01-17'
+    key: Prabhu2011
+    reviewed: /2012/01/17/a-survey-of-the-practice-of-computational-science.html
+  name: August, David I.
+- entries:
+  - date: '2021-09-23'
+    key: Malik2019
+    reviewed: /2021/09/23/the-secret-life-of-bugs.html
+  name: Augustin, Jean-Marie
+- entries:
+  - date: '2011-07-18'
+    key: Kinshumann2011
+    reviewed: /2011/07/18/debugging-in-the-very-large.html
+  name: Aul, Gabriel
+- entries:
+  - date: '2021-09-23'
+    key: Spinellis2021
+    reviewed: /2021/09/23/two-studies-of-software-evolution.html
+  name: Avgeriou, Paris
+- entries:
+  - date: '2012-11-06'
+    key: Ameller2012
+    reviewed: /2012/11/06/how-do-software-architects-consider-non-functional-requirements.html
+  name: Ayala, Claudia
+- entries:
+  - date: '2016-06-07'
+    key: Gousios2016
+    reviewed: /2016/06/07/pull-based-development.html
+  - date: '2021-10-15'
+    key: Bogomolov2021
+    reviewed: /2021/10/15/authorship-attribution-of-source-code.html
+  name: Bacchelli, Alberto
+- entries:
+  - date: '2021-10-01'
+    key: Bafatakis2019
+    reviewed: /2021/10/01/python-coding-style-compliance-on-stack-overflow.html
+  name: Bafatakis, Nikolaos
+- entries:
+  - date: '2021-09-25'
+    key: Schweinsberg2021
+    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
+  name: "Bahn\xEDk, \u0160t\u011Bp\xE1n"
+- entries:
+  - date: '2021-09-25'
+    key: Schweinsberg2021
+    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
+  name: Baik, Jason
+- entries:
+  - date: '2021-11-17'
+    key: Codoban2015
+    reviewed: /2021/11/17/software-history-under-the-lens.html
+  name: Bailey, Brian
+- entries:
+  - date: '2011-10-22'
+    key: Yin2011
+    reviewed: /2011/10/22/three-empirical-studies-from-esecfse11.html
+  name: Bairavasundaram, Lakshmi
+- entries:
+  - date: '2012-05-18'
+    key: Wicherts2011
+    reviewed: /2012/05/18/willingness-to-share-research-data-is-related-to-the-strength-of-the-evidence-and-the-quality-of-reporting-of-statistical-results.html
+  name: Bakker, Marjan
+- entries:
+  - date: '2013-06-19'
+    key: Balachandran2013
+    reviewed: /2013/06/19/reducing-human-effort-and-improving-quality-in-peer-code-reviews-using-automatic-static-analysis-and-reviewer-recommendation.html
+  name: Balachandran, Vipin
+- entries:
+  - date: '2021-09-25'
+    key: Schweinsberg2021
+    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
+  name: Balling, Laura Winther
+- entries:
+  - date: '2021-10-03'
+    key: Baltes2020
+    reviewed: /2021/10/03/is-40-the-new-60.html
+  name: Baltes, Sebastian
+- entries:
+  - date: '2021-09-25'
+    key: Schweinsberg2021
+    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
+  name: Banker, Sachin
+- entries:
+  - date: '2022-04-04'
+    key: Bao2021
+    reviewed: /2022/04/04/contributor-prediction-for-github.html
+  name: Bao, Lingfeng
+- entries:
+  - date: '2021-09-25'
+    key: Schweinsberg2021
+    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
+  name: Baranger, David A.A.
+- entries:
+  - date: '2021-09-05'
+    key: Barbosa2014
+    reviewed: /2021/09/05/two-papers-on-errors.html
+  name: Barbosa, Eiji Adachi
+- entries:
+  - date: '2021-09-05'
+    key: Barbosa2014
+    reviewed: /2021/09/05/two-papers-on-errors.html
+  name: Barbosa, Simone Diniz Junqueira
+- entries:
+  - date: '2021-09-02'
+    key: Barik2018
+    reviewed: /2021/09/02/compiler-error-messages-considered-unhelpful.html
+  - date: '2021-09-13'
+    key: Behroozi2019
+    reviewed: /2021/09/13/whats-wrong-with-tech-hiring.html
+  - date: '2021-09-13'
+    key: Behroozi2020
+    reviewed: /2021/09/13/whats-wrong-with-tech-hiring.html
+  - date: '2021-09-20'
+    key: Barik2017
+    reviewed: /2021/09/20/do-developers-read-compiler-error-messages.html
+  name: Barik, Titus
+- entries:
+  - date: '2022-04-24'
+    key: Barke2019
+    reviewed: /2022/04/24/role-clarity-deficiencies-can-wreck-agile-teams.html
+  name: Barke, Helena
+- entries:
+  - date: '2021-08-09'
+    key: Abad2018
+    reviewed: /2021/08/09/task-interruption-in-software-development-projects.html
+  name: Barker, Ken
+- entries:
+  - date: '2011-06-30'
+    key: Barnett2011
+    reviewed: /2011/06/30/specification-and-verification-the-spec-experience.html
+  name: Barnett, Mike
+- entries:
+  - date: '2021-09-25'
+    key: Schweinsberg2021
+    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
+  name: Barr, Dale J.
+- entries:
+  - date: '2012-04-26'
+    key: Hindle2016
+    reviewed: /2012/04/26/on-the-naturalness-of-software.html
+  - date: '2012-05-06'
+    key: Barr2012
+    reviewed: /2012/05/06/cohesive-and-isolated-development-with-branches.html
+  - date: '2021-09-08'
+    key: Gao2017
+    reviewed: /2021/09/08/to-type-or-not-to-type.html
+  - date: '2021-10-04'
+    key: Meyer2021
+    reviewed: /2021/10/04/the-daily-life-of-software-developers.html
+  - date: '2022-02-22'
+    key: Louis2020
+    reviewed: /2022/02/22/where-comments.html
+  name: Barr, Earl T.
+- entries:
+  - date: '2021-08-12'
+    key: Ghiotto2020
+    reviewed: /2021/08/12/on-the-nature-of-merge-conflicts.html
+  name: Barros, Marcio
+- entries:
+  - date: '2021-09-25'
+    key: Schweinsberg2021
+    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
+  name: Barros-Rivera, Brenda
+- entries:
+  - date: '2012-05-02'
+    key: Barzilay2011
+    reviewed: /2012/05/02/example-embedding.html
+  name: Barzilay, Ohad
+- entries:
+  - date: '2013-06-13'
+    key: Staples2013
+    reviewed: /2013/06/13/formal-specifications-better-than-function-points-for-code-sizing.html
+  name: Bass, Len
+- entries:
+  - date: '2021-09-25'
+    key: Schweinsberg2021
+    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
+  name: Bauer, Matt
+- entries:
+  - date: '2021-08-09'
+    key: Abad2018
+    reviewed: /2021/08/09/task-interruption-in-software-development-projects.html
+  name: Bauer, Mike
+- entries:
+  - date: '2022-03-13'
+    key: Glanz2020
+    reviewed: /2022/03/13/obfuscated-strings-and-privacy.html
+  name: "Baumg\xE4rtner, Lars"
+- entries:
+  - date: '2021-10-05'
+    key: Scalabrino2021
+    reviewed: /2021/10/05/three-papers-on-readability.html
+  - date: '2021-10-06'
+    key: Aghajani2019
+    reviewed: /2021/10/06/software-documentation-issues-unveiled.html
+  name: Bavota, Gabriele
+- entries:
+  - date: '2013-06-13'
+    key: Hemmati2013
+    reviewed: /2013/06/13/the-msr-cookbook-mining-a-decade-of-research.html
+  name: Baysal, Olga
+- entries:
+  - date: '2012-01-17'
+    key: Prabhu2011
+    reviewed: /2012/01/17/a-survey-of-the-practice-of-computational-science.html
+  name: Beard, Stephen
+- entries:
+  - date: '2021-09-23'
+    key: Malik2019
+    reviewed: /2021/09/23/the-secret-life-of-bugs.html
+  name: Beaudoin, Jonathan
+- entries:
+  - date: '2011-10-22'
+    key: Beck2011
+    reviewed: /2011/10/22/three-results-many-definitions.html
+  name: Beck, Fabian
+- entries:
+  - date: '2021-09-02'
+    key: Becker2019
+    reviewed: /2021/09/02/compiler-error-messages-considered-unhelpful.html
+  name: Becker, Brett A.
+- entries:
+  - date: '2011-12-10'
+    key: BenAri2011
+    reviewed: /2011/12/10/a-decade-of-research-and-development-on-program-animation-the-jeliot-experience.html
+  name: Bednarik, Roman
+- entries:
+  - date: '2021-08-29'
+    key: Ford2019
+    reviewed: /2021/08/29/beyond-the-code-itself.html
+  - date: '2021-09-13'
+    key: Behroozi2019
+    reviewed: /2021/09/13/whats-wrong-with-tech-hiring.html
+  - date: '2021-09-13'
+    key: Behroozi2020
+    reviewed: /2021/09/13/whats-wrong-with-tech-hiring.html
+  name: Behroozi, Mahnaz
+- entries:
+  - date: '2016-06-08'
+    key: Beller2015
+    reviewed: /2016/06/08/when-and-why-test.html
+  - date: '2021-09-12'
+    key: Beller2019
+    reviewed: /2021/09/12/developer-testing-in-the-ide.html
+  name: Beller, Moritz
+- entries:
+  - date: '2011-12-10'
+    key: BenAri2011
+    reviewed: /2011/12/10/a-decade-of-research-and-development-on-program-animation-the-jeliot-experience.html
+  name: Ben-Ari, Mordechai
+- entries:
+  - date: '2021-08-09'
+    key: Beniamini2017
+    reviewed: /2021/08/09/abbreviated-vs-full-names.html
+  name: Beniamini, Gal
+- entries:
+  - date: '2011-07-07'
+    key: ElEmam2001
+    reviewed: /2011/07/07/the-confounding-effect-of-class-size-on-the-validity-of-object-oriented-metrics.html
+  name: Benlarbi, S.
+- entries:
+  - date: '2016-09-16'
+    key: Patitsas2016
+    reviewed: /2016/09/16/five-from-icer-2016.html
+  name: Berlin, Jesse
+- entries:
+  - date: '2021-09-25'
+    key: Schweinsberg2021
+    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
+  name: Bernstein, Abraham
+- entries:
+  - date: '2011-08-30'
+    key: Bettenburg2008
+    reviewed: /2011/08/30/what-makes-a-good-bug-report.html
+  name: Bettenburg, Nicolas
+- entries:
+  - date: '2021-10-19'
+    key: Costa2019
+    reviewed: /2021/10/19/whats-wrong-with-my-benchmark-results.html
+  - date: '2022-03-11'
+    key: Kamienski2021
+    reviewed: /2022/03/11/single-statement-bugs-in-python-projects.html
+  name: Bezemer, Cor-Paul
+- entries:
+  - date: '2022-04-20'
+    key: Lima2021
+    reviewed: /2022/04/20/open-source-exceptinon-handling-testing.html
+  name: Bezerra, Carla I. M.
+- entries:
+  - date: '2012-01-25'
+    key: Nagappan2008
+    reviewed: /2012/01/25/realizing-quality-improvement-through-test-driven-development.html
+  name: Bhat, Thirumalesh
+- entries:
+  - date: '2021-11-10'
+    key: Tomassi2019
+    reviewed: /2021/11/10/my-kingdom-for-a-dataset.html
+  name: Bhowmick, Antara
+- entries:
+  - date: '2021-08-19'
+    key: Ragkhitwetsagul2021
+    reviewed: /2021/08/19/toxic-code-snippets-on-stack-overflow.html
+  name: Bianco, Giuseppe
+- entries:
+  - date: '2011-09-05'
+    key: Bird2011
+    reviewed: /2011/09/05/dont-touch-my-code.html
+  - date: '2012-05-06'
+    key: Barr2012
+    reviewed: /2012/05/06/cohesive-and-isolated-development-with-branches.html
+  - date: '2012-08-23'
+    key: Hindle2012
+    reviewed: /2012/08/23/using-topic-modelling-to-understand-requirements.html
+  - date: '2016-06-05'
+    key: Washburn2016
+    reviewed: /2016/06/05/game-postmortems.html
+  - date: '2021-09-07'
+    key: Ford2017
+    reviewed: /2021/09/07/characterizing-software-engineering-work-with-personas.html
+  - date: '2021-09-08'
+    key: Gao2017
+    reviewed: /2021/09/08/to-type-or-not-to-type.html
+  - date: '2021-10-04'
+    key: Meyer2021
+    reviewed: /2021/10/04/the-daily-life-of-software-developers.html
+  - date: '2022-04-23'
+    key: Kochhar2019
+    reviewed: /2022/04/23/closed-to-open-source.html
+  name: Bird, Christian
+- entries:
+  - date: '2021-10-30'
+    key: AlSubaihin2021
+    reviewed: /2021/10/30/app-store-effects-on-software-engineering-practices.html
+  name: Black, Sue
+- entries:
+  - date: '2021-09-25'
+    key: Schweinsberg2021
+    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
+  name: Blaise, Enuh
+- entries:
+  - date: '2021-08-18'
+    key: Masood2020a
+    reviewed: /2021/08/18/how-agile-teams-make-self-assignment-work.html
+  - date: '2022-04-22'
+    key: Tamburri2020
+    reviewed: /2022/04/22/decline-of-sourceforge.html
+  name: Blincoe, Kelly
+- entries:
+  - date: '2012-01-05'
+    key: Bluedorn1999
+    reviewed: /2012/01/05/the-effects-of-stand-up-and-sit-down-meeting-formats-on-meeting-outcomes.html
+  name: Bluedorn, Allen C.
+- entries:
+  - date: '2021-10-01'
+    key: Bafatakis2019
+    reviewed: /2021/10/01/python-coding-style-compliance-on-stack-overflow.html
+  name: Boecker, Niels
+- entries:
+  - date: '2021-09-19'
+    key: Tregubov2017
+    reviewed: /2021/09/19/impact-of-task-switching-and-work-interruptions.html
+  name: Boehm, Barry
+- entries:
+  - date: '2021-09-25'
+    key: Schweinsberg2021
+    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
+  name: Boelen, Lisa
+- entries:
+  - date: '2022-03-25'
+    key: Bogart2021
+    reviewed: /2022/03/25/breaking-changes.html
+  name: Bogart, Chris
+- entries:
+  - date: '2022-03-16'
+    key: Fritzsch2021
+    reviewed: /2022/03/16/resume-driven-development.html
+  name: Bogner, Justus
+- entries:
+  - date: '2021-10-15'
+    key: Bogomolov2021
+    reviewed: /2021/10/15/authorship-attribution-of-source-code.html
+  name: Bogomolov, Egor
+- entries:
+  - date: '2021-09-23'
+    key: Hatton1997
+    reviewed: /2021/09/23/the-secret-life-of-bugs.html
+  name: Boisvert, Ronald F.
+- entries:
+  - date: '2021-10-01'
+    key: Bafatakis2019
+    reviewed: /2021/10/01/python-coding-style-compliance-on-stack-overflow.html
+  name: Boon, Wenjie
+- entries:
+  - date: '2021-09-16'
+    key: Borle2017
+    reviewed: /2021/09/16/analyzing-the-effects-of-tdd-in-github.html
+  name: Borle, Neil C.
+- entries:
+  - date: '2021-09-02'
+    key: Becker2019
+    reviewed: /2021/09/02/compiler-error-messages-considered-unhelpful.html
+  name: Bouchard, Durell
+- entries:
+  - date: '2021-09-02'
+    key: Becker2019
+    reviewed: /2021/09/02/compiler-error-messages-considered-unhelpful.html
+  name: Bouvier, Dennis J.
+- entries:
+  - date: '2011-10-22'
+    key: Apel2011
+    reviewed: /2011/10/22/three-empirical-studies-from-esecfse11.html
+  name: Brandl, Benjamin
+- entries:
+  - date: '2022-04-18'
+    key: Butler2019
+    reviewed: /2022/04/18/company-contributions-to-open-source.html
+  name: Brax, Christoffer
+- entries:
+  - date: '2011-08-17'
+    key: Dzidek2008
+    reviewed: /2011/08/17/three-empirical-evaluations-of-uml.html
+  name: Briand, L.C.
+- entries:
+  - date: '2021-09-25'
+    key: Schweinsberg2021
+    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
+  name: Briers, Robert A.
+- entries:
+  - date: '2021-08-30'
+    key: Wang2020
+    reviewed: /2021/08/30/two-studies-of-regular-expressions.html
+  name: Brown, Chris
+- entries:
+  - date: '2016-06-11'
+    key: Altadmri2015
+    reviewed: /2016/06/11/novice-programming-mistakes.html
+  - date: '2021-09-03'
+    key: Brown2018
+    reviewed: /2021/09/03/two-papers-about-the-blackbox-project.html
+  - date: '2021-09-03'
+    key: WeillTessier2021
+    reviewed: /2021/09/03/two-papers-about-the-blackbox-project.html
+  name: Brown, Neil C. C.
+- entries:
+  - date: '2011-09-13'
+    key: Brun2011
+    reviewed: /2011/09/13/proactive-detection-of-collaboration-conflicts.html
+  name: Brun, Yuriy
+- entries:
+  - date: '2021-10-15'
+    key: Bogomolov2021
+    reviewed: /2021/10/15/authorship-attribution-of-source-code.html
+  - date: '2022-03-04'
+    key: Golubev2021
+    reviewed: /2022/03/04/software-refactoring.html
+  name: Bryksin, Timofey
+- entries:
+  - date: '2021-09-25'
+    key: Schweinsberg2021
+    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
+  name: Burkhard, Oliver
+- entries:
+  - date: '2022-04-18'
+    key: Butler2019
+    reviewed: /2022/04/18/company-contributions-to-open-source.html
+  name: Butler, Simon
+- entries:
+  - date: '2021-10-30'
+    key: Soremekun2021
+    reviewed: /2021/10/30/locating-faults-with-program-slicing.html
+  name: "B\xF6hme, Marcel"
+- entries:
+  - date: '2012-11-06'
+    key: Ameller2012
+    reviewed: /2012/11/06/how-do-software-architects-consider-non-functional-requirements.html
+  name: Cabot, Jordi
+- entries:
+  - date: '2022-03-14'
+    key: Mo2021
+    reviewed: /2022/03/14/architecture-anti-patterns.html
+  name: Cai, Yuanfang
+- entries:
+  - date: '2021-09-11'
+    key: Campos2017
+    reviewed: /2021/09/11/common-bug-fix-patterns.html
+  name: Campos, Eduardo Cunha
+- entries:
+  - date: '2021-09-25'
+    key: Schweinsberg2021
+    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
+  name: Canela, Miguel-Angel
+- entries:
+  - date: '2021-10-18'
+    key: Zampetti2020
+    reviewed: /2021/10/18/bad-practices-in-continuous-integration.html
+  name: Canfora, Gerardo
+- entries:
+  - date: '2021-10-30'
+    key: AlSubaihin2021
+    reviewed: /2021/10/30/app-store-effects-on-software-engineering-practices.html
+  name: Capra, Licia
+- entries:
+  - date: '2021-09-25'
+    key: Schweinsberg2021
+    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
+  name: Carbonell, Katerina Bohle
+- entries:
+  - date: '2016-09-09'
+    key: Krein2016
+    reviewed: /2016/09/09/replicating-design-patterns-experiment.html
+  - date: '2021-09-20'
+    key: Kosar2018
+    reviewed: /2021/09/20/program-comprehension-of-domain-specific-and-general-purpose-languages.html
+  name: Carver, Jeffrey C.
+- entries:
+  - date: '2021-09-25'
+    key: Schweinsberg2021
+    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
+  name: Castrillo, Laura
+- entries:
+  - date: '2021-09-25'
+    key: Schweinsberg2021
+    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
+  name: Catlett, Timothy
+- entries:
+  - date: '2021-09-10'
+    key: Majumder2019
+    reviewed: /2021/09/10/why-software-projects-need-heroes.html
+  name: Chakraborty, Joymallya
+- entries:
+  - date: '2021-09-25'
+    key: Schweinsberg2021
+    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
+  name: Chan, C.S. Richard
+- entries:
+  - date: '2022-03-31'
+    key: Jolak2020
+    reviewed: /2022/03/31/textual-vs-graphic-design-descriptions-and-communication.html
+  name: Chaudron, Michel R. V.
+- entries:
+  - date: '2016-09-16'
+    key: Harms2016
+    reviewed: /2016/09/16/five-from-icer-2016.html
+  name: Chen, Jason
+- entries:
+  - date: '2021-10-10'
+    key: Alkhabaz2021
+    reviewed: /2021/10/10/mongodb-homework.html
+  name: Chen, Mei
+- entries:
+  - date: '2021-09-25'
+    key: Schweinsberg2021
+    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
+  name: Chen, Olivia
+- entries:
+  - date: '2016-06-05'
+    key: Chen2016
+    reviewed: /2016/06/05/maintaining-java-orm.html
+  - date: '2021-09-19'
+    key: Zhang2020
+    reviewed: /2021/09/19/reading-answers-on-stack-overflow-not-enough.html
+  - date: '2022-03-08'
+    key: Zhang2021b
+    reviewed: /2022/03/08/obsolete-answers-on-stack-overflow.html
+  name: Chen, Tse-Hsun
+- entries:
+  - date: '2021-10-20'
+    key: Tao2021
+    reviewed: /2021/10/20/demistifying-error-messages-in-data-science-libraries.html
+  name: Chen, Zhihui
+- entries:
+  - date: '2011-06-30'
+    key: Cherubini2007
+    reviewed: /2011/06/30/lets-go-to-the-whiteboard.html
+  name: Cherubini, Mauro
+- entries:
+  - date: '2011-07-11'
+    key: Chong2007
+    reviewed: /2011/07/11/the-social-dynamics-of-pair-programming.html
+  name: Chong, Jan
+- entries:
+  - date: '2013-02-12'
+    key: Cinneide2012
+    reviewed: /2013/02/12/experimental-assessment-of-software-metrics-using-automated-refactoring.html
+  name: "Cinn\xE9ide, Mel \xD3"
+- entries:
+  - date: '2021-09-25'
+    key: Schweinsberg2021
+    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
+  name: Clark, Michael
+- entries:
+  - date: '2011-07-26'
+    key: Stylos2007
+    reviewed: /2011/07/26/usability-implications-of-requiring-parameters-in-objects-constructors.html
+  name: Clarke, Steven
+- entries:
+  - date: '2021-11-17'
+    key: Codoban2015
+    reviewed: /2021/11/17/software-history-under-the-lens.html
+  name: Codoban, Mihai
+- entries:
+  - date: '2021-09-05'
+    key: Coelho2016
+    reviewed: /2021/09/05/two-papers-on-errors.html
+  name: Coelho, Roberta
+- entries:
+  - date: '2021-08-30'
+    key: Davis2019
+    reviewed: /2021/08/30/two-studies-of-regular-expressions.html
+  name: Coghlan, Christy A.
+- entries:
+  - date: '2021-09-25'
+    key: Schweinsberg2021
+    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
+  name: Cohn, Brent
+- entries:
+  - date: '2016-06-05'
+    key: Gulzar2016
+    reviewed: /2016/06/05/bigdebug.html
+  name: Condie, Tyson
+- entries:
+  - date: '2021-08-21'
+    key: Oliveira2020
+    reviewed: /2021/08/21/metrics-and-team-leaders-perceptions-of-productivity.html
+  name: Conte, Tayana
+- entries:
+  - date: '2021-09-25'
+    key: Schweinsberg2021
+    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
+  name: Coppock, Alex
+- entries:
+  - date: '2021-10-19'
+    key: Costa2019
+    reviewed: /2021/10/19/whats-wrong-with-my-benchmark-results.html
+  - date: '2022-04-08'
+    key: Latendresse2021
+    reviewed: /2022/04/08/continuous-integration-single-statement-bugs.html
+  name: Costa, Diego Elias
+- entries:
+  - date: '2021-09-03'
+    key: WeillTessier2021
+    reviewed: /2021/09/03/two-papers-about-the-blackbox-project.html
+  name: Costache, Alexandra Lucia
+- entries:
+  - date: '2013-02-12'
+    key: Cinneide2012
+    reviewed: /2013/02/12/experimental-assessment-of-software-metrics-using-automated-refactoring.html
+  name: Counsell, Steve
+- entries:
+  - date: '2016-09-16'
+    key: Patitsas2016
+    reviewed: /2016/09/16/five-from-icer-2016.html
+  name: Craig, Michelle
+- entries:
+  - date: '2021-08-21'
+    key: Oliveira2020
+    reviewed: /2021/08/21/metrics-and-team-leaders-perceptions-of-productivity.html
+  name: Cristo, Marco
+- entries:
+  - date: '2011-08-17'
+    key: CruzLemus2009
+    reviewed: /2011/08/17/three-empirical-evaluations-of-uml.html
+  name: "Cruz-Lemus, Jos\xE9 A."
+- entries:
+  - date: '2021-09-25'
+    key: Schweinsberg2021
+    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
+  name: "Cuguer\xF3-Escofet, Nat\xE0lia"
+- entries:
+  - date: '2021-09-25'
+    key: Schweinsberg2021
+    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
+  name: Curran, Paul G.
+- entries:
+  - date: '2021-09-25'
+    key: Schweinsberg2021
+    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
+  name: Cyrus-Lai, Wilson
+- entries:
+  - date: '2012-03-01'
+    key: Dabbish2012
+    reviewed: /2012/03/01/social-coding-in-github.html
+  name: Dabbish, Laura
+- entries:
+  - date: '2011-08-23'
+    key: Dagenais2010
+    reviewed: /2011/08/23/creating-and-evolving-developer-documentation.html
+  name: "Dagenais, Barth\xE9l\xE9my"
+- entries:
+  - date: '2021-09-25'
+    key: Schweinsberg2021
+    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
+  name: Dai, David
+- entries:
+  - date: '2022-03-31'
+    key: Jolak2020
+    reviewed: /2022/03/31/textual-vs-graphic-design-descriptions-and-communication.html
+  name: Dalibor, Manuela
+- entries:
+  - date: '2021-09-25'
+    key: Schweinsberg2021
+    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
+  name: Dalla Riva, Giulio Valentino
+- entries:
+  - date: '2011-07-04'
+    key: Racheva2010
+    reviewed: /2011/07/04/requirements-prioritization-in-agile-projects-insights-from-a-case-study.html
+  name: Daneva, Maya
+- entries:
+  - date: '2012-07-18'
+    key: Dang2012
+    reviewed: /2012/07/18/clustering-duplicate-crash-reports.html
+  name: Dang, Yingnong
+- entries:
+  - date: '2021-09-25'
+    key: Schweinsberg2021
+    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
+  name: Danielsson, Henrik
+- entries:
+  - date: '2022-04-13'
+    key: Danilova2021
+    reviewed: /2022/04/13/do-you-really-code.html
+  name: Danilova, Anastasia
+- entries:
+  - date: '2022-02-22'
+    key: Louis2020
+    reviewed: /2022/02/22/where-comments.html
+  name: Dash, Santanu Kumar
+- entries:
+  - date: '2021-08-30'
+    key: Davis2019
+    reviewed: /2021/08/30/two-studies-of-regular-expressions.html
+  name: Davis, James C.
+- entries:
+  - date: '2021-09-11'
+    key: Campos2017
+    reviewed: /2021/09/11/common-bug-fix-patterns.html
+  name: de Almeida Maia, Marcelo
+- entries:
+  - date: '2021-09-25'
+    key: Schweinsberg2021
+    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
+  name: de F.S.M. Russo, Rosaria
+- entries:
+  - date: '2021-09-16'
+    key: DePadua2018
+    reviewed: /2021/09/16/exception-handling-practices-and-post-release-defects.html
+  name: "de P\xE1dua, Guilherme B."
+- entries:
+  - date: '2021-09-25'
+    key: Schweinsberg2021
+    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
+  name: de Silva, Niko
+- entries:
+  - date: '2016-09-08'
+    key: Sharp2016
+    reviewed: /2016/09/08/ethnography-in-ese.html
+  name: de Souza, Cleidson R. B.
+- entries:
+  - date: '2022-05-20'
+    key: Decan2021a
+    reviewed: /2022/05/20/a-note-on-communication.html
+  - date: '2022-05-20'
+    key: Decan2021b
+    reviewed: /2022/05/20/a-note-on-communication.html
+  name: Decan, Alexandre
+- entries:
+  - date: '2011-06-30'
+    key: Cherubini2007
+    reviewed: /2011/06/30/lets-go-to-the-whiteboard.html
+  - date: '2011-11-08'
+    key: Robillard2010
+    reviewed: /2011/11/08/a-field-study-of-api-learning-obstacles.html
+  name: DeLine, Rob
+- entries:
+  - date: '2021-10-16'
+    key: Han2021
+    reviewed: /2021/10/16/open-source-projects-in-baidu-alibaba-and-tencent.html
+  name: Deng, Shuiguang
+- entries:
+  - date: '2021-09-02'
+    key: Becker2019
+    reviewed: /2021/09/02/compiler-error-messages-considered-unhelpful.html
+  name: Denny, Paul
+- entries:
+  - date: '2021-09-25'
+    key: Schweinsberg2021
+    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
+  name: Derungs, Curdin
+- entries:
+  - date: '2021-09-23'
+    key: Malik2019
+    reviewed: /2021/09/23/the-secret-life-of-bugs.html
+  name: Deunf, Julian Le
+- entries:
+  - date: '2011-06-27'
+    key: Rahman2011
+    reviewed: /2011/06/27/ownership-experience-and-defects.html
+  - date: '2011-09-05'
+    key: Bird2011
+    reviewed: /2011/09/05/dont-touch-my-code.html
+  - date: '2012-01-12'
+    key: Posnett2011
+    reviewed: /2012/01/12/got-issues-do-new-features-and-code-improvements-affect-defects.html
+  - date: '2012-04-26'
+    key: Hindle2016
+    reviewed: /2012/04/26/on-the-naturalness-of-software.html
+  - date: '2012-05-06'
+    key: Barr2012
+    reviewed: /2012/05/06/cohesive-and-isolated-development-with-branches.html
+  - date: '2013-07-07'
+    key: Rahman2013
+    reviewed: /2013/07/07/how-and-why-process-metrics-are-better.html
+  - date: '2021-11-10'
+    key: Tomassi2019
+    reviewed: /2021/11/10/my-kingdom-for-a-dataset.html
+  name: Devanbu, Premkumar
+- entries:
+  - date: '2012-05-17'
+    key: Khomh2012
+    reviewed: /2012/05/17/do-faster-releases-improve-software-quality.html
+  name: Dhaliwal, Tejinder
+- entries:
+  - date: '2011-10-22'
+    key: Beck2011
+    reviewed: /2011/10/22/three-results-many-definitions.html
+  name: Diehl, Stephan
+- entries:
+  - date: '2021-11-17'
+    key: Codoban2015
+    reviewed: /2021/11/17/software-history-under-the-lens.html
+  name: Dig, Danny
+- entries:
+  - date: '2011-08-02'
+    key: Moe2010
+    reviewed: /2011/08/02/a-teamwork-model-for-understanding-an-agile-team.html
+  name: "Dings\xF8yr, Torgeir"
+- entries:
+  - date: '2016-09-08'
+    key: Sharp2016
+    reviewed: /2016/09/08/ethnography-in-ese.html
+  name: Dittrich, Yvonne
+- entries:
+  - date: '2021-11-10'
+    key: Tomassi2019
+    reviewed: /2021/11/10/my-kingdom-for-a-dataset.html
+  name: Dmeiri, Naji
+- entries:
+  - date: '2021-09-23'
+    key: Malik2019
+    reviewed: /2021/09/23/the-secret-life-of-bugs.html
+  name: Dolan, Margaret F.J.
+- entries:
+  - date: '2022-03-18'
+    key: RakAmnouykit2020
+    reviewed: /2022/03/18/python-3-types-in-the-wild.html
+  name: Dolby, Julian
+- entries:
+  - date: '2021-09-30'
+    key: Rigby2016
+    reviewed: /2021/09/30/quantifying-and-mitigating-turnover-induced-knowledge-loss.html
+  name: Donadelli, Samuel M.
+- entries:
+  - date: '2021-09-25'
+    key: Schweinsberg2021
+    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
+  name: Dondelinger, Frank
+- entries:
+  - date: '2021-09-25'
+    key: Schweinsberg2021
+    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
+  name: Druijff-van de Woestijne, Gerrieke B.
+- entries:
+  - date: '2021-09-25'
+    key: Schweinsberg2021
+    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
+  name: Duarte de Souza, Carolina
+- entries:
+  - date: '2021-09-25'
+    key: Schweinsberg2021
+    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
+  name: Dube, B. Tyson
+- entries:
+  - date: '2021-09-25'
+    key: Schweinsberg2021
+    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
+  name: Dubova, Marina
+- entries:
+  - date: '2021-09-25'
+    key: Schweinsberg2021
+    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
+  name: Dunn, Ben Mark
+- entries:
+  - date: '2021-10-19'
+    key: Durieux2020
+    reviewed: /2021/10/19/restarted-and-flaky-builds-on-travis-ci.html
+  name: Durieux, Thomas
+- entries:
+  - date: '2011-08-02'
+    key: Moe2010
+    reviewed: /2011/08/02/a-teamwork-model-for-understanding-an-agile-team.html
+  name: "Dyb\xE5, Tore"
+- entries:
+  - date: '2011-08-17'
+    key: Dzidek2008
+    reviewed: /2011/08/17/three-empirical-evaluations-of-uml.html
+  name: Dzidek, W.J.
+- entries:
+  - date: '2016-09-16'
+    key: Patitsas2016
+    reviewed: /2016/09/16/five-from-icer-2016.html
+  name: Easterbrook, Steve
+- entries:
+  - date: '2011-12-10'
+    key: BenAri2011
+    reviewed: /2011/12/10/a-decade-of-research-and-development-on-program-animation-the-jeliot-experience.html
+  name: Ebel, Gil
+- entries:
+  - date: '2021-09-25'
+    key: Schweinsberg2021
+    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
+  name: Edelsbrunner, Peter Adriaan
+- entries:
+  - date: '2021-09-26'
+    key: Zavgorodniaia2021
+    reviewed: /2021/09/26/two-papers-on-time.html
+  name: Edwards, John
+- entries:
+  - date: '2016-09-09'
+    key: Krein2016
+    reviewed: /2016/09/09/replicating-design-patterns-experiment.html
+  name: Eggett, Dennis L.
+- entries:
+  - date: '2016-06-09'
+    key: Eichberg2015
+    reviewed: /2016/06/09/hidden-truths.html
+  name: Eichberg, Michael
+- entries:
+  - date: '2011-06-27'
+    key: Stolee2011
+    reviewed: /2011/06/27/refactoring-pipe-like-mashups-for-end-user-programmers.html
+  name: Elbaum, Sebastian
+- entries:
+  - date: '2011-07-07'
+    key: ElEmam2001
+    reviewed: /2011/07/07/the-confounding-effect-of-class-size-on-the-validity-of-object-oriented-metrics.html
+  name: Emam, K. El
+- entries:
+  - date: '2011-07-26'
+    key: Hannay2010
+    reviewed: /2011/07/26/effects-of-personality-on-pair-programming.html
+  name: Engvik, H.
+- entries:
+  - date: '2011-09-13'
+    key: Brun2011
+    reviewed: /2011/09/13/proactive-detection-of-collaboration-conflicts.html
+  - date: '2022-02-22'
+    key: Louis2020
+    reviewed: /2022/02/22/where-comments.html
+  name: Ernst, Michael D.
+- entries:
+  - date: '2016-06-09'
+    key: Xu2015
+    reviewed: /2016/06/09/too-many-knobs.html
+  name: Fan, Xuepeng
+- entries:
+  - date: '2021-08-26'
+    key: Rahman2020a
+    reviewed: /2021/08/26/defect-taxonomy-for-infrastructure-as-code.html
+  name: Farhana, Effat
+- entries:
+  - date: '2021-09-16'
+    key: Borle2017
+    reviewed: /2021/09/16/analyzing-the-effects-of-tdd-in-github.html
+  name: Feghhi, Meysam
+- entries:
+  - date: '2022-04-18'
+    key: Butler2019
+    reviewed: /2022/04/18/company-contributions-to-open-source.html
+  name: Feist, Jonas
+- entries:
+  - date: '2021-08-09'
+    key: Beniamini2017
+    reviewed: /2021/08/09/abbreviated-vs-full-names.html
+  - date: '2021-09-21'
+    key: Ajami2018
+    reviewed: /2021/09/21/syntax-predicates-idioms-what-really-affects-code-complexity.html
+  name: Feitelson, Dror G.
+- entries:
+  - date: '2021-09-25'
+    key: Schweinsberg2021
+    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
+  name: Feldman, Michael
+- entries:
+  - date: '2021-09-20'
+    key: Barik2017
+    reviewed: /2021/09/20/do-developers-read-compiler-error-messages.html
+  name: Feng, Jing
+- entries:
+  - date: '2022-03-14'
+    key: Mo2021
+    reviewed: /2022/03/14/architecture-anti-patterns.html
+  name: Feng, Qiong
+- entries:
+  - date: '2021-08-21'
+    key: Oliveira2020
+    reviewed: /2021/08/21/metrics-and-team-leaders-perceptions-of-productivity.html
+  name: Fernandes, Eduardo
+- entries:
+  - date: '2021-10-05'
+    key: Piantadosi2020
+    reviewed: /2021/10/05/three-papers-on-readability.html
+  name: Fierro, Fabiana
+- entries:
+  - date: '2021-09-28'
+    key: Kavaler2019
+    reviewed: /2021/09/28/javascript-quality-assurance-tools-and-usage-outcomes.html
+  name: Filkov, Vladimir
+- entries:
+  - date: '2021-09-25'
+    key: Schweinsberg2021
+    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
+  name: Finley, Sara
+- entries:
+  - date: '2021-08-27'
+    key: Miedema2021
+    reviewed: /2021/08/27/errors-in-sql-queries.html
+  name: Fletcher, George
+- entries:
+  - date: '2016-06-05'
+    key: Chen2016
+    reviewed: /2016/06/05/maintaining-java-orm.html
+  name: Flora, Parminder
+- entries:
+  - date: '2016-09-21'
+    key: Ford2016
+    reviewed: /2016/09/21/paradise-unplugged.html
+  - date: '2021-08-29'
+    key: Ford2019
+    reviewed: /2021/08/29/beyond-the-code-itself.html
+  - date: '2021-09-02'
+    key: Barik2018
+    reviewed: /2021/09/02/compiler-error-messages-considered-unhelpful.html
+  - date: '2021-09-07'
+    key: Ford2017
+    reviewed: /2021/09/07/characterizing-software-engineering-work-with-personas.html
+  - date: '2022-03-28'
+    key: Rodeghero2021
+    reviewed: /2022/03/28/remote-onboarding.html
+  name: Ford, Denae
+- entries:
+  - date: '2021-09-25'
+    key: Schweinsberg2021
+    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
+  name: Fox, Nick
+- entries:
+  - date: '2012-11-06'
+    key: Ameller2012
+    reviewed: /2012/11/06/how-do-software-architects-consider-non-functional-requirements.html
+  name: Franch, Xavier
+- entries:
+  - date: '2015-08-23'
+    key: Meyer2014
+    reviewed: /2015/08/23/perception-productivity.html
+  name: Fritz, Thomas
+- entries:
+  - date: '2022-03-16'
+    key: Fritzsch2021
+    reviewed: /2022/03/16/resume-driven-development.html
+  name: Fritzsch, Jonas
+- entries:
+  - date: '2016-10-05'
+    key: Fucci2016
+    reviewed: /2016/10/05/test-driven-development.html
+  - date: '2021-10-21'
+    key: Fucci2020
+    reviewed: /2021/10/21/the-impact-of-sleep-deprivation.html
+  name: Fucci, Davide
+- entries:
+  - date: '2011-06-30'
+    key: Barnett2011
+    reviewed: /2011/06/30/specification-and-verification-the-spec-experience.html
+  name: "F\xE4hndrich, Manuel"
+- entries:
+  - date: '2012-04-26'
+    key: Hindle2016
+    reviewed: /2012/04/26/on-the-naturalness-of-software.html
+  name: Gabel, Mark
+- entries:
+  - date: '2021-09-20'
+    key: Kosar2018
+    reviewed: /2021/09/20/program-comprehension-of-domain-specific-and-general-purpose-languages.html
+  name: "Gaberc, Sa\u0161o"
+- entries:
+  - date: '2011-09-05'
+    key: Bird2011
+    reviewed: /2011/09/05/dont-touch-my-code.html
+  - date: '2011-10-22'
+    key: Giger2011
+    reviewed: /2011/10/22/three-results-many-definitions.html
+  - date: '2021-10-18'
+    key: Zampetti2020
+    reviewed: /2021/10/18/bad-practices-in-continuous-integration.html
+  name: Gall, Harald
+- entries:
+  - date: '2022-03-07'
+    key: Gallagher2017
+    reviewed: /2022/03/07/new-me.html
+  name: Gallagher, Kevin
+- entries:
+  - date: '2012-04-10'
+    key: Philip2012
+    reviewed: /2012/04/10/component-reuse-vs-snippet-remixing.html
+  name: Gallardo-Valencia, Rosalva
+- entries:
+  - date: '2022-04-18'
+    key: Butler2019
+    reviewed: /2022/04/18/company-contributions-to-open-source.html
+  name: Gamalielsson, Jonas
+- entries:
+  - date: '2021-10-14'
+    key: Gao2020
+    reviewed: /2021/10/14/api-learning-processes.html
+  name: Gao, Gao
+- entries:
+  - date: '2021-09-08'
+    key: Gao2017
+    reviewed: /2021/09/08/to-type-or-not-to-type.html
+  name: Gao, Zheng
+- entries:
+  - date: '2021-08-21'
+    key: Oliveira2020
+    reviewed: /2021/08/21/metrics-and-team-leaders-perceptions-of-productivity.html
+  - date: '2021-09-05'
+    key: Barbosa2014
+    reviewed: /2021/09/05/two-papers-on-errors.html
+  name: Garcia, Alessandro
+- entries:
+  - date: '2016-10-02'
+    key: Mattmann2015
+    reviewed: /2016/10/02/grid-revisited.html
+  name: Garcia, Joshua
+- entries:
+  - date: '2012-06-18'
+    key: Pankratius2012
+    reviewed: /2012/06/18/combining-functional-and-imperative-programming-for-multicore-software-an-empirical-study-evaluating-scala-and-java.html
+  name: Garreton, Gilda
+- entries:
+  - date: '2021-09-25'
+    key: Schweinsberg2021
+    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
+  name: Garrison, S. Mason
+- entries:
+  - date: '2013-07-24'
+    key: Gauthier2013
+    reviewed: /2013/07/24/semantic-smells-and-errors-in-access-control-models-a-case-study-in-php.html
+  name: Gauthier, Francois
+- entries:
+  - date: '2011-08-17'
+    key: CruzLemus2009
+    reviewed: /2011/08/17/three-empirical-evaluations-of-uml.html
+  name: Genero, Marcela
+- entries:
+  - date: '2012-05-06'
+    key: Barr2012
+    reviewed: /2012/05/06/cohesive-and-isolated-development-with-branches.html
+  name: German, Daniel M.
+- entries:
+  - date: '2021-09-29'
+    key: Wessel2020
+    reviewed: /2021/09/29/effects-of-adopting-code-review-bots.html
+  - date: '2021-10-07'
+    key: Kinsman2021
+    reviewed: /2021/10/07/how-do-software-developers-use-github-actions.html
+  name: Gerosa, Marco A.
+- entries:
+  - date: '2021-10-28'
+    key: Taipalus2021
+    reviewed: /2021/10/28/error-messages-in-relational-atabase-systems.html
+  name: Ghanbari, Hadi
+- entries:
+  - date: '2021-08-12'
+    key: Ghiotto2020
+    reviewed: /2021/08/12/on-the-nature-of-merge-conflicts.html
+  name: Ghiotto, Gleiph
+- entries:
+  - date: '2012-01-17'
+    key: Prabhu2011
+    reviewed: /2012/01/17/a-survey-of-the-practice-of-computational-science.html
+  name: Ghosh, Soumyadeep
+- entries:
+  - date: '2011-10-22'
+    key: Giger2011
+    reviewed: /2011/10/22/three-results-many-definitions.html
+  name: Giger, Emanuel
+- entries:
+  - date: '2021-08-09'
+    key: Beniamini2017
+    reviewed: /2021/08/09/abbreviated-vs-full-names.html
+  name: Gingichashvili, Sarah
+- entries:
+  - date: '2016-06-09'
+    key: Eichberg2015
+    reviewed: /2016/06/09/hidden-truths.html
+  - date: '2022-03-13'
+    key: Glanz2020
+    reviewed: /2022/03/13/obfuscated-strings-and-privacy.html
+  name: Glanz, Leonid
+- entries:
+  - date: '2011-07-18'
+    key: Kinshumann2011
+    reviewed: /2011/07/18/debugging-in-the-very-large.html
+  name: Glerum, Kirk
+- entries:
+  - date: '2021-09-25'
+    key: Schweinsberg2021
+    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
+  name: Gnambs, Timo
+- entries:
+  - date: '2011-08-16'
+    key: Kapser2008
+    reviewed: /2011/08/16/cloning-considered-harmful-considered-harmful.html
+  - date: '2013-06-13'
+    key: Hemmati2013
+    reviewed: /2013/06/13/the-msr-cookbook-mining-a-decade-of-research.html
+  - date: '2016-06-05'
+    key: Chen2016
+    reviewed: /2016/06/05/maintaining-java-orm.html
+  - date: '2021-08-10'
+    key: Zhu2021
+    reviewed: /2021/08/10/developers-fix-their-own-simple-bugs-differently-from-other-developers.html
+  name: Godfrey, Michael W.
+- entries:
+  - date: '2022-03-23'
+    key: Turcotte2020
+    reviewed: /2022/03/23/designing-types-for-r-empirically.html
+  name: Goel, Aviral
+- entries:
+  - date: '2011-07-07'
+    key: ElEmam2001
+    reviewed: /2011/07/07/the-confounding-effect-of-class-size-on-the-validity-of-object-oriented-metrics.html
+  name: Goel, N.
+- entries:
+  - date: '2021-09-25'
+    key: Schweinsberg2021
+    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
+  name: Goldstein, Pavel
+- entries:
+  - date: '2022-03-04'
+    key: Golubev2021
+    reviewed: /2022/03/04/software-refactoring.html
+  name: Golubev, Yaroslav
+- entries:
+  - date: '2021-09-25'
+    key: Schweinsberg2021
+    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
+  name: Gong, Yuanyuan
+- entries:
+  - date: '2021-10-02'
+    key: RodriguezPerez2018
+    reviewed: /2021/10/02/reproducibility-and-credibility-in-empirical-software-engineering.html
+  name: "Gonz\xE1lez-Barahona, Jes\xFAs M."
+- entries:
+  - date: '2021-10-19'
+    key: Durieux2020
+    reviewed: /2021/10/19/restarted-and-flaky-builds-on-travis-ci.html
+  - date: '2021-11-18'
+    key: Ni2021
+    reviewed: /2021/11/18/synthesis-approach-for-data-science-api-refactoring.html
+  name: Goues, Claire Le
+- entries:
+  - date: '2016-06-07'
+    key: Gousios2016
+    reviewed: /2016/06/07/pull-based-development.html
+  - date: '2016-06-08'
+    key: Beller2015
+    reviewed: /2016/06/08/when-and-why-test.html
+  - date: '2021-09-05'
+    key: Coelho2016
+    reviewed: /2021/09/05/two-papers-on-errors.html
+  - date: '2021-09-12'
+    key: Beller2019
+    reviewed: /2021/09/12/developer-testing-in-the-ide.html
+  name: Gousios, Georgios
+- entries:
+  - date: '2021-10-28'
+    key: Taipalus2021
+    reviewed: /2021/10/28/error-messages-in-relational-atabase-systems.html
+  name: Grahn, Hilkka
+- entries:
+  - date: '2021-09-25'
+    key: Schweinsberg2021
+    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
+  name: Grand, Erin
+- entries:
+  - date: '2011-07-18'
+    key: Kinshumann2011
+    reviewed: /2011/07/18/debugging-in-the-very-large.html
+  name: Grant, David
+- entries:
+  - date: '2011-08-17'
+    key: DeLucia2009
+    reviewed: /2011/08/17/three-empirical-evaluations-of-uml.html
+  name: Gravino, Carmine
+- entries:
+  - date: '2014-03-31'
+    key: Graziotin2014
+    reviewed: /2014/03/31/happy-sw-devs-solve-problems-better.html
+  name: Graziotin, Daniel
+- entries:
+  - date: '2012-06-25'
+    key: Green1996
+    reviewed: /2012/06/25/usability-analysis-of-visual-programming-environments-a-cognitive-dimensions-framework.html
+  name: Green, Thomas R. G.
+- entries:
+  - date: '2021-09-25'
+    key: Schweinsberg2021
+    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
+  name: Greenawalt, Brandon
+- entries:
+  - date: '2011-07-18'
+    key: Kinshumann2011
+    reviewed: /2011/07/18/debugging-in-the-very-large.html
+  name: Greenberg, Steve
+- entries:
+  - date: '2011-10-28'
+    key: McGee2011
+    reviewed: /2011/10/28/software-requirements-change-taxonomy-evaluation-by-case-study.html
+  name: Greer, Des
+- entries:
+  - date: '2021-09-16'
+    key: Borle2017
+    reviewed: /2021/09/16/analyzing-the-effects-of-tdd-in-github.html
+  name: Greiner, Russell
+- entries:
+  - date: '2011-10-18'
+    key: Jorgensen2011
+    reviewed: /2011/10/18/the-impact-of-irrelevant-and-misleading-information.html
+  - date: '2012-06-12'
+    key: Jorgensen2012
+    reviewed: /2012/06/12/software-development-estimation-biases-the-role-of-interdependence.html
+  name: Grimstad, Stein
+- entries:
+  - date: '2016-09-16'
+    key: Liao2016
+    reviewed: /2016/09/16/five-from-icer-2016.html
+  name: Griswold, William G.
+- entries:
+  - date: '2021-12-02'
+    key: Gu2018
+    reviewed: /2021/12/02/deep-code-search.html
+  name: Gu, Xiaodong
+- entries:
+  - date: '2016-10-02'
+    key: Wang2016
+    reviewed: /2016/10/02/filtering-spreadsheet-data.html
+  name: Gulwani, Sumit
+- entries:
+  - date: '2016-06-05'
+    key: Gulzar2016
+    reviewed: /2016/06/05/bigdebug.html
+  name: Gulzar, Muhammad Ali
+- entries:
+  - date: '2016-09-21'
+    key: Ford2016
+    reviewed: /2016/09/21/paradise-unplugged.html
+  name: Guo, Philip J.
+- entries:
+  - date: '2022-04-18'
+    key: Butler2019
+    reviewed: /2022/04/18/company-contributions-to-open-source.html
+  name: Gustavsson, Tomas
+- entries:
+  - date: '2011-12-02'
+    key: Tew2011
+    reviewed: /2011/12/02/the-fcs1-a-language-independent-assessment-of-cs1-knowledge.html
+  name: Guzdial, Mark
+- entries:
+  - date: '2022-03-31'
+    key: Jolak2020
+    reviewed: /2022/03/31/textual-vs-graphic-design-descriptions-and-communication.html
+  name: "G\xE9rard, S\xE9bastien"
+- entries:
+  - date: '2022-02-21'
+    key: Guler2019
+    reviewed: /2022/02/21/antifuzz.html
+  name: "G\xFCler, Emre"
+- entries:
+  - date: '2021-09-23'
+    key: Malik2019
+    reviewed: /2021/09/23/the-secret-life-of-bugs.html
+  name: Hamilton, Travis
+- entries:
+  - date: '2021-09-25'
+    key: Schweinsberg2021
+    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
+  name: Han, Dan
+- entries:
+  - date: '2021-10-16'
+    key: Han2021
+    reviewed: /2021/10/16/open-source-projects-in-baidu-alibaba-and-tencent.html
+  name: Han, Junxiao
+- entries:
+  - date: '2021-09-25'
+    key: Schweinsberg2021
+    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
+  name: Hanel, Paul H.P.
+- entries:
+  - date: '2012-10-25'
+    key: Hanenberg2010
+    reviewed: /2012/10/25/an-experiment-about-static-and-dynamic-type-systems.html
+  name: Hanenberg, Stefan
+- entries:
+  - date: '2011-07-26'
+    key: Hannay2010
+    reviewed: /2011/07/26/effects-of-personality-on-pair-programming.html
+  name: Hannay, J.E.
+- entries:
+  - date: '2021-10-08'
+    key: McIntosh2021
+    reviewed: /2021/10/08/do-hackathon-projects-change-the-world.html
+  name: Hardin, Caroline D.
+- entries:
+  - date: '2013-02-12'
+    key: Cinneide2012
+    reviewed: /2013/02/12/experimental-assessment-of-software-metrics-using-automated-refactoring.html
+  - date: '2021-10-30'
+    key: AlSubaihin2021
+    reviewed: /2021/10/30/app-store-effects-on-software-engineering-practices.html
+  name: Harman, Mark
+- entries:
+  - date: '2016-09-16'
+    key: Harms2016
+    reviewed: /2016/09/16/five-from-icer-2016.html
+  name: Harms, Kyle James
+- entries:
+  - date: '2016-09-16'
+    key: Rivers2016
+    reviewed: /2016/09/16/five-from-icer-2016.html
+  name: Harpstead, Erik
+- entries:
+  - date: '2021-09-02'
+    key: Becker2019
+    reviewed: /2021/09/02/compiler-error-messages-considered-unhelpful.html
+  name: Harrington, Brian
+- entries:
+  - date: '2011-08-09'
+    key: McIntosh2011
+    reviewed: /2011/08/09/an-empirical-study-of-build-maintenance-effort.html
+  - date: '2016-06-05'
+    key: Chen2016
+    reviewed: /2016/06/05/maintaining-java-orm.html
+  - date: '2016-06-07'
+    key: Thongtanunam2016
+    reviewed: /2016/06/07/code-ownership-revisited.html
+  - date: '2016-06-09'
+    key: Nagappan2015
+    reviewed: /2016/06/09/goto-in-c.html
+  - date: '2021-08-09'
+    key: AlencarDaCosta2017
+    reviewed: /2021/08/09/impact-of-rapid-release-cycles-on-integration-delay-of-fixed-issues.html
+  - date: '2021-09-19'
+    key: Zhang2020
+    reviewed: /2021/09/19/reading-answers-on-stack-overflow-not-enough.html
+  - date: '2022-03-08'
+    key: Zhang2021b
+    reviewed: /2022/03/08/obsolete-answers-on-stack-overflow.html
+  name: Hassan, Ahmed E.
+- entries:
+  - date: '2021-08-23'
+    key: Hata2019
+    reviewed: /2021/08/23/links-in-source-code-comments.html
+  name: Hata, Hideaki
+- entries:
+  - date: '2021-09-23'
+    key: Hatton1994
+    reviewed: /2021/09/23/the-secret-life-of-bugs.html
+  - date: '2021-09-23'
+    key: Hatton1997
+    reviewed: /2021/09/23/the-secret-life-of-bugs.html
+  name: Hatton, L.
+- entries:
+  - date: '2021-09-26'
+    key: Hayashi2019
+    reviewed: /2021/09/26/two-papers-on-time.html
+  name: Hayashi, Junichi
+- entries:
+  - date: '2022-03-31'
+    key: Jolak2020
+    reviewed: /2022/03/31/textual-vs-graphic-design-descriptions-and-communication.html
+  name: Hebig, Regina
+- entries:
+  - date: '2021-09-25'
+    key: Schweinsberg2021
+    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
+  name: Heer, Jeffrey
+- entries:
+  - date: '2016-06-05'
+    key: Nakshatri2016
+    reviewed: /2016/06/05/java-exception-handling.html
+  name: Hegde, Maithri
+- entries:
+  - date: '2021-09-26'
+    key: Zavgorodniaia2021
+    reviewed: /2021/09/26/two-papers-on-time.html
+  name: Hellas, Arto
+- entries:
+  - date: '2013-06-13'
+    key: Hemmati2013
+    reviewed: /2013/06/13/the-msr-cookbook-mining-a-decade-of-research.html
+  name: Hemmati, Hadi
+- entries:
+  - date: '2022-03-25'
+    key: Bogart2021
+    reviewed: /2022/03/25/breaking-changes.html
+  name: Herbsleb, James
+- entries:
+  - date: '2012-03-01'
+    key: Dabbish2012
+    reviewed: /2012/03/01/social-coding-in-github.html
+  name: Herbsleb, Jim
+- entries:
+  - date: '2016-06-09'
+    key: Eichberg2015
+    reviewed: /2016/06/09/hidden-truths.html
+  name: Hermann, Ben
+- entries:
+  - date: '2012-05-24'
+    key: Hermans2011
+    reviewed: /2012/05/24/supporting-professional-spreadsheet-users-by-generating-leveled-dataflow-diagrams.html
+  - date: '2016-08-14'
+    key: Hermans2016
+    reviewed: /2016/08/14/novice-smells.html
+  - date: '2021-10-02'
+    key: Hermans2021
+    reviewed: /2021/10/02/programmers-brain.html
+  name: Hermans, Felienne
+- entries:
+  - date: '2022-04-15'
+    key: Nassif2021
+    reviewed: /2022/04/15/generating-unit-tests-for-documentation.html
+  name: Hernandez, Alexa
+- entries:
+  - date: '2011-07-04'
+    key: Racheva2010
+    reviewed: /2011/07/04/requirements-prioritization-in-agile-projects-insights-from-a-case-study.html
+  name: Herrmann, Andrea
+- entries:
+  - date: '2013-06-13'
+    key: Herzig2013
+    reviewed: /2013/06/13/its-not-a-bug-its-a-feature-how-misclassification-impacts-bug-prediction.html
+  name: Herzig, Kim
+- entries:
+  - date: '2021-10-01'
+    key: Miller2020
+    reviewed: /2021/10/01/the-relevance-of-classic-fuzz-testing.html
+  name: Heymann, Elisa
+- entries:
+  - date: '2021-09-26'
+    key: Hayashi2019
+    reviewed: /2021/09/26/two-papers-on-time.html
+  name: Higo, Yoshiki
+- entries:
+  - date: '2021-10-19'
+    key: Durieux2020
+    reviewed: /2021/10/19/restarted-and-flaky-builds-on-travis-ci.html
+  name: Hilton, Michael
+- entries:
+  - date: '2012-01-12'
+    key: Posnett2011
+    reviewed: /2012/01/12/got-issues-do-new-features-and-code-improvements-affect-defects.html
+  - date: '2012-04-26'
+    key: Hindle2016
+    reviewed: /2012/04/26/on-the-naturalness-of-software.html
+  - date: '2012-05-06'
+    key: Barr2012
+    reviewed: /2012/05/06/cohesive-and-isolated-development-with-branches.html
+  - date: '2012-08-23'
+    key: Hindle2012
+    reviewed: /2012/08/23/using-topic-modelling-to-understand-requirements.html
+  - date: '2021-09-16'
+    key: Borle2017
+    reviewed: /2021/09/16/analyzing-the-effects-of-tdd-in-github.html
+  - date: '2022-03-11'
+    key: Kamienski2021
+    reviewed: /2022/03/11/single-statement-bugs-in-python-projects.html
+  name: Hindle, Abram
+- entries:
+  - date: '2022-03-18'
+    key: RakAmnouykit2020
+    reviewed: /2022/03/18/python-3-types-in-the-wild.html
+  name: Hirzel, Martin
+- entries:
+  - date: '2021-08-18'
+    key: Masood2020a
+    reviewed: /2021/08/18/how-agile-teams-make-self-assignment-work.html
+  name: Hoda, Rashina
+- entries:
+  - date: '2011-08-24'
+    key: Rossbach2010
+    reviewed: /2011/08/24/is-transactional-programming-actually-easier.html
+  name: Hofmann, Owen S.
+- entries:
+  - date: '2021-08-09'
+    key: Hofmeister2017
+    reviewed: /2021/08/09/abbreviated-vs-full-names.html
+  name: Hofmeister, Johannes
+- entries:
+  - date: '2021-09-20'
+    key: Barik2017
+    reviewed: /2021/09/20/do-developers-read-compiler-error-messages.html
+  name: Holmes, Elisabeth
+- entries:
+  - date: '2011-09-13'
+    key: Brun2011
+    reviewed: /2011/09/13/proactive-detection-of-collaboration-conflicts.html
+  - date: '2013-06-13'
+    key: Hemmati2013
+    reviewed: /2013/06/13/the-msr-cookbook-mining-a-decade-of-research.html
+  - date: '2021-09-24'
+    key: Inozemtseva2014
+    reviewed: /2021/09/24/coverage-is-not-strongly-correlated-with-test-suite-effectiveness.html
+  name: Holmes, Reid
+- entries:
+  - date: '2021-08-09'
+    key: Hofmeister2017
+    reviewed: /2021/08/09/abbreviated-vs-full-names.html
+  name: Holt, Daniel V.
+- entries:
+  - date: '2022-02-21'
+    key: Guler2019
+    reviewed: /2022/02/21/antifuzz.html
+  name: Holz, Thorsten
+- entries:
+  - date: '2021-09-22'
+    key: Muhammad2019
+    reviewed: /2021/09/22/taxonomy-of-package-management.html
+  name: Homer, Michael
+- entries:
+  - date: '2021-09-25'
+    key: Schweinsberg2021
+    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
+  name: Hong, Antony B.
+- entries:
+  - date: '2021-09-25'
+    key: Schweinsberg2021
+    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
+  name: Hood, David
+- entries:
+  - date: '2021-09-01'
+    key: Hora2021b
+    reviewed: /2021/09/01/what-code-is-deliberately-excluded-from-test-coverage-and-why.html
+  - date: '2021-11-23'
+    key: Hora2021a
+    reviewed: /2021/11/23/googling-for-software-development.html
+  name: Hora, Andre
+- entries:
+  - date: '2022-04-13'
+    key: Danilova2021
+    reviewed: /2022/04/13/do-you-really-code.html
+  name: Horstmann, Stefan
+- entries:
+  - date: '2022-03-28'
+    key: Rodeghero2021
+    reviewed: /2022/03/28/remote-onboarding.html
+  name: Houck, Brian
+- entries:
+  - date: '2021-09-04'
+    key: Almeida2017
+    reviewed: /2021/09/04/do-software-developers-understand-open-source-licenses.html
+  name: Hoye, Mike
+- entries:
+  - date: '2021-09-25'
+    key: Schweinsberg2021
+    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
+  name: Hsueh, Justin
+- entries:
+  - date: '2021-08-17'
+    key: Peng2021
+    reviewed: /2021/08/17/python-language-features.html
+  name: Hu, Mingzhe
+- entries:
+  - date: '2012-01-17'
+    key: Prabhu2011
+    reviewed: /2012/01/17/a-survey-of-the-practice-of-computational-science.html
+  name: Huang, Jialu
+- entries:
+  - date: '2021-09-25'
+    key: Schweinsberg2021
+    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
+  name: Huang, Lilian
+- entries:
+  - date: '2021-11-15'
+    key: Zhang2021a
+    reviewed: /2021/11/15/enriching-api-documentation-with-code-samples-and-usage-scenarios.html
+  - date: '2022-09-19'
+    key: Yang2022
+    reviewed: /2022/09/19/developer-git-knowledge.html
+  name: Huang, Zhiqiu
+- entries:
+  - date: '2021-09-25'
+    key: Schweinsberg2021
+    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
+  name: Hui, Kent N.
+- entries:
+  - date: '2021-09-25'
+    key: Schweinsberg2021
+    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
+  name: Hultman, Keith A.
+- entries:
+  - date: '2011-12-04'
+    key: Hundhausen2011
+    reviewed: /2011/12/04/online-vs-face-to-face-pedagogical-code-reviews-an-empirical-comparison.html
+  name: Hundhausen, Christopher D.
+- entries:
+  - date: '2011-07-18'
+    key: Kinshumann2011
+    reviewed: /2011/07/18/debugging-in-the-very-large.html
+  name: Hunt, Galen
+- entries:
+  - date: '2011-07-11'
+    key: Chong2007
+    reviewed: /2011/07/11/the-social-dynamics-of-pair-programming.html
+  name: Hurlbutt, Tom
+- entries:
+  - date: '2021-10-14'
+    key: Gao2020
+    reviewed: /2021/10/14/api-learning-processes.html
+  name: Ichinco, Michelle
+- entries:
+  - date: '2016-06-07'
+    key: Thongtanunam2016
+    reviewed: /2016/06/07/code-ownership-revisited.html
+  name: Iida, Hajimu
+- entries:
+  - date: '2021-09-24'
+    key: Inozemtseva2014
+    reviewed: /2021/09/24/coverage-is-not-strongly-correlated-with-test-suite-effectiveness.html
+  name: Inozemtseva, Laura
+- entries:
+  - date: '2016-06-05'
+    key: Gulzar2016
+    reviewed: /2016/06/05/bigdebug.html
+  name: Interlandi, Matteo
+- entries:
+  - date: '2021-08-23'
+    key: Hata2019
+    reviewed: /2021/08/23/links-in-source-code-comments.html
+  name: Ishio, Takashi
+- entries:
+  - date: '2021-08-30'
+    key: Davis2019
+    reviewed: /2021/08/30/two-studies-of-regular-expressions.html
+  name: IV, Louis G. Michael
+- entries:
+  - date: '2012-01-17'
+    key: Prabhu2011
+    reviewed: /2012/01/17/a-survey-of-the-practice-of-computational-science.html
+  name: Jablin, Thomas B.
+- entries:
+  - date: '2016-06-05'
+    key: Near2016
+    reviewed: /2016/06/05/finding-security-bugs.html
+  - date: '2016-09-30'
+    key: PerezDeRosso2016
+    reviewed: /2016/09/30/rethinking-git.html
+  name: Jackson, Daniel
+- entries:
+  - date: '2013-08-12'
+    key: Jacobson2013
+    reviewed: /2013/08/12/review-essence-of-software-engineering.html
+  name: Jacobson, Ivar
+- entries:
+  - date: '2014-10-09'
+    key: Yuan2014
+    reviewed: /2014/10/09/simple-testing-can-prevent-most-critical-failures.html
+  name: Jain, Pranay U.
+- entries:
+  - date: '2021-09-25'
+    key: Schweinsberg2021
+    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
+  name: Javaid, Azka
+- entries:
+  - date: '2013-06-13'
+    key: Staples2013
+    reviewed: /2013/06/13/formal-specifications-better-than-function-points-for-code-sizing.html
+  name: Jeffery, Ross
+- entries:
+  - date: '2021-08-30'
+    key: Wang2020
+    reviewed: /2021/08/30/two-studies-of-regular-expressions.html
+  name: Jennings, Jamie A.
+- entries:
+  - date: '2012-02-23'
+    key: Nussli2012
+    reviewed: /2012/02/23/looking-at-the-same-thing-in-pair-programming-tasks.html
+  name: Jermann, Patrick
+- entries:
+  - date: '2021-11-15'
+    key: Zhang2021a
+    reviewed: /2021/11/15/enriching-api-documentation-with-code-samples-and-usage-scenarios.html
+  name: Jiang, He
+- entries:
+  - date: '2021-09-25'
+    key: Schweinsberg2021
+    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
+  name: Jiang, Lily Ji
+- entries:
+  - date: '2022-04-11'
+    key: Shao2020
+    reviewed: /2022/04/11/database-performance-antipatterns.html
+  name: Jin, Guoliang
+- entries:
+  - date: '2016-06-09'
+    key: Xu2015
+    reviewed: /2016/06/09/too-many-knobs.html
+  name: Jin, Long
+- entries:
+  - date: '2022-03-21'
+    key: Jin2021
+    reviewed: /2022/03/21/strategies-to-improve-continuous-integration.html
+  name: Jin, Xianhao
+- entries:
+  - date: '2012-01-17'
+    key: Prabhu2011
+    reviewed: /2012/01/17/a-survey-of-the-practice-of-computational-science.html
+  name: Johnson, Nick P.
+- entries:
+  - date: '2022-03-31'
+    key: Jolak2020
+    reviewed: /2022/03/31/textual-vs-graphic-design-descriptions-and-communication.html
+  name: Jolak, Rodi
+- entries:
+  - date: '2021-09-21'
+    key: Mokhov2018
+    reviewed: /2021/09/21/build-systems-a-la-carte.html
+  name: Jones, Simon Peyton
+- entries:
+  - date: '2021-09-25'
+    key: Schweinsberg2021
+    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
+  name: Jong, Jonathan
+- entries:
+  - date: '2016-09-09'
+    key: Krein2016
+    reviewed: /2016/09/09/replicating-design-patterns-experiment.html
+  - date: '2016-10-05'
+    key: Fucci2016
+    reviewed: /2016/10/05/test-driven-development.html
+  - date: '2021-10-21'
+    key: Fucci2020
+    reviewed: /2021/10/21/the-impact-of-sleep-deprivation.html
+  name: Juristo, Natalia
+- entries:
+  - date: '2011-08-30'
+    key: Bettenburg2008
+    reviewed: /2011/08/30/what-makes-a-good-bug-report.html
+  - date: '2013-06-13'
+    key: Herzig2013
+    reviewed: /2013/06/13/its-not-a-bug-its-a-feature-how-misclassification-impacts-bug-prediction.html
+  name: Just, Sascha
+- entries:
+  - date: '2011-10-18'
+    key: Jorgensen2011
+    reviewed: /2011/10/18/the-impact-of-irrelevant-and-misleading-information.html
+  - date: '2012-06-12'
+    key: Jorgensen2012
+    reviewed: /2012/06/12/software-development-estimation-biases-the-role-of-interdependence.html
+  name: "J\xF8rgensen, Magne"
+- entries:
+  - date: '2021-09-25'
+    key: Schweinsberg2021
+    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
+  name: Kale, Alex
+- entries:
+  - date: '2022-04-23'
+    key: Kochhar2019
+    reviewed: /2022/04/23/closed-to-open-source.html
+  name: Kalliamvakou, Eirini
+- entries:
+  - date: '2021-09-25'
+    key: Schweinsberg2021
+    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
+  name: Kamdar, Jash
+- entries:
+  - date: '2011-08-09'
+    key: McIntosh2011
+    reviewed: /2011/08/09/an-empirical-study-of-build-maintenance-effort.html
+  - date: '2016-06-09'
+    key: Nagappan2015
+    reviewed: /2016/06/09/goto-in-c.html
+  name: Kamei, Yasutaka
+- entries:
+  - date: '2022-03-11'
+    key: Kamienski2021
+    reviewed: /2022/03/11/single-statement-bugs-in-python-projects.html
+  name: Kamienski, Arthur V.
+- entries:
+  - date: '2021-09-02'
+    key: Becker2019
+    reviewed: /2021/09/02/compiler-error-messages-considered-unhelpful.html
+  name: Kamil, Amir
+- entries:
+  - date: '2012-05-03'
+    key: KanatAlexander2012
+    reviewed: /2012/05/03/a-review-of-code-simplicity.html
+  name: Kanat-Alexander, Max
+- entries:
+  - date: '2021-09-25'
+    key: Schweinsberg2021
+    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
+  name: Kane, David
+- entries:
+  - date: '2021-09-25'
+    key: Schweinsberg2021
+    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
+  name: Kappler, Gregor
+- entries:
+  - date: '2011-08-16'
+    key: Kapser2008
+    reviewed: /2011/08/16/cloning-considered-harmful-considered-harmful.html
+  name: Kapser, Cory J.
+- entries:
+  - date: '2021-09-02'
+    key: Becker2019
+    reviewed: /2021/09/02/compiler-error-messages-considered-unhelpful.html
+  name: Karkare, Amey
+- entries:
+  - date: '2021-08-09'
+    key: Abad2018
+    reviewed: /2021/08/09/task-interruption-in-software-development-projects.html
+  name: Karras, Oliver
+- entries:
+  - date: '2014-04-25'
+    key: Kasi2013
+    reviewed: /2014/04/25/cassandra-proactive-conflict-minimization-through-optimized-task-scheduling.html
+  name: Kasi, Bakhtiar Khan
+- entries:
+  - date: '2021-09-25'
+    key: Schweinsberg2021
+    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
+  name: Kaszubowski, Erikson
+- entries:
+  - date: '2021-09-28'
+    key: Kavaler2019
+    reviewed: /2021/09/28/javascript-quality-assurance-tools-and-usage-outcomes.html
+  name: Kavaler, David
+- entries:
+  - date: '2021-09-25'
+    key: Schweinsberg2021
+    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
+  name: Kavanagh, Christopher M.
+- entries:
+  - date: '2022-03-14'
+    key: Mo2021
+    reviewed: /2022/03/14/architecture-anti-patterns.html
+  - date: '2022-04-22'
+    key: Tamburri2020
+    reviewed: /2022/04/22/decline-of-sourceforge.html
+  name: Kazman, Rick
+- entries:
+  - date: '2021-09-23'
+    key: Spinellis2016
+    reviewed: /2021/09/23/two-studies-of-software-evolution.html
+  name: Kechagia, Maria
+- entries:
+  - date: '2021-09-25'
+    key: Schweinsberg2021
+    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
+  name: Kelchtermans, Stijn
+- entries:
+  - date: '2021-10-14'
+    key: Gao2020
+    reviewed: /2021/10/14/api-learning-processes.html
+  name: Kelleher, Caitlin
+- entries:
+  - date: '2016-09-16'
+    key: Harms2016
+    reviewed: /2016/09/16/five-from-icer-2016.html
+  name: Kelleher, Caitlin L.
+- entries:
+  - date: '2012-04-17'
+    key: Kocaguneli2012
+    reviewed: /2012/04/17/ensemble-effort-estimation.html
+  name: Keung, Jacky W.
+- entries:
+  - date: '2021-09-25'
+    key: Schweinsberg2021
+    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
+  name: Khabsa, Madian
+- entries:
+  - date: '2012-05-17'
+    key: Khomh2012
+    reviewed: /2012/05/17/do-faster-releases-improve-software-quality.html
+  name: Khomh, Foutse
+- entries:
+  - date: '2016-06-12'
+    key: Kiefer2015
+    reviewed: /2016/06/12/empirical-parellelism.html
+  name: Kiefer, Marc
+- entries:
+  - date: '2021-09-09'
+    key: Maenpaa2018
+    reviewed: /2021/09/09/organizing-for-openness.html
+  name: Kilamo, Terhi
+- entries:
+  - date: '2016-10-01'
+    key: Kim2016
+    reviewed: /2016/10/01/apex.html
+  name: Kim, Dohyeong
+- entries:
+  - date: '2013-06-06'
+    key: Kim2013a
+    reviewed: /2013/06/06/automatic-patch-generation-learned-from-human-written-patches.html
+  name: Kim, Dongsun
+- entries:
+  - date: '2012-01-17'
+    key: Prabhu2011
+    reviewed: /2012/01/17/a-survey-of-the-practice-of-computational-science.html
+  name: Kim, Hanjun
+- entries:
+  - date: '2016-10-01'
+    key: Kim2016
+    reviewed: /2016/10/01/apex.html
+  name: Kim, I. Luk
+- entries:
+  - date: '2013-09-20'
+    key: Meng2013
+    reviewed: /2013/09/20/locating-and-applying-systematic-edits.html
+  - date: '2016-06-05'
+    key: Gulzar2016
+    reviewed: /2016/06/05/bigdebug.html
+  name: Kim, Miryung
+- entries:
+  - date: '2013-06-06'
+    key: Kim2013a
+    reviewed: /2013/06/06/automatic-patch-generation-learned-from-human-written-patches.html
+  - date: '2021-09-11'
+    key: Pan2008
+    reviewed: /2021/09/11/common-bug-fix-patterns.html
+  - date: '2021-12-02'
+    key: Gu2018
+    reviewed: /2021/12/02/deep-code-search.html
+  name: Kim, Sunghun
+- entries:
+  - date: '2011-07-18'
+    key: Kinshumann2011
+    reviewed: /2011/07/18/debugging-in-the-very-large.html
+  name: Kinshumann, Kinshuman
+- entries:
+  - date: '2021-10-07'
+    key: Kinsman2021
+    reviewed: /2021/10/07/how-do-software-developers-use-github-actions.html
+  name: Kinsman, Timothy
+- entries:
+  - date: '2021-10-30'
+    key: Soremekun2021
+    reviewed: /2021/10/30/locating-faults-with-program-slicing.html
+  name: Kirschner, Lukas
+- entries:
+  - date: '2013-06-13'
+    key: Staples2013
+    reviewed: /2013/06/13/formal-specifications-better-than-function-points-for-code-sizing.html
+  name: Klein, Gerwin
+- entries:
+  - date: '2021-09-25'
+    key: Schweinsberg2021
+    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
+  name: Kleinberg, Bennett
+- entries:
+  - date: '2016-09-09'
+    key: Krein2016
+    reviewed: /2016/09/09/replicating-design-patterns-experiment.html
+  name: Knutson, Charles D.
+- entries:
+  - date: '2011-06-30'
+    key: Cherubini2007
+    reviewed: /2011/06/30/lets-go-to-the-whiteboard.html
+  name: Ko, Amy J.
+- entries:
+  - date: '2012-04-17'
+    key: Kocaguneli2012
+    reviewed: /2012/04/17/ensemble-effort-estimation.html
+  name: Kocaguneli, Ekrem
+- entries:
+  - date: '2022-04-23'
+    key: Kochhar2019
+    reviewed: /2022/04/23/closed-to-open-source.html
+  name: Kochhar, Pavneet Singh
+- entries:
+  - date: '2016-09-16'
+    key: Rivers2016
+    reviewed: /2016/09/16/five-from-icer-2016.html
+  name: Koedinger, Ken
+- entries:
+  - date: '2013-06-13'
+    key: Staples2013
+    reviewed: /2013/06/13/formal-specifications-better-than-function-points-for-code-sizing.html
+  name: Kolanski, Rafal
+- entries:
+  - date: '2013-06-13'
+    key: Hemmati2013
+    reviewed: /2013/06/13/the-msr-cookbook-mining-a-decade-of-research.html
+  name: Kononenko, Oleksii
+- entries:
+  - date: '2011-10-11'
+    key: Vanhanen2007
+    reviewed: /2011/10/11/experiences-of-using-pair-programming-in-an-agile-project.html
+  name: Korpi, Harri
+- entries:
+  - date: '2021-09-20'
+    key: Kosar2018
+    reviewed: /2021/09/20/program-comprehension-of-domain-specific-and-general-purpose-languages.html
+  name: "Kosar, Toma\u017E"
+- entries:
+  - date: '2015-02-14'
+    key: Maalej2014
+    reviewed: /2015/02/14/on-comprehension-of-program-comprehension.html
+  name: Koschke, Rainer
+- entries:
+  - date: '2021-09-25'
+    key: Schweinsberg2021
+    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
+  name: Kouros, Jens
+- entries:
+  - date: '2021-10-15'
+    key: Bogomolov2021
+    reviewed: /2021/10/15/authorship-attribution-of-source-code.html
+  name: Kovalenko, Vladimir
+- entries:
+  - date: '2021-09-25'
+    key: Schweinsberg2021
+    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
+  name: Krause, Heather
+- entries:
+  - date: '2016-09-09'
+    key: Krein2016
+    reviewed: /2016/09/09/replicating-design-patterns-experiment.html
+  name: Krein, Jonathan L.
+- entries:
+  - date: '2021-08-19'
+    key: Ragkhitwetsagul2021
+    reviewed: /2021/08/19/toxic-code-snippets-on-stack-overflow.html
+  - date: '2021-10-01'
+    key: Bafatakis2019
+    reviewed: /2021/10/01/python-coding-style-compliance-on-stack-overflow.html
+  name: Krinke, Jens
+- entries:
+  - date: '2016-10-02'
+    key: Mattmann2015
+    reviewed: /2016/10/02/grid-revisited.html
+  name: Krka, Ivo
+- entries:
+  - date: '2021-09-06'
+    key: Nielebock2018
+    reviewed: /2021/09/06/commenting-source-code.html
+  name: Krolikowski, Dariusz
+- entries:
+  - date: '2021-09-25'
+    key: Schweinsberg2021
+    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
+  name: Krypotos, Angelos-Miltiadis
+- entries:
+  - date: '2021-09-06'
+    key: Nielebock2018
+    reviewed: /2021/09/06/commenting-source-code.html
+  name: "Kr\xFCger, Jacob"
+- entries:
+  - date: '2021-08-23'
+    key: Hata2019
+    reviewed: /2021/08/23/links-in-source-code-comments.html
+  name: Kula, Raula Gaikovina
+- entries:
+  - date: '2021-08-09'
+    key: AlencarDaCosta2017
+    reviewed: /2021/08/09/impact-of-rapid-release-cycles-on-integration-delay-of-fixed-issues.html
+  name: "Kulesza, Uir\xE1"
+- entries:
+  - date: '2022-03-01'
+    key: Nakajo1991
+    reviewed: /2022/03/01/software-error-cause-effect.html
+  name: Kume, Hitoshi
+- entries:
+  - date: '2022-03-04'
+    key: Golubev2021
+    reviewed: /2022/03/04/software-refactoring.html
+  name: Kurbatova, Zarina
+- entries:
+  - date: '2021-09-26'
+    key: Hayashi2019
+    reviewed: /2021/09/26/two-papers-on-time.html
+  name: Kusumoto, Shinji
+- entries:
+  - date: '2016-10-01'
+    key: Kim2016
+    reviewed: /2016/10/01/apex.html
+  name: Kwon, Yonghwi
+- entries:
+  - date: '2011-10-22'
+    key: Apel2011
+    reviewed: /2011/10/22/three-empirical-studies-from-esecfse11.html
+  - date: '2021-10-13'
+    key: Overney2020
+    reviewed: /2021/10/13/an-empirical-study-of-donations-in-open-source.html
+  - date: '2022-03-25'
+    key: Bogart2021
+    reviewed: /2022/03/25/breaking-changes.html
+  name: "K\xE4stner, Christian"
+- entries:
+  - date: '2021-09-03'
+    key: Brown2018
+    reviewed: /2021/09/03/two-papers-about-the-blackbox-project.html
+  name: "K\xF6lling, Michael"
+- entries:
+  - date: '2022-03-23'
+    key: Turcotte2020
+    reviewed: /2022/03/23/designing-types-for-r-empirically.html
+  name: "K\u0159ikava, Filip"
+- entries:
+  - date: '2021-09-19'
+    key: Tregubov2017
+    reviewed: /2021/09/19/impact-of-task-switching-and-work-interruptions.html
+  name: Lane, Jo Ann
+- entries:
+  - date: '2021-10-06'
+    key: Aghajani2019
+    reviewed: /2021/10/06/software-documentation-issues-unveiled.html
+  name: Lanza, Michele
+- entries:
+  - date: '2022-04-08'
+    key: Latendresse2021
+    reviewed: /2022/04/08/continuous-integration-single-statement-bugs.html
+  name: Latendresse, Jasmine
+- entries:
+  - date: '2021-09-24'
+    key: Mangano2015
+    reviewed: /2021/09/24/how-software-designers-interact-with-sketches-at-the-whiteboard.html
+  name: LaToza, Thomas D.
+- entries:
+  - date: '2016-09-16'
+    key: Liao2016
+    reviewed: /2016/09/16/five-from-icer-2016.html
+  name: Laurenzano, Michael A.
+- entries:
+  - date: '2021-09-25'
+    key: Schweinsberg2021
+    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
+  name: Lavbivc, Dejan
+- entries:
+  - date: '2021-09-26'
+    key: Menzies2016
+    reviewed: /2021/09/26/are-delayed-issues-harder-to-resolve.htm
+  name: Layman, Lucas
+- entries:
+  - date: '2013-03-08'
+    key: Porter2013
+    reviewed: /2013/03/08/halving-fail-rates-using-peer-instruction.html
+  name: Lee, Cynthia Bailey
+- entries:
+  - date: '2021-08-30'
+    key: Davis2019
+    reviewed: /2021/08/30/two-studies-of-regular-expressions.html
+  name: Lee, Dongyoon
+- entries:
+  - date: '2021-09-25'
+    key: Schweinsberg2021
+    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
+  name: Lee, Rui Ling
+- entries:
+  - date: '2021-09-25'
+    key: Schweinsberg2021
+    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
+  name: Leffel, Timothy
+- entries:
+  - date: '2021-09-06'
+    key: Nielebock2018
+    reviewed: /2021/09/06/commenting-source-code.html
+  name: Leich, Thomas
+- entries:
+  - date: '2011-06-30'
+    key: Barnett2011
+    reviewed: /2011/06/30/specification-and-verification-the-spec-experience.html
+  name: Leino, K. Rustan M.
+- entries:
+  - date: '2021-09-26'
+    key: Zavgorodniaia2021
+    reviewed: /2021/09/26/two-papers-on-time.html
+  name: Leinonen, Juho
+- entries:
+  - date: '2021-10-19'
+    key: Costa2019
+    reviewed: /2021/10/19/whats-wrong-with-my-benchmark-results.html
+  name: Leitner, Philip
+- entries:
+  - date: '2021-09-27'
+    key: Leitao2019
+    reviewed: /2021/09/27/technology-facilitated-intimate-partner-abuse.html
+  name: "Leit\xE3o, Roxanne"
+- entries:
+  - date: '2022-03-30'
+    key: Lemire2021
+    reviewed: /2022/03/30/number-parsing-at-a-gigabyte-a-second.html
+  name: Lemire, Daniel
+- entries:
+  - date: '2011-10-22'
+    key: Apel2011
+    reviewed: /2011/10/22/three-empirical-studies-from-esecfse11.html
+  name: Lengauer, Christian
+- entries:
+  - date: '2021-08-28'
+    key: Levy2020
+    reviewed: /2021/08/28/privacy-threats-in-intimate-relationships.html
+  name: Levy, Karen
+- entries:
+  - date: '2011-12-10'
+    key: BenAri2011
+    reviewed: /2011/12/10/a-decade-of-research-and-development-on-program-animation-the-jeliot-experience.html
+  name: Levy, Ronit Ben-Bassat
+- entries:
+  - date: '2013-06-06'
+    key: Lewis2013
+    reviewed: /2013/06/06/does-bug-prediction-support-human-developers-findings-from-a-google-case-study.html
+  name: Lewis, Chris
+- entries:
+  - date: '2013-06-13'
+    key: Staples2013
+    reviewed: /2013/06/13/formal-specifications-better-than-function-points-for-code-sizing.html
+  name: Lewis, Corey
+- entries:
+  - date: '2013-04-16'
+    key: Li2013
+    reviewed: /2013/04/16/a-characteristic-study-on-failures-of-production-distributed-data-parallel-programs.html
+  name: Li, Sihan
+- entries:
+  - date: '2016-09-16'
+    key: Liao2016
+    reviewed: /2016/09/16/five-from-icer-2016.html
+  name: Liao, Soohyun Nam
+- entries:
+  - date: '2013-08-12'
+    key: Jacobson2013
+    reviewed: /2013/08/12/review-essence-of-software-engineering.html
+  name: Lidman, Svante
+- entries:
+  - date: '2011-10-22'
+    key: Apel2011
+    reviewed: /2011/10/22/three-empirical-studies-from-esecfse11.html
+  name: "Liebig, J\xF6rg"
+- entries:
+  - date: '2021-09-25'
+    key: Schweinsberg2021
+    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
+  name: Lim, Wei Yang
+- entries:
+  - date: '2022-04-20'
+    key: Lima2021
+    reviewed: /2022/04/20/open-source-exceptinon-handling-testing.html
+  name: Lima, Luan P.
+- entries:
+  - date: '2013-04-16'
+    key: Li2013
+    reviewed: /2013/04/16/a-characteristic-study-on-failures-of-production-distributed-data-parallel-programs.html
+  name: Lin, Haibo
+- entries:
+  - date: '2013-04-16'
+    key: Li2013
+    reviewed: /2013/04/16/a-characteristic-study-on-failures-of-production-distributed-data-parallel-programs.html
+  name: Lin, Haoxiang
+- entries:
+  - date: '2013-04-16'
+    key: Li2013
+    reviewed: /2013/04/16/a-characteristic-study-on-failures-of-production-distributed-data-parallel-programs.html
+  name: Lin, Wei
+- entries:
+  - date: '2013-06-06'
+    key: Lewis2013
+    reviewed: /2013/06/06/does-bug-prediction-support-human-developers-findings-from-a-google-case-study.html
+  name: Lin, Zhongpeng
+- entries:
+  - date: '2021-10-05'
+    key: Scalabrino2021
+    reviewed: /2021/10/05/three-papers-on-readability.html
+  - date: '2021-10-06'
+    key: Aghajani2019
+    reviewed: /2021/10/06/software-documentation-issues-unveiled.html
+  name: Linares-Vasquez, Mario
+- entries:
+  - date: '2021-10-05'
+    key: Scalabrino2018
+    reviewed: /2021/10/05/three-papers-on-readability.html
+  name: "Linares-V\xE1squez, Mario"
+- entries:
+  - date: '2021-08-11'
+    key: Ali2020
+    reviewed: /2021/08/11/cheating-death-survival-analysis-of-python-projects.html
+  name: Linstead, Erik
+- entries:
+  - date: '2012-01-17'
+    key: Prabhu2011
+    reviewed: /2012/01/17/a-survey-of-the-practice-of-computational-science.html
+  name: Liu, Feng
+- entries:
+  - date: '2016-10-01'
+    key: Kim2016
+    reviewed: /2016/10/01/apex.html
+  name: Liu, Peng
+- entries:
+  - date: '2021-09-25'
+    key: Schweinsberg2021
+    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
+  name: Liu, Yang
+- entries:
+  - date: '2021-11-10'
+    key: Tomassi2019
+    reviewed: /2021/11/10/my-kingdom-for-a-dataset.html
+  name: Liu, Yen-Chuan
+- entries:
+  - date: '2021-10-20'
+    key: Tao2021
+    reviewed: /2021/10/20/demistifying-error-messages-in-data-science-libraries.html
+  name: Liu, Yepang
+- entries:
+  - date: '2021-09-25'
+    key: Schweinsberg2021
+    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
+  name: Liverani, Silvia
+- entries:
+  - date: '2016-06-09'
+    key: Lo2015
+    reviewed: /2016/06/09/perceived-relevance.html
+  - date: '2021-09-15'
+    key: Prana2018
+    reviewed: /2021/09/15/categorizing-the-content-of-github-readme-files.html
+  - date: '2021-10-16'
+    key: Han2021
+    reviewed: /2021/10/16/open-source-projects-in-baidu-alibaba-and-tencent.html
+  - date: '2022-04-04'
+    key: Bao2021
+    reviewed: /2022/04/04/contributor-prediction-for-github.html
+  name: Lo, David
+- entries:
+  - date: '2021-09-25'
+    key: Schweinsberg2021
+    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
+  name: Loh, Bianca
+- entries:
+  - date: '2011-07-18'
+    key: Kinshumann2011
+    reviewed: /2011/07/18/debugging-in-the-very-large.html
+  name: Loihle, Gretchen
+- entries:
+  - date: '2022-04-18'
+    key: Butler2019
+    reviewed: /2022/04/18/company-contributions-to-open-source.html
+  name: Lonroth, Erik
+- entries:
+  - date: '2012-04-10'
+    key: Philip2012
+    reviewed: /2012/04/10/component-reuse-vs-snippet-remixing.html
+  name: Lopes, Cristina V.
+- entries:
+  - date: '2022-02-22'
+    key: Louis2020
+    reviewed: /2022/02/22/where-comments.html
+  name: Louis, Annie
+- entries:
+  - date: '2021-09-23'
+    key: Spinellis2016
+    reviewed: /2021/09/23/two-studies-of-software-evolution.html
+  - date: '2021-09-27'
+    key: Mitropoulos2019
+    reviewed: /2021/09/27/the-evolution-of-javascript-code-in-the-wild.html
+  name: Louridas, Panos
+- entries:
+  - date: '2012-01-05'
+    key: Bluedorn1999
+    reviewed: /2012/01/05/the-effects-of-stand-up-and-sit-down-meeting-formats-on-meeting-outcomes.html
+  name: Love, Mary Sue
+- entries:
+  - date: '2021-09-25'
+    key: Schweinsberg2021
+    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
+  name: Low, Jia Wei
+- entries:
+  - date: '2021-09-25'
+    key: Schweinsberg2021
+    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
+  name: Lu, Alton
+- entries:
+  - date: '2021-09-20'
+    key: Barik2017
+    reviewed: /2021/09/20/do-developers-read-compiler-error-messages.html
+  name: Lubick, Kevin
+- entries:
+  - date: '2011-08-17'
+    key: DeLucia2009
+    reviewed: /2011/08/17/three-empirical-evaluations-of-uml.html
+  name: Lucia, Andrea De
+- entries:
+  - date: '2022-04-18'
+    key: Butler2019
+    reviewed: /2022/04/18/company-contributions-to-open-source.html
+  name: Lundell, Bjorn
+- entries:
+  - date: '2014-10-09'
+    key: Yuan2014
+    reviewed: /2014/10/09/simple-testing-can-prevent-most-critical-failures.html
+  name: Luo, Yu
+- entries:
+  - date: '2021-11-18'
+    key: Ni2021
+    reviewed: /2021/11/18/synthesis-approach-for-data-science-api-refactoring.html
+  name: Lynce, Ines
+- entries:
+  - date: '2021-11-26'
+    key: Lopez2018
+    reviewed: /2021/11/26/metric-based-comparisons-of-software-libraries.html
+  name: "L\xF3pez de la Mora, Fernando"
+- entries:
+  - date: '2021-09-25'
+    key: Schweinsberg2021
+    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
+  name: "L\xF8nsmann, Dorte"
+- entries:
+  - date: '2015-02-14'
+    key: Maalej2014
+    reviewed: /2015/02/14/on-comprehension-of-program-comprehension.html
+  name: Maalej, Walid
+- entries:
+  - date: '2021-09-25'
+    key: Schweinsberg2021
+    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
+  name: MacDonald, Kyle
+- entries:
+  - date: '2011-12-21'
+    key: McLeod2011
+    reviewed: /2011/12/21/factors-that-affect-software-systems-development-project-outcomes.html
+  name: MacDonell, Stephen G.
+- entries:
+  - date: '2021-09-25'
+    key: Schweinsberg2021
+    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
+  name: Madan, Christopher R.
+- entries:
+  - date: '2021-09-25'
+    key: Schweinsberg2021
+    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
+  name: Madan, Nikhil
+- entries:
+  - date: '2021-09-25'
+    key: Schweinsberg2021
+    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
+  name: Madsen, Lasse Hjorth
+- entries:
+  - date: '2021-12-13'
+    key: Mahmoudi2019
+    reviewed: /2021/12/13/refactorings-in-merge-conflicts.html
+  name: Mahmoudi, Mehran
+- entries:
+  - date: '2021-09-25'
+    key: Schweinsberg2021
+    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
+  name: Maimone, Christina
+- entries:
+  - date: '2021-09-10'
+    key: Majumder2019
+    reviewed: /2021/09/10/why-software-projects-need-heroes.html
+  name: Majumder, Suvodeep
+- entries:
+  - date: '2021-09-23'
+    key: Malik2019
+    reviewed: /2021/09/23/the-secret-life-of-bugs.html
+  name: Malik, Mashkoor
+- entries:
+  - date: '2021-08-17'
+    key: Malloy2018
+    reviewed: /2021/08/17/python-language-features.html
+  name: Malloy, Brian A.
+- entries:
+  - date: '2021-09-25'
+    key: Schweinsberg2021
+    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
+  name: Mandl, Benjamin
+- entries:
+  - date: '2021-09-24'
+    key: Mangano2015
+    reviewed: /2021/09/24/how-software-designers-interact-with-sketches-at-the-whiteboard.html
+  name: Mangano, Nicolas
+- entries:
+  - date: '2021-09-25'
+    key: Schweinsberg2021
+    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
+  name: Mangold, Alexandra
+- entries:
+  - date: '2021-11-18'
+    key: Ni2021
+    reviewed: /2021/11/18/synthesis-approach-for-data-science-api-refactoring.html
+  name: Manquinho, Vasco
+- entries:
+  - date: '2011-08-17'
+    key: CruzLemus2009
+    reviewed: /2011/08/17/three-empirical-evaluations-of-uml.html
+  name: Manso, M. Esperanza
+- entries:
+  - date: '2011-10-22'
+    key: Marinescu2011
+    reviewed: /2011/10/22/three-results-many-definitions.html
+  name: Marinescu, Cristina
+- entries:
+  - date: '2021-09-25'
+    key: Schweinsberg2021
+    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
+  name: Marshall, Adrienne
+- entries:
+  - date: '2021-11-18'
+    key: Ni2021
+    reviewed: /2021/11/18/synthesis-approach-for-data-science-api-refactoring.html
+  name: Martins, Ruben
+- entries:
+  - date: '2021-09-23'
+    key: Malik2019
+    reviewed: /2021/09/23/the-secret-life-of-bugs.html
+  name: Masetti, Giuseppe
+- entries:
+  - date: '2021-08-18'
+    key: Masood2020a
+    reviewed: /2021/08/18/how-agile-teams-make-self-assignment-work.html
+  name: Masood, Zainab
+- entries:
+  - date: '2021-09-25'
+    key: Schweinsberg2021
+    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
+  name: Matskewich, Helena Ester
+- entries:
+  - date: '2021-09-26'
+    key: Hayashi2019
+    reviewed: /2021/09/26/two-papers-on-time.html
+  name: Matsumoto, Shinsuke
+- entries:
+  - date: '2016-10-02'
+    key: Mattmann2015
+    reviewed: /2016/10/02/grid-revisited.html
+  name: Mattmann, Chris A.
+- entries:
+  - date: '2022-04-18'
+    key: Butler2019
+    reviewed: /2022/04/18/company-contributions-to-open-source.html
+  name: Mattsson, Anders
+- entries:
+  - date: '2021-09-25'
+    key: Schweinsberg2021
+    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
+  name: Mavon, Kimia
+- entries:
+  - date: '2012-01-25'
+    key: Nagappan2008
+    reviewed: /2012/01/25/realizing-quality-improvement-through-test-driven-development.html
+  name: Maximilien, E. Michael
+- entries:
+  - date: '2022-03-18'
+    key: RakAmnouykit2020
+    reviewed: /2022/03/18/python-3-types-in-the-wild.html
+  name: McCrevan, Daniel
+- entries:
+  - date: '2021-09-02'
+    key: Becker2019
+    reviewed: /2021/09/02/compiler-error-messages-considered-unhelpful.html
+  name: McDonald, Chris
+- entries:
+  - date: '2011-10-28'
+    key: McGee2011
+    reviewed: /2011/10/28/software-requirements-change-taxonomy-evaluation-by-case-study.html
+  name: McGee, Sharon
+- entries:
+  - date: '2021-10-08'
+    key: McIntosh2021
+    reviewed: /2021/10/08/do-hackathon-projects-change-the-world.html
+  name: McIntosh, Lukas
+- entries:
+  - date: '2011-08-09'
+    key: McIntosh2011
+    reviewed: /2011/08/09/an-empirical-study-of-build-maintenance-effort.html
+  - date: '2016-06-07'
+    key: Thongtanunam2016
+    reviewed: /2016/06/07/code-ownership-revisited.html
+  - date: '2016-06-09'
+    key: Nagappan2015
+    reviewed: /2016/06/09/goto-in-c.html
+  - date: '2021-08-09'
+    key: AlencarDaCosta2017
+    reviewed: /2021/08/09/impact-of-rapid-release-cycles-on-integration-delay-of-fixed-issues.html
+  name: McIntosh, Shane
+- entries:
+  - date: '2013-09-20'
+    key: Meng2013
+    reviewed: /2013/09/20/locating-and-applying-systematic-edits.html
+  name: McKinley, Kathryn S.
+- entries:
+  - date: '2021-09-25'
+    key: Schweinsberg2021
+    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
+  name: McLain, Katherine L.
+- entries:
+  - date: '2011-12-21'
+    key: McLeod2011
+    reviewed: /2011/12/21/factors-that-affect-software-systems-development-project-outcomes.html
+  name: McLeod, Laurie
+- entries:
+  - date: '2013-08-12'
+    key: Jacobson2013
+    reviewed: /2013/08/12/review-essence-of-software-engineering.html
+  name: McMahon, Paul E.
+- entries:
+  - date: '2021-09-25'
+    key: Schweinsberg2021
+    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
+  name: McNamara, Amelia A.
+- entries:
+  - date: '2022-02-20'
+    key: McNamara2018
+    reviewed: /2022/02/20/ethics-in-decision-making.html
+  name: McNamara, Andrew
+- entries:
+  - date: '2021-09-25'
+    key: Schweinsberg2021
+    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
+  name: McNeill, Mhairi
+- entries:
+  - date: '2016-10-02'
+    key: Mattmann2015
+    reviewed: /2016/10/02/grid-revisited.html
+  name: "Medvidovi\u0107, Nenad"
+- entries:
+  - date: '2021-10-13'
+    key: Overney2020
+    reviewed: /2021/10/13/an-empirical-study-of-donations-in-open-source.html
+  name: Meinicke, Jens
+- entries:
+  - date: '2022-03-07'
+    key: Gallagher2017
+    reviewed: /2022/03/07/new-me.html
+  name: Memon, Nasir D.
+- entries:
+  - date: '2011-09-06'
+    key: Meneely2011
+    reviewed: /2011/09/06/does-adding-manpower-also-affect-quality.html
+  name: Meneely, Andrew
+- entries:
+  - date: '2013-09-20'
+    key: Meng2013
+    reviewed: /2013/09/20/locating-and-applying-systematic-edits.html
+  name: Meng, Na
+- entries:
+  - date: '2022-05-20'
+    key: Decan2021a
+    reviewed: /2022/05/20/a-note-on-communication.html
+  - date: '2022-05-20'
+    key: Decan2021b
+    reviewed: /2022/05/20/a-note-on-communication.html
+  name: Mens, Tom
+- entries:
+  - date: '2012-04-17'
+    key: Kocaguneli2012
+    reviewed: /2012/04/17/ensemble-effort-estimation.html
+  - date: '2021-09-10'
+    key: Majumder2019
+    reviewed: /2021/09/10/why-software-projects-need-heroes.html
+  - date: '2021-09-26'
+    key: Menzies2016
+    reviewed: /2021/09/26/are-delayed-issues-harder-to-resolve.htm
+  name: Menzies, Tim
+- entries:
+  - date: '2011-08-31'
+    key: Wilkerson2012
+    reviewed: /2011/08/31/comparing-the-defect-reduction-benefits-of-code-inspection-and-test-driven-development.html
+  name: Mercer, Rick
+- entries:
+  - date: '2013-07-24'
+    key: Gauthier2013
+    reviewed: /2013/07/24/semantic-smells-and-errors-in-access-control-models-a-case-study-in-php.html
+  name: Merlo, Ettore
+- entries:
+  - date: '2021-09-20'
+    key: Kosar2018
+    reviewed: /2021/09/20/program-comprehension-of-domain-specific-and-general-purpose-languages.html
+  name: Mernik, Marjan
+- entries:
+  - date: '2021-09-25'
+    key: Schweinsberg2021
+    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
+  name: Mertens, Ulf
+- entries:
+  - date: '2021-10-04'
+    key: Meyer2021
+    reviewed: /2021/10/04/the-daily-life-of-software-developers.html
+  name: Meyer, Andre N.
+- entries:
+  - date: '2015-08-23'
+    key: Meyer2014
+    reviewed: /2015/08/23/perception-productivity.html
+  name: "Meyer, Andr\xE9 N."
+- entries:
+  - date: '2016-06-09'
+    key: Eichberg2015
+    reviewed: /2016/06/09/hidden-truths.html
+  - date: '2021-11-29'
+    key: Sven2019
+    reviewed: /2021/11/29/next-steps-in-static-api-misuse-detection.html
+  - date: '2022-03-13'
+    key: Glanz2020
+    reviewed: /2022/03/13/obfuscated-strings-and-privacy.html
+  name: Mezini, Mira
+- entries:
+  - date: '2021-08-27'
+    key: Miedema2021
+    reviewed: /2021/08/27/errors-in-sql-queries.html
+  name: Miedema, Daphne
+- entries:
+  - date: '2021-09-09'
+    key: Maenpaa2018
+    reviewed: /2021/09/09/organizing-for-openness.html
+  name: Mikkonen, Tommi
+- entries:
+  - date: '2022-03-18'
+    key: RakAmnouykit2020
+    reviewed: /2022/03/18/python-3-types-in-the-wild.html
+  name: Milanova, Ana
+- entries:
+  - date: '2021-10-01'
+    key: Miller2020
+    reviewed: /2021/10/01/the-relevance-of-classic-fuzz-testing.html
+  name: Miller, Barton
+- entries:
+  - date: '2016-09-16'
+    key: Miller2016
+    reviewed: /2016/09/16/five-from-icer-2016.html
+  name: Miller, Craig S.
+- entries:
+  - date: '2021-09-25'
+    key: Schweinsberg2021
+    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
+  name: Miller, David
+- entries:
+  - date: '2016-06-05'
+    key: Gulzar2016
+    reviewed: /2016/06/05/bigdebug.html
+  name: Millstein, Todd
+- entries:
+  - date: '2021-09-21'
+    key: Mokhov2018
+    reviewed: /2021/09/21/build-systems-a-la-carte.html
+  name: Mitchell, Neil
+- entries:
+  - date: '2021-09-27'
+    key: Mitropoulos2019
+    reviewed: /2021/09/27/the-evolution-of-javascript-code-in-the-wild.html
+  name: Mitropoulos, Dimitris
+- entries:
+  - date: '2022-03-04'
+    key: Golubev2021
+    reviewed: /2022/03/04/software-refactoring.html
+  name: Mkaouer, Mohamed Wiem
+- entries:
+  - date: '2022-03-14'
+    key: Mo2021
+    reviewed: /2022/03/14/architecture-anti-patterns.html
+  name: Mo, Ran
+- entries:
+  - date: '2011-06-27'
+    key: Mockus2010
+    reviewed: /2011/06/27/organizational-volatility-and-its-effects-on-software.html
+  - date: '2011-09-22'
+    key: Anda2009
+    reviewed: /2011/09/22/variability-and-reproducibility-in-software-engineering-a-study-of-four-companies-that-developed-the-same-system.html
+  - date: '2016-06-09'
+    key: Nagappan2015
+    reviewed: /2016/06/09/goto-in-c.html
+  - date: '2021-09-30'
+    key: Rigby2016
+    reviewed: /2021/09/30/quantifying-and-mitigating-turnover-induced-knowledge-loss.html
+  name: Mockus, Audris
+- entries:
+  - date: '2011-08-02'
+    key: Moe2010
+    reviewed: /2011/08/02/a-teamwork-model-for-understanding-an-agile-team.html
+  name: Moe, Nils Brede
+- entries:
+  - date: '2013-02-12'
+    key: Cinneide2012
+    reviewed: /2013/02/12/experimental-assessment-of-software-metrics-using-automated-refactoring.html
+  name: Moghadam, Iman Hemati
+- entries:
+  - date: '2021-09-25'
+    key: Schweinsberg2021
+    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
+  name: Mohamed, Zainab
+- entries:
+  - date: '2021-09-21'
+    key: Mokhov2018
+    reviewed: /2021/09/21/build-systems-a-la-carte.html
+  name: Mokhov, Andrey
+- entries:
+  - date: '2021-10-03'
+    key: Moldon2021
+    reviewed: /2021/10/03/how-gamification-affects-software-developers.html
+  name: Moldon, Lukas
+- entries:
+  - date: '2012-05-18'
+    key: Wicherts2011
+    reviewed: /2012/05/18/willingness-to-share-research-data-is-related-to-the-strength-of-the-evidence-and-the-quality-of-reporting-of-statistical-results.html
+  name: Molenaar, Dylan
+- entries:
+  - date: '2021-09-25'
+    key: Schweinsberg2021
+    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
+  name: Moore, Andrew
+- entries:
+  - date: '2021-09-25'
+    key: Schweinsberg2021
+    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
+  name: Moore, Ben
+- entries:
+  - date: '2011-08-17'
+    key: CruzLemus2009
+    reviewed: /2011/08/17/three-empirical-evaluations-of-uml.html
+  name: Morasca, Sandro
+- entries:
+  - date: '2011-12-10'
+    key: BenAri2011
+    reviewed: /2011/12/10/a-decade-of-research-and-development-on-program-animation-the-jeliot-experience.html
+  name: "Moreno, Andr\xE9s"
+- entries:
+  - date: '2021-10-06'
+    key: Aghajani2019
+    reviewed: /2021/10/06/software-documentation-issues-unveiled.html
+  name: Moreno, Laura
+- entries:
+  - date: '2021-09-22'
+    key: Muhammad2019
+    reviewed: /2021/09/22/taxonomy-of-package-management.html
+  name: Muhammad, Hisham
+- entries:
+  - date: '2021-09-17'
+    key: Abdalkareem2017
+    reviewed: /2021/09/17/why-do-developers-use-trivial-packages.html
+  name: Mujahid, Suhaib
+- entries:
+  - date: '2021-09-25'
+    key: Schweinsberg2021
+    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
+  name: Murase, Toshio
+- entries:
+  - date: '2011-09-05'
+    key: Bird2011
+    reviewed: /2011/09/05/dont-touch-my-code.html
+  name: Murphy, Brendan
+- entries:
+  - date: '2015-08-23'
+    key: Meyer2014
+    reviewed: /2015/08/23/perception-productivity.html
+  - date: '2021-09-04'
+    key: Almeida2017
+    reviewed: /2021/09/04/do-software-developers-understand-open-source-licenses.html
+  - date: '2022-04-04'
+    key: Bao2021
+    reviewed: /2022/04/04/contributor-prediction-for-github.html
+  name: Murphy, Gail C.
+- entries:
+  - date: '2021-09-02'
+    key: Barik2018
+    reviewed: /2021/09/02/compiler-error-messages-considered-unhelpful.html
+  - date: '2021-09-20'
+    key: Barik2017
+    reviewed: /2021/09/20/do-developers-read-compiler-error-messages.html
+  - date: '2022-02-20'
+    key: McNamara2018
+    reviewed: /2022/02/20/ethics-in-decision-making.html
+  name: Murphy-Hill, Emerson
+- entries:
+  - date: '2013-06-13'
+    key: Staples2013
+    reviewed: /2013/06/13/formal-specifications-better-than-function-points-for-code-sizing.html
+  name: Murray, Toby
+- entries:
+  - date: '2021-08-12'
+    key: Ghiotto2020
+    reviewed: /2021/08/12/on-the-nature-of-merge-conflicts.html
+  name: Murta, Leonardo
+- entries:
+  - date: '2011-12-10'
+    key: BenAri2011
+    reviewed: /2011/12/10/a-decade-of-research-and-development-on-program-animation-the-jeliot-experience.html
+  name: Myller, Niko
+- entries:
+  - date: '2021-09-09'
+    key: Maenpaa2018
+    reviewed: /2021/09/09/organizing-for-openness.html
+  name: "M\xE4enp\xE4\xE4, Hanna"
+- entries:
+  - date: '2021-09-09'
+    key: Maenpaa2018
+    reviewed: /2021/09/09/organizing-for-openness.html
+  name: "M\xE4kinen, Simo"
+- entries:
+  - date: '2021-09-09'
+    key: Maenpaa2018
+    reviewed: /2021/09/09/organizing-for-openness.html
+  name: "M\xE4nnist\xF6, Tomi"
+- entries:
+  - date: '2022-03-13'
+    key: Glanz2020
+    reviewed: /2022/03/13/obfuscated-strings-and-privacy.html
+  name: "M\xFCller, Patrick"
+- entries:
+  - date: '2011-06-30'
+    key: Barnett2011
+    reviewed: /2011/06/30/specification-and-verification-the-spec-experience.html
+  name: "M\xFCller, Peter"
+- entries:
+  - date: '2013-06-13'
+    key: Hemmati2013
+    reviewed: /2013/06/13/the-msr-cookbook-mining-a-decade-of-research.html
+  - date: '2021-11-17'
+    key: Tang2021
+    reviewed: /2021/11/17/using-so-comment-edit-pairs.html
+  - date: '2021-11-26'
+    key: Lopez2018
+    reviewed: /2021/11/26/metric-based-comparisons-of-software-libraries.html
+  - date: '2021-11-29'
+    key: Sven2019
+    reviewed: /2021/11/29/next-steps-in-static-api-misuse-detection.html
+  - date: '2021-12-13'
+    key: Mahmoudi2019
+    reviewed: /2021/12/13/refactorings-in-merge-conflicts.html
+  name: Nadi, Sarah
+- entries:
+  - date: '2016-06-05'
+    key: Washburn2016
+    reviewed: /2016/06/05/game-postmortems.html
+  - date: '2016-06-09'
+    key: Nagappan2015
+    reviewed: /2016/06/09/goto-in-c.html
+  name: Nagappan, Meiyappan
+- entries:
+  - date: '2011-09-05'
+    key: Bird2011
+    reviewed: /2011/09/05/dont-touch-my-code.html
+  - date: '2012-01-25'
+    key: Nagappan2008
+    reviewed: /2012/01/25/realizing-quality-improvement-through-test-driven-development.html
+  - date: '2012-08-23'
+    key: Hindle2012
+    reviewed: /2012/08/23/using-topic-modelling-to-understand-requirements.html
+  - date: '2016-06-09'
+    key: Lo2015
+    reviewed: /2016/06/09/perceived-relevance.html
+  - date: '2021-09-07'
+    key: Ford2017
+    reviewed: /2021/09/07/characterizing-software-engineering-work-with-personas.html
+  - date: '2022-04-23'
+    key: Kochhar2019
+    reviewed: /2022/04/23/closed-to-open-source.html
+  name: Nagappan, Nachiappan
+- entries:
+  - date: '2021-10-06'
+    key: Aghajani2019
+    reviewed: /2021/10/06/software-documentation-issues-unveiled.html
+  name: Nagy, Csaba
+- entries:
+  - date: '2022-04-13'
+    key: Danilova2021
+    reviewed: /2022/04/13/do-you-really-code.html
+  name: Naiakshina, Alena
+- entries:
+  - date: '2022-03-01'
+    key: Nakajo1991
+    reviewed: /2022/03/01/software-error-cause-effect.html
+  name: Nakajo, Takeshi
+- entries:
+  - date: '2016-06-05'
+    key: Nakshatri2016
+    reviewed: /2016/06/05/java-exception-handling.html
+  name: Nakshatri, Suman
+- entries:
+  - date: '2013-06-06'
+    key: Kim2013a
+    reviewed: /2013/06/06/automatic-patch-generation-learned-from-human-written-patches.html
+  name: Nam, Jaechang
+- entries:
+  - date: '2016-09-09'
+    key: Krein2016
+    reviewed: /2016/09/09/replicating-design-patterns-experiment.html
+  name: Nanthaamornphong, Aziz
+- entries:
+  - date: '2021-09-25'
+    key: Schweinsberg2021
+    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
+  name: Nantz, Eric
+- entries:
+  - date: '2021-09-25'
+    key: Schweinsberg2021
+    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
+  name: Naseeb, Chan
+- entries:
+  - date: '2021-09-25'
+    key: Schweinsberg2021
+    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
+  name: Nasrullah, Ziauddin
+- entries:
+  - date: '2016-06-05'
+    key: Chen2016
+    reviewed: /2016/06/05/maintaining-java-orm.html
+  name: Nasser, Mohamed
+- entries:
+  - date: '2022-04-15'
+    key: Nassif2021
+    reviewed: /2022/04/15/generating-unit-tests-for-documentation.html
+  name: Nassif, Mathieu
+- entries:
+  - date: '2016-06-05'
+    key: Near2016
+    reviewed: /2016/06/05/finding-security-bugs.html
+  name: Near, Joseph P.
+- entries:
+  - date: '2021-09-25'
+    key: Schweinsberg2021
+    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
+  name: Nejkovic, Valentina
+- entries:
+  - date: '2021-09-25'
+    key: Schweinsberg2021
+    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
+  name: Nell, Colleen S.
+- entries:
+  - date: '2021-09-25'
+    key: Schweinsberg2021
+    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
+  name: Nelson, Andrew A.
+- entries:
+  - date: '2021-09-25'
+    key: Schweinsberg2021
+    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
+  name: Nelson, Andrew Arthur
+- entries:
+  - date: '2013-08-12'
+    key: Jacobson2013
+    reviewed: /2013/08/12/review-essence-of-software-engineering.html
+  name: Ng, Pan-Wei
+- entries:
+  - date: '2021-11-29'
+    key: Sven2019
+    reviewed: /2021/11/29/next-steps-in-static-api-misuse-detection.html
+  name: Nguyen, Hoan Anh
+- entries:
+  - date: '2011-08-09'
+    key: McIntosh2011
+    reviewed: /2011/08/09/an-empirical-study-of-build-maintenance-effort.html
+  name: Nguyen, Thanh H.D.
+- entries:
+  - date: '2021-11-29'
+    key: Sven2019
+    reviewed: /2021/11/29/next-steps-in-static-api-misuse-detection.html
+  name: Nguyen, Tien N.
+- entries:
+  - date: '2021-11-18'
+    key: Ni2021
+    reviewed: /2021/11/18/synthesis-approach-for-data-science-api-refactoring.html
+  name: Ni, Ansong
+- entries:
+  - date: '2011-07-18'
+    key: Kinshumann2011
+    reviewed: /2011/07/18/debugging-in-the-very-large.html
+  name: Nichols, Greg
+- entries:
+  - date: '2021-09-26'
+    key: Menzies2016
+    reviewed: /2021/09/26/are-delayed-issues-harder-to-resolve.htm
+  name: Nichols, William
+- entries:
+  - date: '2021-09-06'
+    key: Nielebock2018
+    reviewed: /2021/09/06/commenting-source-code.html
+  name: Nielebock, Sebastian
+- entries:
+  - date: '2021-09-25'
+    key: Schweinsberg2021
+    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
+  name: Nilsonne, Gustav
+- entries:
+  - date: '2012-07-18'
+    key: Dang2012
+    reviewed: /2012/07/18/clustering-duplicate-crash-reports.html
+  name: Nobel, Peter
+- entries:
+  - date: '2021-09-25'
+    key: Schweinsberg2021
+    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
+  name: Nolan, Rory
+- entries:
+  - date: '2011-09-13'
+    key: Brun2011
+    reviewed: /2011/09/13/proactive-detection-of-collaboration-conflicts.html
+  name: Notkin, David
+- entries:
+  - date: '2021-09-17'
+    key: Abdalkareem2017
+    reviewed: /2021/09/17/why-do-developers-use-trivial-packages.html
+  name: Nourry, Olivier
+- entries:
+  - date: '2011-08-31'
+    key: Wilkerson2012
+    reviewed: /2011/08/31/comparing-the-defect-reduction-benefits-of-code-inspection-and-test-driven-development.html
+  name: Nunamaker, Jay F.
+- entries:
+  - date: '2012-02-23'
+    key: Nussli2012
+    reviewed: /2012/02/23/looking-at-the-same-thing-in-pair-programming-tasks.html
+  name: "N\xFCssli, Marc-Antoine"
+- entries:
+  - date: '2021-09-25'
+    key: Schweinsberg2021
+    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
+  name: O'Brien, Christopher E.
+- entries:
+  - date: '2021-09-25'
+    key: Schweinsberg2021
+    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
+  name: O'Neill, Patrick
+- entries:
+  - date: '2021-09-25'
+    key: Schweinsberg2021
+    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
+  name: O'Shea, Kieran
+- entries:
+  - date: '2012-01-17'
+    key: Prabhu2011
+    reviewed: /2012/01/17/a-survey-of-the-practice-of-computational-science.html
+  name: Oh, Taewook
+- entries:
+  - date: '2016-10-05'
+    key: Fucci2016
+    reviewed: /2016/10/05/test-driven-development.html
+  name: Oivo, Markku
+- entries:
+  - date: '2021-09-25'
+    key: Schweinsberg2021
+    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
+  name: Olita, Toto
+- entries:
+  - date: '2021-08-21'
+    key: Oliveira2020
+    reviewed: /2021/08/21/metrics-and-team-leaders-perceptions-of-productivity.html
+  name: Oliveira, Edson
+- entries:
+  - date: '2011-08-17'
+    key: DeLucia2009
+    reviewed: /2011/08/17/three-empirical-evaluations-of-uml.html
+  - date: '2021-08-19'
+    key: Ragkhitwetsagul2021
+    reviewed: /2021/08/19/toxic-code-snippets-on-stack-overflow.html
+  - date: '2021-10-05'
+    key: Piantadosi2020
+    reviewed: /2021/10/05/three-papers-on-readability.html
+  - date: '2021-10-05'
+    key: Scalabrino2018
+    reviewed: /2021/10/05/three-papers-on-readability.html
+  - date: '2021-10-05'
+    key: Scalabrino2021
+    reviewed: /2021/10/05/three-papers-on-readability.html
+  name: Oliveto, Rocco
+- entries:
+  - date: '2021-08-09'
+    key: Beniamini2017
+    reviewed: /2021/08/09/abbreviated-vs-full-names.html
+  name: Orbach, Alon Klein
+- entries:
+  - date: '2011-07-18'
+    key: Kinshumann2011
+    reviewed: /2011/07/18/debugging-in-the-very-large.html
+  name: Orgovan, Vince
+- entries:
+  - date: '2021-09-06'
+    key: Nielebock2018
+    reviewed: /2021/09/06/commenting-source-code.html
+  name: Ortmeier, Frank
+- entries:
+  - date: '2021-09-02'
+    key: Becker2019
+    reviewed: /2021/09/02/compiler-error-messages-considered-unhelpful.html
+  name: Osera, Peter-Michael
+- entries:
+  - date: '2021-09-25'
+    key: Schweinsberg2021
+    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
+  name: Otner, Sarah M.G.
+- entries:
+  - date: '2021-09-25'
+    key: Schweinsberg2021
+    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
+  name: Otterbacher, Jahna
+- entries:
+  - date: '2013-06-06'
+    key: Lewis2013
+    reviewed: /2013/06/06/does-bug-prediction-support-human-developers-findings-from-a-google-case-study.html
+  name: Ou, Rong
+- entries:
+  - date: '2021-10-13'
+    key: Overney2020
+    reviewed: /2021/10/13/an-empirical-study-of-donations-in-open-source.html
+  name: Overney, Cassandra
+- entries:
+  - date: '2021-10-01'
+    key: Bafatakis2019
+    reviewed: /2021/10/01/python-coding-style-compliance-on-stack-overflow.html
+  name: Oznacar, Gazi
+- entries:
+  - date: '2021-08-19'
+    key: Ragkhitwetsagul2021
+    reviewed: /2021/08/19/toxic-code-snippets-on-stack-overflow.html
+  - date: '2022-04-20'
+    key: Lima2021
+    reviewed: /2022/04/20/open-source-exceptinon-handling-testing.html
+  name: Paixao, Matheus
+- entries:
+  - date: '2022-03-11'
+    key: Kamienski2021
+    reviewed: /2022/03/11/single-statement-bugs-in-python-projects.html
+  name: Palechor, Luisa
+- entries:
+  - date: '2022-03-31'
+    key: Jolak2020
+    reviewed: /2022/03/31/textual-vs-graphic-design-descriptions-and-communication.html
+  name: Pallec, Xavier Le
+- entries:
+  - date: '2022-04-22'
+    key: Tamburri2020
+    reviewed: /2022/04/22/decline-of-sourceforge.html
+  name: Palomba, Fabio
+- entries:
+  - date: '2021-09-25'
+    key: Schweinsberg2021
+    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
+  name: Palsetia, Diana
+- entries:
+  - date: '2021-09-11'
+    key: Pan2008
+    reviewed: /2021/09/11/common-bug-fix-patterns.html
+  name: Pan, Kai
+- entries:
+  - date: '2022-09-19'
+    key: Yang2022
+    reviewed: /2022/09/19/developer-git-knowledge.html
+  name: Pan, Minxue
+- entries:
+  - date: '2016-06-08'
+    key: Beller2015
+    reviewed: /2016/06/08/when-and-why-test.html
+  - date: '2021-09-12'
+    key: Beller2019
+    reviewed: /2021/09/12/developer-testing-in-the-ide.html
+  name: Panichella, Annibale
+- entries:
+  - date: '2021-10-18'
+    key: Zampetti2020
+    reviewed: /2021/10/18/bad-practices-in-continuous-integration.html
+  name: Panichella, Sebastiano
+- entries:
+  - date: '2012-06-18'
+    key: Pankratius2012
+    reviewed: /2012/06/18/combining-functional-and-imperative-programming-for-multicore-software-an-empirical-study-evaluating-scala-and-java.html
+  name: Pankratius, Victor
+- entries:
+  - date: '2021-10-03'
+    key: Baltes2020
+    reviewed: /2021/10/03/is-40-the-new-60.html
+  name: Park, George
+- entries:
+  - date: '2021-08-11'
+    key: Ali2020
+    reviewed: /2021/08/11/cheating-death-survival-analysis-of-python-projects.html
+  name: Parlett-Pelleriti, Chelsea
+- entries:
+  - date: '2012-07-04'
+    key: Parnin2012
+    reviewed: /2012/07/04/programmer-information-needs-after-memory-failure.html
+  - date: '2016-09-21'
+    key: Ford2016
+    reviewed: /2016/09/21/paradise-unplugged.html
+  - date: '2021-08-26'
+    key: Rahman2020a
+    reviewed: /2021/08/26/defect-taxonomy-for-infrastructure-as-code.html
+  - date: '2021-08-29'
+    key: Ford2019
+    reviewed: /2021/08/29/beyond-the-code-itself.html
+  - date: '2021-09-02'
+    key: Barik2018
+    reviewed: /2021/09/02/compiler-error-messages-considered-unhelpful.html
+  - date: '2021-09-13'
+    key: Behroozi2019
+    reviewed: /2021/09/13/whats-wrong-with-tech-hiring.html
+  - date: '2021-09-13'
+    key: Behroozi2020
+    reviewed: /2021/09/13/whats-wrong-with-tech-hiring.html
+  - date: '2021-09-20'
+    key: Barik2017
+    reviewed: /2021/09/20/do-developers-read-compiler-error-messages.html
+  - date: '2021-11-23'
+    key: Rahman2019
+    reviewed: /2021/11/23/security-smells-in-infrastructure-as-code-scripts.html
+  name: Parnin, Chris
+- entries:
+  - date: '2021-09-23'
+    key: Malik2019
+    reviewed: /2021/09/23/the-secret-life-of-bugs.html
+  name: Parnum, Iain
+- entries:
+  - date: '2011-10-22'
+    key: Yin2011
+    reviewed: /2011/10/22/three-empirical-studies-from-esecfse11.html
+  - date: '2016-06-09'
+    key: Xu2015
+    reviewed: /2016/06/09/too-many-knobs.html
+  name: Pasupathy, Shankar
+- entries:
+  - date: '2022-03-07'
+    key: Gallagher2017
+    reviewed: /2022/03/07/new-me.html
+  name: Patil, Sameer
+- entries:
+  - date: '2016-09-16'
+    key: Patitsas2016
+    reviewed: /2016/09/16/five-from-icer-2016.html
+  name: Patitsas, Elizabeth
+- entries:
+  - date: '2021-09-02'
+    key: Becker2019
+    reviewed: /2021/09/02/compiler-error-messages-considered-unhelpful.html
+  name: Pearce, Janice L.
+- entries:
+  - date: '2021-08-17'
+    key: Peng2021
+    reviewed: /2021/08/17/python-language-features.html
+  name: Peng, Yun
+- entries:
+  - date: '2021-10-18'
+    key: Zampetti2020
+    reviewed: /2021/10/18/bad-practices-in-continuous-integration.html
+  name: Penta, Massimiliano Di
+- entries:
+  - date: '2021-08-29'
+    key: Sedano2017
+    reviewed: /2021/08/29/software-development-waste.html
+  name: Peraire, Cecile
+- entries:
+  - date: '2021-09-25'
+    key: Schweinsberg2021
+    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
+  name: Pereira, Bianca
+- entries:
+  - date: '2016-09-30'
+    key: PerezDeRosso2016
+    reviewed: /2016/09/30/rethinking-git.html
+  name: Perez De Rosso, Santiago
+- entries:
+  - date: '2016-10-01'
+    key: Kim2016
+    reviewed: /2016/10/01/apex.html
+  name: Perry, David Mitchel
+- entries:
+  - date: '2012-06-25'
+    key: Green1996
+    reviewed: /2012/06/25/usability-analysis-of-visual-programming-environments-a-cognitive-dimensions-framework.html
+  - date: '2013-06-13'
+    key: Petre2013
+    reviewed: /2013/06/13/uml-in-practice-2.html
+  - date: '2021-09-24'
+    key: Mangano2015
+    reviewed: /2021/09/24/how-software-designers-interact-with-sketches-at-the-whiteboard.html
+  name: Petre, Marian
+- entries:
+  - date: '2021-09-02'
+    key: Becker2019
+    reviewed: /2021/09/02/compiler-error-messages-considered-unhelpful.html
+  name: Pettit, Raymond
+- entries:
+  - date: '2012-04-10'
+    key: Philip2012
+    reviewed: /2012/04/10/component-reuse-vs-snippet-remixing.html
+  name: Philip, Kavita
+- entries:
+  - date: '2021-10-05'
+    key: Piantadosi2020
+    reviewed: /2021/10/05/three-papers-on-readability.html
+  name: Piantadosi, Valentina
+- entries:
+  - date: '2011-08-17'
+    key: CruzLemus2009
+    reviewed: /2011/08/17/three-empirical-evaluations-of-uml.html
+  name: Piattini, Mario
+- entries:
+  - date: '2021-08-11'
+    key: Pietri2019
+    reviewed: /2021/08/11/cheating-death-survival-analysis-of-python-projects.html
+  name: Pietri, Antoine
+- entries:
+  - date: '2011-10-22'
+    key: Giger2011
+    reviewed: /2011/10/22/three-results-many-definitions.html
+  - date: '2012-05-24'
+    key: Hermans2011
+    reviewed: /2012/05/24/supporting-professional-spreadsheet-users-by-generating-leveled-dataflow-diagrams.html
+  name: Pinzger, Martin
+- entries:
+  - date: '2022-03-31'
+    key: Jolak2020
+    reviewed: /2022/03/31/textual-vs-graphic-design-descriptions-and-communication.html
+  name: Polasek, Ivan
+- entries:
+  - date: '2016-10-02'
+    key: Mattmann2015
+    reviewed: /2016/10/02/grid-revisited.html
+  name: Popescu, Daniel
+- entries:
+  - date: '2013-03-08'
+    key: Porter2013
+    reviewed: /2013/03/08/halving-fail-rates-using-peer-instruction.html
+  - date: '2016-09-16'
+    key: Liao2016
+    reviewed: /2016/09/16/five-from-icer-2016.html
+  name: Porter, Leo
+- entries:
+  - date: '2021-10-05'
+    key: Scalabrino2018
+    reviewed: /2021/10/05/three-papers-on-readability.html
+  - date: '2021-10-05'
+    key: Scalabrino2021
+    reviewed: /2021/10/05/three-papers-on-readability.html
+  name: Poshyvanyk, Denys
+- entries:
+  - date: '2012-01-12'
+    key: Posnett2011
+    reviewed: /2012/01/12/got-issues-do-new-features-and-code-improvements-affect-defects.html
+  name: Posnett, Daryl
+- entries:
+  - date: '2021-10-10'
+    key: Alkhabaz2021
+    reviewed: /2021/10/10/mongodb-homework.html
+  name: Poulsen, Seth
+- entries:
+  - date: '2021-08-17'
+    key: Malloy2018
+    reviewed: /2021/08/17/python-language-features.html
+  name: Power, James F.
+- entries:
+  - date: '2021-09-25'
+    key: Schweinsberg2021
+    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
+  name: Pozdniakov, Ivan
+- entries:
+  - date: '2012-01-17'
+    key: Prabhu2011
+    reviewed: /2012/01/17/a-survey-of-the-practice-of-computational-science.html
+  name: Prabhu, Prakash
+- entries:
+  - date: '2021-09-15'
+    key: Prana2018
+    reviewed: /2021/09/15/categorizing-the-content-of-github-readme-files.html
+  name: Prana, Gede Artha Azriadi
+- entries:
+  - date: '2021-09-25'
+    key: Schweinsberg2021
+    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
+  name: Prasad, Vaishali Venkatesh
+- entries:
+  - date: '2021-09-02'
+    key: Becker2019
+    reviewed: /2021/09/02/compiler-error-messages-considered-unhelpful.html
+  name: Prather, James
+- entries:
+  - date: '2016-09-09'
+    key: Krein2016
+    reviewed: /2016/09/09/replicating-design-patterns-experiment.html
+  - date: '2022-04-24'
+    key: Barke2019
+    reviewed: /2022/04/24/role-clarity-deficiencies-can-wreck-agile-teams.html
+  name: Prechelt, Lutz
+- entries:
+  - date: '2011-08-30'
+    key: Bettenburg2008
+    reviewed: /2011/08/30/what-makes-a-good-bug-report.html
+  name: Premraj, Rahul
+- entries:
+  - date: '2016-06-12'
+    key: Pritchard2015
+    reviewed: /2016/06/12/error-message-frequency.html
+  name: Pritchard, David
+- entries:
+  - date: '2021-09-12'
+    key: Beller2019
+    reviewed: /2021/09/12/developer-testing-in-the-ide.html
+  name: Proksch, Sebastian
+- entries:
+  - date: '2021-09-25'
+    key: Schweinsberg2021
+    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
+  name: Protzko, John
+- entries:
+  - date: '2021-10-20'
+    key: Tao2021
+    reviewed: /2021/10/20/demistifying-error-messages-in-data-science-libraries.html
+  name: Qin, Shengchao
+- entries:
+  - date: '2022-04-11'
+    key: Shao2020
+    reviewed: /2022/04/11/database-performance-antipatterns.html
+  name: Qiu, Zhengyi
+- entries:
+  - date: '2011-07-04'
+    key: Racheva2010
+    reviewed: /2011/07/04/requirements-prioritization-in-agile-projects-insights-from-a-case-study.html
+  name: Racheva, Zornitza
+- entries:
+  - date: '2021-11-17'
+    key: Codoban2015
+    reviewed: /2021/11/17/software-history-under-the-lens.html
+  name: Ragavan, Sruti Srinivasa
+- entries:
+  - date: '2021-08-19'
+    key: Ragkhitwetsagul2021
+    reviewed: /2021/08/19/toxic-code-snippets-on-stack-overflow.html
+  name: Ragkhitwetsagul, Chaiyong
+- entries:
+  - date: '2021-08-26'
+    key: Rahman2020a
+    reviewed: /2021/08/26/defect-taxonomy-for-infrastructure-as-code.html
+  - date: '2021-11-23'
+    key: Rahman2019
+    reviewed: /2021/11/23/security-smells-in-infrastructure-as-code-scripts.html
+  name: Rahman, Akond
+- entries:
+  - date: '2011-06-27'
+    key: Rahman2011
+    reviewed: /2011/06/27/ownership-experience-and-defects.html
+  - date: '2013-07-07'
+    key: Rahman2013
+    reviewed: /2013/07/07/how-and-why-process-metrics-are-better.html
+  name: Rahman, Foyzur
+- entries:
+  - date: '2011-07-07'
+    key: ElEmam2001
+    reviewed: /2011/07/07/the-confounding-effect-of-class-size-on-the-validity-of-object-oriented-metrics.html
+  name: Rai, S.N.
+- entries:
+  - date: '2022-03-18'
+    key: RakAmnouykit2020
+    reviewed: /2022/03/18/python-3-types-in-the-wild.html
+  name: Rak-amnouykit, Ingkarat
+- entries:
+  - date: '2021-08-29'
+    key: Sedano2017
+    reviewed: /2021/08/29/software-development-waste.html
+  name: Ralph, Paul
+- entries:
+  - date: '2012-01-17'
+    key: Prabhu2011
+    reviewed: /2012/01/17/a-survey-of-the-practice-of-computational-science.html
+  name: Raman, Arun
+- entries:
+  - date: '2021-11-18'
+    key: Ni2021
+    reviewed: /2021/11/18/synthesis-approach-for-data-science-api-refactoring.html
+  name: Ramos, Daniel
+- entries:
+  - date: '2012-04-10'
+    key: Philip2012
+    reviewed: /2012/04/10/component-reuse-vs-snippet-remixing.html
+  name: Ratanotayanon, Sukanya
+- entries:
+  - date: '2021-09-22'
+    key: Muhammad2019
+    reviewed: /2021/09/22/taxonomy-of-package-management.html
+  name: Real, Lucas C. Villa
+- entries:
+  - date: '2021-10-15'
+    key: Bogomolov2021
+    reviewed: /2021/10/15/authorship-attribution-of-source-code.html
+  name: Rebryk, Yurii
+- entries:
+  - date: '2022-03-13'
+    key: Glanz2020
+    reviewed: /2022/03/13/obfuscated-strings-and-privacy.html
+  name: Reif, Michael
+- entries:
+  - date: '2021-11-15'
+    key: Zhang2021a
+    reviewed: /2021/11/15/enriching-api-documentation-with-code-samples-and-usage-scenarios.html
+  name: Ren, Zhilei
+- entries:
+  - date: '2014-10-09'
+    key: Yuan2014
+    reviewed: /2014/10/09/simple-testing-can-prevent-most-critical-failures.html
+  name: Renna Rodrigues, Guilherme
+- entries:
+  - date: '2021-09-25'
+    key: Schweinsberg2021
+    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
+  name: Reyt, Jean-Nicolas
+- entries:
+  - date: '2021-10-24'
+    key: Riccomini2021
+    reviewed: /2021/10/24/whats-missing-from-the-missing-readme.html
+  name: Riccomini, Chris
+- entries:
+  - date: '2021-09-25'
+    key: Schweinsberg2021
+    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
+  name: Riddle, Travis
+- entries:
+  - date: '2011-07-18'
+    key: Rigby2011
+    reviewed: /2011/07/18/understanding-broadcast-based-peer-review-on-open-source-projects.html
+  - date: '2012-05-06'
+    key: Barr2012
+    reviewed: /2012/05/06/cohesive-and-isolated-development-with-branches.html
+  - date: '2021-09-30'
+    key: Rigby2016
+    reviewed: /2021/09/30/quantifying-and-mitigating-turnover-induced-knowledge-loss.html
+  name: Rigby, Peter C.
+- entries:
+  - date: '2021-10-07'
+    key: Rigger2020
+    reviewed: /2021/10/07/finding-bugs-in-database-systems-via-query-partitioning.html
+  name: Rigger, Manuel
+- entries:
+  - date: '2021-08-09'
+    key: Scanniello2017
+    reviewed: /2021/08/09/abbreviated-vs-full-names.html
+  name: Risi, Michele
+- entries:
+  - date: '2021-09-09'
+    key: Maenpaa2018
+    reviewed: /2021/09/09/organizing-for-openness.html
+  name: Ritala, Paavo
+- entries:
+  - date: '2016-09-16'
+    key: Rivers2016
+    reviewed: /2016/09/16/five-from-icer-2016.html
+  name: Rivers, Kelly
+- entries:
+  - date: '2016-06-09'
+    key: Nagappan2015
+    reviewed: /2016/06/09/goto-in-c.html
+  name: Robbes, Romain
+- entries:
+  - date: '2021-09-23'
+    key: Hatton1994
+    reviewed: /2021/09/23/the-secret-life-of-bugs.html
+  name: Roberts, A.
+- entries:
+  - date: '2011-08-23'
+    key: Dagenais2010
+    reviewed: /2011/08/23/creating-and-evolving-developer-documentation.html
+  - date: '2011-11-08'
+    key: Robillard2010
+    reviewed: /2011/11/08/a-field-study-of-api-learning-obstacles.html
+  - date: '2022-04-15'
+    key: Nassif2021
+    reviewed: /2022/04/15/generating-unit-tests-for-documentation.html
+  name: Robillard, Martin P.
+- entries:
+  - date: '2021-09-25'
+    key: Schweinsberg2021
+    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
+  name: Robinson, David
+- entries:
+  - date: '2021-09-25'
+    key: Schweinsberg2021
+    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
+  name: Robinson, Emily
+- entries:
+  - date: '2021-10-02'
+    key: RodriguezPerez2018
+    reviewed: /2021/10/02/reproducibility-and-credibility-in-empirical-software-engineering.html
+  name: Robles, Gregorio
+- entries:
+  - date: '2022-04-20'
+    key: Lima2021
+    reviewed: /2022/04/20/open-source-exceptinon-handling-testing.html
+  name: Rocha, Lincoln S.
+- entries:
+  - date: '2021-09-23'
+    key: Malik2019
+    reviewed: /2021/09/23/the-secret-life-of-bugs.html
+  name: Roche, Marc
+- entries:
+  - date: '2021-09-19'
+    key: Tregubov2017
+    reviewed: /2021/09/19/impact-of-task-switching-and-work-interruptions.html
+  name: Rodchenko, Natalia
+- entries:
+  - date: '2022-03-28'
+    key: Rodeghero2021
+    reviewed: /2022/03/28/remote-onboarding.html
+  name: Rodeghero, Paige
+- entries:
+  - date: '2016-10-01'
+    key: Kim2016
+    reviewed: /2016/10/01/apex.html
+  name: Rodriguez-Rivera, Gustavo
+- entries:
+  - date: '2021-10-02'
+    key: RodriguezPerez2018
+    reviewed: /2021/10/02/reproducibility-and-credibility-in-empirical-software-engineering.html
+  name: "Rodr\xEDguez-P\xE9rez, Gema"
+- entries:
+  - date: '2015-02-14'
+    key: Maalej2014
+    reviewed: /2015/02/14/on-comprehension-of-program-comprehension.html
+  name: Roehm, Tobias
+- entries:
+  - date: '2016-10-05'
+    key: Fucci2016
+    reviewed: /2016/10/05/test-driven-development.html
+  - date: '2021-08-09'
+    key: Scanniello2017
+    reviewed: /2021/08/09/abbreviated-vs-full-names.html
+  - date: '2021-10-21'
+    key: Fucci2020
+    reviewed: /2021/10/21/the-impact-of-sleep-deprivation.html
+  name: Romano, Simone
+- entries:
+  - date: '2021-09-25'
+    key: Schweinsberg2021
+    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
+  name: Ropovik, Ivan
+- entries:
+  - date: '2021-09-25'
+    key: Schweinsberg2021
+    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
+  name: Rosenberg, Joshua M.
+- entries:
+  - date: '2011-08-24'
+    key: Rossbach2010
+    reviewed: /2011/08/24/is-transactional-programming-actually-easier.html
+  name: Rossbach, Christopher J.
+- entries:
+  - date: '2011-09-06'
+    key: Meneely2011
+    reviewed: /2011/09/06/does-adding-manpower-also-affect-quality.html
+  name: Rotella, Pete
+- entries:
+  - date: '2021-09-25'
+    key: Schweinsberg2021
+    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
+  name: Rothen, Stephane
+- entries:
+  - date: '2021-11-10'
+    key: Tomassi2019
+    reviewed: /2021/11/10/my-kingdom-for-a-dataset.html
+  name: Rubio-Gonzalez, Cindy
+- entries:
+  - date: '2012-07-04'
+    key: Parnin2012
+    reviewed: /2012/07/04/programmer-information-needs-after-memory-failure.html
+  name: Rugaber, Spencer
+- entries:
+  - date: '2021-10-24'
+    key: Riccomini2021
+    reviewed: /2021/10/24/whats-missing-from-the-missing-readme.html
+  name: Ryaboy, Dmitriy
+- entries:
+  - date: '2013-06-06'
+    key: Lewis2013
+    reviewed: /2013/06/06/does-bug-prediction-support-human-developers-findings-from-a-google-case-study.html
+  name: Sadowski, Caitlin
+- entries:
+  - date: '2021-10-01'
+    key: Bafatakis2019
+    reviewed: /2021/10/01/python-coding-style-compliance-on-stack-overflow.html
+  name: Salazar, Martin Cabello
+- entries:
+  - date: '2021-09-27'
+    key: Mitropoulos2019
+    reviewed: /2021/09/27/the-evolution-of-javascript-code-in-the-wild.html
+  name: Salis, Vitalis
+- entries:
+  - date: '2014-04-25'
+    key: Kasi2013
+    reviewed: /2014/04/25/cassandra-proactive-conflict-minimization-through-optimized-task-scheduling.html
+  name: Sarma, Anita
+- entries:
+  - date: '2021-10-30'
+    key: AlSubaihin2021
+    reviewed: /2021/10/30/app-store-effects-on-software-engineering-practices.html
+  name: Sarro, Federica
+- entries:
+  - date: '2016-06-05'
+    key: Washburn2016
+    reviewed: /2016/06/05/game-postmortems.html
+  name: Sathiyanarayanan, Pavithra
+- entries:
+  - date: '2022-04-25'
+    key: Sharma2021
+    reviewed: /2022/04/25/rationale-for-open-source-development-decisions.html
+  name: Savarimuthu, Bastin Tony Roy
+- entries:
+  - date: '2022-03-31'
+    key: Jolak2020
+    reviewed: /2022/03/31/textual-vs-graphic-design-descriptions-and-communication.html
+  name: Savary-Leblanc, Maxime
+- entries:
+  - date: '2021-10-05'
+    key: Piantadosi2020
+    reviewed: /2021/10/05/three-papers-on-readability.html
+  - date: '2021-10-05'
+    key: Scalabrino2018
+    reviewed: /2021/10/05/three-papers-on-readability.html
+  - date: '2021-10-05'
+    key: Scalabrino2021
+    reviewed: /2021/10/05/three-papers-on-readability.html
+  name: Scalabrino, Simone
+- entries:
+  - date: '2016-10-05'
+    key: Fucci2016
+    reviewed: /2016/10/05/test-driven-development.html
+  - date: '2021-08-09'
+    key: Scanniello2017
+    reviewed: /2021/08/09/abbreviated-vs-full-names.html
+  - date: '2021-10-21'
+    key: Fucci2020
+    reviewed: /2021/10/21/the-impact-of-sleep-deprivation.html
+  name: Scanniello, Giuseppe
+- entries:
+  - date: '2021-09-25'
+    key: Schweinsberg2021
+    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
+  name: Schaumans, Catherine B.C.
+- entries:
+  - date: '2021-09-23'
+    key: Malik2019
+    reviewed: /2021/09/23/the-secret-life-of-bugs.html
+  name: Schimel, Alexandre C. G.
+- entries:
+  - date: '2012-06-18'
+    key: Pankratius2012
+    reviewed: /2012/06/18/combining-functional-and-imperative-programming-for-multicore-software-an-empirical-study-evaluating-scala-and-java.html
+  name: Schmidt, Felix
+- entries:
+  - date: '2021-08-09'
+    key: Abad2018
+    reviewed: /2021/08/09/task-interruption-in-software-development-projects.html
+  name: Schneider, Kurt
+- entries:
+  - date: '2021-08-28'
+    key: Levy2020
+    reviewed: /2021/08/28/privacy-threats-in-intimate-relationships.html
+  name: Schneier, Bruce
+- entries:
+  - date: '2011-08-30'
+    key: Bettenburg2008
+    reviewed: /2011/08/30/what-makes-a-good-bug-report.html
+  name: "Schr\xF6ter, Adrian"
+- entries:
+  - date: '2011-06-30'
+    key: Barnett2011
+    reviewed: /2011/06/30/specification-and-verification-the-spec-experience.html
+  name: Schulte, Wolfram
+- entries:
+  - date: '2021-09-25'
+    key: Schweinsberg2021
+    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
+  name: Schulte-Mecklenbeck, Michael
+- entries:
+  - date: '2021-09-25'
+    key: Schweinsberg2021
+    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
+  name: Schweinsberg, Martin
+- entries:
+  - date: '2021-08-29'
+    key: Sedano2017
+    reviewed: /2021/08/29/software-development-waste.html
+  name: Sedano, Todd
+- entries:
+  - date: '2021-09-03'
+    key: Brown2018
+    reviewed: /2021/09/03/two-papers-about-the-blackbox-project.html
+  name: Sentance, Sue
+- entries:
+  - date: '2016-09-09'
+    key: Krein2016
+    reviewed: /2016/09/09/replicating-design-patterns-experiment.html
+  name: Seppi, Kevin D.
+- entries:
+  - date: '2021-08-29'
+    key: Ford2019
+    reviewed: /2021/08/29/beyond-the-code-itself.html
+  - date: '2021-09-18'
+    key: Tourani2017
+    reviewed: /2021/09/18/code-of-conduct-in-open-source-projects.html
+  - date: '2021-09-29'
+    key: Wessel2020
+    reviewed: /2021/09/29/effects-of-adopting-code-review-bots.html
+  - date: '2021-10-03'
+    key: Baltes2020
+    reviewed: /2021/10/03/is-40-the-new-60.html
+  - date: '2021-10-05'
+    key: Piantadosi2020
+    reviewed: /2021/10/05/three-papers-on-readability.html
+  name: Serebrenik, Alexander
+- entries:
+  - date: '2021-08-30'
+    key: Davis2019
+    reviewed: /2021/08/30/two-studies-of-regular-expressions.html
+  - date: '2022-03-21'
+    key: Jin2021
+    reviewed: /2022/03/21/strategies-to-improve-continuous-integration.html
+  name: Servant, Francisco
+- entries:
+  - date: '2016-09-16'
+    key: Miller2016
+    reviewed: /2016/09/16/five-from-icer-2016.html
+  name: Settle, Amber
+- entries:
+  - date: '2016-06-05'
+    key: Chen2016
+    reviewed: /2016/06/05/maintaining-java-orm.html
+  - date: '2021-09-16'
+    key: DePadua2018
+    reviewed: /2021/09/16/exception-handling-practices-and-post-release-defects.html
+  name: Shang, Weiyi
+- entries:
+  - date: '2022-04-11'
+    key: Shao2020
+    reviewed: /2022/04/11/database-performance-antipatterns.html
+  name: Shao, Shudi
+- entries:
+  - date: '2021-09-25'
+    key: Schweinsberg2021
+    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
+  name: Sharma, Nirek
+- entries:
+  - date: '2022-04-25'
+    key: Sharma2021
+    reviewed: /2022/04/25/rationale-for-open-source-development-decisions.html
+  name: Sharma, Pankajeshwara Nand
+- entries:
+  - date: '2016-09-08'
+    key: Sharp2016
+    reviewed: /2016/09/08/ethnography-in-ese.html
+  name: Sharp, Helen
+- entries:
+  - date: '2016-10-05'
+    key: Fucci2016
+    reviewed: /2016/10/05/test-driven-development.html
+  name: Shepperd, Martin
+- entries:
+  - date: '2021-09-17'
+    key: Abdalkareem2017
+    reviewed: /2021/09/17/why-do-developers-use-trivial-packages.html
+  - date: '2022-04-08'
+    key: Latendresse2021
+    reviewed: /2022/04/08/continuous-integration-single-statement-bugs.html
+  name: Shihab, Emad
+- entries:
+  - date: '2021-09-13'
+    key: Behroozi2020
+    reviewed: /2021/09/13/whats-wrong-with-tech-hiring.html
+  name: Shirolkar, Shivani
+- entries:
+  - date: '2021-09-25'
+    key: Schweinsberg2021
+    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
+  name: Shotwell, Gordon
+- entries:
+  - date: '2021-09-26'
+    key: Zavgorodniaia2021
+    reviewed: /2021/09/26/two-papers-on-time.html
+  name: Shrestha, Raj
+- entries:
+  - date: '2021-09-26'
+    key: Menzies2016
+    reviewed: /2021/09/26/are-delayed-issues-harder-to-resolve.htm
+  name: Shull, Forrest
+- entries:
+  - date: '2011-10-24'
+    key: Stefik2011
+    reviewed: /2011/10/24/an-empirical-comparison-of-the-accuracy-rates-of-novices-using-the-quorum-perl-and-randomo-programming-languages.html
+  - date: '2014-01-29'
+    key: Stefik2013
+    reviewed: /2014/01/29/stefik-siebert-syntax.html
+  name: Siebert, Susanna
+- entries:
+  - date: '2021-08-09'
+    key: Hofmeister2017
+    reviewed: /2021/08/09/abbreviated-vs-full-names.html
+  name: Siegmund, Janet
+- entries:
+  - date: '2016-10-05'
+    key: Fucci2016
+    reviewed: /2016/10/05/test-driven-development.html
+  name: Sigweni, Boyce
+- entries:
+  - date: '2011-07-04'
+    key: Racheva2010
+    reviewed: /2011/07/04/requirements-prioritization-in-agile-projects-insights-from-a-case-study.html
+  name: Sikkel, Klaas
+- entries:
+  - date: '2021-09-25'
+    key: Schweinsberg2021
+    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
+  name: Silberzahn, Raphael
+- entries:
+  - date: '2012-04-10'
+    key: Philip2012
+    reviewed: /2012/04/10/component-reuse-vs-snippet-remixing.html
+  name: Sim, Susan Elliott
+- entries:
+  - date: '2013-03-08'
+    key: Porter2013
+    reviewed: /2013/03/08/halving-fail-rates-using-peer-instruction.html
+  name: Simon, Beth
+- entries:
+  - date: '2016-10-02'
+    key: Wang2016
+    reviewed: /2016/10/02/filtering-spreadsheet-data.html
+  name: Singh, Rishabh
+- entries:
+  - date: '2021-08-27'
+    key: Taipalus2018
+    reviewed: /2021/08/27/errors-in-sql-queries.html
+  name: Siponen, Mikko
+- entries:
+  - date: '2022-04-18'
+    key: Butler2019
+    reviewed: /2022/04/18/company-contributions-to-open-source.html
+  name: Sjoberg, Johan
+- entries:
+  - date: '2011-07-26'
+    key: Hannay2010
+    reviewed: /2011/07/26/effects-of-personality-on-pair-programming.html
+  - date: '2011-09-22'
+    key: Anda2009
+    reviewed: /2011/09/22/variability-and-reproducibility-in-software-engineering-a-study-of-four-companies-that-developed-the-same-system.html
+  name: "Sj\xF8berg, D.I.K."
+- entries:
+  - date: '2021-09-25'
+    key: Schweinsberg2021
+    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
+  name: Skarzynski, Martin
+- entries:
+  - date: '2011-10-24'
+    key: Stefik2011
+    reviewed: /2011/10/24/an-empirical-comparison-of-the-accuracy-rates-of-novices-using-the-quorum-perl-and-randomo-programming-languages.html
+  name: Slattery, Kim
+- entries:
+  - date: '2021-10-02'
+    key: Sliwerski2005
+    reviewed: /2021/10/02/reproducibility-and-credibility-in-empirical-software-engineering.html
+  name: "\u015Aliwerski, Jacek"
+- entries:
+  - date: '2016-09-21'
+    key: Ford2016
+    reviewed: /2016/09/21/paradise-unplugged.html
+  - date: '2021-09-20'
+    key: Barik2017
+    reviewed: /2021/09/20/do-developers-read-compiler-error-messages.html
+  - date: '2022-02-20'
+    key: McNamara2018
+    reviewed: /2022/02/20/ethics-in-decision-making.html
+  name: Smith, Justin
+- entries:
+  - date: '2022-04-13'
+    key: Danilova2021
+    reviewed: /2022/04/13/do-you-really-code.html
+  name: Smith, Matthew
+- entries:
+  - date: '2021-09-25'
+    key: Schweinsberg2021
+    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
+  name: Snellman, Kaisa
+- entries:
+  - date: '2021-09-25'
+    key: Schweinsberg2021
+    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
+  name: Sommer, S. Amy
+- entries:
+  - date: '2013-06-06'
+    key: Kim2013a
+    reviewed: /2013/06/06/automatic-patch-generation-learned-from-human-written-patches.html
+  name: Song, Jaewoo
+- entries:
+  - date: '2021-10-30'
+    key: Soremekun2021
+    reviewed: /2021/10/30/locating-faults-with-program-slicing.html
+  name: Soremekun, Ezekiel
+- entries:
+  - date: '2013-08-12'
+    key: Jacobson2013
+    reviewed: /2013/08/12/review-essence-of-software-engineering.html
+  name: Spence, Ian
+- entries:
+  - date: '2021-08-11'
+    key: Pietri2019
+    reviewed: /2021/08/11/cheating-death-survival-analysis-of-python-projects.html
+  - date: '2021-09-23'
+    key: Spinellis2016
+    reviewed: /2021/09/23/two-studies-of-software-evolution.html
+  - date: '2021-09-23'
+    key: Spinellis2021
+    reviewed: /2021/09/23/two-studies-of-software-evolution.html
+  - date: '2021-09-27'
+    key: Mitropoulos2019
+    reviewed: /2021/09/27/the-evolution-of-javascript-code-in-the-wild.html
+  name: Spinellis, Diomidis
+- entries:
+  - date: '2022-04-15'
+    key: Nassif2021
+    reviewed: /2022/04/15/generating-unit-tests-for-documentation.html
+  name: Sridharan, Ashvitha
+- entries:
+  - date: '2022-04-25'
+    key: Sharma2021
+    reviewed: /2022/04/25/rationale-for-open-source-development-decisions.html
+  name: Stanger, Nigel
+- entries:
+  - date: '2013-06-13'
+    key: Staples2013
+    reviewed: /2013/06/13/formal-specifications-better-than-function-points-for-code-sizing.html
+  name: Staples, Mark
+- entries:
+  - date: '2021-09-25'
+    key: Schweinsberg2021
+    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
+  name: Staub, Nicola
+- entries:
+  - date: '2021-09-25'
+    key: Schweinsberg2021
+    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
+  name: Stedden, William
+- entries:
+  - date: '2011-10-24'
+    key: Stefik2011
+    reviewed: /2011/10/24/an-empirical-comparison-of-the-accuracy-rates-of-novices-using-the-quorum-perl-and-randomo-programming-languages.html
+  - date: '2014-01-29'
+    key: Stefik2013
+    reviewed: /2014/01/29/stefik-siebert-syntax.html
+  name: Stefik, Andreas
+- entries:
+  - date: '2011-10-24'
+    key: Stefik2011
+    reviewed: /2011/10/24/an-empirical-comparison-of-the-accuracy-rates-of-novices-using-the-quorum-perl-and-randomo-programming-languages.html
+  name: Stefik, Melissa
+- entries:
+  - date: '2021-08-21'
+    key: Oliveira2020
+    reviewed: /2021/08/21/metrics-and-team-leaders-perceptions-of-productivity.html
+  - date: '2021-09-29'
+    key: Wessel2020
+    reviewed: /2021/09/29/effects-of-adopting-code-review-bots.html
+  name: Steinmacher, Igor
+- entries:
+  - date: '2021-09-25'
+    key: Schweinsberg2021
+    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
+  name: Stodden, Victoria
+- entries:
+  - date: '2021-09-25'
+    key: Schweinsberg2021
+    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
+  name: Stoffel, Martin A.
+- entries:
+  - date: '2011-06-27'
+    key: Stolee2011
+    reviewed: /2011/06/27/refactoring-pipe-like-mashups-for-end-user-programmers.html
+  - date: '2021-08-30'
+    key: Wang2020
+    reviewed: /2021/08/30/two-studies-of-regular-expressions.html
+  name: Stolee, Kathryn T.
+- entries:
+  - date: '2021-09-25'
+    key: Schweinsberg2021
+    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
+  name: Stoltzman, Scott
+- entries:
+  - date: '2011-07-18'
+    key: Rigby2011
+    reviewed: /2011/07/18/understanding-broadcast-based-peer-review-on-open-source-projects.html
+  - date: '2016-06-07'
+    key: Gousios2016
+    reviewed: /2016/06/07/pull-based-development.html
+  name: Storey, Margaret-Anne
+- entries:
+  - date: '2021-09-25'
+    key: Schweinsberg2021
+    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
+  name: Strobl, Carolin
+- entries:
+  - date: '2021-10-03'
+    key: Moldon2021
+    reviewed: /2021/10/03/how-gamification-affects-software-developers.html
+  name: Strohmaier, Markus
+- entries:
+  - date: '2021-09-16'
+    key: Borle2017
+    reviewed: /2021/09/16/analyzing-the-effects-of-tdd-in-github.html
+  name: Stroulia, Eleni
+- entries:
+  - date: '2012-03-01'
+    key: Dabbish2012
+    reviewed: /2012/03/01/social-coding-in-github.html
+  name: Stuart, Colleen
+- entries:
+  - date: '2014-10-09'
+    key: Yuan2014
+    reviewed: /2014/10/09/simple-testing-can-prevent-most-critical-failures.html
+  name: Stumm, Michael
+- entries:
+  - date: '2011-07-26'
+    key: Stylos2007
+    reviewed: /2011/07/26/usability-implications-of-requiring-parameters-in-objects-constructors.html
+  name: Stylos, Jeffrey
+- entries:
+  - date: '2012-04-26'
+    key: Hindle2016
+    reviewed: /2012/04/26/on-the-naturalness-of-software.html
+  - date: '2021-10-07'
+    key: Rigger2020
+    reviewed: /2021/10/07/finding-bugs-in-database-systems-via-query-partitioning.html
+  name: Su, Zhendong
+- entries:
+  - date: '2021-09-25'
+    key: Schweinsberg2021
+    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
+  name: Subbaiah, Subashini
+- entries:
+  - date: '2011-12-10'
+    key: BenAri2011
+    reviewed: /2011/12/10/a-decade-of-research-and-development-on-program-animation-the-jeliot-experience.html
+  name: Sutinen, Erkki
+- entries:
+  - date: '2022-02-22'
+    key: Louis2020
+    reviewed: /2022/02/22/where-comments.html
+  name: Sutton, Charles
+- entries:
+  - date: '2021-11-29'
+    key: Sven2019
+    reviewed: /2021/11/29/next-steps-in-static-api-misuse-detection.html
+  name: Sven, Amann
+- entries:
+  - date: '2021-08-27'
+    key: Taipalus2018
+    reviewed: /2021/08/27/errors-in-sql-queries.html
+  - date: '2021-10-28'
+    key: Taipalus2021
+    reviewed: /2021/10/28/error-messages-in-relational-atabase-systems.html
+  name: Taipalus, Toni
+- entries:
+  - date: '2016-06-09'
+    key: Xu2015
+    reviewed: /2016/06/09/too-many-knobs.html
+  name: Talwadker, Rukma
+- entries:
+  - date: '2022-04-22'
+    key: Tamburri2020
+    reviewed: /2022/04/22/decline-of-sourceforge.html
+  name: Tamburri, Damian Andrew
+- entries:
+  - date: '2021-11-17'
+    key: Tang2021
+    reviewed: /2021/11/17/using-so-comment-edit-pairs.html
+  name: Tang, Henry
+- entries:
+  - date: '2016-06-09'
+    key: Nagappan2015
+    reviewed: /2016/06/09/goto-in-c.html
+  name: "Tanter, \xC9ric"
+- entries:
+  - date: '2021-10-20'
+    key: Tao2021
+    reviewed: /2021/10/20/demistifying-error-messages-in-data-science-libraries.html
+  name: Tao, Yida
+- entries:
+  - date: '2021-09-25'
+    key: Schweinsberg2021
+    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
+  name: Tatman, Rachael
+- entries:
+  - date: '2016-06-05'
+    key: Gulzar2016
+    reviewed: /2016/06/05/bigdebug.html
+  name: Tetali, Sai Deep
+- entries:
+  - date: '2011-12-02'
+    key: Tew2011
+    reviewed: /2011/12/02/the-fcs1-a-language-independent-assessment-of-cs1-knowledge.html
+  name: Tew, Allison Elliott
+- entries:
+  - date: '2016-06-05'
+    key: Nakshatri2016
+    reviewed: /2016/06/05/java-exception-handling.html
+  name: Thandra, Sahithi
+- entries:
+  - date: '2021-09-25'
+    key: Schweinsberg2021
+    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
+  name: Thibodeau, Paul H.
+- entries:
+  - date: '2016-06-07'
+    key: Thongtanunam2016
+    reviewed: /2016/06/07/code-ownership-revisited.html
+  name: Thongtanunam, Patanamon
+- entries:
+  - date: '2021-09-15'
+    key: Prana2018
+    reviewed: /2021/09/15/categorizing-the-content-of-github-readme-files.html
+  - date: '2022-03-25'
+    key: Bogart2021
+    reviewed: /2022/03/25/breaking-changes.html
+  name: Thung, Ferdian
+- entries:
+  - date: '2022-03-09'
+    key: Yasmin2020
+    reviewed: /2022/03/09/rest-api-deprecation.html
+  name: Tian, Yuan
+- entries:
+  - date: '2015-02-14'
+    key: Maalej2014
+    reviewed: /2015/02/14/on-comprehension-of-program-comprehension.html
+  name: Tiarks, Rebecca
+- entries:
+  - date: '2016-06-12'
+    key: Kiefer2015
+    reviewed: /2016/06/12/empirical-parellelism.html
+  name: Tichy, Walter F.
+- entries:
+  - date: '2021-09-25'
+    key: Schweinsberg2021
+    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
+  name: Tierney, Warren
+- entries:
+  - date: '2021-11-10'
+    key: Tomassi2019
+    reviewed: /2021/11/10/my-kingdom-for-a-dataset.html
+  name: Tomassi, David
+- entries:
+  - date: '2021-09-25'
+    key: Schweinsberg2021
+    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
+  name: Tomkins, Sabina
+- entries:
+  - date: '2011-08-17'
+    key: DeLucia2009
+    reviewed: /2011/08/17/three-empirical-evaluations-of-uml.html
+  name: Tortora, Genoveffa
+- entries:
+  - date: '2021-09-18'
+    key: Tourani2017
+    reviewed: /2021/09/18/code-of-conduct-in-open-source-projects.html
+  name: Tourani, Parastou
+- entries:
+  - date: '2012-05-18'
+    key: Wicherts2011
+    reviewed: /2012/05/18/willingness-to-share-research-data-is-related-to-the-strength-of-the-evidence-and-the-quality-of-reporting-of-statistical-results.html
+  name: Tractenberg, Rochelle E.
+- entries:
+  - date: '2021-08-09'
+    key: Scanniello2017
+    reviewed: /2021/08/09/abbreviated-vs-full-names.html
+  name: Tramontana, Porfirio
+- entries:
+  - date: '2013-02-12'
+    key: Cinneide2012
+    reviewed: /2013/02/12/experimental-assessment-of-software-metrics-using-automated-refactoring.html
+  name: Tratt, Laurence
+- entries:
+  - date: '2021-09-19'
+    key: Tregubov2017
+    reviewed: /2021/09/19/impact-of-task-switching-and-work-interruptions.html
+  name: Tregubov, Alexey
+- entries:
+  - date: '2021-08-09'
+    key: AlencarDaCosta2017
+    reviewed: /2021/08/09/impact-of-rapid-release-cycles-on-integration-delay-of-fixed-issues.html
+  - date: '2021-08-23'
+    key: Hata2019
+    reviewed: /2021/08/23/links-in-source-code-comments.html
+  - date: '2021-09-05'
+    key: Coelho2016
+    reviewed: /2021/09/05/two-papers-on-errors.html
+  - date: '2021-09-15'
+    key: Prana2018
+    reviewed: /2021/09/15/categorizing-the-content-of-github-readme-files.html
+  - date: '2021-10-07'
+    key: Kinsman2021
+    reviewed: /2021/10/07/how-do-software-developers-use-github-actions.html
+  name: Treude, Christoph
+- entries:
+  - date: '2011-12-04'
+    key: Hundhausen2011
+    reviewed: /2011/12/04/online-vs-face-to-face-pedagogical-code-reviews-an-empirical-comparison.html
+  name: Trevisan, Michael
+- entries:
+  - date: '2021-09-28'
+    key: Kavaler2019
+    reviewed: /2021/09/28/javascript-quality-assurance-tools-and-usage-outcomes.html
+  name: Trockman, Asher
+- entries:
+  - date: '2021-12-13'
+    key: Mahmoudi2019
+    reviewed: /2021/12/13/refactorings-in-merge-conflicts.html
+  name: Tsantalis, Nikolaos
+- entries:
+  - date: '2012-03-01'
+    key: Dabbish2012
+    reviewed: /2012/03/01/social-coding-in-github.html
+  name: Tsay, Jason
+- entries:
+  - date: '2012-01-05'
+    key: Bluedorn1999
+    reviewed: /2012/01/05/the-effects-of-stand-up-and-sit-down-meeting-formats-on-meeting-outcomes.html
+  name: Turban, Daniel B.
+- entries:
+  - date: '2022-03-23'
+    key: Turcotte2020
+    reviewed: /2022/03/23/designing-types-for-r-empirically.html
+  name: Turcotte, Alexi
+- entries:
+  - date: '2016-10-05'
+    key: Fucci2016
+    reviewed: /2016/10/05/test-driven-development.html
+  name: Turhan, Burak
+- entries:
+  - date: '2022-04-06'
+    key: Tomasdottir2020
+    reviewed: /2022/04/06/adoption-of-javascript-linters.html
+  name: "T\xF3masd\xF3ttir, Krist\xEDn Fj\xF3la"
+- entries:
+  - date: '2021-09-25'
+    key: Schweinsberg2021
+    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
+  name: Uhlmann, Eric Luis
+- entries:
+  - date: '2012-04-10'
+    key: Philip2012
+    reviewed: /2012/04/10/component-reuse-vs-snippet-remixing.html
+  name: Umarji, Medha
+- entries:
+  - date: '2016-10-05'
+    key: Fucci2016
+    reviewed: /2016/10/05/test-driven-development.html
+  name: Uyaguari, Fernando
+- entries:
+  - date: '2021-09-25'
+    key: Schweinsberg2021
+    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
+  name: Valdivia, Ana
+- entries:
+  - date: '2021-09-25'
+    key: Schweinsberg2021
+    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
+  name: van Aert, Robbie C.M.
+- entries:
+  - date: '2021-09-25'
+    key: Schweinsberg2021
+    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
+  name: van Assen, Marcel A.L.M.
+- entries:
+  - date: '2021-09-25'
+    key: Schweinsberg2021
+    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
+  name: van den Akker, Olmo R.
+- entries:
+  - date: '2021-08-12'
+    key: Ghiotto2020
+    reviewed: /2021/08/12/on-the-nature-of-merge-conflicts.html
+  - date: '2021-09-24'
+    key: Mangano2015
+    reviewed: /2021/09/24/how-software-designers-interact-with-sketches-at-the-whiteboard.html
+  name: "van der Hoek, Andr\xE9"
+- entries:
+  - date: '2012-05-24'
+    key: Hermans2011
+    reviewed: /2012/05/24/supporting-professional-spreadsheet-users-by-generating-leveled-dataflow-diagrams.html
+  - date: '2021-09-05'
+    key: Coelho2016
+    reviewed: /2021/09/05/two-papers-on-errors.html
+  - date: '2022-04-06'
+    key: Tomasdottir2020
+    reviewed: /2022/04/06/adoption-of-javascript-linters.html
+  name: van Deursen, Arie
+- entries:
+  - date: '2011-10-11'
+    key: Vanhanen2007
+    reviewed: /2011/10/11/experiences-of-using-pair-programming-in-an-agile-project.html
+  name: Vanhanen, Jari
+- entries:
+  - date: '2021-08-27'
+    key: Taipalus2018
+    reviewed: /2021/08/27/errors-in-sql-queries.html
+  name: Vartiainen, Tero
+- entries:
+  - date: '2021-09-28'
+    key: Kavaler2019
+    reviewed: /2021/09/28/javascript-quality-assurance-tools-and-usage-outcomes.html
+  - date: '2021-10-13'
+    key: Overney2020
+    reviewed: /2021/10/13/an-empirical-study-of-donations-in-open-source.html
+  - date: '2021-11-10'
+    key: Tomassi2019
+    reviewed: /2021/11/10/my-kingdom-for-a-dataset.html
+  name: Vasilescu, Bogdan
+- entries:
+  - date: '2021-10-18'
+    key: Zampetti2020
+    reviewed: /2021/10/18/bad-practices-in-continuous-integration.html
+  name: Vassallo, Carmine
+- entries:
+  - date: '2021-10-06'
+    key: Aghajani2019
+    reviewed: /2021/10/06/software-documentation-issues-unveiled.html
+  name: Vega-Marquez, Olga Lucero
+- entries:
+  - date: '2016-09-09'
+    key: Krein2016
+    reviewed: /2016/09/09/replicating-design-patterns-experiment.html
+  name: Vegas, Sira
+- entries:
+  - date: '2021-10-05'
+    key: Scalabrino2021
+    reviewed: /2021/10/05/three-papers-on-readability.html
+  name: Vendome, Christopher
+- entries:
+  - date: '2011-06-30'
+    key: Cherubini2007
+    reviewed: /2011/06/30/lets-go-to-the-whiteboard.html
+  - date: '2021-09-23'
+    key: Aranda2009
+    reviewed: /2021/09/23/the-secret-life-of-bugs.html
+  name: Venolia, Gina
+- entries:
+  - date: '2011-06-30'
+    key: Barnett2011
+    reviewed: /2011/06/30/specification-and-verification-the-spec-experience.html
+  name: Venter, Herman
+- entries:
+  - date: '2021-09-25'
+    key: Schweinsberg2021
+    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
+  name: Viana, Laura
+- entries:
+  - date: '2021-09-25'
+    key: Schweinsberg2021
+    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
+  name: Viganola, Domenico
+- entries:
+  - date: '2021-09-25'
+    key: Schweinsberg2021
+    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
+  name: "Villes\xE8che, Florence"
+- entries:
+  - date: '2022-03-31'
+    key: Jolak2020
+    reviewed: /2022/03/31/textual-vs-graphic-design-descriptions-and-communication.html
+  name: Vincur, Juraj
+- entries:
+  - date: '2022-03-23'
+    key: Turcotte2020
+    reviewed: /2022/03/23/designing-types-for-r-empirically.html
+  name: Vitek, Jan
+- entries:
+  - date: '2021-10-14'
+    key: Gao2020
+    reviewed: /2021/10/14/api-learning-processes.html
+  name: Voichick, Finn
+- entries:
+  - date: '2021-10-03'
+    key: Moldon2021
+    reviewed: /2021/10/03/how-gamification-affects-software-developers.html
+  name: Wachs, Johannes
+- entries:
+  - date: '2021-09-25'
+    key: Schweinsberg2021
+    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
+  name: Wadsworth, W. Duncan
+- entries:
+  - date: '2022-03-16'
+    key: Fritzsch2021
+    reviewed: /2022/03/16/resume-driven-development.html
+  name: Wagner, Stefan
+- entries:
+  - date: '2012-01-17'
+    key: Prabhu2011
+    reviewed: /2012/01/17/a-survey-of-the-practice-of-computational-science.html
+  name: Walker, David
+- entries:
+  - date: '2021-09-25'
+    key: Schweinsberg2021
+    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
+  name: Wanders, Florian
+- entries:
+  - date: '2021-08-30'
+    key: Wang2020
+    reviewed: /2021/08/30/two-studies-of-regular-expressions.html
+  name: Wang, Peipei
+- entries:
+  - date: '2021-09-19'
+    key: Zhang2020
+    reviewed: /2021/09/19/reading-answers-on-stack-overflow-not-enough.html
+  - date: '2022-03-08'
+    key: Zhang2021b
+    reviewed: /2022/03/08/obsolete-answers-on-stack-overflow.html
+  name: Wang, Shaowei
+- entries:
+  - date: '2013-06-13'
+    key: Hemmati2013
+    reviewed: /2013/06/13/the-msr-cookbook-mining-a-decade-of-research.html
+  name: Wang, Wei
+- entries:
+  - date: '2014-03-31'
+    key: Graziotin2014
+    reviewed: /2014/03/31/happy-sw-devs-solve-problems-better.html
+  name: Wang, Xiaofeng
+- entries:
+  - date: '2016-10-02'
+    key: Wang2016
+    reviewed: /2016/10/02/filtering-spreadsheet-data.html
+  name: Wang, Xinyu
+- entries:
+  - date: '2021-11-10'
+    key: Tomassi2019
+    reviewed: /2021/11/10/my-kingdom-for-a-dataset.html
+  name: Wang, Yichen
+- entries:
+  - date: '2016-06-12'
+    key: Kiefer2015
+    reviewed: /2016/06/12/empirical-parellelism.html
+  name: Warzel, Daniel
+- entries:
+  - date: '2016-06-05'
+    key: Washburn2016
+    reviewed: /2016/06/05/game-postmortems.html
+  name: Washburn, Michael
+- entries:
+  - date: '2021-09-25'
+    key: Schweinsberg2021
+    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
+  name: Watts, Krista
+- entries:
+  - date: '2021-09-17'
+    key: Abdalkareem2017
+    reviewed: /2021/09/17/why-do-developers-use-trivial-packages.html
+  name: Wehaibi, Sultan
+- entries:
+  - date: '2021-09-03'
+    key: WeillTessier2021
+    reviewed: /2021/09/03/two-papers-about-the-blackbox-project.html
+  name: Weill-Tessier, Pierre
+- entries:
+  - date: '2011-08-30'
+    key: Bettenburg2008
+    reviewed: /2011/08/30/what-makes-a-good-bug-report.html
+  name: Weiss, Cathrin
+- entries:
+  - date: '2021-09-25'
+    key: Schweinsberg2021
+    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
+  name: Wells, Jason D
+- entries:
+  - date: '2021-09-29'
+    key: Wessel2020
+    reviewed: /2021/09/29/effects-of-adopting-code-review-bots.html
+  - date: '2021-10-07'
+    key: Kinsman2021
+    reviewed: /2021/10/07/how-do-software-developers-use-github-actions.html
+  name: Wessel, Mairieli
+- entries:
+  - date: '2021-09-25'
+    key: Schweinsberg2021
+    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
+  name: Whelpley, Christopher E.
+- entries:
+  - date: '2021-10-01'
+    key: Bafatakis2019
+    reviewed: /2021/10/01/python-coding-style-compliance-on-stack-overflow.html
+  name: White, Robert
+- entries:
+  - date: '2013-06-06'
+    key: Lewis2013
+    reviewed: /2013/06/06/does-bug-prediction-support-human-developers-findings-from-a-google-case-study.html
+  - date: '2021-09-11'
+    key: Pan2008
+    reviewed: /2021/09/11/common-bug-fix-patterns.html
+  name: Whitehead, E. James
+- entries:
+  - date: '2012-05-18'
+    key: Wicherts2011
+    reviewed: /2012/05/18/willingness-to-share-research-data-is-related-to-the-strength-of-the-evidence-and-the-quality-of-reporting-of-statistical-results.html
+  name: Wicherts, Jelte M.
+- entries:
+  - date: '2011-07-04'
+    key: Racheva2010
+    reviewed: /2011/07/04/requirements-prioritization-in-agile-projects-insights-from-a-case-study.html
+  name: Wieringa, Roel
+- entries:
+  - date: '2021-09-29'
+    key: Wessel2020
+    reviewed: /2021/09/29/effects-of-adopting-code-review-bots.html
+  name: Wiese, Igor
+- entries:
+  - date: '2011-08-31'
+    key: Wilkerson2012
+    reviewed: /2011/08/31/comparing-the-defect-reduction-benefits-of-code-inspection-and-test-driven-development.html
+  name: Wilkerson, Jerod W.
+- entries:
+  - date: '2011-09-06'
+    key: Meneely2011
+    reviewed: /2011/09/06/does-adding-manpower-also-affect-quality.html
+  - date: '2012-01-25'
+    key: Nagappan2008
+    reviewed: /2012/01/25/realizing-quality-improvement-through-test-driven-development.html
+  - date: '2021-08-26'
+    key: Rahman2020a
+    reviewed: /2021/08/26/defect-taxonomy-for-infrastructure-as-code.html
+  - date: '2021-11-23'
+    key: Rahman2019
+    reviewed: /2021/11/23/security-smells-in-infrastructure-as-code-scripts.html
+  name: Williams, Laurie
+- entries:
+  - date: '2021-09-04'
+    key: Almeida2017
+    reviewed: /2021/09/04/do-software-developers-understand-open-source-licenses.html
+  name: Wilson, Greg
+- entries:
+  - date: '2011-08-24'
+    key: Rossbach2010
+    reviewed: /2011/08/24/is-transactional-programming-actually-easier.html
+  name: Witchel, Emmett
+- entries:
+  - date: '2021-09-25'
+    key: Schweinsberg2021
+    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
+  name: Won, Andy
+- entries:
+  - date: '2021-09-21'
+    key: Ajami2018
+    reviewed: /2021/09/21/syntax-predicates-idioms-what-really-affects-code-complexity.html
+  name: Woodbridge, Yonatan
+- entries:
+  - date: '2022-03-31'
+    key: Jolak2020
+    reviewed: /2022/03/31/textual-vs-graphic-design-descriptions-and-communication.html
+  name: Wortmann, Andreas
+- entries:
+  - date: '2016-06-13'
+    key: Akerblom2016
+    reviewed: /2016/06/13/polymorphism-in-python.html
+  name: Wrigstad, Tobias
+- entries:
+  - date: '2021-09-25'
+    key: Schweinsberg2021
+    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
+  name: Wu, Lawrence
+- entries:
+  - date: '2012-07-18'
+    key: Dang2012
+    reviewed: /2012/07/18/clustering-duplicate-crash-reports.html
+  name: Wu, Rongxin
+- entries:
+  - date: '2022-04-11'
+    key: Shao2020
+    reviewed: /2022/04/11/database-performance-antipatterns.html
+  name: Wu, Xintao
+- entries:
+  - date: '2022-03-16'
+    key: Fritzsch2021
+    reviewed: /2022/03/16/resume-driven-development.html
+  name: Wyrich, Marvin
+- entries:
+  - date: '2021-10-16'
+    key: Han2021
+    reviewed: /2021/10/16/open-source-projects-in-baidu-alibaba-and-tencent.html
+  - date: '2022-04-04'
+    key: Bao2021
+    reviewed: /2022/04/04/contributor-prediction-for-github.html
+  name: Xia, Xin
+- entries:
+  - date: '2022-03-14'
+    key: Mo2021
+    reviewed: /2022/03/14/architecture-anti-patterns.html
+  name: Xiao, Lu
+- entries:
+  - date: '2013-04-16'
+    key: Li2013
+    reviewed: /2013/04/16/a-characteristic-study-on-failures-of-production-distributed-data-parallel-programs.html
+  name: Xiao, Tian
+- entries:
+  - date: '2013-04-16'
+    key: Li2013
+    reviewed: /2013/04/16/a-characteristic-study-on-failures-of-production-distributed-data-parallel-programs.html
+  - date: '2022-04-11'
+    key: Shao2020
+    reviewed: /2022/04/11/database-performance-antipatterns.html
+  name: Xie, Tao
+- entries:
+  - date: '2022-09-19'
+    key: Yang2022
+    reviewed: /2022/09/19/developer-git-knowledge.html
+  name: Xu, Chang
+- entries:
+  - date: '2016-06-09'
+    key: Xu2015
+    reviewed: /2016/06/09/too-many-knobs.html
+  name: Xu, Tianyin
+- entries:
+  - date: '2021-10-20'
+    key: Tao2021
+    reviewed: /2021/10/20/demistifying-error-messages-in-data-science-libraries.html
+  name: Xu, Zhiwu
+- entries:
+  - date: '2021-10-20'
+    key: Tao2021
+    reviewed: /2021/10/20/demistifying-error-messages-in-data-science-libraries.html
+  name: Xuan, Jifeng
+- entries:
+  - date: '2021-11-18'
+    key: Ni2021
+    reviewed: /2021/11/18/synthesis-approach-for-data-science-api-refactoring.html
+  name: Yang, Aidan Z. H.
+- entries:
+  - date: '2016-06-05'
+    key: Chen2016
+    reviewed: /2016/06/05/maintaining-java-orm.html
+  - date: '2022-03-09'
+    key: Yasmin2020
+    reviewed: /2022/03/09/rest-api-deprecation.html
+  name: Yang, Jinqiu
+- entries:
+  - date: '2022-04-11'
+    key: Shao2020
+    reviewed: /2022/04/11/database-performance-antipatterns.html
+  name: Yang, Wei
+- entries:
+  - date: '2022-09-19'
+    key: Yang2022
+    reviewed: /2022/09/19/developer-git-knowledge.html
+  name: Yang, Wenhua
+- entries:
+  - date: '2021-09-25'
+    key: Schweinsberg2021
+    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
+  name: Yarkoni, Tal
+- entries:
+  - date: '2022-03-09'
+    key: Yasmin2020
+    reviewed: /2022/03/09/rest-api-deprecation.html
+  name: Yasmin, Jerin
+- entries:
+  - date: '2021-10-16'
+    key: Han2021
+    reviewed: /2021/10/16/open-source-projects-in-baidu-alibaba-and-tencent.html
+  name: Yin, Jianwei
+- entries:
+  - date: '2011-10-22'
+    key: Yin2011
+    reviewed: /2011/10/22/three-empirical-studies-from-esecfse11.html
+  name: Yin, Zuoning
+- entries:
+  - date: '2021-09-25'
+    key: Schweinsberg2021
+    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
+  name: Yip, Arthur
+- entries:
+  - date: '2016-06-05'
+    key: Gulzar2016
+    reviewed: /2016/06/05/bigdebug.html
+  name: Yoo, Seunghyun
+- entries:
+  - date: '2021-09-25'
+    key: Schweinsberg2021
+    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
+  name: Youngflesh, Casey
+- entries:
+  - date: '2021-09-25'
+    key: Schweinsberg2021
+    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
+  name: Yu, Ju-Chi
+- entries:
+  - date: '2022-04-11'
+    key: Shao2020
+    reviewed: /2022/04/11/database-performance-antipatterns.html
+  name: Yu, Xiao
+- entries:
+  - date: '2011-10-22'
+    key: Yin2011
+    reviewed: /2011/10/22/three-empirical-studies-from-esecfse11.html
+  - date: '2014-10-09'
+    key: Yuan2014
+    reviewed: /2014/10/09/simple-testing-can-prevent-most-critical-failures.html
+  name: Yuan, Ding
+- entries:
+  - date: '2021-08-11'
+    key: Pietri2019
+    reviewed: /2021/08/11/cheating-death-survival-analysis-of-python-projects.html
+  name: Zacchiroli, Stefano
+- entries:
+  - date: '2016-06-08'
+    key: Beller2015
+    reviewed: /2016/06/08/when-and-why-test.html
+  - date: '2021-09-12'
+    key: Beller2019
+    reviewed: /2021/09/12/developer-testing-in-the-ide.html
+  name: Zaidman, Andy
+- entries:
+  - date: '2021-10-18'
+    key: Zampetti2020
+    reviewed: /2021/10/18/bad-practices-in-continuous-integration.html
+  name: Zampetti, Fiorella
+- entries:
+  - date: '2021-09-25'
+    key: Schweinsberg2021
+    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
+  name: Zandian, Arash
+- entries:
+  - date: '2021-09-26'
+    key: Zavgorodniaia2021
+    reviewed: /2021/09/26/two-papers-on-time.html
+  name: Zavgorodniaia, Albina
+- entries:
+  - date: '2013-06-13'
+    key: Herzig2013
+    reviewed: /2013/06/13/its-not-a-bug-its-a-feature-how-misclassification-impacts-bug-prediction.html
+  - date: '2021-10-02'
+    key: Sliwerski2005
+    reviewed: /2021/10/02/reproducibility-and-credibility-in-empirical-software-engineering.html
+  - date: '2021-10-30'
+    key: Soremekun2021
+    reviewed: /2021/10/30/locating-faults-with-program-slicing.html
+  name: Zeller, Andreas
+- entries:
+  - date: '2022-09-19'
+    key: Yang2022
+    reviewed: /2022/09/19/developer-git-knowledge.html
+  name: Zhang, Chong
+- entries:
+  - date: '2012-07-18'
+    key: Dang2012
+    reviewed: /2012/07/18/clustering-duplicate-crash-reports.html
+  name: Zhang, Dongmei
+- entries:
+  - date: '2021-09-19'
+    key: Zhang2020
+    reviewed: /2021/09/19/reading-answers-on-stack-overflow-not-enough.html
+  - date: '2022-03-08'
+    key: Zhang2021b
+    reviewed: /2022/03/08/obsolete-answers-on-stack-overflow.html
+  name: Zhang, Haoxiang
+- entries:
+  - date: '2012-07-18'
+    key: Dang2012
+    reviewed: /2012/07/18/clustering-duplicate-crash-reports.html
+  - date: '2021-12-02'
+    key: Gu2018
+    reviewed: /2021/12/02/deep-code-search.html
+  name: Zhang, Hongyu
+- entries:
+  - date: '2021-11-15'
+    key: Zhang2021a
+    reviewed: /2021/11/15/enriching-api-documentation-with-code-samples-and-usage-scenarios.html
+  name: Zhang, Jingxuan
+- entries:
+  - date: '2021-09-25'
+    key: Schweinsberg2021
+    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
+  name: Zhang, Leilei
+- entries:
+  - date: '2021-10-01'
+    key: Miller2020
+    reviewed: /2021/10/01/the-relevance-of-classic-fuzz-testing.html
+  name: Zhang, Mengxiao
+- entries:
+  - date: '2021-11-15'
+    key: Zhang2021a
+    reviewed: /2021/11/15/enriching-api-documentation-with-code-samples-and-usage-scenarios.html
+  name: Zhang, Tao
+- entries:
+  - date: '2016-10-01'
+    key: Kim2016
+    reviewed: /2016/10/01/apex.html
+  name: Zhang, Xiangyu
+- entries:
+  - date: '2021-08-17'
+    key: Peng2021
+    reviewed: /2021/08/17/python-language-features.html
+  name: Zhang, Yu
+- entries:
+  - date: '2012-01-17'
+    key: Prabhu2011
+    reviewed: /2012/01/17/a-survey-of-the-practice-of-computational-science.html
+  name: Zhang, Yun
+- entries:
+  - date: '2014-10-09'
+    key: Yuan2014
+    reviewed: /2014/10/09/simple-testing-can-prevent-most-critical-failures.html
+  name: Zhao, Xu
+- entries:
+  - date: '2021-10-16'
+    key: Han2021
+    reviewed: /2021/10/16/open-source-projects-in-baidu-alibaba-and-tencent.html
+  name: Zhi, Chen
+- entries:
+  - date: '2013-04-16'
+    key: Li2013
+    reviewed: /2013/04/16/a-characteristic-study-on-failures-of-production-distributed-data-parallel-programs.html
+  name: Zhou, Hucheng
+- entries:
+  - date: '2022-09-19'
+    key: Yang2022
+    reviewed: /2022/09/19/developer-git-knowledge.html
+  name: Zhou, Yu
+- entries:
+  - date: '2011-10-22'
+    key: Yin2011
+    reviewed: /2011/10/22/three-empirical-studies-from-esecfse11.html
+  - date: '2016-06-09'
+    key: Xu2015
+    reviewed: /2016/06/09/too-many-knobs.html
+  name: Zhou, Yuanyuan
+- entries:
+  - date: '2021-08-10'
+    key: Zhu2021
+    reviewed: /2021/08/10/developers-fix-their-own-simple-bugs-differently-from-other-developers.html
+  name: Zhu, Wenhan
+- entries:
+  - date: '2013-06-06'
+    key: Lewis2013
+    reviewed: /2013/06/06/does-bug-prediction-support-human-developers-findings-from-a-google-case-study.html
+  name: Zhu, Xiaoyan
+- entries:
+  - date: '2021-09-30'
+    key: Rigby2016
+    reviewed: /2021/09/30/quantifying-and-mitigating-turnover-induced-knowledge-loss.html
+  name: Zhu, Yue Cai
+- entries:
+  - date: '2014-10-09'
+    key: Yuan2014
+    reviewed: /2014/10/09/simple-testing-can-prevent-most-critical-failures.html
+  name: Zhuang, Xin
+- entries:
+  - date: '2021-09-25'
+    key: Schweinsberg2021
+    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
+  name: Zibman, Chava
+- entries:
+  - date: '2011-08-30'
+    key: Bettenburg2008
+    reviewed: /2011/08/30/what-makes-a-good-bug-report.html
+  - date: '2012-08-23'
+    key: Hindle2012
+    reviewed: /2012/08/23/using-topic-modelling-to-understand-requirements.html
+  - date: '2015-08-23'
+    key: Meyer2014
+    reviewed: /2015/08/23/perception-productivity.html
+  - date: '2016-06-05'
+    key: Washburn2016
+    reviewed: /2016/06/05/game-postmortems.html
+  - date: '2016-06-09'
+    key: Lo2015
+    reviewed: /2016/06/09/perceived-relevance.html
+  - date: '2021-09-07'
+    key: Ford2017
+    reviewed: /2021/09/07/characterizing-software-engineering-work-with-personas.html
+  - date: '2021-10-02'
+    key: Sliwerski2005
+    reviewed: /2021/10/02/reproducibility-and-credibility-in-empirical-software-engineering.html
+  - date: '2021-10-04'
+    key: Meyer2021
+    reviewed: /2021/10/04/the-daily-life-of-software-developers.html
+  - date: '2022-03-28'
+    key: Rodeghero2021
+    reviewed: /2022/03/28/remote-onboarding.html
+  - date: '2022-04-23'
+    key: Kochhar2019
+    reviewed: /2022/04/23/closed-to-open-source.html
+  name: Zimmermann, Thomas
+- entries:
+  - date: '2016-09-16'
+    key: Liao2016
+    reviewed: /2016/09/16/five-from-icer-2016.html
+  name: Zingaro, Daniel
+- entries:
+  - date: '2012-05-17'
+    key: Khomh2012
+    reviewed: /2012/05/17/do-faster-releases-improve-software-quality.html
+  - date: '2022-03-08'
+    key: Zhang2021b
+    reviewed: /2022/03/08/obsolete-answers-on-stack-overflow.html
+  name: Zou, Ying
+- entries:
+  - date: '2012-01-17'
+    key: Prabhu2011
+    reviewed: /2012/01/17/a-survey-of-the-practice-of-computational-science.html
+  name: Zoufaly, Matthew

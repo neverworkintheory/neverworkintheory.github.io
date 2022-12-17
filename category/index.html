@@ -2,32 +2,22 @@
 layout: page
 title: By Category
 ---
-{% assign sorted_cats = site.categories | sort %}
-<table class="table table-striped" width="100%">
-  {% for category in sorted_cats %}
-  {% cycle '<tr width="25%">', '', '' %}
-    <td><a href="#{{ category[0] | slugify}}">{{ category[0] }}</a> ({{ category[1] | size }})</td>
+<table>
+  {% for category in site.data.categories %}
+  {% cycle '<tr>', '', '' %}
+    <td><a href="#{{category.name | slugify}}">{{category.name}}</a> ({{category.entries | size}})</td>
   {% cycle '', '', '</tr>' %}
   {% endfor %}
 </table>
-{% for category in sorted_cats %}
-<a name="{{ category[0] | replace: ' ', '' | downcase }}"></a>
-<h2 id="{{ category[0] | slugify }}">{{ category[0] }}</h2>
-<table class="table table-striped">
-  {% for posts in category %}
-    {% for post in posts %}
-    {% if post.url %}
-    <tr>
-      <td width="25%">
-        <span>{{ post.date|date: '%b&nbsp;%e,&nbsp;%Y' }}</span>
-      </td>
-      <td width="75%">
-        <a href="{{ post.url }}">{{ post.title }}</a>
-      </td>
-    </tr>
-    {% endif %}
-    {% endfor %}
+
+{% for category in site.data.categories %}
+<h2 id="{{category.name | slugify}}">{{category.name}}</h2>
+<table>
+  {% for entry in category.entries %}
+  <tr>
+    <td width="25%">{{entry.date}}</td>
+    <td><a href="{{entry.reviewed | relative_url}}">{{entry.title}}</a></td>
+  </tr>
   {% endfor %}
 </table>
 {% endfor %}
-<hr/>
