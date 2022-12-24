@@ -9,7 +9,7 @@ title: "It Will Never Work in Theory"
   <tr>
   {% assign column = 'left' %}
   {% for talk in session.talks %}
-    <td><a href="{{talk.video}}"><img src="{{'/files/thumbnails/' | append: talk.thumbnail | relative_url}}" alt="{{talk.title}}"/></a></td>
+    <td><a href="{{talk.video}}"><img src="{{'/static/thumbnails/' | append: talk.thumbnail | relative_url}}" alt="{{talk.title}}"/></a></td>
     <td>
       <a href="{{talk.homepage}}">{{talk.speaker}}</a>:
       <br/>
@@ -17,8 +17,8 @@ title: "It Will Never Work in Theory"
       {% if talk.en or talk.es %}
       <br/>
       Transcript:
-      {% if talk.en %}<a href="{{ '/files/' | append: talk.en | relative_url }}">English</a>{% endif %}
-      {% if talk.es %}<a href="{{ '/files/' | append: talk.es | relative_url }}">Español</a>{% endif %}
+      {% if talk.en %}<a href="{{ '/static/' | append: talk.en | relative_url }}">English</a>{% endif %}
+      {% if talk.es %}<a href="{{ '/static/' | append: talk.es | relative_url }}">Español</a>{% endif %}
       {% endif %}
     </td>
     {% if column == 'left' %}
