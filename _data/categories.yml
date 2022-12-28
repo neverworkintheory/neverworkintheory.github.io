@@ -1,1602 +1,1602 @@
 - entries:
   - date: '2022-03-09'
-    reviewed: /2022/2022-03-09-rest-api-deprecation.html
+    reviewed: /2022/03/09/rest-api-deprecation.html
     title: A First Look at the Deprecation of RESTful APIs
   name: APIs
 - entries:
   - date: '2021-10-03'
-    reviewed: /2021/2021-10-03-is-40-the-new-60.html
+    reviewed: /2021/10/03/is-40-the-new-60.html
     title: Is 40 the New 60?
   name: Age Discrimination
 - entries:
   - date: '2011-08-02'
-    reviewed: /2011/2011-08-02-a-teamwork-model-for-understanding-an-agile-team.html
+    reviewed: /2011/08/02/a-teamwork-model-for-understanding-an-agile-team.html
     title: A Teamwork Model for Understanding an Agile Team
   - date: '2011-10-11'
-    reviewed: /2011/2011-10-11-experiences-of-using-pair-programming-in-an-agile-project.html
+    reviewed: /2011/10/11/experiences-of-using-pair-programming-in-an-agile-project.html
     title: Experiences of Using Pair Programming in an Agile Project
   - date: '2021-08-09'
-    reviewed: /2021/2021-08-09-impact-of-rapid-release-cycles-on-integration-delay-of-fixed-issues.html
+    reviewed: /2021/08/09/impact-of-rapid-release-cycles-on-integration-delay-of-fixed-issues.html
     title: The Impact of Rapid Release Cycles on the Integration Delay of Fixed Issues
   - date: '2021-08-18'
-    reviewed: /2021/2021-08-18-how-agile-teams-make-self-assignment-work.html
+    reviewed: /2021/08/18/how-agile-teams-make-self-assignment-work.html
     title: How Agile Teams Make Self-Assignment Work
   - date: '2022-04-24'
-    reviewed: /2022/2022-04-24-role-clarity-deficiencies-can-wreck-agile-teams.html
+    reviewed: /2022/04/24/role-clarity-deficiencies-can-wreck-agile-teams.html
     title: Role Clarity Deficiencies Can Wreck Agile Teams
   name: Agile Development
 - entries:
   - date: '2022-03-14'
-    reviewed: /2022/2022-03-14-architecture-anti-patterns.html
+    reviewed: /2022/03/14/architecture-anti-patterns.html
     title: 'Architecture Anti-Patterns: Automatically Detectable Violations of Design
       Principles'
   name: Anti-patterns
 - entries:
   - date: '2021-10-30'
-    reviewed: /2021/2021-10-30-app-store-effects-on-software-engineering-practices.html
+    reviewed: /2021/10/30/app-store-effects-on-software-engineering-practices.html
     title: App Store Effects on Software Engineering Practices
   name: App Store
 - entries:
   - date: '2016-10-02'
-    reviewed: /2016/2016-10-02-grid-revisited.html
+    reviewed: /2016/10/02/grid-revisited.html
     title: Revisiting the Anatomy and Physiology of the Grid
   name: Architecture
 - entries:
   - date: '2021-10-15'
-    reviewed: /2021/2021-10-15-authorship-attribution-of-source-code.html
+    reviewed: /2021/10/15/authorship-attribution-of-source-code.html
     title: Authorship Attribution of Source Code
   name: Authorship
 - entries:
   - date: '2021-09-30'
-    reviewed: /2021/2021-09-30-effects-of-adopting-code-review-bots.html
+    reviewed: /2021/09/30/effects-of-adopting-code-review-bots.html
     title: Effects of Adopting Code Review Bots on Pull Requests to OSS Projects
   - date: '2021-10-07'
-    reviewed: /2021/2021-10-07-how-do-software-developers-use-github-actions.html
+    reviewed: /2021/10/07/how-do-software-developers-use-github-actions.html
     title: How Do Software Developers Use GitHub Actions?
   - date: '2021-11-18'
-    reviewed: /2021/2021-11-18-synthesis-approach-for-data-science-api-refactoring.html
+    reviewed: /2021/11/18/synthesis-approach-for-data-science-api-refactoring.html
     title: 'SOAR: A Synthesis Approach for Data Science API Refactoring'
   name: Automation
 - entries:
   - date: '2021-10-19'
-    reviewed: /2021/2021-10-19-whats-wrong-with-my-benchmark-results.html
+    reviewed: /2021/10/19/whats-wrong-with-my-benchmark-results.html
     title: What's Wrong With my Benchmark Results?
   - date: '2021-11-08'
-    reviewed: /2021/2021-11-08-my-kingdom-for-a-dataset.html
+    reviewed: /2021/11/08/my-kingdom-for-a-dataset.html
     title: 'BugSwarm: Mining and Continuously Growing a Dataset of Reproducible Failures
       and Fixes'
   - date: '2021-12-13'
-    reviewed: /2021/2021-12-13-refactorings-in-merge-conflicts.html
+    reviewed: /2021/12/13/refactorings-in-merge-conflicts.html
     title: Are Refactorings to Blame? An Empirical Study of Refactorings in Merge
       Conflicts
   name: Benchmarking
 - entries:
   - date: '2021-08-29'
-    reviewed: /2021/2021-08-29-beyond-the-code-itself.html
+    reviewed: /2021/08/29/beyond-the-code-itself.html
     title: 'Beyond the Code Itself: How Programmers Really Look at Pull Requests'
   name: Bias
 - entries:
   - date: '2012-05-03'
-    reviewed: /2012/2012-05-03-a-review-of-code-simplicity.html
+    reviewed: /2012/05/03/a-review-of-code-simplicity.html
     title: Code Simplicity
   - date: '2013-06-13'
-    reviewed: /2013/2013-06-13-the-msr-cookbook-mining-a-decade-of-research.html
+    reviewed: /2013/06/13/the-msr-cookbook-mining-a-decade-of-research.html
     title: 'The MSR Cookbook: Mining a Decade of Research'
   - date: '2013-08-12'
-    reviewed: /2013/2013-08-12-review-essence-of-software-engineering.html
+    reviewed: /2013/08/12/review-essence-of-software-engineering.html
     title: The Essence of Software Engineering
   - date: '2021-10-02'
-    reviewed: /2021/2021-10-02-programmers-brain.html
+    reviewed: /2021/10/02/programmers-brain.html
     title: The Programmer's Brain
   - date: '2022-05-06'
-    reviewed: /2022/2022-05-06-not-quite-modern.html
+    reviewed: /2022/05/06/not-quite-modern.html
     title: Not Quite Modern
   name: Book Review
 - entries:
   - date: '2011-08-30'
-    reviewed: /2011/2011-08-30-what-makes-a-good-bug-report.html
+    reviewed: /2011/08/30/what-makes-a-good-bug-report.html
     title: What Makes a Good Bug Report?
   - date: '2012-07-18'
-    reviewed: /2012/2012-07-18-clustering-duplicate-crash-reports.html
+    reviewed: /2012/07/18/clustering-duplicate-crash-reports.html
     title: Clustering Duplicate Crash Reports
   - date: '2021-11-08'
-    reviewed: /2021/2021-11-08-my-kingdom-for-a-dataset.html
+    reviewed: /2021/11/08/my-kingdom-for-a-dataset.html
     title: 'BugSwarm: Mining and Continuously Growing a Dataset of Reproducible Failures
       and Fixes'
   name: Bug Reports
 - entries:
   - date: '2022-03-11'
-    reviewed: /2022/2022-03-11-single-statement-bugs-in-python-projects.html
+    reviewed: /2022/03/11/single-statement-bugs-in-python-projects.html
     title: Characterizing Single-Statement Bugs in Popular Open-Source Python Projects
   name: Bugs
 - entries:
   - date: '2021-09-21'
-    reviewed: /2021/2021-09-21-build-systems-a-la-carte.html
+    reviewed: /2021/09/21/build-systems-a-la-carte.html
     title: "Build Systems \xE0 la Carte"
   name: Build Systems
 - entries:
   - date: '2021-09-26'
-    reviewed: /2021/2021-09-26-two-papers-on-time.html
+    reviewed: /2021/09/26/two-papers-on-time.html
     title: Two Papers on Time
   name: Circadian Rhythms
 - entries:
   - date: '2011-08-16'
-    reviewed: /2011/2011-08-16-cloning-considered-harmful-considered-harmful.html
+    reviewed: /2011/08/16/cloning-considered-harmful-considered-harmful.html
     title: '''Cloning considered harmful'' considered harmful'
   name: Code Clones
 - entries:
   - date: '2013-06-06'
-    reviewed: /2013/2013-06-06-automatic-patch-generation-learned-from-human-written-patches.html
+    reviewed: /2013/06/06/automatic-patch-generation-learned-from-human-written-patches.html
     title: Automatic Patch Generation Learned from Human-Written Patches
   name: Code Generation
 - entries:
   - date: '2011-06-27'
-    reviewed: /2011/2011-06-27-ownership-experience-and-defects.html
+    reviewed: /2011/06/27/ownership-experience-and-defects.html
     title: Ownership, Experience, and Defects
   - date: '2011-09-05'
-    reviewed: /2011/2011-09-05-dont-touch-my-code.html
+    reviewed: /2011/09/05/dont-touch-my-code.html
     title: Don't Touch My Code!
   - date: '2011-10-22'
-    reviewed: /2011/2011-10-22-three-results-many-definitions.html
+    reviewed: /2011/10/22/three-results-many-definitions.html
     title: Three Results, Many Definitions
   - date: '2016-06-07'
-    reviewed: /2016/2016-06-07-code-ownership-revisited.html
+    reviewed: /2016/06/07/code-ownership-revisited.html
     title: Code Ownership Revisited
   - date: '2021-09-10'
-    reviewed: /2021/2021-09-10-why-software-projects-need-heroes.html
+    reviewed: /2021/09/10/why-software-projects-need-heroes.html
     title: 'Why Software Projects need Heroes: Lessons Learned from 1100+ Projects'
   name: Code Ownership
 - entries:
   - date: '2011-07-18'
-    reviewed: /2011/2011-07-18-understanding-broadcast-based-peer-review-on-open-source-projects.html
+    reviewed: /2011/07/18/understanding-broadcast-based-peer-review-on-open-source-projects.html
     title: Understanding Broadcast Based Peer Review on Open Source Projects
   - date: '2011-08-31'
-    reviewed: /2011/2011-08-31-comparing-the-defect-reduction-benefits-of-code-inspection-and-test-driven-development.html
+    reviewed: /2011/08/31/comparing-the-defect-reduction-benefits-of-code-inspection-and-test-driven-development.html
     title: Comparing the Defect Reduction Benefits of Code Inspection and Test-Driven
       Development
   - date: '2011-12-04'
-    reviewed: /2011/2011-12-04-online-vs-face-to-face-pedagogical-code-reviews-an-empirical-comparison.html
+    reviewed: /2011/12/04/online-vs-face-to-face-pedagogical-code-reviews-an-empirical-comparison.html
     title: 'Online vs. Face-to-Face Pedagogical Code Reviews: An Empirical Comparison'
   - date: '2013-06-19'
-    reviewed: /2013/2013-06-19-reducing-human-effort-and-improving-quality-in-peer-code-reviews-using-automatic-static-analysis-and-reviewer-recommendation.html
+    reviewed: /2013/06/19/reducing-human-effort-and-improving-quality-in-peer-code-reviews-using-automatic-static-analysis-and-reviewer-recommendation.html
     title: Reducing Human Effort and Improving Quality in Peer Code Reviews using
       Automatic Static Analysis and Reviewer Recommendation
   - date: '2021-08-16'
-    reviewed: /2021/2021-08-16-modern-code-review.html
+    reviewed: /2021/08/16/modern-code-review.html
     title: Modern Code Review
   - date: '2021-09-30'
-    reviewed: /2021/2021-09-30-effects-of-adopting-code-review-bots.html
+    reviewed: /2021/09/30/effects-of-adopting-code-review-bots.html
     title: Effects of Adopting Code Review Bots on Pull Requests to OSS Projects
   name: Code Review
 - entries:
   - date: '2021-12-02'
-    reviewed: /2021/2021-12-02-deep-code-search.html
+    reviewed: /2021/12/02/deep-code-search.html
     title: Deep Code Search
   name: Code Search
 - entries:
   - date: '2011-06-27'
-    reviewed: /2011/2011-06-27-refactoring-pipe-like-mashups-for-end-user-programmers.html
+    reviewed: /2011/06/27/refactoring-pipe-like-mashups-for-end-user-programmers.html
     title: Refactoring Pipe-like Mashups for End-user Programmers
   - date: '2011-08-16'
-    reviewed: /2011/2011-08-16-cloning-considered-harmful-considered-harmful.html
+    reviewed: /2011/08/16/cloning-considered-harmful-considered-harmful.html
     title: '''Cloning considered harmful'' considered harmful'
   - date: '2013-07-07'
-    reviewed: /2013/2013-07-07-how-and-why-process-metrics-are-better.html
+    reviewed: /2013/07/07/how-and-why-process-metrics-are-better.html
     title: How, and Why, Process Metrics Are Better
   - date: '2013-07-24'
-    reviewed: /2013/2013-07-24-semantic-smells-and-errors-in-access-control-models-a-case-study-in-php.html
+    reviewed: /2013/07/24/semantic-smells-and-errors-in-access-control-models-a-case-study-in-php.html
     title: Automatic Patch Generation Learned from Human-Written Patches
   - date: '2016-08-14'
-    reviewed: /2016/2016-08-14-novice-smells.html
+    reviewed: /2016/08/14/novice-smells.html
     title: Do Code Smells Hamper Novice Programming?
   - date: '2021-11-29'
-    reviewed: /2021/2021-11-29-next-steps-in-static-api-misuse-detection.html
+    reviewed: /2021/11/29/next-steps-in-static-api-misuse-detection.html
     title: Investigating Next Steps in Static API-Misuse Detection
   - date: '2021-12-13'
-    reviewed: /2021/2021-12-13-refactorings-in-merge-conflicts.html
+    reviewed: /2021/12/13/refactorings-in-merge-conflicts.html
     title: Are Refactorings to Blame? An Empirical Study of Refactorings in Merge
       Conflicts
   name: Code Smells
 - entries:
   - date: '2021-10-14'
-    reviewed: /2021/2021-10-14-api-learning-processes.html
+    reviewed: /2021/10/14/api-learning-processes.html
     title: Exploring Programmers' API Learning Processes
   name: Cognition
 - entries:
   - date: '2011-07-18'
-    reviewed: /2011/2011-07-18-understanding-broadcast-based-peer-review-on-open-source-projects.html
+    reviewed: /2011/07/18/understanding-broadcast-based-peer-review-on-open-source-projects.html
     title: Understanding Broadcast Based Peer Review on Open Source Projects
   - date: '2011-09-13'
-    reviewed: /2011/2011-09-13-proactive-detection-of-collaboration-conflicts.html
+    reviewed: /2011/09/13/proactive-detection-of-collaboration-conflicts.html
     title: Proactive Detection of Collaboration Conflicts
   - date: '2012-03-01'
-    reviewed: /2012/2012-03-01-social-coding-in-github.html
+    reviewed: /2012/03/01/social-coding-in-github.html
     title: Social Coding in GitHub
   - date: '2012-05-24'
-    reviewed: /2012/2012-05-24-supporting-professional-spreadsheet-users-by-generating-leveled-dataflow-diagrams.html
+    reviewed: /2012/05/24/supporting-professional-spreadsheet-users-by-generating-leveled-dataflow-diagrams.html
     title: Supporting Professional Spreadsheet Users by Generating Leveled Dataflow
       Diagrams
   - date: '2014-04-25'
-    reviewed: /2014/2014-04-25-cassandra-proactive-conflict-minimization-through-optimized-task-scheduling.html
+    reviewed: /2014/04/25/cassandra-proactive-conflict-minimization-through-optimized-task-scheduling.html
     title: 'Cassandra: Proactive Conflict Minimization through Optimized Task Scheduling'
   - date: '2016-06-07'
-    reviewed: /2016/2016-06-07-pull-based-development.html
+    reviewed: /2016/06/07/pull-based-development.html
     title: Pull-Based Development
   - date: '2021-08-18'
-    reviewed: /2021/2021-08-18-how-agile-teams-make-self-assignment-work.html
+    reviewed: /2021/08/18/how-agile-teams-make-self-assignment-work.html
     title: How Agile Teams Make Self-Assignment Work
   - date: '2021-08-19'
-    reviewed: /2021/2021-08-19-toxic-code-snippets-on-stack-overflow.html
+    reviewed: /2021/08/19/toxic-code-snippets-on-stack-overflow.html
     title: Toxic Code Snippets on Stack Overflow
   - date: '2021-08-29'
-    reviewed: /2021/2021-08-29-beyond-the-code-itself.html
+    reviewed: /2021/08/29/beyond-the-code-itself.html
     title: 'Beyond the Code Itself: How Programmers Really Look at Pull Requests'
   name: Collaborative Development
 - entries:
   - date: '2021-09-06'
-    reviewed: /2021/2021-09-06-commenting-source-code.html
+    reviewed: /2021/09/06/commenting-source-code.html
     title: 'Commenting source code: is it worth it for small programming tasks?'
   name: Commenting
 - entries:
   - date: '2022-03-31'
-    reviewed: /2022/2022-03-31-textual-vs-graphic-design-descriptions-and-communication.html
+    reviewed: /2022/03/31/textual-vs-graphic-design-descriptions-and-communication.html
     title: The Effect of Textual vs. Graphical Software Design Descriptions on Software
       Design Communication
   name: Communication
 - entries:
   - date: '2021-09-27'
-    reviewed: /2021/2021-09-27-technology-facilitated-intimate-partner-abuse.html
+    reviewed: /2021/09/27/technology-facilitated-intimate-partner-abuse.html
     title: Technology-Facilitated Intimate Partner Abuse
   name: Computer Security
 - entries:
   - date: '2021-10-11'
-    reviewed: /2021/2021-10-11-a-critical-history-of-logo-and-constructionist-learning.html
+    reviewed: /2021/10/11/a-critical-history-of-logo-and-constructionist-learning.html
     title: A Critical History of Logo and Constructionist Learning
   name: Computers and Society
 - entries:
   - date: '2011-12-02'
-    reviewed: /2011/2011-12-02-the-fcs1-a-language-independent-assessment-of-cs1-knowledge.html
+    reviewed: /2011/12/02/the-fcs1-a-language-independent-assessment-of-cs1-knowledge.html
     title: 'The FCS1: A Language Independent Assessment of CS1 Knowledge'
   - date: '2011-12-04'
-    reviewed: /2011/2011-12-04-online-vs-face-to-face-pedagogical-code-reviews-an-empirical-comparison.html
+    reviewed: /2011/12/04/online-vs-face-to-face-pedagogical-code-reviews-an-empirical-comparison.html
     title: 'Online vs. Face-to-Face Pedagogical Code Reviews: An Empirical Comparison'
   - date: '2021-09-02'
-    reviewed: /2021/2021-09-02-compiler-error-messages-considered-unhelpful.html
+    reviewed: /2021/09/02/compiler-error-messages-considered-unhelpful.html
     title: Compiler Error Messages Considered Unhelpful
   - date: '2021-09-03'
-    reviewed: /2021/2021-09-03-two-papers-about-the-blackbox-project.html
+    reviewed: /2021/09/03/two-papers-about-the-blackbox-project.html
     title: Two Papers About the Blackbox Project
   - date: '2021-10-10'
-    reviewed: /2021/2021-10-10-mongodb-homework.html
+    reviewed: /2021/10/10/mongodb-homework.html
     title: Insights from Student Solutions to MongoDB Homework Problems
   - date: '2021-10-11'
-    reviewed: /2021/2021-10-11-a-critical-history-of-logo-and-constructionist-learning.html
+    reviewed: /2021/10/11/a-critical-history-of-logo-and-constructionist-learning.html
     title: A Critical History of Logo and Constructionist Learning
   name: Computing Education
 - entries:
   - date: '2022-04-18'
-    reviewed: /2022/2022-04-18-zeller-summary-icse-2022.html
+    reviewed: /2022/04/18/zeller-summary-icse-2022.html
     title: Andreas Zeller Summarizes ICSE 2022
   name: Conference
 - entries:
   - date: '2013-06-04'
-    reviewed: /2013/2013-06-04-first-impressions-of-msr.html
+    reviewed: /2013/06/04/first-impressions-of-msr.html
     title: First Impressions of MSR
   name: Conferences
 - entries:
   - date: '2016-06-09'
-    reviewed: /2016/2016-06-09-too-many-knobs.html
+    reviewed: /2016/06/09/too-many-knobs.html
     title: Too Many Knobs
   name: Configuration
 - entries:
   - date: '2021-10-18'
-    reviewed: /2021/2021-10-18-bad-practices-in-continuous-integration.html
+    reviewed: /2021/10/18/bad-practices-in-continuous-integration.html
     title: Bad Practices in Continuous Integration
   - date: '2021-10-19'
-    reviewed: /2021/2021-10-19-restarted-and-flaky-builds-on-travis-ci.html
+    reviewed: /2021/10/19/restarted-and-flaky-builds-on-travis-ci.html
     title: Restarted and Flaky Builds on Travis CI
   - date: '2022-03-21'
-    reviewed: /2022/2022-03-21-strategies-to-improve-continuous-integration.html
+    reviewed: /2022/03/21/strategies-to-improve-continuous-integration.html
     title: Strategies to Improve Continuous Integration
   - date: '2022-04-08'
-    reviewed: /2022/2022-04-08-continuous-integration-single-statement-bugs.html
+    reviewed: /2022/04/08/continuous-integration-single-statement-bugs.html
     title: How Effective is Continuous Integration in Indicating Single-Statement
       Bugs?
   name: Continuous Integration
 - entries:
   - date: '2021-09-19'
-    reviewed: /2021/2021-09-19-reading-answers-on-stack-overflow-not-enough.html
+    reviewed: /2021/09/19/reading-answers-on-stack-overflow-not-enough.html
     title: 'Reading Answers on Stack Overflow: Not Enough!'
   - date: '2021-10-26'
-    reviewed: /2021/2021-10-26-enriching-api-documentation-with-code-samples-and-usage-scenarios.html
+    reviewed: /2021/10/26/enriching-api-documentation-with-code-samples-and-usage-scenarios.html
     title: Enriching API Documentation with Code Samples and Usage Scenarios
   name: Crowdsourcing
 - entries:
   - date: '2021-10-17'
-    reviewed: /2021/2021-10-17-demystifying-error-messages-in-data-science-libraries.html
+    reviewed: /2021/10/17/demystifying-error-messages-in-data-science-libraries.html
     title: Demystifying 'Bad' Error Messages in Data Science Libraries
   - date: '2021-11-18'
-    reviewed: /2021/2021-11-18-googling-for-software-development.html
+    reviewed: /2021/11/18/googling-for-software-development.html
     title: 'Googling for Software Development: What Developers Search For and What
       They Find'
   - date: '2021-11-18'
-    reviewed: /2021/2021-11-18-synthesis-approach-for-data-science-api-refactoring.html
+    reviewed: /2021/11/18/synthesis-approach-for-data-science-api-refactoring.html
     title: 'SOAR: A Synthesis Approach for Data Science API Refactoring'
   name: Data Science
 - entries:
   - date: '2021-10-07'
-    reviewed: /2021/2021-10-07-finding-bugs-in-database-systems-via-query-partitioning.html
+    reviewed: /2021/10/07/finding-bugs-in-database-systems-via-query-partitioning.html
     title: Finding Bugs in Database Systems via Query Partitioning
   - date: '2021-10-10'
-    reviewed: /2021/2021-10-10-mongodb-homework.html
+    reviewed: /2021/10/10/mongodb-homework.html
     title: Insights from Student Solutions to MongoDB Homework Problems
   - date: '2021-10-26'
-    reviewed: /2021/2021-10-26-error-messages-in-relational-database-systems.html
+    reviewed: /2021/10/26/error-messages-in-relational-database-systems.html
     title: Error Messages in Relational Database Systems
   - date: '2022-04-11'
-    reviewed: /2022/2022-04-11-database-performance-antipatterns.html
+    reviewed: /2022/04/11/database-performance-antipatterns.html
     title: Database-Access Performance Antipatterns in Database-Backed Web Applications
   name: Databases
 - entries:
   - date: '2021-09-26'
-    reviewed: /2021/2021-09-26-two-papers-on-time.html
+    reviewed: /2021/09/26/two-papers-on-time.html
     title: Two Papers on Time
   name: Daylight Savings Time
 - entries:
   - date: '2016-06-05'
-    reviewed: /2016/2016-06-05-bigdebug.html
+    reviewed: /2016/06/05/bigdebug.html
     title: BigDebug
   - date: '2021-09-02'
-    reviewed: /2021/2021-09-02-compiler-error-messages-considered-unhelpful.html
+    reviewed: /2021/09/02/compiler-error-messages-considered-unhelpful.html
     title: Compiler Error Messages Considered Unhelpful
   - date: '2021-10-07'
-    reviewed: /2021/2021-10-07-finding-bugs-in-database-systems-via-query-partitioning.html
+    reviewed: /2021/10/07/finding-bugs-in-database-systems-via-query-partitioning.html
     title: Finding Bugs in Database Systems via Query Partitioning
   - date: '2021-10-31'
-    reviewed: /2021/2021-10-31-locating-faults-with-program-slicing.html
+    reviewed: /2021/10/31/locating-faults-with-program-slicing.html
     title: Locating Faults with Program Slicing
   name: Debugging
 - entries:
   - date: '2021-12-02'
-    reviewed: /2021/2021-12-02-deep-code-search.html
+    reviewed: /2021/12/02/deep-code-search.html
     title: Deep Code Search
   name: Deep Learning
 - entries:
   - date: '2011-06-30'
-    reviewed: /2011/2011-06-30-lets-go-to-the-whiteboard.html
+    reviewed: /2011/06/30/lets-go-to-the-whiteboard.html
     title: Let's Go to the Whiteboard
   - date: '2016-09-30'
-    reviewed: /2016/2016-09-30-rethinking-git.html
+    reviewed: /2016/09/30/rethinking-git.html
     title: Purposes, Concepts, Misfits, and a Redesign of Git
   - date: '2021-09-24'
-    reviewed: /2021/2021-09-24-how-software-designers-interact-with-sketches-at-the-whiteboard.html
+    reviewed: /2021/09/24/how-software-designers-interact-with-sketches-at-the-whiteboard.html
     title: How Software Designers Interact with Sketches at the Whiteboard
   - date: '2022-03-31'
-    reviewed: /2022/2022-03-31-textual-vs-graphic-design-descriptions-and-communication.html
+    reviewed: /2022/03/31/textual-vs-graphic-design-descriptions-and-communication.html
     title: The Effect of Textual vs. Graphical Software Design Descriptions on Software
       Design Communication
   name: Design
 - entries:
   - date: '2016-09-09'
-    reviewed: /2016/2016-09-09-replicating-design-patterns-experiment.html
+    reviewed: /2016/09/09/replicating-design-patterns-experiment.html
     title: A Multi-Site Joint Replication of a Design Patterns Experiment Using Moderator
       Variables to Generalize Across Contexts
   - date: '2021-08-26'
-    reviewed: /2021/2021-08-26-defect-taxonomy-for-infrastructure-as-code.html
+    reviewed: /2021/08/26/defect-taxonomy-for-infrastructure-as-code.html
     title: 'Gang of eight: a defect taxonomy for infrastructure as code scripts'
   name: Design Patterns
 - entries:
   - date: '2012-05-17'
-    reviewed: /2012/2012-05-17-do-faster-releases-improve-software-quality.html
+    reviewed: /2012/05/17/do-faster-releases-improve-software-quality.html
     title: Do Faster Releases Improve Software Quality?
   - date: '2021-08-09'
-    reviewed: /2021/2021-08-09-impact-of-rapid-release-cycles-on-integration-delay-of-fixed-issues.html
+    reviewed: /2021/08/09/impact-of-rapid-release-cycles-on-integration-delay-of-fixed-issues.html
     title: The Impact of Rapid Release Cycles on the Integration Delay of Fixed Issues
   - date: '2021-08-26'
-    reviewed: /2021/2021-08-26-defect-taxonomy-for-infrastructure-as-code.html
+    reviewed: /2021/08/26/defect-taxonomy-for-infrastructure-as-code.html
     title: 'Gang of eight: a defect taxonomy for infrastructure as code scripts'
   - date: '2021-11-08'
-    reviewed: /2021/2021-11-08-my-kingdom-for-a-dataset.html
+    reviewed: /2021/11/08/my-kingdom-for-a-dataset.html
     title: 'BugSwarm: Mining and Continuously Growing a Dataset of Reproducible Failures
       and Fixes'
   - date: '2021-11-23'
-    reviewed: /2021/2021-11-23-security-smells-in-infrastructure-as-code-scripts.html
+    reviewed: /2021/11/23/security-smells-in-infrastructure-as-code-scripts.html
     title: 'The Seven Sins: Security Smells in Infrastructure as Code Scripts'
   name: DevOps
 - entries:
   - date: '2021-10-30'
-    reviewed: /2021/2021-10-30-app-store-effects-on-software-engineering-practices.html
+    reviewed: /2021/10/30/app-store-effects-on-software-engineering-practices.html
     title: App Store Effects on Software Engineering Practices
   - date: '2021-11-18'
-    reviewed: /2021/2021-11-18-googling-for-software-development.html
+    reviewed: /2021/11/18/googling-for-software-development.html
     title: 'Googling for Software Development: What Developers Search For and What
       They Find'
   - date: '2021-11-26'
-    reviewed: /2021/2021-11-26-metric-based-comparisons-of-software-libraries.html
+    reviewed: /2021/11/26/metric-based-comparisons-of-software-libraries.html
     title: An Empirical Study of Metric-based Comparisons of Software Libraries
   name: Development Practices
 - entries:
   - date: '2021-09-26'
-    reviewed: /2021/2021-09-26-are-delayed-issues-harder-to-resolve.html
+    reviewed: /2021/09/26/are-delayed-issues-harder-to-resolve.html
     title: Are Delayed Issues Harder to Resolve?
   - date: '2022-02-28'
-    reviewed: /2022/2022-02-28-software-error-cause-effect.html
+    reviewed: /2022/02/28/software-error-cause-effect.html
     title: A case history analysis of software error cause-effect relationships
   name: Development Process
 - entries:
   - date: '2016-09-21'
-    reviewed: /2016/2016-09-21-paradise-unplugged.html
+    reviewed: /2016/09/21/paradise-unplugged.html
     title: Paradise Unplugged
   - date: '2021-10-16'
-    reviewed: /2021/2021-10-16-open-source-projects-in-baidu-alibaba-and-tencent.html
+    reviewed: /2021/10/16/open-source-projects-in-baidu-alibaba-and-tencent.html
     title: Open Source Projects in Baidu, Alibaba, and Tencent
   name: Diversity
 - entries:
   - date: '2011-08-23'
-    reviewed: /2011/2011-08-23-creating-and-evolving-developer-documentation.html
+    reviewed: /2011/08/23/creating-and-evolving-developer-documentation.html
     title: Creating and Evolving Developer Documentation
   - date: '2011-11-08'
-    reviewed: /2011/2011-11-08-a-field-study-of-api-learning-obstacles.html
+    reviewed: /2011/11/08/a-field-study-of-api-learning-obstacles.html
     title: A Field Study of API Learning Obstacles
   - date: '2021-08-23'
-    reviewed: /2021/2021-08-23-links-in-source-code-comments.html
+    reviewed: /2021/08/23/links-in-source-code-comments.html
     title: '9.6 Million Links in Source Code Comments: Purpose, Evolution, and Decay'
   - date: '2021-09-15'
-    reviewed: /2021/2021-09-15-categorizing-the-content-of-github-readme-files.html
+    reviewed: /2021/09/15/categorizing-the-content-of-github-readme-files.html
     title: Categorizing the Content of GitHub README Files
   - date: '2021-10-06'
-    reviewed: /2021/2021-10-06-software-documentation-issues-unveiled.html
+    reviewed: /2021/10/06/software-documentation-issues-unveiled.html
     title: Software Documentation Issues Unveiled
   - date: '2021-10-26'
-    reviewed: /2021/2021-10-26-enriching-api-documentation-with-code-samples-and-usage-scenarios.html
+    reviewed: /2021/10/26/enriching-api-documentation-with-code-samples-and-usage-scenarios.html
     title: Enriching API Documentation with Code Samples and Usage Scenarios
   - date: '2022-04-14'
-    reviewed: /2022/2022-04-14-generating-unit-tests-for-documentation.html
+    reviewed: /2022/04/14/generating-unit-tests-for-documentation.html
     title: Generating Unit Tests for Documentation
   name: Documentation
 - entries:
   - date: '2021-09-20'
-    reviewed: /2021/2021-09-20-program-comprehension-of-domain-specific-and-general-purpose-languages.html
+    reviewed: /2021/09/20/program-comprehension-of-domain-specific-and-general-purpose-languages.html
     title: Program comprehension of domain-specific and general-purpose languages
   name: Domain-Specific Languages
 - entries:
   - date: '2011-06-27'
-    reviewed: /2011/2011-06-27-theory-and-practice.html
+    reviewed: /2011/06/27/theory-and-practice.html
     title: Theory and Practice
   - date: '2011-07-11'
-    reviewed: /2011/2011-07-11-webinars-on-the-architecture-of-open-source-applications-july-13-and-20.html
+    reviewed: /2011/07/11/webinars-on-the-architecture-of-open-source-applications-july-13-and-20.html
     title: Webinars on the Architecture of Open Source Applications July 13 and 20
   - date: '2011-10-11'
-    reviewed: /2011/2011-10-11-the-irop-paper.html
+    reviewed: /2011/10/11/the-irop-paper.html
     title: The IROP paper
   - date: '2011-10-19'
-    reviewed: /2011/2011-10-19-announcement-empirical-software-engineering-at-american-scientist.html
+    reviewed: /2011/10/19/announcement-empirical-software-engineering-at-american-scientist.html
     title: 'Announcement: Empirical Software Engineering at American Scientist'
   - date: '2012-02-16'
-    reviewed: /2012/2012-02-16-teachers-matter-do-programmers.html
+    reviewed: /2012/02/16/teachers-matter-do-programmers.html
     title: "Teachers Matter\u2014Do Programmers?"
   - date: '2012-05-29'
-    reviewed: /2012/2012-05-29-open-access-research-at-nwit-and-everywhere.html
+    reviewed: /2012/05/29/open-access-research-at-nwit-and-everywhere.html
     title: Open Access Research at NWIT, and Everywhere
   - date: '2012-12-06'
-    reviewed: /2012/2012-12-06-two-solitudes-illustrated.html
+    reviewed: /2012/12/06/two-solitudes-illustrated.html
     title: Two Solitudes Illustrated
   - date: '2013-11-16'
-    reviewed: /2013/2013-11-16-a-modest-proposal.html
+    reviewed: /2013/11/16/a-modest-proposal.html
     title: A Modest Proposal
   - date: '2015-07-24'
-    reviewed: /2015/2015-07-24-hostage-situation.html
+    reviewed: /2015/07/24/hostage-situation.html
     title: A Hostage Situation
   - date: '2016-04-26'
-    reviewed: /2016/2016-04-26-extremely-angry.html
+    reviewed: /2016/04/26/extremely-angry.html
     title: Extremely Angry
   - date: '2016-06-09'
-    reviewed: /2016/2016-06-09-software-engineering-homunculus.html
+    reviewed: /2016/06/09/software-engineering-homunculus.html
     title: A Software Engineering Homunculus
   - date: '2016-09-09'
-    reviewed: /2016/2016-09-09-acm-open-access-policy.html
+    reviewed: /2016/09/09/acm-open-access-policy.html
     title: ACM Permits Authors to Post Open Access Copies of Their Own Work
   - date: '2016-09-09'
-    reviewed: /2016/2016-09-09-you-keep-using-that-word.html
+    reviewed: /2016/09/09/you-keep-using-that-word.html
     title: "You Keep Using That Word\u2026"
   - date: '2016-12-01'
-    reviewed: /2016/2016-12-01-hiatus.html
+    reviewed: /2016/12/01/hiatus.html
     title: Hiatus
   - date: '2021-08-08'
-    reviewed: /2021/2021-08-08-were-back.html
+    reviewed: /2021/08/08/were-back.html
     title: We're Back
   - date: '2021-08-10'
-    reviewed: /2021/2021-08-10-please-help-these-researchers.html
+    reviewed: /2021/08/10/please-help-these-researchers.html
     title: Please help these researchers learn more about what you do
   - date: '2021-10-20'
-    reviewed: /2021/2021-10-20-tech-worker-handbook.html
+    reviewed: /2021/10/20/tech-worker-handbook.html
     title: The Tech Worker Handbook
   - date: '2021-10-24'
-    reviewed: /2021/2021-10-24-whats-missing-from-the-missing-readme.html
+    reviewed: /2021/10/24/whats-missing-from-the-missing-readme.html
     title: What's Missing from 'The Missing README'
   - date: '2022-03-08'
-    reviewed: /2022/2022-03-08-consider-the-thermometer.html
+    reviewed: /2022/03/08/consider-the-thermometer.html
     title: Consider the Thermometer
   - date: '2022-05-14'
-    reviewed: /2022/2022-05-14-may-2022-to-do.html
+    reviewed: /2022/05/14/may-2022-to-do.html
     title: May 2022 To Do
   - date: '2022-05-20'
-    reviewed: /2022/2022-05-20-a-note-on-communication.html
+    reviewed: /2022/05/20/a-note-on-communication.html
     title: A Note on Communication
   name: Editorial
 - entries:
   - date: '2011-12-10'
-    reviewed: /2011/2011-12-10-a-decade-of-research-and-development-on-program-animation-the-jeliot-experience.html
+    reviewed: /2011/12/10/a-decade-of-research-and-development-on-program-animation-the-jeliot-experience.html
     title: 'A Decade of Research and Development on Program Animation: The Jeliot
       Experience'
   - date: '2012-09-01'
-    reviewed: /2012/2012-09-01-shaping-the-next-generation-or-the-exam-defines-the-course.html
+    reviewed: /2012/09/01/shaping-the-next-generation-or-the-exam-defines-the-course.html
     title: Shaping the Next Generation (or, the exam defines the course defines the
       discipline)
   - date: '2013-03-08'
-    reviewed: /2013/2013-03-08-halving-fail-rates-using-peer-instruction.html
+    reviewed: /2013/03/08/halving-fail-rates-using-peer-instruction.html
     title: Halving Fail Rates using Peer Instruction
   - date: '2016-09-16'
-    reviewed: /2016/2016-09-16-five-from-icer-2016.html
+    reviewed: /2016/09/16/five-from-icer-2016.html
     title: Five From ICER'16
   - date: '2016-10-01'
-    reviewed: /2016/2016-10-01-apex.html
+    reviewed: /2016/10/01/apex.html
     title: 'Apex: Automatic Programming Assignment Error Explanation'
   name: Education
 - entries:
   - date: '2021-09-05'
-    reviewed: /2021/2021-09-05-two-papers-on-errors.html
+    reviewed: /2021/09/05/two-papers-on-errors.html
     title: Two Papers on Errors
   name: Error Handling
 - entries:
   - date: '2021-09-20'
-    reviewed: /2021/2021-09-20-do-developers-read-compiler-error-messages.html
+    reviewed: /2021/09/20/do-developers-read-compiler-error-messages.html
     title: Do Developers Read Compiler Error Messages?
   - date: '2021-10-17'
-    reviewed: /2021/2021-10-17-demystifying-error-messages-in-data-science-libraries.html
+    reviewed: /2021/10/17/demystifying-error-messages-in-data-science-libraries.html
     title: Demystifying 'Bad' Error Messages in Data Science Libraries
   - date: '2021-10-26'
-    reviewed: /2021/2021-10-26-error-messages-in-relational-database-systems.html
+    reviewed: /2021/10/26/error-messages-in-relational-database-systems.html
     title: Error Messages in Relational Database Systems
   name: Error Messages
 - entries:
   - date: '2011-10-18'
-    reviewed: /2011/2011-10-18-the-impact-of-irrelevant-and-misleading-information.html
+    reviewed: /2011/10/18/the-impact-of-irrelevant-and-misleading-information.html
     title: The Impact of Irrelevant and Misleading Information on Software Development
       Effort Estimates
   - date: '2012-04-17'
-    reviewed: /2012/2012-04-17-ensemble-effort-estimation.html
+    reviewed: /2012/04/17/ensemble-effort-estimation.html
     title: Ensemble Effort Estimation
   - date: '2012-06-12'
-    reviewed: /2012/2012-06-12-software-development-estimation-biases-the-role-of-interdependence.html
+    reviewed: /2012/06/12/software-development-estimation-biases-the-role-of-interdependence.html
     title: 'Software Development Estimation Biases: The Role of Interdependence'
   - date: '2013-06-13'
-    reviewed: /2013/2013-06-13-formal-specifications-better-than-function-points-for-code-sizing.html
+    reviewed: /2013/06/13/formal-specifications-better-than-function-points-for-code-sizing.html
     title: Formal Specifications Better Than Function Points for Code Sizing
   name: Estimation
 - entries:
   - date: '2011-06-30'
-    reviewed: /2011/2011-06-30-specification-and-verification-the-spec-experience.html
+    reviewed: /2011/06/30/specification-and-verification-the-spec-experience.html
     title: 'Specification and Verification: The Spec# Experience'
   - date: '2011-07-18'
-    reviewed: /2011/2011-07-18-debugging-in-the-very-large.html
+    reviewed: /2011/07/18/debugging-in-the-very-large.html
     title: Debugging in the (Very) Large
   - date: '2011-08-09'
-    reviewed: /2011/2011-08-09-an-empirical-study-of-build-maintenance-effort.html
+    reviewed: /2011/08/09/an-empirical-study-of-build-maintenance-effort.html
     title: An Empirical Study of Build Maintenance Effort
   name: Experience Reports
 - entries:
   - date: '2013-04-16'
-    reviewed: /2013/2013-04-16-a-characteristic-study-on-failures-of-production-distributed-data-parallel-programs.html
+    reviewed: /2013/04/16/a-characteristic-study-on-failures-of-production-distributed-data-parallel-programs.html
     title: A Characteristic Study on Failures of Production Distributed Data-Parallel
       Programs
   - date: '2014-10-09'
-    reviewed: /2014/2014-10-09-simple-testing-can-prevent-most-critical-failures.html
+    reviewed: /2014/10/09/simple-testing-can-prevent-most-critical-failures.html
     title: 'Simple Testing Can Prevent Most Critical Failures: An Analysis of Production
       Failures in Distributed Data-Intensive Systems'
   - date: '2021-08-10'
-    reviewed: /2021/2021-08-10-developers-fix-their-own-simple-bugs-differently-from-other-developers.html
+    reviewed: /2021/08/10/developers-fix-their-own-simple-bugs-differently-from-other-developers.html
     title: 'Mea culpa: How developers fix their own simple bugs differently from other
       developers'
   - date: '2021-09-11'
-    reviewed: /2021/2021-09-11-common-bug-fix-patterns.html
+    reviewed: /2021/09/11/common-bug-fix-patterns.html
     title: 'Common Bug-Fix Patterns: A Large-Scale Observational Study'
   - date: '2021-09-16'
-    reviewed: /2021/2021-09-16-exception-handling-practices-and-post-release-defects.html
+    reviewed: /2021/09/16/exception-handling-practices-and-post-release-defects.html
     title: Studying the relationship between exception handling practices and post-release
       defects
   - date: '2021-09-23'
-    reviewed: /2021/2021-09-23-the-secret-life-of-bugs.html
+    reviewed: /2021/09/23/the-secret-life-of-bugs.html
     title: The Secret Life of Bugs
   - date: '2021-09-26'
-    reviewed: /2021/2021-09-26-are-delayed-issues-harder-to-resolve.html
+    reviewed: /2021/09/26/are-delayed-issues-harder-to-resolve.html
     title: Are Delayed Issues Harder to Resolve?
   name: Faults
 - entries:
   - date: '2011-06-30'
-    reviewed: /2011/2011-06-30-specification-and-verification-the-spec-experience.html
+    reviewed: /2011/06/30/specification-and-verification-the-spec-experience.html
     title: 'Specification and Verification: The Spec# Experience'
   name: Formal Methods
 - entries:
   - date: '2021-10-01'
-    reviewed: /2021/2021-10-01-the-relevance-of-classic-fuzz-testing.html
+    reviewed: /2021/10/01/the-relevance-of-classic-fuzz-testing.html
     title: The Relevance of Classic Fuzz Testing
   - date: '2022-02-21'
-    reviewed: /2022/2022-02-21-antifuzz.html
+    reviewed: /2022/02/21/antifuzz.html
     title: 'AntiFuzz: Impeding Fuzzing Audits of Binary Executables'
   name: Fuzz Testing
 - entries:
   - date: '2021-10-03'
-    reviewed: /2021/2021-10-03-how-gamification-affects-software-developers.html
+    reviewed: /2021/10/03/how-gamification-affects-software-developers.html
     title: How Gamification Affects Software Developers
   name: Gamification
 - entries:
   - date: '2021-09-09'
-    reviewed: /2021/2021-09-09-organizing-for-openness.html
+    reviewed: /2021/09/09/organizing-for-openness.html
     title: 'Organizing for openness: six models for developer involvement in hybrid
       OSS projects'
   name: Governance
 - entries:
   - date: '2016-10-02'
-    reviewed: /2016/2016-10-02-grid-revisited.html
+    reviewed: /2016/10/02/grid-revisited.html
     title: Revisiting the Anatomy and Physiology of the Grid
   name: Grid Computing
 - entries:
   - date: '2021-10-08'
-    reviewed: /2021/2021-10-08-do-hackathon-projects-change-the-world.html
+    reviewed: /2021/10/08/do-hackathon-projects-change-the-world.html
     title: Do Hackathon Projects Change the World?
   name: Hackathons
 - entries:
   - date: '2021-09-13'
-    reviewed: /2021/2021-09-13-whats-wrong-with-tech-hiring.html
+    reviewed: /2021/09/13/whats-wrong-with-tech-hiring.html
     title: What's Wrong With Tech Hiring
   name: Hiring
 - entries:
   - date: '2021-11-23'
-    reviewed: /2021/2021-11-23-security-smells-in-infrastructure-as-code-scripts.html
+    reviewed: /2021/11/23/security-smells-in-infrastructure-as-code-scripts.html
     title: 'The Seven Sins: Security Smells in Infrastructure as Code Scripts'
   name: Infrastucture as code
 - entries:
   - date: '2022-04-13'
-    reviewed: /2022/2022-04-13-do-you-really-code.html
+    reviewed: /2022/04/13/do-you-really-code.html
     title: Do You Really Code?
   name: Interviewing
 - entries:
   - date: '2021-10-04'
-    reviewed: /2021/2021-10-04-the-daily-life-of-software-developers.html
+    reviewed: /2021/10/04/the-daily-life-of-software-developers.html
     title: The Daily Life of Software Developers
   name: Job Satisfaction
 - entries:
   - date: '2021-08-19'
-    reviewed: /2021/2021-08-19-toxic-code-snippets-on-stack-overflow.html
+    reviewed: /2021/08/19/toxic-code-snippets-on-stack-overflow.html
     title: Toxic Code Snippets on Stack Overflow
   - date: '2021-09-04'
-    reviewed: /2021/2021-09-04-do-software-developers-understand-open-source-licenses.html
+    reviewed: /2021/09/04/do-software-developers-understand-open-source-licenses.html
     title: Do Software Developers Understand Open Source Licenses?
   name: Licensing
 - entries:
   - date: '2022-04-30'
-    reviewed: /2022/2022-04-30-that-went-well.html
+    reviewed: /2022/04/30/that-went-well.html
     title: That Went Well
   - date: '2022-05-18'
-    reviewed: /2022/2022-05-18-bacchelli-code-review.html
+    reviewed: /2022/05/18/bacchelli-code-review.html
     title: Alberto Bacchelli on Code Review
   - date: '2022-05-19'
-    reviewed: /2022/2022-05-19-hermans-naming.html
+    reviewed: /2022/05/19/hermans-naming.html
     title: Felienne Hermans on Naming Things
   - date: '2022-05-20'
-    reviewed: /2022/2022-05-20-baltes-new-guinea.html
+    reviewed: /2022/05/20/baltes-new-guinea.html
     title: Sebastian Baltes on Software Engineering in Papua New Guinea
   - date: '2022-05-23'
-    reviewed: /2022/2022-05-23-galster-waste.html
+    reviewed: /2022/05/23/galster-waste.html
     title: Matthias Galster on Waste in Software Engineering
   - date: '2022-05-23'
-    reviewed: /2022/2022-05-23-wessel-github-actions.html
+    reviewed: /2022/05/23/wessel-github-actions.html
     title: Mairieli Wessel on GitHub Actions
   - date: '2022-05-24'
-    reviewed: /2022/2022-05-24-aniche-testing.html
+    reviewed: /2022/05/24/aniche-testing.html
     title: "Maur\xEDcio Aniche on Testing and Code Coverage"
   - date: '2022-05-24'
-    reviewed: /2022/2022-05-24-fucci-tdd.html
+    reviewed: /2022/05/24/fucci-tdd.html
     title: Davide Fucci on Test-Driven Development
   - date: '2022-05-24'
-    reviewed: /2022/2022-05-24-petre-expertise.html
+    reviewed: /2022/05/24/petre-expertise.html
     title: Marian Petre on Expert Thinking About Errors
   - date: '2022-05-25'
-    reviewed: /2022/2022-05-25-brown-mind-learns.html
+    reviewed: /2022/05/25/brown-mind-learns.html
     title: Neil Brown on How Your Mind Learns to Program
   - date: '2022-05-25'
-    reviewed: /2022/2022-05-25-rigger-sql-testing.html
+    reviewed: /2022/05/25/rigger-sql-testing.html
     title: Manuel Rigger on Writing Tests
   - date: '2022-05-25'
-    reviewed: /2022/2022-05-25-treude-error-messages.html
+    reviewed: /2022/05/25/treude-error-messages.html
     title: Christoph Treude on Error Messages
   - date: '2022-05-25'
-    reviewed: /2022/2022-05-25-zaidman-testing.html
+    reviewed: /2022/05/25/zaidman-testing.html
     title: Andy Zaidman on Testing and Testers
   - date: '2022-05-26'
-    reviewed: /2022/2022-05-26-hicks-learning.html
+    reviewed: /2022/05/26/hicks-learning.html
     title: Cat Hicks on Fostering a Learning Culture
   - date: '2022-05-26'
-    reviewed: /2022/2022-05-26-nagappan-bias.html
+    reviewed: /2022/05/26/nagappan-bias.html
     title: Mei Nagappan on Bias in Evaluating Code Contributions
   - date: '2022-05-26'
-    reviewed: /2022/2022-05-26-rodeghero-onboarding.html
+    reviewed: /2022/05/26/rodeghero-onboarding.html
     title: Paige Rodeghero on Onboarding
   - date: '2022-05-27'
-    reviewed: /2022/2022-05-27-blincoe-destructive-criticism.html
+    reviewed: /2022/05/27/blincoe-destructive-criticism.html
     title: Kelly Blincoe on Destructive Criticism
   - date: '2022-05-27'
-    reviewed: /2022/2022-05-27-johnson-matthews-causal-testing.html
+    reviewed: /2022/05/27/johnson-matthews-causal-testing.html
     title: Brittany Johnson-Matthews on Causal Testing
   - date: '2022-05-27'
-    reviewed: /2022/2022-05-27-mcintosh-mining.html
+    reviewed: /2022/05/27/mcintosh-mining.html
     title: Shane McIntosh on Mining Software Build Systems
   - date: '2022-05-30'
-    reviewed: /2022/2022-05-30-ford-robinson-online-community.html
+    reviewed: /2022/05/30/ford-robinson-online-community.html
     title: Denae Ford Robinson on Online Community Safety in Software Engineering
   - date: '2022-05-30'
-    reviewed: /2022/2022-05-30-steinmacher-estimates.html
+    reviewed: /2022/05/30/steinmacher-estimates.html
     title: Igor Steinmacher on Padding Software Estimates
   - date: '2022-05-31'
-    reviewed: /2022/2022-05-31-stolee-search.html
+    reviewed: /2022/05/31/stolee-search.html
     title: Katie Stolee on Searching
   - date: '2022-05-31'
-    reviewed: /2022/2022-05-31-storey-margaret-anne-productivity.html
+    reviewed: /2022/05/31/storey-margaret-anne-productivity.html
     title: Margaret-Anne Storey on Productivity
   - date: '2022-09-26'
-    reviewed: /2022/2022-09-26-our-second-live-event.html
+    reviewed: /2022/09/26/our-second-live-event.html
     title: Our Second Live Event
   - date: '2022-11-01'
-    reviewed: /2022/2022-11-01-brown-recommend-tools.html
+    reviewed: /2022/11/01/brown-recommend-tools.html
     title: Chris Brown on Recommending Tools for Finding and Fixing Software Errors
   - date: '2022-11-01'
-    reviewed: /2022/2022-11-01-hicks-learning.html
+    reviewed: /2022/11/01/hicks-learning.html
     title: Cat Hicks on Learning in the Dark
   - date: '2022-11-01'
-    reviewed: /2022/2022-11-01-khomh-finding-bugs-in-deep-learning.html
+    reviewed: /2022/11/01/khomh-finding-bugs-in-deep-learning.html
     title: Foutse Khomh on Finding Bugs in Deep Learning
   - date: '2022-11-01'
-    reviewed: /2022/2022-11-01-mkaouer-software-refactoring.html
+    reviewed: /2022/11/01/mkaouer-software-refactoring.html
     title: Mohamed Wiem Mkaouer on A Large-scale Survey of Software Refactoring
   - date: '2022-11-01'
-    reviewed: /2022/2022-11-01-nadi-automatically-avoiding-api-misuse.html
+    reviewed: /2022/11/01/nadi-automatically-avoiding-api-misuse.html
     title: Sarah Nadi on Automatically Avoiding API Misuse
   - date: '2022-11-01'
-    reviewed: /2022/2022-11-01-santos-code-smells-in-automatically-generated-code.html
+    reviewed: /2022/11/01/santos-code-smells-in-automatically-generated-code.html
     title: Joanna Cecilia da Silva Santos on Code Smells in Automatically Generated
       Code
   - date: '2022-11-01'
-    reviewed: /2022/2022-11-01-smith-tools-communicate-debugging-strategies.html
+    reviewed: /2022/11/01/smith-tools-communicate-debugging-strategies.html
     title: Justin Smith on How Automated Tools Can Communicate Effective Strategies
       for Fixing Bugs
   - date: '2022-11-01'
-    reviewed: /2022/2022-11-01-zhang-testing-debugging-deep-learning.html
+    reviewed: /2022/11/01/zhang-testing-debugging-deep-learning.html
     title: Tianyi Zhang on Testing and Debugging Deep Learning
   - date: '2022-12-04'
-    reviewed: /2022/2022-12-04-strange-loop-translations.html
+    reviewed: /2022/12/04/strange-loop-translations.html
     title: Spanish Translations of Strange Loop Presentations
   name: Lightning Talks
 - entries:
   - date: '2021-10-15'
-    reviewed: /2021/2021-10-15-authorship-attribution-of-source-code.html
+    reviewed: /2021/10/15/authorship-attribution-of-source-code.html
     title: Authorship Attribution of Source Code
   - date: '2022-02-22'
-    reviewed: /2022/2022-02-22-where-comment.html
+    reviewed: /2022/02/22/where-comment.html
     title: Where should I comment my code? A dataset and model for predicting locations
       that need comments
   name: Machine Learning
 - entries:
   - date: '2016-04-26'
-    reviewed: /2016/2016-04-26-maintaining-java-orm.html
+    reviewed: /2016/04/26/maintaining-java-orm.html
     title: Maintaining Java ORM Code
   - date: '2021-11-16'
-    reviewed: /2021/2021-11-16-using-so-comment-edit-pairs.html
+    reviewed: /2021/11/16/using-so-comment-edit-pairs.html
     title: On Using Stack Overflow Comment-Edit Pairs to Recommend Code Maintenance
       Changes
   - date: '2021-11-18'
-    reviewed: /2021/2021-11-18-synthesis-approach-for-data-science-api-refactoring.html
+    reviewed: /2021/11/18/synthesis-approach-for-data-science-api-refactoring.html
     title: 'SOAR: A Synthesis Approach for Data Science API Refactoring'
   - date: '2022-02-22'
-    reviewed: /2022/2022-02-22-where-comment.html
+    reviewed: /2022/02/22/where-comment.html
     title: Where should I comment my code? A dataset and model for predicting locations
       that need comments
   - date: '2022-03-09'
-    reviewed: /2022/2022-03-09-rest-api-deprecation.html
+    reviewed: /2022/03/09/rest-api-deprecation.html
     title: A First Look at the Deprecation of RESTful APIs
   name: Maintenance
 - entries:
   - date: '2011-07-07'
-    reviewed: /2011/2011-07-07-the-confounding-effect-of-class-size-on-the-validity-of-object-oriented-metrics.html
+    reviewed: /2011/07/07/the-confounding-effect-of-class-size-on-the-validity-of-object-oriented-metrics.html
     title: The Confounding Effect of Class Size on the Validity of Object-Oriented
       Metrics
   - date: '2011-10-22'
-    reviewed: /2011/2011-10-22-three-results-many-definitions.html
+    reviewed: /2011/10/22/three-results-many-definitions.html
     title: Three Results, Many Definitions
   - date: '2011-11-28'
-    reviewed: /2011/2011-11-28-codermetrics.html
+    reviewed: /2011/11/28/codermetrics.html
     title: Codermetrics?
   - date: '2013-02-12'
-    reviewed: /2013/2013-02-12-experimental-assessment-of-software-metrics-using-automated-refactoring.html
+    reviewed: /2013/02/12/experimental-assessment-of-software-metrics-using-automated-refactoring.html
     title: 'Experimental Assessment of Software Metrics Using Automated Refactoring '
   - date: '2013-07-07'
-    reviewed: /2013/2013-07-07-how-and-why-process-metrics-are-better.html
+    reviewed: /2013/07/07/how-and-why-process-metrics-are-better.html
     title: How, and Why, Process Metrics Are Better
   - date: '2021-08-21'
-    reviewed: /2021/2021-08-21-metrics-and-team-leaders-perceptions-of-productivity.html
+    reviewed: /2021/08/21/metrics-and-team-leaders-perceptions-of-productivity.html
     title: 'Code and commit metrics of developer productivity: a study on team leaders
       perceptions'
   - date: '2021-11-26'
-    reviewed: /2021/2021-11-26-metric-based-comparisons-of-software-libraries.html
+    reviewed: /2021/11/26/metric-based-comparisons-of-software-libraries.html
     title: An Empirical Study of Metric-based Comparisons of Software Libraries
   name: Metrics
 - entries:
   - date: '2011-08-17'
-    reviewed: /2011/2011-08-17-three-empirical-evaluations-of-uml.html
+    reviewed: /2011/08/17/three-empirical-evaluations-of-uml.html
     title: Three Empirical Evaluations of UML
   name: Modeling
 - entries:
   - date: '2011-08-24'
-    reviewed: /2011/2011-08-24-what-michael-feathers-thinks-you-should-read.html
+    reviewed: /2011/08/24/what-michael-feathers-thinks-you-should-read.html
     title: What Michael Feathers Thinks You Should Read
   - date: '2011-10-11'
-    reviewed: /2011/2011-10-11-the-irop-paper.html
+    reviewed: /2011/10/11/the-irop-paper.html
     title: The IROP paper
   - date: '2011-12-13'
-    reviewed: /2011/2011-12-13-research-in-progress-how-mozilla-builds-software.html
+    reviewed: /2011/12/13/research-in-progress-how-mozilla-builds-software.html
     title: 'Research In Progress: How Mozilla Builds Software'
   - date: '2016-08-03'
-    reviewed: /2016/2016-08-03-perspectives.html
+    reviewed: /2016/08/03/perspectives.html
     title: Perspectives on Data Science for Software Engineering
   - date: '2022-11-20'
-    reviewed: /2022/2022-11-20-serebrenik-lecture.html
+    reviewed: /2022/11/20/serebrenik-lecture.html
     title: An Important Lecture by Alexander Serebrenik
   name: Noticed
 - entries:
   - date: '2016-06-09'
-    reviewed: /2016/2016-06-09-novice-programming-mistakes.html
+    reviewed: /2016/06/09/novice-programming-mistakes.html
     title: Novice Programming Mistakes
   - date: '2016-08-14'
-    reviewed: /2016/2016-08-14-novice-smells.html
+    reviewed: /2016/08/14/novice-smells.html
     title: Do Code Smells Hamper Novice Programming?
   - date: '2021-10-10'
-    reviewed: /2021/2021-10-10-mongodb-homework.html
+    reviewed: /2021/10/10/mongodb-homework.html
     title: Insights from Student Solutions to MongoDB Homework Problems
   name: Novices
 - entries:
   - date: '2021-09-04'
-    reviewed: /2021/2021-09-04-do-software-developers-understand-open-source-licenses.html
+    reviewed: /2021/09/04/do-software-developers-understand-open-source-licenses.html
     title: Do Software Developers Understand Open Source Licenses?
   - date: '2021-09-09'
-    reviewed: /2021/2021-09-09-organizing-for-openness.html
+    reviewed: /2021/09/09/organizing-for-openness.html
     title: 'Organizing for openness: six models for developer involvement in hybrid
       OSS projects'
   - date: '2021-09-18'
-    reviewed: /2021/2021-09-18-code-of-conduct-in-open-source-projects.html
+    reviewed: /2021/09/18/code-of-conduct-in-open-source-projects.html
     title: Code of Conduct in Open Source Projects
   - date: '2021-10-13'
-    reviewed: /2021/2021-10-13-an-empirical-study-of-donations-in-open-source.html
+    reviewed: /2021/10/13/an-empirical-study-of-donations-in-open-source.html
     title: An Empirical Study of Donations in Open Source
   - date: '2021-10-16'
-    reviewed: /2021/2021-10-16-open-source-projects-in-baidu-alibaba-and-tencent.html
+    reviewed: /2021/10/16/open-source-projects-in-baidu-alibaba-and-tencent.html
     title: Open Source Projects in Baidu, Alibaba, and Tencent
   - date: '2022-03-11'
-    reviewed: /2022/2022-03-11-single-statement-bugs-in-python-projects.html
+    reviewed: /2022/03/11/single-statement-bugs-in-python-projects.html
     title: Characterizing Single-Statement Bugs in Popular Open-Source Python Projects
   - date: '2022-04-04'
-    reviewed: /2022/2022-04-04-contributor-prediction-for-github.html
+    reviewed: /2022/04/04/contributor-prediction-for-github.html
     title: A Large Scale Study of Long-Time Contributor Prediction for GitHub Projects
   - date: '2022-04-18'
-    reviewed: /2022/2022-04-18-company-contributions-to-open-source.html
+    reviewed: /2022/04/18/company-contributions-to-open-source.html
     title: Company Contributions to Open Source
   - date: '2022-04-20'
-    reviewed: /2022/2022-04-20-open-source-exception-handling-testing.html
+    reviewed: /2022/04/20/open-source-exception-handling-testing.html
     title: Assessing Exception Handling Testing Practices in Open-Source Libraries
   - date: '2022-04-21'
-    reviewed: /2022/2022-04-21-decline-of-sourceforge.html
+    reviewed: /2022/04/21/decline-of-sourceforge.html
     title: A Cautionary Tale from the Decline of SourceForge
   - date: '2022-04-23'
-    reviewed: /2022/2022-04-23-closed-to-open-source.html
+    reviewed: /2022/04/23/closed-to-open-source.html
     title: Moving From Closed to Open Source
   - date: '2022-04-25'
-    reviewed: /2022/2022-04-25-rationale-for-open-source-development-decisions.html
+    reviewed: /2022/04/25/rationale-for-open-source-development-decisions.html
     title: Extracting Rationale for Open Source Development Decisions
   name: Open Source
 - entries:
   - date: '2021-09-23'
-    reviewed: /2021/2021-09-23-two-studies-of-software-evolution.html
+    reviewed: /2021/09/23/two-studies-of-software-evolution.html
     title: Two Studies of Software Evolution
   name: Operating Systems
 - entries:
   - date: '2011-06-27'
-    reviewed: /2011/2011-06-27-organizational-volatility-and-its-effects-on-software.html
+    reviewed: /2011/06/27/organizational-volatility-and-its-effects-on-software.html
     title: Organizational Volatility and Its Effects on Software
   - date: '2011-07-04'
-    reviewed: /2011/2011-07-04-requirements-prioritization-in-agile-projects-insights-from-a-case-study.html
+    reviewed: /2011/07/04/requirements-prioritization-in-agile-projects-insights-from-a-case-study.html
     title: 'Requirements Prioritization in Agile Projects: Insights from a Case Study'
   - date: '2011-08-02'
-    reviewed: /2011/2011-08-02-a-teamwork-model-for-understanding-an-agile-team.html
+    reviewed: /2011/08/02/a-teamwork-model-for-understanding-an-agile-team.html
     title: A Teamwork Model for Understanding an Agile Team
   - date: '2011-09-06'
-    reviewed: /2011/2011-09-06-does-adding-manpower-also-affect-quality.html
+    reviewed: /2011/09/06/does-adding-manpower-also-affect-quality.html
     title: Does Adding Manpower Also Affect Quality?
   - date: '2011-10-28'
-    reviewed: /2011/2011-10-28-software-requirements-change-taxonomy-evaluation-by-case-study.html
+    reviewed: /2011/10/28/software-requirements-change-taxonomy-evaluation-by-case-study.html
     title: 'Software Requirements Change Taxonomy: Evaluation by Case Study'
   - date: '2012-01-05'
-    reviewed: /2012/2012-01-05-the-effects-of-stand-up-and-sit-down-meeting-formats-on-meeting-outcomes.html
+    reviewed: /2012/01/05/the-effects-of-stand-up-and-sit-down-meeting-formats-on-meeting-outcomes.html
     title: The Effects of Stand-Up and Sit-Down Meeting Formats on Meeting Outcomes
   - date: '2012-08-23'
-    reviewed: /2012/2012-08-23-using-topic-modelling-to-understand-requirements.html
+    reviewed: /2012/08/23/using-topic-modelling-to-understand-requirements.html
     title: Using topic modelling to understand requirements
   - date: '2022-03-16'
-    reviewed: /2022/2022-03-16-resume-driven-development.html
+    reviewed: /2022/03/16/resume-driven-development.html
     title: Resume-Driven Development
   name: Organizational Behavior
 - entries:
   - date: '2021-09-22'
-    reviewed: /2021/2021-09-22-taxonomy-of-package-management.html
+    reviewed: /2021/09/22/taxonomy-of-package-management.html
     title: Taxonomy of Package Management in Programming Languages and Operating Systems
   name: Package Management
 - entries:
   - date: '2021-09-17'
-    reviewed: /2021/2021-09-17-why-do-developers-use-trivial-packages.html
+    reviewed: /2021/09/17/why-do-developers-use-trivial-packages.html
     title: Why Do Developers Use Trivial Packages?
   name: Packaging
 - entries:
   - date: '2011-07-11'
-    reviewed: /2011/2011-07-11-the-social-dynamics-of-pair-programming.html
+    reviewed: /2011/07/11/the-social-dynamics-of-pair-programming.html
     title: The social dynamics of pair programming
   - date: '2011-07-26'
-    reviewed: /2011/2011-07-26-effects-of-personality-on-pair-programming.html
+    reviewed: /2011/07/26/effects-of-personality-on-pair-programming.html
     title: Effects of Personality on Pair Programming
   - date: '2011-10-11'
-    reviewed: /2011/2011-10-11-experiences-of-using-pair-programming-in-an-agile-project.html
+    reviewed: /2011/10/11/experiences-of-using-pair-programming-in-an-agile-project.html
     title: Experiences of Using Pair Programming in an Agile Project
   - date: '2012-02-23'
-    reviewed: /2012/2012-02-23-looking-at-the-same-thing-in-pair-programming-tasks.html
+    reviewed: /2012/02/23/looking-at-the-same-thing-in-pair-programming-tasks.html
     title: Looking at the Same Thing in Pair Programming Tasks
   name: Pair Programming
 - entries:
   - date: '2011-08-24'
-    reviewed: /2011/2011-08-24-is-transactional-programming-actually-easier.html
+    reviewed: /2011/08/24/is-transactional-programming-actually-easier.html
     title: Is Transactional Programming Actually Easier?
   - date: '2012-06-18'
-    reviewed: /2012/2012-06-18-combining-functional-and-imperative-programming-for-multicore-software-an-empirical-study-evaluating-scala-and-java.html
+    reviewed: /2012/06/18/combining-functional-and-imperative-programming-for-multicore-software-an-empirical-study-evaluating-scala-and-java.html
     title: 'Combining Functional and Imperative Programming for Multicore Software:
       An Empirical Study Evaluating Scala and Java'
   - date: '2016-06-12'
-    reviewed: /2016/2016-06-12-empirical-parellelism.html
+    reviewed: /2016/06/12/empirical-parellelism.html
     title: Parallelism in Open Source Projects
   name: Parallelism
 - entries:
   - date: '2022-03-30'
-    reviewed: /2022/2022-03-30-number-parsing-at-a-gigabyte-a-second.html
+    reviewed: /2022/03/30/number-parsing-at-a-gigabyte-a-second.html
     title: Number Parsing at a Gigabyte a Second
   - date: '2022-04-11'
-    reviewed: /2022/2022-04-11-database-performance-antipatterns.html
+    reviewed: /2022/04/11/database-performance-antipatterns.html
     title: Database-Access Performance Antipatterns in Database-Backed Web Applications
   name: Performance
 - entries:
   - date: '2021-08-28'
-    reviewed: /2021/2021-08-28-privacy-threats-in-intimate-relationships.html
+    reviewed: /2021/08/28/privacy-threats-in-intimate-relationships.html
     title: Privacy Threats in Intimate Relationships
   - date: '2022-03-07'
-    reviewed: /2022/2022-03-07-new-me.html
+    reviewed: /2022/03/07/new-me.html
     title: 'New Me: Understanding Expert and Non-Expert Perceptions and Usage of the
       Tor Anonymity Network'
   name: Privacy
 - entries:
   - date: '2015-08-23'
-    reviewed: /2015/2015-08-23-perception-productivity.html
+    reviewed: /2015/08/23/perception-productivity.html
     title: Software Developers' Perceptions of Productivity
   - date: '2021-08-09'
-    reviewed: /2021/2021-08-09-task-interruption-in-software-development-projects.html
+    reviewed: /2021/08/09/task-interruption-in-software-development-projects.html
     title: Task Interruption in Software Development Projects
   - date: '2021-08-21'
-    reviewed: /2021/2021-08-21-metrics-and-team-leaders-perceptions-of-productivity.html
+    reviewed: /2021/08/21/metrics-and-team-leaders-perceptions-of-productivity.html
     title: 'Code and commit metrics of developer productivity: a study on team leaders
       perceptions'
   - date: '2021-09-19'
-    reviewed: /2021/2021-09-19-impact-of-task-switching-and-work-interruptions.html
+    reviewed: /2021/09/19/impact-of-task-switching-and-work-interruptions.html
     title: Impact of task switching and work interruptions on software development
       processes
   - date: '2021-09-26'
-    reviewed: /2021/2021-09-26-two-papers-on-time.html
+    reviewed: /2021/09/26/two-papers-on-time.html
     title: Two Papers on Time
   - date: '2021-10-21'
-    reviewed: /2021/2021-10-21-the-impact-of-sleep-deprivation.html
+    reviewed: /2021/10/21/the-impact-of-sleep-deprivation.html
     title: The Impact of Sleep Deprivation
   name: Productivity
 - entries:
   - date: '2021-10-20'
-    reviewed: /2021/2021-10-20-tech-worker-handbook.html
+    reviewed: /2021/10/20/tech-worker-handbook.html
     title: The Tech Worker Handbook
   - date: '2021-10-24'
-    reviewed: /2021/2021-10-24-whats-missing-from-the-missing-readme.html
+    reviewed: /2021/10/24/whats-missing-from-the-missing-readme.html
     title: What's Missing from 'The Missing README'
   - date: '2022-03-02'
-    reviewed: /2022/2022-03-02-ethics-in-decision-making.html
+    reviewed: /2022/03/02/ethics-in-decision-making.html
     title: Does ACM's code of ethics change ethical decision making in software development?
   name: Professional Ethics
 - entries:
   - date: '2016-06-09'
-    reviewed: /2016/2016-06-09-hidden-truths.html
+    reviewed: /2016/06/09/hidden-truths.html
     title: Hidden Truths in Dead Software Paths
   - date: '2016-10-01'
-    reviewed: /2016/2016-10-01-apex.html
+    reviewed: /2016/10/01/apex.html
     title: 'Apex: Automatic Programming Assignment Error Explanation'
   - date: '2022-02-28'
-    reviewed: /2022/2022-02-28-software-error-cause-effect.html
+    reviewed: /2022/02/28/software-error-cause-effect.html
     title: A case history analysis of software error cause-effect relationships
   name: Program Analysis
 - entries:
   - date: '2015-02-13'
-    reviewed: /2015/2015-02-13-on-comprehension-of-program-comprehension.html
+    reviewed: /2015/02/13/on-comprehension-of-program-comprehension.html
     title: On the Comprehension of Program Comprehension
   - date: '2021-09-06'
-    reviewed: /2021/2021-09-06-commenting-source-code.html
+    reviewed: /2021/09/06/commenting-source-code.html
     title: 'Commenting source code: is it worth it for small programming tasks?'
   - date: '2021-09-20'
-    reviewed: /2021/2021-09-20-program-comprehension-of-domain-specific-and-general-purpose-languages.html
+    reviewed: /2021/09/20/program-comprehension-of-domain-specific-and-general-purpose-languages.html
     title: Program comprehension of domain-specific and general-purpose languages
   - date: '2021-09-21'
-    reviewed: /2021/2021-09-21-syntax-predicates-idioms-what-really-affects-code-complexity.html
+    reviewed: /2021/09/21/syntax-predicates-idioms-what-really-affects-code-complexity.html
     title: "Syntax, Predicates, Idioms\u2014What Really Affects Code Complexity?"
   name: Program Comprehension
 - entries:
   - date: '2021-10-31'
-    reviewed: /2021/2021-10-31-locating-faults-with-program-slicing.html
+    reviewed: /2021/10/31/locating-faults-with-program-slicing.html
     title: Locating Faults with Program Slicing
   name: Program Slicing
 - entries:
   - date: '2021-09-07'
-    reviewed: /2021/2021-09-07-characterizing-software-engineering-work-with-personas.html
+    reviewed: /2021/09/07/characterizing-software-engineering-work-with-personas.html
     title: Characterizing Software Engineering Work with Personas Based on Knowledge
       Worker Actions
   name: Programmers
 - entries:
   - date: '2011-08-24'
-    reviewed: /2011/2011-08-24-is-transactional-programming-actually-easier.html
+    reviewed: /2011/08/24/is-transactional-programming-actually-easier.html
     title: Is Transactional Programming Actually Easier?
   - date: '2011-10-24'
-    reviewed: /2011/2011-10-24-an-empirical-comparison-of-the-accuracy-rates-of-novices-using-the-quorum-perl-and-randomo-programming-languages.html
+    reviewed: /2011/10/24/an-empirical-comparison-of-the-accuracy-rates-of-novices-using-the-quorum-perl-and-randomo-programming-languages.html
     title: An Empirical Comparison of the Accuracy Rates of Novices using the Quorum,
       Perl, and Randomo Programming Languages
   - date: '2011-10-27'
-    reviewed: /2011/2011-10-27-author-response-quorum-vs-perl-vs-randomo-novice-accuracy-rates.html
+    reviewed: /2011/10/27/author-response-quorum-vs-perl-vs-randomo-novice-accuracy-rates.html
     title: 'Author Response: Quorum vs Perl vs Randomo Novice Accuracy Rates'
   - date: '2012-06-18'
-    reviewed: /2012/2012-06-18-combining-functional-and-imperative-programming-for-multicore-software-an-empirical-study-evaluating-scala-and-java.html
+    reviewed: /2012/06/18/combining-functional-and-imperative-programming-for-multicore-software-an-empirical-study-evaluating-scala-and-java.html
     title: 'Combining Functional and Imperative Programming for Multicore Software:
       An Empirical Study Evaluating Scala and Java'
   - date: '2012-10-25'
-    reviewed: /2012/2012-10-25-an-experiment-about-static-and-dynamic-type-systems.html
+    reviewed: /2012/10/25/an-experiment-about-static-and-dynamic-type-systems.html
     title: An Experiment About Static and Dynamic Type Systems
   - date: '2014-01-29'
-    reviewed: /2014/2014-01-29-stefik-siebert-syntax.html
+    reviewed: /2014/01/29/stefik-siebert-syntax.html
     title: An Empirical Investigation into Programming Language Syntax
   - date: '2016-04-26'
-    reviewed: /2016/2016-04-26-java-exception-handling.html
+    reviewed: /2016/04/26/java-exception-handling.html
     title: Java Exception Handling
   - date: '2016-06-09'
-    reviewed: /2016/2016-06-09-goto-in-c.html
+    reviewed: /2016/06/09/goto-in-c.html
     title: Goto in C
   - date: '2016-06-12'
-    reviewed: /2016/2016-06-12-error-message-frequency.html
+    reviewed: /2016/06/12/error-message-frequency.html
     title: Frequency Distribution of Error Message
   - date: '2016-06-13'
-    reviewed: /2016/2016-06-13-polymorphism-in-python.html
+    reviewed: /2016/06/13/polymorphism-in-python.html
     title: Polymorphism in Python
   - date: '2016-06-15'
-    reviewed: /2016/2016-06-15-stefik-interview.html
+    reviewed: /2016/06/15/stefik-interview.html
     title: An Interview with Andreas Stefik
   - date: '2021-08-09'
-    reviewed: /2021/2021-08-09-abbreviated-vs-full-names.html
+    reviewed: /2021/08/09/abbreviated-vs-full-names.html
     title: Abbreviated vs. Full-Word Identifier Names
   - date: '2021-08-17'
-    reviewed: /2021/2021-08-17-python-language-features.html
+    reviewed: /2021/08/17/python-language-features.html
     title: Two Papers on Python Language Features
   - date: '2021-08-27'
-    reviewed: /2021/2021-08-27-errors-in-sql-queries.html
+    reviewed: /2021/08/27/errors-in-sql-queries.html
     title: Errors in SQL Queries
   - date: '2021-09-08'
-    reviewed: /2021/2021-09-08-to-type-or-not-to-type.html
+    reviewed: /2021/09/08/to-type-or-not-to-type.html
     title: 'To Type or Not to Type: Quantifying Detectable Bugs in JavaScript'
   - date: '2021-09-21'
-    reviewed: /2021/2021-09-21-syntax-predicates-idioms-what-really-affects-code-complexity.html
+    reviewed: /2021/09/21/syntax-predicates-idioms-what-really-affects-code-complexity.html
     title: "Syntax, Predicates, Idioms\u2014What Really Affects Code Complexity?"
   - date: '2021-09-23'
-    reviewed: /2021/2021-09-23-two-studies-of-software-evolution.html
+    reviewed: /2021/09/23/two-studies-of-software-evolution.html
     title: Two Studies of Software Evolution
   - date: '2022-03-18'
-    reviewed: /2022/2022-03-18-python-3-types-in-the-wild.html
+    reviewed: /2022/03/18/python-3-types-in-the-wild.html
     title: Python 3 Types in the Wild
   - date: '2022-03-23'
-    reviewed: /2022/2022-03-23-designing-types-for-r-empirically.html
+    reviewed: /2022/03/23/designing-types-for-r-empirically.html
     title: Designing Types for R Empirically
   name: Programming Languages
 - entries:
   - date: '2021-10-01'
-    reviewed: /2021/2021-10-01-python-coding-style-compliance-on-stack-overflow.html
+    reviewed: /2021/10/01/python-coding-style-compliance-on-stack-overflow.html
     title: Python Coding Style Compliance on Stack Overflow
   name: Programming Style
 - entries:
   - date: '2016-10-02'
-    reviewed: /2016/2016-10-02-filtering-spreadsheet-data.html
+    reviewed: /2016/10/02/filtering-spreadsheet-data.html
     title: 'FIDEX: Filtering Spreadsheet Data using Examples'
   name: Programming by Example
 - entries:
   - date: '2014-04-25'
-    reviewed: /2014/2014-04-25-cassandra-proactive-conflict-minimization-through-optimized-task-scheduling.html
+    reviewed: /2014/04/25/cassandra-proactive-conflict-minimization-through-optimized-task-scheduling.html
     title: 'Cassandra: Proactive Conflict Minimization through Optimized Task Scheduling'
   - date: '2016-04-26'
-    reviewed: /2016/2016-04-26-game-postmortems.html
+    reviewed: /2016/04/26/game-postmortems.html
     title: Game Postmortems
   - date: '2021-08-09'
-    reviewed: /2021/2021-08-09-impact-of-rapid-release-cycles-on-integration-delay-of-fixed-issues.html
+    reviewed: /2021/08/09/impact-of-rapid-release-cycles-on-integration-delay-of-fixed-issues.html
     title: The Impact of Rapid Release Cycles on the Integration Delay of Fixed Issues
   - date: '2021-09-30'
-    reviewed: /2021/2021-09-30-quantifying-and-mitigating-turnover-induced-knowledge-loss.html
+    reviewed: /2021/09/30/quantifying-and-mitigating-turnover-induced-knowledge-loss.html
     title: Quantifying and mitigating turnover-induced knowledge loss
   name: Project Management
 - entries:
   - date: '2011-07-26'
-    reviewed: /2011/2011-07-26-effects-of-personality-on-pair-programming.html
+    reviewed: /2011/07/26/effects-of-personality-on-pair-programming.html
     title: Effects of Personality on Pair Programming
   - date: '2012-04-26'
-    reviewed: /2012/2012-04-26-on-the-naturalness-of-software.html
+    reviewed: /2012/04/26/on-the-naturalness-of-software.html
     title: On the Naturalness of Software
   - date: '2014-03-31'
-    reviewed: /2014/2014-03-31-happy-sw-devs-solve-problems-better.html
+    reviewed: /2014/03/31/happy-sw-devs-solve-problems-better.html
     title: 'Happy Software Developers Solve Problems Better: Psychological Measurements
       in Empirical Software Engineering'
   - date: '2021-10-02'
-    reviewed: /2021/2021-10-02-programmers-brain.html
+    reviewed: /2021/10/02/programmers-brain.html
     title: The Programmer's Brain
   - date: '2022-03-02'
-    reviewed: /2022/2022-03-02-ethics-in-decision-making.html
+    reviewed: /2022/03/02/ethics-in-decision-making.html
     title: Does ACM's code of ethics change ethical decision making in software development?
   name: Psychology of Programming
 - entries:
   - date: '2021-08-17'
-    reviewed: /2021/2021-08-17-python-language-features.html
+    reviewed: /2021/08/17/python-language-features.html
     title: Two Papers on Python Language Features
   - date: '2022-03-11'
-    reviewed: /2022/2022-03-11-single-statement-bugs-in-python-projects.html
+    reviewed: /2022/03/11/single-statement-bugs-in-python-projects.html
     title: Characterizing Single-Statement Bugs in Popular Open-Source Python Projects
   name: Python
 - entries:
   - date: '2011-06-27'
-    reviewed: /2011/2011-06-27-organizational-volatility-and-its-effects-on-software.html
+    reviewed: /2011/06/27/organizational-volatility-and-its-effects-on-software.html
     title: Organizational Volatility and Its Effects on Software
   - date: '2011-06-27'
-    reviewed: /2011/2011-06-27-ownership-experience-and-defects.html
+    reviewed: /2011/06/27/ownership-experience-and-defects.html
     title: Ownership, Experience, and Defects
   - date: '2011-09-06'
-    reviewed: /2011/2011-09-06-does-adding-manpower-also-affect-quality.html
+    reviewed: /2011/09/06/does-adding-manpower-also-affect-quality.html
     title: Does Adding Manpower Also Affect Quality?
   - date: '2012-01-12'
-    reviewed: /2012/2012-01-12-got-issues-do-new-features-and-code-improvements-affect-defects.html
+    reviewed: /2012/01/12/got-issues-do-new-features-and-code-improvements-affect-defects.html
     title: Got Issues? Do New Features and Code Improvements Affect Defects?
   - date: '2021-09-16'
-    reviewed: /2021/2021-09-16-exception-handling-practices-and-post-release-defects.html
+    reviewed: /2021/09/16/exception-handling-practices-and-post-release-defects.html
     title: Studying the relationship between exception handling practices and post-release
       defects
   - date: '2021-09-28'
-    reviewed: /2021/2021-09-28-javascript-quality-assurance-tools-and-usage-outcomes.html
+    reviewed: /2021/09/28/javascript-quality-assurance-tools-and-usage-outcomes.html
     title: JavaScript Quality Assurance Tools and Usage Outcomes
   - date: '2021-10-01'
-    reviewed: /2021/2021-10-01-the-relevance-of-classic-fuzz-testing.html
+    reviewed: /2021/10/01/the-relevance-of-classic-fuzz-testing.html
     title: The Relevance of Classic Fuzz Testing
   - date: '2022-04-06'
-    reviewed: /2022/2022-04-06-adoption-of-javascript-linters.html
+    reviewed: /2022/04/06/adoption-of-javascript-linters.html
     title: 'The Adoption of JavaScript Linters in Practice: A Case Study on ESLint'
   name: Quality
 - entries:
   - date: '2012-08-22'
-    reviewed: /2012/2012-08-22-ten-questions-for-empirical-researchers.html
+    reviewed: /2012/08/22/ten-questions-for-empirical-researchers.html
     title: Ten Questions for Researchers
   - date: '2012-12-12'
-    reviewed: /2012/2012-12-12-empirical-evidence-for-the-value-of-version-control.html
+    reviewed: /2012/12/12/empirical-evidence-for-the-value-of-version-control.html
     title: Empirical Evidence for the Value of Version Control?
   - date: '2012-12-30'
-    reviewed: /2012/2012-12-30-why-we-need-evidence.html
+    reviewed: /2012/12/30/why-we-need-evidence.html
     title: Why We Need Evidence
   name: Questions
 - entries:
   - date: '2021-10-05'
-    reviewed: /2021/2021-10-05-three-papers-on-readability.html
+    reviewed: /2021/10/05/three-papers-on-readability.html
     title: Three Papers on Readability
   name: Readability
 - entries:
   - date: '2011-06-27'
-    reviewed: /2011/2011-06-27-refactoring-pipe-like-mashups-for-end-user-programmers.html
+    reviewed: /2011/06/27/refactoring-pipe-like-mashups-for-end-user-programmers.html
     title: Refactoring Pipe-like Mashups for End-user Programmers
   - date: '2012-07-04'
-    reviewed: /2012/2012-07-04-programmer-information-needs-after-memory-failure.html
+    reviewed: /2012/07/04/programmer-information-needs-after-memory-failure.html
     title: Programmer Information Needs After Memory Failure
   - date: '2013-02-12'
-    reviewed: /2013/2013-02-12-experimental-assessment-of-software-metrics-using-automated-refactoring.html
+    reviewed: /2013/02/12/experimental-assessment-of-software-metrics-using-automated-refactoring.html
     title: 'Experimental Assessment of Software Metrics Using Automated Refactoring '
   - date: '2013-09-20'
-    reviewed: /2013/2013-09-20-locating-and-applying-systematic-edits.html
+    reviewed: /2013/09/20/locating-and-applying-systematic-edits.html
     title: 'LASE: Locating and Applying Systematic Edits by Learning from Examples'
   - date: '2022-03-04'
-    reviewed: /2022/2022-03-04-software-refactoring.html
+    reviewed: /2022/03/04/software-refactoring.html
     title: A Large-scale Survey of Software Refactoring
   name: Refactoring
 - entries:
   - date: '2021-08-30'
-    reviewed: /2021/2021-08-30-two-studies-of-regular-expressions.html
+    reviewed: /2021/08/30/two-studies-of-regular-expressions.html
     title: Two Studies of Regular Expressions
   name: Regular Expressions
 - entries:
   - date: '2022-03-28'
-    reviewed: /2022/2022-03-28-remote-onboarding.html
+    reviewed: /2022/03/28/remote-onboarding.html
     title: Remote Onboarding During a Pandemic
   name: Remote Work
 - entries:
   - date: '2012-05-18'
-    reviewed: /2012/2012-05-18-willingness-to-share-research-data-is-related-to-the-strength-of-the-evidence-and-the-quality-of-reporting-of-statistical-results.html
+    reviewed: /2012/05/18/willingness-to-share-research-data-is-related-to-the-strength-of-the-evidence-and-the-quality-of-reporting-of-statistical-results.html
     title: Willingness to Share Research Data Is Related to the Strength of the Evidence
       and the Quality of Reporting of Statistical Results
   name: Reproducibility
 - entries:
   - date: '2011-07-04'
-    reviewed: /2011/2011-07-04-requirements-prioritization-in-agile-projects-insights-from-a-case-study.html
+    reviewed: /2011/07/04/requirements-prioritization-in-agile-projects-insights-from-a-case-study.html
     title: 'Requirements Prioritization in Agile Projects: Insights from a Case Study'
   - date: '2011-10-28'
-    reviewed: /2011/2011-10-28-software-requirements-change-taxonomy-evaluation-by-case-study.html
+    reviewed: /2011/10/28/software-requirements-change-taxonomy-evaluation-by-case-study.html
     title: 'Software Requirements Change Taxonomy: Evaluation by Case Study'
   - date: '2012-08-23'
-    reviewed: /2012/2012-08-23-using-topic-modelling-to-understand-requirements.html
+    reviewed: /2012/08/23/using-topic-modelling-to-understand-requirements.html
     title: Using topic modelling to understand requirements
   - date: '2012-11-06'
-    reviewed: /2012/2012-11-06-how-do-software-architects-consider-non-functional-requirements.html
+    reviewed: /2012/11/06/how-do-software-architects-consider-non-functional-requirements.html
     title: 'How do Software Architects Consider Non-functional Requirements: An Exploratory
       Study'
   name: Requirements
 - entries:
   - date: '2011-09-22'
-    reviewed: /2011/2011-09-22-variability-and-reproducibility-in-software-engineering-a-study-of-four-companies-that-developed-the-same-system.html
+    reviewed: /2011/09/22/variability-and-reproducibility-in-software-engineering-a-study-of-four-companies-that-developed-the-same-system.html
     title: 'Variability and Reproducibility in Software Engineering: A Study of Four
       Companies that Developed the Same System'
   - date: '2013-06-13'
-    reviewed: /2013/2013-06-13-its-not-a-bug-its-a-feature-how-misclassification-impacts-bug-prediction.html
+    reviewed: /2013/06/13/its-not-a-bug-its-a-feature-how-misclassification-impacts-bug-prediction.html
     title: 'It''s Not a Bug, It''s a Feature: How Misclassification Impacts Bug Prediction'
   - date: '2016-06-09'
-    reviewed: /2016/2016-06-09-perceived-relevance.html
+    reviewed: /2016/06/09/perceived-relevance.html
     title: Perceived Relevance
   - date: '2016-09-08'
-    reviewed: /2016/2016-09-08-ethnography-in-ese.html
+    reviewed: /2016/09/08/ethnography-in-ese.html
     title: The Role of Ethnographic Studies in Empirical Software Engineering
   - date: '2021-09-23'
-    reviewed: /2021/2021-09-23-the-secret-life-of-bugs.html
+    reviewed: /2021/09/23/the-secret-life-of-bugs.html
     title: The Secret Life of Bugs
   - date: '2021-10-02'
-    reviewed: /2021/2021-10-02-reproducibility-and-credibility-in-empirical-software-engineering.html
+    reviewed: /2021/10/02/reproducibility-and-credibility-in-empirical-software-engineering.html
     title: Reproducibility and Credibility in Empirical Software Engineering
   - date: '2022-04-13'
-    reviewed: /2022/2022-04-13-do-you-really-code.html
+    reviewed: /2022/04/13/do-you-really-code.html
     title: Do You Really Code?
   name: Research Methods
 - entries:
   - date: '2022-08-30'
-    reviewed: /2022/2022-08-30-software-engineering-research-questions.html
+    reviewed: /2022/08/30/software-engineering-research-questions.html
     title: Software Engineering Research Questions
   - date: '2022-10-15'
-    reviewed: /2022/2022-10-15-one-more-question.html
+    reviewed: /2022/10/15/one-more-question.html
     title: One More question
   name: Research Topics
 - entries:
   - date: '2012-04-10'
-    reviewed: /2012/2012-04-10-component-reuse-vs-snippet-remixing.html
+    reviewed: /2012/04/10/component-reuse-vs-snippet-remixing.html
     title: Component Reuse vs. Snippet Remixing
   - date: '2012-05-02'
-    reviewed: /2012/2012-05-02-example-embedding.html
+    reviewed: /2012/05/02/example-embedding.html
     title: Example Embedding
   name: Reuse
 - entries:
   - date: '2021-08-27'
-    reviewed: /2021/2021-08-27-errors-in-sql-queries.html
+    reviewed: /2021/08/27/errors-in-sql-queries.html
     title: Errors in SQL Queries
   name: SQL
 - entries:
   - date: '2012-01-17'
-    reviewed: /2012/2012-01-17-a-survey-of-the-practice-of-computational-science.html
+    reviewed: /2012/01/17/a-survey-of-the-practice-of-computational-science.html
     title: A Survey of the Practice of Computational Science
   - date: '2021-09-25'
-    reviewed: /2021/2021-09-25-how-reliable-is-scientific-software.html
+    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
     title: How Reliable is Scientific Software?
   name: Scientific Computing
 - entries:
   - date: '2016-04-26'
-    reviewed: /2016/2016-04-26-finding-security-bugs.html
+    reviewed: /2016/04/26/finding-security-bugs.html
     title: Finding Security Bugs
   - date: '2021-08-28'
-    reviewed: /2021/2021-08-28-privacy-threats-in-intimate-relationships.html
+    reviewed: /2021/08/28/privacy-threats-in-intimate-relationships.html
     title: Privacy Threats in Intimate Relationships
   - date: '2022-02-21'
-    reviewed: /2022/2022-02-21-antifuzz.html
+    reviewed: /2022/02/21/antifuzz.html
     title: 'AntiFuzz: Impeding Fuzzing Audits of Binary Executables'
   - date: '2022-03-13'
-    reviewed: /2022/2022-03-13-obfuscated-strings-and-privacy.html
+    reviewed: /2022/03/13/obfuscated-strings-and-privacy.html
     title: Obfuscated Strings Threatening Your Privacy
   name: Security
 - entries:
   - date: '2021-11-23'
-    reviewed: /2021/2021-11-23-security-smells-in-infrastructure-as-code-scripts.html
+    reviewed: /2021/11/23/security-smells-in-infrastructure-as-code-scripts.html
     title: 'The Seven Sins: Security Smells in Infrastructure as Code Scripts'
   name: Security Smell
 - entries:
   - date: '2021-10-21'
-    reviewed: /2021/2021-10-21-the-impact-of-sleep-deprivation.html
+    reviewed: /2021/10/21/the-impact-of-sleep-deprivation.html
     title: The Impact of Sleep Deprivation
   name: Sleep Deprivation
 - entries:
   - date: '2021-10-20'
-    reviewed: /2021/2021-10-20-tech-worker-handbook.html
+    reviewed: /2021/10/20/tech-worker-handbook.html
     title: The Tech Worker Handbook
   - date: '2021-10-24'
-    reviewed: /2021/2021-10-24-whats-missing-from-the-missing-readme.html
+    reviewed: /2021/10/24/whats-missing-from-the-missing-readme.html
     title: What's Missing from 'The Missing README'
   - date: '2022-03-02'
-    reviewed: /2022/2022-03-02-ethics-in-decision-making.html
+    reviewed: /2022/03/02/ethics-in-decision-making.html
     title: Does ACM's code of ethics change ethical decision making in software development?
   name: Social Responsibility
 - entries:
   - date: '2022-03-14'
-    reviewed: /2022/2022-03-14-architecture-anti-patterns.html
+    reviewed: /2022/03/14/architecture-anti-patterns.html
     title: 'Architecture Anti-Patterns: Automatically Detectable Violations of Design
       Principles'
   name: Software Architecture
 - entries:
   - date: '2021-09-23'
-    reviewed: /2021/2021-09-23-two-studies-of-software-evolution.html
+    reviewed: /2021/09/23/two-studies-of-software-evolution.html
     title: Two Studies of Software Evolution
   - date: '2021-09-27'
-    reviewed: /2021/2021-09-27-the-evolution-of-javascript-code-in-the-wild.html
+    reviewed: /2021/09/27/the-evolution-of-javascript-code-in-the-wild.html
     title: The Evolution of JavaScript Code in the Wild
   - date: '2021-11-16'
-    reviewed: /2021/2021-11-16-software-history-under-the-lens.html
+    reviewed: /2021/11/16/software-history-under-the-lens.html
     title: 'Software History under the Lens: A Study on Why and How Developers Examine
       It'
   - date: '2022-03-25'
-    reviewed: /2022/2022-03-25-breaking-changes.html
+    reviewed: /2022/03/25/breaking-changes.html
     title: When and How to Make Breaking Changes
   name: Software Evolution
 - entries:
   - date: '2011-12-21'
-    reviewed: /2011/2011-12-21-factors-that-affect-software-systems-development-project-outcomes.html
+    reviewed: /2011/12/21/factors-that-affect-software-systems-development-project-outcomes.html
     title: Factors that Affect Software Systems Development Project Outcomes
   - date: '2021-08-11'
-    reviewed: /2021/2021-08-11-cheating-death-survival-analysis-of-python-projects.html
+    reviewed: /2021/08/11/cheating-death-survival-analysis-of-python-projects.html
     title: 'Cheating Death: A Statistical Survival Analysis of Publicly Available
       Python Projects'
   - date: '2021-08-29'
-    reviewed: /2021/2021-08-29-software-development-waste.html
+    reviewed: /2021/08/29/software-development-waste.html
     title: Software Development Waste
   - date: '2021-09-10'
-    reviewed: /2021/2021-09-10-why-software-projects-need-heroes.html
+    reviewed: /2021/09/10/why-software-projects-need-heroes.html
     title: 'Why Software Projects need Heroes: Lessons Learned from 1100+ Projects'
   name: Software Projects
 - entries:
   - date: '2022-04-08'
-    reviewed: /2022/2022-04-08-continuous-integration-single-statement-bugs.html
+    reviewed: /2022/04/08/continuous-integration-single-statement-bugs.html
     title: How Effective is Continuous Integration in Indicating Single-Statement
       Bugs?
   name: Software Quality
 - entries:
   - date: '2021-09-25'
-    reviewed: /2021/2021-09-25-how-reliable-is-scientific-software.html
+    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
     title: How Reliable is Scientific Software?
   name: Software Reliability
 - entries:
   - date: '2021-08-23'
-    reviewed: /2021/2021-08-23-links-in-source-code-comments.html
+    reviewed: /2021/08/23/links-in-source-code-comments.html
     title: '9.6 Million Links in Source Code Comments: Purpose, Evolution, and Decay'
   name: Source Code
 - entries:
   - date: '2012-05-24'
-    reviewed: /2012/2012-05-24-supporting-professional-spreadsheet-users-by-generating-leveled-dataflow-diagrams.html
+    reviewed: /2012/05/24/supporting-professional-spreadsheet-users-by-generating-leveled-dataflow-diagrams.html
     title: Supporting Professional Spreadsheet Users by Generating Leveled Dataflow
       Diagrams
   - date: '2016-10-02'
-    reviewed: /2016/2016-10-02-filtering-spreadsheet-data.html
+    reviewed: /2016/10/02/filtering-spreadsheet-data.html
     title: 'FIDEX: Filtering Spreadsheet Data using Examples'
   name: Spreadsheets
 - entries:
   - date: '2021-09-19'
-    reviewed: /2021/2021-09-19-reading-answers-on-stack-overflow-not-enough.html
+    reviewed: /2021/09/19/reading-answers-on-stack-overflow-not-enough.html
     title: 'Reading Answers on Stack Overflow: Not Enough!'
   - date: '2021-11-16'
-    reviewed: /2021/2021-11-16-using-so-comment-edit-pairs.html
+    reviewed: /2021/11/16/using-so-comment-edit-pairs.html
     title: On Using Stack Overflow Comment-Edit Pairs to Recommend Code Maintenance
       Changes
   - date: '2022-03-08'
-    reviewed: /2022/2022-03-08-obsolete-answers-on-stack-overflow.html
+    reviewed: /2022/03/08/obsolete-answers-on-stack-overflow.html
     title: An Empirical Study of Obsolete Answers on Stack Overflow
   - date: '2022-09-19'
-    reviewed: /2022/2022-09-19-developer-git-knowledge.html
+    reviewed: /2022/09/19/developer-git-knowledge.html
     title: Do Developers Really Know How to Use Git Commands?
   name: Stack Overflow
 - entries:
   - date: '2022-04-06'
-    reviewed: /2022/2022-04-06-adoption-of-javascript-linters.html
+    reviewed: /2022/04/06/adoption-of-javascript-linters.html
     title: 'The Adoption of JavaScript Linters in Practice: A Case Study on ESLint'
   name: Static Analysis
 - entries:
   - date: '2022-11-14'
-    reviewed: /2022/2022-11-14-pluralsight-developer-success-survey.html
+    reviewed: /2022/11/14/pluralsight-developer-success-survey.html
     title: Pluralsight Developer Success Survey
   name: Survey
 - entries:
   - date: '2021-10-13'
-    reviewed: /2021/2021-10-13-an-empirical-study-of-donations-in-open-source.html
+    reviewed: /2021/10/13/an-empirical-study-of-donations-in-open-source.html
     title: An Empirical Study of Donations in Open Source
   name: Sustainability
 - entries:
   - date: '2016-10-01'
-    reviewed: /2016/2016-10-01-apex.html
+    reviewed: /2016/10/01/apex.html
     title: 'Apex: Automatic Programming Assignment Error Explanation'
   name: Symbolic Execution
 - entries:
   - date: '2011-08-31'
-    reviewed: /2011/2011-08-31-comparing-the-defect-reduction-benefits-of-code-inspection-and-test-driven-development.html
+    reviewed: /2011/08/31/comparing-the-defect-reduction-benefits-of-code-inspection-and-test-driven-development.html
     title: Comparing the Defect Reduction Benefits of Code Inspection and Test-Driven
       Development
   - date: '2012-01-25'
-    reviewed: /2012/2012-01-25-realizing-quality-improvement-through-test-driven-development.html
+    reviewed: /2012/01/25/realizing-quality-improvement-through-test-driven-development.html
     title: Realizing quality improvement through test driven development
   - date: '2016-06-08'
-    reviewed: /2016/2016-06-08-when-and-why-test.html
+    reviewed: /2016/06/08/when-and-why-test.html
     title: When, How, and Why Developers (Do Not) Test in Their IDEs
   - date: '2016-10-05'
-    reviewed: /2016/2016-10-05-test-driven-development.html
+    reviewed: /2016/10/05/test-driven-development.html
     title: Test-Driven Development
   - date: '2021-09-12'
-    reviewed: /2021/2021-09-12-developer-testing-in-the-ide.html
+    reviewed: /2021/09/12/developer-testing-in-the-ide.html
     title: 'Developer Testing in the IDE: Patterns, Beliefs, and Behavior'
   - date: '2021-09-16'
-    reviewed: /2021/2021-09-16-analyzing-the-effects-of-tdd-in-github.html
+    reviewed: /2021/09/16/analyzing-the-effects-of-tdd-in-github.html
     title: Analyzing the effects of test driven development in GitHub
   name: Test-Driven Development
 - entries:
   - date: '2011-08-31'
-    reviewed: /2011/2011-08-31-comparing-the-defect-reduction-benefits-of-code-inspection-and-test-driven-development.html
+    reviewed: /2011/08/31/comparing-the-defect-reduction-benefits-of-code-inspection-and-test-driven-development.html
     title: Comparing the Defect Reduction Benefits of Code Inspection and Test-Driven
       Development
   - date: '2012-01-25'
-    reviewed: /2012/2012-01-25-realizing-quality-improvement-through-test-driven-development.html
+    reviewed: /2012/01/25/realizing-quality-improvement-through-test-driven-development.html
     title: Realizing quality improvement through test driven development
   - date: '2016-06-08'
-    reviewed: /2016/2016-06-08-when-and-why-test.html
+    reviewed: /2016/06/08/when-and-why-test.html
     title: When, How, and Why Developers (Do Not) Test in Their IDEs
   - date: '2016-10-05'
-    reviewed: /2016/2016-10-05-test-driven-development.html
+    reviewed: /2016/10/05/test-driven-development.html
     title: Test-Driven Development
   - date: '2021-09-01'
-    reviewed: /2021/2021-09-01-what-code-is-deliberately-excluded-from-test-coverage-and-why.html
+    reviewed: /2021/09/01/what-code-is-deliberately-excluded-from-test-coverage-and-why.html
     title: What Code is Deliberately Excluded From Test Coverage, and Why?
   - date: '2021-09-12'
-    reviewed: /2021/2021-09-12-developer-testing-in-the-ide.html
+    reviewed: /2021/09/12/developer-testing-in-the-ide.html
     title: 'Developer Testing in the IDE: Patterns, Beliefs, and Behavior'
   - date: '2021-09-16'
-    reviewed: /2021/2021-09-16-analyzing-the-effects-of-tdd-in-github.html
+    reviewed: /2021/09/16/analyzing-the-effects-of-tdd-in-github.html
     title: Analyzing the effects of test driven development in GitHub
   - date: '2021-09-24'
-    reviewed: /2021/2021-09-24-coverage-is-not-strongly-correlated-with-test-suite-effectiveness.html
+    reviewed: /2021/09/24/coverage-is-not-strongly-correlated-with-test-suite-effectiveness.html
     title: Coverage Is Not Strongly Correlated with Test Suite Effectiveness
   - date: '2022-04-20'
-    reviewed: /2022/2022-04-20-open-source-exception-handling-testing.html
+    reviewed: /2022/04/20/open-source-exception-handling-testing.html
     title: Assessing Exception Handling Testing Practices in Open-Source Libraries
   name: Testing
 - entries:
   - date: '2011-10-22'
-    reviewed: /2011/2011-10-22-three-empirical-studies-from-esecfse11.html
+    reviewed: /2011/10/22/three-empirical-studies-from-esecfse11.html
     title: Three Empirical Studies From ESEC/FSE'11
   - date: '2011-12-10'
-    reviewed: /2011/2011-12-10-a-decade-of-research-and-development-on-program-animation-the-jeliot-experience.html
+    reviewed: /2011/12/10/a-decade-of-research-and-development-on-program-animation-the-jeliot-experience.html
     title: 'A Decade of Research and Development on Program Animation: The Jeliot
       Experience'
   - date: '2012-05-06'
-    reviewed: /2012/2012-05-06-cohesive-and-isolated-development-with-branches.html
+    reviewed: /2012/05/06/cohesive-and-isolated-development-with-branches.html
     title: Cohesive and Isolated Development with Branches
   - date: '2012-05-24'
-    reviewed: /2012/2012-05-24-supporting-professional-spreadsheet-users-by-generating-leveled-dataflow-diagrams.html
+    reviewed: /2012/05/24/supporting-professional-spreadsheet-users-by-generating-leveled-dataflow-diagrams.html
     title: Supporting Professional Spreadsheet Users by Generating Leveled Dataflow
       Diagrams
   - date: '2012-07-04'
-    reviewed: /2012/2012-07-04-programmer-information-needs-after-memory-failure.html
+    reviewed: /2012/07/04/programmer-information-needs-after-memory-failure.html
     title: Programmer Information Needs After Memory Failure
   - date: '2013-06-06'
-    reviewed: /2013/2013-06-06-automatic-patch-generation-learned-from-human-written-patches.html
+    reviewed: /2013/06/06/automatic-patch-generation-learned-from-human-written-patches.html
     title: Automatic Patch Generation Learned from Human-Written Patches
   - date: '2013-06-06'
-    reviewed: /2013/2013-06-06-does-bug-prediction-support-human-developers-findings-from-a-google-case-study.html
+    reviewed: /2013/06/06/does-bug-prediction-support-human-developers-findings-from-a-google-case-study.html
     title: Does Bug Prediction Support Human Developers? Findings From a Google Case
       Study
   - date: '2016-09-30'
-    reviewed: /2016/2016-09-30-rethinking-git.html
+    reviewed: /2016/09/30/rethinking-git.html
     title: Purposes, Concepts, Misfits, and a Redesign of Git
   - date: '2016-10-01'
-    reviewed: /2016/2016-10-01-apex.html
+    reviewed: /2016/10/01/apex.html
     title: 'Apex: Automatic Programming Assignment Error Explanation'
   - date: '2021-09-21'
-    reviewed: /2021/2021-09-21-build-systems-a-la-carte.html
+    reviewed: /2021/09/21/build-systems-a-la-carte.html
     title: "Build Systems \xE0 la Carte"
   - date: '2021-09-22'
-    reviewed: /2021/2021-09-22-taxonomy-of-package-management.html
+    reviewed: /2021/09/22/taxonomy-of-package-management.html
     title: Taxonomy of Package Management in Programming Languages and Operating Systems
   - date: '2021-11-16'
-    reviewed: /2021/2021-11-16-software-history-under-the-lens.html
+    reviewed: /2021/11/16/software-history-under-the-lens.html
     title: 'Software History under the Lens: A Study on Why and How Developers Examine
       It'
   - date: '2022-09-19'
-    reviewed: /2022/2022-09-19-developer-git-knowledge.html
+    reviewed: /2022/09/19/developer-git-knowledge.html
     title: Do Developers Really Know How to Use Git Commands?
   name: Tools
 - entries:
   - date: '2022-12-04'
-    reviewed: /2022/2022-12-04-strange-loop-translations.html
+    reviewed: /2022/12/04/strange-loop-translations.html
     title: Spanish Translations of Strange Loop Presentations
   name: Translation
 - entries:
   - date: '2021-09-30'
-    reviewed: /2021/2021-09-30-quantifying-and-mitigating-turnover-induced-knowledge-loss.html
+    reviewed: /2021/09/30/quantifying-and-mitigating-turnover-induced-knowledge-loss.html
     title: Quantifying and mitigating turnover-induced knowledge loss
   name: Turnover
 - entries:
   - date: '2013-06-13'
-    reviewed: /2013/2013-06-13-uml-in-practice-2.html
+    reviewed: /2013/06/13/uml-in-practice-2.html
     title: UML in Practice
   name: UML
 - entries:
   - date: '2011-06-27'
-    reviewed: /2011/2011-06-27-refactoring-pipe-like-mashups-for-end-user-programmers.html
+    reviewed: /2011/06/27/refactoring-pipe-like-mashups-for-end-user-programmers.html
     title: Refactoring Pipe-like Mashups for End-user Programmers
   - date: '2011-07-26'
-    reviewed: /2011/2011-07-26-usability-implications-of-requiring-parameters-in-objects-constructors.html
+    reviewed: /2011/07/26/usability-implications-of-requiring-parameters-in-objects-constructors.html
     title: Usability Implications of Requiring Parameters in Objects&#039; Constructors
   - date: '2012-06-25'
-    reviewed: /2012/2012-06-25-usability-analysis-of-visual-programming-environments-a-cognitive-dimensions-framework.html
+    reviewed: /2012/06/25/usability-analysis-of-visual-programming-environments-a-cognitive-dimensions-framework.html
     title: 'Usability Analysis of Visual Programming Environments: a &#039;Cognitive
       Dimensions&#039; Framework'
   - date: '2012-07-04'
-    reviewed: /2012/2012-07-04-programmer-information-needs-after-memory-failure.html
+    reviewed: /2012/07/04/programmer-information-needs-after-memory-failure.html
     title: Programmer Information Needs After Memory Failure
   - date: '2021-11-16'
-    reviewed: /2021/2021-11-16-using-so-comment-edit-pairs.html
+    reviewed: /2021/11/16/using-so-comment-edit-pairs.html
     title: On Using Stack Overflow Comment-Edit Pairs to Recommend Code Maintenance
       Changes
   - date: '2022-03-07'
-    reviewed: /2022/2022-03-07-new-me.html
+    reviewed: /2022/03/07/new-me.html
     title: 'New Me: Understanding Expert and Non-Expert Perceptions and Usage of the
       Tor Anonymity Network'
   - date: '2022-09-19'
-    reviewed: /2022/2022-09-19-developer-git-knowledge.html
+    reviewed: /2022/09/19/developer-git-knowledge.html
     title: Do Developers Really Know How to Use Git Commands?
   name: Usability
 - entries:
   - date: '2021-08-12'
-    reviewed: /2021/2021-08-12-on-the-nature-of-merge-conflicts.html
+    reviewed: /2021/08/12/on-the-nature-of-merge-conflicts.html
     title: On the Nature of Merge Conflicts
   - date: '2021-11-16'
-    reviewed: /2021/2021-11-16-software-history-under-the-lens.html
+    reviewed: /2021/11/16/software-history-under-the-lens.html
     title: 'Software History under the Lens: A Study on Why and How Developers Examine
       It'
   name: Version Control
 - entries:
   - date: '2012-05-24'
-    reviewed: /2012/2012-05-24-supporting-professional-spreadsheet-users-by-generating-leveled-dataflow-diagrams.html
+    reviewed: /2012/05/24/supporting-professional-spreadsheet-users-by-generating-leveled-dataflow-diagrams.html
     title: Supporting Professional Spreadsheet Users by Generating Leveled Dataflow
       Diagrams
   - date: '2012-06-25'
-    reviewed: /2012/2012-06-25-usability-analysis-of-visual-programming-environments-a-cognitive-dimensions-framework.html
+    reviewed: /2012/06/25/usability-analysis-of-visual-programming-environments-a-cognitive-dimensions-framework.html
     title: 'Usability Analysis of Visual Programming Environments: a &#039;Cognitive
       Dimensions&#039; Framework'
   - date: '2016-10-02'
-    reviewed: /2016/2016-10-02-filtering-spreadsheet-data.html
+    reviewed: /2016/10/02/filtering-spreadsheet-data.html
     title: 'FIDEX: Filtering Spreadsheet Data using Examples'
   name: Visual Programming Environments

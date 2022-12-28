@@ -21,10 +21,12 @@ def _get_categories(config):
         if "categories" not in info:
             print(f"{filename} has no categories", file=sys.stderr)
         else:
-            stripped = filename.replace(config.prefix, "", 1).replace(".md", ".html")
+            stripped = filename.replace(".md", ".html").split("/")[-1]
+            fields = stripped.split("-", maxsplit=3)
+            url = "/" + "/".join(fields)
             date = info["date"].strftime("%Y-%m-%d")
             for cat in info["categories"]:
-                accum.setdefault(cat, set()).add((date, stripped, info["title"]))
+                accum.setdefault(cat, set()).add((date, url, info["title"]))
 
     result = []
     for name in sorted(accum.keys()):
