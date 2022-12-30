@@ -4,7 +4,11 @@ Eghbal2020
 Fischer2015
 Freeman1972
 Hanenberg2013
+Hatton1997
+Hermans2021
 Herraiz2010
+Jacobson2013
+KanatAlexander2012
 Kernighan1979
 Kernighan1981
 Kernighan1983
@@ -12,6 +16,8 @@ Kim2013b
 Kosar2011
 Lin2020
 PerezDeRosso2013
+Prana2018
+Riccomini2021
 Sadowski2019
 Sholler2019
 Trang2021

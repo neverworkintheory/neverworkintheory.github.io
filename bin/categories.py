@@ -9,7 +9,8 @@ import yaml
 def main():
     config = _parse_args()
     categories = _get_categories(config)
-    yaml.dump(categories, sys.stdout)
+    writer = open(config.output, "w") if config.output else sys.stdout
+    yaml.dump(categories, writer)
 
 
 def _get_categories(config):
@@ -40,6 +41,7 @@ def _get_categories(config):
 def _parse_args():
     """Parse command-line arguments."""
     parser = argparse.ArgumentParser()
+    parser.add_argument("--output", help="Output file", default=None)
     parser.add_argument("--prefix", help="Path prefix to remove from filenames")
     parser.add_argument("posts", nargs="+", help="Paths to blog posts")
     return parser.parse_args()

@@ -70,11 +70,13 @@ def main():
     """Main driver."""
     config = _parse_args()
     bib = _read_bib(config.bib, config.strings)
-    unreviewed = _read_unreviewed(config)
+    unreviewed = _read_unreviewed(config.unreviewed)
     bib = _remove_unreviewed(bib, unreviewed)
 
     authors = _by_author(bib)
-    yaml.dump(authors, sys.stdout)
+
+    writer = open(config.output, "w") if config.output else sys.stdout
+    yaml.dump(authors, writer)
 
 
 def _clean(text):
@@ -90,6 +92,9 @@ def _by_author(bib):
     accum = {}
 
     for key in bib.keys():
+        if "reviewed" not in bib[key].fields:
+            print(f"Unreviewed {key}", file=sys.stderr)
+            continue
         reviewed = bib[key].fields["reviewed"]
         for p in bib[key].persons:
             for name in bib[key].persons[p]:
@@ -109,6 +114,7 @@ def _parse_args():
     """Parse command-line arguments."""
     parser = argparse.ArgumentParser()
     parser.add_argument("--bib", help="Bibliography BibTeX file")
+    parser.add_argument("--output", help="Output file", default=None)
     parser.add_argument("--strings", help="String definitions BibTeX file")
     parser.add_argument("--unreviewed", help="Plaintext file with keys of unreviewed items")
     return parser.parse_args()
@@ -119,9 +125,9 @@ def _post_to_date(filename):
     return "-".join(filename.split("/")[1:4])
 
 
-def _read_unreviewed(config):
+def _read_unreviewed(unreviewed):
     """Read keys of unreviewed bibliography entries."""
-    lines = open(config.unreviewed, "r").readlines()
+    lines = open(unreviewed, "r").readlines()
     lines = [ln.strip() for ln in lines]
     return {ln for ln in lines if ln}
 

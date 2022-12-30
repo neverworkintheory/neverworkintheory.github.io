@@ -14,7 +14,10 @@ def main():
     html = find_plugin("pybtex.backends", "html")()
 
     entries = [_format(entry.key, entry.text.render(html)) for entry in bib]
-    print('<dl>\n\n' + "\n\n".join(entries) + "\n\n</dl>")
+    result = "<dl>\n\n" + "\n\n".join(entries) + "\n\n</dl>"
+
+    writer = open(config.output, "w") if config.output else sys.stdout
+    writer.write(result)
 
 
 def _format(key, body):
@@ -26,6 +29,7 @@ def _parse_args():
     """Parse command-line arguments."""
     parser = argparse.ArgumentParser()
     parser.add_argument("--bib", help="Bibliography BibTeX file")
+    parser.add_argument("--output", help="Output file", default=None)
     parser.add_argument("--strings", help="String definitions BibTeX file")
     return parser.parse_args()
 
@@ -34,7 +38,7 @@ def _read_bib(bib_path, strings_path):
     """Read bibliography, formatting on the way."""
     strings = open(strings_path, "r").read()
     bib = open(bib_path, "r").read()
-    bib = strings + "\n" + bib
+    bib = strings + "\n\n" + bib
     bib = parse_string(bib, "bibtex")
     style = find_plugin("pybtex.style.formatting", BIBTEX_STYLE)()
     return style.format_bibliography(bib)
