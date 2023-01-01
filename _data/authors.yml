@@ -240,11 +240,6 @@
     reviewed: /2022/02/21/antifuzz.html
   name: Aschermann, Cornelius
 - entries:
-  - date: '2021-09-15'
-    key: Prana2018
-    reviewed: /2021/09/15/categorizing-the-content-of-github-readme-files.html
-  name: Atapattu, Thushari
-- entries:
   - date: '2012-01-17'
     key: Prabhu2011
     reviewed: /2012/01/17/a-survey-of-the-practice-of-computational-science.html
@@ -628,11 +623,6 @@
     reviewed: /2021/10/15/authorship-attribution-of-source-code.html
   name: Bogomolov, Egor
 - entries:
-  - date: '2021-09-23'
-    key: Hatton1997
-    reviewed: /2021/09/23/the-secret-life-of-bugs.html
-  name: Boisvert, Ronald F.
-- entries:
   - date: '2021-10-01'
     key: Bafatakis2019
     reviewed: /2021/10/01/python-coding-style-compliance-on-stack-overflow.html
@@ -674,7 +664,7 @@
   name: Briers, Robert A.
 - entries:
   - date: '2021-08-30'
-    key: Wang2020
+    key: Wang2020a
     reviewed: /2021/08/30/two-studies-of-regular-expressions.html
   name: Brown, Chris
 - entries:
@@ -1722,9 +1712,6 @@
   - date: '2021-09-23'
     key: Hatton1994
     reviewed: /2021/09/23/the-secret-life-of-bugs.html
-  - date: '2021-09-23'
-    key: Hatton1997
-    reviewed: /2021/09/23/the-secret-life-of-bugs.html
   name: Hatton, L.
 - entries:
   - date: '2021-09-26'
@@ -1778,9 +1765,6 @@
   - date: '2016-08-14'
     key: Hermans2016
     reviewed: /2016/08/14/novice-smells.html
-  - date: '2021-10-02'
-    key: Hermans2021
-    reviewed: /2021/10/02/programmers-brain.html
   name: Hermans, Felienne
 - entries:
   - date: '2022-04-15'
@@ -2013,11 +1997,6 @@
     reviewed: /2016/09/30/rethinking-git.html
   name: Jackson, Daniel
 - entries:
-  - date: '2013-08-12'
-    key: Jacobson2013
-    reviewed: /2013/08/12/review-essence-of-software-engineering.html
-  name: Jacobson, Ivar
-- entries:
   - date: '2014-10-09'
     key: Yuan2014
     reviewed: /2014/10/09/simple-testing-can-prevent-most-critical-failures.html
@@ -2034,7 +2013,7 @@
   name: Jeffery, Ross
 - entries:
   - date: '2021-08-30'
-    key: Wang2020
+    key: Wang2020a
     reviewed: /2021/08/30/two-studies-of-regular-expressions.html
   name: Jennings, Jamie A.
 - entries:
@@ -2147,11 +2126,6 @@
     key: Becker2019
     reviewed: /2021/09/02/compiler-error-messages-considered-unhelpful.html
   name: Kamil, Amir
-- entries:
-  - date: '2012-05-03'
-    key: KanatAlexander2012
-    reviewed: /2012/05/03/a-review-of-code-simplicity.html
-  name: Kanat-Alexander, Max
 - entries:
   - date: '2021-09-25'
     key: Schweinsberg2021
@@ -2584,11 +2558,6 @@
     reviewed: /2016/09/16/five-from-icer-2016.html
   name: Liao, Soohyun Nam
 - entries:
-  - date: '2013-08-12'
-    key: Jacobson2013
-    reviewed: /2013/08/12/review-essence-of-software-engineering.html
-  name: Lidman, Svante
-- entries:
   - date: '2011-10-22'
     key: Apel2011
     reviewed: /2011/10/22/three-empirical-studies-from-esecfse11.html
@@ -2675,9 +2644,6 @@
   - date: '2016-06-09'
     key: Lo2015
     reviewed: /2016/06/09/perceived-relevance.html
-  - date: '2021-09-15'
-    key: Prana2018
-    reviewed: /2021/09/15/categorizing-the-content-of-github-readme-files.html
   - date: '2021-10-16'
     key: Han2021
     reviewed: /2021/10/16/open-source-projects-in-baidu-alibaba-and-tencent.html
@@ -2952,11 +2918,6 @@
     key: McLeod2011
     reviewed: /2011/12/21/factors-that-affect-software-systems-development-project-outcomes.html
   name: McLeod, Laurie
-- entries:
-  - date: '2013-08-12'
-    key: Jacobson2013
-    reviewed: /2013/08/12/review-essence-of-software-engineering.html
-  name: McMahon, Paul E.
 - entries:
   - date: '2021-09-25'
     key: Schweinsberg2021
@@ -3389,11 +3350,6 @@
     reviewed: /2021/09/25/how-reliable-is-scientific-software.html
   name: Nelson, Andrew Arthur
 - entries:
-  - date: '2013-08-12'
-    key: Jacobson2013
-    reviewed: /2013/08/12/review-essence-of-software-engineering.html
-  name: Ng, Pan-Wei
-- entries:
   - date: '2021-11-29'
     key: Sven2019
     reviewed: /2021/11/29/next-steps-in-static-api-misuse-detection.html
@@ -3809,11 +3765,6 @@
     reviewed: /2012/01/17/a-survey-of-the-practice-of-computational-science.html
   name: Prabhu, Prakash
 - entries:
-  - date: '2021-09-15'
-    key: Prana2018
-    reviewed: /2021/09/15/categorizing-the-content-of-github-readme-files.html
-  name: Prana, Gede Artha Azriadi
-- entries:
   - date: '2021-09-25'
     key: Schweinsberg2021
     reviewed: /2021/09/25/how-reliable-is-scientific-software.html
@@ -3952,11 +3903,6 @@
     key: Schweinsberg2021
     reviewed: /2021/09/25/how-reliable-is-scientific-software.html
   name: Reyt, Jean-Nicolas
-- entries:
-  - date: '2021-10-24'
-    key: Riccomini2021
-    reviewed: /2021/10/24/whats-missing-from-the-missing-readme.html
-  name: Riccomini, Chris
 - entries:
   - date: '2021-09-25'
     key: Schweinsberg2021
@@ -4110,11 +4056,6 @@
     key: Parnin2012
     reviewed: /2012/07/04/programmer-information-needs-after-memory-failure.html
   name: Rugaber, Spencer
-- entries:
-  - date: '2021-10-24'
-    key: Riccomini2021
-    reviewed: /2021/10/24/whats-missing-from-the-missing-readme.html
-  name: Ryaboy, Dmitriy
 - entries:
   - date: '2013-06-06'
     key: Lewis2013
@@ -4441,11 +4382,6 @@
     reviewed: /2021/10/30/locating-faults-with-program-slicing.html
   name: Soremekun, Ezekiel
 - entries:
-  - date: '2013-08-12'
-    key: Jacobson2013
-    reviewed: /2013/08/12/review-essence-of-software-engineering.html
-  name: Spence, Ian
-- entries:
   - date: '2021-08-11'
     key: Pietri2019
     reviewed: /2021/08/11/cheating-death-survival-analysis-of-python-projects.html
@@ -4520,7 +4456,7 @@
     key: Stolee2011
     reviewed: /2011/06/27/refactoring-pipe-like-mashups-for-end-user-programmers.html
   - date: '2021-08-30'
-    key: Wang2020
+    key: Wang2020a
     reviewed: /2021/08/30/two-studies-of-regular-expressions.html
   name: Stolee, Kathryn T.
 - entries:
@@ -4658,9 +4594,6 @@
     reviewed: /2016/06/07/code-ownership-revisited.html
   name: Thongtanunam, Patanamon
 - entries:
-  - date: '2021-09-15'
-    key: Prana2018
-    reviewed: /2021/09/15/categorizing-the-content-of-github-readme-files.html
   - date: '2022-03-25'
     key: Bogart2021
     reviewed: /2022/03/25/breaking-changes.html
@@ -4735,9 +4668,6 @@
   - date: '2021-09-05'
     key: Coelho2016
     reviewed: /2021/09/05/two-papers-on-errors.html
-  - date: '2021-09-15'
-    key: Prana2018
-    reviewed: /2021/09/15/categorizing-the-content-of-github-readme-files.html
   - date: '2021-10-07'
     key: Kinsman2021
     reviewed: /2021/10/07/how-do-software-developers-use-github-actions.html
@@ -4947,7 +4877,7 @@
   name: Wanders, Florian
 - entries:
   - date: '2021-08-30'
-    key: Wang2020
+    key: Wang2020a
     reviewed: /2021/08/30/two-studies-of-regular-expressions.html
   name: Wang, Peipei
 - entries:
