@@ -1,0 +1,55 @@
+Event,ID,Family,Personal,URL,Title,Bio,YouTube
+2022-04,aniche-mauricio,Aniche,Maurício,https://www.mauricioaniche.com/,"How code coverage can be used and abused to guide testing","Maurício is Tech Academy Lead at Adyen and an Assistant Professor at Delft University of Technology in the Netherlands",https://youtu.be/f1DueZcSxRs
+2022-04,bacchelli-alberto,Bacchelli,Alberto,https://sback.it/,"How code review works (and doesn't) in the real world","Alberto is an Associate Professor at the University of Zurich in Switzerland",https://youtu.be/_SJL7vepQvU
+2022-04,baltes-sebastian,Baltes,Sebastian,https://empirical-software.engineering/,"Challenges and opportunities for software engineering in Papua New Guinea","Sebastian is a Principal Expert for Empirical Software Engineering at SAP in Germany and an Adjunct Lecturer at the University of Adelaide in Australia",https://youtu.be/SsHf0-X4vrI
+2022-04,blincoe-kelly,Blincoe,Kelly,https://kblincoe.github.io/,"The effects of destructive criticism in code review","Kelly is a Senior Lecturer at the University of Auckland in New Zealand",https://youtu.be/qaO00CLqLkI
+2022-04,brown-neil,Brown,Neil,https://twistedsquare.com/,"How your minds learn to program","Neil is a Research Fellow at King's College London",https://youtu.be/FAXAPBxkhxc
+2022-04,ford-robinson-denae,Ford Robinson,Denae,http://denaeford.me/,"Online community and safety in software engineering","Denae is a Research Scientist at Microsoft Research in the United States",https://youtu.be/kkPLEMevjlw
+2022-04,fucci-davide,Fucci,Davide,https://dfucci.github.io/,"The hidden costs and benefits of TDD","Davide is an Assistant Professor at the Blekinge Institute of Technology in Sweden",https://youtu.be/rBcV1F7jyHw
+2022-04,galster-matthias,Galster,Matthias,https://www.csse.canterbury.ac.nz/matthias.galster/,"Value and waste in software engineering","Matthias is an Associate Professor at the University of Canterbury in New Zealand",https://youtu.be/MVTO4KCRKJw
+2022-04,hermans-felienne,Hermans,Felienne,https://www.felienne.com/,"How patterns in variable names can make code easier to read","Felienne is an Associate Professor at Leiden University in the Netherlands",https://youtu.be/z7w2lKG8zWM
+2022-04,hicks-catherine,Hicks,Catherine,https://www.catharsisinsight.com/,"Fostering a learning culture in coding teams","Cat, a former intervention researcher at the Khan Academy, is the principal consultant at Carthasis Consulting",https://youtu.be/ygeykeP9Ww4
+2022-04,johnson-matthews-brittany,Johnson-Matthews,Brittany,https://cs.gmu.edu/~johnsonb/,"Causal testing: understanding the root causes of defects","Brittany is an Assistant Professor at George Mason University in the United States",https://youtu.be/SrDqrwyV4I4
+2022-04,mcintosh-shane,McIntosh,Shane,https://shanemcintosh.org/,"The unintended consequences of mining software build systems","Shane is an Associate Professor at the University of Waterloo in Canada",https://youtu.be/QJvijeRx8ic
+2022-04,nagappan-mei,Nagappan,Mei,https://cs.uwaterloo.ca/~m2nagapp/,"Bias in evaluating code contributions","Mei is an Associate Professor at the University of Waterloo in Canada",https://youtu.be/oPIVZe0c3Io
+2022-04,petre-marian,Petre,Marian,http://mcs.open.ac.uk/mp8/,"How expert programmers think about errors","Marian is a Professor at the Open University in the United Kingdom",https://youtu.be/Jor-Rh0gwus
+2022-04,rigger-manuel,Rigger,Manuel,https://www.manuelrigger.at/,"How to test software without writing tests","Manuel Rigger is a postdoctoral researcher at ETH Zurich and an incoming Assistant Professor at the National University of Singapore",https://youtu.be/tLKTILnVasg
+2022-04,rodeghero-paige,Rodeghero,Paige,https://paigerodeghero.com/,"What we've learned about remote onboarding during the pandemic","Paige is an Assistant Professor at Clemson University in the United States",https://youtu.be/sVAPJ2JvU78
+2022-04,steinmacher-igor,Steinmacher,Igor,http://igor.pro.br/,"Negotiation and padding in software project estimates","Igor is an Assistant Professor at the Federal University of Technology - Paraná in Brazil",https://youtu.be/zpPDlVoiVSU
+2022-04,stolee-kathryn,Stolee,Kathryn,http://kstolee.github.io/,"To search or not to search: it depends on the question","Katie is an Associate Professor at North Carolina State University",https://youtu.be/iiJXYO_hcvQ
+2022-04,storey-margaret-anne,Storey,Margaret-Anne,https://www.margaretstorey.com/,"What does 'productivity' actually mean for developers?","Margaret-Anne is a Professor at the University of Victoria in Canada",https://youtu.be/ZdUAxUBrYLA
+2022-04,treude-christoph,Treude,Christoph,https://ctreude.ca/,"Automatically enhancing error messages","Christoph is a Senior Lecturer at the University of Melbourne in Australia",https://youtu.be/YP5BGiw0Gng
+2022-04,wessel-mairieli,Wessel,Mairieli,https://mairieli.com/,"How people really use GitHub Actions","Mairieli is a postdoctoral researcher at Delft University of Technology in the Netherlands",https://youtu.be/X1Z9lWhQaro
+2022-04,zaidman-andy,Zaidman,Andy,https://azaidman.github.io/,"Programmer by day, tester by night","Andy Zaidman is a full professor in software engineering at the Delft University of Technology",https://youtu.be/rFXdQ0k-hqw
+2022-10,brown-chris,Brown,Chris,https://chbrown13.github.io/,"How to recommend tools for finding and fixing software errors","Chris is an Assistant Professor in the Department of Computer Science at Virginia Tech",https://youtube.com/embed/P_x3M57paZ8
+2022-10,da-silva-santos-joanna,da Silva Santos,Joanna,https://joannacss.github.io/,"Choose wisely: code smells in automatically generated code","Joanna is an Assistant Professor in the Department of Computer Science and Engineering at the University of Notre Dame",https://youtube.com/embed/GIV-ZyjWtg0
+2022-10,hicks-catherine,Hicks,Catherine,https://www.catharsisinsight.com/,"It's like coding in the dark: the need for learning culture within engineering teams","Cat is the VP of Research Insights and Director of the Developer Insights Lab at Pluralsight Flow",https://youtube.com/embed/mVec1TzQIMM
+2022-10,khomh-foutse,Khomh,Foutse,http://khomh.net/,"Finding bugs in deep learning programs","Foutse is a Full Professor of Software Engineering at Polytechnique Montréal",https://youtube.com/embed/1L8t3OldBfc
+2022-10,mkaouer-mohamed,Mkaouer,Mohamed Wiem,https://mkaouer.net/,"One thousand and one stories: a large-scale survey of software refactoring","Mohamed is an Assistant Professor in Software Engineering the Rochester Institute of Technology",https://youtube.com/embed/rUa_hELXvHs
+2022-10,nadi-sarah,Nadi,Sarah,https://www.sarahnadi.org/,"It's not you, it's the API: automatically avoiding API misuses","Sarah is an Associate Professor in the Department of Computing Science at the University of Alberta",https://youtube.com/embed/KqhvZ4xTnhQ
+2022-10,smith-justin,Smith,Justin,https://jssmith1.github.io/,"How automated tools can communicate effective strategies for fixing bugs","Justin is an Assistant Professor of Computer Science at Lafayette College",https://youtube.com/embed/_I-DM5z8UeY
+2022-10,zhang-tianyi,Zhang,Tianyi,https://tianyi-zhang.github.io/,"Interactive debugging and testing support for deep learning","Tianyi is an assistant professor in Computer Science at Purdue University",https://youtube.com/embed/8LekgPnRt1g
+2023-04,bai-gina,Bai,Gina (Rui),https://ginabai.github.io/",,,
+2023-04,bohme-marcel,Böhme,Marcel,https://mboehme.github.io/",,,
+2023-04,businge-john,Businge,John,https://johnxu21.github.io/",,,
+2023-04,chatterjee-preetha,Chatterjee,Preetha,https://preethac.github.io/",,,
+2023-04,codabux-zadia,Codabux,Zadia,https://www.cs.usask.ca/faculty/zadiacodabux/",,,
+2023-04,devanbu-prem,Devanbu,Prem,https://web.cs.ucdavis.edu/~devanbu/",,,
+2023-04,glassman-elena,Glassman,Elena,https://glassmanlab.seas.harvard.edu/glassman.html",,,
+2023-04,hoda-rashina,Hoda,Rashina,https://rashina.com/",,,
+2023-04,kula-elvan,Kula,Elvan,,,,
+2023-04,kula-raula,Kula,Raula,,,,
+2023-04,latoza-thomas,LaToza,Thomas,https://cs.gmu.edu/~tlatoza/",,,
+2023-04,lee-carol,Lee,Carol,,,,
+2023-04,licorish-sherlock,Licorish,Sherlock,https://www.otago.ac.nz/info-science/people/staff/sherlock-licorish.html",,,
+2023-04,margulieux-lauren,Margulieux,Lauren,https://laurenmarg.com/",,,
+2023-04,mirian-ariana,Mirian,Ariana,https://arianamirian.com/",,,
+2023-04,newman-christian,Newman,Christian,https://www.rit.edu/directory/cdnvse-christian-newman",,,
+2023-04,pinto-gustavo,Pinto,Gustavo,https://gustavopinto.org/",,,
+2023-04,presler-marshall-kai,Presler-Marshall,Kai,https://kpresler.github.io/",,,
+2023-04,ray-baishakhi,Ray,Baishakhi,https://www.rayb.info/",,,
+2023-04,serebrenik-alexander,Serebrenik,Alexander,https://www.win.tue.nl/~aserebre/",,,
+2023-04,sullivan-allison,Sullivan,Allison,https://allisonius.github.io/",,,
+2023-04,tshukudu-ethel,Tshukudu,Ethel,,,,
+2023-04,zeller-andreas,Zeller,Andreas,https://andreas-zeller.info/",,,
+2023-04,zhou-shurui,Zhou,Shurui,https://www.eecg.utoronto.ca/~shuruiz/",,,
