@@ -323,9 +323,9 @@
   family: Businge
   personal: John
   url: "https://johnxu21.github.io/"
-  photo: 
-  title:
-  bio:
+  photo: businge-john.jpg
+  title: Patched clones and missed patches among the variants of a software family.
+  bio: John is an Assistant Professor in the Department of Computer Science at the University of Nevada, Las Vegas, in the United States.
   video: 
 
 - event: 2023-04
@@ -353,9 +353,9 @@
   family: Devanbu
   personal: Prem
   url: "https://web.cs.ucdavis.edu/~devanbu/"
-  photo: 
-  title:
-  bio:
+  photo: devanbu-prem.jpg
+  title: "Leveraging the bimodality of software."
+  bio: Prem is a Distinguished Professor (Emeritus) of Computer Science at the University of California Davis in the United States.
   video: 
 
 - event: 2023-04
@@ -493,9 +493,9 @@
   family: Serebrenik
   personal: Alexander
   url: "https://www.win.tue.nl/~aserebre/"
-  photo: 
-  title:
-  bio:
+  photo: serebrenik-alexander.jpg
+  title: "Getting old: employability and experiences of veteran software developers."
+  bio: Alexander is a Full Professor of Social Software Engineering at Eindhoven University of Technology in the Netherlands.
   video: 
 
 - event: 2023-04
