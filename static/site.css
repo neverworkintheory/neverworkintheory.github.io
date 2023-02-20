@@ -18,7 +18,6 @@ div.flex-row {
 }
 
 /* Create a column (not cards) */
-
 div.flex-col {
     margin-left: 1rem;
     margin-right: 1rem;

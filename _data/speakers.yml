@@ -1,0 +1,538 @@
+- event: 2022-04
+  id: aniche-mauricio
+  family: Aniche
+  personal: Maurício
+  url: "https://www.mauricioaniche.com/"
+  photo: aniche-mauricio.jpg
+  title: How code coverage can be used and abused to guide testing.
+  bio: "Maurício is Tech Academy Lead at Adyen and an Assistant Professor at Delft University of Technology in the Netherlands."
+  video: https://youtu.be/f1DueZcSxRs
+
+- event: 2022-04
+  id: bacchelli-alberto
+  family: Bacchelli
+  personal: Alberto
+  url: "https://sback.it/"
+  photo: bacchelli-alberto.jpg
+  title: How code review works (and doesn't) in the real world.
+  bio: "Alberto is an Associate Professor at the University of Zurich in Switzerland."
+  video: https://youtu.be/_SJL7vepQvU
+
+- event: 2022-04
+  id: baltes-sebastian
+  family: Baltes
+  personal: Sebastian
+  url: "https://empirical-software.engineering/"
+  photo: baltes-sebastian.jpg
+  title: Challenges and opportunities for software engineering in Papua New Guinea.
+  bio: "Sebastian is a Principal Expert for Empirical Software Engineering at SAP in Germany and an Adjunct Lecturer at the University of Adelaide in Australia."
+  video: https://youtu.be/SsHf0-X4vrI
+
+- event: 2022-04
+  id: blincoe-kelly
+  family: Blincoe
+  personal: Kelly
+  url: "https://kblincoe.github.io/"
+  photo: blincoe-kelly.png
+  title: The effects of destructive criticism in code review.
+  bio: "Kelly is a Senior Lecturer at the University of Auckland in New Zealand."
+  video: https://youtu.be/qaO00CLqLkI
+
+- event: 2022-04
+  id: brown-neil
+  family: Brown
+  personal: Neil
+  url: "https://twistedsquare.com/"
+  photo: brown-neil.jpg
+  title: How your minds learn to program.
+  bio: "Neil is a Research Fellow at King's College London."
+  video: https://youtu.be/FAXAPBxkhxc
+
+- event: 2022-04
+  id: ford-robinson-denae
+  family: Ford Robinson
+  personal: Denae
+  url: "http://denaeford.me/"
+  photo: ford-robinson-denae.png
+  title: Online community and safety in software engineering.
+  bio: "Denae is a Research Scientist at Microsoft Research in the United States."
+  video: https://youtu.be/kkPLEMevjlw
+
+- event: 2022-04
+  id: fucci-davide
+  family: Fucci
+  personal: Davide
+  url: "https://dfucci.github.io/"
+  photo: fucci-davide.jpg
+  title: The hidden costs and benefits of TDD.
+  bio: "Davide is an Assistant Professor at the Blekinge Institute of Technology in Sweden."
+  video: https://youtu.be/rBcV1F7jyHw
+
+- event: 2022-04
+  id: galster-matthias
+  family: Galster
+  personal: Matthias
+  url: "https://www.csse.canterbury.ac.nz/matthias.galster/"
+  photo: galster-matthias.jpg
+  title: Value and waste in software engineering.
+  bio: "Matthias is an Associate Professor at the University of Canterbury in New Zealand."
+  video: https://youtu.be/MVTO4KCRKJw
+
+- event: 2022-04
+  id: hermans-felienne
+  family: Hermans
+  personal: Felienne
+  url: "https://www.felienne.com/"
+  photo: hermans-felienne.jpg
+  title: How patterns in variable names can make code easier to read.
+  bio: "Felienne is an Associate Professor at Leiden University in the Netherlands."
+  video: https://youtu.be/z7w2lKG8zWM
+
+- event: 2022-04
+  id: hicks-catherine
+  family: Hicks
+  personal: Catherine
+  url: "https://www.catharsisinsight.com/"
+  photo: hicks-catherine.png
+  title: Fostering a learning culture in coding teams.
+  bio: "Cat, a former intervention researcher at the Khan Academy, is the principal consultant at Carthasis Consulting."
+  video: https://youtu.be/ygeykeP9Ww4
+
+- event: 2022-04
+  id: johnson-matthews-brittany
+  family: Johnson-Matthews
+  personal: Brittany
+  url: "https://cs.gmu.edu/~johnsonb/"
+  photo: johnson-matthews-brittany.png
+  title: "Causal testing: understanding the root causes of defects."
+  bio: "Brittany is an Assistant Professor at George Mason University in the United States."
+  video: https://youtu.be/SrDqrwyV4I4
+
+- event: 2022-04
+  id: mcintosh-shane
+  family: McIntosh
+  personal: Shane
+  url: "https://shanemcintosh.org/"
+  photo: mcintosh-shane.jpg
+  title: The unintended consequences of mining software build systems.
+  bio: "Shane is an Associate Professor at the University of Waterloo in Canada."
+  video: https://youtu.be/QJvijeRx8ic
+
+- event: 2022-04
+  id: nagappan-mei
+  family: Nagappan
+  personal: Mei
+  url: "https://cs.uwaterloo.ca/~m2nagapp/"
+  photo: nagappan-mei.jpg
+  title: Bias in evaluating code contributions.
+  bio: "Mei is an Associate Professor at the University of Waterloo in Canada."
+  video: https://youtu.be/oPIVZe0c3Io
+
+- event: 2022-04
+  id: petre-marian
+  family: Petre
+  personal: Marian
+  url: "http://mcs.open.ac.uk/mp8/"
+  photo: petre-marian.jpg
+  title: How expert programmers think about errors.
+  bio: "Marian is a Professor at the Open University in the United Kingdom."
+  video: https://youtu.be/Jor-Rh0gwus
+
+- event: 2022-04
+  id: rigger-manuel
+  family: Rigger
+  personal: Manuel
+  url: "https://www.manuelrigger.at/"
+  photo: rigger-manuel.jpg
+  title: How to test software without writing tests.
+  bio: "Manuel Rigger is a postdoctoral researcher at ETH Zurich and an incoming Assistant Professor at the National University of Singapore."
+  video: https://youtu.be/tLKTILnVasg
+
+- event: 2022-04
+  id: rodeghero-paige
+  family: Rodeghero
+  personal: Paige
+  url: "https://paigerodeghero.com/"
+  photo: rodeghero-paige.png
+  title: What we've learned about remote onboarding during the pandemic.
+  bio: "Paige is an Assistant Professor at Clemson University in the United States."
+  video: https://youtu.be/sVAPJ2JvU78
+
+- event: 2022-04
+  id: steinmacher-igor
+  family: Steinmacher
+  personal: Igor
+  url: "http://igor.pro.br/"
+  photo: steinmacher-igor.jpg
+  title: Negotiation and padding in software project estimates.
+  bio: "Igor is an Assistant Professor at the Federal University of Technology - Paraná in Brazil."
+  video: https://youtu.be/zpPDlVoiVSU
+
+- event: 2022-04
+  id: stolee-kathryn
+  family: Stolee
+  personal: Kathryn
+  url: "http://kstolee.github.io/"
+  photo: stolee-kathryn.jpg
+  title: "To search or not to search: it depends on the question."
+  bio: "Katie is an Associate Professor at North Carolina State University."
+  video: https://youtu.be/iiJXYO_hcvQ
+
+- event: 2022-04
+  id: storey-margaret-anne
+  family: Storey
+  personal: Margaret-Anne
+  url: "https://www.margaretstorey.com/"
+  photo: storey-margaret-anne.jpg
+  title: "What does 'productivity' actually mean for developers?"
+  bio: "Margaret-Anne is a Professor at the University of Victoria in Canada."
+  video: https://youtu.be/ZdUAxUBrYLA
+
+- event: 2022-04
+  id: treude-christoph
+  family: Treude
+  personal: Christoph
+  url: "https://ctreude.ca/"
+  photo: treude-christoph.jpg
+  title: Automatically enhancing error messages.
+  bio: "Christoph is a Senior Lecturer at the University of Melbourne in Australia."
+  video: https://youtu.be/YP5BGiw0Gng
+
+- event: 2022-04
+  id: wessel-mairieli
+  family: Wessel
+  personal: Mairieli
+  url: "https://mairieli.com/"
+  photo: wessel-mairieli.jpg
+  title: How people really use GitHub Actions.
+  bio: "Mairieli is a postdoctoral researcher at Delft University of Technology in the Netherlands."
+  video: https://youtu.be/X1Z9lWhQaro
+
+- event: 2022-04
+  id: zaidman-andy
+  family: Zaidman
+  personal: Andy
+  url: "https://azaidman.github.io/"
+  photo: zaidman-andy.jpg
+  title: Programmer by day, tester by night.
+  bio: "Andy Zaidman is a full professor in software engineering at the Delft University of Technology."
+  video: https://youtu.be/rFXdQ0k-hqw
+
+- event: 2022-09
+  id: brown-chris
+  family: Brown
+  personal: Chris
+  url: "https://chbrown13.github.io/"
+  photo: brown-chris.png
+  title: How to recommend tools for finding and fixing software errors.
+  bio: "Chris is an Assistant Professor in the Department of Computer Science at Virginia Tech."
+  video: https://youtu.be/P_x3M57paZ8
+
+- event: 2022-09
+  id: da-silva-santos-joanna
+  family: da Silva Santos
+  personal: Joanna
+  url: "https://joannacss.github.io/"
+  photo: da-silva-santos-joanna.png
+  title: "Choose wisely: code smells in automatically generated code."
+  bio: "Joanna is an Assistant Professor in the Department of Computer Science and Engineering at the University of Notre Dame."
+  video: https://youtu.be/GIV-ZyjWtg0
+
+- event: 2022-09
+  id: hicks-catherine
+  family: Hicks
+  personal: Catherine
+  url: "https://www.catharsisinsight.com/"
+  photo: hicks-catherine.png
+  title: "It's like coding in the dark: the need for learning culture within engineering teams."
+  bio: "Cat is the VP of Research Insights and Director of the Developer Insights Lab at Pluralsight Flow."
+  video: https://youtu.be/mVec1TzQIMM
+
+- event: 2022-09
+  id: khomh-foutse
+  family: Khomh
+  personal: Foutse
+  url: "http://khomh.net/"
+  photo: khomh-foutse.png
+  title: Finding bugs in deep learning programs.
+  bio: "Foutse is a Full Professor of Software Engineering at Polytechnique Montréal."
+  video: https://youtu.be/1L8t3OldBfc
+
+- event: 2022-09
+  id: mkaouer-mohamed
+  family: Mkaouer
+  personal: Mohamed Wiem
+  url: "https://mkaouer.net/"
+  photo: mkaouer-mohamed.png
+  title: "One thousand and one stories: a large-scale survey of software refactoring."
+  bio: "Mohamed is an Assistant Professor in Software Engineering the Rochester Institute of Technology."
+  video: https://youtu.be/rUa_hELXvHs
+
+- event: 2022-09
+  id: nadi-sarah
+  family: Nadi
+  personal: Sarah
+  url: "https://www.sarahnadi.org/"
+  photo: nadi-sarah.png
+  title: "It's not you, it's the API: automatically avoiding API misuses."
+  bio: "Sarah is an Associate Professor in the Department of Computing Science at the University of Alberta."
+  video: https://youtu.be/KqhvZ4xTnhQ
+
+- event: 2022-09
+  id: smith-justin
+  family: Smith
+  personal: Justin
+  url: "https://jssmith1.github.io/"
+  photo: smith-justin.png
+  title: How automated tools can communicate effective strategies for fixing bugs.
+  bio: "Justin is an Assistant Professor of Computer Science at Lafayette College."
+  video: https://youtu.be/_I-DM5z8UeY
+
+- event: 2022-09
+  id: zhang-tianyi
+  family: Zhang
+  personal: Tianyi
+  url: "https://tianyi-zhang.github.io/"
+  photo: zhang-tianyi.png
+  title: Interactive debugging and testing support for deep learning.
+  bio: "Tianyi is an assistant professor in Computer Science at Purdue University."
+  video: https://youtu.be/8LekgPnRt1g
+
+- event: 2023-04
+  id: bai-gina
+  family: Bai
+  personal: Gina
+  url: "https://ginabai.github.io/"
+  photo: bai-gina.jpg
+  title: How novice testers perceive and perform unit testing.
+  bio: "Gina is an Assistant Professor of the Practice at Vanderbilt University in the United States."
+  video: 
+
+- event: 2023-04
+  id: bohme-marcel
+  family: Böhme
+  personal: Marcel
+  url: "https://mboehme.github.io/"
+  photo: bohme-marcel.jpg
+  title: On the surprising efficiency and exponential cost of fuzzing.
+  bio: "Marcel leads the Software Security at the Max Planck Institute for Security and Privacy in Germany."
+  video: 
+
+- event: 2023-04
+  id: businge-john
+  family: Businge
+  personal: John
+  url: "https://johnxu21.github.io/"
+  photo: 
+  title:
+  bio:
+  video: 
+
+- event: 2023-04
+  id: chatterjee-preetha
+  family: Chatterjee
+  personal: Preetha
+  url: "https://preethac.github.io/"
+  photo: chatterjee-preetha.jpg
+  title: Emotion awareness in software engineering.
+  bio: "Preetha is an Assistant Professor at Drexel University in the United States."
+  video: 
+
+- event: 2023-04
+  id: codabux-zadia
+  family: Codabux
+  personal: Zadia
+  url: "https://www.cs.usask.ca/faculty/zadiacodabux/"
+  photo: 
+  title:
+  bio:
+  video: 
+
+- event: 2023-04
+  id: devanbu-prem
+  family: Devanbu
+  personal: Prem
+  url: "https://web.cs.ucdavis.edu/~devanbu/"
+  photo: 
+  title:
+  bio:
+  video: 
+
+- event: 2023-04
+  id: glassman-elena
+  family: Glassman
+  personal: Elena
+  url: "https://glassmanlab.seas.harvard.edu/glassman.html"
+  photo: 
+  title:
+  bio:
+  video: 
+
+- event: 2023-04
+  id: hoda-rashina
+  family: Hoda
+  personal: Rashina
+  url: "https://rashina.com/"
+  photo: hoda-rashina.jpg
+  title:
+  bio:
+  video: 
+
+- event: 2023-04
+  id: kula-elvan
+  family: Kula
+  personal: Elvan
+  url: ""
+  photo: 
+  title:
+  bio:
+  video: 
+
+- event: 2023-04
+  id: kula-raula
+  family: Kula
+  personal: Raula
+  url: ""
+  photo: 
+  title:
+  bio:
+  video: 
+
+- event: 2023-04
+  id: latoza-thomas
+  family: LaToza
+  personal: Thomas
+  url: "https://cs.gmu.edu/~tlatoza/"
+  photo: 
+  title:
+  bio:
+  video: 
+
+- event: 2023-04
+  id: lee-carol
+  family: Lee
+  personal: Carol
+  url: ""
+  photo: lee-carol.jpg
+  title: "Developer thriving: why developers deserve more than satisfaction."
+  bio: "Carol is a senior research scientist at Pluralsight Flow's Developer Success Lab in the United States."
+  video: 
+
+- event: 2023-04
+  id: licorish-sherlock
+  family: Licorish
+  personal: Sherlock
+  url: "https://www.otago.ac.nz/info-science/people/staff/sherlock-licorish.html"
+  photo: licorish-sherlock.jpg
+  title: "Can genetic improvement enhance online code snippets?"
+  bio: "Sherlock is an Associate Professor in the Department of Information Science at the University of Otago."
+  video: 
+
+- event: 2023-04
+  id: margulieux-lauren
+  family: Margulieux
+  personal: Lauren
+  url: "https://laurenmarg.com/"
+  photo: margulieux-lauren.jpg
+  title: Things software developers should learn about learning.
+  bio: "Lauren is an Associate Professor of Learning Sciences at Georgia State University."
+  video: 
+
+- event: 2023-04
+  id: mirian-ariana
+  family: Mirian
+  personal: Ariana
+  url: "https://arianamirian.com/"
+  photo: 
+  title:
+  bio:
+  video: 
+
+- event: 2023-04
+  id: newman-christian
+  family: Newman
+  personal: Christian
+  url: "https://www.scanl.org/"
+  photo: newman-christian.png
+  title: Crafting strong identifier naming practices.
+  bio: "Christian is assistant faculty in the Software Engineering Department at Rochester Institute of Technology. He is the founder and lead researcher of the Source Code Analysis and Natural Language Lab (SCANL)."
+  video: 
+
+- event: 2023-04
+  id: pinto-gustavo
+  family: Pinto
+  personal: Gustavo
+  url: "https://gustavopinto.org/"
+  photo: pinto-gustavo.jpg
+  title: Cognitive-driven development helps software teams to keep code units under the limit.
+  bio: "Gustavo is Head of Research at Zup Innovation and Assistant Professor at Federal University of Pará in Brazil."
+  video: 
+
+- event: 2023-04
+  id: presler-marshall-kai
+  family: Presler-Marshall
+  personal: Kai
+  url: "https://kpresler.github.io/"
+  photo: 
+  title:
+  bio:
+  video: 
+
+- event: 2023-04
+  id: ray-baishakhi
+  family: Ray
+  personal: Baishakhi
+  url: "https://www.rayb.info/"
+  photo: 
+  title:
+  bio:
+  video: 
+
+- event: 2023-04
+  id: serebrenik-alexander
+  family: Serebrenik
+  personal: Alexander
+  url: "https://www.win.tue.nl/~aserebre/"
+  photo: 
+  title:
+  bio:
+  video: 
+
+- event: 2023-04
+  id: sullivan-allison
+  family: Sullivan
+  personal: Allison
+  url: "https://allisonius.github.io/"
+  photo: sullivan-allison.jpg
+  title: "Proofreading the proofreader: the benefits of unit tests for software models."
+  bio: "Allison is an Assistant Professor at the University of Texas at Arlington."
+  video: 
+
+- event: 2023-04
+  id: tshukudu-ethel
+  family: Tshukudu
+  personal: Ethel
+  url: ""
+  photo: 
+  title:
+  bio:
+  video: 
+
+- event: 2023-04
+  id: zeller-andreas
+  family: Zeller
+  personal: Andreas
+  url: "https://andreas-zeller.info/"
+  photo: zeller-andreas.jpg
+  title: How to create the nastiest test inputs ever.
+  bio: "Andreas is faculty at the CISPA Helmholtz Center for Information Security and professor of Software Engineering at Saarland University in Saarbrücken, Germany."
+  video: 
+
+- event: 2023-04
+  id: zhou-shurui
+  family: Zhou
+  personal: Shurui
+  url: "https://www.eecg.utoronto.ca/~shuruiz/"
+  photo: 
+  title:
+  bio:
