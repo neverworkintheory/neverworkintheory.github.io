@@ -29,7 +29,7 @@ Event,ID,Family,Personal,URL,Title,Bio,YouTube
 2022-10,nadi-sarah,Nadi,Sarah,https://www.sarahnadi.org/,"It's not you, it's the API: automatically avoiding API misuses",Sarah is an Associate Professor in the Department of Computing Science at the University of Alberta,https://youtube.com/embed/KqhvZ4xTnhQ
 2022-10,smith-justin,Smith,Justin,https://jssmith1.github.io/,How automated tools can communicate effective strategies for fixing bugs,Justin is an Assistant Professor of Computer Science at Lafayette College,https://youtube.com/embed/_I-DM5z8UeY
 2022-10,zhang-tianyi,Zhang,Tianyi,https://tianyi-zhang.github.io/,Interactive debugging and testing support for deep learning,Tianyi is an assistant professor in Computer Science at Purdue University,https://youtube.com/embed/8LekgPnRt1g
-2023-04,bai-gina,Bai,Gina (Rui),https://ginabai.github.io/,,,
+2023-04,bai-gina,Bai,Gina,https://ginabai.github.io/,How novice testers perceive and perform unit testing,Gina is an Assistant Professor of the Practice at Vanderbilt University in the United States,
 2023-04,bohme-marcel,Böhme,Marcel,https://mboehme.github.io/,On the surprising efficiency and exponential cost of fuzzing,Marcel leads the Software Security at the Max Planck Institute for Security and Privacy in Germany,
 2023-04,businge-john,Businge,John,https://johnxu21.github.io/,,,
 2023-04,chatterjee-preetha,Chatterjee,Preetha,https://preethac.github.io/,Emotion awareness in software engineering,Preetha is an Assistant Professor at Drexel University in the United States,
@@ -51,5 +51,5 @@ Event,ID,Family,Personal,URL,Title,Bio,YouTube
 2023-04,serebrenik-alexander,Serebrenik,Alexander,https://www.win.tue.nl/~aserebre/,,,
 2023-04,sullivan-allison,Sullivan,Allison,https://allisonius.github.io/,,,
 2023-04,tshukudu-ethel,Tshukudu,Ethel,,,,
-2023-04,zeller-andreas,Zeller,Andreas,https://andreas-zeller.info/,How to create the nastiest test inputs ever,Andreas is faculty at the CISPA Helmholtz Center for Information Security and professor of Software Engineering at Saarland University, both in Saarbrücken, Germany,
+2023-04,zeller-andreas,Zeller,Andreas,https://andreas-zeller.info/,How to create the nastiest test inputs ever,"Andreas is faculty at the CISPA Helmholtz Center for Information Security and professor of Software Engineering at Saarland University in Saarbrücken, Germany",
 2023-04,zhou-shurui,Zhou,Shurui,https://www.eecg.utoronto.ca/~shuruiz/,,,
