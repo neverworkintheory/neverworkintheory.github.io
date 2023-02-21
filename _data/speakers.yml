@@ -7,6 +7,9 @@
   title: How code coverage can be used and abused to guide testing.
   bio: "Maurício is Tech Academy Lead at Adyen and an Assistant Professor at Delft University of Technology in the Netherlands."
   video: https://youtu.be/f1DueZcSxRs
+  thumbnail: aniche-mauricio.webp
+  en: aniche-mauricio-en.txt
+  es: aniche-mauricio-es.txt
 
 - event: 2022-04
   id: bacchelli-alberto
@@ -17,16 +20,22 @@
   title: How code review works (and doesn't) in the real world.
   bio: "Alberto is an Associate Professor at the University of Zurich in Switzerland."
   video: https://youtu.be/_SJL7vepQvU
+  thumbnail: bacchelli-alberto.webp
+  en: bacchelli-alberto-en.txt
+  es: bacchelli-alberto-es.txt
 
 - event: 2022-04
   id: baltes-sebastian
   family: Baltes
   personal: Sebastian
   url: "https://empirical-software.engineering/"
+  mastodon: "@sbaltes@fosstodon.org"
   photo: baltes-sebastian.jpg
   title: Challenges and opportunities for software engineering in Papua New Guinea.
   bio: "Sebastian is a Principal Expert for Empirical Software Engineering at SAP in Germany and an Adjunct Lecturer at the University of Adelaide in Australia."
-  video: https://youtu.be/SsHf0-X4vrI
+  thumbnail: baltes-sebastian.webp
+  en: baltes-sebastian-en.txt
+  es: baltes-sebastian-es.txt
 
 - event: 2022-04
   id: blincoe-kelly
@@ -37,6 +46,9 @@
   title: The effects of destructive criticism in code review.
   bio: "Kelly is a Senior Lecturer at the University of Auckland in New Zealand."
   video: https://youtu.be/qaO00CLqLkI
+  thumbnail: blincoe-kelly.webp
+  en: blincoe-kelly-en.txt
+  es: blincoe-kelly-es.txt
 
 - event: 2022-04
   id: brown-neil
@@ -47,6 +59,9 @@
   title: How your minds learn to program.
   bio: "Neil is a Research Fellow at King's College London."
   video: https://youtu.be/FAXAPBxkhxc
+  thumbnail: brown-neil.webp
+  en: brown-neil-en.txt
+  es: brown-neil-es.txt
 
 - event: 2022-04
   id: ford-robinson-denae
@@ -57,16 +72,23 @@
   title: Online community and safety in software engineering.
   bio: "Denae is a Research Scientist at Microsoft Research in the United States."
   video: https://youtu.be/kkPLEMevjlw
+  thumbnail: ford-robinson-denae.webp
+  en: ford-robinson-denae-en.txt
+  es: ford-robinson-denae-es.txt
 
 - event: 2022-04
   id: fucci-davide
   family: Fucci
   personal: Davide
   url: "https://dfucci.github.io/"
+  mastodon: "@dfucci@mastodon.social"
   photo: fucci-davide.jpg
   title: The hidden costs and benefits of TDD.
   bio: "Davide is an Assistant Professor at the Blekinge Institute of Technology in Sweden."
   video: https://youtu.be/rBcV1F7jyHw
+  thumbnail: fucci-davide.webp
+  en: fucci-davide-en.txt
+  es: fucci-davide-es.txt
 
 - event: 2022-04
   id: galster-matthias
@@ -77,6 +99,9 @@
   title: Value and waste in software engineering.
   bio: "Matthias is an Associate Professor at the University of Canterbury in New Zealand."
   video: https://youtu.be/MVTO4KCRKJw
+  thumbnail: galster-matthias.webp
+  en: galster-matthias-en.txt
+  es: galster-matthias-es.txt
 
 - event: 2022-04
   id: hermans-felienne
@@ -87,6 +112,9 @@
   title: How patterns in variable names can make code easier to read.
   bio: "Felienne is an Associate Professor at Leiden University in the Netherlands."
   video: https://youtu.be/z7w2lKG8zWM
+  thumbnail: hermans-felienne.webp
+  en: hermans-felienne-en.txt
+  es: hermans-felienne-es.txt
 
 - event: 2022-04
   id: hicks-catherine
@@ -97,6 +125,9 @@
   title: Fostering a learning culture in coding teams.
   bio: "Cat, a former intervention researcher at the Khan Academy, is the principal consultant at Carthasis Consulting."
   video: https://youtu.be/ygeykeP9Ww4
+  thumbnail: hicks-catherine.webp
+  en: hicks-catherine-en.txt
+  es: hicks-catherine-es.txt
 
 - event: 2022-04
   id: johnson-matthews-brittany
@@ -107,6 +138,9 @@
   title: "Causal testing: understanding the root causes of defects."
   bio: "Brittany is an Assistant Professor at George Mason University in the United States."
   video: https://youtu.be/SrDqrwyV4I4
+  thumbnail: johnson-matthews-brittany.webp
+  en: johnson-matthews-brittany-en.txt
+  es: johnson-matthews-brittany-es.txt
 
 - event: 2022-04
   id: mcintosh-shane
@@ -117,6 +151,9 @@
   title: The unintended consequences of mining software build systems.
   bio: "Shane is an Associate Professor at the University of Waterloo in Canada."
   video: https://youtu.be/QJvijeRx8ic
+  thumbnail: mcintosh-shane.webp
+  en: mcintosh-shane-en.txt
+  es: mcintosh-shane-es.txt
 
 - event: 2022-04
   id: nagappan-mei
@@ -127,6 +164,9 @@
   title: Bias in evaluating code contributions.
   bio: "Mei is an Associate Professor at the University of Waterloo in Canada."
   video: https://youtu.be/oPIVZe0c3Io
+  thumbnail: nagappan-mei.webp
+  en: nagappan-mei-en.txt
+  es: nagappan-mei-es.txt
 
 - event: 2022-04
   id: petre-marian
@@ -137,6 +177,9 @@
   title: How expert programmers think about errors.
   bio: "Marian is a Professor at the Open University in the United Kingdom."
   video: https://youtu.be/Jor-Rh0gwus
+  thumbnail: petre-marian.webp
+  en: petre-marian-en.txt
+  es: petre-marian-es.txt
 
 - event: 2022-04
   id: rigger-manuel
@@ -147,6 +190,9 @@
   title: How to test software without writing tests.
   bio: "Manuel Rigger is a postdoctoral researcher at ETH Zurich and an incoming Assistant Professor at the National University of Singapore."
   video: https://youtu.be/tLKTILnVasg
+  thumbnail: rigger-manuel.webp
+  en: rigger-manuel-en.txt
+  es: rigger-manuel-es.txt
 
 - event: 2022-04
   id: rodeghero-paige
@@ -157,6 +203,9 @@
   title: What we've learned about remote onboarding during the pandemic.
   bio: "Paige is an Assistant Professor at Clemson University in the United States."
   video: https://youtu.be/sVAPJ2JvU78
+  thumbnail: rodeghero-paige.webp
+  en: rodeghero-paige-en.txt
+  es: rodeghero-paige-es.txt
 
 - event: 2022-04
   id: steinmacher-igor
@@ -167,6 +216,9 @@
   title: Negotiation and padding in software project estimates.
   bio: "Igor is an Assistant Professor at the Federal University of Technology - Paraná in Brazil."
   video: https://youtu.be/zpPDlVoiVSU
+  thumbnail: steinmacher-igor.webp
+  en: steinmacher-igor-en.txt
+  es: steinmacher-igor-es.txt
 
 - event: 2022-04
   id: stolee-kathryn
@@ -177,6 +229,9 @@
   title: "To search or not to search: it depends on the question."
   bio: "Katie is an Associate Professor at North Carolina State University."
   video: https://youtu.be/iiJXYO_hcvQ
+  thumbnail: stolee-kathryn.webp
+  en: stolee-kathryn-en.txt
+  es: stolee-kathryn-es.txt
 
 - event: 2022-04
   id: storey-margaret-anne
@@ -187,6 +242,9 @@
   title: "What does 'productivity' actually mean for developers?"
   bio: "Margaret-Anne is a Professor at the University of Victoria in Canada."
   video: https://youtu.be/ZdUAxUBrYLA
+  thumbnail: storey-margaret-anne.webp
+  en: storey-margaret-anne-en.txt
+  es: storey-margaret-anne-es.txt
 
 - event: 2022-04
   id: treude-christoph
@@ -197,6 +255,9 @@
   title: Automatically enhancing error messages.
   bio: "Christoph is a Senior Lecturer at the University of Melbourne in Australia."
   video: https://youtu.be/YP5BGiw0Gng
+  thumbnail: treude-christoph.webp
+  en: treude-christoph-en.txt
+  es: treude-christoph-es.txt
 
 - event: 2022-04
   id: wessel-mairieli
@@ -207,6 +268,9 @@
   title: How people really use GitHub Actions.
   bio: "Mairieli is a postdoctoral researcher at Delft University of Technology in the Netherlands."
   video: https://youtu.be/X1Z9lWhQaro
+  thumbnail: wessel-mairieli.webp
+  en: wessel-mairieli-en.txt
+  es: wessel-mairieli-es.txt
 
 - event: 2022-04
   id: zaidman-andy
@@ -217,6 +281,9 @@
   title: Programmer by day, tester by night.
   bio: "Andy Zaidman is a full professor in software engineering at the Delft University of Technology."
   video: https://youtu.be/rFXdQ0k-hqw
+  thumbnail: zaidman-andy.webp
+  en: zaidman-andy-en.txt
+  es: zaidman-andy-es.txt
 
 - event: 2022-09
   id: brown-chris
@@ -227,6 +294,9 @@
   title: How to recommend tools for finding and fixing software errors.
   bio: "Chris is an Assistant Professor in the Department of Computer Science at Virginia Tech."
   video: https://youtu.be/P_x3M57paZ8
+  thumbnail: brown-chris.webp
+  en: brown-chris-en.txt
+  es: brown-chris-es.txt
 
 - event: 2022-09
   id: da-silva-santos-joanna
@@ -237,6 +307,9 @@
   title: "Choose wisely: code smells in automatically generated code."
   bio: "Joanna is an Assistant Professor in the Department of Computer Science and Engineering at the University of Notre Dame."
   video: https://youtu.be/GIV-ZyjWtg0
+  thumbnail: da-silva-santos-joanna.webp
+  en: da-silva-santos-joanna-en.txt
+  es: da-silva-santos-joanna-es.txt
 
 - event: 2022-09
   id: hicks-catherine
@@ -247,6 +320,9 @@
   title: "It's like coding in the dark: the need for learning culture within engineering teams."
   bio: "Cat is the VP of Research Insights and Director of the Developer Insights Lab at Pluralsight Flow."
   video: https://youtu.be/mVec1TzQIMM
+  thumbnail: hicks-catherine.webp
+  en: hicks-catherine-en.txt
+  es: hicks-catherine-es.txt
 
 - event: 2022-09
   id: khomh-foutse
@@ -257,16 +333,23 @@
   title: Finding bugs in deep learning programs.
   bio: "Foutse is a Full Professor of Software Engineering at Polytechnique Montréal."
   video: https://youtu.be/1L8t3OldBfc
+  thumbnail: khomh-foutse.webp
+  en: khomh-foutse-en.txt
+  es: khomh-foutse-es.txt
 
 - event: 2022-09
   id: mkaouer-mohamed
   family: Mkaouer
   personal: Mohamed Wiem
   url: "https://mkaouer.net/"
+  mastodon: "@mkaouer@techhub.social"
   photo: mkaouer-mohamed.png
   title: "One thousand and one stories: a large-scale survey of software refactoring."
   bio: "Mohamed is an Assistant Professor in Software Engineering the Rochester Institute of Technology."
   video: https://youtu.be/rUa_hELXvHs
+  thumbnail: mkaouer-mohamed.webp
+  en: mkaouer-mohamed-en.txt
+  es: mkaouer-mohamed-es.txt
 
 - event: 2022-09
   id: nadi-sarah
@@ -277,6 +360,9 @@
   title: "It's not you, it's the API: automatically avoiding API misuses."
   bio: "Sarah is an Associate Professor in the Department of Computing Science at the University of Alberta."
   video: https://youtu.be/KqhvZ4xTnhQ
+  thumbnail: nadi-sarah.webp
+  en: nadi-sarah-en.txt
+  es: nadi-sarah-es.txt
 
 - event: 2022-09
   id: smith-justin
@@ -287,6 +373,9 @@
   title: How automated tools can communicate effective strategies for fixing bugs.
   bio: "Justin is an Assistant Professor of Computer Science at Lafayette College."
   video: https://youtu.be/_I-DM5z8UeY
+  thumbnail: smith-justin.webp
+  en: smith-justin-en.txt
+  es: smith-justin-es.txt
 
 - event: 2022-09
   id: zhang-tianyi
@@ -297,6 +386,9 @@
   title: Interactive debugging and testing support for deep learning.
   bio: "Tianyi is an assistant professor in Computer Science at Purdue University."
   video: https://youtu.be/8LekgPnRt1g
+  thumbnail: zhang-tianyi.webp
+  en: zhang-tianyi-en.txt
+  es: zhang-tianyi-es.txt
 
 - event: 2023-04
   id: bai-gina

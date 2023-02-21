@@ -1,0 +1,31 @@
+{% assign speakers = site.data.speakers | where: "event", include.event %}
+<h2 id="{{include.event}}">{{include.title}} ({{include.date}})</h2>
+<table>
+  <tr>
+  {% assign column = "left" %}
+  {% for speaker in speakers %}
+    <td><a href="{{speaker.video}}"><img src="{{'/static/' | append: include.event | append: '/' | append: speaker.thumbnail | relative_url}}" alt="{{speaker.title}}"/></a></td>
+    <td>
+      <a href="{{speaker.url}}">{{speaker.personal}} {{speaker.family}}</a>:
+      <br/>
+      <a href="{{speaker.video}}">{{speaker.title}}</a>
+      {% if speaker.en or speaker.es %}
+      <br/>
+      Transcript:
+      {% if speaker.en %}<a href="{{ '/static/' | append: include.event | append: '/' | append: speaker.en | relative_url }}">English</a>{% endif %}
+      {% if speaker.es %}<a href="{{ '/static/' | append: include.event | append: '/' | append: speaker.es | relative_url }}">Español</a>{% endif %}
+      {% endif %}
+    </td>
+    {% if column == 'left' %}
+      {% assign column = 'right' %}
+    {% else %}
+      </tr>
+      <tr>
+      {% assign column = 'left' %}
+    {% endif %}
+  {% endfor %}
+  {% if column == 'right' %}
+  <td></td>
+  {% endif %}
+  </tr>
+</table>

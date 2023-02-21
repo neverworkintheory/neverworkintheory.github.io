@@ -13,38 +13,9 @@ title: "It Will Never Work in Theory"
   </strong>
 </p>
 
-{% for session in site.talks reversed %}
-<h2 id="{{session.slug}}">{{session.title}} ({{session.date}})</h2>
-<table>
-  <tr>
-  {% assign column = 'left' %}
-  {% for talk in session.talks %}
-    <td><a href="{{talk.video}}"><img src="{{'/static/thumbnails/' | append: talk.thumbnail | relative_url}}" alt="{{talk.title}}"/></a></td>
-    <td>
-      <a href="{{talk.homepage}}">{{talk.speaker}}</a>:
-      <br/>
-      <a href="{{talk.video}}">{{talk.title}}</a>
-      {% if talk.en or talk.es %}
-      <br/>
-      Transcript:
-      {% if talk.en %}<a href="{{ '/static/' | append: talk.en | relative_url }}">English</a>{% endif %}
-      {% if talk.es %}<a href="{{ '/static/' | append: talk.es | relative_url }}">Español</a>{% endif %}
-      {% endif %}
-    </td>
-    {% if column == 'left' %}
-      {% assign column = 'right' %}
-    {% else %}
-      </tr>
-      <tr>
-      {% assign column = 'left' %}
-    {% endif %}
-  {% endfor %}
-  {% if column == 'right' %}
-  <td></td>
-  {% endif %}
-  </tr>
-</table>
-{% endfor %}
+{% include session.html event="2022-09" title="Strange Loop" date="September 2022" %}
+
+{% include session.html event="2022-04" title="Online" date="April 2022" %}
 
 <h2>Recent Posts</h2>
 <table>
