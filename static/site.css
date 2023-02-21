@@ -1,46 +1,80 @@
 /* Wrap */
 @media
  only screen and (max-width: 38em) {
-  div.flex-row {
+  .row {
     flex-wrap: wrap;
   }
-  div.flex-card {
+  .card {
     width: 96%;
   }
 }
 
-/* Create a row */
-div.flex-row {
+/*
+ * Flex grid
+ */
+.row {
     display: flex;
-    flex-direction: row;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+    flex-flow: row wrap;
+    width: 100%
 }
 
-/* Create a column (not cards) */
-div.flex-col {
-    margin-left: 1rem;
-    margin-right: 1rem;
-    width: 46%;
+.row > * {
+  flex: 1; /* allow children to grow when space available */
 }
 
-/* Add shadows to create the "card" effect */
-div.flex-card {
-    margin-left: 1rem;
-    margin-right: 1rem;
-    width: 46%;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    transition: 0.3s;
+.col-1 { flex-basis: 8.33%; }
+.col-2 { flex-basis: 16.66%; }
+.col-3 { flex-basis: 25%; }
+.col-4 { flex-basis: 33.33%; }
+.col-5 { flex-basis: 41.66%; }
+.col-6 { flex-basis: 50%; }
+.col-7 { flex-basis: 58.33%; }
+.col-8 { flex-basis: 66.66%; }
+.col-9 { flex-basis: 75%; }
+.col-10 { flex-basis: 83.33%; }
+.col-11 { flex-basis: 91.66%; }
+.col-12 { flex-basis: 100%; }
+
+/*
+ * Generic positioning
+ */
+
+.left {
+    text-align: left;
 }
 
-/* On mouse-over, add a deeper shadow */
-div.flex-card:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+.right {
+    text-align: right;
 }
 
-/* Add some padding inside the card container */
-div.flex-card-container {
-    padding: 2px 16px;
+.center {
+    text-align: center;
+}
+
+/*
+ * Cards
+ */
+
+div.card {
+  box-shadow: var(--shadow-spacing) var(--shadow);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border: solid var(--lightgray) var(--lightborder);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding-left: var(--small-spacing);
+  padding-right: var(--small-spacing);
+  margin: var(--small-spacing);
+}
+
+div.card img {
+    margin: auto;
+    display: block;
+}
+
+div.card img:last-child {
+    padding-bottom: var(--small-spacing);
 }
 
 /* Show a table with no extra space */

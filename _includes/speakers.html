@@ -2,11 +2,11 @@
 
 {% assign speakers = site.data.speakers | where: "event", include.event %}
 {% for speaker in speakers %}
-<div class="flex-row" id="{speaker.ID}">
-  <div class="flex-col">
-    {% if speaker.photo %}<img src="{{'/static/' | append: include.event | append: "/" | append: speaker.photo}}" alt="{speaker.personal} {speaker.family}" width="200px">{% endif %}
+<div class="row" id="{speaker.ID}">
+  <div class="col-4">
+    {% if speaker.photo %}<img src="{{'/static/' | append: include.event | append: "/" | append: speaker.photo}}" alt="{speaker.personal} {speaker.family}" width="80%">{% endif %}
   </div>
-  <div class="flex-col">
+  <div class="col-8">
     <a href="{{speaker.url}}" class="person">{{speaker.personal}} {{speaker.family}}</a>:
     "{{speaker.title}}"
     {{speaker.bio}}
