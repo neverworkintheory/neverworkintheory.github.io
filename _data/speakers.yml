@@ -484,10 +484,10 @@
   id: kula-raula
   family: Kula
   personal: Raula
-  url: ""
-  photo: 
-  title:
-  bio:
+  url: "https://raux.github.io/"
+  photo: kula-raula.jpg
+  title: What do we know about libraries and their dependencies?
+  bio: Raula is an assistant professor at the Nara Institute of Science and Technology (NAIST) in Japan.
   video: 
 
 - event: 2023-04

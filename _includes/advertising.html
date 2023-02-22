@@ -1,0 +1,8 @@
+{% assign person = site.data.speakers | where: "id", include.id | first %}
+<div class="col-2"><img src="{{'/static/' | append: include.event | append: '/' | append: person.photo}}" width="80%"></div>
+<div class="col-4">
+  {% if person.url %}<a href="person.url">{% endif %}{{person.personal}} {{person.family}}{% if person.url %}</a>{% endif %}:
+  <br>
+  {{person.title}}
+</div>
+
