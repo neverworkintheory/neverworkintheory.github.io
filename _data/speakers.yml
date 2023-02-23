@@ -5,7 +5,7 @@
   url: "https://www.mauricioaniche.com/"
   photo: aniche-mauricio.jpg
   title: How code coverage can be used and abused to guide testing.
-  bio: "Maurício is Tech Academy Lead at Adyen and an Assistant Professor at Delft University of Technology in the Netherlands."
+  bio: Maurício is Tech Academy Lead at Adyen and an Assistant Professor at Delft University of Technology in the Netherlands.
   video: https://youtu.be/f1DueZcSxRs
   thumbnail: aniche-mauricio.webp
   en: aniche-mauricio-en.txt
@@ -18,7 +18,7 @@
   url: "https://sback.it/"
   photo: bacchelli-alberto.jpg
   title: How code review works (and doesn't) in the real world.
-  bio: "Alberto is an Associate Professor at the University of Zurich in Switzerland."
+  bio: Alberto is an Associate Professor at the University of Zurich in Switzerland.
   video: https://youtu.be/_SJL7vepQvU
   thumbnail: bacchelli-alberto.webp
   en: bacchelli-alberto-en.txt
@@ -32,7 +32,7 @@
   mastodon: "@sbaltes@fosstodon.org"
   photo: baltes-sebastian.jpg
   title: Challenges and opportunities for software engineering in Papua New Guinea.
-  bio: "Sebastian is a Principal Expert for Empirical Software Engineering at SAP in Germany and an Adjunct Lecturer at the University of Adelaide in Australia."
+  bio: Sebastian is a Principal Expert for Empirical Software Engineering at SAP in Germany and an Adjunct Lecturer at the University of Adelaide in Australia.
   thumbnail: baltes-sebastian.webp
   en: baltes-sebastian-en.txt
   es: baltes-sebastian-es.txt
@@ -44,7 +44,7 @@
   url: "https://kblincoe.github.io/"
   photo: blincoe-kelly.png
   title: The effects of destructive criticism in code review.
-  bio: "Kelly is a Senior Lecturer at the University of Auckland in New Zealand."
+  bio: Kelly is a Senior Lecturer at the University of Auckland in New Zealand.
   video: https://youtu.be/qaO00CLqLkI
   thumbnail: blincoe-kelly.webp
   en: blincoe-kelly-en.txt
@@ -57,7 +57,7 @@
   url: "https://twistedsquare.com/"
   photo: brown-neil.jpg
   title: How your minds learn to program.
-  bio: "Neil is a Research Fellow at King's College London."
+  bio: Neil is a Research Fellow at King's College London.
   video: https://youtu.be/FAXAPBxkhxc
   thumbnail: brown-neil.webp
   en: brown-neil-en.txt
@@ -70,7 +70,7 @@
   url: "http://denaeford.me/"
   photo: ford-robinson-denae.png
   title: Online community and safety in software engineering.
-  bio: "Denae is a Research Scientist at Microsoft Research in the United States."
+  bio: Denae is a Research Scientist at Microsoft Research in the United States.
   video: https://youtu.be/kkPLEMevjlw
   thumbnail: ford-robinson-denae.webp
   en: ford-robinson-denae-en.txt
@@ -97,7 +97,7 @@
   url: "https://www.csse.canterbury.ac.nz/matthias.galster/"
   photo: galster-matthias.jpg
   title: Value and waste in software engineering.
-  bio: "Matthias is an Associate Professor at the University of Canterbury in New Zealand."
+  bio: Matthias is an Associate Professor at the University of Canterbury in New Zealand.
   video: https://youtu.be/MVTO4KCRKJw
   thumbnail: galster-matthias.webp
   en: galster-matthias-en.txt
@@ -110,7 +110,7 @@
   url: "https://www.felienne.com/"
   photo: hermans-felienne.jpg
   title: How patterns in variable names can make code easier to read.
-  bio: "Felienne is an Associate Professor at Leiden University in the Netherlands."
+  bio: Felienne is an Associate Professor at Leiden University in the Netherlands.
   video: https://youtu.be/z7w2lKG8zWM
   thumbnail: hermans-felienne.webp
   en: hermans-felienne-en.txt
@@ -123,7 +123,7 @@
   url: "https://www.catharsisinsight.com/"
   photo: hicks-catherine.png
   title: Fostering a learning culture in coding teams.
-  bio: "Cat, a former intervention researcher at the Khan Academy, is the principal consultant at Carthasis Consulting."
+  bio: Cat, a former intervention researcher at the Khan Academy, is the principal consultant at Carthasis Consulting.
   video: https://youtu.be/ygeykeP9Ww4
   thumbnail: hicks-catherine.webp
   en: hicks-catherine-en.txt
@@ -136,7 +136,7 @@
   url: "https://cs.gmu.edu/~johnsonb/"
   photo: johnson-matthews-brittany.png
   title: "Causal testing: understanding the root causes of defects."
-  bio: "Brittany is an Assistant Professor at George Mason University in the United States."
+  bio: Brittany is an Assistant Professor at George Mason University in the United States.
   video: https://youtu.be/SrDqrwyV4I4
   thumbnail: johnson-matthews-brittany.webp
   en: johnson-matthews-brittany-en.txt
@@ -149,7 +149,7 @@
   url: "https://shanemcintosh.org/"
   photo: mcintosh-shane.jpg
   title: The unintended consequences of mining software build systems.
-  bio: "Shane is an Associate Professor at the University of Waterloo in Canada."
+  bio: Shane is an Associate Professor at the University of Waterloo in Canada.
   video: https://youtu.be/QJvijeRx8ic
   thumbnail: mcintosh-shane.webp
   en: mcintosh-shane-en.txt
@@ -162,7 +162,7 @@
   url: "https://cs.uwaterloo.ca/~m2nagapp/"
   photo: nagappan-mei.jpg
   title: Bias in evaluating code contributions.
-  bio: "Mei is an Associate Professor at the University of Waterloo in Canada."
+  bio: Mei is an Associate Professor at the University of Waterloo in Canada.
   video: https://youtu.be/oPIVZe0c3Io
   thumbnail: nagappan-mei.webp
   en: nagappan-mei-en.txt
@@ -175,7 +175,7 @@
   url: "http://mcs.open.ac.uk/mp8/"
   photo: petre-marian.jpg
   title: How expert programmers think about errors.
-  bio: "Marian is a Professor at the Open University in the United Kingdom."
+  bio: Marian is a Professor at the Open University in the United Kingdom.
   video: https://youtu.be/Jor-Rh0gwus
   thumbnail: petre-marian.webp
   en: petre-marian-en.txt
@@ -188,7 +188,7 @@
   url: "https://www.manuelrigger.at/"
   photo: rigger-manuel.jpg
   title: How to test software without writing tests.
-  bio: "Manuel Rigger is a postdoctoral researcher at ETH Zurich and an incoming Assistant Professor at the National University of Singapore."
+  bio: Manuel Rigger is a postdoctoral researcher at ETH Zurich and an incoming Assistant Professor at the National University of Singapore.
   video: https://youtu.be/tLKTILnVasg
   thumbnail: rigger-manuel.webp
   en: rigger-manuel-en.txt
@@ -201,7 +201,7 @@
   url: "https://paigerodeghero.com/"
   photo: rodeghero-paige.png
   title: What we've learned about remote onboarding during the pandemic.
-  bio: "Paige is an Assistant Professor at Clemson University in the United States."
+  bio: Paige is an Assistant Professor at Clemson University in the United States.
   video: https://youtu.be/sVAPJ2JvU78
   thumbnail: rodeghero-paige.webp
   en: rodeghero-paige-en.txt
@@ -214,7 +214,7 @@
   url: "http://igor.pro.br/"
   photo: steinmacher-igor.jpg
   title: Negotiation and padding in software project estimates.
-  bio: "Igor is an Assistant Professor at the Federal University of Technology - Paraná in Brazil."
+  bio: Igor is an Assistant Professor at the Federal University of Technology - Paraná in Brazil.
   video: https://youtu.be/zpPDlVoiVSU
   thumbnail: steinmacher-igor.webp
   en: steinmacher-igor-en.txt
@@ -227,7 +227,7 @@
   url: "http://kstolee.github.io/"
   photo: stolee-kathryn.jpg
   title: "To search or not to search: it depends on the question."
-  bio: "Katie is an Associate Professor at North Carolina State University."
+  bio: Katie is an Associate Professor at North Carolina State University.
   video: https://youtu.be/iiJXYO_hcvQ
   thumbnail: stolee-kathryn.webp
   en: stolee-kathryn-en.txt
@@ -239,8 +239,8 @@
   personal: Margaret-Anne
   url: "https://www.margaretstorey.com/"
   photo: storey-margaret-anne.jpg
-  title: "What does 'productivity' actually mean for developers?"
-  bio: "Margaret-Anne is a Professor at the University of Victoria in Canada."
+  title: What does 'productivity' actually mean for developers?
+  bio: Margaret-Anne is a Professor at the University of Victoria in Canada.
   video: https://youtu.be/ZdUAxUBrYLA
   thumbnail: storey-margaret-anne.webp
   en: storey-margaret-anne-en.txt
@@ -253,7 +253,7 @@
   url: "https://ctreude.ca/"
   photo: treude-christoph.jpg
   title: Automatically enhancing error messages.
-  bio: "Christoph is a Senior Lecturer at the University of Melbourne in Australia."
+  bio: Christoph is a Senior Lecturer at the University of Melbourne in Australia.
   video: https://youtu.be/YP5BGiw0Gng
   thumbnail: treude-christoph.webp
   en: treude-christoph-en.txt
@@ -266,7 +266,7 @@
   url: "https://mairieli.com/"
   photo: wessel-mairieli.jpg
   title: How people really use GitHub Actions.
-  bio: "Mairieli is a postdoctoral researcher at Delft University of Technology in the Netherlands."
+  bio: Mairieli is a postdoctoral researcher at Delft University of Technology in the Netherlands.
   video: https://youtu.be/X1Z9lWhQaro
   thumbnail: wessel-mairieli.webp
   en: wessel-mairieli-en.txt
@@ -279,7 +279,7 @@
   url: "https://azaidman.github.io/"
   photo: zaidman-andy.jpg
   title: Programmer by day, tester by night.
-  bio: "Andy Zaidman is a full professor in software engineering at the Delft University of Technology."
+  bio: Andy Zaidman is a Full Professor in Software Engineering at the Delft University of Technology.
   video: https://youtu.be/rFXdQ0k-hqw
   thumbnail: zaidman-andy.webp
   en: zaidman-andy-en.txt
@@ -292,7 +292,7 @@
   url: "https://chbrown13.github.io/"
   photo: brown-chris.png
   title: How to recommend tools for finding and fixing software errors.
-  bio: "Chris is an Assistant Professor in the Department of Computer Science at Virginia Tech."
+  bio: Chris is an Assistant Professor in the Department of Computer Science at Virginia Tech.
   video: https://youtu.be/P_x3M57paZ8
   thumbnail: brown-chris.webp
   en: brown-chris-en.txt
@@ -305,7 +305,7 @@
   url: "https://joannacss.github.io/"
   photo: da-silva-santos-joanna.png
   title: "Choose wisely: code smells in automatically generated code."
-  bio: "Joanna is an Assistant Professor in the Department of Computer Science and Engineering at the University of Notre Dame."
+  bio: Joanna is an Assistant Professor in the Department of Computer Science and Engineering at the University of Notre Dame.
   video: https://youtu.be/GIV-ZyjWtg0
   thumbnail: da-silva-santos-joanna.webp
   en: da-silva-santos-joanna-en.txt
@@ -318,7 +318,7 @@
   url: "https://www.catharsisinsight.com/"
   photo: hicks-catherine.png
   title: "It's like coding in the dark: the need for learning culture within engineering teams."
-  bio: "Cat is the VP of Research Insights and Director of the Developer Insights Lab at Pluralsight Flow."
+  bio: Cat is the VP of Research Insights and Director of the Developer Insights Lab at Pluralsight Flow.
   video: https://youtu.be/mVec1TzQIMM
   thumbnail: hicks-catherine.webp
   en: hicks-catherine-en.txt
@@ -331,7 +331,7 @@
   url: "http://khomh.net/"
   photo: khomh-foutse.png
   title: Finding bugs in deep learning programs.
-  bio: "Foutse is a Full Professor of Software Engineering at Polytechnique Montréal."
+  bio: Foutse is a Full Professor of Software Engineering at Polytechnique Montréal.
   video: https://youtu.be/1L8t3OldBfc
   thumbnail: khomh-foutse.webp
   en: khomh-foutse-en.txt
@@ -345,7 +345,7 @@
   mastodon: "@mkaouer@techhub.social"
   photo: mkaouer-mohamed.png
   title: "One thousand and one stories: a large-scale survey of software refactoring."
-  bio: "Mohamed is an Assistant Professor in Software Engineering the Rochester Institute of Technology."
+  bio: Mohamed is an Assistant Professor in Software Engineering the Rochester Institute of Technology.
   video: https://youtu.be/rUa_hELXvHs
   thumbnail: mkaouer-mohamed.webp
   en: mkaouer-mohamed-en.txt
@@ -358,7 +358,7 @@
   url: "https://www.sarahnadi.org/"
   photo: nadi-sarah.png
   title: "It's not you, it's the API: automatically avoiding API misuses."
-  bio: "Sarah is an Associate Professor in the Department of Computing Science at the University of Alberta."
+  bio: Sarah is an Associate Professor in the Department of Computing Science at the University of Alberta.
   video: https://youtu.be/KqhvZ4xTnhQ
   thumbnail: nadi-sarah.webp
   en: nadi-sarah-en.txt
@@ -371,7 +371,7 @@
   url: "https://jssmith1.github.io/"
   photo: smith-justin.png
   title: How automated tools can communicate effective strategies for fixing bugs.
-  bio: "Justin is an Assistant Professor of Computer Science at Lafayette College."
+  bio: Justin is an Assistant Professor of Computer Science at Lafayette College.
   video: https://youtu.be/_I-DM5z8UeY
   thumbnail: smith-justin.webp
   en: smith-justin-en.txt
@@ -384,7 +384,7 @@
   url: "https://tianyi-zhang.github.io/"
   photo: zhang-tianyi.png
   title: Interactive debugging and testing support for deep learning.
-  bio: "Tianyi is an assistant professor in Computer Science at Purdue University."
+  bio: Tianyi is an Assistant Professor in Computer Science at Purdue University.
   video: https://youtu.be/8LekgPnRt1g
   thumbnail: zhang-tianyi.webp
   en: zhang-tianyi-en.txt
@@ -397,7 +397,7 @@
   url: "https://ginabai.github.io/"
   photo: bai-gina.jpg
   title: How novice testers perceive and perform unit testing.
-  bio: "Gina is an Assistant Professor of the Practice at Vanderbilt University in the United States."
+  bio: Gina is an Assistant Professor of the Practice at Vanderbilt University in the United States.
   video: 
 
 - event: 2023-04
@@ -407,7 +407,7 @@
   url: "https://mboehme.github.io/"
   photo: bohme-marcel.jpg
   title: On the surprising efficiency and exponential cost of fuzzing.
-  bio: "Marcel leads the Software Security at the Max Planck Institute for Security and Privacy in Germany."
+  bio: Marcel leads the Software Security at the Max Planck Institute for Security and Privacy in Germany.
   video: 
 
 - event: 2023-04
@@ -427,7 +427,7 @@
   url: "https://preethac.github.io/"
   photo: chatterjee-preetha.jpg
   title: Emotion awareness in software engineering.
-  bio: "Preetha is an Assistant Professor at Drexel University in the United States."
+  bio: Preetha is an Assistant Professor at Drexel University in the United States.
   video: 
 
 - event: 2023-04
@@ -435,9 +435,9 @@
   family: Codabux
   personal: Zadia
   url: "https://www.cs.usask.ca/faculty/zadiacodabux/"
-  photo: 
-  title:
-  bio:
+  photo: codabux-zadia.jpg
+  title: Technical debt in R.
+  bio: Zadia is an Assistance Professor at the University of Saskatchewan in Canada.
   video: 
 
 - event: 2023-04
@@ -446,7 +446,7 @@
   personal: Prem
   url: "https://web.cs.ucdavis.edu/~devanbu/"
   photo: devanbu-prem.jpg
-  title: "Leveraging the bimodality of software."
+  title: Leveraging the bimodality of software.
   bio: Prem is a Distinguished Professor (Emeritus) of Computer Science at the University of California Davis in the United States.
   video: 
 
@@ -466,8 +466,8 @@
   personal: Rashina
   url: "https://rashina.com/"
   photo: hoda-rashina.jpg
-  title:
-  bio:
+  title: "You asked for it: making sense of user feedback."
+  bio: Rashina is an Associate Professor of Software Engineering and Deputy Director of the HumaniSE lab at Monash University in Australia.
   video: 
 
 - event: 2023-04
@@ -487,7 +487,7 @@
   url: "https://raux.github.io/"
   photo: kula-raula.jpg
   title: What do we know about libraries and their dependencies?
-  bio: Raula is an assistant professor at the Nara Institute of Science and Technology (NAIST) in Japan.
+  bio: Raula is an Assistant Professor at the Nara Institute of Science and Technology (NAIST) in Japan.
   video: 
 
 - event: 2023-04
@@ -507,7 +507,7 @@
   url: "https://www.carol-s-lee-phd.com/"
   photo: lee-carol.jpg
   title: "Developer thriving: why developers deserve more than satisfaction."
-  bio: "Carol is a senior research scientist at Pluralsight Flow's Developer Success Lab in the United States."
+  bio: Carol is a senior research scientist at Pluralsight Flow's Developer Success Lab in the United States.
   video: 
 
 - event: 2023-04
@@ -516,8 +516,8 @@
   personal: Sherlock
   url: "https://www.otago.ac.nz/info-science/people/staff/sherlock-licorish.html"
   photo: licorish-sherlock.jpg
-  title: "Can genetic improvement enhance online code snippets?"
-  bio: "Sherlock is an Associate Professor in the Department of Information Science at the University of Otago."
+  title: Can genetic improvement enhance online code snippets?
+  bio: Sherlock is an Associate Professor in the Department of Information Science at the University of Otago.
   video: 
 
 - event: 2023-04
@@ -527,7 +527,7 @@
   url: "https://laurenmarg.com/"
   photo: margulieux-lauren.jpg
   title: Things software developers should learn about learning.
-  bio: "Lauren is an Associate Professor of Learning Sciences at Georgia State University."
+  bio: Lauren is an Associate Professor of Learning Sciences at Georgia State University.
   video: 
 
 - event: 2023-04
@@ -547,7 +547,7 @@
   url: "https://www.scanl.org/"
   photo: newman-christian.png
   title: Crafting strong identifier naming practices.
-  bio: "Christian is assistant faculty in the Software Engineering Department at Rochester Institute of Technology. He is the founder and lead researcher of the Source Code Analysis and Natural Language Lab (SCANL)."
+  bio: Christian is assistant faculty in the Software Engineering Department at Rochester Institute of Technology.
   video: 
 
 - event: 2023-04
@@ -557,7 +557,7 @@
   url: "https://gustavopinto.org/"
   photo: pinto-gustavo.jpg
   title: Cognitive-driven development helps software teams to keep code units under the limit.
-  bio: "Gustavo is Head of Research at Zup Innovation and Assistant Professor at Federal University of Pará in Brazil."
+  bio: Gustavo is Head of Research at Zup Innovation and Assistant Professor at Federal University of Pará in Brazil.
   video: 
 
 - event: 2023-04
@@ -597,7 +597,7 @@
   url: "https://allisonius.github.io/"
   photo: sullivan-allison.jpg
   title: "Proofreading the proofreader: the benefits of unit tests for software models."
-  bio: "Allison is an Assistant Professor at the University of Texas at Arlington."
+  bio: Allison is an Assistant Professor at the University of Texas at Arlington.
   video: 
 
 - event: 2023-04
@@ -617,7 +617,7 @@
   url: "https://andreas-zeller.info/"
   photo: zeller-andreas.jpg
   title: How to create the nastiest test inputs ever.
-  bio: "Andreas is faculty at the CISPA Helmholtz Center for Information Security and professor of Software Engineering at Saarland University in Saarbrücken, Germany."
+  bio: Andreas is faculty at the CISPA Helmholtz Center for Information Security and Professor of Software Engineering at Saarland University in Saarbrücken, Germany.
   video: 
 
 - event: 2023-04
