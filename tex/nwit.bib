@@ -152,7 +152,7 @@
   title = {37 million compilations: investigating novice programming mistakes in large-scale student data},
   booktitle = sigcse,
   abstract = {Previous investigations of student errors have typically focused on samples of hundreds of students at individual institutions. This work uses a year's worth of compilation events from over 250,000 students all over the world, taken from the large Blackbox data set. We analyze the frequency, time-to-fix, and spread of errors among users, showing how these factors inter-relate, in addition to their development over the course of the year. These results can inform the design of courses, textbooks and also tools to target the most frequent (or hardest to fix) errors.},
-  reviewed = {/2016/06/11/novice-programming-mistakes.html}
+  reviewed = {/2016/06/09/novice-programming-mistakes.html}
 }
 
 @inproceedings{Ameller2012,
@@ -656,7 +656,7 @@
   title = {An empirical study on the practice of maintaining object-relational mapping code in {Java} systems},
   booktitle = msr,
   abstract = {Databases have become one of the most important components in modern software systems. For example, web services, cloud computing systems, and online transaction processing systems all rely heavily on databases. To abstract the complexity of accessing a database, developers make use of Object-Relational Mapping (ORM) frameworks. ORM frameworks provide an abstraction layer between the application logic and the underlying database. Such abstraction layer automatically maps objects in Object-Oriented Languages to database records, which significantly reduces the amount of boilerplate code that needs to be written. Despite the advantages of using ORM frameworks, we observe several difficulties in maintaining ORM code (i.e., code that makes use of ORM frameworks) when cooperating with our industrial partner. After conducting studies on other open source systems, we find that such difficulties are common in other Java systems. Our study finds that i) ORM cannot completely encapsulate database accesses in objects or abstract the underlying database technology, thus may cause ORM code changes more scattered; ii) ORM code changes are more frequent than regular code, but there is a lack of tools that help developers verify ORM code at compilation time; iii) we find that changes to ORM code are more commonly due to performance or security reasons; however, traditional static code analyzers need to be extended to capture the peculiarities of ORM code in order to detect such problems. Our study highlights the hidden maintenance costs of using ORM frameworks, and provides some initial insights about potential approaches to help maintain ORM code. Future studies should carefully examine ORM code, especially given the rising use of ORM in modern software systems.},
-  reviewed = {/2016/06/05/maintaining-java-orm.html}
+  reviewed = {/2016/04/26/maintaining-java-orm.html}
 }
 
 @inproceedings{Cherubini2007,
@@ -707,7 +707,7 @@
   title = {Software history under the lens: A study on why and how developers examine it},
   booktitle = icsm,
   abstract = {Despite software history being indispensable for developers, there is little empirical knowledge about how they examine software history. Without such knowledge, researchers and tool builders are in danger of making wrong assumptions and building inadequate tools. In this paper we present an in-depth empirical study about the motivations developers have for examining software history, the strategies they use, and the challenges they encounter. To learn these, we interviewed 14 experienced developers from industry, and then extended our findings by surveying 217 developers. We found that history does not begin with the latest commit but with uncommitted changes. Moreover, we found that developers had different motivations for examining recent and old history. Based on these findings we propose 3-LENS HISTORY, a novel unified model for reasoning about software history.},
-  reviewed = {/2021/11/17/software-history-under-the-lens.html}
+  reviewed = {/2021/11/16/software-history-under-the-lens.html}
 }
 
 @article{Coelho2016,
@@ -1497,7 +1497,7 @@
   title = {Googling for Software Development: What Developers Search For and What They Find},
   booktitle = msr,
   abstract = {Developers often search for software resources on the web. In practice, instead of going directly to websites (e.g., Stack Overflow), they rely on search engines (e.g., Google). Despite this being a common activity, we are not yet aware of what developers search from the perspective of popular software development websites and what search results are returned. With this knowledge, we can understand real-world queries, developers' needs, and the query impact on the search results. In this paper, we provide an empirical study to understand what developers search on the web and what they find. We assess 1.3M queries to popular programming websites and we perform thousands of queries on Google to explore search results. We find that (i) developers' queries typically start with keywords (e.g., Python, Android, etc.), are short (3 words), tend to omit functional words, and are similar among each other; (ii) minor changes to queries do not largely affect the Google search results, however, some cosmetic changes may have a non-negligible impact; and (iii) search results are dominated by Stack Overflow, but YouTube is also a relevant source nowadays. We conclude by presenting detailed implications for researchers and developers.},
-  reviewed = {/2021/11/23/googling-for-software-development.html}
+  reviewed = {/2021/11/18/googling-for-software-development.html}
 }
 
 @inproceedings{Hora2021b,
@@ -1993,7 +1993,7 @@
   title = {Assessing exception handling testing practices in open-source libraries},
   journal = ese,
   abstract = {Modern programming languages (e.g., Java and C\#) provide features to separate error-handling code from regular code, seeking to enhance software comprehensibility and maintainability. Nevertheless, the way exception handling (EH) code is structured in such languages may lead to multiple, different, and complex control flows, which may affect the software testability. Previous studies have reported that EH code is typically neglected, not well tested, and its misuse can lead to reliability degradation and catastrophic failures. However, little is known about the relationship between testing practices and EH testing effectiveness. In this exploratory study, we (i) measured the adequacy degree of EH testing concerning code coverage (instruction, branch, and method) criteria; and (ii) evaluated the effectiveness of the EH testing by measuring its capability to detect artificially injected faults (i.e., mutants) using 7 EH mutation operators. Our study was performed using test suites of 27 long-lived Java libraries from open-source ecosystems. Our results show that instructions and branches within catch blocks and throw instructions are less covered, with statistical significance, than the overall instructions and branches. Nevertheless, most of the studied libraries presented test suites capable of detecting more than 70\% of the injected faults. From a total of 12, 331 mutants created in this study, the test suites were able to detect 68\% of them.},
-  reviewed = {/2022/04/20/open-source-exceptinon-handling-testing.html}
+  reviewed = {/2022/04/20/open-source-exception-handling-testing.html}
 }
 
 @article{Lin2020,
@@ -2022,7 +2022,7 @@
   title = {Where should I comment my code?: a dataset and model for predicting locations that need comments},
   booktitle = icse,
   abstract = {Programmers should write code comments, but not on every line of code. We have created a machine learning model that suggests locations where a programmer should write a code comment. We trained it on existing commented code to learn locations that are chosen by developers. Once trained, the model can predict locations in new code. Our models achieved precision of 74\% and recall of 13\% in identifying comment-worthy locations. This first success opens the door to future work, both in the new where-to-comment problem and in guiding comment generation. Our code and data is available at http://groups.inf.ed.ac.uk/cup/comment-locator/.},
-  reviewed = {/2022/02/22/where-comments.html}
+  reviewed = {/2022/02/22/where-comment.html}
 }
 
 @inproceedings{Lo2015,
@@ -2066,7 +2066,7 @@
   title = {On the comprehension of program comprehension},
   journal = acm-tosem,
   abstract = {Research in program comprehension has evolved considerably over the past decades. However, only little is known about how developers practice program comprehension in their daily work. This article reports on qualitative and quantitative research to comprehend the strategies, tools, and knowledge used for program comprehension. We observed 28 professional developers, focusing on their comprehension behavior, strategies followed, and tools used. In an online survey with 1,477 respondents, we analyzed the importance of certain types of knowledge for comprehension and where developers typically access and share this knowledge. We found that developers follow pragmatic comprehension strategies depending on context. They try to avoid comprehension whenever possible and often put themselves in the role of users by inspecting graphical interfaces. Participants confirmed that standards, experience, and personal communication facilitate comprehension. The team size, its distribution, and open-source experience influence their knowledge sharing and access behavior. While face-to-face communication is preferred for accessing knowledge, knowledge is frequently shared in informal comments. Our results reveal a gap between research and practice, as we did not observe any use of comprehension tools and developers seem to be unaware of them. Overall, our findings call for reconsidering the research agendas towards context-aware tool support.},
-  reviewed = {/2015/02/14/on-comprehension-of-program-comprehension.html}
+  reviewed = {/2015/02/13/on-comprehension-of-program-comprehension.html}
 }
 
 @article{Maenpaa2018,
@@ -2262,7 +2262,7 @@
   title = {Does {ACM}'s code of ethics change ethical decision making in software development?},
   abstract = {Ethical decisions in software development can substantially impact end-users, organizations, and our environment, as is evidenced by recent ethics scandals in the news. Organizations, like the ACM, publish codes of ethics to guide software-related ethical decisions. In fact, the ACM has recently demonstrated renewed interest in its code of ethics and made updates for the first time since 1992. To better understand how the ACM code of ethics changes software-related decisions, we replicated a prior behavioral ethics study with 63 software engineering students and 105 professional software developers, measuring their responses to 11 ethical vignettes. We found that explicitly instructing participants to consider the ACM code of ethics in their decision making had no observed effect when compared with a control group. Our findings suggest a challenge to the research community: if not a code of ethics, what techniques can improve ethical decision making in software engineering?},
   booktitle = esec-fse,
-  reviewed = {/2022/02/20/ethics-in-decision-making.html}
+  reviewed = {/2022/03/02/ethics-in-decision-making.html}
 }
 
 @inproceedings{Meneely2011,
@@ -2303,7 +2303,7 @@
   title = {Are delayed issues harder to resolve? Revisiting cost-to-fix of defects throughout the lifecycle},
   journal = ese,
   abstract = {Many practitioners and academics believe in a delayed issue effect (DIE); i.e. the longer an issue lingers in the system, the more effort it requires to resolve. This belief is often used to justify major investments in new development processes that promise to retire more issues sooner. This paper tests for the delayed issue effect in 171 software projects conducted around the world in the period from 2006--2014. To the best of our knowledge, this is the largest study yet published on this effect. We found no evidence for the delayed issue effect; i.e. the effort to resolve issues in a later phase was not consistently or substantially greater than when issues were resolved soon after their introduction. This paper documents the above study and explores reasons for this mismatch between this common rule of thumb and empirical data. In summary, DIE is not some constant across all projects. Rather, DIE might be an historical relic that occurs intermittently only in certain kinds of projects. This is a significant result since it predicts that new development processes that promise to faster retire more issues will not have a guaranteed return on investment (depending on the context where applied), and that a long-held truth in software engineering should not be considered a global truism.},
-  reviewed = {/2021/09/26/are-delayed-issues-harder-to-resolve.htm}
+  reviewed = {/2021/09/26/are-delayed-issues-harder-to-resolve.html}
 }
 
 @inproceedings{Meyer2014,
@@ -2516,7 +2516,7 @@
   title = {A case history analysis of software error cause-effect relationships},
   journal = ieee-tse,
   abstract = {Approximately 700 errors in four commercial measuring-control software products were analyzed, and the cause-effect relationships of errors occurring during software development were identified. The analysis method used defined appropriate observation points along the path leading from cause to effect of a software error and gathered the corresponding data by analyzing each error using fault tree analysis. Each observation point's data were categorized, and the relationships between two adjoining points were summarized using a cross-indexing table. Four major error-occurrence mechanisms were identified; two are related to hardware and software interface specification misunderstandings, while the other two are related to system and module function misunderstandings. The effects of structured analysis and structured design methods on software errors were evaluated.},
-  reviewed = {/2022/03/01/software-error-cause-effect.html}
+  reviewed = {/2022/02/28/software-error-cause-effect.html}
 }
 
 @inproceedings{Nakshatri2016,
@@ -2529,7 +2529,7 @@
   title = {Analysis of exception handling patterns in {Java} projects},
   booktitle = msr,
   abstract = {Exception handling is a powerful tool provided by many pro- gramming languages to help developers deal with unforeseen conditions. Java is one of the few programming languages to enforce an additional compilation check on certain sub- classes of the Exception class through checked exceptions. As part of this study, empirical data was extracted from soft- ware projects developed in Java. The intent is to explore how developers respond to checked exceptions and identify common patterns used by them to deal with exceptions, checked or otherwise. Bloch's book ``Effective Java'' [1] was used as reference for best practices in exception handling. These recommendations were compared against results from the empirical data. Results of this study indicate that most programmers ignore checked exceptions and leave them un- noticed. Additionally, it is observed that classes higher in the exception class hierarchy are more frequently used as compared to specific exception subclasses.},
-  reviewed = {/2016/06/05/java-exception-handling.html}
+  reviewed = {/2016/04/26/java-exception-handling.html}
 }
 
 @article{Nassif2021,
@@ -2540,7 +2540,7 @@
   title = {Generating Unit Tests for Documentation},
   journal = ieee-tse,
   abstract = {Software projects capture redundant information in various kinds of artifacts, as specifications from the source code are also tested and documented. Such redundancy provides an opportunity to reduce development effort by supporting the joint generation of different types of artifact. We introduce a tool-supported technique, called DScribe, that allows developers to combine unit tests and documentation templates, and to invoke those templates to generate documentation and unit tests. DScribe supports the detection and replacement of outdated documentation, and the use of templates can encourage extensive test suites with a consistent style. Our evaluation of 835 specifications revealed that 85\% were not tested or correctly documented, and DScribe could be used to automatically generate 97\% of the tests and documentation. An additional study revealed that tests generated by DScribe are more focused and readable than those written by human testers or generated by state-of-the-art automated techniques.},
-  reviewed = {/2022/04/15/generating-unit-tests-for-documentation.html}
+  reviewed = {/2022/04/14/generating-unit-tests-for-documentation.html}
 }
 
 @inproceedings{Near2016,
@@ -2553,7 +2553,7 @@
   title = {Finding security bugs in web applications using a catalog of access control patterns},
   booktitle = icse,
   abstract = {We propose a specification-free technique for finding missing security checks in web applications using a catalog of access control patterns in which each pattern models a common access control use case. Our implementation, SPACE, checks that every data exposure allowed by an application's code matches an allowed exposure from a security pattern in our catalog. The only user-provided input is a mapping from application types to the types of the catalog; the rest of the process is entirely automatic. In an evaluation on the 50 most watched Ruby on Rails applications on Github, SPACE reported 33 possible bugs---23 previously unknown security bugs, and 10 false positives.},
-  reviewed = {/2016/06/05/finding-security-bugs.html}
+  reviewed = {/2016/04/26/finding-security-bugs.html}
 }
 
 @inproceedings{Ni2021,
@@ -3233,7 +3233,7 @@
   title = {Locating faults with program slicing: an empirical analysis},
   journal = ese,
   abstract = {Statistical fault localization is an easily deployed technique for quickly determining candidates for faulty code locations. If a human programmer has to search the fault beyond the top candidate locations, though, more traditional techniques of following dependencies along dynamic slices may be better suited. In a large study of 457 bugs (369 single faults and 88 multiple faults) in 46 open source C programs, we compare the effectiveness of statistical fault localization against dynamic slicing. For single faults, we find that dynamic slicing was eight percentage points more effective than the best performing statistical debugging formula; for 66\% of the bugs, dynamic slicing finds the fault earlier than the best performing statistical debugging formula. In our evaluation, dynamic slicing is more effective for programs with single fault, but statistical debugging performs better on multiple faults. Best results, however, are obtained by a hybrid approach : If programmers first examine at most the top five most suspicious locations from statistical debugging, and then switch to dynamic slices, on average, they will need to examine 15\% (30 lines) of the code. These findings hold for 18 most effective statistical debugging formulas and our results are independent of the number of faults (i.e. single or multiple faults) and error type (i.e. artificial or real errors).},
-  reviewed = {/2021/10/30/locating-faults-with-program-slicing.html}
+  reviewed = {/2021/10/31/locating-faults-with-program-slicing.html}
 }
 
 @inproceedings{Spinellis2016,
@@ -3376,7 +3376,7 @@
   title = {Error messages in relational database management systems: A comparison of effectiveness, usefulness, and user confidence},
   journal = jss,
   abstract = {The database and the database management system (DBMS) are two of the main components of any information system. Structured Query Language (SQL) is the most popular query language for retrieving data from the database, as well as for many other data management tasks. During system development and maintenance, software developers use a considerable amount of time to interpret compiler error messages. The quality of these error messages has been demonstrated to affect software development effectiveness, and correctly formulating queries and fixing them when needed is an important task for many software developers. In this study, we set out to investigate how participants (N = 152) experienced the qualities of error messages of four popular DBMSs in terms of error message effectiveness, perceived usefulness for finding and fixing errors, and error recovery confidence. Our results show differences between the DBMSs by three of the four metrics, and indicate a discrepancy between objective effectiveness and subjective usefulness. The results suggest that although error messages have perceived differences in terms of usefulness for finding and fixing errors, these differences may not necessarily result in differences in query fixing success rates.},
-  reviewed = {/2021/10/28/error-messages-in-relational-atabase-systems.html}
+  reviewed = {/2021/10/26/error-messages-in-relational-database-systems.html}
 }
 
 @article{Tamburri2020,
@@ -3392,7 +3392,7 @@
   title = {{\textquotedblleft}The Canary in the Coal Mine{\ldots}{\textquotedblright} A cautionary tale from the decline of {SourceForge}},
   journal = spe,
   abstract = {Forges are online collaborative platforms to support the development of distributed open source software. While once mighty keepers of open source vitality, software forges are rapidly becoming less and less relevant. For example, of the top 10 forges in 2011, only one survives today---SourceForge---the biggest of them all, but its numbers are dropping and its community is tenuous at best. Through mixed-methods research, this article chronicles and analyze the software practice and experiences of the project's history---in particular its architectural and community/organizational decisions. We discovered a number of suboptimal social and architectural decisions and circumstances that, may have led to SourceForge's demise. In addition, we found evidence suggesting that the impact of such decisions could have been monitored, reduced, and possibly avoided altogether. The use of sociotechnical insights needs to become a basic set of design and software/organization monitoring principles that tell a cautionary tale on what to measure and what not to do in the context of large-scale software forge and community design and management.},
-  reviewed = {/2022/04/22/decline-of-sourceforge.html}
+  reviewed = {/2022/04/21/decline-of-sourceforge.html}
 }
 
 @article{Tang2021,
@@ -3407,7 +3407,7 @@
   title = {On Using Stack Overflow Comment-Edit Pairs to Recommend Code Maintenance Changes},
   journal = ese,
   abstract = {Code maintenance data sets typically consist of a before version of the code and an after version that contains the improvement or fix. Such data sets are important for various software engineering support tools related to code maintenance, such as program repair, code recommender systems, or Application Programming Interface (API) misuse detection. Most of the current data sets are typically constructed from mining commit history in versioncontrol systems or issues in issue-tracking systems. In this paper, we investigate whether Stack Overflow can be used as an additional source for building code maintenance data sets. Comments on Stack Overflow provide an effective way for developers to point out problems with existing answers, alternative solutions, or pitfalls. Given its crowd-sourced nature, answers are then updated to incorporate these suggestions. In this paper, we mine commentedit pairs from Stack Overflow and investigate their potential usefulness for constructing the above data sets. These comment-edit pairs have the added benefit of having concrete descriptions/explanations of why the change is needed as well as potentially having less tangled changes to deal with. We first design a technique to extract related comment-edit pairs and then qualitatively and quantitatively investigate the nature of these pairs. We find that the majority of comment-edit pairs are not tangled, but find that only 27\% of the studied pairs are potentially useful for the above applications. We categorize the types of mined pairs and find that the highest ratio of useful pairs come from those categorized as Correction, Obsolete, Flaw, and Extension. These categories can provide data for both corrective and preventative maintenance activities. To demonstrate the effectiveness of our extracted pairs, we submitted 15 pull requests to popular GitHub repositories, 10 of which have been accepted to widely used repositories such as Apache Beam (https://beam.apache.org/) and NLTK (https://www.nltk.org/). Our work is the first to investigate Stack Overflow commentedit pairs and opens the door for future work in this direction. Based on our findings and observations, we provide concrete suggestions on how to potentially identify a larger set of useful comment-edit pairs, which can also be facilitated by our shared data.},
-  reviewed = {/2021/11/17/using-so-comment-edit-pairs.html}
+  reviewed = {/2021/11/16/using-so-comment-edit-pairs.html}
 }
 
 @inproceedings{Tao2021,
@@ -3420,7 +3420,7 @@
   title = {Demystifying {\textquotedblleft}bad{\textquotedblright} error messages in data science libraries},
   booktitle = esec-fse,
   abstract = {Error messages are critical starting points for debugging. Unfortunately, they seem to be notoriously cryptic, confusing, and uninformative. Yet, it still remains a mystery why error messages receive such bad reputations, especially given that they are merely very short pieces of natural language text. In this paper, we empirically demystify the causes and fixes of ``bad'' error messages, by qualitatively studying 201 Stack Overflow threads and 335 GitHub issues. We specifically focus on error messages encountered in data science development, which is an increasingly important but not well studied domain. We found that the causes of ``bad'' error messages are far more complicated than poor phrasing or flawed articulation of error message content. Many error messages are inherently and inevitably misleading or uninformative, since libraries do not know user intentions and cannot ``see'' external errors. Fixes to error-message-related issues mostly involve source code changes, while exclusive message content updates only take up a small portion. In addition, whether an error message is informative or helpful is not always clear-cut; even error messages that clearly pinpoint faults and resolutions can still cause confusion for certain users. These findings thus call for a more in-depth investigation on how error messages should be evaluated and improved in the future.},
-  reviewed = {/2021/10/20/demistifying-error-messages-in-data-science-libraries.html}
+  reviewed = {/2021/10/17/demystifying-error-messages-in-data-science-libraries.html}
 }
 
 @inproceedings{Tew2011,
@@ -3474,7 +3474,7 @@
   title = {{BugSwarm}: Mining and Continuously Growing a Dataset of Reproducible Failures and Fixes},
   booktitle = icse,
   abstract = {Fault-detection, localization, and repair methods are vital to software quality; but it is difficult to evaluate their generality, applicability, and current effectiveness. Large, diverse, realistic datasets of durably-reproducible faults and fixes are vital to good experimental evaluation of approaches to software quality, but they are difficult and expensive to assemble and keep current. Modern continuous-integration (CI) approaches, like TRAVIS-CI, which are widely used, fully configurable, and executed within custom-built containers, promise a path toward much larger defect datasets. If we can identify and archive failing and subsequent passing runs, the containers will provide a substantial assurance of durable future reproducibility of build and test. Several obstacles, however, must be overcome to make this a practical reality. We describe BUGSWARM, a toolset that navigates these obstacles to enable the creation of a scalable, diverse, realistic, continuously growing set of durably reproducible failing and passing versions of real-world, open-source systems. The BUGSWARM toolkit has already gathered 3,091 fail-pass pairs, in Java and Python, all packaged within fully reproducible containers. Furthermore, the toolkit can be run periodically to detect fail-pass activities, thus growing the dataset continually.},
-  reviewed = {/2021/11/10/my-kingdom-for-a-dataset.html}
+  reviewed = {/2021/11/08/my-kingdom-for-a-dataset.html}
 }
 
 @inproceedings{Tourani2017,
@@ -3587,7 +3587,7 @@
   title = {What went right and what went wrong: an analysis of 155 postmortems from game development},
   booktitle = icse,
   abstract = {In game development, software teams often conduct postmortems to reflect on what went well and what went wrong in a project. The postmortems are shared publicly on gaming sites or at developer conferences. In this paper, we present an analysis of 155 postmortems published on the gaming site Gamasutra.com. We identify characteristics of game development, link the characteristics to positive and negative experiences in the postmortems and distill a set of best practices and pitfalls for game development.},
-  reviewed = {/2016/06/05/game-postmortems.html}
+  reviewed = {/2016/04/26/game-postmortems.html}
 }
 
 @inproceedings{WeillTessier2021,
@@ -3613,7 +3613,7 @@
   title = {Effects of Adopting Code Review Bots on Pull Requests to {OSS} Projects},
   booktitle = icsme,
   abstract = {Software bots, which are widely adopted by Open Source Software (OSS) projects, support developers on several activities, including code review. However, as with any new technology adoption, bots may impact group dynamics. Since understanding and anticipating such effects is important for planning and management, we investigate how several activity indicators change after the adoption of a code review bot. We employed a regression discontinuity design on 1,194 software projects from GitHub. Our results indicate that the adoption of code review bots increases the number of monthly merged pull requests, decreases monthly non-merged pull requests, and decreases communication among developers. Practitioners and maintainers may leverage our results to understand, or even predict, bot effects on their projects' social interactions.},
-  reviewed = {/2021/09/29/effects-of-adopting-code-review-bots.html}
+  reviewed = {/2021/09/30/effects-of-adopting-code-review-bots.html}
 }
 
 @article{Wicherts2011,
@@ -3779,7 +3779,7 @@
   title = {Enriching {API} Documentation with Code Samples and Usage Scenarios from Crowd Knowledge},
   journal = ieee-tse,
   abstract = {As one key resource to learn Application Programming Interfaces (APIs), a lot of API reference documentation lacks code samples with usage scenarios, thus heavily hindering developers from programming with APIs. Although researchers have investigated how to enrich API documentation with code samples from general code search engines, two main challenges remain to be resolved, including the quality challenge of acquiring high-quality code samples and the mapping challenge of matching code samples to usage scenarios. In this study, we propose a novel approach named ADECK towards enriching API documentation with code samples and corresponding usage scenarios by leveraging crowd knowledge from Stack Overflow, a popular technical Question and Answer (Q\&A) website attracting millions of developers. Given an API related Q\&A pair, a code sample in the answer is extensively evaluated by developers and targeted towards resolving the question under the specified usage scenario. Hence, ADECK can obtain high-quality code samples and map them to corresponding usage scenarios to address the above challenges. Extensive experiments on the Java SE and Android API documentation show that the number of code-sample-illustrated API types in the ADECK-enriched API documentation is 3.35 and 5.76 times as many as that in the raw API documentation. Meanwhile, the quality of code samples obtained by ADECK is better than that of code samples by the baseline approach eXoaDocs in terms of correctness, conciseness, and usability, e.g., the average correctness values of representative code samples obtained by ADECK and eXoaDocs are 4.26 and 3.28 on a 5-point scale in the enriched Java SE API documentation. In addition, an empirical study investigating the impacts of different types of API documentation on the productivity of developers shows that, compared against the raw and the eXoaDocs-enriched API documentation, the ADECK-enriched API documentation can help developers complete 23.81 and 14.29 percent more programming tasks and reduce the average completion time by 9.43 and 11.03 percent.},
-  reviewed = {/2021/11/15/enriching-api-documentation-with-code-samples-and-usage-scenarios.html}
+  reviewed = {/2021/10/26/enriching-api-documentation-with-code-samples-and-usage-scenarios.html}
 }
 
 @article{Zhang2021b,

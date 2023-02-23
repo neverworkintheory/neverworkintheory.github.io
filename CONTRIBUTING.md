@@ -26,7 +26,7 @@ from <em>American Scientist</em> is a good example.)
 Our focus is software engineering,
 with some ventures into software architecture and computing education.
 We prefer that people do not review their own work (though we welcome reviews of adjacent work),
-and the final decision on contributions will be made by [the current editor](mailto:{{site.author.url}});
+and the final decision on contributions will be made by [the current editor](mailto:{{site.author.email}});
 we would be happy to talk with you about specifics and give feedback on drafts.
 
 All contributors must abide by our [Code of Conduct]({{'/conduct/' | relative_url}}).
