@@ -26,6 +26,7 @@
   title = {The Bumpy Road of Taking Automated Debugging to Industry},
   year = {2022},
   eprint = {arXiv:2212.01237},
+  abstract = {Debugging is arguably among the most difficult and extremely time consuming tasks of the software development life cycle. Therefore, it comes as no surprise that researchers have invested a considerable amount of effort in developing automated techniques and tools to support developers excel in these tasks. Despite the significant advances, including demonstrations of usefulness, efficacy, and efficiency, these techniques are yet to find their way into industrial adoption. In this paper, we reflect upon the commercialization efforts of a particular automated debugging technique and lay down potential reasons for lack of success stories as well as ideas to move forward.}
 }
 
 @misc{Ahmed2022,
@@ -33,17 +34,26 @@
   title = {Verifix: Verified Repair of Programming Assignments},
   year = {2022},
   eprint = {arXiv:2106.16199},
+  abstract = {Automated feedback generation for introductory programming assignments is useful for programming education. Most works try to generate feedback to correct a student program by comparing its behavior with an instructor's reference program on selected tests. In this work, our aim is to generate verifiably correct program repairs as student feedback. The student assignment is aligned and composed with a reference solution in terms of control flow, and differences in data variables are automatically summarized via predicates to relate the variable names. Failed verification attempts for the equivalence of the two programs are exploited to obtain a collection of maxSMT queries, whose solutions point to repairs of the student assignment. We have conducted experiments on student assignments curated from a widely deployed intelligent tutoring system. Our results indicate that we can generate verified feedback in up to 58\% of the assignments. More importantly, our system indicates when it is able to generate a verified feedback, which is then usable by novice students with high confidence.}
 }
 
 @inproceedings{Ait2022,
   doi = {10.1145/3524842.3527941},
   title = {An empirical study on the survival rate of {GitHub} projects},
   booktitle = msr,
-  author = {Ait, Adem and Izquierdo, Javier Luis C{\'a}novas and Cabot, Jordi},
+  author = {Ait, Adem and Izquierdo, Javier Luis Cánovas and Cabot, Jordi},
   publisher = {ACM},
   month = may,
   year = {2022},
   abstract = {The number of Open Source projects hosted in social coding platforms such as GitHub is constantly growing. However, many of these projects are not regularly maintained and some are even abandoned shortly after they were created. In this paper we analyze early project development dynamics in software projects hosted on GitHub, including their survival rate. To this aim, we collected all 1,127 GitHub repositories from four different ecosystems (i.e., NPM packages, R packages, WordPress plugins and Laravel packages) created in 2016. We stored their activity in a time series database and analyzed their activity evolution along their lifespan, from 2016 to now. Our results reveal that the prototypical development process consists of intensive coding-driven active periods followed by long periods of inactivity. More importantly, we have found that a significant number of projects die in the first year of existence with the survival rate decreasing year after year. In fact, the probability of surviving longer than five years is less than 50\% though some types of projects have better chances of survival.},
+}
+
+@misc{AlencarDaCosta2023,
+Author = {Daniel Alencar da Costa and Natalie Grattan and Nigel Stanger and Sherlock A. Licorish},
+Title = {Studying the Characteristics of SQL-related Development Tasks: An Empirical Study},
+Year = {2023},
+Eprint = {arXiv:2301.10315},
+abstract = {A key function of a software system is its ability to facilitate the manipulation of data, which is often implemented using a flavour of the Structured Query Language (SQL). To develop the data operations of software (i.e, creating, retrieving, updating, and deleting data), developers are required to excel in writing and combining both SQL and application code. The problem is that writing SQL code in itself is already challenging (e.g., SQL anti-patterns are commonplace) and combining SQL with application code (i.e., for SQL development tasks) is even more demanding. Meanwhile, we have little empirical understanding regarding the characteristics of SQL development tasks. Do SQL development tasks typically need more code changes? Do they typically have a longer time-to-completion? Answers to such questions would prepare the community for the potential challenges associated with such tasks. Our results obtained from 20 Apache projects reveal that SQL development tasks have a significantly longer time-to-completion than SQL-unrelated tasks and require significantly more code changes. Through our qualitative analyses, we observe that SQL development tasks require more spread out changes, effort in reviews and documentation. Our results also corroborate previous research highlighting the prevalence of SQL anti-patterns. The software engineering community should make provision for the peculiarities of SQL coding, in the delivery of safe and secure interactive software.}
 }
 
 @misc{AlOmar2022,
@@ -51,6 +61,15 @@
   title = {Code Review Practices for Refactoring Changes: An Empirical Study on OpenStack},
   year = {2022},
   eprint = {arXiv:2203.14404},
+  abstract = {Modern code review is a widely used technique employed in both industrial and open-source projects to improve software quality, share knowledge, and ensure adherence to coding standards and guidelines. During code review, developers may discuss refactoring activities before merging code changes in the code base. To date, code review has been extensively studied to explore its general challenges, best practices and outcomes, and socio-technical aspects. However, little is known about how refactoring is being reviewed and what developers care about when they review refactored code. Hence, in this work, we present a quantitative and qualitative study to understand what are the main criteria developers rely on to develop a decision about accepting or rejecting a submitted refactored code, and what makes this process challenging. Through a case study of 11,010 refactoring and non-refactoring reviews spread across OpenStack open-source projects, we find that refactoring-related code reviews take significantly longer to be resolved in terms of code review efforts. Moreover, upon performing a thematic analysis on a significant sample of the refactoring code review discussions, we built a comprehensive taxonomy consisting of 28 refactoring review criteria. We envision our findings reaffirming the necessity of developing accurate and efficient tools and techniques that can assist developers in the review process in the presence of refactorings.}
+}
+
+@misc{Amjad2023,
+Author = {Abdul Haddi Amjad and Zubair Shafiq and Muhammad Ali Gulzar},
+Title = {Blocking JavaScript without Breaking the Web: An Empirical Investigation},
+Year = {2023},
+Eprint = {arXiv:2302.01182},
+abstract = {Modern websites heavily rely on JavaScript (JS) to implement legitimate functionality as well as privacy-invasive advertising and tracking. Browser extensions such as NoScript block any script not loaded by a trusted list of endpoints, thus hoping to block privacy-invasive scripts while avoiding breaking legitimate website functionality. In this paper, we investigate whether blocking JS on the web is feasible without breaking legitimate functionality. To this end, we conduct a large-scale measurement study of JS blocking on 100K websites. We evaluate the effectiveness of different JS blocking strategies in tracking prevention and functionality breakage. Our evaluation relies on quantitative analysis of network requests, and resource loads as well as manual qualitative analysis of visual breakage. First, we show that while blocking all scripts is quite effective at reducing tracking, it significantly degrades functionality on approximately two-thirds of the tested websites. Second, we show that selective blocking of a subset of scripts based on a curated list achieves a better tradeoff. However, there remain approximately 15\% ``mixed'' scripts, which essentially merge tracking and legitimate functionality and thus cannot be blocked without causing website breakage. Finally, we show that fine-grained blocking of a subset of JS methods, instead of scripts, reduces major breakage by 3.7× while providing the same level of tracking prevention. Our work highlights the promise and open challenges in fine-grained JS blocking for tracking prevention without breaking the web.}
 }
 
 @article{Andersen2020,
@@ -73,6 +92,15 @@
   title = {Stretching Your Data With Taffy Filters},
   year = {2022},
   eprint = {arXiv:2109.01947},
+  abstract = {Popular approximate membership query structures such as Bloom filters and cuckoo filters are widely used in databases, security, and networking. These structures represent sets approximately, and support at least two operations - insert and lookup; lookup always returns true on elements inserted into the structure; it also returns true with some probability 0<ε<1 on elements not inserted into the structure. These latter elements are called false positives. Compensatory for these false positives, filters can be much smaller than hash tables that represent the same set. However, unlike hash tables, cuckoo filters and Bloom filters must be initialized with the intended number of inserts to be performed, and cannot grow larger - inserts beyond this number fail or significantly increase the false positive probability. This paper presents designs and implementations of filters than can grow without inserts failing and without meaningfully increasing the false positive probability, even if the filters are created with a small initial size. The resulting code is available on GitHub under a permissive open source license.}
+}
+
+@misc{Arora2023,
+Author = {Chetan Arora and Laura Tubino and Andrew Cain and Kevin Lee and Vasudha Malhotra},
+Title = {Persona-based Assessment of Software Engineering Student Research Projects: An Experience Report},
+Year = {2023},
+Eprint = {arXiv:2302.05618},
+abstract = {Students enrolled in software engineering degrees are generally required to undertake a research project in their final year through which they demonstrate the ability to conduct research, communicate outcomes, and build in-depth expertise in an area. Assessment in these projects typically involves evaluating the product of their research via a thesis or a similar artifact. However, this misses a range of other factors that go into producing successful software engineers and researchers. Incorporating aspects such as process, attitudes, project complexity, and supervision support into the assessment can provide a more holistic evaluation of the performance likely to better align with the intended learning outcomes. In this paper, we present on our experience of adopting an innovative assessment approach to enhance learning outcomes and research performance in our software engineering research projects. Our approach adopted a task-oriented approach to portfolio assessment that incorporates student personas, frequent formative feedback, delayed summative grading, and standards-aligned outcomes-based assessment. We report upon our continuous improvement journey in adapting tasks and criteria to address the challenges of assessing student research projects. Our lessons learnt demonstrate the value of personas to guide the development of holistic rubrics, giving meaning to grades and focusing staff and student attention on attitudes and skills rather than a product only.}
 }
 
 @inproceedings{Arteca2022,
@@ -92,6 +120,7 @@
   title = {Is GitHub's Copilot as Bad As Humans at Introducing Vulnerabilities in Code?},
   year = {2022},
   eprint = {arXiv:2204.04741},
+  abstract = {Several advances in deep learning have been successfully applied to the software development process. Of recent interest is the use of neural language models to build tools, such as Copilot, that assist in writing code. In this paper we perform a comparative empirical analysis of Copilot-generated code from a security perspective. The aim of this study is to determine if Copilot is as bad as human developers - we investigate whether Copilot is just as likely to introduce the same software vulnerabilities that human developers did. Using a dataset of C/C++ vulnerabilities, we prompt Copilot to generate suggestions in scenarios that previously led to the introduction of vulnerabilities by human developers. The suggestions are inspected and categorized in a 2-stage process based on whether the original vulnerability or the fix is reintroduced. We find that Copilot replicates the original vulnerable code \~33\% of the time while replicating the fixed code at a \~25\% rate. However this behavior is not consistent: Copilot is more susceptible to introducing some types of vulnerability than others and is more likely to generate vulnerable code in response to prompts that correspond to older vulnerabilities than newer ones. Overall, given that in a substantial proportion of instances Copilot did not generate code with the same vulnerabilities that human developers had introduced previously, we conclude that Copilot is not as bad as human developers at introducing vulnerabilities in code.}
 }
 
 @comment{BBB}
@@ -101,6 +130,7 @@
   title = {To What Extent Cognitive-Driven Development Improves Code Readability?},
   year = {2022},
   eprint = {arXiv:2206.10655},
+  abstract = {Cognitive-Driven Development (CDD) is a coding design technique that aims to reduce the cognitive effort that developers place in understanding a given code unit (e.g., a class). By following CDD design practices, it is expected that the coding units to be smaller, and, thus, easier to maintain and evolve. However, it is so far unknown whether these smaller code units coded using CDD standards are, indeed, easier to understand. In this work we aim to assess to what CDD improves code readability. To achieve this goal, we conducted a two-phase study. We start by inviting professional software developers to vote (and justify their rationale) on the most readable pair of code snippets (from a set of 10 pairs); one of the pairs was coded using CDD practices. We received 133 answers. In the second phase, we applied the state-of-the art readability model on the 10-pairs of CDD-guided refactorings. We observed some conflicting results. On the one hand, developers perceived that seven (out of 10) CDD-guided refactorings were more readable than their counterparts; for two other CDD-guided refactorings, developers were undecided, while only in one of the CDD-guided refactorings, developers preferred the original code snippet. On the other hand, we noticed that only one CDD-guided refactorings have better performance readability, assessed by state-of-the-art readability models. Our results provide initial evidence that CDD could be an interesting approach for software design.}
 }
 
 @inproceedings{Barrak2021,
@@ -144,9 +174,10 @@
 
 @misc{Becker2022,
   author = {Brett A. Becker and Paul Denny and James Finnie-Ansley and Andrew Luxton-Reilly and James Prather and Eddie Antonio Santos},
-  title = {Programming Is Hard -- Or at Least It Used to Be: Educational Opportunities And Challenges of AI Code Generation},
+  title = {Programming Is Hard – Or at Least It Used to Be: Educational Opportunities And Challenges of AI Code Generation},
   year = {2022},
   eprint = {arXiv:2212.01020},
+  abstract = {The introductory programming sequence has been the focus of much research in computing education. The recent advent of several viable and freely-available AI-driven code generation tools present several immediate opportunities and challenges in this domain. In this position paper we argue that the community needs to act quickly in deciding what possible opportunities can and should be leveraged and how, while also working on how to overcome or otherwise mitigate the possible challenges. Assuming that the effectiveness and proliferation of these tools will continue to progress rapidly, without quick, deliberate, and concerted efforts, educators will lose advantage in helping shape what opportunities come to be, and what challenges will endure. With this paper we aim to seed this discussion within the computing education community.}
 }
 
 @inproceedings{Bendrissou2022,
@@ -197,13 +228,14 @@
   eprint = {arXiv:2112.01590},
   howpublished = {ICSE 2022: The 44th International Conference on Software Engineering},
   doi = {10.1145/3510003.3510057},
+  abstract = {Increasingly larger number of software systems today are including data science components for descriptive, predictive, and prescriptive analytics. The collection of data science stages from acquisition, to cleaning/curation, to modeling, and so on are referred to as data science pipelines. To facilitate research and practice on data science pipelines, it is essential to understand their nature. What are the typical stages of a data science pipeline? How are they connected? Do the pipelines differ in the theoretical representations and that in the practice? Today we do not fully understand these architectural characteristics of data science pipelines. In this work, we present a three-pronged comprehensive study to answer this for the state-of-the-art, data science in-the-small, and data science in-the-large. Our study analyzes three datasets: a collection of 71 proposals for data science pipelines and related concepts in theory, a collection of over 105 implementations of curated data science pipelines from Kaggle competitions to understand data science in-the-small, and a collection of 21 mature data science projects from GitHub to understand data science in-the-large. Our study has led to three representations of data science pipelines that capture the essence of our subjects in theory, in-the-small, and in-the-large.}
 }
 
 @inproceedings{Bittner2022,
   doi = {10.1145/3540250.3549108},
   title = {Classifying edits to variability in source code},
   booktitle = esec-fse,
-  author = {Bittner, Paul Maximilian and Tinnes, Christof and Schulthei{\ss}, Alexander and Viegener, S{\"o}ren and Kehrer, Timo and Th{\"u}m, Thomas},
+  author = {Bittner, Paul Maximilian and Tinnes, Christof and Schulthei{\ss}, Alexander and Viegener, Sören and Kehrer, Timo and Thüm, Thomas},
   publisher = {ACM},
   month = nov,
   year = {2022},
@@ -216,6 +248,7 @@
   title = {Vectorized and performance-portable Quicksort},
   year = {2022},
   eprint = {arXiv:2205.05982},
+  abstract = {Recent works showed that implementations of Quicksort using vector CPU instructions can outperform the non-vectorized algorithms in widespread use. However, these implementations are typically single-threaded, implemented for a particular instruction set, and restricted to a small set of key types. We lift these three restrictions: our proposed 'vqsort' algorithm integrates into the state-of-the-art parallel sorter 'ips4o', with a geometric mean speedup of 1.59. The same implementation works on seven instruction sets (including SVE and RISC-V V) across four platforms. It also supports floating-point and 16-128 bit integer keys. To the best of our knowledge, this is the fastest sort for non-tuple keys on CPUs, up to 20 times as fast as the sorting algorithms implemented in standard libraries. This paper focuses on the practical engineering aspects enabling the speed and portability, which we have not yet seen demonstrated for a Quicksort implementation. Furthermore, we introduce compact and transpose-free sorting networks for in-register sorting of small arrays, and a vector-friendly pivot sampling strategy that is robust against adversarial input.}
 }
 
 @article{Blackwell2019,
@@ -249,13 +282,24 @@
   title = {To Type or Not to Type? A Systematic Comparison of the Software Quality of JavaScript and TypeScript Applications on GitHub},
   year = {2022},
   eprint = {arXiv:2203.11115},
+  abstract = {JavaScript (JS) is one of the most popular programming languages, and widely used for web apps and even backend development. Due to its dynamic nature, however, JS applications often have a reputation for poor software quality. As a type-safe superset of JavaScript, TypeScript (TS) offers features to address this. However, there is currently insufficient empirical evidence to broadly support the claim that TS apps exhibit better software quality than JS apps. We therefore conducted a repository mining study based on 604 GitHub projects (299 for JS, 305 for TS) with over 16M LoC and collected four facets of software quality: a) code quality (# of code smells per LoC), b) code understandability (cognitive complexity per LoC), c) bug proneness (bug fix commit ratio), and d) bug resolution time (mean time a bug issue is open). For TS, we also collected how frequently the type-safety ignoring `any` type was used. The analysis indicates that TS apps exhibit significantly better code quality and understandability than JS apps. Contrary to expectations, however, bug proneness and bug resolution time of our TS sample were not significantly lower than for JS: mean bug fix commit ratio was more than 60\% larger (0.126 vs. 0.206), and TS projects needed on average more than an additional day to fix bugs (31.86 vs. 33.04 days). Furthermore, reducing the usage of the `any` type in TS apps was significantly correlated with all metrics except bug proneness (Spearman's rho between 0.17 and 0.26). Our results indicate that the perceived positive influence of TypeScript for avoiding bugs in comparison to JavaScript may be more complicated than assumed. While using TS seems to have benefits, it does not automatically lead to less and easier to fix bugs. However, more research is needed in this area, especially concerning the potential influence of project complexity and developer experience.}
 }
 
 @misc{Borg2022,
-  author = {Markus Borg and Leif Jonsson and Emelie Engstr\"{o}m and B\'{e}la Bartalos and Attila Szab\'{o}},
+  author = {Markus Borg and Leif Jonsson and Emelie Engström and Béla Bartalos and Attila Szabó},
   title = {Adopting Automated Bug Assignment in Practice: A Longitudinal Case Study at Ericsson},
   year = {2022},
   eprint = {arXiv:2209.08955},
+  abstract = {The continuous inflow of bug reports is a considerable challenge in large development projects. Inspired by contemporary work on mining software repositories, we designed a prototype bug assignment solution based on machine learning in 2011-2016. The prototype evolved into an internal Ericsson product, TRR, in 2017-2018. TRR's first bug assignment without human intervention happened in April 2019. Our study evaluates the adoption of TRR within its industrial context at Ericsson. Moreover, we investigate 1) how TRR performs in the field, 2) what value TRR provides to Ericsson, and 3) how TRR has influenced the ways of working. We conduct an industrial case study combining interviews with TRR stakeholders, minutes from sprint planning meetings, and bug tracking data. The data analysis includes thematic analysis, descriptive statistics, and Bayesian causal analysis. TRR is now an incorporated part of the bug assignment process. Considering the abstraction levels of the telecommunications stack, high-level modules are more positive while low-level modules experienced some drawbacks. On average, TRR automatically assigns 30\% of the incoming bug reports with an accuracy of 75\%. Auto-routed TRs are resolved around 21\% faster within Ericsson, and TRR has saved highly seasoned engineers many hours of work. Indirect effects of adopting TRR include process improvements, process awareness, increased communication, and higher job satisfaction. TRR has saved time at Ericsson, but the adoption of automated bug assignment was more intricate compared to similar endeavors reported from other companies. We primarily attribute the difference to the very large size of the organization and the complex products. Key facilitators in the successful adoption include a gradual introduction, product champions, and careful stakeholder analysis.}
+}
+
+@misc{BoumaSims2023,
+Author = {Elijah Bouma-Sims and Yasemin Acar},
+Title = {Beyond the Boolean: How Programmers Ask About, Use, and Discuss Gender},
+Year = {2023},
+Eprint = {arXiv:2302.05351},
+Doi = {10.1145/3579461},
+abstract = {Categorization via gender is omnipresent throughout society, and thus also computing; gender identity is often requested of users before they use software or web services. Despite this fact, no research has explored how software developers approach requesting gender disclosure from users. To understand how developers think about gender in software, we present an interview study with 15 software developers recruited from the freelancing platform Upwork as well as Twitter. We also collected and categorized 917 threads that contained keywords relevant to gender from programming-related sub-forums on the social media service Reddit. 16 posts that discussed approaches to gender disclosure were further analyzed. We found that while some developers have an understanding of inclusive gender options, programmers rarely consider when gender data is necessary or the way in which they request gender disclosure from users. Our findings have implications for programmers, software engineering educators, and the broader community concerned with inclusivity.}
 }
 
 @article{Britton2015,
@@ -284,6 +328,18 @@
   abstract = {In 2001, Khoury College of Computer Sciences at Northeastern University created their first combined majors with Cognitive Psychology, Mathematics and Physics. This type of degree has often been referred to as \"CS+X\" in the literature and is increasingly relevant as the need for interdisciplinary computer scientists grows. As of 2021, students at Northeastern can choose among three computing majors (Computer Science, Data Science or Cybersecurity) and 42 combined majors, which combine one of the three computing degrees with one of 29 distinct majors in other fields. Prior to 2014, combined majors were with the sciences, business and design. Over the last seven years, we created 29 new combined majors, explicitly creating combinations with fields where there has traditionally been greater gender diversity. The resulting increase in student interest and gender diversity over the last seven years is compelling. As of Fall 2020, 44.6\% of the 2,800+ computing majors at Northeastern are pursuing combined majors, 39\% of whom are women. This is substantially higher than the 21.5\% reported in IPEDS for 2019 women computing graduates in the U.S. We did not observe any significant differences in racial and ethnic diversity between combined and computing only degrees. In this experience paper, we describe how we create and manage combined majors, and we present results on enrollments, admissions, graduation, internship placements, and how students discover combined majors.}
 }
 
+@article{Brun2022,
+  doi = {10.1145/3571850},
+  url = {https://doi.org/10.1145/3571850},
+  year = {2022},
+  month = nov,
+  publisher = {Association for Computing Machinery ({ACM})},
+  author = {Yuriy Brun and Tian Lin and Jessie Elise Somerville and Elisha M. Myers and Natalie C. Ebner},
+  title = {Blindspots in Python and Java {APIs} Result in Vulnerable Code},
+  journal = {{ACM} Transactions on Software Engineering and Methodology},
+  abstract = {Blindspots in APIs can cause software engineers to introduce vulnerabilities, but such blindspots are, unfortunately, common. We study the efect APIs with blindspots have on developers in two languages by replicating a 109-developer, 24-Java-API controlled experiment. Our replication applies to Python and involves 129 new developers and 22 new APIs. We ind that using APIs with blindspots statistically signiicantly reduces the developers' ability to correctly reason about the APIs in both languages, but that the efect is more pronounced for Python. Interestingly, for Java, the efect increased with complexity of the code relying on the API, whereas for Python, the opposite was true. This suggests that Python developers are less likely to notice potential for vulnerabilities in complex code than in simple code, whereas Java developers are more likely to recognize the extra complexity and apply more care, but are more careless with simple code. Whether the developers considered API uses to be more diicult, less clear, and less familiar did not have an efect on their ability to correctly reason about them. Developers with better long-term memory recall were more likely to correctly reason about APIs with blindspots, but short-term memory, processing speed, episodic memory, and memory span had no efect. Surprisingly, professional experience and expertise did not improve the developers' ability to reason about APIs with blindspots across both languages, with long-term professionals with many years of experience making mistakes as often as relative novices. Finally, personality traits did not signiicantly afect the Python developers' ability to reason about APIs with blindspots, but less extraverted and more open developers were better at reasoning about Java APIs with blindspots. Overall, our indings suggest that blindspots in APIs are a serious problem across languages, and that experience and education alone do not overcome that problem, suggesting that tools are needed to help developers recognize blindspots in APIs as they write code that uses those APIs.}
+}
+
 @inproceedings{Buffardi2020,
   doi = {10.1145/3328778.3366948},
   title = {Assessing individual contributions to software engineering projects with {Git} logs and user stories},
@@ -301,7 +357,7 @@
 @article{CanovasIzquierdo2022,
   doi = {10.1007/s10664-021-10061-x},
   title = {On the analysis of non-coding roles in open source development},
-  author = {{C{\'a}novas Izquierdo}, Javier Luis and Cabot, Jordi},
+  author = {{Cánovas Izquierdo}, Javier Luis and Cabot, Jordi},
   abstract = {AbstractThe role of non-coding contributors in Open Source Software (OSS) is poorly understood. Most of current research around OSS development focuses on the coding aspects of the project (e.g., commits, pull requests or code reviews) while ignoring the potential of other types of contributions. Often, due to the assumption that these other contributions are not significant in number and that, in any case, they are handled by the same people that are also part of the ``coding team''. This paper aims to investigate whether this is actually the case by analyzing the frequency and diversity of non-coding contributions in OSS development. As a sample of projects for our study we have taken the 100 most popular projects in the ecosystem of NPM, a package manager for JavaScript. Our results validate the importance of dedicated non-coding contributors in OSS and the diversity of OSS communities as, typically, a contributor specializes in a specific subset of roles. We foresee that projects adopting explicit policies to attract and onboard them could see a positive impact in their long-term sustainability providing they also put in place the right governance strategies to facilitate the migration and collaboration among the different roles. As part of this work, we also provide a replicability package to facilitate further quantitative role-based analysis by other researchers.},
   journal = {Empir. Softw. Eng.},
   publisher = {Springer Science and Business Media LLC},
@@ -344,6 +400,7 @@
   title = {Better Call Saltzer \& Schroeder: A Retrospective Security Analysis of SolarWinds \& Log4j},
   year = {2022},
   eprint = {arXiv:2211.02341},
+  abstract = {Saltzer \& Schroeder's principles aim to bring security to the design of computer systems. We investigate SolarWinds Orion update and Log4j to unpack the intersections where observance of these principles could have mitigated the embedded vulnerabilities. The common principles that were not observed include \emph{fail safe defaults}, \emph{economy of mechanism}, \emph{complete mediation} and \emph{least privilege}. Then we explore the literature on secure software development interventions for developers to identify usable analysis tools and frameworks that can contribute towards improved observance of these principles. We focus on a system wide view of access of codes, checking access paths and aiding application developers with safe libraries along with an appropriate security task list for functionalities.}
 }
 
 @misc{Coleman2022,
@@ -351,6 +408,7 @@
   title = {Do Cloud Developers Prefer CLIs or Web Consoles? CLIs Mostly, Though It Varies by Task},
   year = {2022},
   eprint = {arXiv:2209.07365},
+  abstract = {Despite the increased importance of Cloud tooling, and many large-scale studies of Cloud users, research has yet to answer what tool modalities (e.g. CLI or web console) developers prefer. In formulating our studies, we quickly found that preference varies heavily based on the programming task at hand. To address this gap, we conducted a two-part research study that quantifies modality preference as a function of programming task. Part one surveys how preference for three tool modalities (CLI, IDE, web console) varies across three classes of task (CRUD, debugging, monitoring). The survey shows, among 60 respondents, developers most prefer the CLI modality, especially for CRUD tasks. Monitoring tasks are the exception for which developers prefer the web console. Part two observes how four participants complete a task using the kubectl CLI and the OpenShift web console. All four participants prefer using the CLI to accomplish the task.}
 }
 
 @article{Colicev2022,
@@ -381,6 +439,19 @@
   title = {An RSE Group Model: Operational and Organizational Approaches From Princeton University's Central Research Software Engineering Group},
   year = {2022},
   eprint = {arXiv:2210.16261},
+  abstract = {The Princeton Research Software Engineering Group has grown rapidly since its inception in late 2016. The group, housed in the central Research Computing Department, comprised of professional Research Software Engineers (RSEs), works directly with researchers to create high quality research software to enable new scientific advances. As the group has matured so has the need for formalizing operational details and procedures. The RSE group uses an RSE partnership model, where Research Software Engineers work long-term with a designated academic department, institute, center, consortium, or individual principal investigator (PI). This article describes the operation of the central Princeton RSE group including funding, partner & project selection, and best practices for defining expectations for a successful partnership with researchers.}
+}
+
+@article{Costa2022,
+  doi = {10.1109/tse.2022.3208864},
+  url = {https://doi.org/10.1109/tse.2022.3208864},
+  year = {2022},
+  publisher = {Institute of Electrical and Electronics Engineers ({IEEE})},
+  pages = {1--14},
+  author = {Keila Costa and Ronivaldo Ferreira and Gustavo Pinto and Marcelo d{\textquotesingle}Amorim and Breno Miranda},
+  title = {Test Flakiness Across Programming Languages},
+  journal = {{IEEE} Transactions on Software Engineering},
+  abstract = {Regression Testing (RT) is a quality-assurance practice commonly adopted in the software industry to check if functionality remains intact after code changes. Test flakiness is a serious problem for RT. A test is said to be flaky when it non-deterministically passes or fails on a fixed environment. Prior work studied test flakiness primarily on Java programs. It is unclear, however, how problematic is test flakiness for software written in other programming languages. This paper reports on a study focusing on three central aspects of test flakiness: concentration, similarity, and cost. Considering concentration, our results show that, for any given programming language that we studied (C, Go, Java, JS, and Python), most issues could be explained by a small fraction of root causes (5/13 root causes cover 78.07\% of the issues) and could be fixed by a relatively small fraction of fix strategies (10/23 fix strategies cover 85.20\% of the issues). Considering similarity, although there were commonalities in root causes and fixes across languages (e.g., concurrency and async wait are common causes of flakiness in most languages), we also found important differences (e.g., flakiness due to improper release of resources are more common in C), suggesting that there is opportunity to fine tuning analysis tools. Considering cost, we found that issues related to flaky tests are resolved either very early once they are posted (<10 days), suggesting relevance, or very late (>100 days), suggesting irrelevance.}
 }
 
 @comment{DDD}
@@ -402,6 +473,7 @@
   title = {Let's Go to the Whiteboard (Again):Perceptions from Software Architects on Whiteboard Architecture Meetings},
   year = {2022},
   eprint = {arXiv:2210.16089},
+  abstract = {The whiteboard plays a crucial role in the day-to-day lives of software architects, as they frequently will organize meetings at the whiteboard to discuss a new architecture, some proposed changes to the architecture, a mismatch between the architecture and the code, and more. While much has been studied about software architects, the architectures they produce, and how they produce them, a detailed understanding of these whiteboards meetings is still lacking. In this paper, we contribute a mixed-methods study involving semi-structured interviews and a subsequent survey to understand the perceptions of software architects on whiteboard architecture meetings. We focus on five aspects: (1) why do they hold these meetings, what is the impact of the experience levels of the participants in these meetings, how do the architects document the meetings, what kinds of changes are made after the meetings have concluded and their results are moved to implementation, and what role do digital whiteboards plays? In studying these aspects, we identify 12 observations related to both technical aspects and social aspects of the meetings. These insights have implications for further research, offer concrete advice to practitioners, provide guidance for future tool design, and suggest ways of educating future software architects.}
 }
 
 @inproceedings{Demirag2022,
@@ -421,6 +493,7 @@
   title = {Bug Analysis in Jupyter Notebook Projects: An Empirical Study},
   year = {2022},
   eprint = {arXiv:2210.06893},
+  abstract = {Computational notebooks, such as Jupyter, have been widely adopted by data scientists to write code for analyzing and visualizing data. Despite their growing adoption and popularity, there has been no thorough study to understand Jupyter development challenges from the practitioners' point of view. This paper presents a systematic study of bugs and challenges that Jupyter practitioners face through a large-scale empirical investigation. We mined 14,740 commits from 105 GitHub open-source projects with Jupyter notebook code. Next, we analyzed 30,416 Stack Overflow posts which gave us insights into bugs that practitioners face when developing Jupyter notebook projects. Finally, we conducted nineteen interviews with data scientists to uncover more details about Jupyter bugs and to gain insights into Jupyter developers' challenges. We propose a bug taxonomy for Jupyter projects based on our results. We also highlight bug categories, their root causes, and the challenges that Jupyter practitioners face.}
 }
 
 @misc{DeSouzaSantos2022,
@@ -428,6 +501,7 @@
   title = {A Grounded Theory of Coordination in Remote-First and Hybrid Software Teams},
   year = {2022},
   eprint = {arXiv:2202.10445},
+  abstract = {While the long-term effects of the COVID-19 pandemic on software professionals and organizations are difficult to predict, it seems likely that working from home, remote-first teams, distributed teams, and hybrid (part-remote/part-office) teams will be more common. It is therefore important to investigate the challenges that software teams and organizations face with new remote and hybrid work. Consequently, this paper reports a year-long, participant-observation, constructivist grounded theory study investigating the impact of working from home on software development. This study resulted in a theory of software team coordination. Briefly, shifting from in-office to at-home work fundamentally altered coordination within software teams. While group cohesion and more effective communication appear protective, coordination is undermined by distrust, parenting and communication bricolage. Poor coordination leads to numerous problems including misunderstandings, help requests, lower job satisfaction among team members, and more ill-defined tasks. These problems, in turn, reduce overall project success and prompt professionals to alter their software development processes (in this case, from Scrum to Kanban). Our findings suggest that software organizations with many remote employees can improve performance by encouraging greater engagement within teams and supporting employees with family and childcare responsibilities.}
 }
 
 @inproceedings{Dias2021,
@@ -455,10 +529,11 @@
 }
 
 @misc{Diercks2022,
-  author = {Philipp Diercks and Dennis Gl\"{a}ser and Ontje L\"{u}nsdorf and Michael Selzer and Bernd Flemisch and J\"{o}rg F. Unger},
+  author = {Philipp Diercks and Dennis Gläser and Ontje Lünsdorf and Michael Selzer and Bernd Flemisch and Jörg F. Unger},
   title = {Evaluation of tools for describing, reproducing and reusing scientific workflows},
   year = {2022},
   eprint = {arXiv:2211.06429},
+  abstract = {In the field of computational science and engineering, workflows often entail the application of various software, for instance, for simulation or pre- and postprocessing. Typically, these components have to be combined in arbitrarily complex workflows to address a specific research question. In order for peer researchers to understand, reproduce and (re)use the findings of a scientific publication, several challenges have to be addressed. For instance, the employed workflow has to be automated and information on all used software must be available for a reproduction of the results. Moreover, the results must be traceable and the workflow documented and readable to allow for external verification and greater trust. In this paper, existing workflow management systems (WfMSs) are discussed regarding their suitability for describing, reproducing and reusing scientific workflows. To this end, a set of general requirements for WfMSs were deduced from user stories that we deem relevant in the domain of computational science and engineering. On the basis of an exemplary workflow implementation, publicly hosted at GitHub, a selection of different WfMSs is compared with respect to these requirements, to support fellow scientists in identifying the WfMSs that best suit their requirements.}
 }
 
 @inproceedings{DiGrazia2022,
@@ -488,10 +563,12 @@
   abstract = {As increasingly complex software is developed every day, a growing number of companies use static analysis tools to reason about program properties ranging from simple coding style rules to more advanced software bugs, to multi-tier security vulnerabilities. While increasingly complex analyses are created, developer support must also be updated to ensure that the tools are used to their best potential. Past research in the usability of static analysis tools has primarily focused on usability issues encountered by software developers, and the causes of those issues in analysis tools. In this article, we adopt a more user-centered approach, and aim at understanding why software developers use analysis tools, which decisions they make when using those tools, what they look for when making those decisions, and the motivation behind their strategies. This approach allows us to derive new tool requirements that closely support software developers (e.g., systems for recommending warnings to fix that take developer knowledge into account), and also open novel avenues for further static-analysis research such as collaborative user interfaces for analysis warnings.}
 }
 
+
+
 @article{Dogan2022,
   doi = {10.1016/j.infsof.2021.106737},
   title = {Towards a taxonomy of code review smells},
-  author = {Do{\u{g}}an, Emre and T{\"u}z{\"u}n, Eray},
+  author = {Emre Doğan and Eray Tüzün},
   journal = {Inf. Softw. Technol.},
   publisher = {Elsevier BV},
   volume = {142},
@@ -499,6 +576,23 @@
   pages = {106737},
   month = feb,
   year = {2022},
+  abstract = {Context: Code review is a crucial step of the software development life cycle in order to detect possible problems in source code before merging the changeset to the codebase. Although there is no consensus on a formally defined life cycle of the code review process, many companies and open source software (OSS) communities converge on common rules and best practices. In spite of minor differences in different platforms, the primary purpose of all these rules and practices leads to a faster and more effective code review process. Non-conformance of developers to this process does not only reduce the advantages of the code review but can also introduce waste in later stages of the software development. Objectives: The aim of this study is to provide an empirical understanding of the bad practices followed in the code review process, that are code review (CR) smells. Methods: We first conduct a multivocal literature review in order to gather code review bad practices discussed in white and gray literature. Then, we conduct a targeted survey with 32 experienced software practitioners and perform follow-up interviews in order to get their expert opinion. Based on this process, a taxonomy of code review smells is introduced. To quantitatively demonstrate the existence of these smells, we analyze 226,292 code reviews collected from eight OSS projects. Results: We observe that a considerable number of code review smells exist in all projects with varying degrees of ratios. The empirical results illustrate that 72.2\% of the code reviews among eight projects are affected by at least one code review smell. Conclusion: The empirical analysis shows that the OSS projects are substantially affected by the code review smells. The provided taxonomy could provide a foundation for best practices and tool support to detect and avoid code review smells in practice.}
+}
+
+@article{Dong2023,
+  doi = {10.1145/3517193},
+  url = {https://doi.org/10.1145/3517193},
+  year = {2023},
+  month = jan,
+  publisher = {Association for Computing Machinery ({ACM})},
+  volume = {32},
+  number = {1},
+  pages = {1--22},
+  author = {Yiwen Dong and Zheyang Li and Yongqiang Tian and Chengnian Sun and Michael W. Godfrey and Meiyappan Nagappan},
+  title = {Bash in the Wild: Language Usage,  Code Smells,  and Bugs},
+  journal = {{ACM} Transactions on Software Engineering and Methodology},
+  abstract = {The Bourne-again shell (Bash) is a prevalent scripting language for orchestrating shell commands and managing resources in Unix-like environments. It is one of the mainstream shell dialects that is available on most GNU Linux systems. However, the unique syntax and semantics of Bash could easily lead to unintended behaviors if carelessly used. Prior studies primarily focused on improving reliability of Bash scripts or facilitating writing Bash scripts; there is yet no empirical study on the characteristics of Bash programs written in reality, e.g., frequently used language features, common code smells and bugs.
+In this paper, we perform a large-scale empirical study of Bash usage, based on analyses over one million open-source Bash scripts found in Github repositories. We identify and discuss which features and utilities of Bash are most often used. Using static analysis, we ind that Bash scripts are often error prone, and the error-proneness has a moderately positive correlation with the size of the scripts. We also ind that the most common problem areas concern quoting, resource management, command options, permissions, and error handling. We envision that these indings can be beneicial for learning Bash and future research that aims to improve shell and command-line productivity and reliability.}
 }
 
 @article{Drage2022,
@@ -532,9 +626,25 @@
   title = {Sludge for Good: Slowing and Imposing Costs on Cyber Attackers},
   year = {2022},
   eprint = {arXiv:2211.16626},
+  abstract = {Choice architecture describes the design by which choices are presented to people. Nudges are an aspect intended to make "good" outcomes easy, such as using password meters to encourage strong passwords. Sludge, on the contrary, is friction that raises the transaction cost and is often seen as a negative to users. Turning this concept around, we propose applying sludge for positive cybersecurity outcomes by using it offensively to consume attackers' time and other resources. To date, most cyber defenses have been designed to be optimally strong and effective and prohibit or eliminate attackers as quickly as possible. Our complimentary approach is to also deploy defenses that seek to maximize the consumption of the attackers' time and other resources while causing as little damage as possible to the victim. This is consistent with zero trust and similar mindsets which assume breach. The Sludge Strategy introduces cost-imposing cyber defense by strategically deploying friction for attackers before, during, and after an attack using deception and authentic design features. We present the characteristics of effective sludge, and show a continuum from light to heavy sludge. We describe the quantitative and qualitative costs to attackers and offer practical considerations for deploying sludge in practice. Finally, we examine real-world examples of U.S. government operations to frustrate and impose cost on cyber adversaries.}
 }
 
 @comment{EEE}
+
+@article{Eid2023,
+  doi = {10.1109/tse.2022.3162985},
+  url = {https://doi.org/10.1109/tse.2022.3162985},
+  year = {2023},
+  month = feb,
+  publisher = {Institute of Electrical and Electronics Engineers ({IEEE})},
+  volume = {49},
+  number = {2},
+  pages = {743--759},
+  author = {Elias Eid and Nancy A. Day},
+  title = {Static Profiling of Alloy Models},
+  journal = {{IEEE} Transactions on Software Engineering},
+  abstract = {Modeling of software-intensive systems using formal declarative modeling languages offers a means of managing software complexity through the use of abstraction and early identification of correctness issues by formal analysis. Alloy is one such language used for modeling systems early in the development process. Little work has been done to study the styles and techniques commonly used in Alloy models. We present the first static analysis study of Alloy models. We investigate research questions that examine a large corpus of 1,652 Alloy models. To evaluate these research questions, we create a methodology that leverages the power of ANTLR pattern matching and the query language XPath. Our research questions are split into two categories depending on their purpose. The Model Characteristics category aims to identify what language constructs are used commonly. Modeling Practices questions are considerably more complex and identify how modelers are using Alloy's constructs. We also evaluate our research questions on a subset of models from our corpus written by expert modelers. We compare the results of the expert corpus to the results obtained from the general corpus to gain insight into how expert modelers use the Alloy language. We draw conclusions from the findings of our research questions and present actionable items for educators, language and environment designers, and tool developers. Actionable items for educators are intended to highlight underutilized language constructs and features, and help student modelers avoid discouraged practices. Actionable items aimed at language designers present ways to improve the Alloy language by adding constructs or removing unused ones based on trends identified in our corpus of models. The actionable items aimed at environment designers address features to facilitate model creation. Actionable items for tool developers provide suggestions for back-end optimizations.}
+}
 
 @misc{Etemadi2022,
   author = {Khashayar Etemadi and Aman Sharma and Fernanda Madeiral and Martin Monperrus},
@@ -544,6 +654,14 @@
 }
 
 @comment{FFF}
+
+@misc{Faria2023,
+Author = {João Pascoal Faria and Rui Abreu},
+Title = {Case studies of development of verified programs with Dafny for accessibility assessment},
+Year = {2023},
+Eprint = {arXiv:2301.03224},
+abstract = {Formal verification techniques aim at formally proving the correctness of a computer program with respect to a formal specification, but the expertise and effort required for applying formal specification and verification techniques and scalability issues have limited their practical application. In recent years, the tremendous progress with SAT and SMT solvers enabled the construction of a new generation of tools that promise to make formal verification more accessible for software engineers, by automating most if not all of the verification process. The Dafny system is a prominent example of that trend. However, little evidence exists yet about its accessibility. To help fill this gap, we conducted a set of 10 case studies of developing verified implementations in Dafny of some real-world algorithms and data structures, to determine its accessibility for software engineers. We found that, on average, the amount of code written for specification and verification purposes is of the same order of magnitude as the traditional code written for implementation and testing purposes (ratio of 1.14)---an ``overhead'' that certainly pays off for high-integrity software. The performance of the Dafny verifier was impressive, with 2.4 proof obligations generated per line of code written, and 24 ms spent per proof obligation generated and verified, on average. However, we also found that the manual work needed in writing auxiliary verification code may be significant and difficult to predict and master. Hence, further automation and systematization of verification tasks are possible directions for future advances in the field.}
+}
 
 @article{Farzat2021,
   doi = {10.1109/tse.2019.2928293},
@@ -575,6 +693,17 @@
   abstract = {Android parental control applications are used by parents to monitor and limit their children's mobile behaviour (e.g., mobile apps usage, web browsing, calling, and texting). In order to offer this service, parental control apps require privileged access to sys-tem resources and access to sensitive data. This may significantly reduce the dangers associated with kids' online activities, but it raises important privacy con-cerns. These concerns have so far been overlooked by organizations providing recommendations regarding the use of parental control applications to the public. We conduct the first in-depth study of the Android parental control app's ecosystem from a privacy and regulatory point of view. We exhaustively study 46 apps from 43 developers which have a combined 20M installs in the Google Play Store. Using a combination of static and dynamic analysis we find that: these apps are on average more permissions-hungry than the top 150 apps in the Google Play Store, and tend to request more dangerous permissions with new releases; 11\% of the apps transmit personal data in the clear; 34\% of the apps gather and send personal information without appropriate consent; and 72\% of the apps share data with third parties (including online advertising and analytics services) without mentioning their presence in their privacy policies. In summary, parental control applications lack transparency and lack compliance with reg ulatory requirements. This holds even for those applications recommended by European and other national security centers.}
 }
 
+@article{Feld2022,
+  doi = {10.2139/ssrn.4238277},
+  url = {https://doi.org/10.2139/ssrn.4238277},
+  year = {2022},
+  publisher = {Elsevier {BV}},
+  author = {Jan Feld and Edwin Ip and Andreas Leibbrandt and Joseph Vecci},
+  title = {Identifying and Overcoming Gender Barriers in Tech: A Field Experiment on Inaccurate Statistical Discrimination},
+  journal = {{SSRN} Electronic Journal},
+  abstract = {Women are significantly underrepresented in the technology sector. We design a field experiment to identify statistical discrimination in job applicant assessments and test treatments to help improve hiring of the best applicants. In our experiment, we measure the programming skills of job applicants for a programming job. Then, we recruit a sample of employers consisting of human resource and tech professionals and incentivize them to assess the performance of these applicants based on their resumes. We find evidence consistent with inaccurate statistical discrimination: while there are no significant gender differences in performance, employers believe that female programmers perform worse than male programmers. This belief is strongest among female employers, who are more prone to selection neglect than male employers. We also find experimental evidence that statistical discrimination can be mitigated. In two treatments, in which we provide assessors with additional information on the applicants' aptitude or personality, we find no gender differences in the perceived applicant performance. Together, these findings show the malleability of statistical discrimination and provide levers to improve hiring and reduce gender imbalance.}
+}
+
 @inproceedings{Feng2022,
   doi = {10.1145/3510003.3510150},
   url = {https://doi.org/10.1145/3510003.3510150},
@@ -585,6 +714,21 @@
   title = {Automated detection of password leakage from public {GitHub} repositories},
   booktitle = {Proceedings of the 44th International Conference on Software Engineering},
   abstract = {The prosperity of the GitHub community has raised new concerns about data security in public repositories. Practitioners who manage authentication secrets such as textual passwords and API keys in the source code may accidentally leave these texts in the public repositories, resulting in secret leakage. If such leakage in the source code can be automatically detected in time, potential damage would be avoided. With existing approaches focusing on detecting secrets with distinctive formats (e.g., API keys, cryptographic keys in PEM format), textual passwords, which are ubiquitously used for authentication, fall through the crack. Given that textual passwords could be virtually any strings, a naive detection scheme based on regular expression performs poorly. This paper presents PassFinder, an automated approach to effectively detecting password leakage from public repositories that involve various programming languages on a large scale. PassFinder utilizes deep neural networks to unveil the intrinsic characteristics of textual passwords and understand the semantics of the code snippets that use textual passwords for authentication, i.e., the contextual information of the passwords in the source code. Using this new technique, we performed the first large-scale and longitudinal analysis of password leakage on GitHub. We inspected newly uploaded public code files on GitHub for 75 days and found that password leakage is pervasive, affecting over sixty thousand repositories. Our work contributes to a better understanding of password leakage on GitHub, and we believe our technique could promote the security of the open-source ecosystem.}
+}
+
+@article{Ferreira2021,
+  doi = {10.1002/spe.3044},
+  url = {https://doi.org/10.1002/spe.3044},
+  year = {2021},
+  month = oct,
+  publisher = {Wiley},
+  volume = {52},
+  number = {4},
+  pages = {947--966},
+  author = {Fabio Ferreira and Hudson Silva Borges and Marco Tulio Valente},
+  title = {On the (un-)adoption of {JavaScript} front-end frameworks},
+  journal = {Software: Practice and Experience},
+  abstract = {JavaScript is characterized by a rich ecosystem of libraries and frameworks. A key element in this ecosystem are frameworks used for implementing the front-end of web-based applications, such as Vue and React. However, despite their relevance, we have few works investigating the factors that drive the adoption—and un-adoption—of front-end-based JavaScript frameworks. Therefore, in this paper, we first report the results of a survey with 49 developers where we asked them to describe the factors they consider when selecting a front-end framework. In the second part of the work, we focus on projects that migrate from one framework to another since JavaScript's ecosystem is also very dynamic. Finally, we provide a quantitative characterization of the migration effort and reveal the main barriers faced by the developers during this effort. Although not completely generalizable, our central findings are as follows: (a) popularity and learnability are the key factors that motivate the choice of front-end frameworks in JavaScript; (b) from the 49 surveyed developers, one out of four have plans to migrate to another framework in the future; (c) the time spent performing the migration is greater than or equal to the time spent using the old framework in all studied projects. We conclude with a list of implications for practitioners, framework developers, tool builders, and researchers.}
 }
 
 @article{Ferreira2022,
@@ -665,6 +809,31 @@
   abstract = {Problem. Educational research identifies answerable questions, but often does not address the problems K-12 teachers identify as important. Further, academic research findings can be difficult for teachers to apply to their practices and unique contexts. Currently, little research exists on the lived experiences of primary and secondary instructors who teach computer science (CS) or computational thinking (CT) and also on the specific problems of practice teachers face when teaching CS. Research Question. What problems of practice do K-12 teachers face when teaching CS/CT? Method. Data for this qualitative study was collected using an online questionnaire distributed to teachers internationally. CS/CT teachers responded to an open-ended prompt asking for problems related to teaching CS. The data was analyzed using descriptive first-round coding and focused second-round coding. Validity was established through collaborative coding. Analysis was theorized using locus of control. Findings. Problems with students encompassed behavioral, cognitive, and attitudinal issues, as well as lack of home support or resources. Teachers identified many problems of policy notably stemming from lack of resources or support from administrators. A smaller number of challenges, such as lack of content knowledge, were situated within teachers themselves. While some problems such as student motivation are general, a number of responses identified unique challenges in CS education compared to other disciplines. Implications. Identifying problems faced by teachers can guide professional development offerings, help researchers develop studies that would result in meaningful improvement to CS education, and suggest policy decisions which would result in better outcomes for students.}
 }
 
+@article{Furia2022,
+  doi = {10.1145/3490953},
+  url = {https://doi.org/10.1145/3490953},
+  year = {2022},
+  month = mar,
+  publisher = {Association for Computing Machinery ({ACM})},
+  volume = {31},
+  number = {3},
+  pages = {1--38},
+  author = {Carlo A. Furia and Richard Torkar and Robert Feldt},
+  title = {Applying Bayesian Analysis Guidelines to Empirical Software Engineering Data: The Case of Programming Languages and Code Quality},
+  journal = {{ACM} Transactions on Software Engineering and Methodology},
+  abstract = {Statistical analysis is the tool of choice to turn data into information, and then information into empirical knowledge. The process that goes from data to knowledge is, however, long, uncertain, and riddled with pitfalls. To be valid, it should be supported by detailed, rigorous guidelines, which help ferret out issues with the data or model, and lead to qualified results that strike a reasonable balance between generality and practical relevance. Such guidelines are being developed by statisticians to support the latest techniques for Bayesian data analysis. In this article, we frame these guidelines in a way that is apt to empirical research in software engineering.
+To demonstrate the guidelines in practice, we apply them to reanalyze a GitHub dataset about code quality in different programming languages. The dataset's original analysis (Ray et al., 2014) and a critical reanalysis (Berger et al., 2019) have attracted considerable attention—in no small part because they target a topic (the impact of different programming languages) on which strong opinions abound. The goals of our reanalysis are largely orthogonal to this previous work, as we are concerned with demonstrating, on data in an interesting domain, how to build a principled Bayesian data analysis and to showcase its benefits. In the process, we will also shed light on some critical aspects of the analyzed data and of the relationship between programming languages and code quality—such as the impact of project-specific characteristics other than the used programming language.
+The high-level conclusions of our exercise will be that Bayesian statistical techniques can be applied to analyze software engineering data in a way that is principled, flexible, and leads to convincing results that inform the state of the art while highlighting the boundaries of its validity. The guidelines can support building solid statistical analyses and connecting their results, and hence help buttress continued progress in empirical software engineering research.}
+}
+
+@misc{Furia2023,
+Author = {Carlo A. Furia and Richard Torkar and Robert Feldt},
+Title = {Towards Causal Analysis of Empirical Software Engineering Data: The Impact of Programming Languages on Coding Competitions},
+Year = {2023},
+Eprint = {arXiv:2301.07524},
+abstract = {There is abundant observational data in the software engineering domain, whereas running large-scale controlled experiments is often practically impossible. Thus, most empirical studies can only report statistical correlations---instead of potentially more insightful and robust causal relations. This paper discusses some novel techniques that support analyzing purely observational data for causal relations. Using fundamental causal models such as directed acyclic graphs, one can rigorously express, and partially validate, causal hypotheses; and then use the causal information to guide the construction of a statistical model that captures genuine causal relations---such that correlation does imply causation. We apply these ideas to analyzing public data about programmer performance in Code Jam, a large world-wide coding contest organized by Google every year. Specifically, we look at the impact of different programming languages on a participant's performance in the contest. While the overall effect associated with programming languages is weak compared to other variables---regardless of whether we consider correlational or causal links---we found considerable differences between a purely statistical and a causal analysis of the very same data. The takeaway message is that even an imperfect causal analysis of observational data can help answer the salient research questions more precisely and more robustly than with just purely statistical techniques.}
+}
+
 @comment{GGG}
 
 @article{Gaffney2022,
@@ -723,6 +892,14 @@
   abstract = {Which code-tracing concepts are introductory programming students likely to learn from classroom instruction and which ones need additional problem-solving practice to master? Are there relationships among programming concepts that can be used to build adaptive assessment instruments? To answer these questions, we analyzed the data collected over several semesters by a suite of code-tracing tutors called problets, that administered pre-test, practice, post-test protocol. Each tutor covered a single programming topic, which consisted of 9-25 concepts. For each concept, we used the pretest data to calculate the probability that students knew the concept before using the tutor. Using a weighted average of the concept probabilities, we found that students had learned some topics more than others: if/if-else (0.85), function behavior (0.76), arrays (0.73), while (0.7), for (0.69), switch (0.67), and debugging functions (0.55). Some of the concepts on which students needed additional practice included bugs, nested loops and back-to-back loops. Expressions, even when used in novel contexts, were not challenging for students. We built a Bayesian network for each topic based on conditional probabilities to discover the concepts that must be covered, and those whose coverage is redundant in the presence of other concepts. A strength of this empirical study is that it uses a large dataset collected from multiple institutions over multiple semesters. We also list threats to the validity of the study.}
 }
 
+@misc{Ghorbani2023,
+Author = {Amir Ghorbani and Nathan Cassee and Derek Robinson and Adam Alami and Neil A. Ernst and Alexander Serebrenik and Andrzej Wasowski},
+Title = {Autonomy Is An Acquired Taste: Exploring Developer Preferences for GitHub Bots},
+Year = {2023},
+Eprint = {arXiv:2302.05048},
+abstract = {Software bots fulfill an important role in collective software development, and their adoption by developers promises increased productivity. Past research has identified that bots that communicate too often can irritate developers, which affects the utility of the bot. However, it is not clear what other properties of human-bot collaboration affect developers' preferences, or what impact these properties might have. The main idea of this paper is to explore characteristics affecting developer preferences for interactions between humans and bots, in the context of GitHub pull requests. We carried out an exploratory sequential study with interviews and a subsequent vignette-based survey. We find developers generally prefer bots that are personable but show little autonomy, however, more experienced developers tend to prefer more autonomous bots. Based on this empirical evidence, we recommend bot developers increase configuration options for bots so that individual developers and projects can configure bots to best align with their own preferences and project cultures.}
+}
+
 @misc{Gorz2022,
   author = {Philipp G\"{o}rz and Bj\"{o}rn Mathis and Keno Hassler and Emre G\"{u}ler and Thorsten Holz and Andreas Zeller and Rahul Gopinath},
   title = {How to Compare Fuzzers},
@@ -749,6 +926,14 @@
   pages = {1--36},
   month = jan,
   year = {2022}
+}
+
+@misc{Greiler2022,
+Author = {Michaela Greiler and Margaret-Anne Storey and Abi Noda},
+Title = {An Actionable Framework for Understanding and Improving Developer Experience},
+Year = {2022},
+Eprint = {arXiv:2205.06352},
+abstract = {Developer experience is an important concern for software organizations as enhancing developer experience improves productivity, satisfaction, engagement and retention. We set out to understand what affects developer experience through semi-structured interviews with 21 developers from industry, which we transcribed and iteratively coded. Our findings elucidate factors that affect developer experience and characteristics that influence their respective importance to individual developers. We also identify strategies employed by individuals and teams to improve developer experience and the barriers that stand in their way. Lastly, we describe the coping mechanisms of developers when developer experience cannot be sufficiently improved. Our findings result in the DX Framework, an actionable conceptual framework for understanding and improving developer experience. The DX Framework provides a go-to reference for organizations that want to enable more productive and effective work environments for their developers.}
 }
 
 @misc{Grotov2022,
@@ -804,7 +989,7 @@
   doi = {10.1145/3313831.3376798},
   title = {Composing flexibly-organized step-by-step tutorials from linked source code, snippets, and outputs},
   booktitle = {Proceedings of the 2020 {CHI} Conference on Human Factors in Computing Systems},
-  author = {Head, Andrew and Jiang, Jason and Smith, James and Hearst, Marti A and Hartmann, Bj{\"o}rn},
+  author = {Head, Andrew and Jiang, Jason and Smith, James and Hearst, Marti A and Hartmann, Björn},
   publisher = {ACM},
   month = apr,
   year = {2020},
@@ -860,7 +1045,7 @@
 @article{Huszar2022,
   doi = {10.1073/pnas.2025334119},
   title = {Algorithmic amplification of politics on Twitter},
-  author = {Husz{\'a}r, Ferenc and Ktena, Sofia Ira and O'Brien, Conor and Belli, Luca and Schlaikjer, Andrew and Hardt, Moritz},
+  author = {Huszár, Ferenc and Ktena, Sofia Ira and O'Brien, Conor and Belli, Luca and Schlaikjer, Andrew and Hardt, Moritz},
   journal = {Proc. Natl. Acad. Sci. U. S. A.},
   publisher = {Proceedings of the National Academy of Sciences},
   volume = {119},
@@ -878,7 +1063,7 @@
 @article{Idowu2022,
   doi = {10.1145/3543847},
   title = {Asset management in machine learning: State-of-research and state-of-practice},
-  author = {Idowu, Samuel and Str{\"u}ber, Daniel and Berger, Thorsten},
+  author = {Idowu, Samuel and Strüber, Daniel and Berger, Thorsten},
   journal = {ACM Comput. Surv.},
   publisher = {Association for Computing Machinery (ACM)},
   month = jun,
@@ -896,6 +1081,19 @@
   title = {Tracking Hackathon Code Creation and Reuse},
   booktitle = msr,
   abstract = {Background: Hackathons have become popular events for teams to collaborate on projects and develop software prototypes. Most existing research focuses on activities during an event with limited attention to the evolution of the code brought to or created during a hackathon. Aim: We aim to understand the evolution of hackathon-related code, specifically, how much hackathon teams rely on pre-existing code or how much new code they develop during a hackathon. Moreover, we aim to understand if and where that code gets reused. Method: We collected information about 22,183 hackathon projects from Devpost---a hackathon database---and obtained related code (blobs), authors, and project characteristics from the World of Code. We investigated if code blobs in hackathon projects were created before, during, or after an event by identifying the original blob creation date and author, and also checked if the original author was a hackathon project member. We tracked code reuse by first identifying all commits containing blobs created during an event before determining all projects that contain those commits. Result: While only approximately 9.14\% of the code blobs are created during hackathons, this amount is still significant considering time and member constraints of such events. Approximately a third of these code blobs get reused in other projects. Conclusion: Our study demonstrates to what extent pre-existing code is used and new code is created during a hackathon and how much of it is reused elsewhere afterwards. Our findings help to better understand code reuse as a phenomenon and the role of hackathons in this context and can serve as a starting point for further studies in this area.}
+}
+
+@article{Imtiaz2022,
+  doi = {10.1109/tse.2022.3181010},
+  url = {https://doi.org/10.1109/tse.2022.3181010},
+  year = {2022},
+  publisher = {Institute of Electrical and Electronics Engineers ({IEEE})},
+  pages = {1--21},
+  author = {Nasif Imtiaz and Aniqa Khanom and Laurie Williams},
+  title = {Open or Sneaky? Fast or Slow? Light or Heavy?: Investigating Security Releases of Open Source Packages},
+  journal = {{IEEE} Transactions on Software Engineering},
+  abstract = {Vulnerabilities in open source packages can be a security risk for the downstream client projects. When a new vulnerability is discovered, a package should quickly release a fix in a new version, referred to as a security release in this study. The security release should be well-documented and require minimal migration effort to facilitate fast adoption by the clients. However, to what extent the open source packages follow these recommendations is not known. In this paper, we study (1) the time lag between fix and release; (2) how security fixes are documented in the release notes; (3) code change characteristics (size and semantic versioning) of the release; and (4) the time lag between the release and an advisory publication for security releases over a dataset of 4,377 security advisories across seven package ecosystems.
+We find that the median security release becomes available within 4 days of the corresponding fix and contains 131 lines of code (LOC) change. However, one-fourth of the releases in our data set still came at least 20 days after the fix was made. Further, we find that 61.5\% of the security releases come with a release note that documents the corresponding security fix. Still, Snyk and NVD, two popular databases, take a median of 17 days (from the release) to publish a security advisory, possibly resulting in delayed notifications to the client projects. We also find that security releases may contain breaking change(s) as 13.2\% indicated backward incompatibility through semantic versioning, while 6.4\% mentioned breaking change(s) in the release notes. Based on our findings, we point out areas for future work, such as private fork for security fixes and standardized practice for announcing security releases.}
 }
 
 @comment{JJJ}
@@ -964,6 +1162,14 @@
   abstract = {In recent years, Python has experienced an explosive growth in adoption, particularly among open source projects. While Python's dynamically-typed nature provides developers with powerful programming abstractions, that same dynamic type system allows for type-related defects to accumulate in code bases. To aid in the early detection of type-related defects, type annotations were introduced into the Python ecosystem (i.e., PEP-484) and static type checkers like mypy have appeared on the market. While applying a type checker like mypy can in theory help to catch type-related defects before they impact users, little is known about the real impact of adopting a type checker to reveal defects in Python projects. In this paper, we study the extent to which Python projects benefit from such type checking features. For this purpose, we mine the issue tracking and version control repositories of 210 Python projects on GitHub. Inspired by the work of Gao et al. on type-related defects in JavaScript, we add type annotations to test whether mypy detects an error that would have helped developers to avoid real defects. We observe that 15 percent of the defects could have been prevented by mypy. Moreover, we find that there is no significant difference between the experience level of developers committing type-related defects and the experience of developers committing defects that are not type-related. In addition, a manual analysis of the anti-patterns that most commonly lead to type-checking faults reveals that the redefinition of Python references, dynamic attribute initialization and incorrectly handled Null objects are the most common causes of type-related faults. Since our study is conducted on fixed public defects that have gone through code reviews and multiple test cycles, these results represent a lower bound on the benefits of adopting a type checker. Therefore, we recommend incorporating a static type checker like mypy into the development workflow, as not only will it prevent type-related defects but also mitigate certain anti-patterns during development.}
 }
 
+@misc{Knutas2023,
+Author = {Antti Knutas and Dominik Siemon and Natasha Tylosky and Giovanni Maccani},
+Title = {Contradicting Motivations in Civic Tech Software Development: Analysis of a Grassroots Project},
+Year = {2023},
+Eprint = {arXiv:2302.03469},
+abstract = {Grassroots civic tech, or software for social change, is an emerging practice where people create and then use software to create positive change in their community. In this interpretive case study, we apply Engeström's expanded activity theory as a theoretical lens to analyze motivations, how they relate to for example group goals or development tool supported processes, and what contradictions emerge. Participants agreed on big picture motivations, such as learning new skills or improving the community. The main contradictions occurred inside activity systems on details of implementation or between system motives, instead of big picture motivations. Two most significant contradictions involved planning, and converging on design and technical approaches. These findings demonstrate the value of examining civic tech development processes as evolving activity systems.}
+}
+
 @article{Kohavi2009,
   doi = {10.1007/s10618-008-0114-1},
   title = {Controlled experiments on the web: survey and practical guide},
@@ -976,6 +1182,31 @@
   month = feb,
   year = {2009},
   copyright = {https://creativecommons.org/licenses/by-nc/2.0},
+}
+
+@misc{Kokinda2023,
+Author = {Ella Kokinda and Paige Rodeghero},
+Title = {Streaming Software Development: Accountability, Community, and Learning},
+Year = {2023},
+Eprint = {arXiv:2302.00169},
+abstract = {People use the Internet to learn new skills, stay connected with friends, and find new communities to engage with. Live streaming platforms like Twitch.tv, YouTube Live, and Facebook Gaming provide a place where all three of these activities intersect and enable users to live-stream themselves playing a video game or live-coding software and game development, as well as the ability to participate in chat while watching someone else engage in an activity. Through fifteen interviews with software and game development streamers, we investigate why people choose to stream themselves programming and if they perceive themselves improving their programming skills by live streaming. We found that the motivations to stream included accountability, self-education, community, and visibility of the streamers' work, and streamers perceived a positive influence on their ability to write source code. Our findings implicate that alternative learning methods like live streaming programming are a beneficial tool in the age of the virtual classroom. This work also contributes to and extends research efforts surrounding educational live streaming and collaboration in developer communities.}
+}
+
+@misc{Kotti2022,
+Author = {Zoe Kotti and Georgios Gousios and Diomidis Spinellis},
+Title = {Impact of Software Engineering Research in Practice: A Patent and Author Survey Analysis},
+Year = {2022},
+Eprint = {arXiv:2204.03366},
+Doi = {10.1109/TSE.2022.3208210},
+abstract = {Existing work on the practical impact of software engineering (SE) research examines industrial relevance rather than adoption of study results, hence the question of how results have been practically applied remains open. To answer this and investigate the outcomes of impactful research, we performed a quantitative and qualitative analysis of 4 354 SE patents citing 1 690 SE papers published in four leading SE venues between 1975--2017.  Moreover, we conducted a survey on 475 authors of 593 top-cited and awarded publications, achieving 26\% response rate. Overall, researchers have equipped practitioners with various tools, processes, and methods, and improved many existing products. SE practice values knowledge-seeking research and is impacted by diverse cross-disciplinary SE areas. Practitioner-oriented publication venues appear more impactful than researcher-oriented ones, while industry-related tracks in conferences could enhance their impact. Some research works did not reach a wide footprint due to limited funding resources or unfavorable cost-benefit trade-off of the proposed solutions. The need for higher SE research funding could be corroborated through a dedicated empirical study. In general, the assessment of impact is subject to its definition. Therefore, academia and industry could jointly agree on a formal description to set a common ground for subsequent research on the topic.}
+}
+
+@misc{Kreuzberger2022,
+Author = {Dominik Kreuzberger and Niklas Kühl and Sebastian Hirschl},
+Title = {Machine Learning Operations (MLOps): Overview, Definition, and Architecture},
+Year = {2022},
+Eprint = {arXiv:2205.02302},
+abstract = {The final goal of all industrial machine learning (ML) projects is to develop ML products and rapidly bring them into production. However, it is highly challenging to automate and operationalize ML products and thus many ML endeavors fail to deliver on their expectations. The paradigm of Machine Learning Operations (MLOps) addresses this issue. MLOps includes several aspects, such as best practices, sets of concepts, and development culture. However, MLOps is still a vague term and its consequences for researchers and professionals are ambiguous. To address this gap, we conduct mixed-method research, including a literature review, a tool review, and expert interviews. As a result of these investigations, we provide an aggregated overview of the necessary principles, components, and roles, as well as the associated architecture and workflows. Furthermore, we furnish a definition of MLOps and highlight open challenges in the field. Finally, this work provides guidance for ML researchers and practitioners who want to automate and operate their ML products with a designated set of technologies.}
 }
 
 @misc{Kudrjavets2022,
@@ -1083,6 +1314,18 @@ Methods: We performed a scenario-based evaluation to identify how participants u
   eprint = {arXiv:2210.11630},
 }
 
+@article{Leite2022,
+  doi = {10.1109/tse.2022.3199169},
+  url = {https://doi.org/10.1109/tse.2022.3199169},
+  year = {2022},
+  publisher = {Institute of Electrical and Electronics Engineers ({IEEE})},
+  pages = {1--30},
+  author = {Leonardo Leite and Nelson Lago and Claudia Melo and Fabio Kon and Paulo Meirelles},
+  title = {A Theory of Organizational Structures for Development and Infrastructure Professionals},
+  journal = {{IEEE} Transactions on Software Engineering},
+  abstract = {DevOps and continuous delivery have impacted the organizational structures of development and infrastructure groups in software-producing organizations. Our research aims at revealing the different options adopted by the software industry to organize such groups, understanding why different organizations adopt distinct structures, and discovering how organizations handle the drawbacks of each structure. We interviewed 68 carefully-selected IT professionals, 45 working in Brazil, 10 in the USA, 8 in Europe, 1 in Canada, and 4 in globally distributed teams. By analyzing these conversations through a Grounded Theory process, we identified conditions, causes, reasons to avoid, consequences, and contingencies related to each discovered structure (segregated departments, collaborative departments, API-mediated departments, and single department). In this way, we offer a theory to explain organizational structures for development and infrastructure professionals. This theory can support practitioners and researchers in comprehending and discussing the DevOps phenomenon and its related issues, and also provides valuable input to practitioners' decision-making.}
+}
+
 @misc{Leven2022,
   author = {William Lev\'{e}n and Hampus Broman and Terese Besker and Richard Torkar},
   title = {The Broken Windows Theory Applies to Technical Debt},
@@ -1114,6 +1357,14 @@ Methods: We performed a scenario-based evaluation to identify how participants u
   abstract = {Debugging can be challenging for novice and expert programmers alike. Programmers routinely turn to online resources such as Stack Overflow for help, but understanding of debugging search practices, as well as tool support to find debugging resources, remains limited. Existing tools that mine online help forums are generally not aimed at novices, and programmers face varying levels of success when looking for online resources. Furthermore, training online code search skills is pedagogically challenging, as we have little understanding of how expertise impacts programmers' web search behavior while debugging code.We help fill these knowledge gaps with the results of a study of 40 programmers investigating differences in Stack Overflow search behavior at three levels of expertise: novices, experienced programmers who are novices in Python (the language we use in our study), and experienced Python programmers. We observe significant differences between all three levels in their ability to find posts helpful for debugging a given error, with both general and language-specific expertise facilitating Stack Overflow search efficacy and debugging success. We also conduct an exploratory investigation of factors that correlate with this difference, such as the display rank of the selected link and the number of links checked per search query. We conclude with an analysis of how online search behavior and results vary by Python error type. Our findings can inform online code search pedagogy, as well as inform the development of future automated tools.}
 }
 
+@misc{Li2023,
+Author = {Ze Shi Li and Nowshin Nawar Arony and Kezia Devathasan and Daniela Damian},
+Title = {"Software is the easy part of Software Engineering" -- Lessons and Experiences from A Large-Scale, Multi-Team Capstone Course},
+Year = {2023},
+Eprint = {arXiv:2302.05536},
+abstract = {Capstone courses in undergraduate software engineering are a critical final milestone for students. These courses allow students to create a software solution and demonstrate the knowledge they accumulated in their degrees. However, a typical capstone project team is small containing no more than 5 students and function independently from other teams. To better reflect real-world software development and meet industry demands, we introduce in this paper our novel capstone course. Each student was assigned to a large-scale, multi-team (i.e., company) of up to 20 students to collaboratively build software. Students placed in a company gained first-hand experiences with respect to multi-team coordination, integration, communication, agile, and teamwork to build a microservices based project. Furthermore, each company was required to implement plug-and-play so that their services would be compatible with another company, thereby sharing common APIs. Through developing the product in autonomous sub-teams, the students enhanced not only their technical abilities but also their soft skills such as communication and coordination. More importantly, experiencing the challenges that arose from the multi-team project trained students to realize the pitfalls and advantages of organizational culture. Among many lessons learned from this course experience, students learned the critical importance of building team trust. We provide detailed information about our course structure, lessons learned, and propose recommendations for other universities and programs. Our work concerns educators interested in launching similar capstone projects so that students in other institutions can reap the benefits of large-scale, multi-team development.}
+}
+
 @inproceedings{Liang2022,
   doi = {10.1145/3540250.3549082},
   title = {Understanding skills for {OSS} communities on {GitHub}},
@@ -1124,6 +1375,40 @@ Methods: We performed a scenario-based evaluation to identify how participants u
   year = {2022},
   conference = esec-fse,
   abstract = {The development of open source software (OSS) is a broad field which requires diverse skill sets. For example, maintainers help lead the project and promote its longevity, technical writers assist with documentation, bug reporters identify defects in software, and developers program the software. However, it is unknown which skills are used in OSS development as well as OSS contributors' general attitudes towards skills in OSS. In this paper, we address this gap by administering a survey to a diverse set of 455 OSS contributors. Guided by these responses as well as prior literature on software development expertise and social factors of OSS, we develop a model of skills in OSS that considers the many contexts OSS contributors work in. This model has 45 skills in the following 9 categories: technical skills, working styles, problem solving, contribution types, project-specific skills, interpersonal skills, external relations, management, and characteristics. Through a mix of qualitative and quantitative analyses, we find that OSS contributors are actively motivated to improve skills and perceive many benefits in sharing their skills with others. We then use this analysis to derive a set of design implications and best practices for those who incorporate skills into OSS tools and platforms, such as GitHub.}
+}
+
+@article{Lin2022,
+  doi = {10.1109/te.2022.3155884},
+  url = {https://doi.org/10.1109/te.2022.3155884},
+  year = {2022},
+  month = nov,
+  publisher = {Institute of Electrical and Electronics Engineers ({IEEE})},
+  volume = {65},
+  number = {4},
+  pages = {617--627},
+  author = {Yu-Tzu Lin and Martin K.-C. Yeh and Sheng-Rong Tan},
+  title = {Teaching Programming by Revealing Thinking Process: Watching Experts' Live Coding Videos With Reflection Annotations},
+  journal = {{IEEE} Transactions on Education},
+  abstract = {Contribution: Programming is a complex cognitive activity that involves both conceptual understanding and procedural skills, which is challenging for novices. To develop both program comprehension and implementation competency, this study proposed a live-coding-based instruction. Experts' live coding with think-aloud was recorded. Students then learn algorithmic planning and coding skills by observing experts' thinking and coding processes from the videos. To deploy this pedagogical strategy, a learning platform was developed to present the videos to students who could also annotate their reflection about the videos in the system to deepen their understanding of syntax and concepts of computer programming.
+Background: Traditional lecture-based programming instruction focuses more on the explanation of syntax and concepts but lacks revealing the dynamic and nonlinear thinking and coding process.
+Research Questions: This study is to explore the effects of live-coding-based instruction on students' programming knowledge, including declarative program knowledge (program comprehension) and procedural program knowledge (coding skills), and whether the instruction changes their attitude toward programming learning or not.
+Methodology: An empirical study was conducted with 33 high-school students who were novice programmers in one semester to explore the effectiveness of the live-coding-based instruction and the use of the learning platform.
+Findings: The experiment results show that watching flowcharting (r = 0.369,p<0.05) or coding processes (r = 0.409, p<0.05) of experts improves coding skills. This implies that explicit depiction of algorithmic planning and coding processes are essential for building procedural programming knowledge. In addition, reflection on syntactic content of experts' programming plays an important role in programming (r = 0.511, p<0.01). The research findings suggest that programming instruction could focus more on developing students' problem-solving abilities by demonstrating the dynamic and nonlinear programming processes and providing opportunities for students to reflect on how syntactic knowledge could be applied to programming.}
+}
+
+@article{Lin2023,
+  doi = {10.1145/3533700},
+  url = {https://doi.org/10.1145/3533700},
+  year = {2023},
+  month = jan,
+  publisher = {Association for Computing Machinery ({ACM})},
+  volume = {32},
+  number = {1},
+  pages = {1--24},
+  author = {Jiahuei Lin and Mohammed Sayagh and Ahmed E. Hassan},
+  title = {The Co-evolution of the {WordPress} Platform and Its Plugins},
+  journal = {{ACM} Transactions on Software Engineering and Methodology},
+  abstract = {One can extend the features of a software system by installing a set of additional components called plugins. WordPress, as a typical example of such plugin-based software ecosystems, is used by millions of websites and has a large number (i.e., 54,777) of available plugins. These plugin-based software ecosystems are diferent from traditional ecosystems (e.g., NPM dependencies) in a sense that there is a high coupling between a platform and its plugins, compared to traditional ecosystems for which components might not necessarily depend on each other (e.g., NPM libraries do not depend on a speciic version of NPM or a speciic version of a client software system). The high coupling between a plugin and its platform and other plugins causes incompatibility issues that occur during the co-evolution of a plugin and its platform as well as other plugins. In fact, incompatibility issues represent a major challenge when upgrading WordPress or its plugins. According to our study of the top 500 most-released WordPress plugins, we observe that incompatibility issues represent the 3r d major cause for bad releases, which are rapidly (within the next 24 hours) ixed via urgent releases. 32\% of these incompatibilities are between a plugin and WordPress while 19\% are between peer plugins. In this paper, we study how plugins co-evolve with the underlying platform as well as other plugins, in an efort to understand the practices that are related support such co-evolution and reduce incompatibility issues. In particular, we investigate how plugins support the latest available versions of WordPress, as well as how plugins are related to each other, and how they co-evolve. We observe that a plugin's support of new versions of WordPress with a large amount of code change is risky, as the releases which declare such support have a higher chance to be followed by an urgent release compared to ordinary releases. Although plugins support the latest WordPress version, plugin developers omit important changes such as deleting the use of removed WordPress APIs, which are removed a median of 873 days after the APIs have been removed from the source code of WordPress. Plugins introduce new releases that are made according to a median of 5 other plugins, which we refer to as peer-triggered releases. A median of 20\% of the peer-triggered releases are urgent releases that ix problems in their previous releases. The most common goal of peer-triggered releases is the ixing of incompatibility issues that a plugin detects as late as after a median of 36 days since the last release of another plugin. Our work sheds light into the co-evolution of WordPress plugins with their platform as well as peer plugins in an efort to uncover the practices of plugin evolution, so WordPress can accordingly design approaches to avoid incompatibility issues.}
 }
 
 @article{Liu2022,
@@ -1167,7 +1452,7 @@ Methods: We performed a scenario-based evaluation to identify how participants u
   doi = {10.1145/3524842.3528457},
   title = {Beyond duplicates},
   booktitle = msr,
-  author = {L{\"u}ders, Clara Marie and Bouraffa, Abir and Maalej, Walid},
+  author = {Lüders, Clara Marie and Bouraffa, Abir and Maalej, Walid},
   publisher = {ACM},
   month = may,
   year = {2022},
@@ -1193,6 +1478,18 @@ Methods: We performed a scenario-based evaluation to identify how participants u
   title = {Experiences from Using Code Explanations Generated by Large Language Models in a Web Software Development E-Book},
   year = {2022},
   eprint = {arXiv:2211.02265},
+}
+
+@article{Madampe2022,
+  doi = {10.1109/tse.2022.3172925},
+  url = {https://doi.org/10.1109/tse.2022.3172925},
+  year = {2022},
+  publisher = {Institute of Electrical and Electronics Engineers ({IEEE})},
+  pages = {1--1},
+  author = {Kashumi Madampe and Rashina Hoda and John Grundy},
+  title = {The Emotional Roller Coaster of Responding to Requirements Changes in Software Engineering},
+  journal = {{IEEE} Transactions on Software Engineering},
+  abstract = {Background: A preliminary study we conducted showed that software practitioners respond to requirements changes (RCs) with different emotions, and that their emotions vary at stages of the RC handling life cycle, such as receiving, developing, and delivering RCs. Furthermore, such developer emotions have direct linkages to cognition, productivity, and decision making. Therefore, it is important to gain a comprehensive understanding the role of emotions in a critical scenarios like handling RCs. Objective: We wanted to study how practitioners emotionally respond to RCs. Method: We conducted a world-wide survey with the participation of 201 software practitioners. In our survey, we used the Job-related Affective Well-being Scale (JAWS) and open-ended questions to capture participants emotions when handling RCs in their work and query about the different circumstances when they feel these emotions. We used a combined approach of statistical analysis, JAWS, and Socio-Technical Grounded Theory (STGT) for Data Analysis to analyse our survey data. Findings: We identified (1) emotional responses to RCs, i.e., the most common emotions felt by practitioners when handling RCs; (2) different stimuli – such as the RC, the practitioner, team, manager, customer – that trigger these emotions through their own different characteristics; (3) emotion dynamics, i.e., the changes in emotions during the RC handling life cycle; (4) RC stages where particular emotions are triggered; and (5) time related aspects that regulate the emotion dynamics. Conclusion: Practitioners are not pleased with receiving RCs all the time. Last minute RCs introduced closer to a deadline especially violate emotional well-being of practitioners. We present some practical recommendations for practitioners to follow, including a dual-purpose emotion-centric decision guide to help decide when to introduce or accept an RC, and some future key research directions.}
 }
 
 @article{Martin2023,
@@ -1333,6 +1630,18 @@ Methods: We performed a scenario-based evaluation to identify how participants u
 
 @comment{PPP}
 
+@inproceedings{Pagano2011,
+  doi = {10.1145/1985441.1985461},
+  url = {https://doi.org/10.1145/1985441.1985461},
+  year = {2011},
+  month = may,
+  publisher = {{ACM}},
+  author = {Dennis Pagano and Walid Maalej},
+  title = {How do developers blog?},
+  booktitle = {Proceedings of the 8th Working Conference on Mining Software Repositories},
+  abstract = {We report on an exploratory study, which aims at understanding how software developers use social media compared to conventional development infrastructures. We analyzed the blogging and the committing behavior of 1,100 developers in four large open source communities. We observed that these communities intensively use blogs with one new entry about every 8 hours. A blog entry includes 14 times more words than a commit message. When analyzing the content of the blogs, we found that most popular topics represent high-level concepts such as functional requirements and domain concepts. Source code related topics are covered in less than 15\% of the posts. Our results also show that developers are more likely to blog after corrective engineering and management activities than after forward engineering and re-engineering activities. Our findings call for a hypothesis-driven research to further understand the role of social media in software engineering and integrate it into development processes and tools.}
+}
+
 @article{Palomba2021,
   doi = {10.1109/tse.2018.2883603},
   url = {https://doi.org/10.1109/tse.2018.2883603},
@@ -1346,6 +1655,41 @@ Methods: We performed a scenario-based evaluation to identify how participants u
   title = {Beyond Technical Aspects: How Do Community Smells Influence the Intensity of Code Smells?},
   journal = ieee-tse,
   abstract = {Code smells are poor implementation choices applied by developers during software evolution that often lead to critical flaws or failure. Much in the same way, community smells reflect the presence of organizational and socio-technical issues within a software community that may lead to additional project costs. Recent empirical studies provide evidence that community smells are often---if not always---connected to circumstances such as code smells. In this paper we look deeper into this connection by conducting a mixed-methods empirical study of 117 releases from 9 open-source systems. The qualitative and quantitative sides of our mixed-methods study were run in parallel and assume a mutually-confirmative connotation. On the one hand, we survey 162 developers of the 9 considered systems to investigate whether developers perceive relationship between community smells and the code smells found in those projects. On the other hand, we perform a fine-grained analysis into the 117 releases of our dataset to measure the extent to which community smells impact code smell intensity (i.e., criticality). We then propose a code smell intensity prediction model that relies on both technical and community-related aspects. The results of both sides of our mixed-methods study lead to one conclusion: community-related factors contribute to the intensity of code smells. This conclusion supports the joint use of community and code smells detection as a mechanism for the joint management of technical and social problems around software development communities.}
+}
+
+@misc{Panthaplackel2022,
+Author = {Sheena Panthaplackel and Milos Gligoric and Junyi Jessy Li and Raymond J. Mooney},
+Title = {Using Developer Discussions to Guide Fixing Bugs in Software},
+Year = {2022},
+Eprint = {arXiv:2211.06335},
+abstract = {Automatically fixing software bugs is a challenging task. While recent work showed that natural language context is useful in guiding bug-fixing models, the approach required prompting developers to provide this context, which was simulated through commit messages written after the bug-fixing code changes were made. We instead propose using bug report discussions, which are available before the task is performed and are also naturally occurring, avoiding the need for any additional information from developers. For this, we augment standard bug-fixing datasets with bug report discussions. Using these newly compiled datasets, we demonstrate that various forms of natural language context derived from such discussions can aid bug-fixing, even leading to improved performance over using commit messages corresponding to the oracle bug-fixing commits.}
+}
+
+@article{PapapanagiotakisBousy2022,
+  doi = {10.1109/tse.2022.3214796},
+  url = {https://doi.org/10.1109/tse.2022.3214796},
+  year = {2022},
+  publisher = {Institute of Electrical and Electronics Engineers ({IEEE})},
+  pages = {1--18},
+  author = {Iason Papapanagiotakis Bousy and Earl T. Barr and David Clark},
+  title = {{PopArt}: Ranked Testing Efficiency},
+  journal = {{IEEE} Transactions on Software Engineering},
+  abstract = {Too often, programmers are under pressure to maximize their confidence in the correctness of their code with a tight testing budget. Should they spend some of that budget on finding ``interesting'' inputs or spend their entire testing budget on test executions? Work on testing efficiency has explored two competing approaches to answer this question: systematic partition testing (ST), which defines a testing partition and tests its parts, and random testing (RT), which directly samples inputs with replacement. A consensus as to which is better when has yet to emerge. We present Probability Ordered Partition Testing (POPART), a new systematic partition-based testing strategy that visits the parts of a testing partition in decreasing probability order and in doing so leverages any non-uniformity over that partition. We show how to construct a homogeneous testing partition, a requirement for systematic testing, by using an executable oracle and the path partition. A program's path partition is a naturally occurring testing partition that is usually skewed for the simple reason that some paths execute more frequently than others. To confirm this conventional wisdom, we instrument programs from the Codeflaws repository and find that 80\% of them have a skewed path probability distribution. POPART visits the parts of a testing partition in decreasing probability order. We then compare POPART with RT to characterise the configuration space in which each is more efficient. We show that, when simulating Codeflaws, POPART outperforms RT after 100,000 executions. Our results reaffirm RT's power for very small testing budgets but also show that for any application requiring high (above 90\%) probability-weighted coverage POPART should be preferred. In such cases, despite paying more for each test execution, we prove that POPART outperforms RT: it traverses parts whose cumulative probability bounds that of random testing, showing that sampling without replacement pays for itself, given a nonuniform probability over a testing partition.}
+}
+
+@article{Pashchenko2022,
+  doi = {10.1109/tse.2020.3025443},
+  url = {https://doi.org/10.1109/tse.2020.3025443},
+  year = {2022},
+  month = may,
+  publisher = {Institute of Electrical and Electronics Engineers ({IEEE})},
+  volume = {48},
+  number = {5},
+  pages = {1592--1609},
+  author = {Ivan Pashchenko and Henrik Plate and Serena Elisa Ponta and Antonino Sabetta and Fabio Massacci},
+  title = {Vuln4Real: A Methodology for Counting Actually Vulnerable Dependencies},
+  journal = {{IEEE} Transactions on Software Engineering},
+  abstract = {Vulnerable dependencies are a known problem in today's free open-source software ecosystems because FOSS libraries are highly interconnected, and developers do not always update their dependencies. Our paper proposes Vuln4Real, the methodology for counting actually vulnerable dependencies, that addresses the over-inflation problem of academic and industrial approaches for reporting vulnerable dependencies in FOSS software, and therefore, caters to the needs of industrial practice for correct allocation of development and audit resources. To understand the industrial impact of a more precise methodology, we considered the 500 most popular FOSS Java libraries used by SAP in its own software. Our analysis included 25767 distinct library instances in Maven. We found that the proposed methodology has visible impacts on both ecosystem view and the individual library developer view of the situation of software dependencies: Vuln4Real significantly reduces the number of false alerts for deployed code (dependencies wrongly flagged as vulnerable), provides meaningful insights on the exposure to third-parties (and hence vulnerabilities) of a library, and automatically predicts when dependency maintenance starts lagging, so it may not receive updates for arising issues.}
 }
 
 @article{Pelanek2022,
@@ -1364,7 +1708,7 @@ Methods: We performed a scenario-based evaluation to identify how participants u
   doi = {10.1145/3136014.3136031},
   title = {Energy efficiency across programming languages: how do energy, time, and memory relate?},
   booktitle = {Proceedings of the 10th {ACM} {SIGPLAN} International Conference on Software Language Engineering},
-  author = {Pereira, Rui and Couto, Marco and Ribeiro, Francisco and Rua, Rui and Cunha, J{\'a}come and Fernandes, Jo{\~a}o Paulo and Saraiva, Jo{\~a}o},
+  author = {Pereira, Rui and Couto, Marco and Ribeiro, Francisco and Rua, Rui and Cunha, Jácome and Fernandes, Jo{\~a}o Paulo and Saraiva, Jo{\~a}o},
   publisher = {ACM},
   month = oct,
   year = {2017},
@@ -1453,7 +1797,7 @@ Methods: We performed a scenario-based evaluation to identify how participants u
 @article{Qamar2022,
   doi = {10.1016/j.infsof.2022.106972},
   title = {Taxonomy of bug tracking process smells: Perceptions of practitioners and an empirical analysis},
-  author = {Qamar, Khushbakht Ali and S{\"u}l{\"u}n, Emre and T{\"u}z{\"u}n, Eray},
+  author = {Qamar, Khushbakht Ali and Sülün, Emre and Tüzün, Eray},
   journal = {Inf. Softw. Technol.},
   publisher = {Elsevier BV},
   volume = {150},
@@ -1513,6 +1857,20 @@ Methods: We performed a scenario-based evaluation to identify how participants u
   abstract = {Context: Security smells are recurring coding patterns that are indicative of security weakness and require further inspection. As infrastructure as code (IaC) scripts, such as Ansible and Chef scripts, are used to provision cloud-based servers and systems at scale, security smells in IaC scripts could be used to enable malicious users to exploit vulnerabilities in the provisioned systems. Goal: The goal of this article is to help practitioners avoid insecure coding practices while developing infrastructure as code scripts through an empirical study of security smells in Ansible and Chef scripts. Methodology: We conduct a replication study where we apply qualitative analysis with 1,956 IaC scripts to identify security smells for IaC scripts written in two languages: Ansible and Chef. We construct a static analysis tool called Security Linter for Ansible and Chef scripts (SLAC) to automatically identify security smells in 50,323 scripts collected from 813 open source software repositories. We also submit bug reports for 1,000 randomly selected smell occurrences. Results: We identify two security smells not reported in prior work: missing default in case statement and no integrity check. By applying SLAC we identify 46,600 occurrences of security smells that include 7,849 hard-coded passwords. We observe agreement for 65 of the responded 94 bug reports, which suggests the relevance of security smells for Ansible and Chef scripts amongst practitioners. Conclusion: We observe security smells to be prevalent in Ansible and Chef scripts, similarly to that of the Puppet scripts. We recommend practitioners to rigorously inspect the presence of the identified security smells in Ansible and Chef scripts using (i) code review, and (ii) static analysis tools.}
 }
 
+@article{Rahman2022,
+  doi = {10.1007/s10664-022-10153-2},
+  url = {https://doi.org/10.1007/s10664-022-10153-2},
+  year = {2022},
+  month = may,
+  publisher = {Springer Science and Business Media {LLC}},
+  volume = {27},
+  number = {5},
+  author = {Mohammad M. Rahman and Foutse Khomh and Marco Castelluccio},
+  title = {Works for Me! Cannot Reproduce – A Large Scale Empirical Study of Non-reproducible Bugs},
+  journal = {Empirical Software Engineering},
+  abstract = {Software developers attempt to reproduce software bugs to understand their erroneous behaviours and to fix them. Unfortunately, they often fail to reproduce (or fix) them, which leads to faulty, unreliable software systems. However, to date, only a little research has been done to better understand what makes the software bugs non-reproducible. In this article, we conduct a multi-modal study to better understand the non-reproducibility of software bugs. First, we perform an empirical study using 576 non-reproducible bug reports from two popular software systems (Firefox, Eclipse) and identify 11 key factors that might lead a reported bug to non-reproducibility. Second, we conduct a user study involving 13 professional developers where we investigate how the developers cope with non-reproducible bugs. We found that they either close these bugs or solicit for further information, which involves long deliberations and counter-productive manual searches. Third, we offer several actionable insights on how to avoid non-reproducibility (e.g., false-positive bug report detector) and improve reproducibility of the reported bugs (e.g., sandbox for bug reproduction) by combining our analyses from multiple studies (e.g., empirical study, developer study). Fourth, we explain the differences between reproducible and non-reproducible bug reports by systematically interpreting multiple machine learning models that classify these reports with high accuracy. We found that links to existing bug reports might help improve the reproducibility of a reported bug. Finally, we detect the connected bug reports to a non-reproducible bug automatically and further demonstrate how 93 bugs connected to 71 non-reproducible bugs from our dataset can offer complementary information (e.g., attachments, screenshots, program flows).}
+}
+
 @misc{Rao2022,
   author = {Nikitha Rao and Jason Tsay and Martin Hirzel and Vincent J. Hellendoorn},
   title = {Comments on Comments: Where Code Review and Documentation Meet},
@@ -1546,6 +1904,21 @@ Methods: We performed a scenario-based evaluation to identify how participants u
   title = {Training industrial end-user programmers with interactive tutorials},
   journal = {Software: Practice and Experience},
   abstract = {Newly released robot programming tools have made it feasible for end-users to program industrial robots by combining block-based languages and lead-through programming. To use these systems effectively, end-users, who usually have limited or no programming experience, require training. To train users, tutoring systems are often used for block-based programming---some even for lead-through programming---but no tutorial system combines these two types of programming. We present CoBlox Interactive Tutorials (CITs), a novel tutoring approach that teaches how to use both the hardware and software components that comprise a typical end-user robot programming environment. As users switch between the two programming styles, CITs provide them with extensive scaffolding, give users immediate feedback on missteps}
+}
+
+@article{Rombaut2023,
+  doi = {10.1145/3522587},
+  url = {https://doi.org/10.1145/3522587},
+  year = {2023},
+  month = jan,
+  publisher = {Association for Computing Machinery ({ACM})},
+  volume = {32},
+  number = {1},
+  pages = {1--40},
+  author = {Benjamin Rombaut and Filipe R. Cogo and Bram Adams and Ahmed E. Hassan},
+  title = {There's no Such Thing as a Free Lunch: Lessons Learned from Exploring the Overhead Introduced by the Greenkeeper Dependency Bot in Npm},
+  journal = {{ACM} Transactions on Software Engineering and Methodology},
+  abstract = {Dependency management bots are increasingly being used to support the software development process, for example to automatically update a dependency when a new version is available. Yet, human intervention is often required to either accept or reject any action or recommendation the bot creates. In this paper, our objective is to study the extent to which dependency management bots create additional, and sometimes unnecessary, work for their users. To accomplish this, we analyze 93,196 issue reports opened by Greenkeeper, a popular dependency management bot used in open source software projects in the npm ecosystem. We ind that Greenkeeper is responsible for half of all issues reported in client projects, inducing a signiicant amount of overhead that must be addressed by clients, since many of these issues were created as a result of Greenkeeper taking incorrect action on a dependency update (i.e., false alarms). Reverting a broken dependency update to an older version, which is a potential solution that requires the least overhead and is automatically attempted by Greenkeeper, turns out to not be an efective mechanism. Finally, we observe that 56\% of the commits referenced by Greenkeeper issue reports only change the client's dependency speciication ile to resolve the issue. Based on our indings, we argue that dependency management bots should (i) be conigurable to allow clients to reduce the amount of generated activity by the bots, (ii) take into consideration more sources of information than only the pass/fail status of the client's build pipeline to help eliminate false alarms, and (iii) provide more efective incentives to encourage clients to resolve dependency issues.}
 }
 
 @article{Rule2019,
@@ -1589,6 +1962,20 @@ Methods: We performed a scenario-based evaluation to identify how participants u
   abstract = {The three decade struggle to ensure Internet data confidentiality---a key aspect of communications privacy---is finally behind us. Encryption is fast, secure, and standard in all browsers, modern transports, and major protocols. Yet it has long seemed that network privacy is not unified by core principles but a grab bag of techniques and ideas applied to an equally wide range of applications, contexts, layers of infrastructure, and software stacks. Here we attempt to distill a principle---one that is old but seldom discussed as such---for building privacy into Internet services. We explore what privacy properties are desirable and achievable when we apply this principle. We evaluate several classic systems and ones that have been recently deployed with this principle applied, and discuss future directions for network privacy building upon these efforts.}
 }
 
+@article{Schroder2021,
+  doi = {10.1007/s10664-021-10036-y},
+  url = {https://doi.org/10.1007/s10664-021-10036-y},
+  year = {2021},
+  month = dec,
+  publisher = {Springer Science and Business Media {LLC}},
+  volume = {27},
+  number = {2},
+  author = {Michael Schröder and Jürgen Cito},
+  title = {An empirical investigation of command-line customization},
+  journal = {Empirical Software Engineering},
+  abstract = {The interactive command line, also known as the shell, is a prominent mechanism used extensively by a wide range of software professionals (engineers, system administrators, data scientists, etc.). Shell customizations can therefore provide insight into the tasks they repeatedly perform, how well the standard environment supports those tasks, and ways in which the environment could be productively extended or modified. To characterize the patterns and complexities of command-line customization, we mined the collective knowledge of command-line users by analyzing more than 2.2 million shell alias definitions found on GitHub. Shell aliases allow command-line users to customize their environment by defining arbitrarily complex command substitutions. Using inductive coding methods, we found three types of aliases that each enable a number of customization practices: Shortcuts (for nicknaming commands, abbreviating subcommands, and bookmarking locations), Modifications (for substituting commands, overriding defaults, colorizing output, and elevating privilege), and Scripts (for transforming data and chaining subcommands). We conjecture that identifying common customization practices can point to particular usability issues within command-line programs, and that a deeper understanding of these practices can support researchers and tool developers in designing better user experiences. In addition to our analysis, we provide an extensive reproducibility package in the form of a curated dataset together with well-documented computational notebooks enabling further knowledge discovery and a basis for learning approaches to improve command-line workflows.}
+}
+
 @article{Schurhoff2022,
   doi = {10.1007/s10664-022-10245-z},
   url = {https://doi.org/10.1007/s10664-022-10245-z},
@@ -1612,6 +1999,14 @@ Methods: We performed a scenario-based evaluation to identify how participants u
   title = {Toward Understanding the Impact of Refactoring on Program Comprehension},
   booktitle = {2022 {IEEE} International Conference on Software Analysis,  Evolution and Reengineering ({SANER})},
   abstract = {Software refactoring is the activity associated with developers changing the internal structure of source code without modifying its external behavior. The literature argues that refactoring might have beneficial and harmful implications for software maintainability, primarily when performed without the support of automated tools. This paper continues the narrative on the effects of refactoring by exploring the dimension of program comprehension, namely the property that describes how easy it is for developers to understand source code. We start our investigation by assessing the basic unit of program comprehension, namely program readability. Next, we set up a large-scale empirical investigation---conducted on 156 open-source projects---to quantify the impact of refactoring on program readability. First, we mine refactoring data and, for each commit involving a refactoring, we compute (i) the amount and type(s) of refactoring actions performed and (ii) eight state-of-the-art program comprehension metrics. Afterwards, we build statistical models relating the various refactoring operations to each of the readability metrics considered to quantify the extent to which each refactoring impacts the metrics in either a positive or negative manner. The key results are that refactoring has a notable impact on most of the readability metrics considered.}
+}
+
+@misc{Shan2023,
+Author = {Shawn Shan and Jenna Cryan and Emily Wenger and Haitao Zheng and Rana Hanocka and Ben Y. Zhao},
+Title = {GLAZE: Protecting Artists from Style Mimicry by Text-to-Image Models},
+Year = {2023},
+Eprint = {arXiv:2302.04222},
+abstract = {Recent text-to-image diffusion models such as MidJourney and Stable Diffusion threaten to displace many in the professional artist community. In particular, models can learn to mimic the artistic style of specific artists after ``fine-tuning'' on samples of their art. In this paper, we describe the design, implementation and evaluation of Glaze, a tool that enables artists to apply ``style cloaks'' to their art before sharing online. These cloaks apply barely perceptible perturbations to images, and when used as training data, mislead generative models that try to mimic a specific artist. In coordination with the professional artist community, we deploy user studies to more than 1000 artists, assessing their views of AI art, as well as the efficacy of our tool, its usability and tolerability of perturbations, and robustness across different scenarios and against adaptive countermeasures. Both surveyed artists and empirical CLIP-based scores show that even at low perturbation levels (p=0.05), Glaze is highly successful at disrupting mimicry under normal conditions (>92\%) and against adaptive countermeasures (>85\%).}
 }
 
 @misc{Shankar2022,
@@ -1654,6 +2049,15 @@ Methods: We performed a scenario-based evaluation to identify how participants u
   year = {2022},
   conference = {CAIN '22: 1st Conference on AI Engineering - Software Engineering for AI},
   abstract = {The adoption of Artificial Intelligence (AI) in high-stakes domains such as healthcare, wildlife preservation, autonomous driving and criminal justice system calls for a data-centric approach to AI. Data scientists spend the majority of their time studying and wrangling the data, yet tools to aid them with data analysis are lacking. This study identifies the recurrent data quality issues in public datasets. Analogous to code smells, we introduce a novel catalogue of data smells that can be used to indicate early signs of problems or technical debt in machine learning systems. To understand the prevalence of data quality issues in datasets, we analyse 25 public datasets and identify 14 data smells.}
+}
+
+@misc{Shreeve2021,
+Author = {Benjamin Shreeve and Joseph Hallett and Matthew Edwards and Kopo M. Ramokapane and Richard Atkins and Awais Rashid},
+Title = {The best laid plans or lack thereof: Security decision-making of different stakeholder groups},
+Year = {2021},
+Eprint = {arXiv:2104.00284},
+Doi = {10.1109/TSE.2020.3023735},
+abstract = {Cyber security requirements are influenced by the priorities and decisions of a range of stakeholders. Board members and CISOs determine strategic priorities. Managers have responsibility for resource allocation and project management. Legal professionals concern themselves with regulatory compliance. Little is understood about how the security decision-making approaches of these different stakeholders contrast, and if particular groups of stakeholders have a better appreciation of security requirements during decision-making. Are risk analysts better decision makers than CISOs? Do security experts exhibit more effective strategies than board members? This paper explores the effect that different experience and diversity of expertise has on the quality of a team's cyber security decision-making and whether teams with members from more varied backgrounds perform better than those with more focused, homogeneous skill sets. Using data from 208 sessions and 948 players of a tabletop game run in the wild by a major national organization over 16 months, we explore how choices are affected by player background (e.g., cyber security experts versus risk analysts, board-level decision makers versus technical experts) and different team make-ups (homogeneous teams of security experts versus various mixes). We find that no group of experts makes significantly better game decisions than anyone else, and that their biases lead them to not fully comprehend what they are defending or how the defenses work.}
 }
 
 @inproceedings{Shrestha2021,
@@ -1709,6 +2113,14 @@ Methods: We performed a scenario-based evaluation to identify how participants u
   copyright = {http://www.acm.org/publications/policies/copyright\_policy\#Background},
 }
 
+@misc{Spinellis2023,
+Author = {Diomidis Spinellis},
+Title = {Open Reproducible Publication Research},
+Year = {2023},
+Eprint = {arXiv:2301.13312},
+abstract = {Considerable scientific work involves locating, analyzing, systematizing, and synthesizing other publications. Its results end up in a paper's ``background'' section or in standalone articles, which include meta-analyses and systematic literature reviews. The required research is aided through the use of online scientific publication databases and search engines, such as Web of Science, Scopus, and Google Scholar. However, use of online databases suffers from a lack of repeatability and transparency, as well as from technical restrictions. Thankfully, open data, powerful personal computers, and open source software now make it possible to run sophisticated publication studies on the desktop in a self-contained environment that peers can readily reproduce. Here we report a Python software package and an associated command-line tool that can populate embedded relational databases with slices from the complete set of Crossref publication metadata,1 ORCID author records,2 and other open data sets, for in-depth processing through performant queries. We demonstrate the software's utility by analyzing the underlying dataset's contents, by visulizing the evolution of publications in diverse scientific fields and relationships between them, by outlining scientometric facts associated with COVID-19 research, and by replicating commonly-used bibliometric measures of productivity and impact.}
+}
+
 @misc{Stokes2022,
   author = {Chase Stokes and Marti Hearst},
   title = {Why More Text is (Often) Better: Themes from Reader Preferences for Integration of Charts and Text},
@@ -1751,6 +2163,27 @@ Methods: We performed a scenario-based evaluation to identify how participants u
   eprint = {arXiv:2212.01479},
 }
 
+@misc{Tan2023,
+Author = {Xin Tan and Yiran Chen and Haohua Wu and Minghui Zhou and Li Zhang},
+Title = {Is It Enough to Recommend Tasks to Newcomers? Understanding Mentoring on Good First Issues},
+Year = {2023},
+Eprint = {arXiv:2302.05058},
+Howpublished = {ICSE 2023},
+abstract = {Newcomers are critical for the success and continuity of open source software (OSS) projects. To attract newcomers and facilitate their onboarding, many OSS projects recommend tasks for newcomers, such as good first issues (GFIs). Previous studies have preliminarily investigated the effects of GFIs and techniques to identify suitable GFIs. However, it is still unclear whether just recommending tasks is enough and how significant mentoring is for newcomers. To better understand mentoring in OSS communities, we analyze the resolution process of 48,402 GFIs from 964 repositories through a mix-method approach. We investigate the extent, the mentorship structures, the discussed topics, and the relevance of expert involvement. We find that \~70\% of GFIs have expert participation, with each GFI usually having one expert who makes two comments. Half of GFIs will receive their first expert comment within 8.5 hours after a newcomer comment. Through analysis of the collaboration networks of newcomers and experts, we observe that community mentorship presents four types of structure: centralized mentoring, decentralized mentoring, collaborative mentoring, and distributed mentoring. As for discussed topics, we identify 14 newcomer challenges and 18 expert mentoring content. By fitting the generalized linear models, we find that expert involvement positively correlates with newcomers' successful contributions but negatively correlates with newcomers' retention. Our study manifests the status and significance of mentoring in the OSS projects, which provides rich practical implications for optimizing the mentoring process and helping newcomers contribute smoothly and successfully.}
+}
+
+@misc{Tenhunen2023,
+  doi = {10.48550/ARXIV.2301.03554},
+  url = {https://arxiv.org/abs/2301.03554},
+  author = {Tenhunen,  Saara and M\"{a}nnist\"{o},  Tomi and Luukkainen,  Matti and Ihantola,  Petri},
+  title = {A systematic literature review of capstone courses in software engineering},
+  publisher = {arXiv},
+  year = {2023},
+  abstract = {Context: Tertiary education institutions aim to prepare their computer science and software engineering students for working life. While much of the technical principles are covered in lower-level courses, team-based capstone projects are a common way to provide students with hands-on experience and teach soft skills.
+Objective: This paper explores the characteristics of software engineering capstone courses presented in the literature. The goal of this work is to understand the pros and cons of different approaches by synthesising the various aspects of software engineering capstone courses and related experiences. Method: In a systematic literature review for 2007–2007, we identified 127 primary studies. These studies were analysed based on their presented course characteristics and the reported course outcomes.
+Results: The characteristics were synthesised into a taxonomy consisting of duration, team sizes, client and project sources, project implementation, and student assessment. We found out that capstone courses generally last one semester and divide students into groups of 4–5 where they work on a project for a client. For a slight majority of courses, the clients are external to the course staff and students are often expected to produce a proof-of-concept level software product as the main end deliverable. The courses also offer versatile assessments for students throughout the project. Conclusions: This paper provides researchers and educators with a classification of characteristics of software engineering capstone courses based on previous research. We also further synthesise insights on the reported outcomes of capstone courses. Our review study aims to help educators to identify various ways of organising capstones and effectively plan and deliver their own capstone courses. The characterisation also helps researchers to conduct further studies on software engineering capstones.}
+}
+
 @inproceedings{Tian2022,
   doi = {10.1145/3510003.3510205},
   title = {What makes a good commit message?},
@@ -1761,6 +2194,14 @@ Methods: We performed a scenario-based evaluation to identify how participants u
   year = {2022},
   conference = icse,
   abstract = {A key issue in collaborative software development is communication among developers. One modality of communication is a commit message, in which developers describe the changes they make in a repository. As such, commit messages serve as an "audit trail" by which developers can understand how the source code of a project has changed-and why. Hence, the quality of commit messages affects the effectiveness of communication among developers. Commit messages are often of poor quality as developers lack time and motivation to craft a good message. Several automatic approaches have been proposed to generate commit messages. However, these are based on uncurated datasets including considerable proportions of poorly phrased commit messages. In this multi-method study, we first define what constitutes a "good" commit message, and then establish what proportion of commit messages lack information using a sample of almost 1,600 messages from five highly active open source projects. We find that an average of circa 44\% of messages could be improved, suggesting the use of uncurated datasets may be a major threat when commit message generators are trained with such data. We also observe that prior work has not considered semantics of commit messages, and there is surprisingly little guidance available for writing good commit messages. To that end, we develop a taxonomy based on recurring patterns in commit messages' expressions. Finally, we investigate whether "good" commit messages can be automatically identified; such automation could prompt developers to write better commit messages.}
+}
+
+@misc{Tigina2023,
+Author = {Maria Tigina and Anastasiia Birillo and Yaroslav Golubev and Hieke Keuning and Nikolay Vyahhi and Timofey Bryksin},
+Title = {Analyzing the Quality of Submissions in Online Programming Courses},
+Year = {2023},
+Eprint = {arXiv:2301.11158},
+abstract = {Programming education should aim to provide students with a broad range of skills that they will later use while developing software. An important aspect in this is their ability to write code that is not only correct but also of high quality. Unfortunately, this is difficult to control in the setting of a massive open online course. In this paper, we carry out an analysis of the code quality of submissions from JetBrains Academy -- a platform for studying programming in an industry-like project-based setting with an embedded code quality assessment tool called Hyperstyle. We analyzed more than a million Java submissions and more than 1.3 million Python submissions, studied the most prevalent types of code quality issues and the dynamics of how students fix them. We provide several case studies of different issues, as well as an analysis of why certain issues remain unfixed even after several attempts. Also, we studied abnormally long sequences of submissions, in which students attempted to fix code quality issues after passing the task. Our results point the way towards the improvement of online courses, such as making sure that the task itself does not incentivize students to write code poorly.}
 }
 
 @article{Timperley2021,
@@ -1791,6 +2232,59 @@ Methods: We performed a scenario-based evaluation to identify how participants u
   abstract = {This paper argues for a reexamination of the nature and goals of broad computing education initiatives. Instead of starting with specific values or goals, we instead begin by considering various desired endpoints of computing instruction and then work backward to reason about what form learning activities might take and what are the underlying values and principles that support learners in reaching these endpoints. The result of this exercise is a push for rethinking the form of contemporary computing education with an eye toward more diverse, equitable and meaningful endpoints. With a focus on the role that constructionistfocused pedagogies and designs can play in supporting these endpoints, we examine four distinct cases and the endpoints they support. This paper is not intended to encompass all the possible alternate endpoints for computer science education; rather, this work seeks to start a conversation around the nature of and need for alternate endpoints, as a means to reevaluate the current tools and curricula to prepare learners for a future of active and empowered computingliterate citizens.}
 }
 
+@misc{Tiwari2023,
+Author = {Deepika Tiwari and Martin Monperrus and Benoit Baudry},
+Title = {RICK: Generating Mocks from Production Data},
+Year = {2023},
+Eprint = {arXiv:2302.04547},
+abstract = {Test doubles, such as mocks and stubs, are nifty fixtures in unit tests. They allow developers to test individual components in isolation from others that lie within or outside of the system. However, implementing test doubles within tests is not straightforward. With this demonstration, we introduce RICK, a tool that observes executing applications in order to automatically generate tests with realistic mocks and stubs. R I C K monitors the invocation of target methods and their interactions with external components. Based on the data collected from these observations, RICK produces unit tests with mocks, stubs, and mock-based oracles. We highlight the capabilities of RICK, and how it can be used with real-world Java applications, to generate tests with mocks.}
+}
+
+@article{Trautsch2023,
+  doi = {10.1007/s10664-022-10257-9},
+  url = {https://doi.org/10.1007/s10664-022-10257-9},
+  year = {2023},
+  month = jan,
+  publisher = {Springer Science and Business Media {LLC}},
+  volume = {28},
+  number = {2},
+  author = {Alexander Trautsch and Johannes Erbel and Steffen Herbold and Jens Grabowski},
+  title = {What really changes when developers intend to improve their source code: a commit-level study of static metric value and static analysis warning changes},
+  journal = {Empirical Software Engineering},
+  abstract = {Many software metrics are designed to measure aspects that are believed to be related to software quality. Static software metrics, e.g., size, complexity and coupling are used in defect prediction research as well as software quality models to evaluate software quality. Static analysis tools also include boundary values for complexity and size that generate warnings for developers. While this indicates a relationship between quality and software metrics, the extent of it is not well understood. Moreover, recent studies found that complexity metrics may be unreliable indicators for understandability of the source code. To explore this relationship, we leverage the intent of developers about what constitutes a quality improvement in their own code base. We manually classify a randomized sample of 2,533 commits from 54 Java open source projects as quality improving depending on the intent of the developer by inspecting the commit message. We distinguish between perfective and corrective maintenance via predefined guidelines and use this data as ground truth for the fine-tuning of a state-of-the art deep learning model for natural language processing. The benchmark we provide with our ground truth indicates that the deep learning model can be confidently used for commit intent classification. We use the model to increase our data set to 125,482 commits. Based on the resulting data set, we investigate the differences in size and 14 static source code metrics between changes that increase quality, as indicated by the developer, and changes unrelated to quality. In addition, we investigate which files are targets of quality improvements. We find that quality improving commits are smaller than non-quality improving commits. Perfective changes have a positive impact on static source code metrics while corrective changes do tend to add complexity. Furthermore, we find that files which are the target of perfective maintenance already have a lower median complexity than files which are the target of non-perfective changes. Our study results provide empirical evidence for which static source code metrics capture quality improvement from the developers point of view. This has implications for program understanding as well as code smell detection and recommender systems.}
+}
+
+@article{Trinkenreich2022,
+  doi = {10.1145/3510460},
+  url = {https://doi.org/10.1145/3510460},
+  year = {2022},
+  month = aug,
+  publisher = {Association for Computing Machinery ({ACM})},
+  volume = {31},
+  number = {4},
+  pages = {1--37},
+  author = {Bianca Trinkenreich and Igor Wiese and Anita Sarma and Marco Gerosa and Igor Steinmacher},
+  title = {Women's Participation in Open Source Software: A Survey of the Literature},
+  journal = {{ACM} Transactions on Software Engineering and Methodology},
+  abstract = {Women are underrepresented in Open Source Software (OSS) projects, as a result of which, not only do women lose career and skill development opportunities, but the projects themselves suffer from a lack of diversity of perspectives. Practitioners and researchers need to understand more about the phenomenon; however, studies about women in open source are spread across multiple fields, including information systems, software engineering, and social science. This paper systematically maps, aggregates, and synthesizes the state-of-the-art on women's participation in OSS. It focuses on women contributors' representation and demographics, how they contribute, their motivations and challenges, and strategies employed by communities to attract and retain women. We identified 51 articles (published between 2000 and 2021) that investigated women's participation in OSS. We found evidence in these papers about who are the women who contribute, what motivates them to contribute, what types of contributions they make, challenges they face, and strategies proposed to support their participation. According to these studies, only about 5\% of projects were reported to have women as core developers, and women authored less than 5\% of pull-requests, but had similar or even higher rates of pull request acceptances than men. Women make both code and non-code contributions and their motivations to contribute include, learning new skills, altruism, reciprocity, and kinship. Challenges that women face in OSS are mainly social, including lack of peer parity and non-inclusive communication from a toxic culture. We found ten strategies reported in the literature, which we mapped to the reported challenges. Based on these results, we provide guidelines for future research and practice.}
+}
+
+@misc{Trinkenreich2023a,
+Author = {Bianca Trinkenreich and Klaas-Jan Stol and Igor Steinmacher and Marco Gerosa and Anita Sarma and Marcelo Lara and Michael Feathers and Nicholas Ross and Kevin Bishop},
+Title = {A Model for Understanding and Reducing Developer Burnout},
+Year = {2023},
+Eprint = {arXiv:2301.09103},
+abstract = {Job burnout is a type of work-related stress associated with a state of physical or emotional exhaustion that also involves a sense of reduced accomplishment and loss of personal identity. Burnt out can affect one's physical and mental health and has become a leading industry concern and can result in high workforce turnover. Through an empirical study at Globant, a large multi-national company, we created a theoretical model to evaluate the complex interplay among organizational culture, work satisfaction, and team climate, and how they impact developer burnout. We conducted a survey of developers in software delivery teams (n=3,281) to test our model and analyzed the data using structural equation modeling, moderation, and multi-group analysis. Our results show that Organizational Culture, Climate for Learning, Sense of Belonging, and Inclusiveness are positively associated with Work Satisfaction, which in turn is associated with Reduced Burnout. Our model generated through a largescale survey can guide organizations in how to reduce workforce burnout by creating a climate for learning, inclusiveness in teams, and a generative organizational culture where new ideas are welcome, information is actively sought and bad news can be shared without fear.}
+}
+
+@misc{Trinkenreich2023b,
+Author = {Bianca Trinkenreich and Klaas-Jan Stol and Anita Sarma and Daniel M. German and Marco A. Gerosa and Igor Steinmacher},
+Title = {Do I Belong? Modeling Sense of Virtual Community Among Linux Kernel Contributors},
+Year = {2023},
+Eprint = {arXiv:2301.06437},
+abstract = {The sense of belonging to a community is a basic human need that impacts an individual's behavior, long-term engagement, and job satisfaction, as revealed by research in disciplines such as psychology, healthcare, and education. Despite much research on how to retain developers in Open Source Software (OSS) projects and other virtual, peer-production communities, there is a paucity of research investigating what might contribute to a sense of belonging in these communities. To that end, we develop a theoretical model that seeks to understand the link between OSS developer motives and a Sense of Virtual Community (SVC). We test the model with a dataset collected in the Linux Kernel developer community (N=225), using structural equation modeling techniques. Our results for this case study show that intrinsic motivations (social or hedonic motives) are positively associated with a sense of virtual community, but living in an authoritative country and being paid to contribute can reduce the sense of virtual community. Based on these results, we offer suggestions for open source projects to foster a sense of virtual community, with a view to retaining contributors and improving projects' sustainability.}
+}
+
 @inproceedings{Truong2022,
   doi = {10.1145/3524842.3528488},
   title = {The unsolvable problem or the unheard answer?},
@@ -1818,7 +2312,7 @@ Methods: We performed a scenario-based evaluation to identify how participants u
   doi = {10.1145/3510457.3513080},
   title = {Bug tracking process smells in practice},
   booktitle = icse,
-  author = {Tuna, Erdem and Kovalenko, Vladimir and T{\"u}z{\"u}n, Eray},
+  author = {Tuna, Erdem and Kovalenko, Vladimir and Tüzün, Eray},
   publisher = {ACM},
   month = may,
   year = {2022},
@@ -1844,6 +2338,23 @@ Methods: We performed a scenario-based evaluation to identify how participants u
 @comment{UUU}
 
 @comment{VVV}
+
+@misc{VanBreukelen2023,
+Author = {Sterre van Breukelen and Ann Barcomb and Sebastian Baltes and Alexander Serebrenik},
+Title = {"Still Around": Experiences and Survival Strategies of Veteran Women Software Developers},
+Year = {2023},
+Eprint = {arXiv:2302.03723},
+abstract = {The intersection of ageism and sexism can create a hostile environment for veteran software developers belonging to marginalized genders. In this study, we conducted 14 interviews to examine the experiences of people at this intersection, primarily women, in order to discover the strategies they employed in order to successfully remain in the field. We identified 283 codes, which fell into three main categories: Strategies, Experiences, and Perception. Several strategies we identified, such as (Deliberately) Not Trying to Look Younger, were not previously described in the software engineering literature. We found that, in some companies, older women developers are recognized as having particular value, further strengthening the known benefits of diversity in the workforce. Based on the experiences and strategies, we suggest organizations employing software developers to consider the benefits of hiring veteran women software developers. For example, companies can draw upon the life experiences of older women developers in order to better understand the needs of customers from a similar demographic. While we recognize that many of the strategies employed by our study participants are a response to systemic issues, we still consider that, in the shortterm, there is benefit in describing these strategies for developers who are experiencing such issues today.}
+}
+
+@misc{Venturini2023,
+Author = {Daniel Venturini and Filipe Roseiro Cogo and Ivanilton Polato and Marco A Gerosa and Igor Scaliante Wiese},
+Title = {I depended on you and you broke me: An empirical study of manifesting breaking changes in client packages},
+Year = {2023},
+Eprint = {arXiv:2301.04563},
+Howpublished = {TOSEM 2023},
+abstract = {Complex software systems have a network of dependencies. Developers often configure package managers (e.g., npm) to automatically update dependencies with each publication of new releases containing bug fixes and new features. When a dependency release introduces backward-incompatible changes, commonly known as breaking changes, dependent packages may not build anymore. This may indirectly impact downstream packages, but the impact of breaking changes and how dependent packages recover from these breaking changes remain unclear. To close this gap, we investigated the manifestation of breaking changes in the npm ecosystem, focusing on cases where packages' builds are impacted by breaking changes from their dependencies. We measured the extent to which breaking changes affect dependent packages. Our analyses show that around 12\% of the dependent packages and 14\% of their releases were impacted by a breaking change during updates of non-major releases of their dependencies. We observed that, from all of the manifesting breaking changes, 44\% were introduced both in minor and patch releases, which in principle should be backward compatible. Clients recovered themselves from these breaking changes in half of the cases, most frequently by upgrading or downgrading the provider's version without changing the versioning configuration in the package manager. We expect that these results help developers understand the potential impact of such changes and recover from them.}
+}
 
 @inproceedings{Vidoni2021,
   doi = {10.1109/icse43902.2021.00136},
@@ -1885,6 +2396,42 @@ Methods: We performed a scenario-based evaluation to identify how participants u
   month = jul,
   year = {2020},
   abstract = {Open source developers, particularly the elite developers who own the administrative privileges for a project, maintain a diverse portfolio of contributing activities. They not only commit source code but also exert significant efforts on other communicative, organizational, and supportive activities. However, almost all prior research focuses on specific activities and fails to analyze elite developers' activities in a comprehensive way. To bridge this gap, we conduct an empirical study with fine-grained event data from 20 large open source projects hosted on GITHUB. We investigate elite developers' contributing activities and their impacts on project outcomes. Our analyses reveal three key findings: (1) elite developers participate in a variety of activities, of which technical contributions (e.g., coding) only account for a small proportion; (2) as the project grows, elite developers tend to put more effort into supportive and communicative activities and less effort into coding; and (3) elite developers' efforts in nontechnical activities are negatively correlated with the project's outcomes in terms of productivity and quality in general, except for a positive correlation with the bug fix rate (a quality indicator). These results provide an integrated view of elite developers' activities and can inform an individual's decision making about effort allocation, which could lead to improved project outcomes. The results also provide implications for supporting these elite developers.}
+}
+
+@inproceedings{Wang2020c,
+  doi = {10.1109/ibf50092.2020.9034539},
+  url = {https://doi.org/10.1109/ibf50092.2020.9034539},
+  year = {2020},
+  month = feb,
+  publisher = {{IEEE}},
+  author = {Qingye Wang},
+  title = {Why Is My Bug Wontfix?},
+  booktitle = {2020 {IEEE} 2nd International Workshop on Intelligent Bug Fixing ({IBF})},
+  abstract = {Developers often use bug reports to triage and fix bugs. However, not every bug can be fixed eventually. To understand the underlying reasons why bugs are wontfix, we conduct an empirical study on three open source projects (i.e., Mozilla, Eclipse and Apache OpenOffice) in Bugzilla. First, we manually analyzed 600 wontfix bug reports. Second, we used the open card sorting approach to label these bug reports why they were wontfix, and we summarized 12 categories of reasons. Next, we further studied the frequency distribution of the categories across projects. We found that Not Support bug reports are the majority of the wontfix bug reports. Moreover, the frequency distribution of wontfix bug reports across the 12 categories is basically similar for the three open source projects.}
+}
+
+@inproceedings{Wattenbach2022,
+  doi = {10.1145/3524613.3527812},
+  url = {https://doi.org/10.1145/3524613.3527812},
+  year = {2022},
+  month = may,
+  publisher = {{ACM}},
+  author = {Leonhard Wattenbach and Basel Aslan and Matteo Maria Fiore and Henley Ding and Roberto Verdecchia and Ivano Malavolta},
+  title = {Do you have the energy for this meeting?},
+  booktitle = {Proceedings of the 9th {IEEE}/{ACM} International Conference on Mobile Software Engineering and Systems},
+  abstract = {Context. With ``work from home'' policies becoming the norm during the COVID-19 pandemic, videoconferencing apps have soared in popularity, especially on mobile devices. However, mobile devices only have limited energy capacities, and their batteries degrade slightly with each charge/discharge cycle.
+Goal. With this research we aim at comparing the energy consumption of two Android videoconferencing apps, and studying the impact that different features and settings of these apps have on energy consumption.
+Method. We conduct an empirical experiment by utilizing as subjects Google Meet and Zoom. We test the impact of multiple factors on the energy consumption: number of call participants, microphone and camera use, and virtual backgrounds.
+Results. Zoom results to be more energy efficient than Google Meet, albeit only to a small extent. Camera use is the most energy greedy feature, while the use of virtual background only marginally impacts energy consumption. Number of participants affect differently the energy consumption of the apps. As exception, microphone use does not significantly affect energy consumption.
+Conclusions. Most features of Android videoconferencing apps significantly impact their energy consumption. As implication for users, selecting which features to use can significantly prolong their mobile battery charge. For developers, our results provide empirical evidence on which features are more energy-greedy, and how features can impact differently energy consumption across apps.}
+}
+
+@misc{Win2023,
+Author = {Hsu Myat Win and Haibo Wang and Shin Hwei Tan},
+Title = {Automatic Detecting Unethical Behavior in Open-source Software Projects},
+Year = {2023},
+Eprint = {arXiv:2302.11985},
+abstract = {Given the rapid growth of Open-Source Software (OSS) projects, ethical considerations are becoming more important. Past studies focused on specific ethical issues (e.g., gender bias and fairness in OSS). There is little to no study on the different types of unethical behavior in OSS projects. We present the first study of unethical behavior in OSS projects from the stakeholders' perspective. Our study of 316 GitHub issues provides a taxonomy of 15 types of unethical behavior guided by six ethical principles (e.g., autonomy). Examples of new unethical behavior include soft forking (copying a repository without forking) and self-promotion (promoting a repository without self-identifying as contributor to the repository). We also identify 18 types of software artifacts affected by the unethical behavior. The diverse types of unethical behavior identified in our study (1) call for attentions of developers and researchers when making contributions in GitHub, and (2) point to future research on automated detection of unethical behavior in OSS projects. Based on our study, we propose Etor, an approach that can automatically detect six types of unethical behavior by using ontological engineering and Semantic Web Rule Language (SWRL) rules to model GitHub attributes and software artifacts. Our evaluation on 195,621 GitHub issues (1,765 GitHub repositories) shows that Etor can automatically detect 548 unethical behavior with 74.8\% average true positive rate. This shows the feasibility of automated detection of unethical behavior in OSS projects.}
 }
 
 @article{Wolter2022,
@@ -1943,6 +2490,14 @@ Methods: We performed a scenario-based evaluation to identify how participants u
   title = {On the usage of {JavaScript}, Python and Ruby packages in Docker Hub images},
   journal = {Science of Computer Programming},
   abstract = {Docker is one of the most popular containerization technologies. A Docker container can be saved into an image including all environmental packages required to run it, such as system and third-party packages from language-specific package repositories. Relying on its modularity, an image can be shared and included in other images to simplify the way of building and packaging new software. However, some package managers allow to include duplicated packages in an image, increasing its footprint; and outdated packages may miss new features and bug fixes or contain reported security vulnerabilities, putting the image in which they are contained at risk. Previous research has focused on studying operating system packages within Docker images, but little attention has been given to third-party packages. This article empirically studies installation practices, outdatedness and vulnerabilities of JavaScript, Python and Ruby packages installed in 3,000 popular community Docker Hub images.  In many cases, these installed packages missed important releases leading to potential vulnerabilities of the images. Our findings suggest that maintainers of Docker Hub community images should invest more effort in updating outdated packages contained in those images in order to significantly reduce the number of vulnerabilities. In addition to this, Python community images are generally much less outdated and much less subject to vulnerabilities than NodeJS and Ruby community images. Specifically for NodeJS community images, elimination of duplicate package releases could lead to a significant reduction in their image footprint.}
+}
+
+@misc{Zhang2021,
+Author = {Xunhui Zhang and Yue Yu and Georgios Gousios and Ayushi Rastogi},
+Title = {Pull Request Decision Explained: An Empirical Overview},
+Year = {2021},
+Eprint = {arXiv:2105.13970},
+abstract = {Pull-based development model is widely used in open source, leading the trends in distributed software development. One aspect which has garnered significant attention is studies on pull request decision - identifying factors for explanation. Objective: This study builds on a decade long research on pull request decision to explain it. We empirically investigate how factors influence pull request decision and scenarios that change the influence of factors. Method: We identify factors influencing pull request decision on GitHub through a systematic literature review and infer it by mining archival data. We collect a total of 3,347,937 pull requests with 95 features from 11,230 diverse projects on GitHub. Using this data, we explore the relations of the factors to each other and build mixed-effect logistic regression models to empirically explain pull request decision. Results: Our study shows that a small number of factors explain pull request decision with the integrator same or different from the submitter as the most important factor. We also noted that some factors are important only in special cases e.g., the percentage of failed builds is important for pull request decision when continuous integration is used.}
 }
 
 @inproceedings{Zhang2022a,
