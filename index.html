@@ -31,27 +31,27 @@ session2: "https://www.timeanddate.com/worldclock/meetingdetails.html?year=2023&
 </div>
 <div class="row">
   {% include advertising.html event="2023-04" id="kula-raula" %}
+  {% include advertising.html event="2023-04" id="latoza-thomas" %}
+</div>
+<div class="row">
   {% include advertising.html event="2023-04" id="lee-carol" %}
-</div>
-<div class="row">
   {% include advertising.html event="2023-04" id="licorish-sherlock" %}
+</div>
+<div class="row">
   {% include advertising.html event="2023-04" id="margulieux-lauren" %}
-</div>
-<div class="row">
   {% include advertising.html event="2023-04" id="mirian-ariana" %}
+</div>
+<div class="row">
   {% include advertising.html event="2023-04" id="newman-christian" %}
-</div>
-<div class="row">
   {% include advertising.html event="2023-04" id="serebrenik-alexander" %}
+</div>
+<div class="row">
   {% include advertising.html event="2023-04" id="sullivan-allison" %}
-</div>
-<div class="row">
   {% include advertising.html event="2023-04" id="tshukudu-ethel" %}
-  {% include advertising.html event="2023-04" id="zeller-andreas" %}
 </div>
 <div class="row">
+  {% include advertising.html event="2023-04" id="zeller-andreas" %}
   {% include advertising.html event="2023-04" id="zhou-shurui" %}
-  {% include advertising-empty.html %}
 </div>
 
 <p>
@@ -68,23 +68,28 @@ session2: "https://www.timeanddate.com/worldclock/meetingdetails.html?year=2023&
   <h3><em><strong><a href="{{page.eventbrite}}">Get your ticket now!</a></strong></em></h3>
 </div>
 
+<h2>Recent Posts</h2>
+<table>
+  <tr><th>Date</th><th>Title</th><th>Keywords</th><th>Byline</th></tr>
+  {% for post in site.posts limit:10 %}
+  <tr>
+    <td style="white-space: nowrap;">{{post.date | date: '%F'}}</td>
+    <td><a href="{{post.url | relative_url}}">{{post.title}}</a></td>
+    <td>{{ post.categories | sort | join: ', ' }}</td>
+    <td style="white-space: nowrap;">{{ post.author }}</td>
+  </tr>
+  {% endfor %}
+</table>
+<p>
+  <em>
+    …or see all past reviews
+    by <a href="{{'/date/' | relative_url}}">date</a>
+    or <a href="{{'/category/' | relative_url}}">topic</a>.
+  </em>
+</p>
+
 <h2>Past Events</h2>
 
 {% include session.html event="2022-09" title="Strange Loop" date="September 2022" %}
 
 {% include session.html event="2022-04" title="Online" date="April 2022" %}
-
-<h2>Recent Posts</h2>
-<table>
-  <tr><th>Date</th><th>Title</th><th>Keywords</th><th>Byline</th></tr>
-  {% for post in site.posts limit:50 %}
-    {% unless post.lightning %}
-    <tr>
-      <td style="white-space: nowrap;">{{post.date | date: '%F'}}</td>
-      <td><a href="{{post.url | relative_url}}">{{post.title}}</a></td>
-      <td>{{ post.categories | sort | join: ', ' }}</td>
-      <td style="white-space: nowrap;">{{ post.author }}</td>
-    </tr>
-    {% endunless %}
-  {% endfor %}
-</table>
