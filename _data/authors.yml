@@ -69,6 +69,9 @@
   - date: '2021-08-27'
     key: Miedema2021
     reviewed: /2021/08/27/errors-in-sql-queries.html
+  - date: '2023-02-25'
+    key: Miedema2022
+    reviewed: /2023/02/25/learning-and-developing-with-sql.html
   name: Aivaloglou, Efthimia
 - entries:
   - date: '2021-09-21'
@@ -914,6 +917,11 @@
     reviewed: /2021/09/25/how-reliable-is-scientific-software.html
   name: Cyrus-Lai, Wilson
 - entries:
+  - date: '2023-02-25'
+    key: AlencarDaCosta2023
+    reviewed: /2023/02/25/learning-and-developing-with-sql.html
+  name: da Costa, Daniel Alencar
+- entries:
   - date: '2012-03-01'
     key: Dabbish2012
     reviewed: /2012/03/01/social-coding-in-github.html
@@ -1262,6 +1270,9 @@
   - date: '2021-08-27'
     key: Miedema2021
     reviewed: /2021/08/27/errors-in-sql-queries.html
+  - date: '2023-02-25'
+    key: Miedema2022
+    reviewed: /2023/02/25/learning-and-developing-with-sql.html
   name: Fletcher, George
 - entries:
   - date: '2016-04-26'
@@ -1534,6 +1545,11 @@
     key: Kinshumann2011
     reviewed: /2011/07/18/debugging-in-the-very-large.html
   name: Grant, David
+- entries:
+  - date: '2023-02-25'
+    key: AlencarDaCosta2023
+    reviewed: /2023/02/25/learning-and-developing-with-sql.html
+  name: Grattan, Natalie
 - entries:
   - date: '2011-08-17'
     key: DeLucia2009
@@ -2558,6 +2574,11 @@
     reviewed: /2016/09/16/five-from-icer-2016.html
   name: Liao, Soohyun Nam
 - entries:
+  - date: '2023-02-25'
+    key: AlencarDaCosta2023
+    reviewed: /2023/02/25/learning-and-developing-with-sql.html
+  name: Licorish, Sherlock A.
+- entries:
   - date: '2011-10-22'
     key: Apel2011
     reviewed: /2011/10/22/three-empirical-studies-from-esecfse11.html
@@ -3022,6 +3043,9 @@
   - date: '2021-08-27'
     key: Miedema2021
     reviewed: /2021/08/27/errors-in-sql-queries.html
+  - date: '2023-02-25'
+    key: Miedema2022
+    reviewed: /2023/02/25/learning-and-developing-with-sql.html
   name: Miedema, Daphne
 - entries:
   - date: '2021-09-09'
@@ -4404,6 +4428,9 @@
   - date: '2022-04-25'
     key: Sharma2021
     reviewed: /2022/04/25/rationale-for-open-source-development-decisions.html
+  - date: '2023-02-25'
+    key: AlencarDaCosta2023
+    reviewed: /2023/02/25/learning-and-developing-with-sql.html
   name: Stanger, Nigel
 - entries:
   - date: '2013-06-13'

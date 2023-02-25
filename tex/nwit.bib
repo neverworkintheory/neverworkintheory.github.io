@@ -87,6 +87,15 @@
   reviewed = {/2021/08/09/impact-of-rapid-release-cycles-on-integration-delay-of-fixed-issues.html}
 }
 
+@misc{AlencarDaCosta2023,
+  author = {Daniel Alencar da Costa and Natalie Grattan and Nigel Stanger and Sherlock A. Licorish},
+  title = {Studying the characteristics of {SQL}-related Development Tasks: An Empirical Study},
+  year = {2023},
+  eprint = {2301.10315},
+  abstract = {A key function of a software system is its ability to facilitate the manipulation of data, which is often implemented using a flavour of the Structured Query Language (SQL). To develop the data operations of software (i.e, creating, retrieving, updating, and deleting data), developers are required to excel in writing and combining both SQL and application code. The problem is that writing SQL code in itself is already challenging (e.g., SQL anti-patterns are commonplace) and combining SQL with application code (i.e., for SQL development tasks) is even more demanding. Meanwhile, we have little empirical understanding regarding the characteristics of SQL development tasks. Do SQL development tasks typically need more code changes? Do they typically have a longer time-to-completion? Answers to such questions would prepare the community for the potential challenges associated with such tasks. Our results obtained from 20 Apache projects reveal that SQL development tasks have a significantly longer time-to-completion than SQL-unrelated tasks and require significantly more code changes. Through our qualitative analyses, we observe that SQL development tasks require more spread out changes, effort in reviews and documentation. Our results also corroborate previous research highlighting the prevalence of SQL anti-patterns. The software engineering community should make provision for the peculiarities of SQL coding, in the delivery of safe and secure interactive software.},
+  reviewed = {/2023/02/25/learning-and-developing-with-sql.html}
+}
+
 @inproceedings{Ali2020,
   doi = {10.1145/3379597.3387511},
   url = {https://doi.org/10.1145/3379597.3387511},
@@ -2346,6 +2355,19 @@
   booktitle = icer,
   abstract = {SQL is the most commonly taught database query language. While previous research has investigated the errors made by novices during SQL query formulation, the underlying causes for these errors have remained unexplored. Understanding the basic misconceptions held by novices which lead to these errors would help improve how we teach query languages to our students. In this paper we aim to identify the misconceptions that might be the causes of documented SQL errors that novices make. To this end, we conducted a qualitative think-aloud study to gather information on the thinking process of university students while solving query formulation problems. With the queries in hand, we analyzed the underlying causes for the errors made by our participants. In this paper we present the identified SQL misconceptions organized into four top-level categories: misconceptions based in previous course knowledge, generalization-based misconceptions, language-based misconceptions, and misconceptions due to an incomplete or incorrect mental model. A deep exploration of misconceptions can uncover gaps in instruction. By drawing attention to these, we aim to improve SQL education.},
   reviewed = {/2021/08/27/errors-in-sql-queries.html}
+}
+
+@inproceedings{Miedema2022,
+  doi = {10.1145/3524610.3529158},
+  title = {So many brackets!: an analysis of how {SQL} learners (mis)manage complexity during query formulation},
+  booktitle = icpc,
+  author = {Daphne Miedema and George Fletcher and Efthimia Aivaloglou},
+  publisher = {ACM},
+  month = may,
+  year = {2022},
+  conference = icpc,
+  abstract = {The Structured Query Language (SQL) is a widely taught database query language in computer science, data science, and software engineering programs. While highly expressive, SQL is challenging to learn for novices. Various research has explored the errors and mistakes that SQL users make. Specific attributes of SQL code, such as the number of tables and the degree of nesting, have been found to impact its understandability and maintainability. Furthermore, prior studies have shown that novices have significant issues using SQL correctly, due to factors such as expressive ease, existing knowledge and misconceptions, and the impact of cognitive load. In this paper we identify another factor: self-inflicted query complexity, where users hinder their own problem solving process. We analyse 8K intermediate and final student attempts to six SQL exer-cises, approaching complexity from four perspective: correctness, execution order, edit distance and query intricacy. Through our analyses, we find that our students are hindered in their query formulation process by mismanaging complexity through writing overly elaborate queries containing unnecessary elements, overusing brackets and nesting, and incrementally building queries with persistent errors.},
+  reviewed = {/2023/02/25/learning-and-developing-with-sql.html}
 }
 
 @inproceedings{Miller2016,
