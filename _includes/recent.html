@@ -1,0 +1,18 @@
+<h2>Recent Posts</h2>
+<table>
+  <tr><th>Date</th><th>Title</th><th>Keywords</th></tr>
+  {% for post in site.posts limit:10 %}
+  <tr>
+    <td style="white-space: nowrap;">{{post.date | date: '%F'}}</td>
+    <td><a href="{{post.url | relative_url}}">{{post.title}}</a></td>
+    <td>{{ post.categories | sort | join: ', ' }}</td>
+  </tr>
+  {% endfor %}
+</table>
+<p>
+  <em>
+    …or see all past reviews
+    by <a href="{{'/date/' | relative_url}}">date</a>
+    or <a href="{{'/category/' | relative_url}}">topic</a>.
+  </em>
+</p>
