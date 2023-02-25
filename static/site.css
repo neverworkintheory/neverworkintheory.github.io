@@ -9,6 +9,14 @@
   }
 }
 
+:root {
+    --shadow: rgba(0, 0, 0, 0.2);
+    --shadow-spacing: 15px 28px 25px -18px;
+    --lightgray: #E8E8E8;
+    --lightborder: 1px;
+    --small-spacing: 0.25rem;
+}
+
 /*
  * Flex grid
  */
@@ -65,7 +73,7 @@ div.card {
   position: relative;
   padding-left: var(--small-spacing);
   padding-right: var(--small-spacing);
-  margin: var(--small-spacing);
+  margin: 1rem;
 }
 
 div.card img {
