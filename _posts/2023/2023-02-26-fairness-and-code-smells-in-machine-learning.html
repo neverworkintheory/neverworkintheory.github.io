@@ -1,0 +1,84 @@
+---
+layout: post
+author: Greg Wilson
+title: "Fairness and Code Smells in Machine Learning"
+date: 2023-02-25
+categories: ["Machine Learning", "Fairness", "Code Smells"]
+---
+
+<p>
+  Radioactivity was touted as a wonder cure for a wide range of ailments
+  in the years following its discovery.
+  <a href="https://read.sourcebooks.com/non-fiction/9781492650959-the-radium-girls-tp.html">That didn't go well</a>,
+  but it was many years (and many needless deaths) before people began to use it safely.
+  We are in the same position today:
+  as people rush to apply machine learning to every imaginable domain,
+  it has the potential to do a great deal of harm unless we we learn how to use it responsibly.
+</p>
+
+<p>
+  So while ML researchers work to find better algorithms,
+  software engineering researchers study ML itself.
+  These two papers are indicative of the kind of work they do.
+  The first finds that
+  the dozens of fairness metrics in the <a href="https://aif360.mybluemix.net/">IBM AIF360 toolkit</a>
+  are highly redundant:
+  they can be clustered into groups such that
+  it's only necessary to check one metric from each group.
+  The second paper describes 22 code smells specific to machine learning
+  that can serve as a checklist for code reviews and linting checks
+  to help ensure that what we ship implements the checks and balances it's supposed to.
+</p>
+
+{% include next-event.html %}
+
+<p>Suvodeep Majumder, Joymallya Chakraborty, Gina R. Bai, Kathryn T. Stolee, and Tim Menzies.
+Fair enough: searching for sufficient measures of fairness.
+2021.
+<a href="https://arxiv.org/abs/2110.13029">arXiv:2110.13029</a>.</p>
+
+<blockquote>
+  <p>
+    Testing machine learning software for ethical bias has become a pressing current concern.
+    In response, recent research has proposed a plethora of new fairness metrics,
+    for example, the dozens of fairness metrics in the <a href="https://aif360.mybluemix.net/">IBM AIF360 toolkit</a>.
+    This raises the question:
+    How can any fairness tool satisfy such a diverse range of goals?
+    While we cannot completely simplify the task of fairness testing,
+    we can certainly reduce the problem.
+    This paper shows that many of those fairness metrics effectively measure the same thing.
+    Based on experiments using seven real-world datasets,
+    we find that
+    (a) 26 classification metrics can be clustered into seven groups, and
+    (b) four dataset metrics can be clustered into three groups.
+    Further, each reduced set may actually predict different things.
+    Hence, it is no longer necessary (or even possible) to satisfy all fairness metrics.
+    In summary, to simplify the fairness testing problem, we recommend the following steps:
+    (1) determine what type of fairness is desirable (and we offer a handful of such types);
+    then (2) lookup those types in our clusters;
+    then (3) just test for one item per cluster.
+  </p>
+</blockquote>
+
+<p>Haiyin Zhang, Luís Cruz, and Arie <span class="bibtex-protected">van Deursen</span>.
+Code smells for machine learning applications.
+In <em>Proceedings of the 1st International Conference on <span class="bibtex-protected">AI</span> Engineering: Software Engineering for <span class="bibtex-protected">AI</span></em>. ACM, May 2022.
+<a href="https://doi.org/10.1145/3522664.3528620">doi:10.1145/3522664.3528620</a>.</p>
+
+<blockquote>
+  <p>
+    The popularity of machine learning has wildly expanded in recent years.
+    Machine learning techniques have been heatedly studied in academia and applied in the industry to create business value.
+    However, there is a lack of guidelines for code quality in machine learning applications.
+    In particular, code smells have rarely been studied in this domain.
+    Although machine learning code is usually integrated as a small part of an overarching system,
+    it usually plays an important role in its core functionality.
+    Hence ensuring code quality is quintessential to avoid issues in the long run.
+    This paper proposes and identifies a list of 22 machine learning-specific code smells collected from various sources,
+    including papers, grey literature, GitHub commits, and Stack Overflow posts.
+    We pinpoint each smell with a description of its context, potential issues in the long run, and proposed solutions.
+    In addition, we link them to their respective pipeline stage and the evidence from both academic and grey literature.
+    The code smell catalog helps data scientists and developers produce and maintain
+    high-quality machine learning application code.
+  </p>
+</blockquote>

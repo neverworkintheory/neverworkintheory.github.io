@@ -2114,6 +2114,14 @@
   reviewed = {/2021/09/10/why-software-projects-need-heroes.html}
 }
 
+@misc{Majumder2021,
+  author = {Suvodeep Majumder and Joymallya Chakraborty and Gina R. Bai and Kathryn T. Stolee and Tim Menzies},
+  title = {Fair Enough: Searching for Sufficient Measures of Fairness},
+  year = {2021},
+  eprint = {2110.13029},
+  abstract = {Testing machine learning software for ethical bias has become a pressing current concern. In response, recent research has proposed a plethora of new fairness metrics, for example, the dozens of fairness metrics in the IBM AIF360 toolkit. This raises the question: How can any fairness tool satisfy such a diverse range of goals? While we cannot completely simplify the task of fairness testing, we can certainly reduce the problem. This paper shows that many of those fairness metrics effectively measure the same thing. Based on experiments using seven real-world datasets, we find that (a) 26 classification metrics can be clustered into seven groups, and (b) four dataset metrics can be clustered into three groups. Further, each reduced set may actually predict different things. Hence, it is no longer necessary (or even possible) to satisfy all fairness metrics. In summary, to simplify the fairness testing problem, we recommend the following steps: (1) determine what type of fairness is desirable (and we offer a handful of such types); then (2) lookup those types in our clusters; then (3) just test for one item per cluster.}
+}
+
 @article{Malik2019,
   doi = {10.3390/geosciences9120516},
   url = {https://doi.org/10.3390/geosciences9120516},
@@ -3818,6 +3826,18 @@
   journal = ieee-tse,
   abstract = {Stack Overflow accumulates an enormous amount of software engineering knowledge. However, as time passes, certain knowledge in answers may become obsolete. Such obsolete answers, if not identified or documented clearly, may mislead answer seekers and cause unexpected problems (e.g., using an out-dated security protocol). In this paper, we investigate how the knowledge in answers becomes obsolete and identify the characteristics of such obsolete answers. We find that: 1) More than half of the obsolete answers (58.4 percent) were probably already obsolete when they were first posted. 2) When an obsolete answer is observed, only a small proportion (20.5 percent) of such answers are ever updated. 3) Answers to questions in certain tags (e.g., node.js, ajax, android, and objective-c) are more likely to become obsolete. Our findings suggest that Stack Overflow should develop mechanisms to encourage the whole community to maintain answers (to avoid obsolete answers) and answer seekers are encouraged to carefully go through all information (e.g., comments) in answer threads.},
   reviewed = {/2022/03/08/obsolete-answers-on-stack-overflow.html}
+}
+
+@inproceedings{Zhang2022a,
+  doi = {10.1145/3522664.3528620},
+  title = {Code smells for machine learning applications},
+  booktitle = {Proceedings of the 1st International Conference on {AI} Engineering: Software Engineering for {AI}},
+  author = {Haiyin Zhang and Luís Cruz and Arie {van Deursen}},
+  publisher = {ACM},
+  month = may,
+  year = {2022},
+  conference = {CAIN '22: 1st Conference on AI Engineering - Software Engineering for AI},
+  abstract = {The popularity of machine learning has wildly expanded in recent years. Machine learning techniques have been heatedly studied in academia and applied in the industry to create business value. However, there is a lack of guidelines for code quality in machine learning applications. In particular, code smells have rarely been studied in this domain. Although machine learning code is usually integrated as a small part of an overarching system, it usually plays an important role in its core functionality. Hence ensuring code quality is quintessential to avoid issues in the long run. This paper proposes and identifies a list of 22 machine learning-specific code smells collected from various sources, including papers, grey literature, GitHub commits, and Stack Overflow posts. We pinpoint each smell with a description of its context, potential issues in the long run, and proposed solutions. In addition, we link them to their respective pipeline stage and the evidence from both academic and grey literature. The code smell catalog helps data scientists and developers produce and maintain high-quality machine learning application code.}
 }
 
 @inproceedings{Zhu2021,

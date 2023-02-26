@@ -2,7 +2,7 @@
 BIBTEX:=bibtex
 BIB_DEFS:=tex/strings.bib
 BIB_FILE:=tex/nwit.bib
-DATA:=_data/authors.yml _data/categories.yml _includes/bibliography.html _includes/todo.html tex/nwit.pdf
+DATA:=_data/authors.yml _data/categories.yml _includes/bibliography.html _includes/todo.html tex/nwit.pdf tex/todo.pdf
 JEKYLL:=bundle exec jekyll
 LATEX:=pdflatex
 POSTS:=$(wildcard _posts/*/*.html) $(wildcard _posts/*/*.md)

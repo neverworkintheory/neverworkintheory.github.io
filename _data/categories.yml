@@ -196,6 +196,9 @@
     reviewed: /2021/12/13/refactorings-in-merge-conflicts.html
     title: Are Refactorings to Blame? An Empirical Study of Refactorings in Merge
       Conflicts
+  - date: '2023-02-25'
+    reviewed: /2023/02/26/fairness-and-code-smells-in-machine-learning.html
+    title: Fairness and Code Smells in Machine Learning
   name: Code Smells
 - entries:
   - date: '2021-10-14'
@@ -586,6 +589,11 @@
     title: An Empirical Study of Build Maintenance Effort
   name: Experience Reports
 - entries:
+  - date: '2023-02-25'
+    reviewed: /2023/02/26/fairness-and-code-smells-in-machine-learning.html
+    title: Fairness and Code Smells in Machine Learning
+  name: Fairness
+- entries:
   - date: '2013-04-16'
     reviewed: /2013/04/16/a-characteristic-study-on-failures-of-production-distributed-data-parallel-programs.html
     title: A Characteristic Study on Failures of Production Distributed Data-Parallel
@@ -791,6 +799,9 @@
     reviewed: /2022/02/22/where-comment.html
     title: Where should I comment my code? A dataset and model for predicting locations
       that need comments
+  - date: '2023-02-25'
+    reviewed: /2023/02/26/fairness-and-code-smells-in-machine-learning.html
+    title: Fairness and Code Smells in Machine Learning
   name: Machine Learning
 - entries:
   - date: '2016-04-26'
