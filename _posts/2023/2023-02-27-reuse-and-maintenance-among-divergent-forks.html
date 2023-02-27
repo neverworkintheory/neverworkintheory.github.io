@@ -1,0 +1,73 @@
+---
+layout: post
+author: Greg Wilson
+title: "Reuse and Maintenance Among Divergent Forks"
+date: 2023-02-27
+categories: ["Maintenance", "Reuse"]
+---
+
+<p>
+  I have forked dozens of repositories on GitHub over the years,
+  but only once with the intention of creating a new project
+  rather than contributing back to the original.
+  While my fork didn't survive,
+  many others do,
+  becoming new projects in their own right.
+</p>
+
+<p>
+  How common is that?
+  And how do related projects (called "software families") interact,
+  if at all,
+  after they diverge?
+  This paper finds that they mostly go their own way,
+  and that when they <em>do</em> share code,
+  they do so directly through Git rather than via pull requests on GitHub.
+</p>
+
+<p>
+  <em>
+    The analysis scripts used in the paper are
+    <a href="https://github.com/johnxu21/emse2021">available online</a>.
+  </em>
+</p>
+
+<p>John Businge, Moses Openja, Sarah Nadi, and Thorsten Berger.
+Reuse and maintenance practices among divergent forks in three software ecosystems.
+<em>Empirical Software Engineering</em>, Mar 2022.
+<a href="https://doi.org/10.1007/s10664-021-10078-2">doi:10.1007/s10664-021-10078-2</a>.</p>
+
+<blockquote>
+  <p>
+    With the rise of social coding platforms that rely on distributed version control systems,
+    software reuse is also on the rise.
+    Many software developers leverage this reuse by creating variants through forking,
+    to account for different customer needs, markets, or environments.
+    Forked variants then form a so-called software family;
+    they share a common code base and are maintained in parallel by same or different developers.
+    As such, software families can easily arise within software ecosystems,
+    which are large collections of interdependent software components maintained by communities of collaborating contributors.
+    However, little is known about the existence and characteristics of such families within ecosystems,
+    especially about their maintenance practices.
+    Improving our empirical understanding of such families
+    will help build better tools for maintaining and evolving such families.
+  </p>
+  <p>
+    We empirically explore maintenance practices in such fork-based software families within ecosystems of open-source software.
+    Our focus is on three of the largest software ecosystems existence today:
+    Android, .NET, and JavaScript.
+    We identify and analyze software families that are maintained together
+    and that exist both on the official distribution platform (Google play, nuget, and npm) as well as on GitHub,
+    allowing us to analyze reuse practices in depth.
+    We mine and identify 38 software families, 526 software families, and 8,837 software families
+    from the ecosystems of Android, .NET, and JavaScript,
+    to study their characteristics and code-propagation practices.
+    We provide scripts for analyzing code integration within our families.
+    Interestingly, our results show that there is little code integration across the studied software families
+    from the three ecosystems.
+    Our studied families also show that techniques of direct integration using Git outside of GitHub
+    is more commonly used than GitHub pull requests.
+    Overall, we hope to raise awareness about the existence of software families within larger ecosystems of software,
+    calling for further research and better tools support to effectively maintain and evolve them.
+  </p>
+</blockquote>

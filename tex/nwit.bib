@@ -627,6 +627,20 @@
   reviewed = {/2011/09/13/proactive-detection-of-collaboration-conflicts.html}
 }
 
+@article{Businge2022,
+  doi = {10.1007/s10664-021-10078-2},
+  url = {https://doi.org/10.1007/s10664-021-10078-2},
+  year = {2022},
+  month = mar,
+  publisher = {Springer Science and Business Media {LLC}},
+  volume = {27},
+  number = {2},
+  author = {John Businge and Moses Openja and Sarah Nadi and Thorsten Berger},
+  title = {Reuse and maintenance practices among divergent forks in three software ecosystems},
+  journal = {Empirical Software Engineering},
+  abstract = {With the rise of social coding platforms that rely on distributed version control systems, software reuse is also on the rise. Many software developers leverage this reuse by creating variants through forking, to account for different customer needs, markets, or environments. Forked variants then form a so-called software family; they share a common code base and are maintained in parallel by same or different developers. As such, software families can easily arise within software ecosystems, which are large collections of interdependent software components maintained by communities of collaborating contributors. However, little is known about the existence and characteristics of such families within ecosystems, especially about their maintenance practices. Improving our empirical understanding of such families will help build better tools for maintaining and evolving such families. We empirically explore maintenance practices in such fork-based software families within ecosystems of open-source software. Our focus is on three of the largest software ecosystems existence today: Android, .NET, and JavaScript. We identify and analyze software families that are maintained together and that exist both on the official distribution platform (Google play, nuget, and npm) as well as on GitHub , allowing us to analyze reuse practices in depth. We mine and identify 38 software families, 526 software families, and 8,837 software families from the ecosystems of Android, .NET, and JavaScript, to study their characteristics and code-propagation practices. We provide scripts for analyzing code integration within our families. Interestingly, our results show that there is little code integration across the studied software families from the three ecosystems. Our studied families also show that techniques of direct integration using git outside of GitHub is more commonly used than GitHub pull requests. Overall, we hope to raise awareness about the existence of software families within larger ecosystems of software, calling for further research and better tools support to effectively maintain and evolve them.}
+}
+
 @article{Butler2019,
   doi = {10.1109/tse.2019.2919305},
   url = {https://doi.org/10.1109/tse.2019.2919305},
@@ -2119,7 +2133,8 @@
   title = {Fair Enough: Searching for Sufficient Measures of Fairness},
   year = {2021},
   eprint = {2110.13029},
-  abstract = {Testing machine learning software for ethical bias has become a pressing current concern. In response, recent research has proposed a plethora of new fairness metrics, for example, the dozens of fairness metrics in the IBM AIF360 toolkit. This raises the question: How can any fairness tool satisfy such a diverse range of goals? While we cannot completely simplify the task of fairness testing, we can certainly reduce the problem. This paper shows that many of those fairness metrics effectively measure the same thing. Based on experiments using seven real-world datasets, we find that (a) 26 classification metrics can be clustered into seven groups, and (b) four dataset metrics can be clustered into three groups. Further, each reduced set may actually predict different things. Hence, it is no longer necessary (or even possible) to satisfy all fairness metrics. In summary, to simplify the fairness testing problem, we recommend the following steps: (1) determine what type of fairness is desirable (and we offer a handful of such types); then (2) lookup those types in our clusters; then (3) just test for one item per cluster.}
+  abstract = {Testing machine learning software for ethical bias has become a pressing current concern. In response, recent research has proposed a plethora of new fairness metrics, for example, the dozens of fairness metrics in the IBM AIF360 toolkit. This raises the question: How can any fairness tool satisfy such a diverse range of goals? While we cannot completely simplify the task of fairness testing, we can certainly reduce the problem. This paper shows that many of those fairness metrics effectively measure the same thing. Based on experiments using seven real-world datasets, we find that (a) 26 classification metrics can be clustered into seven groups, and (b) four dataset metrics can be clustered into three groups. Further, each reduced set may actually predict different things. Hence, it is no longer necessary (or even possible) to satisfy all fairness metrics. In summary, to simplify the fairness testing problem, we recommend the following steps: (1) determine what type of fairness is desirable (and we offer a handful of such types); then (2) lookup those types in our clusters; then (3) just test for one item per cluster.},
+  reviewed = {/2023/02/25/fairness-and-code-smells-in-machine-learning.html}
 }
 
 @article{Malik2019,
@@ -3696,6 +3711,22 @@
 
 @comment{YYY}
 
+@article{Yang2022,
+  doi = {10.1145/3494518},
+  url = {https://doi.org/10.1145/3494518},
+  year = {2022},
+  month = jul,
+  publisher = {Association for Computing Machinery ({ACM})},
+  volume = {31},
+  number = {3},
+  pages = {1--29},
+  author = {Wenhua Yang and Chong Zhang and Minxue Pan and Chang Xu and Yu Zhou and Zhiqiu Huang},
+  title = {Do Developers Really Know How to Use Git Commands? A Large-scale Study Using Stack Overflow},
+  journal = {{ACM} Transactions on Software Engineering and Methodology},
+  abstract = {Git, a cross-platform and open-source distributed version control tool, provides strong support for non-linear development and is capable of handling everything from small to large projects with speed and efficiency. It has become an indispensable tool for millions of software developers and is the de facto standard of version control in software development nowadays. However, despite its widespread use, developers still frequently face difficulties when using various Git commands to manage projects and collaborate. To better help developers use Git, it is necessary to understand the issues and difficulties that they may encounter when using Git. Unfortunately, this problem has not yet been comprehensively studied. To fill this knowledge gap, in this paper, we conduct a large-scale study on Stack Overflow, a popular Q\&A forum for developers. We extracted and analyzed 80,370 relevant questions from Stack Overflow, and reported the increasing popularity of the Git command questions. By analyzing the questions, we identified the Git commands that are frequently asked and those that are associated with difficult questions on Stack Overflow to help understand the difficulties developers may encounter when using Git commands. In addition, we conducted a survey to understand how developers learn Git commands in practice, showing that self-learning is the primary learning approach. These findings provide a range of actionable implications for researchers, educators, and developers.},
+  reviewed = {/2022/09/19/developer-git-knowledge.html}
+}
+
 @inproceedings{Yasmin2020,
   doi = {10.1109/icsme46990.2020.00024},
   url = {https://doi.org/10.1109/icsme46990.2020.00024},
@@ -3837,7 +3868,8 @@
   month = may,
   year = {2022},
   conference = {CAIN '22: 1st Conference on AI Engineering - Software Engineering for AI},
-  abstract = {The popularity of machine learning has wildly expanded in recent years. Machine learning techniques have been heatedly studied in academia and applied in the industry to create business value. However, there is a lack of guidelines for code quality in machine learning applications. In particular, code smells have rarely been studied in this domain. Although machine learning code is usually integrated as a small part of an overarching system, it usually plays an important role in its core functionality. Hence ensuring code quality is quintessential to avoid issues in the long run. This paper proposes and identifies a list of 22 machine learning-specific code smells collected from various sources, including papers, grey literature, GitHub commits, and Stack Overflow posts. We pinpoint each smell with a description of its context, potential issues in the long run, and proposed solutions. In addition, we link them to their respective pipeline stage and the evidence from both academic and grey literature. The code smell catalog helps data scientists and developers produce and maintain high-quality machine learning application code.}
+  abstract = {The popularity of machine learning has wildly expanded in recent years. Machine learning techniques have been heatedly studied in academia and applied in the industry to create business value. However, there is a lack of guidelines for code quality in machine learning applications. In particular, code smells have rarely been studied in this domain. Although machine learning code is usually integrated as a small part of an overarching system, it usually plays an important role in its core functionality. Hence ensuring code quality is quintessential to avoid issues in the long run. This paper proposes and identifies a list of 22 machine learning-specific code smells collected from various sources, including papers, grey literature, GitHub commits, and Stack Overflow posts. We pinpoint each smell with a description of its context, potential issues in the long run, and proposed solutions. In addition, we link them to their respective pipeline stage and the evidence from both academic and grey literature. The code smell catalog helps data scientists and developers produce and maintain high-quality machine learning application code.},
+  reviewed = {/2023/02/25/fairness-and-code-smells-in-machine-learning.html}
 }
 
 @inproceedings{Zhu2021,
@@ -3851,20 +3883,4 @@
   booktitle = msr,
   abstract = {In this work, we study how the authorship of code affects bug-fixing commits using the SStuBs dataset, a collection of single-statement bug fix changes in popular Java Maven projects. More specifically, we study the differences in characteristics between simple bug fixes by the original author---that is, the developer who submitted the bug-inducing commit---and by different developers (i.e., non-authors). Our study shows that nearly half (i.e., 44.3\%) of simple bugs are fixed by a different developer. We found that bug fixes by the original author and by different developers differed qualitatively and quantitatively. We observed that bug-fixing time by authors is much shorter than that of other developers. We also found that bug-fixing commits by authors tended to be larger in size and scope, and address multiple issues, whereas bug-fixing commits by other developers tended to be smaller and more focused on the bug itself. Future research can further study the different patterns in bug-fixing and create more tailored tools based on the developer's needs.},
   reviewed = {/2021/08/10/developers-fix-their-own-simple-bugs-differently-from-other-developers.html}
-}
-
-@article{Yang2022,
-  doi = {10.1145/3494518},
-  url = {https://doi.org/10.1145/3494518},
-  year = {2022},
-  month = jul,
-  publisher = {Association for Computing Machinery ({ACM})},
-  volume = {31},
-  number = {3},
-  pages = {1--29},
-  author = {Wenhua Yang and Chong Zhang and Minxue Pan and Chang Xu and Yu Zhou and Zhiqiu Huang},
-  title = {Do Developers Really Know How to Use Git Commands? A Large-scale Study Using Stack Overflow},
-  journal = {{ACM} Transactions on Software Engineering and Methodology},
-  abstract = {Git, a cross-platform and open-source distributed version control tool, provides strong support for non-linear development and is capable of handling everything from small to large projects with speed and efficiency. It has become an indispensable tool for millions of software developers and is the de facto standard of version control in software development nowadays. However, despite its widespread use, developers still frequently face difficulties when using various Git commands to manage projects and collaborate. To better help developers use Git, it is necessary to understand the issues and difficulties that they may encounter when using Git. Unfortunately, this problem has not yet been comprehensively studied. To fill this knowledge gap, in this paper, we conduct a large-scale study on Stack Overflow, a popular Q\&A forum for developers. We extracted and analyzed 80,370 relevant questions from Stack Overflow, and reported the increasing popularity of the Git command questions. By analyzing the questions, we identified the Git commands that are frequently asked and those that are associated with difficult questions on Stack Overflow to help understand the difficulties developers may encounter when using Git commands. In addition, we conducted a survey to understand how developers learn Git commands in practice, showing that self-learning is the primary learning approach. These findings provide a range of actionable implications for researchers, educators, and developers.},
-  reviewed = {/2022/09/19/developer-git-knowledge.html}
 }

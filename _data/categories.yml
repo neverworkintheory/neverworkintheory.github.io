@@ -196,7 +196,7 @@
     reviewed: /2021/12/13/refactorings-in-merge-conflicts.html
     title: Are Refactorings to Blame? An Empirical Study of Refactorings in Merge
       Conflicts
-  - date: '2023-02-25'
+  - date: '2023-02-26'
     reviewed: /2023/02/26/fairness-and-code-smells-in-machine-learning.html
     title: Fairness and Code Smells in Machine Learning
   name: Code Smells
@@ -589,7 +589,7 @@
     title: An Empirical Study of Build Maintenance Effort
   name: Experience Reports
 - entries:
-  - date: '2023-02-25'
+  - date: '2023-02-26'
     reviewed: /2023/02/26/fairness-and-code-smells-in-machine-learning.html
     title: Fairness and Code Smells in Machine Learning
   name: Fairness
@@ -799,7 +799,7 @@
     reviewed: /2022/02/22/where-comment.html
     title: Where should I comment my code? A dataset and model for predicting locations
       that need comments
-  - date: '2023-02-25'
+  - date: '2023-02-26'
     reviewed: /2023/02/26/fairness-and-code-smells-in-machine-learning.html
     title: Fairness and Code Smells in Machine Learning
   name: Machine Learning
@@ -821,6 +821,9 @@
   - date: '2022-03-09'
     reviewed: /2022/03/09/rest-api-deprecation.html
     title: A First Look at the Deprecation of RESTful APIs
+  - date: '2023-02-27'
+    reviewed: /2023/02/27/reuse-and-maintenance-among-divergent-forks.html
+    title: Reuse and Maintenance Among Divergent Forks
   name: Maintenance
 - entries:
   - date: '2011-07-07'
@@ -1313,6 +1316,9 @@
   - date: '2012-05-02'
     reviewed: /2012/05/02/example-embedding.html
     title: Example Embedding
+  - date: '2023-02-27'
+    reviewed: /2023/02/27/reuse-and-maintenance-among-divergent-forks.html
+    title: Reuse and Maintenance Among Divergent Forks
   name: Reuse
 - entries:
   - date: '2021-08-27'
