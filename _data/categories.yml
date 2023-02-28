@@ -547,6 +547,11 @@
     title: 'Apex: Automatic Programming Assignment Error Explanation'
   name: Education
 - entries:
+  - date: '2023-02-28'
+    reviewed: /2023/02/28/interpersonal-trust-in-oss.html
+    title: Interpersonal Trust in Open Source Software
+  name: Emotion
+- entries:
   - date: '2021-09-05'
     reviewed: /2021/09/05/two-papers-on-errors.html
     title: Two Papers on Errors
@@ -952,6 +957,9 @@
   - date: '2022-03-16'
     reviewed: /2022/03/16/resume-driven-development.html
     title: Resume-Driven Development
+  - date: '2023-02-28'
+    reviewed: /2023/02/28/interpersonal-trust-in-oss.html
+    title: Interpersonal Trust in Open Source Software
   name: Organizational Behavior
 - entries:
   - date: '2021-09-22'

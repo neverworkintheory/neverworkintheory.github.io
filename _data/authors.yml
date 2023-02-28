@@ -781,6 +781,11 @@
     reviewed: /2021/09/25/how-reliable-is-scientific-software.html
   name: Chan, C.S. Richard
 - entries:
+  - date: '2023-02-28'
+    key: Sajadi2023
+    reviewed: /2023/02/28/interpersonal-trust-in-oss.html
+  name: Chatterjee, Preetha
+- entries:
   - date: '2022-03-31'
     key: Jolak2020
     reviewed: /2022/03/31/textual-vs-graphic-design-descriptions-and-communication.html
@@ -959,6 +964,11 @@
     key: Schweinsberg2021
     reviewed: /2021/09/25/how-reliable-is-scientific-software.html
   name: Dalla Riva, Giulio Valentino
+- entries:
+  - date: '2023-02-28'
+    key: Sajadi2023
+    reviewed: /2023/02/28/interpersonal-trust-in-oss.html
+  name: Damevski, Kostadin
 - entries:
   - date: '2011-07-04'
     key: Racheva2010
@@ -4104,6 +4114,11 @@
     key: Lewis2013
     reviewed: /2013/06/06/does-bug-prediction-support-human-developers-findings-from-a-google-case-study.html
   name: Sadowski, Caitlin
+- entries:
+  - date: '2023-02-28'
+    key: Sajadi2023
+    reviewed: /2023/02/28/interpersonal-trust-in-oss.html
+  name: Sajadi, Amirali
 - entries:
   - date: '2021-10-01'
     key: Bafatakis2019
