@@ -509,6 +509,11 @@
     reviewed: /2011/07/07/the-confounding-effect-of-class-size-on-the-validity-of-object-oriented-metrics.html
   name: Benlarbi, S.
 - entries:
+  - date: '2023-02-27'
+    key: Businge2022
+    reviewed: /2023/02/27/reuse-and-maintenance-among-divergent-forks.html
+  name: Berger, Thorsten
+- entries:
   - date: '2016-09-16'
     key: Patitsas2016
     reviewed: /2016/09/16/five-from-icer-2016.html
@@ -705,6 +710,11 @@
     reviewed: /2021/09/25/how-reliable-is-scientific-software.html
   name: Burkhard, Oliver
 - entries:
+  - date: '2023-02-27'
+    key: Businge2022
+    reviewed: /2023/02/27/reuse-and-maintenance-among-divergent-forks.html
+  name: Businge, John
+- entries:
   - date: '2022-04-18'
     key: Butler2019
     reviewed: /2022/04/18/company-contributions-to-open-source.html
@@ -846,6 +856,11 @@
     key: Stylos2007
     reviewed: /2011/07/26/usability-implications-of-requiring-parameters-in-objects-constructors.html
   name: Clarke, Steven
+- entries:
+  - date: '2023-03-01'
+    key: Sellitto2022
+    reviewed: /2023/03/01/refactoring-and-program-comprehension.html
+  name: Codabux, Zadia
 - entries:
   - date: '2021-11-16'
     key: Codoban2015
@@ -1274,6 +1289,11 @@
     key: Oliveira2020
     reviewed: /2021/08/21/metrics-and-team-leaders-perceptions-of-productivity.html
   name: Fernandes, Eduardo
+- entries:
+  - date: '2023-03-01'
+    key: Sellitto2022
+    reviewed: /2023/03/01/refactoring-and-program-comprehension.html
+  name: Ferrucci, Filomena
 - entries:
   - date: '2021-10-05'
     key: Piantadosi2020
@@ -1993,6 +2013,11 @@
     reviewed: /2011/07/11/the-social-dynamics-of-pair-programming.html
   name: Hurlbutt, Tom
 - entries:
+  - date: '2023-03-01'
+    key: Sellitto2022
+    reviewed: /2023/03/01/refactoring-and-program-comprehension.html
+  name: Iannone, Emanuele
+- entries:
   - date: '2021-10-14'
     key: Gao2020
     reviewed: /2021/10/14/api-learning-processes.html
@@ -2562,6 +2587,11 @@
     reviewed: /2022/03/30/number-parsing-at-a-gigabyte-a-second.html
   name: Lemire, Daniel
 - entries:
+  - date: '2023-03-01'
+    key: Sellitto2022
+    reviewed: /2023/03/01/refactoring-and-program-comprehension.html
+  name: Lenarduzzi, Valentina
+- entries:
   - date: '2011-10-22'
     key: Apel2011
     reviewed: /2011/10/22/three-empirical-studies-from-esecfse11.html
@@ -2752,6 +2782,9 @@
   - date: '2011-08-17'
     key: DeLucia2009
     reviewed: /2011/08/17/three-empirical-evaluations-of-uml.html
+  - date: '2023-03-01'
+    key: Sellitto2022
+    reviewed: /2023/03/01/refactoring-and-program-comprehension.html
   name: Lucia, Andrea De
 - entries:
   - date: '2022-04-18'
@@ -3293,6 +3326,9 @@
   - date: '2021-12-13'
     key: Mahmoudi2019
     reviewed: /2021/12/13/refactorings-in-merge-conflicts.html
+  - date: '2023-02-27'
+    key: Businge2022
+    reviewed: /2023/02/27/reuse-and-maintenance-among-divergent-forks.html
   name: Nadi, Sarah
 - entries:
   - date: '2016-04-26'
@@ -3525,6 +3561,11 @@
     reviewed: /2021/10/05/three-papers-on-readability.html
   name: Oliveto, Rocco
 - entries:
+  - date: '2023-02-27'
+    key: Businge2022
+    reviewed: /2023/02/27/reuse-and-maintenance-among-divergent-forks.html
+  name: Openja, Moses
+- entries:
   - date: '2021-08-09'
     key: Beniamini2017
     reviewed: /2021/08/09/abbreviated-vs-full-names.html
@@ -3591,6 +3632,9 @@
   - date: '2022-04-21'
     key: Tamburri2020
     reviewed: /2022/04/21/decline-of-sourceforge.html
+  - date: '2023-03-01'
+    key: Sellitto2022
+    reviewed: /2023/03/01/refactoring-and-program-comprehension.html
   name: Palomba, Fabio
 - entries:
   - date: '2021-09-25'
@@ -4226,6 +4270,11 @@
     key: Sedano2017
     reviewed: /2021/08/29/software-development-waste.html
   name: Sedano, Todd
+- entries:
+  - date: '2023-03-01'
+    key: Sellitto2022
+    reviewed: /2023/03/01/refactoring-and-program-comprehension.html
+  name: Sellitto, Giulia
 - entries:
   - date: '2021-09-03'
     key: Brown2018

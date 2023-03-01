@@ -1071,6 +1071,9 @@
   - date: '2021-09-21'
     reviewed: /2021/09/21/syntax-predicates-idioms-what-really-affects-code-complexity.html
     title: "Syntax, Predicates, Idioms\u2014What Really Affects Code Complexity?"
+  - date: '2023-03-01'
+    reviewed: /2023/03/01/refactoring-and-program-comprehension.html
+    title: Refactoring and Program Comprehension
   name: Program Comprehension
 - entries:
   - date: '2021-10-31'
@@ -1253,6 +1256,9 @@
   - date: '2022-03-04'
     reviewed: /2022/03/04/software-refactoring.html
     title: A Large-scale Survey of Software Refactoring
+  - date: '2023-03-01'
+    reviewed: /2023/03/01/refactoring-and-program-comprehension.html
+    title: Refactoring and Program Comprehension
   name: Refactoring
 - entries:
   - date: '2021-08-30'

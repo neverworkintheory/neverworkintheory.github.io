@@ -1,0 +1,58 @@
+---
+layout: post
+author: Greg Wilson
+title: "Refactoring and Program Comprehension"
+date: 2023-03-01
+categories: ["Refactoring", "Program Comprehension"]
+---
+
+<p>
+  I've spent the last few weeks cleaning up some code at work.
+  Was that a good use of my time?
+  If the finished code is easier for the next person to understand than what I started with,
+  the answer is probably "yes",
+  but that claim needs justification.
+  This paper explores exactly that,
+  and makes seven findings quoted below
+  (with my comments <em>[formatted like this]</em>).
+  As the authors observe in their conclusion,
+  insights like these should drive the design of the next generation of refactoring tools in IDEs.
+</p>
+
+<ol>
+  <li>The isolated application of certain refactorings may not affect the program readability, but other collateral code-changing activities may do. <em>[For example, reordering parameters doesn't affect code readability directly, but can make the comments explaining the code easier to read.]</em></li>
+  <li>Re-organizing the source code with the goal of creating more cohesive components, e.g., methods, has a positive impact on the readability, especially in terms of coherence between identifiers and documentation comments.</li>
+  <li>The refactorings belonging to the category ‘Moving Features between Objects’ determine variations in terms of readability but do not show any clear indication of their positive or negative impact, most likely because the considered metrics cannot properly measure the overall readability of multiple classes together.</li>
+  <li>Refactorings aiming at re-organizing data within classes do not seem to have a clear impact on the readability. Removing unnecessary class fields has positive effects, but that depends on how the refactorings are applied.</li>
+  <li>The renaming of code elements is expected to improve readability, as it is done for that specific goal in mind. Yet, this does not always happen in practice, probably because the choice of the new name may affect metrics influenced by the vocabulary of the identifiers.</li>
+  <li>Moving the logic along the hierarchy structure creates more cohesive classes and shows better readability to some extent (e.g., fewer number of topics). However, the creation of superclasses inevitably has a negative impact as it makes use of more generic and ambiguous terms. <em>[This finding about superclasses surprised me at first, and then didn't when I read the explanation quoted here about generic and ambiguous terms.]</em></li>
+  <li>Noticeable changes in readability happen when multiple refactoring operations involving renaming are applied in sequence. For example, applying Rename Attribute refactoring alone may not be enough to improve the readability, so Move Attribute refactoring should be contextually done to provide a more suitable class. This is in line with previous findings that showed how the creation of more cohesive components is desirable for readability.</li>
+</ol>
+
+<p>Giulia Sellitto, Emanuele Iannone, Zadia Codabux, Valentina Lenarduzzi, Andrea De Lucia, Fabio Palomba, and Filomena Ferrucci.
+Toward understanding the impact of refactoring on program comprehension.
+In <em>2022 IEEE International Conference on Software Analysis, Evolution and Reengineering (SANER)</em>. IEEE, Mar 2022.
+<a href="https://doi.org/10.1109/saner53432.2022.00090">doi:10.1109/saner53432.2022.00090</a>.</p>
+
+<blockquote>
+  <p>
+    Software refactoring is the activity associated with developers changing the internal structure of source code
+    without modifying its external behavior.
+    The literature argues that refactoring might have beneficial and harmful implications for software maintainability,
+    primarily when performed without the support of automated tools.
+    This paper continues the narrative on the effects of refactoring by exploring the dimension of program comprehension,
+    namely the property that describes how easy it is for developers to understand source code.
+    We start our investigation by assessing the basic unit of program comprehension,
+    namely program readability.
+    Next, we set up a large-scale empirical investigation—conducted on 156 open-source projects—to quantify
+    the impact of refactoring on program readability.
+    First, we mine refactoring data and, for each commit involving a refactoring, we compute
+    (i) the amount and type(s) of refactoring actions performed and
+    (ii) eight state-of-the-art program comprehension metrics.
+    Afterwards,
+    we build statistical models relating the various refactoring operations
+    to each of the readability metrics considered
+    to quantify the extent to which each refactoring impacts the metrics in either a positive or negative manner.
+    The key results are that refactoring has a notable impact on most of the readability metrics considered.
+  </p>
+</blockquote>
