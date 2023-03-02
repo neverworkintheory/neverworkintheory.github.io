@@ -807,6 +807,9 @@
   - date: '2023-02-26'
     reviewed: /2023/02/26/fairness-and-code-smells-in-machine-learning.html
     title: Fairness and Code Smells in Machine Learning
+  - date: '2023-03-01'
+    reviewed: /2023/03/02/learning-to-predict-user-defined-types.html
+    title: Learning to Predict User-Defined Types
   name: Machine Learning
 - entries:
   - date: '2016-04-26'
@@ -1587,6 +1590,23 @@
     reviewed: /2021/09/30/quantifying-and-mitigating-turnover-induced-knowledge-loss.html
     title: Quantifying and mitigating turnover-induced knowledge loss
   name: Turnover
+- entries:
+  - date: '2012-10-25'
+    reviewed: /2012/10/25/an-experiment-about-static-and-dynamic-type-systems.html
+    title: An Experiment About Static and Dynamic Type Systems
+  - date: '2021-09-08'
+    reviewed: /2021/09/08/to-type-or-not-to-type.html
+    title: 'To Type or Not to Type: Quantifying Detectable Bugs in JavaScript'
+  - date: '2022-03-18'
+    reviewed: /2022/03/18/python-3-types-in-the-wild.html
+    title: Python 3 Types in the Wild
+  - date: '2022-03-23'
+    reviewed: /2022/03/23/designing-types-for-r-empirically.html
+    title: Designing Types for R Empirically
+  - date: '2023-03-01'
+    reviewed: /2023/03/02/learning-to-predict-user-defined-types.html
+    title: Learning to Predict User-Defined Types
+  name: Types
 - entries:
   - date: '2013-06-13'
     reviewed: /2013/06/13/uml-in-practice-2.html

@@ -1097,6 +1097,9 @@
   - date: '2021-11-08'
     key: Tomassi2019
     reviewed: /2021/11/08/my-kingdom-for-a-dataset.html
+  - date: '2023-03-02'
+    key: Jesse2022
+    reviewed: /2023/03/02/learning-to-predict-user-defined-types.html
   name: Devanbu, Premkumar
 - entries:
   - date: '2012-05-17'
@@ -2085,6 +2088,11 @@
     key: Nussli2012
     reviewed: /2012/02/23/looking-at-the-same-thing-in-pair-programming-tasks.html
   name: Jermann, Patrick
+- entries:
+  - date: '2023-03-02'
+    key: Jesse2022
+    reviewed: /2023/03/02/learning-to-predict-user-defined-types.html
+  name: Jesse, Kevin
 - entries:
   - date: '2021-10-26'
     key: Zhang2021a
@@ -4198,6 +4206,11 @@
     key: Jolak2020
     reviewed: /2022/03/31/textual-vs-graphic-design-descriptions-and-communication.html
   name: Savary-Leblanc, Maxime
+- entries:
+  - date: '2023-03-02'
+    key: Jesse2022
+    reviewed: /2023/03/02/learning-to-predict-user-defined-types.html
+  name: Sawant, Anand Ashok
 - entries:
   - date: '2021-10-05'
     key: Piantadosi2020
