@@ -474,10 +474,10 @@
   id: kula-elvan
   family: Kula
   personal: Elvan
-  url: ""
-  photo: 
-  title:
-  bio:
+  url: "https://serg.ewi.tudelft.nl/members/elvan-kula/"
+  photo: kula-elvan.png
+  title: "Understanding and predicting delays in large-scale software development."
+  bio: Elvan is chapter lead of Analytics and AI Research at ING and a doctoral candidate at TU Delft.
   video: 
 
 - event: 2023-04
