@@ -3,10 +3,8 @@
  * @param {string} toRoot Path to root of site.
  */
 const fixBibCites = (toRoot) => {
-  console.log('fixBibCites')
   Array.from(document.querySelectorAll('cite'))
     .forEach(node => {
-      console.log(node)
       const keys = node.innerHTML
             .split(',')
             .map(key => key.trim())
