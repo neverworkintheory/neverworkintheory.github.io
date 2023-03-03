@@ -1645,6 +1645,11 @@
     reviewed: /2016/09/16/five-from-icer-2016.html
   name: Griswold, William G.
 - entries:
+  - date: '2023-03-03'
+    key: Madampe2022
+    reviewed: /2023/03/03/emotional-rollercoaster-requirements-changes.html
+  name: Grundy, John
+- entries:
   - date: '2021-12-02'
     key: Gu2018
     reviewed: /2021/12/02/deep-code-search.html
@@ -1887,6 +1892,9 @@
   - date: '2021-08-18'
     key: Masood2020a
     reviewed: /2021/08/18/how-agile-teams-make-self-assignment-work.html
+  - date: '2023-03-03'
+    key: Madampe2022
+    reviewed: /2023/03/03/emotional-rollercoaster-requirements-changes.html
   name: Hoda, Rashina
 - entries:
   - date: '2011-08-24'
@@ -2834,6 +2842,11 @@
     key: McLeod2011
     reviewed: /2011/12/21/factors-that-affect-software-systems-development-project-outcomes.html
   name: MacDonell, Stephen G.
+- entries:
+  - date: '2023-03-03'
+    key: Madampe2022
+    reviewed: /2023/03/03/emotional-rollercoaster-requirements-changes.html
+  name: Madampe, Kashumi
 - entries:
   - date: '2021-09-25'
     key: Schweinsberg2021

@@ -550,6 +550,9 @@
   - date: '2023-02-28'
     reviewed: /2023/02/28/interpersonal-trust-in-oss.html
     title: Interpersonal Trust in Open Source Software
+  - date: '2023-03-03'
+    reviewed: /2023/03/03/emotional-rollercoaster-requirements-changes.html
+    title: The Emotional Roller Coaster of Responding to Requirements Changes
   name: Emotion
 - entries:
   - date: '2021-09-05'
@@ -808,7 +811,7 @@
     reviewed: /2023/02/26/fairness-and-code-smells-in-machine-learning.html
     title: Fairness and Code Smells in Machine Learning
   - date: '2023-03-01'
-    reviewed: /2023/03/02/learning-to-predict-user-defined-types.html
+    reviewed: /2023/03/01/learning-to-predict-user-defined-types.html
     title: Learning to Predict User-Defined Types
   name: Machine Learning
 - entries:
@@ -1293,6 +1296,9 @@
     reviewed: /2012/11/06/how-do-software-architects-consider-non-functional-requirements.html
     title: 'How do Software Architects Consider Non-functional Requirements: An Exploratory
       Study'
+  - date: '2023-03-03'
+    reviewed: /2023/03/03/emotional-rollercoaster-requirements-changes.html
+    title: The Emotional Roller Coaster of Responding to Requirements Changes
   name: Requirements
 - entries:
   - date: '2011-09-22'
@@ -1604,7 +1610,7 @@
     reviewed: /2022/03/23/designing-types-for-r-empirically.html
     title: Designing Types for R Empirically
   - date: '2023-03-01'
-    reviewed: /2023/03/02/learning-to-predict-user-defined-types.html
+    reviewed: /2023/03/01/learning-to-predict-user-defined-types.html
     title: Learning to Predict User-Defined Types
   name: Types
 - entries:
