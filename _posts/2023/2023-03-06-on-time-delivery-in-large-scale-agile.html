@@ -1,0 +1,72 @@
+---
+layout: post
+author: Greg Wilson
+title: "On-Time Delivery in Large-Scale Agile"
+date: 2023-03-06
+categories: ["Agile Development"]
+---
+
+<p>
+  Does agile work?
+  Twenty-two years after the publication of the Agile Manifesto
+  we still don't have a trustworthy answer:
+  too many different things are called "agile",
+  "work" is poorly defined,
+  and most of its advocates and detractors cite anecdotes rather than collecting evidence.
+</p>
+
+<p>
+  This paper tackles all three issues at once.
+  First,
+  it examines the particular flavor of agile development used in one large organization
+  that breaks development down into themes, epics, features, stories, and tasks
+  and then uses a by-now-conventional continuous delivery pipeline.
+  Second,
+  it asks whether this family of development practices affects timely delivery of promised value,
+  and third,
+  the authors collected both qualitative and quantitative data
+  and used it both to answer their questions
+  and to build a conceptual model to underpin further work.
+  Their conclusion is not a simple "yes" or "no"—it couldn't be—but rather
+  a deeper, validated understanding of the forces at play
+  and the interactions between them.
+</p>
+
+<div align="center">
+  <img src="{{'/static/2023/kula-framework.png' | relative_url}}" alt="Figure 4 from Kula et al">
+</div>
+
+<p>Elvan Kula, Eric Greuter, Arie van Deursen, and Georgios Gousios.
+Factors affecting on-time delivery in large-scale agile software development.
+<em>IEEE Transactions on Software Engineering</em>, 48(9), Sep 2022.
+URL: <a href="https://doi.org/10.1109/tse.2021.3101192">doi:10.1109/tse.2021.3101192</a>.</p>
+
+<blockquote>
+  <p>
+    Late delivery of software projects and cost overruns have been common problems in the software industry for decades.
+    Both problems are manifestations of deficiencies in effort estimation during project planning.
+    With software projects being complex socio-technical systems,
+    a large pool of factors can affect effort estimation and on-time delivery.
+    To identify the most relevant factors
+    and their interactions affecting schedule deviations in large-scale agile software development,
+    we conducted a mixed-methods case study at ING:
+    two rounds of surveys revealed a multitude of organizational, people, process, project and technical factors
+    which were then quantified and statistically modeled using software repository data from 185 teams.
+    We find that factors such as requirements refinement,
+    task dependencies,
+    organizational alignment and organizational politics
+    are perceived to have the greatest impact on on-time delivery,
+    whereas proxy measures such as project size,
+    number of dependencies,
+    historical delivery performance and team familiarity
+    can help explain a large degree of schedule deviations.
+    We also discover hierarchical interactions among factors:
+    organizational factors are perceived to interact with people factors,
+    which in turn impact technical factors.
+    We compose our findings in the form of a conceptual framework
+    representing influential factors and their relationships to on-time delivery.
+    Our results can help practitioners identify and manage delay risks in agile settings,
+    can inform the design of automated tools to predict schedule overruns
+    and can contribute towards the development of a relational theory of software project management.
+  </p>
+</blockquote>
