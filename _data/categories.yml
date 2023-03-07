@@ -1015,6 +1015,11 @@
     title: Database-Access Performance Antipatterns in Database-Backed Web Applications
   name: Performance
 - entries:
+  - date: '2023-03-07'
+    reviewed: /2023/03/07/impact-of-world-politics-on-software-ecosystems.html
+    title: On-Time Delivery in Large-Scale Agile
+  name: Politics
+- entries:
   - date: '2021-08-28'
     reviewed: /2021/08/28/privacy-threats-in-intimate-relationships.html
     title: Privacy Threats in Intimate Relationships
@@ -1055,6 +1060,9 @@
   - date: '2022-03-02'
     reviewed: /2022/03/02/ethics-in-decision-making.html
     title: Does ACM's code of ethics change ethical decision making in software development?
+  - date: '2023-03-07'
+    reviewed: /2023/03/07/impact-of-world-politics-on-software-ecosystems.html
+    title: On-Time Delivery in Large-Scale Agile
   name: Professional Ethics
 - entries:
   - date: '2016-06-09'
