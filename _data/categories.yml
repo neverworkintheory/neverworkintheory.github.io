@@ -1017,7 +1017,7 @@
 - entries:
   - date: '2023-03-07'
     reviewed: /2023/03/07/impact-of-world-politics-on-software-ecosystems.html
-    title: On-Time Delivery in Large-Scale Agile
+    title: The Impact of World Politics on Software Ecosystems
   name: Politics
 - entries:
   - date: '2021-08-28'
@@ -1062,7 +1062,7 @@
     title: Does ACM's code of ethics change ethical decision making in software development?
   - date: '2023-03-07'
     reviewed: /2023/03/07/impact-of-world-politics-on-software-ecosystems.html
-    title: On-Time Delivery in Large-Scale Agile
+    title: The Impact of World Politics on Software Ecosystems
   name: Professional Ethics
 - entries:
   - date: '2016-06-09'
@@ -1485,6 +1485,9 @@
   - date: '2022-04-06'
     reviewed: /2022/04/06/adoption-of-javascript-linters.html
     title: 'The Adoption of JavaScript Linters in Practice: A Case Study on ESLint'
+  - date: '2023-03-08'
+    reviewed: /2023/03/08/can-static-analysis-tools-find-more-defects.html
+    title: Can Static Analysis Tools Find More Defects?
   name: Static Analysis
 - entries:
   - date: '2022-11-14'

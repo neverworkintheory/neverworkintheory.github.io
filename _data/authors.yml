@@ -2539,6 +2539,9 @@
   - date: '2021-09-24'
     key: Mangano2015
     reviewed: /2021/09/24/how-software-designers-interact-with-sketches-at-the-whiteboard.html
+  - date: '2023-03-08'
+    key: Mehrpour2022
+    reviewed: /2023/03/08/can-static-analysis-tools-find-more-defects.html
   name: LaToza, Thomas D.
 - entries:
   - date: '2016-09-16'
@@ -3042,6 +3045,11 @@
     key: Mattmann2015
     reviewed: /2016/10/02/grid-revisited.html
   name: "Medvidovi\u0107, Nenad"
+- entries:
+  - date: '2023-03-08'
+    key: Mehrpour2022
+    reviewed: /2023/03/08/can-static-analysis-tools-find-more-defects.html
+  name: Mehrpour, Sahar
 - entries:
   - date: '2021-10-13'
     key: Overney2020

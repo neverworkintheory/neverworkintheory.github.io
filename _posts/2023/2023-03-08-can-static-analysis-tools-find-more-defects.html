@@ -1,0 +1,55 @@
+---
+layout: post
+author: Greg Wilson
+title: "Can Static Analysis Tools Find More Defects?"
+date: 2023-03-08
+categories: ["Static Analysis"]
+---
+
+<p>
+  Sorting algorithms, data compression, engine efficiency:
+  in each case,
+  we can compare how well we're doing to a provable optimum.
+  In situations where we don't know what the upper bound is,
+  we can still sometimes estimate how much room there is for improvement.
+  This paper does that for static analysis tools
+  that look for patterns (or anti-patterns) in code that indicate bugs.
+  By reformulating issues found in manual code review as rules,
+  the authors show that static analysis might be able to detect
+  as much as three quarters of all bugs,
+  which is considerably better than what current-generation linters do.
+  Work like this can guide development of better tools,
+  but it also tells us how much we still have to gain from them.
+</p>
+
+<p>Sahar Mehrpour and Thomas D. LaToza.
+Can static analysis tools find more defects?
+<em>Empirical Software Engineering</em>, Nov 2022.
+<a href="https://doi.org/10.1007/s10664-022-10232-4">doi:10.1007/s10664-022-10232-4</a>.</p>
+
+<blockquote>
+  <p>
+    Static analysis tools find defects in code,
+    checking code against rules to reveal potential defects.
+    Many studies have evaluated these tools by measuring their ability to detect known defects in code.
+    But these studies measure the current state of tools rather than their future potential to find more defects.
+    To investigate the prospects for tools to find more defects,
+    we conducted a study where we formulated each issue raised by a code reviewer as a violation of a rule,
+    which we then compared to what static analysis tools might potentially check.
+    We first gathered a corpus of 1323 defects found through code review.
+    Through a qualitative analysis process,
+    for each defect we identified a violated rule and the type of Static Analysis Tool (SAT)
+    which might check this rule.
+    We found that SATs might, in principle,
+    be used to detect as many as 76% of code review defects,
+    considerably more than current tools have been demonstrated to successfully detect.
+    Among a variety of types of SATs,
+    Style Checkers and AST Pattern Checkers had the broadest coverage of defects,
+    each with the potential to detect 25% of all code review defects.
+    We found that static analysis tools might be able to detect more code review defects
+    by better supporting the creation of project-specific rules.
+    We also investigated the characteristics of code review defects
+    not detectable by traditional static analysis techniques,
+    which to detect might require tools which simulate human judgements about code.
+  </p>
+</blockquote>
