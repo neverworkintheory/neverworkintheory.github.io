@@ -650,6 +650,11 @@
     title: How Gamification Affects Software Developers
   name: Gamification
 - entries:
+  - date: '2023-03-09'
+    reviewed: /2023/03/09/combining-gin-and-pmd-for-code-improvements.html
+    title: Combining GIN and PMD for Code Improvements
+  name: Genetic Algorithms
+- entries:
   - date: '2021-09-09'
     reviewed: /2021/09/09/organizing-for-openness.html
     title: 'Organizing for openness: six models for developer involvement in hybrid
@@ -1488,6 +1493,9 @@
   - date: '2023-03-08'
     reviewed: /2023/03/08/can-static-analysis-tools-find-more-defects.html
     title: Can Static Analysis Tools Find More Defects?
+  - date: '2023-03-09'
+    reviewed: /2023/03/09/combining-gin-and-pmd-for-code-improvements.html
+    title: Combining GIN and PMD for Code Improvements
   name: Static Analysis
 - entries:
   - date: '2022-11-14'

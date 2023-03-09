@@ -1,0 +1,60 @@
+---
+layout: post
+author: Greg Wilson
+title: "Combining GIN and PMD for Code Improvements"
+date: 2023-03-09
+categories: ["Static Analysis", "Genetic Algorithms"]
+---
+
+<p>
+  Amidst the recent excitement about using large language models to write software,
+  it's easy to overlook the other ways that researchers are getting computers
+  to write or improve code.
+  This paper is an early look at combining two ideas:
+  static analysis to detect problems in code found on Stack Overflow
+  and genetic algorithms to improve those code snippets.
+  The results are intriguing,
+  but unsurprisingly,
+  the authors found that the tools they used
+  (<a href="https://pmd.github.io/">PMD</a> for code analysis
+  and <a href"https://github.com/gintool/gin">GIN</a> for code mutation)
+  may need some tweaking in order to play well together in this new way.
+</p>
+
+<p>
+  On a personal note,
+  work like this has convinced me that
+  the next major advance in programming languages won't come from
+  research on classical concerns like type systems or concurrency mechanisms,
+  but rather from asking, "How can we design a language so that
+  automated tools can find and generate what we need more quickly and more accurately?"
+  As we learn more about why tools like the ones described above can't (yet) do our programming for us,
+  I believe we will see rapid evolution of both better tools
+  and better languages for them to work on—better, that is, for other programs.
+</p>
+
+<p>Sherlock A. Licorish and Markus Wagner.
+Combining GIN and PMD for code improvements.
+In <em>Proceedings of the Genetic and Evolutionary Computation Conference Companion</em>, Jul 2022.
+<a href="https://doi.org/10.1145/3520304.3528772">doi:10.1145/3520304.3528772</a>.</dd>
+
+<blockquote>
+  <p>
+    Software developers are increasingly dependent on question and answer portals and blogs for coding solutions.
+    While such interfaces provide useful information,
+    there are concerns that code hosted here is often incorrect, insecure or incomplete.
+    Previous work indeed detected a range of faults in code provided on Stack Overflow
+    through the use of static analysis.
+    Static analysis may go a far way towards quickly establishing the health of software code available online.
+    In addition, mechanisms that enable rapid automated program improvement may then enhance such code.
+    Accordingly, we present this proof of concept.
+    We use the PMD static analysis tool to detect performance faults for a sample of Stack Overflow Java code snippets,
+    before performing mutations on these snippets using GIN.
+    We then re-analyse the performance faults in these snippets after the GIN mutations.
+    GIN's RandomSampler was used to perform 17,986 unique line and statement patches on 3,034 snippets
+    where PMD violations were removed from 770 patched versions.
+    Our outcomes indicate that static analysis techniques may be combined with automated program improvement methods
+    to enhance publicly available code with very little resource requirements.
+    We discuss our planned research agenda in this regard.
+  </p>
+</blockquote>

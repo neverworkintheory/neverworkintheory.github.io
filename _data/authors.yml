@@ -38,11 +38,6 @@
     reviewed: /2021/09/18/code-of-conduct-in-open-source-projects.html
   name: Adams, Bram
 - entries:
-  - date: '2021-09-25'
-    key: Schweinsberg2021
-    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
-  name: Adie, Prestone
-- entries:
   - date: '2011-12-04'
     key: Hundhausen2011
     reviewed: /2011/12/04/online-vs-face-to-face-pedagogical-code-reviews-an-empirical-comparison.html
@@ -89,30 +84,15 @@
     reviewed: /2021/10/30/app-store-effects-on-software-engineering-practices.html
   name: Al-Subaihin, Afnan A.
 - entries:
-  - date: '2021-09-25'
-    key: Schweinsberg2021
-    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
-  name: Alaburda, Paulius
-- entries:
   - date: '2021-10-10'
     key: Alkhabaz2021
     reviewed: /2021/10/10/mongodb-homework.html
   name: Alawini, Abdussalam
 - entries:
-  - date: '2021-09-25'
-    key: Schweinsberg2021
-    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
-  name: Albers, Casper
-- entries:
   - date: '2021-08-09'
     key: AlencarDaCosta2017
     reviewed: /2021/08/09/impact-of-rapid-release-cycles-on-integration-delay-of-fixed-issues.html
   name: Alencar da Costa, Daniel
-- entries:
-  - date: '2021-09-25'
-    key: Schweinsberg2021
-    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
-  name: Ali, Amal (Akmal) Ridhwan Omar
 - entries:
   - date: '2021-08-11'
     key: Ali2020
@@ -139,16 +119,6 @@
     reviewed: /2022/03/04/software-refactoring.html
   name: AlOmar, Eman Abdullah
 - entries:
-  - date: '2021-09-25'
-    key: Schweinsberg2021
-    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
-  name: Alspaugh, Sara
-- entries:
-  - date: '2021-09-25'
-    key: Schweinsberg2021
-    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
-  name: Alstott, Jeff
-- entries:
   - date: '2016-06-09'
     key: Altadmri2015
     reviewed: /2016/06/09/novice-programming-mistakes.html
@@ -156,11 +126,6 @@
     key: Brown2018
     reviewed: /2021/09/03/two-papers-about-the-blackbox-project.html
   name: Altadmri, Amjad
-- entries:
-  - date: '2021-09-25'
-    key: Schweinsberg2021
-    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
-  name: Althoff, Tim
 - entries:
   - date: '2021-09-12'
     key: Beller2019
@@ -179,11 +144,6 @@
     key: Ames2018
     reviewed: /2021/10/11/a-critical-history-of-logo-and-constructionist-learning.html
   name: Ames, Morgan G.
-- entries:
-  - date: '2021-09-25'
-    key: Schweinsberg2021
-    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
-  name: Amireh, Hashem
 - entries:
   - date: '2011-09-22'
     key: Anda2009
@@ -228,16 +188,6 @@
     reviewed: /2011/08/17/three-empirical-evaluations-of-uml.html
   name: Arisholm, E.
 - entries:
-  - date: '2021-09-25'
-    key: Schweinsberg2021
-    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
-  name: "Ari\xF1o de la Rubia, Eduardo"
-- entries:
-  - date: '2021-09-25'
-    key: Schweinsberg2021
-    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
-  name: Arzi, Adbi
-- entries:
   - date: '2022-02-21'
     key: Guler2019
     reviewed: /2022/02/21/antifuzz.html
@@ -281,20 +231,10 @@
     reviewed: /2021/10/01/python-coding-style-compliance-on-stack-overflow.html
   name: Bafatakis, Nikolaos
 - entries:
-  - date: '2021-09-25'
-    key: Schweinsberg2021
-    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
-  name: "Bahn\xEDk, \u0160t\u011Bp\xE1n"
-- entries:
   - date: '2023-02-25'
     key: Majumder2021
     reviewed: /2023/02/25/fairness-and-code-smells-in-machine-learning.html
   name: Bai, Gina R.
-- entries:
-  - date: '2021-09-25'
-    key: Schweinsberg2021
-    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
-  name: Baik, Jason
 - entries:
   - date: '2021-11-16'
     key: Codoban2015
@@ -316,30 +256,15 @@
     reviewed: /2013/06/19/reducing-human-effort-and-improving-quality-in-peer-code-reviews-using-automatic-static-analysis-and-reviewer-recommendation.html
   name: Balachandran, Vipin
 - entries:
-  - date: '2021-09-25'
-    key: Schweinsberg2021
-    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
-  name: Balling, Laura Winther
-- entries:
   - date: '2021-10-03'
     key: Baltes2020
     reviewed: /2021/10/03/is-40-the-new-60.html
   name: Baltes, Sebastian
 - entries:
-  - date: '2021-09-25'
-    key: Schweinsberg2021
-    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
-  name: Banker, Sachin
-- entries:
   - date: '2022-04-04'
     key: Bao2021
     reviewed: /2022/04/04/contributor-prediction-for-github.html
   name: Bao, Lingfeng
-- entries:
-  - date: '2021-09-25'
-    key: Schweinsberg2021
-    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
-  name: Baranger, David A.A.
 - entries:
   - date: '2021-09-05'
     key: Barbosa2014
@@ -380,11 +305,6 @@
     reviewed: /2011/06/30/specification-and-verification-the-spec-experience.html
   name: Barnett, Mike
 - entries:
-  - date: '2021-09-25'
-    key: Schweinsberg2021
-    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
-  name: Barr, Dale J.
-- entries:
   - date: '2012-04-26'
     key: Hindle2016
     reviewed: /2012/04/26/on-the-naturalness-of-software.html
@@ -407,11 +327,6 @@
     reviewed: /2021/08/12/on-the-nature-of-merge-conflicts.html
   name: Barros, Marcio
 - entries:
-  - date: '2021-09-25'
-    key: Schweinsberg2021
-    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
-  name: Barros-Rivera, Brenda
-- entries:
   - date: '2012-05-02'
     key: Barzilay2011
     reviewed: /2012/05/02/example-embedding.html
@@ -421,11 +336,6 @@
     key: Staples2013
     reviewed: /2013/06/13/formal-specifications-better-than-function-points-for-code-sizing.html
   name: Bass, Len
-- entries:
-  - date: '2021-09-25'
-    key: Schweinsberg2021
-    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
-  name: Bauer, Matt
 - entries:
   - date: '2021-08-09'
     key: Abad2018
@@ -519,11 +429,6 @@
     reviewed: /2016/09/16/five-from-icer-2016.html
   name: Berlin, Jesse
 - entries:
-  - date: '2021-09-25'
-    key: Schweinsberg2021
-    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
-  name: Bernstein, Abraham
-- entries:
   - date: '2011-08-30'
     key: Bettenburg2008
     reviewed: /2011/08/30/what-makes-a-good-bug-report.html
@@ -588,11 +493,6 @@
     reviewed: /2021/10/30/app-store-effects-on-software-engineering-practices.html
   name: Black, Sue
 - entries:
-  - date: '2021-09-25'
-    key: Schweinsberg2021
-    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
-  name: Blaise, Enuh
-- entries:
   - date: '2021-08-18'
     key: Masood2020a
     reviewed: /2021/08/18/how-agile-teams-make-self-assignment-work.html
@@ -615,11 +515,6 @@
     key: Tregubov2017
     reviewed: /2021/09/19/impact-of-task-switching-and-work-interruptions.html
   name: Boehm, Barry
-- entries:
-  - date: '2021-09-25'
-    key: Schweinsberg2021
-    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
-  name: Boelen, Lisa
 - entries:
   - date: '2022-03-25'
     key: Bogart2021
@@ -671,11 +566,6 @@
     reviewed: /2011/08/17/three-empirical-evaluations-of-uml.html
   name: Briand, L.C.
 - entries:
-  - date: '2021-09-25'
-    key: Schweinsberg2021
-    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
-  name: Briers, Robert A.
-- entries:
   - date: '2021-08-30'
     key: Wang2020a
     reviewed: /2021/08/30/two-studies-of-regular-expressions.html
@@ -704,11 +594,6 @@
     key: Golubev2021
     reviewed: /2022/03/04/software-refactoring.html
   name: Bryksin, Timofey
-- entries:
-  - date: '2021-09-25'
-    key: Schweinsberg2021
-    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
-  name: Burkhard, Oliver
 - entries:
   - date: '2023-02-27'
     key: Businge2022
@@ -740,11 +625,6 @@
     reviewed: /2021/09/11/common-bug-fix-patterns.html
   name: Campos, Eduardo Cunha
 - entries:
-  - date: '2021-09-25'
-    key: Schweinsberg2021
-    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
-  name: Canela, Miguel-Angel
-- entries:
   - date: '2021-10-18'
     key: Zampetti2020
     reviewed: /2021/10/18/bad-practices-in-continuous-integration.html
@@ -755,11 +635,6 @@
     reviewed: /2021/10/30/app-store-effects-on-software-engineering-practices.html
   name: Capra, Licia
 - entries:
-  - date: '2021-09-25'
-    key: Schweinsberg2021
-    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
-  name: Carbonell, Katerina Bohle
-- entries:
   - date: '2016-09-09'
     key: Krein2016
     reviewed: /2016/09/09/replicating-design-patterns-experiment.html
@@ -768,16 +643,6 @@
     reviewed: /2021/09/20/program-comprehension-of-domain-specific-and-general-purpose-languages.html
   name: Carver, Jeffrey C.
 - entries:
-  - date: '2021-09-25'
-    key: Schweinsberg2021
-    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
-  name: Castrillo, Laura
-- entries:
-  - date: '2021-09-25'
-    key: Schweinsberg2021
-    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
-  name: Catlett, Timothy
-- entries:
   - date: '2021-09-10'
     key: Majumder2019
     reviewed: /2021/09/10/why-software-projects-need-heroes.html
@@ -785,11 +650,6 @@
     key: Majumder2021
     reviewed: /2023/02/25/fairness-and-code-smells-in-machine-learning.html
   name: Chakraborty, Joymallya
-- entries:
-  - date: '2021-09-25'
-    key: Schweinsberg2021
-    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
-  name: Chan, C.S. Richard
 - entries:
   - date: '2023-02-28'
     key: Sajadi2023
@@ -810,11 +670,6 @@
     key: Alkhabaz2021
     reviewed: /2021/10/10/mongodb-homework.html
   name: Chen, Mei
-- entries:
-  - date: '2021-09-25'
-    key: Schweinsberg2021
-    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
-  name: Chen, Olivia
 - entries:
   - date: '2016-04-26'
     key: Chen2016
@@ -847,11 +702,6 @@
     reviewed: /2013/02/12/experimental-assessment-of-software-metrics-using-automated-refactoring.html
   name: "Cinn\xE9ide, Mel \xD3"
 - entries:
-  - date: '2021-09-25'
-    key: Schweinsberg2021
-    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
-  name: Clark, Michael
-- entries:
   - date: '2011-07-26'
     key: Stylos2007
     reviewed: /2011/07/26/usability-implications-of-requiring-parameters-in-objects-constructors.html
@@ -877,11 +727,6 @@
     reviewed: /2021/08/30/two-studies-of-regular-expressions.html
   name: Coghlan, Christy A.
 - entries:
-  - date: '2021-09-25'
-    key: Schweinsberg2021
-    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
-  name: Cohn, Brent
-- entries:
   - date: '2016-06-05'
     key: Gulzar2016
     reviewed: /2016/06/05/bigdebug.html
@@ -891,11 +736,6 @@
     key: Oliveira2020
     reviewed: /2021/08/21/metrics-and-team-leaders-perceptions-of-productivity.html
   name: Conte, Tayana
-- entries:
-  - date: '2021-09-25'
-    key: Schweinsberg2021
-    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
-  name: Coppock, Alex
 - entries:
   - date: '2021-10-19'
     key: Costa2019
@@ -935,21 +775,6 @@
     reviewed: /2011/08/17/three-empirical-evaluations-of-uml.html
   name: "Cruz-Lemus, Jos\xE9 A."
 - entries:
-  - date: '2021-09-25'
-    key: Schweinsberg2021
-    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
-  name: "Cuguer\xF3-Escofet, Nat\xE0lia"
-- entries:
-  - date: '2021-09-25'
-    key: Schweinsberg2021
-    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
-  name: Curran, Paul G.
-- entries:
-  - date: '2021-09-25'
-    key: Schweinsberg2021
-    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
-  name: Cyrus-Lai, Wilson
-- entries:
   - date: '2023-02-25'
     key: AlencarDaCosta2023
     reviewed: /2023/02/25/learning-and-developing-with-sql.html
@@ -965,20 +790,10 @@
     reviewed: /2011/08/23/creating-and-evolving-developer-documentation.html
   name: "Dagenais, Barth\xE9l\xE9my"
 - entries:
-  - date: '2021-09-25'
-    key: Schweinsberg2021
-    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
-  name: Dai, David
-- entries:
   - date: '2022-03-31'
     key: Jolak2020
     reviewed: /2022/03/31/textual-vs-graphic-design-descriptions-and-communication.html
   name: Dalibor, Manuela
-- entries:
-  - date: '2021-09-25'
-    key: Schweinsberg2021
-    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
-  name: Dalla Riva, Giulio Valentino
 - entries:
   - date: '2023-02-28'
     key: Sajadi2023
@@ -994,11 +809,6 @@
     key: Dang2012
     reviewed: /2012/07/18/clustering-duplicate-crash-reports.html
   name: Dang, Yingnong
-- entries:
-  - date: '2021-09-25'
-    key: Schweinsberg2021
-    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
-  name: Danielsson, Henrik
 - entries:
   - date: '2022-04-13'
     key: Danilova2021
@@ -1020,20 +830,10 @@
     reviewed: /2021/09/11/common-bug-fix-patterns.html
   name: de Almeida Maia, Marcelo
 - entries:
-  - date: '2021-09-25'
-    key: Schweinsberg2021
-    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
-  name: de F.S.M. Russo, Rosaria
-- entries:
   - date: '2021-09-16'
     key: DePadua2018
     reviewed: /2021/09/16/exception-handling-practices-and-post-release-defects.html
   name: "de P\xE1dua, Guilherme B."
-- entries:
-  - date: '2021-09-25'
-    key: Schweinsberg2021
-    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
-  name: de Silva, Niko
 - entries:
   - date: '2016-09-08'
     key: Sharp2016
@@ -1065,11 +865,6 @@
     key: Becker2019
     reviewed: /2021/09/02/compiler-error-messages-considered-unhelpful.html
   name: Denny, Paul
-- entries:
-  - date: '2021-09-25'
-    key: Schweinsberg2021
-    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
-  name: Derungs, Curdin
 - entries:
   - date: '2021-09-23'
     key: Malik2019
@@ -1147,36 +942,6 @@
     reviewed: /2021/09/30/quantifying-and-mitigating-turnover-induced-knowledge-loss.html
   name: Donadelli, Samuel M.
 - entries:
-  - date: '2021-09-25'
-    key: Schweinsberg2021
-    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
-  name: Dondelinger, Frank
-- entries:
-  - date: '2021-09-25'
-    key: Schweinsberg2021
-    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
-  name: Druijff-van de Woestijne, Gerrieke B.
-- entries:
-  - date: '2021-09-25'
-    key: Schweinsberg2021
-    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
-  name: Duarte de Souza, Carolina
-- entries:
-  - date: '2021-09-25'
-    key: Schweinsberg2021
-    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
-  name: Dube, B. Tyson
-- entries:
-  - date: '2021-09-25'
-    key: Schweinsberg2021
-    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
-  name: Dubova, Marina
-- entries:
-  - date: '2021-09-25'
-    key: Schweinsberg2021
-    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
-  name: Dunn, Ben Mark
-- entries:
   - date: '2021-10-19'
     key: Durieux2020
     reviewed: /2021/10/19/restarted-and-flaky-builds-on-travis-ci.html
@@ -1201,11 +966,6 @@
     key: BenAri2011
     reviewed: /2011/12/10/a-decade-of-research-and-development-on-program-animation-the-jeliot-experience.html
   name: Ebel, Gil
-- entries:
-  - date: '2021-09-25'
-    key: Schweinsberg2021
-    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
-  name: Edelsbrunner, Peter Adriaan
 - entries:
   - date: '2021-09-26'
     key: Zavgorodniaia2021
@@ -1273,11 +1033,6 @@
     reviewed: /2021/09/21/syntax-predicates-idioms-what-really-affects-code-complexity.html
   name: Feitelson, Dror G.
 - entries:
-  - date: '2021-09-25'
-    key: Schweinsberg2021
-    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
-  name: Feldman, Michael
-- entries:
   - date: '2021-09-20'
     key: Barik2017
     reviewed: /2021/09/20/do-developers-read-compiler-error-messages.html
@@ -1308,11 +1063,6 @@
     reviewed: /2021/09/28/javascript-quality-assurance-tools-and-usage-outcomes.html
   name: Filkov, Vladimir
 - entries:
-  - date: '2021-09-25'
-    key: Schweinsberg2021
-    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
-  name: Finley, Sara
-- entries:
   - date: '2021-08-27'
     key: Miedema2021
     reviewed: /2021/08/27/errors-in-sql-queries.html
@@ -1342,11 +1092,6 @@
     key: Rodeghero2021
     reviewed: /2022/03/28/remote-onboarding.html
   name: Ford, Denae
-- entries:
-  - date: '2021-09-25'
-    key: Schweinsberg2021
-    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
-  name: Fox, Nick
 - entries:
   - date: '2012-11-06'
     key: Ameller2012
@@ -1440,11 +1185,6 @@
     reviewed: /2012/06/18/combining-functional-and-imperative-programming-for-multicore-software-an-empirical-study-evaluating-scala-and-java.html
   name: Garreton, Gilda
 - entries:
-  - date: '2021-09-25'
-    key: Schweinsberg2021
-    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
-  name: Garrison, S. Mason
-- entries:
   - date: '2013-07-24'
     key: Gauthier2013
     reviewed: /2013/07/24/semantic-smells-and-errors-in-access-control-models-a-case-study-in-php.html
@@ -1506,11 +1246,6 @@
     reviewed: /2011/07/18/debugging-in-the-very-large.html
   name: Glerum, Kirk
 - entries:
-  - date: '2021-09-25'
-    key: Schweinsberg2021
-    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
-  name: Gnambs, Timo
-- entries:
   - date: '2011-08-16'
     key: Kapser2008
     reviewed: /2011/08/16/cloning-considered-harmful-considered-harmful.html
@@ -1535,20 +1270,10 @@
     reviewed: /2011/07/07/the-confounding-effect-of-class-size-on-the-validity-of-object-oriented-metrics.html
   name: Goel, N.
 - entries:
-  - date: '2021-09-25'
-    key: Schweinsberg2021
-    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
-  name: Goldstein, Pavel
-- entries:
   - date: '2022-03-04'
     key: Golubev2021
     reviewed: /2022/03/04/software-refactoring.html
   name: Golubev, Yaroslav
-- entries:
-  - date: '2021-09-25'
-    key: Schweinsberg2021
-    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
-  name: Gong, Yuanyuan
 - entries:
   - date: '2021-10-02'
     key: RodriguezPerez2018
@@ -1575,17 +1300,15 @@
   - date: '2021-09-12'
     key: Beller2019
     reviewed: /2021/09/12/developer-testing-in-the-ide.html
+  - date: '2023-03-06'
+    key: Kula2022a
+    reviewed: /2023/03/06/on-time-delivery-in-large-scale-agile.html
   name: Gousios, Georgios
 - entries:
   - date: '2021-10-26'
     key: Taipalus2021
     reviewed: /2021/10/26/error-messages-in-relational-database-systems.html
   name: Grahn, Hilkka
-- entries:
-  - date: '2021-09-25'
-    key: Schweinsberg2021
-    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
-  name: Grand, Erin
 - entries:
   - date: '2011-07-18'
     key: Kinshumann2011
@@ -1612,11 +1335,6 @@
     reviewed: /2012/06/25/usability-analysis-of-visual-programming-environments-a-cognitive-dimensions-framework.html
   name: Green, Thomas R. G.
 - entries:
-  - date: '2021-09-25'
-    key: Schweinsberg2021
-    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
-  name: Greenawalt, Brandon
-- entries:
   - date: '2011-07-18'
     key: Kinshumann2011
     reviewed: /2011/07/18/debugging-in-the-very-large.html
@@ -1631,6 +1349,11 @@
     key: Borle2017
     reviewed: /2021/09/16/analyzing-the-effects-of-tdd-in-github.html
   name: Greiner, Russell
+- entries:
+  - date: '2023-03-06'
+    key: Kula2022a
+    reviewed: /2023/03/06/on-time-delivery-in-large-scale-agile.html
+  name: Greuter, Eric
 - entries:
   - date: '2011-10-18'
     key: Jorgensen2011
@@ -1695,20 +1418,10 @@
     reviewed: /2021/09/23/the-secret-life-of-bugs.html
   name: Hamilton, Travis
 - entries:
-  - date: '2021-09-25'
-    key: Schweinsberg2021
-    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
-  name: Han, Dan
-- entries:
   - date: '2021-10-16'
     key: Han2021
     reviewed: /2021/10/16/open-source-projects-in-baidu-alibaba-and-tencent.html
   name: Han, Junxiao
-- entries:
-  - date: '2021-09-25'
-    key: Schweinsberg2021
-    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
-  name: Hanel, Paul H.P.
 - entries:
   - date: '2012-10-25'
     key: Hanenberg2010
@@ -1790,11 +1503,6 @@
     key: Jolak2020
     reviewed: /2022/03/31/textual-vs-graphic-design-descriptions-and-communication.html
   name: Hebig, Regina
-- entries:
-  - date: '2021-09-25'
-    key: Schweinsberg2021
-    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
-  name: Heer, Jeffrey
 - entries:
   - date: '2016-04-26'
     key: Nakshatri2016
@@ -1938,16 +1646,6 @@
     reviewed: /2021/09/22/taxonomy-of-package-management.html
   name: Homer, Michael
 - entries:
-  - date: '2021-09-25'
-    key: Schweinsberg2021
-    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
-  name: Hong, Antony B.
-- entries:
-  - date: '2021-09-25'
-    key: Schweinsberg2021
-    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
-  name: Hood, David
-- entries:
   - date: '2021-09-01'
     key: Hora2021b
     reviewed: /2021/09/01/what-code-is-deliberately-excluded-from-test-coverage-and-why.html
@@ -1971,11 +1669,6 @@
     reviewed: /2021/09/04/do-software-developers-understand-open-source-licenses.html
   name: Hoye, Mike
 - entries:
-  - date: '2021-09-25'
-    key: Schweinsberg2021
-    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
-  name: Hsueh, Justin
-- entries:
   - date: '2021-08-17'
     key: Peng2021
     reviewed: /2021/08/17/python-language-features.html
@@ -1986,11 +1679,6 @@
     reviewed: /2012/01/17/a-survey-of-the-practice-of-computational-science.html
   name: Huang, Jialu
 - entries:
-  - date: '2021-09-25'
-    key: Schweinsberg2021
-    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
-  name: Huang, Lilian
-- entries:
   - date: '2021-10-26'
     key: Zhang2021a
     reviewed: /2021/10/26/enriching-api-documentation-with-code-samples-and-usage-scenarios.html
@@ -1998,16 +1686,6 @@
     key: Yang2022
     reviewed: /2022/09/19/developer-git-knowledge.html
   name: Huang, Zhiqiu
-- entries:
-  - date: '2021-09-25'
-    key: Schweinsberg2021
-    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
-  name: Hui, Kent N.
-- entries:
-  - date: '2021-09-25'
-    key: Schweinsberg2021
-    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
-  name: Hultman, Keith A.
 - entries:
   - date: '2011-12-04'
     key: Hundhausen2011
@@ -2077,11 +1755,6 @@
     reviewed: /2014/10/09/simple-testing-can-prevent-most-critical-failures.html
   name: Jain, Pranay U.
 - entries:
-  - date: '2021-09-25'
-    key: Schweinsberg2021
-    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
-  name: Javaid, Azka
-- entries:
   - date: '2013-06-13'
     key: Staples2013
     reviewed: /2013/06/13/formal-specifications-better-than-function-points-for-code-sizing.html
@@ -2106,11 +1779,6 @@
     key: Zhang2021a
     reviewed: /2021/10/26/enriching-api-documentation-with-code-samples-and-usage-scenarios.html
   name: Jiang, He
-- entries:
-  - date: '2021-09-25'
-    key: Schweinsberg2021
-    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
-  name: Jiang, Lily Ji
 - entries:
   - date: '2022-04-11'
     key: Shao2020
@@ -2142,11 +1810,6 @@
     reviewed: /2021/09/21/build-systems-a-la-carte.html
   name: Jones, Simon Peyton
 - entries:
-  - date: '2021-09-25'
-    key: Schweinsberg2021
-    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
-  name: Jong, Jonathan
-- entries:
   - date: '2016-09-09'
     key: Krein2016
     reviewed: /2016/09/09/replicating-design-patterns-experiment.html
@@ -2174,20 +1837,10 @@
     reviewed: /2012/06/12/software-development-estimation-biases-the-role-of-interdependence.html
   name: "J\xF8rgensen, Magne"
 - entries:
-  - date: '2021-09-25'
-    key: Schweinsberg2021
-    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
-  name: Kale, Alex
-- entries:
   - date: '2022-04-23'
     key: Kochhar2019
     reviewed: /2022/04/23/closed-to-open-source.html
   name: Kalliamvakou, Eirini
-- entries:
-  - date: '2021-09-25'
-    key: Schweinsberg2021
-    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
-  name: Kamdar, Jash
 - entries:
   - date: '2011-08-09'
     key: McIntosh2011
@@ -2206,16 +1859,6 @@
     key: Becker2019
     reviewed: /2021/09/02/compiler-error-messages-considered-unhelpful.html
   name: Kamil, Amir
-- entries:
-  - date: '2021-09-25'
-    key: Schweinsberg2021
-    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
-  name: Kane, David
-- entries:
-  - date: '2021-09-25'
-    key: Schweinsberg2021
-    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
-  name: Kappler, Gregor
 - entries:
   - date: '2011-08-16'
     key: Kapser2008
@@ -2237,20 +1880,10 @@
     reviewed: /2014/04/25/cassandra-proactive-conflict-minimization-through-optimized-task-scheduling.html
   name: Kasi, Bakhtiar Khan
 - entries:
-  - date: '2021-09-25'
-    key: Schweinsberg2021
-    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
-  name: Kaszubowski, Erikson
-- entries:
   - date: '2021-09-28'
     key: Kavaler2019
     reviewed: /2021/09/28/javascript-quality-assurance-tools-and-usage-outcomes.html
   name: Kavaler, David
-- entries:
-  - date: '2021-09-25'
-    key: Schweinsberg2021
-    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
-  name: Kavanagh, Christopher M.
 - entries:
   - date: '2022-03-14'
     key: Mo2021
@@ -2264,11 +1897,6 @@
     key: Spinellis2016
     reviewed: /2021/09/23/two-studies-of-software-evolution.html
   name: Kechagia, Maria
-- entries:
-  - date: '2021-09-25'
-    key: Schweinsberg2021
-    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
-  name: Kelchtermans, Stijn
 - entries:
   - date: '2021-10-14'
     key: Gao2020
@@ -2284,11 +1912,6 @@
     key: Kocaguneli2012
     reviewed: /2012/04/17/ensemble-effort-estimation.html
   name: Keung, Jacky W.
-- entries:
-  - date: '2021-09-25'
-    key: Schweinsberg2021
-    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
-  name: Khabsa, Madian
 - entries:
   - date: '2012-05-17'
     key: Khomh2012
@@ -2364,11 +1987,6 @@
     reviewed: /2013/06/13/formal-specifications-better-than-function-points-for-code-sizing.html
   name: Klein, Gerwin
 - entries:
-  - date: '2021-09-25'
-    key: Schweinsberg2021
-    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
-  name: Kleinberg, Bennett
-- entries:
   - date: '2016-09-09'
     key: Krein2016
     reviewed: /2016/09/09/replicating-design-patterns-experiment.html
@@ -2419,20 +2037,10 @@
     reviewed: /2015/02/13/on-comprehension-of-program-comprehension.html
   name: Koschke, Rainer
 - entries:
-  - date: '2021-09-25'
-    key: Schweinsberg2021
-    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
-  name: Kouros, Jens
-- entries:
   - date: '2021-10-15'
     key: Bogomolov2021
     reviewed: /2021/10/15/authorship-attribution-of-source-code.html
   name: Kovalenko, Vladimir
-- entries:
-  - date: '2021-09-25'
-    key: Schweinsberg2021
-    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
-  name: Krause, Heather
 - entries:
   - date: '2016-09-09'
     key: Krein2016
@@ -2457,15 +2065,15 @@
     reviewed: /2021/09/06/commenting-source-code.html
   name: Krolikowski, Dariusz
 - entries:
-  - date: '2021-09-25'
-    key: Schweinsberg2021
-    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
-  name: Krypotos, Angelos-Miltiadis
-- entries:
   - date: '2021-09-06'
     key: Nielebock2018
     reviewed: /2021/09/06/commenting-source-code.html
   name: "Kr\xFCger, Jacob"
+- entries:
+  - date: '2023-03-06'
+    key: Kula2022a
+    reviewed: /2023/03/06/on-time-delivery-in-large-scale-agile.html
+  name: Kula, Elvan
 - entries:
   - date: '2021-08-23'
     key: Hata2019
@@ -2549,11 +2157,6 @@
     reviewed: /2016/09/16/five-from-icer-2016.html
   name: Laurenzano, Michael A.
 - entries:
-  - date: '2021-09-25'
-    key: Schweinsberg2021
-    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
-  name: Lavbivc, Dejan
-- entries:
   - date: '2021-09-26'
     key: Menzies2016
     reviewed: /2021/09/26/are-delayed-issues-harder-to-resolve.html
@@ -2568,16 +2171,6 @@
     key: Davis2019
     reviewed: /2021/08/30/two-studies-of-regular-expressions.html
   name: Lee, Dongyoon
-- entries:
-  - date: '2021-09-25'
-    key: Schweinsberg2021
-    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
-  name: Lee, Rui Ling
-- entries:
-  - date: '2021-09-25'
-    key: Schweinsberg2021
-    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
-  name: Leffel, Timothy
 - entries:
   - date: '2021-09-06'
     key: Nielebock2018
@@ -2652,17 +2245,15 @@
   - date: '2023-02-25'
     key: AlencarDaCosta2023
     reviewed: /2023/02/25/learning-and-developing-with-sql.html
+  - date: '2023-03-09'
+    key: Licorish2022
+    reviewed: /2023/03/09/combining-gin-and-pmd-for-code-improvements.html
   name: Licorish, Sherlock A.
 - entries:
   - date: '2011-10-22'
     key: Apel2011
     reviewed: /2011/10/22/three-empirical-studies-from-esecfse11.html
   name: "Liebig, J\xF6rg"
-- entries:
-  - date: '2021-09-25'
-    key: Schweinsberg2021
-    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
-  name: Lim, Wei Yang
 - entries:
   - date: '2022-04-20'
     key: Lima2021
@@ -2717,11 +2308,6 @@
     reviewed: /2016/10/01/apex.html
   name: Liu, Peng
 - entries:
-  - date: '2021-09-25'
-    key: Schweinsberg2021
-    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
-  name: Liu, Yang
-- entries:
   - date: '2021-11-08'
     key: Tomassi2019
     reviewed: /2021/11/08/my-kingdom-for-a-dataset.html
@@ -2731,11 +2317,6 @@
     key: Tao2021
     reviewed: /2021/10/17/demystifying-error-messages-in-data-science-libraries.html
   name: Liu, Yepang
-- entries:
-  - date: '2021-09-25'
-    key: Schweinsberg2021
-    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
-  name: Liverani, Silvia
 - entries:
   - date: '2016-06-09'
     key: Lo2015
@@ -2747,11 +2328,6 @@
     key: Bao2021
     reviewed: /2022/04/04/contributor-prediction-for-github.html
   name: Lo, David
-- entries:
-  - date: '2021-09-25'
-    key: Schweinsberg2021
-    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
-  name: Loh, Bianca
 - entries:
   - date: '2011-07-18'
     key: Kinshumann2011
@@ -2786,16 +2362,6 @@
     reviewed: /2012/01/05/the-effects-of-stand-up-and-sit-down-meeting-formats-on-meeting-outcomes.html
   name: Love, Mary Sue
 - entries:
-  - date: '2021-09-25'
-    key: Schweinsberg2021
-    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
-  name: Low, Jia Wei
-- entries:
-  - date: '2021-09-25'
-    key: Schweinsberg2021
-    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
-  name: Lu, Alton
-- entries:
   - date: '2021-09-20'
     key: Barik2017
     reviewed: /2021/09/20/do-developers-read-compiler-error-messages.html
@@ -2829,20 +2395,10 @@
     reviewed: /2021/11/26/metric-based-comparisons-of-software-libraries.html
   name: "L\xF3pez de la Mora, Fernando"
 - entries:
-  - date: '2021-09-25'
-    key: Schweinsberg2021
-    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
-  name: "L\xF8nsmann, Dorte"
-- entries:
   - date: '2015-02-13'
     key: Maalej2014
     reviewed: /2015/02/13/on-comprehension-of-program-comprehension.html
   name: Maalej, Walid
-- entries:
-  - date: '2021-09-25'
-    key: Schweinsberg2021
-    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
-  name: MacDonald, Kyle
 - entries:
   - date: '2011-12-21'
     key: McLeod2011
@@ -2854,30 +2410,10 @@
     reviewed: /2023/03/03/emotional-rollercoaster-requirements-changes.html
   name: Madampe, Kashumi
 - entries:
-  - date: '2021-09-25'
-    key: Schweinsberg2021
-    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
-  name: Madan, Christopher R.
-- entries:
-  - date: '2021-09-25'
-    key: Schweinsberg2021
-    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
-  name: Madan, Nikhil
-- entries:
-  - date: '2021-09-25'
-    key: Schweinsberg2021
-    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
-  name: Madsen, Lasse Hjorth
-- entries:
   - date: '2021-12-13'
     key: Mahmoudi2019
     reviewed: /2021/12/13/refactorings-in-merge-conflicts.html
   name: Mahmoudi, Mehran
-- entries:
-  - date: '2021-09-25'
-    key: Schweinsberg2021
-    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
-  name: Maimone, Christina
 - entries:
   - date: '2021-09-10'
     key: Majumder2019
@@ -2897,20 +2433,10 @@
     reviewed: /2021/08/17/python-language-features.html
   name: Malloy, Brian A.
 - entries:
-  - date: '2021-09-25'
-    key: Schweinsberg2021
-    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
-  name: Mandl, Benjamin
-- entries:
   - date: '2021-09-24'
     key: Mangano2015
     reviewed: /2021/09/24/how-software-designers-interact-with-sketches-at-the-whiteboard.html
   name: Mangano, Nicolas
-- entries:
-  - date: '2021-09-25'
-    key: Schweinsberg2021
-    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
-  name: Mangold, Alexandra
 - entries:
   - date: '2021-11-18'
     key: Ni2021
@@ -2927,11 +2453,6 @@
     reviewed: /2011/10/22/three-results-many-definitions.html
   name: Marinescu, Cristina
 - entries:
-  - date: '2021-09-25'
-    key: Schweinsberg2021
-    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
-  name: Marshall, Adrienne
-- entries:
   - date: '2021-11-18'
     key: Ni2021
     reviewed: /2021/11/18/synthesis-approach-for-data-science-api-refactoring.html
@@ -2947,11 +2468,6 @@
     reviewed: /2021/08/18/how-agile-teams-make-self-assignment-work.html
   name: Masood, Zainab
 - entries:
-  - date: '2021-09-25'
-    key: Schweinsberg2021
-    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
-  name: Matskewich, Helena Ester
-- entries:
   - date: '2021-09-26'
     key: Hayashi2019
     reviewed: /2021/09/26/two-papers-on-time.html
@@ -2966,11 +2482,6 @@
     key: Butler2019
     reviewed: /2022/04/18/company-contributions-to-open-source.html
   name: Mattsson, Anders
-- entries:
-  - date: '2021-09-25'
-    key: Schweinsberg2021
-    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
-  name: Mavon, Kimia
 - entries:
   - date: '2012-01-25'
     key: Nagappan2008
@@ -3016,30 +2527,15 @@
     reviewed: /2013/09/20/locating-and-applying-systematic-edits.html
   name: McKinley, Kathryn S.
 - entries:
-  - date: '2021-09-25'
-    key: Schweinsberg2021
-    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
-  name: McLain, Katherine L.
-- entries:
   - date: '2011-12-21'
     key: McLeod2011
     reviewed: /2011/12/21/factors-that-affect-software-systems-development-project-outcomes.html
   name: McLeod, Laurie
 - entries:
-  - date: '2021-09-25'
-    key: Schweinsberg2021
-    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
-  name: McNamara, Amelia A.
-- entries:
   - date: '2022-03-02'
     key: McNamara2018
     reviewed: /2022/03/02/ethics-in-decision-making.html
   name: McNamara, Andrew
-- entries:
-  - date: '2021-09-25'
-    key: Schweinsberg2021
-    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
-  name: McNeill, Mhairi
 - entries:
   - date: '2016-10-02'
     key: Mattmann2015
@@ -3108,11 +2604,6 @@
     reviewed: /2021/09/20/program-comprehension-of-domain-specific-and-general-purpose-languages.html
   name: Mernik, Marjan
 - entries:
-  - date: '2021-09-25'
-    key: Schweinsberg2021
-    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
-  name: Mertens, Ulf
-- entries:
   - date: '2021-10-04'
     key: Meyer2021
     reviewed: /2021/10/04/the-daily-life-of-software-developers.html
@@ -3161,11 +2652,6 @@
     key: Miller2016
     reviewed: /2016/09/16/five-from-icer-2016.html
   name: Miller, Craig S.
-- entries:
-  - date: '2021-09-25'
-    key: Schweinsberg2021
-    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
-  name: Miller, David
 - entries:
   - date: '2016-06-05'
     key: Gulzar2016
@@ -3216,11 +2702,6 @@
     reviewed: /2013/02/12/experimental-assessment-of-software-metrics-using-automated-refactoring.html
   name: Moghadam, Iman Hemati
 - entries:
-  - date: '2021-09-25'
-    key: Schweinsberg2021
-    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
-  name: Mohamed, Zainab
-- entries:
   - date: '2021-09-21'
     key: Mokhov2018
     reviewed: /2021/09/21/build-systems-a-la-carte.html
@@ -3235,16 +2716,6 @@
     key: Wicherts2011
     reviewed: /2012/05/18/willingness-to-share-research-data-is-related-to-the-strength-of-the-evidence-and-the-quality-of-reporting-of-statistical-results.html
   name: Molenaar, Dylan
-- entries:
-  - date: '2021-09-25'
-    key: Schweinsberg2021
-    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
-  name: Moore, Andrew
-- entries:
-  - date: '2021-09-25'
-    key: Schweinsberg2021
-    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
-  name: Moore, Ben
 - entries:
   - date: '2011-08-17'
     key: CruzLemus2009
@@ -3270,11 +2741,6 @@
     key: Abdalkareem2017
     reviewed: /2021/09/17/why-do-developers-use-trivial-packages.html
   name: Mujahid, Suhaib
-- entries:
-  - date: '2021-09-25'
-    key: Schweinsberg2021
-    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
-  name: Murase, Toshio
 - entries:
   - date: '2011-09-05'
     key: Bird2011
@@ -3421,21 +2887,6 @@
     reviewed: /2016/09/09/replicating-design-patterns-experiment.html
   name: Nanthaamornphong, Aziz
 - entries:
-  - date: '2021-09-25'
-    key: Schweinsberg2021
-    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
-  name: Nantz, Eric
-- entries:
-  - date: '2021-09-25'
-    key: Schweinsberg2021
-    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
-  name: Naseeb, Chan
-- entries:
-  - date: '2021-09-25'
-    key: Schweinsberg2021
-    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
-  name: Nasrullah, Ziauddin
-- entries:
   - date: '2016-04-26'
     key: Chen2016
     reviewed: /2016/04/26/maintaining-java-orm.html
@@ -3450,26 +2901,6 @@
     key: Near2016
     reviewed: /2016/04/26/finding-security-bugs.html
   name: Near, Joseph P.
-- entries:
-  - date: '2021-09-25'
-    key: Schweinsberg2021
-    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
-  name: Nejkovic, Valentina
-- entries:
-  - date: '2021-09-25'
-    key: Schweinsberg2021
-    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
-  name: Nell, Colleen S.
-- entries:
-  - date: '2021-09-25'
-    key: Schweinsberg2021
-    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
-  name: Nelson, Andrew A.
-- entries:
-  - date: '2021-09-25'
-    key: Schweinsberg2021
-    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
-  name: Nelson, Andrew Arthur
 - entries:
   - date: '2021-11-29'
     key: Sven2019
@@ -3506,20 +2937,10 @@
     reviewed: /2021/09/06/commenting-source-code.html
   name: Nielebock, Sebastian
 - entries:
-  - date: '2021-09-25'
-    key: Schweinsberg2021
-    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
-  name: Nilsonne, Gustav
-- entries:
   - date: '2012-07-18'
     key: Dang2012
     reviewed: /2012/07/18/clustering-duplicate-crash-reports.html
   name: Nobel, Peter
-- entries:
-  - date: '2021-09-25'
-    key: Schweinsberg2021
-    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
-  name: Nolan, Rory
 - entries:
   - date: '2011-09-13'
     key: Brun2011
@@ -3541,21 +2962,6 @@
     reviewed: /2012/02/23/looking-at-the-same-thing-in-pair-programming-tasks.html
   name: "N\xFCssli, Marc-Antoine"
 - entries:
-  - date: '2021-09-25'
-    key: Schweinsberg2021
-    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
-  name: O'Brien, Christopher E.
-- entries:
-  - date: '2021-09-25'
-    key: Schweinsberg2021
-    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
-  name: O'Neill, Patrick
-- entries:
-  - date: '2021-09-25'
-    key: Schweinsberg2021
-    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
-  name: O'Shea, Kieran
-- entries:
   - date: '2012-01-17'
     key: Prabhu2011
     reviewed: /2012/01/17/a-survey-of-the-practice-of-computational-science.html
@@ -3565,11 +2971,6 @@
     key: Fucci2016
     reviewed: /2016/10/05/test-driven-development.html
   name: Oivo, Markku
-- entries:
-  - date: '2021-09-25'
-    key: Schweinsberg2021
-    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
-  name: Olita, Toto
 - entries:
   - date: '2021-08-21'
     key: Oliveira2020
@@ -3621,12 +3022,7 @@
   - date: '2021-09-25'
     key: Schweinsberg2021
     reviewed: /2021/09/25/how-reliable-is-scientific-software.html
-  name: Otner, Sarah M.G.
-- entries:
-  - date: '2021-09-25'
-    key: Schweinsberg2021
-    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
-  name: Otterbacher, Jahna
+  name: others
 - entries:
   - date: '2013-06-06'
     key: Lewis2013
@@ -3668,11 +3064,6 @@
     key: Sellitto2022
     reviewed: /2023/03/01/refactoring-and-program-comprehension.html
   name: Palomba, Fabio
-- entries:
-  - date: '2021-09-25'
-    key: Schweinsberg2021
-    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
-  name: Palsetia, Diana
 - entries:
   - date: '2021-09-11'
     key: Pan2008
@@ -3784,11 +3175,6 @@
     reviewed: /2021/08/29/software-development-waste.html
   name: Peraire, Cecile
 - entries:
-  - date: '2021-09-25'
-    key: Schweinsberg2021
-    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
-  name: Pereira, Bianca
-- entries:
   - date: '2016-09-30'
     key: PerezDeRosso2016
     reviewed: /2016/09/30/rethinking-git.html
@@ -3884,20 +3270,10 @@
     reviewed: /2021/08/17/python-language-features.html
   name: Power, James F.
 - entries:
-  - date: '2021-09-25'
-    key: Schweinsberg2021
-    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
-  name: Pozdniakov, Ivan
-- entries:
   - date: '2012-01-17'
     key: Prabhu2011
     reviewed: /2012/01/17/a-survey-of-the-practice-of-computational-science.html
   name: Prabhu, Prakash
-- entries:
-  - date: '2021-09-25'
-    key: Schweinsberg2021
-    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
-  name: Prasad, Vaishali Venkatesh
 - entries:
   - date: '2021-09-02'
     key: Becker2019
@@ -3926,11 +3302,6 @@
     key: Beller2019
     reviewed: /2021/09/12/developer-testing-in-the-ide.html
   name: Proksch, Sebastian
-- entries:
-  - date: '2021-09-25'
-    key: Schweinsberg2021
-    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
-  name: Protzko, John
 - entries:
   - date: '2021-10-17'
     key: Tao2021
@@ -4028,16 +3399,6 @@
     reviewed: /2014/10/09/simple-testing-can-prevent-most-critical-failures.html
   name: Renna Rodrigues, Guilherme
 - entries:
-  - date: '2021-09-25'
-    key: Schweinsberg2021
-    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
-  name: Reyt, Jean-Nicolas
-- entries:
-  - date: '2021-09-25'
-    key: Schweinsberg2021
-    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
-  name: Riddle, Travis
-- entries:
   - date: '2011-07-18'
     key: Rigby2011
     reviewed: /2011/07/18/understanding-broadcast-based-peer-review-on-open-source-projects.html
@@ -4090,16 +3451,6 @@
     reviewed: /2022/04/14/generating-unit-tests-for-documentation.html
   name: Robillard, Martin P.
 - entries:
-  - date: '2021-09-25'
-    key: Schweinsberg2021
-    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
-  name: Robinson, David
-- entries:
-  - date: '2021-09-25'
-    key: Schweinsberg2021
-    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
-  name: Robinson, Emily
-- entries:
   - date: '2021-10-02'
     key: RodriguezPerez2018
     reviewed: /2021/10/02/reproducibility-and-credibility-in-empirical-software-engineering.html
@@ -4151,16 +3502,6 @@
     reviewed: /2021/10/21/the-impact-of-sleep-deprivation.html
   name: Romano, Simone
 - entries:
-  - date: '2021-09-25'
-    key: Schweinsberg2021
-    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
-  name: Ropovik, Ivan
-- entries:
-  - date: '2021-09-25'
-    key: Schweinsberg2021
-    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
-  name: Rosenberg, Joshua M.
-- entries:
   - date: '2011-08-24'
     key: Rossbach2010
     reviewed: /2011/08/24/is-transactional-programming-actually-easier.html
@@ -4170,11 +3511,6 @@
     key: Meneely2011
     reviewed: /2011/09/06/does-adding-manpower-also-affect-quality.html
   name: Rotella, Pete
-- entries:
-  - date: '2021-09-25'
-    key: Schweinsberg2021
-    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
-  name: Rothen, Stephane
 - entries:
   - date: '2021-11-08'
     key: Tomassi2019
@@ -4258,11 +3594,6 @@
     reviewed: /2021/10/21/the-impact-of-sleep-deprivation.html
   name: Scanniello, Giuseppe
 - entries:
-  - date: '2021-09-25'
-    key: Schweinsberg2021
-    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
-  name: Schaumans, Catherine B.C.
-- entries:
   - date: '2021-09-23'
     key: Malik2019
     reviewed: /2021/09/23/the-secret-life-of-bugs.html
@@ -4292,11 +3623,6 @@
     key: Barnett2011
     reviewed: /2011/06/30/specification-and-verification-the-spec-experience.html
   name: Schulte, Wolfram
-- entries:
-  - date: '2021-09-25'
-    key: Schweinsberg2021
-    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
-  name: Schulte-Mecklenbeck, Michael
 - entries:
   - date: '2021-09-25'
     key: Schweinsberg2021
@@ -4366,11 +3692,6 @@
     reviewed: /2022/04/11/database-performance-antipatterns.html
   name: Shao, Shudi
 - entries:
-  - date: '2021-09-25'
-    key: Schweinsberg2021
-    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
-  name: Sharma, Nirek
-- entries:
   - date: '2022-04-25'
     key: Sharma2021
     reviewed: /2022/04/25/rationale-for-open-source-development-decisions.html
@@ -4398,11 +3719,6 @@
     key: Behroozi2020
     reviewed: /2021/09/13/whats-wrong-with-tech-hiring.html
   name: Shirolkar, Shivani
-- entries:
-  - date: '2021-09-25'
-    key: Schweinsberg2021
-    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
-  name: Shotwell, Gordon
 - entries:
   - date: '2021-09-26'
     key: Zavgorodniaia2021
@@ -4437,11 +3753,6 @@
     reviewed: /2011/07/04/requirements-prioritization-in-agile-projects-insights-from-a-case-study.html
   name: Sikkel, Klaas
 - entries:
-  - date: '2021-09-25'
-    key: Schweinsberg2021
-    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
-  name: Silberzahn, Raphael
-- entries:
   - date: '2012-04-10'
     key: Philip2012
     reviewed: /2012/04/10/component-reuse-vs-snippet-remixing.html
@@ -4475,11 +3786,6 @@
     reviewed: /2011/09/22/variability-and-reproducibility-in-software-engineering-a-study-of-four-companies-that-developed-the-same-system.html
   name: "Sj\xF8berg, D.I.K."
 - entries:
-  - date: '2021-09-25'
-    key: Schweinsberg2021
-    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
-  name: Skarzynski, Martin
-- entries:
   - date: '2011-10-24'
     key: Stefik2011
     reviewed: /2011/10/24/an-empirical-comparison-of-the-accuracy-rates-of-novices-using-the-quorum-perl-and-randomo-programming-languages.html
@@ -4505,16 +3811,6 @@
     key: Danilova2021
     reviewed: /2022/04/13/do-you-really-code.html
   name: Smith, Matthew
-- entries:
-  - date: '2021-09-25'
-    key: Schweinsberg2021
-    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
-  name: Snellman, Kaisa
-- entries:
-  - date: '2021-09-25'
-    key: Schweinsberg2021
-    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
-  name: Sommer, S. Amy
 - entries:
   - date: '2013-06-06'
     key: Kim2013a
@@ -4558,16 +3854,6 @@
     reviewed: /2013/06/13/formal-specifications-better-than-function-points-for-code-sizing.html
   name: Staples, Mark
 - entries:
-  - date: '2021-09-25'
-    key: Schweinsberg2021
-    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
-  name: Staub, Nicola
-- entries:
-  - date: '2021-09-25'
-    key: Schweinsberg2021
-    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
-  name: Stedden, William
-- entries:
   - date: '2011-10-24'
     key: Stefik2011
     reviewed: /2011/10/24/an-empirical-comparison-of-the-accuracy-rates-of-novices-using-the-quorum-perl-and-randomo-programming-languages.html
@@ -4589,16 +3875,6 @@
     reviewed: /2021/09/30/effects-of-adopting-code-review-bots.html
   name: Steinmacher, Igor
 - entries:
-  - date: '2021-09-25'
-    key: Schweinsberg2021
-    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
-  name: Stodden, Victoria
-- entries:
-  - date: '2021-09-25'
-    key: Schweinsberg2021
-    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
-  name: Stoffel, Martin A.
-- entries:
   - date: '2011-06-27'
     key: Stolee2011
     reviewed: /2011/06/27/refactoring-pipe-like-mashups-for-end-user-programmers.html
@@ -4610,11 +3886,6 @@
     reviewed: /2023/02/25/fairness-and-code-smells-in-machine-learning.html
   name: Stolee, Kathryn T.
 - entries:
-  - date: '2021-09-25'
-    key: Schweinsberg2021
-    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
-  name: Stoltzman, Scott
-- entries:
   - date: '2011-07-18'
     key: Rigby2011
     reviewed: /2011/07/18/understanding-broadcast-based-peer-review-on-open-source-projects.html
@@ -4622,11 +3893,6 @@
     key: Gousios2016
     reviewed: /2016/06/07/pull-based-development.html
   name: Storey, Margaret-Anne
-- entries:
-  - date: '2021-09-25'
-    key: Schweinsberg2021
-    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
-  name: Strobl, Carolin
 - entries:
   - date: '2021-10-03'
     key: Moldon2021
@@ -4660,11 +3926,6 @@
     key: Rigger2020
     reviewed: /2021/10/07/finding-bugs-in-database-systems-via-query-partitioning.html
   name: Su, Zhendong
-- entries:
-  - date: '2021-09-25'
-    key: Schweinsberg2021
-    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
-  name: Subbaiah, Subashini
 - entries:
   - date: '2011-12-10'
     key: BenAri2011
@@ -4714,11 +3975,6 @@
     reviewed: /2021/10/17/demystifying-error-messages-in-data-science-libraries.html
   name: Tao, Yida
 - entries:
-  - date: '2021-09-25'
-    key: Schweinsberg2021
-    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
-  name: Tatman, Rachael
-- entries:
   - date: '2016-06-05'
     key: Gulzar2016
     reviewed: /2016/06/05/bigdebug.html
@@ -4733,11 +3989,6 @@
     key: Nakshatri2016
     reviewed: /2016/04/26/java-exception-handling.html
   name: Thandra, Sahithi
-- entries:
-  - date: '2021-09-25'
-    key: Schweinsberg2021
-    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
-  name: Thibodeau, Paul H.
 - entries:
   - date: '2016-06-07'
     key: Thongtanunam2016
@@ -4764,20 +4015,10 @@
     reviewed: /2016/06/12/empirical-parellelism.html
   name: Tichy, Walter F.
 - entries:
-  - date: '2021-09-25'
-    key: Schweinsberg2021
-    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
-  name: Tierney, Warren
-- entries:
   - date: '2021-11-08'
     key: Tomassi2019
     reviewed: /2021/11/08/my-kingdom-for-a-dataset.html
   name: Tomassi, David
-- entries:
-  - date: '2021-09-25'
-    key: Schweinsberg2021
-    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
-  name: Tomkins, Sabina
 - entries:
   - date: '2011-08-17'
     key: DeLucia2009
@@ -4866,11 +4107,6 @@
     reviewed: /2022/04/06/adoption-of-javascript-linters.html
   name: "T\xF3masd\xF3ttir, Krist\xEDn Fj\xF3la"
 - entries:
-  - date: '2021-09-25'
-    key: Schweinsberg2021
-    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
-  name: Uhlmann, Eric Luis
-- entries:
   - date: '2012-04-10'
     key: Philip2012
     reviewed: /2012/04/10/component-reuse-vs-snippet-remixing.html
@@ -4880,26 +4116,6 @@
     key: Fucci2016
     reviewed: /2016/10/05/test-driven-development.html
   name: Uyaguari, Fernando
-- entries:
-  - date: '2021-09-25'
-    key: Schweinsberg2021
-    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
-  name: Valdivia, Ana
-- entries:
-  - date: '2021-09-25'
-    key: Schweinsberg2021
-    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
-  name: van Aert, Robbie C.M.
-- entries:
-  - date: '2021-09-25'
-    key: Schweinsberg2021
-    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
-  name: van Assen, Marcel A.L.M.
-- entries:
-  - date: '2021-09-25'
-    key: Schweinsberg2021
-    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
-  name: van den Akker, Olmo R.
 - entries:
   - date: '2021-08-12'
     key: Ghiotto2020
@@ -4921,6 +4137,9 @@
   - date: '2023-02-25'
     key: Zhang2022a
     reviewed: /2023/02/25/fairness-and-code-smells-in-machine-learning.html
+  - date: '2023-03-06'
+    key: Kula2022a
+    reviewed: /2023/03/06/on-time-delivery-in-large-scale-agile.html
   name: van Deursen, Arie
 - entries:
   - date: '2011-10-11'
@@ -4977,21 +4196,6 @@
     reviewed: /2011/06/30/specification-and-verification-the-spec-experience.html
   name: Venter, Herman
 - entries:
-  - date: '2021-09-25'
-    key: Schweinsberg2021
-    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
-  name: Viana, Laura
-- entries:
-  - date: '2021-09-25'
-    key: Schweinsberg2021
-    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
-  name: Viganola, Domenico
-- entries:
-  - date: '2021-09-25'
-    key: Schweinsberg2021
-    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
-  name: "Villes\xE8che, Florence"
-- entries:
   - date: '2022-03-31'
     key: Jolak2020
     reviewed: /2022/03/31/textual-vs-graphic-design-descriptions-and-communication.html
@@ -5012,10 +4216,10 @@
     reviewed: /2021/10/03/how-gamification-affects-software-developers.html
   name: Wachs, Johannes
 - entries:
-  - date: '2021-09-25'
-    key: Schweinsberg2021
-    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
-  name: Wadsworth, W. Duncan
+  - date: '2023-03-09'
+    key: Licorish2022
+    reviewed: /2023/03/09/combining-gin-and-pmd-for-code-improvements.html
+  name: Wagner, Markus
 - entries:
   - date: '2022-03-16'
     key: Fritzsch2021
@@ -5026,11 +4230,6 @@
     key: Prabhu2011
     reviewed: /2012/01/17/a-survey-of-the-practice-of-computational-science.html
   name: Walker, David
-- entries:
-  - date: '2021-09-25'
-    key: Schweinsberg2021
-    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
-  name: Wanders, Florian
 - entries:
   - date: '2021-08-30'
     key: Wang2020a
@@ -5075,11 +4274,6 @@
     reviewed: /2016/04/26/game-postmortems.html
   name: Washburn, Michael
 - entries:
-  - date: '2021-09-25'
-    key: Schweinsberg2021
-    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
-  name: Watts, Krista
-- entries:
   - date: '2021-09-17'
     key: Abdalkareem2017
     reviewed: /2021/09/17/why-do-developers-use-trivial-packages.html
@@ -5095,11 +4289,6 @@
     reviewed: /2011/08/30/what-makes-a-good-bug-report.html
   name: Weiss, Cathrin
 - entries:
-  - date: '2021-09-25'
-    key: Schweinsberg2021
-    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
-  name: Wells, Jason D
-- entries:
   - date: '2021-09-30'
     key: Wessel2020
     reviewed: /2021/09/30/effects-of-adopting-code-review-bots.html
@@ -5107,11 +4296,6 @@
     key: Kinsman2021
     reviewed: /2021/10/07/how-do-software-developers-use-github-actions.html
   name: Wessel, Mairieli
-- entries:
-  - date: '2021-09-25'
-    key: Schweinsberg2021
-    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
-  name: Whelpley, Christopher E.
 - entries:
   - date: '2021-10-01'
     key: Bafatakis2019
@@ -5170,11 +4354,6 @@
     reviewed: /2011/08/24/is-transactional-programming-actually-easier.html
   name: Witchel, Emmett
 - entries:
-  - date: '2021-09-25'
-    key: Schweinsberg2021
-    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
-  name: Won, Andy
-- entries:
   - date: '2021-09-21'
     key: Ajami2018
     reviewed: /2021/09/21/syntax-predicates-idioms-what-really-affects-code-complexity.html
@@ -5189,11 +4368,6 @@
     key: Akerblom2016
     reviewed: /2016/06/13/polymorphism-in-python.html
   name: Wrigstad, Tobias
-- entries:
-  - date: '2021-09-25'
-    key: Schweinsberg2021
-    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
-  name: Wu, Lawrence
 - entries:
   - date: '2012-07-18'
     key: Dang2012
@@ -5279,11 +4453,6 @@
     reviewed: /2022/09/19/developer-git-knowledge.html
   name: Yang, Wenhua
 - entries:
-  - date: '2021-09-25'
-    key: Schweinsberg2021
-    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
-  name: Yarkoni, Tal
-- entries:
   - date: '2022-03-09'
     key: Yasmin2020
     reviewed: /2022/03/09/rest-api-deprecation.html
@@ -5299,25 +4468,10 @@
     reviewed: /2011/10/22/three-empirical-studies-from-esecfse11.html
   name: Yin, Zuoning
 - entries:
-  - date: '2021-09-25'
-    key: Schweinsberg2021
-    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
-  name: Yip, Arthur
-- entries:
   - date: '2016-06-05'
     key: Gulzar2016
     reviewed: /2016/06/05/bigdebug.html
   name: Yoo, Seunghyun
-- entries:
-  - date: '2021-09-25'
-    key: Schweinsberg2021
-    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
-  name: Youngflesh, Casey
-- entries:
-  - date: '2021-09-25'
-    key: Schweinsberg2021
-    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
-  name: Yu, Ju-Chi
 - entries:
   - date: '2022-04-11'
     key: Shao2020
@@ -5349,11 +4503,6 @@
     key: Zampetti2020
     reviewed: /2021/10/18/bad-practices-in-continuous-integration.html
   name: Zampetti, Fiorella
-- entries:
-  - date: '2021-09-25'
-    key: Schweinsberg2021
-    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
-  name: Zandian, Arash
 - entries:
   - date: '2021-09-26'
     key: Zavgorodniaia2021
@@ -5406,11 +4555,6 @@
     key: Zhang2021a
     reviewed: /2021/10/26/enriching-api-documentation-with-code-samples-and-usage-scenarios.html
   name: Zhang, Jingxuan
-- entries:
-  - date: '2021-09-25'
-    key: Schweinsberg2021
-    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
-  name: Zhang, Leilei
 - entries:
   - date: '2021-10-01'
     key: Miller2020
@@ -5484,11 +4628,6 @@
     key: Yuan2014
     reviewed: /2014/10/09/simple-testing-can-prevent-most-critical-failures.html
   name: Zhuang, Xin
-- entries:
-  - date: '2021-09-25'
-    key: Schweinsberg2021
-    reviewed: /2021/09/25/how-reliable-is-scientific-software.html
-  name: Zibman, Chava
 - entries:
   - date: '2011-08-30'
     key: Bettenburg2008
