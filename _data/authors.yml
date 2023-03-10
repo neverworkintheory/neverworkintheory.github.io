@@ -848,6 +848,11 @@
     reviewed: /2022/05/20/a-note-on-communication.html
   name: Decan, Alexandre
 - entries:
+  - date: '2023-03-10'
+    key: Margulieux2020
+    reviewed: /2023/03/10/reducing-withdrawal-and-failure-rates-with-labeled-subgoals.html
+  name: Decker, Adrienne
+- entries:
   - date: '2011-06-30'
     key: Cherubini2007
     reviewed: /2011/06/30/lets-go-to-the-whiteboard.html
@@ -2448,6 +2453,11 @@
     reviewed: /2011/08/17/three-empirical-evaluations-of-uml.html
   name: Manso, M. Esperanza
 - entries:
+  - date: '2023-03-10'
+    key: Margulieux2020
+    reviewed: /2023/03/10/reducing-withdrawal-and-failure-rates-with-labeled-subgoals.html
+  name: Margulieux, Lauren E.
+- entries:
   - date: '2011-10-22'
     key: Marinescu2011
     reviewed: /2011/10/22/three-results-many-definitions.html
@@ -2731,6 +2741,11 @@
     key: Aghajani2019
     reviewed: /2021/10/06/software-documentation-issues-unveiled.html
   name: Moreno, Laura
+- entries:
+  - date: '2023-03-10'
+    key: Margulieux2020
+    reviewed: /2023/03/10/reducing-withdrawal-and-failure-rates-with-labeled-subgoals.html
+  name: Morrison, Briana B.
 - entries:
   - date: '2021-09-22'
     key: Muhammad2019
