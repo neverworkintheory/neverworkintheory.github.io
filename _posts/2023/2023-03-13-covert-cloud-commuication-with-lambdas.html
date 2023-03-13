@@ -1,0 +1,50 @@
+---
+layout: post
+author: Greg Wilson
+title: "Covert Cloud Communication with Lambdas"
+date: 2023-03-13
+categories: ["Cloud Computing", "Security"]
+---
+
+<p>
+  The biggest change in practical computing in the last decade has been
+  the nearly-universal return to shared hardware.
+  As with the mainframes of my youth,
+  companies rent time on other people's computers rather than buying and managing their own.
+  And as with any form of sharing,
+  that opens up new security holes and new avenues of attack.
+</p>
+
+<p>
+  This paper looks at something I would once have dismisssed as Hollywood word salad:
+  covert communication between lambdas co-resident on the same physical server.
+  The authors leverage the hardware's memory bus to detect what's running,
+  and show that they can send a couple of hundred bits per second
+  between supposedly-isolated processes.
+  That might not seem like a lot,
+  but it's more than enough to share a password or a private key,
+  and like most of computer security it's both fascinating and frightening.
+</p>
+
+<p>Anil Yelam, Shibani Subbareddy, Keerthana Ganesan, Stefan Savage, and Ariana Mirian.
+CoResident evil: covert communication in the cloud with lambdas.
+In <em>Proceedings of the Web Conference 2021</em>. ACM, Apr 2021.
+<a href="https://doi.org/10.1145/3442381.3450100">doi:10.1145/3442381.3450100</a>.</p>
+
+<blockquote>
+  <p>
+    "Serverless" cloud services, such as AWS lambdas, are one of the fastest growing segments of the cloud services market.
+    These services are popular in part due to their light-weight nature and flexibility in scheduling and cost,
+    however the security issues associated with serverless computing are not well understood.
+    In this work, we explore the feasibility of constructing a practical covert channel from lambdas.
+    We establish that a fast co-residence detection for lambdas is key to enabling such a covert channel,
+    and proceed to develop a reliable and scalable co-residence detector based on the memory bus hardware.
+    Our technique enables dynamic discovery for co-resident lambdas and is incredibly fast,
+    executing in a matter of seconds.
+    We evaluate our approach for correctness and scalability,
+    and use it to establish covert channels and perform data transfer on AWS lambdas.
+    We show that we can establish hundreds of individual covert channels for every 1000 lambdas deployed,
+    and each of those channels can send data at a rate of ~200 bits per second,
+    thus demonstrating that covert communication via lambdas is entirely feasible.
+  </p>
+</blockquote>

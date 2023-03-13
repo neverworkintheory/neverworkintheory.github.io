@@ -123,6 +123,11 @@
     title: Two Papers on Time
   name: Circadian Rhythms
 - entries:
+  - date: '2023-03-13'
+    reviewed: /2023/03/13/covert-cloud-commuication-with-lambdas.html
+    title: Covert Cloud Communication with Lambdas
+  name: Cloud Computing
+- entries:
   - date: '2011-08-16'
     reviewed: /2011/08/16/cloning-considered-harmful-considered-harmful.html
     title: '''Cloning considered harmful'' considered harmful'
@@ -1389,6 +1394,9 @@
   - date: '2022-03-13'
     reviewed: /2022/03/13/obfuscated-strings-and-privacy.html
     title: Obfuscated Strings Threatening Your Privacy
+  - date: '2023-03-13'
+    reviewed: /2023/03/13/covert-cloud-commuication-with-lambdas.html
+    title: Covert Cloud Communication with Lambdas
   name: Security
 - entries:
   - date: '2021-11-23'

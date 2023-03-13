@@ -1162,6 +1162,11 @@
     reviewed: /2022/04/18/company-contributions-to-open-source.html
   name: Gamalielsson, Jonas
 - entries:
+  - date: '2023-03-13'
+    key: Yelam2021
+    reviewed: /2023/03/13/covert-cloud-communication-with-lambdas.html
+  name: Ganesan, Keerthana
+- entries:
   - date: '2021-10-14'
     key: Gao2020
     reviewed: /2021/10/14/api-learning-processes.html
@@ -2668,6 +2673,11 @@
     reviewed: /2016/06/05/bigdebug.html
   name: Millstein, Todd
 - entries:
+  - date: '2023-03-13'
+    key: Yelam2021
+    reviewed: /2023/03/13/covert-cloud-communication-with-lambdas.html
+  name: Mirian, Ariana
+- entries:
   - date: '2021-09-21'
     key: Mokhov2018
     reviewed: /2021/09/21/build-systems-a-la-carte.html
@@ -3572,6 +3582,11 @@
     reviewed: /2016/04/26/game-postmortems.html
   name: Sathiyanarayanan, Pavithra
 - entries:
+  - date: '2023-03-13'
+    key: Yelam2021
+    reviewed: /2023/03/13/covert-cloud-communication-with-lambdas.html
+  name: Savage, Stefan
+- entries:
   - date: '2022-04-25'
     key: Sharma2021
     reviewed: /2022/04/25/rationale-for-open-source-development-decisions.html
@@ -3941,6 +3956,11 @@
     key: Rigger2020
     reviewed: /2021/10/07/finding-bugs-in-database-systems-via-query-partitioning.html
   name: Su, Zhendong
+- entries:
+  - date: '2023-03-13'
+    key: Yelam2021
+    reviewed: /2023/03/13/covert-cloud-communication-with-lambdas.html
+  name: Subbareddy, Shibani
 - entries:
   - date: '2011-12-10'
     key: BenAri2011
@@ -4472,6 +4492,11 @@
     key: Yasmin2020
     reviewed: /2022/03/09/rest-api-deprecation.html
   name: Yasmin, Jerin
+- entries:
+  - date: '2023-03-13'
+    key: Yelam2021
+    reviewed: /2023/03/13/covert-cloud-communication-with-lambdas.html
+  name: Yelam, Anil
 - entries:
   - date: '2021-10-16'
     key: Han2021
