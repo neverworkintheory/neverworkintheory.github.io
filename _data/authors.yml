@@ -745,6 +745,11 @@
     reviewed: /2022/04/08/continuous-integration-single-statement-bugs.html
   name: Costa, Diego Elias
 - entries:
+  - date: '2023-03-14'
+    key: Costa2022
+    reviewed: /2023/03/14/test-flakiness-across-programming-languages.html
+  name: Costa, Keila
+- entries:
   - date: '2021-09-03'
     key: WeillTessier2021
     reviewed: /2021/09/03/two-papers-about-the-blackbox-project.html
@@ -774,6 +779,11 @@
     key: CruzLemus2009
     reviewed: /2011/08/17/three-empirical-evaluations-of-uml.html
   name: "Cruz-Lemus, Jos\xE9 A."
+- entries:
+  - date: '2023-03-14'
+    key: Costa2022
+    reviewed: /2023/03/14/test-flakiness-across-programming-languages.html
+  name: d'Amorim, Marcelo
 - entries:
   - date: '2023-02-25'
     key: AlencarDaCosta2023
@@ -1052,6 +1062,11 @@
     key: Oliveira2020
     reviewed: /2021/08/21/metrics-and-team-leaders-perceptions-of-productivity.html
   name: Fernandes, Eduardo
+- entries:
+  - date: '2023-03-14'
+    key: Costa2022
+    reviewed: /2023/03/14/test-flakiness-across-programming-languages.html
+  name: Ferreira, Ronivaldo
 - entries:
   - date: '2023-03-01'
     key: Sellitto2022
@@ -2673,6 +2688,11 @@
     reviewed: /2016/06/05/bigdebug.html
   name: Millstein, Todd
 - entries:
+  - date: '2023-03-14'
+    key: Costa2022
+    reviewed: /2023/03/14/test-flakiness-across-programming-languages.html
+  name: Miranda, Breno
+- entries:
   - date: '2023-03-13'
     key: Yelam2021
     reviewed: /2023/03/13/covert-cloud-communication-with-lambdas.html
@@ -3245,6 +3265,11 @@
     key: Pietri2019
     reviewed: /2021/08/11/cheating-death-survival-analysis-of-python-projects.html
   name: Pietri, Antoine
+- entries:
+  - date: '2023-03-14'
+    key: Costa2022
+    reviewed: /2023/03/14/test-flakiness-across-programming-languages.html
+  name: Pinto, Gustavo
 - entries:
   - date: '2011-10-22'
     key: Giger2011
