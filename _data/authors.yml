@@ -119,6 +119,11 @@
     reviewed: /2022/03/04/software-refactoring.html
   name: AlOmar, Eman Abdullah
 - entries:
+  - date: '2023-03-15'
+    key: Alsuhaibani2022
+    reviewed: /2023/03/15/automatically-assessing-method-names.html
+  name: Alsuhaibani, Reem S.
+- entries:
   - date: '2016-06-09'
     key: Altadmri2015
     reviewed: /2016/06/09/novice-programming-mistakes.html
@@ -727,6 +732,11 @@
     reviewed: /2021/08/30/two-studies-of-regular-expressions.html
   name: Coghlan, Christy A.
 - entries:
+  - date: '2023-03-15'
+    key: Alsuhaibani2022
+    reviewed: /2023/03/15/automatically-assessing-method-names.html
+  name: Collard, Michael L.
+- entries:
   - date: '2016-06-05'
     key: Gulzar2016
     reviewed: /2016/06/05/bigdebug.html
@@ -862,6 +872,11 @@
     key: Margulieux2020
     reviewed: /2023/03/10/reducing-withdrawal-and-failure-rates-with-labeled-subgoals.html
   name: Decker, Adrienne
+- entries:
+  - date: '2023-03-15'
+    key: Alsuhaibani2022
+    reviewed: /2023/03/15/automatically-assessing-method-names.html
+  name: Decker, Michael J.
 - entries:
   - date: '2011-06-30'
     key: Cherubini2007
@@ -2448,6 +2463,11 @@
     reviewed: /2023/02/25/fairness-and-code-smells-in-machine-learning.html
   name: Majumder, Suvodeep
 - entries:
+  - date: '2023-03-15'
+    key: Alsuhaibani2022
+    reviewed: /2023/03/15/automatically-assessing-method-names.html
+  name: Maletic, Jonathan I.
+- entries:
   - date: '2021-09-23'
     key: Malik2019
     reviewed: /2021/09/23/the-secret-life-of-bugs.html
@@ -2946,6 +2966,11 @@
     key: Near2016
     reviewed: /2016/04/26/finding-security-bugs.html
   name: Near, Joseph P.
+- entries:
+  - date: '2023-03-15'
+    key: Alsuhaibani2022
+    reviewed: /2023/03/15/automatically-assessing-method-names.html
+  name: Newman, Christian D.
 - entries:
   - date: '2021-11-29'
     key: Sven2019

@@ -1,0 +1,58 @@
+---
+layout: post
+author: Greg Wilson
+title: "Automatically Assessing Method Names"
+date: 2023-03-15
+categories: ["Natural Language", "Programming Style"]
+---
+
+<p>
+  Amidst the excitement about using large language models to generate code,
+  it's easy to lose sight of all the other ways that
+  the things programmers have built can be used to make programming better.
+  One example is this work,
+  which looks at whether we can use natural language processing
+  to assess the quality of method names.
+  The authors collected ten rules (shown in the table below)
+  and used them to score names from like <code>setIconItemStatus()</code>
+  from several software projects.
+  (That name gets a score of 10 out of 10, by the way.)
+  The authors recognize that the rules are not fully objective—for example,
+  they split on whether the first letter after an acronym should be capitalized or not—and
+  automatic tools sometimes struggle because of grammatical ambiguities
+  (e.g., words that can be both nouns and verbs),
+  but their work points the way toward a new generation of code checking tools.
+</p>
+
+<table>
+  <tr><th>#</th><th>Standard Name</th><th>Rules</th></tr>
+  <tr><td>1</td><td>Naming Style</td><td>A single standard naming style is used.</td></tr>
+  <tr><td>2</td><td>Grammatical Structure</td><td>If there are multiple words, they form a grammatically correct sentence structure.</td></tr>
+  <tr><td>3</td><td>Verb Phrase</td><td>It is a verb or a verb phrase.</td></tr>
+  <tr><td>4</td><td>Dictionary Terms</td><td>Only natural language dictionary words and/or familiar/domain-relevant terms are used.</td></tr>
+  <tr><td>5</td><td>Full Words</td><td>Full words are used rather than a single letter.</td></tr>
+  <tr><td>6</td><td>Idioms and Slang</td><td>It does not contain personal expressions, idioms, or slang.</td></tr>
+  <tr><td>7</td><td>Abbreviations</td><td>It only contains known or standard abbreviated terms. All abbreviations are well known or part of the problem domain.</td></tr>
+  <tr><td>8</td><td>Acronyms</td><td>It only contains standard acronyms. All acronyms are well known or part of the problem domain.</td></tr>
+  <tr><td>9</td><td>Prefix/Suffix</td><td>It does not contain a prefix/suffix that is a term from the system. This standard does not apply to languages such as C that do not have namespaces.</td></tr>
+  <tr><td>10</td><td>Length</td><td>Maximum number of words is no greater than 7.</td></tr>
+</table>
+
+<p>Reem S. Alsuhaibani, Christian D. Newman, Michael J. Decker, Michael L. Collard, and Jonathan I. Maletic.
+An approach to automatically assess method names.
+In <em>Proceedings of the 30th IEEE/ACM International Conference on Program Comprehension</em>, May 2022.
+<a href="https://doi.org/10.1145/3524610.3527780">doi:10.1145/3524610.3527780</a>.</p>
+
+<blockquote>
+  <p>
+    An approach is presented to automatically assess the quality of method names by providing a score and feedback.
+    The approach implements ten method naming standards to evaluate the names.
+    The naming standards are taken from work that validated the standards via a large survey of software professionals.
+    Natural language processing techniques such as part-of-speech tagging,
+    identifier splitting, and dictionary lookup are required to implement the standards.
+    The approach is evaluated by first manually constructing a large golden set of method names.
+    Each method name is rated by several developers and labeled as conforming to each standard or not.
+    These ratings allow for comparing the results of the approach against expert assessment.
+    Additionally, the approach is applied to several systems and the results are manually inspected for accuracy.
+  </p>
+</blockquote>

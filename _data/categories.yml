@@ -881,6 +881,11 @@
     title: Three Empirical Evaluations of UML
   name: Modeling
 - entries:
+  - date: '2023-03-15'
+    reviewed: /2023/03/15/automatically-assessing-method-names.html
+    title: Automatically Assessing Method Names
+  name: Natural Language
+- entries:
   - date: '2011-08-24'
     reviewed: /2011/08/24/what-michael-feathers-thinks-you-should-read.html
     title: What Michael Feathers Thinks You Should Read
@@ -1185,6 +1190,9 @@
   - date: '2021-10-01'
     reviewed: /2021/10/01/python-coding-style-compliance-on-stack-overflow.html
     title: Python Coding Style Compliance on Stack Overflow
+  - date: '2023-03-15'
+    reviewed: /2023/03/15/automatically-assessing-method-names.html
+    title: Automatically Assessing Method Names
   name: Programming Style
 - entries:
   - date: '2016-10-02'
