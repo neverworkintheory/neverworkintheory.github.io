@@ -1151,6 +1151,11 @@
     reviewed: /2021/10/21/the-impact-of-sleep-deprivation.html
   name: Fucci, Davide
 - entries:
+  - date: '2023-03-16'
+    key: Zampetti2021
+    reviewed: /2023/03/16/self-admitted-technical-debt.html
+  name: Fucci, Gianmarco
+- entries:
   - date: '2011-06-30'
     key: Barnett2011
     reviewed: /2011/06/30/specification-and-verification-the-spec-experience.html
@@ -3238,6 +3243,9 @@
   - date: '2021-10-18'
     key: Zampetti2020
     reviewed: /2021/10/18/bad-practices-in-continuous-integration.html
+  - date: '2023-03-16'
+    key: Zampetti2021
+    reviewed: /2023/03/16/self-admitted-technical-debt.html
   name: Penta, Massimiliano Di
 - entries:
   - date: '2021-08-29'
@@ -3744,6 +3752,9 @@
   - date: '2021-10-05'
     key: Piantadosi2020
     reviewed: /2021/10/05/three-papers-on-readability.html
+  - date: '2023-03-16'
+    key: Zampetti2021
+    reviewed: /2023/03/16/self-admitted-technical-debt.html
   name: Serebrenik, Alexander
 - entries:
   - date: '2021-08-30'
@@ -4592,6 +4603,9 @@
   - date: '2021-10-18'
     key: Zampetti2020
     reviewed: /2021/10/18/bad-practices-in-continuous-integration.html
+  - date: '2023-03-16'
+    key: Zampetti2021
+    reviewed: /2023/03/16/self-admitted-technical-debt.html
   name: Zampetti, Fiorella
 - entries:
   - date: '2021-09-26'

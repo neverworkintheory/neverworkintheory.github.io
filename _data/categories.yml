@@ -1536,6 +1536,11 @@
     title: 'Apex: Automatic Programming Assignment Error Explanation'
   name: Symbolic Execution
 - entries:
+  - date: '2023-03-16'
+    reviewed: /2023/03/16/self-admitted-technical-debt.html
+    title: Self-Admitted Technical Debt
+  name: Technical Debt
+- entries:
   - date: '2011-08-31'
     reviewed: /2011/08/31/comparing-the-defect-reduction-benefits-of-code-inspection-and-test-driven-development.html
     title: Comparing the Defect Reduction Benefits of Code Inspection and Test-Driven
