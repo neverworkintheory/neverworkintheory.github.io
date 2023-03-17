@@ -1,0 +1,62 @@
+---
+layout: post
+author: Greg Wilson
+title: "Automated Input Generation for Alloy"
+date: 2023-03-17
+categories: ["Formal Methods"]
+---
+
+<p>
+  If you are reading this post,
+  you have probably written code for distributed systems,
+  but you probably <em>haven't</em> used any automated tools
+  to verify that those systems work as intended.
+  One reason for this is their user-hostile interfaces:
+  while <a href="https://alloytools.org/">Alloy</a>,
+  <a href="https://lamport.azurewebsites.net/tla/tla.html">TLA+</a>,
+  and similar systems are powerful,
+  the notations they use make Perl and Egyptian hieroglyphics seem readable by comparison.
+</p>
+
+<p>
+  The authors of this paper have been tackling that
+  by automating some of the grunt work involved in describing models for Alloy.
+  Their previous tool, ASketch,
+  took a partial model with user-specified holes,
+  a generator which outlines valid substitutions for each hole,
+  and a test suite outlining the expected behavior of the model,
+  and produced a completed model that passed all the tests.
+  This tool, SketchGen<sup>2</sup>,
+  automatically creates some of those inputs.
+  Using it still requires more understanding of formal specification than most developers currently have,
+  but as with LLM-based code generators and static analysis tools,
+  more and more of the effort required is shifting from programmers to programs.
+</p>
+
+<p>Ana Jovanovic and Allison Sullivan.
+Towards automated input generation for sketching alloy models.
+In <em>Proceedings of the IEEE/ACM 10th International Conference on Formal Methods in Software Engineering</em>. ACM, May 2022.
+<a href="https://doi.org/10.1145/3524482.3527651">doi:10.1145/3524482.3527651</a>.</p>
+
+<blockquote>
+  <p>
+    Writing declarative models has numerous benefits,
+    ranging from automated reasoning and correction of design-level properties before systems are built,
+    to automated testing and debugging of their implementations after they are built.
+    Alloy is a declarative modeling language that is well suited for verifying system designs.
+    While Alloy comes deployed in the Analyzer,
+    an automated scenario-finding tool set,
+    writing correct models remains a difficult and error-prone task.
+    ASketch is a synthesis framework that helps users build their Alloy models.
+    ASketch takes as an input a partial Alloy models with holes and an AUnit test suite.
+    As output,
+    ASketch returns a completed model that passes all tests.
+    ASketch's initial evaluation reveals ASketch to be a promising approach to synthesize Alloy models.
+    In this paper,
+    we present and explore SketchGen<sup>2</sup>,
+    an approach that looks to broaden the adoption of ASketch
+    by increasing the automation of the inputs needed for the sketching process.
+    Experimental results show SketchGen<sup>2</sup>
+    is effective at producing both expressions and test suites for synthesis.
+  </p>
+</blockquote>

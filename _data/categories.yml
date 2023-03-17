@@ -641,6 +641,9 @@
   - date: '2011-06-30'
     reviewed: /2011/06/30/specification-and-verification-the-spec-experience.html
     title: 'Specification and Verification: The Spec# Experience'
+  - date: '2023-03-17'
+    reviewed: /2023/03/17/automated-input-generation-for-alloy.html
+    title: Automated Input Generation for Alloy
   name: Formal Methods
 - entries:
   - date: '2021-10-01'

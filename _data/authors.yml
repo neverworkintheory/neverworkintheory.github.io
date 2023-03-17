@@ -1855,6 +1855,11 @@
     reviewed: /2021/09/21/build-systems-a-la-carte.html
   name: Jones, Simon Peyton
 - entries:
+  - date: '2023-03-17'
+    key: Jovanovic2022
+    reviewed: /2023/03/17/automated-input-generation-for-alloy.html
+  name: Jovanovic, Ana
+- entries:
   - date: '2016-09-09'
     key: Krein2016
     reviewed: /2016/09/09/replicating-design-patterns-experiment.html
@@ -4022,6 +4027,11 @@
     key: Yelam2021
     reviewed: /2023/03/13/covert-cloud-communication-with-lambdas.html
   name: Subbareddy, Shibani
+- entries:
+  - date: '2023-03-17'
+    key: Jovanovic2022
+    reviewed: /2023/03/17/automated-input-generation-for-alloy.html
+  name: Sullivan, Allison
 - entries:
   - date: '2011-12-10'
     key: BenAri2011
