@@ -38,6 +38,11 @@
     reviewed: /2021/09/18/code-of-conduct-in-open-source-projects.html
   name: Adams, Bram
 - entries:
+  - date: '2023-03-20'
+    key: Tshukudu2023
+    reviewed: /2023/03/20/k12-computing-education-in-four-african-countries.html
+  name: Adelakun-Adeyemo, Oluwatoyin
+- entries:
   - date: '2011-12-04'
     key: Hundhausen2011
     reviewed: /2011/12/04/online-vs-face-to-face-pedagogical-code-reviews-an-empirical-comparison.html
@@ -3037,6 +3042,11 @@
     reviewed: /2011/08/31/comparing-the-defect-reduction-benefits-of-code-inspection-and-test-driven-development.html
   name: Nunamaker, Jay F.
 - entries:
+  - date: '2023-03-20'
+    key: Tshukudu2023
+    reviewed: /2023/03/20/k12-computing-education-in-four-african-countries.html
+  name: Nyaringita, Brenda
+- entries:
   - date: '2012-02-23'
     key: Nussli2012
     reviewed: /2012/02/23/looking-at-the-same-thing-in-pair-programming-tasks.html
@@ -3401,6 +3411,11 @@
     reviewed: /2022/04/11/database-performance-antipatterns.html
   name: Qiu, Zhengyi
 - entries:
+  - date: '2023-03-20'
+    key: Tshukudu2023
+    reviewed: /2023/03/20/k12-computing-education-in-four-african-countries.html
+  name: Quille, Keith
+- entries:
   - date: '2011-07-04'
     key: Racheva2010
     reviewed: /2011/07/04/requirements-prioritization-in-agile-projects-insights-from-a-case-study.html
@@ -3735,6 +3750,9 @@
   - date: '2021-09-03'
     key: Brown2018
     reviewed: /2021/09/03/two-papers-about-the-blackbox-project.html
+  - date: '2023-03-20'
+    key: Tshukudu2023
+    reviewed: /2023/03/20/k12-computing-education-in-four-african-countries.html
   name: Sentance, Sue
 - entries:
   - date: '2016-09-09'
@@ -4192,6 +4210,11 @@
     key: Dabbish2012
     reviewed: /2012/03/01/social-coding-in-github.html
   name: Tsay, Jason
+- entries:
+  - date: '2023-03-20'
+    key: Tshukudu2023
+    reviewed: /2023/03/20/k12-computing-education-in-four-african-countries.html
+  name: Tshukudu, Ethel
 - entries:
   - date: '2012-01-05'
     key: Bluedorn1999
@@ -4704,6 +4727,11 @@
     key: Han2021
     reviewed: /2021/10/16/open-source-projects-in-baidu-alibaba-and-tencent.html
   name: Zhi, Chen
+- entries:
+  - date: '2023-03-20'
+    key: Tshukudu2023
+    reviewed: /2023/03/20/k12-computing-education-in-four-african-countries.html
+  name: Zhong, Ziling
 - entries:
   - date: '2013-04-16'
     key: Li2013
