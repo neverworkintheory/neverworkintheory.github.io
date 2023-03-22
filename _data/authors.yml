@@ -1830,6 +1830,11 @@
     reviewed: /2021/10/26/enriching-api-documentation-with-code-samples-and-usage-scenarios.html
   name: Jiang, He
 - entries:
+  - date: '2023-03-22'
+    key: Jiang2022
+    reviewed: /2023/03/22/identifying-and-extracting-jupyter-notebook-structures.html
+  name: Jiang, Yuan
+- entries:
   - date: '2022-04-11'
     key: Shao2020
     reviewed: /2022/04/11/database-performance-antipatterns.html
@@ -1934,6 +1939,11 @@
     key: Kasi2013
     reviewed: /2014/04/25/cassandra-proactive-conflict-minimization-through-optimized-task-scheduling.html
   name: Kasi, Bakhtiar Khan
+- entries:
+  - date: '2023-03-22'
+    key: Jiang2022
+    reviewed: /2023/03/22/identifying-and-extracting-jupyter-notebook-structures.html
+  name: Kastner, Christian
 - entries:
   - date: '2021-09-28'
     key: Kavaler2019
@@ -4737,6 +4747,11 @@
     key: Li2013
     reviewed: /2013/04/16/a-characteristic-study-on-failures-of-production-distributed-data-parallel-programs.html
   name: Zhou, Hucheng
+- entries:
+  - date: '2023-03-22'
+    key: Jiang2022
+    reviewed: /2023/03/22/identifying-and-extracting-jupyter-notebook-structures.html
+  name: Zhou, Shurui
 - entries:
   - date: '2022-09-19'
     key: Yang2022

@@ -1,0 +1,49 @@
+---
+layout: post
+author: Greg Wilson
+title: "Identifying and Extracting Jupyter Notebook Structure"
+date: 2023-03-22
+categories: ["Computational Notebooks", "Scientific Computing"]
+---
+
+<p>
+  Many of my data science colleagues use Jupyter notebooks or RMarkdown in their work,
+  and they have all occasionally been misled by what they seen on the screen.
+  Chunks of code in notebooks can be executed in any order or not executed at all,
+  so it's possible (or even common) for plots, tables, and code to be out of sync.
+  This paper presents a tool for tracing dataflow dependencies between cells
+  that involves labeling the stages of a typical machine learning pipeline.
+  The authors evaluated their tool by scraping notebooks created in GitHub repositories
+  on two successive days (to avoid biases that might be introduced
+  by only looking at notebooks from popular repositories),
+  and found that their approach was more accurate than two previously-published techniques.
+</p>
+
+<p>
+  Computational notebooks are clearly here to stay,
+  so it's great to see researchers looking at ways to make them better.
+  And just as experience with the shortcomings of languages like C and C++
+  led to the design of languages like Rust,
+  I hope that analysis of the problems with today's notebooks
+  will lead to the design of languages that are naturally more notebook-friendly.
+</p>
+
+<p>Yuan Jiang, Christian Kastner, and Shurui Zhou.
+Elevating jupyter notebook maintenance tooling by identifying and extracting notebook structures.
+In <em>2022 IEEE International Conference on Software Maintenance and Evolution (ICSME)</em>. IEEE, Oct 2022.
+<a href="https://doi.org/10.1109/icsme55016.2022.00047">doi:10.1109/icsme55016.2022.00047</a>.</p>
+
+<blockquote>
+  <p>
+    Data analysis is an exploratory, interactive, and often collaborative process.
+    Computational notebooks have become a popular tool to support this process,
+    among others because of their ability to interleave code, narrative text, and results.
+    However, notebooks in practice are often criticized as hard to maintain and being of low code quality,
+    including problems such as unused or duplicated code and out-of-order code execution.
+    Data scientists can benefit from better tool support when maintaining and evolving notebooks.
+    We argue that central to such tool support is identifying the structure of notebooks.
+    We present a lightweight and accurate approach to extract notebook structure
+    and outline several ways such structure can be used to improve maintenance tooling for notebooks,
+    including navigation and finding alternatives.
+  </p>
+</blockquote>
