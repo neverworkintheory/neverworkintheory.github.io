@@ -1623,7 +1623,7 @@
   month = oct,
   publisher = {{IEEE}},
   author = {Yuan Jiang and Christian Kastner and Shurui Zhou},
-  title = {Elevating Jupyter Notebook Maintenance Tooling by Identifying and Extracting Notebook Structures},
+  title = {Elevating {Jupyter} Notebook Maintenance Tooling by Identifying and Extracting Notebook Structures},
   booktitle = {2022 {IEEE} International Conference on Software Maintenance and Evolution ({ICSME})},
   abstract = {Data analysis is an exploratory, interactive, and often collaborative process. Computational notebooks have become a popular tool to support this process, among others because of their ability to interleave code, narrative text, and results. However, notebooks in practice are often criticized as hard to maintain and being of low code quality, including problems such as unused or duplicated code and out-of-order code execution. Data scientists can benefit from better tool support when maintaining and evolving notebooks. We argue that central to such tool support is identifying the structure of notebooks. We present a lightweight and accurate approach to extract notebook structure and outline several ways such structure can be used to improve maintenance tooling for notebooks, including navigation and finding alternatives.},
   reviewed = {/2023/03/22/identifying-and-extracting-jupyter-notebook-structures.html}
@@ -2242,7 +2242,7 @@
   author = {Suvodeep Majumder and Joymallya Chakraborty and Amritanshu Agrawal and Tim Menzies},
   title = {Communication and Code Dependency Effects on Software Code Quality: An Empirical Analysis of Herbsleb Hypothesis},
   year = {2019},
-  eprint = {arXiv:1904.09954},
+  eprint = {1904.09954},
   reviewed = {/2021/09/10/why-software-projects-need-heroes.html}
 }
 
@@ -3808,6 +3808,15 @@
   booktitle = msr,
   abstract = {Understanding the nature of regular expression (regex) issues is important to tackle practical issues developers face in regular expression usage. Knowledge about the nature and frequency of various types of regular expression issues, such as those related to performance, API misuse, and code smells, can guide testing, inform documentation writers, and motivate refactoring efforts. However, beyond ReDoS (Regular expression Denial of Service), little is known about to what extent regular expression issues affect software development and how these issues are addressed in practice. This paper presents a comprehensive empirical study of 350 merged regex-related pull requests from Apache, Mozilla, Facebook, and Google GitHub repositories. Through classifying the root causes and manifestations of those bugs, we show that incorrect regular expression behavior is the dominant root cause of regular expression bugs (165/356, 46.3\%). The remaining root causes are incorrect API usage (9.3\%) and other code issues that require regular expression changes in the fix (29.5\%). By studying the code changes of regex-related pull requests, we observe that fixing regular expression bugs is nontrivial as it takes more time and more lines of code to fix them compared to the general pull requests. The results of this study contribute to a broader understanding of the practical problems faced by developers when using regular expressions.},
   reviewed = {/2021/08/30/two-studies-of-regular-expressions.html}
+}
+
+@misc{Wang2021,
+  author = {Jiawei Wang and Li Li and Andreas Zeller},
+  title = {Restoring Execution Environments of {Jupyter} Notebooks},
+  year = {2021},
+  eprint = {2103.02959},
+  abstract = {More than ninety percent of published Jupyter notebooks do not state dependencies on external packages. This makes them non-executable and thus hinders reproducibility of scientific results. We present SnifferDog, an approach that 1) collects the APIs of Python packages and versions, creating a database of APIs; 2) analyzes notebooks to determine candidates for required packages and versions; and 3) checks which packages are required to make the notebook executable (and ideally, reproduce its stored results). In its evaluation, we show that SnifferDog precisely restores execution environments for the largest majority of notebooks, making them immediately executable for end users.},
+  reviewed = {/2023/03/23/restoring-execution-environments-of-jupyter-notebooks.html}
 }
 
 @inproceedings{Washburn2016,

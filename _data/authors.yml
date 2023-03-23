@@ -2297,6 +2297,11 @@
     reviewed: /2013/06/13/formal-specifications-better-than-function-points-for-code-sizing.html
   name: Lewis, Corey
 - entries:
+  - date: '2023-03-23'
+    key: Wang2021
+    reviewed: /2023/03/23/restoring-execution-environments-of-jupyter-notebooks.html
+  name: Li, Li
+- entries:
   - date: '2013-04-16'
     key: Li2013
     reviewed: /2013/04/16/a-characteristic-study-on-failures-of-production-distributed-data-parallel-programs.html
@@ -4370,6 +4375,11 @@
     reviewed: /2012/01/17/a-survey-of-the-practice-of-computational-science.html
   name: Walker, David
 - entries:
+  - date: '2023-03-23'
+    key: Wang2021
+    reviewed: /2023/03/23/restoring-execution-environments-of-jupyter-notebooks.html
+  name: Wang, Jiawei
+- entries:
   - date: '2021-08-30'
     key: Wang2020a
     reviewed: /2021/08/30/two-studies-of-regular-expressions.html
@@ -4665,6 +4675,9 @@
   - date: '2021-10-31'
     key: Soremekun2021
     reviewed: /2021/10/31/locating-faults-with-program-slicing.html
+  - date: '2023-03-23'
+    key: Wang2021
+    reviewed: /2023/03/23/restoring-execution-environments-of-jupyter-notebooks.html
   name: Zeller, Andreas
 - entries:
   - date: '2022-09-19'

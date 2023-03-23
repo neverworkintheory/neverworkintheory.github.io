@@ -1,0 +1,55 @@
+---
+layout: post
+author: Greg Wilson
+title: "Restoring Execution Environments of Jupyter Notebooks"
+date: 2023-03-23
+categories: ["Computational Notebooks", "Scientific Computing"]
+---
+
+<p>
+  Like
+  <a href="{{'/2023/03/22/identifying-and-extracting-jupyter-notebook-structures.html' | relative_url}}">the paper reviewed yesterday</a>,
+  this one looks at computational notebooks:
+  more specifically,
+  at how to reverse engineer their execution environment.
+  As the abstract says,
+  more than 90% of published Jupyter notebooks don't explicitly state package dependencies,
+  which can make them non-reproducible at best and non-executable in far too many cases.
+  Wang et al. developed a tool that collects package APIs,
+  analyzes notebooks to determine which ones are needed,
+  and then finds combinations of packages that will make the notebook run.
+  Quoting from the paper,
+  "In a lab setting,
+  SnifferDog is effective in automatically inferring execution environments for Jupyter notebooks,
+  successfully generating installation requirements for 315/340 (92.6%) of notebooks.
+  284/315 (90.2%) of notebooks could be executed automatically."
+</p>
+
+<p>
+  This is impressive work,
+  and the authors have made it <a href="https://github.com/SMAT-Lab/SnifferDog">available on GitHub</a>.
+  Once again,
+  I hope it will inform the design of a new generation of notebooks:
+  rather than requiring people to try to scrape dependencies,
+  for example,
+  I hope that future notebook systems will capture them automatically.
+</p>
+
+<p>Jiawei Wang, Li Li, and Andreas Zeller.
+Restoring execution environments of Jupyter notebooks.
+2021.
+<a href="https://arxiv.org/abs/arXiv:2103.02959">arXiv:2103.02959</a>.</p>
+
+<blockquote>
+  <p>
+    More than ninety percent of published Jupyter notebooks do not state dependencies on external packages.
+    This makes them non-executable and thus hinders reproducibility of scientific results.
+    We present SnifferDog,
+    an approach that 1) collects the APIs of Python packages and versions, creating a database of APIs;
+    2) analyzes notebooks to determine candidates for required packages and versions;
+    and 3) checks which packages are required to make the notebook executable (and ideally, reproduce its stored results).
+    In its evaluation,
+    we show that SnifferDog precisely restores execution environments for the largest majority of notebooks,
+    making them immediately executable for end users.
+  </p>
+</blockquote>
