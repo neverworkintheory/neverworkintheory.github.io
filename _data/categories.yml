@@ -4,6 +4,11 @@
     title: A First Look at the Deprecation of RESTful APIs
   name: APIs
 - entries:
+  - date: '2023-03-24'
+    reviewed: /2023/03/24/supporting-developers-with-disabilities.html
+    title: Supporting Developers with Disabilities
+  name: Accessibility
+- entries:
   - date: '2021-10-03'
     reviewed: /2021/10/03/is-40-the-new-60.html
     title: Is 40 the New 60?
@@ -695,6 +700,11 @@
     reviewed: /2021/09/13/whats-wrong-with-tech-hiring.html
     title: What's Wrong With Tech Hiring
   name: Hiring
+- entries:
+  - date: '2023-03-24'
+    reviewed: /2023/03/24/supporting-developers-with-disabilities.html
+    title: Supporting Developers with Disabilities
+  name: Inclusion
 - entries:
   - date: '2021-11-23'
     reviewed: /2021/11/23/security-smells-in-infrastructure-as-code-scripts.html

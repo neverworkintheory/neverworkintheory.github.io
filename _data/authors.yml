@@ -645,6 +645,11 @@
     reviewed: /2021/10/30/app-store-effects-on-software-engineering-practices.html
   name: Capra, Licia
 - entries:
+  - date: '2023-03-24'
+    key: CardosoPereira2023
+    reviewed: /2023/03/24/supporting-developers-with-disabilities.html
+  name: Cardoso-Pereira, Isadora
+- entries:
   - date: '2016-09-09'
     key: Krein2016
     reviewed: /2016/09/09/replicating-design-patterns-experiment.html
@@ -859,6 +864,11 @@
     key: DePadua2018
     reviewed: /2021/09/16/exception-handling-practices-and-post-release-defects.html
   name: "de P\xE1dua, Guilherme B."
+- entries:
+  - date: '2023-03-24'
+    key: CardosoPereira2023
+    reviewed: /2023/03/24/supporting-developers-with-disabilities.html
+  name: de Souza, Alberto
 - entries:
   - date: '2016-09-08'
     key: Sharp2016
@@ -1324,6 +1334,11 @@
     key: Golubev2021
     reviewed: /2022/03/04/software-refactoring.html
   name: Golubev, Yaroslav
+- entries:
+  - date: '2023-03-24'
+    key: CardosoPereira2023
+    reviewed: /2023/03/24/supporting-developers-with-disabilities.html
+  name: Gomes, Geraldo
 - entries:
   - date: '2021-10-02'
     key: RodriguezPerez2018
@@ -2437,6 +2452,11 @@
     reviewed: /2021/09/20/do-developers-read-compiler-error-messages.html
   name: Lubick, Kevin
 - entries:
+  - date: '2023-03-24'
+    key: CardosoPereira2023
+    reviewed: /2023/03/24/supporting-developers-with-disabilities.html
+  name: Lucena, Danilo
+- entries:
   - date: '2011-08-17'
     key: DeLucia2009
     reviewed: /2011/08/17/three-empirical-evaluations-of-uml.html
@@ -3332,6 +3352,9 @@
   - date: '2023-03-14'
     key: Costa2022
     reviewed: /2023/03/14/test-flakiness-across-programming-languages.html
+  - date: '2023-03-24'
+    key: CardosoPereira2023
+    reviewed: /2023/03/24/supporting-developers-with-disabilities.html
   name: Pinto, Gustavo
 - entries:
   - date: '2011-10-22'
@@ -3516,6 +3539,11 @@
     key: Yuan2014
     reviewed: /2014/10/09/simple-testing-can-prevent-most-critical-failures.html
   name: Renna Rodrigues, Guilherme
+- entries:
+  - date: '2023-03-24'
+    key: CardosoPereira2023
+    reviewed: /2023/03/24/supporting-developers-with-disabilities.html
+  name: Ribeiro, Danilo Monteiro
 - entries:
   - date: '2011-07-18'
     key: Rigby2011
