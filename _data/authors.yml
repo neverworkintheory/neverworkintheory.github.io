@@ -561,6 +561,11 @@
     reviewed: /2021/09/02/compiler-error-messages-considered-unhelpful.html
   name: Bouvier, Dennis J.
 - entries:
+  - date: '2023-03-27'
+    key: Lee2022
+    reviewed: /2023/03/27/stress-management-workshop-for-college-students.html
+  name: Bowman, Margaret
+- entries:
   - date: '2011-10-22'
     key: Apel2011
     reviewed: /2011/10/22/three-empirical-studies-from-esecfse11.html
@@ -2241,6 +2246,11 @@
     key: Menzies2016
     reviewed: /2021/09/26/are-delayed-issues-harder-to-resolve.html
   name: Layman, Lucas
+- entries:
+  - date: '2023-03-27'
+    key: Lee2022
+    reviewed: /2023/03/27/stress-management-workshop-for-college-students.html
+  name: Lee, Carol S.
 - entries:
   - date: '2013-03-08'
     key: Porter2013
@@ -4545,6 +4555,11 @@
     key: Akerblom2016
     reviewed: /2016/06/13/polymorphism-in-python.html
   name: Wrigstad, Tobias
+- entries:
+  - date: '2023-03-27'
+    key: Lee2022
+    reviewed: /2023/03/27/stress-management-workshop-for-college-students.html
+  name: Wu, Jenny L.
 - entries:
   - date: '2012-07-18'
     key: Dang2012

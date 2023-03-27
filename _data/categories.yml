@@ -1551,6 +1551,11 @@
     title: Combining GIN and PMD for Code Improvements
   name: Static Analysis
 - entries:
+  - date: '2023-03-27'
+    reviewed: /2023/03/27/stress-management-workshop-for-college-students.html
+    title: Stress Management Workshop for College Students
+  name: Stress
+- entries:
   - date: '2022-11-14'
     reviewed: /2022/11/14/pluralsight-developer-success-survey.html
     title: Pluralsight Developer Success Survey
