@@ -17,9 +17,7 @@
     --small-spacing: 0.25rem;
 }
 
-/*
- * Flex grid
- */
+/* Flex grid */
 .row {
     display: flex;
     flex-flow: row wrap;
@@ -43,9 +41,7 @@
 .col-11 { flex-basis: 91.66%; }
 .col-12 { flex-basis: 100%; }
 
-/*
- * Generic positioning
- */
+/* Generic positioning */
 
 .left {
     text-align: left;
@@ -59,9 +55,7 @@
     text-align: center;
 }
 
-/*
- * Cards
- */
+/* Cards */
 
 div.card {
   box-shadow: var(--shadow-spacing) var(--shadow);
