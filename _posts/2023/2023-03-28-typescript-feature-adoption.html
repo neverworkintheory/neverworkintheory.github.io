@@ -1,0 +1,51 @@
+---
+layout: post
+author: Greg Wilson
+title: "Typescript Feature Adoption"
+date: 2023-03-28
+categories: ["Programming Languages", "Typescript"]
+---
+
+<p>
+  I started programming full-time eighteen months ago after almost ten years of doing other things.
+  The Python I came back to was not the Python I had left:
+  the language had acquired so many new features that it felt more like Java
+  than like the handy little scripting language I remembered.
+  Those features all solve real problems,
+  but I found myself wondering how many people actually use them.
+</p>
+
+<p>
+  This paper attempts to answer that question for Typescript by looking at
+  the adoption of 13 new language features over the past three years
+  by 454 open source projects.
+  The authors found that developers are quick to adopt new versions of the compiler,
+  but much more conservative about features,
+  and that some see little uptake even in the long run.
+  I don't know if it would be possible to build models or develop methods to predict which features were going to prove popular,
+  but I hope work like this will encourage language developers to ask, "Will it be used?"
+  as well as, "Would it be useful?"
+</p>
+
+<p>Joshua D. Scarsbrook, Mark Utting, and Ryan K. L. Ko.
+Typescript's evolution: an analysis of feature adoption over time.
+2023.
+<a href="https://arxiv.org/abs/arXiv:2303.09802">arXiv:2303.09802</a>.</p>
+
+<div align="center">
+  <img src="{{'/static/2023/typescript-features.png' | relative_url}}" width="80%" alt="Adoption of Typescript features over time">
+</div>
+
+<blockquote>
+  <p>
+    TypeScript is a quickly evolving superset of JavaScript with active development of new features.
+    Our paper seeks to understand how quickly these features are adopted by the developer community.
+    Existing work in JavaScript shows the adoption of dynamic language features can be a major hindrance to static analysis.
+    As TypeScript evolves the addition of features makes the underlying standard more and more difficult to keep up with.
+    In our work we present an analysis of 454 open source TypeScript repositories and study the adoption of 13 language features over the past three years.
+    We show that while new versions of the TypeScript compiler are aggressively adopted by the community, the same cannot be said for language features.
+    While some experience strong growth others are rarely adopted by projects.
+    Our work serves as a starting point for future study of the adoption of features in TypeScript.
+    We also release our analysis and data gathering software as open source in the hope it helps the programming languages community.
+  </p>
+</blockquote>

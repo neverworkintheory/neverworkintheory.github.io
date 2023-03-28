@@ -129,7 +129,7 @@
   name: Circadian Rhythms
 - entries:
   - date: '2023-03-13'
-    reviewed: /2023/03/13/covert-cloud-commuication-with-lambdas.html
+    reviewed: /2023/03/13/covert-cloud-communication-with-lambdas.html
     title: Covert Cloud Communication with Lambdas
   name: Cloud Computing
 - entries:
@@ -1209,6 +1209,9 @@
   - date: '2023-03-14'
     reviewed: /2023/03/14/test-flakiness-across-programming-languages.html
     title: Test Flakiness Across Programming Languages
+  - date: '2023-03-28'
+    reviewed: /2023/03/28/typescript-feature-adoption.html
+    title: Typescript Feature Adoption
   name: Programming Languages
 - entries:
   - date: '2021-10-01'
@@ -1439,7 +1442,7 @@
     reviewed: /2022/03/13/obfuscated-strings-and-privacy.html
     title: Obfuscated Strings Threatening Your Privacy
   - date: '2023-03-13'
-    reviewed: /2023/03/13/covert-cloud-commuication-with-lambdas.html
+    reviewed: /2023/03/13/covert-cloud-communication-with-lambdas.html
     title: Covert Cloud Communication with Lambdas
   name: Security
 - entries:
@@ -1701,6 +1704,11 @@
     reviewed: /2023/03/01/learning-to-predict-user-defined-types.html
     title: Learning to Predict User-Defined Types
   name: Types
+- entries:
+  - date: '2023-03-28'
+    reviewed: /2023/03/28/typescript-feature-adoption.html
+    title: Typescript Feature Adoption
+  name: Typescript
 - entries:
   - date: '2013-06-13'
     reviewed: /2013/06/13/uml-in-practice-2.html

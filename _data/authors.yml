@@ -2082,6 +2082,11 @@
     reviewed: /2011/06/30/lets-go-to-the-whiteboard.html
   name: Ko, Amy J.
 - entries:
+  - date: '2023-03-28'
+    key: Scarsbrook2023
+    reviewed: /2023/03/28/typescript-feature-adoption.html
+  name: Ko, Ryan K. L.
+- entries:
   - date: '2012-04-17'
     key: Kocaguneli2012
     reviewed: /2012/04/17/ensemble-effort-estimation.html
@@ -3755,6 +3760,11 @@
     reviewed: /2021/10/21/the-impact-of-sleep-deprivation.html
   name: Scanniello, Giuseppe
 - entries:
+  - date: '2023-03-28'
+    key: Scarsbrook2023
+    reviewed: /2023/03/28/typescript-feature-adoption.html
+  name: Scarsbrook, Joshua D.
+- entries:
   - date: '2021-09-23'
     key: Malik2019
     reviewed: /2021/09/23/the-secret-life-of-bugs.html
@@ -4293,6 +4303,11 @@
     key: Philip2012
     reviewed: /2012/04/10/component-reuse-vs-snippet-remixing.html
   name: Umarji, Medha
+- entries:
+  - date: '2023-03-28'
+    key: Scarsbrook2023
+    reviewed: /2023/03/28/typescript-feature-adoption.html
+  name: Utting, Mark
 - entries:
   - date: '2016-10-05'
     key: Fucci2016
