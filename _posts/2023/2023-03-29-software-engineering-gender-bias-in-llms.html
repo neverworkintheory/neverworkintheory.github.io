@@ -1,0 +1,55 @@
+---
+layout: post
+author: Greg Wilson
+title: "Software Engineering Gender Bias in Large Language Models"
+date: 2023-03-29
+categories: ["Bias", "Inclusion", "Machine Learning"]
+---
+
+<p>
+  A lot of people believe that large language models (LLMs) are going to revolutionize
+  programming—<a href="https://about.sourcegraph.com/blog/cheating-is-all-you-need">this recent post</a>
+  is just one example.
+  But from what I can tell,
+  they don't understand what a revolution actually is.
+  It's not just a shuffle of who's at the top and who has to follow their rules;
+  it's something that changes the rules of the game.
+</p>
+
+<p>
+  This new paper shows that today's LLMs aren't going to do that.
+  Instead,
+  they are going to reinforce and perpetuate the biases in the data on which they were trained.
+  That's not inevitable—we could require their developers to meet verifiable criteria
+  for fairness and safety—but the history of our industry doesn't fill me with hope.
+</p>
+
+<p>Christoph Treude and Hideaki Hata.
+She elicits requirements and he tests: software engineering gender bias in large language models.
+2023.
+<a href="https://arxiv.org/abs/2303.10131">arXiv:2303.10131</a>.</p>
+
+<blockquote>
+  <p>
+    Implicit gender bias in software development is a well-documented issue,
+    such as the association of technical roles with men.
+    To address this bias,
+    it is important to understand it in more detail.
+    This study uses data mining techniques to investigate the extent to which 56 tasks related to software development,
+    such as assigning GitHub issues and testing,
+    are affected by implicit gender bias embedded in large language models.
+    We systematically translated each task from English into a genderless language and back,
+    and investigated the pronouns associated with each task.
+    Based on translating each task 100 times in different permutations,
+    we identify a significant disparity in the gendered pronoun associations with different tasks.
+    Specifically,
+    requirements elicitation was associated with the pronoun "he" in only 6% of cases,
+    while testing was associated with "he" in 100% of cases.
+    Additionally,
+    tasks related to helping others had a 91% association with "he"
+    while the same association for tasks related to asking coworkers was only 52%.
+    These findings reveal a clear pattern of gender bias related to software development tasks
+    and have important implications for addressing this issue
+    both in the training of large language models and in broader society.
+  </p>
+</blockquote>
