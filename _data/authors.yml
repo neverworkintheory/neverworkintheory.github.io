@@ -1719,6 +1719,11 @@
     reviewed: /2021/09/22/taxonomy-of-package-management.html
   name: Homer, Michael
 - entries:
+  - date: '2023-03-30'
+    key: Pohn2023
+    reviewed: /2023/03/30/classification-of-identify-management-approaches.html
+  name: Hommel, Wolfgang
+- entries:
   - date: '2021-09-01'
     key: Hora2021b
     reviewed: /2021/09/01/what-code-is-deliberately-excluded-from-test-coverage-and-why.html
@@ -3456,6 +3461,11 @@
     key: Beller2019
     reviewed: /2021/09/12/developer-testing-in-the-ide.html
   name: Proksch, Sebastian
+- entries:
+  - date: '2023-03-30'
+    key: Pohn2023
+    reviewed: /2023/03/30/classification-of-identify-management-approaches.html
+  name: "P\xF6hn, Daniela"
 - entries:
   - date: '2021-10-17'
     key: Tao2021
