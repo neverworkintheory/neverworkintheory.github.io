@@ -1456,6 +1456,9 @@
   - date: '2023-03-30'
     reviewed: /2023/03/30/classification-of-identify-management-approaches.html
     title: Classification of Identify Management Approaches
+  - date: '2023-03-31'
+    reviewed: /2023/03/31/inverse-relationship-between-bugs-and-patches.html
+    title: Inverse Relationship Between Bugs and Patches
   name: Security
 - entries:
   - date: '2021-11-23'

@@ -1874,6 +1874,15 @@
   reviewed = {/2016/10/01/apex.html}
 }
 
+@misc{Kim2023,
+  author = {Jinhan Kim and Jongchan Park and Shin Yoo},
+  title = {The Inversive Relationship Between Bugs and Patches: An Empirical Study},
+  year = {2023},
+  eprint = {2303.00303},
+  abstract = {Software bugs pose an ever-present concern for developers, and patching such bugs requires a considerable amount of costs through complex operations. In contrast, introducing bugs can be an effortless job, in that even a simple mutation can easily break the Program Under Test (PUT). Existing research has considered these two opposed activities largely separately, either trying to automatically generate realistic patches to help developers, or to find realistic bugs to simulate and prevent future defects. Despite the fundamental differences between them, however, we hypothesise that they do not syntactically differ from each other when considered simply as code changes. To examine this assumption systematically, we investigate the relationship between patches and buggy commits, both generated manually and automatically, using a clustering and pattern analysis. A large scale empirical evaluation reveals that up to 70\% of patches and faults can be clustered together based on the similarity between their lexical patterns; further, 44\% of the code changes can be abstracted into the identical change patterns. Moreover, we investigate whether code mutation tools can be used as Automated Program Repair (APR) tools, and APR tools as code mutation tools. In both cases, the inverted use of mutation and APR tools can perform surprisingly well, or even better, when compared to their original, intended uses. For example, 89\% of patches found by SequenceR, a deep learning based APR tool, can also be found by its inversion, i.e., a model trained with faults and not patches. Similarly, real fault coupling study of mutants reveals that TBar, a template based APR tool, can generate 14\% and 3\% more fault couplings than traditional mutation tools, PIT and Major respectively, when used as a mutation tool. Our findings suggest that the valid scope of mining code changes for either mutation or APR can be wider than previously thought.},
+  reviewed = {/2023/03/31/inverse-relationship-between-bugs-and-patches.html}
+}
+
 @article{Kinshumann2011,
   doi = {10.1145/1965724.1965749},
   url = {https://doi.org/10.1145/1965724.1965749},

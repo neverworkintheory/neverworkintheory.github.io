@@ -1,0 +1,73 @@
+---
+layout: post
+author: Greg Wilson
+title: "Inverse Relationship Between Bugs and Patches"
+date: 2023-03-31
+categories: ["Bugs", "Code Generation"]
+---
+
+<p>
+  How easily can you spot the difference between code that introduces bugs
+  and code that fixes them?
+  Given the explosion of interest in AI-based code generators over the last few months,
+  an equally important question is now,
+  "How well can machines tell the two apart?"
+</p>
+
+<p>
+  To answer that question,
+  the authors of this recent paper applied clustering methods to both bug fixes and bug patches
+  and found that most are similar enough to be clustered together—i.e.,
+  they are superficially indistinguishable.
+  What's more,
+  they found that code mutation tools (used to generate buggy code for testing)
+  and automatic program repair tools (used to generate fixes for bugs)
+  can often be used interchangeably if trained on each other's data.
+  That's good news for researchers—it's always a bit of a thrill
+  to realize that two ideas or approaches can be unified—but probably a sign that
+  useful AI-based coding assistants are going to require more (and more careful) training
+  than their giddier advocates expect.
+</p>
+
+<p>Jinhan Kim, Jongchan Park, and Shin Yoo.
+The inversive relationship between bugs and patches: an empirical study.
+2023.
+<a href="https://arxiv.org/abs/2303.00303">arXiv:2303.00303</a>.</p>
+
+<blockquote>
+  <p>
+    Software bugs pose an ever-present concern for developers,
+    and patching such bugs requires a considerable amount of costs through complex operations.
+    In contrast, introducing bugs can be an effortless job,
+    in that even a simple mutation can easily break the Program Under Test (PUT).
+    Existing research has considered these two opposed activities largely separately,
+    either trying to automatically generate realistic patches to help developers,
+    or to find realistic bugs to simulate and prevent future defects.
+    Despite the fundamental differences between them,
+    however,
+    we hypothesise that they do not syntactically differ from each other when considered simply as code changes.
+    To examine this assumption systematically,
+    we investigate the relationship between patches and buggy commits,
+    both generated manually and automatically,
+    using a clustering and pattern analysis.
+    A large scale empirical evaluation reveals that up to 70% of patches and faults can be clustered together
+    based on the similarity between their lexical patterns;
+    further, 44% of the code changes can be abstracted into the identical change patterns.
+    Moreover,
+    we investigate whether code mutation tools can be used as Automated Program Repair (APR) tools,
+    and APR tools as code mutation tools.
+    In both cases,
+    the inverted use of mutation and APR tools can perform surprisingly well, or even better,
+    when compared to their original, intended uses.
+    For example, 89% of patches found by SequenceR, a deep learning based APR tool,
+    can also be found by its inversion,
+    i.e., a model trained with faults and not patches.
+    Similarly, real fault coupling study of mutants reveals that TBar,
+    a template based APR tool,
+    can generate 14% and 3% more fault couplings than traditional mutation tools,
+    PIT and Major respectively,
+    when used as a mutation tool.
+    Our findings suggest that the valid scope of mining code changes for either mutation or APR
+    can be wider than previously thought.
+  </p>
+</blockquote>

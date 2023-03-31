@@ -2041,6 +2041,11 @@
     reviewed: /2016/10/01/apex.html
   name: Kim, I. Luk
 - entries:
+  - date: '2023-03-31'
+    key: Kim2023
+    reviewed: /2023/03/31/inverse-relationship-between-bugs-and-patches.html
+  name: Kim, Jinhan
+- entries:
   - date: '2013-09-20'
     key: Meng2013
     reviewed: /2013/09/20/locating-and-applying-systematic-edits.html
@@ -3245,6 +3250,11 @@
     key: Baltes2020
     reviewed: /2021/10/03/is-40-the-new-60.html
   name: Park, George
+- entries:
+  - date: '2023-03-31'
+    key: Kim2023
+    reviewed: /2023/03/31/inverse-relationship-between-bugs-and-patches.html
+  name: Park, Jongchan
 - entries:
   - date: '2021-08-11'
     key: Ali2020
@@ -4700,6 +4710,11 @@
     key: Gulzar2016
     reviewed: /2016/06/05/bigdebug.html
   name: Yoo, Seunghyun
+- entries:
+  - date: '2023-03-31'
+    key: Kim2023
+    reviewed: /2023/03/31/inverse-relationship-between-bugs-and-patches.html
+  name: Yoo, Shin
 - entries:
   - date: '2022-04-11'
     key: Shao2020
