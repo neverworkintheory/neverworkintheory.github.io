@@ -119,6 +119,9 @@
   - date: '2022-03-11'
     reviewed: /2022/03/11/single-statement-bugs-in-python-projects.html
     title: Characterizing Single-Statement Bugs in Popular Open-Source Python Projects
+  - date: '2023-03-31'
+    reviewed: /2023/03/31/inverse-relationship-between-bugs-and-patches.html
+    title: Inverse Relationship Between Bugs and Patches
   name: Bugs
 - entries:
   - date: '2021-09-21'
@@ -144,6 +147,9 @@
   - date: '2013-06-06'
     reviewed: /2013/06/06/automatic-patch-generation-learned-from-human-written-patches.html
     title: Automatic Patch Generation Learned from Human-Written Patches
+  - date: '2023-03-31'
+    reviewed: /2023/03/31/inverse-relationship-between-bugs-and-patches.html
+    title: Inverse Relationship Between Bugs and Patches
   name: Code Generation
 - entries:
   - date: '2011-06-27'
@@ -1454,11 +1460,8 @@
     reviewed: /2023/03/13/covert-cloud-communication-with-lambdas.html
     title: Covert Cloud Communication with Lambdas
   - date: '2023-03-30'
-    reviewed: /2023/03/30/classification-of-identify-management-approaches.html
-    title: Classification of Identify Management Approaches
-  - date: '2023-03-31'
-    reviewed: /2023/03/31/inverse-relationship-between-bugs-and-patches.html
-    title: Inverse Relationship Between Bugs and Patches
+    reviewed: /2023/03/30/classification-of-identity-management-approaches.html
+    title: Classification of Identity Management Approaches
   name: Security
 - entries:
   - date: '2021-11-23'
