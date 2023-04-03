@@ -1,0 +1,59 @@
+---
+layout: post
+author: Greg Wilson
+title: "Alternatives to Cells in Data Science Pipelines"
+date: 2023-04-03
+categories: ["Computational Notebooks", "Scientific Computing"]
+---
+
+<p>
+  I was tempted to call this post "Notebooks Cells Considered Harmful"
+  as a nod to <a href="https://en.wikipedia.org/wiki/Considered_harmful">one of computing's great traditions</a>,
+  but I think that's an exaggeration.
+  One study after another has found that
+  allowing people to execute arbitrary chunks of code in a computational notebook an arbitrary order
+  leads to confusion,
+  and often to incorrect results.
+  That does <em>not</em> imply that notebooks and cells are intrinsically bad ideas,
+  but rather that we need ways to manage their complexity,
+  just as for-loops and case statements managed the tangled FORTRAN flowcharts of my youth.
+</p>
+
+<p>
+  This recent paper explores one approach:
+  constructing an explicit dataflow graph right from the start.
+  The next generation of notebooks will almost certainly combine this with some kind of
+  <a href="{{'/2023/03/22/identifying-and-extracting-jupyter-notebook-structures.html' | relative_url}}">post-hoc structure discovery</a>;
+  watching these ideas take shape is yet another reason to keep an eye on the research literature.
+</p>
+
+<p>Lars Reimann and Günter Kniesel-Wünsche.
+An alternative to cells for selective execution of data science pipelines.
+2023.
+<a href="https://arxiv.org/abs/arXiv:2302.14556">arXiv:2302.14556</a>.</p>
+
+<blockquote>
+  <p>
+    Data Scientists often use notebooks to develop Data Science (DS) pipelines,
+    particularly since they allow to selectively execute parts of the pipeline.
+    However, notebooks for DS have many well-known flaws.
+    We focus on the following ones in this paper:
+    (1) Notebooks can become littered with code cells that are not part of the main DS pipeline but exist solely to make decisions
+    (e.g. listing the columns of a tabular dataset).
+    (2) While users are allowed to execute cells in any order,
+    not every ordering is correct,
+    because a cell can depend on declarations from other cells.
+    (3) After making changes to a cell, this cell and all cells that depend on changed declarations must be rerun.
+    (4) Changes to external values necessitate partial re-execution of the notebook.
+    (5) Since cells are the smallest unit of execution, code that is unaffected by changes, can inadvertently be re-executed.
+  </p>
+  <p>
+    To solve these issues, we propose to replace cells as the basis for the selective execution of DS pipelines.
+    Instead, we suggest populating a context-menu for variables with actions fitting their type
+    (like listing columns if the variable is a tabular dataset).
+    These actions are executed based on a data-flow analysis to ensure dependencies between variables are respected
+    and results are updated properly after changes.
+    Our solution separates pipeline code from decision making code and automates dependency management,
+    thus reducing clutter and the risk of making errors.
+  </p>
+</blockquote>

@@ -2085,6 +2085,11 @@
     reviewed: /2013/06/13/formal-specifications-better-than-function-points-for-code-sizing.html
   name: Klein, Gerwin
 - entries:
+  - date: '2023-04-03'
+    key: '2302.14556'
+    reviewed: /2023/04/03/alternatives-to-cells-in-ds-pipelines.html
+  name: "Kniesel-W\xFCnsche, G\xFCnter"
+- entries:
   - date: '2016-09-09'
     key: Krein2016
     reviewed: /2016/09/09/replicating-design-patterns-experiment.html
@@ -3567,6 +3572,11 @@
     key: Glanz2020
     reviewed: /2022/03/13/obfuscated-strings-and-privacy.html
   name: Reif, Michael
+- entries:
+  - date: '2023-04-03'
+    key: '2302.14556'
+    reviewed: /2023/04/03/alternatives-to-cells-in-ds-pipelines.html
+  name: Reimann, Lars
 - entries:
   - date: '2021-10-26'
     key: Zhang2021a
