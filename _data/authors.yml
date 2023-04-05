@@ -870,6 +870,11 @@
     reviewed: /2021/09/16/exception-handling-practices-and-post-release-defects.html
   name: "de P\xE1dua, Guilherme B."
 - entries:
+  - date: '2023-03-05'
+    key: DeSouzaSantos2023
+    reviewed: /2023/03/05/transgender-careers-in-the-software-industry.html
+  name: de Souza Santos, Ronnie
+- entries:
   - date: '2023-03-24'
     key: CardosoPereira2023
     reviewed: /2023/03/24/supporting-developers-with-disabilities.html
@@ -2533,6 +2538,11 @@
     reviewed: /2023/03/03/emotional-rollercoaster-requirements-changes.html
   name: Madampe, Kashumi
 - entries:
+  - date: '2023-03-05'
+    key: DeSouzaSantos2023
+    reviewed: /2023/03/05/transgender-careers-in-the-software-industry.html
+  name: "Magalh\xE3es, Cleyton"
+- entries:
   - date: '2021-12-13'
     key: Mahmoudi2019
     reviewed: /2021/12/13/refactorings-in-merge-conflicts.html
@@ -4118,6 +4128,11 @@
     key: Dabbish2012
     reviewed: /2012/03/01/social-coding-in-github.html
   name: Stuart, Colleen
+- entries:
+  - date: '2023-03-05'
+    key: DeSouzaSantos2023
+    reviewed: /2023/03/05/transgender-careers-in-the-software-industry.html
+  name: Stuart-Verner, Brody
 - entries:
   - date: '2014-10-09'
     key: Yuan2014
