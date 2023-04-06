@@ -259,6 +259,19 @@
 
 @comment{BBB}
 
+@inproceedings{Bafatakis2019,
+  doi = {10.1109/msr.2019.00042},
+  url = {https://doi.org/10.1109/msr.2019.00042},
+  year = {2019},
+  month = may,
+  publisher = {{IEEE}},
+  author = {Nikolaos Bafatakis and Niels Boecker and Wenjie Boon and Martin Cabello Salazar and Jens Krinke and Gazi Oznacar and Robert White},
+  title = {Python Coding Style Compliance on Stack Overflow},
+  booktitle = msr,
+  abstract = {Software developers all over the world use Stack Overflow (SO) to interact and exchange code snippets. Research also uses SO to harvest code snippets for use with recommendation systems. However, previous work has shown that code on SO may have quality issues, such as security or license problems. We analyse Python code on SO to determine its coding style compliance. From 1,962,535 code snippets tagged with 'python', we extracted 407,097 snippets of at least 6 statements of Python code. Surprisingly, 93.87\% of the extracted snippets contain style violations, with an average of 0.7 violations per statement and a huge number of snippets with a considerably higher ratio. Researchers and developers should, therefore, be aware that code snippets on SO may not representative of good coding style. Furthermore, while user reputation seems to be unrelated to coding style compliance, for posts with vote scores in the range between -10 and 20, we found a strong correlation ($r = -0.87$, $p < 10^-7$) between the vote score a post received and the average number of violations per statement for snippets in such posts.},
+  reviewed = {/2021/10/01/python-coding-style-compliance-on-stack-overflow.html}
+}
+
 @inproceedings{Balachandran2013,
   doi = {10.1109/icse.2013.6606642},
   url = {https://doi.org/10.1109/icse.2013.6606642},
@@ -399,17 +412,13 @@
   reviewed = {/2012/05/02/example-embedding.html}
 }
 
-@inproceedings{Bafatakis2019,
-  doi = {10.1109/msr.2019.00042},
-  url = {https://doi.org/10.1109/msr.2019.00042},
-  year = {2019},
-  month = may,
-  publisher = {{IEEE}},
-  author = {Nikolaos Bafatakis and Niels Boecker and Wenjie Boon and Martin Cabello Salazar and Jens Krinke and Gazi Oznacar and Robert White},
-  title = {Python Coding Style Compliance on Stack Overflow},
-  booktitle = msr,
-  abstract = {Software developers all over the world use Stack Overflow (SO) to interact and exchange code snippets. Research also uses SO to harvest code snippets for use with recommendation systems. However, previous work has shown that code on SO may have quality issues, such as security or license problems. We analyse Python code on SO to determine its coding style compliance. From 1,962,535 code snippets tagged with 'python', we extracted 407,097 snippets of at least 6 statements of Python code. Surprisingly, 93.87\% of the extracted snippets contain style violations, with an average of 0.7 violations per statement and a huge number of snippets with a considerably higher ratio. Researchers and developers should, therefore, be aware that code snippets on SO may not representative of good coding style. Furthermore, while user reputation seems to be unrelated to coding style compliance, for posts with vote scores in the range between -10 and 20, we found a strong correlation ($r = -0.87$, $p < 10^-7$) between the vote score a post received and the average number of violations per statement for snippets in such posts.},
-  reviewed = {/2021/10/01/python-coding-style-compliance-on-stack-overflow.html}
+@misc{Basak2023,
+  author = {Setu Kumar Basak and Lorenzo Neil and Bradley Reaves and Laurie Williams},
+  title = {What Challenges Do Developers Face About Checked-in Secrets in Software Artifacts?},
+  year = {2023},
+  eprint = {2301.12377},
+  abstract = {Throughout 2021, GitGuardian’s monitoring of public GitHub repositories revealed a two-fold increase in the number of secrets (database credentials, API keys, and other credentials) exposed compared to 2020, accumulating more than six million secrets. To our knowledge, the challenges developers face to avoid checked-in secrets are not yet characterized. The goal of our paper is to aid researchers and tool developers in understanding and prioritizing opportunities for future research and tool automation for mitigating checked-in secrets through an empirical investigation of challenges and solutions related to checked-in secrets. We extract 779 questions related to checked-in secrets on Stack Exchange and apply qualitative analysis to determine the challenges and the solutions posed by others for each of the challenges. We identify 27 challenges and 13 solutions. The four most common challenges, in ranked order, are: (i) store/version of secrets during deployment; (ii) store/version of secrets in source code; (iii) ignore/hide of secrets in source code; and (iv) sanitize VCS history. The three most common solutions, in ranked order, are: (i) move secrets out of source code/version control and use template config file; (ii) secret management in deployment; and (iii) use local environment variables. Our findings indicate that the same solution has been mentioned to mitigate multiple challenges. However, our findings also identify an increasing trend in questions lacking accepted solutions substantiating the need for future research and tool automation on managing secrets.},
+  reviewed = {/2023/04/06/challenges-with-checked-in-secrets.html}
 }
 
 @inproceedings{Beck2011,

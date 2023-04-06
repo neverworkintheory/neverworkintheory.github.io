@@ -342,6 +342,11 @@
     reviewed: /2012/05/02/example-embedding.html
   name: Barzilay, Ohad
 - entries:
+  - date: '2023-04-06'
+    key: Basak2023
+    reviewed: /2023/04/06/challenges-with-checked-in-secrets.html
+  name: Basak, Setu Kumar
+- entries:
   - date: '2013-06-13'
     key: Staples2013
     reviewed: /2013/06/13/formal-specifications-better-than-function-points-for-code-sizing.html
@@ -3060,6 +3065,11 @@
     reviewed: /2016/04/26/finding-security-bugs.html
   name: Near, Joseph P.
 - entries:
+  - date: '2023-04-06'
+    key: Basak2023
+    reviewed: /2023/04/06/challenges-with-checked-in-secrets.html
+  name: Neil, Lorenzo
+- entries:
   - date: '2023-03-15'
     key: Alsuhaibani2022
     reviewed: /2023/03/15/automatically-assessing-method-names.html
@@ -3572,6 +3582,11 @@
     key: Muhammad2019
     reviewed: /2021/09/22/taxonomy-of-package-management.html
   name: Real, Lucas C. Villa
+- entries:
+  - date: '2023-04-06'
+    key: Basak2023
+    reviewed: /2023/04/06/challenges-with-checked-in-secrets.html
+  name: Reaves, Bradley
 - entries:
   - date: '2021-10-15'
     key: Bogomolov2021
@@ -4595,6 +4610,9 @@
   - date: '2021-11-23'
     key: Rahman2019
     reviewed: /2021/11/23/security-smells-in-infrastructure-as-code-scripts.html
+  - date: '2023-04-06'
+    key: Basak2023
+    reviewed: /2023/04/06/challenges-with-checked-in-secrets.html
   name: Williams, Laurie
 - entries:
   - date: '2021-09-04'
