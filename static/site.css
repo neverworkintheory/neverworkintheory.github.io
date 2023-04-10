@@ -1,3 +1,19 @@
+/* Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap");
+
+
+/* Overall appearance */
+html {
+    font-family: "Atkinson Hyperlegible", sans-serif;
+}
+code {
+    font-family: "Source Code Pro", monospace;
+}
+div.container {
+    max-width: 64rem;
+}
+
 /* Wrap */
 @media
  only screen and (max-width: 38em) {
