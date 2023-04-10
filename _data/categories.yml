@@ -55,6 +55,11 @@
     title: Authorship Attribution of Source Code
   name: Authorship
 - entries:
+  - date: '2023-04-10'
+    reviewed: /2023/04/10/help-us-learn-more-about-automated-program-repair.html
+    title: Help Us Learn More About Automated Program Repair
+  name: Automated Program Repair
+- entries:
   - date: '2021-09-30'
     reviewed: /2021/09/30/effects-of-adopting-code-review-bots.html
     title: Effects of Adopting Code Review Bots on Pull Requests to OSS Projects
@@ -1601,6 +1606,9 @@
   - date: '2022-11-14'
     reviewed: /2022/11/14/pluralsight-developer-success-survey.html
     title: Pluralsight Developer Success Survey
+  - date: '2023-04-10'
+    reviewed: /2023/04/10/help-us-learn-more-about-automated-program-repair.html
+    title: Help Us Learn More About Automated Program Repair
   name: Survey
 - entries:
   - date: '2021-10-13'
