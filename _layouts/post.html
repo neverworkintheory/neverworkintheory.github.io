@@ -7,7 +7,7 @@ layout: default
   <p>
     Reviewed by {{ page.author }} / {{ page.date | date: "%Y-%m-%d" }}
     <br/>
-    Keywords: {{ page.categories | sort | join: ', ' }}
+    {% include keywords.html %}
   </p>
   {{ content }}
   {% include prevnext.html %}

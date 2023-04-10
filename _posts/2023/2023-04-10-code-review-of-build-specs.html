@@ -1,0 +1,61 @@
+---
+layout: post
+author: Greg Wilson
+title: "Code Review of Build System Specifications"
+date: 2023-04-10
+categories: ["Code Review", "DevOps"]
+---
+
+<p>
+  If you've ever had to maintain a 10,000-line Makefile,
+  you'd know that getting programmers to take the problem of flexible, efficient, reproducible builds seriously
+  is the hardest part of the job.
+  If you want proof, try finding a breakpointing, single-stepping debugger
+  for Make, Ant, or any other widely-used build tool.
+</p>
+<p>
+  But to paraphrase my brother,
+  good engineers study cars—great engineers also study the assembly lines that produce them,
+  and this upcoming paper does exactly that.
+  Based on analysis of over half a million changes from Eclipse and Qt,
+  and a detailed qualitative analysis of 500 of those changes,
+  they authors find that changes to build specs are less than half as likely to be discussed during code review
+  as changes to application code,
+  but that comments on those changes are <em>more</em> likely to point out defects
+  than comments on code.
+  They also find that developers' lack of understanding and interest in build systems
+  is a major hindrance to better review.
+</p>
+
+<p>
+  Now if you'll excuse me,
+  I have a deployment to roll back:
+  apparently we bundled two incompatible versions of one of our dependencies…
+</p>
+
+<blockquote>
+  <p>
+    Build systems automate the integration of source code into executables.
+    Maintaining build systems is known to be challenging.
+    Lax build maintenance can lead to costly build breakages or unexpected software behaviour.
+    Code review is a broadly adopted practice to improve software quality.
+    Yet, little is known about how code review is applied to build specifications.
+  </p>
+  <p>
+    In this paper,
+    we present the first empirical study of how code review is practiced in the context of build specifications.
+    Through quantitative analysis of 502,931 change sets from the Qt and Eclipse communities,
+    we observe that changes to build specifications are
+    at least two times less likely to be discussed during code review
+    when compared to production and test code changes.
+    A qualitative analysis of 500 change sets reveals that
+    (i) comments on changes to build specifications are more likely to point out defects
+    than rates reported in the literature for production and test code,
+    and (ii) issues related to evolvability of the code and dependency-related issues
+    are the most frequently raised types of issues.
+    Follow-up interviews with nine developers with 1-40 years of experience point out
+    social and technical factors that hinder rigorous review of build specifications,
+    such as a prevailing lack of understanding of and interest in build systems among developers,
+    and the lack of dedicated tooling to support the review of build specifications.
+  </p>
+</blockquote>

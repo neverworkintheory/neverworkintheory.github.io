@@ -189,6 +189,9 @@
   - date: '2021-09-30'
     reviewed: /2021/09/30/effects-of-adopting-code-review-bots.html
     title: Effects of Adopting Code Review Bots on Pull Requests to OSS Projects
+  - date: '2023-04-10'
+    reviewed: /2023/04/10/code-review-of-build-specs.html
+    title: Code Review of Build System Specifications
   name: Code Review
 - entries:
   - date: '2021-12-02'
@@ -464,6 +467,9 @@
   - date: '2023-04-06'
     reviewed: /2023/04/06/challenges-with-checked-in-secrets.html
     title: Challenges with Checked-In Secrets
+  - date: '2023-04-10'
+    reviewed: /2023/04/10/code-review-of-build-specs.html
+    title: Code Review of Build System Specifications
   name: DevOps
 - entries:
   - date: '2021-10-30'

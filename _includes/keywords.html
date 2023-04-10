@@ -1,0 +1,2 @@
+{% assign categories = page.categories | sort %}
+Keywords: {% for cat in categories %}{% assign slug = cat | slugify %}{% unless forloop.first %}, {% endunless %}<a href="{{'/category/#' | append: slug | relative_url}}">{{cat}}</a>{% endfor %}
