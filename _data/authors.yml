@@ -100,7 +100,7 @@
   name: Alencar da Costa, Daniel
 - entries:
   - date: '2023-04-10'
-    key: nejati2023icse
+    key: Nejati2023
     reviewed: /2023/04/10/code-review-of-build-specs.html
   name: Alfadel, Mahmoud
 - entries:
@@ -2441,6 +2441,11 @@
     reviewed: /2016/10/01/apex.html
   name: Liu, Peng
 - entries:
+  - date: '2023-04-11'
+    key: Yan2023
+    reviewed: /2023/04/11/automated-detection-and-repair-of-intrusive-ads.html
+  name: Liu, Xinyue
+- entries:
   - date: '2021-11-08'
     key: Tomassi2019
     reviewed: /2021/11/08/my-kingdom-for-a-dataset.html
@@ -2674,7 +2679,7 @@
     key: AlencarDaCosta2017
     reviewed: /2021/08/09/impact-of-rapid-release-cycles-on-integration-delay-of-fixed-issues.html
   - date: '2023-04-10'
-    key: nejati2023icse
+    key: Nejati2023
     reviewed: /2023/04/10/code-review-of-build-specs.html
   name: McIntosh, Shane
 - entries:
@@ -2692,6 +2697,11 @@
     key: McNamara2018
     reviewed: /2022/03/02/ethics-in-decision-making.html
   name: McNamara, Andrew
+- entries:
+  - date: '2023-04-11'
+    key: Yan2023
+    reviewed: /2023/04/11/automated-detection-and-repair-of-intrusive-ads.html
+  name: Medvidovic, Nenad
 - entries:
   - date: '2016-10-02'
     key: Mattmann2015
@@ -3079,7 +3089,7 @@
   name: Neil, Lorenzo
 - entries:
   - date: '2023-04-10'
-    key: nejati2023icse
+    key: Nejati2023
     reviewed: /2023/04/10/code-review-of-build-specs.html
   name: Nejati, Mahtab
 - entries:
@@ -4530,6 +4540,11 @@
     reviewed: /2013/06/13/the-msr-cookbook-mining-a-decade-of-research.html
   name: Wang, Wei
 - entries:
+  - date: '2023-04-11'
+    key: Yan2023
+    reviewed: /2023/04/11/automated-detection-and-repair-of-intrusive-ads.html
+  name: Wang, Weihang
+- entries:
   - date: '2014-03-31'
     key: Graziotin2014
     reviewed: /2014/03/31/happy-sw-devs-solve-problems-better.html
@@ -4719,6 +4734,11 @@
     reviewed: /2021/10/17/demystifying-error-messages-in-data-science-libraries.html
   name: Xuan, Jifeng
 - entries:
+  - date: '2023-04-11'
+    key: Yan2023
+    reviewed: /2023/04/11/automated-detection-and-repair-of-intrusive-ads.html
+  name: Yan, Yutian
+- entries:
   - date: '2021-11-18'
     key: Ni2021
     reviewed: /2021/11/18/synthesis-approach-for-data-science-api-refactoring.html
@@ -4890,6 +4910,11 @@
     key: Yuan2014
     reviewed: /2014/10/09/simple-testing-can-prevent-most-critical-failures.html
   name: Zhao, Xu
+- entries:
+  - date: '2023-04-11'
+    key: Yan2023
+    reviewed: /2023/04/11/automated-detection-and-repair-of-intrusive-ads.html
+  name: Zheng, Yunhui
 - entries:
   - date: '2021-10-16'
     key: Han2021

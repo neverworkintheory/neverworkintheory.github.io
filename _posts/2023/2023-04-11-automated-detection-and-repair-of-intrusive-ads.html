@@ -1,0 +1,50 @@
+---
+layout: post
+author: Greg Wilson
+title: "Automated Detection and Repair of Intrusive Ads"
+date: 2023-04-11
+categories: ["Automated Program Repair"]
+---
+
+<p>
+  Unless and until legislators give ad regulations some real teeth,
+  we're going to have to rely on counter-measures.
+  I can think of no better introduction and summary for this latest advance in that arms race
+  than the one written by the authors themselves and quoted below.
+</p>
+
+<blockquote>
+  <p>
+    …we propose an automatic detection technique that addresses the following challenges:
+    (1) Advertisements can be fully dynamic where the structure of an ad is unknown until runtime,
+    making it difficult to identify an ad and differentiate it from other elements.
+    (2) Dynamically loaded ads can be highly volatile
+    (e.g., first appear and then disappear at any time),
+    which makes it difficult to localize dynamic ads in the source code.
+    (3) Advertisements can be initially preloaded and later have their properties modified during runtime,
+    thus a pure static/dynamic analysis alone does not suffice.
+  </p>
+  <p>
+    To this end,
+    we propose AdHere,
+    a technique that can automatically detect violating ads and suggest repair proposals.
+    The design of AdHere is based on a combination of static and dynamic analyses.
+    It works by first parsing the initial web page to a DOM tree to search for potential static ads,
+    and then using mutation observers to monitor and detect intrusive (dynamic/static) ads on the fly.
+    To handle ads' volatile nature,
+    AdHere includes two detection algorithms for desktop and mobile ads to identify different ad violations
+    during three phases of page load events.
+    Our approach recursively applies the detection algorithms to resolve nested layers of DOM elements
+    inserted by ad delegations.
+    We evaluate AdHere on Alexa Top 1 Million Websites to detect their compliance with the Better Ads Standards.
+    AdHere detected violating ads on 5,540 mobile websites and 4,601 desktop websites.
+    Compar[ed] to the currently available alternative,
+    AdHere detected violations on 4,656 more mobile websites and 3,911 more desktop websites
+    and improved recall (by 16.6%) and accuracy (by 4.2%).
+  </p>
+</blockquote>
+
+<p>Yutian Yan, Yunhui Zheng, Xinyue Liu, Nenad Medvidovic, and Weihang Wang.
+AdHere: automated detection and repair of intrusive ads.
+In <em>Proc. ICSE'23</em>, 2023,
+<a href="https://weihang-wang.github.io/papers/ICSE2023-AdHere.pdf">https://weihang-wang.github.io/papers/ICSE2023-AdHere.pdf</a>.</p>
