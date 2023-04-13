@@ -449,6 +449,11 @@
     reviewed: /2016/09/16/five-from-icer-2016.html
   name: Berlin, Jesse
 - entries:
+  - date: '2023-04-13'
+    key: Leinonen2023
+    reviewed: /2023/04/13/comparing-student-and-llm-code-explanations.html
+  name: Bernstein, Seth
+- entries:
   - date: '2011-08-30'
     key: Bettenburg2008
     reviewed: /2011/08/30/what-makes-a-good-bug-report.html
@@ -929,6 +934,9 @@
   - date: '2021-09-02'
     key: Becker2019
     reviewed: /2021/09/02/compiler-error-messages-considered-unhelpful.html
+  - date: '2023-04-13'
+    key: Leinonen2023
+    reviewed: /2023/04/13/comparing-student-and-llm-code-explanations.html
   name: Denny, Paul
 - entries:
   - date: '2021-09-23'
@@ -1600,6 +1608,9 @@
   - date: '2021-09-26'
     key: Zavgorodniaia2021
     reviewed: /2021/09/26/two-papers-on-time.html
+  - date: '2023-04-13'
+    key: Leinonen2023
+    reviewed: /2023/04/13/comparing-student-and-llm-code-explanations.html
   name: Hellas, Arto
 - entries:
   - date: '2013-06-13'
@@ -2061,6 +2072,11 @@
     reviewed: /2023/03/31/inverse-relationship-between-bugs-and-patches.html
   name: Kim, Jinhan
 - entries:
+  - date: '2023-04-13'
+    key: Leinonen2023
+    reviewed: /2023/04/13/comparing-student-and-llm-code-explanations.html
+  name: Kim, Joanne
+- entries:
   - date: '2013-09-20'
     key: Meng2013
     reviewed: /2013/09/20/locating-and-applying-systematic-edits.html
@@ -2313,6 +2329,9 @@
   - date: '2021-09-26'
     key: Zavgorodniaia2021
     reviewed: /2021/09/26/two-papers-on-time.html
+  - date: '2023-04-13'
+    key: Leinonen2023
+    reviewed: /2023/04/13/comparing-student-and-llm-code-explanations.html
   name: Leinonen, Juho
 - entries:
   - date: '2021-10-19'
@@ -2547,6 +2566,11 @@
     key: McLeod2011
     reviewed: /2011/12/21/factors-that-affect-software-systems-development-project-outcomes.html
   name: MacDonell, Stephen G.
+- entries:
+  - date: '2023-04-13'
+    key: Leinonen2023
+    reviewed: /2023/04/13/comparing-student-and-llm-code-explanations.html
+  name: MacNeil, Stephen
 - entries:
   - date: '2023-03-03'
     key: Madampe2022
@@ -3794,6 +3818,11 @@
     reviewed: /2021/10/30/app-store-effects-on-software-engineering-practices.html
   name: Sarro, Federica
 - entries:
+  - date: '2023-04-13'
+    key: Leinonen2023
+    reviewed: /2023/04/13/comparing-student-and-llm-code-explanations.html
+  name: Sarsa, Sami
+- entries:
   - date: '2016-04-26'
     key: Washburn2016
     reviewed: /2016/04/26/game-postmortems.html
@@ -4312,6 +4341,11 @@
     key: Scanniello2017
     reviewed: /2021/08/09/abbreviated-vs-full-names.html
   name: Tramontana, Porfirio
+- entries:
+  - date: '2023-04-13'
+    key: Leinonen2023
+    reviewed: /2023/04/13/comparing-student-and-llm-code-explanations.html
+  name: Tran, Andrew
 - entries:
   - date: '2013-02-12'
     key: Cinneide2012
