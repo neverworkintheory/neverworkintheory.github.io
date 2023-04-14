@@ -281,6 +281,11 @@
     reviewed: /2022/04/04/contributor-prediction-for-github.html
   name: Bao, Lingfeng
 - entries:
+  - date: '2023-04-14'
+    key: Ladisa2023
+    reviewed: /2023/04/14/software-cupply-chain-attacks.html
+  name: Barais, Olivier
+- entries:
   - date: '2021-09-05'
     key: Barbosa2014
     reviewed: /2021/09/05/two-papers-on-errors.html
@@ -2268,6 +2273,11 @@
     reviewed: /2022/03/23/designing-types-for-r-empirically.html
   name: "K\u0159ikava, Filip"
 - entries:
+  - date: '2023-04-14'
+    key: Ladisa2023
+    reviewed: /2023/04/14/software-cupply-chain-attacks.html
+  name: Ladisa, Piergiorgio
+- entries:
   - date: '2021-09-19'
     key: Tregubov2017
     reviewed: /2021/09/19/impact-of-task-switching-and-work-interruptions.html
@@ -2634,6 +2644,11 @@
     key: Marinescu2011
     reviewed: /2011/10/22/three-results-many-definitions.html
   name: Marinescu, Cristina
+- entries:
+  - date: '2023-04-14'
+    key: Ladisa2023
+    reviewed: /2023/04/14/software-cupply-chain-attacks.html
+  name: Martinez, Matias
 - entries:
   - date: '2021-11-18'
     key: Ni2021
@@ -3475,6 +3490,11 @@
     reviewed: /2022/03/31/textual-vs-graphic-design-descriptions-and-communication.html
   name: Polasek, Ivan
 - entries:
+  - date: '2023-04-14'
+    key: Ladisa2023
+    reviewed: /2023/04/14/software-cupply-chain-attacks.html
+  name: Ponta, Serena Elisa
+- entries:
   - date: '2016-10-02'
     key: Mattmann2015
     reviewed: /2016/10/02/grid-revisited.html
@@ -3787,6 +3807,11 @@
     key: Parnin2012
     reviewed: /2012/07/04/programmer-information-needs-after-memory-failure.html
   name: Rugaber, Spencer
+- entries:
+  - date: '2023-04-14'
+    key: Ladisa2023
+    reviewed: /2023/04/14/software-cupply-chain-attacks.html
+  name: Sabetta, Antonino
 - entries:
   - date: '2013-06-06'
     key: Lewis2013
