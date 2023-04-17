@@ -347,6 +347,11 @@
     title: Comparing Student and LLM Code Explanations
   name: Computing Education
 - entries:
+  - date: '2023-04-17'
+    reviewed: /2023/04/17/taxing-collaborative-software-engineering.html
+    title: Taxing Collaborative Software Engineering
+  name: Computing and the Law
+- entries:
   - date: '2022-04-18'
     reviewed: /2022/04/18/zeller-summary-icse-2022.html
     title: Andreas Zeller Summarizes ICSE 2022

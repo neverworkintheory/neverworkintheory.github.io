@@ -670,6 +670,11 @@
     reviewed: /2021/10/30/app-store-effects-on-software-engineering-practices.html
   name: Capra, Licia
 - entries:
+  - date: '2023-04-17'
+    key: Dorner2023
+    reviewed: /2023/04/17/taxing-collaborative-software-engineering.html
+  name: Capraro, Maximilian
+- entries:
   - date: '2023-03-24'
     key: CardosoPereira2023
     reviewed: /2023/03/24/supporting-developers-with-disabilities.html
@@ -1019,6 +1024,11 @@
     key: Rigby2016
     reviewed: /2021/09/30/quantifying-and-mitigating-turnover-induced-knowledge-loss.html
   name: Donadelli, Samuel M.
+- entries:
+  - date: '2023-04-17'
+    key: Dorner2023
+    reviewed: /2023/04/17/taxing-collaborative-software-engineering.html
+  name: Dorner, Michael
 - entries:
   - date: '2021-10-19'
     key: Durieux2020
@@ -2237,6 +2247,11 @@
     reviewed: /2022/02/28/software-error-cause-effect.html
   name: Kume, Hitoshi
 - entries:
+  - date: '2023-04-17'
+    key: Dorner2023
+    reviewed: /2023/04/17/taxing-collaborative-software-engineering.html
+  name: Kunz, Tom-Eric
+- entries:
   - date: '2022-03-04'
     key: Golubev2021
     reviewed: /2022/03/04/software-refactoring.html
@@ -2761,6 +2776,11 @@
     key: Gallagher2017
     reviewed: /2022/03/07/new-me.html
   name: Memon, Nasir D.
+- entries:
+  - date: '2023-04-17'
+    key: Dorner2023
+    reviewed: /2023/04/17/taxing-collaborative-software-engineering.html
+  name: Mendez, Daniel
 - entries:
   - date: '2011-09-06'
     key: Meneely2011
@@ -4382,6 +4402,11 @@
     reviewed: /2021/09/19/impact-of-task-switching-and-work-interruptions.html
   name: Tregubov, Alexey
 - entries:
+  - date: '2023-04-17'
+    key: Dorner2023
+    reviewed: /2023/04/17/taxing-collaborative-software-engineering.html
+  name: Treidler, Oliver
+- entries:
   - date: '2021-08-09'
     key: AlencarDaCosta2017
     reviewed: /2021/08/09/impact-of-rapid-release-cycles-on-integration-delay-of-fixed-issues.html
@@ -4712,6 +4737,11 @@
     reviewed: /2011/08/24/is-transactional-programming-actually-easier.html
   name: Witchel, Emmett
 - entries:
+  - date: '2023-04-17'
+    key: Dorner2023
+    reviewed: /2023/04/17/taxing-collaborative-software-engineering.html
+  name: Wnuk, Krzysztof
+- entries:
   - date: '2021-09-21'
     key: Ajami2018
     reviewed: /2021/09/21/syntax-predicates-idioms-what-really-affects-code-complexity.html
@@ -4863,6 +4893,11 @@
     key: Yuan2014
     reviewed: /2014/10/09/simple-testing-can-prevent-most-critical-failures.html
   name: Yuan, Ding
+- entries:
+  - date: '2023-04-17'
+    key: Dorner2023
+    reviewed: /2023/04/17/taxing-collaborative-software-engineering.html
+  name: Zabardast, Ehsan
 - entries:
   - date: '2021-08-11'
     key: Pietri2019
@@ -5077,3 +5112,8 @@
     key: Prabhu2011
     reviewed: /2012/01/17/a-survey-of-the-practice-of-computational-science.html
   name: Zoufaly, Matthew
+- entries:
+  - date: '2023-04-17'
+    key: Dorner2023
+    reviewed: /2023/04/17/taxing-collaborative-software-engineering.html
+  name: "\u0160mite, Darja"
