@@ -3232,7 +3232,18 @@ In this paper, we present the first empirical study of how code review is practi
   reviewed = {/2022/03/18/python-3-types-in-the-wild.html}
 }
 
-@misc{2302.14556,
+@misc{Reichelt2023,
+  author = {David Georg Reichelt and Stefan Kühne and Wilhelm Hasselbring},
+  title = {Towards Solving the Challenge of Minimal Overhead Monitoring},
+  year = {2023},
+  eprint = {2304.05688},
+  doi = {10.1145/3578245.3584851},
+  abstract = {The examination of performance changes or the performance behavior of a software requires the measurement of the performance. This is done via probes, i.e., pieces of code which obtain and process measurement data, and which are inserted into the examined application. The execution of those probes in a singular method creates overhead, which deteriorates performance measurements of calling methods and slows down the measurement process. Therefore, an important challenge for performance measurement is the reduction of the measurement overhead.
+To address this challenge, the overhead should be minimized. Based on an analysis of the sources of performance overhead, we derive the following four optimization options: (1) Source instrumentation instead of AspectJ instrumentation, (2) reduction of measurement data, (3) change of the queue and (4) aggregation of measurement data. We evaluate the effect of these optimization options using the MooBench benchmark. Thereby, we show that these optimizations options reduce the monitoring overhead of the monitoring framework Kieker. For MooBench, the execution duration could be reduced from 4.77 𝜇s to 0.39 𝜇s per method invocation on average.},
+reviewd = {/2023/04/18/minimal-overhead-monitoring.html}
+}
+
+@misc{Reimann2023,
   author = {Lars Reimann and Günter Kniesel-Wünsche},
   title = {An Alternative to Cells for Selective Execution of Data Science Pipelines},
   year = {2023},

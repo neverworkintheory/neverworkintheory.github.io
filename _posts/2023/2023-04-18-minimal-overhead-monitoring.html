@@ -1,0 +1,59 @@
+---
+layout: post
+author: Greg Wilson
+title: "Minimal Overhead Monitoring"
+date: 2023-04-18
+categories: ["Performance"]
+---
+
+<p>
+  Today's solar panels are significantly more efficient than those made twenty years ago,
+  but the improvement isn't the result of a single major breakthrough.
+  Instead,
+  it is the result of dozens of small changes to materials, coating, and power coupling.
+  The same is true of the tools we program with:
+  web servers, compilers, operating systems, and other pieces of software are faster or more energy efficient
+  because of years of incremental advances by small groups of rather obsessive people.
+</p>
+
+<p>
+  This new paper describes one such advance.
+  Most programmers never bother to profile their code,
+  but when performance matters, it's vital to have tools that can do this accurately.
+  By applying four complementary optimizations,
+  the authors of this work manage to reduce the overhead per monitoring call
+  by more than a factor of 12.
+  The average user might never notice the difference,
+  but they will reap the benefits nonetheless.
+</p>
+
+<p>David Georg Reichelt, Stefan Kühne, and Wilhelm Hasselbring.
+Towards solving the challenge of minimal overhead monitoring.
+2023.
+<a href="https://arxiv.org/abs/2304.05688">arXiv:2304.05688</a></p>
+
+<blockquote>
+  <p>
+    The examination of performance changes or the performance behavior of a software requires the measurement of the performance.
+    This is done via probes,
+    i.e., pieces of code which obtain and process measurement data,
+    and which are inserted into the examined application.
+    The execution of those probes in a singular method creates overhead,
+    which deteriorates performance measurements of calling methods and slows down the measurement process.
+    Therefore, an important challenge for performance measurement is the reduction of the measurement overhead.
+  </p>
+  <p>
+    To address this challenge,
+    the overhead should be minimized.
+    Based on an analysis of the sources of performance overhead,
+    we derive the following four optimization options:
+    (1) Source instrumentation instead of AspectJ instrumentation,
+    (2) reduction of measurement data,
+    (3) change of the queue and
+    (4) aggregation of measurement data.
+    We evaluate the effect of these optimization options using the MooBench benchmark.
+    Thereby, we show that these optimizations options reduce the monitoring overhead of the monitoring framework Kieker.
+    For MooBench,
+    the execution duration could be reduced from 4.77 𝜇s to 0.39 𝜇s per method invocation on average.
+  </p>
+</blockquote>

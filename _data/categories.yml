@@ -1105,6 +1105,9 @@
   - date: '2022-04-11'
     reviewed: /2022/04/11/database-performance-antipatterns.html
     title: Database-Access Performance Antipatterns in Database-Backed Web Applications
+  - date: '2023-04-18'
+    reviewed: /2023/04/18/minimal-overhead-monitoring.html
+    title: Minimal Overhead Monitoring
   name: Performance
 - entries:
   - date: '2023-03-07'
