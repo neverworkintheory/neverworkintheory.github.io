@@ -1229,6 +1229,11 @@
     reviewed: /2021/09/20/program-comprehension-of-domain-specific-and-general-purpose-languages.html
   name: "Gaberc, Sa\u0161o"
 - entries:
+  - date: '2023-04-22'
+    key: Galappaththi2023
+    reviewed: /2023/04/22/a-dataset-of-python-code-change-patterns.html
+  name: Galappaththi, Akalanka
+- entries:
   - date: '2011-09-05'
     key: Bird2011
     reviewed: /2011/09/05/dont-touch-my-code.html
@@ -1591,6 +1596,11 @@
     key: Zhang2021b
     reviewed: /2022/03/08/obsolete-answers-on-stack-overflow.html
   name: Hassan, Ahmed E.
+- entries:
+  - date: '2023-04-18'
+    key: Reichelt2023
+    reviewed: /2023/04/18/minimal-overhead-monitoring.html
+  name: Hasselbring, Wilhelm
 - entries:
   - date: '2021-08-23'
     key: Hata2019
@@ -2282,6 +2292,11 @@
     key: Brown2018
     reviewed: /2021/09/03/two-papers-about-the-blackbox-project.html
   name: "K\xF6lling, Michael"
+- entries:
+  - date: '2023-04-18'
+    key: Reichelt2023
+    reviewed: /2023/04/18/minimal-overhead-monitoring.html
+  name: "K\xFChne, Stefan"
 - entries:
   - date: '2022-03-23'
     key: Turcotte2020
@@ -3067,6 +3082,9 @@
   - date: '2023-02-27'
     key: Businge2022
     reviewed: /2023/02/27/reuse-and-maintenance-among-divergent-forks.html
+  - date: '2023-04-22'
+    key: Galappaththi2023
+    reviewed: /2023/04/22/a-dataset-of-python-code-change-patterns.html
   name: Nadi, Sarah
 - entries:
   - date: '2016-04-26'
@@ -3679,6 +3697,11 @@
     key: Bogomolov2021
     reviewed: /2021/10/15/authorship-attribution-of-source-code.html
   name: Rebryk, Yurii
+- entries:
+  - date: '2023-04-18'
+    key: Reichelt2023
+    reviewed: /2023/04/18/minimal-overhead-monitoring.html
+  name: Reichelt, David Georg
 - entries:
   - date: '2022-03-13'
     key: Glanz2020
