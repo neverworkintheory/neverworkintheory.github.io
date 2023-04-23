@@ -1519,6 +1519,9 @@
   - date: '2023-04-14'
     reviewed: /2023/04/14/software-supply-chain-attacks.html
     title: Software Supply Chain Attacks
+  - date: '2023-04-23'
+    reviewed: /2023/04/23/python-package-index-malware-scanning.html
+    title: Python Package Index Malware Scanning
   name: Security
 - entries:
   - date: '2021-11-23'

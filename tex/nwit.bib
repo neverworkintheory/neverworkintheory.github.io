@@ -3929,6 +3929,17 @@ To address this challenge, the overhead should be minimized. Based on an analysi
   reviewed = {/2011/10/11/experiences-of-using-pair-programming-in-an-agile-project.html}
 }
 
+@inproceedings{Vu2023,
+  author = {{Duc-Ly} Vu and Zachary Newman and {John Speed} Meyers},
+  title = {Bad Snakes: Understanding and Improving Python Package Index Malware Scanning},
+  year = {2023},
+  booktitle = icse,
+  url = {https://www.researchgate.net/publication/363888596_Bad_Snakes_Understanding_and_Improving_Python_Package_Index_Malware_Scanning},
+  abstract = {While attackers often distribute malware to victims via open-source, community-driven package repositories, these repositories do not currently run automated malware detection systems. In this work, we explore the security goals of the repository administrators and the requirements for deployments of such malware scanners via a case study of the Python ecosystem and PyPI repository, which includes interviews with administrators and maintainers. Further, we evaluate existing malware detection techniques for deployment in this setting by creating a benchmark dataset and comparing several existing tools, including the malware checks implemented in PyPI, Bandit4Mal, and OSSGadget’s OSS Detect Backdoor.
+We find that repository administrators have exacting technical demands for such malware detection tools. Specifically, they consider a false positive rate of even 0.01\% to be unacceptably high, given the large number of package releases that might trigger false alerts. Measured tools have false positive rates between 15\% and 97\%; increasing thresholds for detection rules to reduce this rate renders the true positive rate useless. In some cases, these checks emitted alerts more often for benign packages than malicious ones. However, we also find a successful socio-technical malware detection system: external security researchers also perform repository malware scans and report the results to repository administrators. These parties face different incentives and constraints on their time and tooling. We conclude with recommendations for improving detection capabilities and strengthening the collaboration between security researchers and software repository administrators.},
+  reviewed = {/2023/04/23-python-package-index-malware-scanning.html}
+}
+
 @comment{WWW}
 
 @inproceedings{Wang2016,

@@ -2854,6 +2854,11 @@
     reviewed: /2015/08/23/perception-productivity.html
   name: "Meyer, Andr\xE9 N."
 - entries:
+  - date: 2023-04-23-python-package-index-malware-scanning.html
+    key: Vu2023
+    reviewed: /2023/04/23-python-package-index-malware-scanning.html
+  name: Meyers, John Speed
+- entries:
   - date: '2016-06-09'
     key: Eichberg2015
     reviewed: /2016/06/09/hidden-truths.html
@@ -3174,6 +3179,11 @@
     key: Alsuhaibani2022
     reviewed: /2023/03/15/automatically-assessing-method-names.html
   name: Newman, Christian D.
+- entries:
+  - date: 2023-04-23-python-package-index-malware-scanning.html
+    key: Vu2023
+    reviewed: /2023/04/23-python-package-index-malware-scanning.html
+  name: Newman, Zachary
 - entries:
   - date: '2021-11-29'
     key: Sven2019
@@ -4603,6 +4613,11 @@
     key: Gao2020
     reviewed: /2021/10/14/api-learning-processes.html
   name: Voichick, Finn
+- entries:
+  - date: 2023-04-23-python-package-index-malware-scanning.html
+    key: Vu2023
+    reviewed: /2023/04/23-python-package-index-malware-scanning.html
+  name: Vu, Duc-Ly
 - entries:
   - date: '2021-10-03'
     key: Moldon2021
