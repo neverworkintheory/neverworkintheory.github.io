@@ -4,8 +4,8 @@
   {% for post in site.posts limit:10 %}
   <tr>
     <td style="white-space: nowrap;">{{post.date | date: '%F'}}</td>
-    <td><a href="{{post.url | relative_url}}">{{post.title}}</a></td>
-    <td>{{ post.categories | sort | join: ', ' }}</td>
+    <td width="45%"><a href="{{post.url | relative_url}}">{{post.title}}</a></td>
+    <td width="45%">{{ post.categories | sort | join: ', ' }}</td>
   </tr>
   {% endfor %}
 </table>
