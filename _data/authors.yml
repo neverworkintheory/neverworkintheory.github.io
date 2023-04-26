@@ -459,6 +459,11 @@
     reviewed: /2023/04/13/comparing-student-and-llm-code-explanations.html
   name: Bernstein, Seth
 - entries:
+  - date: '2023-04-26'
+    key: '2304.12373'
+    reviewed: /2023/04/26/a-dozen-in-one.html
+  name: Bers, Marina U.
+- entries:
   - date: '2011-08-30'
     key: Bettenburg2008
     reviewed: /2011/08/30/what-makes-a-good-bug-report.html
@@ -516,7 +521,15 @@
   - date: '2022-04-23'
     key: Kochhar2019
     reviewed: /2022/04/23/closed-to-open-source.html
+  - date: '2023-04-26'
+    key: Johnson2023
+    reviewed: /2023/04/26/a-dozen-in-one.html
   name: Bird, Christian
+- entries:
+  - date: '2023-04-26'
+    key: Tigina2023
+    reviewed: /2023/04/26/a-dozen-in-one.html
+  name: Birillo, Anastasiia
 - entries:
   - date: '2021-10-30'
     key: AlSubaihin2021
@@ -565,6 +578,11 @@
     key: Bafatakis2019
     reviewed: /2021/10/01/python-coding-style-compliance-on-stack-overflow.html
   name: Boon, Wenjie
+- entries:
+  - date: '2023-04-26'
+    key: Runge2023
+    reviewed: /2023/04/26/a-dozen-in-one.html
+  name: Bordis, Tabea
 - entries:
   - date: '2021-09-16'
     key: Borle2017
@@ -628,6 +646,9 @@
   - date: '2022-03-04'
     key: Golubev2021
     reviewed: /2022/03/04/software-refactoring.html
+  - date: '2023-04-26'
+    key: Tigina2023
+    reviewed: /2023/04/26/a-dozen-in-one.html
   name: Bryksin, Timofey
 - entries:
   - date: '2023-02-27'
@@ -643,6 +664,9 @@
   - date: '2021-10-31'
     key: Soremekun2021
     reviewed: /2021/10/31/locating-faults-with-program-slicing.html
+  - date: '2023-04-26'
+    key: Mirzamomen2023
+    reviewed: /2023/04/26/a-dozen-in-one.html
   name: "B\xF6hme, Marcel"
 - entries:
   - date: '2012-11-06'
@@ -726,6 +750,11 @@
     key: Zhang2021b
     reviewed: /2022/03/08/obsolete-answers-on-stack-overflow.html
   name: Chen, Tse-Hsun
+- entries:
+  - date: '2023-04-26'
+    key: Tan2023
+    reviewed: /2023/04/26/a-dozen-in-one.html
+  name: Chen, Yiran
 - entries:
   - date: '2021-10-17'
     key: Tao2021
@@ -985,6 +1014,11 @@
     reviewed: /2012/05/17/do-faster-releases-improve-software-quality.html
   name: Dhaliwal, Tejinder
 - entries:
+  - date: '2023-04-26'
+    key: '2304.12373'
+    reviewed: /2023/04/26/a-dozen-in-one.html
+  name: Dhamala, Riva
+- entries:
   - date: '2011-10-22'
     key: Beck2011
     reviewed: /2011/10/22/three-results-many-definitions.html
@@ -1103,6 +1137,11 @@
     reviewed: /2021/08/26/defect-taxonomy-for-infrastructure-as-code.html
   name: Farhana, Effat
 - entries:
+  - date: '2023-04-26'
+    key: '2304.12373'
+    reviewed: /2023/04/26/a-dozen-in-one.html
+  name: Fedorenko, Evelina
+- entries:
   - date: '2021-09-16'
     key: Borle2017
     reviewed: /2021/09/16/analyzing-the-effects-of-tdd-in-github.html
@@ -1184,7 +1223,15 @@
   - date: '2022-03-28'
     key: Rodeghero2021
     reviewed: /2022/03/28/remote-onboarding.html
+  - date: '2023-04-26'
+    key: Johnson2023
+    reviewed: /2023/04/26/a-dozen-in-one.html
   name: Ford, Denae
+- entries:
+  - date: '2023-04-26'
+    key: Johnson2023
+    reviewed: /2023/04/26/a-dozen-in-one.html
+  name: Forsgren, Nicole
 - entries:
   - date: '2012-11-06'
     key: Ameller2012
@@ -1314,6 +1361,9 @@
   - date: '2021-10-07'
     key: Kinsman2021
     reviewed: /2021/10/07/how-do-software-developers-use-github-actions.html
+  - date: '2023-04-26'
+    key: Vargovich2023
+    reviewed: /2023/04/26/a-dozen-in-one.html
   name: Gerosa, Marco A.
 - entries:
   - date: '2021-10-26'
@@ -1381,6 +1431,9 @@
   - date: '2022-03-04'
     key: Golubev2021
     reviewed: /2022/03/04/software-refactoring.html
+  - date: '2023-04-26'
+    key: Tigina2023
+    reviewed: /2023/04/26/a-dozen-in-one.html
   name: Golubev, Yaroslav
 - entries:
   - date: '2023-03-24'
@@ -1486,6 +1539,11 @@
     reviewed: /2023/03/03/emotional-rollercoaster-requirements-changes.html
   name: Grundy, John
 - entries:
+  - date: '2023-04-26'
+    key: Kaleeswaran2023
+    reviewed: /2023/04/26/a-dozen-in-one.html
+  name: Grunske, Lars
+- entries:
   - date: '2021-12-02'
     key: Gu2018
     reviewed: /2021/12/02/deep-code-search.html
@@ -1515,6 +1573,11 @@
     key: Tew2011
     reviewed: /2011/12/02/the-fcs1-a-language-independent-assessment-of-cs1-knowledge.html
   name: Guzdial, Mark
+- entries:
+  - date: '2023-04-26'
+    key: Olson2023
+    reviewed: /2023/04/26/a-dozen-in-one.html
+  name: "Guzm\xE1n, Emitz\xE1"
 - entries:
   - date: '2022-03-31'
     key: Jolak2020
@@ -1866,6 +1929,11 @@
     reviewed: /2021/08/30/two-studies-of-regular-expressions.html
   name: IV, Louis G. Michael
 - entries:
+  - date: '2023-04-26'
+    key: '2304.12373'
+    reviewed: /2023/04/26/a-dozen-in-one.html
+  name: Ivanova, Anna A.
+- entries:
   - date: '2012-01-17'
     key: Prabhu2011
     reviewed: /2012/01/17/a-survey-of-the-practice-of-computational-science.html
@@ -1929,6 +1997,11 @@
     reviewed: /2022/03/21/strategies-to-improve-continuous-integration.html
   name: Jin, Xianhao
 - entries:
+  - date: '2023-04-26'
+    key: Johnson2023
+    reviewed: /2023/04/26/a-dozen-in-one.html
+  name: Johnson, Brittany
+- entries:
   - date: '2012-01-17'
     key: Prabhu2011
     reviewed: /2012/01/17/a-survey-of-the-practice-of-computational-science.html
@@ -1975,6 +2048,11 @@
     key: Jorgensen2012
     reviewed: /2012/06/12/software-development-estimation-biases-the-role-of-interdependence.html
   name: "J\xF8rgensen, Magne"
+- entries:
+  - date: '2023-04-26'
+    key: Kaleeswaran2023
+    reviewed: /2023/04/26/a-dozen-in-one.html
+  name: Kaleeswaran, Arut Prakash
 - entries:
   - date: '2022-04-23'
     key: Kochhar2019
@@ -2037,6 +2115,11 @@
     reviewed: /2022/04/21/decline-of-sourceforge.html
   name: Kazman, Rick
 - entries:
+  - date: '2023-04-26'
+    key: '2304.12373'
+    reviewed: /2023/04/26/a-dozen-in-one.html
+  name: Kean, Hope H.
+- entries:
   - date: '2021-09-23'
     key: Spinellis2016
     reviewed: /2021/09/23/two-studies-of-software-evolution.html
@@ -2056,6 +2139,11 @@
     key: Kocaguneli2012
     reviewed: /2012/04/17/ensemble-effort-estimation.html
   name: Keung, Jacky W.
+- entries:
+  - date: '2023-04-26'
+    key: Tigina2023
+    reviewed: /2023/04/26/a-dozen-in-one.html
+  name: Keuning, Hieke
 - entries:
   - date: '2012-05-17'
     key: Khomh2012
@@ -2257,6 +2345,11 @@
     reviewed: /2022/02/28/software-error-cause-effect.html
   name: Kume, Hitoshi
 - entries:
+  - date: '2023-04-26'
+    key: Olson2023
+    reviewed: /2023/04/26/a-dozen-in-one.html
+  name: Kunneman, Florian
+- entries:
   - date: '2023-04-17'
     key: Dorner2023
     reviewed: /2023/04/17/taxing-collaborative-software-engineering.html
@@ -2440,6 +2533,9 @@
   - date: '2023-03-09'
     key: Licorish2022
     reviewed: /2023/03/09/combining-gin-and-pmd-for-code-improvements.html
+  - date: '2023-04-26'
+    key: Meldrum2020
+    reviewed: /2023/04/26/a-dozen-in-one.html
   name: Licorish, Sherlock A.
 - entries:
   - date: '2011-10-22'
@@ -2787,6 +2883,11 @@
     reviewed: /2021/10/13/an-empirical-study-of-donations-in-open-source.html
   name: Meinicke, Jens
 - entries:
+  - date: '2023-04-26'
+    key: Meldrum2020
+    reviewed: /2023/04/26/a-dozen-in-one.html
+  name: Meldrum, Sarah
+- entries:
   - date: '2022-03-07'
     key: Gallagher2017
     reviewed: /2022/03/07/new-me.html
@@ -2912,6 +3013,11 @@
     key: Yelam2021
     reviewed: /2023/03/13/covert-cloud-communication-with-lambdas.html
   name: Mirian, Ariana
+- entries:
+  - date: '2023-04-26'
+    key: Mirzamomen2023
+    reviewed: /2023/04/26/a-dozen-in-one.html
+  name: Mirzamomen, Zahra
 - entries:
   - date: '2021-09-21'
     key: Mokhov2018
@@ -3225,6 +3331,11 @@
     reviewed: /2012/07/18/clustering-duplicate-crash-reports.html
   name: Nobel, Peter
 - entries:
+  - date: '2023-04-26'
+    key: Kaleeswaran2023
+    reviewed: /2023/04/26/a-dozen-in-one.html
+  name: Nordmann, Arne
+- entries:
   - date: '2011-09-13'
     key: Brun2011
     reviewed: /2011/09/13/proactive-detection-of-collaboration-conflicts.html
@@ -3249,6 +3360,11 @@
     key: Nussli2012
     reviewed: /2012/02/23/looking-at-the-same-thing-in-pair-programming-tasks.html
   name: "N\xFCssli, Marc-Antoine"
+- entries:
+  - date: '2023-04-26'
+    key: '2304.12373'
+    reviewed: /2023/04/26/a-dozen-in-one.html
+  name: O'Reilly, Una-May
 - entries:
   - date: '2012-01-17'
     key: Prabhu2011
@@ -3281,6 +3397,11 @@
     key: Scalabrino2021
     reviewed: /2021/10/05/three-papers-on-readability.html
   name: Oliveto, Rocco
+- entries:
+  - date: '2023-04-26'
+    key: Olson2023
+    reviewed: /2023/04/26/a-dozen-in-one.html
+  name: Olson, Lauren
 - entries:
   - date: '2023-02-27'
     key: Businge2022
@@ -3321,6 +3442,11 @@
     key: Overney2020
     reviewed: /2021/10/13/an-empirical-study-of-donations-in-open-source.html
   name: Overney, Cassandra
+- entries:
+  - date: '2023-04-26'
+    key: Meldrum2020
+    reviewed: /2023/04/26/a-dozen-in-one.html
+  name: Owen, Caitlin A.
 - entries:
   - date: '2021-10-01'
     key: Bafatakis2019
@@ -3458,6 +3584,11 @@
     reviewed: /2021/08/17/python-language-features.html
   name: Peng, Yun
 - entries:
+  - date: '2023-04-26'
+    key: Vargovich2023
+    reviewed: /2023/04/26/a-dozen-in-one.html
+  name: Penney, Jacob
+- entries:
   - date: '2021-10-18'
     key: Zampetti2020
     reviewed: /2021/10/18/bad-practices-in-continuous-integration.html
@@ -3543,6 +3674,11 @@
     reviewed: /2023/04/14/software-cupply-chain-attacks.html
   name: Ponta, Serena Elisa
 - entries:
+  - date: '2023-04-26'
+    key: Pool2023
+    reviewed: /2023/04/26/a-dozen-in-one.html
+  name: Pool, Jonathan Robert
+- entries:
   - date: '2016-10-02'
     key: Mattmann2015
     reviewed: /2016/10/02/grid-revisited.html
@@ -3568,6 +3704,11 @@
     key: Posnett2011
     reviewed: /2012/01/12/got-issues-do-new-features-and-code-improvements-affect-defects.html
   name: Posnett, Daryl
+- entries:
+  - date: '2023-04-26'
+    key: Runge2023
+    reviewed: /2023/04/26/a-dozen-in-one.html
+  name: Potanin, Alex
 - entries:
   - date: '2021-10-10'
     key: Alkhabaz2021
@@ -3861,6 +4002,11 @@
     reviewed: /2012/07/04/programmer-information-needs-after-memory-failure.html
   name: Rugaber, Spencer
 - entries:
+  - date: '2023-04-26'
+    key: Runge2023
+    reviewed: /2023/04/26/a-dozen-in-one.html
+  name: Runge, Tobias
+- entries:
   - date: '2023-04-14'
     key: Ladisa2023
     reviewed: /2023/04/14/software-cupply-chain-attacks.html
@@ -3885,6 +4031,11 @@
     key: Mitropoulos2019
     reviewed: /2021/09/27/the-evolution-of-javascript-code-in-the-wild.html
   name: Salis, Vitalis
+- entries:
+  - date: '2023-04-26'
+    key: Vargovich2023
+    reviewed: /2023/04/26/a-dozen-in-one.html
+  name: Santos, Fabio
 - entries:
   - date: '2014-04-25'
     key: Kasi2013
@@ -3914,6 +4065,9 @@
   - date: '2022-04-25'
     key: Sharma2021
     reviewed: /2022/04/25/rationale-for-open-source-development-decisions.html
+  - date: '2023-04-26'
+    key: Meldrum2020
+    reviewed: /2023/04/26/a-dozen-in-one.html
   name: Savarimuthu, Bastin Tony Roy
 - entries:
   - date: '2022-03-31'
@@ -3952,6 +4106,11 @@
     key: Scarsbrook2023
     reviewed: /2023/03/28/typescript-feature-adoption.html
   name: Scarsbrook, Joshua D.
+- entries:
+  - date: '2023-04-26'
+    key: Runge2023
+    reviewed: /2023/04/26/a-dozen-in-one.html
+  name: Schaefer, Ina
 - entries:
   - date: '2021-09-23'
     key: Malik2019
@@ -4206,6 +4365,11 @@
     reviewed: /2022/04/14/generating-unit-tests-for-documentation.html
   name: Sridharan, Ashvitha
 - entries:
+  - date: '2023-04-26'
+    key: '2304.12373'
+    reviewed: /2023/04/26/a-dozen-in-one.html
+  name: Srikant, Shashank
+- entries:
   - date: '2022-04-25'
     key: Sharma2021
     reviewed: /2022/04/25/rationale-for-open-source-development-decisions.html
@@ -4238,6 +4402,9 @@
   - date: '2021-09-30'
     key: Wessel2020
     reviewed: /2021/09/30/effects-of-adopting-code-review-bots.html
+  - date: '2023-04-26'
+    key: Vargovich2023
+    reviewed: /2023/04/26/a-dozen-in-one.html
   name: Steinmacher, Igor
 - entries:
   - date: '2011-06-27'
@@ -4302,6 +4469,11 @@
     reviewed: /2023/03/13/covert-cloud-communication-with-lambdas.html
   name: Subbareddy, Shibani
 - entries:
+  - date: '2023-04-26'
+    key: '2304.12373'
+    reviewed: /2023/04/26/a-dozen-in-one.html
+  name: Sueoka, Yotaro
+- entries:
   - date: '2023-03-17'
     key: Jovanovic2022
     reviewed: /2023/03/17/automated-input-generation-for-alloy.html
@@ -4322,6 +4494,11 @@
     reviewed: /2021/11/29/next-steps-in-static-api-misuse-detection.html
   name: Sven, Amann
 - entries:
+  - date: '2023-04-26'
+    key: Swillus2023
+    reviewed: /2023/04/26/a-dozen-in-one.html
+  name: Swillus, Mark
+- entries:
   - date: '2021-08-27'
     key: Taipalus2018
     reviewed: /2021/08/27/errors-in-sql-queries.html
@@ -4339,6 +4516,11 @@
     key: Tamburri2020
     reviewed: /2022/04/21/decline-of-sourceforge.html
   name: Tamburri, Damian Andrew
+- entries:
+  - date: '2023-04-26'
+    key: Tan2023
+    reviewed: /2023/04/26/a-dozen-in-one.html
+  name: Tan, Xin
 - entries:
   - date: '2021-11-16'
     key: Tang2021
@@ -4380,6 +4562,11 @@
     reviewed: /2022/03/25/breaking-changes.html
   name: Thung, Ferdian
 - entries:
+  - date: '2023-04-26'
+    key: Runge2023
+    reviewed: /2023/04/26/a-dozen-in-one.html
+  name: "Th\xFCm, Thomas"
+- entries:
   - date: '2022-03-09'
     key: Yasmin2020
     reviewed: /2022/03/09/rest-api-deprecation.html
@@ -4394,6 +4581,11 @@
     key: Kiefer2015
     reviewed: /2016/06/12/empirical-parellelism.html
   name: Tichy, Walter F.
+- entries:
+  - date: '2023-04-26'
+    key: Tigina2023
+    reviewed: /2023/04/26/a-dozen-in-one.html
+  name: Tigina, Maria
 - entries:
   - date: '2021-11-08'
     key: Tomassi2019
@@ -4550,6 +4742,11 @@
     reviewed: /2011/10/11/experiences-of-using-pair-programming-in-an-agile-project.html
   name: Vanhanen, Jari
 - entries:
+  - date: '2023-04-26'
+    key: Vargovich2023
+    reviewed: /2023/04/26/a-dozen-in-one.html
+  name: Vargovich, Joseph
+- entries:
   - date: '2021-08-27'
     key: Taipalus2018
     reviewed: /2021/08/27/errors-in-sql-queries.html
@@ -4609,6 +4806,11 @@
     reviewed: /2022/03/23/designing-types-for-r-empirically.html
   name: Vitek, Jan
 - entries:
+  - date: '2023-04-26'
+    key: Kaleeswaran2023
+    reviewed: /2023/04/26/a-dozen-in-one.html
+  name: Vogel, Thomas
+- entries:
   - date: '2021-10-14'
     key: Gao2020
     reviewed: /2021/10/14/api-learning-processes.html
@@ -4618,6 +4820,11 @@
     key: Vu2023
     reviewed: /2023/04/23-python-package-index-malware-scanning.html
   name: Vu, Duc-Ly
+- entries:
+  - date: '2023-04-26'
+    key: Tigina2023
+    reviewed: /2023/04/26/a-dozen-in-one.html
+  name: Vyahhi, Nikolay
 - entries:
   - date: '2021-10-03'
     key: Moldon2021
@@ -4795,6 +5002,11 @@
     reviewed: /2016/06/13/polymorphism-in-python.html
   name: Wrigstad, Tobias
 - entries:
+  - date: '2023-04-26'
+    key: Tan2023
+    reviewed: /2023/04/26/a-dozen-in-one.html
+  name: Wu, Haohua
+- entries:
   - date: '2023-03-27'
     key: Lee2022
     reviewed: /2023/03/27/stress-management-workshop-for-college-students.html
@@ -4948,6 +5160,9 @@
   - date: '2021-09-12'
     key: Beller2019
     reviewed: /2021/09/12/developer-testing-in-the-ide.html
+  - date: '2023-04-26'
+    key: Swillus2023
+    reviewed: /2023/04/26/a-dozen-in-one.html
   name: Zaidman, Andy
 - entries:
   - date: '2021-10-18'
@@ -5013,6 +5228,11 @@
     reviewed: /2021/10/26/enriching-api-documentation-with-code-samples-and-usage-scenarios.html
   name: Zhang, Jingxuan
 - entries:
+  - date: '2023-04-26'
+    key: Tan2023
+    reviewed: /2023/04/26/a-dozen-in-one.html
+  name: Zhang, Li
+- entries:
   - date: '2021-10-01'
     key: Miller2020
     reviewed: /2021/10/01/the-relevance-of-classic-fuzz-testing.html
@@ -5062,6 +5282,11 @@
     key: Li2013
     reviewed: /2013/04/16/a-characteristic-study-on-failures-of-production-distributed-data-parallel-programs.html
   name: Zhou, Hucheng
+- entries:
+  - date: '2023-04-26'
+    key: Tan2023
+    reviewed: /2023/04/26/a-dozen-in-one.html
+  name: Zhou, Minghui
 - entries:
   - date: '2023-03-22'
     key: Jiang2022
@@ -5132,6 +5357,11 @@
     key: Kochhar2019
     reviewed: /2022/04/23/closed-to-open-source.html
   name: Zimmermann, Thomas
+- entries:
+  - date: '2023-04-26'
+    key: Johnson2023
+    reviewed: /2023/04/26/a-dozen-in-one.html
+  name: Zimmermann, Tom
 - entries:
   - date: '2016-09-16'
     key: Liao2016

@@ -1323,7 +1323,7 @@
   url = {https://www.usenix.org/conference/usenixsecurity19/presentation/guler},
   year = {2019},
   month = aug,
-  author = {Emre G\"{u}ler and Cornelius Aschermann and Ali Abbasi and Thorsten Holz},
+  author = {Emre Güler and Cornelius Aschermann and Ali Abbasi and Thorsten Holz},
   booktitle = usenix-sec,
   title = {{AntiFuzz}: Impeding Fuzzing Audits of Binary Executables},
   isbn = {978-1-939133-06-9},
@@ -1691,6 +1691,17 @@
   reviewed = {/2022/03/21/strategies-to-improve-continuous-integration.html}
 }
 
+@inproceedings{Johnson2023,
+  author = {Brittany Johnson and Christian  Bird and Denae  Ford and Nicole  Forsgren and Tom Zimmermann},
+  title = {Make Your Tools Sparkle with Trust: The {PICSE} Framework for Trust in Software Tools},
+  booktitle = {ICSE SEIP},
+  year = {2023},
+  month = may,
+  abstract = {The day to day of a software engineer involves a variety of tasks. While many of these tasks are collaborative and completed as such, it is not always possible or feasible to engage with other engineers for task completion. Software tools, such as code generators and static analysis tools, aim to fill this gap by providing additional support for developers to effectively complete their tasks. With a steady stream of new tools that emerging to support software engineers, including a new breed of tools that rely on artificial intelligence, there are important questions we should aim to answer regarding the trust engineers can, and should, put into their software tools and what it means to build a trustworthy tool. In this paper, we present findings from an industry interview study conducted with 18 engineers across and external to the Microsoft organization. Based on these interviews, we introduce the PICSE (pronounced "pixie") framework for trust in software tools to provide preliminary insights into factors that influence engineer trust in their software tools. We also discuss how the PICSE framework can be considered and applied in practice for designing and developing trustworthy software tools.},
+  url = {https://www.microsoft.com/en-us/research/publication/the-picse-framework-for-trust-in-software-tools/},
+  reviewed = {/2023/04/26/a-dozen-in-one.html}
+}
+
 @article{Jolak2020,
   doi = {10.1007/s10664-020-09835-6},
   url = {https://doi.org/10.1007/s10664-020-09835-6},
@@ -1753,6 +1764,15 @@
 }
 
 @comment{KKK}
+
+@misc{Kaleeswaran2023,
+  author = {Arut Prakash Kaleeswaran and Arne Nordmann and Thomas Vogel and Lars Grunske},
+  title = {A User Study for Evaluation of Formal Verification Results and their Explanation at Bosch},
+  year = {2023},
+  eprint = {2304.08950},
+  abstract = {Context: Ensuring safety for any sophisticated system is getting more complex due to the rising number of features and functionalities. This calls for formal methods to entrust confidence in such systems. Nevertheless, using formal methods in industry is demanding because of their lack of usability and the difficulty of understanding verification results. Objective: We evaluate the acceptance of formal methods by Bosch automotive engineers, particularly whether the difficulty of understanding verification results can be reduced. Method: We perform two different exploratory studies. First, we conduct a user survey to explore challenges in identifying inconsistent specifications and using formal methods by Bosch automotive engineers. Second, we perform a one-group pretest-posttest experiment to collect impressions from Bosch engineers familiar with formal methods to evaluate whether understanding verification results is simplified by our counterexample explanation approach. Results: The results from the user survey indicate that identifying refinement inconsistencies, understanding formal notations, and interpreting verification results are challenging. Nevertheless, engineers are still interested in using formal methods in real-world development processes because it could reduce the manual effort for verification. Additionally, they also believe formal methods could make the system safer. Furthermore, the one-group pretest-posttest experiment results indicate that engineers are more comfortable understanding the counterexample explanation than the raw model checker output. Limitations: The main limitation of this study is the generalizability beyond the target group of Bosch automotive engineers.},
+  reviewed = {/2023/04/26/a-dozen-in-one.html}
+}
 
 @inproceedings{Kamienski2021,
   doi = {10.1109/msr52588.2021.00066},
@@ -2533,6 +2553,21 @@
   reviewed = {/2023/03/08/can-static-analysis-tools-find-more-defects.html}
 }
 
+@article{Meldrum2020,
+  doi = {10.1016/j.scico.2020.102516},
+  url = {https://doi.org/10.1016/j.scico.2020.102516},
+  year = {2020},
+  month = nov,
+  publisher = {Elsevier {BV}},
+  volume = {199},
+  pages = {102516},
+  author = {Sarah Meldrum and Sherlock A. Licorish and Caitlin A. Owen and Bastin Tony Roy Savarimuthu},
+  title = {Understanding stack overflow code quality: A recommendation of caution},
+  journal = {Science of Computer Programming},
+  abstract = {Community Question and Answer (CQA) platforms use the power of online groups to solve problems, or gain information. While these websites host useful information, it is critical that the details provided on these platforms are of high quality, and that users can trust the information. This is particularly necessary for software development, given the ubiquitous use of software across all sections of contemporary society. Stack Overflow is the leading CQA platform for programmers, with a community comprising over 10 million contributors. While research confirms the popularity of Stack Overflow, concerns have been raised about the quality of answers that are provided to questions on Stack Overflow. Code snippets often contained in these answers have been investigated; however, the quality of these artefacts remains unclear. This could be problematic for the software engineering community, as evidence has shown that Stack Overflow snippets are frequently used in both open source and commercial software. This research fills this gap by evaluating the quality of code snippets on Stack Overflow. We explored various aspects of code snippet quality, including reliability and conformance to programming rules, readability, performance and security. Outcomes show variation in the quality of Stack Overflow code snippets for the different dimensions; however, overall, quality issues in Stack Overflow snippets were not always severe. Vigilance is encouraged for those reusing Stack Overflow code snippets.},
+  reviewed = {/2023/04/26/a-dozen-in-one.html}
+}
+
 @inproceedings{Meneely2011,
   doi = {10.1145/2025113.2025128},
   url = {https://doi.org/10.1145/2025113.2025128},
@@ -2653,6 +2688,16 @@
   journal = ieee-tse,
   abstract = {As fuzz testing has passed its 30th anniversary, and in the face of the incredible progress in fuzz testing techniques and tools, the question arises if the classic, basic fuzz technique is still useful and applicable? In that tradition, we have updated the basic fuzz tools and testing scripts and applied them to a large collection of Unix utilities on Linux, FreeBSD, and MacOS. As before, our failure criteria was whether the program crashed or hung. We found that 9 crash or hang out of 74 utilities on Linux, 15 out of 78 utilities on FreeBSD, and 12 out of 76 utilities on MacOS. A total of 24 different utilities failed across the three platforms. We note that these failure rates are somewhat higher than our in previous 1995, 2000, and 2006 studies of the reliability of command line utilities. In the basic fuzz tradition, we debugged each failed utility and categorized the causes the failures. Classic categories of failures, such as pointer and array errors and not checking return codes, were still broadly present in the current results. In addition, we found a couple of new categories of failures appearing. We present examples of these failures to illustrate the programming practices that allowed them to happen. As a side note, we tested the limited number of utilities available in a modern programming language (Rust) and found them to be of no better reliability than the standard ones.},
   reviewed = {/2021/10/01/the-relevance-of-classic-fuzz-testing.html}
+}
+
+@misc{Mirzamomen2023,
+  author = {Zahra Mirzamomen and Marcel Böhme},
+  title = {Finding Bug-Inducing Program Environments},
+  year = {2023},
+  eprint = {2304.10044},
+  abstract = {Some bugs cannot be exposed by program inputs, but only by certain program environments. During execution, most programs access various resources, like databases, files, or devices, that are external to the program and thus part of the program’s environment. In this paper, we present a coverage-guided, mutation-based environment synthesis approach of bug-inducing program environments. Specif- ically, we observe that programs interact with their environment via dedicated system calls and propose to intercept these system calls (i) to capture the resources accessed during the first execution of an input as initial program environment, and (ii) mutate copies of these resources during subsequent executions of that input to generate slightly changed program environments. Any generated environment that is observed to increase coverage is added to the corpus of environment seeds and becomes subject to further fuzzing. Bug-inducing program environments are reported to the user.
+Experiments demonstrate the effectiveness of our approach. We implemented a prototype called AFLChaos which found bugs in the resource-handling code of five (5) of the seven (7) open source projects in our benchmark set (incl. OpenSSL). Automatically, AFLChaos generated environments consisting of bug-inducing databases used for storing information, bug-inducing multimedia files used for streaming, bug-inducing cryptographic keys used for encryption, and bug-inducing configuration files used to configure the program. To support open science, we publish the experimental infrastructure, our tool, and all data.},
+  reviewed = {/2023/04/26/a-dozen-in-one.html}
 }
 
 @inproceedings{Mitropoulos2019,
@@ -2907,6 +2952,15 @@ In this paper, we present the first empirical study of how code review is practi
   reviewed = {/2021/08/21/metrics-and-team-leaders-perceptions-of-productivity.html}
 }
 
+@misc{Olson2023,
+  author = {Lauren Olson and Emitzá Guzmán and Florian Kunneman},
+  title = {Along the Margins: Marginalized Communities' Ethical Concerns about Social Platforms},
+  year = {2023},
+  eprint = {arXiv:2304.08882},
+  abstract = {In this paper, we identified marginalized communities' ethical concerns about social platforms. We performed this identification because recent platform malfeasance indicates that software teams prioritize shareholder concerns over user concerns. Additionally, these platform shortcomings often have devastating effects on marginalized populations. We first scraped 586 marginalized communities' subreddits, aggregated a dataset of their social platform mentions and manually annotated mentions of ethical concerns in these data. We subsequently analyzed trends in the manually annotated data and tested the extent to which ethical concerns can be automatically classified by means of natural language processing (NLP). We found that marginalized communities' ethical concerns predominantly revolve around discrimination and misrepresentation, and reveal deficiencies in current software development practices. As such, researchers and developers could use our work to further investigate these concerns and rectify current software flaws.},
+  reviewed = {/2023/04/26/a-dozen-in-one.html}
+}
+
 @inproceedings{Overney2020,
   doi = {10.1145/3377811.3380410},
   url = {https://doi.org/10.1145/3377811.3380410},
@@ -3075,6 +3129,16 @@ In this paper, we present the first empirical study of how code review is practi
   eprint = {2301.00444},
   abstract = {This paper presents a comprehensive classification of identity management approaches. The classification makes use of three axes: topology, type of user, and type of environment. The analysis of existing approaches using the resulting identity management cube (IMC) highlights the trade-off between user control and trust in attributes. A comparative analysis of IMC and established models identifies missing links between the approaches. The IMC is extended by a morphology of identity management, describing characteristics of cooperation. The morphology is then mapped to the life cycle of users and identity management in a further step. These classifications are practically underlined with current approaches. Both methods combined provide a comprehensive characterization of identity management approaches. The methods help to choose suited approaches and implement needed tools.},
   reviewed = {/2023/03/30/classification-of-identify-management-approaches.html}
+}
+
+@misc{Pool2023,
+  author = {Jonathan Robert Pool},
+  title = {Accessibility Metatesting: Comparing Nine Testing Tools},
+  year = {2023},
+  doi = {10.1145/3587281.3587282},
+  eprint = {2304.07591},
+  abstract = {Automated web accessibility testing tools have been found com- plementary. The implication: To catch as many issues as possible, use multiple tools. Doing this efficiently entails integration costs. Is there a small set of tools that, together, make additional tools redundant? I approach this problem by comparing nine compre- hensive accessibility testing tools that are amenable to integration: alfa, axe-core, Continuum, Equal Access, HTML CodeSniffer, Nu Html Checker, QualWeb, Tenon, and WAVE. I tested 121 web pages of interest to CVS Health with these tools. Each tool only fraction- ally duplicated any other tool. Each discovered numerous issue instances missed by all the others. Thus, testing with all nine tools was substantially more informative than testing with any subset.},
+  reviewed = {/2023/04/26/a-dozen-in-one.html}
 }
 
 @inproceedings{Porter2013,
@@ -3385,6 +3449,15 @@ To address this challenge, the overhead should be minimized. Based on an analysi
   reviewed = {/2011/08/24/is-transactional-programming-actually-easier.html}
 }
 
+@misc{Runge2023,
+  author = {Tobias Runge and Tabea Bordis and Alex Potanin and Thomas Thüm and Ina Schaefer},
+  title = {Flexible Correct-by-Construction Programming},
+  year = {2022},
+  eprint = {arXiv:2211.15261},
+  abstract = {Correctness-by-Construction (CbC) is an incremental program construction process to construct functionally correct programs. The programs are constructed stepwise along with a specification that is inherently guaranteed to be satisfied. CbC is complex to use without specialized tool support, since it needs a set of predefined refinement rules of fixed granularity which are additional rules on top of the programming language. Each refinement rule introduces a specific programming statement and developers cannot depart from these rules to construct programs. CbC allows to develop software in a structured and incremental way to ensure correctness, but the limited flexibility is a disadvantage of CbC. In this work, we compare classic CbC with CbC-Block and TraitCbC. Both approaches CbC-Block and TraitCbC, are related to CbC, but they have new language constructs that enable a more flexible software construction approach. We provide for both approaches a programming guideline, which similar to CbC, leads to well-structured programs. CbC-Block extends CbC by adding a refinement rule to insert any block of statements. Therefore, we introduce CbC-Block as an extension of CbC. TraitCbC implements correctness-by-construction on the basis of traits with specified methods. We formally introduce TraitCbC and prove soundness of the construction strategy. All three development approaches are qualitatively compared regarding their programming constructs, tool support, and usability to assess which is best suited for certain tasks and developers.},
+  reviewed = {/2023/04/26/a-dozen-in-one.html}
+}
+
 @comment{SSS}
 
 @book{Sadowski2019,
@@ -3621,6 +3694,15 @@ To address this challenge, the overhead should be minimized. Based on an analysi
   reviewed = {/2021/09/23/two-studies-of-software-evolution.html}
 }
 
+@misc{2304.12373,
+  author = {Shashank Srikant and Anna A. Ivanova and Yotaro Sueoka and Hope H. Kean and Riva Dhamala and Evelina Fedorenko and Marina U. Bers and Una-May O'Reilly},
+  title = {Program Comprehension Does Not Primarily Rely On the Language Centers of the Human Brain},
+  year = {2023},
+  eprint = {2304.12373},
+  abstract = {Our goal is to identify brain regions involved in comprehending computer programs. We use functional magnetic resonance imaging (fMRI) to investigate two candidate systems of brain regions which may support this – the Multiple Demand (MD) system, known to respond to a range of cognitively demanding tasks, and the Language system, known to primarily respond to language stimuli. We devise experiment conditions to isolate the act of code comprehension, and employ a state-of-the-art method to locate brain systems of interest. We administer these experiments in Python (24 participants) and ScratchJr (19 participants) - which provides a visual interface to programming, thus eliminating the effect of text in code comprehension. From this robust experiment setup, we find that the Language system is not consistently involved in code comprehension, while the MD system is. Further, we find no other brain regions beyond those in the MD system to be responsive to code. We also find that variable names, the control flow used in the program, and the types of operations performed do not affect brain responses. We discuss the implications of our findings on the software engineering and CS education communities.},
+  reviewed = {/2023/04/26/a-dozen-in-one.html}
+}
+
 @inproceedings{Staples2013,
   doi = {10.1109/icse.2013.6606692},
   url = {https://doi.org/10.1109/icse.2013.6606692},
@@ -3701,6 +3783,16 @@ To address this challenge, the overhead should be minimized. Based on an analysi
   reviewed = {/2021/11/29/next-steps-in-static-api-misuse-detection.html}
 }
 
+@misc{Swillus2023,
+  author = {Mark Swillus and Andy Zaidman},
+  title = {Deconstructing Sentimental Stack Overflow Posts Through Interviews: Exploring the Case of Software Testing},
+  year = {2023},
+  eprint = {2304.11280},
+  howpublished = {CHASE 2023 Registered Reports},
+  abstract = {The analysis of sentimental posts about software testing on Stack Overflow reveals that motivation and commitment of developers to use software testing methods is not only influenced by tools and technology. Rather, attitudes are also influenced by socio-technical factors. No prior studies have attempted to talk with Stack Overflow users about the sentimental posts that they write, yet, this is crucial to understand their experiences of which their post is only one fragment. As such, this study explores the precursors that make developers write sentimental posts about software testing on Stack Overflow. Through semi-structured interviews, we reconstruct the individual experiences of Stack Overflow users leading to sentimental posts about testing. We use the post as an anchor point to explore the events that lead to it and how users moved on in the meantime. Using strategies from socio-technical grounded theory (STGT), we derive hypotheses about the socio-technical factors that cause sentiment towards software testing.},
+  reviewed = {/2023/04/26/a-dozen-in-one.html}
+}
+
 @comment{TTT}
 
 @article{Taipalus2018,
@@ -3748,6 +3840,16 @@ To address this challenge, the overhead should be minimized. Based on an analysi
   journal = spe,
   abstract = {Forges are online collaborative platforms to support the development of distributed open source software. While once mighty keepers of open source vitality, software forges are rapidly becoming less and less relevant. For example, of the top 10 forges in 2011, only one survives today---SourceForge---the biggest of them all, but its numbers are dropping and its community is tenuous at best. Through mixed-methods research, this article chronicles and analyze the software practice and experiences of the project's history---in particular its architectural and community/organizational decisions. We discovered a number of suboptimal social and architectural decisions and circumstances that, may have led to SourceForge's demise. In addition, we found evidence suggesting that the impact of such decisions could have been monitored, reduced, and possibly avoided altogether. The use of sociotechnical insights needs to become a basic set of design and software/organization monitoring principles that tell a cautionary tale on what to measure and what not to do in the context of large-scale software forge and community design and management.},
   reviewed = {/2022/04/21/decline-of-sourceforge.html}
+}
+
+@misc{Tan2023,
+  author = {Xin Tan and Yiran Chen and Haohua Wu and Minghui Zhou and Li Zhang},
+  title = {Is It Enough to Recommend Tasks to Newcomers? Understanding Mentoring on Good First Issues},
+  year = {2023},
+  eprint = {2302.05058},
+  howpublished = {ICSE 2023},
+  abstract = {Newcomers are critical for the success and continuity of open source software (OSS) projects. To attract newcomers and facilitate their onboarding, many OSS projects recommend tasks for newcomers, such as good first issues (GFIs). Previous studies have preliminarily investigated the effects of GFIs and techniques to identify suitable GFIs. However, it is still unclear whether just recommending tasks is enough and how significant mentoring is for newcomers. To better understand mentoring in OSS communities, we analyze the resolution process of 48,402 GFIs from 964 repositories through a mix-method approach. We investigate the extent, the mentorship structures, the discussed topics, and the relevance of expert involvement. We find that ~70\% of GFIs have expert participation, with each GFI usually having one expert who makes two comments. Half of GFIs will receive their first expert comment within 8.5 hours after a newcomer comment. Through analysis of the collaboration networks of newcomers and experts, we observe that community mentorship presents four types of structure: centralized mentoring, decentralized mentoring, collaborative mentoring, and distributed mentoring. As for discussed topics, we identify 14 newcomer challenges and 18 expert mentoring content. By fitting the generalized linear models, we find that expert involvement positively correlates with newcomers’ successful contributions but negatively correlates with newcomers’ retention. Our study manifests the status and significance of mentoring in the OSS projects, which provides rich practical implications for optimizing the mentoring process and helping newcomers contribute smoothly and successfully.},
+  reviewed = {/2023/04/26/a-dozen-in-one.html}
 }
 
 @article{Tang2021,
@@ -3801,6 +3903,15 @@ To address this challenge, the overhead should be minimized. Based on an analysi
   booktitle = icse,
   abstract = {Code ownership establishes a chain of responsibility for modules in large software systems. Although prior work uncovers a link between code ownership heuristics and software quality, these heuristics rely solely on the authorship of code changes. In addition to authoring code changes, developers also make important contributions to a module by reviewing code changes. Indeed, recent work shows that reviewers are highly active in modern code review processes, often suggesting alternative solutions or providing updates to the code changes. In this paper, we complement traditional code ownership heuristics using code review activity. Through a case study of six releases of the large Qt and OpenStack systems, we find that: (1) 67\%-86\% of developers did not author any code changes for a module, but still actively contributed by reviewing 21\%-39\% of the code changes, (2) code ownership heuristics that are aware of reviewing activity share a relationship with software quality, and (3) the proportion of reviewers without expertise shares a strong, increasing relationship with the likelihood of having post-release defects. Our results suggest that reviewing activity captures an important aspect of code ownership, and should be included in approximations of it in future studies.},
   reviewed = {/2016/06/07/code-ownership-revisited.html}
+}
+
+@misc{Tigina2023,
+  author = {Maria Tigina and Anastasiia Birillo and Yaroslav Golubev and Hieke Keuning and Nikolay Vyahhi and Timofey Bryksin},
+  title = {Analyzing the Quality of Submissions in Online Programming Courses},
+  year = {2023},
+  eprint = {2301.11158},
+  abstract = {Programming education should aim to provide students with a broad range of skills that they will later use while developing software. An important aspect in this is their ability to write code that is not only correct but also of high quality. Unfortunately, this is difficult to control in the setting of a massive open online course. In this paper, we carry out an analysis of the code quality of submissions from JetBrains Academy — a platform for studying programming in an industry-like project-based setting with an embedded code quality assessment tool called Hyperstyle. We analyzed more than a million Java submissions and more than 1.3 million Python submissions, studied the most prevalent types of code quality issues and the dynamics of how students fix them. We provide several case studies of different issues, as well as an analysis of why certain issues remain unfixed even after several attempts. Also, we studied abnormally long sequences of submissions, in which students attempted to fix code quality issues after passing the task. Our results point the way towards the improvement of online courses, such as making sure that the task itself does not incentivize students to write code poorly.},
+  reviewed = {/2023/04/26/a-dozen-in-one.html}
 }
 
 @article{Tomasdottir2020,
@@ -3927,6 +4038,15 @@ To address this challenge, the overhead should be minimized. Based on an analysi
   booktitle = hicss,
   abstract = {The interest in pair programming (PP) has increased recently, e.g. by the popularization of agile software development. However, many practicalities of PP are poorly understood. We present experiences of using PP extensively in an industrial project. The fact that the team had a limited number of high-end workstations forced it in a positive way to quick deployment and rigorous use of PP. The developers liked PP and learned it easily. Initially, the pairs were not rotated frequently but adopting daily, random rotation improved the situation. Frequent rotation seemed to improve knowledge transfer. The driver/navigator roles were switched seldom, but still the partners communicated actively. The navigator rarely spotted defects during coding, but the released code contained almost no defects. Test-driven development and design in pairs possibly decreased defects. The developers considered that PP improved quality and knowledge transfer, and was better suited for complex tasks than for easy tasks},
   reviewed = {/2011/10/11/experiences-of-using-pair-programming-in-an-agile-project.html}
+}
+
+@misc{Vargovich2023,
+  author = {Joseph Vargovich and Fabio Santos and Jacob Penney and Marco A. Gerosa and Igor Steinmacher},
+  title = {{GiveMeLabeledIssues}: An Open Source Issue Recommendation System},
+  year = {2023},
+  eprint = {2303.13418},
+  abstract = {Developers often struggle to navigate an Open Source Software (OSS) project’s issue-tracking system and find a suitable task. Proper issue labeling can aid task selection, but current tools are limited to classifying the issues according to their type (e.g., bug, question, good first issue, feature, etc.). In contrast, this paper presents a tool (GiveMeLabeledIssues) that mines project repositories and labels issues based on the skills required to solve them. We leverage the domain of the APIs involved in the solution (e.g., User Interface (UI), Test, Databases (DB), etc.) as a proxy for the required skills. GiveMeLabeledIssues facilitates matching developers’ skills to tasks, reducing the burden on project maintainers. The tool obtained a precision of 83.9\% when predicting the API domains involved in the issues. The replication package contains instructions on executing the tool and including new projects. A demo video is available at https://www.youtube.com/watch?v=ic2quUue7i8},
+  reviewed = {/2023/04/26/a-dozen-in-one.html}
 }
 
 @inproceedings{Vu2023,
