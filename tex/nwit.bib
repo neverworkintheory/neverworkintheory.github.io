@@ -565,6 +565,15 @@
   reviewed = {/2011/09/05/dont-touch-my-code.html}
 }
 
+@misc{Birillo2023,
+  author = {Anastasiia Birillo and Elizaveta Artser and Yaroslav Golubev and Maria Tigina and Hieke Keuning and Nikolay Vyahhi and Timofey Bryksin},
+  title = {Detecting Code Quality Issues in Pre-written Templates of Programming Tasks in Online Courses},
+  year = {2023},
+  eprint = {2304.12376},
+  abstract = {In this work, we developed an algorithm for detecting code quality issues in the templates of online programming tasks, validated it, and conducted an empirical study on the dataset of student solutions. The algorithm consists of analyzing recurring unfixed issues in solutions of different students, matching them with the code of the template, and then filtering the results. Our manual validation on a subset of tasks demonstrated a precision of 80.8\% and a recall of 73.3\%. We used the algorithm on 415 Java tasks from the JetBrains Academy platform and discovered that as much as 14.7\% of tasks have at least one issue in their template, thus making it harder for students to learn good code quality practices. We describe our results in detail, provide several motivating examples and specific cases, and share the feedback of the developers of the platform, who fixed 51 issues based on the output of our approach.},
+  reviewed = {/2023/04/27/a-few-more-to-close.html}
+}
+
 @article{Bluedorn1999,
   doi = {10.1037/0021-9010.84.2.277},
   url = {https://doi.org/10.1037/0021-9010.84.2.277},
@@ -920,6 +929,19 @@
   reviewed = {/2022/05/20/a-note-on-communication.html}
 }
 
+@inproceedings{DeKoven2019,
+  doi = {10.1145/3355369.3355571},
+  url = {https://doi.org/10.1145/3355369.3355571},
+  year = {2019},
+  month = oct,
+  publisher = {{ACM}},
+  author = {Louis F. DeKoven and Audrey Randall and Ariana Mirian and Gautam Akiwate and Ansel Blume and Lawrence K. Saul and Aaron Schulman and Geoffrey M. Voelker and Stefan Savage},
+  title = {Measuring Security Practices and How They Impact Security},
+  booktitle = {Proceedings of the Internet Measurement Conference},
+  abstract = {Security is a discipline that places significant expectations on lay users. Thus, there are a wide array of technologies and behaviors that we exhort end users to adopt and thereby reduce their security risk. However, the adoption of these “best practices” — ranging from the use of antivirus products to actively keeping software updated — is not well understood, nor is their practical impact on security risk well-established. This paper explores both of these issues via a large-scale empirical measurement study covering approximately 15,000 computers over six months. We use passive monitoring to infer and characterize the prevalence of various security practices in situ as well as a range of other potentially security-relevant behaviors. We then explore the extent to which differences in key security behaviors impact real-world outcomes (i.e., that a device shows clear evidence of having been compromised).},
+  reviewed = {/2023/04/27/a-few-more-to-close.html}
+}
+
 @article{DeLucia2009,
   doi = {10.1007/s10664-009-9127-7},
   url = {https://doi.org/10.1007/s10664-009-9127-7},
@@ -960,6 +982,15 @@
   journal = {{IEEE} Software},
   abstract = {Diversity is an essential aspect of software development because technology influences almost every aspect of modern society, and if the software industry lacks diversity, software products might unintentionally constrain groups of individuals instead of promoting an equalitarian experience to all. In this study, we investigate the perspectives of transgender software professionals about a career in software engineering as one of the aspects of diversity in the software industry. Our findings demonstrate that, on the one hand, trans people choose careers in software engineering for two primary reasons: a) even though software development environments are not exempt from discrimination, the software industry is safer than other industries for transgenders; b) trans people occasionally have to deal with gender dysphoria, anxiety, and fear of judgment, and the work flexibility offered by software companies allow them to cope with these issues more efficiently.},
   reviewed = {/2023/03/05/transgender-careers-in-the-software-industry.html}
+}
+
+@misc{Dilhara2023,
+  author = {Malinda Dilhara and Danny Dig and Ameya Ketkar},
+  title = {{PYEVOLVE}: Automating Frequent Code Changes in {Python} {ML} Systems},
+  howpublished = {https://danny.cs.colorado.edu/papers/PyEvolve\_ICSE2023.pdf},
+  year = {2023},
+  abstract = {Because of the naturalness of software and the rapid evolution of Machine Learning (ML) techniques, frequently repeated code change patterns (CPATs) occur often. They range from simple API migrations to changes involving several complex control structures such as for loops. While manually performing CPATs is tedious, the current state-of-the-art techniques for inferring transformation rules are not advanced enough to handle unseen variants of complex CPATs, resulting in a low recall rate. In this paper we present a novel, automated workflow that mines CPATs, infers the transformation rules, and then transplants them automatically to new target sites. We designed, implemented, evaluated and released this in a tool, PYEVOLVE. At its core is a novel data-flow, control-flow aware transformation rule inference engine. Our technique allows us to advance the state-of-the-art for transformation-by-example tools; without it, 70\% of the code changes that PYEVOLVE transforms would not be possible to automate. Our thorough empirical evaluation of over 40,000 transformations shows 97\% precision and 94\% recall. By accepting 90\% of CPATs generated by PYEVOLVE in famous open-source projects, developers confirmed its changes are useful.},
+  reviewed = {/2023/04/27/a-few-more-to-close.html}
 }
 
 @misc{Dorner2023,
@@ -1041,6 +1072,22 @@
 }
 
 @comment{FFF}
+
+@article{Ferrario2023,
+  doi = {10.1109/tse.2022.3170087},
+  url = {https://doi.org/10.1109/tse.2022.3170087},
+  year = {2023},
+  month = mar,
+  publisher = {Institute of Electrical and Electronics Engineers ({IEEE})},
+  volume = {49},
+  number = {3},
+  pages = {973--990},
+  author = {Maria Angela Ferrario and Emily Winter},
+  title = {Applying Human Values Theory to Software Engineering Practice: Lessons and Implications},
+  journal = {{IEEE} Transactions on Software Engineering},
+  abstract = {The study of human values in software engineering (SE) is increasingly recognized as a fundamental human-centric issue of SE decision making. However, values studies in SE still face a number of issues, including the difficulty of eliciting values in a systematic and structured way, the challenges of measuring and tracking values over time, and the lack of practice-based understanding of values among software practitioners. This paper aims to help address these issues by: 1) outlining a research framework that supports a systematic approach to values elicitation, analysis, and understanding; 2) introducing tools and techniques that help elicit and measure values during SE decision making processes in a systematic way; and 3) applying such tools to a month-long research sprint co-designed with an industry partner and conducted with 27 software practitioners. The case study builds on lessons from an earlier pilot (12 participants) and combines in-situ observations with the use of two values-informed tools: the Values Q-Sort (V-QS), and the Values-Retro. The V-QS adapts instruments from values research to the SE context, the Values-Retro adapts existing SE techniques to values theory. We distil implications for research and practice in ten lessons learned.},
+  reviewed = {/2023/04/27/a-few-more-to-close.html}
+}
 
 @inproceedings{Fischer2015,
   doi = {10.1145/2816707.2816720},
@@ -1166,6 +1213,15 @@
   url = {https://www.usenix.org/conference/soups2017/technical-sessions/presentation/gallagher},
   abstract = {Proper use of an anonymity system requires adequate understanding of how it functions. Yet, there is surprisingly little research that looks into user understanding and usage of anonymity software. Improper use stemming from a lack of sufficient knowledge of the system has the potential to lead to deanonymization, which may hold severe personal consequences for the user. We report on the understanding and the use of the Tor anonymity system. Via semi-structured interviews with 17 individuals (6 experts and 11 non-experts) we found that experts and non-experts view, understand, and use Tor in notably different ways. Moreover, both groups exhibit behavior as well as gaps in understanding that could potentially compromise anonymity. Based on these findings, we provide several suggestions for improving the user experience of Tor to facilitate better user understanding of its operation, threat model, and limitations.},
   reviewed = {/2022/03/07/new-me.html}
+}
+
+@misc{Gamboa2021,
+  author = {Catarina Gamboa and Paulo Alexandre Santos and Christopher S. Timperley and Alcides Fonseca},
+  title = {User-driven Design and Evaluation of Liquid Types in Java},
+  year = {2021},
+  eprint = {arXiv:2110.05444},
+  abstract = {Bugs that are detected earlier during the development lifecycle are easier and cheaper to fix, whereas bugs that are found during production are difficult and expensive to address, and may have dire consequences. Type systems are particularly effective at identifying and preventing bugs early in the development lifecycle by causing invalid programs to result in build failure. Liquid Types are more powerful than those found in mainstream programming languages, allowing the detection of more classes of bugs. However, while Liquid Types were proposed in 2008 with their integration in ML and subsequently introduced in C (2012), Javascript(2012) and Haskell(2014) through language extensions, they have yet to become widely adopted by mainstream developers. This paper investigates how Liquid Types can be integrated in a mainstream programming language, Java, by proposing a new design that aims to lower the barrier to entry and adapts to problems that Java developers commonly encounter at runtime. To promote accessibility, we conducted a series of developer surveys to design the syntax of LiquidJava, our prototype. To evaluate the prototype's usability, we conducted a user study of 30 Java developers, concluding that users intend to use LiquidJava and that it helped to find more bugs and debug faster.},
+  reviewed = {/2023/04/27/a-few-more-to-close.html}
 }
 
 @inproceedings{Gao2017,
@@ -1867,6 +1923,15 @@
   abstract = {Explains the Unix ``lots of little tools, easily recombined'' approach to computing with lots of examples.}
 }
 
+@misc{Keuning2023,
+  author = {Hieke Keuning and Johan Jeuring and Bastiaan Heeren},
+  title = {A Systematic Mapping Study of Code Quality in Education -- with Complete Bibliography},
+  year = {2023},
+  eprint = {arXiv:2304.13451},
+  abstract = {While functionality and correctness of code has traditionally been the main focus of computing educators, quality aspects of code are getting increasingly more attention. High-quality code contributes to the maintainability of software systems, and should therefore be a central aspect of computing education. We have conducted a systematic mapping study to give a broad overview of the research conducted in the field of code quality in an educational context. The study investigates paper characteristics, topics, research methods, and the targeted programming languages. We found 195 publications (1976–2022) on the topic in multiple databases, which we systematically coded to answer the research questions. This paper reports on the results and identifies developments, trends, and new opportunities for research in the field of code quality in computing education.},
+  reviewed = {/2023/04/27/a-few-more-to-close.html}
+}
+
 @inproceedings{Khomh2012,
   doi = {10.1109/msr.2012.6224279},
   url = {https://doi.org/10.1109/msr.2012.6224279},
@@ -2105,7 +2170,7 @@
   author = {Carol S. Lee and Margaret Bowman and Jenny L. Wu},
   title = {Preliminary Outcomes from a Single-Session, Asynchronous Online, Stress and Anxiety Management Workshop for College Students},
   journal = {Trends in Psychiatry and Psychotherapy},
-  abstract = {Objective: Self-guided asynchronous online interventions may provide college students access to evidence-based care, while mitigating barriers like limited hours of service. Thus, we examined the preliminary effectiveness of a 45-minute self-guided, asynchronous online, Dialectical Behavior Therapy (DBT)-informed stress and anxiety management workshop. Participants: College undergraduates (N = 131) were randomized to either workshop (n = 65) or waitlist control (n = 66) conditions. Methods: Participants in the workshop condition completed baseline measures of depression, stress, and anxiety, before completing the workshop. Participants in the waitlist control condition only completed the baseline measures. All participants were reassessed at one-week follow-up. Results: Controlling for baseline measures, students in the workshop condition experienced significantly less stress and greater self-efficacy to regulate stress and anxiety at follow-up, compared to waitlist controls. Conclusions: A 45- minute self-guided, asynchronous online, DBT Skills-informed stress and anxiety management workshop may reduce stress and self-efficacy to regulate stress and anxiety.},
+  abstract = {Objective: Self-guided asynchronous online interventions may provide college students access to evidence-based care, while mitigating barriers like limited hours of service. Thus, we examined the preliminary effectiveness of a 45-minute self-guided, asynchronous online, Dialectical Behavior Therapy (DBT)-informed stress and anxiety management workshop. Participants: College undergraduates (N = 131) were randomized to either workshop (n = 65) or waitlist control (n = 66) conditions. Methods: Participants in the workshop condition completed baseline measures of depression, stress, and anxiety, before completing the workshop. Participants in the waitlist control condition only completed the baseline measures. All participants were reassessed at one-week follow-up. Results: Controlling for baseline measures, students in the workshop condition experienced significantly less stress and greater self-efficacy to regulate stress and anxiety at follow-up, compared to waitlist controls. Conclusions: A 45-minute self-guided, asynchronous online, DBT Skills-informed stress and anxiety management workshop may reduce stress and self-efficacy to regulate stress and anxiety.},
   reviewed = {/2023/03/27/stress-management-workshop-for-college-students.html}
 }
 
@@ -2867,6 +2932,25 @@ Experiments demonstrate the effectiveness of our approach. We implemented a prot
   journal = ieee-tse,
   abstract = {Software projects capture redundant information in various kinds of artifacts, as specifications from the source code are also tested and documented. Such redundancy provides an opportunity to reduce development effort by supporting the joint generation of different types of artifact. We introduce a tool-supported technique, called DScribe, that allows developers to combine unit tests and documentation templates, and to invoke those templates to generate documentation and unit tests. DScribe supports the detection and replacement of outdated documentation, and the use of templates can encourage extensive test suites with a consistent style. Our evaluation of 835 specifications revealed that 85\% were not tested or correctly documented, and DScribe could be used to automatically generate 97\% of the tests and documentation. An additional study revealed that tests generated by DScribe are more focused and readable than those written by human testers or generated by state-of-the-art automated techniques.},
   reviewed = {/2022/04/14/generating-unit-tests-for-documentation.html}
+}
+
+@article{Ndukwe2023,
+  doi = {10.1016/j.jss.2022.111524},
+  url = {https://doi.org/10.1016/j.jss.2022.111524},
+  year = {2023},
+  month = jan,
+  publisher = {Elsevier {BV}},
+  volume = {195},
+  pages = {111524},
+  author = {Ifeanyi G. Ndukwe and Sherlock A. Licorish and Amjed Tahir and Stephen G. MacDonell},
+  title = {How have views on Software Quality differed over time? Research and practice viewpoints},
+  journal = {Journal of Systems and Software},
+  abstract = {Context: Over the years, there has been debate about what constitutes software quality and how it should be measured. This controversy has caused uncertainty across the software engineering community, affecting levels of commitment to the many potential determinants of quality among developers. An up-to-date catalogue of software quality views could provide developers with contem- porary guidelines and templates. In fact, it is necessary to learn about views on the quality of code on frequently used online collaboration platforms (e.g., Stack Overflow), given that the quality of code snippets can affect the quality of software products developed. If quality models are unsuitable for aiding developers because they lack relevance, developers will hold relaxed or inappropriate views of software quality, thereby lacking awareness and commitment to such practices.
+Objective: We aim to explore differences in interest in quality characteristics across research and practice. We also seek to identify quality characteristics practitioners consider important when judging code snippet quality. First, we examine the literature for quality characteristics used frequently for judging software quality, followed by the quality characteristics commonly used by researchers to study code snippet quality. Finally, we investigate quality characteristics used by practitioners to judge the quality of code snippets.
+Methods: We conducted two systematic literature reviews followed by semi-structured interviews of 50 practitioners to address this gap.
+Results: The outcomes of the semi-structured interviews revealed that most practitioners judged the quality of code snippets using five quality dimensions: Functionality, Readability, Efficiency, Security and Reliability. However, other dimensions were also considered (i.e., Reusability, Maintainability, Usability, Compatibility and Completeness). This outcome differed from how the researchers judged code snippet quality.
+Conclusion: Practitioners today mainly rely on code snippets from online code resources, and specific models or quality characteristics are emphasised based on their need to address distinct concerns (e.g., mobile vs web vs standalone applications, regular vs machine learning applications, or open vs closed source applications). Consequently, software quality models should be adapted for the domain of consideration and not seen as one-size-fits-all. This study will lead to targeted support for various clusters of the software development community.},
+  reviewed = {/2023/04/27/a-few-more-to-close.html}
 }
 
 @inproceedings{Near2016,
@@ -3941,6 +4025,15 @@ To address this challenge, the overhead should be minimized. Based on an analysi
   booktitle = icse,
   abstract = {Fault-detection, localization, and repair methods are vital to software quality; but it is difficult to evaluate their generality, applicability, and current effectiveness. Large, diverse, realistic datasets of durably-reproducible faults and fixes are vital to good experimental evaluation of approaches to software quality, but they are difficult and expensive to assemble and keep current. Modern continuous-integration (CI) approaches, like TRAVIS-CI, which are widely used, fully configurable, and executed within custom-built containers, promise a path toward much larger defect datasets. If we can identify and archive failing and subsequent passing runs, the containers will provide a substantial assurance of durable future reproducibility of build and test. Several obstacles, however, must be overcome to make this a practical reality. We describe BUGSWARM, a toolset that navigates these obstacles to enable the creation of a scalable, diverse, realistic, continuously growing set of durably reproducible failing and passing versions of real-world, open-source systems. The BUGSWARM toolkit has already gathered 3,091 fail-pass pairs, in Java and Python, all packaged within fully reproducible containers. Furthermore, the toolkit can be run periodically to detect fail-pass activities, thus growing the dataset continually.},
   reviewed = {/2021/11/08/my-kingdom-for-a-dataset.html}
+}
+
+@misc{Torres2023,
+  author = {Adriano Torres and Sebastian Baltes and Christoph Treude and Markus Wagner},
+  title = {Applying Information Theory to Software Evolution},
+  year = {2023},
+  eprint = {2303.13729},
+  abstract = {Although information theory has found success in disciplines, the literature on its applications to software evolution is limit. We are still missing artifacts that leverage the data and tooling available to measure how the information content of a project can be a proxy for its complexity. In this work, we explore two definitions of entropy, one structural and one textual, and apply it to the historical progression of the commit history of 25 open source projects. We produce evidence that they generally are highly correlated. We also observed that they display weak and unstable correlations with other complexity metrics. Our preliminary investigation of outliers shows an unexpected high frequency of events where there is considerable change in the information content of the project, suggesting that such outliers may inform a definition of surprisal.},
+  reviewed = {/2023/04/27/a-few-more-to-close.html}
 }
 
 @inproceedings{Tourani2017,

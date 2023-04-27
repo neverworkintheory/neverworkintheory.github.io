@@ -84,6 +84,11 @@
     reviewed: /2016/06/13/polymorphism-in-python.html
   name: "\xC5kerblom, Beatrice"
 - entries:
+  - date: '2023-04-27'
+    key: DeKoven2019
+    reviewed: /2023/04/27/a-few-more-to-close.html
+  name: Akiwate, Gautam
+- entries:
   - date: '2021-10-30'
     key: AlSubaihin2021
     reviewed: /2021/10/30/app-store-effects-on-software-engineering-practices.html
@@ -203,6 +208,11 @@
     reviewed: /2011/08/17/three-empirical-evaluations-of-uml.html
   name: Arisholm, E.
 - entries:
+  - date: '2023-04-27'
+    key: Birillo2023
+    reviewed: /2023/04/27/a-few-more-to-close.html
+  name: Artser, Elizaveta
+- entries:
   - date: '2022-02-21'
     key: Guler2019
     reviewed: /2022/02/21/antifuzz.html
@@ -274,6 +284,9 @@
   - date: '2021-10-03'
     key: Baltes2020
     reviewed: /2021/10/03/is-40-the-new-60.html
+  - date: '2023-04-27'
+    key: Torres2023
+    reviewed: /2023/04/27/a-few-more-to-close.html
   name: Baltes, Sebastian
 - entries:
   - date: '2022-04-04'
@@ -529,6 +542,9 @@
   - date: '2023-04-26'
     key: Tigina2023
     reviewed: /2023/04/26/a-dozen-in-one.html
+  - date: '2023-04-27'
+    key: Birillo2023
+    reviewed: /2023/04/27/a-few-more-to-close.html
   name: Birillo, Anastasiia
 - entries:
   - date: '2021-10-30'
@@ -548,6 +564,11 @@
     key: Bluedorn1999
     reviewed: /2012/01/05/the-effects-of-stand-up-and-sit-down-meeting-formats-on-meeting-outcomes.html
   name: Bluedorn, Allen C.
+- entries:
+  - date: '2023-04-27'
+    key: DeKoven2019
+    reviewed: /2023/04/27/a-few-more-to-close.html
+  name: Blume, Ansel
 - entries:
   - date: '2021-10-01'
     key: Bafatakis2019
@@ -649,6 +670,9 @@
   - date: '2023-04-26'
     key: Tigina2023
     reviewed: /2023/04/26/a-dozen-in-one.html
+  - date: '2023-04-27'
+    key: Birillo2023
+    reviewed: /2023/04/27/a-few-more-to-close.html
   name: Bryksin, Timofey
 - entries:
   - date: '2023-02-27'
@@ -957,6 +981,11 @@
     reviewed: /2023/03/15/automatically-assessing-method-names.html
   name: Decker, Michael J.
 - entries:
+  - date: '2023-04-27'
+    key: DeKoven2019
+    reviewed: /2023/04/27/a-few-more-to-close.html
+  name: DeKoven, Louis F.
+- entries:
   - date: '2011-06-30'
     key: Cherubini2007
     reviewed: /2011/06/30/lets-go-to-the-whiteboard.html
@@ -1027,7 +1056,15 @@
   - date: '2021-11-16'
     key: Codoban2015
     reviewed: /2021/11/16/software-history-under-the-lens.html
+  - date: '2023-04-27'
+    key: Dilhara2023
+    reviewed: /2023/04/27/a-few-more-to-close.html
   name: Dig, Danny
+- entries:
+  - date: '2023-04-27'
+    key: Dilhara2023
+    reviewed: /2023/04/27/a-few-more-to-close.html
+  name: Dilhara, Malinda
 - entries:
   - date: '2011-08-02'
     key: Moe2010
@@ -1175,6 +1212,11 @@
     reviewed: /2021/08/21/metrics-and-team-leaders-perceptions-of-productivity.html
   name: Fernandes, Eduardo
 - entries:
+  - date: '2023-04-27'
+    key: Ferrario2023
+    reviewed: /2023/04/27/a-few-more-to-close.html
+  name: Ferrario, Maria Angela
+- entries:
   - date: '2023-03-14'
     key: Costa2022
     reviewed: /2023/03/14/test-flakiness-across-programming-languages.html
@@ -1207,6 +1249,11 @@
     key: Chen2016
     reviewed: /2016/04/26/maintaining-java-orm.html
   name: Flora, Parminder
+- entries:
+  - date: '2023-04-27'
+    key: Gamboa2021
+    reviewed: /2023/04/27/a-few-more-to-close.html
+  name: Fonseca, Alcides
 - entries:
   - date: '2016-09-21'
     key: Ford2016
@@ -1306,6 +1353,11 @@
     key: Butler2019
     reviewed: /2022/04/18/company-contributions-to-open-source.html
   name: Gamalielsson, Jonas
+- entries:
+  - date: '2023-04-27'
+    key: Gamboa2021
+    reviewed: /2023/04/27/a-few-more-to-close.html
+  name: Gamboa, Catarina
 - entries:
   - date: '2023-03-13'
     key: Yelam2021
@@ -1434,6 +1486,9 @@
   - date: '2023-04-26'
     key: Tigina2023
     reviewed: /2023/04/26/a-dozen-in-one.html
+  - date: '2023-04-27'
+    key: Birillo2023
+    reviewed: /2023/04/27/a-few-more-to-close.html
   name: Golubev, Yaroslav
 - entries:
   - date: '2023-03-24'
@@ -1687,6 +1742,11 @@
     key: Jolak2020
     reviewed: /2022/03/31/textual-vs-graphic-design-descriptions-and-communication.html
   name: Hebig, Regina
+- entries:
+  - date: '2023-04-27'
+    key: Keuning2023
+    reviewed: /2023/04/27/a-few-more-to-close.html
+  name: Heeren, Bastiaan
 - entries:
   - date: '2016-04-26'
     key: Nakshatri2016
@@ -1972,6 +2032,11 @@
     reviewed: /2023/03/02/learning-to-predict-user-defined-types.html
   name: Jesse, Kevin
 - entries:
+  - date: '2023-04-27'
+    key: Keuning2023
+    reviewed: /2023/04/27/a-few-more-to-close.html
+  name: Jeuring, Johan
+- entries:
   - date: '2021-10-26'
     key: Zhang2021a
     reviewed: /2021/10/26/enriching-api-documentation-with-code-samples-and-usage-scenarios.html
@@ -2135,6 +2200,11 @@
     reviewed: /2016/09/16/five-from-icer-2016.html
   name: Kelleher, Caitlin L.
 - entries:
+  - date: '2023-04-27'
+    key: Dilhara2023
+    reviewed: /2023/04/27/a-few-more-to-close.html
+  name: Ketkar, Ameya
+- entries:
   - date: '2012-04-17'
     key: Kocaguneli2012
     reviewed: /2012/04/17/ensemble-effort-estimation.html
@@ -2143,6 +2213,12 @@
   - date: '2023-04-26'
     key: Tigina2023
     reviewed: /2023/04/26/a-dozen-in-one.html
+  - date: '2023-04-27'
+    key: Birillo2023
+    reviewed: /2023/04/27/a-few-more-to-close.html
+  - date: '2023-04-27'
+    key: Keuning2023
+    reviewed: /2023/04/27/a-few-more-to-close.html
   name: Keuning, Hieke
 - entries:
   - date: '2012-05-17'
@@ -2536,6 +2612,9 @@
   - date: '2023-04-26'
     key: Meldrum2020
     reviewed: /2023/04/26/a-dozen-in-one.html
+  - date: '2023-04-27'
+    key: Ndukwe2023
+    reviewed: /2023/04/27/a-few-more-to-close.html
   name: Licorish, Sherlock A.
 - entries:
   - date: '2011-10-22'
@@ -2701,6 +2780,9 @@
   - date: '2011-12-21'
     key: McLeod2011
     reviewed: /2011/12/21/factors-that-affect-software-systems-development-project-outcomes.html
+  - date: '2023-04-27'
+    key: Ndukwe2023
+    reviewed: /2023/04/27/a-few-more-to-close.html
   name: MacDonell, Stephen G.
 - entries:
   - date: '2023-04-13'
@@ -3012,6 +3094,9 @@
   - date: '2023-03-13'
     key: Yelam2021
     reviewed: /2023/03/13/covert-cloud-communication-with-lambdas.html
+  - date: '2023-04-27'
+    key: DeKoven2019
+    reviewed: /2023/04/27/a-few-more-to-close.html
   name: Mirian, Ariana
 - entries:
   - date: '2023-04-26'
@@ -3265,6 +3350,11 @@
     key: Nassif2021
     reviewed: /2022/04/14/generating-unit-tests-for-documentation.html
   name: Nassif, Mathieu
+- entries:
+  - date: '2023-04-27'
+    key: Ndukwe2023
+    reviewed: /2023/04/27/a-few-more-to-close.html
+  name: Ndukwe, Ifeanyi G.
 - entries:
   - date: '2016-04-26'
     key: Near2016
@@ -3829,6 +3919,11 @@
     reviewed: /2021/11/18/synthesis-approach-for-data-science-api-refactoring.html
   name: Ramos, Daniel
 - entries:
+  - date: '2023-04-27'
+    key: DeKoven2019
+    reviewed: /2023/04/27/a-few-more-to-close.html
+  name: Randall, Audrey
+- entries:
   - date: '2012-04-10'
     key: Philip2012
     reviewed: /2012/04/10/component-reuse-vs-snippet-remixing.html
@@ -4037,6 +4132,11 @@
     reviewed: /2023/04/26/a-dozen-in-one.html
   name: Santos, Fabio
 - entries:
+  - date: '2023-04-27'
+    key: Gamboa2021
+    reviewed: /2023/04/27/a-few-more-to-close.html
+  name: Santos, Paulo Alexandre
+- entries:
   - date: '2014-04-25'
     key: Kasi2013
     reviewed: /2014/04/25/cassandra-proactive-conflict-minimization-through-optimized-task-scheduling.html
@@ -4057,9 +4157,17 @@
     reviewed: /2016/04/26/game-postmortems.html
   name: Sathiyanarayanan, Pavithra
 - entries:
+  - date: '2023-04-27'
+    key: DeKoven2019
+    reviewed: /2023/04/27/a-few-more-to-close.html
+  name: Saul, Lawrence K.
+- entries:
   - date: '2023-03-13'
     key: Yelam2021
     reviewed: /2023/03/13/covert-cloud-communication-with-lambdas.html
+  - date: '2023-04-27'
+    key: DeKoven2019
+    reviewed: /2023/04/27/a-few-more-to-close.html
   name: Savage, Stefan
 - entries:
   - date: '2022-04-25'
@@ -4136,6 +4244,11 @@
     key: Bettenburg2008
     reviewed: /2011/08/30/what-makes-a-good-bug-report.html
   name: "Schr\xF6ter, Adrian"
+- entries:
+  - date: '2023-04-27'
+    key: DeKoven2019
+    reviewed: /2023/04/27/a-few-more-to-close.html
+  name: Schulman, Aaron
 - entries:
   - date: '2011-06-30'
     key: Barnett2011
@@ -4499,6 +4612,11 @@
     reviewed: /2023/04/26/a-dozen-in-one.html
   name: Swillus, Mark
 - entries:
+  - date: '2023-04-27'
+    key: Ndukwe2023
+    reviewed: /2023/04/27/a-few-more-to-close.html
+  name: Tahir, Amjed
+- entries:
   - date: '2021-08-27'
     key: Taipalus2018
     reviewed: /2021/08/27/errors-in-sql-queries.html
@@ -4585,12 +4703,25 @@
   - date: '2023-04-26'
     key: Tigina2023
     reviewed: /2023/04/26/a-dozen-in-one.html
+  - date: '2023-04-27'
+    key: Birillo2023
+    reviewed: /2023/04/27/a-few-more-to-close.html
   name: Tigina, Maria
+- entries:
+  - date: '2023-04-27'
+    key: Gamboa2021
+    reviewed: /2023/04/27/a-few-more-to-close.html
+  name: Timperley, Christopher S.
 - entries:
   - date: '2021-11-08'
     key: Tomassi2019
     reviewed: /2021/11/08/my-kingdom-for-a-dataset.html
   name: Tomassi, David
+- entries:
+  - date: '2023-04-27'
+    key: Torres2023
+    reviewed: /2023/04/27/a-few-more-to-close.html
+  name: Torres, Adriano
 - entries:
   - date: '2011-08-17'
     key: DeLucia2009
@@ -4650,6 +4781,9 @@
   - date: '2023-03-29'
     key: '2303.10131'
     reviewed: /2023/03/29/software-engineering-gender-bias-in-llms.html
+  - date: '2023-04-27'
+    key: Torres2023
+    reviewed: /2023/04/27/a-few-more-to-close.html
   name: Treude, Christoph
 - entries:
   - date: '2011-12-04'
@@ -4806,6 +4940,11 @@
     reviewed: /2022/03/23/designing-types-for-r-empirically.html
   name: Vitek, Jan
 - entries:
+  - date: '2023-04-27'
+    key: DeKoven2019
+    reviewed: /2023/04/27/a-few-more-to-close.html
+  name: Voelker, Geoffrey M.
+- entries:
   - date: '2023-04-26'
     key: Kaleeswaran2023
     reviewed: /2023/04/26/a-dozen-in-one.html
@@ -4824,6 +4963,9 @@
   - date: '2023-04-26'
     key: Tigina2023
     reviewed: /2023/04/26/a-dozen-in-one.html
+  - date: '2023-04-27'
+    key: Birillo2023
+    reviewed: /2023/04/27/a-few-more-to-close.html
   name: Vyahhi, Nikolay
 - entries:
   - date: '2021-10-03'
@@ -4834,6 +4976,9 @@
   - date: '2023-03-09'
     key: Licorish2022
     reviewed: /2023/03/09/combining-gin-and-pmd-for-code-improvements.html
+  - date: '2023-04-27'
+    key: Torres2023
+    reviewed: /2023/04/27/a-few-more-to-close.html
   name: Wagner, Markus
 - entries:
   - date: '2022-03-16'
@@ -4976,6 +5121,11 @@
     key: Almeida2017
     reviewed: /2021/09/04/do-software-developers-understand-open-source-licenses.html
   name: Wilson, Greg
+- entries:
+  - date: '2023-04-27'
+    key: Ferrario2023
+    reviewed: /2023/04/27/a-few-more-to-close.html
+  name: Winter, Emily
 - entries:
   - date: '2011-08-24'
     key: Rossbach2010

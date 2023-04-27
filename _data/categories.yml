@@ -769,6 +769,11 @@
     title: Transgender Careers in the Software Industry
   name: Inclusion
 - entries:
+  - date: '2023-04-27'
+    reviewed: /2023/04/27/a-few-more-to-close.html
+    title: A Few More to close
+  name: Information Theory
+- entries:
   - date: '2021-11-23'
     reviewed: /2021/11/23/security-smells-in-infrastructure-as-code-scripts.html
     title: 'The Seven Sins: Security Smells in Infrastructure as Code Scripts'
