@@ -3089,6 +3089,19 @@ In this paper, we present the first empirical study of how code review is practi
   reviewed = {/2012/06/18/combining-functional-and-imperative-programming-for-multicore-software-an-empirical-study-evaluating-scala-and-java.html}
 }
 
+@inproceedings{Pardos2023,
+  doi = {10.1145/3544548.3581574},
+  url = {https://doi.org/10.1145/3544548.3581574},
+  year = {2023},
+  month = apr,
+  publisher = {{ACM}},
+  author = {Zachary A. Pardos and Matthew Tang and Ioannis Anastasopoulos and Shreya K. Sheel and Ethan Zhang},
+  title = {{OATutor}: An Open-source Adaptive Tutoring System and Curated Content Library for Learning Sciences Research},
+  booktitle = {Proceedings of the 2023 {CHI} Conference on Human Factors in Computing Systems},
+  abstract = {Despite decades long establishment of effective tutoring principles, no adaptive tutoring system has been developed and open-sourced to the research community. The absence of such a system inhibits researchers from replicating adaptive learning studies and extending and experimenting with various tutoring system design directions. For this reason, adaptive learning research is primarily conducted on a small number of proprietary platforms. In this work, we aim to democratize adaptive learning research with the introduction of the first open-source adaptive tutoring system based on Intelligent Tutoring System principles. The system, we call Open Adaptive Tutor (OATutor), has been iteratively developed over three years with field trials in classrooms drawing feedback from students, teachers, and researchers. The MIT-licensed source code includes three creative commons (CC BY) textbooks worth of algebra problems, with tutoring supports authored by the OATutor project. Knowledge Tracing, an A/B testing framework, and LTI support are included.},
+  reviewed = {/2023/05/07/open-source-adaptive-tutoring-system.html}
+}
+
 @inproceedings{Parnin2012,
   doi = {10.1109/icpc.2012.6240479},
   url = {https://doi.org/10.1109/icpc.2012.6240479},
@@ -3563,6 +3576,15 @@ To address this challenge, the overhead should be minimized. Based on an analysi
   url = {https://preethac.github.io/files/ICSE_NIER_2023.pdf},
   abstract = {Interpersonal trust plays a crucial role in facilitating collaborative tasks, such as software development. While previous research recognizes the significance of trust in an organizational setting, there is a lack of understanding in how trust is exhibited in OSS distributed teams, where there is an absence of direct, in-person communications. To foster trust and collaboration in OSS teams, we need to understand what trust is and how it is exhibited in written developer communications (e.g., pull requests, chats). In this paper, we first investigate various dimensions of trust to identify the ways trusting behavior can be observed in OSS. Next, we sample a set of 100 GitHub pull requests from Apache Software Foundation (ASF) projects, to analyze and demonstrate how each dimension of trust can be exhibited. Our findings provide preliminary insights into cues that might be helpful to automatically assess team dynamics and establish interpersonal trust in OSS teams, leading to successful and sustainable OSS.},
   reviewed = {/2023/02/28/interpersonal-trust-in-oss.html}
+}
+
+@misc{SanchezRuiz2023,
+    author = {José Manuel {Sánchez Ruiz} and Francisco José {Domínguez Mayo} and Xavier Oriol and José Francisco Crespo and David Benavides and Ernest Teniente},
+    title = {A Benchmarking Proposal for DevOps Practices on Open Source Software Projects},
+    year = {2023},
+    eprint = {2304.14790},
+    abstract = {The popularity of open-source software (OSS) projects has grown significantly over the last few years with more organizations relying on them. As these projects become larger, the need for higher quality also increases. DevOps practices have been shown to improve quality and performance. The DORA benchmarking reports provide useful information to compare DevOps practices performance between organizations, but they focus on continuous deployment and delivery to production, while OSS projects focus on the continuous release of code and its impact on third parties. The DORA reports mention the increasing presence of OSS projects as they are widely used in the industry, but they have never been used to measure OSS projects performance levels. This study reveals that the DORA benchmark cannot be applied to OSS projects and proposes benchmarking metrics for OSS projects, being the first one that adapts the DORA metrics and applies them in OSS projects. The metrics proposed in this study for benchmarking OSS projects include Release Frequency and Lead Time For Released Changes to measure throughput, and Time To Repair Code and Bug Issues Rate to assess stability. In contrast to the DORA reports, where data is collected through manual surveys, in our proposal, data is collected automatically by a tool we developed that retrieves information from public GitHub repositories. This reduces the risk of survey-based data collection. Our study also shows the benchmark feasibility by applying it to four popular OSS projects: Angular, Kubernetes, Tensorflow, and VS Code. In addition, we proposed challenges that address the topics and future works to expand the knowledge and findings of this study. Overall, the findings of the study can help to improve future research on OSS projects and provide a better understanding and challenges of the role of DevOps practices in OSS projects.},
+    reviewed = {/2023/05/07/benchmarking-open-source-devops.html}
 }
 
 @article{Scalabrino2018,
@@ -4477,6 +4499,15 @@ We find that repository administrators have exacting technical demands for such 
   conference = {CAIN '22: 1st Conference on AI Engineering - Software Engineering for AI},
   abstract = {The popularity of machine learning has wildly expanded in recent years. Machine learning techniques have been heatedly studied in academia and applied in the industry to create business value. However, there is a lack of guidelines for code quality in machine learning applications. In particular, code smells have rarely been studied in this domain. Although machine learning code is usually integrated as a small part of an overarching system, it usually plays an important role in its core functionality. Hence ensuring code quality is quintessential to avoid issues in the long run. This paper proposes and identifies a list of 22 machine learning-specific code smells collected from various sources, including papers, grey literature, GitHub commits, and Stack Overflow posts. We pinpoint each smell with a description of its context, potential issues in the long run, and proposed solutions. In addition, we link them to their respective pipeline stage and the evidence from both academic and grey literature. The code smell catalog helps data scientists and developers produce and maintain high-quality machine learning application code.},
   reviewed = {/2023/02/25/fairness-and-code-smells-in-machine-learning.html}
+}
+
+@misc{Zhao2023,
+  author = {Dehai Zhao and Zhenchang Xing and Xin Xia and Deheng Ye and Xiwei Xu and Liming Zhu},
+  title = {SeeHow: Workflow Extraction from Programming Screencasts through Action-Aware Video Analytics},
+  year = {2023},
+  eprint = {2304.14042},
+  abstract = {Programming screencasts (e.g., video tutorials on Youtube or live coding stream on Twitch) are important knowledge source for developers to learn programming knowledge, especially the workflow of completing a programming task. Nonetheless, the image nature of programming screencasts limits the accessibility of screencast content and the workflow embedded in it, resulting in a gap to access and interact with the content and workflow in programming screencasts. Existing non-intrusive methods are limited to extract either primitive human-computer interaction (HCI) actions or coarse-grained video this http URL this work, we leverage Computer Vision (CV) techniques to build a programming screencast analysis tool which can automatically extract code-line editing steps (enter text, delete text, edit text and select text) from screencasts. Given a programming screencast, our approach outputs a sequence of coding steps and code snippets involved in each step, which we refer to as programming workflow. The proposed method is evaluated on 41 hours of tutorial videos and live coding screencasts with diverse programming environments. The results demonstrate our tool can extract code-line editing steps accurately and the extracted workflow steps can be intuitively understood by developers.},
+  reviewed = {/2023/05/07/workflow-extraction-from-screencasts.html}
 }
 
 @inproceedings{Zhu2021,

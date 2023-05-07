@@ -165,6 +165,11 @@
     reviewed: /2021/10/11/a-critical-history-of-logo-and-constructionist-learning.html
   name: Ames, Morgan G.
 - entries:
+  - date: '2023-05-07'
+    key: Pardos2023
+    reviewed: /2023/05/07/open-source-adaptive-tutoring-system.html
+  name: Anastasopoulos, Ioannis
+- entries:
   - date: '2011-09-22'
     key: Anda2009
     reviewed: /2011/09/22/variability-and-reproducibility-in-software-engineering-a-study-of-four-companies-that-developed-the-same-system.html
@@ -446,6 +451,11 @@
     key: BenAri2011
     reviewed: /2011/12/10/a-decade-of-research-and-development-on-program-animation-the-jeliot-experience.html
   name: Ben-Ari, Mordechai
+- entries:
+  - date: '2023-05-07'
+    key: SanchezRuiz2023
+    reviewed: /2023/05/07/benchmarking-open-source-devops.html
+  name: Benavides, David
 - entries:
   - date: '2021-08-09'
     key: Beniamini2017
@@ -868,6 +878,11 @@
     reviewed: /2016/09/16/five-from-icer-2016.html
   name: Craig, Michelle
 - entries:
+  - date: '2023-05-07'
+    key: SanchezRuiz2023
+    reviewed: /2023/05/07/benchmarking-open-source-devops.html
+  name: "Crespo, Jos\xE9 Francisco"
+- entries:
   - date: '2021-08-21'
     key: Oliveira2020
     reviewed: /2021/08/21/metrics-and-team-leaders-perceptions-of-productivity.html
@@ -1090,6 +1105,11 @@
     key: RakAmnouykit2020
     reviewed: /2022/03/18/python-3-types-in-the-wild.html
   name: Dolby, Julian
+- entries:
+  - date: '2023-05-07'
+    key: SanchezRuiz2023
+    reviewed: /2023/05/07/benchmarking-open-source-devops.html
+  name: "Dom\xEDnguez Mayo, Francisco Jos\xE9"
 - entries:
   - date: '2021-09-30'
     key: Rigby2016
@@ -3506,6 +3526,11 @@
     reviewed: /2011/07/18/debugging-in-the-very-large.html
   name: Orgovan, Vince
 - entries:
+  - date: '2023-05-07'
+    key: SanchezRuiz2023
+    reviewed: /2023/05/07/benchmarking-open-source-devops.html
+  name: Oriol, Xavier
+- entries:
   - date: '2021-09-06'
     key: Nielebock2018
     reviewed: /2021/09/06/commenting-source-code.html
@@ -3594,6 +3619,11 @@
     key: Pankratius2012
     reviewed: /2012/06/18/combining-functional-and-imperative-programming-for-multicore-software-an-empirical-study-evaluating-scala-and-java.html
   name: Pankratius, Victor
+- entries:
+  - date: '2023-05-07'
+    key: Pardos2023
+    reviewed: /2023/05/07/open-source-adaptive-tutoring-system.html
+  name: Pardos, Zachary A.
 - entries:
   - date: '2021-10-03'
     key: Baltes2020
@@ -4337,6 +4367,11 @@
     reviewed: /2016/09/08/ethnography-in-ese.html
   name: Sharp, Helen
 - entries:
+  - date: '2023-05-07'
+    key: Pardos2023
+    reviewed: /2023/05/07/open-source-adaptive-tutoring-system.html
+  name: Sheel, Shreya K.
+- entries:
   - date: '2016-10-05'
     key: Fucci2016
     reviewed: /2016/10/05/test-driven-development.html
@@ -4610,6 +4645,11 @@
     reviewed: /2023/04/26/a-dozen-in-one.html
   name: Swillus, Mark
 - entries:
+  - date: '2023-05-07'
+    key: SanchezRuiz2023
+    reviewed: /2023/05/07/benchmarking-open-source-devops.html
+  name: "S\xE1nchez Ruiz, Jos\xE9 Manuel"
+- entries:
   - date: '2023-04-27'
     key: Ndukwe2023
     reviewed: /2023/04/27/a-few-more-to-close.html
@@ -4643,6 +4683,11 @@
     reviewed: /2021/11/16/using-so-comment-edit-pairs.html
   name: Tang, Henry
 - entries:
+  - date: '2023-05-07'
+    key: Pardos2023
+    reviewed: /2023/05/07/open-source-adaptive-tutoring-system.html
+  name: Tang, Matthew
+- entries:
   - date: '2016-06-09'
     key: Nagappan2015
     reviewed: /2016/06/09/goto-in-c.html
@@ -4652,6 +4697,11 @@
     key: Tao2021
     reviewed: /2021/10/17/demystifying-error-messages-in-data-science-libraries.html
   name: Tao, Yida
+- entries:
+  - date: '2023-05-07'
+    key: SanchezRuiz2023
+    reviewed: /2023/05/07/benchmarking-open-source-devops.html
+  name: Teniente, Ernest
 - entries:
   - date: '2016-06-05'
     key: Gulzar2016
@@ -5181,6 +5231,9 @@
   - date: '2022-04-04'
     key: Bao2021
     reviewed: /2022/04/04/contributor-prediction-for-github.html
+  - date: '2023-05-07'
+    key: Zhao2023
+    reviewed: /2023/05/07/workflow-extraction-from-screencasts.html
   name: Xia, Xin
 - entries:
   - date: '2022-03-14'
@@ -5201,6 +5254,11 @@
     reviewed: /2022/04/11/database-performance-antipatterns.html
   name: Xie, Tao
 - entries:
+  - date: '2023-05-07'
+    key: Zhao2023
+    reviewed: /2023/05/07/workflow-extraction-from-screencasts.html
+  name: Xing, Zhenchang
+- entries:
   - date: '2022-09-19'
     key: Yang2022
     reviewed: /2022/09/19/developer-git-knowledge.html
@@ -5210,6 +5268,11 @@
     key: Xu2015
     reviewed: /2016/06/09/too-many-knobs.html
   name: Xu, Tianyin
+- entries:
+  - date: '2023-05-07'
+    key: Zhao2023
+    reviewed: /2023/05/07/workflow-extraction-from-screencasts.html
+  name: Xu, Xiwei
 - entries:
   - date: '2021-10-17'
     key: Tao2021
@@ -5253,6 +5316,11 @@
     key: Yasmin2020
     reviewed: /2022/03/09/rest-api-deprecation.html
   name: Yasmin, Jerin
+- entries:
+  - date: '2023-05-07'
+    key: Zhao2023
+    reviewed: /2023/05/07/workflow-extraction-from-screencasts.html
+  name: Ye, Deheng
 - entries:
   - date: '2023-03-13'
     key: Yelam2021
@@ -5350,6 +5418,11 @@
     reviewed: /2012/07/18/clustering-duplicate-crash-reports.html
   name: Zhang, Dongmei
 - entries:
+  - date: '2023-05-07'
+    key: Pardos2023
+    reviewed: /2023/05/07/open-source-adaptive-tutoring-system.html
+  name: Zhang, Ethan
+- entries:
   - date: '2023-02-25'
     key: Zhang2022a
     reviewed: /2023/02/25/fairness-and-code-smells-in-machine-learning.html
@@ -5406,6 +5479,11 @@
     reviewed: /2012/01/17/a-survey-of-the-practice-of-computational-science.html
   name: Zhang, Yun
 - entries:
+  - date: '2023-05-07'
+    key: Zhao2023
+    reviewed: /2023/05/07/workflow-extraction-from-screencasts.html
+  name: Zhao, Dehai
+- entries:
   - date: '2014-10-09'
     key: Yuan2014
     reviewed: /2014/10/09/simple-testing-can-prevent-most-critical-failures.html
@@ -5453,6 +5531,11 @@
     key: Xu2015
     reviewed: /2016/06/09/too-many-knobs.html
   name: Zhou, Yuanyuan
+- entries:
+  - date: '2023-05-07'
+    key: Zhao2023
+    reviewed: /2023/05/07/workflow-extraction-from-screencasts.html
+  name: Zhu, Liming
 - entries:
   - date: '2021-08-10'
     key: Zhu2021

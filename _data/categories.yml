@@ -354,6 +354,9 @@
   - date: '2023-04-27'
     reviewed: /2023/04/27/a-few-more-to-close.html
     title: A Few More to Close
+  - date: '2023-05-07'
+    reviewed: /2023/05/07/open-source-adaptive-tutoring-system.html
+    title: An Open Source Adaptive Tutoring System
   name: Computing Education
 - entries:
   - date: '2023-04-17'
@@ -495,6 +498,9 @@
   - date: '2023-04-10'
     reviewed: /2023/04/10/code-review-of-build-specs.html
     title: Code Review of Build System Specifications
+  - date: '2023-05-07'
+    reviewed: /2023/05/07/benchmarking-open-source-devops.html
+    title: Benchmarking Open Source DevOps
   name: DevOps
 - entries:
   - date: '2021-10-30'
@@ -550,7 +556,7 @@
 - entries:
   - date: '2021-09-20'
     reviewed: /2021/09/20/program-comprehension-of-domain-specific-and-general-purpose-languages.html
-    title: Program comprehension of domain-specific and general-purpose languages
+    title: Program Comprehension of Domain-Specific and General-Purpose Languages
   name: Domain-Specific Languages
 - entries:
   - date: '2011-06-27'
@@ -937,6 +943,9 @@
   - date: '2023-04-27'
     reviewed: /2023/04/27/a-few-more-to-close.html
     title: A Few More to Close
+  - date: '2023-05-07'
+    reviewed: /2023/05/07/open-source-adaptive-tutoring-system.html
+    title: An Open Source Adaptive Tutoring System
   name: Machine Learning
 - entries:
   - date: '2016-04-26'
@@ -1067,6 +1076,9 @@
   - date: '2023-04-26'
     reviewed: /2023/04/26/a-dozen-in-one.html
     title: A Dozen in One
+  - date: '2023-05-07'
+    reviewed: /2023/05/07/benchmarking-open-source-devops.html
+    title: Benchmarking Open Source DevOps
   name: Open Source
 - entries:
   - date: '2021-09-23'
@@ -1179,8 +1191,8 @@
       perceptions'
   - date: '2021-09-19'
     reviewed: /2021/09/19/impact-of-task-switching-and-work-interruptions.html
-    title: Impact of task switching and work interruptions on software development
-      processes
+    title: Impact of Task Switching and Work Interruptions on Software Development
+      Processes
   - date: '2021-09-26'
     reviewed: /2021/09/26/two-papers-on-time.html
     title: Two Papers on Time
@@ -1225,7 +1237,7 @@
     title: 'Commenting source code: is it worth it for small programming tasks?'
   - date: '2021-09-20'
     reviewed: /2021/09/20/program-comprehension-of-domain-specific-and-general-purpose-languages.html
-    title: Program comprehension of domain-specific and general-purpose languages
+    title: Program Comprehension of Domain-Specific and General-Purpose Languages
   - date: '2021-09-21'
     reviewed: /2021/09/21/syntax-predicates-idioms-what-really-affects-code-complexity.html
     title: "Syntax, Predicates, Idioms\u2014What Really Affects Code Complexity?"
@@ -1502,6 +1514,11 @@
     reviewed: /2023/04/03/alternatives-to-cells-in-ds-pipelines.html
     title: Alternatives to Cells in Data Science Pipelines
   name: Scientific Computing
+- entries:
+  - date: '2023-05-07'
+    reviewed: /2023/05/07/workflow-extraction-from-screencasts.html
+    title: Workflow Extraction from Screencasts
+  name: Screencasts
 - entries:
   - date: '2016-04-26'
     reviewed: /2016/04/26/finding-security-bugs.html
@@ -1897,3 +1914,8 @@
     reviewed: /2016/10/02/filtering-spreadsheet-data.html
     title: 'FIDEX: Filtering Spreadsheet Data using Examples'
   name: Visual Programming Environments
+- entries:
+  - date: '2023-05-07'
+    reviewed: /2023/05/07/workflow-extraction-from-screencasts.html
+    title: Workflow Extraction from Screencasts
+  name: Workflow
