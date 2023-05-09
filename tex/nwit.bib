@@ -178,6 +178,16 @@
   reviewed = {/2016/06/09/novice-programming-mistakes.html}
 }
 
+@misc{AltmayerPizzorno2023,
+  author = {Juan {Altmayer Pizzorno} and Emery D Berger},
+  title = {SlipCover: Near Zero-Overhead Code Coverage for Python},
+  year = {2023},
+  eprint = {2305.02886},
+  abstract = {Coverage analysis is widely used but can suffer from high overhead. This overhead is especially acute in the context of Python, which is already notoriously slow (a recent study observes a roughly 30x slowdown vs. native code). We find that the state-of-the-art coverage tool for Python, this http URL, leads to slowdowns of 1.3x--3.6x (median: 2.8x) for the standard Python interpreter. Slowdowns are even more extreme when using PyPy, a JIT-compiled Python implementation, where this http URL slows execution by 2.4x--325x (median: 14x). This performance degradation reduces the utility of coverage analysis in most use cases, including testing and fuzzing, and precludes its use in deployment.
+This paper presents SlipCover, a novel, near-zero overhead coverage analyzer for Python. SlipCover works without modifications to either the Python interpreter or PyPy. It first processes a program's AST to accurately identify all branches and lines. SlipCover then dynamically rewrites Python bytecodes to add lightweight instrumentation to each identified branch and line. At run time, SlipCover periodically de-instruments already-covered lines and branches. The result is extremely low overheads -- a median of just 5\% -- making SlipCover suitable for use in deployment. We show its efficiency can translate to significant increases in the speed of coverage-based clients. As a proof of concept, we integrate SlipCover into TPBT, a targeted property-based testing system, and observe a 22x speedup.},
+  reviewed = {/2023/05/09/near-zero-overhead-coverage-for-python.html}
+}
+
 @inproceedings{Ameller2012,
   doi = {10.1109/re.2012.6345838},
   url = {https://doi.org/10.1109/re.2012.6345838},
@@ -3226,16 +3236,6 @@ In this paper, we present the first empirical study of how code review is practi
   booktitle = msr,
   abstract = {Software Heritage is the largest existing public archive of software source code and accompanying development history: it currently spans more than five billion unique source code files and one billion unique commits, coming from more than 80 million software projects. This paper introduces the Software Heritage graph dataset: a fully-deduplicated Merkle DAG representation of the Software Heritage archive. The dataset links together file content identifiers, source code directories, Version Control System (VCS) commits tracking evolution over time, up to the full states of VCS repositories as observed by Software Heritage during periodic crawls. The dataset's contents come from major development forges (including GitHub and GitLab), FOSS distributions (e.g., Debian), and language-specific package managers (e.g., PyPI). Crawling information is also included, providing timestamps about when and where all archived source code artifacts have been observed in the wild. The Software Heritage graph dataset is available in multiple formats, including downloadable CSV dumps and Apache Parquet files for local use, as well as a public instance on Amazon Athena interactive query service for ready-to-use powerful analytical processing. Source code file contents are cross-referenced at the graph leaves, and can be retrieved through individual requests using the Software Heritage archive API.},
   reviewed = {/2021/08/11/cheating-death-survival-analysis-of-python-projects.html}
-}
-
-@misc{Pizzorno2023,
-  author = {Juan Altmayer Pizzorno and Emery D Berger},
-  title = {SlipCover: Near Zero-Overhead Code Coverage for Python},
-  year = {2023},
-  eprint = {2305.02886},
-  abstract = {Coverage analysis is widely used but can suffer from high overhead. This overhead is especially acute in the context of Python, which is already notoriously slow (a recent study observes a roughly 30x slowdown vs. native code). We find that the state-of-the-art coverage tool for Python, this http URL, leads to slowdowns of 1.3x--3.6x (median: 2.8x) for the standard Python interpreter. Slowdowns are even more extreme when using PyPy, a JIT-compiled Python implementation, where this http URL slows execution by 2.4x--325x (median: 14x). This performance degradation reduces the utility of coverage analysis in most use cases, including testing and fuzzing, and precludes its use in deployment.
-This paper presents SlipCover, a novel, near-zero overhead coverage analyzer for Python. SlipCover works without modifications to either the Python interpreter or PyPy. It first processes a program's AST to accurately identify all branches and lines. SlipCover then dynamically rewrites Python bytecodes to add lightweight instrumentation to each identified branch and line. At run time, SlipCover periodically de-instruments already-covered lines and branches. The result is extremely low overheads -- a median of just 5\% -- making SlipCover suitable for use in deployment. We show its efficiency can translate to significant increases in the speed of coverage-based clients. As a proof of concept, we integrate SlipCover into TPBT, a targeted property-based testing system, and observe a 22x speedup.},
-  reviewed = {/2023/05/09/near-zero-overhead-coverage-for-python.html}
 }
 
 @misc{Pohn2023,

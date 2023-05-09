@@ -147,6 +147,11 @@
     reviewed: /2021/09/03/two-papers-about-the-blackbox-project.html
   name: Altadmri, Amjad
 - entries:
+  - date: '2023-05-09'
+    key: AltmayerPizzorno2023
+    reviewed: /2023/05/09/near-zero-overhead-coverage-for-python.html
+  name: Altmayer Pizzorno, Juan
+- entries:
   - date: '2021-09-12'
     key: Beller2019
     reviewed: /2021/09/12/developer-testing-in-the-ide.html
@@ -468,7 +473,7 @@
   name: Benlarbi, S.
 - entries:
   - date: '2023-05-09'
-    key: Pizzorno2023
+    key: AltmayerPizzorno2023
     reviewed: /2023/05/09/near-zero-overhead-coverage-for-python.html
   name: Berger, Emery D
 - entries:
@@ -3804,11 +3809,6 @@
     key: Hermans2011
     reviewed: /2012/05/24/supporting-professional-spreadsheet-users-by-generating-leveled-dataflow-diagrams.html
   name: Pinzger, Martin
-- entries:
-  - date: '2023-05-09'
-    key: Pizzorno2023
-    reviewed: /2023/05/09/near-zero-overhead-coverage-for-python.html
-  name: Pizzorno, Juan Altmayer
 - entries:
   - date: '2022-03-31'
     key: Jolak2020
