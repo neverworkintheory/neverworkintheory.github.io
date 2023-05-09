@@ -467,6 +467,11 @@
     reviewed: /2011/07/07/the-confounding-effect-of-class-size-on-the-validity-of-object-oriented-metrics.html
   name: Benlarbi, S.
 - entries:
+  - date: '2023-05-09'
+    key: Pizzorno2023
+    reviewed: /2023/05/09/near-zero-overhead-coverage-for-python.html
+  name: Berger, Emery D
+- entries:
   - date: '2023-02-27'
     key: Businge2022
     reviewed: /2023/02/27/reuse-and-maintenance-among-divergent-forks.html
@@ -3799,6 +3804,11 @@
     key: Hermans2011
     reviewed: /2012/05/24/supporting-professional-spreadsheet-users-by-generating-leveled-dataflow-diagrams.html
   name: Pinzger, Martin
+- entries:
+  - date: '2023-05-09'
+    key: Pizzorno2023
+    reviewed: /2023/05/09/near-zero-overhead-coverage-for-python.html
+  name: Pizzorno, Juan Altmayer
 - entries:
   - date: '2022-03-31'
     key: Jolak2020

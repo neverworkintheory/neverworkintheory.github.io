@@ -1,0 +1,41 @@
+---
+layout: post
+author: Greg Wilson
+title: "Near-Zero Overhead Coverage for Python"
+date: 2023-05-09
+categories: ["Performance"]
+---
+
+<p>And it's <a href="https://github.com/plasma-umass/slipcover">open source</a>!</p>
+
+<p>Juan Altmayer Pizzorno and Emery D Berger.
+Slipcover: near zero-overhead code coverage for python.
+2023.
+<a href="https://arxiv.org/abs/2305.02886">arXiv:2305.02886</a>.</p>
+
+<blockquote>
+  <p>
+    Coverage analysis is widely used but can suffer from high overhead.
+    This overhead is especially acute in the context of Python,
+    which is already notoriously slow (a recent study observes a roughly 30x slowdown vs. native code).
+    We find that <a href="http://coverage.py/">the state-of-the-art coverage tool for Python</a>
+    leads to slowdowns of 1.3x–3.6x (median: 2.8x) for the standard Python interpreter.
+    Slowdowns are even more extreme when using PyPy,
+    a JIT-compiled Python implementation,
+    where this http URL slows execution by 2.4x–325x (median: 14x).
+    This performance degradation reduces the utility of coverage analysis in most use cases,
+    including testing and fuzzing, and precludes its use in deployment.
+  </p>
+  <p>
+    This paper presents SlipCover,
+    a novel, near-zero overhead coverage analyzer for Python.
+    SlipCover works without modifications to either the Python interpreter or PyPy.
+    It first processes a program's AST to accurately identify all branches and lines.
+    SlipCover then dynamically rewrites Python bytecodes to add lightweight instrumentation to each identified branch and line.
+    At run time,
+    SlipCover periodically de-instruments already-covered lines and branches.
+    The result is extremely low overheads–a median of just 5%–making SlipCover suitable for use in deployment.
+    We show its efficiency can translate to significant increases in the speed of coverage-based clients.
+    As a proof of concept, we integrate SlipCover into TPBT, a targeted property-based testing system, and observe a 22x speedup.
+  </p>
+</blockquote>

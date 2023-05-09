@@ -1172,6 +1172,9 @@
   - date: '2023-04-18'
     reviewed: /2023/04/18/minimal-overhead-monitoring.html
     title: Minimal Overhead Monitoring
+  - date: '2023-05-09'
+    reviewed: /2023/05/09/near-zero-overhead-coverage-for-python.html
+    title: Near-Zero Overhead Coverage for Python
   name: Performance
 - entries:
   - date: '2023-03-07'
