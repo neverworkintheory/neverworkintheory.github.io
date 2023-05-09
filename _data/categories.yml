@@ -1378,6 +1378,11 @@
     title: Does ACM's code of ethics change ethical decision making in software development?
   name: Psychology of Programming
 - entries:
+  - date: '2023-05-09'
+    reviewed: /2023/05/09/every-author-as-first-author.html
+    title: Every Author as First Author
+  name: Publishing
+- entries:
   - date: '2021-08-17'
     reviewed: /2021/08/17/python-language-features.html
     title: Two Papers on Python Language Features
