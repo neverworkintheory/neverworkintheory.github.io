@@ -1199,6 +1199,11 @@
     reviewed: /2011/07/07/the-confounding-effect-of-class-size-on-the-validity-of-object-oriented-metrics.html
   name: Emam, K. El
 - entries:
+  - date: '2023-05-10'
+    key: Newman2023
+    reviewed: /2023/05/10/psychoactive-substance-use-by-professional-programmers.html
+  name: Endres, Madeline
+- entries:
   - date: '2011-07-26'
     key: Hannay2010
     reviewed: /2011/07/26/effects-of-personality-on-pair-programming.html
@@ -2113,6 +2118,9 @@
   - date: '2023-04-26'
     key: Johnson2023
     reviewed: /2023/04/26/a-dozen-in-one.html
+  - date: '2023-05-10'
+    key: Newman2023
+    reviewed: /2023/05/10/psychoactive-substance-use-by-professional-programmers.html
   name: Johnson, Brittany
 - entries:
   - date: '2012-01-17'
@@ -3424,6 +3432,11 @@
     key: Alsuhaibani2022
     reviewed: /2023/03/15/automatically-assessing-method-names.html
   name: Newman, Christian D.
+- entries:
+  - date: '2023-05-10'
+    key: Newman2023
+    reviewed: /2023/05/10/psychoactive-substance-use-by-professional-programmers.html
+  name: Newman, Kaia
 - entries:
   - date: 2023-04-23-python-package-index-malware-scanning.html
     key: Vu2023
@@ -5159,6 +5172,11 @@
     key: WeillTessier2021
     reviewed: /2021/09/03/two-papers-about-the-blackbox-project.html
   name: Weill-Tessier, Pierre
+- entries:
+  - date: '2023-05-10'
+    key: Newman2023
+    reviewed: /2023/05/10/psychoactive-substance-use-by-professional-programmers.html
+  name: Weimer, Westley
 - entries:
   - date: '2011-08-30'
     key: Bettenburg2008
