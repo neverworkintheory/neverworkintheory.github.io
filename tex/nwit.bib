@@ -3108,6 +3108,16 @@ In this paper, we present the first empirical study of how code review is practi
   reviewed = {/2012/06/18/combining-functional-and-imperative-programming-for-multicore-software-an-empirical-study-evaluating-scala-and-java.html}
 }
 
+@misc{Paradis2023,
+  author = {Carlos Paradis and Rick Kazman},
+  title = {Building the {MSR} Tool {Kaiaulu}: Design Principles and Experiences},
+  year = {2023},
+  eprint = {2304.14570},
+  doi = {10.1007/978-3-031-15116-3_6},
+  abstract = {Since Alitheia Core was proposed and subsequently retired, tools that support empirical studies of software projects continue to be proposed, such as Codeface, Codeface4Smells, GrimoireLab and SmartSHARK, but they all make different design choices and provide overlapping functionality. Aims: We seek to understand the design decisions adopted by these tools--the good and the bad--along with their consequences, to understand why their authors reinvented functionality already present in other tools, and to help inform the design of future tools. Method: We used action research to evaluate the tools, and to determine a set of principles and anti-patterns to motivate a new tool design. Results: We identified 7 major design choices among the tools: 1) Abstraction Debt, 2) the use of Project Configuration Files, 3) the choice of Batch or Interactive Mode, 4) Minimal Paths to Data, 5) Familiar Software Abstractions, 6) Licensing and 7) the Perils of Code Reuse. Building on the observed good and bad design decisions, we created our own tool architecture and implemented it as an R package. Conclusions: Tools should not require onerous setup for users to obtain data. Authors should consider the conventions and abstractions used by their chosen language and build upon these instead of redefining them. Tools should encourage best practices in experiment reproducibility by leveraging self-contained and readable schemas that are used for tool automation, and reuse must be done with care to avoid depending on dead code.},
+  reviewed = {/2023/05/10/msr-tool-design-principles-and-experiences.html}
+}
+
 @inproceedings{Pardos2023,
   doi = {10.1145/3544548.3581574},
   url = {https://doi.org/10.1145/3544548.3581574},

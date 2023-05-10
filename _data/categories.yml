@@ -468,6 +468,9 @@
     reviewed: /2022/03/31/textual-vs-graphic-design-descriptions-and-communication.html
     title: The Effect of Textual vs. Graphical Software Design Descriptions on Software
       Design Communication
+  - date: '2023-05-10'
+    reviewed: /2023/05/10/msr-tool-design-principles-and-experiences.html
+    title: MSR Tool Design Principles and Experiences
   name: Design
 - entries:
   - date: '2016-09-09'
@@ -1486,6 +1489,9 @@
   - date: '2022-04-13'
     reviewed: /2022/04/13/do-you-really-code.html
     title: Do You Really Code?
+  - date: '2023-05-10'
+    reviewed: /2023/05/10/msr-tool-design-principles-and-experiences.html
+    title: MSR Tool Design Principles and Experiences
   name: Research Methods
 - entries:
   - date: '2022-08-30'
@@ -1845,6 +1851,9 @@
   - date: '2023-04-26'
     reviewed: /2023/04/26/a-dozen-in-one.html
     title: A Dozen in One
+  - date: '2023-05-10'
+    reviewed: /2023/05/10/msr-tool-design-principles-and-experiences.html
+    title: MSR Tool Design Principles and Experiences
   name: Tools
 - entries:
   - date: '2022-12-04'

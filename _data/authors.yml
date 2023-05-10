@@ -2226,6 +2226,9 @@
   - date: '2022-04-21'
     key: Tamburri2020
     reviewed: /2022/04/21/decline-of-sourceforge.html
+  - date: '2023-05-10'
+    key: Paradis2023
+    reviewed: /2023/05/10/msr-tool-design-principles-and-experiences.html
   name: Kazman, Rick
 - entries:
   - date: '2023-04-26'
@@ -3647,6 +3650,11 @@
     key: Pankratius2012
     reviewed: /2012/06/18/combining-functional-and-imperative-programming-for-multicore-software-an-empirical-study-evaluating-scala-and-java.html
   name: Pankratius, Victor
+- entries:
+  - date: '2023-05-10'
+    key: Paradis2023
+    reviewed: /2023/05/10/msr-tool-design-principles-and-experiences.html
+  name: Paradis, Carlos
 - entries:
   - date: '2023-05-07'
     key: Pardos2023
