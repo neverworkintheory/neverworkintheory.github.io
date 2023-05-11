@@ -132,6 +132,9 @@
   - date: '2022-03-04'
     key: Golubev2021
     reviewed: /2022/03/04/software-refactoring.html
+  - date: '2023-05-11'
+    key: AlOmar2022
+    reviewed: /2023/05/11/code-review-for-refactoring.html
   name: AlOmar, Eman Abdullah
 - entries:
   - date: '2023-03-15'
@@ -814,6 +817,11 @@
     key: Chong2007
     reviewed: /2011/07/11/the-social-dynamics-of-pair-programming.html
   name: Chong, Jan
+- entries:
+  - date: '2023-05-11'
+    key: AlOmar2022
+    reviewed: /2023/05/11/code-review-for-refactoring.html
+  name: Chouchen, Moataz
 - entries:
   - date: '2013-02-12'
     key: Cinneide2012
@@ -3174,6 +3182,9 @@
   - date: '2022-03-04'
     key: Golubev2021
     reviewed: /2022/03/04/software-refactoring.html
+  - date: '2023-05-11'
+    key: AlOmar2022
+    reviewed: /2023/05/11/code-review-for-refactoring.html
   name: Mkaouer, Mohamed Wiem
 - entries:
   - date: '2022-03-14'
@@ -3594,6 +3605,11 @@
     key: Lewis2013
     reviewed: /2013/06/06/does-bug-prediction-support-human-developers-findings-from-a-google-case-study.html
   name: Ou, Rong
+- entries:
+  - date: '2023-05-11'
+    key: AlOmar2022
+    reviewed: /2023/05/11/code-review-for-refactoring.html
+  name: Ouni, Ali
 - entries:
   - date: '2021-10-13'
     key: Overney2020

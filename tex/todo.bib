@@ -1,34 +1,5 @@
 @comment{AAA}
 
-@misc{Abate2020,
-  author = {Pietro Abate and Roberto Di Cosmo and Georgios Gousios and Stefano Zacchiroli},
-  title = {Dependency Solving Is Still Hard, but We Are Getting Better at It},
-  year = {2020},
-  eprint = {2011.07851},
-  howpublished = {2020 IEEE 27th International Conference on Software Analysis, Evolution and Reengineering (SANER), Feb 2020, London, Canada. pp.547-551},
-  doi = {10.1109/SANER48275.2020.9054837},
-  abstract = {Dependency solving is a hard (NP-complete) problem in all non-trivial component models due to either mutually incompatible versions of the same packages or explicitly declared package conflicts. As such, software upgrade planning needs to rely on highly specialized dependency solvers, lest falling into pitfalls such as incompleteness---a combination of package versions that satisfy dependency constraints does exist, but the package manager is unable to find it. In this paper we look back at proposals from dependency solving research dating back a few years. Specifically, we review the idea of treating dependency solving as a separate concern in package manager implementations, relying on generic dependency solvers based on tried and tested techniques such as SAT solving, PBO, MILP, etc. By conducting a census of dependency solving capabilities in state-of-the-art package managers we conclude that some proposals are starting to take off (e.g., SAT-based dependency solving) while---with few exceptions---others have not (e.g., outsourcing dependency solving to reusable components). We reflect on why that has been the case and look at novel challenges for dependency solving that have emerged since.}
-}
-
-@inproceedings{AbouKhalil2022,
-  doi = {10.1145/3524842.3528494},
-  title = {The general index of software engineering papers},
-  booktitle = msr,
-  author = {Zeinab {Abou Khalil} and Stefano Zacchiroli},
-  publisher = {ACM},
-  month = may,
-  year = {2022},
-  abstract = {We introduce the General Index of Software Engineering Papers, a dataset of fulltext-indexed papers from the most prominent scientific venues in the field of Software Engineering. The dataset includes both complete bibliographic information and indexed n-grams (sequence of contiguous words after removal of stopwords and non-words, for a total of 577 276 382 unique n-grams in this release) with length 1 to 5 for 44 581 papers retrieved from 34 venues over the 1971--2020 period. The dataset serves use cases in the field of meta-research, allowing to introspect the output of software engineering research even when access to papers or scholarly search engines is not possible (e.g., due to contractual reasons). The dataset also contributes to making such analyses reproducible and independently verifiable, as opposed to what happens when they are conducted using 3rd-party and non-open scholarly indexing services. The dataset is available as a portable Postgres database dump and released as open data.},
-}
-
-@misc{Abreu2022,
-  author = {Rui Abreu},
-  title = {The Bumpy Road of Taking Automated Debugging to Industry},
-  year = {2022},
-  eprint = {2212.01237},
-  abstract = {Debugging is arguably among the most difficult and extremely time consuming tasks of the software development life cycle. Therefore, it comes as no surprise that researchers have invested a considerable amount of effort in developing automated techniques and tools to support developers excel in these tasks. Despite the significant advances, including demonstrations of usefulness, efficacy, and efficiency, these techniques are yet to find their way into industrial adoption. In this paper, we reflect upon the commercialization efforts of a particular automated debugging technique and lay down potential reasons for lack of success stories as well as ideas to move forward.}
-}
-
 @misc{Ahmed2022,
   author = {Umair Z. Ahmed and Zhiyu Fan and Jooyong Yi and Omar I. Al-Bataineh and Abhik Roychoudhury},
   title = {Verifix: Verified Repair of Programming Assignments},
@@ -46,14 +17,6 @@
   month = may,
   year = {2022},
   abstract = {The number of Open Source projects hosted in social coding platforms such as GitHub is constantly growing. However, many of these projects are not regularly maintained and some are even abandoned shortly after they were created. In this paper we analyze early project development dynamics in software projects hosted on GitHub, including their survival rate. To this aim, we collected all 1,127 GitHub repositories from four different ecosystems (i.e., NPM packages, R packages, WordPress plugins and Laravel packages) created in 2016. We stored their activity in a time series database and analyzed their activity evolution along their lifespan, from 2016 to now. Our results reveal that the prototypical development process consists of intensive coding-driven active periods followed by long periods of inactivity. More importantly, we have found that a significant number of projects die in the first year of existence with the survival rate decreasing year after year. In fact, the probability of surviving longer than five years is less than 50\% though some types of projects have better chances of survival.},
-}
-
-@misc{AlOmar2022,
-  author = {Eman Abdullah AlOmar and Moataz Chouchen and Mohamed Wiem Mkaouer and Ali Ouni},
-  title = {Code Review Practices for Refactoring Changes: An Empirical Study on OpenStack},
-  year = {2022},
-  eprint = {2203.14404},
-  abstract = {Modern code review is a widely used technique employed in both industrial and open-source projects to improve software quality, share knowledge, and ensure adherence to coding standards and guidelines. During code review, developers may discuss refactoring activities before merging code changes in the code base. To date, code review has been extensively studied to explore its general challenges, best practices and outcomes, and socio-technical aspects. However, little is known about how refactoring is being reviewed and what developers care about when they review refactored code. Hence, in this work, we present a quantitative and qualitative study to understand what are the main criteria developers rely on to develop a decision about accepting or rejecting a submitted refactored code, and what makes this process challenging. Through a case study of 11,010 refactoring and non-refactoring reviews spread across OpenStack open-source projects, we find that refactoring-related code reviews take significantly longer to be resolved in terms of code review efforts. Moreover, upon performing a thematic analysis on a significant sample of the refactoring code review discussions, we built a comprehensive taxonomy consisting of 28 refactoring review criteria. We envision our findings reaffirming the necessity of developing accurate and efficient tools and techniques that can assist developers in the review process in the presence of refactorings.}
 }
 
 @misc{Amjad2023,

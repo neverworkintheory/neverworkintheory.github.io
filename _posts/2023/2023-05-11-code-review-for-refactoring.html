@@ -1,0 +1,48 @@
+---
+layout: post
+author: Greg Wilson
+title: "Code Review for Refactoring"
+date: 2023-05-11
+categories: ["Code Review", "Refactoring"]
+---
+
+<p>
+  We did a large refactoring of the code in one of our internal applications earlier this year,
+  and I'm going to spend a couple of hours later today refactoring some of the tests that have been written since.
+  Like everything we do,
+  it has to be reviewed by at least one other developer before being merged,
+  so this paper on the criteria developers use when reviewing refactorings was a timely read.
+  In particular, the taxonomy that the authors develop
+  (shown in the diagram below, and described in detail in the paper)
+  is a useful checklist of things to watch out for.
+</p>
+
+<p>Eman Abdullah AlOmar, Moataz Chouchen, Mohamed Wiem Mkaouer, and Ali Ouni.
+Code review practices for refactoring changes: an empirical study on openstack.
+2022.
+<a href="https://arxiv.org/abs/2203.14404">arXiv:2203.14404</a>.</p>
+
+<blockquote>
+  <p>
+    Modern code review is a widely used technique employed in both industrial and open-source projects
+    to improve software quality, share knowledge, and ensure adherence to coding standards and guidelines.
+    During code review, developers may discuss refactoring activities before merging code changes in the code base.
+    To date, code review has been extensively studied to explore its general challenges,
+    best practices and outcomes,
+    and socio-technical aspects.
+    However, little is known about how refactoring is being reviewed and what developers care about when they review refactored code.
+    Hence, in this work, we present a quantitative and qualitative study to understand
+    what are the main criteria developers rely on to develop a decision
+    about accepting or rejecting a submitted refactored code, and what makes this process challenging.
+    Through a case study of 11,010 refactoring and non-refactoring reviews spread across OpenStack open-source projects,
+    we find that refactoring-related code reviews take significantly longer to be resolved in terms of code review efforts.
+    Moreover, upon performing a thematic analysis on a significant sample of the refactoring code review discussions,
+    we built a comprehensive taxonomy consisting of 28 refactoring review criteria.
+    We envision our findings reaffirming the necessity of developing accurate and efficient tools and techniques
+    that can assist developers in the review process in the presence of refactorings.
+  </p>
+</blockquote>
+
+<div class="center">
+  <img src="{{'/static/2023/alomar2022-figure3.png' | relative_url}}" alt="Figure 2 from paper"/>
+</div>
