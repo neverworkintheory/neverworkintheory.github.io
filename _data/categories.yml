@@ -8,8 +8,8 @@
     reviewed: /2023/03/24/supporting-developers-with-disabilities.html
     title: Supporting Developers with Disabilities
   - date: '2023-04-26'
-    reviewed: /2023/04/26/a-dozen-in-one.html
-    title: A Dozen in One
+    reviewed: /2023/04/26/accessibility-metatesting.html
+    title: Accessibility Metatesting
   name: Accessibility
 - entries:
   - date: '2021-10-03'
@@ -243,9 +243,6 @@
   - date: '2021-10-14'
     reviewed: /2021/10/14/api-learning-processes.html
     title: Exploring Programmers' API Learning Processes
-  - date: '2023-04-26'
-    reviewed: /2023/04/26/a-dozen-in-one.html
-    title: A Dozen in One
   name: Cognition
 - entries:
   - date: '2011-07-18'
@@ -354,6 +351,9 @@
   - date: '2023-04-13'
     reviewed: /2023/04/13/comparing-student-and-llm-code-explanations.html
     title: Comparing Student and LLM Code Explanations
+  - date: '2023-04-26'
+    reviewed: /2023/04/26/quality-of-submissions-in-online-programming-courses.html
+    title: Quality of Submissions in Online Programming Courses
   - date: '2023-04-27'
     reviewed: /2023/04/27/a-few-more-to-close.html
     title: A Few More to Close
@@ -640,6 +640,9 @@
   - date: '2023-05-07'
     reviewed: /2023/05/07/a-small-request-for-icse-attendees.html
     title: A Small Request for ICSE Attendees
+  - date: '2023-05-12'
+    reviewed: /2023/05/12/academic-nfts.html
+    title: Academic NFTs
   name: Editorial
 - entries:
   - date: '2023-02-28'
@@ -649,8 +652,8 @@
     reviewed: /2023/03/03/emotional-rollercoaster-requirements-changes.html
     title: The Emotional Roller Coaster of Responding to Requirements Changes
   - date: '2023-04-26'
-    reviewed: /2023/04/26/a-dozen-in-one.html
-    title: A Dozen in One
+    reviewed: /2023/04/26/deconstructing-sentimental-stack-overflow-posts.html
+    title: Deconstructing Sentimental Stack Overflow Posts
   name: Emotion
 - entries:
   - date: '2021-09-05'
@@ -734,8 +737,11 @@
     reviewed: /2023/03/17/automated-input-generation-for-alloy.html
     title: Automated Input Generation for Alloy
   - date: '2023-04-26'
-    reviewed: /2023/04/26/a-dozen-in-one.html
-    title: A Dozen in One
+    reviewed: /2023/04/26/evaluation-of-formal-verification-results.html
+    title: Evaluation of Formal Verification Results
+  - date: '2023-04-26'
+    reviewed: /2023/04/26/flexible-correct-by-construction-programming.html
+    title: Flexible Correct-by-Construction Programming
   name: Formal Methods
 - entries:
   - date: '2021-10-01'
@@ -1089,8 +1095,11 @@
     reviewed: /2023/04/14/software-supply-chain-attacks.html
     title: Software Supply Chain Attacks
   - date: '2023-04-26'
-    reviewed: /2023/04/26/a-dozen-in-one.html
-    title: A Dozen in One
+    reviewed: /2023/04/26/mentoring-on-good-first-issues.html
+    title: Mentoring on Good First Issues
+  - date: '2023-04-26'
+    reviewed: /2023/04/26/open-source-issue-recommendation-system.html
+    title: An Open Source Issue Recommendation System
   - date: '2023-05-07'
     reviewed: /2023/05/07/benchmarking-open-source-devops.html
     title: Benchmarking Open Source DevOps
@@ -1141,9 +1150,6 @@
   - date: '2021-09-17'
     reviewed: /2021/09/17/why-do-developers-use-trivial-packages.html
     title: Why Do Developers Use Trivial Packages?
-  - date: '2023-04-26'
-    reviewed: /2023/04/26/a-dozen-in-one.html
-    title: A Dozen in One
   name: Packaging
 - entries:
   - date: '2011-07-11'
@@ -1610,8 +1616,8 @@
     reviewed: /2022/03/02/ethics-in-decision-making.html
     title: Does ACM's code of ethics change ethical decision making in software development?
   - date: '2023-04-26'
-    reviewed: /2023/04/26/a-dozen-in-one.html
-    title: A Dozen in One
+    reviewed: /2023/04/26/along-the-margins.html
+    title: Along the Margins
   name: Social Responsibility
 - entries:
   - date: '2022-03-14'
@@ -1683,8 +1689,11 @@
     title: How Effective is Continuous Integration in Indicating Single-Statement
       Bugs?
   - date: '2023-04-26'
-    reviewed: /2023/04/26/a-dozen-in-one.html
-    title: A Dozen in One
+    reviewed: /2023/04/26/finding-bug-inducing-program-environments.html
+    title: Finding Bug-Inducing Program Environments
+  - date: '2023-04-26'
+    reviewed: /2023/04/26/stack-overflow-code-quality.html
+    title: Stack Overflow Code Quality
   - date: '2023-04-27'
     reviewed: /2023/04/27/a-few-more-to-close.html
     title: A Few More to Close
@@ -1861,8 +1870,11 @@
     reviewed: /2022/09/19/developer-git-knowledge.html
     title: Do Developers Really Know How to Use Git Commands?
   - date: '2023-04-26'
-    reviewed: /2023/04/26/a-dozen-in-one.html
-    title: A Dozen in One
+    reviewed: /2023/04/26/open-source-issue-recommendation-system.html
+    title: An Open Source Issue Recommendation System
+  - date: '2023-04-26'
+    reviewed: /2023/04/26/trust-in-software-tools.html
+    title: Trust in Software Tools
   - date: '2023-05-10'
     reviewed: /2023/05/10/msr-tool-design-principles-and-experiences.html
     title: MSR Tool Design Principles and Experiences

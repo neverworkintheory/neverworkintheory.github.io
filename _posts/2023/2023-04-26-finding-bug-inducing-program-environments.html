@@ -1,0 +1,23 @@
+---
+layout: post
+author: Greg Wilson
+title: "Finding Bug-Inducing Program Environments"
+date: 2023-04-26
+categories: ["Software Quality"]
+---
+
+<p>
+  Zahra Mirzamomen and Marcel Böhme.
+  Finding bug-inducing program environments.
+  2023.
+  <a href="https://arxiv.org/abs/2304.10044">arXiv:2304.10044</a>.
+</p>
+
+<blockquote>
+  <p>
+    Some bugs cannot be exposed by program inputs, but only by certain program environments. During execution, most programs access various resources, like databases, files, or devices, that are external to the program and thus part of the program’s environment. In this paper, we present a coverage-guided, mutation-based environment synthesis approach of bug-inducing program environments. Specif- ically, we observe that programs interact with their environment via dedicated system calls and propose to intercept these system calls (i) to capture the resources accessed during the first execution of an input as initial program environment, and (ii) mutate copies of these resources during subsequent executions of that input to generate slightly changed program environments. Any generated environment that is observed to increase coverage is added to the corpus of environment seeds and becomes subject to further fuzzing. Bug-inducing program environments are reported to the user.
+  </p>
+  <p>
+    Experiments demonstrate the effectiveness of our approach. We implemented a prototype called AFLChaos which found bugs in the resource-handling code of five (5) of the seven (7) open source projects in our benchmark set (incl. OpenSSL). Automatically, AFLChaos generated environments consisting of bug-inducing databases used for storing information, bug-inducing multimedia files used for streaming, bug-inducing cryptographic keys used for encryption, and bug-inducing configuration files used to configure the program. To support open science, we publish the experimental infrastructure, our tool, and all data.},
+  </p>
+</blockquote>

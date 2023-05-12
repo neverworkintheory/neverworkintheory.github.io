@@ -495,11 +495,6 @@
     reviewed: /2023/04/13/comparing-student-and-llm-code-explanations.html
   name: Bernstein, Seth
 - entries:
-  - date: '2023-04-26'
-    key: '2304.12373'
-    reviewed: /2023/04/26/a-dozen-in-one.html
-  name: Bers, Marina U.
-- entries:
   - date: '2011-08-30'
     key: Bettenburg2008
     reviewed: /2011/08/30/what-makes-a-good-bug-report.html
@@ -1094,11 +1089,6 @@
     reviewed: /2012/05/17/do-faster-releases-improve-software-quality.html
   name: Dhaliwal, Tejinder
 - entries:
-  - date: '2023-04-26'
-    key: '2304.12373'
-    reviewed: /2023/04/26/a-dozen-in-one.html
-  name: Dhamala, Riva
-- entries:
   - date: '2011-10-22'
     key: Beck2011
     reviewed: /2011/10/22/three-results-many-definitions.html
@@ -1234,11 +1224,6 @@
     key: Rahman2020a
     reviewed: /2021/08/26/defect-taxonomy-for-infrastructure-as-code.html
   name: Farhana, Effat
-- entries:
-  - date: '2023-04-26'
-    key: '2304.12373'
-    reviewed: /2023/04/26/a-dozen-in-one.html
-  name: Fedorenko, Evelina
 - entries:
   - date: '2021-09-16'
     key: Borle2017
@@ -2050,11 +2035,6 @@
     reviewed: /2021/08/30/two-studies-of-regular-expressions.html
   name: IV, Louis G. Michael
 - entries:
-  - date: '2023-04-26'
-    key: '2304.12373'
-    reviewed: /2023/04/26/a-dozen-in-one.html
-  name: Ivanova, Anna A.
-- entries:
   - date: '2012-01-17'
     key: Prabhu2011
     reviewed: /2012/01/17/a-survey-of-the-practice-of-computational-science.html
@@ -2246,11 +2226,6 @@
     key: Paradis2023
     reviewed: /2023/05/10/msr-tool-design-principles-and-experiences.html
   name: Kazman, Rick
-- entries:
-  - date: '2023-04-26'
-    key: '2304.12373'
-    reviewed: /2023/04/26/a-dozen-in-one.html
-  name: Kean, Hope H.
 - entries:
   - date: '2021-09-23'
     key: Spinellis2016
@@ -3524,11 +3499,6 @@
     reviewed: /2012/02/23/looking-at-the-same-thing-in-pair-programming-tasks.html
   name: "N\xFCssli, Marc-Antoine"
 - entries:
-  - date: '2023-04-26'
-    key: '2304.12373'
-    reviewed: /2023/04/26/a-dozen-in-one.html
-  name: O'Reilly, Una-May
-- entries:
   - date: '2012-01-17'
     key: Prabhu2011
     reviewed: /2012/01/17/a-survey-of-the-practice-of-computational-science.html
@@ -4586,11 +4556,6 @@
     reviewed: /2022/04/14/generating-unit-tests-for-documentation.html
   name: Sridharan, Ashvitha
 - entries:
-  - date: '2023-04-26'
-    key: '2304.12373'
-    reviewed: /2023/04/26/a-dozen-in-one.html
-  name: Srikant, Shashank
-- entries:
   - date: '2022-04-25'
     key: Sharma2021
     reviewed: /2022/04/25/rationale-for-open-source-development-decisions.html
@@ -4692,11 +4657,6 @@
     key: Yelam2021
     reviewed: /2023/03/13/covert-cloud-communication-with-lambdas.html
   name: Subbareddy, Shibani
-- entries:
-  - date: '2023-04-26'
-    key: '2304.12373'
-    reviewed: /2023/04/26/a-dozen-in-one.html
-  name: Sueoka, Yotaro
 - entries:
   - date: '2023-03-17'
     key: Jovanovic2022
