@@ -1,0 +1,240 @@
+<html>
+  <body>
+    <p>
+      A Hopeful Case for Generative AI in Software Engineering
+    </p>
+    <blockquote>
+      <p>
+	tl;dr: Any C-Suite executive who thinks they can replace
+	software engineers (even novices) with generative AI will be at
+	a disadvantage compared to competitors who use it to empower
+	software engineers.
+      </p>
+    </blockquote>
+    <p>
+      New versions of generative AI like OpenAI's GPT-3.5/4 models have made a
+      huge splash because of their ability to write code, and because of their
+      potential negative impact. Economists at Goldman Sachs projected that
+      "generative AI could expose the equivalent of 300 million full-time jobs
+      to automation" [<a href="#ref-1">1</a>], and of course there was the
+      infamous letter asking companies to stop training new generative AI models
+      [<a href="#ref-2">2</a>] (but see also [<a href="#ref-16">16</a>]).  In
+      the software engineering context we therefore need to ask, "Can generative
+      AI automate away programming jobs?"
+    </p>
+    <blockquote>
+      <p>
+	Caveat: I am a software engineering researcher, not a specialist in
+	AI/ML.  Hence, I will restrict my discussion to just software
+	engineering - something that I know a little bit about. This is not a
+	commentary on any other jobs as I do not know enough about them. This is
+	also not about the ethical/legal aspects of the technology. There are
+	several such aspects that I will leave to experts on ethics and the law
+	like my colleague <a href="https://grossman.uwaterloo.ca/">Maura
+	R. Grossman</a>.
+      </p>
+    </blockquote>
+    <p>
+      What evidence is there that anyone might think of replacing programmers
+      entirely with AI—not anecdotes or TED Talks, but evidence?
+    </p>
+    <ol>
+      <li>
+	Sandoval et al. [<a href="#ref-3">3</a>] did a user study to
+	investigate the cybersecurity impact of LLMs on code written by student
+	programmers. They found that the use of LLMs did not introduce new
+	security risks but helped participants generate more correct solutions.
+      </li>
+      <li>
+	Similarly, Asare et al. [<a href="#ref-4">4</a>] investigated whether
+	GitHub Copilot is just as likely to introduce the same software
+	vulnerabilities as human developers. They found that it replicates the
+	original vulnerable code ≈33% of the time while replicating the fixed
+	code ≈25% of the time.
+      </li>
+      <li>
+	Ziegler et al. [<a href="#ref-5">5</a>] compared the results of a
+	Copilot user survey with data directly measured from Copilot usage. They
+	report a strong correlation between the acceptance rates of Copilot
+	suggestions (directly measured) and developer perceptions of
+	productivity (user survey).
+      </li>
+      <li>
+	Vaithilingam et al. [<a href="#ref-6">6</a>] found that Copilot
+	frequently provides good starting points that direct programmers toward
+	a desired solution.
+      </li>
+      <li>
+	Performance experiments by Erhabor [<a href="#ref-7">7</a>] indicate
+	that humans assisted by Copilot produced correct code more frequently
+	than humans without that assistance.
+      </li>
+      <li>
+	Bubeck et al. [<a href="#ref-8">8</a>] evaluated an early version of
+	GPT-4 on several coding activities. They found it was comparable to
+	humans in LeetCode questions, could develop small games, do data
+	visualization, and even understand and reason about code
+	execution. (Sebastian gives a great talk about the
+	study <a href="https://www.youtube.com/watch?v%3DqbIk7-JP">here</a>.)
+      </li>
+    </ol>
+    <p>
+      So much for the pros—what about the cons? The answer is, "It's
+      complicated."
+    </p>
+    <ol>
+      <li>
+	Pearce et al. [<a href="#ref-9">9</a>] evaluated Copilot with a focus on
+	security. They found that Copilot, on its own, generates vulnerable
+	suggestions about 40% of the time. Note that this is different from
+	Sandoval et al. [<a href="#ref-3">3</a>] and Asare et
+	al. [<a href="#ref-4">4</a>] where humans are empowered with generative
+	AI tools
+      </li>
+      <li>
+	Perry et al. [<a href="#ref-10">10</a>] conduct a large-scale study to
+	determine if users write more insecure code with the Codex model (the
+	one behind Copilot. They found that participants who had access to the
+	Codex assistants wrote significantly less secure code than those without
+	access, and were also more likely to believe they wrote more secure
+	code. This study contradicts the findings of Sandoval et
+	al. [<a href="#ref-3">3</a>].
+      </li>
+      <li>
+	Vaithilingam et al. [<a href="#ref-6">6</a>] evaluated Copilot's
+	usability. One of their main takeaways is that Copilot does not
+	necessarily reduce the time required to complete a task. This
+	contradicts Ziegler et al.'s [<a href="#ref-5">5</a>] findings.
+      </li>
+      <li>
+	Erhabor [<a href="#ref-7">7</a>] evaluated the runtime performance of
+	code produced when developers use Copilot versus when they do not. Their
+	results suggest that using Copilot may produce code with significantly
+	slower performance.
+      </li>
+      <li>
+	The study by Dakhel et al. [<a href="#ref-11">11</a>] suggests that
+	Copilot can provide solutions for most fundamental algorithmic problems
+	with the exception of some cases that yield buggy results. They also
+	find that human programmers generate a higher ratio of correct solutions
+	than Copilot. This contradicts the auxiliary findings of Erhabor
+	[<a href="#ref-7">7</a>].
+      </li>
+      <li>
+	Even OpenAI's own report on GPT-4 [<a href="#ref-12">12</a>] indicates
+	that approximately 74% of all medium-difficulty and 93% of all
+	hard-difficulty problems in Leetcode could not be solved.
+      </li>
+    </ol>
+    <p>
+      The jury is therefore still out, even before we worry about the murky
+      legalities of training models on people's data without their prior
+      knowledge or consent. However:
+    </p>
+    <ol>
+      <li>
+	These models are still Question and Answer type models, not independent
+	agents: they need people to prompt them to generate code responses. The
+	need for proper prompt engineering is starting to be widely recognized
+	[<a href="#ref-13">13</a>, <a href="#ref-14">14</a>]. This suggests that
+	requirements engineering, long neglected, will become increasingly
+	critical.
+      </li>
+      <li>
+	While generative AI can write some code reasonably well, it's hard to
+	know whether the code is right or wrong. We
+	can <a href="https://www.fuzzingbook.org/">fuzz test</a> to see if the
+	application crashes, but we cannot know if the functional requirements
+	are met.  We therefore need humans to see if the code does what is
+	needed, rather than just what was asked for.
+      </li>
+      <li>
+	Current generative AI models cannot plan ahead [<a href="#ref-8">8</a>],
+	and the coding tasks that have been tested with generative AI are quite
+	small. We therefore still need humans to break problems down into
+	smaller pieces so that models can generate code.
+      </li>
+      <li>
+	Finally, as even OpenAI states [<a href="#ref-12">12</a>], models "do
+	not learn from experience". Given this limitation, when a new version of
+	a library is released to fix a bug or to add a feature, generative models
+	won't be able to make use of them without retraining. (Of course, the
+	same can be said of people…)
+      </li>
+    </ol>
+    <p>
+      So, can generative AI automate away software engineering jobs?  The answer
+      right now is, "No, but they are still useful."  And, as my
+      colleague <a href="https://asokan.org/asokan/">Asokan</a> notes, while
+      generative AI is not going to automate away SE jobs, it is certainly going
+      to change the way software engineers work. If someone's expertise is only
+      writing code, they will almost certainly be replaced by generative AI in
+      the near future. However, the parts of software engineering before and
+      after writing code will gain increased prominence. As a call to action to
+      my fellow researchers, I say that we should be working to make generative
+      AI more usable for software engineers and figure out how to incorporate
+      them into our workflows.
+    </p>
+    <p>
+      <a href="https://www.youtube.com/watch?v%3DhJP5GqnTrNo">This positive
+      talk</a> from Sal Khan on the educational possibilities of generative AI
+      should serve as an inspiration. If you are interested in a broader
+      discussion of why the fear of generative AI models is just a panic (even
+      though there are some legitimate concerns of evil actors misusing it), you
+      may also enjoy [<a href="#ref-15">15</a>].
+    </p>
+    <blockquote>
+      <p>
+	Thanks to <a href="https://www.linkedin.com/in/owura-asare/">Owura Asare</a>,
+	<a href="https://swag.uwaterloo.ca/members/partha-chakraborty.html">Partha Chakraborty</a>,
+	<a href="https://www.linkedin.com/in/danielerhabor/">Daniel Erhabor</a>
+	<a href="https://asokan.org/asokan/">N. Asokan</a>,
+	<a href="https://cs.uwaterloo.ca/~ssalihog/">Semih Salihoglu</a>,
+	<a href="https://cs.uwaterloo.ca/~tozsu">Tamer Özsu</a>,
+	<a href="https://cs.uwaterloo.ca/~jimmylin">Jimmy Lin</a>,
+	and <a href="https://cs.uwaterloo.ca/~alkiswan">Samer Al-Kiswany</a>
+	for their contributions and feedback.
+      </p>
+    </blockquote>
+    <p>
+      <a href="https://cs.uwaterloo.ca/~m2nagapp/">Mei Nagappan</a>
+      is an associate professor at the University of Waterloo.
+      He presented work on <a href="https://youtu.be/oPIVZe0c3Io">bias in evaluating code contributions</a>
+      for our April 2022 lightning talks.
+    </p>
+    <h2>References:</h2>
+    <ol>
+    <li id="ref-1"><a href="https://www.goldmansachs.com/insights/pages/generative-ai-could-raise-global-gdp-by-7-percent.html">https://www.goldmansachs.com/insights/pages/generative-ai-could-raise-global-gdp-by-7-percent.html</a>
+    </li>
+    <li id="ref-2"><a href="https://futureoflife.org/open-letter/pause-giant-ai-experiments/">https://futureoflife.org/open-letter/pause-giant-ai-experiments/</a>
+    </li>
+    <li id="ref-3">Gustavo Sandoval, Hammond Pearce, Teo Nys, Ramesh Karri, Siddharth Garg, and Brendan Dolan-Gavitt. Lost at C: A User Study on the Security Implications of Large Language Model Code Assistants. 2023. URL: <a href="https://www.usenix.org/conference/usenixsecurity23/presentation/sandoval">https://www.usenix.org/conference/usenixsecurity23/presentation/sandoval</a>
+    </li>
+    <li id="ref-4">Owura Asare, Meiyappan Nagappan, and N. Asokan, "Is github's copilot as bad as humans at introducing vulnerabilities in code?" arXiv preprint arXiv:2204.04741, 2022. <a href="https://arxiv.org/abs/2204.04741">https://arxiv.org/abs/2204.04741</a>
+    </li>
+    <li id="ref-5">Albert Ziegler, Eirini Kalliamvakou, X. Alice Li, Andrew Rice, Devon Rifkin, Shawn Simister, Ganesh Sittampalam, and Edward Aftandilian. Productivity assessment of neural code completion. In Proceedings of the 6th ACM SIGPLAN International Symposium on Machine Programming, pages 21–29, San Diego CA USA, June 2022. ACM. URL: <a href="https://dl.acm.org/doi/10.1145/3520312.3534864">https://dl.acm.org/doi/10.1145/3520312.3534864</a>, doi:10.1145/ 3520312.3534864.
+    </li>
+    <li id="ref-6">Priyan Vaithilingam, Tianyi Zhang, and Elena L. Glassman. Expectation vs. Experience: Evaluating the Usability of Code Generation Tools Powered by Large Language Models. In CHI Conference on Human Factors in Computing Systems Extended Abstracts, pages 1–7, New Orleans LA USA, April 2022. ACM. URL: <a href="https://dl.acm.org/doi/10.1145/3491101.3519665">https://dl.acm.org/doi/10.1145/3491101.3519665</a>, doi:10.1145/3491101.3519665.
+    </li>
+    <li id="ref-7">Daniel Erhabor (2022). Measuring the Performance of Code Produced with GitHub Copilot. UWSpace. <a href="http://hdl.handle.net/10012/19000">http://hdl.handle.net/10012/19000</a>
+    </li>
+    <li id="ref-8">Sébastien Bubeck, Varun Chandrasekaran, Ronen Eldan, Johannes Gehrke, Eric Horvitz, Ece Kamar, Peter Lee, Yin Tat Lee, Yuanzhi Li, Scott Lundberg, Harsha Nori, Hamid Palangi, Marco Tulio Ribeiro, Yi Zhang, "Sparks of artificial general intelligence: Early experiments with gpt-4" arXiv preprint arXiv:2303.12712, 2023. URL: <a href="https://arxiv.org/abs/2303.12712">https://arxiv.org/abs/2303.12712</a>
+    </li>
+    <li id="ref-9">Hammond Pearce, Baleegh Ahmad, Benjamin Tan, Brendan Dolan-Gavitt, and Ramesh Karri. Asleep at the Keyboard? Assessing the Security of GitHub Copi- lot's Code Contributions. In 2022 IEEE Symposium on Security and Privacy (SP), pages 754–768, May 2022. ISSN: 2375-1207. doi:10.1109/SP46214.2022.9833571. URL: <a href="https://ieeexplore.ieee.org/document/9833571">https://ieeexplore.ieee.org/document/9833571</a>
+    </li>
+    <li id="ref-10">Neil Perry, Megha Srivastava, Deepak Kumar, and Dan Boneh. Do Users Write More Insecure Code with AI Assistants? arXiv preprint arXiv:2211.03622, 2022. URL: <a href="https://arxiv.org/abs/2211.03622">https://arxiv.org/abs/2211.03622</a>.
+    </li>
+    <li id="ref-11">Arghavan Moradi Dakhel, Vahid Majdinasab, Amin Nikanjam, Foutse Khomh, Michel C. Desmarais, Zhen Ming, and Jiang. GitHub Copilot AI pair programmer: Asset or Liability?, June 2022. arXiv:2206.15331. URL: http://arxiv.org/abs/2206.15331.
+    </li>
+    <li id="ref-12">OpenAI (2023) <a href="https://cdn.openai.com/papers/gpt-4.pdf">https://cdn.openai.com/papers/gpt-4.pdf</a>
+    </li>
+    <li id="ref-13">Best practices for prompt engineering with OpenAI API <a href="https://help.openai.com/en/articles/6654000-best-practices-for-prompt-engineering-with-openai-api">https://help.openai.com/en/articles/6654000-best-practices-for-prompt-engineering-with-openai-api</a>
+    </li>
+    <li id="ref-14">Prompt engineering <a href="https://help.openai.com/en/collections/3675942-prompt-engineering">https://help.openai.com/en/collections/3675942-prompt-engineering</a>
+    </li>
+    <li id="ref-15">Patrick Grady and Daniel Castro, "Tech Panics, Generative AI, and the Need for Regulatory Caution" <a href="https://datainnovation.org/2023/05/tech-panics-generative-ai-and-regulatory-caution/">https://datainnovation.org/2023/05/tech-panics-generative-ai-and-regulatory-caution/</a>
+    </li>
+    <li id="ref-16">Diomidis Spinellis: <a href="https://www.spinellis.gr/blog/20230330/">The hypocritical call to pause giant AI</a>. Accessed May 2023.</li>
+    </ol>
+  </body>
+</html>
