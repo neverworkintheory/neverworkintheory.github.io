@@ -760,6 +760,11 @@
     title: How Gamification Affects Software Developers
   name: Gamification
 - entries:
+  - date: '2023-05-13'
+    reviewed: /2023/05/13/generative-ai.html
+    title: A Hopeful Case for Generative AI in Software Engineering
+  name: Generative AI
+- entries:
   - date: '2023-03-09'
     reviewed: /2023/03/09/combining-gin-and-pmd-for-code-improvements.html
     title: Combining GIN and PMD for Code Improvements
