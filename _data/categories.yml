@@ -355,8 +355,11 @@
     reviewed: /2023/04/26/quality-of-submissions-in-online-programming-courses.html
     title: Quality of Submissions in Online Programming Courses
   - date: '2023-04-27'
-    reviewed: /2023/04/27/a-few-more-to-close.html
-    title: A Few More to Close
+    reviewed: /2023/04/27/code-quality-in-education.html
+    title: Code Quality in Education
+  - date: '2023-04-27'
+    reviewed: /2023/04/27/code-quality-in-templates-for-online-programming-courses.html
+    title: Code Quality in Templates for Online Programming Courses
   - date: '2023-05-07'
     reviewed: /2023/05/07/impact-of-oss-courses-on-student-self-efficacy.html
     title: Impact of OSS Courses on Student Self-Efficacy
@@ -783,11 +786,6 @@
     title: What's Wrong With Tech Hiring
   name: Hiring
 - entries:
-  - date: '2023-04-27'
-    reviewed: /2023/04/27/a-few-more-to-close.html
-    title: A Few More to Close
-  name: Human Values
-- entries:
   - date: '2023-03-24'
     reviewed: /2023/03/24/supporting-developers-with-disabilities.html
     title: Supporting Developers with Disabilities
@@ -800,8 +798,8 @@
   name: Inclusion
 - entries:
   - date: '2023-04-27'
-    reviewed: /2023/04/27/a-few-more-to-close.html
-    title: A Few More to Close
+    reviewed: /2023/04/27/applying-information-theory-to-software-evolution.html
+    title: Applying Information Theory to Software Evolution
   name: Information Theory
 - entries:
   - date: '2021-11-23'
@@ -962,8 +960,8 @@
     reviewed: /2023/04/13/comparing-student-and-llm-code-explanations.html
     title: Comparing Student and LLM Code Explanations
   - date: '2023-04-27'
-    reviewed: /2023/04/27/a-few-more-to-close.html
-    title: A Few More to Close
+    reviewed: /2023/04/27/automating-frequent-changes-in-python-ml.html
+    title: Automating Frequency Changes in Python ML System
   - date: '2023-05-07'
     reviewed: /2023/05/07/open-source-adaptive-tutoring-system.html
     title: An Open Source Adaptive Tutoring System
@@ -1349,6 +1347,9 @@
   - date: '2023-03-28'
     reviewed: /2023/03/28/typescript-feature-adoption.html
     title: Typescript Feature Adoption
+  - date: '2023-04-27'
+    reviewed: /2023/04/27/design-evaluation-liquid-types-in-java.html
+    title: User-Driven Design and Evaluation of Liquid Types in Java
   name: Programming Languages
 - entries:
   - date: '2021-10-01'
@@ -1592,8 +1593,8 @@
     reviewed: /2023/04/23/python-package-index-malware-scanning.html
     title: Python Package Index Malware Scanning
   - date: '2023-04-27'
-    reviewed: /2023/04/27/a-few-more-to-close.html
-    title: A Few More to Close
+    reviewed: /2023/04/27/measuring-security-practices-and-impact.html
+    title: Measuring Security Practices and Impact
   name: Security
 - entries:
   - date: '2021-11-23'
@@ -1618,6 +1619,9 @@
   - date: '2023-04-26'
     reviewed: /2023/04/26/along-the-margins.html
     title: Along the Margins
+  - date: '2023-04-27'
+    reviewed: /2023/04/27/applying-human-values-theory-to-software-engineering.html
+    title: Applying Human Values Theory to Software Evolution
   name: Social Responsibility
 - entries:
   - date: '2022-03-14'
@@ -1640,8 +1644,11 @@
     reviewed: /2022/03/25/breaking-changes.html
     title: When and How to Make Breaking Changes
   - date: '2023-04-27'
-    reviewed: /2023/04/27/a-few-more-to-close.html
-    title: A Few More to Close
+    reviewed: /2023/04/27/applying-information-theory-to-software-evolution.html
+    title: Applying Information Theory to Software Evolution
+  - date: '2023-04-27'
+    reviewed: /2023/04/27/automating-frequent-changes-in-python-ml.html
+    title: Automating Frequency Changes in Python ML System
   name: Software Evolution
 - entries:
   - date: '2011-12-21'
@@ -1695,8 +1702,11 @@
     reviewed: /2023/04/26/stack-overflow-code-quality.html
     title: Stack Overflow Code Quality
   - date: '2023-04-27'
-    reviewed: /2023/04/27/a-few-more-to-close.html
-    title: A Few More to Close
+    reviewed: /2023/04/27/code-quality-in-education.html
+    title: Code Quality in Education
+  - date: '2023-04-27'
+    reviewed: /2023/04/27/views-of-software-quality-over-time.html
+    title: Views of Software Quality over Time
   name: Software Quality
 - entries:
   - date: '2021-09-25'
@@ -1905,9 +1915,6 @@
   - date: '2023-03-01'
     reviewed: /2023/03/01/learning-to-predict-user-defined-types.html
     title: Learning to Predict User-Defined Types
-  - date: '2023-04-27'
-    reviewed: /2023/04/27/a-few-more-to-close.html
-    title: A Few More to Close
   name: Types
 - entries:
   - date: '2023-03-28'
@@ -1944,6 +1951,9 @@
   - date: '2022-09-19'
     reviewed: /2022/09/19/developer-git-knowledge.html
     title: Do Developers Really Know How to Use Git Commands?
+  - date: '2023-04-27'
+    reviewed: /2023/04/27/design-evaluation-liquid-types-in-java.html
+    title: User-Driven Design and Evaluation of Liquid Types in Java
   name: Usability
 - entries:
   - date: '2021-08-12'
