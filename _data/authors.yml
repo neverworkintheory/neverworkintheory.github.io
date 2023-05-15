@@ -1638,6 +1638,9 @@
   - date: '2023-03-03'
     key: Madampe2022
     reviewed: /2023/03/03/emotional-rollercoaster-requirements-changes.html
+  - date: '2023-05-15'
+    key: Gunatilake2023
+    reviewed: /2023/05/15/empathy-models-and-software-engineering.html
   name: Grundy, John
 - entries:
   - date: '2023-04-26'
@@ -1659,6 +1662,11 @@
     key: Gulzar2016
     reviewed: /2016/06/05/bigdebug.html
   name: Gulzar, Muhammad Ali
+- entries:
+  - date: '2023-05-15'
+    key: Gunatilake2023
+    reviewed: /2023/05/15/empathy-models-and-software-engineering.html
+  name: Gunatilake, Hashini
 - entries:
   - date: '2016-09-21'
     key: Ford2016
@@ -1896,6 +1904,9 @@
   - date: '2023-03-03'
     key: Madampe2022
     reviewed: /2023/03/03/emotional-rollercoaster-requirements-changes.html
+  - date: '2023-05-15'
+    key: Gunatilake2023
+    reviewed: /2023/05/15/empathy-models-and-software-engineering.html
   name: Hoda, Rashina
 - entries:
   - date: '2011-08-24'
@@ -3225,6 +3236,11 @@
     key: Margulieux2020
     reviewed: /2023/03/10/reducing-withdrawal-and-failure-rates-with-labeled-subgoals.html
   name: Morrison, Briana B.
+- entries:
+  - date: '2023-05-15'
+    key: Gunatilake2023
+    reviewed: /2023/05/15/empathy-models-and-software-engineering.html
+  name: Mueller, Ingo
 - entries:
   - date: '2021-09-22'
     key: Muhammad2019

@@ -1400,6 +1400,9 @@
   - date: '2022-03-02'
     reviewed: /2022/03/02/ethics-in-decision-making.html
     title: Does ACM's code of ethics change ethical decision making in software development?
+  - date: '2023-05-15'
+    reviewed: /2023/05/15/empathy-models-and-software-engineering.html
+    title: Empathy Models and Software Engineering
   name: Psychology of Programming
 - entries:
   - date: '2023-05-09'
