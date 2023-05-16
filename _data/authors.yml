@@ -2446,6 +2446,11 @@
     reviewed: /2021/09/06/commenting-source-code.html
   name: Krolikowski, Dariusz
 - entries:
+  - date: '2023-05-16'
+    key: Vrandecic2023
+    reviewed: /2023/05/16/the-making-of-wikidata.html
+  name: "Kr\xF6tzsch, Markus"
+- entries:
   - date: '2021-09-06'
     key: Nielebock2018
     reviewed: /2021/09/06/commenting-source-code.html
@@ -3825,6 +3830,11 @@
     reviewed: /2023/03/24/supporting-developers-with-disabilities.html
   name: Pinto, Gustavo
 - entries:
+  - date: '2023-05-16'
+    key: Vrandecic2023
+    reviewed: /2023/05/16/the-making-of-wikidata.html
+  name: Pintscher, Lydia
+- entries:
   - date: '2011-10-22'
     key: Giger2011
     reviewed: /2011/10/22/three-results-many-definitions.html
@@ -5062,6 +5072,11 @@
     key: Gao2020
     reviewed: /2021/10/14/api-learning-processes.html
   name: Voichick, Finn
+- entries:
+  - date: '2023-05-16'
+    key: Vrandecic2023
+    reviewed: /2023/05/16/the-making-of-wikidata.html
+  name: "Vrande\u010Di\u0107, Denny"
 - entries:
   - date: 2023-04-23-python-package-index-malware-scanning.html
     key: Vu2023

@@ -1057,6 +1057,11 @@
     title: Insights from Student Solutions to MongoDB Homework Problems
   name: Novices
 - entries:
+  - date: '2023-05-16'
+    reviewed: /2023/05/16/the-making-of-wikidata.html
+    title: The Making of Wikidata
+  name: Open Access
+- entries:
   - date: '2021-09-04'
     reviewed: /2021/09/04/do-software-developers-understand-open-source-licenses.html
     title: Do Software Developers Understand Open Source Licenses?
