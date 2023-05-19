@@ -1,0 +1,214 @@
+Hello everyone thanks for having me here,
+my name is Shurui Zhou,
+I'm an assistant professor in the University of Toronto.
+Today I'm going to present our work on understanding the sustainability challenges for building open source scientific software.
+I'm sure that most of the audience today are familiar with the importance of open source
+and are aware of the sustainability and support challenges in open source communities.
+In this project we are focusing on a special type of open source community,
+that is,
+open source scientific software.
+Scientific software development refers to the development processes for software that is used in a scientific disciplines
+such as biology, physics, chemistry, or even computing.
+However,
+in a scientific community,
+their participants are not just software developers but also domain-specific experts.
+So in this graph I'm showing you the Python-based scientific software ecosystem.
+On the right hand these are some biocomputing related Python based open source software.
+These are essential tools for researchers and their importance will only continue to grow
+as scientific inquiry becomes increasingly reliant on computational methods.
+In this talk I'm going to show you that the risks you know of in open source communities in general -
+the maintenance and the community health -
+these are exaggerated in the scientific open source communities.
+If you lose either of the domain experts or the software professionals,
+the project has threaten to fall apart and it is actually a two-fronted risk they are facing.
+And because these two groups has - have different training and education background and incentives,
+there are tension and conflicts between them,
+that make this sustainability even more challenging.
+So previously researchers investigated the interdisciplinary collaboration phenomenon,
+when building AI-based software where software engineers need to collaborate with data science experts
+along the machine learning life cycle.
+Specifically,
+data scientists often focus on the early stage of the life cycle,
+aiming for a high-performed machine learning model
+and software developers tend to focus on integrating the model into a larger system
+and assure the performance of the host system.
+This is another view to show that when building AI-based software system,
+people have different focuses during the development procedure,
+and of course there are some collaboration points
+and the study found that the interdisciplinary collaboration creates a lot of different tensions in the process.
+So in our study we are focusing on an interdisciplinary collaboration when building scientific software in an open source environment.
+Related work found that the majority of development work is done by scientists themselves
+and professional developers may be employed later to create and maintain a software.
+Different from the well-defined machine learning lifecycle,
+it is unclear how the two groups were collaborating with each other in open source environment
+and how such collaboration will affect the sustainability challenges.
+Specifically,
+we investigate this problem from two aspects.
+First,
+we focus on the science related challenges in open source context
+by asking,
+what are the major obstacles when an interdisciplinary team builds and maintains the scientific software in open source.
+And next we focus on the open source related challenges in scientific community
+by asking,
+what are the main factors for sustaining the scientific open source community.
+So in order to answer these,
+we did a case study using these methodologies on a sci - on a scientific software in physics domain.
+For research ethics concerns we anonymize the real project name and use the fake name Moonpie to refer to the project.
+So Moonpie as you can see from here is a big enough and long enough lived project.
+Now let's look at the result.
+First we investigate the science related challenges in open source context.
+We would like to understand how our scientists collaborate with software engineers,
+how do they split the task.
+We had a hypothesis that software engineers would work more on the infrastructure operation of the system
+while scientists would work more on the domain-specific code.
+For this part we focused on the core developers over the 10 years
+and we detect the type of their contribution by analyzing the commit history.
+And we divide the code into two categories:
+one is infrastructure,
+another one is domain specific.
+So for each core contributor we calculate the number of merge commits
+and then we plot their contribution on this spectrum
+and the size of the dots is about the number of commits.
+The left extreme are the 100% infrastructure related contribution
+while the right extreme are 100% domain specific code contribution.
+As you can see there are people at all parts of the spectrum.
+Also,
+there are actually only two professional software engineers among all the 40 core developers or core contributors
+and the others are all professional scientists.
+There is someone at both - that has both expertise in software engineering and science,
+but this person in the middle is very much an exception in a - to the project.
+It is rare in this Moonpie community that people have both backgrounds.
+It is not surprising that this person does not have an - has an easy life
+and they had a lot of difficult conversation with people on the extremes of the spectrum.
+And more interestingly,
+from our interview study we observed that
+there is a tension between the two groups of experts.
+It's not about their titles, but the mindsets.
+For example,
+we observe that people who view the best practices of maintenance and software upgrade as the value they're bringing to the software
+and people who are looking at the domain utility and science related value of the project.
+And another example is about the task prioritization between the two groups.
+On the one hand,
+software engineers believe it is important to follow software engineering best practices
+and utilize automated workflows such as CI/CD to ensure the code quality and reduce the maintenance burden.
+As a result they often need to explain to scientists that their code does not meet the code quality standard
+and need more refactoring.
+On the other hand,
+scientists perceive software engineers as someone that hold these rigid standards that they want to adhere to
+or who are not as familiar with the kind of flexibility nature of scientific software development.
+Yeah,
+and another tension reviewed in the interview is the perception of seniority in the Moonpie community.
+According to the interviewees,
+one distinction between the scientific software community and the traditional open source community is the ranking of seniority.
+As in traditional open source projects,
+the contributors are ranked by the volume of their code contribution,
+while in Moonpie,
+people with a senior academic title have more decision making power on whether to merge this PR or not.
+So these are fundamentally in tension from each other.
+And the second part of our study focuses on the other side of the scenario,
+which is the sustainability challenges in open source communities with this science context.
+Specifically,
+we identify the contributors who merge code before but has no activity in the past 100 days in this Moonpie project and ask three questions.
+What was the incentive that you contribute to Moonpie?
+What was the reason you left the community?
+And do you have any suggestions of improving the sustainability?
+So we summarize the results of incentives and reasons of disengagement using the Sankey diagram.
+As you can see,
+the majority of people that contributed to Moonpie due to their own usage
+and they left because the project is stable or their focus is shifted.
+So you might think, yeah, these are pretty obvious reasons, so what can we do as a maintainer to keep them stay longer?
+Unfortunately,
+there is not a lot that is actually avoidable.
+The question you might have as a maintainer is, what can I do with this information then, right?
+So from our study we identified a few opportunities.
+If the goal is not the long-term participation of one member but the overall health of the community,
+we need a different strategy.
+We have received many valuable suggestions and opinions but given the time limitation I would like to present two major ones.
+The first one is,
+we should acknowledge that there is a lot about the turnover processes that we cannot change
+but we can - what we can change is to actually make the project more accessible.
+Knowing that we are not only need to make the project accessible but we need to make the science accessible at the same time,
+therefore when we provide documentation,
+we not only need to document the source code but also need to explain the scientific theory behind that.
+Similarly,
+prior - a previous work already showed that providing this good first issue is a great strategy to attract newcomers
+but many of our participants suggested that to fix a good issue needs - they need to not only understand the code or what issue is,
+but also need to provide guidance on the corresponding code module
+and the theory that contributor needs to understand before really make this contribution.
+In this way it turns the project into not being just a software participation exercise in a domain specific tool,
+but also a valuable learning exercise for us - for someone who is taking something from these experiences.
+Then as a software engineer researcher,
+an open question that arises naturally for us is,
+can we design some tools to automate these documentation processes,
+that connect both code and theory.
+And the second strategy I would like to share is to recognize the participation and contribution.
+First,
+if you're using any of the open source scientific software or packages,
+please consider citing a work in the project - of the project in your paper or report
+to give people the recognition of participation and contribution in a project.
+And some survey participants would like to know the impact of their contribution,
+such as how many researchers are using their code,
+how many PhD students are using my code to contribute to their thesis, right.
+So then the question for us again is,
+can we design better ways to quantify the impact beyond just the number of downloads?
+Can we detect the usage of their code in a small - a finer granularity on a larger scale.
+So there are many other insights I don't have time to share but if you're interested I would be more than happy to discuss offline.
+Last but not least,
+I would like to thank my students and collaborators who have been contributing to this work.
+To summarize,
+in this project we investigate a unique open source scientific software
+and the results show that the sustainability challenges in open source in general will get worse
+when you are building a scientific package.
+To improve this - sustainability in this context we need to recognize the tension between the two groups of experts,
+be aware of - that these will be exaggerated challenges,
+and given that software developers are not fungible,
+but neither are scientists.
+And we definitely need different strategies.
+If you are in a leadership role in a scientific open source community,
+the efforts need to be put into improving accessibility of the project
+by lowering the barrier for both code - software engineering - and the science and the theory.
+And if you are a user of these tools,
+please consider giving recognition of these tools and giving acknowledgment of these contributions.
+That concludes my talk, thank you so much.
+Fantastic, thank you so much again,
+really interesting,
+I learned later in life, like, in the recent years that this was the type of research I was doing as an undergrad,
+doing - helping develop technology for geologists and the software they use to maintain their data,
+so I think this is a really interesting and apparently understudied space.
+I wonder - the work that you've been doing here,
+is that building off of any other work specific to the sustainability piece
+or even the interaction that happens?
+It seems like that's part of the problem and solution,
+is how do we how do we make these interactions meaningful for both parties,
+such that we're getting these outcomes as well as, again, them being sustainable?
+Is this built on things or is this really, kind of, some of the first work to look at those interactions?
+So private - previous work have already been looking to this - building software in a small institute or kind of a local institute
+instead of this distributed collaboration,
+so I think previous work has also looked into like open source scientific software,
+but not on GitHub,
+but some repositories where they publish their source code,
+so they look into the different roles in terms of the seniority of, like, whether it's a professor or students,
+but here we actually try to split them into their background or roles or mindsets,
+right,
+I think that's kind of a new aspect that we bring into, yeah.
+And it seems important with respect to - it sounds like how they're thinking about the end result,
+the product that that's being developed and used.
+Fantastic.
+So I see we have another question that we do have one minute for.
+Greg wants to know, where and how do scientists learn what they know about programming?
+Are they learning it in class, are they learning it from other researchers, on the job, YouTube?
+How - do you have any insights on that?
+Yeah,
+so among all the - of the developers, or core developers that we talked with,
+actually most of them learn just self self-taught software developers
+and have - never have taken any courses,
+they don't have a degree in a discipline.
+Only one of the professional software engineers that we interviewed, like, I showed two of them,
+one they had a computer science background in their undergrad,
+so actually most of the scientists,
+they are not trained with professional software engineering background,
+but the problem is,
+we cannot just blame them of - they have not -
+no software engineering background because sometimes the software engineering practices
+cannot be directly applied to build this scientific software,
+so we actually need to adjust the software engineering best practices to build this domain specific software.

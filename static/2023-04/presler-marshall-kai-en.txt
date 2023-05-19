@@ -1,0 +1,208 @@
+So good morning everyone,
+my name is Kai,
+and I'm speaking to you from cold and rainy Maine this morning.
+Like Ethel from our last section my focus is in computer science education as well,
+so I'm presenting a recent project I did as I was finishing up my PhD last year.
+So the motivation behind this project is that teaming is a core component in professional software engineering.
+As pretty much all software engineers work in teams,
+it is thus essential for undergraduate computer science programs to teach students the skills of how to work effectively in a team
+and how to to make valuable contributions despite the difficulty of splitting up a problem.
+That being said,
+there's some evidence that students may be inclined to free ride off of their peers
+and then they receive a grade that does not correspond to their contributions -
+they get credit for stuff that their - their teammates have done.
+And I posit that much of the the difficulty with this is that,
+or much of the reason for this,
+is that it's difficult to accurately identify the contributions that students make to a team project,
+particularly as the project gets bigger and as the team gets bigger.
+And if teaching assistants struggle to identify what students have done,
+they will struggle to give students helpful feedback on their contributions
+and encourage students to make full contributions to the project.
+And my - my question here,
+the central question,
+I'll get down into the the details in a moment,
+is wondering if auto-generated summaries of what the various members on a team have been up to are presented to teaching assistants,
+can the TAs use this to get a better feel for the details of what each student has done
+and then to give them feedback and grades according to this.
+So the context I studied for this,
+was a sophomore level Java programming course back at NC State University where I did my PhD.
+And this course features a lecture section that has has four several-week projects associated with it
+and then an associated lab section as well.
+And this is where students really learn the collaborative work - the teamwork -
+as they work in teams of of three or four students on these lab activities.
+And the way the course is set up is that the lab grading is is mostly automated already
+through a whole bunch of scripts and use of continuous integration platforms.
+Really,
+the only thing that the the TAs grade manually is student code contributions
+and then assessing whether the - the Java doc accurately describes the - the code in question.
+So for the lab assignments students work in teams of three or four,
+for three or four weeks at a stretch,
+at which point the teams are scrambled and then this entire process repeats three times
+as the students complete a total of 11 labs over the semester.
+So looking at what I studied in - in more detail,
+my research questions were,
+first,
+can automated contribution summaries help TAs grade assignments more quickly,
+get through the process faster.
+And this I found basically, no.
+Next,
+I considered whether the - the contribution summaries can help TAs grade assignments more consistently,
+more consistently identify what students have done than if they were unassisted
+Third,
+I considered whether TAs prefer the grading process when they have this to assist them,
+and finally whether it can help provide students with better feedback,
+more actionable feedback that they can use to figure out when they're sufficiently contributing to the team effort
+and when they're not.
+So in order to answer these research questions,
+I designed an algorithm that presents high level summaries of what each person on a team has done.
+And the way it works is,
+first it pulls metadata about a repository -
+things like commit hashes, timestamps, authors, files changed, that sort of stuff -
+and tosses it into a database for later use.
+Next,
+there are two copies of the repository that are cloned.
+And then for each of the - the changed files on each of the commits,
+an abstract syntax tree is built representing the - the file before the commit and after the commit.
+And I know that ASTs are sort of by definition abstract,
+so an example to make it a little bit more concrete.
+If we have a Java class that looks like this,
+it will boil down to the abstract syntax tree we have over on the right side.
+And then if we make some changes to the class,
+adding in a new field and a new method,
+we see some corresponding changes to the abstract syntax tree.
+So the way that my algorithm works is,
+it builds these ASTs from both revisions of the file
+and then it will tree difference the ASTs to figure out what was added, changed, or removed between the - the two versions.
+And then this is repeated for every file changed on a commit and all commits within a time period,
+at which point the changes are binned or summarized to get a high level view of what each person has been up to.
+So to evaluate this algorithm and figure out if it helps TAs do a better job or not,
+I recruited 13 former or current computer science TAs from my peers in the PhD program,
+12 of whom had existing experience with grading team-based projects.
+And then in my study I tasked them with,
+first,
+grading some projects,
+then evaluating and reflecting on some feedback from their peers in the study,
+and then finally reflecting on the experience -
+on the study, on the contributions, the contribution summaries they were provided.
+So in the first part of the study I tasked them with grading a bunch of students assignments
+and I used a Google Sheets spreadsheet for this just to to mimic the - the typical experience that they're familiar with.
+And in the spreadsheet they were - they had rows corresponding to each of the repositories,
+each of the projects they were to grade,
+and then columns with information about what to do,
+so links to the automated summaries for about half of the repositories,
+no automated summaries for the other half,
+links to the the GitHub repositories so they could see all of the code,
+the project history they were to look at,
+and then columns for them to fill in,
+grades and feedback for the - the students whose projects they were grading.
+So they filled this out for each of the three students on the team.
+I've trimmed off students B and C so we only have A right here,
+just to make it so we can actually read things.
+And then in part two of the study,
+I asked TAs to reflect on some of the comments from their peers,
+choose between pairs of comments that their peers had provided
+on which one they felt was more actionable and they could do more with.
+So to summarize what we learned at this point,
+I found that the TAs grade projects much more consistently when they have the automated contribution summaries to assist them
+compared to doing it entirely unassisted.
+Yet at the same time the - the consistency, the inter-rater reliability - is pretty low,
+so I use Krippendorff's alpha as a statistical test here,
+and and Krippendorff argues for - for alpha values really of - of above 0.8 where possible,
+and even with the contribution summaries to help them out,
+TAs didn't quite hit this mark.
+So there's clearly future work still to be done which I'll talk about momentarily.
+Next, in terms of whether the TAs would actually choose to use this or not,
+because I'd come up with all the shiniest tools in the world but if the TAs hate them it's not of much value,
+I found that all of the participants preferred using the contribution summaries when grading
+and 11 of the 13 strongly prefer them.
+And breaking them down on a - a feature level I saw that the TAs found most of the features here to be pretty helpful,
+both the simple information of just,
+here's a list of commits of what each person has done,
+and then the the more advanced stuff that came from my program analysis algorithm
+and shows TAs where in the the project students have been involved.
+And then finally in terms of results,
+getting back to the students,
+I asked TAs to reflect on the - the feedback from their peers and - and let me know which of the feedbacks -
+which - which feedback they thought was more helpful, more actionable,
+and they considered that feedback from assignments
+that had been graded with the automated contribution summaries was more actionable
+than feedback that came from the manually graded assignments.
+And additionally I found that the TAs give more partial credit as opposed to full credit or no credit
+when they have the contribution summaries available,
+which suggests that they're better able to - to see nuance and identify partial contributions,
+as opposed to,
+you've done basically nothing or you've done a bunch.
+So that's sort of what I learned.
+As - as for, sort of, the implications of this,
+despite a relatively small sample size - I only had just over a dozen participants in one two-hour lab section where I ran the study -
+despite this,
+the lab study still showed value to the contribution summary algorithm
+in helping TAs identify what students have done
+and then give give them grades and feedback accordingly.
+I'm doing a follow-on classroom study right now
+where I'm trying to see,
+can this feedback actually help students do better semester or - assignment on assignment over the course of a semester,
+trying to see - do students find the feedback more actionable,
+do they improve more over the course of the semester.
+As for obvious future work,
+there's obviously a lot more that will go into software engineering work than just Java code.
+In terms of Python code, JavaScript code,
+but of course also non-code contributions,
+the "everything else",
+the design, the project management, the discussions around the water cooler that help the team work successfully.
+So the open challenge remains,
+how do we account for everything else?
+And I'm - I think a language agnostic AST analysis can get us part of the way there,
+but there's still open questions on how do we account for the non-code contributions,
+which is what I'm planning on pondering this summer and figuring out what are the - the next steps we can take with this.
+So to summarize what I did and what I learned from it,
+I designed an algorithm that will present high-level summaries of what students on teams or -
+or really anyone on a team has contributed to their project
+and then I built it into a tool that works on Java code tracked through GitHub
+and I did a quantitative lab study where I demonstrated that
+the TAs who use this are able to grade assignments more consistently,
+they prefer the grading process,
+and I have tentative results suggesting the feedback to be more actionable,
+more helpful to the students whose assignments are being graded.
+So that's all I've got, but I would be delighted to take any questions at this point.
+Great, thank you very much, Kai.
+Thank you.
+First question coming in,
+so have you thought about applying this to people doing code reviews in open source projects or in their jobs.
+It seems like exactly the same summaries would be useful for somebody
+who's about to dive into a large, you know, looking at a large pull request.
+Amusingly my dad actually asked me the same question.
+So he works at Salesforce and was was pondering whether this could be a useful thing
+to see the changes made on a pull request
+and I've - I've considered it,
+but not actually done any evaluation in that context.
+Okay.
+The - the one the one thing I think is is sort of dangerous here is,
+larger projects with more - more free-form types of contributions that folks can make beyond just the Java code,
+we want to make sure that people aren't having numbers being presented that look bad about them.
+Maybe they're still making great contributions,
+they're doing all of the - the helping out the newer members of the team,
+the big architecting stuff,
+even if the the amount of code that they're doing is actually relatively small,
+so I would want to make sure that, if I was going to use it in a different area,
+that we're encouraging people to use it responsibly.
+Okay,
+and another question that's come in,
+do students use pair programming?
+Is there a way to take account of that?
+In London Python dojos with similar team size you should try to have the least experienced programmer at the keyboard.
+So the - the answer is, it depends.
+Students are encouraged but not required to to do pair programming.
+The way - the way that it works right now is that the - the TAs will see a list of all of the commits
+and then in the commit message we hope, we - we tell students to document in the commit message
+if they pair program.
+My anecdotal evidence is that they do a lousy job of this,
+so with - with limited documentation there's not a lot we can see,
+but I have some planned work as well to maybe, give you -
+I'm not - not figure out exactly what the numbers would look like,
+how to weight things,
+but also to account for these contributions at least where they can be discerned from commit messages.
+So I have - I have some work in progress where I'm doing fuzzy matching on names and commit messages
+and using that to figure out,
+has someone else been involved in a pair programming effort,
+and then we can account for that under their contributions too.

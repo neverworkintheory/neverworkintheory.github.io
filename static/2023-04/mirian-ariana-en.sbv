@@ -1,0 +1,569 @@
+0:00:00.600,0:00:03.900
+Thank you so much for the intro and thank you for having me here.
+
+0:00:04.920,0:00:11.100
+So yeah folks, I'm super excited to be here, my name is Ariana and I just on Friday defended
+
+0:00:11.100,0:00:17.160
+my PhD at the University of California San Diego. And so this work was possible in large part
+
+0:00:17.160,0:00:21.060
+because of a collaboration with the IT team at UCSD,
+
+0:00:21.060,0:00:24.180
+who I've been working over the last year and a half as an embedded security
+
+0:00:24.180,0:00:28.320
+researcher within their operations team, so a big thank you to that entire team
+
+0:00:28.320,0:00:34.140
+and all the truly amazing work they do. And so generally my work has been broadly on
+
+0:00:34.140,0:00:37.440
+understanding and improving security processes, your large-scale measurement,
+
+0:00:37.440,0:00:41.400
+and today I'm going to talk about the theory and practice of vulnerability remediation
+
+0:00:41.400,0:00:46.080
+and a very specific type of developer from a security lens: system administrators.
+
+0:00:47.220,0:00:52.740
+And so many organizations, especially newer ones, have moved their organizational
+
+0:00:52.740,0:00:57.180
+infrastructure into the cloud. AWS is large, GCP is large,
+
+0:00:57.180,0:01:00.120
+and a lot of organizations have started to take advantage of that
+
+0:01:00.120,0:01:04.500
+and move their physical hardware components into the cloud so they no longer need to
+
+0:01:04.500,0:01:08.760
+maintain the physical piece of hardware but things are abstracted for them.
+
+0:01:08.760,0:01:13.920
+However, not all organizations have or can do this.
+
+0:01:13.920,0:01:15.360
+In fact, there are many
+
+0:01:15.360,0:01:19.920
+organizations that have legacy machines, or in other terms bare metal - the more
+
+0:01:19.920,0:01:26.460
+canonical term that are - that still exist and are critical pieces of infrastructure.
+
+0:01:26.460,0:01:32.220
+And UCSD is one of these such organizations where they definitely utilize cloud services
+
+0:01:32.220,0:01:37.860
+but there's just a ton of legacy systems that still exist physically on premise.
+
+0:01:37.860,0:01:44.400
+And so the theory, in an ideal world, is that every piece of infrastructure in an organization
+
+0:01:44.400,0:01:49.500
+that is on premise is up-to-date security-wise. So you have system administrators who are the ones
+
+0:01:49.500,0:01:55.020
+generally maintaining these pieces of bare metal who make sure that every piece of software and
+
+0:01:55.020,0:01:57.480
+hardware is up to date and there's no issues.
+
+0:01:57.480,0:02:03.420
+But the reality is that these disparate physical systems can affect the safety posture of an org
+
+0:02:03.420,0:02:05.820
+and they can have a large number of vulnerabilities
+
+0:02:05.820,0:02:11.940
+that are very difficult to triage and maintain and that an attacker can ultimately utilize to get
+
+0:02:11.940,0:02:17.940
+into the system and thus the organization itself. And so this process of getting rid of
+
+0:02:17.940,0:02:20.580
+vulnerabilities is called patching or vulnerability remediation
+
+0:02:20.580,0:02:27.300
+and I'll use those terms sort of interchangeably. And patching isn't a new problem I know there are
+
+0:02:27.300,0:02:29.220
+folks in this crowd who are probably nodding their head,
+
+0:02:29.220,0:02:32.700
+like, yeah, it is a pain, but it persists
+
+0:02:32.700,0:02:36.240
+and there are advances that have made patching an easier process
+
+0:02:36.240,0:02:39.720
+especially for organizations or parts of organizations that have been able to
+
+0:02:39.720,0:02:43.560
+transition to cloud services, like automation, abstraction,
+
+0:02:43.560,0:02:49.500
+and the thing about a lot of these advancements is that they optimize for the machine not the human.
+
+0:02:49.500,0:02:54.900
+And so when you're in an organization that still has legacy systems on premise
+
+0:02:54.900,0:03:00.120
+and still needs to maintain them the question that i went out - set
+
+0:03:00.120,0:03:03.900
+out to answer was, what if we tune the process for the human in the loop?
+
+0:03:03.900,0:03:07.260
+What if we took the process and the technologies that are being employed
+
+0:03:07.260,0:03:12.420
+and examined holistically how to make this process easier for the people doing the job?
+
+0:03:12.420,0:03:17.460
+In other terms, how can we make patching a more effective process?
+
+0:03:17.460,0:03:21.120
+And so we asked this question in our organization at UCSD,
+
+0:03:21.120,0:03:23.880
+because like I said I've been working as an embedded security researcher
+
+0:03:23.880,0:03:25.440
+and this was an issue that was
+
+0:03:25.440,0:03:27.720
+continually coming up - that, oh, we, you know,
+
+0:03:27.720,0:03:35.820
+are having difficulty getting people patch. And so in order to answer this question and
+
+0:03:35.820,0:03:38.580
+examine how we can optimize for the human in the loop
+
+0:03:39.360,0:03:41.940
+we first have to examine what was being done before.
+
+0:03:41.940,0:03:47.460
+And so I sat down with the team that was in charge of sending out these notifications
+
+0:03:47.460,0:03:51.480
+and this is an example of a notification that was sent out
+
+0:03:51.480,0:03:58.740
+to folks within the IT team at our organization. It was essentially a weekly report that was meant
+
+0:03:58.740,0:04:01.260
+to give these admins information, you know,
+
+0:04:01.260,0:04:06.900
+it's like - and just to read off bits of this - it says, "The systems below have active critical
+
+0:04:06.900,0:04:11.820
+or high severities, please patch within 24 hours," and then at the end of the email it listed
+
+0:04:11.820,0:04:14.520
+who's the technical contact, the host name, IP address,
+
+0:04:15.660,0:04:20.100
+and then also listed a link for how they could get more information from Qualis
+
+0:04:20.100,0:04:24.120
+which is the third party tool that our organization utilizes for vulnerability
+
+0:04:24.120,0:04:30.420
+scanning and information gathering. And looking at this there were
+
+0:04:30.420,0:04:34.620
+a couple things that stood out, especially having done a related work
+
+0:04:34.620,0:04:37.380
+search in the literature. First,
+
+0:04:37.380,0:04:43.380
+it required users to go and log in to Qualis, so not only required them to do this additional
+
+0:04:43.380,0:04:46.440
+step but it required them to have a login to Qualis.
+
+0:04:46.440,0:04:48.600
+And if any of you have worked in a large organization,
+
+0:04:48.600,0:04:53.760
+you know that it is not always the easiest to get logins into third-party tools.
+
+0:04:54.300,0:05:00.240
+The second thing that really stood out is that the email listed the raw number
+
+0:05:00.240,0:05:02.280
+of vulnerabilities, so in this instance there was
+
+0:05:02.280,0:05:05.040
+one severity five which is critical, and eight severity four,
+
+0:05:05.040,0:05:08.520
+but it didn't list the type - it didn't give any other information.
+
+0:05:08.520,0:05:13.620
+It really relied on the system administrator having access and having
+
+0:05:13.620,0:05:19.320
+time in that moment to go log into Qualis to look up one of the sev 4's,sev 5's.
+
+0:05:19.320,0:05:25.260
+And with any third party tool there are obviously issues - down times - so this didn't help.
+
+0:05:25.860,0:05:29.520
+And so what I'm trying to get at is that this old notification was not ideal.
+
+0:05:29.520,0:05:32.940
+It was a weekly notification which is great in theory,
+
+0:05:32.940,0:05:36.900
+but it did not list the vulnerabilities or additional details it required
+
+0:05:36.900,0:05:39.810
+these system administrators - who were already juggling many jobs -
+
+0:05:39.810,0:05:42.420
+to perform extra steps to get the necessary information,
+
+0:05:42.420,0:05:47.940
+and it adds this amount of friction that is required in order to execute.
+
+0:05:47.940,0:05:50.640
+And so again, working with the
+
+0:05:50.640,0:05:54.900
+security team and taking best practices from security literature and looking at what has
+
+0:05:54.900,0:06:00.480
+been done with vulnerability notification, I worked with the team to craft a new
+
+0:06:00.480,0:06:04.260
+notification in a new pipeline. And so this is the new
+
+0:06:04.260,0:06:07.080
+notification that gets sent out. And the things that I want to draw
+
+0:06:07.080,0:06:09.000
+your attention to is that, one,
+
+0:06:09.000,0:06:14.160
+each email focuses on a very specific type of vulnerability,
+
+0:06:14.160,0:06:18.960
+so instead of sending a laundry list of "here are the nine on your system" or whatever,
+
+0:06:19.920,0:06:22.620
+this focuses just on Microsoft Windows security updates.
+
+0:06:23.460,0:06:29.340
+There are instructions on how to patch the system just in case this was a new
+
+0:06:29.340,0:06:30.900
+vulnerability that they weren't aware of,
+
+0:06:31.920,0:06:34.980
+and at the end of this email, which is cut out in the screenshot,
+
+0:06:34.980,0:06:38.100
+there was a CSV that was pulled from the third party tool
+
+0:06:38.100,0:06:42.240
+that had a plethora of additional metadata, so it had the host name, the IP,
+
+0:06:42.240,0:06:46.320
+but I also had things like the full vulnerability name,
+
+0:06:47.220,0:06:51.960
+this - the CVE, other pieces of information that system administrators find really helpful.
+
+0:06:51.960,0:06:57.060
+And so for this first step, to try and address how do we make
+
+0:06:57.060,0:06:59.880
+patching a more efficient process, we examine the old notification,
+
+0:06:59.880,0:07:03.360
+proposed changes that reduce effort and time from the system administrators,
+
+0:07:03.360,0:07:08.460
+and crafted new notifications that have actionable items focused on one vulnerability
+
+0:07:08.460,0:07:12.000
+and listed all machines and vulnerability types in the attached CSV.
+
+0:07:12.780,0:07:14.820
+But like I mentioned at the beginning of this talk,
+
+0:07:14.820,0:07:19.620
+I do a lot of large-scale quantitative data analysis,
+
+0:07:19.620,0:07:22.320
+and so we don't actually know whether these
+
+0:07:22.320,0:07:25.740
+changes were effective until we went and analyzed the subsequent data.
+
+0:07:25.740,0:07:29.340
+And so I created an in-house pipeline that can be automatically run
+
+0:07:29.340,0:07:34.320
+that takes all the pieces of information from the system administrator side
+
+0:07:34.320,0:07:39.120
+and essentially produces a series of analyses that we can break down into different ways.
+
+0:07:40.260,0:07:43.440
+And in aggregate we saw that because of these changes,
+
+0:07:43.440,0:07:49.500
+the patching rate increased from 3% to 78% which is a huge difference.
+
+0:07:49.500,0:07:53.940
+This is already a success, but the natural next question was,
+
+0:07:53.940,0:08:00.480
+"Why was the patch rate only at 78%?" It seemed like we were doing everything right,
+
+0:08:00.480,0:08:03.840
+we have looked at the related work, we're doing best practices,
+
+0:08:03.840,0:08:09.240
+and it was still not at a hundred percent. And so the beauty of data is that there are
+
+0:08:09.240,0:08:13.500
+different ways to look and slice it. And so first,
+
+0:08:13.500,0:08:18.060
+I looked to see what different contacts - how they were patching their machines.
+
+0:08:18.060,0:08:22.500
+And we found that some contacts are just much better at patching.
+
+0:08:23.160,0:08:27.180
+When we then looked at the vulnerability families, we found that certain vulnerability families get
+
+0:08:27.180,0:08:31.140
+patched more things. Like Zoom, browsers,
+
+0:08:31.140,0:08:36.000
+standalone applications - were getting patched faster and at much higher rates
+
+0:08:36.000,0:08:39.180
+than things like operating system distros like Red Hat.
+
+0:08:39.180,0:08:43.200
+And the hypothesis there, which you know intuitively makes some sense,
+
+0:08:43.200,0:08:47.820
+is that standalone applications that have easier patching processes were easier to prioritize
+
+0:08:47.820,0:08:50.820
+because they don't require downtime for the system administrator.
+
+0:08:50.820,0:08:52.680
+Because again, system administrators
+
+0:08:52.680,0:08:57.060
+are juggling many jobs and many needs, including the needs of people who are
+
+0:08:57.060,0:09:00.060
+using those machines. And then finally we
+
+0:09:00.060,0:09:02.520
+also found that some vulnerability families just take more time to patch,
+
+0:09:02.520,0:09:06.660
+and so this is kind of following up from the the last analysis,
+
+0:09:06.660,0:09:10.560
+which is that there were some vulnerability families,
+
+0:09:10.560,0:09:15.120
+like operating system distros, and, like, Microsoft Windows updates,
+
+0:09:15.120,0:09:19.440
+that just took more time, and we - again, the hypothesis is that
+
+0:09:19.440,0:09:24.600
+there is some overhead that is required there that was slowing the process down.
+
+0:09:25.380,0:09:28.080
+But at this step, you know, we took a step back, okay,
+
+0:09:28.080,0:09:32.160
+the quantitative data is telling us a lot, but we also conducted semi-structured
+
+0:09:32.160,0:09:36.420
+interviews with the system administrators because we knew them, they knew us,
+
+0:09:36.420,0:09:39.420
+to add the qualitative view to the quantitative data.
+
+0:09:39.420,0:09:44.220
+And we learned a lot in these interviews. And some of the high-level takeaways was that,
+
+0:09:44.220,0:09:47.100
+first off, the monotonicity of the old
+
+0:09:47.100,0:09:52.800
+email notification made it really easy to ignore. And the reason that we were seeing a much higher
+
+0:09:52.800,0:09:56.220
+patch rate with this new notification was because it wasn't the same thing every week.
+
+0:09:56.220,0:09:59.640
+We also found that many teams have exception - exceptions,
+
+0:09:59.640,0:10:03.900
+and this was actually super interesting for us because it showed that
+
+0:10:03.900,0:10:07.020
+there was a discrepancy between the vulnerability remediation
+
+0:10:07.020,0:10:10.020
+notification pipeline and this exception pipeline.
+
+0:10:10.020,0:10:14.880
+There are some teams that have exceptions for various servers, various vulnerabilities,
+
+0:10:14.880,0:10:18.540
+and they thought that that was getting incorporated in the vulnerability pipeline.
+
+0:10:18.540,0:10:22.200
+And now that we know that there's a discrepancy, we are working on adding that in.
+
+0:10:22.200,0:10:26.820
+We also found that notifications fall outside of th assessment patch cycles,
+
+0:10:26.820,0:10:29.580
+you know, if we send an email on the second Tuesday,
+
+0:10:29.580,0:10:34.650
+they hadn't gotten to patching around - they hadn't gotten to patching the system yet -
+
+0:10:34.650,0:10:37.080
+because they were patching on the second week of that month.
+
+0:10:37.080,0:10:42.180
+And so this added a lot of additional insight into why the patch rate was only at 78%.
+
+0:10:42.180,0:10:46.920
+And overall we found that there was very positive sentiment towards a new notification,
+
+0:10:46.920,0:10:50.040
+but there was room for improvement and better integrations.
+
+0:10:50.040,0:10:56.640
+And so the - while the theory is that if you do everything right then folks will just follow,
+
+0:10:56.640,0:11:01.920
+the practice is that there are these very real blockers that you need to take into account,
+
+0:11:01.920,0:11:04.860
+especially blockers that are unique to your organization.
+
+0:11:05.760,0:11:08.700
+And so in summary I looked at how we could increase
+
+0:11:08.700,0:11:10.920
+the efficacy of patching within our organization.
+
+0:11:10.920,0:11:15.000
+We applied some very basic principles to reduce friction for system administrators
+
+0:11:15.000,0:11:18.120
+and in aggregate increase the patch rate from 3% to 78%
+
+0:11:19.380,0:11:23.400
+but additionally we found that by interviewing the system administrators,
+
+0:11:23.400,0:11:26.520
+many of them had a positive sentiment towards this notification
+
+0:11:26.520,0:11:29.820
+and that there were discrepancies in different systems that we can work on
+
+0:11:29.820,0:11:33.660
+to make it even more accurate and more productive moving forward.
+
+0:11:33.660,0:11:38.340
+And with that I'm happy to take questions and I'm also happy to take questions offline at these
+
+0:11:38.340,0:11:41.460
+various pieces of online communication. Thank you so much.
+
+0:11:43.920,0:11:51.300
+Fantastic thank you so much for a great and engaging presentation kicking off this last hour,
+
+0:11:52.380,0:11:58.080
+so again audience please make sure you're putting any questions that you have into the chat,
+
+0:11:58.080,0:12:02.700
+we have a few minutes so I am gonna kick off with a clarification question that
+
+0:12:02.700,0:12:06.480
+probably would have a pretty easy answer. So, like, the vulnerability - vulnerability
+
+0:12:06.480,0:12:10.800
+families that you mentioned, I think that's really interesting concept obviously,
+
+0:12:10.800,0:12:14.760
+helps us think about that space, is that a direct mapping to the
+
+0:12:14.760,0:12:18.240
+kind of technology that's being built or is that kind of, like, with security
+
+0:12:18.240,0:12:21.540
+vulnerabilities where there's like ways to think about the types of security
+
+0:12:21.540,0:12:24.480
+vulnerabilities that you have regardless of the platform
+
+0:12:24.480,0:12:27.960
+or the context or domain? Yeah, really good question,
+
+0:12:27.960,0:12:32.100
+so when I say vulnerability families, it's actually kind of a mix of both.
+
+0:12:32.100,0:12:37.440
+So it is very specific security vulnerabilities but for the
+
+0:12:37.440,0:12:43.680
+given applications that were on the servers. And so you know like, Zoom - Zoom for example has
+
+0:12:44.880,0:12:49.200
+various, like, RCE vulnerabilities but if a server that a system
+
+0:12:49.200,0:12:52.380
+administrator was managing didn't have Zoom we didn't notify them on that,
+
+0:12:52.380,0:12:54.540
+it was, we only notified them on the application
+
+0:12:54.540,0:13:01.800
+and then also the type of vulnerability, and so I guess to clarify a little bit further,
+
+0:13:01.800,0:13:08.700
+the emails focused on applications and then the CSV - the thing that was helpful for sys admins,
+
+0:13:08.700,0:13:13.680
+is that we then listed in the CSV the different types of security vulnerabilities
+
+0:13:13.680,0:13:16.500
+because different teams have different threat models,
+
+0:13:16.500,0:13:17.520
+you know, some teams are like,
+
+0:13:17.520,0:13:22.260
+"We're going to prioritize prioritize X over Y," and so it's useful that for them to know how many
+
+0:13:22.260,0:13:24.600
+of X versus y there were. Absolutely.

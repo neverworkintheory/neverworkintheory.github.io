@@ -1,0 +1,132 @@
+Hello my name is Gina Bai, I am a assistant professor of the practice at Vanderbilt and I am excited to be here to talk about how novice testers perceive and perform testing.
+We will be focusing on unit testing which is the most basic level of software testing.
+So to begin with I would like you to make a guess - you can share that on Slack - so how much does poor software quality cost the U.S in 2022?
+[pause]
+Make a great - brave guess.
+$1.4 billion?
+It's actually at least $2.41 trillion.
+That's about 10% of the GDP if you asked of that year.
+I know this is horrible, right, and I'm sure this will raise the awareness of testing as a critical engineering activity,
+as well as the awareness that our developers and of course our testers need to be able to perform testing well.
+However, Titus Winters, who's a principal software engineer at Google,
+pointed out that most of their new grad hires unfortunately have very limited experience with testing.
+So testing skills and knowledge is one of the gaps between CS education programs and industry expectations of graduating students.
+It is an open question for all of us how to establish - how to enhance students, the new hires, or let's say the novices' testing skills.
+So to do so the first step is to learn how novices perceive and perform testing.
+For most novices they see no difference between testing and debugging or think that the purpose of testing is to show the correctness of the program.
+Because in most CS education programs - especially the undergraduate programs - students are usually expected
+to implement their programs given the description:
+make sure they compile, they run, they pass all the test cases provided by the instructors.
+And in some courses students are also expected to write their own tests - to test their own programs or programs implemented by their peers.
+But in general if all test cases pass that usually means that's awesome the program is ready for submission.
+If not it's time to debug.
+So I would say it's not surprising at all to see that novices feel like - they have a blurred conceptual line between testing and debugging.
+But the question is can we say a program is 100% correct or is it perfect if they pass all the test cases?
+Could it be the case that the testing is just not effective enough to capture - to review the failure,
+or could it be the case that some of the tests themselves are just not correctly designed and implemented?
+So what we are trying to do is to train the novices - to help them build the tester's mindset,
+and to be able to identify - to figure out the testing scenarios,
+especially the corner cases that may break the program.
+So that's the level two thinking.
+And of course we want to help the novices to eventually get to level three -
+to realize that testing can only show the presence of the failures but not their absence.
+We test the programs - we test the software to reduce their risk of causing bad consequences or even catastrophes.
+And let testers' mindset actually guide us to better design and develop the software.
+So that's how novices perceive testing, and let's see how they practice unit testing.
+We conducted several studies exploring their testing behaviors and performance
+and here I'll present several representative questions from the novices.
+So the first one: Amy had a typical question when the novices are going up to level two from level one.
+She was not sure how to interpret and handle a test that failed.
+Is it okay to have a failing test?
+Does it mean a bug in the source code?
+Or is it a mistake in the test code?
+We observe several cases in which the participants - the novices - even though, even when they were informed that
+there were at least one bug in the code
+they still trust the code over the program specifications
+and they try to cover that source code regardless of the correctness.
+And Bob needed guidance on when to stop testing.
+Is it determined by the number of test cases,
+could it be - should it be the case that everything needs to be tested,
+and how to make sure everything is tested?
+Can we stop testing after, for example, finding one bug?
+This can actually be like - this question can actually be partially solved by consulting coverage tools like EclEmma
+which tells you - the user whether the test cases are actually covering the source code and how much the code is exercise.
+But we observed no adoption of tools like these in our studies.
+This also suggests the lack of exposure to testing tools for novices.
+At the same time we also observe some extreme cases in which the novices wrote dozens of tests for just one single method
+and all of them were testing the happy path.
+Charlie had difficulty in reusing the code examples from online resources
+and Daniel cannot figure out how to actually implement a test to indicate the existence of the bug.
+So in our study we also found several novices where - who were able to identify to design the unhappy path test cases
+but they ended up deleting all the test cases
+only because they cannot figure out the correct syntax,
+For example to assert an exception is thrown so they just gave up.
+But in general novices found it challenging to determine what to test and how to test.
+They have no consensus on what makes a unit good and hence novices find it challenging to determine when to stop testing
+and they tend to only - to only test the happy path.
+Additionally novices often create test cases that mismatch the program specifications and they face implementation barriers.
+This could be from their - the lack of hands-on testing practices or it could be some misunderstanding of the program descriptions.
+But in response to those challenges and with the consideration of cognitive load,
+well,
+for novices they have to learn using tags, new concepts, new libraries, new tools to be able to practice testing
+so we hope to keep the extra cognitive load as minimal as possible when we introduce them to our support.
+So we introduce a lightweight checklist intervention.
+Why checklists?
+Since checklists were able to - they're so simple, right, and they're also super useful in other software engineering research areas
+such as code review and software inspection
+and a big feature of the checklist is that it is static
+which reduces the learning curve for novice testers
+and it is lightweight enough to be transferred across classrooms, training programs, and languages, including natural languages and programming languages.
+And if we take a closer look at the checklist items,
+we can see that it is separated into two levels of abstractions,
+one for test cases and one for test suites.
+Each abstraction level also has two sets of checklist items,
+the items that they should do,
+representing the important required elements and items that they could do representing the best testing practices.
+So it contains tutorial information,
+it briefly introduces the use of test class components.
+The checklist also provides the testing strategies - for example equivalence class partitioning and boundary value testing.
+We didn't explicitly name those strategies in the checklist because they're novices,
+so instead we reminded them to think about those cases.
+What's more the checklist items are also designed to address the common mistakes and test smells that are observed in prior studies
+as well as the in the classrooms
+and you can see bad naming is one of them,
+just like what Christian said, the naming matters.
+And the checklist is definitely not a like golden standard for practicing testing
+but it helps the novices to write tests that are of good quality and reduce the number of - on one day unneeded redundant tests.
+And we found out the checklist works well
+and it is at least as effective as a coverage tool like EclEmma for writing quality tests for novices
+which indicates that the tool support does not need to be sophisticated to be mature, to be effective.
+And we also found that the novices who have lower prior knowledge in unit testing should benefit more from the checklist.
+To summarize, most novice testers see no difference between testing and debugging,
+they cannot build them,
+and they believe the goal of testing is to show the correctness.
+We discussed the challenges that they encountered when practicing testing
+and we also showed that tool support does not need to be sophisticated to begin with - a simple checklist will sometimes do the magic.
+And I'll open to the questions.
+Yeah fantastic, thank you so much Gina, again another great talk, we have time for questions
+though if folks do have any please feel free to be putting those in the Slack.
+I'll kind of kick things off.
+I really find this really interesting especially since since I've been working at George Mason and I've been teaching a software testing class
+and reflecting on my own CS education
+I realized that I never had that type of education in my - you know, explicitly and in depth,
+right,
+with what it means to write tests, to think about tests.
+Do you think that part of the problem that led to this research is that we're not focusing on that enough at a deeper level
+and do you think that interventions like this could also support how we teach testing for example?
+Well,
+because that's my work so I am probably biased,
+but the reason why I started to work on testing education is that I personally didn't receive any testing education,
+like, formal testing education,
+when I was an undergrad I didn't see testing until in grad school doing my PhD work.
+So I feel it is important for us to at least try something that's not that hard to adopt for both students and professors to apply,
+to help them to teach testing,
+help them to learn testing.
+And this is just again because not many professors had a formal education or background in testing
+so they probably won't touch that deep level of testing,
+so again most in most cases the practice is to just have the students run it -
+run their program against their test cases provided by the instructors
+and sometimes the test cases performed - provided by the instructors are not even good enough.
+So absolutely,
+I feel like the testing - the checklist may work as a good,
+at least a minimal threshold of what your tests need to cover.

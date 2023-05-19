@@ -1,0 +1,180 @@
+Hi yeah thanks for that introduction,
+so as mentioned I'm Allison Sullivan and I'll jump right into kind of explaining what
+"Proofreading the Proofreader: the Benefits of Unit Tests for Software Models" is all about.
+With a starting observation that I hope everyone can agree with,
+which is that it's just really hard to write programs correctly,
+especially with the scale of programs in industry.
+I know having taught algorithms that it's hard for people to write even just those simple efficient algorithm design solutions,
+then you go into the real world and you have millions of lines of code
+and it's interacting with all of these different other systems
+and so it's just really hard to - especially in one go, in the first path - paths -
+actually write that program correctly.
+A really old solution to this is the idea of using software models to improve correctness,
+which would be using the mathematical logic you might have been introduced to a long time ago inl a discrete math class
+to actually specify specifically what you expect your program to do
+and we typically write these models of the design with the idea that
+if we can create one cohesive view of the design
+it can be easier for all the developers working on the software to actually write it correctly.
+And in recent years there was a recent breakthrough in the software modeling community
+to start doing what we call scenario-finding toolsets.
+So this is the idea where you actually execute the software model
+and as output you get an entire collection of all of the different valid states your program can enter into.
+And so then you can take these valid states which I have an example of,
+just a simple singly linked list written here,
+and the discovered scenarios are found automatically by analyzing the model,
+and they're presented to the user,
+and ideally she would want to iterate over them and make sure that every single one is a valid singly linked list with no cycles.
+Now the problem with this is, well, it's really hard to write software models themselves correctly.
+Like, yes they provide this great oracle and those scenarios can be turned into tests over our implementation
+but if the starting model is incorrect then, you know, we've just punted the problem to the model
+instead of having the problem in the implementation.
+And so my research looked into the idea of addressing model correctness the same way that we do for simple blocks of code,
+which was the idea of establishing a unit test for a software model.
+So for our singly linked list example,
+an idea of a unit test that we came up with was to basically allow the user to specify one of those expected scenarios
+that should be found when the model is executed
+and to say, you know, I expect a list with one node and no links anywhere to be found as a valid list,
+and also support the idea of saying, you know, if I then add a cycle to that list -
+in this example here it would be just a self loop on the node -
+I expect this to be prevented.
+So it's a pretty simple idea of a unit test but it brings in a way to, kind of, quickly spot check your model
+because when you're executing and generating these scenarios,
+it's true that you're getting the snapshots of valid states your program can enter and that's really nice,
+but in practice since this is a bounded but exhaustive search
+it's very common to find hundreds of scenarios.
+And so when you're writing your model it might be slightly incorrect,
+and that incorrectness could mean,
+out of the 150 scenarios, two are incorrect.
+Or maybe you just slightly wrote something wrong and you actually produce 149 scenarios instead of 150
+and you have to realize as you're enumerating,
+oh, I don't think I ever saw this one type of list and I expected to see it.
+So the unit tests give the developer a way to, kind of, have a lightweight spot check of their software model
+and it's a practice that makes it feel a lot more familiar,
+a bit in the way - closer to how you would develop code and do a quick unit test,
+or, you know, especially on a complicated little method,
+making sure you covered your corner cases.
+But the other benefit that we ended up finding with the unit test is that
+once we had the definition of a unit test,
+there were a whole bunch of, like, automated software testing practices
+we could now look to support for a software model.
+And what we discovered was that the execution environment and the fact that we're dealing with these formal logics
+actually made a lot of those testing practices easier to automate
+and you got even more benefit because some of the hard problems for a language like Java or C++
+are actually pretty simple to solve on a model.
+So to illustrate,
+I'm going to step over an example for mutation testing.
+So mutation testing is one of the research areas in software testing
+and the idea is,
+if I have an original program,
+I can actually intentionally mutate the program and introduce changes to it
+and by doing that I want to make sure that I have a test that is capable of detecting this change.
+So in this original there's two different mutants on the screen here.
+So for the first mutant,
+if I have a test where x is 0 and Y is 1,
+I'll observe a difference in output - the original will produce zero as a result and the mutant will produce one.
+However for mutant two,
+no input will distinguish it from the original program:
+it happened to be a logically equivalent change to the program.
+We call that a equivalent mutant and it's a really hard problem to solve in these imperative programming languages,
+you know,
+right now you have to do just kind of a manual analysis of something we call propagation
+to see if it's ever possible to actually influence the output,
+you do a whole bunch of analysis through the control flow to reach the conclusion,
+oh,
+this is an equivalent mutant.
+So the existence of those equivalent mutants really impacts the applicability of doing an automated mutation testing environment
+even though it produces really strong tests,
+it just has that downside.
+However,
+in a software model,
+if we create a mutation,
+the modeling language itself allows us to ask,
+is there ever a situation in which these two formulas differ from each other?
+So we can actually just ask the language to check for equivalence
+and if they're not equivalent - if they do differ - then we do have the support in these languages
+to actually generate that scenario that shows their difference in behavior,
+so we can automatically create this test that kills the mutant.
+And so we are actually able to solve these really hard problems - to do mutation testing in other languages -
+really, really simply in the modeling language,
+just leveraging the nature of its execution.
+We've gone on to do things like fault localization - trying to automatically figure out what part of the model is incorrect given some failing test -
+and automated repair - to then go on and correct that faulty location so that all tests pass -
+and we've encountered similar benefits where
+some of these hard problems are just easier.
+For instance,
+for repair,
+if you think about a Java statement,
+there's so many different valid forms that Java statement can take - the grammar is so open -
+but in a modeling language the grammar is much more constrained,
+so our search space is smaller and it's easier to then do something in the realm of an exhaustive search
+that will really be able to explore a lot of repairs
+without having the problem of running for 24 plus hours just to try and create an automated patch.
+So that's kind of the key idea of my research direction in general,
+is this idea that software modeling can have a lot of benefits,
+but it has a lingering reputation that it's hard to scale and it's hard to use.
+Research has heavily focused on addressing the scalability issue with real dividends -
+there's a lot of work coming out, getting cited, including Amazon citing some work with TLA+ and SMT solvers
+about actually deploying these formal methods in the real world -
+but the ease of use problem still remains.
+And so my research group's focus has been the idea that unit testing,
+and everything that that enables,
+can help ease the adoption of software models.
+And it turns out that these techniques can be done in a really nice automated way
+because of the environment that we're working in.
+And also, just a takeaway that I had is,
+if you happen to be working with a non-traditional language that might not have built-in unit tests,
+I would consider investing in trying to come up with a structured unit testing environment.
+You might be surprised by all the further benefits and unique automation opportunities that exist given your unique execution environment.
+Fantastic, I particularly love this, it's very near and dear to my heart,
+this idea of unit testing and the value and how we can think about expanding that.
+I think it's especially interesting,
+and I'm gonna give  - I'm gonna ask my question to give a chance for another questions to come into the the Slack over here -
+but when we're talking about unit testing in the context of software models,
+right,
+we're talking about an abstraction of a piece of software,
+which I think makes sense to be thinking about validation at that point.
+Have you thought about, or have you done any work that gives any insights into,
+the value beyond that, right,
+like if I'm doing unit testing at my software model level,
+does that buy me something when it comes time for implementation,
+when it comes time for maintenance,
+when it comes time for - for some of the tasks that come later down the pipeline,
+any insights you can share or thoughts on that?
+Yeah,
+so there is definitely a whole body of work dedicated towards taking those scenarios that get produced
+and trying to figure out how to automate those
+and to test over the implementation,
+but as mentioned,
+the fact that it's a bounded exhaustive search -
+oftentimes that runs quickly into scalability issues and maybe even a lot of redundant paths through your tests
+and some of these scenarios are very similar but slightly different,
+so there's a whole body of work dedicated to creating a more interesting subset of scenarios.
+And so we've looked into trying to map in the idea of coverage metrics to a model
+and then you generate tests for that coverage
+and then those scenarios,
+you would then translate into tests over the implementation and it would be guided by model coverage
+and then the goal is hoping that that leads to interesting coverage within the implementation.
+We haven't actually studied how well that last part connects in,
+but I think that that is definitely the next step,
+is figuring out how to connect it better to the implementation.
+Fantastic,
+and so we do have one more question I want to make sure we get squeezed in before we get to the next talk,
+in the chat,
+we have a question from Greg that says,
+what's the best intro to this kind of modeling for a working programmer
+who never did or doesn't remember - most of us - a discrete math or formal methods course?
+Yeah,
+so the language I use in the slides is called ALLOY a-l-l-o-y
+and it has been kind of a focus in undergraduate courses that are looking to start introducing formal methods
+because it does, as output, automatically produce graphical scenarios.
+Some of the other scenario finders will produce text outputs of the scenarios
+and so that's not as approachable.
+And there's recent work to create - that has created this website called Alloy for Fun,
+and so it is a website you can go to,
+it has Alloy installed and running in its backend
+and you just type in - it gives you prompts to fill in -
+and then it has a back-end oracle it's checking you against
+and so it'll show you examples of scenarios that you allowed that the oracle didn't or vice versa
+to help correct you,
+so Alloy is something that has been used a bit more more in the educational perspective
+so I would say resources like that would be beneficial.

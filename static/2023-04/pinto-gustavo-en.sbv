@@ -1,0 +1,452 @@
+0:00:00.660,0:00:04.320
+Thank you Greg, Mike, Brittany, for the invitation.
+
+0:00:04.320,0:00:08.280
+This is my great pleasure to be here to talk about CDD,
+
+0:00:08.280,0:00:19.200
+and CDD is design technique that we built and we are using at zup, a Brazilian tech company,
+
+0:00:19.200,0:00:26.220
+to build software - to build real world software. And today my goal here is to convince you that CDD
+
+0:00:26.220,0:00:30.600
+could be an interesting approach to you for your next product.
+
+0:00:30.600,0:00:37.560
+So let's just get started with these - these figures here,
+
+0:00:37.560,0:00:43.800
+which are a lot of code but they all come from the same class,
+
+0:00:43.800,0:00:47.700
+actually the class from this Spring framework.
+
+0:00:47.700,0:00:52.080
+If you are a Java developer, chances are that you have used Spring in the past.
+
+0:00:52.080,0:00:58.920
+So if this kind of thing - this kind of big class happens in Spring,
+
+0:00:59.640,0:01:05.280
+are well - very well known and popular products - chances are that it may also
+
+0:01:05.280,0:01:12.780
+happen on our own products and our own projects. And this figure here raised many questions:
+
+0:01:12.780,0:01:17.160
+how can we refactor, where are the points that we should refactor,
+
+0:01:17.160,0:01:21.060
+how should we start the refactoring, help spot the bug,
+
+0:01:21.060,0:01:23.460
+where is the bug, how many bugs,
+
+0:01:23.460,0:01:27.660
+and how can we test this code to make sure that there is a bug?
+
+0:01:28.500,0:01:34.260
+And all these questions can be summarized in this simple question here:
+
+0:01:34.260,0:01:38.460
+so how to reason about this code - so how to understand this code?
+
+0:01:39.240,0:01:48.180
+So the idea of CDD is to provide a way to improve how developers understand and reason about code.
+
+0:01:49.860,0:01:53.880
+Last year, I guess, Kent Beck, who is a well-known practitioner,
+
+0:01:53.880,0:01:57.780
+wrote these tweets that I would like to just read very briefly for you.
+
+0:01:57.780,0:02:04.320
+"The goal of software design is to create chunks or slices that fits into the human mind."
+
+0:02:04.320,0:02:10.020
+So going back to the last slide, can we fit that one single class on our mind?
+
+0:02:11.280,0:02:15.780
+I bet we can do. "Software keeps growing
+
+0:02:15.780,0:02:21.420
+but the human mind maxed out so we have to keep chunking and slicing differently."
+
+0:02:22.140,0:02:28.800
+So if you happen to have to leave, to stop early, this is the mess that I'd like to to show to you.
+
+0:02:28.800,0:02:33.060
+The goal of software is to keep chunking and slicing differently.
+
+0:02:33.720,0:02:39.900
+CDD is actually another approach - our simple approach - for chunking and slicing.
+
+0:02:39.900,0:02:45.840
+This is the goal of CDD. And how does this happen with CDD?
+
+0:02:45.840,0:02:48.240
+Has two goals. The first one is to
+
+0:02:48.240,0:02:53.640
+reduce the developers' cognitive load. So going back to our first example,
+
+0:02:54.420,0:02:56.880
+how can we really understand that code?
+
+0:02:56.880,0:03:00.840
+How much effort should we place to understand that one single class?
+
+0:03:01.860,0:03:06.000
+Maybe some good effort. And how does CDD
+
+0:03:06.780,0:03:12.540
+try to reduce this cognitive load? It does so by posing a limit on the
+
+0:03:12.540,0:03:16.920
+number of items that developers could use in a single class or a single file.
+
+0:03:16.920,0:03:20.580
+So essentially, you can use whatever
+
+0:03:20.580,0:03:25.860
+technique or approach that you - you want, you find fun to use, you like to use,
+
+0:03:26.640,0:03:34.260
+but you should do that with a limit. And CDD brings this idea of limits from this
+
+0:03:34.260,0:03:39.840
+theory - from this psychological theory, which is the magical number seven theory.
+
+0:03:39.840,0:03:44.040
+It's a well-known and well-accepted theory from the psychological domain.
+
+0:03:44.940,0:03:53.640
+And very briefly this theory says that we as human beings are only able to process, like, seven plus
+
+0:03:53.640,0:03:58.920
+or minus two - minus two units of information in our short-term memory.
+
+0:03:59.460,0:04:03.660
+If we receive - if we receive more information at the same time,
+
+0:04:03.660,0:04:07.320
+chances are that we lose our ability to process that information.
+
+0:04:08.640,0:04:14.160
+So this graph here pretty much shows what - what goes on when we receive more information.
+
+0:04:14.160,0:04:19.920
+If you are processing just one, two, or three informations at the same moment,
+
+0:04:21.120,0:04:25.200
+we can handle a very good understanding about what is going on.
+
+0:04:25.740,0:04:34.020
+But when we receive four, five, six, seven, units of information at the same time,
+
+0:04:34.020,0:04:37.200
+we drastically reduce our ability to process that information.
+
+0:04:37.200,0:04:41.040
+That happens when we are trying to give a talk and my kid is calling me,
+
+0:04:41.040,0:04:45.300
+my phone is beeping, the - the the car is
+
+0:04:45.300,0:04:49.080
+honking on the streets, and so on, and I eventually lose my ability to
+
+0:04:49.080,0:04:54.600
+understand what what I was doing. So CDD has this idea of limits.
+
+0:04:54.600,0:04:59.460
+We should place a limit on the items in the source code that developers could use.
+
+0:05:00.060,0:05:09.000
+And if a given class or a given file is over that limit it's time to refactor.
+
+0:05:09.000,0:05:15.360
+So CDD has two main benefits here. It shed some light on the
+
+0:05:15.360,0:05:23.220
+complexity of the source code and it gives to the developer a tool that is useful to decide
+
+0:05:23.220,0:05:30.300
+when to refactor - when do we factor? We refactor when you are over the limits.
+
+0:05:30.300,0:05:35.520
+So here on the right I just have here an example of a single class
+
+0:05:35.520,0:05:43.080
+that uses CDD by using these ICP annotations. So every time that I'm using this class here
+
+0:05:43.080,0:05:48.660
+that I suppose increase the complexity - that the teams believes that
+
+0:05:48.660,0:05:52.680
+could increase the complexity - we should add this annotation here,
+
+0:05:52.680,0:05:54.120
+ICP, ICP,
+
+0:05:54.120,0:05:55.800
+ICP. At this moment
+
+0:05:55.800,0:06:03.960
+we should do that manually and the team is - is in charge of summing all these annotations here
+
+0:06:03.960,0:06:07.860
+to make sure that the code is over or not the limits.
+
+0:06:07.860,0:06:11.040
+So this is the idea of CDD, basically it is,
+
+0:06:11.040,0:06:14.820
+you should go to the your team, talk to the team about,
+
+0:06:15.480,0:06:17.880
+hey, we have a lambda expression here,
+
+0:06:17.880,0:06:24.000
+if we use a lot of lambda expression would this increase the complexity of code?
+
+0:06:24.000,0:06:27.420
+If so, we should now tag these lambda expressions.
+
+0:06:27.420,0:06:32.040
+We have an if statement here. If we use a lot of if statements,
+
+0:06:32.040,0:06:34.320
+would this increase the complexity? If yes,
+
+0:06:34.320,0:06:40.260
+we should now tag this if statement. If we use certain kind of classes,
+
+0:06:41.460,0:06:46.080
+certain kind of variables, from certain kind of objects,
+
+0:06:46.080,0:06:49.320
+would this increase the complexity? If so,
+
+0:06:49.320,0:06:52.680
+we should flag this element. So this is the objective:
+
+0:06:52.680,0:06:55.260
+you should flag the elements that increase the complexity
+
+0:06:55.260,0:07:00.780
+and if it's over the budget or limits budget, you should refactor.
+
+0:07:02.160,0:07:05.760
+So the last part of the talk I just would like to show to you
+
+0:07:06.780,0:07:12.540
+our experience on using to build Handora. Handora is this training platform
+
+0:07:12.540,0:07:15.780
+that we built at Zup and Zuppers go there
+
+0:07:15.780,0:07:23.340
+to learn new technologies, new frameworks, and so this platform is built using four five
+
+0:07:23.340,0:07:29.880
+servers - sorry five services, and you - we have used CDD to
+
+0:07:29.880,0:07:35.460
+build three of these services here. So I have a couple of slides here left
+
+0:07:35.460,0:07:40.740
+and I just would like to show to you this which I believe is the most interesting one.
+
+0:07:40.740,0:07:54.060
+So here I have a figure when the red line means the average number - size of the classes
+
+0:07:54.060,0:08:01.860
+and the blue line means the number of classes. So through our software evolution we are
+
+0:08:01.860,0:08:07.500
+increasing the number of classes in the product. It makes sense because software is growing
+
+0:08:07.500,0:08:12.540
+so we are also growing the number of classes that we have in the product.
+
+0:08:13.320,0:08:21.480
+However on the other hand we have this red line here which says that the number of classes -
+
+0:08:21.480,0:08:25.980
+the size of classes in terms of length of codes - increases in the beginning,
+
+0:08:25.980,0:08:32.700
+but at some time it does not increase that much - it started to flatten at some
+
+0:08:32.700,0:08:36.960
+moment - at some time. And this thing here is
+
+0:08:36.960,0:08:43.260
+what we believe is one of the benefits of CDD. Although we are increasing - almost linearly
+
+0:08:43.260,0:08:50.580
+increasing the number of classes in the product, the size in terms of lines of code
+
+0:08:50.580,0:08:56.940
+are not increasing at the same speed - at the same growth of the number of classes,
+
+0:08:56.940,0:08:58.800
+they are more or less stable.
+
+0:09:01.440,0:09:09.840
+This also says that - this figure also says that although we do have a small number of sizes,
+
+0:09:09.840,0:09:14.100
+we do also have some sizes that are a bit over the limits,
+
+0:09:14.100,0:09:17.280
+so we do have the limits, but we also understood that
+
+0:09:17.280,0:09:24.180
+for some kind of classes - domain classes - we may not have that limits very well done.
+
+0:09:26.220,0:09:30.240
+Another figure that I want to show to you is about this study,
+
+0:09:31.260,0:09:36.900
+which says that developers should strive to keep their methods under 24 lines of code.
+
+0:09:36.900,0:09:45.180
+And we did a an experiment to make sure - to understand whether this product is under or above
+
+0:09:45.180,0:09:52.260
+this threshold that the paper suggested. And we notice that 92% of the methods
+
+0:09:52.260,0:09:59.160
+of this product are under this limits. So even though developers were not taught to, hey,
+
+0:09:59.880,0:10:07.260
+write small methods because of that paper, they eventually using CDD achieve it - the
+
+0:10:07.260,0:10:12.060
+same goal of having the small methods. When talking to one of the developers,
+
+0:10:12.060,0:10:18.360
+they said that every unit of code is impacted because we know that the limit is
+
+0:10:18.360,0:10:22.980
+and what goes into that limit, so the limit is for the classes and
+
+0:10:22.980,0:10:26.520
+also the methods are impacted. Finally,
+
+0:10:26.520,0:10:32.220
+you also understood that CDD could also impact the size of methods, the testing methods,
+
+0:10:32.220,0:10:39.360
+and in this case we noticed that on average that is 80 lines of code per testing method
+
+0:10:39.360,0:10:43.140
+and Handora has a good coverage, so generally speaking,
+
+0:10:43.140,0:10:49.320
+is - we also suggest that CDD could also impact the size of the testing methods.
+
+0:10:50.880,0:10:57.120
+Therefore what we learned so far is that this seems to help to design these small classes.
+
+0:10:57.840,0:11:03.000
+CDD also seems to help designing small methods and small testing methods
+
+0:11:03.000,0:11:05.340
+but as we showed to you,
+
+0:11:05.340,0:11:11.820
+there is some good effort to use CDD because developers have the flag,
+
+0:11:11.820,0:11:16.800
+the annotation in the source code. We wrote some static analysis tools
+
+0:11:16.800,0:11:22.740
+but we understood that the two should be - should be very well integrated with the IDES
+
+0:11:22.740,0:11:25.560
+otherwise developers will not use them - the tools.
+
+0:11:25.560,0:11:32.040
+And we also try - we are also trying to motivate other teams to use CDD and,
+
+0:11:32.040,0:11:38.460
+because of time management and time pressure from their agendas,
+
+0:11:38.460,0:11:45.600
+it's not easy to adopt and to understand. With this I close my talk and I would be happy
+
+0:11:45.600,0:11:48.060
+to answer your questions. Thank you.
+
+0:11:49.320,0:11:53.760
+All right - thank you very much Gustavo, we do have some questions coming in,
+
+0:11:53.760,0:11:57.360
+and the first one is, can this CDD concept be
+
+0:11:57.360,0:12:01.500
+linked to existing easy-to-compute metrics like cyclomatic complexity.
+
+0:12:03.600,0:12:13.620
+Yeah it could be if you happened to flag the same branches and
+
+0:12:13.620,0:12:20.040
+things that the cyclomatic metric measures. If you happen to flag the same items it could
+
+0:12:20.040,0:12:21.420
+be a proxy, but,
+
+0:12:21.420,0:12:24.660
+as we - as I showed in the example, you can also flag, like,
+
+0:12:25.800,0:12:32.100
+classes that deal with the databases, classes that deal with the user interface,
+
+0:12:32.100,0:12:37.860
+so in that case, cyclomatic measures may not help.
+
+0:12:38.820,0:12:43.020
+Okay, and a similar question,
+
+0:12:46.500,0:12:49.500
+I'll just read this one out. Surely we must have significantly
+
+0:12:49.500,0:12:53.700
+under seven things to think about since we need the remaining short-term memory
+
+0:12:53.700,0:13:01.740
+to actually do the thinking about the problem, so how much - how many things can we have in
+
+0:13:01.740,0:13:05.520
+the code and still have capacity left over to think about what code to write next?
+
+0:13:07.380,0:13:10.380
+Yeah right, I - so what
+
+0:13:10.380,0:13:16.260
+what - what happens in the teams is that the team should decide what part of the code
+
+0:13:16.260,0:13:23.100
+they should measure, they should flag, right, so if the team decides that only these small
+
+0:13:23.100,0:13:30.120
+classes here and these other cyclomatic kind of cyclomatic measures should be flagged,
+
+0:13:30.120,0:13:34.320
+so the team just go for it. So CDD is mostly about what
+
+0:13:34.320,0:13:42.420
+the teams believe would be important to measure. If they believe there are many things to measure,
+
+0:13:43.260,0:13:45.780
+like a list of a hundred items,
+
+0:13:45.780,0:13:51.840
+that will be also hard to understand all the items that should be flagged,
+
+0:13:51.840,0:13:57.360
+but essentially we tell to the teams that they should measure like, five to six to seven items.

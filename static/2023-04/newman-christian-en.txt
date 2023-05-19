@@ -1,0 +1,176 @@
+Next up we have Christian Newman for the last - for the hour here - who's going to talk about how we can craft strong identifier names.
+Christian - educate us!
+All right - can you all hear me?
+Perfect.
+Great.
+So my name is Christian I'm the head researcher at the SCANL laboratory,
+so if you enjoy what we talk about today please feel free to visit our website which you can find at the bottom of this slide scanl.org.
+So today I wanted to talk to you about identifier names,
+and so on this slide you see several different types of identifiers,
+some of them have one or two different words in them,
+some of them have prepositions,
+but a lot of them probably seem a little familiar to you
+because you've probably seen identifiers that look like these
+or perhaps even identifiers that look exactly like these
+and I want you to keep that in the back of your mind as we're talking
+because we're going to discuss why some of these look familiar to you as we go through.
+So one question I wanted to ask about these is, well, are they good identifiers?
+And if we kind of scan back here you'll probably look at this list,
+you'll say, ah maybe,
+you know it depends,
+like,
+you look at the code and you might come to some conclusion,
+but the point here is that we would have to talk about it.
+As developers we'd have to perform code reviews,
+we'd have to look at the code,
+we'd have to come to some collective conclusion about the quality of these.
+And so I think identifier naming is at least partially subjective -
+it depends on the person that's reading it and on the code context and what the person is trying to convey.
+There's no objective quality metric for what makes a high-quality identifier.
+But we've all seen it, right,
+so everybody's looked at some code and they've been like, ah, this - I don't - I don't know what this is doing,
+why did they do it that way,
+what does PCL mean,
+why is this a single letter,
+I don't understand what this is
+I hate Hungarian,
+why are they using Hungarian,
+why is there an alphabet in front of my identifier.
+So we know bad identifiers when we see it,
+even if we don't always know exactly why it's bad or what makes it a bad identifier,
+we've all seen something that just made us kind of, you know, cringe.
+So a metric or some way of being able to understand the quality of these would be very useful.
+It could tell us - instead of us having to talk about it we could look at the metric
+and the metric says, hey, you know, this is good, and it could give us some reasons for why it's good,
+and we might you know look at those and say, okay, I understand why it's named that way now, it makes sense, okay, great.
+Unfortunately, making a metric for this is very difficult, right.
+There are different - and one of the big reasons for this is that there are different perspectives that each identifier has to satisfy.
+You could be talking to a student or an expert or a senior developer
+and each of these groups needs a different kind of identifier.
+A senior understands the idioms and the - and the terminology and the different grammatical structure of identifiers that software engineers use,
+whereas a student has never seen it before.
+And I want you to pay attention to that because students don't understand the language of software development
+whereas a senior does,
+and there's something important there,
+because what I'm saying here is that we've created a language for ourselves internal to the software development community,
+which is how we convey the meaning of software to one another.
+And people outside of that community don't understand what we're talking about using this,
+even though they might speak the same human languages we do so -
+they might all speak English but they don't understand what we're talking about.
+But program comprehension is critically important.
+It's the thing that we have to do before you do anything else.
+If you're going to add a feature,
+if you're going to fix a bug,
+you need to understand the software.
+So we actually really should be paying attention to this - to this phenomenon.
+Okay, so what makes this hard?
+Well over the course of of decades,
+we as developers have created this sub-language and the sub-language, which is based on a human language -
+so for a lot of us that would be English but it can be other human languages as well -
+and this sub-language specializes English into certain grammatical phrases and idioms that we use to describe software -
+to describe the behavior of software.
+On top of that,
+this is 70% of the code,
+so if you look at the characters in the code,
+70% of all characters in the code are an identifier,
+and so if you don't understand that sub-language that we're using then you don't understand the code,
+you can't read it,
+it's a foreign language too essentially.
+And we - and the other thing to realize here is that we didn't design this language but we did create it, right,
+so as developers we all evolved this language over time to deal with historical contexts.
+So for example,
+old languages used to limit the number of characters that you could use to - just to to create a variable.
+This forced us to have to use much shorter speech to say the same amount of text that you would say in a sentence, right.
+So we created this but we didn't design it up front -
+we didn't come up with its rules,
+we had to evolve it to to deal with our jobs and our - and our education.
+So the thing that my lab is trying to do is study this sub-language,
+to understand what are the rules that we have collectively curated over time so that we can make the rules explicit,
+so that everybody understands what they are,
+find ways to measure and describe the effect that these rules have on comprehension for different types of readers,
+so for novices versus experts, for example,
+and use this understanding to create better name creation, appraisal, and maintenance approaches.
+So I wanted to talk to you today about one particular approach
+and that's an approach that my lab has been studying a lot lately,
+which is grammar patterns.
+The way that you get a grammar pattern is you take an identifier -
+so you can see two on the screen here -
+you apply a splitter -
+the splitter splits these identifiers into their constituent words -
+and then you apply a part-of-speech tagger that is specialized for the context of software,
+because remember,
+because software follows a different grammatical structure,
+you can't just take it off the shelf part-of-speech tagger you you need to use specialized NLP techniques to deal with these things.
+And what we did was,
+we did a study where we took a lot of code and we looked through how this code -
+or we looked at the identifier name structure for all this code,
+so we collected a bunch of grammar patterns and we looked at how they were being used in the software,
+and so I want to take a quick look at this.
+If you scan down in this little catalog,
+what we did was
+we basically took the taxonomy and we listed out every single pattern that we found.
+So these are grammatical structures.
+So the first one here is a noun phrase.
+What a noun phrase is, is a sequence of noun modifiers followed by a head noun.
+And so we can see examples of that down here where we have the head noun "label".
+The head noun typically represents what the - what the entity - what the variable actually is trying to convey in the code,
+and then the words that come to the left, the noun modifiers, are descriptive,
+so they function as adjectives.
+In fact noun modifiers are what we call noun adjuncts,
+which are effectively nouns that are posing as adjectives.
+And so in this case what we have is a label that is specifically a selection width label,
+so this is a descriptive of the type of label that we're talking about.
+If we go down we'll see prepositional phrases.
+Prepositional phrases tend to be identifiers that deal with, for example, conversion,
+so converting to a string or performing some kind of an event,
+so, like, "on click", "on button press", that kind of stuff,
+and so what I want you to kind of get,
+since we don't have enough time to go through all of these,
+is that different patterns correlate to different types of behavior in the software.
+And so really what we're looking at here is a glimpse of this sub-language that I've been kind of talking about up to this point.
+We've created these patterns of speech that allow us to convey behavior very quickly to one another
+without having to be very explicit about what - what nuances there are under the text - there's a lot of subtext here.
+And so these are some of the basic natural language phrasal structures that we as developers have created over the last 50-100 years or whatever.
+So what we did with these is,
+we created a little bit of a tool -
+this is just kind of an initial way to start trying to address the problem -
+and what this tool does is,
+it looks at the grammar patterns in your code
+and it looks at some of the some of the surrounding code
+and it gives you a recommendation.
+So in this case we have the variable "characters".
+Our tool sees that the type of this is singular so it's character,
+and it's recommending that you not use a plural,
+but instead use a singular noun,
+so basically make this "character" singular instead of "characters".
+And so that's just a quick example of what this tool does.
+And note here that it gives examples of what it's talking about when it gives these patterns,
+and also an explanation,
+which are two things that we think are very, very important for these types of tools.
+So our goal for this work in the future is to fully explore the diversity of grammar patterns,
+so we - there are more of these,
+we want to find out how many of these exist
+so that we can again make them explicit.
+We want to create data-driven naming guidelines,
+so this is sets of measurements that can look at different aspects of the identifier name -
+does it contain abbreviations, does it contain domain terminology, etc.
+And we want to make these so that we can understand how they affect the human reading it,
+because if - because again,
+if you don't understand who is trying to read the code then you can't give a metric that tells you how easy it is for them to read it.
+If I don't know who's looking at this then I can't tell you if this is a good identifier for them or not.
+And then we want to create a framework that optimizes,
+or that helps us optimize names -
+that prioritizes the reader and explainability.
+So another core tenant to this is that if you can't explain to people why this is good or bad or what is good or bad about it
+then they can't make good decisions about whether this is a recommendation that they should be taking.
+So if we just give them a black box that tells them what the best thing is they won't be able to tell me if this is good or bad
+because they don't know why the box is recommending that - that particular pattern to them.
+And so then our last goal is obviously educating developers at all levels about this language
+so that they can correctly express themselves when they're -
+so they can express themselves as optimally as possible to others when they're writing code.
+And so that's the end of my presentation.
+If you're, again, if you're interested,
+you can visit our website at scanl.org,
+the little QR code takes you to our - the name structure catalog
+which also contains links to papers in our webpage if you're - if you're looking to find those.
+And that's it - thank you.

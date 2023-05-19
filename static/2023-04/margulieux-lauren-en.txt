@@ -1,0 +1,175 @@
+I wanted to start by thanking the organizers for putting me here after Thomas
+because the very first thing that I'll talk about is a good follow-up to what he was talking about.
+So I'm Lauren Margulieux,
+I'm professor of Learning Sciences at Georgia State University in Atlanta, Georgia
+and I was trained as a cognitive psychologist.
+So that means I was trained in how the brain works and in particular I focus on learning and computer science education.
+So today I'm going to share a few things software developers should learn about learning
+and this is part of a bigger paper that we have that has ten things that software developers should learn about learning
+that will be published soon in Communications of the ACM,
+and my co-authors on that are Neil Brown from King's College London and Felienne Hermans from the Vrije University in Amsterdam.
+And I wanted to start with who this talk is for,
+because this talk isn't for just students and junior engineers who have a lot of learning left to do.
+It's also for engineers who are learning a new tool or skill which is pretty much everyone at some point.
+It's also for mentors who are working with junior mentees or who are teaching their team a new tool or skill.
+It's also for those involved in recruitment and hiring who want to hire people who will learn new tools and skills
+and then it's also for developers of new tools who want people to learn how to use their tool.
+So all of these people could benefit from understanding how people learn and process new information.
+So the first tip I want to share is that experts reason and beginner are - experts recognize and beginners reason,
+which reminds me of this Einstein quote,
+which is that it's not that I'm so smart I just stay with the problems for longer.
+And this highlights that the real difference between an unsolved problem and a solved problem
+is the amount of time that it takes to solve it.
+And the real difference in the amount of time it takes is your expertise.
+So an expert will look at a problem and they will match the problem, as a whole or in large pieces,
+to a problem they already know how to solve.
+Novices don't have this luxury of expertise,
+so they have to break down the problem into a lot more pieces and this gives them what we call a larger problem-solving space,
+so there's a lot more unknowns and a lot more - a lot more information that they're processing when they are solving a problem.
+So in Thomas's example that we just saw of a maze
+a novice would have a very detailed maze where they could make a lot of wrong turns
+and an expert would have just a few little things that they'd have to navigate.
+So for example an expert might look at a problem and immediately recognize, this needs a counting loop - easy - done.
+A novice might look at the same problem and say,
+oh does this need a loop or a conditional?
+And if it's a loop, what type of loop does it need?
+And once I pick a type of loop, what are the operators and expressions?
+So the real benefit of expertise is that it's narrowing down this problem-solving space,
+saving you a ton of cognitive effort,
+and letting you take in more information to solve problems.
+So for that counting loop,
+an expert might just see that it needs a counting loop and they might just create a counting loop
+whereas an expert - or a novice might need to break that down into 10 different steps.
+Because another thing expertise gives you is,
+it automates a lot of low-level skills that allows you to jump straight up to higher order skills.
+So the takeaway is that if beginners can't do something now it doesn't mean that they'll never be able to do it,
+but they do need to practice solving problems to identify patterns and to practice the component steps so that they can automate them.
+And this connects to the next tip,
+which is that predictors of programming ability are unclear.
+So expanding on the last take away that just because you can't do something now doesn't mean you'll never be able to do it,
+we're also not that great at predicting what you will eventually be able to do.
+So there's two sorts of mindsets when we're trying to predict programming ability:
+there's the aptitude mindset that says you were born with it,
+and if you're not good at programming you'll never be good at programming no matter how much practice.
+The other side of that is the practice mindset,
+which is,
+as long as you practice and put enough effort in you can do anything that you want.
+Of course neither of these extreme views is correct.
+So while it is true that pretty much anyone could pass an introductory physics class with enough practice and effort,
+it's also true that practically no one is going to get a Nobel Prize in physics no matter how much they practice.
+So the real answer lies somewhere in the middle
+and we're going to put aside practice for now because that's sort of something that we can manipulate and deal with after the fact.
+So what we try to do especially when we hire people is,
+we try to predict aptitude.
+However we're really, really bad at it.
+So some failed predictors of aptitude are your prior experience - so what you can do now,
+the programming languages that you already know,
+your prior math experience -
+none of these are good predictors of aptitude.
+Personal characteristics like race, gender, age, or your perception of CS are also bad predictors of aptitude.
+Even your preferences - so what your academic major is or was,
+or whether you consider yourself a humanities or a science person -
+these are not good predictors of your ultimate programming ability.
+The best predictors that we have are general intelligence and working memory capacity,
+which is how much information you can process at once.
+However these aren't really good predictors of aptitude,
+they're better predictors of the rate at which you will learn.
+So the takeaway from this tip is that many of the perceived predictors of programming aptitude that we have
+actually have no empirical evidence.
+And to me this says that when we're trying to measure aptitude - aptitude is not the limiting factor, actually,
+practice is the limiting factor.
+So there might be some edge cases where you're trying to hire a CEO that maybe you should look at prior experience,
+but based on what most of the hiring situations are
+none of these predictors are really good at predicting aptitude.
+The next tip is that understanding a concept goes from abstract to concrete and then back again.
+So I think everyone's had this example where someone explains something to you
+and it goes completely over your head.
+So a good strategy when that happens is you say,
+could you give me an example,
+and this scenario represents this constant tension between experts and novices,
+because experts want to describe a concept in an abstract way that allows you to solve a lot of different problems -
+I mean,
+they really do mean well,
+but when you're a novice and you don't have any concrete examples that you can connect to that abstract concept
+you don't have any idea what they're talking about
+and in effect you can solve absolutely no problems.
+So the takeaway is that you should cycle between these abstract concepts and concrete examples enable -
+to be able to learn way concepts in a way that allows you to solve different problems.
+So this means that experts need to provide abstract explanations as well as concrete examples
+and then novices need to be able to interrogate concepts that they don't understand,
+collect a bunch of concrete examples,
+and therefore find the underlying principles that allow them to solve a wider range of problems.
+There is sort of a tension in the field of whether you should start with abstract or start with concrete.
+My rule of thumb is the more novice a person is,
+the more you should start with concrete examples and move to abstract compared to the other way around.
+And then the last tip I'll talk about is that the internet and AI have not made learning obsolete, unfortunately.
+So we've had this debate before when the internet came along
+and suddenly you can find all the documentation that you want at your fingertips,
+you didn't have to go searching through manuals,
+we thought this would make programming so easy.
+But it didn't,
+and so the real debate is,
+what is the role of the internet, of AI, and other tools,
+and what is the role of just good old-fashioned learning.
+So the internet and generative AI like Codex or Copilot -
+they're really good at low-level details,
+but using them has a cost.
+So the first cost is task switching.
+So when you're using Copilot to write code you're both writing code,
+evaluating what Copilot's giving you,
+and then the other task is switching between these two different types of tasks.
+You can get better at this and tools can make it more seamless,
+but it still has a cost.
+The major cost, however, is that when you're offloading information to AI and you don't have those low-level skills practice,
+then you're not enabling yourself to do higher-order skills like we talked about with the first tip.
+You have to practice those low-level skills in order to automate them
+and unlock higher order skills.
+So AI is really good at predicting code for a very predictable situation
+but right now it's not good at a lot of things like creativity,
+dealing with uncertainty,
+or making a code base that's maintainable and debuggable.
+So we need to still be learning those low-level skills
+so that the programmer who has to do those tasks can then do those tests.
+So the takeaway is that developers still need to learn the conceptual information that's offloaded to tools.
+And then as a summary,
+what can you do to support learning?
+If you're a learner,
+make sure that you're practicing problems to identify and apply patterns.
+For hirers,
+make sure that you're considering how you're trying to predict programming aptitude,
+if you're trying to predict programming aptitude,
+especially given that we don't have good research about how to do that.
+For mentors,
+make sure you're providing concrete examples with abstract concepts.
+Mentees, make sure that you're aggregating examples to discover those underlying principles.
+And then everyone,
+make sure that you understand the low-level skills that you're asking AI to do.
+And if you want a book-long treatment of these sorts of things and a lot of others
+I recommend "The Programmer's Brain" by Felienne Hermans,
+one of my co-authors,
+and if you want just an article-long treatment,
+we do have a paper coming soon to Communications of the ACM that has 10 tips and it will be open source so that anyone can access it.
+And in the meantime, there is my email address.
+Thank you very much.
+Fantastic thank you so much - applause as if I'm the entire audience.
+Again, such great fantastic talks that are happening today,
+and I think the learning piece here,
+especially appreciate you bringing in the learning technologies and the really, well,
+I call them learning technologies because it seems like that's where we're headed with a lot of these inevitably,
+and so I think labeling it that seems appropriate.
+I kind of have a question pertaining specifically to that component, right,
+so, like, the idea that that AI would replace learning feels right, like, that that should not be the case obviously,
+but, like, what do you have to say about the kind of complementary nature that might be there.
+So you're talking about concrete to abstract, abstract to concrete -
+is there a role that these technologies can play such that we don't feel like we're using them as a crutch,
+but that they're more of an aid in the learning process?
+Do you have any thoughts on that?
+Well,
+so one of my favorite tools in learning is the use of analogies.
+So if you can ask a pro - an AI to solve a problem that's basically the same but has different surface level features,
+then you can compare those three, you know,
+say you asked it to solve three different problems,
+you can compare those three to get to those underlying principles.
+So you can use that as a tool to look at the differences and similarities and connect that to, well,
+this feature is common across them so that must be an important feature of solving problems like this,
+whereas this one's very specific to a certain type of problems so that doesn't really need to be part of what I learned.

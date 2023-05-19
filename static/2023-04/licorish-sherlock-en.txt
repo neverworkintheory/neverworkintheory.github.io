@@ -1,0 +1,140 @@
+I'm Sherlock Licorish, I am coming from New Zealand, and today I will actually answer the question,
+can genetic improvement enhance online code snippets?
+So the basis for the talk I suppose is in some regard related to problems earlier on assessment around the use of code.
+In this context it was language - large language models, but equally we sort of reuse code really nearly in today's world.
+Again touching on what Raula was just saying as well With some inherent trust.
+So we sort of look at to develop a community by improvement opportunities potentially.
+So the situation is this.
+We've got heaps of code online beyond the Q&A sites now we've got quite a few automatic generation of code happening and -
+and as a result of that of course we're reusing it
+and that is also established - fully established in the academic community
+where we can see reuse not only across open source projects and so on
+but equally even amongst the developers on these sites - the contributors of these sites.
+So how do we actually, sort of, take this as a good opportunity to sort of help the community somehow?
+So the challenge is, snippets can be incomplete and of course bug prone and equally we've observed errors
+not only in Stack Overflow but many of the platforms quite - quite significant errors.
+These observations extend students' work - so oftentimes students would copy code from online unaware of - of the bugs in in code
+and I suppose present those in a - in assignments and so on and other examples they submit.
+But errors also are prevalent in the open source community, amongst proprietary developers, and end users themselves report errors.
+A popular error there is highlighted the Nissan Connect EV where an end user actually was able to see code copied from Stack Overflow
+with comments from that code actually visible in the Connect system.
+So snippets are reused and they're available everywhere.
+So this is a challenge for the community,
+and the academic community is particularly aware of it,
+and so we've actually been researching these portals to see what are the issues that are prevalent there
+and how might we, I suppose, support the community with solutions.
+So one specific study actually looked at security
+and found the code copied from online to be reasonably insecure relative - the code that is actually in the code system,
+that isn't actually using copied code from online.
+And equally, code actually copied online was, sort of, accessed for the effort that is needed to make it usable
+and at times in the effort in the - in the, sort of, it is to sort of get caught and get a solution,
+sometimes developers can take more time trying to perfect that goal to make it palatable.
+But equally, code has been assessed for cohesion and coupling and all that,
+where it has been proven to be at times not as good as one would expect it to be.
+So the community is quite aware that there are issues with code online but we still use these snippets
+and I think it would be hard for anyone to claim themselves to be without sin in relation to the reuse of snippets from online.
+So we sort of use these snippets anyway,
+the question is, of course, not "if" - we know it will happen, that we will use it.
+So the current state of play as such,
+that recent research shows that much of the code that is actually available online is not necessarily generated or provided there for reuse as we do so.
+Typically, code online so that we can see that,
+it is actually given pretty much for us to actually, sort of, extend and perfect and to - and sort of provide it -
+provide our solutions in a way that is not necessarily intended just for copy and reuse.
+So the thing is,
+the developers online and the people who are providing these contributions are not necessarily to be blamed from that perspective,
+largely because they don't expect that we will reuse the code that is available online.
+So they do provide quite a bit of it.
+So they typically will provide at least two to three snippets for each piece of - for each solution that is provided on a Q&A site,
+whether it's code or Stack Overflow,
+there's abundance of code for every question that is answered.
+And equally, snippets will be under 100 lines of code,
+suggesting again that the - the community there isn't necessarily providing code wholesale to actually be wholesome and to solve all the solutions,
+but their is an abundance of issues beyond readability and reliability issues,
+there are also performance and security issues,
+and I suspect these large language models that are trained on online code potentially inherit many of these solutions
+as a firm was just alluded to.
+So there is - there are errors they're quite a bit of errors online.
+So we've been actually battling with this question of, how can we, sort of, help with the improvement effort.
+So we know we're going to use it, we know there are errors, can we, sort of, support the community somehow.
+So we've sort of tried with these questions for a couple of years now and -
+and me and my colleagues, particularly in Australia, decided, how can we, sort of,
+see how we might actually, sort of, use GI improvement techniques,
+to have a look to see how we might actually large scale help with this improvement level.
+So we've got a preliminary agenda here,
+where we had about 8000 snippets from Stack Overflow.
+This repository was used for other things so we sort of had some Java code
+and we we run it through a static checker - PMD - so I'm sure you all know what PMD is,
+but just briefly, it's sort of a static analyzer that checks for anti-patterns
+especially around various sorts of points from more readability related ones to security,
+and then we use GIN,
+and GIN is a genetic improvement framework,
+and genetic improvement essentially is nature-inspired computing.
+So it sort of looks at evolving a code space in a way that we might be able to sort of find the optimal solution to solve a problem.
+So in a nutshell we sort of mutate the code using some criteria that actually assess subsequent to the mutation of fitness
+and we've sort of promote more of the, sort of, stronger ones,
+the one that passes the fitness test against the one that doesn't.
+So we sort of assess in the first instance here performance related issues.
+So we try to actually run PMD first and we found quite a few errors, over 30,000 in this instance, of violations.
+Of course, as we said, these code snippets weren't necessarily copied - weren't necessarily provided to be wholesome,
+so we understand that these violations were given - it's - it should be allowed, in a way.
+We found 135 of the rules violated,
+and we singled out performance related rules,
+so stuff related to the use of strings and so on.
+And then we actually run the - the GIN random sampler and we mutaate eight different types of mutations,
+and we actually haven't done that from 770 patches that no longer had any performance issues.
+So essentially the mutations actually solve these issues,
+and of those patches,
+58 actually had compilable code,
+so we can actually compile the code and use the code.
+So we sort of check to see what was the sort of nature of the mutation that resulted in wholesome code
+and largely they were related mutations,
+but there are also a bit of other mutations that actually worked in - in particular, however,
+the ones that actually, sort of, resulted in most of the, sort of, solved issues were need related.
+There's some copyrighted ones as well.
+So this was encouraging in terms of what we found,
+but equally we found quite a few issues as a result of this as well.
+So we had of course false positives to deal with,
+and - and of course that meant that sometimes errors were reported that really errors.
+We needed to improve parsing and then of course crowdsource rules,
+we were shortened rules.
+Equally, we - we believe that we needed better sampling, better code sampling,
+and of course non-functional properties we could not have actually detected.
+Now I must caution that GIN is typically used with test cases but we didn't,
+so we run PMD, we run GIN, and then we run PMD again,
+so in some regard this - our result may be inflated,
+in that if we may have run some of the tests unit tests maybe some of the code may have failed.
+So we've got this published in this paper where we sort of followed up to look more in more detail at some of the mutations
+and so we sort of provide this there if you wanted to follow up on that.
+Thanks - I should extend thanks to the team,
+but beyond that too from the funding sources that supported the work,
+and also for the opportunity to present here, Greg and team.
+So I can probably repeat, sorry, revisit the question here,
+and in some regard I might say as opposed as a statement,
+I think genetic improvement might help to improve code.
+Thanks very much, happy to take your thoughts.
+All right thank you very much, Sherlock,
+again questions coming in from our viewers,
+and the first one harks back to a question asked earlier:
+who gets the credit for writing the code that's produced by these sorts of genetic algorithms?
+So - so the genetic algorithm in this context is used to improve the code I suppose if we sort of look at Copilot
+or one of the - the large language models,
+in reality I think we don't have legislation to, sort of, really police and to, sort of, look after this paradigm as we should.
+I think with time we're going to get there,
+but I think in the context of genetic improvement - genetic improvement is just providing a framework
+with which we might perform code experiments.
+Here the mutations are done to improve the code -
+code is online, and it's actually of course open for use in the case of Stack Overflow, for instance,
+it's given - the API - the SQL engine is given for us to query as it is.
+Whether or not that should be allowed by the community - at the moment I suppose isn't quite mature and ready to deal with that,
+so in the - in the current instance we use it as it's available.
+Okay and another question is,
+are these genetic algorithms fast enough that they can be used in real time to suggest code improvements or code alterations
+as the code is being developed?
+That's a very good question.
+So I think for the most part the more extensive frameworks will need computing resources,
+so it's not going to be easy for someone in an environment with low resource computers to actually use these frameworks.
+The thing is, however, I think in most contexts developers have got the sort of the framework or the environment
+that will allow us to use these algorithms with ease,
+and more and more they are designed for optimization such that if it is possible that we would be able to leverage them.
+But as with everything else it's, sort of, there's no one size fits all, I suppose,
+it's about having an assessment of your reality and then of course retrofit in a solution to suit your case.

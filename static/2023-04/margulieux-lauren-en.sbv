@@ -1,0 +1,500 @@
+0:00:01.920,0:00:05.220
+I wanted to start by thanking the organizers for putting me here after Thomas
+
+0:00:05.220,0:00:08.820
+because the very first thing that I'll talk about is a good follow-up
+
+0:00:09.480,0:00:12.660
+to what he was talking about. So I'm Lauren Margulieux,
+
+0:00:12.660,0:00:16.800
+I'm professor of Learning Sciences at Georgia State University in Atlanta, Georgia
+
+0:00:16.800,0:00:23.220
+and I was trained as a cognitive psychologist. So that means I was trained in how the
+
+0:00:23.220,0:00:27.720
+brain works and in particular I focus on learning and computer science education.
+
+0:00:27.720,0:00:31.980
+So today I'm going to share a few things software developers should learn about learning
+
+0:00:31.980,0:00:38.280
+and this is part of a bigger paper that we have that has ten things that software developers
+
+0:00:38.280,0:00:40.320
+should learn about learning that will be published soon
+
+0:00:40.320,0:00:44.640
+in Communications of the ACM, and my co-authors on that are Neil
+
+0:00:44.640,0:00:49.440
+Brown from King's College London and Felienne Hermans from the Vrije University in Amsterdam.
+
+0:00:51.120,0:00:57.180
+And I wanted to start with who this talk is for, because this talk isn't for just students and
+
+0:00:57.180,0:00:59.700
+junior engineers who have a lot of learning left to do.
+
+0:00:59.700,0:01:05.640
+It's also for engineers who are learning a new tool or skill which is pretty much
+
+0:01:05.640,0:01:08.880
+everyone at some point. It's also for mentors who
+
+0:01:08.880,0:01:13.920
+are working with junior mentees or who are teaching their team a new tool or skill.
+
+0:01:14.520,0:01:18.000
+It's also for those involved in recruitment and hiring who want
+
+0:01:18.000,0:01:24.600
+to hire people who will learn new tools and skills and then it's also for developers of new tools who
+
+0:01:24.600,0:01:29.520
+want people to learn how to use their tool. So all of these people could benefit from
+
+0:01:29.520,0:01:32.820
+understanding how people learn and process new information.
+
+0:01:35.040,0:01:39.000
+So the first tip I want to share is that experts reason and beginner
+
+0:01:39.000,0:01:43.740
+are - experts recognize and beginners reason, which reminds me of this Einstein quote,
+
+0:01:43.740,0:01:48.420
+which is that it's not that I'm so smart I just stay with the problems for longer.
+
+0:01:48.420,0:01:53.700
+And this highlights that the real difference between an unsolved problem and a solved problem
+
+0:01:53.700,0:01:58.920
+is the amount of time that it takes to solve it. And the real difference in the amount
+
+0:01:58.920,0:02:04.560
+of time it takes is your expertise. So an expert will look at a problem and they will
+
+0:02:04.560,0:02:10.500
+match the problem, as a whole or in large pieces, to a problem they already know how to solve.
+
+0:02:11.160,0:02:16.020
+Novices don't have this luxury of expertise, so they have to break down the problem into a
+
+0:02:16.020,0:02:20.340
+lot more pieces and this gives them what we call a larger problem-solving space,
+
+0:02:20.340,0:02:24.360
+so there's a lot more unknowns and a lot more - a lot more information that they're
+
+0:02:24.360,0:02:29.940
+processing when they are solving a problem. So in Thomas's example that we just saw of a maze
+
+0:02:29.940,0:02:34.560
+a novice would have a very detailed maze where they could make a lot of wrong turns
+
+0:02:34.560,0:02:38.040
+and an expert would have just a few little things that they'd have to navigate.
+
+0:02:39.300,0:02:43.260
+So for example an expert might look at a problem and immediately recognize,
+
+0:02:43.260,0:02:49.140
+this needs a counting loop - easy - done. A novice might look at the same problem and say,
+
+0:02:49.140,0:02:52.440
+oh does this need a loop or a conditional? And if it's a loop,
+
+0:02:52.440,0:02:55.200
+what type of loop does it need? And once I pick a type of loop,
+
+0:02:55.200,0:03:01.320
+what are the operators and expressions? So the real benefit of expertise is that it's
+
+0:03:01.320,0:03:06.240
+narrowing down this problem-solving space, saving you a ton of cognitive effort,
+
+0:03:06.240,0:03:10.320
+and letting you take in more information to solve problems.
+
+0:03:10.860,0:03:16.320
+So for that counting loop, an expert might just see that it needs a counting
+
+0:03:16.320,0:03:20.400
+loop and they might just create a counting loop whereas an expert - or a novice might need
+
+0:03:20.400,0:03:25.320
+to break that down into 10 different steps. Because another thing expertise gives you is,
+
+0:03:25.320,0:03:31.140
+it automates a lot of low-level skills that allows you to jump straight up to higher order skills.
+
+0:03:31.860,0:03:36.360
+So the takeaway is that if beginners can't do something now it doesn't mean
+
+0:03:36.360,0:03:39.780
+that they'll never be able to do it, but they do need to practice solving
+
+0:03:39.780,0:03:45.600
+problems to identify patterns and to practice the component steps so that they can automate them.
+
+0:03:46.920,0:03:50.700
+And this connects to the next tip, which is that predictors of
+
+0:03:50.700,0:03:54.240
+programming ability are unclear. So expanding on the last take away
+
+0:03:54.240,0:03:57.540
+that just because you can't do something now doesn't mean you'll never be able to do it,
+
+0:03:58.560,0:04:02.760
+we're also not that great at predicting what you will eventually be able to do.
+
+0:04:02.760,0:04:06.960
+So there's two sorts of mindsets when we're trying to predict programming ability:
+
+0:04:06.960,0:04:09.960
+there's the aptitude mindset that says you were born with it,
+
+0:04:09.960,0:04:12.780
+and if you're not good at programming you'll never be
+
+0:04:12.780,0:04:17.640
+good at programming no matter how much practice. The other side of that is the practice mindset,
+
+0:04:17.640,0:04:20.400
+which is, as long as you practice and put enough
+
+0:04:20.400,0:04:24.840
+effort in you can do anything that you want. Of course neither of these extreme
+
+0:04:24.840,0:04:28.260
+views is correct. So while it is true that
+
+0:04:28.260,0:04:32.820
+pretty much anyone could pass an introductory physics class with enough practice and effort,
+
+0:04:32.820,0:04:36.960
+it's also true that practically no one is going to get a Nobel Prize
+
+0:04:36.960,0:04:42.660
+in physics no matter how much they practice. So the real answer lies somewhere in the middle
+
+0:04:43.440,0:04:48.060
+and we're going to put aside practice for now because that's sort of something that we can
+
+0:04:48.060,0:04:52.020
+manipulate and deal with after the fact. So what we try to do especially
+
+0:04:52.020,0:04:54.480
+when we hire people is, we try to predict aptitude.
+
+0:04:55.500,0:05:01.980
+However we're really, really bad at it. So some failed predictors of aptitude are
+
+0:05:01.980,0:05:06.420
+your prior experience - so what you can do now, the programming languages that you already know,
+
+0:05:06.420,0:05:10.380
+your prior math experience - none of these are good predictors of aptitude.
+
+0:05:11.340,0:05:14.700
+Personal characteristics like race, gender,
+
+0:05:14.700,0:05:20.280
+age, or your perception of CS are also bad predictors of aptitude.
+
+0:05:20.280,0:05:23.820
+Even your preferences - so what your academic major is or was,
+
+0:05:23.820,0:05:27.900
+or whether you consider yourself a humanities or a science person -
+
+0:05:27.900,0:05:31.320
+these are not good predictors of your ultimate programming ability.
+
+0:05:31.920,0:05:36.540
+The best predictors that we have are general intelligence and working memory capacity,
+
+0:05:36.540,0:05:39.120
+which is how much information you can process at once.
+
+0:05:39.120,0:05:41.580
+However these aren't really good predictors of aptitude,
+
+0:05:41.580,0:05:44.820
+they're better predictors of the rate at which you will learn.
+
+0:05:45.660,0:05:49.140
+So the takeaway from this tip is that many of the perceived
+
+0:05:49.140,0:05:51.540
+predictors of programming aptitude that we have
+
+0:05:51.540,0:05:56.940
+actually have no empirical evidence. And to me this says that when we're
+
+0:05:56.940,0:06:00.480
+trying to measure aptitude - aptitude is not the limiting factor, actually,
+
+0:06:00.480,0:06:04.620
+practice is the limiting factor. So there might be some edge cases
+
+0:06:04.620,0:06:08.040
+where you're trying to hire a CEO that maybe you should look at prior experience,
+
+0:06:08.040,0:06:12.300
+but based on what most of the hiring situations are
+
+0:06:12.300,0:06:16.140
+none of these predictors are really good at predicting aptitude.
+
+0:06:17.760,0:06:24.060
+The next tip is that understanding a concept goes from abstract to concrete and then back again.
+
+0:06:24.900,0:06:31.920
+So I think everyone's had this example where someone explains something to you
+
+0:06:31.920,0:06:39.000
+and it goes completely over your head. So a good strategy when that happens is you say,
+
+0:06:39.000,0:06:42.660
+could you give me an example, and this scenario represents this
+
+0:06:42.660,0:06:48.420
+constant tension between experts and novices, because experts want to describe a concept in
+
+0:06:48.420,0:06:52.140
+an abstract way that allows you to solve a lot of different problems -
+
+0:06:52.140,0:06:53.520
+I mean, they really do mean well,
+
+0:06:53.520,0:06:57.900
+but when you're a novice and you don't have any concrete examples
+
+0:06:57.900,0:07:03.720
+that you can connect to that abstract concept you don't have any idea what they're talking about
+
+0:07:03.720,0:07:07.320
+and in effect you can solve absolutely no problems.
+
+0:07:08.280,0:07:12.120
+So the takeaway is that you should cycle between these abstract
+
+0:07:12.120,0:07:18.240
+concepts and concrete examples enable - to be able to learn way concepts in a way
+
+0:07:18.240,0:07:23.580
+that allows you to solve different problems. So this means that experts need to provide
+
+0:07:23.580,0:07:30.540
+abstract explanations as well as concrete examples and then novices need to be able to interrogate
+
+0:07:30.540,0:07:34.680
+concepts that they don't understand, collect a bunch of concrete examples,
+
+0:07:34.680,0:07:40.380
+and therefore find the underlying principles that allow them to solve a wider range of problems.
+
+0:07:41.220,0:07:44.400
+There is sort of a tension in the field of whether you should
+
+0:07:44.400,0:07:50.220
+start with abstract or start with concrete. My rule of thumb is the more novice a person is,
+
+0:07:50.220,0:07:53.280
+the more you should start with concrete examples and move to
+
+0:07:53.280,0:07:59.400
+abstract compared to the other way around. And then the last tip I'll talk about is that
+
+0:07:59.400,0:08:03.240
+the internet and AI have not made learning obsolete, unfortunately.
+
+0:08:04.140,0:08:07.860
+So we've had this debate before when the internet came along
+
+0:08:07.860,0:08:11.580
+and suddenly you can find all the documentation that you want at your fingertips,
+
+0:08:11.580,0:08:16.440
+you didn't have to go searching through manuals, we thought this would make programming so easy.
+
+0:08:17.700,0:08:20.580
+But it didn't, and so the real debate is,
+
+0:08:20.580,0:08:24.540
+what is the role of the internet, of AI, and other tools,
+
+0:08:25.200,0:08:27.780
+and what is the role of just good old-fashioned learning.
+
+0:08:28.440,0:08:32.400
+So the internet and generative AI like Codex or Copilot -
+
+0:08:32.400,0:08:36.180
+they're really good at low-level details, but using them has a cost.
+
+0:08:36.180,0:08:41.760
+So the first cost is task switching. So when you're using Copilot to
+
+0:08:41.760,0:08:46.020
+write code you're both writing code, evaluating what Copilot's giving you,
+
+0:08:46.020,0:08:49.560
+and then the other task is switching between these two different types of tasks.
+
+0:08:49.560,0:08:52.440
+You can get better at this and tools can make it more seamless,
+
+0:08:52.440,0:08:56.640
+but it still has a cost. The major cost, however, is
+
+0:08:56.640,0:09:04.620
+that when you're offloading information to AI and you don't have those low-level skills practice,
+
+0:09:04.620,0:09:10.140
+then you're not enabling yourself to do higher-order skills like
+
+0:09:10.140,0:09:13.620
+we talked about with the first tip. You have to practice those low-level
+
+0:09:13.620,0:09:16.980
+skills in order to automate them and unlock higher order skills.
+
+0:09:16.980,0:09:24.600
+So AI is really good at predicting code for a very predictable situation
+
+0:09:25.380,0:09:30.360
+but right now it's not good at a lot of things like creativity,
+
+0:09:30.360,0:09:33.780
+dealing with uncertainty, or making a code base that's
+
+0:09:33.780,0:09:37.920
+maintainable and debuggable. So we need to still be
+
+0:09:37.920,0:09:42.000
+learning those low-level skills so that the programmer who has to do those tasks
+
+0:09:42.540,0:09:46.740
+can then do those tests. So the takeaway is that
+
+0:09:46.740,0:09:50.760
+developers still need to learn the conceptual information that's offloaded to tools.
+
+0:09:51.900,0:09:56.160
+And then as a summary, what can you do to support learning?
+
+0:09:56.160,0:09:59.100
+If you're a learner, make sure that you're practicing problems
+
+0:09:59.100,0:10:02.160
+to identify and apply patterns. For hirers,
+
+0:10:02.160,0:10:05.640
+make sure that you're considering how you're trying to predict programming aptitude,
+
+0:10:05.640,0:10:09.780
+if you're trying to predict programming aptitude, especially given that we don't have good research
+
+0:10:09.780,0:10:11.880
+about how to do that. For mentors,
+
+0:10:11.880,0:10:15.540
+make sure you're providing concrete examples with abstract concepts.
+
+0:10:15.540,0:10:20.580
+Mentees, make sure that you're aggregating examples to discover those underlying principles.
+
+0:10:20.580,0:10:23.700
+And then everyone, make sure that you understand
+
+0:10:23.700,0:10:30.180
+the low-level skills that you're asking AI to do. And if you want a book-long treatment of these
+
+0:10:30.180,0:10:33.300
+sorts of things and a lot of others I recommend "The Programmer's Brain"
+
+0:10:33.300,0:10:35.160
+by Felienne Hermans, one of my co-authors,
+
+0:10:35.160,0:10:40.620
+and if you want just an article-long treatment, we do have a paper coming soon to Communications
+
+0:10:40.620,0:10:45.720
+of the ACM that has 10 tips and it will be open source so that anyone can access it.
+
+0:10:45.720,0:10:49.020
+And in the meantime, there is my email address. Thank you very much.
+
+0:10:51.600,0:10:56.580
+Fantastic thank you so much - applause as if I'm the entire audience.
+
+0:10:57.960,0:11:00.960
+Again, such great fantastic talks that are happening today,
+
+0:11:00.960,0:11:05.280
+and I think the learning piece here, especially appreciate you bringing in
+
+0:11:05.280,0:11:10.380
+the learning technologies and the really, well, I call them learning technologies because it
+
+0:11:10.380,0:11:13.200
+seems like that's where we're headed with a lot of these inevitably,
+
+0:11:13.980,0:11:19.800
+and so I think labeling it that seems appropriate. I kind of have a question pertaining specifically
+
+0:11:19.800,0:11:25.440
+to that component, right, so, like, the idea that that
+
+0:11:25.440,0:11:31.020
+AI would replace learning feels right, like, that that should not be the case obviously,
+
+0:11:31.020,0:11:35.520
+but, like, what do you have to say about the kind of complementary nature that might be there.
+
+0:11:35.520,0:11:38.760
+So you're talking about concrete to abstract, abstract to concrete -
+
+0:11:38.760,0:11:43.020
+is there a role that these technologies can play such that we don't feel like
+
+0:11:43.020,0:11:45.480
+we're using them as a crutch, but that they're more of
+
+0:11:45.480,0:11:48.180
+an aid in the learning process? Do you have any thoughts on that?
+
+0:11:48.840,0:11:50.220
+Well, so one of my favorite
+
+0:11:50.220,0:11:57.300
+tools in learning is the use of analogies. So if you can ask a pro - an AI to solve a
+
+0:11:57.300,0:12:00.960
+problem that's basically the same but has different surface level features,
+
+0:12:00.960,0:12:04.800
+then you can compare those three, you know, say you asked it to solve three
+
+0:12:04.800,0:12:06.240
+different problems, you can compare those three
+
+0:12:06.840,0:12:12.240
+to get to those underlying principles. So you can use that as a tool to look at
+
+0:12:12.240,0:12:15.960
+the differences and similarities and connect that to, well,
+
+0:12:15.960,0:12:19.440
+this feature is common across them so that must be an important
+
+0:12:19.440,0:12:23.820
+feature of solving problems like this, whereas this one's very specific to a
+
+0:12:23.820,0:12:28.740
+certain type of problems so that doesn't really need to be part of what I learned.

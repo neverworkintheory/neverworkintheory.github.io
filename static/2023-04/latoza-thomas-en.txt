@@ -1,0 +1,146 @@
+All right.
+Thank you, Brittany, yeah, so as Brittany said I'm a colleague of Brittany's just down the hall,
+I run the Developer Experience Design Lab where we run studies of developers and try to build new programming tools.
+So imagine that you're debugging an input issue,
+so you're looking at some snake game,
+you're trying to get the snake to move,
+you're you're entering the up down left right keys,
+but it doesn't seem to be working just right.
+So what do you do?
+One thing you might try is just to add some break points,
+so try to find the input handlers for all these - these keyboard events and see what happens when they're invoked.
+But this isn't the only thing you might do.
+A different way to try to debug this is to just be - to start at the end,
+to start at the output,
+go to find the statement that is generating the output
+and then try to follow the the data flow backwards to see, sort of, at what point the data flow doesn't look quite right.
+And there's all sorts of other approaches you might imagine and lots of variations on these approaches.
+But often in practice this ends up being Stack Overflow of course.
+But how do you choose the right approach?
+What I want to talk to you today about is a way that you can try to grow your toolbox in a way that is more deliberate, right, than accidental.
+And I'd like to try to give you a tool that tries to rescue yourself from your own worst self.
+And I want to talk to you about a version of you that is doing interesting work and solving difficult problems,
+whose colleagues come to them because they just have a different way of looking at things.
+And the secret sauce I'm going to try to give you today is this idea of a programming strategy.
+A programming strategy is just a procedure for accomplishing a programming task.
+I mean,
+it offers this language for shaping how software engineering effort happens.
+Most of - most of programming is all about solving problems,
+so you want to fix some issue,
+and the way you do that is,
+you know,
+first you find a defect and then you try to trace the output backwards to find the defect
+and to trace the output backwards you need to find where the output is first generated.
+So whenever you're going through one of these - these problems you always have these nested problems that you're trying to solve.
+And psychologists have long looked at how humans solve problems
+and a big part of this is just trial and error.
+So problem solving is often like a maze where humans are just trying to choose which path to follow
+and people end up backtracking a lot when choices just don't work out as as you expect.
+So programming strategy just gives you a way to try to navigate this - this maze more effectively.
+And there's evidence that over time experienced developers learn how to use strategies that help them to work more effectively.
+So how can you learn another developer's strategy?
+So you may just ask somebody to write it down and try to follow it.
+But we found that this isn't quite as easy as it seems.
+So as a developer you have a tendency to just read the whole strategy all at once rather than going through it all step by step
+and then as you try to use it you can lose track of where you are in that strategy
+and, you know, forget, like what you're trying to do next and have to start over from the beginning.
+Or you might try to follow it for a while, get confused, and then just go back to doing whatever was the approach you'd otherwise be doing before.
+And this makes sense.
+Whenever you're solving a problem there's a lot of what's called cognitive load,
+there's a lot of things you're trying to pay attention to.
+I mean,
+it's hard to pay attention both to the problem and learning something new at the same time.
+So habit is really strong and it ends up being very hard to overcome.
+So to help address this we invented a way to try to learn a strategy.
+We built what we call a strategy tracker.
+And the idea is it lets you go step by step through the strategy and just helps you keep track of where you are in the strategy
+and just take notes as you're working.
+And we even invented this this more formal notation for describing these strategies
+which then led us built an interpreter that helps the strategy tracker keep track of the control flow
+to determine what step to show the developer next.
+And we can even do things like help the developer try to remember what to do later
+by having them write things down
+which we just assign into a variable and then we can sort of reference that variable later in the strategy
+when the developer needs to go back to to something later in the strategy.
+So then using this notation,
+if you want to write a detailed strategy that explains how to debug by doing backward data flow search,
+you can do that in our notation.
+So we found that with all of this we were able to successfully enable a developer to switch strategies
+and for this defect,
+switching to a backwards search helps them to work better.
+And in fact it helped them to make more progress than they would have otherwise been able to make
+because that strategy was a better fit for the problem that they were trying to solve.
+But where do you find strategies?
+Can we just go off and ask experienced developers to start writing them?
+So it's possible that these strategies might be what's called tacit -
+that developers just learn the new strategy but never even realize that they're following it,
+and because it's tacit it isn't something that they could try to explicitly write down and explain.
+So are they tacit?
+So again we try to find out,
+and we just asked developers to write down some strategies for us.
+And we found that they largely could.
+We found that, you know, developers are able to write all sorts of strategies for all sorts of problems.
+But it's often hard to write good strategies because it's often hard to generalize the strategy,
+to go through the process of testing it,
+to make sure it works on all the different variants of the the problem that you might have,
+and to try to take the perspective of a strategy user that might not have exactly the expertise that you have
+and be able to explain things at the right level of detail that somebody else could could follow.
+But we found that developers for these good strategies can try to use them to - to solve a programming problem,
+they just often have the same sorts of challenges that the people have in writing them,
+where, you know, there might be missing steps,
+there might be ambiguity,
+it might not tell you how to use all these - these tools.
+So the main takeaway of both of these findings is that in order to build this process - to successfully to share strategies,
+it's really important to have a feedback process.
+Or you want somebody to first try to write it and then you want a revision process for people using it to give comments
+and for the person writing it to make it better
+so that over time you can address all these these issues in - in strategies.
+A few more cautionary notes about choosing strategies.
+As you might imagine,
+the type of code that you're looking at has a big impact on the strategy you might choose.
+So if you're working in code that interacts closely with the library,
+you're over three times more likely to go find some docs and kind of less likely to build a diagram to try to understand what's going on
+which which all makes sense.
+But how you're feeling can also have a really profound impact on how you decide to approach a problem.
+So if you're feeling stressed or nervous you're twice as likely to add print statements,
+and over five times less likely to try to spend the time to read all the code nearby,
+which just might be too complicated.
+If you're feeling sad or depressed,
+you're over 10 times less likely to try to experiment by just editing the code which is a lot of speculative hoping that, you know,
+you randomly get lucky and get what you want.
+And if you're feeling very excited and enthusiastic you're over twice as likely to ask for help from a colleague.
+So how can you be proud of the way you work and work in a way that is more deliberate rather than accidental?
+One key takeaway is that there's always - almost always a different strategy that you might use to try to tackle a problem.
+Just being aware of this - explicitly considering a strategy that might work the best for your situation in this moment -
+is an example of what's called metacognition.
+Some studies have also demonstrated that that self-regulation - the process of monitoring your progress and your use of time -
+are also associated with greater problem solving success.
+You can also just find better strategies.
+So there's there's resources out there today that try to document some of the ways that you can solve problems
+and just knowing more of these - these strategies can help you to be more effective.
+But you can also try to, like, be more of an active participant,
+to share your own strategies and help curate strategies that work for your own organization.
+So we've been building this tool called How to Dev that can act as a repository for - for strategies like this.
+And finally it's important to think about how your own affect is approaching your - your approach.
+Like, taking a minute to de-stress or help yourself feel better can really have an impact on how you solve problems.
+If you really want to learn more about strategies we're going to be running these - these programming strategies mentoring sessions,
+so reach out to us for that.
+So with that I'm here for any questions anybody might have.
+Fantastic, super, thank you so much.
+First an enlightening talk on programming strategies that I wish I had heard a really long time ago
+or at least that I think that - the connections in particular, right, are interesting, between, like, our our mental state, our being,
+and how we do things in ways that we can think about navigating that as well it's a really interesting connections here.
+I do have one question that I see, and again, audience, please feel free to bring the questions onto Slack.
+Rebecca wants to know, do you know that they really follow a particular strategy that they write down or is it more nuanced?
+Thinking about the fact that in different contexts experts might vary their strategy slightly depending on the task or -
+or the context or domain.
+Any thoughts on that?
+Yeah, I think - a great question.
+I mean, a lot of these strategies have a lot of nuance and complexity.
+So when we asked somebody to write it down, it - it's probably, like, you know, a high-level sketch of how they see themselves
+as solving this problem
+and might not have every sort of complication or variant of - of the problem,
+so I think definitely trying to to grow these strategies over time through feedback,
+to flush out more of these - these corner cases,
+is definitely way to go,
+since you're probably not going to write the perfect strategy the first time.

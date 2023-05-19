@@ -1,0 +1,165 @@
+Awesome, all right, thank you very much for having me.
+So I'm Rashina, I am from Monash University in Melbourne,
+and it's my pleasure to talk to you today about this topic which is,
+"You asked for it: making sense of user feedback."
+So as I begin I would like to acknowledge the traditional owners of the land from which I present,
+which is the Wurundjeri and Bunurong peoples of the Kulin nations,
+and I would like to pay my respects to their elders, past, present, and emerging,
+and to everybody who is here and joining us online from various lands around the world.
+Okay so I'm going to start with something that might be a little bit of a controversial statement.
+In all my research on agile, and working with agile for a really long time,
+I think user stories are a modern agile myth.
+Why do I say that?
+Basically if you really think about it,
+user stories are made-up stories about what we as software developers and software stakeholders think the users want.
+They're based on assumptions, so, the best assumptions we can make about the users.
+They are led by convenience because, well, we're here,
+and oftentimes the users are not.
+And the stories are obviously not real - these are situations that we think up of users actually using our system in advance.
+So this leaves the kind of everyday, average user thinking, as a user I want to provide my own feedback,
+so that customers don't have to pretend to know what I need.
+Real user stories, on the other hand, are priceless.
+So they're an important source of identifying things like bugs, usability issues, as well as new feature ideas.
+Because what really matters is the fact that,
+even though customers are the ones paying for the development of the product,
+but it is the users that decide the fate of the product.
+So the real user stories will tell us things like their needs - so the needs of the users -
+and this is needs of users that are diverse.
+And when we understand that diversity, it can lead us to building products that are more generalizable across the human population around the world.
+It also leads us to understanding human wants in terms of our preferences,
+things we like, we don't like,
+and that can lead us to software teams personalizing and customizing their solutions,
+and which, kind of, you know, leads to users coming back to their favorite products because of that personalization aspect.
+Real user stories are also an important source for generating business value
+because when users see their feedback being actioned upon,
+that builds trust, loyalty, and the reputation of the brand,
+which ultimately leads to things like sales and profits.
+Now how do we get to these real user stories if we don't want to make them up?
+So we can get all sorts of real user stories or real feed - user feedback from things like user ratings, reviews on app stores,
+feedback through websites, complaints through call centers,
+and these are the kinds of stories that I call proactive stories because the user has volunteered to give it to you
+even though you may not have asked for it.
+Then there are the automatic stories.
+So these are things like activity logs being logged in the background,
+user likes, dislikes, and engagement, and demographics,
+all of it being accumulated in the background without the user actually even finding out.
+The other ones are prompted user stories,
+in that the apps might be prompting people for their ratings or reviews.
+And finally there is this idea of elicited stories,
+which is where we purposefully collect user feedback through these intentionally designed activities
+like co-design sessions, user experience sessions, focus groups, observations, interviews, think aloud, beta testing, all of these.
+So what are we really dealing with here?
+What we're dealing with is,
+if you kind of look across all of these kind of real user stories we find something common,
+which is all of these reviews and feedback forms and complaints and characteristics and so on,
+well all of these are really qualitative data.
+In fact a majority of it is qualitative data.
+So it goes from everything large scale,
+so to hundreds and thousands of reviews,
+to more small scale,
+because, you know, you'd probably be doing about tens or twenties of focus groups rather than thousands of them.
+But ultimately they're all qualitative data.
+Now here's the other fact, which is, we usually don't want to deal with real user feedback.
+And the question is why?
+So some of the reasons are, well, there's lots of it.
+The other is, because it's qualitative, it's usually unstructured and it's messy,
+and it's hard work to try and really get your head around what all of this means altogether.
+So current approaches - and I'm not expecting you to read and understand the whole of this diagram -
+but you can do - you know, look at it in that paper from Empirical Software Engineering last year that goes into the details of the steps -
+but what I'll highlight here is that currently - the current approaches usually include two steps.
+So one is the automated analysis, which there are automated tools which will filter noise like synonyms
+and then it classifies based on keywords that you provided,
+And the second step is manual analysis of qualitative data using the sample reviews that you have
+So what I'm going to propose is going to be helping with the second part.
+Now, current limitations of this approach is,
+while this approach helps us answer things like the "what" and the "how"
+it really doesn't help us answer the "why".
+So that in-depth, you know, idea is missing.
+Also,
+because we - it is keyword based,
+if we focus on bugs we'll find bugs,
+but we'll miss the proverbial butterflies in that there are all sorts of interesting findings in there
+but because we were not looking for them we never find them.
+However,
+because it's all publicly available data,
+our competitors can find these butterflies and they can act upon it to improve their product even if we're not doing it.
+So here comes social-technical grounded theory or STGT as a powerful qualitative data analysis method.
+So given the time limit I'm going to show you a very quick example of what open coding in STGT looks like
+and what I'll ask you to think about is really the idea of hashtags,
+especially if you are a social media user, like Twitter, you will be very familiar with the idea of hashtags
+that are used to capture you know very profound ideas in a few words.
+So here's a user review that we're looking at right now.
+Now, if we were looking - using a keyword-based approach - if we were looking for the word "scam" sure enough it's right there, we'll find it
+and then we can report it and that's okay.
+But we are going to miss all of this other, as I said, all of these butterflies, these interesting findings that we were not looking for.
+If we use open coding using socio-technical grounded theory we actually have a chance at finding out all of these other interesting ideas.
+So to give you an example,
+the bit in the blue,
+I would code this as hashtag "unintentional upgrade" because here the user is talking about
+how unintentionally they were led to upgrading to a $99 pro version because their fingerprint was set in the App Store.
+The other part which you see in the gray is all their attempts to come and to contact the company using the various channels that are available
+so I would have, you know, kind of code that as "hashtag multiple contact channels" which do exist.
+But then the other code there is "hashtag no customer service".
+So even though there are multiple channels there was no customer service provided.
+Now all of this - the fact that it's a review or usually comes with a rating -
+so at the bottom we see that it's a one star out of five star, so hashtag for review.
+In other words all of this come together makes up a cohesive story about the fact that
+this is a frustrated customer who just didn't like the product,
+it was a scam in their opinion and in their experience,
+and there were a couple of other interesting things that we found on top of the fact that we just classified it as scam.
+Now how do you scale this?
+So I'm going to show you, you know, how we go from raw data to this idea of code and then group codes together to come up with concepts.
+So here for example a review said, "App requires you to have location services always on,"
+which is coded as "hashtag forced location sharing".
+The other is, "You have no option but to give them consent to sell your data to a third party,"
+and this is forced consent to policy.
+The third one is, "My account got hacked and another phone was registered",
+and that would be, like, obviously hacked account.
+If we look at all these codes all together and we constantly compare them and take it to the next level of abstraction and group them together
+we're talking essentially about this idea of privacy issues.
+So remember,
+we started off looking for scams but we also found privacy issues because we were using an open approach.
+So if you use a socio-technical grounded theory for qualitative data analysis,
+you're going to be able to systematically analyze data for individual classifications,
+but also for data-wide, you know, patterns that you can find.
+It can lead to rich insights and guidelines and recommendations,
+for example on improving privacy in this case.
+But for those of you who are more interested in coming up with research outputs as well,
+say for example you're a user experience research team within company,
+you can use this in a more rigorous application to develop taxonomies, theoretical models, and theories,
+which you can then report in peer-reviewed journals.
+So the new approach that we're talking about is making sense of real user stories using STGT where you still have those two steps
+but instead of being linear it's iterative, for one thing,
+and also because of the fact that we're using open coding in the second step using socio-technical grounded theory
+we're able to find new and refined keywords that feed back into the automated analysis and goes back and forth.
+And this allows you to achieve both depth and breath in your analysis of user feedback.
+So the benefit for user software teams is that now you can really work with smaller classified piles of user feedback
+that can be uniquely put under different labels.
+It will lead to richer analysis, to draw out interesting findings, so you catch all the bugs that you were looking for
+but you also don't miss the butterflies.
+The benefit for users of course is it increases their confidence in updating apps - they give you better ratings -
+and benefit for companies, of course, as we saw before is because you're actioning the user feedback it increases the trust
+and therefore increases sales.
+And I'm going to end with this which is,
+if you want to find out more you can use this QR code and or type in my website
+and there you'll find the actual key paper that talks about the guidelines.
+There are also a couple of videos on technical briefing but if you're coming to ICSE in 2023 in Melbourne,
+we'll love to welcome you,
+but I'm also giving a technical briefing on socio-technical grounded theory there.
+And there's an upcoming book.
+And very quickly I'd love to thank Dr Omar Haggag who helped me with this and Michael Hoye,
+so thank you very much.
+All right, thank you very much Rashina, if you'd like to end your screen share,
+we do have one question coming in.
+One of our viewers would like to know are there any special concerns or risks here with confidentiality,
+with loss of privacy and so forth,
+in doing this kind of analysis compared to, for example, conventional web metrics.
+So, what I'll say there is,
+that we are in this instance dealing with data that is already publicly available,
+so people have chosen to share that online and it's already in the public realm.
+We also use socio-technical grounded theory for more confidential research wherein you're doing interviews and so on,
+and in that case what you would do is,
+you will try to de-identify the data,
+in that you would remove all of the details that would - could be potentially identifying,
+either the company or the individual or any of those things,
+but you can still analyze it to find the key issues and the key problems

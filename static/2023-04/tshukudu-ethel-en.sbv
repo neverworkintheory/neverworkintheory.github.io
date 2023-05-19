@@ -1,0 +1,485 @@
+0:00:00.420,0:00:06.060
+Thank you for having me, so I'm Ethel Tshukudu from
+
+0:00:06.060,0:00:11.160
+the University of Botswana. Last year I completed my PhD
+
+0:00:11.160,0:00:16.260
+at - from the University of Glasgow and my topic was on understanding
+
+0:00:16.260,0:00:19.920
+conceptual transfer in students learning new programming languages.
+
+0:00:20.520,0:00:28.080
+So I'm really happy to try to summarize my thesis today in 10
+minutes.
+
+0:00:28.980,0:00:35.220
+So the motivation behind this topic was that while I was still in Botswana
+
+0:00:35.220,0:00:41.280
+we did a study where we were studying the correlation from - of the secondary
+
+0:00:41.280,0:00:45.420
+school grades of students who are now learning the
+
+0:00:45.420,0:00:48.120
+Java programming language. So we were comparing their
+
+0:00:48.120,0:00:53.340
+scores in the secondary school grades and how they correlate to their scores
+
+0:00:53.340,0:00:57.780
+in the Java programming language. And we were surprised to find
+
+0:00:57.780,0:01:01.440
+that the students who were doing computer studies at secondary school,
+
+0:01:02.700,0:01:07.260
+there wasn't any correlation with their scores with the Java course.
+
+0:01:07.260,0:01:14.400
+So - but later on I found out that, oh, actually the syllabus did not include coding,
+
+0:01:14.400,0:01:19.140
+but still that, you know, started the excitement to say,
+
+0:01:19.140,0:01:25.620
+oh let's actually, you know, study how students actually transfer once they
+
+0:01:25.620,0:01:31.560
+have learned a programming language, perhaps in CS0
+in first year and then
+
+0:01:31.560,0:01:37.440
+they progressed to learn a second programming language in year two.
+
+0:01:38.640,0:01:46.020
+So I started off by exploring and investigating using code comprehension techniques
+
+0:01:47.280,0:01:53.820
+and my - my theoretical basis were leaning towards the natural language theories
+
+0:01:53.820,0:02:05.040
+of how people understand the natural languages. So my research was, you know, was in four years,
+
+0:02:05.880,0:02:12.660
+so I - I did a - so my PhD is in computer science but my specialty is in computer science education.
+
+0:02:12.660,0:02:17.280
+So computer science education is about how people teach and how
+
+0:02:17.280,0:02:25.260
+people learn, you know, computer science. So in the first three phases of my thesis,
+
+0:02:25.260,0:02:30.060
+I was just exploring and trying to see how semantic transfer happens
+
+0:02:30.060,0:02:34.380
+when students are, you know, reading code.
+
+0:02:35.160,0:02:39.840
+So based on how similar, you know, two programming languages may be.
+
+0:02:39.840,0:02:44.520
+So I started off by exploring that concept - that idea,
+
+0:02:45.780,0:02:49.920
+and then, you know, the - the results were promising,
+
+0:02:49.920,0:02:57.000
+so I designed a model of programming language transfer based on the first study in phase one.
+
+0:02:58.080,0:03:04.320
+And in phase three then I - I validated the model through four studies
+
+0:03:04.320,0:03:12.960
+of students transitioning from first year to second year in European universities.
+
+0:03:14.400,0:03:21.000
+And then the second part of my thesis now that I, you know, I kept on seeing repetitive results,
+
+0:03:21.000,0:03:28.500
+I started to explore now how can, you know, educators help students to transfer knowledge
+
+0:03:28.500,0:03:38.160
+from one programming language to the other. So the contributions of my thesis, you know, I - I
+
+0:03:38.160,0:03:42.600
+drew a model of programming language transfer, as you can see there,
+
+0:03:43.740,0:03:51.540
+where - I'm saying that, oh, I am claiming that once you are getting a student who
+
+0:03:51.540,0:03:56.400
+has never learned any programming language and you teach them a programming language,
+
+0:03:56.400,0:04:03.360
+what will be happening inside their brain is that they will have, you know, the conceptual knowledge
+
+0:04:03.360,0:04:06.120
+of that first programming language you've taught them,
+
+0:04:07.200,0:04:12.660
+how it's a, you know, how it looks like - the syntax level and how it's - it
+
+0:04:12.660,0:04:17.220
+executes in the machine so they will link that
+
+0:04:17.220,0:04:21.960
+idea to the conceptual level. But then once you introduce the
+
+0:04:21.960,0:04:27.120
+students to the second programming language, they have this new knowledge where they
+
+0:04:27.120,0:04:30.900
+will now be linking programming language that they already know
+
+0:04:30.900,0:04:34.320
+to this new programming language that you you are teaching them
+
+0:04:34.320,0:04:39.060
+and that means the knowledge structures start to expand.
+
+0:04:39.060,0:04:42.660
+As you see, there are different types of branches, which I will explain,
+
+0:04:42.660,0:04:50.640
+but the the whole idea is that they will be faced with three types of -
+
+0:04:50.640,0:04:53.280
+once you - you teach them the programming language,
+
+0:04:53.280,0:04:57.660
+they'll be faced with three types of constructs that they get to learn.
+
+0:04:57.660,0:05:00.660
+So when you teach them the second programming language,
+
+0:05:00.660,0:05:05.160
+they may see constructs. Let me explain it as,
+
+0:05:07.020,0:05:11.760
+you know, break down that drawing. So they will see constructs that
+
+0:05:11.760,0:05:18.780
+I - I termed as true carry-over constructs. So these constructs will have similar syntax
+
+0:05:18.780,0:05:23.220
+to the programming language they know and the new language they're learning
+
+0:05:23.220,0:05:29.280
+so in this case, I'll just keep on seeing - using Python and Java so that it's easier to understand.
+
+0:05:29.280,0:05:35.340
+And my thesis was about students who were transitioning from a Python imperative
+
+0:05:35.340,0:05:40.200
+programming language to a - and it was non-OO -
+
+0:05:40.200,0:05:46.980
+to a Java object-oriented language. So an example of a true carry-over construct
+
+0:05:46.980,0:05:54.180
+would be a while loop in Python and in Java. When you look at the syntax it's really,
+
+0:05:54.180,0:05:58.800
+really similar - the only differences are,
+
+0:05:58.800,0:06:02.520
+you know, there are brackets there, there are columns there,
+
+0:06:02.520,0:06:07.920
+maybe the variable is being declared there, but most - the most parts of
+
+0:06:07.920,0:06:12.060
+the code are very similar. So I've been giving students these good
+
+0:06:12.060,0:06:18.960
+snippets categorizing them according to my model and asking them to read code and give outputs.
+
+0:06:18.960,0:06:21.420
+And what happens is, when they do that,
+
+0:06:23.160,0:06:27.540
+remember the drawing I showed you - it will show that the first
+
+0:06:27.540,0:06:32.880
+knowledge that they are coming in, they - they see programming language one and
+
+0:06:32.880,0:06:37.080
+programming language two as the same thing, so nothing happens -
+
+0:06:37.080,0:06:43.020
+there isn't any bad impact of semantic transfer, it's actually a positive one,
+
+0:06:43.020,0:06:45.480
+because that would mean, when you are teaching a
+
+0:06:45.480,0:06:49.920
+student the Java while loop you don't have to go too
+
+0:06:49.920,0:06:53.460
+much into details about it if they already know it in Python,
+
+0:06:53.460,0:06:57.060
+so there isn't any branching in their knowledge structures there.
+
+0:06:58.140,0:07:04.140
+And then when you go on you teach them another concept called the false carry-over concept
+
+0:07:04.140,0:07:08.040
+where there may be similar syntax but the semantics are different.
+
+0:07:09.240,0:07:13.920
+An example there will be equality of composite types like arrays.
+
+0:07:15.960,0:07:21.480
+You will find that in Python the equality there is comparing those values inside,
+
+0:07:21.480,0:07:25.800
+but the equality there in Java is comparing the actual addresses.
+
+0:07:26.460,0:07:33.840
+So what would happen is, a student will learn this concept the -
+
+0:07:33.840,0:07:37.200
+so we are hoping we - so as educators we'll
+
+0:07:37.200,0:07:43.200
+be hoping that they should have a branching at the conceptual - at the semantic level,
+
+0:07:43.200,0:07:48.480
+but the syntax should be linking together. But what you are seeing happening is the
+
+0:07:48.480,0:07:53.640
+students will still consider those two code snippets executing in a similar way,
+
+0:07:53.640,0:08:00.060
+which gives us the last - the drawing of a perceived true carry-over concept.
+
+0:08:00.060,0:08:05.220
+And then the last type of concept is the - the way -
+
+0:08:05.220,0:08:10.020
+we call it an abstract true carry-over concept. Although we know all these
+
+0:08:10.020,0:08:14.760
+code snippets are abstract but this one was more like, you know,
+
+0:08:14.760,0:08:19.320
+the example was more on - when students are learning objects
+
+0:08:19.320,0:08:24.240
+because they are transitioning from this imperative non-object-oriented language
+
+0:08:24.240,0:08:29.100
+to another object-oriented language and it throws them off, you know,
+
+0:08:29.100,0:08:33.900
+because the syntax is different, the ideas - the naming is different,
+
+0:08:33.900,0:08:37.860
+you call them objects, you call them classes, you know,
+
+0:08:37.860,0:08:43.080
+and - but when we look behind, you know, when we try to look at, you know, the actual
+
+0:08:43.080,0:08:50.040
+ideas around the objects and Python dictionaries, they are representing some types of, you know,
+
+0:08:50.040,0:08:53.820
+data structures in the sense that - you know it's about the detail, though
+
+0:08:53.820,0:09:00.960
+in Java objects it's more like structured data and combined with the behavior at the same time.
+
+0:09:00.960,0:09:04.500
+So there are those challenging things that the students,
+
+0:09:04.500,0:09:09.540
+when they see such - when they learn such a - change the paradigm - paradigm
+
+0:09:10.380,0:09:15.480
+they will see those concepts. Ideally we would want them to see it as,
+
+0:09:15.480,0:09:19.200
+okay, the semantics, yeah, they are different but not that different,
+
+0:09:19.200,0:09:24.780
+but then there's that seen that, like, they're learning something totally new,
+
+0:09:25.920,0:09:31.920
+where you - you now have two concepts structures in their - in their brains.
+
+0:09:31.920,0:09:35.760
+So this, like I said, the model was validated in, you know,
+
+0:09:35.760,0:09:42.540
+five - in four instances in European universities. It's actually more than that but the ones I
+
+0:09:42.540,0:09:46.080
+wrote in my thesis were four. And these are the results.
+
+0:09:46.080,0:09:51.420
+I was getting very similar patterns across all the studies where you see
+
+0:09:51.420,0:09:57.420
+the first light blue language is the Python - the one they are moving - transitioning from,
+
+0:09:57.420,0:10:01.620
+and then when they see a true carry-over construct,
+
+0:10:01.620,0:10:06.450
+the one that, you know, results in positive transfer, yeah, they don't -
+
+0:10:06.450,0:10:09.420
+there isn't any significant difference in the way they perform
+
+0:10:09.420,0:10:14.580
+when they're learning the second language. But when the semantics are different but
+
+0:10:14.580,0:10:19.260
+the syntax is similar - the middle one - you see that they perform very less in
+
+0:10:19.260,0:10:23.040
+the second programming language and it goes on also to the last,
+
+0:10:23.040,0:10:29.820
+where the syntax is different but the underlying, you know, behavior or concepts are similar.
+
+0:10:29.820,0:10:37.620
+So I designed a - a pedagogical approach, which I won't go into details with,
+
+0:10:37.620,0:10:41.400
+but I do have papers if you are interested in reading.
+
+0:10:41.400,0:10:47.460
+But basically, just to let the educators, you know, help the students to understand
+
+0:10:47.460,0:10:52.260
+and use this - this differences between programming languages as
+
+0:10:52.260,0:10:57.960
+an opportunity to help the students by comparing and correcting their
+
+0:10:57.960,0:11:01.920
+misconceptions which they are bringing from the first programming language
+
+0:11:01.920,0:11:05.820
+the - the instructors are helping them expand their knowledge and
+
+0:11:05.820,0:11:11.880
+deepen their conceptual understanding. So this is just a model that I - I would
+
+0:11:11.880,0:11:16.260
+advise instructors to do when they are transitioning students.
+
+0:11:16.260,0:11:20.640
+So the - the overall, what did I learn from the entire, you know,
+
+0:11:21.540,0:11:25.080
+PhD thesis on transfer? So yes,
+
+0:11:25.080,0:11:28.560
+we can't avoid multiple programming languages in
+
+0:11:28.560,0:11:32.760
+a curricula let alone even in the working environment,
+
+0:11:32.760,0:11:37.200
+software developers get to use different multiple programming languages,
+
+0:11:37.200,0:11:42.180
+but what we are realizing is that relative novices have fragile knowledge,
+
+0:11:42.180,0:11:46.200
+so it's innate, partial, and sometimes it's misplaced.
+
+0:11:46.200,0:11:52.020
+So usually educators just focus on, let's solve a problem - solve a problem,
+
+0:11:52.020,0:11:56.820
+and under - overestimate that the students have a strong grasp of the
+
+0:11:56.820,0:12:02.220
+first programming language and concepts. So they assume a lot of knowledge which
+
+0:12:02.220,0:12:07.320
+is not there in - in students. So how then do we move forward?
+
+0:12:07.320,0:12:15.840
+We use this idea of multiple programming languages to deepen conceptual understanding for students
+
+0:12:15.840,0:12:19.380
+by finding the gaps in their knowledge, you know,
+
+0:12:19.380,0:12:23.700
+and giving it as an opportunity to teach these hidden concepts that don't come
+
+0:12:23.700,0:12:26.520
+straightforward usually, like scoping, analyzing.
+
+0:12:27.600,0:12:33.600
+Also you allow them to - feed them correct. So the next steps I often get asked, you know,
+
+0:12:33.600,0:12:37.380
+which is the best programming language then to start teaching students with,
+
+0:12:37.380,0:12:43.860
+and usually I just say, it - I, you know, I don't know, I don't think it really
+
+0:12:43.860,0:12:50.400
+matters but when they move to the second one, that's when you use all the ideas I said earlier
+
+0:12:50.400,0:12:57.300
+about deepending conceptual understanding. So maybe the question would be, you know,
+
+0:12:58.800,0:13:02.700
+who - who would benefit from a research like this, you know,
+
+0:13:02.700,0:13:07.200
+is it students who are at university level moving from CS0
+to CS1,
+
+0:13:07.200,0:13:14.160
+is it, you know, the programmers who are practicing at work, and all that.
+
+0:13:14.160,0:13:20.220
+But I'm planning on doing further validations of the model and the pedagogical approach
+
+0:13:20.220,0:13:23.700
+I - I proposed. Thank you very much.
+
+0:13:24.300,0:13:31.140
+So these are the papers if you are interested in understanding more of this research
+
+0:13:31.140,0:13:36.300
+and, yeah, thank you, thank you very much. Thank you very much, Ethel.
+
+0:13:36.300,0:13:41.100
+We've got time for one question, and the question that has come in is,
+
+0:13:41.700,0:13:44.520
+how does this research relate to
+
+0:13:45.180,0:13:51.900
+things like Chat GPT and transferring its understanding between languages.
+
+0:13:54.300,0:14:00.840
+Oh, I was - when - when you asked about Chat GPT and this,
+
+0:14:00.840,0:14:03.420
+I was going to think from a human perspective.
+
+0:14:03.420,0:14:08.940
+It's actually an opportunity to compare the kind of, you know, code snippets we
+
+0:14:08.940,0:14:13.080
+are writing using Chat GPT because I can say, you solve
+
+0:14:13.080,0:14:17.160
+a problem in two different languages and it will give me different answers
+
+0:14:17.160,0:14:23.040
+for me to be able to explore and compare and contrast and expand my understanding.

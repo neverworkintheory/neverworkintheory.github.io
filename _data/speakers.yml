@@ -398,7 +398,7 @@
   photo: bai-gina.jpg
   title: How novice testers perceive and perform unit testing.
   bio: Gina is an Assistant Professor of the Practice of Computer Science at Vanderbilt University in the United States.
-  video: 
+  video: https://youtu.be/BKgdrEPYqmM 
 
 - event: 2023-04
   id: bohme-marcel
@@ -408,7 +408,7 @@
   photo: bohme-marcel.jpg
   title: On the surprising efficiency and exponential cost of fuzzing.
   bio: Marcel leads the Software Security at the Max Planck Institute for Security and Privacy in Germany.
-  video: 
+  video: https://youtu.be/_HUcBzYuWmM
 
 - event: 2023-04
   id: businge-john
@@ -428,7 +428,7 @@
   photo: chatterjee-preetha.jpg
   title: Emotion awareness in software engineering.
   bio: Preetha is an Assistant Professor at Drexel University in the United States.
-  video: 
+  video: https://youtu.be/lkatTyerkwg
 
 - event: 2023-04
   id: codabux-zadia
@@ -436,9 +436,9 @@
   personal: Zadia
   url: "https://www.cs.usask.ca/faculty/zadiacodabux/"
   photo: codabux-zadia.jpg
-  title: Technical debt in R packages
+  title: Technical debt in R packages.
   bio: Zadia is an Assistance Professor at the University of Saskatchewan in Canada.
-  video: 
+  video: https://youtu.be/-T0vuUkQCFg
 
 - event: 2023-04
   id: devanbu-prem
@@ -448,7 +448,7 @@
   photo: devanbu-prem.jpg
   title: Leveraging the bimodality of software.
   bio: Prem is a Distinguished Professor (Emeritus) of Computer Science at the University of California Davis in the United States.
-  video: 
+  video: https://youtu.be/LQ43KdojuTI
 
 - event: 2023-04
   id: hoda-rashina
@@ -458,7 +458,7 @@
   photo: hoda-rashina.jpg
   title: "You asked for it: making sense of user feedback."
   bio: Rashina is an Associate Professor of Software Engineering and Deputy Director of the HumaniSE lab at Monash University in Australia.
-  video: 
+  video: https://youtu.be/O03LRJMgOf0
 
 - event: 2023-04
   id: kula-elvan
@@ -468,7 +468,7 @@
   photo: kula-elvan.png
   title: "Understanding and predicting delays in large-scale software development."
   bio: Elvan is chapter lead of Analytics and AI Research at ING and a doctoral candidate at TU Delft.
-  video: 
+  video: https://youtu.be/g3b8JfkV5jQ
 
 - event: 2023-04
   id: kula-raula
@@ -478,7 +478,7 @@
   photo: kula-raula.jpg
   title: What do we know about libraries and their dependencies?
   bio: Raula is an Assistant Professor at the Nara Institute of Science and Technology (NAIST) in Japan.
-  video: 
+  video: https://youtu.be/O-PZX7d7YWo
 
 - event: 2023-04
   id: latoza-thomas
@@ -488,7 +488,7 @@
   photo: latoza-thomas.jpg
   title: Programming strategically.
   bio: Thomas is an Associate Professor of Computer Science at George Mason University in the United States.
-  video: 
+  video: https://youtu.be/Dyo7WpndWog
 
 - event: 2023-04
   id: lee-carol
@@ -498,7 +498,7 @@
   photo: lee-carol.jpg
   title: "Developer thriving: why developers deserve more than satisfaction."
   bio: Carol is a senior research scientist at Pluralsight Flow's Developer Success Lab in the United States.
-  video: 
+  video: https://youtu.be/8gfTqazvejI
 
 - event: 2023-04
   id: licorish-sherlock
@@ -508,7 +508,7 @@
   photo: licorish-sherlock.jpg
   title: Can genetic improvement enhance online code snippets?
   bio: Sherlock is an Associate Professor in the Department of Information Science at the University of Otago.
-  video: 
+  video: https://youtu.be/ylREDaqKWEk
 
 - event: 2023-04
   id: margulieux-lauren
@@ -518,7 +518,7 @@
   photo: margulieux-lauren.jpg
   title: Things software developers should learn about learning.
   bio: Lauren is an Associate Professor of Learning Sciences at Georgia State University.
-  video: 
+  video: https://youtu.be/XGF8ljfL4ZA
 
 - event: 2023-04
   id: mirian-ariana
@@ -528,7 +528,7 @@
   photo: mirian-ariana.jpg
   title: The theory and practice of enterprise vulnerability remediation.
   bio: Ariana is a security researcher at the University of California San Diego in the United States.
-  video: 
+  video: https://youtu.be/ceuNc5cy1UA
 
 - event: 2023-04
   id: newman-christian
@@ -538,7 +538,7 @@
   photo: newman-christian.png
   title: Crafting strong identifier naming practices.
   bio: Christian is assistant faculty in the Software Engineering Department at Rochester Institute of Technology.
-  video: 
+  video: https://youtu.be/Q85GhN7871c
 
 - event: 2023-04
   id: pinto-gustavo
@@ -548,7 +548,7 @@
   photo: pinto-gustavo.jpg
   title: Cognitive-driven development helps software teams to keep code units under the limit.
   bio: Gustavo is Head of Research at Zup Innovation and Assistant Professor at Federal University of Pará in Brazil.
-  video: 
+  video: https://youtu.be/g_ht_LDm5Hw
 
 - event: 2023-04
   id: presler-marshall-kai
@@ -558,7 +558,7 @@
   photo: presler-marshall-kai.jpg
   title: Teaching collaborative skills to undergraduate software engineering students.
   bio: Kai completed his PhD at North Carolina State University and now teaches computer science at Bowdoin College in Maine.
-  video: 
+  video: https://youtu.be/CvwHg9N7gWo
 
 - event: 2023-04
   id: serebrenik-alexander
@@ -568,7 +568,7 @@
   photo: serebrenik-alexander.jpg
   title: "Getting old: employability and experiences of veteran software developers."
   bio: Alexander is a Full Professor of Social Software Engineering at Eindhoven University of Technology in the Netherlands.
-  video: 
+  video: https://youtu.be/vofY6oeAaBQ
 
 - event: 2023-04
   id: sullivan-allison
@@ -578,7 +578,7 @@
   photo: sullivan-allison.jpg
   title: "Proofreading the proofreader: the benefits of unit tests for software models."
   bio: Allison is an Assistant Professor at the University of Texas at Arlington.
-  video: 
+  video: https://youtu.be/H6vyMSoVN5s
 
 - event: 2023-04
   id: tshukudu-ethel
@@ -588,7 +588,7 @@
   photo: tshukudu-ethel.jpg
   title: Understanding conceptual transfer in students learning new programming languages.
   bio: Ethel is a Lecturer at the University of Botswana and a Founder and Director of CSEdBotswana.
-  video: 
+  video: https://youtu.be/MHwSnjLx-64
 
 - event: 2023-04
   id: zeller-andreas
@@ -598,7 +598,7 @@
   photo: zeller-andreas.jpg
   title: How to create the nastiest test inputs ever.
   bio: Andreas is faculty at the CISPA Helmholtz Center for Information Security and Professor of Software Engineering at Saarland University in Saarbrücken, Germany.
-  video: 
+  video: https://youtu.be/GCy8bYJ_G0I
 
 - event: 2023-04
   id: zhou-shurui
@@ -607,4 +607,5 @@
   url: "https://www.eecg.utoronto.ca/~shuruiz/"
   photo: zhou-shurui.png
   title: Understanding the sustainability challenges for building open-source scientific software.
-  bio: Shurui is an Assistant Professor in Electrical and Computer Engineering at the University of Toronto in Canada
+  bio: Shurui is an Assistant Professor in Electrical and Computer Engineering at the University of Toronto in Canada.
+  video: https://youtu.be/24BdlgcK2mE

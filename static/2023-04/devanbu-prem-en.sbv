@@ -1,0 +1,437 @@
+0:00:00.240,0:00:04.860
+So yeah I've been - we've been working on naturalness and bimodality thanks for the
+
+0:00:04.860,0:00:10.080
+intro and that Greg for many years now. These days every software engineer is
+
+0:00:10.080,0:00:13.380
+all excited about, and stoked about, large language models and they're use in code.
+
+0:00:14.760,0:00:20.460
+Some people derisively call large language models "stochastic parrots", with some justification,
+
+0:00:21.360,0:00:25.680
+so what I'm going to talk about for the next nine minutes or so is what's going
+
+0:00:25.680,0:00:30.240
+on with these stochastic parrots which write code and programmers.
+
+0:00:30.240,0:00:42.000
+So I just want to acknowledge support from DARPA - IARPA actually - and National Science Foundation,
+
+0:00:42.000,0:00:44.160
+Sandia National Labs, and the Humboldt Foundation.
+
+0:00:45.600,0:00:51.660
+So reality check: the fact is that Codex GPT-x and so on are now widely used to generate code.
+
+0:00:52.860,0:00:57.120
+How much are people using this generated code and does it actually help?
+
+0:00:57.120,0:00:59.820
+And how good is this code? So these two questions are
+
+0:00:59.820,0:01:02.760
+what I'm going to be talking about for the rest of the - of this talk.
+
+0:01:05.640,0:01:10.020
+So I'm going to essentially present four papers. I encourage you to go look at them,
+
+0:01:10.020,0:01:13.620
+they're all very interesting, very good, using a wide range of methodologies,
+
+0:01:13.620,0:01:20.160
+and these are all human subject studies. The first one is from CMU - Carnegie-Mellon -
+
+0:01:20.160,0:01:25.440
+it's a survey of 410 developers, mostly GitHub Developers.
+
+0:01:26.160,0:01:31.740
+The second one is from Harvard, it's a control study of human subjects,
+
+0:01:31.740,0:01:38.220
+a small sample - the nature of control studies. The control here is the completion engine that's
+
+0:01:38.220,0:01:42.420
+built into Visual Studio called Intellicode. All subjects are university students,
+
+0:01:43.080,0:01:47.460
+that is what it is. And so okay, now the results.
+
+0:01:48.540,0:01:52.920
+In the case of the survey from CMU, 30% of the code was generated
+
+0:01:52.920,0:01:56.340
+according to GitHub developers, this was the number they put out.
+
+0:01:57.780,0:02:02.460
+They say it helps productivity - the GitHub developers - and they
+
+0:02:02.460,0:02:07.800
+said in - 74% of them said that they do a quick check of the code produced by Copilot
+
+0:02:07.800,0:02:10.080
+before they actually use it, so they get the completion,
+
+0:02:11.040,0:02:13.200
+they do a quick check, and then they use it.
+
+0:02:13.200,0:02:16.440
+They also complained that it wasn't very good at
+
+0:02:16.440,0:02:19.500
+dealing with non-functional requirements like security, performance, and so on.
+
+0:02:20.760,0:02:24.480
+And they also complained that it was hard to control the code that was being generated.
+
+0:02:25.260,0:02:30.300
+With the students and - they said Copilot didn't help them much
+
+0:02:30.300,0:02:35.940
+and they said they produced many defects and it was hard to understand the code they produced
+
+0:02:35.940,0:02:39.540
+but regardless of all that, the student subjects liked it anyway.
+
+0:02:40.560,0:02:44.520
+So those are the two papers from universities. Now a couple from companies.
+
+0:02:44.520,0:02:50.580
+The first one is from GitHub - this is not using Copilot, it's using their own completion engine.
+
+0:02:51.780,0:02:55.680
+The sample size is 10K and they did - they did the study using telemetry,
+
+0:02:55.680,0:03:01.020
+in other words they gathered data remotely to see how the code was being actually used.
+
+0:03:01.620,0:03:06.120
+The second study was a more regular study in some ways.
+
+0:03:06.120,0:03:10.500
+It used a triangulation - a combination of survey and telemetry,
+
+0:03:10.500,0:03:13.680
+and so they confirmed the results for one using the other.
+
+0:03:14.880,0:03:22.680
+So the results - so the Google study found that 3% of the code was generated - 3% of the
+
+0:03:22.680,0:03:28.800
+code that actually was entered was generated. About 6% of the cycle time was reduced - so
+
+0:03:28.800,0:03:33.240
+the cycle time is the time between those things the programmers do -
+
+0:03:33.240,0:03:38.220
+and about 30% of the suggestions that were made by the completion engine were accepted by the users.
+
+0:03:40.200,0:03:46.680
+So a very large sample study but, you know, as as is typical in these
+
+0:03:46.680,0:03:51.360
+telemetry studies you don't get much insight. The second study is - gives you some other insight
+
+0:03:52.500,0:03:57.000
+so 23% to 28% of the suggestions produced by Copilot were accepted by developers
+
+0:03:58.320,0:04:00.840
+and the acceptance rates correlate very well with
+
+0:04:00.840,0:04:03.360
+self-reported productivity according to the survey.
+
+0:04:04.080,0:04:07.380
+So this is, you know, this is all quite interesting,
+
+0:04:08.280,0:04:11.400
+so, you know, I encourage you to look at those papers,
+
+0:04:12.000,0:04:13.740
+they're all out there. The Google study was
+
+0:04:13.740,0:04:17.160
+not peer-reviewed the others are. The Google study was a blog post.
+
+0:04:17.160,0:04:21.960
+So my personal take on these code language - large code language models is,
+
+0:04:21.960,0:04:25.380
+developers like them and they use them according to these surveys.
+
+0:04:26.640,0:04:31.500
+It's not clear that they fully understand the code they're using and this is for me confirmed
+
+0:04:31.500,0:04:35.700
+both by the studies and from conversations with people, personal anecdotal conversations.
+
+0:04:35.700,0:04:39.420
+so we don't know what the personal software process is like when people use them.
+
+0:04:39.420,0:04:43.020
+I think that's - that's still an open question - I don't know what's going on.
+
+0:04:44.700,0:04:48.840
+So you know this is probably not going to surprise you but in a surprisingly short amount of time
+
+0:04:48.840,0:04:52.620
+every computer everywhere - laptops, mobile phones, toasters, microwaves,
+
+0:04:52.620,0:04:55.200
+air traffic control, nuclear power plants, cruise missiles, you name it -
+
+0:04:55.200,0:04:57.420
+they're all going to be using code generated by these language models.
+
+0:04:58.080,0:05:02.460
+So this is, you know, this is, kind of, at this point, kind of inevitable.
+
+0:05:02.460,0:05:06.660
+So all right this is the scariest slide in this talk.
+
+0:05:06.660,0:05:12.600
+AI-generated code will be running everywhere and at the very basic level,
+
+0:05:12.600,0:05:16.260
+you know, the question is, do these large language models generate code?
+
+0:05:16.260,0:05:20.820
+Because if they do this damn buggy code is going to be everywhere, right?
+
+0:05:20.820,0:05:23.340
+Okay, so this is the question we were interested in.
+
+0:05:24.420,0:05:27.540
+In a - we have a paper coming up at MSR - Mining Software
+
+0:05:27.540,0:05:32.220
+Repositories - which will be held in Melbourne. My student Kevin Jesse will be presenting it,
+
+0:05:32.220,0:05:37.680
+he's also graduating with a PhD in language models applied to code, so please hire him.
+
+0:05:38.880,0:05:41.940
+And you can have a look, scan the QR code for the paper.
+
+0:05:43.020,0:05:46.680
+Okay, so this is what we did. We took this data set, which
+
+0:05:46.680,0:05:50.340
+is pretty ubiquitous, it's one line bug fixes from a thousand projects,
+
+0:05:50.340,0:05:54.540
+about 17,000 samples after data cleaning. What we can do is,
+
+0:05:54.540,0:05:58.620
+we can go back in history and version control and find out when these bugs were injected by humans.
+
+0:05:59.160,0:06:04.380
+And since we know when they were introduced, we can try Copilot with the prefix of the
+
+0:06:04.380,0:06:09.060
+code at the time it was introduced and see whether Copilot produces
+
+0:06:09.060,0:06:12.720
+the buggy code or the fixed code. There's some problems with this
+
+0:06:12.720,0:06:16.440
+approach but I'll talk about them in a minute. But it does give you some kind of insights.
+
+0:06:17.100,0:06:21.780
+One thing I should say is, all the samples in the data set that we used were fixed by the time the
+
+0:06:21.780,0:06:24.720
+LLMs - by the time Copilot was trained, it was all fixed,
+
+0:06:24.720,0:06:28.680
+so Copilot is seeing the fixed code, and so we're sort of seeing what it does
+
+0:06:28.680,0:06:32.220
+when it's trained on the fixed code, because this data set was, you know,
+
+0:06:32.220,0:06:37.560
+now three years old, maybe four. Okay, so the result is as follows.
+
+0:06:38.400,0:06:43.620
+So in about 13% of the cases Copilot Codex reproduces the fixed code.
+
+0:06:44.760,0:06:49.500
+And about twice as often it regurgitates the buggy code.
+
+0:06:50.100,0:06:53.880
+So remember it was trained on the fixed code but it reproduces the buggy code, right,
+
+0:06:53.880,0:06:59.160
+so maybe the buggy code feels more natural to the model and so it, you know, it produces that.
+
+0:07:00.540,0:07:05.340
+So now there is a lot of, like, dark matter, which is not either the buggy code or the fixed code,
+
+0:07:05.340,0:07:09.960
+it doesn't match either one exactly. So what we did is, we took 400 samples
+
+0:07:09.960,0:07:13.440
+of this and manually examined it, and what we found is that in about
+
+0:07:13.440,0:07:17.280
+90% of the cases it's gibberish - it's neither the bug nor the fix,
+
+0:07:17.280,0:07:21.600
+it probably won't even compile, it just produces some random stuff, right.
+
+0:07:21.600,0:07:25.500
+But some of the cases, about, you know, 5% of the cases,
+
+0:07:25.500,0:07:29.700
+it's code that actually is either the bug or the fix where it is just written in some
+
+0:07:29.700,0:07:33.000
+other form that we can recognize. In some cases we just didn't know.
+
+0:07:34.440,0:07:37.260
+Okay, so I have about three minutes left,
+
+0:07:37.260,0:07:39.900
+so let me just tell you - mention a couple of things we also looked at.
+
+0:07:41.940,0:07:47.700
+When Copilot generates this simple, stupid buggy code we looked at whether they were stickier,
+
+0:07:47.700,0:07:51.060
+because we know how long they stayed in the - in the version control history, right,
+
+0:07:51.060,0:07:55.200
+So if it stays longer in the version control history you can think of it as being sticky.
+
+0:07:55.200,0:07:57.900
+In some sense people don't actually see it, you know,
+
+0:07:57.900,0:08:01.920
+so we looked at that as well. And the other thing we looked
+
+0:08:01.920,0:08:04.740
+at is the language models. These large language models
+
+0:08:04.740,0:08:10.320
+have enormous prior spaces - they're representing the priors, the prefix, and this enormous space,
+
+0:08:10.320,0:08:15.600
+and so they can be pushed around in this space. And one way to push them around is to,
+
+0:08:15.600,0:08:21.240
+metaphorically, you - to let them behave like a good programmer - is to
+
+0:08:21.240,0:08:25.500
+put comments in the - in the code, right. So we added comments and we see whether
+
+0:08:25.500,0:08:28.980
+Copilot repeats those errors when you put the comments in there.
+
+0:08:29.940,0:08:35.160
+All right, so, this is my last slide. So the takeaways:
+
+0:08:35.160,0:08:43.020
+programmers love these plugins for good or ill. Again, these large language models often
+
+0:08:43.020,0:08:45.540
+recapitulate human errors, and when they do,
+
+0:08:45.540,0:08:48.660
+it appears that these errors stick around for a longer period of time,
+
+0:08:48.660,0:08:54.240
+maybe because large language models - large language models produce code that looks natural.
+
+0:08:54.240,0:08:57.180
+So maybe it's harder for human eyes to see these errors
+
+0:08:57.180,0:09:00.600
+But the good news is, we can improve their
+
+0:09:00.600,0:09:03.780
+performance by adding comments in. More details are in the paper.
+
+0:09:04.320,0:09:09.300
+So my main take continues to be that developers will use these large language models
+
+0:09:09.960,0:09:16.500
+and it may be that these mistakes made by these models seem to somehow survive human review,
+
+0:09:17.760,0:09:22.560
+and, you know, maybe these errors are stickier. So with that I'll stop and take questions.
+
+0:09:23.640,0:09:27.900
+All right, thank you very much, Prem. Obviously a lot of interest in this
+
+0:09:27.900,0:09:32.700
+topic and that's an understatement. One of the comments that has come
+
+0:09:32.700,0:09:39.660
+in - do you believe that as we come to rely more and more on LLMs for code generation
+
+0:09:39.660,0:09:43.560
+that it's going to make it harder for new languages to gain a following,
+
+0:09:43.560,0:09:48.780
+because of course they won't have the corpus of code to train the LLMs,
+
+0:09:48.780,0:09:53.580
+so the tools that programmers will be used to using simply won't work as well,
+
+0:09:53.580,0:09:58.620
+so we'll be stuck with present-day languages. Is - how do you feel about that?
+
+0:09:58.620,0:10:03.840
+Yeah, interesting question. So my sense is that new languages
+
+0:10:03.840,0:10:08.280
+are - are a passion project, right,
+
+0:10:08.280,0:10:11.100
+so the people using them in the beginning and generating
+
+0:10:11.100,0:10:16.080
+the largest corpora of these new languages are not going to be affected by whether they
+
+0:10:16.080,0:10:17.580
+have Copilot or not, right,
+
+0:10:17.580,0:10:21.840
+so maybe what will happen is that once you have enough data,
+
+0:10:21.840,0:10:25.080
+then you can take one of these large language models and fine-tune them.
+
+0:10:25.080,0:10:30.180
+They are very quick at learning new things because they've been trained on so much of
+
+0:10:30.180,0:10:34.320
+what human forms of expression are in languages. If the new language is something completely
+
+0:10:34.320,0:10:35.520
+different, you know,
+
+0:10:35.520,0:10:39.180
+like APL or Haskell or something, maybe they have a bit of a tough time,
+
+0:10:39.180,0:10:43.440
+but I think, you know, for the - in most cases I think it'll be okay.
+
+0:10:44.220,0:10:48.840
+I might be wrong it's just a prediction. Okay, and we have a second question that's
+
+0:10:48.840,0:10:51.780
+come in, and this is one that I've been wondering as well.
+
+0:10:51.780,0:11:03.300
+So if an LLM generates buggy code and it goes into production who do we blame for faults?
+
+0:11:03.300,0:11:08.940
+Do we blame the programmer who shipped the code, do we bring blame whoever trained the model,
+
+0:11:08.940,0:11:15.540
+where does responsibility lie in this case? Great question - I would love for the Canadian
+
+0:11:15.540,0:11:21.120
+Parliament or the European Union to pass a law on this because it ain't going to happen in America.

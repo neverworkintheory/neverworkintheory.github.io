@@ -1,0 +1,261 @@
+Hi, my name is Carol,
+and today I'll be doing a deep dive into a study that we at the Developer Success Lab at Flow conducted
+on a concept called developer thriving.
+Okay - okay,
+so I want to back up to about, like, 2021 or so,
+not that long ago,
+okay,
+so this is when some really awesome research came out that essentially said,
+hey,
+big surprise,
+investing in developer satisfaction directly increases developer productivity.
+Okay,
+so as a clinical scientist this is just one of those findings that I just find really interesting,
+because we actually have decades of science showing this exact thing across a lot of other human experiences, right,
+and yet despite that,
+every time we find it in a new context - in this case, developers -
+we really struggle to apply it.
+And a big problem - a big part of that problem is that this term "satisfaction" is honestly just too vague.
+And because of that we often use it in ways that we just don't mean to.
+So, for example,
+you've probably used the term satisfaction to mean things like feeling motivated, supported, fulfilled, etc.
+But technically,
+satisfaction really refers to a pretty broad range of experiences,
+so ranging from things, like,
+this is fine, right,
+to, yeah, I suppose I'm happy here.
+And so because this is what satisfaction actually means,
+how a lot of companies end up trying to increase it ends up being pretty flawed.
+So for example,
+they might kind of hope for the best and be, like, oh, it'll just like kind of magically happen.
+Or they might throw swag at you and be, like, here's a sticker, here's a water bottle, here's a boxy t-shirt in a deeply unflattering color,
+and you're, like, okay.
+Or they might try to make work fun by trying to turn things into a game or friendly competition, right.
+And the big problem with these is that,
+these are all things that you might like well enough, right,
+but they won't actually motivate you.
+They won't make you feel like you belong,
+and they won't fulfill you.
+And that's a really big problem,
+because developers deserve better.
+They deserve to go beyond "feeling fine I guess",
+right,
+and into actually thriving as human beings.
+So what is developer thriving?
+So this is actually a term taken from clinical health and learning sciences
+and it refers to the processes driving realistic and sustainable growth and development.
+I think what's really important to note here is that,
+unlike satisfaction,
+which focuses on very immediate and temporary experiences -
+we call this taking a state-based approach -
+thriving actually focuses on taking a person and process centered approach.
+And this is really good because this makes thriving not just a more stable measure of human experience
+but it also makes a better fit for how humans experience the world,
+which by the way developers are, right?
+So if you're thinking what do health, learning, psychology, have to do with developers,
+I mean,
+I hate to break it to you,
+but, like, as humans, your health, education, and psychological well-being - they directly impact your ability to write code.
+Okay,
+so there are several processes that make up developer thriving,
+but when you look at the models across fields - so fields like clinical psychology, health, education, and development -
+you see that there are actually four primary factors that pretty consistently load onto thriving.
+And so in our study we also define and measure developer thriving
+by adapting empirically validated measures based on these four factors.
+So that first factor is agency.
+So by this we mean that developers have a voice in how they define things like work and success.
+So for example,
+if you're a developer with high agency,
+you might feel like you can collaborate with your manager to define what success looks like for you personally.
+The next one is belonging:
+key point, this doesn't just refer to feeling accepted for who you are,
+but it also means that you're non-judgmentally supported to grow and change.
+So, for example,
+if you're a developer who feels like you really belong on your team,
+you not only feel like you can be yourself,
+but you feel supported to grow as a person -
+you're not expected to do the same thing and be the same exact person every day for the rest of your life, right.
+The third one is learning culture -
+this refers to a team culture that celebrates the entire learning process, including mistakes.
+So developers on a team with a good learning culture feel like they can talk about mistakes they've made
+and talk about what they've learned with teammates.
+And finally,
+the last one is self-efficacy and motivation,
+and this one refers to your perceived ability to work, succeed, and solve problems.
+So, for example, if you're a developer with high self-efficacy and motivation,
+you don't just feel motivated about the code that you're writing,
+but you also feel pretty confident that you'll be able to manage any issues that come up with it.
+All right,
+so at this point some of you are, like, developer thriving, sold, awesome,
+and some of you are like, okay, who cares, like, why do we care about this?
+Okay,
+so first of all,
+our study found that developer thriving significantly predicted productivity -
+in other words, when you increase your developer's thriving,
+you also increase that product - productivity, sorry,
+and this means that you can ship products faster,
+you improve the quality of your code,
+and you're building sustainable systems for long-term success, right.
+Other research also shows that when your developers are thriving they're more likely to stick around,
+that means increased retention, decreased turnover.
+And then finally,
+it helps you become a better leader.
+It doesn't just help your team see how much you appreciate them,
+but it also helps other people see, hey, how awesome is this team, right?
+Okay,
+so in a nutshell,
+thriving is awesome,
+we want it, sold,
+but where do we get it?
+It's not on Amazon Prime,
+it's not, like, at the thriving store and you just, like, buy it for everyone,
+it's not on the farm where you, like, pick some up a tree, right,
+it's not apple picking.
+So how do we get it?
+Okay,
+so we got you there too.
+So to answer this,
+we conducted a series of qualitative interviews and focus groups.
+From these we heard two major themes.
+The first is this theme around visibility and value,
+that is,
+when developers feel like their work is seen, recognized, and valued,
+they experience greater thriving.
+So for example,
+you can see this here in a quote from an IC who talks about how being given credit during feature demos
+not only gives them a sense of ownership but also empowerment.
+We also see this theme around healthy metrics use,
+which we define as tracking performance in a team-driven way using metrics that work for that team's context.
+So for example,
+in this quote here,
+an IC talks about how, in the context of minoritized identities such as gender,
+metrics can actually be an equalizer in getting your work seen.
+So we tested if healthy metrics use and visibility of value could both directly and indirectly increase developer thriving and productivity.
+And we did this using something called a serial mediation analysis.
+Okay,
+so there's a lot of effects here,
+so I'm just going to break down the main ones and then you can read about the rest of them in our research report.
+All right,
+so we're going to pay attention to the orange here, okay.
+So first we see that when you, as a leader, decide, hey, I'm going to invest in healthy team driven metrics, right,
+you're actually able to directly increase the visibility and value of developers' work.
+And this makes sense because you're now just more able to clearly evaluate, see, and celebrate that work,
+because that increased visibility of value helps you recognize and reward work,
+and it helps you identify unmet needs and friction.
+You're also now able to both directly and indirectly increase your developers' thriving.
+And then bringing it all together,
+because that increased thriving means that your developers are now more motivated, better able to solve problems,
+collaborative - collaboratively learn and grow, and communicate with leaders
+you're also now able to directly and indirectly increase developer productivity.
+So how can you put this into practice on your teams?
+So you can use this really awesome acronym I made,
+and DARE to do more, okay,
+that is you can Diagnose, Agree, Recognize, and Explore.
+And yes, Mike pointed out to me that DARE was this really strange anti-drug campaign from the 80s and 90s,
+so think about this as, like, us reclaiming DARE,
+as like the cool version, okay, it's the effective version.
+All right, so back to DARE.
+So first, you can diagnose if there are gaps in developer thriving,
+and you can do this by using the four factors of our framework.
+This is a really good way to figure out what leadership and growth opportunities you need to focus on first for example.
+So it might turn out, for example, that you have teams with a really high learning culture, which is awesome,
+but they might also have low agency to speak out with leaders,
+and that might show, hey, we've got some knowledge silos to break down, right.
+Second,
+you can reach agreement with your team on how to define and measure performance.
+So one aside:
+our study also found that most folks didn't know what metrics are made for using
+or if their leaders were even used metric - or even using metrics, right,
+which - it's just really hard then to know if your work is even seen, much less valued.
+So an important thing to do is seek agreement on, and establish, healthy, agreed-upon, team-driven metrics
+you can use to gauge performance and give kudos.
+Speaking of kudos,
+you know be sure to reward and recognize your effort -
+folks spoke a lot about worrying if their work and effort is recognized and valued,
+not only by folks in their team but also outside of their teams and by the org, right,
+so whether it's by championing their work to leadership or celebrating effort in addition to outcomes,
+you know,
+finding a way to do this is really important.
+And then finally,
+explore our entire research report - it touches on that, many, many, more research findings, insights, and recommendations,
+all of which you can find on our website at devsuccesslab.com.
+And that is it.
+Phenomenal, yay.
+Oh gosh, bittersweet, the last one, but what a way to close, right,
+we are important,
+we matter,
+our mentality matters,
+our health matters,
+mental and physical,
+we gotta think about these things.
+I do want to note this was obviously specific to developers,
+but in academia,
+we need to be thinking about these things too -
+we want to be thriving as, you know, computer scientists in academia as well,
+so thank you so much for sharing this.
+So we have a couple of questions in the Slack - if anyone else has questions,
+please feel free to put them as I get started here.
+One,
+Emma actually said, and the obvious question,
+so I don't know if she meant to get an answer but we're gonna put it out there anyways and see what your thoughts are,
+how does worker democracy help developers thrive?
+I think that - so worker democracy kind of refers back to this agency piece, right.
+When you have agency - when you have a choice to, kind of, have a say in how your work is measured
+or how your work is done, right,
+nobody knows you better than you.
+Nobody knows how you work better than you, right,
+it's not me, you know, even if I'm a researcher, it's not Brittany, it's not Greg, right,
+you know it best,
+and so you being able to speak up best supports your ability to get work done in a healthy and sustainable way, right,
+So absolutely,
+it's not just having the ability to say that,
+but feeling like someone's actually listening when you say it,
+which I think, you know, speaks to the, kind of, full - the full circle there.
+Okay, and the next question,
+I - you know, we're gonna - we're gonna put it out there anyways because I don't know if it was meant to be real or not
+but I do know that puppies are a thing as far as mental health.
+Are there any controlled studies on the impact of puppies on developer satisfaction?
+And this follow-up - this is really important, make sure you listen carefully here,
+if so,
+how do they compare with baby otters,
+which our question asker Greg personally believes are the gold standard.
+What are your thoughts on this?
+These otters are so cute,
+I can't even - I can't even handle it,
+I'm like having trouble focusing now
+Okay,
+so when I taught research methods, because I am a former academic,
+we used to actually talk about this study that did look at the impact of puppies on, just, like, mental health and stress etc.
+You know, in a controlled setting, awesome -
+long-term success, like, you know, like, what are you gonna do, like, bring the puppy around with you
+and, like, hope it never poops and pees on you and, like, chews up all your furniture?
+Probably not, right.
+So, great short-term success fix, not so great in the long term.
+Fair enough, fair enough,
+although i would love to have a puppy that's just big enough that I could actually successfully do that.
+Beautiful, not - not sustainable, but fantastic.
+I think one thing I'm kind of curious about is what it looks like to to evaluate
+the effectiveness of the methods that you - that would be employed to follow this DARE model, right?
+If the goal is thriving, which is defined but really kind of subjective, right,
+what - what are some thoughts you have on how we - how we evaluate and improve on the methods that we're -
+we're kind of trying, I guess, to - to fit this model.
+100%,
+yeah,
+so I think survey, okay, survey design is so complicated, right,
+it feels easy because you're like, of course I can ask questions,
+but then the answer is, like, well are you asking good questions and are those questions reliable,
+are they valid,
+have you done, like, an empirically validated study looking at them, right?
+And so we actually did that - did start to validate our questions
+and all of our questions come from empirically validated measures, right.
+So, you know, people often think about, gosh, driving is so subjective,
+does that mean we can't measure it, right?
+Right.
+And like the answer is no, right, when you go to the doctor, your doctor isn't like, gosh, like,
+your heart rate is fine and you're, like, but I just don't feel good,
+and they're, like, no one cares how you feel, right, like,
+what you're saying is still information,
+that's still really important,
+so, you know,
+it's a matter of kind of taking all data sources together and using them as one,
+right, not just kind of pinpointing or cherry picking each one.

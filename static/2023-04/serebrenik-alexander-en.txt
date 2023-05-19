@@ -1,0 +1,185 @@
+Thank you very much for this introduction, Greg, it's a great pleasure for me to be here.
+And the person you see on my slide is Masako Wakamiya,
+she is an app developer.
+She was born in 1935 and built her very first app when she was 82.
+And on the right you see this app it's called Hinedan and for a Japanese members in the audience I need to apologize for my pronunciation,
+but this is essentially a game which is training kids to prepare an altar for a girls' festival called Hinamatsuri.
+And you need to put those dolls in the right places.
+So she is of course exceptional,
+but there are quite some older software developers who are around,
+and previous studies have shown that the programmer reputation scores on Stack Overflow tends to increase well into the 50s,
+and there is no strong correlation between age and scores and specific knowledge areas.
+So this is what - essentially suggests that older software developers should thrive in our world.
+But at the same time Quora is full of questions.
+I am so many years and am I too old to become a programmer?
+And those questions are coming from people who are 50, who are 60, but also people who are 15.
+So what is going on?
+We try to understand together with Sebastian Valdes and George Park,
+how exactly this public discourse surrounding age and software developers is organized?
+What are people talking about and what kind of things they associate with being old in software development?
+So we have analyzed articles,
+so essentially we have looked at the top 100 hits,
+we looked at Google "age and software developer",
+we focused on English-based sources and US-based locations,
+because of course age-related expectations are culturally determined.
+We excluded things which are merely job ads and collections of statistics
+and we found 24 articles published on news sites,
+published on popular blog platform, CDC, a couple of those examples,
+and we have manually analyzed those texts.
+So the first question for us was,
+how old is actually old?
+And here I have bad news for many of us, including myself.
+So I'm old:
+I have passed the boundary of 40,
+so I am considered to be old.
+And if you see that - even if the upper boundary from this table, like 50 or older,
+is by far nowhere near to the retirement age in the western cultures.
+Some documents even refer to people in their 30s as being old.
+So essentially old is very young in software development.
+So when we looked closer at what those articles are essentially talking about
+then it turned out that employability is a major concern.
+People are worried about their ability to continue their professional careers,
+to find new jobs,
+and so on.
+And we have cross-checked those articles with more popular opinions on Hacker News.
+So what we have found is that there are many strategies which are being recommended both for companies and for individuals
+when it comes to ensuring their employer - employability of older software developers.
+For example,
+companies can offer returnships which are often being mentioned in context of parental leaves,
+but essentially can be used for any kind of extended career breaks.
+Or provide career tracks and KPIs which would be tailored towards experienced developers.
+At the same time companies should stop doing certain things which are negatively affecting all the developers.
+For example,
+if you are asking at the in - as part of your interview process to solve classical puzzles from the algorithms book
+or from the data structures book from a first-year university education
+then of course you are going to disadvantage people who might not have followed the traditional path
+or might not might have just followed those traditional paths many, many years ago,
+which was of course the case for people we've been focusing on.
+Framing technological experience as technology baggage is discouraging and worrisome.
+At the level of the individuals,
+we see that these people are trying to grow as software engineers,
+for example by mastering modern technologies or developing mentorship skills or becoming - and getting knowledge of specific niche technologies,
+but those techniques can be seen as problematic
+because even if your technology knowledge is being appreciated,
+it's - the social context might be a problem pushing some of the older individuals to adopt strategies which are aiming at appearing young.
+For example modifying CV by hiding some of the previous employment,
+working overtime which is mostly associated - not adopted for people having other obligations,
+or even going to plastic surgeons.
+So based on the study,
+we have seen techniques that both companies and individuals can employ to encourage or discourage all the software developers from continuous -
+from being employed in companies.
+In a follow-up study we have looked at more specific subgroup of all the developers,
+specifically at women.
+Remember Masako Wakamiya?
+She was in her 80s,
+she was developing an app.
+We know from the literature and from our own experience that women are a minoritized group in software development,
+and as our previous study has shown,
+so are older developers.
+And in general people who are on the intersection of multiple diversity axes
+tend to experience challenges which cannot be attributed to a single one of them.
+So this is why we have conducted a series of interview studies.
+So you see here a general overview of the experiences of older women,
+and again older in this case means 40 plus,
+the strategies they use to survive,
+and their general perceptions.
+So this is of course a full-blown paper and today I would like to focus solely on strategies
+because I would like to be it as practical as possible.
+And specifically,
+when we see the strategies that help women to survive in this hostile or at least unfriendly environment
+we see age-related strategies such as adjusting behavior or adjusting looks,
+we have already seen some of those issues before.
+Studies which are related to gender,
+ranging from don't taking things personally or baking other women,
+those strategies which are trying to combine age - gender,
+because again we know that strategies are not always easily attributed to a single of those dimensions.
+And here you see two recommendations we have distilled from our interviews.
+For example,
+trying to help the next generation of women and non-binary people
+and of course also benefiting from the networks.
+So summarizing,
+what have we seen?
+We have seen that both organizations and individuals should and can invest in creating more welcoming environment
+for all the developers in general and for veteran women developers in particular.
+Of course,
+it is a matter of common knowledge by now that diversity can bring more creative solutions and can create more productive teams
+but specifically when we are talking about minoritized groups -
+specifically when we are talking about groups which are so scarce as older women and non-binary people in software development -
+their inclusion allows us to approach the needs of the underpresented - underserved groups in the society as a whole.
+Examples of this kind of adjustments are of course changes in the interview process,
+offering returnships,
+including KPIs or including statements which would be refer - reflect that contributions of those people are valued
+and are important for the company.
+When it comes to individual developers,
+then of course we have quite a number of challenges there,
+because we see people changing - challenging the environment or changing their environments.
+Either, for example, through things like unionization, standing up against biases,
+or simply by changing companies, roles, or sometimes locations.
+We also see many much more problematic techniques and strategies,
+such as adopting useful patterns of behavior,
+changing looks,
+changing - sorry, okay,
+changing how people behave and how people look,
+but of course at the same time,
+we know that those are merely band-aid solutions,
+while of course the problems are sometimes  - or at least most of them are systemic.
+And I apologize,
+something happened to my screen and i'm not sure what exactly you are seeing.
+We are seeing you at the moment the screen share has ended.
+We've got - we've got time if you've got another slide or two and would like to try to reshare your screen that should work.
+Okay,
+let me just try to share it.
+Sure, yep, we're seeing your screen but not your slides.
+Okay, so now you need to see the slides.
+Yeah I know we're seeing the slides.
+Thank you.
+So that's essentially this time,
+yes,
+so as I said, right, so we have strategies and solutions which can help people
+and you can help both companies and both companies and individuals should be engaged in this process.
+And now I can actually stop sharing.
+Okay, thank you very much,
+sorry for the technical hiccup there.
+Great talk - thank you Alexander.
+A question coming in from the audience.
+How is all of this going to play out with the demographic shift we're seeing, for example, in Japan and parts of Europe,
+as we have an aging population.
+Do you think that this sort of discrimination is going to be reduced?
+I would love to say yes,
+but I don't really see it happening.
+Our study has of course focused on the US-based labor market which is more hot, more active,
+than what at least I see here in Europe,
+and I probably should not make any comments about the Japanese labor market.
+I'm mostly worried that, like, the problems we see are mostly related to changing employment.
+If people are sticking around to the same companies,
+they might be suffering but they will still around,
+so they are not going to see it.
+The problems which came up were mostly related to finding companies,
+being hired by those companies, and so on.
+If the market is not that active, people are not likely to change their employment,
+so we might have other forms of discrimination rather than the one we have seen.
+But it will be very bold for me to claim that we are not going to have any forms of discrimination.
+Okay,
+another another comment that came up - or question -
+you mentioned changing appearance
+How common is that in the tech sector, and how often are you seeing people taking advantage of remote work
+to try to play down or even conceal their age?
+So as a scientist I should say that those studies were qualitative,
+so I cannot answer questions on the quantitative side,
+I don't know how often it happens,
+but it has been repeatedly mentioned at the very least.
+So our interviewees are repeatedly mentioning changing their appearance,
+either to appear younger or on the other side to not appear younger.
+So most of the time when we are talking about changing appearance we are thinking about trying to appear younger.
+Some people are not trying to appear younger,
+in particular this was one of the topics which was related to our interviews with women.
+I can maybe quote one of the interviewees,
+she said that all those young tech bros,
+they don't like to work with their mom but they are perfectly happy working with their grandmother.
+So, this age, you know,
+it has a very strange relationship with what makes you "of the right age".
+Women are often seen as never being right -
+either to young and not taken seriously because they're too young
+or they're too old and not taken seriously because their knowledge is our date,
+right,
+so this - it's a tightrope.

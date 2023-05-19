@@ -1,0 +1,452 @@
+0:00:00.000,0:00:02.460
+Thank you for the warm welcome.
+
+0:00:02.460,0:00:07.680
+I'm very glad to be a part of the NWIT session today.
+
+0:00:07.680,0:00:14.940
+So today I'm going to talk about my work on emotion awareness in software engineering,
+
+0:00:14.940,0:00:22.980
+specifically towards understanding how we establish trust in software development teams.
+
+0:00:25.020,0:00:29.940
+So I'm going to start with a little bit of motivating tweets.
+
+0:00:29.940,0:00:36.360
+So as you can see from some of the tweets from practitioners here that,
+
+0:00:36.360,0:00:38.760
+you know, developers do
+
+0:00:38.760,0:00:45.780
+value and acknowledge the importance of trust and coordination in software engineering teams
+
+0:00:46.500,0:00:49.920
+This is incredibly important towards building good software
+
+0:00:49.920,0:00:53.880
+and you know if you don't care about human aspects
+
+0:00:53.880,0:00:59.340
+like trust and collaboration in your project your project is already in trouble, right?
+
+0:01:00.240,0:01:07.440
+So what I wanted to do as a researcher - me and my lab at Drexel - we wanted to understand,
+
+0:01:07.440,0:01:09.780
+okay, is there a way we can,
+
+0:01:10.500,0:01:19.140
+you know, analyzeuh and see how specifically trust is incorporated or exhibited on GitHub.
+
+0:01:21.240,0:01:26.400
+Because, you know, this is so important, but trust seems to be very vague and we
+
+0:01:26.400,0:01:32.640
+don't understand what we mean by trust. So before we start analyzing and looking
+
+0:01:32.640,0:01:38.280
+into GitHub repositories it's important for us to know and understand what is trust.
+
+0:01:39.060,0:01:44.280
+And it seems like the answer to that question is quite complicated.
+
+0:01:45.120,0:01:50.460
+So several researchers in the field of psychology have,
+
+0:01:51.120,0:01:55.440
+you know, studied trust and come up with
+
+0:01:55.440,0:01:59.340
+different types of definitions and, you know,
+
+0:01:59.340,0:02:03.960
+the one that is the most closest to software engineering,
+
+0:02:03.960,0:02:08.400
+specifically because it's designed for virtual teams,
+
+0:02:08.400,0:02:14.520
+is listed on my slide here. So I'm just gonna pause for 5-10
+
+0:02:14.520,0:02:21.300
+seconds for people to read it because I'm just just not gonna read something out on the slide.
+
+0:02:26.880,0:02:35.220
+Okay so what do we understand by this? It's vague, right, we don't understand
+
+0:02:35.220,0:02:45.180
+really what is trust and we kind of - we are making decisions in software engineering teams
+
+0:02:45.180,0:02:51.300
+about, like, who we trust, who we don't trust but we don't completely understand what we mean by it.
+
+0:02:51.900,0:02:58.080
+So, you know, we all are engineers, so let's try to break it down and see what
+
+0:02:58.080,0:03:03.120
+are the different dimensions and what drives our decisions in software engineering teams.
+
+0:03:05.040,0:03:11.880
+So based on psychology there are several dimensions of trust.
+
+0:03:11.880,0:03:17.100
+By that I mean factors that implicitly drive your decisions.
+
+0:03:17.100,0:03:18.360
+So what are those?
+
+0:03:19.200,0:03:22.200
+So the first is action-based trust. What is that?
+
+0:03:22.200,0:03:29.220
+So for example you would trust a person more if you can communicate well with them,
+
+0:03:29.220,0:03:32.280
+with minimal delays and good communication overall,
+
+0:03:32.280,0:03:34.740
+because you just know that that person is more reliable,
+
+0:03:34.740,0:03:38.820
+right? Then there is commitment-based trust.
+
+0:03:38.820,0:03:46.620
+So that happens when you both of you are committed towards fulfilling a certain type of task or you
+
+0:03:46.620,0:03:49.080
+have a specific goal, a common goal,
+
+0:03:50.640,0:03:54.660
+Then is competence. So for example say if you are trying
+
+0:03:54.660,0:04:00.120
+to assign a bug to a developer in your team, you would want to assign it to someone who you
+
+0:04:00.120,0:04:05.220
+think is competent enough to solve that problem, so that is confidence-based trust.
+
+0:04:06.600,0:04:13.140
+Next is institutional trust. So for example people who belong to the
+
+0:04:13.140,0:04:19.320
+same institutions tend to trust each other more because they think that they belong to the same
+
+0:04:19.320,0:04:22.800
+institution and therefore have the same set of values and goals.
+
+0:04:25.860,0:04:29.040
+The next steps were interesting it's personality-based trust.
+
+0:04:29.040,0:04:34.740
+So some some people inherently are - have more propensity to trust others,
+
+0:04:34.740,0:04:41.640
+so that is just like a personality-based trust. And the next one is transfer trust.
+
+0:04:41.640,0:04:44.160
+So what we mean by that is, say,
+
+0:04:44.160,0:04:49.980
+I know a person who I trust, who we say is person A,
+
+0:04:49.980,0:04:54.420
+and person A recommends me person B who I do not know
+
+0:04:54.960,0:05:00.420
+but since I trust A I would trust that recommendation and would
+
+0:05:00.420,0:05:07.620
+therefore trust the new recommended person B. So that is what we call transferred trust.
+
+0:05:08.520,0:05:14.880
+Okay so these are the the dimensions of trust that we find in psychology,
+
+0:05:14.880,0:05:18.360
+but we want to understand how this, you know,
+
+0:05:18.360,0:05:26.040
+is translated in a software engineering context. So to do that we we did a preliminary study
+
+0:05:26.040,0:05:30.780
+on GitHub requests which has been accepted at ICSE Senior track this year
+
+0:05:31.860,0:05:36.660
+where we manually analyzed a set of 100 pull requests on GitHub.
+
+0:05:36.660,0:05:41.340
+We chose four repositories - four popular open source repositories - to
+
+0:05:41.340,0:05:45.120
+collect these pull requests, and we consider just not the text
+
+0:05:45.120,0:05:49.920
+but the overall - the metadata, the developer profiles, everything to do this analysis.
+
+0:05:53.760,0:05:57.420
+So since we talked about all these dimensions up first,
+
+0:05:57.420,0:06:03.540
+let's see how exactly it translates in a context of pull requests on GitHub.
+
+0:06:04.260,0:06:08.160
+So we see action-based trust being exhibited when
+
+0:06:08.160,0:06:13.680
+the frequency and quality of comments or reviews of the pull requests, right,
+
+0:06:13.680,0:06:16.800
+so if there's a good quality comment, good explanation,
+
+0:06:16.800,0:06:23.640
+and then the person is just more proactive and responsive then you develop an action-based trust.
+
+0:06:24.960,0:06:27.120
+Similarly, commitment-based trust
+
+0:06:27.120,0:06:31.380
+is reviewing pull requests when requested or addressing a reviewer's comment.
+
+0:06:32.280,0:06:40.680
+The third one is interesting - so we tend to look at people's past actions in the repository,
+
+0:06:40.680,0:06:43.920
+and on GitHub, for example, you can look at the developer profile
+
+0:06:43.920,0:06:48.780
+and know that, okay, how many repositories that developer has contributed to,
+
+0:06:48.780,0:06:53.580
+have they, you know, what is their overall, you know, statistics so far,
+
+0:06:53.580,0:06:56.760
+how long they have been contributing and so on and so forth.
+
+0:06:58.560,0:07:04.560
+We also noticed that developers who are associated with, say, the same GitHub organizations
+
+0:07:04.560,0:07:12.900
+would tend to trust each other more. The personality-based trust is a little
+
+0:07:12.900,0:07:17.460
+bit tricky because we, you know, from our research we know that
+
+0:07:17.460,0:07:24.660
+these personality-based tools are - the automatic detection tools does not perform as well on texts,
+
+0:07:24.660,0:07:25.560
+so, you know,
+
+0:07:25.560,0:07:31.860
+it's just - therefore we did not rely on any text-based identification of
+
+0:07:31.860,0:07:34.560
+personality-based trust here. What we did was,
+
+0:07:34.560,0:07:40.260
+we would - we actually looked at overall, like, with the manual analysis we see
+
+0:07:40.260,0:07:44.640
+that developers who accept overall, accept a high number of pull requests
+
+0:07:44.640,0:07:49.800
+from people that they do not know before have a general higher propensity to trust.
+
+0:07:51.360,0:07:54.060
+And finally the transfer trust,
+
+0:07:54.060,0:07:57.960
+of course the well-established members recommend new contributors
+
+0:07:57.960,0:08:01.860
+and that is how we develop transfer trust on GitHub.
+
+0:08:03.240,0:08:08.100
+So this is all good but I think like, you know, now that we have an idea of
+
+0:08:08.100,0:08:13.020
+how it is reflected on pull requests I thought it would be good if I can
+
+0:08:13.020,0:08:19.380
+show you a pair of examples and how it is exactly exhibited on pull requests.
+
+0:08:19.380,0:08:22.800
+So on the left I'm going to show you a pull request which has been
+
+0:08:22.800,0:08:27.660
+accepted and shows high level of trust and on the right I'm going to show you
+
+0:08:27.660,0:08:34.560
+a pull request example where, you know, it's - it has not been accepted at the end
+
+0:08:34.560,0:08:41.880
+and it does not exhibit high levels of trust. So just to go dimension by dimension here,
+
+0:08:41.880,0:08:46.260
+first you see that here, just by looking at the people who have,
+
+0:08:46.260,0:08:49.560
+you know, started the pull request, that you see that they're like,
+
+0:08:49.560,0:08:54.360
+this person has a lot of followers there's 96% pull request acceptance,
+
+0:08:54.360,0:08:57.840
+a member of the project, so you kind of develop a
+
+0:08:57.840,0:09:04.380
+higher trust on this person than this person who has relatively less, you know, well,
+
+0:09:04.380,0:09:07.620
+number of followers, not a member of the project, and so on.
+
+0:09:09.600,0:09:12.300
+Similarly, as I was talking, like, mentioning before
+
+0:09:12.300,0:09:15.720
+that high action-based trust, of course you see here that there
+
+0:09:15.720,0:09:20.940
+is a lot of detailed frequent feedback, good questions, and you see here, like, you know,
+
+0:09:20.940,0:09:26.160
+there's like someone asking for this question, there was, like, no responses, no discussions,
+
+0:09:26.160,0:09:30.180
+so you know there is - there is very, you know, less activity there.
+
+0:09:32.220,0:09:36.600
+Again, moving along the same lines, commitment-based trust, reviewing and revising,
+
+0:09:36.600,0:09:42.480
+the third one requested and again because there is no response, there is no review requests,
+
+0:09:42.480,0:09:48.720
+no changes are being implemented, nothing. And then the personality-based trust,
+
+0:09:48.720,0:09:52.560
+just by looking at, you know, how many pull requests were closed by that person,
+
+0:09:52.560,0:09:58.320
+and institutional trust, again, we look at the developer profile and see how many organizations
+
+0:09:58.320,0:10:04.320
+- GitHub organizations - they are part of, if there are common GitHub organizations that
+
+0:10:04.320,0:10:05.400
+they are part of, and so on.
+
+0:10:05.400,0:10:09.900
+So overall the point here I'm trying to make is that, you know, our
+
+0:10:11.220,0:10:19.800
+inherent, you know, propensity to trust people drives our - some of our very important
+
+0:10:19.800,0:10:23.700
+decisions in software engineering and this is just one example of it.
+
+0:10:24.780,0:10:30.060
+And if we want to do better and, you know, improve trust and collaboration
+
+0:10:30.060,0:10:35.040
+we need to understand and think about the decisions that we are making here
+
+0:10:35.040,0:10:41.880
+and why we are making those decisions. So overall I suggest that, you know,
+
+0:10:41.880,0:10:46.500
+examine what you trust and how you trust in your software engineering team.
+
+0:10:46.500,0:10:50.340
+This will help you identify the risks in your collaboration in future.
+
+0:10:52.380,0:10:56.460
+If you identify certain aspects that drives a decision,
+
+0:10:56.460,0:11:01.980
+I suggest you speak frankly about your trust levels and that kind of just improves transparency
+
+0:11:01.980,0:11:05.460
+and improves collaboration and communication in the team.
+
+0:11:06.900,0:11:11.760
+Understanding team dynamics in terms of these trust dimensions that I talked
+
+0:11:11.760,0:11:16.200
+about today can also help project managers in timely interventions.
+
+0:11:16.200,0:11:22.740
+Of course, automatically detecting trust is a very difficult concept as of now,
+
+0:11:22.740,0:11:25.920
+because, you know, we as human beings first need
+
+0:11:25.920,0:11:29.820
+to understand what is trust and why we are making those decisions.
+
+0:11:29.820,0:11:35.340
+So this work was a kind of a, you know, the first stepping stone towards that.
+
+0:11:36.780,0:11:43.320
+And as I was, like, briefly touched upon before so the most most important part is that
+
+0:11:43.320,0:11:48.780
+practitioners should focus on transparent communication and regular feedback along
+
+0:11:48.780,0:11:55.440
+these lines and this trust from trust dimensions would build and maintain trust in your teams.
+
+0:11:56.880,0:12:05.220
+So that is all that I have for today. There is a QR code here with - which
+
+0:12:05.220,0:12:10.980
+links to the preprint of our paper, and this work is just a one small
+
+0:12:10.980,0:12:15.240
+part of our bigger project of emotion awareness in software engineering.
+
+0:12:15.240,0:12:21.840
+So if you are interested to know more please refer to my website or
+
+0:12:21.840,0:12:26.700
+feel free to connect with me - contact me and I'll be happy to answer any questions.
+
+0:12:29.280,0:12:33.960
+Thank you. Fantastic, thank you so much
+
+0:12:33.960,0:12:37.920
+if we can get Christian started setting up, we do have one question and maybe we have
+
+0:12:37.920,0:12:42.480
+time to get that one out the way while we're waiting for - while he gets set up
+
+0:12:42.480,0:12:47.280
+So we had a question is there a nuance between institutional and commitment trust
+
+0:12:47.280,0:12:50.880
+because it seems like they might just be special cases of one another?
+
+0:12:52.500,0:12:57.720
+There is - they are definitely correlated because institutional trust, by that,
+
+0:12:57.720,0:13:01.740
+we do not go beyond anything apart from if they're part of the same
+
+0:13:01.740,0:13:06.180
+institutions or not, right? But commitment-based trust is more.
+
+0:13:06.180,0:13:09.480
+It's like, okay, you can be a part of the same organization,
+
+0:13:09.480,0:13:15.060
+but you if you're not committed towards the same goal you are not developing that level of trust.
+
+0:13:15.060,0:13:19.620
+So I would say in my mind institution trust is just, like, at a very basic level
+
+0:13:19.620,0:13:24.060
+and commitment based trust kind of builds on top of that - it could build on top
+
+0:13:24.060,0:13:25.680
+of that. Got it.

@@ -1,0 +1,152 @@
+So actually when I first was invited I was trying to real - trying to think of what kind of talk I could give, right.
+So I went to the website from Never Work in Theory and I just like - I looked and I highlighted several different things,
+it's like something that's real life to both questions and answers and then a bridge between researchers and practitioners.
+And look at what questions could be tackled next.
+So it's sort of like a focus view.
+So based on this I tried to create my presentation and try to at least give you some idea what we've been working on.
+So actually my - what I'm - what I'm hoping that you can take away from this talk is just a slightly different view
+of maybe how you think libraries are and maybe - maybe you already know this or maybe you don't but, yeah,
+just some interesting things that we've been doing with libraries.
+So actually everybody I think framework also mentioned like Chat GPT everything is coming up,
+so I asked, why don't you know give the definition of libraries through Chat GPT, right?
+So Chat GPT I put it in, what do we know about libraries and their dependencies?
+And it came up with three important things - I think that came up, well, it didn't cover everything.
+So one of the key concepts is related to version control, security, and also package managers like npm.
+So I believe if - if my assumptions are correct I'm talking to, maybe, developers,
+so maybe you don't need for me to explain what a library is,
+but basically what it is, like, I'll just say, fundamentally, is like when people create projects now,
+they never use their - start from scratch,
+they try to use an old project or existing code,
+so this is a kind of code reuse.
+So let me take you back to the early days of code reuse.
+So there's this term called NCBM - I know you can't read all of this -
+but basically developers were very wary of adopting other people's code,
+which is probably what they - currently the developers would think were kind of crazy -
+but back in those days around 2006,
+people were a bit worried.
+I don't trust anyone else's code, and I feel a bit uneasy.
+But then here were arguments for it:
+you have to trust people and their compilers,
+you have to trust the class libraries,
+and also you need to trust the people that make good compilers.
+So programmers do eventually start writing Python, Perl, PHP, they have to trust the interpreter.
+So this is what led to - it's - it's all about trust, and trusting other people's code.
+And this all led to like dependencies.
+And if you know about dependencies, you'll know that even though you can adopt something that's very high level or very abstract,
+you really don't know what's behind it - all the dependencies stuff that's down there.
+So this is an interesting case and this was during my research as a postdoc - is that if you're familiar with the npm,
+there was this 11 or 12 lines of code that broke - basically broke the internet.
+One of the the persons - it's called the left pad incident -
+they removed this small piece of trivial code and it basically was dependent on other libraries.
+So based on that it also linked up with securities, vulnerabilities, and what this term nowadays they call it software ecosystems or package ecosystem.
+So this is the kind of work that we've been looking at.
+So, so far in my research - so from 2013 when I first graduated to now 2023 - 10 years - I think there's been a lot of work
+that's been both from the industry and also from researchers.
+So what's helped us a lot is, we've got a lot of library data sets,
+for example libraries.io, Software Heritage, the GH archives,
+and then there's also GH GitHub API,
+so you can use that to download data sets and do empirical studies to analyze these things.
+From the industry point of view there was a lot of dependency bot,
+which is a kind of bot-assisted fixing your updates
+and recently there's this Log for Shell vulnerability which also sparked the Alpha Omega project
+that people are looking for, like, the supply chains and how these big ecosystems, like,
+how can we manage these ecosystems.
+So based on that I'll just do two examples today of some of the research ideas that we are doing.
+So the first example is how to secure your libraries.
+So I'm not talking about metal detectors in libraries.
+This is library ecosystem, right.
+So here we tried - there was a student - so we had undergrad students,
+and I'll just - I don't know if you can see my screen,
+but I'll try to bring up a quick demo of this.
+So the student tried to create a tool that could look at not only the dependencies that the project relies on
+but actually the transitive dependencies,
+so dependencies that go down the chain.
+And as you can see they are large - huge - we actually - this is very hard work to get - to get -
+As a researcher it's very hard, we sold it, like, as a tool,
+it works but to actually evaluate how good it is, it's very hard.
+So we also did, like, a user study with some developers to help us understand these vulnerabilities.
+So here is part of the tool you can see that we have different colors that show the different layers,
+and for example this one that's orange has, like, the severity is very high.
+If you click on the link you should be able to find out where the security fix is and what kind of vulnerabilities are there.
+So what was the motivation of this tool?
+So I think what we wanted to do is,
+we wanted to provide developers with a more, like, holistic view of the project
+and see how many libraries, how much transivity, has been - has been - has occurred within the project.
+So this this took us - the thing is, after this, there's also this thing called dependabot
+and there's less user interface.
+So our idea was to use the visualization,
+but as you can see it's kind of very messy,
+so it's - I think there's still a lot of work that has to be done with it,
+but some of the key highlights that we found is,
+indeed,
+there is a lot of vulnerabilities that connect to each other way down the dependency tree.
+So that's one of the work that we - we're looking at.
+So let me go back to my slideshow again, hopefully everybody's still with me.
+So as you can see this is just a snapshot of the October from last year.
+So as you can see GitHub is one of the biggest sources of open source software
+and also these open source software use a lot of software libraries in their projects.
+So here is almost 94 million.
+So that's one idea.
+The second one we're looking at is something called protestware.
+So here this looks like a normal piece of code and there is some vulnerability it's a CVE - some attack -
+and in this case it was the IP location and the IP location is actually Russia.
+So this is a bit - this is not your kind of - regular kind of vulnerability attack.
+So what we found was that, I don't know,
+if last year there was a lot of protests where,
+so we're finding that there's also social ideas coming into the code.
+One example on your top left side is when one of the npm developers decided that he was going to remove his package from the ecosystem
+and wanted to hold people accountable.
+The other one is about the Ukraine war and they wanted to show their support.
+So I think - we wrote a short paper about this,
+we haven't done, like, currently we're doing the full analysis on the impacts of this
+but it looks like people are using - developers are using their influence to try to get their message - political views across.
+So coming from open source you can say that it's kind of weaponizing
+because it's a kind of discrimination against people or groups.
+So this is kind of interesting things that we're looking at.
+So I'm just gonna go quick because I have probably the last minute.
+So what do we know about libraries and their dependencies?
+I think it's all about trust and when developers did not trust the libraries and now they're giving a lot of trust - maybe too much.
+And also when we do this kind of analysis we do,
+I think there's need to be tools,
+there's need to be visualizations and kind of feedback from developers,
+what works, what doesn't work,
+I think that is currently outstanding in the research field.
+And I think, in my experience, there's like the gap -
+the gap between open source and industry or researchers in industry in this particular research field is not that far
+because I think that there's a lot of industry that use a lot of open source.
+And the second point which is, to my second case study,
+is that libraries are ever expanding,
+so now they're even dealing with social issues
+and I think this is because many of the developers now they move beyond just traditional programmers
+but also other other kinds of people that also program too as well.
+So I want to end with, "With great power comes great responsibility."
+Thank you for your attention and you can scan me or just ask me questions.
+I once again thank the organizers.
+All right, thank you very much for that.
+We do have a couple of questions that have come in.
+The first one is, in your experience or from your research,
+how much attention do developers actually pay to library vulnerabilities?
+I get notifications from GitHub for example about needing to update packages
+and I must admit I mostly delete the messages and wait until I'm doing something anyway.
+So according to the data, we've done this analysis,
+and actually people - the role of - the responsibility - it doesn't really hurt you until there's a business case.
+So I think that's what the current view is.
+However in many cases if you leave it too late then your software can be rendered outdated, right,
+so that's why we want to come up with this interesting visualizations or some kind of motivation
+because I feel that the notification is kind of - it's overused -
+that people also get tired of this,
+so it becomes more a pain rather than something useful,
+so we need something smarter and I think that's where researchers would come together to try to answer them.
+Okay,
+and one last quick question before we go to our next speaker.
+Do you think there is a risk of open source communities fracturing along political lines?
+Because of course if I create a package that doesn't work in a particular locale or doesn't work for a particular group of people
+there's the risk that we're then going to see further fissuring because of package compatibility issues?
+Yeah,
+I think there is a lot of work ongoing now, especially with developer diversity,
+and there's a lot of, like, other issues that are coming up with software,
+so I think, in my opinion, I think that it's - it's going to become a topic where people have to be more, like,
+when you develop code now,
+you have to be more aware - maybe awareness of what it could affect and how much responsibility you have to exert,
+right,
+so I don't know if I answered your question but there was, like, I think there's a lot of work that still needs to be done in this area.

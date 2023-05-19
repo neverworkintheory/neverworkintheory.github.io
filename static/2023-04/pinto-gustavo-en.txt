@@ -1,0 +1,182 @@
+Thank you Greg, Mike, Brittany, for the invitation.
+This is my great pleasure to be here to talk about CDD,
+and CDD is design technique that we built and we are using at zup, a Brazilian tech company,
+to build software - to build real world software.
+And today my goal here is to convince you that CDD could be an interesting approach to you for your next product.
+So let's just get started with these - these figures here,
+which are a lot of code but they all come from the same class,
+actually the class from this Spring framework.
+If you are a Java developer,
+chances are that you have used Spring in the past.
+So if this kind of thing - this kind of big class happens in Spring,
+are well - very well known and popular products - chances are that it may also happen on our own products and our own projects.
+And this figure here raised many questions:
+how can we refactor,
+where are the points that we should refactor,
+how should we start the refactoring,
+help spot the bug,
+where is the bug,
+how many bugs,
+and how can we test this code to make sure that there is a bug?
+And all these questions can be summarized in this simple question here:
+so how to reason about this code - so how to understand this code?
+So the idea of CDD is to provide a way to improve how developers understand and reason about code.
+Last year, I guess, Kent Beck, who is a well-known practitioner, wrote these tweets that I would like to just read very briefly for you.
+"The goal of software design is to create chunks or slices that fits into the human mind."
+So going back to the last slide, can we fit that one single class on our mind?
+I bet we can do.
+"Software keeps growing but the human mind maxed out so we have to keep chunking and slicing differently."
+So if you happen to have to leave, to stop early, this is the mess that I'd like to to show to you.
+The goal of software is to keep chunking and slicing differently.
+CDD is actually another approach - our simple approach - for chunking and slicing.
+This is the goal of CDD.
+And how does this happen with CDD?
+Has two goals.
+The first one is to reduce the developers' cognitive load.
+So going back to our first example,
+how can we really understand that code?
+How much effort should we place to understand that one single class?
+Maybe some good effort.
+And how does CDD try to reduce this cognitive load?
+It does so by posing a limit on the number of items that developers could use in a single class or a single file.
+So essentially,
+you can use whatever technique or approach that you - you want, you find fun to use, you like to use,
+but you should do that with a limit.
+And CDD brings this idea of limits from this theory - from this psychological theory,
+which is the magical number seven theory.
+It's a well-known and well-accepted theory from the psychological domain.
+And very briefly this theory says that we as human beings are only able to process, like, seven plus or minus two - minus two units of information
+in our short-term memory.
+If we receive - if we receive more information at the same time,
+chances are that we lose our ability to process that information.
+So this graph here pretty much shows what - what goes on when we receive more information.
+If you are processing just one, two, or three informations at the same moment,
+we can handle a very good understanding about what is going on.
+But when we receive four, five, six, seven, units of information at the same time,
+we drastically reduce our ability to process that information.
+That happens when we are trying to give a talk and my kid is calling me,
+my phone is beeping,
+the - the the car is honking on the streets, and so on,
+and I eventually lose my ability to understand what what I was doing.
+So CDD has this idea of limits.
+We should place a limit on the items in the source code that developers could use.
+And if a given class or a given file is over that limit it's time to refactor.
+So CDD has two main benefits here.
+It shed some light on the complexity of the source code and it gives to the developer a tool that is useful to decide
+when to refactor - when do we factor?
+We refactor when you are over the limits.
+So here on the right I just have here an example of a single class that uses CDD by using these ICP annotations.
+So every time that I'm using this class here that I suppose increase the complexity -
+that the teams believes that could increase the complexity -
+we should add this annotation here,
+ICP,
+ICP,
+ICP.
+At this moment we should do that manually and the team is - is in charge of summing all these annotations here
+to make sure that the code is over or not the limits.
+So this is the idea of CDD,
+basically it is,
+you should go to the your team,
+talk to the team about,
+hey,
+we have a lambda expression here,
+if we use a lot of lambda expression would this increase the complexity of code?
+If so,
+we should now tag these lambda expressions.
+We have an if statement here.
+If we use a lot of if statements,
+would this increase the complexity?
+If yes,
+we should now tag this if statement.
+If we use certain kind of classes,
+certain kind of variables,
+from certain kind of objects,
+would this increase the complexity?
+If so,
+we should flag this element.
+So this is the objective:
+you should flag the elements that increase the complexity
+and if it's over the budget or limits budget,
+you should refactor.
+So the last part of the talk
+I just would like to show to you our experience on using to build Handora.
+Handora is this training platform that we built at Zup
+and Zuppers go there to learn new technologies, new frameworks,
+and so this platform is built using four five servers - sorry five services,
+and you - we have used CDD to build three of these services here.
+So I have a couple of slides here left
+and I just would like to show to you this
+which I believe is the most interesting one.
+So here I have a figure when the red line means the average number - size of the classes
+and the blue line means the number of classes.
+So through our software evolution we are increasing the number of classes in the product.
+It makes sense because software is growing so we are also growing the number of classes that we have in the product.
+However on the other hand we have this red line here which says that the number of classes -
+the size of classes in terms of length of codes -
+increases in the beginning,
+but at some time it does not increase that much -
+it started to flatten at some moment - at some time.
+And this thing here is what we believe is one of the benefits of CDD.
+Although we are increasing - almost linearly increasing the number of classes in the product,
+the size in terms of lines of code are not increasing at the same speed -
+at the same growth of the number of classes,
+they are more or less stable.
+This also says that - this figure also says that although we do have a small number of sizes,
+we do also have some sizes that are a bit over the limits,
+so we do have the limits,
+but we also understood that for some kind of classes - domain classes - we may not have that limits very well done.
+Another figure that I want to show to you is about this study,
+which says that developers should strive to keep their methods under 24 lines of code.
+And we did a an experiment to make sure - to understand whether this product is under or above this threshold that the paper suggested.
+And we notice that 92% of the methods of this product are under this limits.
+So even though developers were not taught to, hey, write small methods because of that paper,
+they eventually using CDD achieve it - the same goal of having the small methods.
+When talking to one of the developers,
+they said that every unit of code is impacted
+because we know that the limit is and what goes into that limit,
+so the limit is for the classes and also the methods are impacted.
+Finally,
+you also understood that CDD could also impact the size of methods, the testing methods,
+and in this case we noticed that on average that is 80 lines of code per testing method
+and Handora has a good coverage,
+so generally speaking, is - we also suggest that CDD could also impact the size of the testing methods.
+Therefore what we learned so far is that this seems to help to design these small classes.
+CDD also seems to help designing small methods and small testing methods
+but as we showed to you,
+there is some good effort to use CDD because developers have the flag,
+the annotation in the source code.
+We wrote some static analysis tools
+but we understood that the two should be - should be very well integrated with the IDES
+otherwise developers will not use them - the tools.
+And we also try - we are also trying to motivate other teams to use CDD and,
+because of time management and time pressure from their agendas,
+it's not easy to adopt and to understand.
+With this I close my talk and I would be happy to answer your questions.
+Thank you.
+All right - thank you very much Gustavo, we do have some questions coming in,
+and the first one is,
+can this CDD concept be linked to existing easy-to-compute metrics like cyclomatic complexity.
+Yeah it could be if you happened to flag the same branches and things that the cyclomatic metric measures.
+If you happen to flag the same items it could be a proxy,
+but,
+as we - as I showed in the example,
+you can also flag, like, classes that deal with the databases,
+classes that deal with the user interface,
+so in that case,
+cyclomatic measures may not help.
+Okay,
+and a similar question,
+I'll just read this one out.
+Surely we must have significantly under seven things to think about
+since we need the remaining short-term memory to actually do the thinking about the problem,
+so how much - how many things can we have in the code and still have capacity left over to think about what code to write next?
+Yeah right,
+I - so what what - what happens in the teams is that
+the team should decide what part of the code they should measure, they should flag, right,
+so if the team decides that only these small classes here and these other cyclomatic kind of cyclomatic measures should be flagged,
+so the team just go for it.
+So CDD is mostly about what the teams believe would be important to measure.
+If they believe there are many things to measure,
+like a list of a hundred items,
+that will be also hard to understand all the items that should be flagged,
+but essentially we tell to the teams that they should measure like, five to six to seven items.

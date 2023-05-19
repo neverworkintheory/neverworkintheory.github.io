@@ -1,0 +1,278 @@
+Thank you very much Brittany for this wonderful and not nasty at all introduction.
+So,
+talking about nasty test inputs.
+Let's start with testing alone.
+We have a client, we have a server, let's assume they both speak SSL,
+there is a heartbeat protocol,
+and then we have a client that sends a payload the server
+and we have the server that replies to things,
+you probably have seen this as part of the well-known Heartbleed vulnerability but we're not going to talk about that today.
+Anyway, the important thing is that the payload that is being sent and, that is, to the server
+and the payload that the server responds
+must be identical,
+and then the client knows the server is still alive.
+Now suppose you have such a service, very simple thing,
+and you want to test that this works,
+well, what do you do?
+You need to craft a number of inputs, more inputs, and even more inputs,
+possibly testing corner cases and whatnot.
+And, well, we also need to check whether the server is actually good - going to do the right thing,
+so you also need to specify a number of outputs and check that the inputs actually get the right outputs and everything.
+This is testing as we know it,
+so this is testing as we all have done,
+and, yeah,
+we do it all day long and it's boring and it's hard - and it's boring and - but it does the job, yeah yeah, we do that.
+But I want today - I want to talk about how to create such input.
+So let's go for a simple approach here.
+Let's go and create some random inputs.
+So I'm throwing a dice and I'm just throwing random bytes at my server - this is called fuzzing,
+it can be arbitrarily smart,
+and if you're lucky,
+well,
+in our case one out of 256 messages will actually be correct
+and possibly get your reply
+but in most cases nothing is going to happen because the server is simply going to say, this is not a valid message.
+And anyway after a couple of attempts you'll probably be locked out because you sent too many illegal messages to the server anyway.
+So here you go.
+So what else can we do?
+I want to talk to you today how you can become - how you can become a testing superhero.
+A testing superhero by creating a robot - a robot that will automatically do the right thing,
+namely, sending inputs that are correct to the server and also check whether the outputs are correct
+and then you can finally relax.
+How can we do that?
+Well, you could go and program such a robot, that would be one way,
+but then you have to program such a robot for every new - every new server,
+everything you look at,
+and that's, oh, yeah, that's, yeah, I can do that,
+that's not fun either.
+No,
+what we do here is
+we leverage languages.
+And we're not talking programming languages - but we are talking formal languages.
+Did I just say the word formal?
+Please stay with us for a moment.
+And I know you have - if you've studied computer science, maybe you learned formal languages, you didn't like it wait, wait a moment,
+it's all it's super useful.
+Because if you have a formal language, in our case, for instance, a grammar,
+then you can specify what the - what the inputs to the server should be,
+so it's 0x1 followed by length payload and padding
+and what the reply should be in abstract forms,
+so the server sends back 0x2 length, like payload, and padding.
+And these are things that you can actually specify in a grammar
+that describes the correct format of such interactions
+and if you have such a grammar then, well, you still need to check that the payload is identical
+but you also - grammar alone is not enough,
+because the problem here also is,
+you have things in these interactions that you also need to satisfy,
+for instance the length field that you see up here has actually - has to be identical,
+it has to actually be the exact length of the payload that follows,
+and these are things that you cannot easily express in a grammar.
+What we do is, therefore,
+first we fuse these two things together, the request and the response, in a single grammarm,
+but then we do something very nice,
+because as the syntax alone does not suffice to capture these semantic relationships between individual elements,
+we add extra constraints to the input that describe these semantic features as - as logical formulae.
+These are logical formulae in which the non-terminals - the thing in angle brackets -
+actually take the role of variables in here.
+For instance,
+we can here specify that the mechanic, for instance, specify that the length, which is a 16-bit integer,
+is actually identical to the length of the payload.
+And we can even do more.
+We can also check that the output is correct, for instance,
+by saying that the payload that we have seen in the client request is identical to the payload that the server responds.
+And this is what we have built in a language called Isla
+which is both a language to specify such inputs and outputs by means of grammars and constraints,
+but it's also more than that,
+it's also a fuzzer and a solver to produce valid inputs that satisfy all these constraints.
+And it's also a checker that helps you to parse and check and mutate inputs following all these constraints,
+and it is this tool that, well, is one of the tools that can make you a superhero.
+Let me show you how this actually works.
+So here's Isla working.
+So what we - what Isla does is it uses the grammar for producing exchanges
+or for producing inputs and outputs,
+so we have an exchange again between the client and the server -
+client and server, hey, we have them.
+And now it uses pretty much standard production techniques, namely,
+it takes the - it takes the element on the left hand side of a rule and replaces this by the elements on the right hand side of the rule,
+so an exchange becomes a request and response,
+and now we expand the request and now we take the length and we expand the length
+and the length is an integer, 16-bit, and now we instantiate this,
+skipping a few things,
+and say, okay, length is 5 bytes.
+Now we instantiate the other elements too,
+such as the payload, for instance.
+And here's them where the magic of Isla comes in,
+because Isla automatically satisfies these constraints.
+So the word hello has five bytes, which happens to be the length, so all of this fits.
+And now we need to instantiate the padding - padding is not very interesting, this is just zero bytes,
+and what we have now is a complete and valid input
+that satisfies both syntax and semantics.
+This is something that we can now happily send to the server
+and the server will then respond with a valid response
+and Isla can now go and decompose this response,
+so, again, parse it along the rules of the grammar
+so we have a length, we have a payload, we have a padding
+and it can identify what these elements are,
+so this is the length and this is the payload and here we have the padding.
+And now since - since Isla knows what the - Isla knows what the payload is,
+then it can actually go and also check whether the output constraint is satisfied,
+that is,
+whether the hello - whether the payload in the request actually is identical to the payload in the response.
+So we have a complete exchange here,
+and happily we know that everything works.
+Well, life is good, no Heartbleed today,
+and as you see this solves two problems - two big problems,
+solves,
+addresses the problem.
+One is the problem of test generation, namely generating inputs,
+and the other one is the problem of oracles,
+that is checking inputs.
+Now all of this is great for you if you are a regular developer, yes, superhero and everything,
+but now let's get back to the title.
+I was talking about nasty inputs, not just your regular vanilla inputs,
+no,
+we're talking we're talking hardcore here, okay,
+let's go,
+let's think about something - let's think about something that is unusual.
+So I'm going to ask you to morph from a regular friendly person
+to a somewhat more nasty person,
+here we have the nasty person,
+so this is a super villain,
+and now you not only want to check what the server is doing,
+well no,
+you want to break the server,
+so you're a penetration tester or something like that.
+Okay, good,
+of course this is also your job as a tester to check against that.
+So what can you do here?
+Let's go and use our newly found superpowers to create super super great buffer overflows.
+With Isla this is super easy -
+you just add another new constraint to that and say,
+my payload must be at least 100 million bytes long.
+That should be sufficient to overflow most of the buffers.
+Not sure whether this is valid, though.
+Well we can easily find that out.
+We just synthesize this and we send this 100 million bytes to a server near us
+and then we'll find out whether it crashes or not.
+Maybe it's going to crash, maybe it's going to work,
+well, we'll find out, no problem.
+Or let's go and try to build some SQL injections.
+We remain nasty here -
+you've probably heard about SQL injections -
+so we're simply going to say, okay,
+the payload must be something like "drop table customers"
+and there goes - there go your customers.
+So you send 0x1 "drop table customers".
+Now let's assume that these individual interactions are actually being logged in a database.
+And then you get a command like this,
+"into insert log values payload"
+and then "drop table customers"
+boom.
+You can - boom,
+the customer table on your server is gone.
+Yes this is - these are real attacks,
+this is what happens all along
+but now you can actually prevent them by checking them yourself.
+Or you go well, oh yeah, SQL injection.
+Or you build HTML injections,
+same thing again,
+you insert some you insert some extra - some extra HTML elements in here and say,
+okay,
+I'm going to introduce some HTML tags,
+it could also be scripts for that matter,
+and yeah, we've sent that out,
+and if this is logged what's going to happen is that
+now all of a sudden your log contains HTML elements
+which means that the next time you check your log
+all of a sudden there will be will be interactive elements in your log,
+say, the close button.
+Now we add a script to that which steals your password and whatnot,
+grabs the screenshot of your - of your screen,
+sends your browsing history to whomever,
+yep,
+these are all - these are all things that - that attackers can do,
+and yes,
+they can also combine all of this,
+but now finally you actually have a means to -
+you have a means to combine all of that.
+Well,
+you can instantly come - can come up with a rule for nasty inputs,
+and by nasty input a buffer overflow input,
+SQL injection input,
+HTML injection input,
+yep,
+all fun.
+Okay,
+so what are we doing here?
+Are we building a weapon for attackers?
+You see you can use all these tools as a defendant too
+because you can use these tools just as well
+to see what - to see what is possible and to come up with all the creativity in your mind to prevent this from happening in production code.
+And if you are interested in all these techniques,
+writing such things - writing such grammars, testing well,
+I have two books for you.
+One is called "The Fuzzing Book" the other one is called "The Debugging Book"
+and if you Google them -
+sorry,
+are we - are we Microsoft here?
+If you Bing them or whatever,
+if you search them on the Internet you're going to find them,
+fuzzingbook.org,
+debuggingbook.org,
+and with this I'd like to close.
+How to become a testing superhero:
+language specifications, nasty inputs, and of course a - and of course these two books
+with a nice QR code that gets you directly to a tutorial.
+If you're interested in all that take a screenshot right now,
+follow me on - follow me on the Elon Musk network or follow me on the super nice Mastodon network just as you like,
+and thank you very much and I'm happy to close.
+Thank you.
+Fantastic,
+thank you so very much,
+definitely held up your end of the bargain on that one.
+So really appreciate the engaging presentation.
+We have a question already we do want to put out there,
+if you have questions please feel free to put them in the Slack and they will be conveyed and we will pass them along,
+and even if we don't have the time to do so,
+we will make sure that you get your answers - you can count on it.
+So one of the questions that we have here is,
+why a new language rather than, for example, having people express constraints in Python or something they already know?
+Multiple answers.
+A, grammars are not a new language,
+grammars are much older than Python,
+actually Python is specified as a grammar.
+Second,
+these constraints is, well, very familiar to anyone who's a programmer.
+Third thing,
+you want a language specification that you can use both for parsing and for producing
+and this is something a general purpose like a purpose language like Python cannot do,
+because if you specify a producer, say, in Python, that produces inputs,
+you cannot use it for parsing -
+you cannot use it for checking,
+you cannot use it for mutating things,
+so you have to build this parser for yourself,
+you also have to implement all the testing strategies for yourself,
+and having this in an abstract form allows you to - allows you to unlock all these strategies,
+allows you to reason about your code and, well, and it can even serve as it can - even serve as a language independent documentation
+of what your program actually expects in terms of inputs
+and what it produces as outputs.
+Fantastic all right thank you so much for that,
+I don't see any other questions coming in,
+I do want to ask a quick question about, kind of, scalability of this approach.
+So, like, this is really interesting,
+and the idea of being able to generate inputs that are both valid and invalid with a specification language I think is potentially revolutionary,
+but can we take this to a more simpler context that isn't server communication?
+Are there other ways that we could use this specification to test any of our software systems?
+It doesn't have to be server communication at all.
+You can replace the server with - by any program that takes an input and then you can send inputs to this very program.
+This can be your command line input,
+this can be your this can be your whatever, train - your train controller,
+your system thing, whatever,
+so,
+and you also don't have to necessarily check the output.
+If you can live without checking the output then you can also do that.
+The thing is that if you have a very complex set of constraints,
+then solving all these constraints will take time,
+so it's going to take a minute or so,
+or maybe even longer,
+and there will also be programs which for which test for which solving these constraints will be impossible.

@@ -1,0 +1,560 @@
+0:00:00.240,0:00:03.180
+So good morning everyone, my name is Kai,
+
+0:00:03.180,0:00:06.240
+and I'm speaking to you from cold and rainy Maine this morning.
+
+0:00:07.440,0:00:12.300
+Like Ethel from our last section my focus is in computer science education as well,
+
+0:00:12.300,0:00:17.520
+so I'm presenting a recent project I did as I was finishing up my PhD last year.
+
+0:00:18.840,0:00:24.360
+So the motivation behind this project is that teaming is a core component in professional
+
+0:00:24.360,0:00:26.640
+software engineering. As pretty much all
+
+0:00:26.640,0:00:30.780
+software engineers work in teams, it is thus essential for undergraduate
+
+0:00:30.780,0:00:36.060
+computer science programs to teach students the skills of how to work effectively in a team
+
+0:00:36.060,0:00:40.920
+and how to to make valuable contributions despite the difficulty of splitting up a problem.
+
+0:00:41.700,0:00:42.840
+That being said,
+
+0:00:42.840,0:00:47.940
+there's some evidence that students may be inclined to free ride off of their peers
+
+0:00:47.940,0:00:51.990
+and then they receive a grade that does not correspond to their contributions -
+
+0:00:51.990,0:00:54.840
+they get credit for stuff that their - their teammates have done.
+
+0:00:54.840,0:00:59.460
+And I posit that much of the the difficulty with this is that,
+
+0:00:59.460,0:01:02.760
+or much of the reason for this, is that it's difficult to accurately
+
+0:01:02.760,0:01:06.360
+identify the contributions that students make to a team project,
+
+0:01:06.360,0:01:10.680
+particularly as the project gets bigger and as the team gets bigger.
+
+0:01:10.680,0:01:15.120
+And if teaching assistants struggle to identify what students have done,
+
+0:01:15.120,0:01:19.440
+they will struggle to give students helpful feedback on their contributions
+
+0:01:19.440,0:01:23.580
+and encourage students to make full contributions to the project.
+
+0:01:24.420,0:01:27.360
+And my - my question here, the central question,
+
+0:01:27.360,0:01:34.620
+I'll get down into the the details in a moment, is wondering if auto-generated summaries of what
+
+0:01:34.620,0:01:39.240
+the various members on a team have been up to are presented to teaching assistants,
+
+0:01:39.240,0:01:45.300
+can the TAs use this to get a better feel for the details of what each student has done
+
+0:01:45.300,0:01:49.620
+and then to give them feedback and grades according to this.
+
+0:01:50.400,0:01:56.580
+So the context I studied for this, was a sophomore level Java programming course
+
+0:01:56.580,0:02:03.780
+back at NC State University where I did my PhD. And this course features a lecture section that
+
+0:02:03.780,0:02:08.400
+has has four several-week projects associated with it
+
+0:02:08.400,0:02:13.680
+and then an associated lab section as well. And this is where students really learn the
+
+0:02:13.680,0:02:17.820
+collaborative work - the teamwork - as they work in teams of of three or
+
+0:02:17.820,0:02:23.280
+four students on these lab activities. And the way the course is set up is that
+
+0:02:23.280,0:02:28.440
+the lab grading is is mostly automated already through a whole bunch of scripts and use of
+
+0:02:28.440,0:02:31.260
+continuous integration platforms. Really,
+
+0:02:31.260,0:02:36.240
+the only thing that the the TAs grade manually is student code contributions
+
+0:02:36.240,0:02:42.000
+and then assessing whether the - the Java doc accurately describes the - the code in question.
+
+0:02:43.140,0:02:47.160
+So for the lab assignments students work in teams of three or four,
+
+0:02:47.160,0:02:53.160
+for three or four weeks at a stretch, at which point the teams are scrambled and
+
+0:02:53.160,0:02:58.020
+then this entire process repeats three times as the students complete a total
+
+0:02:58.020,0:03:04.080
+of 11 labs over the semester. So looking at what I studied in - in more detail,
+
+0:03:04.080,0:03:06.480
+my research questions were, first,
+
+0:03:06.480,0:03:11.940
+can automated contribution summaries help TAs grade assignments more quickly,
+
+0:03:11.940,0:03:16.020
+get through the process faster. And this I found basically, no.
+
+0:03:17.160,0:03:18.360
+Next, I considered
+
+0:03:18.360,0:03:23.460
+whether the - the contribution summaries can help TAs grade assignments more consistently,
+
+0:03:23.460,0:03:28.680
+more consistently identify what students have done than if they were unassisted
+
+0:03:29.220,0:03:32.640
+Third, I considered whether TAs prefer the grading
+
+0:03:32.640,0:03:37.380
+process when they have this to assist them, and finally whether it can help provide
+
+0:03:37.380,0:03:41.460
+students with better feedback, more actionable feedback that
+
+0:03:41.460,0:03:45.660
+they can use to figure out when they're sufficiently contributing to the team effort
+
+0:03:46.320,0:03:50.400
+and when they're not. So in order to answer these research questions,
+
+0:03:51.420,0:03:58.500
+I designed an algorithm that presents high level summaries of what each person on a team has done.
+
+0:03:58.500,0:04:00.180
+And the way it works is,
+
+0:04:00.180,0:04:05.400
+first it pulls metadata about a repository - things like commit hashes, timestamps,
+
+0:04:05.400,0:04:11.220
+authors, files changed, that sort of stuff - and tosses it into a database for later use.
+
+0:04:12.420,0:04:13.200
+Next, there
+
+0:04:13.200,0:04:15.960
+are two copies of the repository that are cloned.
+
+0:04:15.960,0:04:21.720
+And then for each of the - the changed files on each of the commits,
+
+0:04:22.320,0:04:28.920
+an abstract syntax tree is built representing the - the file before the commit and after the commit.
+
+0:04:28.920,0:04:32.820
+And I know that ASTs are sort of by definition abstract,
+
+0:04:32.820,0:04:35.820
+so an example to make it a little bit more concrete.
+
+0:04:36.360,0:04:41.700
+If we have a Java class that looks like this, it will boil down to the abstract syntax
+
+0:04:41.700,0:04:46.440
+tree we have over on the right side. And then if we make some changes to the class,
+
+0:04:46.440,0:04:51.360
+adding in a new field and a new method, we see some corresponding changes
+
+0:04:51.360,0:04:55.980
+to the abstract syntax tree. So the way that my algorithm works is,
+
+0:04:55.980,0:04:59.100
+it builds these ASTs from both revisions of the file
+
+0:04:59.100,0:05:04.440
+and then it will tree difference the ASTs to figure out what was added, changed,
+
+0:05:04.440,0:05:10.440
+or removed between the - the two versions. And then this is repeated for every file changed
+
+0:05:10.440,0:05:16.020
+on a commit and all commits within a time period, at which point the changes are binned or
+
+0:05:16.020,0:05:20.220
+summarized to get a high level view of what each person has been up to.
+
+0:05:20.880,0:05:26.520
+So to evaluate this algorithm and figure out if it helps TAs do a better job or not,
+
+0:05:27.420,0:05:34.080
+I recruited 13 former or current computer science TAs from my peers in the PhD program,
+
+0:05:34.080,0:05:38.520
+12 of whom had existing experience with grading team-based projects.
+
+0:05:39.060,0:05:41.580
+And then in my study I tasked them with,
+
+0:05:41.580,0:05:43.260
+first, grading some projects,
+
+0:05:43.260,0:05:48.420
+then evaluating and reflecting on some feedback from their peers in the study,
+
+0:05:49.200,0:05:53.460
+and then finally reflecting on the experience - on the study, on the contributions,
+
+0:05:53.460,0:06:00.720
+the contribution summaries they were provided. So in the first part of the study I tasked them
+
+0:06:00.720,0:06:05.580
+with grading a bunch of students assignments and I used a Google Sheets spreadsheet for
+
+0:06:05.580,0:06:09.720
+this just to to mimic the - the typical experience that they're familiar with.
+
+0:06:09.720,0:06:15.900
+And in the spreadsheet they were - they had rows corresponding to each of the repositories,
+
+0:06:15.900,0:06:19.380
+each of the projects they were to grade, and then columns with information
+
+0:06:19.380,0:06:22.380
+about what to do, so links to the automated
+
+0:06:22.380,0:06:27.420
+summaries for about half of the repositories, no automated summaries for the other half,
+
+0:06:28.380,0:06:32.160
+links to the the GitHub repositories so they could see all of the code,
+
+0:06:32.160,0:06:36.480
+the project history they were to look at, and then columns for them to fill in,
+
+0:06:36.480,0:06:42.240
+grades and feedback for the - the students whose projects they were grading.
+
+0:06:43.440,0:06:47.160
+So they filled this out for each of the three students on the team.
+
+0:06:47.160,0:06:51.960
+I've trimmed off students B and C so we only have A right here,
+
+0:06:51.960,0:06:57.300
+just to make it so we can actually read things. And then in part two of the study,
+
+0:06:57.300,0:07:01.680
+I asked TAs to reflect on some of the comments from their peers,
+
+0:07:01.680,0:07:05.520
+choose between pairs of comments that their peers had provided
+
+0:07:06.240,0:07:09.660
+on which one they felt was more actionable and they could do more with.
+
+0:07:10.380,0:07:13.200
+So to summarize what we learned at this point,
+
+0:07:14.100,0:07:19.560
+I found that the TAs grade projects much more consistently when they have the automated
+
+0:07:19.560,0:07:24.060
+contribution summaries to assist them compared to doing it entirely unassisted.
+
+0:07:24.660,0:07:29.940
+Yet at the same time the - the consistency, the inter-rater reliability - is pretty low,
+
+0:07:29.940,0:07:33.600
+so I use Krippendorff's alpha as a statistical test here,
+
+0:07:33.600,0:07:41.100
+and and Krippendorff argues for - for alpha values really of - of above 0.8 where possible,
+
+0:07:41.100,0:07:44.100
+and even with the contribution summaries to help them out,
+
+0:07:44.100,0:07:49.140
+TAs didn't quite hit this mark. So there's clearly future work still to
+
+0:07:49.140,0:07:55.140
+be done which I'll talk about momentarily. Next, in terms of whether the TAs would
+
+0:07:55.140,0:07:58.140
+actually choose to use this or not, because I'd come up with all the
+
+0:07:58.140,0:08:02.040
+shiniest tools in the world but if the TAs hate them it's not of much value,
+
+0:08:03.120,0:08:07.920
+I found that all of the participants preferred using the contribution summaries when grading
+
+0:08:07.920,0:08:15.360
+and 11 of the 13 strongly prefer them. And breaking them down on a - a feature
+
+0:08:15.360,0:08:19.500
+level I saw that the TAs found most of the features here to be pretty helpful,
+
+0:08:20.400,0:08:22.560
+both the simple information of just,
+
+0:08:22.560,0:08:25.800
+here's a list of commits of what each person has done,
+
+0:08:25.800,0:08:30.720
+and then the the more advanced stuff that came from my program analysis algorithm
+
+0:08:30.720,0:08:36.300
+and shows TAs where in the the project students have been involved.
+
+0:08:37.140,0:08:40.920
+And then finally in terms of results, getting back to the students,
+
+0:08:42.660,0:08:47.040
+I asked TAs to reflect on the - the feedback from their peers
+
+0:08:48.240,0:08:52.140
+and - and let me know which of the feedbacks - which - which feedback they thought
+
+0:08:52.140,0:08:56.820
+was more helpful, more actionable, and they considered that feedback from assignments
+
+0:08:56.820,0:09:01.500
+that had been graded with the automated contribution summaries was more actionable
+
+0:09:02.040,0:09:05.460
+than feedback that came from the manually graded assignments.
+
+0:09:06.000,0:09:11.580
+And additionally I found that the TAs give more partial credit as opposed to
+
+0:09:11.580,0:09:14.520
+full credit or no credit when they have the
+
+0:09:14.520,0:09:18.360
+contribution summaries available, which suggests that they're better able to - to
+
+0:09:18.360,0:09:23.160
+see nuance and identify partial contributions, as opposed to,
+
+0:09:23.160,0:09:25.740
+you've done basically nothing or you've done a bunch.
+
+0:09:27.060,0:09:32.340
+So that's sort of what I learned. As - as for, sort of, the implications of this,
+
+0:09:33.480,0:09:40.200
+despite a relatively small sample size - I only had just over a dozen participants in one two-hour
+
+0:09:40.200,0:09:43.500
+lab section where I ran the study - despite this,
+
+0:09:43.500,0:09:47.640
+the lab study still showed value to the contribution summary algorithm
+
+0:09:47.640,0:09:53.160
+in helping TAs identify what students have done and then give give them
+
+0:09:53.160,0:09:59.040
+grades and feedback accordingly. I'm doing a follow-on classroom study right now
+
+0:09:59.040,0:10:02.340
+where I'm trying to see, can this feedback actually help
+
+0:10:02.340,0:10:07.080
+students do better semester or - assignment on assignment over the course of a semester,
+
+0:10:07.080,0:10:10.200
+trying to see - do students find the feedback more actionable,
+
+0:10:10.200,0:10:12.720
+do they improve more over the course of the semester.
+
+0:10:14.400,0:10:16.080
+As for obvious future work,
+
+0:10:16.080,0:10:20.340
+there's obviously a lot more that will go into software engineering work than just Java code.
+
+0:10:21.360,0:10:26.640
+In terms of Python code, JavaScript code, but of course also non-code contributions,
+
+0:10:26.640,0:10:29.640
+the "everything else", the design, the project management,
+
+0:10:29.640,0:10:34.320
+the discussions around the water cooler that help the team work successfully.
+
+0:10:34.320,0:10:38.280
+So the open challenge remains, how do we account for everything else?
+
+0:10:39.360,0:10:44.160
+And I'm - I think a language agnostic AST analysis can get us part of the way there,
+
+0:10:44.160,0:10:49.080
+but there's still open questions on how do we account for the non-code contributions,
+
+0:10:49.080,0:10:51.660
+which is what I'm planning on pondering this
+
+0:10:51.660,0:10:55.680
+summer and figuring out what are the - the next steps we can take with this.
+
+0:10:56.520,0:11:00.060
+So to summarize what I did and what I learned from it,
+
+0:11:00.960,0:11:05.700
+I designed an algorithm that will present high-level summaries of what
+
+0:11:05.700,0:11:08.520
+students on teams or - or really anyone on a
+
+0:11:08.520,0:11:12.600
+team has contributed to their project and then I built it into a tool that works
+
+0:11:12.600,0:11:17.700
+on Java code tracked through GitHub and I did a quantitative lab
+
+0:11:17.700,0:11:22.500
+study where I demonstrated that the TAs who use this are able to
+
+0:11:22.500,0:11:25.920
+grade assignments more consistently, they prefer the grading process,
+
+0:11:25.920,0:11:30.780
+and I have tentative results suggesting the feedback to be more actionable,
+
+0:11:30.780,0:11:34.980
+more helpful to the students whose assignments are being graded.
+
+0:11:35.820,0:11:40.800
+So that's all I've got, but I would be delighted to take any questions at this point.
+
+0:11:41.580,0:11:44.280
+Great, thank you very much, Kai. Thank you.
+
+0:11:44.280,0:11:47.820
+First question coming in, so have you thought about
+
+0:11:47.820,0:11:52.680
+applying this to people doing code reviews in open source projects or in their jobs.
+
+0:11:52.680,0:11:56.280
+It seems like exactly the same summaries would be useful for somebody
+
+0:11:56.280,0:12:00.660
+who's about to dive into a large, you know, looking at a large pull request.
+
+0:12:01.920,0:12:04.140
+Amusingly my dad actually asked me the same question.
+
+0:12:04.140,0:12:08.940
+So he works at Salesforce and was was pondering whether this could be a useful thing
+
+0:12:09.720,0:12:13.740
+to see the changes made on a pull request and I've - I've considered it,
+
+0:12:13.740,0:12:17.520
+but not actually done any evaluation in that context.
+
+0:12:17.520,0:12:20.040
+Okay. The - the one the one
+
+0:12:20.040,0:12:28.020
+thing I think is is sort of dangerous here is, larger projects with more - more free-form
+
+0:12:28.020,0:12:32.100
+types of contributions that folks can make beyond just the Java code,
+
+0:12:32.100,0:12:37.440
+we want to make sure that people aren't having numbers being presented that look bad about them.
+
+0:12:37.440,0:12:42.420
+Maybe they're still making great contributions, they're doing all of the - the helping out the
+
+0:12:42.420,0:12:45.420
+newer members of the team, the big architecting stuff,
+
+0:12:45.420,0:12:49.980
+even if the the amount of code that they're doing is actually relatively small,
+
+0:12:49.980,0:12:53.640
+so I would want to make sure that, if I was going to use it in a different area,
+
+0:12:53.640,0:12:56.220
+that we're encouraging people to use it responsibly.
+
+0:12:56.220,0:12:58.980
+Okay, and another question that's come in,
+
+0:12:58.980,0:13:03.060
+do students use pair programming? Is there a way to take account of that?
+
+0:13:03.060,0:13:07.680
+In London Python dojos with similar team size you should try to have the least
+
+0:13:07.680,0:13:12.480
+experienced programmer at the keyboard. So the - the answer is, it depends.
+
+0:13:12.480,0:13:16.680
+Students are encouraged but not required to to do pair programming.
+
+0:13:18.240,0:13:20.940
+The way - the way that it works right now is that the - the
+
+0:13:20.940,0:13:25.740
+TAs will see a list of all of the commits and then in the commit message we hope, we - we
+
+0:13:25.740,0:13:29.340
+tell students to document in the commit message if they pair program.
+
+0:13:29.340,0:13:32.400
+My anecdotal evidence is that they do a lousy job of this,
+
+0:13:33.360,0:13:37.080
+so with - with limited documentation there's not a lot we can see,
+
+0:13:37.080,0:13:43.140
+but I have some planned work as well to maybe, give you -
+
+0:13:43.140,0:13:45.480
+I'm not - not figure out exactly what the numbers would look like,
+
+0:13:45.480,0:13:47.700
+how to weight things, but also to account for
+
+0:13:47.700,0:13:51.120
+these contributions at least where they can be discerned from commit messages.
+
+0:13:51.120,0:13:56.520
+So I have - I have some work in progress where I'm doing fuzzy matching on names and commit messages
+
+0:13:57.600,0:13:58.980
+and using that to figure out,
+
+0:13:58.980,0:14:02.220
+has someone else been involved in a pair programming effort,
+
+0:14:03.000,0:14:05.700
+and then we can account for that under their contributions too.

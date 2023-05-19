@@ -1,0 +1,353 @@
+0:00:01.260,0:00:06.960
+Yes, hi everyone, my name is Zadia Codabux, I'm an assistant professor at the University
+
+0:00:06.960,0:00:10.680
+of Saskatchewan in Canada. So today I'm going to focus
+
+0:00:10.680,0:00:19.500
+on technical debt in R packages. Technical debt has been primarily
+
+0:00:19.500,0:00:23.820
+studied in object-oriented system, mostly commercial software in Java,
+
+0:00:23.820,0:00:28.500
+so in today's talk we're gonna take the path less traveled and focus on R.
+
+0:00:28.500,0:00:33.420
+More specifically, we're going to explore technical debt in R packages.
+
+0:00:35.400,0:00:39.300
+So why R? R has gained popularity over the last
+
+0:00:39.300,0:00:45.660
+few years as we can see in these images. Most R developers are also not
+
+0:00:45.660,0:00:49.320
+software developers by training, so they are more versed in their respective
+
+0:00:49.320,0:00:55.260
+domains so here we're talking about geologists, physicians, system bioinformations, etc.
+
+0:00:57.120,0:01:02.820
+These people eventually became - become the end users of the software that they implement.
+
+0:01:03.480,0:01:07.920
+And the R ecosystem is relatively young and unexplored,
+
+0:01:07.920,0:01:14.700
+so this is a great opportunity for us to look at technical debt in R packages from its infancy,
+
+0:01:14.700,0:01:20.280
+and also understand the nuances in how R developers differ from others.
+
+0:01:22.380,0:01:27.540
+So in the first part of the talk I'll focus on a study where we examine technical debt,
+
+0:01:27.540,0:01:33.000
+which is documented in the peer review of R packages in rOpenSci.
+
+0:01:33.000,0:01:39.120
+So rOpenSci features basically a platform to organize and review R packages,
+
+0:01:39.120,0:01:44.100
+and it has established a peer review process for packages
+
+0:01:44.100,0:01:52.140
+that are submitted before they are published. So in this study we explore the technical debt
+
+0:01:52.140,0:01:54.780
+types mentioned in these reviews, their distribution,
+
+0:01:54.780,0:02:01.260
+and whether the types of debt highlighted differ based on different user rules.
+
+0:02:01.260,0:02:08.280
+So by user roles here we refer to authors, reviewers, and editors of these R packages.
+
+0:02:10.680,0:02:16.380
+So we came up with a taxonomy of 10 different types of debt grouped
+
+0:02:16.380,0:02:20.400
+according to these three perspectives. So perspective is basically who is
+
+0:02:20.400,0:02:24.840
+affected by a particular type of debt. So we have three perspectives here:
+
+0:02:24.840,0:02:30.660
+the user, developer, and CRAN. So CRAN is the Comprehensive R Archive
+
+0:02:30.660,0:02:35.880
+Network which is basically - which basically performs automated checks on all packages.
+
+0:02:36.840,0:02:40.920
+Here we can see that different user roles focus on different types of
+
+0:02:40.920,0:02:45.120
+debt mentioned in these reviews. So what we can learn from this is
+
+0:02:45.120,0:02:49.260
+that different categories of people have different perspectives of what technical
+
+0:02:49.260,0:02:58.980
+debt means when it comes to R packages. So the next set of results here is,
+
+0:02:58.980,0:03:03.480
+when we look at how often these types of debt come up in the reviews,
+
+0:03:03.480,0:03:08.280
+we see that documentation debt is basically the most valued.
+
+0:03:08.280,0:03:14.220
+And this is really interesting because in traditional object-oriented systems,
+
+0:03:14.220,0:03:19.260
+most studies have shown that code debt - design debt are the most prominent
+
+0:03:19.260,0:03:22.920
+and developers focused on managing those as a priority
+
+0:03:22.920,0:03:28.500
+whereas in a growing ecosystem like R documentation is the most important.
+
+0:03:30.960,0:03:37.860
+So here we look at the different roles and what type of debt do they focus on.
+
+0:03:38.580,0:03:41.040
+So we can see that if you're an author,
+
+0:03:41.040,0:03:47.100
+you are mostly focused on defect debt. However, editors and - editors and
+
+0:03:47.100,0:03:51.000
+reviewers have different priorities. They focus more on documentation,
+
+0:03:51.000,0:03:57.240
+which kind of makes sense because they want the R packages to be reused, customized, and extended.
+
+0:03:59.580,0:04:05.700
+So in the second part of the study - in the second study I'm going to focus on a
+
+0:04:05.700,0:04:08.460
+self-admitted technical debt, again in R packages.
+
+0:04:08.460,0:04:11.880
+So, self-admitted technical debt are basically
+
+0:04:11.880,0:04:18.000
+situations where the developers are aware that the implementation - the current implementation
+
+0:04:18.000,0:04:24.240
+- is not optimal and they write comments in the source code to alert of such cases.
+
+0:04:25.920,0:04:33.720
+So in this study we focused on automated detection of SATD using classification models.
+
+0:04:33.720,0:04:40.200
+So we used a traditional machine learning model and also neural nets including transformer models.
+
+0:04:40.200,0:04:46.320
+So what we wanted to explore in this study is, what is the best model for classifying
+
+0:04:46.980,0:04:52.320
+self-admitted technical dept and its types. And we also investigate the causess of
+
+0:04:52.320,0:04:58.500
+technical debt - the causes leading to the occurrences of SATD in R packages.
+
+0:04:58.500,0:05:03.300
+However in this talk I'll only focus on the automated detection part.
+
+0:05:05.400,0:05:13.020
+So we can see a transformer model Alberta and - ALBERT and RoBERTa have a better
+
+0:05:13.020,0:05:18.180
+result when it comes to SATD prediction so they have better performance overall,
+
+0:05:18.180,0:05:22.140
+so higher recall higher precision and higher F1 score.
+
+0:05:22.140,0:05:28.440
+However they are more computationally expensive if we look at the training
+
+0:05:28.440,0:05:33.540
+time compared to other models And then we have CNN which has
+
+0:05:33.540,0:05:38.280
+a pretty good performance overall both in terms of training time and performance,
+
+0:05:38.280,0:05:42.720
+so we can say that CNN seems to hit the sweet spot.
+
+0:05:43.380,0:05:51.840
+However when we look at these models, when we look at how, you know, these models
+
+0:05:51.840,0:05:57.840
+perform when it comes to a specific type of debt, we can see that some perform better than others
+
+0:05:57.840,0:06:04.560
+and as we know the documentation debt is important for R packages from our first study.
+
+0:06:04.560,0:06:09.420
+We can see that some of these models do not detect a documentation debt
+
+0:06:09.420,0:06:13.200
+and we can see some of them do not also detect things like people debt.
+
+0:06:13.200,0:06:17.580
+So here there are some trade-offs which have to be made, you know,
+
+0:06:17.580,0:06:22.260
+we have to decide what is important when picking a model for automated debt detection.
+
+0:06:22.260,0:06:29.580
+Is it more important to extract all the different types of debt or is the performance of the model,
+
+0:06:30.360,0:06:34.620
+you know, important? So even in the best performing model RoBERTa,
+
+0:06:34.620,0:06:38.520
+we can see that there are some pretty low numbers,
+
+0:06:39.420,0:06:43.320
+meaning that some types of debt are harder to detect than others.
+
+0:06:47.400,0:06:51.300
+So there are some takeaways based on these two studies.
+
+0:06:52.920,0:06:58.740
+So some of - the first one is, documentation is important in R to understand how to get started,
+
+0:06:58.740,0:07:02.160
+how to use the packages, and this also provides
+
+0:07:02.160,0:07:07.080
+an opportunity to investigate what constitutes good documentation in R,
+
+0:07:07.080,0:07:12.720
+how to decrease documentation debt, and also promote the reuse of R packages.
+
+0:07:14.460,0:07:17.700
+Second, different users focus on different types of debt.
+
+0:07:17.700,0:07:23.340
+So the end users have different needs and priorities compared to the editors and reviewers.
+
+0:07:24.720,0:07:28.680
+Lastly, some types of debt are more challenging to detect.
+
+0:07:28.680,0:07:34.200
+I'm gonna go over a couple of examples here. Requirement debt is one of those, you know,
+
+0:07:34.200,0:07:37.800
+challenging types of debt to detect, and when we investigated,
+
+0:07:37.800,0:07:43.560
+we saw that the structure the wording - the quality of the comments fluctuated considerably.
+
+0:07:43.560,0:07:49.860
+And we also know that R packages are used in multiple domains - bioinformatics, geography, etc.
+
+0:07:49.860,0:07:54.240
+- and the way the requirements are documented, they're also vary considerably.
+
+0:07:55.380,0:07:59.460
+The next one is algorithm debt. Algorithm debt was hard to detect
+
+0:07:59.460,0:08:03.120
+because there's not a lot of keywords for detecting this type of debt.
+
+0:08:03.120,0:08:09.720
+So these are all hard problems and it would be super interesting if we could build a tool to
+
+0:08:09.720,0:08:14.040
+better detect such types of debt. So thank you for listening.
+
+0:08:14.580,0:08:19.260
+If you're interested in talking more about these studies or collaborating feel free to reach out.
+
+0:08:21.360,0:08:28.020
+Fantastic, great job, love it, love it, I mean just all of the really
+
+0:08:28.020,0:08:31.620
+cool things going on here today. Never really thought explicitly
+
+0:08:31.620,0:08:36.180
+about technical debt in the context of R but this is thought provoking,
+
+0:08:36.180,0:08:38.520
+because I feel like, especially with the documentation debt,
+
+0:08:39.240,0:08:43.380
+I use a lot of our documentation and I found that there's a lot out there,
+
+0:08:43.380,0:08:47.280
+but it's interesting - I wonder when the documentation, in terms of this work,
+
+0:08:47.280,0:08:51.960
+is documentation debt internal, is that kind of what that's
+
+0:08:51.960,0:08:57.240
+referring to or is that on a larger scale? No we mostly looked at, you know, like,
+
+0:08:57.240,0:09:01.260
+README files and, you know, documentation provided by the authors, you know,
+
+0:09:01.260,0:09:05.460
+so that the packages could be reused and used by other people, extended.
+
+0:09:05.460,0:09:10.440
+We also saw that there are a lot of packages which actually does the same thing.
+
+0:09:10.440,0:09:13.800
+So why are people not reusing, you know, because they don't feel they
+
+0:09:13.800,0:09:16.920
+understand what's going on, right, so they build something from scratch.
+
+0:09:19.020,0:09:22.980
+That is interesting, because if you don't understand it then you don't know it exists
+
+0:09:22.980,0:09:29.220
+and so you make it wasn't doing as well. How do you use it - the power of documentation,
+
+0:09:29.220,0:09:31.440
+why have we not grasped it? I love it.
+
+0:09:31.440,0:09:34.560
+Okay, great any other questions, I think we have time for some more,
+
+0:09:34.560,0:09:35.280
+okay, I think
+
+0:09:35.280,0:09:37.740
+that the question came into Slack here from Greg.
+
+0:09:37.740,0:09:42.900
+Greg wants to know how do people learn how to write decent documentation?
+
+0:09:42.900,0:09:47.100
+Seems like it's taught even less than debugging or testing.
+
+0:09:47.100,0:09:52.080
+Plus one on that one. We have we have ongoing work,
+
+0:09:52.080,0:09:54.660
+so this is, you know, part of the work that we are doing,
+
+0:09:54.660,0:10:01.440
+we have ongoing work we where we actually look at, you know, a bunch of documentation,
+
+0:10:01.440,0:10:06.180
+a bunch of like READMEs and things like that, and we came up with, like, a taxonomy,
+
+0:10:06.180,0:10:12.360
+so this is still work in review but, you know, like a checklist and, you know, taxonomies,
+
+0:10:12.360,0:10:15.060
+what should be included in documentation and so on,
+
+0:10:15.060,0:10:18.420
+how to make it useful, so this is you know ongoing work,
+
+0:10:18.420,0:10:21.996
+so we have something coming up hopefully in the next few months.
