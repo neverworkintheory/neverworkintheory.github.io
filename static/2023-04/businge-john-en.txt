@@ -1,0 +1,367 @@
+0:00:01.560,0:00:04.680
+Hello, thank you so much Greg for the introduction,
+
+0:00:05.340,0:00:10.500
+my name is John Businge, I'm an assistant professor at UNLV,
+
+0:00:10.500,0:00:14.100
+I head the software engineering lab here at UNLV.
+
+0:00:15.000,0:00:21.120
+I'm delighted to present to you my work in this event Never Work in Theory Spring 2023.
+
+0:00:22.020,0:00:26.940
+First I'd like to thank Brittany and Greg for the invitation on this event.
+
+0:00:27.900,0:00:32.820
+I will be presenting to my work on patched clones and missed patches among variants
+
+0:00:32.820,0:00:35.640
+of a software family. This work has been
+
+0:00:35.640,0:00:42.480
+previously presented at FSE 2022. Our special thanks go through the sponsors
+
+0:00:42.480,0:00:45.340
+of this study SECO-Assist. First
+
+0:00:46.500,0:00:54.180
+let me start by with some context of the study. Some of you may be aware of the Equifax software,
+
+0:00:54.180,0:01:00.600
+which is a credit score software. Equifax was identified with a cyber crime in 2017,
+
+0:01:02.160,0:01:08.640
+which was fixed almost immediately and this affected over 150
+million people
+
+0:01:09.660,0:01:14.640
+and 400
+million US dollars was lost. So how did this happen?
+
+0:01:14.640,0:01:20.040
+Equifax has a dependency on an open source software called Apache Struts.
+
+0:01:20.880,0:01:27.660
+Apache Struts identified a vulnerability in March 2017 which was fixed almost immediately.
+
+0:01:28.320,0:01:31.260
+However, Equifax delayed
+
+0:01:31.260,0:01:36.960
+to update the dependency and two months later Equifax was identified with the data breach.
+
+0:01:38.280,0:01:43.860
+Equifax could have avoided this problem if it used a recommender system to be
+
+0:01:43.860,0:01:51.780
+notified about vulnerability updates. So now let's get into the actual study.
+
+0:01:52.380,0:01:56.820
+What do we mean by the phrases variants and software families?
+
+0:01:57.360,0:02:01.260
+In this slide and next slide I'll explain what the two phrases mean.
+
+0:02:03.540,0:02:08.700
+On a social coding platform it is common for developers to fork the upstream repository
+
+0:02:08.700,0:02:15.420
+when they want to contribute. There are two types of fork:
+
+0:02:16.200,0:02:20.940
+social fork and variant forks. Social forks are created for the
+
+0:02:20.940,0:02:30.120
+sole reason of introducing new features, such as bug fixes, refactorings, or - refactorings,
+
+0:02:30.840,0:02:37.680
+and when these features are fully developed they integrated back into the main branch
+
+0:02:37.680,0:02:40.980
+or through a pull request or through any other Git means.
+
+0:02:41.580,0:02:48.840
+And that would mark the end of the social fork. Variant forks on the other hand are created by
+
+0:02:48.840,0:02:53.760
+splitting off the new development branch to steer development into a new direction
+
+0:02:53.760,0:02:58.140
+while preserving the code of the main or upstream project.
+
+0:02:59.340,0:03:07.080
+They can contribute back but they are not obliged. They may also have their own forks that contribute
+
+0:03:07.080,0:03:14.520
+back into their main lines. Our focus is on variant forks
+
+0:03:16.740,0:03:23.220
+and variant family would be a family with two or more variants.
+
+0:03:24.660,0:03:31.500
+So why are we interested in variant forks? This work is motivated by a previous
+
+0:03:32.160,0:03:42.060
+findings that is published in ESE in 2022. We investigated three software ecosystems
+
+0:03:42.060,0:03:48.540
+on GitHub of Android, .NET programming language system and JavaScript programming language system
+
+0:03:48.540,0:03:55.260
+and we discovered over 10K variants. This gave us an indication that
+
+0:03:55.260,0:04:01.740
+variants are quite prevalent on GitHub. Furthermore we also discovered that variants are
+
+0:04:01.740,0:04:06.360
+real - these variants rarely share updates, which was quite surprising
+
+0:04:07.020,0:04:13.260
+since we expected that they would at least propagate bug fixes in the shared code.
+
+0:04:15.060,0:04:22.440
+So let me - let me now using an illustration explain the context of the problem of this study.
+
+0:04:22.440,0:04:28.620
+Let's say we have variant one which is our source variant or the original,
+
+0:04:30.660,0:04:37.620
+it has three revisions or commits. So variant 2 - a developer of variant 2 comes
+
+0:04:37.620,0:04:42.360
+and wants to use a variant 1 as a starting point, so they will fork it,
+
+0:04:42.360,0:04:49.800
+which means that they will inherit all the commits or revisions that exist in variant 1
+
+0:04:49.800,0:04:57.960
+between the fork date and the divergence date these two variants share commits,
+
+0:04:57.960,0:05:04.140
+and until the variant is dead, these the commits are synchronized,
+
+0:05:04.140,0:05:10.740
+so the commits that are in them in the - in this variant 1 also exists in variant 2 and vice versa.
+
+0:05:10.740,0:05:13.440
+For some reason after the divergence date
+
+0:05:14.040,0:05:20.220
+the two commits they diverge and start introducing - introducing new commits
+
+0:05:20.220,0:05:24.660
+without integrating commits but - that sharing commits.
+
+0:05:27.540,0:05:30.720
+Let's say that at this point a developer
+
+0:05:30.720,0:05:35.760
+of variant 1 has identified a bag in a field called Foo
+
+0:05:35.760,0:05:39.000
+and then they fork, fix the bug,
+
+0:05:39.000,0:05:48.300
+and then merge back this fix into the main lane main development line through a pull request.
+
+0:05:50.160,0:05:56.220
+On the target - on the target of the Git head - the Git head of the target,
+
+0:05:56.220,0:06:00.360
+four scenarios are possible. One, who
+
+0:06:02.880,0:06:09.960
+has fixed the bug - the developer at variant two has fixed the bug independently,
+
+0:06:09.960,0:06:17.160
+so this would be effort duplication. Or, the bug, the - Foo is still buggy
+
+0:06:17.160,0:06:22.620
+and yet it has been fixed in in variant 1, so this would be a missed opportunity.
+
+0:06:23.400,0:06:29.820
+And then variant - the developer of variant 2 maybe has just fixed part of the bug,
+
+0:06:29.820,0:06:35.640
+this would be a split case - the - the Foo is still has a - a fix
+
+0:06:35.640,0:06:40.860
+and is still buggy at the same time. Or maybe another scenario would be Foo
+
+0:06:40.860,0:06:47.760
+is uninteresting because Foo has been changed beyond comparison with the Foo in the variant 1.
+
+0:06:50.520,0:06:54.120
+So let me also give you a concrete example in our study.
+
+0:06:56.220,0:07:03.720
+So these are two - this is a variant which is called Kafka which is the main variant
+
+0:07:03.720,0:07:10.980
+and then variant LinkedIn Kafka was forked from Apache Kafka.
+
+0:07:10.980,0:07:13.500
+So the two have unique commits,
+
+0:07:13.500,0:07:19.800
+as you can see we have 415 unique commits that were introduced in LinkedIn Kafka,
+
+0:07:19.800,0:07:27.420
+well they are over 1K commits that - unique commits that are appearing in a particular form.
+
+0:07:28.260,0:07:33.420
+So these two have diverged from each other and are no longer synchronizing.
+
+0:07:34.500,0:07:39.060
+So another concrete example in our study of the missed opportunity case,
+
+0:07:40.800,0:07:48.420
+we have a buggy line in the upstream of 2KM software
+
+0:07:49.080,0:08:05.820
+and this buggy line is as a result of a G10
+warning with an issue number 12550
+- and 87.
+
+0:08:07.020,0:08:14.340
+So the developer identified this and then patched this - patched the - the bug
+
+0:08:14.340,0:08:20.700
+and introduced a new line - a patched line as you can see that now this old
+
+0:08:20.700,0:08:24.180
+line has been deleted and the new line has been introduced in the project.
+
+0:08:25.200,0:08:33.660
+However in the divergent fork at the Git head we identify that this line is still buggy,
+
+0:08:33.660,0:08:40.560
+so this is a case of missed opportunity. Now let me introduce you our research questions.
+
+0:08:40.560,0:08:42.960
+We have two main research questions, the first one was,
+
+0:08:43.620,0:08:48.900
+how many cases of effort duplication and missed opportunities exist in the variant- variants,
+
+0:08:48.900,0:08:51.840
+and then the second research question - research
+
+0:08:51.840,0:08:53.460
+question number two, we wanted to find out
+
+0:08:53.460,0:09:00.600
+how many patches - how much patch technical lag exists between the source and target variants -
+
+0:09:00.600,0:09:04.860
+target variant - between the source and the target variant.
+
+0:09:07.200,0:09:10.920
+So the method that we used, one,
+
+0:09:10.920,0:09:16.380
+we searched for keywords in the pull request that have been merged - that were fixed,
+
+0:09:16.380,0:09:19.680
+the keyword like fix, fixes, resolves,
+
+0:09:19.680,0:09:25.680
+that were merged back into the different variants that we're investigating.
+
+0:09:25.680,0:09:32.700
+For example here is a pull request that was fixing a bug and has been merged back into variant 1.
+
+0:09:33.960,0:09:41.460
+And then we extracted files from the pull requests of - of the source and also extracted
+
+0:09:41.460,0:09:49.560
+files from the Git head of the target. So using a tool - tool that would vote,
+
+0:09:50.340,0:09:55.320
+which uses a clone detection called PaReco, we compare these files and we're
+
+0:09:55.320,0:09:58.800
+able to identify cases of effort duplication and missed opportunity.
+
+0:10:00.120,0:10:06.120
+So this is the graph of - of the results, as you can see, oh sorry,
+
+0:10:09.420,0:10:12.840
+you can see we have many cases of effort duplication
+
+0:10:12.840,0:10:19.420
+and many cases of a missed opportunity in one of our running examples, Apache Kafka.
+
+0:10:23.100,0:10:34.680
+And then this is a total we - we investigated over 800
+and - 8K patches from 364 source variants.
+
+0:10:34.680,0:10:41.640
+As you can see we have very interesting patches, where we have many cases of missed opportunity,
+
+0:10:41.640,0:10:46.500
+many cases of effort duplication, and also some cases of split cases
+
+0:10:46.500,0:10:53.400
+where a bug is existing - we have part of the of the bug being fixed.
+
+0:10:56.520,0:11:02.160
+Our results also achieved a very good accuracy, precision, and recall as you can see.
+
+0:11:03.060,0:11:07.200
+And then our second research question, how much patch technical lag exists
+
+0:11:07.200,0:11:10.680
+between the source and the target variants in divided variants.
+
+0:11:12.780,0:11:17.700
+So each point on the graph represents a target variant on the x-axis and the
+
+0:11:17.700,0:11:23.160
+number of weeks it has missed a patch introduced in the source variant.
+
+0:11:23.760,0:11:29.700
+This means that on average patches are missed in the target variant -
+
+0:11:29.700,0:11:33.960
+have been introduced in the source variant 52 weeks earlier.
+
+0:11:34.620,0:11:37.800
+So if you're a developer, you wouldn't be - you
+
+0:11:37.800,0:11:42.780
+wouldn't want to be in this part of the rectangle on the graph.
+
+0:11:44.880,0:11:49.680
+So what we learned from the results? We learned from the results that
+
+0:11:50.760,0:11:54.480
+variants on supporting platforms exhibit suboptimal maintenance,
+
+0:11:54.480,0:12:01.140
+researchers and practitioners need to come together to address this challenge.
+
+0:12:01.140,0:12:05.580
+We have developed a proof of concept patch recommender tool named PaReco,
+
+0:12:05.580,0:12:10.620
+we'll - we are still working to extend this PaReco into a patch recommender tool.
+
+0:12:11.340,0:12:17.820
+Currently we are extending the work on missed opportunity,
+
+0:12:19.260,0:12:22.200
+whereby we first, what we're doing that,
+
+0:12:22.200,0:12:28.560
+we are forking the the target variant and then, using genetic improvement,
+
+0:12:28.560,0:12:37.500
+we want to integrate fix the patch that has been introduced in the source variant
+
+0:12:37.500,0:12:41.100
+and then integrated into the target variant.
+
+0:12:41.880,0:12:44.580
+Thank you for listening, I'm happy to take your questions.

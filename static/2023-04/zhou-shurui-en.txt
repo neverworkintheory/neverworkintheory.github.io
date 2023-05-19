@@ -1,214 +1,599 @@
-Hello everyone thanks for having me here,
-my name is Shurui Zhou,
+0:00:00.000,0:00:03.540
+Hello everyone thanks for having me here, my name is Shurui Zhou,
+
+0:00:03.540,0:00:06.300
 I'm an assistant professor in the University of Toronto.
-Today I'm going to present our work on understanding the sustainability challenges for building open source scientific software.
+
+0:00:06.300,0:00:10.440
+Today I'm going to present our work on understanding the sustainability
+
+0:00:10.440,0:00:13.500
+challenges for building open source scientific software.
+
+0:00:15.420,0:00:20.100
 I'm sure that most of the audience today are familiar with the importance of open source
+
+0:00:20.100,0:00:24.840
 and are aware of the sustainability and support challenges in open source communities.
+
+0:00:25.500,0:00:29.460
 In this project we are focusing on a special type of open source community,
+
+0:00:29.460,0:00:30.240
 that is,
-open source scientific software.
-Scientific software development refers to the development processes for software that is used in a scientific disciplines
+
+0:00:30.240,0:00:34.920
+open source scientific software. Scientific software development refers
+
+0:00:34.920,0:00:39.720
+to the development processes for software that is used in a scientific disciplines
+
+0:00:39.720,0:00:43.800
 such as biology, physics, chemistry, or even computing.
-However,
-in a scientific community,
+
+0:00:43.800,0:00:46.020
+However, in a scientific community,
+
+0:00:46.020,0:00:52.380
 their participants are not just software developers but also domain-specific experts.
+
+0:00:53.280,0:00:57.240
 So in this graph I'm showing you the Python-based scientific software ecosystem.
+
+0:00:57.240,0:01:02.520
 On the right hand these are some biocomputing related Python based open source software.
+
+0:01:02.520,0:01:07.440
 These are essential tools for researchers and their importance will only continue to grow
+
+0:01:07.440,0:01:12.240
 as scientific inquiry becomes increasingly reliant on computational methods.
-In this talk I'm going to show you that the risks you know of in open source communities in general -
-the maintenance and the community health -
+
+0:01:13.020,0:01:17.040
+In this talk I'm going to show you that the risks you know of
+
+0:01:17.040,0:01:21.420
+in open source communities in general - the maintenance and the community health -
+
+0:01:21.420,0:01:24.600
 these are exaggerated in the scientific open source communities.
+
+0:01:24.600,0:01:28.740
 If you lose either of the domain experts or the software professionals,
+
+0:01:28.740,0:01:34.560
 the project has threaten to fall apart and it is actually a two-fronted risk they are facing.
+
+0:01:35.220,0:01:40.860
 And because these two groups has - have different training and education background and incentives,
-there are tension and conflicts between them,
-that make this sustainability even more challenging.
-So previously researchers investigated the interdisciplinary collaboration phenomenon,
-when building AI-based software where software engineers need to collaborate with data science experts
-along the machine learning life cycle.
-Specifically,
+
+0:01:40.860,0:01:45.420
+there are tension and conflicts between them, that make this sustainability
+
+0:01:45.420,0:01:50.640
+even more challenging. So previously researchers investigated
+
+0:01:50.640,0:01:56.040
+the interdisciplinary collaboration phenomenon, when building AI-based software where software
+
+0:01:56.040,0:01:58.800
+engineers need to collaborate with data science experts
+
+0:01:58.800,0:02:01.620
+along the machine learning life cycle. Specifically,
+
+0:02:01.620,0:02:05.700
 data scientists often focus on the early stage of the life cycle,
-aiming for a high-performed machine learning model
-and software developers tend to focus on integrating the model into a larger system
-and assure the performance of the host system.
+
+0:02:05.700,0:02:11.700
+aiming for a high-performed machine learning model and software developers tend to focus on
+
+0:02:11.700,0:02:16.020
+integrating the model into a larger system and assure the performance of the host system.
+
+0:02:17.280,0:02:21.060
 This is another view to show that when building AI-based software system,
+
+0:02:21.060,0:02:25.020
 people have different focuses during the development procedure,
-and of course there are some collaboration points
-and the study found that the interdisciplinary collaboration creates a lot of different tensions in the process.
-So in our study we are focusing on an interdisciplinary collaboration when building scientific software in an open source environment.
-Related work found that the majority of development work is done by scientists themselves
-and professional developers may be employed later to create and maintain a software.
-Different from the well-defined machine learning lifecycle,
-it is unclear how the two groups were collaborating with each other in open source environment
+
+0:02:25.020,0:02:30.480
+and of course there are some collaboration points and the study found that the interdisciplinary
+
+0:02:30.480,0:02:33.960
+collaboration creates a lot of different tensions in the process.
+
+0:02:34.740,0:02:39.540
+So in our study we are focusing on an interdisciplinary collaboration when building
+
+0:02:39.540,0:02:45.120
+scientific software in an open source environment. Related work found that the majority of
+
+0:02:45.120,0:02:51.420
+development work is done by scientists themselves and professional developers may be employed later
+
+0:02:51.420,0:02:55.620
+to create and maintain a software. Different from the well-defined
+
+0:02:55.620,0:02:58.920
+machine learning lifecycle, it is unclear how the two
+
+0:02:58.920,0:03:02.160
+groups were collaborating with each other in open source environment
+
+0:03:02.160,0:03:06.240
 and how such collaboration will affect the sustainability challenges.
-Specifically,
-we investigate this problem from two aspects.
-First,
-we focus on the science related challenges in open source context
-by asking,
-what are the major obstacles when an interdisciplinary team builds and maintains the scientific software in open source.
-And next we focus on the open source related challenges in scientific community
-by asking,
+
+0:03:06.900,0:03:10.380
+Specifically, we investigate this problem from two aspects.
+
+0:03:10.380,0:03:12.780
+First, we focus on the science related
+
+0:03:12.780,0:03:15.480
+challenges in open source context by asking,
+
+0:03:15.480,0:03:19.440
+what are the major obstacles when an interdisciplinary team builds and
+
+0:03:19.440,0:03:25.440
+maintains the scientific software in open source. And next we focus on the open source related
+
+0:03:25.440,0:03:28.260
+challenges in scientific community by asking,
+
+0:03:28.260,0:03:32.220
 what are the main factors for sustaining the scientific open source community.
-So in order to answer these,
-we did a case study using these methodologies on a sci - on a scientific software in physics domain.
-For research ethics concerns we anonymize the real project name and use the fake name Moonpie to refer to the project.
+
+0:03:33.600,0:03:38.760
+So in order to answer these, we did a case study using these methodologies on a
+
+0:03:38.760,0:03:45.840
+sci - on a scientific software in physics domain. For research ethics concerns we anonymize the
+
+0:03:45.840,0:03:49.920
+real project name and use the fake name Moonpie to refer to the project.
+
+0:03:49.920,0:03:55.320
 So Moonpie as you can see from here is a big enough and long enough lived project.
-Now let's look at the result.
-First we investigate the science related challenges in open source context.
-We would like to understand how our scientists collaborate with software engineers,
-how do they split the task.
-We had a hypothesis that software engineers would work more on the infrastructure operation of the system
-while scientists would work more on the domain-specific code.
-For this part we focused on the core developers over the 10 years
-and we detect the type of their contribution by analyzing the commit history.
-And we divide the code into two categories:
-one is infrastructure,
-another one is domain specific.
+
+0:03:57.240,0:04:01.380
+Now let's look at the result. First we investigate the science
+
+0:04:01.380,0:04:06.540
+related challenges in open source context. We would like to understand how our scientists
+
+0:04:06.540,0:04:09.600
+collaborate with software engineers, how do they split the task.
+
+0:04:09.600,0:04:13.560
+We had a hypothesis that software engineers would work more on the
+
+0:04:13.560,0:04:17.880
+infrastructure operation of the system while scientists would work more
+
+0:04:17.880,0:04:21.720
+on the domain-specific code. For this part we focused on the
+
+0:04:21.720,0:04:25.440
+core developers over the 10
+years and we detect the type of their
+
+0:04:25.440,0:04:30.600
+contribution by analyzing the commit history. And we divide the code into two categories:
+
+0:04:30.600,0:04:33.600
+one is infrastructure, another one is domain specific.
+
+0:04:34.440,0:04:38.700
 So for each core contributor we calculate the number of merge commits
+
+0:04:38.700,0:04:41.940
 and then we plot their contribution on this spectrum
+
+0:04:41.940,0:04:45.120
 and the size of the dots is about the number of commits.
+
+0:04:45.120,0:04:49.440
 The left extreme are the 100% infrastructure related contribution
+
+0:04:49.440,0:04:53.940
 while the right extreme are 100% domain specific code contribution.
+
+0:04:54.480,0:04:57.900
 As you can see there are people at all parts of the spectrum.
+
+0:04:57.900,0:04:59.040
 Also,
-there are actually only two professional software engineers among all the 40 core developers or core contributors
-and the others are all professional scientists.
+
+0:04:59.040,0:05:02.880
+there are actually only two professional software engineers among
+
+0:05:02.880,0:05:08.460
+all the 40
+core developers or core contributors and the others are all professional scientists.
+
+0:05:10.080,0:05:15.000
 There is someone at both - that has both expertise in software engineering and science,
+
+0:05:15.000,0:05:19.200
 but this person in the middle is very much an exception in a - to the project.
+
+0:05:19.200,0:05:23.700
 It is rare in this Moonpie community that people have both backgrounds.
+
+0:05:23.700,0:05:28.320
 It is not surprising that this person does not have an - has an easy life
+
+0:05:28.320,0:05:32.940
 and they had a lot of difficult conversation with people on the extremes of the spectrum.
-And more interestingly,
-from our interview study we observed that
+
+0:05:32.940,0:05:37.440
+And more interestingly, from our interview study we observed that
+
+0:05:38.280,0:05:41.340
 there is a tension between the two groups of experts.
-It's not about their titles, but the mindsets.
-For example,
-we observe that people who view the best practices of maintenance and software upgrade as the value they're bringing to the software
+
+0:05:41.340,0:05:44.940
+It's not about their titles, but the mindsets. For example,
+
+0:05:44.940,0:05:49.080
+we observe that people who view the best practices of maintenance
+
+0:05:49.080,0:05:52.380
+and software upgrade as the value they're bringing to the software
+
+0:05:52.380,0:05:57.300
 and people who are looking at the domain utility and science related value of the project.
+
+0:05:58.500,0:06:04.620
 And another example is about the task prioritization between the two groups.
-On the one hand,
-software engineers believe it is important to follow software engineering best practices
-and utilize automated workflows such as CI/CD to ensure the code quality and reduce the maintenance burden.
-As a result they often need to explain to scientists that their code does not meet the code quality standard
-and need more refactoring.
-On the other hand,
-scientists perceive software engineers as someone that hold these rigid standards that they want to adhere to
-or who are not as familiar with the kind of flexibility nature of scientific software development.
-Yeah,
-and another tension reviewed in the interview is the perception of seniority in the Moonpie community.
-According to the interviewees,
-one distinction between the scientific software community and the traditional open source community is the ranking of seniority.
-As in traditional open source projects,
+
+0:06:04.620,0:06:07.920
+On the one hand, software engineers believe it is important
+
+0:06:07.920,0:06:13.260
+to follow software engineering best practices and utilize automated workflows such as CI/CD
+
+0:06:13.260,0:06:17.160
+to ensure the code quality and reduce the maintenance burden.
+
+0:06:17.160,0:06:21.660
+As a result they often need to explain to scientists that their code does not
+
+0:06:21.660,0:06:25.380
+meet the code quality standard and need more refactoring.
+
+0:06:25.380,0:06:27.900
+On the other hand, scientists perceive
+
+0:06:27.900,0:06:33.060
+software engineers as someone that hold these rigid standards that they want to adhere to
+
+0:06:33.060,0:06:37.980
+or who are not as familiar with the kind of flexibility nature of scientific software
+
+0:06:37.980,0:06:40.740
+development. Yeah,
+
+0:06:41.820,0:06:45.780
+and another tension reviewed in the interview is the perception of
+
+0:06:45.780,0:06:49.740
+seniority in the Moonpie community. According to the interviewees,
+
+0:06:49.740,0:06:54.900
+one distinction between the scientific software community and the traditional open source
+
+0:06:54.900,0:07:00.000
+community is the ranking of seniority. As in traditional open source projects,
+
+0:07:00.000,0:07:03.540
 the contributors are ranked by the volume of their code contribution,
-while in Moonpie,
-people with a senior academic title have more decision making power on whether to merge this PR or not.
+
+0:07:03.540,0:07:06.360
+while in Moonpie, people with a senior
+
+0:07:06.360,0:07:11.820
+academic title have more decision making power on whether to merge this PR or not.
+
+0:07:12.360,0:07:15.540
 So these are fundamentally in tension from each other.
+
+0:07:16.560,0:07:21.600
 And the second part of our study focuses on the other side of the scenario,
+
+0:07:21.600,0:07:27.060
 which is the sustainability challenges in open source communities with this science context.
-Specifically,
-we identify the contributors who merge code before but has no activity in the past 100 days in this Moonpie project and ask three questions.
+
+0:07:27.060,0:07:31.140
+Specifically, we identify the contributors who merge code
+
+0:07:31.140,0:07:37.920
+before but has no activity in the past 100
+days in this Moonpie project and ask three questions.
+
+0:07:38.460,0:07:41.160
 What was the incentive that you contribute to Moonpie?
+
+0:07:41.160,0:07:42.900
 What was the reason you left the community?
+
+0:07:42.900,0:07:47.940
 And do you have any suggestions of improving the sustainability?
+
+0:07:49.020,0:07:55.560
 So we summarize the results of incentives and reasons of disengagement using the Sankey diagram.
-As you can see,
-the majority of people that contributed to Moonpie due to their own usage
-and they left because the project is stable or their focus is shifted.
-So you might think, yeah, these are pretty obvious reasons, so what can we do as a maintainer to keep them stay longer?
-Unfortunately,
-there is not a lot that is actually avoidable.
+
+0:07:55.560,0:07:58.320
+As you can see, the majority of people that
+
+0:07:58.320,0:08:03.780
+contributed to Moonpie due to their own usage and they left because the project is stable
+
+0:08:03.780,0:08:07.680
+or their focus is shifted. So you might think, yeah,
+
+0:08:07.680,0:08:12.840
+these are pretty obvious reasons, so what can we do as a maintainer to keep them stay longer?
+
+0:08:13.680,0:08:17.460
+Unfortunately, there is not a lot that is actually avoidable.
+
+0:08:17.460,0:08:22.380
 The question you might have as a maintainer is, what can I do with this information then, right?
+
+0:08:22.380,0:08:25.620
 So from our study we identified a few opportunities.
-If the goal is not the long-term participation of one member but the overall health of the community,
-we need a different strategy.
-We have received many valuable suggestions and opinions but given the time limitation I would like to present two major ones.
-The first one is,
+
+0:08:25.620,0:08:30.780
+If the goal is not the long-term participation of one member but the
+
+0:08:30.780,0:08:34.140
+overall health of the community, we need a different strategy.
+
+0:08:34.140,0:08:39.720
+We have received many valuable suggestions and opinions but given the time limitation I would
+
+0:08:39.720,0:08:43.050
+like to present two major ones. The first one is,
+
+0:08:43.050,0:08:47.760
 we should acknowledge that there is a lot about the turnover processes that we cannot change
+
+0:08:47.760,0:08:54.000
 but we can - what we can change is to actually make the project more accessible.
-Knowing that we are not only need to make the project accessible but we need to make the science accessible at the same time,
-therefore when we provide documentation,
-we not only need to document the source code but also need to explain the scientific theory behind that.
-Similarly,
-prior - a previous work already showed that providing this good first issue is a great strategy to attract newcomers
-but many of our participants suggested that to fix a good issue needs - they need to not only understand the code or what issue is,
+
+0:08:54.000,0:08:58.260
+Knowing that we are not only need to make the project accessible but we need to make
+
+0:08:58.260,0:09:02.700
+the science accessible at the same time, therefore when we provide documentation,
+
+0:09:02.700,0:09:07.920
+we not only need to document the source code but also need to explain the scientific theory
+
+0:09:07.920,0:09:10.320
+behind that. Similarly,
+
+0:09:10.320,0:09:15.180
+prior - a previous work already showed that providing this good first issue is
+
+0:09:15.180,0:09:19.500
+a great strategy to attract newcomers but many of our participants suggested
+
+0:09:19.500,0:09:25.200
+that to fix a good issue needs - they need to not only understand the code or what issue is,
+
+0:09:25.200,0:09:28.620
 but also need to provide guidance on the corresponding code module
+
+0:09:28.620,0:09:32.880
 and the theory that contributor needs to understand before really make this contribution.
-In this way it turns the project into not being just a software participation exercise in a domain specific tool,
-but also a valuable learning exercise for us - for someone who is taking something from these experiences.
-Then as a software engineer researcher,
-an open question that arises naturally for us is,
+
+0:09:32.880,0:09:37.440
+In this way it turns the project into not being just a software participation
+
+0:09:37.440,0:09:41.880
+exercise in a domain specific tool, but also a valuable learning exercise
+
+0:09:41.880,0:09:45.660
+for us - for someone who is taking something from these experiences.
+
+0:09:46.800,0:09:51.480
+Then as a software engineer researcher, an open question that arises naturally for us is,
+
+0:09:51.480,0:09:55.800
 can we design some tools to automate these documentation processes,
-that connect both code and theory.
-And the second strategy I would like to share is to recognize the participation and contribution.
-First,
+
+0:09:55.800,0:10:02.520
+that connect both code and theory. And the second strategy I would like to share is
+
+0:10:02.520,0:10:05.940
+to recognize the participation and contribution. First,
+
+0:10:05.940,0:10:09.420
 if you're using any of the open source scientific software or packages,
+
+0:10:09.420,0:10:14.040
 please consider citing a work in the project - of the project in your paper or report
+
+0:10:14.040,0:10:18.780
 to give people the recognition of participation and contribution in a project.
+
+0:10:19.500,0:10:23.880
 And some survey participants would like to know the impact of their contribution,
-such as how many researchers are using their code,
-how many PhD students are using my code to contribute to their thesis, right.
-So then the question for us again is,
+
+0:10:23.880,0:10:29.700
+such as how many researchers are using their code, how many PhD students are using my code to
+
+0:10:29.700,0:10:33.900
+contribute to their thesis, right. So then the question for us again is,
+
+0:10:33.900,0:10:38.580
 can we design better ways to quantify the impact beyond just the number of downloads?
+
+0:10:38.580,0:10:43.980
 Can we detect the usage of their code in a small - a finer granularity on a larger scale.
-So there are many other insights I don't have time to share but if you're interested I would be more than happy to discuss offline.
-Last but not least,
-I would like to thank my students and collaborators who have been contributing to this work.
-To summarize,
-in this project we investigate a unique open source scientific software
-and the results show that the sustainability challenges in open source in general will get worse
-when you are building a scientific package.
-To improve this - sustainability in this context we need to recognize the tension between the two groups of experts,
+
+0:10:44.880,0:10:47.760
+So there are many other insights I don't have time to share but if
+
+0:10:47.760,0:10:50.760
+you're interested I would be more than happy to discuss offline.
+
+0:10:50.760,0:10:52.620
+Last but not least, I would like to thank
+
+0:10:52.620,0:10:55.980
+my students and collaborators who have been contributing to this work.
+
+0:10:57.180,0:10:59.760
+To summarize, in this project we investigate
+
+0:10:59.760,0:11:04.080
+a unique open source scientific software and the results show that the sustainability
+
+0:11:04.080,0:11:07.500
+challenges in open source in general will get worse
+
+0:11:07.500,0:11:12.600
+when you are building a scientific package. To improve this - sustainability in this
+
+0:11:12.600,0:11:16.920
+context we need to recognize the tension between the two groups of experts,
+
+0:11:16.920,0:11:21.480
 be aware of - that these will be exaggerated challenges,
+
+0:11:21.480,0:11:24.360
 and given that software developers are not fungible,
-but neither are scientists.
-And we definitely need different strategies.
+
+0:11:24.360,0:11:28.620
+but neither are scientists. And we definitely need different strategies.
+
+0:11:28.620,0:11:32.280
 If you are in a leadership role in a scientific open source community,
+
+0:11:32.280,0:11:37.200
 the efforts need to be put into improving accessibility of the project
+
+0:11:37.200,0:11:42.360
 by lowering the barrier for both code - software engineering - and the science and the theory.
-And if you are a user of these tools,
-please consider giving recognition of these tools and giving acknowledgment of these contributions.
-That concludes my talk, thank you so much.
+
+0:11:43.140,0:11:49.920
+And if you are a user of these tools, please consider giving recognition of these tools
+
+0:11:49.920,0:11:56.220
+and giving acknowledgment of these contributions. That concludes my talk, thank you so much.
+
+0:11:58.920,0:12:01.920
 Fantastic, thank you so much again,
-really interesting,
-I learned later in life, like, in the recent years that this was the type of research I was doing as an undergrad,
+
+0:12:01.920,0:12:04.860
+really interesting, I learned later in life,
+
+0:12:04.860,0:12:08.820
+like, in the recent years that this was the type of research I was doing as an undergrad,
+
+0:12:08.820,0:12:14.820
 doing - helping develop technology for geologists and the software they use to maintain their data,
+
+0:12:14.820,0:12:18.420
 so I think this is a really interesting and apparently understudied space.
-I wonder - the work that you've been doing here,
-is that building off of any other work specific to the sustainability piece
-or even the interaction that happens?
+
+0:12:18.420,0:12:24.540
+I wonder - the work that you've been doing here, is that building off of any other work
+
+0:12:24.540,0:12:29.160
+specific to the sustainability piece or even the interaction that happens?
+
+0:12:29.160,0:12:32.220
 It seems like that's part of the problem and solution,
+
+0:12:32.220,0:12:35.820
 is how do we how do we make these interactions meaningful for both parties,
+
+0:12:35.820,0:12:40.140
 such that we're getting these outcomes as well as, again, them being sustainable?
-Is this built on things or is this really, kind of, some of the first work to look at those interactions?
-So private - previous work have already been looking to this - building software in a small institute or kind of a local institute
-instead of this distributed collaboration,
-so I think previous work has also looked into like open source scientific software,
-but not on GitHub,
+
+0:12:41.040,0:12:43.680
+Is this built on things or is this really, kind of, some of the first
+
+0:12:43.680,0:12:49.020
+work to look at those interactions? So private - previous work have already
+
+0:12:49.020,0:12:54.840
+been looking to this - building software in a small institute or kind of a local institute
+
+0:12:54.840,0:13:00.480
+instead of this distributed collaboration, so I think previous work has also looked into
+
+0:13:00.480,0:13:03.300
+like open source scientific software, but not on GitHub,
+
+0:13:03.300,0:13:06.180
 but some repositories where they publish their source code,
-so they look into the different roles in terms of the seniority of, like, whether it's a professor or students,
-but here we actually try to split them into their background or roles or mindsets,
-right,
+
+0:13:06.180,0:13:10.200
+so they look into the different roles in terms of the seniority of,
+
+0:13:10.200,0:13:16.140
+like, whether it's a professor or students, but here we actually try to split them into their
+
+0:13:16.140,0:13:17.880
+background or roles or mindsets, right,
+
+0:13:17.880,0:13:22.320
 I think that's kind of a new aspect that we bring into, yeah.
+
+0:13:22.320,0:13:27.300
 And it seems important with respect to - it sounds like how they're thinking about the end result,
-the product that that's being developed and used.
-Fantastic.
+
+0:13:27.300,0:13:30.540
+the product that that's being developed and used. Fantastic.
+
+0:13:30.540,0:13:34.440
 So I see we have another question that we do have one minute for.
+
+0:13:35.340,0:13:39.600
 Greg wants to know, where and how do scientists learn what they know about programming?
+
+0:13:39.600,0:13:44.040
 Are they learning it in class, are they learning it from other researchers, on the job, YouTube?
-How - do you have any insights on that?
-Yeah,
+
+0:13:45.300,0:13:48.180
+How - do you have any insights on that? Yeah,
+
+0:13:48.180,0:13:53.640
 so among all the - of the developers, or core developers that we talked with,
+
+0:13:53.640,0:14:00.480
 actually most of them learn just self self-taught software developers
-and have - never have taken any courses,
-they don't have a degree in a discipline.
+
+0:14:00.480,0:14:04.620
+and have - never have taken any courses, they don't have a degree in a discipline.
+
+0:14:04.620,0:14:09.300
 Only one of the professional software engineers that we interviewed, like, I showed two of them,
+
+0:14:10.140,0:14:14.520
 one they had a computer science background in their undergrad,
-so actually most of the scientists,
-they are not trained with professional software engineering background,
-but the problem is,
-we cannot just blame them of - they have not -
-no software engineering background because sometimes the software engineering practices
-cannot be directly applied to build this scientific software,
-so we actually need to adjust the software engineering best practices to build this domain specific software.
+
+0:14:14.520,0:14:19.500
+so actually most of the scientists, they are not trained with professional
+
+0:14:19.500,0:14:22.020
+software engineering background, but the problem is,
+
+0:14:22.020,0:14:26.940
+we cannot just blame them of - they have not - no software engineering background because
+
+0:14:26.940,0:14:31.260
+sometimes the software engineering practices cannot be directly applied to build
+
+0:14:31.260,0:14:33.720
+this scientific software, so we actually need to adjust
+
+0:14:33.720,0:14:39.660
+the software engineering best practices to build this domain specific software.

@@ -1,137 +1,443 @@
-Thank you for the introduction.
-In the next 10 minutes I'm going to give you a peek into the field of software effort estimation
+0:00:00.000,0:00:03.600
+Thank you for the introduction. In the next 10 minutes I'm going
+
+0:00:03.600,0:00:07.080
+to give you a peek into the field of software effort estimation
+
+0:00:07.080,0:00:11.820
 and I'm going to show you how you can tackle the delays in your software deliveries.
+
+0:00:11.820,0:00:19.800
 I will also discuss why it's important to take a holistic approach to on-time software delivery.
-So we all know that late delivery and cost overruns have been common problems in the software industry for decades.
-On average software projects run over time around 30% and this percentage does not seem to have decreased since the 1980s.
+
+0:00:21.300,0:00:25.800
+So we all know that late delivery and cost overruns have been common problems
+
+0:00:25.800,0:00:32.400
+in the software industry for decades. On average software projects run over
+
+0:00:32.400,0:00:38.820
+time around 30% and this percentage does not seem to have decreased since the 1980s.
+
+0:00:39.540,0:00:43.800
 And even though effort estimation is at the heart of almost all industries,
+
+0:00:43.800,0:00:47.640
 it's especially challenging for the software industry
-because software development is a complex undertaking that is affected by a variety of vast social and technical factors.
-While currently most software companies they rely on human experts' subjective assessments to arrive at an effort estimate.
+
+0:00:47.640,0:00:53.520
+because software development is a complex undertaking that is affected by a variety
+
+0:00:53.520,0:00:59.400
+of vast social and technical factors. While currently most software companies
+
+0:00:59.400,0:01:06.240
+they rely on human experts' subjective assessments to arrive at an effort estimate.
+
+0:01:06.240,0:01:12.540
 And human experts use their intuition, they use rule of thumb, or they use generalized models.
+
+0:01:12.540,0:01:19.020
 And research has shown that this may lead to inaccurate and inconsistent estimates
-because software development is, yeah, there are too many unknowns and too many interrelated factors to reduce it to a gut feeling or to a rule of thumb.
+
+0:01:19.020,0:01:24.000
+because software development is, yeah, there are too many unknowns and too many
+
+0:01:24.000,0:01:28.980
+interrelated factors to reduce it to a gut feeling or to a rule of thumb.
+
+0:01:29.640,0:01:34.440
 So we need to have a deeper understanding of the factors that play a role here,
-how they interact with each other,
-and we need to incorporate them into our effort estimation models to reduce the delay in software deliveries.
-So to investigate the most relevant factors and their interactions we performed case studies at ING.
-ING is a large Dutch internationally operating bank.
-And we use the mixed methods approach - so we combined qualitative survey data with quantitative repository data
+
+0:01:34.440,0:01:38.700
+how they interact with each other, and we need to incorporate them into
+
+0:01:38.700,0:01:42.960
+our effort estimation models to reduce the delay in software deliveries.
+
+0:01:45.000,0:01:51.000
+So to investigate the most relevant factors and their interactions we performed case
+
+0:01:51.000,0:01:53.700
+studies at ING. ING is a large
+
+0:01:53.700,0:01:58.980
+Dutch internationally operating bank. And we use the mixed methods approach - so
+
+0:01:58.980,0:02:04.620
+we combined qualitative survey data with quantitative repository data
+
+0:02:05.520,0:02:13.620
 to to corroborate the respondents' perceptions and to also validate - to validate their perceptions
+
+0:02:13.620,0:02:19.320
 and to capture multiple perspectives on the phenomenon of on-time software delivery.
-And we wanted to find out what factors affect delays in software delivery and how are these factors related to each other.
-And with such insights we can actually better understands what data and techniques are needed to improve effort estimation methods
-and to predict and manage delay risks.
+
+0:02:20.100,0:02:25.620
+And we wanted to find out what factors affect delays in software delivery and
+
+0:02:25.620,0:02:27.540
+how are these factors related to each other.
+
+0:02:29.760,0:02:38.760
+And with such insights we can actually better understands what data and techniques are needed
+
+0:02:38.760,0:02:43.920
+to improve effort estimation methods and to predict and manage delay risks.
+
+0:02:45.600,0:02:53.160
 Okay, so from the open-ended survey responses and to - our validation with the repository data
-we identified 25 factors that affect delays in software deliveries and we organize these factors along five risk dimensions.
-So the first one is the organizational dimension
-which actually concerns the uncertainty surrounding the organizational environments in which your software delivery takes place.
-And three of the organizational factors are ranked to be among the top five most influential factors.
-So, for example, organizational alignment, which is actually having a shared vision and mission,
-which can ensure the alignments between the implementation of your software delivery and your business strategy,
+
+0:02:53.160,0:02:59.100
+we identified 25 factors that affect delays in software deliveries and we
+
+0:02:59.100,0:03:06.840
+organize these factors along five risk dimensions. So the first one is the organizational dimension
+
+0:03:06.840,0:03:12.600
+which actually concerns the uncertainty surrounding the organizational environments
+
+0:03:12.600,0:03:18.600
+in which your software delivery takes place. And three of the organizational factors are ranked
+
+0:03:18.600,0:03:25.380
+to be among the top five most influential factors. So, for example, organizational alignment, which
+
+0:03:25.380,0:03:32.580
+is actually having a shared vision and mission, which can ensure the alignments between
+
+0:03:32.580,0:03:36.360
+the implementation of your software delivery and your business strategy,
+
+0:03:36.360,0:03:40.740
 and this is reported to contribute to your timely software delivery.
+
+0:03:41.700,0:03:49.020
 Respondents also reported that they are often hampered by organizational politics
+
+0:03:49.020,0:03:52.620
 and the geographic distribution of the software teams.
-Next we have process factors which represents the effectiveness and the maturity of the way your software teams work.
-And in this category, requirements refinements is the top mentioned factor that affects the delay in your software deliveries.
-In fact it's the process of defining your software delivery and breaking it down into smaller work items,
+
+0:03:54.120,0:03:58.320
+Next we have process factors which represents the
+
+0:03:58.320,0:04:03.720
+effectiveness and the maturity of the way your software teams work.
+
+0:04:03.720,0:04:09.408
+And in this category, requirements refinements is the top mentioned factor that
+
+0:04:10.500,0:04:15.660
+affects the delay in your software deliveries. In fact it's the process of defining your
+
+0:04:15.660,0:04:19.560
+software delivery and breaking it down into smaller work items,
+
+0:04:19.560,0:04:27.240
 and missing or lacking details is reported to be the main delay factor in software deliveries.
-We also have project factors which represents the inherent complexity and uncertainty of a software project.
-And in this category, task dependencies constitute the top mentioned delay factor.
-And these depends dependencies can occur across teams and across products due to analyzed priorities and inconsistent schedules.
-We have the people related factors as well.
-So respondents reported that teams that are more stable, that are more skilled, more familiar with each other,
+
+0:04:29.100,0:04:33.840
+We also have project factors which represents the inherent complexity
+
+0:04:33.840,0:04:39.180
+and uncertainty of a software project. And in this category, task dependencies
+
+0:04:39.180,0:04:46.260
+constitute the top mentioned delay factor. And these depends dependencies can occur across
+
+0:04:46.260,0:04:53.580
+teams and across products due to analyzed priorities and inconsistent schedules.
+
+0:04:56.340,0:05:02.100
+We have the people related factors as well. So respondents reported that teams that are
+
+0:05:02.100,0:05:05.820
+more stable, that are more skilled, more familiar with each other,
+
+0:05:05.820,0:05:10.260
 they they more often deliver software on time.
-And the final category are the technical factors,
-and respondents reported to be often delayed by technical dependencies and issues related to poor code documentation and unreliable IT infrastructure.
-But the factors in this category, they are reported to have the smallest impacts across all categories.
-So to summarize,
-there's an overview of the top five factors that have the greatest impact on the delays in your software deliveries.
+
+0:05:10.800,0:05:18.000
+And the final category are the technical factors, and respondents reported to be often delayed by
+
+0:05:18.540,0:05:22.440
+technical dependencies and issues related to poor code documentation
+
+0:05:22.440,0:05:27.180
+and unreliable IT infrastructure. But the factors in this category,
+
+0:05:28.140,0:05:33.300
+they are reported to have the smallest impacts across all categories.
+
+0:05:34.680,0:05:37.200
+So to summarize, there's an overview
+
+0:05:37.200,0:05:42.840
+of the top five factors that have the greatest impact on the delays in your software deliveries.
+
+0:05:43.980,0:05:48.000
 So these are the factors that you should pay a great deal of attention to.
+
+0:05:48.600,0:05:54.000
 And the interesting thing is that none of them are in software at all, right,
+
+0:05:54.000,0:05:58.980
 they are related to your organizational environments and the quality of your processes,
-so how your software teams work.
-And we can also see that they are also controllable.
-So these are the factors that software teams often complain about, right, this is something that is happening to us,
-we don't have any impacts on it,
-but you can act upon upon your requirements refinements,
-you can invest in your dependency management,
+
+0:05:58.980,0:06:04.140
+so how your software teams work. And we can also see that
+
+0:06:05.700,0:06:10.440
+they are also controllable. So these are the factors that
+
+0:06:10.440,0:06:14.460
+software teams often complain about, right, this is something that is happening to us,
+
+0:06:14.460,0:06:19.020
+we don't have any impacts on it, but you can act upon upon
+
+0:06:19.020,0:06:22.980
+your requirements refinements, you can invest in your dependency management,
+
+0:06:22.980,0:06:27.240
 and you can also invest in a more healthy organizational culture.
+
+0:06:30.600,0:06:36.900
 So we know that these are the top factors that have an impact on your delay,
-so this means we should regulate them,
-but then the next question is how should we regulate them?
-So to answer that question we looked into different types of relationships between factors and on-time delivery.
+
+0:06:37.920,0:06:41.280
+so this means we should regulate them, but then the next question is
+
+0:06:41.280,0:06:44.760
+how should we regulate them? So to answer that question we looked
+
+0:06:44.760,0:06:49.200
+into different types of relationships between factors and on-time delivery.
+
+0:06:50.460,0:06:54.060
 We more specifically focused on three types of orthogonal effects.
+
+0:06:54.060,0:06:59.520
 So we looked into direct relationships, indirect relationships, and contributory relationships.
-And this enabled us to make a distinction between simple, complex, and condition-dependent relationships.
-I'm not going into the very specific interactions between factors
-but this actually enables us to put all the results together.
-So the factors - the factor rankings and their relationships to come - to create a conceptual framework of on-time software delivery
-as shown here.
-So it might look a bit overwhelming at first,
+
+0:07:00.960,0:07:04.980
+And this enabled us to make a distinction between simple, complex,
+
+0:07:04.980,0:07:10.320
+and condition-dependent relationships. I'm not going into the very specific
+
+0:07:10.980,0:07:14.820
+interactions between factors but this actually enables
+
+0:07:14.820,0:07:19.560
+us to put all the results together. So the factors - the factor rankings
+
+0:07:19.560,0:07:25.980
+and their relationships to come - to create a conceptual framework of on-time software delivery
+
+0:07:25.980,0:07:30.180
+as shown here. So it might look a bit overwhelming at first,
+
+0:07:31.560,0:07:34.800
 but it actually visualizes the results that we discussed so far.
-So you can see the factors in the ellipses,
-the categories in the blue rectangles,
+
+0:07:34.800,0:07:39.300
+So you can see the factors in the ellipses, the categories in the blue rectangles,
+
+0:07:39.300,0:07:44.700
 and the arrows visualize the sign and the direction of the relationships that we found.
+
+0:07:45.420,0:07:51.540
 And the interesting thing is that factors interact hierarchically with each other.
-So organizational factors interact with people factors, which in turn impacts the technical factors,
+
+0:07:51.540,0:07:55.080
+So organizational factors interact with people factors,
+
+0:07:55.080,0:07:57.840
+which in turn impacts the technical factors,
+
+0:07:59.340,0:08:06.420
 and these hierarchical interactions indicate that changing one factor may impact another.
-This shows that on-time software delivery is affected by a system of interrelated factors that you should look at as a whole.
-So you should use a holistic approach to tackle the delays in your on-time software - in your software delivery.
+
+0:08:06.420,0:08:12.900
+This shows that on-time software delivery is affected by a system of interrelated factors
+
+0:08:14.700,0:08:20.340
+that you should look at as a whole. So you should use a holistic approach
+
+0:08:20.340,0:08:25.440
+to tackle the delays in your on-time software - in your software delivery.
+
+0:08:25.440,0:08:31.740
 So don't try to tackle the factors individually but actually formulate systematic treatments
+
+0:08:31.740,0:08:37.320
 based on these direct and indirect relationships to have the greatest impact on your delay.
-So I'll give you a concrete example.
-So the organizational factor "executive support" is perceived to have an indirect impact on timely software delivery through team stability
-and team stability directly affects how effective a team is in building skills and knowledge over time
-and this affects the technical factors code quality and bugs or incidents
-which introduce necessary rework for the software team and thereby delay.
-So this means that establishing a stronger executive support may lead to more stable - more skilled teams
-that are better able to - to deal with - to maintain code quality and that can better resolve delays that are caused by bugs or incidents.
-And this path from higher executive support to the technical factors is an example of many similar paths
-that we can derive from our conceptual framework
-and that enable us to yeah make hypotheses about what can actually improve your on-time software delivery.
-So what have you learned from this?
-Well first we saw that on time software delivery is affected by a system of interrelated factors that require a holistic approach.
-Secondly we saw that the top most influential factors are not in software they are actually in your organizational environments
-and in the quality of your processes
-so make sure to invest in your requirements refinements, effective backlog performance, a better dependency management,
-and in a healthy organizational environment.
+
+0:08:37.320,0:08:42.480
+So I'll give you a concrete example. So the organizational factor "executive
+
+0:08:42.480,0:08:48.900
+support" is perceived to have an indirect impact on timely software delivery through team stability
+
+0:08:50.100,0:08:55.440
+and team stability directly affects how effective a team is in building
+
+0:08:55.440,0:09:00.000
+skills and knowledge over time and this affects the technical
+
+0:09:00.000,0:09:06.840
+factors code quality and bugs or incidents which introduce necessary rework for the
+
+0:09:06.840,0:09:13.560
+software team and thereby delay. So this means that establishing a
+
+0:09:13.560,0:09:18.420
+stronger executive support may lead to more stable - more skilled teams
+
+0:09:18.420,0:09:25.740
+that are better able to - to deal with - to maintain code quality and that can better resolve
+
+0:09:25.740,0:09:31.500
+delays that are caused by bugs or incidents. And this path from higher executive support
+
+0:09:31.500,0:09:36.300
+to the technical factors is an example of many similar paths
+
+0:09:36.300,0:09:40.980
+that we can derive from our conceptual framework and that enable us to
+
+0:09:41.820,0:09:48.300
+yeah make hypotheses about what can actually improve your on-time software delivery.
+
+0:09:49.260,0:09:54.840
+So what have you learned from this? Well first we saw that on time software
+
+0:09:54.840,0:10:01.140
+delivery is affected by a system of interrelated factors that require a holistic approach.
+
+0:10:03.300,0:10:08.220
+Secondly we saw that the top most influential factors are not in software they are actually
+
+0:10:08.220,0:10:12.060
+in your organizational environments and in the quality of your processes
+
+0:10:12.060,0:10:18.300
+so make sure to invest in your requirements refinements, effective backlog performance,
+
+0:10:18.300,0:10:23.040
+a better dependency management, and in a healthy organizational environment.
+
+0:10:25.020,0:10:30.120
 And at the same time, make sure to incorporate these factors in your effort estimation models
-because when you capture information not only about the software task but also about the processes, your team, your organization,
+
+0:10:30.120,0:10:34.980
+because when you capture information not only about the software task but also
+
+0:10:34.980,0:10:37.740
+about the processes, your team, your organization,
+
+0:10:37.740,0:10:43.500
 you can actually enhance the the predictive power of your effort estimation models.
-Yes, so if you're interested in this work and if you would like to know more about the conceptual framework,
-how to apply it in practice,
-then feel free to contact me and thank you.
-All all,
-right thank you very much Elvan,
-questions coming in from our viewers,
+
+0:10:46.080,0:10:51.000
+Yes, so if you're interested in this work and if you would like to know more
+
+0:10:51.000,0:10:54.060
+about the conceptual framework, how to apply it in practice,
+
+0:10:54.060,0:10:59.220
+then feel free to contact me and thank you. All all,
+
+0:10:59.220,0:11:03.720
+right thank you very much Elvan, questions coming in from our viewers,
+
+0:11:03.720,0:11:12.840
 and the the first one is, where and how can I learn these quote political skills as a programmer
-because they certainly weren't part of my degree.
-Well none of mine as well,
+
+0:11:12.840,0:11:18.240
+because they certainly weren't part of my degree. Well none of mine as well,
+
+0:11:19.800,0:11:20.520
 yeah,
+
+0:11:20.520,0:11:25.200
 based on my own experience it's something that you learn over time I would say,
-so I - I would say that's - if you - if you end up in more situations where you actually need these political skills to,
-for example,
-defend your products,
-to actually create business strategy,
+
+0:11:25.200,0:11:36.960
+so I - I would say that's - if you - if you end up in more situations where you actually need these
+
+0:11:36.960,0:11:39.420
+political skills to, for example,
+
+0:11:40.200,0:11:45.660
+defend your products, to actually create business strategy,
+
+0:11:45.660,0:11:49.560
 I think it will come with with experience but also maybe with age.
-And I really - I think this is a related question.
-Is this the role or is - sorry I'm just trying to make sense of this -
-is this something that product managers or project managers are better able to do than developers?
-Is that part of their role - to handle these non-technical issues?
-Yeah,
-that is definitely part of their responsibilities.
-So in my research I've mainly looked at agile projects where they work with, hey, you have a software development team
-and you have a product owner that's the person who actually represents the interest of the the client - the customer -
-and it's also the person who bridges the gap between the software developers and the managers.
-But I think that would actually be nicer if we wouldn't need a product owner, right,
-if the environment would be that it's apparent that as a developer you can go directly to management and, well, share your ideas
-and your your wishes, yeah.
-Okay, and I have one last question before we go on to the next speaker and this is a personal question.
-Okay.
-Was there any evidence in your study that these things are easier to negotiate when management has come from a technical background
-or are software engineers turned managers just as difficult to work with in this sense as people coming in with with MBAs?
-Yeah, yeah, so based on my own experience I would say that it works better indeed if the - if management has its - has a technical background
+
+0:11:51.780,0:11:59.460
+And I really - I think this is a related question. Is this the role or is - sorry I'm
+
+0:11:59.460,0:12:04.680
+just trying to make sense of this - is this something that product managers or project
+
+0:12:04.680,0:12:12.180
+managers are better able to do than developers? Is that part of their role - to handle these
+
+0:12:12.180,0:12:14.700
+non-technical issues? Yeah,
+
+0:12:14.700,0:12:20.700
+that is definitely part of their responsibilities. So in my research I've mainly looked at agile
+
+0:12:20.700,0:12:24.600
+projects where they work with, hey, you have a software development team
+
+0:12:24.600,0:12:32.160
+and you have a product owner that's the person who actually represents the
+
+0:12:32.160,0:12:37.860
+interest of the the client - the customer - and it's also the person who bridges the gap
+
+0:12:37.860,0:12:43.740
+between the software developers and the managers. But I think that would actually be nicer if we
+
+0:12:43.740,0:12:47.160
+wouldn't need a product owner, right, if the environment would be that it's
+
+0:12:47.160,0:12:53.280
+apparent that as a developer you can go directly to management and, well, share your ideas
+
+0:12:54.240,0:12:58.680
+and your your wishes, yeah. Okay, and I have one last
+
+0:12:58.680,0:13:01.680
+question before we go on to the next speaker and this is a personal question.
+
+0:13:01.680,0:13:04.740
+Okay. Was there any evidence in your study that
+
+0:13:05.880,0:13:11.700
+these things are easier to negotiate when management has come from a technical background
+
+0:13:12.300,0:13:17.160
+or are software engineers turned managers just as difficult to work with in this
+
+0:13:17.160,0:13:23.340
+sense as people coming in with with MBAs? Yeah, yeah, so based on my own experience
+
+0:13:23.340,0:13:28.620
+I would say that it works better indeed if the - if management has its - has a technical background
+
+0:13:28.620,0:13:32.100
 especially when it comes to the technical factors that I mentioned.
+
+0:13:32.100,0:13:38.760
 So I wanted to spend more time on code refactoring, code quality, software testing,
-I think it's it's easier to understand the added value of these factors if you do have a background in computer science.
+
+0:13:39.900,0:13:44.280
+I think it's it's easier to understand the added value
+
+0:13:44.280,0:13:48.900
+of these factors if you do have a background in computer science.

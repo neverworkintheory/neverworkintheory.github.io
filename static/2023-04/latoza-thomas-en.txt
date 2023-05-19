@@ -1,146 +1,440 @@
-All right.
-Thank you, Brittany, yeah, so as Brittany said I'm a colleague of Brittany's just down the hall,
-I run the Developer Experience Design Lab where we run studies of developers and try to build new programming tools.
-So imagine that you're debugging an input issue,
-so you're looking at some snake game,
+0:00:00.000,0:00:04.140
+All right. Thank you, Brittany, yeah, so as Brittany said
+
+0:00:04.140,0:00:10.680
+I'm a colleague of Brittany's just down the hall, I run the Developer Experience Design Lab where
+
+0:00:10.680,0:00:14.220
+we run studies of developers and try to build new programming tools.
+
+0:00:16.140,0:00:20.400
+So imagine that you're debugging an input issue, so you're looking at some snake game,
+
+0:00:21.120,0:00:22.500
 you're trying to get the snake to move,
+
+0:00:22.500,0:00:25.860
 you're you're entering the up down left right keys,
-but it doesn't seem to be working just right.
-So what do you do?
+
+0:00:25.860,0:00:29.880
+but it doesn't seem to be working just right. So what do you do?
+
+0:00:31.320,0:00:34.140
 One thing you might try is just to add some break points,
-so try to find the input handlers for all these - these keyboard events and see what happens when they're invoked.
-But this isn't the only thing you might do.
+
+0:00:34.140,0:00:38.460
+so try to find the input handlers for all these - these keyboard events and
+
+0:00:38.460,0:00:42.540
+see what happens when they're invoked. But this isn't the only thing you might do.
+
+0:00:42.540,0:00:45.660
 A different way to try to debug this is to just be - to start at the end,
-to start at the output,
-go to find the statement that is generating the output
-and then try to follow the the data flow backwards to see, sort of, at what point the data flow doesn't look quite right.
-And there's all sorts of other approaches you might imagine and lots of variations on these approaches.
-But often in practice this ends up being Stack Overflow of course.
-But how do you choose the right approach?
-What I want to talk to you today about is a way that you can try to grow your toolbox in a way that is more deliberate, right, than accidental.
-And I'd like to try to give you a tool that tries to rescue yourself from your own worst self.
-And I want to talk to you about a version of you that is doing interesting work and solving difficult problems,
+
+0:00:45.660,0:00:49.260
+to start at the output, go to find the statement
+
+0:00:49.260,0:00:53.220
+that is generating the output and then try to follow the the data flow backwards
+
+0:00:53.940,0:00:57.300
+to see, sort of, at what point the data flow doesn't look quite right.
+
+0:00:58.680,0:01:02.220
+And there's all sorts of other approaches you might imagine and lots of variations
+
+0:01:02.220,0:01:05.340
+on these approaches. But often in practice
+
+0:01:05.340,0:01:09.840
+this ends up being Stack Overflow of course. But how do you choose the right approach?
+
+0:01:10.920,0:01:15.420
+What I want to talk to you today about is a way that you can try to grow your toolbox in a way
+
+0:01:15.420,0:01:20.340
+that is more deliberate, right, than accidental. And I'd like to try to give you a tool that tries
+
+0:01:20.340,0:01:26.160
+to rescue yourself from your own worst self. And I want to talk to you about a version of
+
+0:01:26.160,0:01:29.100
+you that is doing interesting work and solving difficult problems,
+
+0:01:29.100,0:01:33.660
 whose colleagues come to them because they just have a different way of looking at things.
+
+0:01:34.620,0:01:39.060
 And the secret sauce I'm going to try to give you today is this idea of a programming strategy.
+
+0:01:39.060,0:01:44.040
 A programming strategy is just a procedure for accomplishing a programming task.
+
+0:01:44.040,0:01:45.060
 I mean,
+
+0:01:45.060,0:01:48.780
 it offers this language for shaping how software engineering effort happens.
+
+0:01:50.400,0:01:53.640
 Most of - most of programming is all about solving problems,
-so you want to fix some issue,
-and the way you do that is,
-you know,
-first you find a defect and then you try to trace the output backwards to find the defect
-and to trace the output backwards you need to find where the output is first generated.
-So whenever you're going through one of these - these problems you always have these nested problems that you're trying to solve.
+
+0:01:53.640,0:01:56.880
+so you want to fix some issue, and the way you do that is,
+
+0:01:56.880,0:02:00.060
+you know, first you find a defect and then you try
+
+0:02:00.060,0:02:04.920
+to trace the output backwards to find the defect and to trace the output backwards you need to
+
+0:02:04.920,0:02:09.720
+find where the output is first generated. So whenever you're going through one of
+
+0:02:09.720,0:02:13.800
+these - these problems you always have these nested problems that you're trying to solve.
+
+0:02:13.800,0:02:17.880
 And psychologists have long looked at how humans solve problems
-and a big part of this is just trial and error.
-So problem solving is often like a maze where humans are just trying to choose which path to follow
+
+0:02:17.880,0:02:23.520
+and a big part of this is just trial and error. So problem solving is often like a maze where
+
+0:02:23.520,0:02:25.680
+humans are just trying to choose which path to follow
+
+0:02:25.680,0:02:30.360
 and people end up backtracking a lot when choices just don't work out as as you expect.
+
+0:02:31.800,0:02:37.020
 So programming strategy just gives you a way to try to navigate this - this maze more effectively.
-And there's evidence that over time experienced developers learn how to use strategies that help them to work more effectively.
-So how can you learn another developer's strategy?
+
+0:02:38.520,0:02:43.620
+And there's evidence that over time experienced developers learn how to use strategies
+
+0:02:43.620,0:02:50.820
+that help them to work more effectively. So how can you learn another developer's strategy?
+
+0:02:52.560,0:02:55.620
 So you may just ask somebody to write it down and try to follow it.
+
+0:02:55.620,0:02:59.460
 But we found that this isn't quite as easy as it seems.
-So as a developer you have a tendency to just read the whole strategy all at once rather than going through it all step by step
-and then as you try to use it you can lose track of where you are in that strategy
-and, you know, forget, like what you're trying to do next and have to start over from the beginning.
-Or you might try to follow it for a while, get confused, and then just go back to doing whatever was the approach you'd otherwise be doing before.
-And this makes sense.
-Whenever you're solving a problem there's a lot of what's called cognitive load,
-there's a lot of things you're trying to pay attention to.
-I mean,
+
+0:02:59.460,0:03:04.200
+So as a developer you have a tendency to just read the whole strategy all at once rather than
+
+0:03:04.200,0:03:08.400
+going through it all step by step and then as you try to use it you
+
+0:03:08.400,0:03:12.540
+can lose track of where you are in that strategy and, you know, forget, like what you're trying to
+
+0:03:12.540,0:03:17.160
+do next and have to start over from the beginning. Or you might try to follow it for a while, get
+
+0:03:17.160,0:03:22.260
+confused, and then just go back to doing whatever was the approach you'd otherwise be doing before.
+
+0:03:23.640,0:03:26.520
+And this makes sense. Whenever you're solving a problem
+
+0:03:26.520,0:03:30.240
+there's a lot of what's called cognitive load, there's a lot of things you're trying to pay
+
+0:03:30.240,0:03:31.860
+attention to. I mean,
+
+0:03:31.860,0:03:36.120
 it's hard to pay attention both to the problem and learning something new at the same time.
+
+0:03:37.020,0:03:40.560
 So habit is really strong and it ends up being very hard to overcome.
+
+0:03:42.120,0:03:45.480
 So to help address this we invented a way to try to learn a strategy.
-We built what we call a strategy tracker.
-And the idea is it lets you go step by step through the strategy and just helps you keep track of where you are in the strategy
+
+0:03:46.020,0:03:50.820
+We built what we call a strategy tracker. And the idea is it lets you go step by
+
+0:03:50.820,0:03:55.560
+step through the strategy and just helps you keep track of where you are in the strategy
+
+0:03:56.340,0:03:58.680
 and just take notes as you're working.
+
+0:03:59.640,0:04:04.380
 And we even invented this this more formal notation for describing these strategies
-which then led us built an interpreter that helps the strategy tracker keep track of the control flow
-to determine what step to show the developer next.
+
+0:04:05.100,0:04:08.100
+which then led us built an interpreter that helps the
+
+0:04:08.100,0:04:13.560
+strategy tracker keep track of the control flow to determine what step to show the developer next.
+
+0:04:13.560,0:04:19.320
 And we can even do things like help the developer try to remember what to do later
-by having them write things down
-which we just assign into a variable and then we can sort of reference that variable later in the strategy
+
+0:04:19.320,0:04:23.280
+by having them write things down which we just assign into a variable
+
+0:04:23.280,0:04:26.520
+and then we can sort of reference that variable later in the strategy
+
+0:04:26.520,0:04:30.720
 when the developer needs to go back to to something later in the strategy.
-So then using this notation,
-if you want to write a detailed strategy that explains how to debug by doing backward data flow search,
+
+0:04:32.220,0:04:34.920
+So then using this notation, if you want to write a detailed
+
+0:04:34.920,0:04:39.720
+strategy that explains how to debug by doing backward data flow search,
+
+0:04:39.720,0:04:41.700
 you can do that in our notation.
-So we found that with all of this we were able to successfully enable a developer to switch strategies
-and for this defect,
-switching to a backwards search helps them to work better.
-And in fact it helped them to make more progress than they would have otherwise been able to make
+
+0:04:48.180,0:04:50.700
+So we found that with all of this
+
+0:04:52.320,0:04:55.800
+we were able to successfully enable a developer to switch strategies
+
+0:04:57.240,0:05:00.660
+and for this defect, switching to a backwards search
+
+0:05:01.800,0:05:06.480
+helps them to work better. And in fact it helped them to
+
+0:05:06.480,0:05:09.360
+make more progress than they would have otherwise been able to make
+
+0:05:09.360,0:05:13.080
 because that strategy was a better fit for the problem that they were trying to solve.
-But where do you find strategies?
-Can we just go off and ask experienced developers to start writing them?
-So it's possible that these strategies might be what's called tacit -
-that developers just learn the new strategy but never even realize that they're following it,
-and because it's tacit it isn't something that they could try to explicitly write down and explain.
-So are they tacit?
-So again we try to find out,
+
+0:05:16.140,0:05:20.520
+But where do you find strategies? Can we just go off and ask experienced
+
+0:05:20.520,0:05:24.000
+developers to start writing them? So it's possible that these
+
+0:05:24.000,0:05:28.320
+strategies might be what's called tacit - that developers just learn the new strategy
+
+0:05:28.320,0:05:32.700
+but never even realize that they're following it, and because it's tacit it isn't something that
+
+0:05:32.700,0:05:34.860
+they could try to explicitly write down and explain.
+
+0:05:36.240,0:05:38.700
+So are they tacit? So again we try to find out,
+
+0:05:38.700,0:05:42.420
 and we just asked developers to write down some strategies for us.
-And we found that they largely could.
-We found that, you know, developers are able to write all sorts of strategies for all sorts of problems.
-But it's often hard to write good strategies because it's often hard to generalize the strategy,
-to go through the process of testing it,
+
+0:05:42.960,0:05:46.560
+And we found that they largely could. We found that, you know,
+
+0:05:46.560,0:05:50.040
+developers are able to write all sorts of strategies for all sorts of problems.
+
+0:05:50.880,0:05:54.300
+But it's often hard to write good strategies because it's
+
+0:05:54.300,0:05:58.860
+often hard to generalize the strategy, to go through the process of testing it,
+
+0:05:58.860,0:06:02.460
 to make sure it works on all the different variants of the the problem that you might have,
-and to try to take the perspective of a strategy user that might not have exactly the expertise that you have
-and be able to explain things at the right level of detail that somebody else could could follow.
-But we found that developers for these good strategies can try to use them to - to solve a programming problem,
+
+0:06:02.460,0:06:07.080
+and to try to take the perspective of a strategy user that might not
+
+0:06:07.080,0:06:11.700
+have exactly the expertise that you have and be able to explain things at the right level
+
+0:06:11.700,0:06:18.660
+of detail that somebody else could could follow. But we found that developers for these good
+
+0:06:18.660,0:06:22.680
+strategies can try to use them to - to solve a programming problem,
+
+0:06:23.580,0:06:28.080
 they just often have the same sorts of challenges that the people have in writing them,
-where, you know, there might be missing steps,
-there might be ambiguity,
+
+0:06:28.860,0:06:31.860
+where, you know, there might be missing steps, there might be ambiguity,
+
+0:06:32.520,0:06:34.920
 it might not tell you how to use all these - these tools.
-So the main takeaway of both of these findings is that in order to build this process - to successfully to share strategies,
-it's really important to have a feedback process.
-Or you want somebody to first try to write it and then you want a revision process for people using it to give comments
-and for the person writing it to make it better
+
+0:06:35.940,0:06:41.040
+So the main takeaway of both of these findings is that in order to build this
+
+0:06:41.040,0:06:46.440
+process - to successfully to share strategies, it's really important to have a feedback process.
+
+0:06:47.040,0:06:50.880
+Or you want somebody to first try to write it and then you want a revision
+
+0:06:50.880,0:06:55.920
+process for people using it to give comments and for the person writing it to make it better
+
+0:06:55.920,0:07:00.660
 so that over time you can address all these these issues in - in strategies.
+
+0:07:02.940,0:07:06.120
 A few more cautionary notes about choosing strategies.
+
+0:07:07.380,0:07:08.340
 As you might imagine,
+
+0:07:09.000,0:07:13.740
 the type of code that you're looking at has a big impact on the strategy you might choose.
+
+0:07:14.700,0:07:17.400
 So if you're working in code that interacts closely with the library,
-you're over three times more likely to go find some docs and kind of less likely to build a diagram to try to understand what's going on
-which which all makes sense.
-But how you're feeling can also have a really profound impact on how you decide to approach a problem.
-So if you're feeling stressed or nervous you're twice as likely to add print statements,
-and over five times less likely to try to spend the time to read all the code nearby,
-which just might be too complicated.
-If you're feeling sad or depressed,
-you're over 10 times less likely to try to experiment by just editing the code which is a lot of speculative hoping that, you know,
-you randomly get lucky and get what you want.
-And if you're feeling very excited and enthusiastic you're over twice as likely to ask for help from a colleague.
-So how can you be proud of the way you work and work in a way that is more deliberate rather than accidental?
-One key takeaway is that there's always - almost always a different strategy that you might use to try to tackle a problem.
-Just being aware of this - explicitly considering a strategy that might work the best for your situation in this moment -
-is an example of what's called metacognition.
-Some studies have also demonstrated that that self-regulation - the process of monitoring your progress and your use of time -
-are also associated with greater problem solving success.
-You can also just find better strategies.
-So there's there's resources out there today that try to document some of the ways that you can solve problems
+
+0:07:17.400,0:07:22.440
+you're over three times more likely to go find some docs and kind of less likely to build a
+
+0:07:22.440,0:07:25.140
+diagram to try to understand what's going on which which all makes sense.
+
+0:07:26.220,0:07:29.220
+But how you're feeling can also have a really profound impact
+
+0:07:29.220,0:07:34.080
+on how you decide to approach a problem. So if you're feeling stressed or nervous
+
+0:07:34.080,0:07:40.380
+you're twice as likely to add print statements, and over five times less likely to try to spend
+
+0:07:40.380,0:07:43.920
+the time to read all the code nearby, which just might be too complicated.
+
+0:07:45.300,0:07:48.900
+If you're feeling sad or depressed, you're over 10 times less likely to
+
+0:07:48.900,0:07:54.360
+try to experiment by just editing the code which is a lot of speculative hoping that, you know,
+
+0:07:54.360,0:08:00.480
+you randomly get lucky and get what you want. And if you're feeling very excited
+
+0:08:00.480,0:08:05.400
+and enthusiastic you're over twice as likely to ask for help from a colleague.
+
+0:08:07.080,0:08:10.620
+So how can you be proud of the way you work and work in a way that is more
+
+0:08:10.620,0:08:15.360
+deliberate rather than accidental? One key takeaway is that there's
+
+0:08:15.360,0:08:20.100
+always - almost always a different strategy that you might use to try to tackle a problem.
+
+0:08:20.100,0:08:25.020
+Just being aware of this - explicitly considering a strategy that might work
+
+0:08:25.020,0:08:29.940
+the best for your situation in this moment - is an example of what's called metacognition.
+
+0:08:31.560,0:08:36.540
+Some studies have also demonstrated that that self-regulation - the process of monitoring
+
+0:08:36.540,0:08:41.160
+your progress and your use of time - are also associated with greater
+
+0:08:41.160,0:08:42.360
+problem solving success.
+
+0:08:43.620,0:08:47.160
+You can also just find better strategies. So there's there's resources out there
+
+0:08:47.160,0:08:51.600
+today that try to document some of the ways that you can solve problems
+
+0:08:51.600,0:08:55.140
 and just knowing more of these - these strategies can help you to be more effective.
+
+0:08:56.880,0:09:00.120
 But you can also try to, like, be more of an active participant,
+
+0:09:00.120,0:09:06.360
 to share your own strategies and help curate strategies that work for your own organization.
-So we've been building this tool called How to Dev that can act as a repository for - for strategies like this.
-And finally it's important to think about how your own affect is approaching your - your approach.
-Like, taking a minute to de-stress or help yourself feel better can really have an impact on how you solve problems.
-If you really want to learn more about strategies we're going to be running these - these programming strategies mentoring sessions,
-so reach out to us for that.
+
+0:09:07.320,0:09:10.260
+So we've been building this tool called How to Dev that can act
+
+0:09:10.260,0:09:18.000
+as a repository for - for strategies like this. And finally it's important to think about how your
+
+0:09:18.000,0:09:24.420
+own affect is approaching your - your approach. Like, taking a minute to de-stress or help
+
+0:09:24.420,0:09:28.200
+yourself feel better can really have an impact on how you solve problems.
+
+0:09:30.300,0:09:33.420
+If you really want to learn more about strategies we're going to be running these - these
+
+0:09:33.420,0:09:37.020
+programming strategies mentoring sessions, so reach out to us for that.
+
+0:09:37.740,0:09:43.080
 So with that I'm here for any questions anybody might have.
-Fantastic, super, thank you so much.
-First an enlightening talk on programming strategies that I wish I had heard a really long time ago
-or at least that I think that - the connections in particular, right, are interesting, between, like, our our mental state, our being,
-and how we do things in ways that we can think about navigating that as well it's a really interesting connections here.
-I do have one question that I see, and again, audience, please feel free to bring the questions onto Slack.
-Rebecca wants to know, do you know that they really follow a particular strategy that they write down or is it more nuanced?
-Thinking about the fact that in different contexts experts might vary their strategy slightly depending on the task or -
-or the context or domain.
-Any thoughts on that?
-Yeah, I think - a great question.
+
+0:09:46.140,0:09:51.960
+Fantastic, super, thank you so much. First an enlightening talk on programming
+
+0:09:51.960,0:09:55.620
+strategies that I wish I had heard a really long time ago
+
+0:09:56.460,0:09:59.520
+or at least that I think that - the connections in particular, right, are interesting, between,
+
+0:09:59.520,0:10:05.520
+like, our our mental state, our being, and how we do things in ways that we can
+
+0:10:05.520,0:10:08.820
+think about navigating that as well it's a really interesting connections here.
+
+0:10:08.820,0:10:13.140
+I do have one question that I see, and again, audience, please feel
+
+0:10:13.140,0:10:19.080
+free to bring the questions onto Slack. Rebecca wants to know, do you know that
+
+0:10:19.080,0:10:24.120
+they really follow a particular strategy that they write down or is it more nuanced?
+
+0:10:24.660,0:10:28.920
+Thinking about the fact that in different contexts experts might vary their strategy
+
+0:10:28.920,0:10:32.700
+slightly depending on the task or - or the context or domain.
+
+0:10:32.700,0:10:36.300
+Any thoughts on that? Yeah, I think - a great question.
+
+0:10:36.300,0:10:40.260
 I mean, a lot of these strategies have a lot of nuance and complexity.
-So when we asked somebody to write it down, it - it's probably, like, you know, a high-level sketch of how they see themselves
-as solving this problem
+
+0:10:40.260,0:10:45.360
+So when we asked somebody to write it down, it - it's probably, like, you know, a high-level sketch
+
+0:10:45.360,0:10:48.420
+of how they see themselves as solving this problem
+
+0:10:48.420,0:10:53.820
 and might not have every sort of complication or variant of - of the problem,
+
+0:10:53.820,0:11:00.060
 so I think definitely trying to to grow these strategies over time through feedback,
-to flush out more of these - these corner cases,
-is definitely way to go,
+
+0:11:00.060,0:11:03.720
+to flush out more of these - these corner cases, is definitely way to go,
+
+0:11:03.720,0:11:07.560
 since you're probably not going to write the perfect strategy the first time.

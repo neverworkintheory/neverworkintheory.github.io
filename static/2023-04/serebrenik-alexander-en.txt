@@ -1,185 +1,485 @@
+0:00:01.140,0:00:05.220
 Thank you very much for this introduction, Greg, it's a great pleasure for me to be here.
+
+0:00:07.080,0:00:11.280
 And the person you see on my slide is Masako Wakamiya,
-she is an app developer.
-She was born in 1935 and built her very first app when she was 82.
-And on the right you see this app it's called Hinedan and for a Japanese members in the audience I need to apologize for my pronunciation,
-but this is essentially a game which is training kids to prepare an altar for a girls' festival called Hinamatsuri.
-And you need to put those dolls in the right places.
-So she is of course exceptional,
+
+0:00:11.280,0:00:15.540
+she is an app developer. She was born in 1935 and
+
+0:00:15.540,0:00:21.120
+built her very first app when she was 82. And on the right you see this app it's
+
+0:00:21.120,0:00:27.720
+called Hinedan and for a Japanese members in the audience I need to apologize for my pronunciation,
+
+0:00:27.720,0:00:34.200
+but this is essentially a game which is training kids to prepare an altar for a girls' festival
+
+0:00:34.200,0:00:37.920
+called Hinamatsuri. And you need to put
+
+0:00:37.920,0:00:42.360
+those dolls in the right places. So she is of course exceptional,
+
+0:00:42.360,0:00:46.920
 but there are quite some older software developers who are around,
-and previous studies have shown that the programmer reputation scores on Stack Overflow tends to increase well into the 50s,
-and there is no strong correlation between age and scores and specific knowledge areas.
-So this is what - essentially suggests that older software developers should thrive in our world.
-But at the same time Quora is full of questions.
+
+0:00:46.920,0:00:52.800
+and previous studies have shown that the programmer reputation scores on Stack
+
+0:00:52.800,0:00:58.140
+Overflow tends to increase well into the 50s, and there is no strong correlation between
+
+0:00:58.140,0:01:04.440
+age and scores and specific knowledge areas. So this is what - essentially suggests that older
+
+0:01:04.440,0:01:10.380
+software developers should thrive in our world. But at the same time Quora is full of questions.
+
+0:01:10.380,0:01:16.140
 I am so many years and am I too old to become a programmer?
+
+0:01:16.140,0:01:21.120
 And those questions are coming from people who are 50, who are 60, but also people who are 15.
-So what is going on?
-We try to understand together with Sebastian Valdes and George Park,
-how exactly this public discourse surrounding age and software developers is organized?
-What are people talking about and what kind of things they associate with being old in software development?
-So we have analyzed articles,
-so essentially we have looked at the top 100 hits,
-we looked at Google "age and software developer",
-we focused on English-based sources and US-based locations,
-because of course age-related expectations are culturally determined.
-We excluded things which are merely job ads and collections of statistics
-and we found 24 articles published on news sites,
+
+0:01:21.660,0:01:25.260
+So what is going on? We try to understand
+
+0:01:25.260,0:01:32.940
+together with Sebastian Valdes and George Park, how exactly this public discourse surrounding
+
+0:01:32.940,0:01:39.660
+age and software developers is organized? What are people talking about and what
+
+0:01:39.660,0:01:43.800
+kind of things they associate with being old in software development?
+
+0:01:45.060,0:01:54.660
+So we have analyzed articles, so essentially we have looked at the top 100 hits,
+
+0:01:55.560,0:02:00.180
+we looked at Google "age and software developer", we focused on English-based sources
+
+0:02:00.180,0:02:03.780
+and US-based locations, because of course age-related
+
+0:02:03.780,0:02:08.460
+expectations are culturally determined. We excluded things which are merely
+
+0:02:08.460,0:02:14.760
+job ads and collections of statistics and we found 24 articles published on news sites,
+
+0:02:14.760,0:02:18.960
 published on popular blog platform, CDC, a couple of those examples,
-and we have manually analyzed those texts.
-So the first question for us was,
-how old is actually old?
-And here I have bad news for many of us, including myself.
-So I'm old:
-I have passed the boundary of 40,
-so I am considered to be old.
+
+0:02:18.960,0:02:25.500
+and we have manually analyzed those texts. So the first question for us was,
+
+0:02:25.500,0:02:31.740
+how old is actually old? And here I have bad news for many of us,
+
+0:02:31.740,0:02:34.320
+including myself. So I'm old:
+
+0:02:34.320,0:02:39.180
+I have passed the boundary of 40, so I am considered to be old.
+
+0:02:40.200,0:02:46.260
 And if you see that - even if the upper boundary from this table, like 50 or older,
+
+0:02:46.260,0:02:53.100
 is by far nowhere near to the retirement age in the western cultures.
+
+0:02:54.600,0:02:59.580
 Some documents even refer to people in their 30s as being old.
+
+0:02:59.580,0:03:04.560
 So essentially old is very young in software development.
+
+0:03:05.760,0:03:11.520
 So when we looked closer at what those articles are essentially talking about
+
+0:03:11.520,0:03:15.900
 then it turned out that employability is a major concern.
+
+0:03:17.340,0:03:22.620
 People are worried about their ability to continue their professional careers,
-to find new jobs,
-and so on.
+
+0:03:22.620,0:03:24.480
+to find new jobs, and so on.
+
+0:03:24.480,0:03:31.080
 And we have cross-checked those articles with more popular opinions on Hacker News.
-So what we have found is that there are many strategies which are being recommended both for companies and for individuals
-when it comes to ensuring their employer - employability of older software developers.
-For example,
+
+0:03:31.800,0:03:37.800
+So what we have found is that there are many strategies which are being recommended
+
+0:03:37.800,0:03:44.070
+both for companies and for individuals when it comes to ensuring their employer -
+
+0:03:44.070,0:03:48.180
+employability of older software developers. For example,
+
+0:03:48.180,0:03:56.700
 companies can offer returnships which are often being mentioned in context of parental leaves,
+
+0:03:56.700,0:04:02.160
 but essentially can be used for any kind of extended career breaks.
+
+0:04:02.760,0:04:09.480
 Or provide career tracks and KPIs which would be tailored towards experienced developers.
-At the same time companies should stop doing certain things which are negatively affecting all the developers.
-For example,
-if you are asking at the in - as part of your interview process to solve classical puzzles from the algorithms book
-or from the data structures book from a first-year university education
-then of course you are going to disadvantage people who might not have followed the traditional path
+
+0:04:09.480,0:04:16.380
+At the same time companies should stop doing certain things which are negatively affecting
+
+0:04:17.220,0:04:19.200
+all the developers. For example,
+
+0:04:19.200,0:04:27.000
+if you are asking at the in - as part of your interview process to solve
+
+0:04:27.000,0:04:32.040
+classical puzzles from the algorithms book or from the data structures book from a
+
+0:04:32.040,0:04:36.000
+first-year university education then of course you are going to
+
+0:04:36.960,0:04:41.640
+disadvantage people who might not have followed the traditional path
+
+0:04:41.640,0:04:47.520
 or might not might have just followed those traditional paths many, many years ago,
+
+0:04:47.520,0:04:50.520
 which was of course the case for people we've been focusing on.
+
+0:04:52.020,0:05:01.080
 Framing technological experience as technology baggage is discouraging and worrisome.
-At the level of the individuals,
-we see that these people are trying to grow as software engineers,
-for example by mastering modern technologies or developing mentorship skills or becoming - and getting knowledge of specific niche technologies,
-but those techniques can be seen as problematic
-because even if your technology knowledge is being appreciated,
-it's - the social context might be a problem pushing some of the older individuals to adopt strategies which are aiming at appearing young.
+
+0:05:01.620,0:05:07.260
+At the level of the individuals, we see that these people are
+
+0:05:07.260,0:05:11.760
+trying to grow as software engineers, for example by mastering modern technologies
+
+0:05:11.760,0:05:19.140
+or developing mentorship skills or becoming - and getting knowledge of specific niche technologies,
+
+0:05:20.100,0:05:25.260
+but those techniques can be seen as problematic because even if your technology
+
+0:05:25.260,0:05:31.140
+knowledge is being appreciated, it's - the social context might be a problem
+
+0:05:31.140,0:05:38.160
+pushing some of the older individuals to adopt strategies which are aiming at appearing young.
+
+0:05:38.160,0:05:43.260
 For example modifying CV by hiding some of the previous employment,
+
+0:05:44.580,0:05:50.400
 working overtime which is mostly associated - not adopted for people having other obligations,
-or even going to plastic surgeons.
-So based on the study,
-we have seen techniques that both companies and individuals can employ to encourage or discourage all the software developers from continuous -
-from being employed in companies.
+
+0:05:50.400,0:05:55.440
+or even going to plastic surgeons. So based on the study,
+
+0:05:55.440,0:06:03.960
+we have seen techniques that both companies and individuals can employ to encourage or discourage
+
+0:06:03.960,0:06:09.060
+all the software developers from continuous - from being employed in companies.
+
+0:06:10.020,0:06:15.300
 In a follow-up study we have looked at more specific subgroup of all the developers,
-specifically at women.
-Remember Masako Wakamiya?
-She was in her 80s,
-she was developing an app.
-We know from the literature and from our own experience that women are a minoritized group in software development,
-and as our previous study has shown,
-so are older developers.
-And in general people who are on the intersection of multiple diversity axes
+
+0:06:15.300,0:06:19.500
+specifically at women. Remember Masako Wakamiya?
+
+0:06:19.500,0:06:24.780
+She was in her 80s, she was developing an app.
+
+0:06:24.780,0:06:30.540
+We know from the literature and from our own experience that women are a minoritized
+
+0:06:30.540,0:06:34.380
+group in software development, and as our previous study has shown,
+
+0:06:34.380,0:06:37.440
+so are older developers. And in general
+
+0:06:38.880,0:06:41.880
+people who are on the intersection of multiple diversity axes
+
+0:06:41.880,0:06:46.440
 tend to experience challenges which cannot be attributed to a single one of them.
+
+0:06:47.460,0:06:50.820
 So this is why we have conducted a series of interview studies.
+
+0:06:50.820,0:06:56.340
 So you see here a general overview of the experiences of older women,
-and again older in this case means 40 plus,
-the strategies they use to survive,
-and their general perceptions.
-So this is of course a full-blown paper and today I would like to focus solely on strategies
-because I would like to be it as practical as possible.
-And specifically,
-when we see the strategies that help women to survive in this hostile or at least unfriendly environment
-we see age-related strategies such as adjusting behavior or adjusting looks,
-we have already seen some of those issues before.
-Studies which are related to gender,
-ranging from don't taking things personally or baking other women,
-those strategies which are trying to combine age - gender,
-because again we know that strategies are not always easily attributed to a single of those dimensions.
+
+0:06:56.340,0:07:02.220
+and again older in this case means 40 plus, the strategies they use to survive,
+
+0:07:02.220,0:07:07.740
+and their general perceptions. So this is of course a full-blown paper and
+
+0:07:07.740,0:07:12.660
+today I would like to focus solely on strategies because I would like to be it as practical
+
+0:07:12.660,0:07:14.880
+as possible. And specifically,
+
+0:07:14.880,0:07:19.260
+when we see the strategies that help women to survive in this hostile
+
+0:07:19.260,0:07:25.440
+or at least unfriendly environment we see age-related strategies such as
+
+0:07:26.280,0:07:31.140
+adjusting behavior or adjusting looks, we have already seen some of those issues before.
+
+0:07:32.940,0:07:39.120
+Studies which are related to gender, ranging from don't taking things personally
+
+0:07:39.120,0:07:42.900
+or baking other women, those strategies which
+
+0:07:42.900,0:07:47.580
+are trying to combine age - gender, because again we know that strategies
+
+0:07:47.580,0:07:51.000
+are not always easily attributed to a single of those dimensions.
+
+0:07:51.000,0:07:57.780
 And here you see two recommendations we have distilled from our interviews.
-For example,
-trying to help the next generation of women and non-binary people
-and of course also benefiting from the networks.
-So summarizing,
-what have we seen?
-We have seen that both organizations and individuals should and can invest in creating more welcoming environment
-for all the developers in general and for veteran women developers in particular.
-Of course,
-it is a matter of common knowledge by now that diversity can bring more creative solutions and can create more productive teams
-but specifically when we are talking about minoritized groups -
-specifically when we are talking about groups which are so scarce as older women and non-binary people in software development -
-their inclusion allows us to approach the needs of the underpresented - underserved groups in the society as a whole.
+
+0:07:57.780,0:07:59.760
+For example, trying to help the
+
+0:07:59.760,0:08:08.460
+next generation of women and non-binary people and of course also benefiting from the networks.
+
+0:08:09.420,0:08:12.660
+So summarizing, what have we seen?
+
+0:08:12.660,0:08:22.260
+We have seen that both organizations and individuals should and can invest
+
+0:08:22.260,0:08:27.480
+in creating more welcoming environment for all the developers in general and for
+
+0:08:28.140,0:08:32.280
+veteran women developers in particular. Of course,
+
+0:08:32.280,0:08:40.980
+it is a matter of common knowledge by now that diversity can bring more creative solutions and
+
+0:08:40.980,0:08:46.320
+can create more productive teams but specifically when we are
+
+0:08:46.320,0:08:51.240
+talking about minoritized groups - specifically when we are talking about
+
+0:08:51.240,0:08:59.340
+groups which are so scarce as older women and non-binary people in software development -
+
+0:08:59.340,0:09:05.820
+their inclusion allows us to approach the needs of
+
+0:09:05.820,0:09:10.020
+the underpresented - underserved groups in the society as a whole.
+
+0:09:11.760,0:09:16.320
 Examples of this kind of adjustments are of course changes in the interview process,
-offering returnships,
-including KPIs or including statements which would be refer - reflect that contributions of those people are valued
-and are important for the company.
-When it comes to individual developers,
+
+0:09:17.040,0:09:22.860
+offering returnships, including KPIs or including
+
+0:09:23.580,0:09:28.920
+statements which would be refer - reflect that contributions of those people are valued
+
+0:09:28.920,0:09:33.240
+and are important for the company. When it comes to individual developers,
+
+0:09:33.240,0:09:38.040
 then of course we have quite a number of challenges there,
+
+0:09:38.040,0:09:43.620
 because we see people changing - challenging the environment or changing their environments.
+
+0:09:45.120,0:09:49.800
 Either, for example, through things like unionization, standing up against biases,
+
+0:09:49.800,0:09:54.780
 or simply by changing companies, roles, or sometimes locations.
+
+0:09:55.920,0:09:59.880
 We also see many much more problematic techniques and strategies,
+
+0:09:59.880,0:10:03.180
 such as adopting useful patterns of behavior,
-changing looks,
-changing - sorry, okay,
-changing how people behave and how people look,
-but of course at the same time,
-we know that those are merely band-aid solutions,
-while of course the problems are sometimes  - or at least most of them are systemic.
-And I apologize,
+
+0:10:04.140,0:10:09.840
+changing looks, changing - sorry,
+
+0:10:14.580,0:10:15.120
+okay,
+
+0:10:15.120,0:10:21.780
+changing how people behave and how people look, but of course at the same time,
+
+0:10:22.740,0:10:35.580
+we know that those are merely band-aid solutions, while of course the problems are sometimes - or at
+
+0:10:35.580,0:10:38.820
+least most of them are systemic. And I apologize,
+
+0:10:38.820,0:10:42.780
 something happened to my screen and i'm not sure what exactly you are seeing.
+
+0:10:48.540,0:10:51.600
 We are seeing you at the moment the screen share has ended.
-We've got - we've got time if you've got another slide or two and would like to try to reshare your screen that should work.
-Okay,
-let me just try to share it.
-Sure, yep, we're seeing your screen but not your slides.
-Okay, so now you need to see the slides.
-Yeah I know we're seeing the slides.
-Thank you.
-So that's essentially this time,
-yes,
+
+0:10:51.600,0:10:56.880
+We've got - we've got time if you've got another slide or two and would like to try to reshare your
+
+0:10:56.880,0:10:58.860
+screen that should work. Okay,
+
+0:10:58.860,0:11:05.640
+let me just try to share it. Sure,
+
+0:11:11.460,0:11:19.200
+yep, we're seeing your screen but not your slides. Okay, so now you need to see the slides.
+
+0:11:19.200,0:11:20.760
+Yeah I know we're seeing the slides. Thank you.
+
+0:11:20.760,0:11:22.920
+So that's essentially this time, yes,
+
+0:11:25.440,0:11:30.060
 so as I said, right, so we have strategies and solutions which can help people
-and you can help both companies and both companies and individuals should be engaged in this process.
-And now I can actually stop sharing.
-Okay, thank you very much,
-sorry for the technical hiccup there.
-Great talk - thank you Alexander.
-A question coming in from the audience.
-How is all of this going to play out with the demographic shift we're seeing, for example, in Japan and parts of Europe,
-as we have an aging population.
+
+0:11:30.900,0:11:37.560
+and you can help both companies and both companies and individuals
+
+0:11:38.160,0:11:43.260
+should be engaged in this process. And now I can actually stop sharing.
+
+0:11:43.800,0:11:47.460
+Okay, thank you very much, sorry for the technical hiccup there.
+
+0:11:48.420,0:11:52.500
+Great talk - thank you Alexander. A question coming in from the audience.
+
+0:11:52.500,0:11:57.900
+How is all of this going to play out with the demographic shift we're seeing, for example,
+
+0:11:57.900,0:12:01.200
+in Japan and parts of Europe, as we have an aging population.
+
+0:12:02.520,0:12:05.700
 Do you think that this sort of discrimination is going to be reduced?
-I would love to say yes,
-but I don't really see it happening.
+
+0:12:08.100,0:12:14.400
+I would love to say yes, but I don't really see it happening.
+
+0:12:15.600,0:12:26.280
 Our study has of course focused on the US-based labor market which is more hot, more active,
+
+0:12:26.280,0:12:28.680
 than what at least I see here in Europe,
+
+0:12:29.940,0:12:34.140
 and I probably should not make any comments about the Japanese labor market.
+
+0:12:36.540,0:12:45.840
 I'm mostly worried that, like, the problems we see are mostly related to changing employment.
+
+0:12:47.160,0:12:51.120
 If people are sticking around to the same companies,
+
+0:12:51.120,0:12:53.820
 they might be suffering but they will still around,
-so they are not going to see it.
-The problems which came up were mostly related to finding companies,
-being hired by those companies, and so on.
+
+0:12:53.820,0:12:58.800
+so they are not going to see it. The problems which came up were
+
+0:12:58.800,0:13:04.560
+mostly related to finding companies, being hired by those companies, and so on.
+
+0:13:04.560,0:13:09.360
 If the market is not that active, people are not likely to change their employment,
+
+0:13:09.360,0:13:14.400
 so we might have other forms of discrimination rather than the one we have seen.
+
+0:13:14.400,0:13:21.360
 But it will be very bold for me to claim that we are not going to have any forms of discrimination.
-Okay,
-another another comment that came up - or question -
-you mentioned changing appearance
-How common is that in the tech sector, and how often are you seeing people taking advantage of remote work
-to try to play down or even conceal their age?
+
+0:13:22.560,0:13:25.740
+Okay, another another
+
+0:13:25.740,0:13:30.060
+comment that came up - or question - you mentioned changing appearance
+
+0:13:30.900,0:13:34.020
+How common is that in the tech sector, and how often are you
+
+0:13:34.020,0:13:39.600
+seeing people taking advantage of remote work to try to play down or even conceal their age?
+
+0:13:41.400,0:13:47.880
 So as a scientist I should say that those studies were qualitative,
+
+0:13:47.880,0:13:51.060
 so I cannot answer questions on the quantitative side,
+
+0:13:51.060,0:13:53.040
 I don't know how often it happens,
+
+0:13:53.040,0:13:57.780
 but it has been repeatedly mentioned at the very least.
+
+0:13:57.780,0:14:03.540
 So our interviewees are repeatedly mentioning changing their appearance,
+
+0:14:03.540,0:14:09.420
 either to appear younger or on the other side to not appear younger.
-So most of the time when we are talking about changing appearance we are thinking about trying to appear younger.
-Some people are not trying to appear younger,
+
+0:14:09.420,0:14:13.740
+So most of the time when we are talking about changing appearance
+
+0:14:13.740,0:14:18.600
+we are thinking about trying to appear younger. Some people are not trying to appear younger,
+
+0:14:18.600,0:14:23.640
 in particular this was one of the topics which was related to our interviews with women.
+
+0:14:25.920,0:14:29.940
 I can maybe quote one of the interviewees,
-she said that all those young tech bros,
-they don't like to work with their mom but they are perfectly happy working with their grandmother.
-So, this age, you know,
-it has a very strange relationship with what makes you "of the right age".
-Women are often seen as never being right -
+
+0:14:29.940,0:14:36.240
+she said that all those young tech bros, they don't like to work with their mom
+
+0:14:36.240,0:14:40.620
+but they are perfectly happy working with their grandmother.
+
+0:14:43.560,0:14:50.160
+So, this age, you know, it has a very strange relationship
+
+0:14:50.160,0:14:59.260
+with what makes you "of the right age". Women are often seen as never being right -
+
+0:15:00.060,0:15:05.201
 either to young and not taken seriously because they're too young
+
+0:15:05.201,0:15:07.980
 or they're too old and not taken seriously because their knowledge is our date,
-right,
-so this - it's a tightrope.
+
+0:15:07.980,0:15:10.260
+right, so this - it's a tightrope.

@@ -1,261 +1,659 @@
-Hi, my name is Carol,
-and today I'll be doing a deep dive into a study that we at the Developer Success Lab at Flow conducted
-on a concept called developer thriving.
-Okay - okay,
+0:00:00.000,0:00:02.280
+Hi, my name is Carol, and today I'll be doing
+
+0:00:02.280,0:00:07.080
+a deep dive into a study that we at the Developer Success Lab at Flow conducted
+
+0:00:07.080,0:00:11.700
+on a concept called developer thriving. Okay - okay,
+
+0:00:11.700,0:00:15.360
 so I want to back up to about, like, 2021 or so,
-not that long ago,
-okay,
+
+0:00:15.360,0:00:16.800
+not that long ago, okay,
+
+0:00:16.800,0:00:20.760
 so this is when some really awesome research came out that essentially said,
-hey,
-big surprise,
+
+0:00:20.760,0:00:23.160
+hey, big surprise,
+
+0:00:23.160,0:00:28.200
 investing in developer satisfaction directly increases developer productivity.
-Okay,
-so as a clinical scientist this is just one of those findings that I just find really interesting,
-because we actually have decades of science showing this exact thing across a lot of other human experiences, right,
-and yet despite that,
+
+0:00:28.200,0:00:30.480
+Okay, so as a
+
+0:00:30.480,0:00:34.500
+clinical scientist this is just one of those findings that I just find really interesting,
+
+0:00:34.500,0:00:40.500
+because we actually have decades of science showing this exact thing across a lot of other
+
+0:00:40.500,0:00:44.280
+human experiences, right, and yet despite that,
+
+0:00:44.280,0:00:48.270
 every time we find it in a new context - in this case, developers -
-we really struggle to apply it.
-And a big problem - a big part of that problem is that this term "satisfaction" is honestly just too vague.
+
+0:00:48.270,0:00:52.620
+we really struggle to apply it. And a big problem - a big part
+
+0:00:52.620,0:00:57.420
+of that problem is that this term "satisfaction" is honestly just too vague.
+
+0:00:57.420,0:01:01.560
 And because of that we often use it in ways that we just don't mean to.
-So, for example,
-you've probably used the term satisfaction to mean things like feeling motivated, supported, fulfilled, etc.
-But technically,
-satisfaction really refers to a pretty broad range of experiences,
-so ranging from things, like,
-this is fine, right,
-to, yeah, I suppose I'm happy here.
+
+0:01:03.060,0:01:05.520
+So, for example, you've probably
+
+0:01:05.520,0:01:10.860
+used the term satisfaction to mean things like feeling motivated, supported, fulfilled, etc.
+
+0:01:11.580,0:01:14.940
+But technically, satisfaction really refers to a
+
+0:01:14.940,0:01:18.300
+pretty broad range of experiences, so ranging from things, like,
+
+0:01:18.300,0:01:22.680
+this is fine, right, to, yeah, I suppose I'm happy here.
+
+0:01:23.520,0:01:26.940
 And so because this is what satisfaction actually means,
+
+0:01:26.940,0:01:31.500
 how a lot of companies end up trying to increase it ends up being pretty flawed.
-So for example,
-they might kind of hope for the best and be, like, oh, it'll just like kind of magically happen.
-Or they might throw swag at you and be, like, here's a sticker, here's a water bottle, here's a boxy t-shirt in a deeply unflattering color,
-and you're, like, okay.
-Or they might try to make work fun by trying to turn things into a game or friendly competition, right.
-And the big problem with these is that,
-these are all things that you might like well enough, right,
-but they won't actually motivate you.
-They won't make you feel like you belong,
-and they won't fulfill you.
-And that's a really big problem,
-because developers deserve better.
-They deserve to go beyond "feeling fine I guess",
-right,
-and into actually thriving as human beings.
-So what is developer thriving?
+
+0:01:31.500,0:01:34.560
+So for example, they might kind of hope for the best and be, like,
+
+0:01:34.560,0:01:39.540
+oh, it'll just like kind of magically happen. Or they might throw swag at you and be, like,
+
+0:01:39.540,0:01:45.000
+here's a sticker, here's a water bottle, here's a boxy t-shirt in a deeply unflattering color,
+
+0:01:45.000,0:01:48.000
+and you're, like, okay. Or they might try to make
+
+0:01:48.000,0:01:52.200
+work fun by trying to turn things into a game or friendly competition, right.
+
+0:01:52.740,0:01:56.820
+And the big problem with these is that, these are all things that you
+
+0:01:56.820,0:02:00.600
+might like well enough, right, but they won't actually motivate you.
+
+0:02:00.600,0:02:04.680
+They won't make you feel like you belong, and they won't fulfill you.
+
+0:02:05.640,0:02:09.240
+And that's a really big problem, because developers deserve better.
+
+0:02:09.240,0:02:13.680
+They deserve to go beyond "feeling fine I guess", right,
+
+0:02:13.680,0:02:19.260
+and into actually thriving as human beings. So what is developer thriving?
+
+0:02:19.260,0:02:22.980
 So this is actually a term taken from clinical health and learning sciences
+
+0:02:22.980,0:02:28.680
 and it refers to the processes driving realistic and sustainable growth and development.
+
+0:02:28.680,0:02:30.840
 I think what's really important to note here is that,
-unlike satisfaction,
-which focuses on very immediate and temporary experiences -
-we call this taking a state-based approach -
+
+0:02:30.840,0:02:33.900
+unlike satisfaction, which focuses on very
+
+0:02:33.900,0:02:38.970
+immediate and temporary experiences - we call this taking a state-based approach -
+
+0:02:38.970,0:02:43.080
 thriving actually focuses on taking a person and process centered approach.
-And this is really good because this makes thriving not just a more stable measure of human experience
-but it also makes a better fit for how humans experience the world,
-which by the way developers are, right?
+
+0:02:43.080,0:02:47.100
+And this is really good because this makes thriving not just a more stable
+
+0:02:47.100,0:02:50.220
+measure of human experience but it also makes a better
+
+0:02:50.220,0:02:54.540
+fit for how humans experience the world, which by the way developers are, right?
+
+0:02:55.140,0:02:59.280
 So if you're thinking what do health, learning, psychology, have to do with developers,
-I mean,
-I hate to break it to you,
-but, like, as humans, your health, education, and psychological well-being - they directly impact your ability to write code.
-Okay,
+
+0:02:59.280,0:03:00.900
+I mean, I hate to break it to you,
+
+0:03:00.900,0:03:06.300
+but, like, as humans, your health, education, and psychological well-being - they directly impact
+
+0:03:06.300,0:03:09.720
+your ability to write code. Okay,
+
+0:03:09.720,0:03:12.660
 so there are several processes that make up developer thriving,
-but when you look at the models across fields - so fields like clinical psychology, health, education, and development -
-you see that there are actually four primary factors that pretty consistently load onto thriving.
+
+0:03:12.660,0:03:17.700
+but when you look at the models across fields - so fields like clinical psychology, health,
+
+0:03:17.700,0:03:20.460
+education, and development - you see that there are actually
+
+0:03:20.460,0:03:24.660
+four primary factors that pretty consistently load onto thriving.
+
+0:03:24.660,0:03:28.560
 And so in our study we also define and measure developer thriving
+
+0:03:28.560,0:03:33.060
 by adapting empirically validated measures based on these four factors.
-So that first factor is agency.
-So by this we mean that developers have a voice in how they define things like work and success.
-So for example,
-if you're a developer with high agency,
-you might feel like you can collaborate with your manager to define what success looks like for you personally.
-The next one is belonging:
-key point, this doesn't just refer to feeling accepted for who you are,
-but it also means that you're non-judgmentally supported to grow and change.
-So, for example,
+
+0:03:34.440,0:03:39.000
+So that first factor is agency. So by this we mean that developers have a voice
+
+0:03:39.000,0:03:42.780
+in how they define things like work and success. So for example,
+
+0:03:42.780,0:03:46.440
+if you're a developer with high agency, you might feel like you can collaborate
+
+0:03:46.440,0:03:50.280
+with your manager to define what success looks like for you personally.
+
+0:03:51.480,0:03:54.660
+The next one is belonging: key point, this doesn't just
+
+0:03:54.660,0:03:59.280
+refer to feeling accepted for who you are, but it also means that you're non-judgmentally
+
+0:03:59.280,0:04:02.100
+supported to grow and change. So, for example,
+
+0:04:02.100,0:04:04.860
 if you're a developer who feels like you really belong on your team,
+
+0:04:04.860,0:04:07.020
 you not only feel like you can be yourself,
-but you feel supported to grow as a person -
-you're not expected to do the same thing and be the same exact person every day for the rest of your life, right.
-The third one is learning culture -
-this refers to a team culture that celebrates the entire learning process, including mistakes.
-So developers on a team with a good learning culture feel like they can talk about mistakes they've made
+
+0:04:07.020,0:04:11.820
+but you feel supported to grow as a person - you're not expected to do the same thing and
+
+0:04:11.820,0:04:15.420
+be the same exact person every day for the rest of your life, right.
+
+0:04:17.100,0:04:21.000
+The third one is learning culture - this refers to a team culture that celebrates
+
+0:04:21.000,0:04:26.220
+the entire learning process, including mistakes. So developers on a team with a good learning
+
+0:04:26.220,0:04:28.740
+culture feel like they can talk about mistakes they've made
+
+0:04:28.740,0:04:30.780
 and talk about what they've learned with teammates.
-And finally,
-the last one is self-efficacy and motivation,
+
+0:04:32.280,0:04:35.340
+And finally, the last one is self-efficacy and motivation,
+
+0:04:35.340,0:04:40.800
 and this one refers to your perceived ability to work, succeed, and solve problems.
+
+0:04:40.800,0:04:44.820
 So, for example, if you're a developer with high self-efficacy and motivation,
+
+0:04:44.820,0:04:47.760
 you don't just feel motivated about the code that you're writing,
+
+0:04:47.760,0:04:52.380
 but you also feel pretty confident that you'll be able to manage any issues that come up with it.
-All right,
-so at this point some of you are, like, developer thriving, sold, awesome,
-and some of you are like, okay, who cares, like, why do we care about this?
-Okay,
-so first of all,
-our study found that developer thriving significantly predicted productivity -
-in other words, when you increase your developer's thriving,
-you also increase that product - productivity, sorry,
-and this means that you can ship products faster,
-you improve the quality of your code,
-and you're building sustainable systems for long-term success, right.
-Other research also shows that when your developers are thriving they're more likely to stick around,
+
+0:04:54.300,0:04:55.860
+All right, so at this point some of
+
+0:04:55.860,0:05:00.780
+you are, like, developer thriving, sold, awesome, and some of you are like, okay, who cares, like,
+
+0:05:00.780,0:05:02.700
+why do we care about this? Okay,
+
+0:05:02.700,0:05:05.220
+so first of all, our study found that developer
+
+0:05:05.220,0:05:09.780
+thriving significantly predicted productivity - in other words, when you increase your
+
+0:05:09.780,0:05:11.700
+developer's thriving, you also increase
+
+0:05:11.700,0:05:15.840
+that product - productivity, sorry, and this means that you can ship products faster,
+
+0:05:15.840,0:05:19.740
+you improve the quality of your code, and you're building sustainable systems
+
+0:05:19.740,0:05:23.700
+for long-term success, right. Other research also shows that
+
+0:05:23.700,0:05:26.400
+when your developers are thriving they're more likely to stick around,
+
+0:05:26.400,0:05:29.040
 that means increased retention, decreased turnover.
-And then finally,
-it helps you become a better leader.
+
+0:05:29.640,0:05:32.820
+And then finally, it helps you become a better leader.
+
+0:05:32.820,0:05:36.000
 It doesn't just help your team see how much you appreciate them,
+
+0:05:36.000,0:05:41.040
 but it also helps other people see, hey, how awesome is this team, right?
-Okay,
-so in a nutshell,
-thriving is awesome,
-we want it, sold,
-but where do we get it?
-It's not on Amazon Prime,
+
+0:05:43.560,0:05:44.880
+Okay, so in a nutshell,
+
+0:05:44.880,0:05:46.860
+thriving is awesome, we want it, sold,
+
+0:05:46.860,0:05:50.280
+but where do we get it? It's not on Amazon Prime,
+
+0:05:50.280,0:05:54.000
 it's not, like, at the thriving store and you just, like, buy it for everyone,
+
+0:05:54.000,0:05:57.900
 it's not on the farm where you, like, pick some up a tree, right,
-it's not apple picking.
-So how do we get it?
-Okay,
-so we got you there too.
-So to answer this,
-we conducted a series of qualitative interviews and focus groups.
-From these we heard two major themes.
+
+0:05:57.900,0:06:00.300
+it's not apple picking. So how do we get it?
+
+0:06:00.300,0:06:02.220
+Okay, so we got you there too.
+
+0:06:02.220,0:06:04.860
+So to answer this, we conducted a series of
+
+0:06:04.860,0:06:09.240
+qualitative interviews and focus groups. From these we heard two major themes.
+
+0:06:10.080,0:06:13.320
 The first is this theme around visibility and value,
-that is,
-when developers feel like their work is seen, recognized, and valued,
-they experience greater thriving.
-So for example,
-you can see this here in a quote from an IC who talks about how being given credit during feature demos
+
+0:06:13.320,0:06:15.420
+that is, when developers feel like their
+
+0:06:15.420,0:06:19.440
+work is seen, recognized, and valued, they experience greater thriving.
+
+0:06:19.440,0:06:21.300
+So for example, you can see this
+
+0:06:21.300,0:06:25.680
+here in a quote from an IC who talks about how being given credit during feature demos
+
+0:06:25.680,0:06:29.160
 not only gives them a sense of ownership but also empowerment.
-We also see this theme around healthy metrics use,
-which we define as tracking performance in a team-driven way using metrics that work for that team's context.
-So for example,
-in this quote here,
+
+0:06:31.440,0:06:36.780
+We also see this theme around healthy metrics use, which we define as tracking performance in
+
+0:06:36.780,0:06:40.620
+a team-driven way using metrics that work for that team's context.
+
+0:06:40.620,0:06:42.660
+So for example, in this quote here,
+
+0:06:42.660,0:06:47.700
 an IC talks about how, in the context of minoritized identities such as gender,
+
+0:06:47.700,0:06:51.180
 metrics can actually be an equalizer in getting your work seen.
-So we tested if healthy metrics use and visibility of value could both directly and indirectly increase developer thriving and productivity.
-And we did this using something called a serial mediation analysis.
-Okay,
-so there's a lot of effects here,
-so I'm just going to break down the main ones and then you can read about the rest of them in our research report.
-All right,
-so we're going to pay attention to the orange here, okay.
-So first we see that when you, as a leader, decide, hey, I'm going to invest in healthy team driven metrics, right,
+
+0:06:53.940,0:06:59.460
+So we tested if healthy metrics use and visibility of value could both directly and indirectly
+
+0:06:59.460,0:07:04.080
+increase developer thriving and productivity. And we did this using something called a serial
+
+0:07:04.080,0:07:05.940
+mediation analysis. Okay,
+
+0:07:05.940,0:07:08.640
+so there's a lot of effects here, so I'm just going to break down
+
+0:07:08.640,0:07:11.040
+the main ones and then you can read about the rest of them in our research report.
+
+0:07:11.820,0:07:12.660
+All right, so we're going
+
+0:07:12.660,0:07:17.340
+to pay attention to the orange here, okay. So first we see that when you, as a leader,
+
+0:07:17.340,0:07:21.180
+decide, hey, I'm going to invest in healthy team driven metrics, right,
+
+0:07:21.180,0:07:26.100
 you're actually able to directly increase the visibility and value of developers' work.
-And this makes sense because you're now just more able to clearly evaluate, see, and celebrate that work,
+
+0:07:26.100,0:07:30.480
+And this makes sense because you're now just more able to clearly evaluate,
+
+0:07:30.480,0:07:32.040
+see, and celebrate that work,
+
+0:07:34.260,0:07:38.280
 because that increased visibility of value helps you recognize and reward work,
+
+0:07:38.280,0:07:41.220
 and it helps you identify unmet needs and friction.
+
+0:07:41.220,0:07:46.800
 You're also now able to both directly and indirectly increase your developers' thriving.
-And then bringing it all together,
-because that increased thriving means that your developers are now more motivated, better able to solve problems,
+
+0:07:48.480,0:07:52.020
+And then bringing it all together, because that increased thriving
+
+0:07:52.020,0:07:56.040
+means that your developers are now more motivated, better able to solve problems,
+
+0:07:56.040,0:07:59.520
 collaborative - collaboratively learn and grow, and communicate with leaders
+
+0:07:59.520,0:08:04.680
 you're also now able to directly and indirectly increase developer productivity.
+
+0:08:06.660,0:08:09.600
 So how can you put this into practice on your teams?
+
+0:08:09.600,0:08:12.180
 So you can use this really awesome acronym I made,
-and DARE to do more, okay,
-that is you can Diagnose, Agree, Recognize, and Explore.
-And yes, Mike pointed out to me that DARE was this really strange anti-drug campaign from the 80s and 90s,
-so think about this as, like, us reclaiming DARE,
-as like the cool version, okay, it's the effective version.
-All right, so back to DARE.
+
+0:08:12.180,0:08:15.180
+and DARE to do more, okay, that is you can Diagnose,
+
+0:08:15.180,0:08:19.020
+Agree, Recognize, and Explore. And yes, Mike pointed out to
+
+0:08:19.020,0:08:22.800
+me that DARE was this really strange anti-drug campaign from the 80s and 90s,
+
+0:08:22.800,0:08:27.120
+so think about this as, like, us reclaiming DARE, as like the cool version, okay,
+
+0:08:27.120,0:08:30.060
+it's the effective version. All right, so back to DARE.
+
+0:08:30.060,0:08:33.540
 So first, you can diagnose if there are gaps in developer thriving,
+
+0:08:33.540,0:08:36.600
 and you can do this by using the four factors of our framework.
-This is a really good way to figure out what leadership and growth opportunities you need to focus on first for example.
-So it might turn out, for example, that you have teams with a really high learning culture, which is awesome,
+
+0:08:36.600,0:08:40.140
+This is a really good way to figure out what leadership and growth opportunities
+
+0:08:40.140,0:08:43.860
+you need to focus on first for example. So it might turn out, for example,
+
+0:08:43.860,0:08:46.980
+that you have teams with a really high learning culture, which is awesome,
+
+0:08:46.980,0:08:50.520
 but they might also have low agency to speak out with leaders,
+
+0:08:50.520,0:08:54.420
 and that might show, hey, we've got some knowledge silos to break down, right.
-Second,
-you can reach agreement with your team on how to define and measure performance.
-So one aside:
+
+0:08:56.220,0:08:58.380
+Second, you can reach agreement with your team
+
+0:08:58.380,0:09:02.040
+on how to define and measure performance. So one aside:
+
+0:09:02.040,0:09:06.780
 our study also found that most folks didn't know what metrics are made for using
+
+0:09:06.780,0:09:10.740
 or if their leaders were even used metric - or even using metrics, right,
+
+0:09:10.740,0:09:16.500
 which - it's just really hard then to know if your work is even seen, much less valued.
-So an important thing to do is seek agreement on, and establish, healthy, agreed-upon, team-driven metrics
-you can use to gauge performance and give kudos.
-Speaking of kudos,
-you know be sure to reward and recognize your effort -
-folks spoke a lot about worrying if their work and effort is recognized and valued,
-not only by folks in their team but also outside of their teams and by the org, right,
-so whether it's by championing their work to leadership or celebrating effort in addition to outcomes,
-you know,
-finding a way to do this is really important.
-And then finally,
-explore our entire research report - it touches on that, many, many, more research findings, insights, and recommendations,
+
+0:09:16.500,0:09:20.400
+So an important thing to do is seek agreement on, and establish,
+
+0:09:20.400,0:09:25.740
+healthy, agreed-upon, team-driven metrics you can use to gauge performance and give kudos.
+
+0:09:27.660,0:09:29.340
+Speaking of kudos, you know be sure to
+
+0:09:29.340,0:09:33.480
+reward and recognize your effort - folks spoke a lot about worrying if
+
+0:09:33.480,0:09:38.280
+their work and effort is recognized and valued, not only by folks in their team but also outside
+
+0:09:38.280,0:09:42.120
+of their teams and by the org, right, so whether it's by championing their
+
+0:09:42.120,0:09:45.300
+work to leadership or celebrating effort in addition to outcomes,
+
+0:09:45.300,0:09:47.580
+you know, finding a way to do this is really important.
+
+0:09:48.360,0:09:51.540
+And then finally, explore our entire research
+
+0:09:51.540,0:09:56.760
+report - it touches on that, many, many, more research findings, insights, and recommendations,
+
+0:09:56.760,0:10:01.080
 all of which you can find on our website at devsuccesslab.com.
+
+0:10:01.080,0:10:02.400
 And that is it.
-Phenomenal, yay.
-Oh gosh, bittersweet, the last one, but what a way to close, right,
-we are important,
-we matter,
-our mentality matters,
-our health matters,
-mental and physical,
-we gotta think about these things.
-I do want to note this was obviously specific to developers,
-but in academia,
-we need to be thinking about these things too -
-we want to be thriving as, you know, computer scientists in academia as well,
-so thank you so much for sharing this.
+
+0:10:04.380,0:10:09.300
+Phenomenal, yay. Oh gosh, bittersweet, the last one,
+
+0:10:09.300,0:10:12.180
+but what a way to close, right, we are important,
+
+0:10:12.180,0:10:13.980
+we matter, our mentality matters,
+
+0:10:13.980,0:10:15.600
+our health matters, mental and physical,
+
+0:10:15.600,0:10:20.220
+we gotta think about these things. I do want to note this was obviously
+
+0:10:20.220,0:10:22.320
+specific to developers, but in academia,
+
+0:10:22.320,0:10:26.220
+we need to be thinking about these things too - we want to be thriving as, you know,
+
+0:10:26.220,0:10:30.240
+computer scientists in academia as well, so thank you so much for sharing this.
+
+0:10:30.240,0:10:34.020
 So we have a couple of questions in the Slack - if anyone else has questions,
+
+0:10:34.020,0:10:36.840
 please feel free to put them as I get started here.
-One,
-Emma actually said, and the obvious question,
-so I don't know if she meant to get an answer but we're gonna put it out there anyways and see what your thoughts are,
-how does worker democracy help developers thrive?
+
+0:10:36.840,0:10:40.380
+One, Emma actually said, and the obvious question,
+
+0:10:40.380,0:10:43.200
+so I don't know if she meant to get an answer but we're gonna put it out
+
+0:10:43.200,0:10:48.960
+there anyways and see what your thoughts are, how does worker democracy help developers thrive?
+
+0:10:50.580,0:10:55.560
 I think that - so worker democracy kind of refers back to this agency piece, right.
+
+0:10:55.560,0:11:02.280
 When you have agency - when you have a choice to, kind of, have a say in how your work is measured
-or how your work is done, right,
-nobody knows you better than you.
+
+0:11:02.280,0:11:06.420
+or how your work is done, right, nobody knows you better than you.
+
+0:11:06.420,0:11:10.200
 Nobody knows how you work better than you, right,
+
+0:11:10.200,0:11:14.880
 it's not me, you know, even if I'm a researcher, it's not Brittany, it's not Greg, right,
-you know it best,
-and so you being able to speak up best supports your ability to get work done in a healthy and sustainable way, right,
-So absolutely,
-it's not just having the ability to say that,
+
+0:11:14.880,0:11:17.700
+you know it best, and so you being able to
+
+0:11:17.700,0:11:23.100
+speak up best supports your ability to get work done in a healthy and sustainable way, right,
+
+0:11:23.100,0:11:26.760
+So absolutely, it's not just having the ability to say that,
+
+0:11:26.760,0:11:29.760
 but feeling like someone's actually listening when you say it,
+
+0:11:29.760,0:11:33.180
 which I think, you know, speaks to the, kind of, full - the full circle there.
-Okay, and the next question,
-I - you know, we're gonna - we're gonna put it out there anyways because I don't know if it was meant to be real or not
+
+0:11:34.020,0:11:36.660
+Okay, and the next question, I - you know, we're gonna - we're
+
+0:11:36.660,0:11:39.720
+gonna put it out there anyways because I don't know if it was meant to be real or not
+
+0:11:39.720,0:11:43.260
 but I do know that puppies are a thing as far as mental health.
+
+0:11:43.260,0:11:49.320
 Are there any controlled studies on the impact of puppies on developer satisfaction?
+
+0:11:49.320,0:11:53.220
 And this follow-up - this is really important, make sure you listen carefully here,
-if so,
-how do they compare with baby otters,
+
+0:11:53.220,0:11:56.940
+if so, how do they compare with baby otters,
+
+0:11:56.940,0:12:03.900
 which our question asker Greg personally believes are the gold standard.
-What are your thoughts on this?
-These otters are so cute,
-I can't even - I can't even handle it,
-I'm like having trouble focusing now
-Okay,
-so when I taught research methods, because I am a former academic,
-we used to actually talk about this study that did look at the impact of puppies on, just, like, mental health and stress etc.
-You know, in a controlled setting, awesome -
-long-term success, like, you know, like, what are you gonna do, like, bring the puppy around with you
+
+0:12:03.900,0:12:07.860
+What are your thoughts on this? These otters are so cute,
+
+0:12:07.860,0:12:11.400
+I can't even - I can't even handle it, I'm like having trouble focusing now
+
+0:12:11.400,0:12:13.800
+Okay, so when I taught research
+
+0:12:13.800,0:12:18.360
+methods, because I am a former academic, we used to actually talk about this study
+
+0:12:18.360,0:12:23.160
+that did look at the impact of puppies on, just, like, mental health and stress etc.
+
+0:12:24.600,0:12:29.640
+You know, in a controlled setting, awesome - long-term success, like, you know, like,
+
+0:12:29.640,0:12:31.860
+what are you gonna do, like, bring the puppy around with you
+
+0:12:31.860,0:12:35.160
 and, like, hope it never poops and pees on you and, like, chews up all your furniture?
-Probably not, right.
-So, great short-term success fix, not so great in the long term.
-Fair enough, fair enough,
-although i would love to have a puppy that's just big enough that I could actually successfully do that.
-Beautiful, not - not sustainable, but fantastic.
+
+0:12:35.160,0:12:38.340
+Probably not, right. So, great short-term success fix,
+
+0:12:38.340,0:12:42.540
+not so great in the long term. Fair enough, fair enough,
+
+0:12:42.540,0:12:45.060
+although i would love to have a puppy that's just big enough
+
+0:12:45.060,0:12:52.500
+that I could actually successfully do that. Beautiful, not - not sustainable, but fantastic.
+
+0:12:53.280,0:12:59.460
 I think one thing I'm kind of curious about is what it looks like to to evaluate
-the effectiveness of the methods that you - that would be employed to follow this DARE model, right?
-If the goal is thriving, which is defined but really kind of subjective, right,
-what - what are some thoughts you have on how we - how we evaluate and improve on the methods that we're -
+
+0:12:59.460,0:13:03.780
+the effectiveness of the methods that you - that would be employed
+
+0:13:03.780,0:13:08.340
+to follow this DARE model, right? If the goal is thriving, which is
+
+0:13:08.340,0:13:14.040
+defined but really kind of subjective, right, what - what are some thoughts you have on how
+
+0:13:14.040,0:13:18.630
+we - how we evaluate and improve on the methods that we're -
+
+0:13:18.630,0:13:21.660
 we're kind of trying, I guess, to - to fit this model.
-100%,
-yeah,
+
+0:13:22.440,0:13:23.580
+100%, yeah,
+
+0:13:23.580,0:13:29.700
 so I think survey, okay, survey design is so complicated, right,
+
+0:13:29.700,0:13:32.460
 it feels easy because you're like, of course I can ask questions,
+
+0:13:32.460,0:13:36.540
 but then the answer is, like, well are you asking good questions and are those questions reliable,
-are they valid,
-have you done, like, an empirically validated study looking at them, right?
-And so we actually did that - did start to validate our questions
-and all of our questions come from empirically validated measures, right.
-So, you know, people often think about, gosh, driving is so subjective,
-does that mean we can't measure it, right?
-Right.
-And like the answer is no, right, when you go to the doctor, your doctor isn't like, gosh, like,
-your heart rate is fine and you're, like, but I just don't feel good,
-and they're, like, no one cares how you feel, right, like,
-what you're saying is still information,
-that's still really important,
-so, you know,
+
+0:13:36.540,0:13:38.580
+are they valid, have you done, like, an empirically
+
+0:13:38.580,0:13:42.600
+validated study looking at them, right? And so we actually did that - did
+
+0:13:42.600,0:13:45.960
+start to validate our questions and all of our questions come from
+
+0:13:45.960,0:13:51.540
+empirically validated measures, right. So, you know, people often think about,
+
+0:13:52.920,0:13:56.280
+gosh, driving is so subjective, does that mean we can't measure it, right?
+
+0:13:56.280,0:13:58.740
+Right. And like the answer is no, right, when you go
+
+0:13:58.740,0:14:03.420
+to the doctor, your doctor isn't like, gosh, like, your heart rate is fine and you're, like,
+
+0:14:03.420,0:14:05.040
+but I just don't feel good, and they're, like,
+
+0:14:05.040,0:14:09.480
+no one cares how you feel, right, like, what you're saying is still information,
+
+0:14:09.480,0:14:12.180
+that's still really important, so, you know,
+
+0:14:12.180,0:14:16.260
 it's a matter of kind of taking all data sources together and using them as one,
+
+0:14:16.260,0:14:19.860
 right, not just kind of pinpointing or cherry picking each one.

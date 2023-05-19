@@ -1,152 +1,446 @@
-So actually when I first was invited I was trying to real - trying to think of what kind of talk I could give, right.
-So I went to the website from Never Work in Theory and I just like - I looked and I highlighted several different things,
-it's like something that's real life to both questions and answers and then a bridge between researchers and practitioners.
-And look at what questions could be tackled next.
-So it's sort of like a focus view.
-So based on this I tried to create my presentation and try to at least give you some idea what we've been working on.
-So actually my - what I'm - what I'm hoping that you can take away from this talk is just a slightly different view
-of maybe how you think libraries are and maybe - maybe you already know this or maybe you don't but, yeah,
+0:00:00.840,0:00:06.120
+So actually when I first was invited I was trying to real - trying to think
+
+0:00:06.120,0:00:11.550
+of what kind of talk I could give, right. So I went to the website from Never Work
+
+0:00:11.550,0:00:17.700
+in Theory and I just like - I looked and I highlighted several different things,
+
+0:00:17.700,0:00:21.720
+it's like something that's real life to both questions and answers and then
+
+0:00:21.720,0:00:27.720
+a bridge between researchers and practitioners. And look at what questions could be tackled next.
+
+0:00:27.720,0:00:32.220
+So it's sort of like a focus view. So based on this I tried to create
+
+0:00:32.220,0:00:37.920
+my presentation and try to at least give you some idea what we've been working on.
+
+0:00:37.920,0:00:43.500
+So actually my - what I'm - what I'm hoping that you can take away from this
+
+0:00:43.500,0:00:48.420
+talk is just a slightly different view of maybe how you think libraries are
+
+0:00:48.420,0:00:52.500
+and maybe - maybe you already know this or maybe you don't but, yeah,
+
+0:00:52.500,0:00:55.260
 just some interesting things that we've been doing with libraries.
+
+0:00:55.260,0:01:02.040
 So actually everybody I think framework also mentioned like Chat GPT everything is coming up,
+
+0:01:02.040,0:01:07.200
 so I asked, why don't you know give the definition of libraries through Chat GPT, right?
+
+0:01:07.200,0:01:12.480
 So Chat GPT I put it in, what do we know about libraries and their dependencies?
-And it came up with three important things - I think that came up, well, it didn't cover everything.
-So one of the key concepts is related to version control, security, and also package managers like npm.
+
+0:01:12.480,0:01:17.760
+And it came up with three important things - I think that came up, well,
+
+0:01:17.760,0:01:21.120
+it didn't cover everything. So one of the key concepts is
+
+0:01:21.120,0:01:27.240
+related to version control, security, and also package managers like npm.
+
+0:01:27.240,0:01:34.200
 So I believe if - if my assumptions are correct I'm talking to, maybe, developers,
+
+0:01:34.200,0:01:37.980
 so maybe you don't need for me to explain what a library is,
-but basically what it is, like, I'll just say, fundamentally, is like when people create projects now,
-they never use their - start from scratch,
-they try to use an old project or existing code,
-so this is a kind of code reuse.
+
+0:01:37.980,0:01:42.180
+but basically what it is, like, I'll just say, fundamentally,
+
+0:01:42.180,0:01:47.280
+is like when people create projects now, they never use their - start from scratch,
+
+0:01:47.280,0:01:52.800
+they try to use an old project or existing code, so this is a kind of code reuse.
+
+0:01:54.000,0:01:58.800
 So let me take you back to the early days of code reuse.
-So there's this term called NCBM - I know you can't read all of this -
-but basically developers were very wary of adopting other people's code,
-which is probably what they - currently the developers would think were kind of crazy -
-but back in those days around 2006,
-people were a bit worried.
-I don't trust anyone else's code, and I feel a bit uneasy.
-But then here were arguments for it:
-you have to trust people and their compilers,
-you have to trust the class libraries,
+
+0:01:58.800,0:02:02.580
+So there's this term called NCBM - I know
+
+0:02:02.580,0:02:07.020
+you can't read all of this - but basically developers were
+
+0:02:07.020,0:02:13.020
+very wary of adopting other people's code, which is probably what they - currently the
+
+0:02:13.020,0:02:17.520
+developers would think were kind of crazy - but back in those days around 2006,
+
+0:02:18.660,0:02:21.900
+people were a bit worried. I don't trust anyone else's
+
+0:02:21.900,0:02:27.600
+code, and I feel a bit uneasy. But then here were arguments for it:
+
+0:02:27.600,0:02:32.340
+you have to trust people and their compilers, you have to trust the class libraries,
+
+0:02:32.340,0:02:36.240
 and also you need to trust the people that make good compilers.
+
+0:02:36.240,0:02:44.160
 So programmers do eventually start writing Python, Perl, PHP, they have to trust the interpreter.
+
+0:02:44.160,0:02:50.100
 So this is what led to - it's - it's all about trust, and trusting other people's code.
-And this all led to like dependencies.
-And if you know about dependencies, you'll know that even though you can adopt something that's very high level or very abstract,
+
+0:02:50.100,0:02:55.020
+And this all led to like dependencies. And if you know about dependencies,
+
+0:02:55.020,0:03:00.900
+you'll know that even though you can adopt something that's very high level or very abstract,
+
+0:03:00.900,0:03:05.640
 you really don't know what's behind it - all the dependencies stuff that's down there.
-So this is an interesting case and this was during my research as a postdoc - is that if you're familiar with the npm,
-there was this 11 or 12 lines of code that broke - basically broke the internet.
-One of the the persons - it's called the left pad incident -
-they removed this small piece of trivial code and it basically was dependent on other libraries.
-So based on that it also linked up with securities, vulnerabilities, and what this term nowadays they call it software ecosystems or package ecosystem.
-So this is the kind of work that we've been looking at.
-So, so far in my research - so from 2013 when I first graduated to now 2023 - 10 years - I think there's been a lot of work
+
+0:03:06.240,0:03:12.900
+So this is an interesting case and this was during my research as a postdoc - is
+
+0:03:12.900,0:03:18.600
+that if you're familiar with the npm, there was this 11 or 12 lines of code that
+
+0:03:18.600,0:03:23.700
+broke - basically broke the internet. One of the the persons - it's
+
+0:03:23.700,0:03:28.620
+called the left pad incident - they removed this small piece of trivial code and
+
+0:03:28.620,0:03:35.820
+it basically was dependent on other libraries. So based on that it also linked up with
+
+0:03:35.820,0:03:41.460
+securities, vulnerabilities, and what this term nowadays they call it software
+
+0:03:41.460,0:03:45.120
+ecosystems or package ecosystem. So this is the kind of work
+
+0:03:45.120,0:03:48.820
+that we've been looking at. So, so far in my research -
+
+0:03:49.440,0:03:57.960
+so from 2013 when I first graduated to now 2023 - 10 years - I think there's been a lot of work
+
+0:03:57.960,0:04:01.740
 that's been both from the industry and also from researchers.
+
+0:04:01.740,0:04:06.180
 So what's helped us a lot is, we've got a lot of library data sets,
+
+0:04:06.180,0:04:10.800
 for example libraries.io, Software Heritage, the GH archives,
-and then there's also GH GitHub API,
-so you can use that to download data sets and do empirical studies to analyze these things.
-From the industry point of view there was a lot of dependency bot,
-which is a kind of bot-assisted fixing your updates
-and recently there's this Log for Shell vulnerability which also sparked the Alpha Omega project
+
+0:04:10.800,0:04:17.220
+and then there's also GH GitHub API, so you can use that to download data sets
+
+0:04:17.220,0:04:23.340
+and do empirical studies to analyze these things. From the industry point of view there was a lot
+
+0:04:23.340,0:04:25.980
+of dependency bot, which is a kind of
+
+0:04:25.980,0:04:32.100
+bot-assisted fixing your updates and recently there's this Log for
+
+0:04:32.100,0:04:36.480
+Shell vulnerability which also sparked the Alpha Omega project
+
+0:04:36.480,0:04:43.200
 that people are looking for, like, the supply chains and how these big ecosystems, like,
-how can we manage these ecosystems.
-So based on that I'll just do two examples today of some of the research ideas that we are doing.
-So the first example is how to secure your libraries.
-So I'm not talking about metal detectors in libraries.
-This is library ecosystem, right.
+
+0:04:43.200,0:04:49.860
+how can we manage these ecosystems. So based on that I'll just do two examples today
+
+0:04:49.860,0:04:55.380
+of some of the research ideas that we are doing. So the first example is how to secure
+
+0:04:55.380,0:04:57.780
+your libraries. So I'm not talking
+
+0:04:57.780,0:05:02.820
+about metal detectors in libraries. This is library ecosystem, right.
+
+0:05:02.820,0:05:07.560
 So here we tried - there was a student - so we had undergrad students,
+
+0:05:07.560,0:05:12.060
 and I'll just - I don't know if you can see my screen,
-but I'll try to bring up a quick demo of this.
-So the student tried to create a tool that could look at not only the dependencies that the project relies on
-but actually the transitive dependencies,
-so dependencies that go down the chain.
-And as you can see they are large - huge - we actually - this is very hard work to get - to get -
-As a researcher it's very hard, we sold it, like, as a tool,
-it works but to actually evaluate how good it is, it's very hard.
-So we also did, like, a user study with some developers to help us understand these vulnerabilities.
-So here is part of the tool you can see that we have different colors that show the different layers,
-and for example this one that's orange has, like, the severity is very high.
-If you click on the link you should be able to find out where the security fix is and what kind of vulnerabilities are there.
-So what was the motivation of this tool?
-So I think what we wanted to do is,
+
+0:05:12.660,0:05:20.820
+but I'll try to bring up a quick demo of this. So the student tried to create a tool
+
+0:05:21.360,0:05:25.620
+that could look at not only the dependencies that the project relies on
+
+0:05:25.620,0:05:30.780
+but actually the transitive dependencies, so dependencies that go down the chain.
+
+0:05:31.380,0:05:37.200
+And as you can see they are large - huge - we actually - this is
+
+0:05:37.200,0:05:42.840
+very hard work to get - to get - As a researcher it's very hard,
+
+0:05:42.840,0:05:47.280
+we sold it, like, as a tool, it works but to actually evaluate
+
+0:05:47.280,0:05:53.100
+how good it is, it's very hard. So we also did, like, a user study
+
+0:05:53.100,0:05:58.620
+with some developers to help us understand these vulnerabilities.
+
+0:05:58.620,0:06:02.880
+So here is part of the tool you can see that we have different
+
+0:06:02.880,0:06:08.580
+colors that show the different layers, and for example this one that's orange has,
+
+0:06:08.580,0:06:12.780
+like, the severity is very high. If you click on the link you should
+
+0:06:12.780,0:06:19.560
+be able to find out where the security fix is and what kind of vulnerabilities are there.
+
+0:06:19.560,0:06:24.600
+So what was the motivation of this tool? So I think what we wanted to do is,
+
+0:06:24.600,0:06:30.420
 we wanted to provide developers with a more, like, holistic view of the project
-and see how many libraries, how much transivity, has been - has been - has occurred within the project.
-So this this took us - the thing is, after this, there's also this thing called dependabot
-and there's less user interface.
-So our idea was to use the visualization,
-but as you can see it's kind of very messy,
+
+0:06:30.420,0:06:35.880
+and see how many libraries, how much transivity, has been - has
+
+0:06:35.880,0:06:41.880
+been - has occurred within the project. So this this took us - the thing is, after this,
+
+0:06:41.880,0:06:45.120
+there's also this thing called dependabot and there's less user interface.
+
+0:06:45.120,0:06:51.780
+So our idea was to use the visualization, but as you can see it's kind of very messy,
+
+0:06:51.780,0:06:55.140
 so it's - I think there's still a lot of work that has to be done with it,
-but some of the key highlights that we found is,
-indeed,
+
+0:06:55.140,0:06:58.740
+but some of the key highlights that we found is, indeed,
+
+0:06:58.740,0:07:05.100
 there is a lot of vulnerabilities that connect to each other way down the dependency tree.
+
+0:07:05.100,0:07:10.260
 So that's one of the work that we - we're looking at.
+
+0:07:10.260,0:07:17.040
 So let me go back to my slideshow again, hopefully everybody's still with me.
+
+0:07:18.840,0:07:24.000
 So as you can see this is just a snapshot of the October from last year.
+
+0:07:24.000,0:07:29.220
 So as you can see GitHub is one of the biggest sources of open source software
+
+0:07:29.220,0:07:37.140
 and also these open source software use a lot of software libraries in their projects.
-So here is almost 94 million.
-So that's one idea.
+
+0:07:37.140,0:07:41.880
+So here is almost 94 million. So that's one idea.
+
+0:07:41.880,0:07:45.000
 The second one we're looking at is something called protestware.
-So here this looks like a normal piece of code and there is some vulnerability it's a CVE - some attack -
-and in this case it was the IP location and the IP location is actually Russia.
-So this is a bit - this is not your kind of - regular kind of vulnerability attack.
-So what we found was that, I don't know,
-if last year there was a lot of protests where,
-so we're finding that there's also social ideas coming into the code.
-One example on your top left side is when one of the npm developers decided that he was going to remove his package from the ecosystem
-and wanted to hold people accountable.
-The other one is about the Ukraine war and they wanted to show their support.
-So I think - we wrote a short paper about this,
+
+0:07:45.000,0:07:49.620
+So here this looks like a normal piece of code and there is some
+
+0:07:49.620,0:07:55.620
+vulnerability it's a CVE - some attack - and in this case it was the IP location
+
+0:07:55.620,0:08:04.020
+and the IP location is actually Russia. So this is a bit - this is not your kind
+
+0:08:04.020,0:08:09.360
+of - regular kind of vulnerability attack. So what we found was that, I don't know,
+
+0:08:09.360,0:08:14.880
+if last year there was a lot of protests where, so we're finding that there's also social
+
+0:08:14.880,0:08:20.760
+ideas coming into the code. One example on your top left side
+
+0:08:20.760,0:08:29.520
+is when one of the npm developers decided that he was going to remove his package from the ecosystem
+
+0:08:29.520,0:08:34.920
+and wanted to hold people accountable. The other one is about the Ukraine
+
+0:08:34.920,0:08:41.400
+war and they wanted to show their support. So I think - we wrote a short paper about this,
+
+0:08:41.400,0:08:47.100
 we haven't done, like, currently we're doing the full analysis on the impacts of this
-but it looks like people are using - developers are using their influence to try to get their message - political views across.
-So coming from open source you can say that it's kind of weaponizing
-because it's a kind of discrimination against people or groups.
-So this is kind of interesting things that we're looking at.
-So I'm just gonna go quick because I have probably the last minute.
-So what do we know about libraries and their dependencies?
-I think it's all about trust and when developers did not trust the libraries and now they're giving a lot of trust - maybe too much.
-And also when we do this kind of analysis we do,
-I think there's need to be tools,
+
+0:08:47.100,0:08:54.840
+but it looks like people are using - developers are using their influence to try to get their
+
+0:08:54.840,0:08:59.460
+message - political views across. So coming from open source you
+
+0:08:59.460,0:09:03.420
+can say that it's kind of weaponizing because it's a kind of discrimination
+
+0:09:03.420,0:09:06.360
+against people or groups. So this is kind of
+
+0:09:06.360,0:09:11.820
+interesting things that we're looking at. So I'm just gonna go quick because I have
+
+0:09:11.820,0:09:14.100
+probably the last minute. So what do we know about
+
+0:09:14.100,0:09:17.940
+libraries and their dependencies? I think it's all about trust and when
+
+0:09:17.940,0:09:23.040
+developers did not trust the libraries and now they're giving a lot of trust - maybe too much.
+
+0:09:23.580,0:09:30.060
+And also when we do this kind of analysis we do, I think there's need to be tools,
+
+0:09:30.060,0:09:34.140
 there's need to be visualizations and kind of feedback from developers,
-what works, what doesn't work,
-I think that is currently outstanding in the research field.
-And I think, in my experience, there's like the gap -
-the gap between open source and industry or researchers in industry in this particular research field is not that far
+
+0:09:34.140,0:09:36.900
+what works, what doesn't work, I think that is currently
+
+0:09:36.900,0:09:42.300
+outstanding in the research field. And I think, in my experience,
+
+0:09:42.300,0:09:45.600
+there's like the gap - the gap between open source
+
+0:09:45.600,0:09:50.100
+and industry or researchers in industry in this particular research field is not that far
+
+0:09:50.100,0:09:54.720
 because I think that there's a lot of industry that use a lot of open source.
+
+0:09:54.720,0:09:57.720
 And the second point which is, to my second case study,
-is that libraries are ever expanding,
-so now they're even dealing with social issues
+
+0:09:57.720,0:10:02.760
+is that libraries are ever expanding, so now they're even dealing with social issues
+
+0:10:02.760,0:10:09.000
 and I think this is because many of the developers now they move beyond just traditional programmers
+
+0:10:09.000,0:10:13.920
 but also other other kinds of people that also program too as well.
+
+0:10:13.920,0:10:18.060
 So I want to end with, "With great power comes great responsibility."
+
+0:10:19.380,0:10:24.720
 Thank you for your attention and you can scan me or just ask me questions.
-I once again thank the organizers.
-All right, thank you very much for that.
+
+0:10:24.720,0:10:29.940
+I once again thank the organizers. All right, thank you very much for that.
+
+0:10:30.780,0:10:33.240
 We do have a couple of questions that have come in.
+
+0:10:34.140,0:10:37.560
 The first one is, in your experience or from your research,
+
+0:10:37.560,0:10:43.080
 how much attention do developers actually pay to library vulnerabilities?
+
+0:10:43.920,0:10:48.780
 I get notifications from GitHub for example about needing to update packages
+
+0:10:48.780,0:10:54.180
 and I must admit I mostly delete the messages and wait until I'm doing something anyway.
+
+0:10:54.900,0:10:58.140
 So according to the data, we've done this analysis,
-and actually people - the role of - the responsibility - it doesn't really hurt you until there's a business case.
-So I think that's what the current view is.
-However in many cases if you leave it too late then your software can be rendered outdated, right,
-so that's why we want to come up with this interesting visualizations or some kind of motivation
-because I feel that the notification is kind of - it's overused -
-that people also get tired of this,
+
+0:10:58.140,0:11:02.880
+and actually people - the role of - the responsibility - it doesn't
+
+0:11:02.880,0:11:05.160
+really hurt you until there's a business case.
+
+0:11:05.760,0:11:12.240
+So I think that's what the current view is. However in many cases if you leave it too
+
+0:11:12.240,0:11:16.680
+late then your software can be rendered outdated, right,
+
+0:11:16.680,0:11:21.360
+so that's why we want to come up with this interesting visualizations or
+
+0:11:21.360,0:11:23.820
+some kind of motivation because I feel that the
+
+0:11:23.820,0:11:29.520
+notification is kind of - it's overused - that people also get tired of this,
+
+0:11:29.520,0:11:32.880
 so it becomes more a pain rather than something useful,
-so we need something smarter and I think that's where researchers would come together to try to answer them.
-Okay,
+
+0:11:32.880,0:11:38.700
+so we need something smarter and I think that's where researchers would come together to try to
+
+0:11:38.700,0:11:40.380
+answer them. Okay,
+
+0:11:40.380,0:11:43.260
 and one last quick question before we go to our next speaker.
+
+0:11:43.260,0:11:49.320
 Do you think there is a risk of open source communities fracturing along political lines?
-Because of course if I create a package that doesn't work in a particular locale or doesn't work for a particular group of people
-there's the risk that we're then going to see further fissuring because of package compatibility issues?
-Yeah,
-I think there is a lot of work ongoing now, especially with developer diversity,
-and there's a lot of, like, other issues that are coming up with software,
-so I think, in my opinion, I think that it's - it's going to become a topic where people have to be more, like,
-when you develop code now,
-you have to be more aware - maybe awareness of what it could affect and how much responsibility you have to exert,
-right,
-so I don't know if I answered your question but there was, like, I think there's a lot of work that still needs to be done in this area.
+
+0:11:49.320,0:11:55.020
+Because of course if I create a package that doesn't work in a particular locale or doesn't
+
+0:11:55.020,0:11:59.160
+work for a particular group of people there's the risk that we're then going
+
+0:11:59.160,0:12:02.280
+to see further fissuring because of package compatibility issues?
+
+0:12:04.140,0:12:08.040
+Yeah, I think there is a lot of work ongoing now,
+
+0:12:08.040,0:12:15.300
+especially with developer diversity, and there's a lot of, like, other issues
+
+0:12:15.300,0:12:19.440
+that are coming up with software, so I think, in my opinion,
+
+0:12:19.440,0:12:25.500
+I think that it's - it's going to become a topic where people have to be more, like,
+
+0:12:25.500,0:12:30.240
+when you develop code now, you have to be more aware - maybe
+
+0:12:30.240,0:12:37.020
+awareness of what it could affect and how much responsibility you have to exert,
+
+0:12:37.020,0:12:40.380
+right, so I don't know if I answered your question
+
+0:12:40.380,0:12:44.580
+but there was, like, I think there's a lot of work that still needs to be done in this area.

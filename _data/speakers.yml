@@ -399,6 +399,8 @@
   title: How novice testers perceive and perform unit testing.
   bio: Gina is an Assistant Professor of the Practice of Computer Science at Vanderbilt University in the United States.
   video: https://youtu.be/BKgdrEPYqmM 
+  thumbnail: bai-gina.webp
+  en: bai-gina-en.txt
 
 - event: 2023-04
   id: bohme-marcel
@@ -409,6 +411,8 @@
   title: On the surprising efficiency and exponential cost of fuzzing.
   bio: Marcel leads the Software Security at the Max Planck Institute for Security and Privacy in Germany.
   video: https://youtu.be/_HUcBzYuWmM
+  thumbnail: bohme-marcel.webp
+  en: bohme-marcel-en.txt
 
 - event: 2023-04
   id: businge-john
@@ -418,7 +422,9 @@
   photo: businge-john.jpg
   title: Patched clones and missed patches among the variants of a software family.
   bio: John is an Assistant Professor in the Department of Computer Science at the University of Nevada, Las Vegas, in the United States.
-  video: 
+  video: https://youtu.be/-Nk44yuiIdo
+  thumbnail: businge-john.webp
+  en: businge-john-en.txt
 
 - event: 2023-04
   id: chatterjee-preetha
@@ -429,6 +435,8 @@
   title: Emotion awareness in software engineering.
   bio: Preetha is an Assistant Professor at Drexel University in the United States.
   video: https://youtu.be/lkatTyerkwg
+  thumbnail: chatterjee-preetha.webp
+  en: chatterjee-preetha-en.txt
 
 - event: 2023-04
   id: codabux-zadia
@@ -439,6 +447,8 @@
   title: Technical debt in R packages.
   bio: Zadia is an Assistance Professor at the University of Saskatchewan in Canada.
   video: https://youtu.be/-T0vuUkQCFg
+  thumbnail: codabux-zadia.webp
+  en: codabux-zadia-en.txt
 
 - event: 2023-04
   id: devanbu-prem
@@ -449,6 +459,8 @@
   title: Leveraging the bimodality of software.
   bio: Prem is a Distinguished Professor (Emeritus) of Computer Science at the University of California Davis in the United States.
   video: https://youtu.be/LQ43KdojuTI
+  thumbnail: devanbu-prem.webp
+  en: devanbu-prem-en.txt
 
 - event: 2023-04
   id: hoda-rashina
@@ -459,6 +471,8 @@
   title: "You asked for it: making sense of user feedback."
   bio: Rashina is an Associate Professor of Software Engineering and Deputy Director of the HumaniSE lab at Monash University in Australia.
   video: https://youtu.be/O03LRJMgOf0
+  thumbnail: hoda-rashina.webp
+  en: hoda-rashina-en.txt
 
 - event: 2023-04
   id: kula-elvan
@@ -469,6 +483,8 @@
   title: "Understanding and predicting delays in large-scale software development."
   bio: Elvan is chapter lead of Analytics and AI Research at ING and a doctoral candidate at TU Delft.
   video: https://youtu.be/g3b8JfkV5jQ
+  thumbnail: kula-elvan.webp
+  en: kula-elvan-en.txt
 
 - event: 2023-04
   id: kula-raula
@@ -479,6 +495,8 @@
   title: What do we know about libraries and their dependencies?
   bio: Raula is an Assistant Professor at the Nara Institute of Science and Technology (NAIST) in Japan.
   video: https://youtu.be/O-PZX7d7YWo
+  thumbnail: kula-raula.webp
+  en: kula-raula-en.txt
 
 - event: 2023-04
   id: latoza-thomas
@@ -489,6 +507,8 @@
   title: Programming strategically.
   bio: Thomas is an Associate Professor of Computer Science at George Mason University in the United States.
   video: https://youtu.be/Dyo7WpndWog
+  thumbnail: latoza-thomas.webp
+  en: latoza-thomas-en.txt
 
 - event: 2023-04
   id: lee-carol
@@ -499,6 +519,8 @@
   title: "Developer thriving: why developers deserve more than satisfaction."
   bio: Carol is a senior research scientist at Pluralsight Flow's Developer Success Lab in the United States.
   video: https://youtu.be/8gfTqazvejI
+  thumbnail: lee-carol.webp
+  en: lee-carol-en.txt
 
 - event: 2023-04
   id: licorish-sherlock
@@ -509,6 +531,8 @@
   title: Can genetic improvement enhance online code snippets?
   bio: Sherlock is an Associate Professor in the Department of Information Science at the University of Otago.
   video: https://youtu.be/ylREDaqKWEk
+  thumbnail: licorish-sherlock.webp
+  en: licorish-sherlock-en.txt
 
 - event: 2023-04
   id: margulieux-lauren
@@ -519,6 +543,8 @@
   title: Things software developers should learn about learning.
   bio: Lauren is an Associate Professor of Learning Sciences at Georgia State University.
   video: https://youtu.be/XGF8ljfL4ZA
+  thumbnail: margulieux-lauren.webp
+  en: margulieux-lauren-en.txt
 
 - event: 2023-04
   id: mirian-ariana
@@ -529,6 +555,8 @@
   title: The theory and practice of enterprise vulnerability remediation.
   bio: Ariana is a security researcher at the University of California San Diego in the United States.
   video: https://youtu.be/ceuNc5cy1UA
+  thumbnail: mirian-ariana.webp
+  en: mirian-ariana-en.txt
 
 - event: 2023-04
   id: newman-christian
@@ -539,6 +567,8 @@
   title: Crafting strong identifier naming practices.
   bio: Christian is assistant faculty in the Software Engineering Department at Rochester Institute of Technology.
   video: https://youtu.be/Q85GhN7871c
+  thumbnail: newman-christian.webp
+  en: newman-christian-en.txt
 
 - event: 2023-04
   id: pinto-gustavo
@@ -549,6 +579,8 @@
   title: Cognitive-driven development helps software teams to keep code units under the limit.
   bio: Gustavo is Head of Research at Zup Innovation and Assistant Professor at Federal University of Pará in Brazil.
   video: https://youtu.be/g_ht_LDm5Hw
+  thumbnail: pinto-gustavo.webp
+  en: pinto-gustavo-en.txt
 
 - event: 2023-04
   id: presler-marshall-kai
@@ -559,6 +591,8 @@
   title: Teaching collaborative skills to undergraduate software engineering students.
   bio: Kai completed his PhD at North Carolina State University and now teaches computer science at Bowdoin College in Maine.
   video: https://youtu.be/CvwHg9N7gWo
+  thumbnail: presler-marshall-kai.webp
+  en: presler-marshall-kai-en.txt
 
 - event: 2023-04
   id: serebrenik-alexander
@@ -569,6 +603,8 @@
   title: "Getting old: employability and experiences of veteran software developers."
   bio: Alexander is a Full Professor of Social Software Engineering at Eindhoven University of Technology in the Netherlands.
   video: https://youtu.be/vofY6oeAaBQ
+  thumbnail: serebrenik-alexander.webp
+  en: serebrenik-alexander-en.txt
 
 - event: 2023-04
   id: sullivan-allison
@@ -579,6 +615,8 @@
   title: "Proofreading the proofreader: the benefits of unit tests for software models."
   bio: Allison is an Assistant Professor at the University of Texas at Arlington.
   video: https://youtu.be/H6vyMSoVN5s
+  thumbnail: sullivan-allison.webp
+  en: sullivan-allison-en.txt
 
 - event: 2023-04
   id: tshukudu-ethel
@@ -589,6 +627,8 @@
   title: Understanding conceptual transfer in students learning new programming languages.
   bio: Ethel is a Lecturer at the University of Botswana and a Founder and Director of CSEdBotswana.
   video: https://youtu.be/MHwSnjLx-64
+  thumbnail: tshukudu-ethel.webp
+  en: tshukudu-ethel-en.txt
 
 - event: 2023-04
   id: zeller-andreas
@@ -599,6 +639,8 @@
   title: How to create the nastiest test inputs ever.
   bio: Andreas is faculty at the CISPA Helmholtz Center for Information Security and Professor of Software Engineering at Saarland University in Saarbrücken, Germany.
   video: https://youtu.be/GCy8bYJ_G0I
+  thumbnail: zeller-andreas.webp
+  en: zeller-andreas-en.txt
 
 - event: 2023-04
   id: zhou-shurui
@@ -609,3 +651,5 @@
   title: Understanding the sustainability challenges for building open-source scientific software.
   bio: Shurui is an Assistant Professor in Electrical and Computer Engineering at the University of Toronto in Canada.
   video: https://youtu.be/24BdlgcK2mE
+  thumbnail: zhou-shurui.webp
+  en: zhou-shurui-en.txt

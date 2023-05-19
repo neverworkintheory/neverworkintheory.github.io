@@ -1,278 +1,640 @@
+0:00:00.000,0:00:04.440
 Thank you very much Brittany for this wonderful and not nasty at all introduction.
-So,
-talking about nasty test inputs.
-Let's start with testing alone.
-We have a client, we have a server, let's assume they both speak SSL,
-there is a heartbeat protocol,
+
+0:00:04.440,0:00:07.920
+So, talking about nasty test inputs.
+
+0:00:08.640,0:00:12.660
+Let's start with testing alone. We have a client, we have a server,
+
+0:00:12.660,0:00:17.400
+let's assume they both speak SSL, there is a heartbeat protocol,
+
+0:00:17.400,0:00:21.540
 and then we have a client that sends a payload the server
-and we have the server that replies to things,
-you probably have seen this as part of the well-known Heartbleed vulnerability but we're not going to talk about that today.
+
+0:00:21.540,0:00:27.600
+and we have the server that replies to things, you probably have seen this as part of the
+
+0:00:27.600,0:00:31.080
+well-known Heartbleed vulnerability but we're not going to talk about that today.
+
+0:00:31.080,0:00:36.480
 Anyway, the important thing is that the payload that is being sent and, that is, to the server
-and the payload that the server responds
-must be identical,
+
+0:00:36.480,0:00:40.140
+and the payload that the server responds must be identical,
+
+0:00:40.140,0:00:43.080
 and then the client knows the server is still alive.
+
+0:00:43.800,0:00:46.440
 Now suppose you have such a service, very simple thing,
-and you want to test that this works,
-well, what do you do?
+
+0:00:46.440,0:00:49.680
+and you want to test that this works, well, what do you do?
+
+0:00:49.680,0:00:53.880
 You need to craft a number of inputs, more inputs, and even more inputs,
-possibly testing corner cases and whatnot.
-And, well, we also need to check whether the server is actually good - going to do the right thing,
-so you also need to specify a number of outputs and check that the inputs actually get the right outputs and everything.
-This is testing as we know it,
-so this is testing as we all have done,
-and, yeah,
-we do it all day long and it's boring and it's hard - and it's boring and - but it does the job, yeah yeah, we do that.
-But I want today - I want to talk about how to create such input.
-So let's go for a simple approach here.
-Let's go and create some random inputs.
-So I'm throwing a dice and I'm just throwing random bytes at my server - this is called fuzzing,
-it can be arbitrarily smart,
-and if you're lucky,
-well,
-in our case one out of 256 messages will actually be correct
-and possibly get your reply
-but in most cases nothing is going to happen because the server is simply going to say, this is not a valid message.
-And anyway after a couple of attempts you'll probably be locked out because you sent too many illegal messages to the server anyway.
-So here you go.
-So what else can we do?
+
+0:00:53.880,0:00:59.280
+possibly testing corner cases and whatnot. And, well, we also need to check whether
+
+0:00:59.280,0:01:01.680
+the server is actually good - going to do the right thing,
+
+0:01:01.680,0:01:05.820
+so you also need to specify a number of outputs and check that the inputs actually
+
+0:01:05.820,0:01:09.420
+get the right outputs and everything. This is testing as we know it,
+
+0:01:09.420,0:01:12.420
+so this is testing as we all have done, and, yeah,
+
+0:01:12.420,0:01:16.860
+we do it all day long and it's boring and it's hard - and it's boring and - but it does the job,
+
+0:01:16.860,0:01:22.380
+yeah yeah, we do that. But I want today - I want
+
+0:01:22.380,0:01:26.760
+to talk about how to create such input. So let's go for a simple approach here.
+
+0:01:26.760,0:01:31.380
+Let's go and create some random inputs. So I'm throwing a dice and I'm just
+
+0:01:31.380,0:01:35.340
+throwing random bytes at my server - this is called fuzzing,
+
+0:01:35.340,0:01:38.580
+it can be arbitrarily smart, and if you're lucky,
+
+0:01:38.580,0:01:41.100
+well, in our case one out of
+
+0:01:41.640,0:01:46.980
+256 messages will actually be correct and possibly get your reply
+
+0:01:46.980,0:01:49.980
+but in most cases nothing is going to happen because the server is simply
+
+0:01:49.980,0:01:55.020
+going to say, this is not a valid message. And anyway after a couple of attempts you'll
+
+0:01:55.020,0:01:58.200
+probably be locked out because you sent too many illegal messages to the server anyway.
+
+0:01:58.980,0:02:03.060
+So here you go. So what else can we do?
+
+0:02:03.060,0:02:10.260
 I want to talk to you today how you can become - how you can become a testing superhero.
+
+0:02:10.260,0:02:16.740
 A testing superhero by creating a robot - a robot that will automatically do the right thing,
-namely, sending inputs that are correct to the server and also check whether the outputs are correct
-and then you can finally relax.
-How can we do that?
-Well, you could go and program such a robot, that would be one way,
-but then you have to program such a robot for every new - every new server,
-everything you look at,
+
+0:02:16.740,0:02:20.820
+namely, sending inputs that are correct to the server and also check
+
+0:02:20.820,0:02:23.820
+whether the outputs are correct and then you can finally relax.
+
+0:02:25.020,0:02:27.960
+How can we do that? Well, you could go and
+
+0:02:27.960,0:02:32.820
+program such a robot, that would be one way, but then you have to program such a robot for
+
+0:02:32.820,0:02:35.580
+every new - every new server, everything you look at,
+
+0:02:35.580,0:02:38.400
 and that's, oh, yeah, that's, yeah, I can do that,
-that's not fun either.
-No,
-what we do here is
-we leverage languages.
+
+0:02:38.400,0:02:40.020
+that's not fun either. No,
+
+0:02:40.020,0:02:43.620
+what we do here is we leverage languages.
+
+0:02:43.620,0:02:47.520
 And we're not talking programming languages - but we are talking formal languages.
-Did I just say the word formal?
-Please stay with us for a moment.
-And I know you have - if you've studied computer science, maybe you learned formal languages, you didn't like it wait, wait a moment,
-it's all it's super useful.
+
+0:02:47.520,0:02:50.880
+Did I just say the word formal? Please stay with us for a moment.
+
+0:02:51.720,0:02:55.680
+And I know you have - if you've studied computer science, maybe you learned formal languages,
+
+0:02:55.680,0:02:58.860
+you didn't like it wait, wait a moment, it's all it's super useful.
+
+0:02:58.860,0:03:03.600
 Because if you have a formal language, in our case, for instance, a grammar,
+
+0:03:03.600,0:03:09.240
 then you can specify what the - what the inputs to the server should be,
-so it's 0x1 followed by length payload and padding
-and what the reply should be in abstract forms,
+
+0:03:09.240,0:03:15.540
+so it's 0x1 followed by length payload and padding and what the reply should be in abstract forms,
+
+0:03:15.540,0:03:19.500
 so the server sends back 0x2 length, like payload, and padding.
+
+0:03:19.500,0:03:24.840
 And these are things that you can actually specify in a grammar
+
+0:03:24.840,0:03:27.840
 that describes the correct format of such interactions
+
+0:03:27.840,0:03:34.860
 and if you have such a grammar then, well, you still need to check that the payload is identical
-but you also - grammar alone is not enough,
-because the problem here also is,
+
+0:03:35.820,0:03:40.560
+but you also - grammar alone is not enough, because the problem here also is,
+
+0:03:40.560,0:03:44.820
 you have things in these interactions that you also need to satisfy,
+
+0:03:44.820,0:03:49.680
 for instance the length field that you see up here has actually - has to be identical,
+
+0:03:49.680,0:03:54.180
 it has to actually be the exact length of the payload that follows,
+
+0:03:54.180,0:03:58.440
 and these are things that you cannot easily express in a grammar.
+
+0:03:58.440,0:04:00.240
 What we do is, therefore,
+
+0:04:00.240,0:04:05.700
 first we fuse these two things together, the request and the response, in a single grammarm,
-but then we do something very nice,
-because as the syntax alone does not suffice to capture these semantic relationships between individual elements,
-we add extra constraints to the input that describe these semantic features as - as logical formulae.
-These are logical formulae in which the non-terminals - the thing in angle brackets -
-actually take the role of variables in here.
-For instance,
-we can here specify that the mechanic, for instance, specify that the length, which is a 16-bit integer,
+
+0:04:05.700,0:04:11.400
+but then we do something very nice, because as the syntax alone does
+
+0:04:11.400,0:04:18.060
+not suffice to capture these semantic relationships between individual elements,
+
+0:04:18.060,0:04:24.300
+we add extra constraints to the input that describe these semantic
+
+0:04:24.300,0:04:30.240
+features as - as logical formulae. These are logical formulae in which the
+
+0:04:30.240,0:04:36.660
+non-terminals - the thing in angle brackets - actually take the role of variables in here.
+
+0:04:36.660,0:04:38.280
+For instance, we can here specify
+
+0:04:38.280,0:04:43.920
+that the mechanic, for instance, specify that the length, which is a 16-bit integer,
+
+0:04:43.920,0:04:46.920
 is actually identical to the length of the payload.
-And we can even do more.
-We can also check that the output is correct, for instance,
-by saying that the payload that we have seen in the client request is identical to the payload that the server responds.
+
+0:04:47.460,0:04:49.980
+And we can even do more. We can also check that
+
+0:04:49.980,0:04:53.760
+the output is correct, for instance, by saying that the payload that we have
+
+0:04:53.760,0:04:58.140
+seen in the client request is identical to the payload that the server responds.
+
+0:04:58.860,0:05:02.880
 And this is what we have built in a language called Isla
+
+0:05:02.880,0:05:08.520
 which is both a language to specify such inputs and outputs by means of grammars and constraints,
-but it's also more than that,
-it's also a fuzzer and a solver to produce valid inputs that satisfy all these constraints.
-And it's also a checker that helps you to parse and check and mutate inputs following all these constraints,
+
+0:05:09.240,0:05:14.160
+but it's also more than that, it's also a fuzzer and a solver to produce
+
+0:05:14.160,0:05:19.680
+valid inputs that satisfy all these constraints. And it's also a checker that helps you to
+
+0:05:19.680,0:05:24.360
+parse and check and mutate inputs following all these constraints,
+
+0:05:24.360,0:05:30.420
 and it is this tool that, well, is one of the tools that can make you a superhero.
-Let me show you how this actually works.
-So here's Isla working.
+
+0:05:30.420,0:05:36.060
+Let me show you how this actually works. So here's Isla working.
+
+0:05:36.600,0:05:42.300
 So what we - what Isla does is it uses the grammar for producing exchanges
-or for producing inputs and outputs,
-so we have an exchange again between the client and the server -
-client and server, hey, we have them.
+
+0:05:42.300,0:05:45.660
+or for producing inputs and outputs, so we have an exchange again
+
+0:05:45.660,0:05:50.220
+between the client and the server - client and server, hey, we have them.
+
+0:05:50.220,0:05:54.540
 And now it uses pretty much standard production techniques, namely,
-it takes the - it takes the element on the left hand side of a rule and replaces this by the elements on the right hand side of the rule,
-so an exchange becomes a request and response,
+
+0:05:54.540,0:05:59.580
+it takes the - it takes the element on the left hand side of a rule and replaces this by the
+
+0:05:59.580,0:06:03.960
+elements on the right hand side of the rule, so an exchange becomes a request and response,
+
+0:06:03.960,0:06:09.600
 and now we expand the request and now we take the length and we expand the length
+
+0:06:09.600,0:06:14.640
 and the length is an integer, 16-bit, and now we instantiate this,
-skipping a few things,
-and say, okay, length is 5 bytes.
-Now we instantiate the other elements too,
-such as the payload, for instance.
-And here's them where the magic of Isla comes in,
-because Isla automatically satisfies these constraints.
-So the word hello has five bytes, which happens to be the length, so all of this fits.
-And now we need to instantiate the padding - padding is not very interesting, this is just zero bytes,
-and what we have now is a complete and valid input
-that satisfies both syntax and semantics.
+
+0:06:14.640,0:06:18.300
+skipping a few things, and say, okay, length is 5 bytes.
+
+0:06:19.260,0:06:24.180
+Now we instantiate the other elements too, such as the payload, for instance.
+
+0:06:24.180,0:06:29.760
+And here's them where the magic of Isla comes in, because Isla automatically
+
+0:06:29.760,0:06:34.500
+satisfies these constraints. So the word hello has five bytes, which
+
+0:06:34.500,0:06:39.600
+happens to be the length, so all of this fits. And now we need to instantiate the
+
+0:06:39.600,0:06:42.000
+padding - padding is not very interesting, this is just zero bytes,
+
+0:06:42.000,0:06:48.660
+and what we have now is a complete and valid input that satisfies both syntax and semantics.
+
+0:06:48.660,0:06:52.200
 This is something that we can now happily send to the server
+
+0:06:52.200,0:06:56.040
 and the server will then respond with a valid response
-and Isla can now go and decompose this response,
-so, again, parse it along the rules of the grammar
+
+0:06:56.040,0:07:03.480
+and Isla can now go and decompose this response, so, again, parse it along the rules of the grammar
+
+0:07:03.480,0:07:06.420
 so we have a length, we have a payload, we have a padding
-and it can identify what these elements are,
-so this is the length and this is the payload and here we have the padding.
-And now since - since Isla knows what the - Isla knows what the payload is,
-then it can actually go and also check whether the output constraint is satisfied,
-that is,
-whether the hello - whether the payload in the request actually is identical to the payload in the response.
-So we have a complete exchange here,
-and happily we know that everything works.
-Well, life is good, no Heartbleed today,
+
+0:07:06.420,0:07:12.900
+and it can identify what these elements are, so this is the length and this is the payload
+
+0:07:12.900,0:07:16.620
+and here we have the padding. And now since - since Isla knows
+
+0:07:16.620,0:07:23.460
+what the - Isla knows what the payload is, then it can actually go and also check whether
+
+0:07:23.460,0:07:26.280
+the output constraint is satisfied, that is,
+
+0:07:26.280,0:07:31.860
+whether the hello - whether the payload in the request actually is identical
+
+0:07:31.860,0:07:36.420
+to the payload in the response. So we have a complete exchange here,
+
+0:07:36.420,0:07:41.880
+and happily we know that everything works. Well, life is good, no Heartbleed today,
+
+0:07:41.880,0:07:46.560
 and as you see this solves two problems - two big problems,
-solves,
-addresses the problem.
+
+0:07:46.560,0:07:48.240
+solves, addresses the problem.
+
+0:07:48.240,0:07:52.500
 One is the problem of test generation, namely generating inputs,
-and the other one is the problem of oracles,
-that is checking inputs.
+
+0:07:52.500,0:07:57.240
+and the other one is the problem of oracles, that is checking inputs.
+
+0:07:58.380,0:08:03.900
 Now all of this is great for you if you are a regular developer, yes, superhero and everything,
-but now let's get back to the title.
-I was talking about nasty inputs, not just your regular vanilla inputs,
-no,
-we're talking we're talking hardcore here, okay,
-let's go,
+
+0:08:04.920,0:08:08.700
+but now let's get back to the title. I was talking about nasty inputs,
+
+0:08:08.700,0:08:11.940
+not just your regular vanilla inputs, no,
+
+0:08:11.940,0:08:14.880
+we're talking we're talking hardcore here, okay, let's go,
+
+0:08:14.880,0:08:18.360
 let's think about something - let's think about something that is unusual.
+
+0:08:18.360,0:08:22.800
 So I'm going to ask you to morph from a regular friendly person
-to a somewhat more nasty person,
-here we have the nasty person,
-so this is a super villain,
-and now you not only want to check what the server is doing,
-well no,
-you want to break the server,
-so you're a penetration tester or something like that.
-Okay, good,
+
+0:08:22.800,0:08:26.700
+to a somewhat more nasty person, here we have the nasty person,
+
+0:08:26.700,0:08:30.840
+so this is a super villain, and now you not only want to check
+
+0:08:30.840,0:08:32.220
+what the server is doing, well no,
+
+0:08:32.220,0:08:35.820
+you want to break the server, so you're a penetration tester or
+
+0:08:35.820,0:08:36.960
+something like that. Okay, good,
+
+0:08:36.960,0:08:39.660
 of course this is also your job as a tester to check against that.
-So what can you do here?
-Let's go and use our newly found superpowers to create super super great buffer overflows.
-With Isla this is super easy -
+
+0:08:39.660,0:08:44.220
+So what can you do here? Let's go and use our newly found superpowers
+
+0:08:44.220,0:08:48.360
+to create super super great buffer overflows. With Isla this is super easy -
+
+0:08:48.360,0:08:51.360
 you just add another new constraint to that and say,
-my payload must be at least 100 million bytes long.
+
+0:08:51.360,0:08:54.720
+my payload must be at least 100
+million bytes long.
+
+0:08:54.720,0:08:57.540
 That should be sufficient to overflow most of the buffers.
-Not sure whether this is valid, though.
-Well we can easily find that out.
-We just synthesize this and we send this 100 million bytes to a server near us
-and then we'll find out whether it crashes or not.
-Maybe it's going to crash, maybe it's going to work,
-well, we'll find out, no problem.
-Or let's go and try to build some SQL injections.
-We remain nasty here -
-you've probably heard about SQL injections -
-so we're simply going to say, okay,
+
+0:08:57.540,0:09:00.780
+Not sure whether this is valid, though. Well we can easily find that out.
+
+0:09:00.780,0:09:04.860
+We just synthesize this and we send this 100
+million bytes to a server near us
+
+0:09:04.860,0:09:08.400
+and then we'll find out whether it crashes or not. Maybe it's going to crash,
+
+0:09:08.400,0:09:11.640
+maybe it's going to work, well, we'll find out, no problem.
+
+0:09:11.640,0:09:17.130
+Or let's go and try to build some SQL injections. We remain nasty here -
+
+0:09:17.130,0:09:20.100
+you've probably heard about SQL injections - so we're simply going to say, okay,
+
+0:09:20.100,0:09:23.040
 the payload must be something like "drop table customers"
-and there goes - there go your customers.
-So you send 0x1 "drop table customers".
-Now let's assume that these individual interactions are actually being logged in a database.
-And then you get a command like this,
-"into insert log values payload"
-and then "drop table customers"
-boom.
-You can - boom,
-the customer table on your server is gone.
-Yes this is - these are real attacks,
-this is what happens all along
-but now you can actually prevent them by checking them yourself.
-Or you go well, oh yeah, SQL injection.
-Or you build HTML injections,
-same thing again,
+
+0:09:23.040,0:09:28.200
+and there goes - there go your customers. So you send 0x1 "drop table customers".
+
+0:09:28.200,0:09:31.560
+Now let's assume that these individual interactions are
+
+0:09:31.560,0:09:34.800
+actually being logged in a database. And then you get a command like this,
+
+0:09:34.800,0:09:38.520
+"into insert log values payload" and then "drop table customers"
+
+0:09:38.520,0:09:39.780
+boom. You can - boom,
+
+0:09:39.780,0:09:44.820
+the customer table on your server is gone. Yes this is - these are real attacks,
+
+0:09:44.820,0:09:46.680
+this is what happens all along but now you can actually
+
+0:09:46.680,0:09:51.960
+prevent them by checking them yourself. Or you go well, oh yeah, SQL injection.
+
+0:09:51.960,0:09:54.780
+Or you build HTML injections, same thing again,
+
+0:09:54.780,0:09:59.880
 you insert some you insert some extra - some extra HTML elements in here and say,
-okay,
-I'm going to introduce some HTML tags,
-it could also be scripts for that matter,
-and yeah, we've sent that out,
+
+0:09:59.880,0:10:03.060
+okay, I'm going to introduce some HTML tags,
+
+0:10:03.060,0:10:07.020
+it could also be scripts for that matter, and yeah, we've sent that out,
+
+0:10:07.020,0:10:10.560
 and if this is logged what's going to happen is that
+
+0:10:10.560,0:10:13.380
 now all of a sudden your log contains HTML elements
-which means that the next time you check your log
-all of a sudden there will be will be interactive elements in your log,
-say, the close button.
+
+0:10:13.380,0:10:17.580
+which means that the next time you check your log all of a sudden there will be will be interactive
+
+0:10:17.580,0:10:20.100
+elements in your log, say, the close button.
+
+0:10:20.100,0:10:23.340
 Now we add a script to that which steals your password and whatnot,
-grabs the screenshot of your - of your screen,
-sends your browsing history to whomever,
-yep,
-these are all - these are all things that - that attackers can do,
-and yes,
-they can also combine all of this,
-but now finally you actually have a means to -
-you have a means to combine all of that.
-Well,
+
+0:10:23.340,0:10:28.440
+grabs the screenshot of your - of your screen, sends your browsing history to whomever,
+
+0:10:28.440,0:10:30.840
+yep, these are all - these are all
+
+0:10:30.840,0:10:33.600
+things that - that attackers can do, and yes,
+
+0:10:33.600,0:10:38.160
+they can also combine all of this, but now finally you actually have a means to -
+
+0:10:38.160,0:10:40.440
+you have a means to combine all of that. Well,
+
+0:10:40.440,0:10:43.740
 you can instantly come - can come up with a rule for nasty inputs,
-and by nasty input a buffer overflow input,
-SQL injection input,
-HTML injection input,
-yep,
-all fun.
-Okay,
-so what are we doing here?
-Are we building a weapon for attackers?
+
+0:10:43.740,0:10:47.580
+and by nasty input a buffer overflow input, SQL injection input,
+
+0:10:47.580,0:10:49.260
+HTML injection input, yep,
+
+0:10:49.260,0:10:51.060
+all fun. Okay,
+
+0:10:51.060,0:10:53.820
+so what are we doing here? Are we building a weapon for attackers?
+
+0:10:53.820,0:10:59.520
 You see you can use all these tools as a defendant too
-because you can use these tools just as well
-to see what - to see what is possible and to come up with all the creativity in your mind to prevent this from happening in production code.
-And if you are interested in all these techniques,
-writing such things - writing such grammars, testing well,
-I have two books for you.
+
+0:10:59.520,0:11:05.040
+because you can use these tools just as well to see what - to see what is possible and to
+
+0:11:05.040,0:11:08.940
+come up with all the creativity in your mind to prevent this from happening in production code.
+
+0:11:09.480,0:11:15.180
+And if you are interested in all these techniques, writing such things - writing such grammars,
+
+0:11:15.180,0:11:16.980
+testing well, I have two books for you.
+
+0:11:16.980,0:11:20.520
 One is called "The Fuzzing Book" the other one is called "The Debugging Book"
-and if you Google them -
-sorry,
-are we - are we Microsoft here?
-If you Bing them or whatever,
+
+0:11:20.520,0:11:22.260
+and if you Google them - sorry,
+
+0:11:22.260,0:11:26.580
+are we - are we Microsoft here? If you Bing them or whatever,
+
+0:11:26.580,0:11:28.800
 if you search them on the Internet you're going to find them,
-fuzzingbook.org,
-debuggingbook.org,
-and with this I'd like to close.
-How to become a testing superhero:
+
+0:11:28.800,0:11:30.900
+fuzzingbook.org, debuggingbook.org,
+
+0:11:30.900,0:11:34.980
+and with this I'd like to close. How to become a testing superhero:
+
+0:11:34.980,0:11:40.980
 language specifications, nasty inputs, and of course a - and of course these two books
+
+0:11:40.980,0:11:44.280
 with a nice QR code that gets you directly to a tutorial.
+
+0:11:44.280,0:11:47.340
 If you're interested in all that take a screenshot right now,
-follow me on - follow me on the Elon Musk network or follow me on the super nice Mastodon network just as you like,
-and thank you very much and I'm happy to close.
-Thank you.
-Fantastic,
-thank you so very much,
-definitely held up your end of the bargain on that one.
-So really appreciate the engaging presentation.
+
+0:11:47.340,0:11:51.780
+follow me on - follow me on the Elon Musk network or follow me on the
+
+0:11:51.780,0:11:57.780
+super nice Mastodon network just as you like, and thank you very much and I'm happy to close.
+
+0:11:57.780,0:12:02.040
+Thank you. Fantastic,
+
+0:12:02.040,0:12:05.640
+thank you so very much, definitely held up
+
+0:12:05.640,0:12:10.380
+your end of the bargain on that one. So really appreciate the engaging presentation.
+
+0:12:10.380,0:12:13.980
 We have a question already we do want to put out there,
-if you have questions please feel free to put them in the Slack and they will be conveyed and we will pass them along,
-and even if we don't have the time to do so,
+
+0:12:13.980,0:12:17.280
+if you have questions please feel free to put them in the Slack and they will
+
+0:12:17.280,0:12:21.000
+be conveyed and we will pass them along, and even if we don't have the time to do so,
+
+0:12:21.000,0:12:25.980
 we will make sure that you get your answers - you can count on it.
-So one of the questions that we have here is,
-why a new language rather than, for example, having people express constraints in Python or something they already know?
-Multiple answers.
-A, grammars are not a new language,
-grammars are much older than Python,
-actually Python is specified as a grammar.
-Second,
-these constraints is, well, very familiar to anyone who's a programmer.
-Third thing,
+
+0:12:25.980,0:12:31.560
+So one of the questions that we have here is, why a new language rather than, for example,
+
+0:12:31.560,0:12:35.880
+having people express constraints in Python or something they already know?
+
+0:12:37.380,0:12:40.140
+Multiple answers. A, grammars are not a new language,
+
+0:12:40.140,0:12:44.880
+grammars are much older than Python, actually Python is specified as a grammar.
+
+0:12:44.880,0:12:46.860
+Second, these constraints is, well,
+
+0:12:46.860,0:12:49.800
+very familiar to anyone who's a programmer. Third thing,
+
+0:12:49.800,0:12:55.800
 you want a language specification that you can use both for parsing and for producing
+
+0:12:55.800,0:13:00.240
 and this is something a general purpose like a purpose language like Python cannot do,
+
+0:13:00.240,0:13:04.920
 because if you specify a producer, say, in Python, that produces inputs,
-you cannot use it for parsing -
-you cannot use it for checking,
-you cannot use it for mutating things,
-so you have to build this parser for yourself,
+
+0:13:04.920,0:13:07.560
+you cannot use it for parsing - you cannot use it for checking,
+
+0:13:07.560,0:13:12.660
+you cannot use it for mutating things, so you have to build this parser for yourself,
+
+0:13:12.660,0:13:15.360
 you also have to implement all the testing strategies for yourself,
+
+0:13:15.360,0:13:21.600
 and having this in an abstract form allows you to - allows you to unlock all these strategies,
-allows you to reason about your code and, well, and it can even serve as it can - even serve as a language independent documentation
-of what your program actually expects in terms of inputs
-and what it produces as outputs.
-Fantastic all right thank you so much for that,
-I don't see any other questions coming in,
+
+0:13:21.600,0:13:27.060
+allows you to reason about your code and, well, and it can even serve as it can - even serve as
+
+0:13:27.060,0:13:31.500
+a language independent documentation of what your program actually
+
+0:13:31.500,0:13:34.800
+expects in terms of inputs and what it produces as outputs.
+
+0:13:36.300,0:13:42.780
+Fantastic all right thank you so much for that, I don't see any other questions coming in,
+
+0:13:42.780,0:13:48.300
 I do want to ask a quick question about, kind of, scalability of this approach.
-So, like, this is really interesting,
-and the idea of being able to generate inputs that are both valid and invalid with a specification language I think is potentially revolutionary,
+
+0:13:48.300,0:13:52.560
+So, like, this is really interesting, and the idea of being able to generate inputs that
+
+0:13:52.560,0:13:57.660
+are both valid and invalid with a specification language I think is potentially revolutionary,
+
+0:13:58.440,0:14:04.620
 but can we take this to a more simpler context that isn't server communication?
+
+0:14:04.620,0:14:09.720
 Are there other ways that we could use this specification to test any of our software systems?
+
+0:14:10.260,0:14:12.420
 It doesn't have to be server communication at all.
-You can replace the server with - by any program that takes an input and then you can send inputs to this very program.
-This can be your command line input,
+
+0:14:12.420,0:14:15.960
+You can replace the server with - by any program that takes an input and then you
+
+0:14:15.960,0:14:19.440
+can send inputs to this very program. This can be your command line input,
+
+0:14:19.440,0:14:24.600
 this can be your this can be your whatever, train - your train controller,
-your system thing, whatever,
-so,
+
+0:14:24.600,0:14:27.360
+your system thing, whatever, so,
+
+0:14:27.360,0:14:30.540
 and you also don't have to necessarily check the output.
+
+0:14:30.540,0:14:33.120
 If you can live without checking the output then you can also do that.
+
+0:14:34.080,0:14:39.600
 The thing is that if you have a very complex set of constraints,
-then solving all these constraints will take time,
-so it's going to take a minute or so,
-or maybe even longer,
-and there will also be programs which for which test for which solving these constraints will be impossible.
+
+0:14:39.600,0:14:43.980
+then solving all these constraints will take time, so it's going to take a minute or so,
+
+0:14:43.980,0:14:47.940
+or maybe even longer, and there will also be programs which
+
+0:14:47.940,0:14:51.660
+for which test for which solving these constraints will be impossible.
