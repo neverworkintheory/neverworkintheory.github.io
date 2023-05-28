@@ -1,0 +1,569 @@
+0:00:00.600,0:00:03.900
+Muchas gracias por la introducción y gracias por tenerme aquí.
+
+0:00:04.920,0:00:11.100
+Así que sí amigos, estoy super emocionado de estar aquí, mi nombre es Ariana y yo sólo el viernes defendió
+
+0:00:11.100,0:00:17.160
+mi doctorado en la Universidad de California en San Diego. Y por lo que este trabajo fue posible en gran parte
+
+0:00:17.160,0:00:21.060
+debido a una colaboración con el equipo de TI en la UCSD,
+
+0:00:21.060,0:00:24.180
+que he estado trabajando durante el último año y medio como una seguridad integrada
+
+0:00:24.180,0:00:28.320
+investigador dentro de su equipo de operaciones, por lo que un gran agradecimiento a todo ese equipo
+
+0:00:28.320,0:00:34.140
+y todo el trabajo realmente increíble que hacen. Y así, en general, mi trabajo ha sido ampliamente en
+
+0:00:34.140,0:00:37.440
+la comprensión y la mejora de los procesos de seguridad, su medición a gran escala,
+
+0:00:37.440,0:00:41.400
+y hoy voy a hablar de la teoría y la práctica de la corrección de vulnerabilidades
+
+0:00:41.400,0:00:46.080
+y un tipo muy específico de desarrollador desde el punto de vista de la seguridad: los administradores de sistemas.
+
+0:00:47.220,0:00:52.740
+Y así muchas organizaciones, especialmente los más nuevos, han movido su organización
+
+0:00:52.740,0:00:57.180
+infraestructura en la nube. AWS es grande, GCP es grande,
+
+0:00:57.180,0:01:00.120
+y un montón de organizaciones han comenzado a tomar ventaja de que
+
+0:01:00.120,0:01:04.500
+y mover sus componentes de hardware físico en la nube por lo que ya no necesitan
+
+0:01:04.500,0:01:08.760
+mantener la pieza física de hardware, pero las cosas se abstraen para ellos.
+
+0:01:08.760,0:01:13.920
+Sin embargo, no todas las organizaciones tienen o pueden hacer esto.
+
+0:01:13.920,0:01:15.360
+De hecho, hay muchas
+
+0:01:15.360,0:01:19.920
+organizaciones que tienen máquinas de legado, o en otros términos de metal desnudo - el más
+
+0:01:19.920,0:01:26.460
+término canónico que son - que todavía existen y son piezas críticas de la infraestructura.
+
+0:01:26.460,0:01:32.220
+Y UCSD es una de estas organizaciones donde definitivamente utilizan servicios en la nube
+
+0:01:32.220,0:01:37.860
+pero sólo hay un montón de sistemas heredados que todavía existen físicamente en las instalaciones.
+
+0:01:37.860,0:01:44.400
+Y así la teoría, en un mundo ideal, es que cada pieza de infraestructura en una organización
+
+0:01:44.400,0:01:49.500
+que está en las instalaciones está al día en materia de seguridad. Así que tienes administradores de sistemas que son los que
+
+0:01:49.500,0:01:55.020
+generalmente el mantenimiento de estas piezas de metal desnudo que asegurarse de que cada pieza de software y
+
+0:01:55.020,0:01:57.480
+hardware está actualizado y no hay problemas.
+
+0:01:57.480,0:02:03.420
+Pero la realidad es que estos sistemas físicos dispares pueden afectar a la postura de seguridad de una org
+
+0:02:03.420,0:02:05.820
+y pueden tener un gran número de vulnerabilidades
+
+0:02:05.820,0:02:11.940
+que son muy difíciles de triaje y mantener y que un atacante puede utilizar en última instancia para obtener
+
+0:02:11.940,0:02:17.940
+en el sistema y por lo tanto la propia organización. Y así este proceso de deshacerse de
+
+0:02:17.940,0:02:20.580
+vulnerabilidades se llama parcheo o remediación de vulnerabilidades
+
+0:02:20.580,0:02:27.300
+y usaré esos términos indistintamente. Y la aplicación de parches no es un problema nuevo que sé que hay
+
+0:02:27.300,0:02:29.220
+gente en esta multitud que probablemente están asintiendo con la cabeza,
+
+0:02:29.220,0:02:32.700
+como, sí, es un dolor, pero persiste
+
+0:02:32.700,0:02:36.240
+y hay avances que han hecho de los parches un proceso más fácil
+
+0:02:36.240,0:02:39.720
+especialmente para las organizaciones o partes de las organizaciones que han sido capaces de
+
+0:02:39.720,0:02:43.560
+transición a los servicios en la nube, como la automatización, la abstracción,
+
+0:02:43.560,0:02:49.500
+y la cosa acerca de muchos de estos avances es que optimizar para la máquina no el ser humano.
+
+0:02:49.500,0:02:54.900
+Y así, cuando estás en una organización que todavía tiene sistemas heredados en premisa
+
+0:02:54.900,0:03:00.120
+y todavía tiene que mantenerlos la pregunta que salí - set
+
+0:03:00.120,0:03:03.900
+a responder fue, ¿qué pasa si afinamos el proceso para el ser humano en el bucle?
+
+0:03:03.900,0:03:07.260
+¿Y si tomamos el proceso y las tecnologías que se emplean
+
+0:03:07.260,0:03:12.420
+y examinamos de forma holística cómo facilitar este proceso a las personas que realizan el trabajo?
+
+0:03:12.420,0:03:17.460
+En otras palabras, ¿cómo podemos hacer que la aplicación de parches sea un proceso más eficaz?
+
+0:03:17.460,0:03:21.120
+Y así que hicimos esta pregunta en nuestra organización en la UCSD,
+
+0:03:21.120,0:03:23.880
+porque como he dicho que he estado trabajando como un investigador de seguridad integrado
+
+0:03:23.880,0:03:25.440
+y este fue un problema que se
+
+0:03:25.440,0:03:27.720
+continuamente subiendo - que, oh, nosotros, ya sabes,
+
+0:03:27.720,0:03:35.820
+están teniendo dificultades para conseguir gente parche. Y así, con el fin de responder a esta pregunta y
+
+0:03:35.820,0:03:38.580
+examinar cómo podemos optimizar para el ser humano en el bucle
+
+0:03:39.360,0:03:41.940
+primero tenemos que examinar lo que se estaba haciendo antes.
+
+0:03:41.940,0:03:47.460
+Y así me senté con el equipo que estaba a cargo de enviar estas notificaciones
+
+0:03:47.460,0:03:51.480
+y este es un ejemplo de una notificación que se envió
+
+0:03:51.480,0:03:58.740
+a la gente dentro del equipo de TI en nuestra organización. Se trataba esencialmente de un informe semanal que estaba destinado a
+
+0:03:58.740,0:04:01.260
+para dar a estos administradores de información, ya sabes,
+
+0:04:01.260,0:04:06.900
+es como - y sólo para leer fuera de bits de este - que dice: "Los sistemas de abajo tienen activa crítica
+
+0:04:06.900,0:04:11.820
+o de alta gravedad, por favor parche dentro de las 24 horas ", y luego al final del correo electrónico que aparece
+
+0:04:11.820,0:04:14.520
+que es el contacto técnico, el nombre de host, dirección IP,
+
+0:04:15.660,0:04:20.100
+y, a continuación, también se enumeran un enlace a cómo se puede obtener más información de Qualis
+
+0:04:20.100,0:04:24.120
+que es la herramienta de terceros que nuestra organización utiliza para la vulnerabilidad
+
+0:04:24.120,0:04:30.420
+escaneo y recopilación de información. Y mirando esto había
+
+0:04:30.420,0:04:34.620
+un par de cosas que se destacó, sobre todo después de haber hecho un trabajo relacionado
+
+0:04:34.620,0:04:37.380
+búsqueda en la literatura. Primero,
+
+0:04:37.380,0:04:43.380
+se requiere que los usuarios ir y acceder a Qualis, por lo que no sólo les obligó a hacer este adicional
+
+0:04:43.380,0:04:46.440
+paso, pero se requiere que tengan un inicio de sesión para Qualis.
+
+0:04:46.440,0:04:48.600
+Y si alguno de ustedes han trabajado en una gran organización,
+
+0:04:48.600,0:04:53.760
+usted sabe que no siempre es la más fácil de obtener los inicios de sesión en herramientas de terceros.
+
+0:04:54.300,0:05:00.240
+La segunda cosa que realmente se destacó es que el correo electrónico que aparece el número en bruto
+
+0:05:00.240,0:05:02.280
+de vulnerabilidades, por lo que en este caso había
+
+0:05:02.280,0:05:05.040
+una de gravedad cinco, que es crítica, y ocho de gravedad cuatro,
+
+0:05:05.040,0:05:08.520
+pero no enumeró el tipo - no dio ninguna otra información.
+
+0:05:08.520,0:05:13.620
+Realmente se basó en el administrador del sistema que tiene acceso y tener
+
+0:05:13.620,0:05:19.320
+tiempo en ese momento para ir a iniciar sesión en Qualis para buscar uno de los sev 4, sev 5.
+
+0:05:19.320,0:05:25.260
+Y con cualquier herramienta de terceros obviamente hay problemas - tiempos de inactividad - así que esto no ayudó.
+
+0:05:25.860,0:05:29.520
+Y así lo que estoy tratando de llegar es que esta antigua notificación no era ideal.
+
+0:05:29.520,0:05:32.940
+Fue una notificación semanal que es grande en teoría,
+
+0:05:32.940,0:05:36.900
+pero no enumeraba las vulnerabilidades ni los detalles adicionales que requería
+
+0:05:36.900,0:05:39.810
+estos administradores de sistemas - que ya estaban haciendo malabares con muchos puestos de trabajo -
+
+0:05:39.810,0:05:42.420
+para realizar pasos adicionales para obtener la información necesaria,
+
+0:05:42.420,0:05:47.940
+y añade esta cantidad de fricción que se requiere con el fin de ejecutar.
+
+0:05:47.940,0:05:50.640
+Y así, de nuevo, trabajando con el
+
+0:05:50.640,0:05:54.900
+equipo de seguridad y tomando las mejores prácticas de la literatura de seguridad y mirando lo que ha
+
+0:05:54.900,0:06:00.480
+se ha hecho con la notificación de vulnerabilidad, he trabajado con el equipo para elaborar un nuevo
+
+0:06:00.480,0:06:04.260
+notificación en una nueva tubería. Y esta es la nueva
+
+0:06:04.260,0:06:07.080
+notificación que se envía. Y las cosas que quiero dibujar
+
+0:06:07.080,0:06:09.000
+su atención a es que, uno,
+
+0:06:09.000,0:06:14.160
+cada correo electrónico se centra en un tipo muy específico de vulnerabilidad,
+
+0:06:14.160,0:06:18.960
+así que en lugar de enviar una lista de lavandería de "aquí están los nueve en su sistema" o lo que sea,
+
+0:06:19.920,0:06:22.620
+esto se centra sólo en las actualizaciones de seguridad de Microsoft Windows.
+
+0:06:23.460,0:06:29.340
+Hay instrucciones sobre cómo parchear el sistema sólo en caso de que se trataba de un nuevo
+
+0:06:29.340,0:06:30.900
+vulnerabilidad que no eran conscientes de,
+
+0:06:31.920,0:06:34.980
+y al final de este correo electrónico, que se corta en la captura de pantalla,
+
+0:06:34.980,0:06:38.100
+había un CSV que se extrajo de la herramienta de terceros
+
+0:06:38.100,0:06:42.240
+que tenía una gran cantidad de metadatos adicionales, por lo que tenía el nombre de host, la IP,
+
+0:06:42.240,0:06:46.320
+pero también tenía cosas como el nombre completo de la vulnerabilidad,
+
+0:06:47.220,0:06:51.960
+esto - el CVE, otras piezas de información que los administradores de sistemas encuentran realmente útil.
+
+0:06:51.960,0:06:57.060
+Y así, para este primer paso, para tratar de abordar la forma en que hacemos
+
+0:06:57.060,0:06:59.880
+parches un proceso más eficiente, examinamos la antigua notificación,
+
+0:06:59.880,0:07:03.360
+proponemos cambios que reducen el esfuerzo y el tiempo de los administradores del sistema,
+
+0:07:03.360,0:07:08.460
+y elaborado nuevas notificaciones que tienen elementos de acción se centró en una vulnerabilidad
+
+0:07:08.460,0:07:12.000
+y enumeró todas las máquinas y los tipos de vulnerabilidad en el CSV adjunto.
+
+0:07:12.780,0:07:14.820
+Pero como mencioné al principio de esta charla,
+
+0:07:14.820,0:07:19.620
+Hago un montón de análisis de datos cuantitativos a gran escala,
+
+0:07:19.620,0:07:22.320
+y por lo que en realidad no sabemos si estos
+
+0:07:22.320,0:07:25.740
+cambios fueron efectivos hasta que fuimos a analizar los datos posteriores.
+
+0:07:25.740,0:07:29.340
+Y así creé una tubería interna que se puede ejecutar automáticamente
+
+0:07:29.340,0:07:34.320
+que toma todas las piezas de información desde el lado del administrador del sistema
+
+0:07:34.320,0:07:39.120
+y, esencialmente, produce una serie de análisis que podemos desglosar de diferentes maneras.
+
+0:07:40.260,0:07:43.440
+Y en conjunto vimos que debido a estos cambios,
+
+0:07:43.440,0:07:49.500
+la tasa de parches aumentó del 3% al 78%, que es una gran diferencia.
+
+0:07:49.500,0:07:53.940
+Esto ya es un éxito, pero la siguiente pregunta natural era,
+
+0:07:53.940,0:08:00.480
+"¿Por qué la tasa de parches fue sólo del 78%?". Parecía que lo estábamos haciendo todo bien,
+
+0:08:00.480,0:08:03.840
+hemos mirado el trabajo relacionado, estamos haciendo las mejores prácticas,
+
+0:08:03.840,0:08:09.240
+y todavía no estaba al cien por cien. Y así, la belleza de los datos es que hay
+
+0:08:09.240,0:08:13.500
+diferentes maneras de ver y cortar. En primer lugar,
+
+0:08:13.500,0:08:18.060
+Miré a ver lo que los diferentes contactos - cómo estaban parcheando sus máquinas.
+
+0:08:18.060,0:08:22.500
+Y descubrimos que algunos contactos son mucho mejores parcheando.
+
+0:08:23.160,0:08:27.180
+Cuando luego nos fijamos en las familias de vulnerabilidad, encontramos que ciertas familias de vulnerabilidad obtener
+
+0:08:27.180,0:08:31.140
+parcheado más cosas. Como Zoom, navegadores,
+
+0:08:31.140,0:08:36.000
+aplicaciones independientes - se parcheaban más rápido y a un ritmo mucho mayor
+
+0:08:36.000,0:08:39.180
+que cosas como las distribuciones de sistemas operativos como Red Hat.
+
+0:08:39.180,0:08:43.200
+Y la hipótesis allí, que usted sabe intuitivamente tiene algún sentido,
+
+0:08:43.200,0:08:47.820
+es que las aplicaciones independientes que tienen procesos de parcheo más fáciles eran más fáciles de priorizar
+
+0:08:47.820,0:08:50.820
+porque no requieren tiempo de inactividad para el administrador del sistema.
+
+0:08:50.820,0:08:52.680
+Porque, de nuevo, los administradores de sistemas
+
+0:08:52.680,0:08:57.060
+están haciendo malabares con muchos puestos de trabajo y muchas necesidades, incluyendo las necesidades de las personas que son
+
+0:08:57.060,0:09:00.060
+utilizando esas máquinas. Y por último
+
+0:09:00.060,0:09:02.520
+también descubrimos que algunas familias de vulnerabilidades tardan más tiempo en parchearse,
+
+0:09:02.520,0:09:06.660
+y esto es una especie de continuación del último análisis,
+
+0:09:06.660,0:09:10.560
+que es que había algunas familias de vulnerabilidad,
+
+0:09:10.560,0:09:15.120
+como distros de sistemas operativos, y, como, actualizaciones de Microsoft Windows,
+
+0:09:15.120,0:09:19.440
+que acaba de tomar más tiempo, y nosotros - de nuevo, la hipótesis es que
+
+0:09:19.440,0:09:24.600
+hay algunos gastos generales que se requiere allí que se ralentiza el proceso.
+
+0:09:25.380,0:09:28.080
+Pero en este paso, ya sabes, dimos un paso atrás, de acuerdo,
+
+0:09:28.080,0:09:32.160
+los datos cuantitativos nos dicen mucho, pero también llevamos a cabo semiestructurados
+
+0:09:32.160,0:09:36.420
+entrevistas con los administradores del sistema porque los conocíamos, nos conocían,
+
+0:09:36.420,0:09:39.420
+para añadir la visión cualitativa a los datos cuantitativos.
+
+0:09:39.420,0:09:44.220
+Y aprendimos mucho en estas entrevistas. Y algunas de las conclusiones de alto nivel fue que,
+
+0:09:44.220,0:09:47.100
+en primer lugar, la monotonicidad de la antigua
+
+0:09:47.100,0:09:52.800
+notificación por correo electrónico hecho realmente fácil de ignorar. Y la razón por la que estábamos viendo una mucho mayor
+
+0:09:52.800,0:09:56.220
+tasa de parches con esta nueva notificación se debió a que no era lo mismo cada semana.
+
+0:09:56.220,0:09:59.640
+También encontramos que muchos equipos tienen excepciones - excepciones,
+
+0:09:59.640,0:10:03.900
+y esto fue realmente super interesante para nosotros porque mostró que
+
+0:10:03.900,0:10:07.020
+hubo una discrepancia entre la remediación de la vulnerabilidad
+
+0:10:07.020,0:10:10.020
+tubería de notificación y esta tubería de excepción.
+
+0:10:10.020,0:10:14.880
+Hay algunos equipos que tienen excepciones para varios servidores, varias vulnerabilidades,
+
+0:10:14.880,0:10:18.540
+y pensaron que eso estaba siendo incorporado en la tubería de la vulnerabilidad.
+
+0:10:18.540,0:10:22.200
+Y ahora que sabemos que hay una discrepancia, estamos trabajando para añadirlo.
+
+0:10:22.200,0:10:26.820
+También descubrimos que las notificaciones quedan fuera de los ciclos de parches de evaluación,
+
+0:10:26.820,0:10:29.580
+si enviamos un correo electrónico el segundo martes,
+
+0:10:29.580,0:10:34.650
+no habían llegado a parchear alrededor de - no habían llegado a parchear el sistema todavía -
+
+0:10:34.650,0:10:37.080
+porque estaban parcheando en la segunda semana de ese mes.
+
+0:10:37.080,0:10:42.180
+Y así esto añadió una gran cantidad de información adicional sobre por qué la tasa de parches fue sólo en el 78%.
+
+0:10:42.180,0:10:46.920
+Y en general encontramos que había un sentimiento muy positivo hacia una nueva notificación,
+
+0:10:46.920,0:10:50.040
+pero había margen de mejora y mejores integraciones.
+
+0:10:50.040,0:10:56.640
+Y así el - mientras que la teoría es que si lo haces todo bien entonces la gente simplemente seguir,
+
+0:10:56.640,0:11:01.920
+la práctica es que hay estos bloqueadores muy real que debe tener en cuenta,
+
+0:11:01.920,0:11:04.860
+especialmente los bloqueadores que son exclusivos de tu organización.
+
+0:11:05.760,0:11:08.700
+Y así, en resumen, miré cómo podríamos aumentar
+
+0:11:08.700,0:11:10.920
+la eficacia de los parches dentro de nuestra organización.
+
+0:11:10.920,0:11:15.000
+Aplicamos algunos principios muy básicos para reducir la fricción de los administradores de sistemas
+
+0:11:15.000,0:11:18.120
+y en conjunto aumentar la tasa de parches de 3% a 78%
+
+0:11:19.380,0:11:23.400
+pero además descubrimos que entrevistando a los administradores del sistema,
+
+0:11:23.400,0:11:26.520
+muchos de ellos tenían un sentimiento positivo hacia esta notificación
+
+0:11:26.520,0:11:29.820
+y que había discrepancias en diferentes sistemas en los que podemos trabajar
+
+0:11:29.820,0:11:33.660
+para que sea aún más preciso y más productivo en el futuro.
+
+0:11:33.660,0:11:38.340
+Y con eso estoy feliz de tomar preguntas y también estoy feliz de tomar preguntas fuera de línea en estos
+
+0:11:38.340,0:11:41.460
+diversas piezas de comunicación en línea. Muchas gracias.
+
+0:11:43.920,0:11:51.300
+Fantástico, muchas gracias por esta magnífica y atractiva presentación con la que comenzamos esta última hora,
+
+0:11:52.380,0:11:58.080
+De nuevo, por favor, asegúrense de hacer todas las preguntas que tengan en el chat,
+
+0:11:58.080,0:12:02.700
+tenemos unos minutos así que voy a empezar con una pregunta de aclaración que
+
+0:12:02.700,0:12:06.480
+probablemente tendría una respuesta bastante fácil. Así que, como, la vulnerabilidad - vulnerabilidad
+
+0:12:06.480,0:12:10.800
+familias que usted ha mencionado, creo que es realmente interesante concepto, obviamente,
+
+0:12:10.800,0:12:14.760
+nos ayuda a pensar en ese espacio, es que una asignación directa a la
+
+0:12:14.760,0:12:18.240
+tipo de tecnología que se está construyendo o es que tipo de, como, con la seguridad
+
+0:12:18.240,0:12:21.540
+vulnerabilidades donde hay como maneras de pensar acerca de los tipos de seguridad
+
+0:12:21.540,0:12:24.480
+vulnerabilidades que tiene, independientemente de la plataforma
+
+0:12:24.480,0:12:27.960
+o el contexto o dominio? Sí, muy buena pregunta,
+
+0:12:27.960,0:12:32.100
+así que cuando digo familias de vulnerabilidad, en realidad es una mezcla de ambas.
+
+0:12:32.100,0:12:37.440
+Así que es muy específicas vulnerabilidades de seguridad, pero para el
+
+0:12:37.440,0:12:43.680
+aplicaciones dadas que estaban en los servidores. Y así que usted sabe como, Zoom - Zoom, por ejemplo, tiene
+
+0:12:44.880,0:12:49.200
+varios, como, RCE vulnerabilidades pero si un servidor que un sistema
+
+0:12:49.200,0:12:52.380
+administrador estaba manejando no tenía Zoom no les notificamos sobre eso,
+
+0:12:52.380,0:12:54.540
+que era, sólo les notificó en la aplicación
+
+0:12:54.540,0:13:01.800
+y luego también el tipo de vulnerabilidad, y así que supongo que para aclarar un poco más,
+
+0:13:01.800,0:13:08.700
+los mensajes de correo electrónico se centró en las aplicaciones y, a continuación, el CSV - lo que era útil para los administradores de sistemas,
+
+0:13:08.700,0:13:13.680
+es que luego se enumeran en el CSV los diferentes tipos de vulnerabilidades de seguridad
+
+0:13:13.680,0:13:16.500
+porque los diferentes equipos tienen diferentes modelos de amenaza,
+
+0:13:16.500,0:13:17.520
+ya sabes, algunos equipos son como,
+
+0:13:17.520,0:13:22.260
+"Vamos a priorizar X sobre Y," y por lo que es útil que para ellos saber cuántos
+
+0:13:22.260,0:13:24.600
+de X frente a Y había. Por supuesto.
