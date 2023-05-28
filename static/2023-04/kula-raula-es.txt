@@ -1,0 +1,446 @@
+0:00:00.840,0:00:06.120
+Así que en realidad cuando me invitaron por primera vez que estaba tratando de real - tratando de pensar
+
+0:00:06.120,0:00:11.550
+de qué tipo de charla que podría dar, a la derecha. Así que fui a la página web de Never Work
+
+0:00:11.550,0:00:17.700
+en Teoría y me gusta - Miré y me destacó varias cosas diferentes,
+
+0:00:17.700,0:00:21.720
+es como algo que es la vida real tanto a las preguntas y respuestas y luego
+
+0:00:21.720,0:00:27.720
+un puente entre investigadores y profesionales. Y ver qué preguntas podrían abordarse a continuación.
+
+0:00:27.720,0:00:32.220
+Así que es algo así como una visión de enfoque. Así que basándome en esto intenté crear
+
+0:00:32.220,0:00:37.920
+mi presentación y tratar de al menos darle una idea de lo que hemos estado trabajando.
+
+0:00:37.920,0:00:43.500
+Así que en realidad mi - lo que estoy - lo que estoy esperando que usted puede sacar de esto
+
+0:00:43.500,0:00:48.420
+charla es sólo una visión ligeramente diferente de cómo usted piensa que las bibliotecas son
+
+0:00:48.420,0:00:52.500
+y tal vez - tal vez usted ya sabe esto o tal vez no, pero, sí,
+
+0:00:52.500,0:00:55.260
+sólo algunas cosas interesantes que hemos estado haciendo con las bibliotecas.
+
+0:00:55.260,0:01:02.040
+Así que en realidad todo el mundo creo marco también mencionó como Chat GPT todo está subiendo,
+
+0:01:02.040,0:01:07.200
+así que le pregunté, ¿por qué no sabes dar la definición de las bibliotecas a través de Chat GPT, ¿verdad?
+
+0:01:07.200,0:01:12.480
+Así Chat GPT lo puse, ¿qué sabemos acerca de las bibliotecas y sus dependencias?
+
+0:01:12.480,0:01:17.760
+Y salió con tres cosas importantes - creo que salió, así,
+
+0:01:17.760,0:01:21.120
+no cubría todo. Así que uno de los conceptos clave es
+
+0:01:21.120,0:01:27.240
+relacionados con el control de versiones, la seguridad, y también los gestores de paquetes como npm.
+
+0:01:27.240,0:01:34.200
+Así que creo que si - si mis suposiciones son correctas estoy hablando con, tal vez, los desarrolladores,
+
+0:01:34.200,0:01:37.980
+así que tal vez usted no necesita para mí explicar lo que es una biblioteca,
+
+0:01:37.980,0:01:42.180
+pero básicamente lo que es, como, sólo voy a decir, fundamentalmente,
+
+0:01:42.180,0:01:47.280
+es como cuando la gente crea proyectos ahora, nunca utilizan su - empezar de cero,
+
+0:01:47.280,0:01:52.800
+tratan de utilizar un viejo proyecto o código existente, por lo que este es un tipo de reutilización de código.
+
+0:01:54.000,0:01:58.800
+Así que permíteme que te lleve de vuelta a los primeros días de la reutilización de código.
+
+0:01:58.800,0:02:02.580
+Así que hay este término llamado NCBM - Sé que
+
+0:02:02.580,0:02:07.020
+no se puede leer todo esto - pero, básicamente, los desarrolladores fueron
+
+0:02:07.020,0:02:13.020
+muy cautelosos de adoptar el código de otras personas, que es probablemente lo que - en la actualidad la
+
+0:02:13.020,0:02:17.520
+los desarrolladores pensarían que estaban un poco locos - pero en aquellos días alrededor de 2006,
+
+0:02:18.660,0:02:21.900
+la gente estaba un poco preocupada. No confío en nadie más
+
+0:02:21.900,0:02:27.600
+código, y me siento un poco inquieto. Pero luego hubo argumentos a favor:
+
+0:02:27.600,0:02:32.340
+tienes que confiar en la gente y sus compiladores, tienes que confiar en las bibliotecas de clases,
+
+0:02:32.340,0:02:36.240
+y también hay que confiar en la gente que hace buenos compiladores.
+
+0:02:36.240,0:02:44.160
+Así que los programadores eventualmente comienzan a escribir Python, Perl, PHP, tienen que confiar en el intérprete.
+
+0:02:44.160,0:02:50.100
+Así que esto es lo que llevó a - es - es todo acerca de la confianza, y confiar en el código de otras personas.
+
+0:02:50.100,0:02:55.020
+Y todo esto llevó a dependencias. Y si usted sabe acerca de las dependencias,
+
+0:02:55.020,0:03:00.900
+usted sabrá que aunque usted puede adoptar algo que es de muy alto nivel o muy abstracto,
+
+0:03:00.900,0:03:05.640
+usted realmente no sabe lo que hay detrás de él - todas las cosas dependencias que está ahí abajo.
+
+0:03:06.240,0:03:12.900
+Así que este es un caso interesante y esto fue durante mi investigación como postdoc - es
+
+0:03:12.900,0:03:18.600
+que si usted está familiarizado con el npm, hubo este 11 o 12 líneas de código que
+
+0:03:18.600,0:03:23.700
+rompió - básicamente rompió el Internet. Una de las personas - es
+
+0:03:23.700,0:03:28.620
+llamado el incidente almohadilla izquierda - que eliminan esta pequeña pieza de código trivial y
+
+0:03:28.620,0:03:35.820
+que básicamente dependía de otras bibliotecas. Así que basado en que también se vinculó con
+
+0:03:35.820,0:03:41.460
+valores, vulnerabilidades, y lo que este término hoy en día lo llaman software
+
+0:03:41.460,0:03:45.120
+o ecosistema de paquetes. Así que este es el tipo de trabajo
+
+0:03:45.120,0:03:48.820
+que hemos estado mirando. Por lo tanto, hasta ahora en mi investigación -
+
+0:03:49.440,0:03:57.960
+por lo que desde 2013 cuando me gradué por primera vez hasta ahora 2023 - 10 años - Creo que ha habido una gran cantidad de trabajo
+
+0:03:57.960,0:04:01.740
+que ha sido tanto de la industria y también de los investigadores.
+
+0:04:01.740,0:04:06.180
+Así que lo que nos ha ayudado mucho es, tenemos un montón de conjuntos de datos de la biblioteca,
+
+0:04:06.180,0:04:10.800
+por ejemplo libraries.io, Software Heritage, los archivos GH,
+
+0:04:10.800,0:04:17.220
+y luego también hay GH GitHub API, por lo que se puede utilizar para descargar conjuntos de datos
+
+0:04:17.220,0:04:23.340
+y hacer estudios empíricos para analizar estas cosas. Desde el punto de vista de la industria había mucho
+
+0:04:23.340,0:04:25.980
+de bot dependencia, que es una especie de
+
+0:04:25.980,0:04:32.100
+bot-asistida la fijación de sus actualizaciones y recientemente hay esta Log para
+
+0:04:32.100,0:04:36.480
+Shell vulnerabilidad que también provocó el proyecto Alpha Omega
+
+0:04:36.480,0:04:43.200
+que la gente está buscando, como, las cadenas de suministro y cómo estos grandes ecosistemas, como,
+
+0:04:43.200,0:04:49.860
+cómo podemos gestionar estos ecosistemas. Así que basado en que sólo voy a hacer dos ejemplos de hoy
+
+0:04:49.860,0:04:55.380
+de algunas de las ideas de investigación que estamos haciendo. El primer ejemplo es cómo asegurar
+
+0:04:55.380,0:04:57.780
+sus bibliotecas. Así que no estoy hablando
+
+0:04:57.780,0:05:02.820
+sobre detectores de metales en las bibliotecas. Este es el ecosistema de la biblioteca, a la derecha.
+
+0:05:02.820,0:05:07.560
+Así que aquí tratamos - había un estudiante - así que tuvimos estudiantes de pregrado,
+
+0:05:07.560,0:05:12.060
+y yo sólo - No sé si se puede ver mi pantalla,
+
+0:05:12.660,0:05:20.820
+pero voy a tratar de traer una demostración rápida de esto. Así que el estudiante trató de crear una herramienta
+
+0:05:21.360,0:05:25.620
+que podría mirar no sólo las dependencias que el proyecto se basa en
+
+0:05:25.620,0:05:30.780
+pero en realidad las dependencias transitivas, por lo que las dependencias que van por la cadena.
+
+0:05:31.380,0:05:37.200
+Y como se puede ver que son grandes - enorme - que en realidad - esto es
+
+0:05:37.200,0:05:42.840
+trabajo muy duro para conseguir - para conseguir - Como investigador es muy difícil,
+
+0:05:42.840,0:05:47.280
+lo vendimos, como, como una herramienta, funciona pero para evaluar realmente
+
+0:05:47.280,0:05:53.100
+lo bueno que es, es muy difícil. Así que también hicimos, como, un estudio de usuario
+
+0:05:53.100,0:05:58.620
+con algunos desarrolladores para ayudarnos a entender estas vulnerabilidades.
+
+0:05:58.620,0:06:02.880
+Así que aquí está parte de la herramienta se puede ver que tenemos diferentes
+
+0:06:02.880,0:06:08.580
+colores que muestran las diferentes capas, y por ejemplo este que es de color naranja tiene,
+
+0:06:08.580,0:06:12.780
+como, la gravedad es muy alta. Si hace clic en el enlace que debe
+
+0:06:12.780,0:06:19.560
+ser capaz de averiguar dónde está la solución de seguridad y qué tipo de vulnerabilidades están ahí.
+
+0:06:19.560,0:06:24.600
+¿Cuál fue la motivación de esta herramienta? Creo que lo que queríamos hacer era,
+
+0:06:24.600,0:06:30.420
+queríamos proporcionar a los desarrolladores con una más, como, visión holística del proyecto
+
+0:06:30.420,0:06:35.880
+y ver cuántas bibliotecas, cuánta transividad, ha sido - ha
+
+0:06:35.880,0:06:41.880
+se ha producido dentro del proyecto. Así que esto nos llevó - la cosa es, después de esto,
+
+0:06:41.880,0:06:45.120
+también hay esta cosa llamada dependabot y hay menos interfaz de usuario.
+
+0:06:45.120,0:06:51.780
+Así que nuestra idea era utilizar la visualización, pero como se puede ver es una especie de muy desordenado,
+
+0:06:51.780,0:06:55.140
+por lo que es - Creo que todavía hay mucho trabajo que hay que hacer con él,
+
+0:06:55.140,0:06:58.740
+pero algunos de los aspectos más destacados que hemos encontrado es, de hecho,
+
+0:06:58.740,0:07:05.100
+hay un montón de vulnerabilidades que se conectan entre sí muy por debajo del árbol de dependencia.
+
+0:07:05.100,0:07:10.260
+Así que ese es uno de los trabajos que estamos estudiando.
+
+0:07:10.260,0:07:17.040
+Así que permítanme volver a mi presentación de diapositivas de nuevo, espero que todo el mundo está todavía conmigo.
+
+0:07:18.840,0:07:24.000
+Como pueden ver, se trata de una instantánea del mes de octubre del año pasado.
+
+0:07:24.000,0:07:29.220
+Como puedes ver, GitHub es una de las mayores fuentes de software de código abierto.
+
+0:07:29.220,0:07:37.140
+y también estos software de código abierto utilizan una gran cantidad de bibliotecas de software en sus proyectos.
+
+0:07:37.140,0:07:41.880
+Así que aquí hay casi 94 millones. Así que esa es una idea.
+
+0:07:41.880,0:07:45.000
+La segunda es algo llamado protestware.
+
+0:07:45.000,0:07:49.620
+Así que aquí esto parece una pieza normal de código y hay algunos
+
+0:07:49.620,0:07:55.620
+vulnerabilidad es un CVE - algún ataque - y en este caso fue la ubicación IP
+
+0:07:55.620,0:08:04.020
+y la ubicación IP es en realidad Rusia. Así que esto es un poco - esto no es su tipo
+
+0:08:04.020,0:08:09.360
+de - tipo regular de ataque de vulnerabilidad. Así que lo que encontramos fue que, no sé,
+
+0:08:09.360,0:08:14.880
+si el año pasado hubo un montón de protestas donde, por lo que estamos encontrando que también hay social
+
+0:08:14.880,0:08:20.760
+ideas que entran en el código. Un ejemplo en la parte superior izquierda
+
+0:08:20.760,0:08:29.520
+es cuando uno de los desarrolladores npm decidió que iba a eliminar su paquete del ecosistema
+
+0:08:29.520,0:08:34.920
+y quería responsabilizar a la gente. El otro es sobre Ucrania
+
+0:08:34.920,0:08:41.400
+y querían mostrar su apoyo. Creo que escribimos un breve documento sobre este tema,
+
+0:08:41.400,0:08:47.100
+no hemos hecho, como, actualmente estamos haciendo el análisis completo de los impactos de este
+
+0:08:47.100,0:08:54.840
+pero parece que la gente está utilizando - los desarrolladores están utilizando su influencia para tratar de obtener su
+
+0:08:54.840,0:08:59.460
+mensaje - puntos de vista políticos a través. Así que viniendo de código abierto que
+
+0:08:59.460,0:09:03.420
+puede decir que es una especie de weaponizing porque es una especie de discriminación
+
+0:09:03.420,0:09:06.360
+contra personas o grupos. Así que esto es una especie de
+
+0:09:06.360,0:09:11.820
+cosas interesantes que estamos viendo. Así que sólo voy a ir rápido porque tengo
+
+0:09:11.820,0:09:14.100
+probablemente el último minuto. ¿Qué sabemos sobre
+
+0:09:14.100,0:09:17.940
+bibliotecas y sus dependencias? Creo que todo es cuestión de confianza y cuando
+
+0:09:17.940,0:09:23.040
+desarrolladores no confiaban en las bibliotecas y ahora están dando mucha confianza - tal vez demasiada.
+
+0:09:23.580,0:09:30.060
+Y también cuando hacemos este tipo de análisis que hacemos, creo que es necesario que haya herramientas,
+
+0:09:30.060,0:09:34.140
+hay necesidad de ser visualizaciones y tipo de retroalimentación de los desarrolladores,
+
+0:09:34.140,0:09:36.900
+lo que funciona, lo que no funciona, creo que es actualmente
+
+0:09:36.900,0:09:42.300
+destacado en el campo de la investigación. Y creo que, según mi experiencia
+
+0:09:42.300,0:09:45.600
+hay como la brecha - la brecha entre el código abierto
+
+0:09:45.600,0:09:50.100
+y la industria o los investigadores en la industria en este campo de investigación en particular no es tan lejos
+
+0:09:50.100,0:09:54.720
+porque creo que hay una gran cantidad de la industria que utilizan una gran cantidad de código abierto.
+
+0:09:54.720,0:09:57.720
+Y el segundo punto que es, a mi segundo estudio de caso,
+
+0:09:57.720,0:10:02.760
+es que las bibliotecas están en constante expansión, por lo que ahora incluso se ocupan de cuestiones sociales
+
+0:10:02.760,0:10:09.000
+y creo que esto se debe a que muchos de los desarrolladores ahora se mueven más allá de sólo los programadores tradicionales
+
+0:10:09.000,0:10:13.920
+sino también a otros tipos de personas que también programan.
+
+0:10:13.920,0:10:18.060
+Así que quiero terminar con: "Un gran poder conlleva una gran responsabilidad".
+
+0:10:19.380,0:10:24.720
+Gracias por su atención y pueden escanearme o simplemente hacerme preguntas.
+
+0:10:24.720,0:10:29.940
+Una vez más, doy las gracias a los organizadores. Muy bien, muchas gracias.
+
+0:10:30.780,0:10:33.240
+Tenemos un par de preguntas que han llegado.
+
+0:10:34.140,0:10:37.560
+La primera es, en su experiencia o de su investigación,
+
+0:10:37.560,0:10:43.080
+¿cuánta atención prestan realmente los desarrolladores a las vulnerabilidades de las bibliotecas?
+
+0:10:43.920,0:10:48.780
+Recibo notificaciones de GitHub, por ejemplo, sobre la necesidad de actualizar paquetes
+
+0:10:48.780,0:10:54.180
+y debo admitir que la mayoría de las veces borro los mensajes y espero a hacer algo de todos modos.
+
+0:10:54.900,0:10:58.140
+Así que de acuerdo con los datos, hemos hecho este análisis,
+
+0:10:58.140,0:11:02.880
+y en realidad la gente - el papel de - la responsabilidad - no lo hace
+
+0:11:02.880,0:11:05.160
+realmente daño hasta que haya un caso de negocio.
+
+0:11:05.760,0:11:12.240
+Así que creo que esa es la opinión actual. Sin embargo, en muchos casos, si se deja demasiado
+
+0:11:12.240,0:11:16.680
+tarde, tu software puede quedar obsoleto,
+
+0:11:16.680,0:11:21.360
+así que por eso queremos llegar a estas visualizaciones interesantes o
+
+0:11:21.360,0:11:23.820
+algún tipo de motivación porque siento que el
+
+0:11:23.820,0:11:29.520
+notificación es una especie de - es usado en exceso - que la gente también se cansa de esto,
+
+0:11:29.520,0:11:32.880
+por lo que se convierte más en una molestia en lugar de algo útil,
+
+0:11:32.880,0:11:38.700
+así que necesitamos algo más inteligente y creo que ahí es donde los investigadores se reunirían para tratar de
+
+0:11:38.700,0:11:40.380
+responderlas. De acuerdo,
+
+0:11:40.380,0:11:43.260
+y una última pregunta rápida antes de pasar a nuestro siguiente orador.
+
+0:11:43.260,0:11:49.320
+¿Cree que existe el riesgo de que las comunidades de código abierto se fracturen por motivos políticos?
+
+0:11:49.320,0:11:55.020
+Porque, por supuesto, si creo un paquete que no funciona en un determinado lugar o no funciona en un determinado lugar o no funciona en un determinado lugar o no funciona en un determinado lugar o no funciona en un determinado lugar o no funciona en un determinado lugar.
+
+0:11:55.020,0:11:59.160
+trabajo para un determinado grupo de personas existe el riesgo de que entonces vamos a
+
+0:11:59.160,0:12:02.280
+a ver más fisuras debido a problemas de compatibilidad de paquetes?
+
+0:12:04.140,0:12:08.040
+Sí, creo que hay mucho trabajo en curso ahora,
+
+0:12:08.040,0:12:15.300
+especialmente con la diversidad desarrollador, y hay un montón de, como, otras cuestiones
+
+0:12:15.300,0:12:19.440
+que están surgiendo con el software, así que creo que, en mi opinión,
+
+0:12:19.440,0:12:25.500
+Creo que es - se va a convertir en un tema donde la gente tiene que ser más, como,
+
+0:12:25.500,0:12:30.240
+cuando se desarrolla el código ahora, usted tiene que ser más consciente - tal vez
+
+0:12:30.240,0:12:37.020
+conciencia de lo que podría afectar y cuánta responsabilidad tienes que ejercer,
+
+0:12:37.020,0:12:40.380
+bien, así que no sé si he respondido a tu pregunta
+
+0:12:40.380,0:12:44.580
+pero había, como, creo que hay mucho trabajo que aún queda por hacer en esta área.
