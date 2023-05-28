@@ -1,0 +1,353 @@
+0:00:01.260,0:00:06.960
+Sí, hola a todos, mi nombre es Zadia Codabux, soy profesor asistente en la Universidad
+
+0:00:06.960,0:00:10.680
+de Saskatchewan en Canadá. Hoy me centraré en
+
+0:00:10.680,0:00:19.500
+en la deuda técnica en los paquetes de R. La deuda técnica ha sido principalmente
+
+0:00:19.500,0:00:23.820
+estudiada en sistemas orientados a objetos, sobre todo software comercial en Java,
+
+0:00:23.820,0:00:28.500
+así que en la charla de hoy vamos a tomar el camino menos transitado y centrarnos en R.
+
+0:00:28.500,0:00:33.420
+Más concretamente, vamos a explorar la deuda técnica en los paquetes de R.
+
+0:00:35.400,0:00:39.300
+¿Por qué R? R ha ganado popularidad en los últimos
+
+0:00:39.300,0:00:45.660
+como podemos ver en estas imágenes. La mayoría de los desarrolladores de R tampoco son
+
+0:00:45.660,0:00:49.320
+desarrolladores de software de formación, por lo que son más versados en sus respectivos
+
+0:00:49.320,0:00:55.260
+dominios por lo que aquí estamos hablando de geólogos, médicos, bioinformations sistema, etc.
+
+0:00:57.120,0:01:02.820
+Estas personas con el tiempo se convirtió en - se convierten en los usuarios finales del software que implementan.
+
+0:01:03.480,0:01:07.920
+Y el ecosistema R es relativamente joven e inexplorado,
+
+0:01:07.920,0:01:14.700
+así que esta es una gran oportunidad para nosotros para mirar a la deuda técnica en los paquetes de R desde su infancia,
+
+0:01:14.700,0:01:20.280
+y también entender los matices de cómo los desarrolladores R difieren de los demás.
+
+0:01:22.380,0:01:27.540
+Así que en la primera parte de la charla me centraré en un estudio en el que examinamos la deuda técnica,
+
+0:01:27.540,0:01:33.000
+que se documenta en la revisión por pares de los paquetes de R en rOpenSci.
+
+0:01:33.000,0:01:39.120
+Así rOpenSci características básicamente una plataforma para organizar y revisar los paquetes de R,
+
+0:01:39.120,0:01:44.100
+y ha establecido un proceso de revisión por pares para los paquetes
+
+0:01:44.100,0:01:52.140
+que se presentan antes de su publicación. Así que en este estudio exploramos la deuda técnica
+
+0:01:52.140,0:01:54.780
+tipos mencionados en estas revisiones, su distribución,
+
+0:01:54.780,0:02:01.260
+y si los tipos de deuda destacados difieren en función de las distintas normas de los usuarios.
+
+0:02:01.260,0:02:08.280
+Así que por roles de usuario aquí nos referimos a los autores, revisores y editores de estos paquetes de R.
+
+0:02:10.680,0:02:16.380
+Así que llegamos a una taxonomía de 10 tipos diferentes de deuda agrupados
+
+0:02:16.380,0:02:20.400
+de acuerdo con estas tres perspectivas. Así perspectiva es básicamente que es
+
+0:02:20.400,0:02:24.840
+afectado por un determinado tipo de deuda. Tenemos tres perspectivas:
+
+0:02:24.840,0:02:30.660
+el usuario, desarrollador, y CRAN. Así que CRAN es el Comprehensive R Archive
+
+0:02:30.660,0:02:35.880
+Red que es básicamente - que básicamente realiza controles automatizados en todos los paquetes.
+
+0:02:36.840,0:02:40.920
+Aquí podemos ver que los diferentes roles de usuario se centran en diferentes tipos de
+
+0:02:40.920,0:02:45.120
+deuda mencionada en estas revisiones. Así que lo que podemos aprender de esto es
+
+0:02:45.120,0:02:49.260
+que diferentes categorías de personas tienen diferentes perspectivas de lo que la técnica
+
+0:02:49.260,0:02:58.980
+cuando se trata de paquetes de R. Así que el siguiente conjunto de resultados aquí es,
+
+0:02:58.980,0:03:03.480
+cuando nos fijamos en la frecuencia con que estos tipos de deuda aparecen en las revisiones,
+
+0:03:03.480,0:03:08.280
+vemos que la deuda de documentación es básicamente la más valorada.
+
+0:03:08.280,0:03:14.220
+Y esto es realmente interesante porque en los sistemas tradicionales orientados a objetos,
+
+0:03:14.220,0:03:19.260
+la mayoría de los estudios han demostrado que la deuda de código - deuda de diseño son los más prominentes
+
+0:03:19.260,0:03:22.920
+y los desarrolladores se centró en la gestión de los como una prioridad
+
+0:03:22.920,0:03:28.500
+mientras que en un ecosistema en crecimiento como R la documentación es lo más importante.
+
+0:03:30.960,0:03:37.860
+Así que aquí nos fijamos en los diferentes roles y en qué tipo de deuda se centran.
+
+0:03:38.580,0:03:41.040
+Así que podemos ver que si usted es un autor,
+
+0:03:41.040,0:03:47.100
+que se centran principalmente en la deuda defecto. Sin embargo, los editores y - editores y
+
+0:03:47.100,0:03:51.000
+revisores tienen diferentes prioridades. Se centran más en la documentación,
+
+0:03:51.000,0:03:57.240
+lo cual tiene sentido porque quieren que los paquetes de R se puedan reutilizar, personalizar y ampliar.
+
+0:03:59.580,0:04:05.700
+Así que en la segunda parte del estudio - en el segundo estudio me voy a centrar en un
+
+0:04:05.700,0:04:08.460
+deuda técnica autoadmitida, de nuevo en los paquetes de R.
+
+0:04:08.460,0:04:11.880
+Así, la deuda técnica autoadmitida son básicamente
+
+0:04:11.880,0:04:18.000
+situaciones en las que los desarrolladores son conscientes de que la aplicación - la aplicación actual
+
+0:04:18.000,0:04:24.240
+- no es óptima y escriben comentarios en el código fuente para alertar de tales casos.
+
+0:04:25.920,0:04:33.720
+Así que en este estudio nos centramos en la detección automatizada de SATD utilizando modelos de clasificación.
+
+0:04:33.720,0:04:40.200
+Así que utilizamos un modelo de aprendizaje automático tradicional y también redes neuronales incluyendo modelos de transformadores.
+
+0:04:40.200,0:04:46.320
+Así que lo que queríamos explorar en este estudio es, ¿cuál es el mejor modelo para clasificar
+
+0:04:46.980,0:04:52.320
+dept. técnico autoadmitido y sus tipos. Y también investigamos las causas de
+
+0:04:52.320,0:04:58.500
+deuda técnica - las causas que conducen a la aparición de SATD en los paquetes de R.
+
+0:04:58.500,0:05:03.300
+Sin embargo, en esta charla sólo me centraré en la parte de detección automatizada.
+
+0:05:05.400,0:05:13.020
+Así que podemos ver un modelo de transformador Alberta y - ALBERT y RoBERTa tienen una mejor
+
+0:05:13.020,0:05:18.180
+resultado cuando se trata de SATD predicción por lo que tienen un mejor rendimiento en general,
+
+0:05:18.180,0:05:22.140
+por lo que mayor recuerdo mayor precisión y mayor puntuación F1.
+
+0:05:22.140,0:05:28.440
+Sin embargo, son más costosos computacionalmente si nos fijamos en la formación
+
+0:05:28.440,0:05:33.540
+tiempo en comparación con otros modelos Y luego tenemos CNN que tiene
+
+0:05:33.540,0:05:38.280
+un rendimiento bastante bueno en general, tanto en términos de tiempo de entrenamiento y el rendimiento,
+
+0:05:38.280,0:05:42.720
+así que podemos decir que la CNN parece dar en el clavo.
+
+0:05:43.380,0:05:51.840
+Sin embargo, cuando nos fijamos en estos modelos, cuando nos fijamos en cómo, ya sabes, estos modelos
+
+0:05:51.840,0:05:57.840
+realizar cuando se trata de un tipo específico de deuda, podemos ver que algunos funcionan mejor que otros
+
+0:05:57.840,0:06:04.560
+y como sabemos la deuda de documentación es importante para los paquetes de R de nuestro primer estudio.
+
+0:06:04.560,0:06:09.420
+Podemos ver que algunos de estos modelos no detectan una deuda de documentación
+
+0:06:09.420,0:06:13.200
+y podemos ver que algunos de ellos no detectan también cosas como la deuda de las personas.
+
+0:06:13.200,0:06:17.580
+Así que aquí hay que hacer algunas concesiones,
+
+0:06:17.580,0:06:22.260
+tenemos que decidir lo que es importante a la hora de elegir un modelo para la detección automática de la deuda.
+
+0:06:22.260,0:06:29.580
+¿Es más importante extraer todos los diferentes tipos de deuda o lo es el rendimiento del modelo,
+
+0:06:30.360,0:06:34.620
+ya sabes, importante? Así que incluso en el modelo de mejor rendimiento RoBERTa,
+
+0:06:34.620,0:06:38.520
+podemos ver que hay algunos números bastante bajos,
+
+0:06:39.420,0:06:43.320
+lo que significa que algunos tipos de deuda son más difíciles de detectar que otros.
+
+0:06:47.400,0:06:51.300
+Así que hay algunas conclusiones basadas en estos dos estudios.
+
+0:06:52.920,0:06:58.740
+Así que algunos de - el primero es, la documentación es importante en R para entender cómo empezar,
+
+0:06:58.740,0:07:02.160
+cómo utilizar los paquetes, y esto también proporciona
+
+0:07:02.160,0:07:07.080
+una oportunidad para investigar lo que constituye una buena documentación en R,
+
+0:07:07.080,0:07:12.720
+cómo disminuir la deuda de documentación, y también promover la reutilización de los paquetes de R.
+
+0:07:14.460,0:07:17.700
+En segundo lugar, diferentes usuarios se centran en diferentes tipos de deuda.
+
+0:07:17.700,0:07:23.340
+Así pues, los usuarios finales tienen necesidades y prioridades distintas a las de los editores y revisores.
+
+0:07:24.720,0:07:28.680
+Por último, algunos tipos de deuda son más difíciles de detectar.
+
+0:07:28.680,0:07:34.200
+Voy a repasar un par de ejemplos. La deuda por requisitos es uno de ellos,
+
+0:07:34.200,0:07:37.800
+tipos de deuda difíciles de detectar, y cuando investigamos,
+
+0:07:37.800,0:07:43.560
+vimos que la estructura la redacción - la calidad de los comentarios fluctuaba considerablemente.
+
+0:07:43.560,0:07:49.860
+Y también sabemos que los paquetes de R se utilizan en múltiples ámbitos: bioinformática, geografía, etc.
+
+0:07:49.860,0:07:54.240
+- y la forma en que se documentan los requisitos, también varían considerablemente.
+
+0:07:55.380,0:07:59.460
+La siguiente es la deuda de algoritmos. La deuda de algoritmos era difícil de detectar
+
+0:07:59.460,0:08:03.120
+porque no hay un montón de palabras clave para detectar este tipo de deuda.
+
+0:08:03.120,0:08:09.720
+Así que estos son todos los problemas difíciles y sería muy interesante si pudiéramos construir una herramienta para
+
+0:08:09.720,0:08:14.040
+detectar mejor estos tipos de deuda. Gracias por escucharnos.
+
+0:08:14.580,0:08:19.260
+Si estás interesado en hablar más sobre estos estudios o en colaborar, no dudes en ponerte en contacto con nosotros.
+
+0:08:21.360,0:08:28.020
+Fantástico, gran trabajo, me encanta, me encanta, me refiero a todos los realmente
+
+0:08:28.020,0:08:31.620
+cosas interesantes pasando aquí hoy. Nunca pensé explícitamente
+
+0:08:31.620,0:08:36.180
+sobre la deuda técnica en el contexto de R, pero esto es sugerente,
+
+0:08:36.180,0:08:38.520
+porque me siento como, especialmente con la deuda de documentación,
+
+0:08:39.240,0:08:43.380
+Yo uso un montón de nuestra documentación y me di cuenta de que hay mucho por ahí,
+
+0:08:43.380,0:08:47.280
+pero es interesante - Me pregunto cuando la documentación, en términos de este trabajo,
+
+0:08:47.280,0:08:51.960
+es la documentación de la deuda interna, es que tipo de lo que es
+
+0:08:51.960,0:08:57.240
+o es a mayor escala? No, nos fijamos sobre todo en, ya sabes, como,
+
+0:08:57.240,0:09:01.260
+archivos README y, ya sabes, la documentación proporcionada por los autores, ya sabes,
+
+0:09:01.260,0:09:05.460
+para que los paquetes pudieran ser reutilizados y usados por otras personas, ampliados.
+
+0:09:05.460,0:09:10.440
+También vimos que hay un montón de paquetes que en realidad hace lo mismo.
+
+0:09:10.440,0:09:13.800
+Así que ¿por qué la gente no reutilizar, ya sabes, porque no sienten que
+
+0:09:13.800,0:09:16.920
+entender lo que está pasando, a la derecha, por lo que construir algo desde cero.
+
+0:09:19.020,0:09:22.980
+Eso es interesante, porque si no lo entiendes entonces no sabes que existe
+
+0:09:22.980,0:09:29.220
+y por lo que hace que no estaba haciendo tan bien. Cómo se utiliza - el poder de la documentación,
+
+0:09:29.220,0:09:31.440
+¿por qué no lo hemos aprovechado? Me encanta.
+
+0:09:31.440,0:09:34.560
+Vale, genial alguna pregunta más, creo que tenemos tiempo para alguna más,
+
+0:09:34.560,0:09:35.280
+Vale, creo que
+
+0:09:35.280,0:09:37.740
+que la pregunta llegó a Slack aquí de Greg.
+
+0:09:37.740,0:09:42.900
+Greg quiere saber ¿cómo la gente aprende a escribir documentación decente?
+
+0:09:42.900,0:09:47.100
+Parece que se enseña incluso menos que la depuración o las pruebas.
+
+0:09:47.100,0:09:52.080
+Más uno en eso. Tenemos tenemos trabajo en curso,
+
+0:09:52.080,0:09:54.660
+así que esto es, ya sabes, parte del trabajo que estamos haciendo,
+
+0:09:54.660,0:10:01.440
+tenemos trabajo en curso que en realidad nos fijamos en, ya sabes, un montón de documentación,
+
+0:10:01.440,0:10:06.180
+un montón de como READMEs y cosas por el estilo, y se nos ocurrió, como, una taxonomía,
+
+0:10:06.180,0:10:12.360
+por lo que este es todavía el trabajo en revisión, pero, ya sabes, como una lista de verificación y, ya sabes, taxonomías,
+
+0:10:12.360,0:10:15.060
+lo que debe incluirse en la documentación y así sucesivamente,
+
+0:10:15.060,0:10:18.420
+cómo hacer que sea útil, por lo que este es usted sabe el trabajo en curso,
+
+0:10:18.420,0:10:21.996
+así que tenemos algo por venir esperemos que en los próximos meses.
