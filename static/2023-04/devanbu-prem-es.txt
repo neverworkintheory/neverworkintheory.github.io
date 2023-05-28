@@ -1,0 +1,437 @@
+0:00:00.240,0:00:04.860
+Así que sí he estado - hemos estado trabajando en la naturalidad y la bimodalidad gracias por la
+
+0:00:04.860,0:00:10.080
+introducción y que Greg desde hace muchos años. En estos días cada ingeniero de software es
+
+0:00:10.080,0:00:13.380
+todo entusiasmado con, y avivado sobre, grandes modelos de lenguaje y su uso en el código.
+
+0:00:14.760,0:00:20.460
+Algunas personas llaman burlonamente a los grandes modelos de lenguaje "loros estocásticos", con cierta justificación,
+
+0:00:21.360,0:00:25.680
+así que lo que voy a hablar durante los próximos nueve minutos más o menos es lo que va
+
+0:00:25.680,0:00:30.240
+con estos loros estocásticos que escriben código y programadores.
+
+0:00:30.240,0:00:42.000
+Así que sólo quiero agradecer el apoyo de DARPA - IARPA en realidad - y la National Science Foundation,
+
+0:00:42.000,0:00:44.160
+Sandia National Labs, y la Fundación Humboldt.
+
+0:00:45.600,0:00:51.660
+Comprobación de la realidad: el hecho es que el Codex GPT-x y demás se utilizan ahora ampliamente para generar código.
+
+0:00:52.860,0:00:57.120
+¿Hasta qué punto utiliza la gente este código generado y es realmente útil?
+
+0:00:57.120,0:00:59.820
+¿Y hasta qué punto es bueno este código? Así que estas dos preguntas son
+
+0:00:59.820,0:01:02.760
+lo que voy a estar hablando por el resto de la - de esta charla.
+
+0:01:05.640,0:01:10.020
+Así que voy a presentar esencialmente cuatro documentos. Les animo a que los consulten,
+
+0:01:10.020,0:01:13.620
+todos ellos son muy interesantes, muy bueno, utilizando una amplia gama de metodologías,
+
+0:01:13.620,0:01:20.160
+y todos ellos son estudios con sujetos humanos. El primero es de CMU - Carnegie-Mellon -
+
+0:01:20.160,0:01:25.440
+es una encuesta de 410 desarrolladores, en su mayoría desarrolladores de GitHub.
+
+0:01:26.160,0:01:31.740
+El segundo es de Harvard, es un estudio de control de sujetos humanos,
+
+0:01:31.740,0:01:38.220
+una pequeña muestra - la naturaleza de los estudios de control. El control aquí es el motor de finalización que es
+
+0:01:38.220,0:01:42.420
+integrado en Visual Studio llamado Intellicode. Todos los sujetos son estudiantes universitarios,
+
+0:01:43.080,0:01:47.460
+eso es lo que es. Y bien, ahora los resultados.
+
+0:01:48.540,0:01:52.920
+En el caso de la encuesta de CMU, el 30% del código se generó
+
+0:01:52.920,0:01:56.340
+según los desarrolladores de GitHub, esta fue la cifra que publicaron.
+
+0:01:57.780,0:02:02.460
+Dicen que ayuda a la productividad -los desarrolladores de GitHub- y que
+
+0:02:02.460,0:02:07.800
+dijo en - 74% de ellos dijo que hacer una comprobación rápida del código producido por Copilot
+
+0:02:07.800,0:02:10.080
+antes de utilizarlo, para comprobar que está completo,
+
+0:02:11.040,0:02:13.200
+hacen una comprobación rápida, y luego lo utilizan.
+
+0:02:13.200,0:02:16.440
+También se quejaron de que no era muy bueno en
+
+0:02:16.440,0:02:19.500
+hacer frente a los requisitos no funcionales como la seguridad, el rendimiento, y así sucesivamente.
+
+0:02:20.760,0:02:24.480
+Y también se quejaron de que era difícil controlar el código que se estaba generando.
+
+0:02:25.260,0:02:30.300
+Con los estudiantes y - dijeron Copilot no les ayudó mucho
+
+0:02:30.300,0:02:35.940
+y dijeron que produjeron muchos defectos y era difícil entender el código que produjeron
+
+0:02:35.940,0:02:39.540
+pero a pesar de todo eso, los sujetos de los estudiantes le gustaba de todos modos.
+
+0:02:40.560,0:02:44.520
+Estos son los dos trabajos de las universidades. Ahora un par de empresas.
+
+0:02:44.520,0:02:50.580
+El primero es de GitHub, que no utiliza Copilot, sino su propio motor de finalización.
+
+0:02:51.780,0:02:55.680
+El tamaño de la muestra es de 10K y lo hicieron - hicieron el estudio utilizando la telemetría,
+
+0:02:55.680,0:03:01.020
+en otras palabras, se reunieron los datos de forma remota para ver cómo el código estaba siendo realmente utilizado.
+
+0:03:01.620,0:03:06.120
+El segundo estudio fue un estudio más regular en algunos aspectos.
+
+0:03:06.120,0:03:10.500
+Se utilizó una triangulación - una combinación de encuesta y telemetría,
+
+0:03:10.500,0:03:13.680
+y así confirmaron los resultados de uno utilizando el otro.
+
+0:03:14.880,0:03:22.680
+Así que los resultados - por lo que el estudio de Google encontró que el 3% del código se generó - el 3% de la
+
+0:03:22.680,0:03:28.800
+código que realmente se introdujo fue generado. Alrededor del 6% del tiempo de ciclo se redujo - por lo que
+
+0:03:28.800,0:03:33.240
+el tiempo de ciclo es el tiempo entre las cosas que hacen los programadores -
+
+0:03:33.240,0:03:38.220
+y alrededor del 30% de las sugerencias que fueron hechas por el motor de completado fueron aceptadas por los usuarios.
+
+0:03:40.200,0:03:46.680
+Se trata, pues, de una muestra muy amplia, pero, como es habitual en estos casos
+
+0:03:46.680,0:03:51.360
+estudios de telemetría no se obtiene mucha información. El segundo estudio es - le da alguna otra visión
+
+0:03:52.500,0:03:57.000
+así que del 23% al 28% de las sugerencias producidas por Copilot fueron aceptadas por los desarrolladores
+
+0:03:58.320,0:04:00.840
+y las tasas de aceptación se correlacionan muy bien con
+
+0:04:00.840,0:04:03.360
+productividad autodeclarada según la encuesta.
+
+0:04:04.080,0:04:07.380
+Así que esto es, ya sabes, todo esto es bastante interesante,
+
+0:04:08.280,0:04:11.400
+así que, ya sabes, te animo a mirar esos documentos,
+
+0:04:12.000,0:04:13.740
+todos ellos están ahí fuera. El estudio de Google fue
+
+0:04:13.740,0:04:17.160
+no revisado por pares los otros son. El estudio de Google fue una entrada de blog.
+
+0:04:17.160,0:04:21.960
+Así que mi opinión personal sobre estos código de lenguaje - grandes modelos de código de lenguaje es,
+
+0:04:21.960,0:04:25.380
+a los desarrolladores les gustan y los utilizan según estas encuestas.
+
+0:04:26.640,0:04:31.500
+No está claro que entienden completamente el código que están utilizando y esto es para mí confirmó
+
+0:04:31.500,0:04:35.700
+tanto por los estudios y de las conversaciones con la gente, las conversaciones personales anecdóticas.
+
+0:04:35.700,0:04:39.420
+así que no sabemos cómo es el proceso de software personal cuando la gente los usa.
+
+0:04:39.420,0:04:43.020
+Creo que eso es - eso es todavía una pregunta abierta - No sé lo que está pasando.
+
+0:04:44.700,0:04:48.840
+Así que usted sabe que esto probablemente no va a sorprender, pero en un tiempo sorprendentemente corto
+
+0:04:48.840,0:04:52.620
+todos los ordenadores en todas partes - portátiles, teléfonos móviles, tostadoras, microondas,
+
+0:04:52.620,0:04:55.200
+control de tráfico aéreo, centrales nucleares, misiles de crucero, de todo.
+
+0:04:55.200,0:04:57.420
+todos ellos van a utilizar código generado por estos modelos lingüísticos.
+
+0:04:58.080,0:05:02.460
+Así que esto es, ya sabes, esto es, más o menos, en este punto, más o menos inevitable.
+
+0:05:02.460,0:05:06.660
+Muy bien, esta es la diapositiva más aterradora de esta charla.
+
+0:05:06.660,0:05:12.600
+El código generado por IA se ejecutará en todas partes y a un nivel muy básico,
+
+0:05:12.600,0:05:16.260
+ya sabes, la pregunta es, ¿estos grandes modelos de lenguaje generan código?
+
+0:05:16.260,0:05:20.820
+Porque si lo hacen este maldito código buggy va a estar en todas partes, ¿verdad?
+
+0:05:20.820,0:05:23.340
+Bien, esta es la pregunta que nos interesaba.
+
+0:05:24.420,0:05:27.540
+En un - tenemos un papel que viene en MSR - Software de Minería
+
+0:05:27.540,0:05:32.220
+Repositorios - que se celebrará en Melbourne. Lo presentará mi alumno Kevin Jesse,
+
+0:05:32.220,0:05:37.680
+también se va a graduar con un doctorado en modelos lingüísticos aplicados al código, así que contrátenlo.
+
+0:05:38.880,0:05:41.940
+Y puedes echarle un vistazo, escanea el código QR para ver el artículo.
+
+0:05:43.020,0:05:46.680
+Bien, esto es lo que hicimos. Tomamos este conjunto de datos, que
+
+0:05:46.680,0:05:50.340
+es bastante omnipresente, es una línea de correcciones de errores de un millar de proyectos,
+
+0:05:50.340,0:05:54.540
+alrededor de 17.000 muestras después de la limpieza de datos. Lo que podemos hacer es,
+
+0:05:54.540,0:05:58.620
+podemos volver atrás en la historia y el control de versiones y averiguar cuando estos errores fueron inyectados por los seres humanos.
+
+0:05:59.160,0:06:04.380
+Y ya que sabemos cuando se introdujeron, podemos tratar de Copilot con el prefijo de la
+
+0:06:04.380,0:06:09.060
+en el momento en que se introdujo y ver si Copilot produce
+
+0:06:09.060,0:06:12.720
+el código con errores o el código corregido. Hay algunos problemas con este
+
+0:06:12.720,0:06:16.440
+pero hablaré de ellos en un minuto. Pero te da algunas ideas.
+
+0:06:17.100,0:06:21.780
+Una cosa que debo decir es, todas las muestras en el conjunto de datos que utilizamos fueron fijados por el momento en que el
+
+0:06:21.780,0:06:24.720
+LLMs - en el momento Copilot fue entrenado, todo fue fijado,
+
+0:06:24.720,0:06:28.680
+así Copilot está viendo el código fijo, y así estamos tipo de ver lo que hace
+
+0:06:28.680,0:06:32.220
+cuando está entrenado en el código fijo, porque este conjunto de datos fue, ya sabes,
+
+0:06:32.220,0:06:37.560
+ahora tres años, tal vez cuatro. Bien, entonces el resultado es el siguiente
+
+0:06:38.400,0:06:43.620
+Así que en aproximadamente el 13% de los casos Copilot Codex reproduce el código fijo.
+
+0:06:44.760,0:06:49.500
+Y aproximadamente el doble de veces regurgita el código con errores.
+
+0:06:50.100,0:06:53.880
+Así que recuerda que fue entrenado en el código fijo, pero reproduce el código con errores, a la derecha,
+
+0:06:53.880,0:06:59.160
+así que tal vez el código buggy se siente más natural para el modelo y por lo que, ya sabes, que produce eso.
+
+0:07:00.540,0:07:05.340
+Así que ahora hay un montón de, como, materia oscura, que no es ni el código buggy o el código fijo,
+
+0:07:05.340,0:07:09.960
+no coincide exactamente con ninguno de los dos. Así que lo que hicimos fue tomar 400 muestras
+
+0:07:09.960,0:07:13.440
+de esto y lo examinó manualmente, y lo que encontramos es que en alrededor de
+
+0:07:13.440,0:07:17.280
+90% de los casos es un galimatías - no es ni el error ni la solución,
+
+0:07:17.280,0:07:21.600
+probablemente ni siquiera compile, sólo produce cosas al azar, cierto.
+
+0:07:21.600,0:07:25.500
+Pero algunos de los casos, alrededor de, ya sabes, el 5% de los casos,
+
+0:07:25.500,0:07:29.700
+es código que en realidad es el error o la solución en la que se acaba de escribir en algunos
+
+0:07:29.700,0:07:33.000
+otra forma que podemos reconocer. En algunos casos simplemente no lo sabíamos.
+
+0:07:34.440,0:07:37.260
+Bien, me quedan unos tres minutos,
+
+0:07:37.260,0:07:39.900
+así que déjame decirte - mencionar un par de cosas que también miramos.
+
+0:07:41.940,0:07:47.700
+Cuando Copilot genera este código simple y estúpido buggy nos fijamos en si eran más pegajosos,
+
+0:07:47.700,0:07:51.060
+porque sabemos cuánto tiempo se quedaron en el - en la historia de control de versiones, a la derecha,
+
+0:07:51.060,0:07:55.200
+Así que si se queda más tiempo en la historia de control de versiones se puede pensar en ello como ser pegajosa.
+
+0:07:55.200,0:07:57.900
+En cierto sentido la gente en realidad no lo ven, ya sabes,
+
+0:07:57.900,0:08:01.920
+así que nos fijamos en eso también. Y la otra cosa que miramos
+
+0:08:01.920,0:08:04.740
+en los modelos de lenguaje. Estos grandes modelos de lenguaje
+
+0:08:04.740,0:08:10.320
+tienen enormes espacios a priori - que están representando los priores, el prefijo, y este enorme espacio,
+
+0:08:10.320,0:08:15.600
+y por lo que puede ser empujado alrededor de este espacio. Y una forma de empujar a su alrededor es,
+
+0:08:15.600,0:08:21.240
+metafóricamente, usted - para que se comporten como un buen programador - es
+
+0:08:21.240,0:08:25.500
+poner comentarios en el - en el código, a la derecha. Así que añadimos comentarios y vemos si
+
+0:08:25.500,0:08:28.980
+Copilot repite esos errores cuando usted pone los comentarios allí.
+
+0:08:29.940,0:08:35.160
+Muy bien, esta es mi última diapositiva. Las conclusiones:
+
+0:08:35.160,0:08:43.020
+los programadores adoran estos plugins para bien o para mal. Una vez más, estos grandes modelos de lenguaje a menudo
+
+0:08:43.020,0:08:45.540
+recapitulan errores humanos, y cuando lo hacen,
+
+0:08:45.540,0:08:48.660
+parece que estos errores se mantienen durante un período de tiempo más largo,
+
+0:08:48.660,0:08:54.240
+tal vez porque los grandes modelos de lenguaje - los grandes modelos de lenguaje producen código que parece natural.
+
+0:08:54.240,0:08:57.180
+Así que tal vez es más difícil para los ojos humanos para ver estos errores
+
+0:08:57.180,0:09:00.600
+Pero la buena noticia es que podemos mejorar su
+
+0:09:00.600,0:09:03.780
+añadiendo comentarios. Más detalles en el artículo.
+
+0:09:04.320,0:09:09.300
+Así que mi opinión principal sigue siendo que los desarrolladores utilizarán estos grandes modelos lingüísticos
+
+0:09:09.960,0:09:16.500
+y puede ser que estos errores cometidos por estos modelos parecen sobrevivir de alguna manera la revisión humana,
+
+0:09:17.760,0:09:22.560
+y, ya sabes, tal vez estos errores son más pegajosos. Así que me detendré y aceptaré preguntas.
+
+0:09:23.640,0:09:27.900
+Muy bien, muchas gracias, Prem. Obviamente mucho interés en este
+
+0:09:27.900,0:09:32.700
+tema y eso es un eufemismo. Uno de los comentarios que ha llegado
+
+0:09:32.700,0:09:39.660
+en - ¿cree usted que a medida que llegamos a confiar más y más en LLMs para la generación de código
+
+0:09:39.660,0:09:43.560
+va a hacer más difícil que los nuevos lenguajes ganen adeptos,
+
+0:09:43.560,0:09:48.780
+porque, por supuesto, no tendrán el corpus de código para entrenar a los LLM,
+
+0:09:48.780,0:09:53.580
+así que las herramientas que los programadores estarán acostumbrados a usar simplemente no funcionarán tan bien,
+
+0:09:53.580,0:09:58.620
+así que estaremos atascados con los lenguajes actuales. ¿Qué opinas al respecto?
+
+0:09:58.620,0:10:03.840
+Sí, una pregunta interesante. Mi opinión es que las nuevas lenguas
+
+0:10:03.840,0:10:08.280
+son - son un proyecto de pasión, correcto,
+
+0:10:08.280,0:10:11.100
+así que la gente que los usa al principio y genera
+
+0:10:11.100,0:10:16.080
+los mayores corpus de estas nuevas lenguas no van a ser afectados por si se
+
+0:10:16.080,0:10:17.580
+tienen Copilot o no, a la derecha,
+
+0:10:17.580,0:10:21.840
+así que tal vez lo que sucederá es que una vez que tenga suficientes datos,
+
+0:10:21.840,0:10:25.080
+entonces usted puede tomar uno de estos grandes modelos de lenguaje y afinarlos.
+
+0:10:25.080,0:10:30.180
+Son muy rápidos a la hora de aprender cosas nuevas porque se han entrenado con mucha
+
+0:10:30.180,0:10:34.320
+lo que son las formas humanas de expresión en las lenguas. Si el nuevo idioma es algo completamente
+
+0:10:34.320,0:10:35.520
+diferente,
+
+0:10:35.520,0:10:39.180
+como APL o Haskell o algo así, tal vez tienen un poco de tiempo difícil,
+
+0:10:39.180,0:10:43.440
+pero creo que, ya sabes, para el - en la mayoría de los casos creo que va a estar bien.
+
+0:10:44.220,0:10:48.840
+Puede que me equivoque, es sólo una predicción. Ok, y tenemos una segunda pregunta que es
+
+0:10:48.840,0:10:51.780
+entrar, y este es uno que me he estado preguntando también.
+
+0:10:51.780,0:11:03.300
+Así que si un LLM genera código con errores y entra en producción ¿a quién culpamos de los fallos?
+
+0:11:03.300,0:11:08.940
+¿Culpamos al programador que envió el código, culpamos a quien entrenó el modelo,
+
+0:11:08.940,0:11:15.540
+¿dónde recae la responsabilidad en este caso? Gran pregunta - Me encantaría que el canadiense
+
+0:11:15.540,0:11:21.120
+Parlamento o la Unión Europea aprobaran una ley al respecto, porque no va a ocurrir en Estados Unidos.
