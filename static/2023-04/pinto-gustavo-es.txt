@@ -1,0 +1,452 @@
+0:00:00.660,0:00:04.320
+Gracias Greg, Mike, Brittany, por la invitación.
+
+0:00:04.320,0:00:08.280
+Es un gran placer para mí estar aquí para hablar de CDD,
+
+0:00:08.280,0:00:19.200
+y CDD es la técnica de diseño que hemos construido y estamos utilizando en zup, una empresa de tecnología brasileña,
+
+0:00:19.200,0:00:26.220
+para construir software - para construir software del mundo real. Y hoy mi objetivo aquí es convencerte de que CDD
+
+0:00:26.220,0:00:30.600
+podría ser un enfoque interesante para tu próximo producto.
+
+0:00:30.600,0:00:37.560
+Empecemos con estas cifras,
+
+0:00:37.560,0:00:43.800
+que son un montón de código, pero todos vienen de la misma clase,
+
+0:00:43.800,0:00:47.700
+en realidad la clase de este marco de Spring.
+
+0:00:47.700,0:00:52.080
+Si usted es un desarrollador Java, es probable que haya utilizado Spring en el pasado.
+
+0:00:52.080,0:00:58.920
+Así que si este tipo de cosas - este tipo de clase grande sucede en Spring,
+
+0:00:59.640,0:01:05.280
+son bien - productos muy conocidos y populares - lo más probable es que también puede
+
+0:01:05.280,0:01:12.780
+nuestros propios productos y proyectos. Y esta cifra aquí planteó muchas preguntas:
+
+0:01:12.780,0:01:17.160
+cómo podemos refactorizar, dónde están los puntos que debemos refactorizar,
+
+0:01:17.160,0:01:21.060
+cómo debemos empezar la refactorización, ayudar a detectar el fallo,
+
+0:01:21.060,0:01:23.460
+dónde está el fallo, cuántos fallos,
+
+0:01:23.460,0:01:27.660
+y ¿cómo podemos probar este código para asegurarse de que hay un error?
+
+0:01:28.500,0:01:34.260
+Y todas estas preguntas se pueden resumir en esta simple pregunta aquí:
+
+0:01:34.260,0:01:38.460
+así que ¿cómo razonar sobre este código - así que ¿cómo entender este código?
+
+0:01:39.240,0:01:48.180
+Así que la idea de CDD es proporcionar una manera de mejorar la forma en que los desarrolladores entienden y razonan sobre el código.
+
+0:01:49.860,0:01:53.880
+El año pasado, supongo, Kent Beck, que es un conocido practicante,
+
+0:01:53.880,0:01:57.780
+escribió estos tweets que me gustaría leer muy brevemente para usted.
+
+0:01:57.780,0:02:04.320
+"El objetivo del diseño de software es crear trozos o rebanadas que encajen en la mente humana".
+
+0:02:04.320,0:02:10.020
+Así que volviendo a la última diapositiva, ¿podemos encajar esa única clase en nuestra mente?
+
+0:02:11.280,0:02:15.780
+Seguro que podemos. "El software sigue creciendo
+
+0:02:15.780,0:02:21.420
+pero la mente humana llegó al máximo, así que tenemos que seguir troceando y rebanando de forma diferente".
+
+0:02:22.140,0:02:28.800
+Así que si por casualidad tienes que irte, parar antes de tiempo, este es el lío que me gustaría enseñarte.
+
+0:02:28.800,0:02:33.060
+El objetivo del software es seguir troceando y rebanando de forma diferente.
+
+0:02:33.720,0:02:39.900
+CDD es en realidad otro enfoque - nuestro enfoque simple - para chunking y slicing.
+
+0:02:39.900,0:02:45.840
+Este es el objetivo de CDD. ¿Y cómo ocurre esto con CDD?
+
+0:02:45.840,0:02:48.240
+Tiene dos objetivos. El primero es
+
+0:02:48.240,0:02:53.640
+reducir la carga cognitiva de los desarrolladores. Así que volviendo a nuestro primer ejemplo,
+
+0:02:54.420,0:02:56.880
+¿cómo podemos entender realmente ese código?
+
+0:02:56.880,0:03:00.840
+¿Cuánto esfuerzo debemos dedicar a comprender esa única clase?
+
+0:03:01.860,0:03:06.000
+Quizá un buen esfuerzo. ¿Y cómo CDD
+
+0:03:06.780,0:03:12.540
+intenta reducir esta carga cognitiva? Lo hace planteando un límite a la
+
+0:03:12.540,0:03:16.920
+número de elementos que los desarrolladores podrían utilizar en una sola clase o un solo archivo.
+
+0:03:16.920,0:03:20.580
+Así que esencialmente, puede utilizar cualquier
+
+0:03:20.580,0:03:25.860
+técnica o enfoque que usted - usted quiere, usted encuentra divertido de usar, te gusta usar,
+
+0:03:26.640,0:03:34.260
+pero deberías hacerlo con un límite. Y CDD trae esta idea de los límites de este
+
+0:03:34.260,0:03:39.840
+teoría - de esta teoría psicológica, que es la teoría del número mágico siete.
+
+0:03:39.840,0:03:44.040
+Es una teoría bien conocida y aceptada del ámbito psicológico.
+
+0:03:44.940,0:03:53.640
+Y muy brevemente esta teoría dice que nosotros como seres humanos sólo son capaces de procesar, como, siete más
+
+0:03:53.640,0:03:58.920
+o menos dos - menos dos unidades de información en nuestra memoria a corto plazo.
+
+0:03:59.460,0:04:03.660
+Si recibimos - si recibimos más información al mismo tiempo,
+
+0:04:03.660,0:04:07.320
+lo más probable es que perdemos nuestra capacidad de procesar esa información.
+
+0:04:08.640,0:04:14.160
+Así que este gráfico aquí muestra más o menos lo que - lo que sucede cuando recibimos más información.
+
+0:04:14.160,0:04:19.920
+Si estás procesando sólo una, dos o tres informaciones al mismo tiempo,
+
+0:04:21.120,0:04:25.200
+podemos manejar una muy buena comprensión acerca de lo que está pasando.
+
+0:04:25.740,0:04:34.020
+Pero cuando recibimos cuatro, cinco, seis, siete, unidades de información al mismo tiempo,
+
+0:04:34.020,0:04:37.200
+reducimos drásticamente nuestra capacidad para procesar esa información.
+
+0:04:37.200,0:04:41.040
+Eso ocurre cuando estamos intentando dar una charla y mi hijo me está llamando,
+
+0:04:41.040,0:04:45.300
+mi teléfono está sonando, el - el coche es
+
+0:04:45.300,0:04:49.080
+tocando la bocina en las calles, y así sucesivamente, y finalmente pierdo mi capacidad de
+
+0:04:49.080,0:04:54.600
+entender lo que estaba haciendo. Así que CDD tiene esta idea de los límites.
+
+0:04:54.600,0:04:59.460
+Deberíamos poner un límite a los elementos del código fuente que los desarrolladores podrían utilizar.
+
+0:05:00.060,0:05:09.000
+Y si una determinada clase o un determinado archivo está por encima de ese límite es el momento de refactorizar.
+
+0:05:09.000,0:05:15.360
+Así CDD tiene dos beneficios principales aquí. Se arroja algo de luz sobre la
+
+0:05:15.360,0:05:23.220
+complejidad del código fuente y le da al desarrollador una herramienta que es útil para decidir
+
+0:05:23.220,0:05:30.300
+cuándo refactorizar - ¿cuándo factorizamos? Nos refactorizar cuando usted está por encima de los límites.
+
+0:05:30.300,0:05:35.520
+Así que aquí a la derecha sólo tengo aquí un ejemplo de una sola clase
+
+0:05:35.520,0:05:43.080
+que utiliza CDD mediante el uso de estas anotaciones ICP. Así que cada vez que estoy usando esta clase aquí
+
+0:05:43.080,0:05:48.660
+que supongo que aumentar la complejidad - que los equipos cree que
+
+0:05:48.660,0:05:52.680
+podría aumentar la complejidad - deberíamos añadir esta anotación aquí,
+
+0:05:52.680,0:05:54.120
+ICP, ICP,
+
+0:05:54.120,0:05:55.800
+ICP. En este momento
+
+0:05:55.800,0:06:03.960
+debemos hacerlo manualmente y el equipo es - se encarga de sumar todas estas anotaciones aquí
+
+0:06:03.960,0:06:07.860
+para asegurarse de que el código está por encima o no los límites.
+
+0:06:07.860,0:06:11.040
+Así que esta es la idea de CDD, básicamente es,
+
+0:06:11.040,0:06:14.820
+usted debe ir a la su equipo, hablar con el equipo acerca de,
+
+0:06:15.480,0:06:17.880
+hey, tenemos una expresión lambda aquí,
+
+0:06:17.880,0:06:24.000
+¿si usamos muchas expresiones lambda aumentará la complejidad del código?
+
+0:06:24.000,0:06:27.420
+Si es así, ahora debemos etiquetar estas expresiones lambda.
+
+0:06:27.420,0:06:32.040
+Aquí tenemos una sentencia if. Si usamos muchas sentencias if,
+
+0:06:32.040,0:06:34.320
+¿aumentaría la complejidad? En caso afirmativo,
+
+0:06:34.320,0:06:40.260
+ahora deberíamos etiquetar esta sentencia if. Si utilizamos cierto tipo de clases,
+
+0:06:41.460,0:06:46.080
+cierto tipo de variables, de cierto tipo de objetos,
+
+0:06:46.080,0:06:49.320
+¿aumentaría esto la complejidad? En caso afirmativo,
+
+0:06:49.320,0:06:52.680
+deberíamos marcar este elemento. Este es el objetivo:
+
+0:06:52.680,0:06:55.260
+debe marcar los elementos que aumentan la complejidad
+
+0:06:55.260,0:07:00.780
+y si sobrepasa o limita el presupuesto, deberías refactorizar.
+
+0:07:02.160,0:07:05.760
+Así que la última parte de la charla me gustaría mostrar a usted
+
+0:07:06.780,0:07:12.540
+nuestra experiencia en el uso de construir Handora. Handora es esta plataforma de formación
+
+0:07:12.540,0:07:15.780
+que construimos en Zup y Zuppers ir allí
+
+0:07:15.780,0:07:23.340
+para aprender nuevas tecnologías, nuevos marcos, y por lo que esta plataforma se construye utilizando cuatro cinco
+
+0:07:23.340,0:07:29.880
+servidores - lo siento cinco servicios, y que - hemos utilizado CDD a
+
+0:07:29.880,0:07:35.460
+construir tres de estos servicios aquí. Así que tengo un par de diapositivas aquí a la izquierda
+
+0:07:35.460,0:07:40.740
+y sólo me gustaría mostrar a usted esto que creo que es el más interesante.
+
+0:07:40.740,0:07:54.060
+Así que aquí tengo una figura cuando la línea roja significa el número medio - tamaño de las clases
+
+0:07:54.060,0:08:01.860
+y la línea azul significa el número de clases. Así que a través de la evolución de nuestro software estamos
+
+0:08:01.860,0:08:07.500
+aumentando el número de clases en el producto. Tiene sentido porque el software crece
+
+0:08:07.500,0:08:12.540
+así que también estamos aumentando el número de clases que tenemos en el producto.
+
+0:08:13.320,0:08:21.480
+Sin embargo, por otro lado tenemos esta línea roja aquí que dice que el número de clases -
+
+0:08:21.480,0:08:25.980
+el tamaño de las clases en términos de longitud de los códigos - aumenta al principio,
+
+0:08:25.980,0:08:32.700
+pero en algún momento no aumenta tanto - que comenzó a aplanarse en algunos
+
+0:08:32.700,0:08:36.960
+momento - en algún momento. Y esto aquí es
+
+0:08:36.960,0:08:43.260
+lo que creemos que es uno de los beneficios de la DCC. Aunque estamos aumentando - casi linealmente
+
+0:08:43.260,0:08:50.580
+aumentando el número de clases en el producto, el tamaño en términos de líneas de código
+
+0:08:50.580,0:08:56.940
+no aumentan a la misma velocidad - al mismo crecimiento del número de clases,
+
+0:08:56.940,0:08:58.800
+son más o menos estables.
+
+0:09:01.440,0:09:09.840
+Esto también dice que - esta cifra también dice que aunque tenemos un pequeño número de tamaños,
+
+0:09:09.840,0:09:14.100
+también tenemos algunos tamaños que están un poco por encima de los límites,
+
+0:09:14.100,0:09:17.280
+así que tenemos los límites, pero también entendimos que
+
+0:09:17.280,0:09:24.180
+para algunos tipos de clases - clases de dominio - puede que no tengamos que los límites muy bien hecho.
+
+0:09:26.220,0:09:30.240
+Otra figura que quiero mostrar a usted es acerca de este estudio,
+
+0:09:31.260,0:09:36.900
+que dice que los desarrolladores deben esforzarse por mantener sus métodos por debajo de 24 líneas de código.
+
+0:09:36.900,0:09:45.180
+E hicimos un experimento para asegurarnos de que este producto está por debajo o por encima de las 24 líneas de código.
+
+0:09:45.180,0:09:52.260
+este umbral que el papel sugerido. Y nos damos cuenta de que el 92% de los métodos
+
+0:09:52.260,0:09:59.160
+de este producto están por debajo de este límite. Así que a pesar de que los desarrolladores no se les enseñó a, hey,
+
+0:09:59.880,0:10:07.260
+escribir métodos pequeños debido a que el papel, que finalmente utilizando CDD lograrlo - el
+
+0:10:07.260,0:10:12.060
+mismo objetivo de tener los métodos pequeños. Al hablar con uno de los desarrolladores,
+
+0:10:12.060,0:10:18.360
+dijeron que cada unidad de código se ve afectada porque sabemos que el límite es
+
+0:10:18.360,0:10:22.980
+y lo que entra en ese límite, por lo que el límite es para las clases y
+
+0:10:22.980,0:10:26.520
+también los métodos se ven afectados. Finalmente,
+
+0:10:26.520,0:10:32.220
+también entendió que CDD también podría afectar el tamaño de los métodos, los métodos de prueba,
+
+0:10:32.220,0:10:39.360
+y en este caso nos dimos cuenta de que en promedio que es de 80 líneas de código por método de prueba
+
+0:10:39.360,0:10:43.140
+y Handora tiene una buena cobertura, por lo que en términos generales,
+
+0:10:43.140,0:10:49.320
+es - también sugerimos que CDD también podría afectar el tamaño de los métodos de prueba.
+
+0:10:50.880,0:10:57.120
+Por lo tanto, lo que hemos aprendido hasta ahora es que esto parece ayudar a diseñar estas clases pequeñas.
+
+0:10:57.840,0:11:03.000
+CDD también parece ayudar a diseñar pequeños métodos y pequeños métodos de prueba
+
+0:11:03.000,0:11:05.340
+pero como te mostramos
+
+0:11:05.340,0:11:11.820
+hay algunos buenos esfuerzos para utilizar CDD porque los desarrolladores tienen la bandera,
+
+0:11:11.820,0:11:16.800
+la anotación en el código fuente. Escribimos algunas herramientas de análisis estático
+
+0:11:16.800,0:11:22.740
+pero entendimos que los dos deben ser - debe ser muy bien integrado con el IDES
+
+0:11:22.740,0:11:25.560
+de lo contrario los desarrolladores no las utilizarán, las herramientas.
+
+0:11:25.560,0:11:32.040
+Y también tratamos - también estamos tratando de motivar a otros equipos a utilizar CDD y,
+
+0:11:32.040,0:11:38.460
+debido a la gestión del tiempo y la presión del tiempo de sus agendas,
+
+0:11:38.460,0:11:45.600
+no es fácil de adoptar y comprender. Con esto cierro mi intervención y me alegraría
+
+0:11:45.600,0:11:48.060
+responder a sus preguntas. Gracias.
+
+0:11:49.320,0:11:53.760
+Muy bien, muchas gracias Gustavo, tenemos algunas preguntas,
+
+0:11:53.760,0:11:57.360
+y la primera es, ¿puede este concepto CDD ser
+
+0:11:57.360,0:12:01.500
+vinculado a métricas existentes fáciles de calcular como la complejidad ciclomática.
+
+0:12:03.600,0:12:13.620
+Sí, podría ser si le pasó a la bandera de las mismas ramas y
+
+0:12:13.620,0:12:20.040
+cosas que mide la métrica ciclomática. Si le sucede a la bandera de los mismos elementos que podría
+
+0:12:20.040,0:12:21.420
+ser un proxy, pero,
+
+0:12:21.420,0:12:24.660
+como nosotros - como he mostrado en el ejemplo, también puede marcar, como,
+
+0:12:25.800,0:12:32.100
+clases que se ocupan de las bases de datos, las clases que se ocupan de la interfaz de usuario,
+
+0:12:32.100,0:12:37.860
+así que en ese caso, las medidas ciclomáticas pueden no ayudar.
+
+0:12:38.820,0:12:43.020
+Bien, y una pregunta similar,
+
+0:12:46.500,0:12:49.500
+Voy a leer esta. Seguramente debemos tener significativamente
+
+0:12:49.500,0:12:53.700
+menos de siete cosas en las que pensar ya que necesitamos el resto de la memoria a corto plazo
+
+0:12:53.700,0:13:01.740
+para hacer realmente el pensamiento sobre el problema, así que ¿cuánto - ¿cuántas cosas podemos tener en
+
+0:13:01.740,0:13:05.520
+el código y todavía tienen capacidad de sobra para pensar en qué código para escribir a continuación?
+
+0:13:07.380,0:13:10.380
+Sí, claro, yo... ¿y qué?
+
+0:13:10.380,0:13:16.260
+lo que - lo que sucede en los equipos es que el equipo debe decidir qué parte del código
+
+0:13:16.260,0:13:23.100
+deben medir, deben marcar, bien, así que si el equipo decide que sólo estos pequeños
+
+0:13:23.100,0:13:30.120
+clases aquí y estos otros ciclomáticos tipo de medidas ciclomáticas debe ser marcado,
+
+0:13:30.120,0:13:34.320
+por lo que el equipo sólo tiene que ir a por ello. Así CDD es sobre todo acerca de lo que
+
+0:13:34.320,0:13:42.420
+los equipos creen que sería importante medir. Si creen que hay muchas cosas que medir,
+
+0:13:43.260,0:13:45.780
+como una lista de cien elementos,
+
+0:13:45.780,0:13:51.840
+que también será difícil de entender todos los elementos que deben ser marcados,
+
+0:13:51.840,0:13:57.360
+pero esencialmente le decimos a los equipos que deben medir como, cinco a seis a siete elementos.
