@@ -1,0 +1,367 @@
+0:00:01.560,0:00:04.680
+Hola, muchas gracias Greg por la presentación,
+
+0:00:05.340,0:00:10.500
+mi nombre es John Businge, soy profesor asistente en la UNLV,
+
+0:00:10.500,0:00:14.100
+Dirijo el laboratorio de ingeniería de software aquí en la UNLV.
+
+0:00:15.000,0:00:21.120
+Estoy encantado de presentarles mi trabajo en este evento Never Work in Theory Spring 2023.
+
+0:00:22.020,0:00:26.940
+En primer lugar me gustaría dar las gracias a Brittany y Greg por la invitación a este evento.
+
+0:00:27.900,0:00:32.820
+Voy a presentar a mi trabajo sobre clones parcheados y parches perdidos entre las variantes
+
+0:00:32.820,0:00:35.640
+de una familia de software. Este trabajo ha sido
+
+0:00:35.640,0:00:42.480
+presentado anteriormente en FSE 2022. Nuestro especial agradecimiento a los patrocinadores
+
+0:00:42.480,0:00:45.340
+de este estudio SECO-Assist. En primer lugar
+
+0:00:46.500,0:00:54.180
+Permítanme comenzar con un poco de contexto del estudio. Puede que algunos de ustedes conozcan el software de Equifax,
+
+0:00:54.180,0:01:00.600
+que es un software de puntuación de crédito. Equifax fue identificado con un delito cibernético en 2017,
+
+0:01:02.160,0:01:08.640
+que se solucionó casi de inmediato y esto afectó a más de 150
+millones de personas
+
+0:01:09.660,0:01:14.640
+y se perdieron 400
+millones de dólares estadounidenses. ¿Cómo ocurrió esto?
+
+0:01:14.640,0:01:20.040
+Equifax depende de un software de código abierto llamado Apache Struts.
+
+0:01:20.880,0:01:27.660
+Apache Struts identificó una vulnerabilidad en marzo de 2017 que se solucionó casi de inmediato.
+
+0:01:28.320,0:01:31.260
+Sin embargo, Equifax retrasó
+
+0:01:31.260,0:01:36.960
+para actualizar la dependencia y dos meses después se identificó a Equifax con la violación de datos.
+
+0:01:38.280,0:01:43.860
+Equifax podría haber evitado este problema si hubiera utilizado un sistema de recomendación para ser
+
+0:01:43.860,0:01:51.780
+notificado sobre las actualizaciones de vulnerabilidades. Pasemos ahora al estudio en sí.
+
+0:01:52.380,0:01:56.820
+¿Qué queremos decir con las frases variantes y familias de software?
+
+0:01:57.360,0:02:01.260
+En esta diapositiva y en la siguiente explicaré lo que significan ambas frases.
+
+0:02:03.540,0:02:08.700
+En una plataforma de codificación social es habitual que los desarrolladores hagan un fork del repositorio upstream
+
+0:02:08.700,0:02:15.420
+cuando quieren contribuir. Hay dos tipos de bifurcación:
+
+0:02:16.200,0:02:20.940
+bifurcaciones sociales y bifurcaciones variantes. Los forks sociales se crean para el
+
+0:02:20.940,0:02:30.120
+única razón de introducir nuevas características, como correcciones de errores, refactorizaciones o - refactorizaciones,
+
+0:02:30.840,0:02:37.680
+y cuando estas características están completamente desarrolladas se integran de nuevo en la rama principal
+
+0:02:37.680,0:02:40.980
+o a través de un pull request o a través de cualquier otro medio Git.
+
+0:02:41.580,0:02:48.840
+Y eso marcaría el final de la bifurcación social. Por otro lado, las bifurcaciones variantes son creadas por
+
+0:02:48.840,0:02:53.760
+división de la nueva rama de desarrollo para dirigir el desarrollo en una nueva dirección
+
+0:02:53.760,0:02:58.140
+preservando al mismo tiempo el código del proyecto principal o upstream.
+
+0:02:59.340,0:03:07.080
+Pueden contribuir pero no están obligados. También pueden tener sus propias bifurcaciones que contribuyan
+
+0:03:07.080,0:03:14.520
+a sus líneas principales. Nos centramos en las bifurcaciones variantes
+
+0:03:16.740,0:03:23.220
+y familia variante sería una familia con dos o más variantes.
+
+0:03:24.660,0:03:31.500
+Entonces, ¿por qué nos interesan las bifurcaciones de variantes? Este trabajo está motivado por un
+
+0:03:32.160,0:03:42.060
+que se publicó en ESE en 2022. Investigamos tres ecosistemas de software
+
+0:03:42.060,0:03:48.540
+en GitHub de Android, sistema de lenguaje de programación .NET y sistema de lenguaje de programación JavaScript
+
+0:03:48.540,0:03:55.260
+y descubrimos más de 10.000 variantes. Esto nos dio una indicación de que
+
+0:03:55.260,0:04:01.740
+son bastante frecuentes en GitHub. Además, también descubrimos que las variantes son
+
+0:04:01.740,0:04:06.360
+reales - estas variantes rara vez comparten actualizaciones, lo cual fue bastante sorprendente
+
+0:04:07.020,0:04:13.260
+ya que esperábamos que al menos propagarían correcciones de errores en el código compartido.
+
+0:04:15.060,0:04:22.440
+Así que permítanme - permítanme ahora usando una ilustración explicar el contexto del problema de este estudio.
+
+0:04:22.440,0:04:28.620
+Digamos que tenemos la variante uno, que es nuestra variante fuente o la original,
+
+0:04:30.660,0:04:37.620
+tiene tres revisiones o commits. Así que la variante 2 - un desarrollador de la variante 2 viene
+
+0:04:37.620,0:04:42.360
+y quiere utilizar una variante 1 como punto de partida, por lo que se bifurcará,
+
+0:04:42.360,0:04:49.800
+lo que significa que heredarán todos los commits o revisiones que existan en la variante 1
+
+0:04:49.800,0:04:57.960
+entre la fecha de bifurcación y la fecha de divergencia estas dos variantes comparten commits,
+
+0:04:57.960,0:05:04.140
+y hasta que la variante está muerto, estos los commits están sincronizados,
+
+0:05:04.140,0:05:10.740
+por lo que los commits que están en ellos en el - en esta variante 1 también existe en la variante 2 y viceversa.
+
+0:05:10.740,0:05:13.440
+Por alguna razón después de la fecha de divergencia
+
+0:05:14.040,0:05:20.220
+los dos commits divergen y empiezan a introducir - introducir nuevos commits
+
+0:05:20.220,0:05:24.660
+sin integrar commits pero - que compartir commits.
+
+0:05:27.540,0:05:30.720
+Digamos que en este punto un desarrollador
+
+0:05:30.720,0:05:35.760
+de la variante 1 ha identificado una bolsa en un campo llamado Foo
+
+0:05:35.760,0:05:39.000
+y luego se bifurcan, arreglar el error,
+
+0:05:39.000,0:05:48.300
+y luego fusionar de nuevo esta corrección en el carril principal de la línea principal de desarrollo a través de una solicitud de extracción.
+
+0:05:50.160,0:05:56.220
+En el objetivo - en el objetivo de la cabeza Git - la cabeza Git del objetivo,
+
+0:05:56.220,0:06:00.360
+cuatro escenarios son posibles. Uno, que
+
+0:06:02.880,0:06:09.960
+ha corregido el error, el desarrollador de la variante dos ha corregido el error de forma independiente,
+
+0:06:09.960,0:06:17.160
+así que esto sería duplicación de esfuerzos. O bien, el error, el - Foo es todavía buggy
+
+0:06:17.160,0:06:22.620
+y sin embargo se ha solucionado en la variante 1, por lo que esta sería una oportunidad perdida.
+
+0:06:23.400,0:06:29.820
+Y entonces variante - el desarrollador de la variante 2 tal vez sólo ha corregido parte del error,
+
+0:06:29.820,0:06:35.640
+este sería un caso dividido - el - el Foo es todavía tiene un - un arreglo
+
+0:06:35.640,0:06:40.860
+y es todavía buggy al mismo tiempo. O tal vez otro escenario sería Foo
+
+0:06:40.860,0:06:47.760
+no es interesante porque Foo ha cambiado más allá de la comparación con el Foo de la variante 1.
+
+0:06:50.520,0:06:54.120
+Permítanme darles también un ejemplo concreto de nuestro estudio.
+
+0:06:56.220,0:07:03.720
+Así que estos son dos - se trata de una variante que se llama Kafka que es la variante principal
+
+0:07:03.720,0:07:10.980
+y luego variante LinkedIn Kafka fue bifurcado de Apache Kafka.
+
+0:07:10.980,0:07:13.500
+Así que los dos tienen commits únicos,
+
+0:07:13.500,0:07:19.800
+como puedes ver tenemos 415 commits únicos que se introdujeron en LinkedIn Kafka,
+
+0:07:19.800,0:07:27.420
+bueno son más de 1K commits que - commits únicos que están apareciendo en una forma particular.
+
+0:07:28.260,0:07:33.420
+Así que estos dos han divergido el uno del otro y ya no están sincronizando.
+
+0:07:34.500,0:07:39.060
+Así que otro ejemplo concreto en nuestro estudio del caso de la oportunidad perdida,
+
+0:07:40.800,0:07:48.420
+tenemos una línea con errores en el upstream del software 2KM
+
+0:07:49.080,0:08:05.820
+y esta línea buggy es el resultado de un G10
+con un número de incidencia 12550
+- y 87.
+
+0:08:07.020,0:08:14.340
+Así que el desarrollador identificó esto y luego parcheó esto - parcheó el - el bug
+
+0:08:14.340,0:08:20.700
+e introdujo una nueva línea - una línea parcheada como se puede ver que ahora este viejo
+
+0:08:20.700,0:08:24.180
+línea se ha eliminado y la nueva línea se ha introducido en el proyecto.
+
+0:08:25.200,0:08:33.660
+Sin embargo en la bifurcación divergente en la cabecera Git identificamos que esta línea todavía tiene errores,
+
+0:08:33.660,0:08:40.560
+por lo que se trata de una oportunidad perdida. Ahora permítanme presentarles nuestras preguntas de investigación.
+
+0:08:40.560,0:08:42.960
+Tenemos dos preguntas de investigación principales, la primera era,
+
+0:08:43.620,0:08:48.900
+cuántos casos de duplicación de esfuerzos y oportunidades perdidas existen en las variantes,
+
+0:08:48.900,0:08:51.840
+y luego la segunda pregunta de investigación - investigación
+
+0:08:51.840,0:08:53.460
+pregunta número dos, queríamos averiguar
+
+0:08:53.460,0:09:00.600
+cuántos parches - cuánto retraso técnico parche existe entre la fuente y las variantes de destino -
+
+0:09:00.600,0:09:04.860
+variante de destino - entre la variante de origen y la de destino.
+
+0:09:07.200,0:09:10.920
+Así que el método que utilizamos
+
+0:09:10.920,0:09:16.380
+buscamos palabras clave en la solicitud de extracción que se han fusionado - que se fijaron,
+
+0:09:16.380,0:09:19.680
+la palabra clave como fix, arregla, resuelve,
+
+0:09:19.680,0:09:25.680
+que se fusionaron de nuevo en las diferentes variantes que estamos investigando.
+
+0:09:25.680,0:09:32.700
+Por ejemplo, aquí hay una solicitud de extracción que fue la fijación de un error y se ha fusionado de nuevo en la variante 1.
+
+0:09:33.960,0:09:41.460
+Y luego hemos extraído los archivos de las solicitudes de tirón de - de la fuente y también extrajo
+
+0:09:41.460,0:09:49.560
+archivos de la cabeza Git de la meta. Así que el uso de una herramienta - herramienta que votaría,
+
+0:09:50.340,0:09:55.320
+que utiliza una detección de clones llamado PaReco, comparamos estos archivos y estamos
+
+0:09:55.320,0:09:58.800
+capaz de identificar los casos de duplicación de esfuerzos y la pérdida de oportunidades.
+
+0:10:00.120,0:10:06.120
+Así que este es el gráfico de - de los resultados, como se puede ver, oh perdón,
+
+0:10:09.420,0:10:12.840
+se puede ver que tenemos muchos casos de duplicación de esfuerzos
+
+0:10:12.840,0:10:19.420
+y muchos casos de una oportunidad perdida en uno de nuestros ejemplos en ejecución, Apache Kafka.
+
+0:10:23.100,0:10:34.680
+Y entonces esto es un total que - hemos investigado más de 800
+y - 8K parches de 364 variantes de origen.
+
+0:10:34.680,0:10:41.640
+Como se puede ver que tenemos parches muy interesantes, donde tenemos muchos casos de oportunidades perdidas,
+
+0:10:41.640,0:10:46.500
+muchos casos de duplicación de esfuerzos, y también algunos casos de casos de división
+
+0:10:46.500,0:10:53.400
+donde un error es existente - tenemos parte de la del error que se fija.
+
+0:10:56.520,0:11:02.160
+Nuestros resultados también alcanzaron una muy buena exactitud, precisión y recuerdo, como puede verse.
+
+0:11:03.060,0:11:07.200
+Y luego nuestra segunda pregunta de investigación, ¿cuánto retraso técnico parche existe
+
+0:11:07.200,0:11:10.680
+entre la fuente y las variantes de destino en variantes divididas.
+
+0:11:12.780,0:11:17.700
+Así que cada punto en el gráfico representa una variante de destino en el eje x y el
+
+0:11:17.700,0:11:23.160
+número de semanas que se ha perdido un parche introducido en la variante de origen.
+
+0:11:23.760,0:11:29.700
+Esto significa que, por término medio, se pasan por alto parches en la variante de destino -
+
+0:11:29.700,0:11:33.960
+se han introducido en la variante de origen 52 semanas antes.
+
+0:11:34.620,0:11:37.800
+Así que si usted es un desarrollador, usted no sería - usted
+
+0:11:37.800,0:11:42.780
+no querría estar en esta parte del rectángulo en el gráfico.
+
+0:11:44.880,0:11:49.680
+¿Qué hemos aprendido de los resultados? Aprendimos de los resultados que
+
+0:11:50.760,0:11:54.480
+las variantes en plataformas de soporte muestran un mantenimiento subóptimo,
+
+0:11:54.480,0:12:01.140
+investigadores y profesionales deben unirse para abordar este reto.
+
+0:12:01.140,0:12:05.580
+Hemos desarrollado una prueba de concepto de herramienta de recomendación de parches denominada PaReco,
+
+0:12:05.580,0:12:10.620
+vamos a - todavía estamos trabajando para ampliar este PaReco en una herramienta de recomendación parche.
+
+0:12:11.340,0:12:17.820
+Actualmente estamos ampliando el trabajo sobre la oportunidad perdida,
+
+0:12:19.260,0:12:22.200
+por el que en primer lugar, lo que estamos haciendo que,
+
+0:12:22.200,0:12:28.560
+estamos bifurcando la variante objetivo y, a continuación, utilizando la mejora genética,
+
+0:12:28.560,0:12:37.500
+queremos integrar fijar el parche que se ha introducido en la variante de origen
+
+0:12:37.500,0:12:41.100
+y luego integrado en la variante de destino.
+
+0:12:41.880,0:12:44.580
+Gracias por escucharme, estaré encantado de responder a sus preguntas.
