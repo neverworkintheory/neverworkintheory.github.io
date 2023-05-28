@@ -1,0 +1,434 @@
+0:00:02.520,0:00:06.900
+Soy Sherlock Licorish, vengo de Nueva Zelanda,
+
+0:00:06.900,0:00:13.380
+y hoy voy a responder a la pregunta, ¿puede la mejora genética mejorar
+
+0:00:13.380,0:00:17.160
+fragmentos de código en línea? Así que la base de la charla I
+
+0:00:17.160,0:00:25.320
+supongo que es en cierto sentido relacionados con los problemas antes en la evaluación en torno a la utilización de código.
+
+0:00:26.760,0:00:30.120
+En este contexto fue el lenguaje - grandes modelos de lenguaje, pero
+
+0:00:30.120,0:00:34.800
+igualmente que tipo de reutilización de código realmente casi en el mundo de hoy.
+
+0:00:35.520,0:00:40.920
+Una vez más tocando en lo que Raula acababa de decir también Con cierta confianza inherente.
+
+0:00:40.920,0:00:51.480
+Así que nos fijamos para desarrollar una comunidad por las oportunidades de mejora potencial.
+
+0:00:52.320,0:00:56.940
+La situación es la siguiente. Tenemos montones de código en línea más allá de la
+
+0:00:58.200,0:01:05.160
+Q & A sitios ahora tenemos un buen número de generación automática de código sucediendo y -
+
+0:01:05.160,0:01:10.860
+y como resultado de que, por supuesto, estamos reutilizando y que también se establece - plenamente establecido
+
+0:01:10.860,0:01:15.360
+en la comunidad académica donde podemos ver la reutilización no sólo
+
+0:01:16.680,0:01:22.080
+a través de proyectos de código abierto y así sucesivamente pero igualmente incluso entre los desarrolladores en
+
+0:01:22.080,0:01:25.740
+estos sitios - los contribuyentes de estos sitios. Entonces, ¿cómo lo hacemos realmente,
+
+0:01:26.520,0:01:31.500
+tipo de, tomar esto como una buena oportunidad para tipo de ayudar a la comunidad de alguna manera?
+
+0:01:32.340,0:01:39.960
+Así que el reto es, fragmentos pueden ser incompletos y, por supuesto, propenso a errores e igualmente
+
+0:01:41.520,0:01:46.620
+hemos observado errores no sólo en Stack Overflow pero muchos de
+
+0:01:46.620,0:01:51.720
+las plataformas bastante - errores bastante significativos. Estas observaciones se extienden el trabajo de los estudiantes - por lo que
+
+0:01:51.720,0:01:57.780
+a menudo los estudiantes copiar el código de en línea inconsciente de - de los errores en el código
+
+0:01:57.780,0:02:04.020
+y supongo que presentar esos en un - en las tareas y así sucesivamente y otros ejemplos que presentan.
+
+0:02:04.980,0:02:10.980
+Pero los errores también son frecuentes en la comunidad de código abierto, entre los desarrolladores propietarios,
+
+0:02:10.980,0:02:16.560
+y los propios usuarios finales informan de errores. Un error popular allí se destaca el
+
+0:02:16.560,0:02:23.460
+Nissan Connect EV donde un usuario final realmente fue capaz de ver el código copiado de Stack Overflow
+
+0:02:23.460,0:02:28.440
+con comentarios de ese código realmente visible en el sistema Connect.
+
+0:02:28.440,0:02:33.420
+Así que los fragmentos se reutilizan y están disponibles en todas partes.
+
+0:02:34.020,0:02:36.840
+Así que esto es un reto para la comunidad,
+
+0:02:36.840,0:02:40.080
+y la comunidad académica es especialmente consciente de ello,
+
+0:02:40.620,0:02:46.440
+y por lo que en realidad hemos estado investigando estos portales para ver cuáles son los
+
+0:02:46.440,0:02:50.580
+problemas que prevalecen allí y cómo podríamos, supongo,
+
+0:02:50.580,0:02:57.300
+apoyar a la comunidad con soluciones. Un estudio específico analizó la seguridad
+
+0:02:58.260,0:03:04.800
+y encontró el código copiado de en línea a ser razonablemente inseguro en relación -
+
+0:03:04.800,0:03:09.600
+el código que es en realidad en el sistema de código, que no es en realidad el uso de código copiado de en línea.
+
+0:03:10.320,0:03:18.420
+E igualmente, el código realmente copiado en línea fue, más o menos, accedido por el esfuerzo que se necesita
+
+0:03:18.420,0:03:20.520
+para que sea utilizable y, a veces
+
+0:03:21.180,0:03:25.320
+en el esfuerzo en el - en el, tipo de, es como para quedar atrapado y obtener una solución,
+
+0:03:25.320,0:03:31.200
+a veces los desarrolladores pueden tomar más tiempo tratando de perfeccionar ese objetivo para que sea aceptable.
+
+0:03:32.820,0:03:37.440
+Pero igualmente, el código ha sido evaluado para la cohesión y el acoplamiento y todo eso,
+
+0:03:37.440,0:03:43.200
+donde se ha demostrado que a veces no es tan bueno como uno esperaría que fuera.
+
+0:03:43.200,0:03:49.140
+Así que la comunidad es muy consciente de que hay problemas con el código en línea
+
+0:03:49.740,0:03:56.580
+pero todavía usamos estos fragmentos y creo que sería difícil para
+
+0:03:56.580,0:04:01.560
+cualquier persona para reclamar a sí mismos para estar libre de pecado en relación con la reutilización de fragmentos de línea.
+
+0:04:01.560,0:04:07.260
+Así que de alguna manera usamos estos fragmentos de todos modos, la pregunta es, por supuesto, no "si" - que
+
+0:04:07.260,0:04:12.840
+sabemos que va a suceder, que vamos a utilizar. Así que el estado actual del juego como tal,
+
+0:04:12.840,0:04:19.440
+que la investigación reciente muestra que gran parte del código que está realmente disponible
+
+0:04:19.440,0:04:25.080
+en línea no es necesariamente generado o proporcionado allí para su reutilización como lo hacemos.
+
+0:04:25.080,0:04:31.080
+Por lo general, el código en línea para que podamos ver que, en realidad se da más o menos para que nosotros
+
+0:04:31.080,0:04:35.340
+en realidad, una especie de, ampliar y perfeccionar y para - y una especie de proporcionar -
+
+0:04:35.340,0:04:39.780
+proporcionar nuestras soluciones de una manera que no está necesariamente destinado sólo para copiar y reutilizar.
+
+0:04:39.780,0:04:44.820
+Así que la cosa es que los desarrolladores en línea y la gente
+
+0:04:44.820,0:04:48.780
+que aportan estas contribuciones no son necesariamente culpables desde esa perspectiva,
+
+0:04:48.780,0:04:52.740
+en gran medida porque no esperan que reutilicemos el código que está disponible en línea.
+
+0:04:53.820,0:04:59.100
+Así que proporcionan un poco de ella. Así que por lo general proporcionará al menos
+
+0:04:59.100,0:05:05.880
+dos o tres fragmentos para cada pieza de - para cada solución que se proporciona en un sitio de preguntas y respuestas,
+
+0:05:05.880,0:05:09.900
+si se trata de código o Stack Overflow, hay abundancia de código para cada
+
+0:05:09.900,0:05:12.000
+pregunta que se responde. E igualmente,
+
+0:05:12.960,0:05:19.020
+fragmentos será de menos de 100 líneas de código, lo que sugiere una vez más que la - la comunidad
+
+0:05:19.020,0:05:24.840
+no es necesariamente proporcionar código al por mayor para ser realmente saludable
+
+0:05:24.840,0:05:28.500
+y para resolver todas las soluciones, pero su es una abundancia de cuestiones
+
+0:05:29.700,0:05:35.280
+más allá de los problemas de legibilidad y fiabilidad, también hay problemas de rendimiento y seguridad,
+
+0:05:35.280,0:05:41.760
+y sospecho que estos grandes modelos de lenguaje que se entrenan en el código en línea potencialmente
+
+0:05:41.760,0:05:46.080
+heredar muchas de estas soluciones como una empresa se acaba de aludir.
+
+0:05:46.080,0:05:50.160
+Así que hay - hay errores son bastantes errores en línea.
+
+0:05:50.820,0:05:57.180
+Así que hemos estado realmente luchando con esta cuestión de, ¿cómo podemos, más o menos,
+
+0:05:57.180,0:06:00.420
+ayudar con el esfuerzo de mejora. Sabemos que vamos a utilizarlo,
+
+0:06:00.420,0:06:04.620
+sabemos que hay errores, podemos, de alguna manera, apoyar a la comunidad.
+
+0:06:04.620,0:06:06.960
+Así que hemos intentado con estas preguntas
+
+0:06:07.800,0:06:13.620
+desde hace un par de años y - y yo y mis colegas, en particular en
+
+0:06:13.620,0:06:18.000
+Australia, decidió, ¿cómo podemos, más o menos, ver cómo podríamos realmente,
+
+0:06:20.100,0:06:25.500
+utilizar técnicas de mejora de la IG, para ver cómo podríamos realmente
+
+0:06:25.500,0:06:30.600
+ayudar a gran escala con este nivel de mejora. Así que aquí tenemos una agenda preliminar,
+
+0:06:30.600,0:06:34.320
+donde tuvimos cerca de 8000 fragmentos de Stack Overflow.
+
+0:06:35.460,0:06:39.840
+Este repositorio se utilizaba para otras cosas, así que teníamos algo de código Java
+
+0:06:39.840,0:06:47.400
+y lo pasamos por un verificador estático - PMD - así que estoy seguro de que todos ustedes saben lo que es PMD,
+
+0:06:47.400,0:06:53.100
+pero sólo brevemente, es una especie de analizador estático que comprueba anti-patrones
+
+0:06:53.100,0:06:59.100
+especialmente en torno a diversos tipos de puntos de más legibilidad relacionados con los de seguridad,
+
+0:07:00.540,0:07:05.040
+y luego usamos GIN, y GIN es un marco de mejora genética,
+
+0:07:05.040,0:07:08.580
+y la mejora genética esencialmente es la computación inspirada en la naturaleza.
+
+0:07:08.580,0:07:18.360
+Así que tipo de mira a la evolución de un espacio de código de una manera que podríamos ser capaces de tipo de encontrar la
+
+0:07:18.360,0:07:23.100
+solución óptima para resolver un problema. Así que en pocas palabras que tipo de mutar
+
+0:07:23.100,0:07:29.760
+el código utilizando algunos criterios que en realidad evaluar con posterioridad a la mutación de la aptitud
+
+0:07:29.760,0:07:34.140
+y hemos tipo de promover más de los, tipo de, más fuertes,
+
+0:07:34.140,0:07:36.960
+el que pasa la prueba de aptitud contra el que no lo hace.
+
+0:07:36.960,0:07:42.240
+Así que, en primer lugar, evaluamos las cuestiones relacionadas con el rendimiento.
+
+0:07:45.780,0:07:51.360
+Así que tratamos de ejecutar PMD en primer lugar y nos encontramos con bastantes errores,
+
+0:07:52.680,0:07:58.080
+más de 30.000 en este caso, de violaciónes. Por supuesto, como hemos dicho, estos fragmentos de código
+
+0:07:58.080,0:08:03.240
+no fueron necesariamente copiados - no fueron necesariamente proporcionados a ser sano,
+
+0:08:03.240,0:08:08.760
+por lo que entendemos que estas violaciónes se les dio - es - se debe permitir, en cierto modo.
+
+0:08:09.600,0:08:16.200
+Encontramos 135 de las normas violadas, y señalamos las normas relacionadas con el rendimiento,
+
+0:08:16.200,0:08:23.160
+por lo que las cosas relacionadas con el uso de cadenas y así sucesivamente. Y entonces realmente ejecutar el - el GIN al azar
+
+0:08:23.160,0:08:26.760
+muestreador y nos mutaciones ocho tipos diferentes de mutaciones,
+
+0:08:27.420,0:08:35.400
+y en realidad no hemos hecho que a partir de 770 parches que ya no tenía ningún problema de rendimiento.
+
+0:08:36.360,0:08:40.440
+Así que esencialmente las mutaciones en realidad resolver estos problemas,
+
+0:08:40.440,0:08:45.000
+y de esos parches, 58 en realidad tenía código compilable,
+
+0:08:45.000,0:08:48.060
+por lo que realmente puede compilar el código y utilizar el código.
+
+0:08:49.800,0:08:53.460
+Así que tipo de comprobar para ver lo que era el tipo de naturaleza de la
+
+0:08:53.460,0:08:58.500
+mutación que dio lugar a código sano y en gran medida eran mutaciones relacionadas,
+
+0:08:58.500,0:09:05.100
+pero también hay un poco de otras mutaciones que realmente trabajó en - en particular, sin embargo,
+
+0:09:05.100,0:09:13.620
+los que en realidad, más o menos, dio lugar a la mayoría de los, más o menos, problemas resueltos estaban relacionados con la necesidad.
+
+0:09:13.620,0:09:21.840
+Hay algunos con derechos de autor también. Así que esto fue alentador en términos de lo que encontramos,
+
+0:09:21.840,0:09:26.100
+pero igualmente encontramos bastantes problemas como resultado de esto también.
+
+0:09:26.100,0:09:32.520
+Así que tuvimos, por supuesto, los falsos positivos para hacer frente a, y - y, por supuesto, que significaba que a veces
+
+0:09:32.520,0:09:38.100
+errores fueron reportados que realmente errores. Tuvimos que mejorar el análisis sintáctico y luego, por supuesto
+
+0:09:38.100,0:09:41.100
+crowdsource reglas, nos acortaron las reglas.
+
+0:09:41.760,0:09:47.280
+Igualmente, nosotros - creemos que necesitábamos un mejor muestreo, un mejor muestreo de código,
+
+0:09:47.280,0:09:50.940
+y, por supuesto, propiedades no funcionales que en realidad no podríamos haber detectado.
+
+0:09:51.480,0:09:55.680
+Ahora debo advertir que GIN se suele utilizar con casos de prueba, pero nosotros no lo hicimos,
+
+0:09:55.680,0:10:00.060
+así que ejecutamos PMD, ejecutamos GIN, y luego ejecutamos PMD de nuevo,
+
+0:10:00.060,0:10:03.780
+por lo que en cierto sentido esto - nuestro resultado puede ser inflado,
+
+0:10:03.780,0:10:09.540
+en que si podemos haber ejecutado algunas de las pruebas de unidad tal vez algunos de los código puede haber fallado.
+
+0:10:10.380,0:10:17.100
+Así que tenemos esto publicado en este documento en el que tipo de seguimiento para mirar más en más
+
+0:10:17.100,0:10:19.920
+detalle en algunas de las mutaciones y por lo que tipo de proporcionar este
+
+0:10:19.920,0:10:25.680
+allí si desea realizar un seguimiento de eso. Gracias. Debo dar las gracias al equipo,
+
+0:10:26.400,0:10:30.240
+pero más allá de eso también de las fuentes de financiación que apoyaron el trabajo,
+
+0:10:30.240,0:10:34.500
+y también por la oportunidad de presentar aquí, Greg y equipo.
+
+0:10:35.160,0:10:39.240
+Así que probablemente pueda repetir, perdón, volver a plantear la pregunta aquí,
+
+0:10:40.380,0:10:43.440
+y en cierto sentido podría decir en contraposición como una declaración,
+
+0:10:43.440,0:10:46.680
+Creo que la mejora genética podría ayudar a mejorar el código.
+
+0:10:47.280,0:10:52.020
+Muchas gracias, encantado de recibir sus opiniones. Muy bien, muchas gracias, Sherlock,
+
+0:10:52.920,0:10:55.080
+de nuevo preguntas de nuestros espectadores,
+
+0:10:55.080,0:10:58.740
+y la primera se remonta a una pregunta formulada anteriormente:
+
+0:10:59.940,0:11:06.780
+¿quién se lleva el mérito de escribir el código que producen este tipo de algoritmos genéticos?
+
+0:11:08.940,0:11:14.760
+Así que - por lo que el algoritmo genético en este contexto se utiliza para mejorar el código
+
+0:11:15.480,0:11:22.800
+Supongo que si nos fijamos en Copilot o uno de los - los grandes modelos de lenguaje,
+
+0:11:23.700,0:11:29.280
+en realidad creo que no tenemos la legislación para, tipo de, realmente la policía y para, tipo de,
+
+0:11:29.280,0:11:35.520
+cuidar este paradigma como deberíamos. Creo que con el tiempo lo conseguiremos,
+
+0:11:35.520,0:11:41.520
+pero creo que en el contexto de la mejora genética - genética
+
+0:11:41.520,0:11:48.000
+mejora es sólo proporcionar un marco con el que podríamos realizar experimentos de código.
+
+0:11:48.000,0:11:54.660
+Aquí las mutaciones se realizan para mejorar el código - código está en línea, y es en realidad, por supuesto
+
+0:11:54.660,0:11:58.440
+abierto para su uso en el caso de Stack Overflow, por ejemplo,
+
+0:11:58.440,0:12:05.820
+se da - la API - el motor SQL se da para nosotros para consultar como es.
+
+0:12:05.820,0:12:10.260
+Si o no que debe ser permitido por la comunidad - en el momento en que supongo que no es del todo
+
+0:12:10.260,0:12:15.420
+maduro y listo para hacer frente a eso, así que en el - en el caso actual
+
+0:12:15.420,0:12:20.280
+lo usamos cuando está disponible. Vale y otra pregunta es,
+
+0:12:21.000,0:12:26.760
+son estos algoritmos genéticos lo suficientemente rápido que se puede utilizar en tiempo real para sugerir código
+
+0:12:26.760,0:12:30.300
+mejoras o alteraciones de código como el código se está desarrollando?
+
+0:12:30.840,0:12:33.000
+Muy buena pregunta. Creo que
+
+0:12:34.620,0:12:39.960
+en su mayor parte, los marcos más amplios necesitarán recursos informáticos,
+
+0:12:39.960,0:12:46.020
+por lo que no va a ser fácil para alguien en un entorno con ordenadores de bajos recursos
+
+0:12:46.020,0:12:49.740
+para utilizar realmente estos marcos. La cosa es, sin embargo, creo que en
+
+0:12:49.740,0:12:54.180
+la mayoría de los desarrolladores contextos tienen el tipo de marco o el medio ambiente
+
+0:12:54.180,0:12:57.000
+que nos permitirá utilizar estos algoritmos con facilidad,
+
+0:12:58.140,0:13:02.640
+y cada vez más están diseñados para la optimización de tal manera que si es posible
+
+0:13:02.640,0:13:08.580
+que seamos capaces de aprovecharlos. Pero como con todo lo demás es, más o menos,
+
+0:13:08.580,0:13:12.780
+no hay una talla única para todos, supongo, se trata de tener una evaluación de su
+
+0:13:12.780,0:13:16.980
+realidad y luego, por supuesto, adaptar una solución para adaptarse a su caso.
