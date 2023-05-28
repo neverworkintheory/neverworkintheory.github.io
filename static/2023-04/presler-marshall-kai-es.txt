@@ -1,0 +1,561 @@
+0:00:00.240,0:00:03.180
+Así que buenos días a todos, mi nombre es Kai,
+
+0:00:03.180,0:00:06.240
+y os hablo desde el frío y lluvioso Maine esta mañana.
+
+0:00:07.440,0:00:12.300
+Al igual que Ethel, de nuestra última sección, yo también me dedico a la enseñanza de la informática,
+
+0:00:12.300,0:00:17.520
+por lo que estoy presentando un proyecto reciente que hice como yo estaba terminando mi doctorado el año pasado.
+
+0:00:18.840,0:00:24.360
+Así que la motivación detrás de este proyecto es que el trabajo en equipo es un componente básico en profesional
+
+0:00:24.360,0:00:26.640
+ingeniería de software. Como casi todos
+
+0:00:26.640,0:00:30.780
+ingenieros de software trabajan en equipo, por lo que es esencial para la licenciatura
+
+0:00:30.780,0:00:36.060
+programas de ciencias de la computación para enseñar a los estudiantes las habilidades de cómo trabajar eficazmente en un equipo
+
+0:00:36.060,0:00:40.920
+y cómo hacer contribuciones valiosas a pesar de la dificultad de dividir un problema.
+
+0:00:41.700,0:00:42.840
+Dicho esto
+
+0:00:42.840,0:00:47.940
+hay algunas pruebas de que los estudiantes pueden estar inclinados a free ride de sus compañeros
+
+0:00:47.940,0:00:51.990
+y luego reciben una calificación que no corresponde a sus contribuciones -
+
+0:00:51.990,0:00:54.840
+reciben crédito por cosas que sus - sus compañeros de equipo han hecho.
+
+0:00:54.840,0:00:59.460
+Y yo creo que gran parte de la dificultad con esto es que,
+
+0:00:59.460,0:01:02.760
+o gran parte de la razón de esto, es que es difícil de precisión
+
+0:01:02.760,0:01:06.360
+identificar las contribuciones que los estudiantes hacen a un proyecto de equipo,
+
+0:01:06.360,0:01:10.680
+sobre todo a medida que el proyecto se hace más grande y que el equipo se hace más grande.
+
+0:01:10.680,0:01:15.120
+Y si los ayudantes de cátedra tienen dificultades para identificar lo que han hecho los alumnos,
+
+0:01:15.120,0:01:19.440
+tendrán dificultades para dar a los estudiantes información útil sobre sus contribuciones
+
+0:01:19.440,0:01:23.580
+y animar a los estudiantes a contribuir plenamente al proyecto.
+
+0:01:24.420,0:01:27.360
+Y mi - mi pregunta aquí, la pregunta central,
+
+0:01:27.360,0:01:34.620
+Voy a entrar en los detalles en un momento, se pregunta si auto-generados resúmenes de lo que
+
+0:01:34.620,0:01:39.240
+los diversos miembros de un equipo han sido hasta se presentan a los asistentes de enseñanza,
+
+0:01:39.240,0:01:45.300
+¿pueden utilizarlo los asistentes para conocer mejor los detalles de lo que ha hecho cada alumno?
+
+0:01:45.300,0:01:49.620
+y luego darles retroalimentación y calificaciones de acuerdo a esto.
+
+0:01:50.400,0:01:56.580
+Así que el contexto que estudié para esto, fue un curso de programación Java de segundo nivel
+
+0:01:56.580,0:02:03.780
+en la Universidad Estatal de Carolina del Norte, donde hice mi doctorado. Y este curso cuenta con una sección de conferencias que
+
+0:02:03.780,0:02:08.400
+tiene cuatro proyectos de varias semanas asociados con él
+
+0:02:08.400,0:02:13.680
+y también una sección de laboratorio asociada. Y aquí es donde los estudiantes realmente aprenden la
+
+0:02:13.680,0:02:17.820
+trabajo colaborativo - el trabajo en equipo - a medida que trabajan en equipos de tres o
+
+0:02:17.820,0:02:23.280
+cuatro estudiantes en estas actividades de laboratorio. Y la forma en que el curso está configurado es que
+
+0:02:23.280,0:02:28.440
+la calificación de laboratorio es en su mayoría ya automatizado a través de un montón de secuencias de comandos y el uso de
+
+0:02:28.440,0:02:31.260
+plataformas de integración continua. Realmente,
+
+0:02:31.260,0:02:36.240
+lo único que los TA califican manualmente son las contribuciones de código de los estudiantes
+
+0:02:36.240,0:02:42.000
+y luego evaluar si el - el Java doc describe con precisión la - el código en cuestión.
+
+0:02:43.140,0:02:47.160
+Para las tareas de laboratorio, los estudiantes trabajan en equipos de tres o cuatro personas,
+
+0:02:47.160,0:02:53.160
+durante tres o cuatro semanas en un tramo, momento en el que los equipos están revueltos y
+
+0:02:53.160,0:02:58.020
+todo este proceso se repite tres veces y los estudiantes completan un total de
+
+0:02:58.020,0:03:04.080
+de 11 laboratorios a lo largo del semestre. Así que mirando lo que estudié en - con más detalle,
+
+0:03:04.080,0:03:06.480
+mis preguntas de investigación fueron, en primer lugar,
+
+0:03:06.480,0:03:11.940
+¿pueden los resúmenes de contribución automatizados ayudar a los TA a calificar las tareas más rápidamente?
+
+0:03:11.940,0:03:16.020
+pasar por el proceso más rápido. Y esto lo encontré básicamente, no.
+
+0:03:17.160,0:03:18.360
+A continuación, consideré
+
+0:03:18.360,0:03:23.460
+si los resúmenes de contribución pueden ayudar a los tutores a calificar las tareas de forma más coherente,
+
+0:03:23.460,0:03:28.680
+identificar de forma más coherente lo que han hecho los estudiantes que si no tuvieran ayuda
+
+0:03:29.220,0:03:32.640
+En tercer lugar, consideré si los AT prefieren la calificación
+
+0:03:32.640,0:03:37.380
+cuando disponen de esta ayuda y, por último, si puede ayudar a proporcionar
+
+0:03:37.380,0:03:41.460
+estudiantes con una mejor retroalimentación, retroalimentación más procesable que
+
+0:03:41.460,0:03:45.660
+que pueden utilizar para averiguar cuando están contribuyendo suficientemente al esfuerzo del equipo
+
+0:03:46.320,0:03:50.400
+y cuándo no. Así que para responder a estas preguntas de investigación,
+
+0:03:51.420,0:03:58.500
+He diseñado un algoritmo que presenta resúmenes de alto nivel de lo que cada persona en un equipo ha hecho.
+
+0:03:58.500,0:04:00.180
+Y la forma en que funciona es,
+
+0:04:00.180,0:04:05.400
+primero se tira de metadatos acerca de un repositorio - cosas como commit hashes, marcas de tiempo,
+
+0:04:05.400,0:04:11.220
+autores, archivos modificados, ese tipo de cosas - y lo lanza en una base de datos para su uso posterior.
+
+0:04:12.420,0:04:13.200
+A continuación
+
+0:04:13.200,0:04:15.960
+son dos copias del repositorio que se clonan.
+
+0:04:15.960,0:04:21.720
+Y luego para cada uno de los - los archivos modificados en cada una de las confirmaciones,
+
+0:04:22.320,0:04:28.920
+un árbol de sintaxis abstracta se construye en representación de la - el archivo antes de la confirmación y después de la confirmación.
+
+0:04:28.920,0:04:32.820
+Y sé que AST son una especie de abstracto por definición,
+
+0:04:32.820,0:04:35.820
+así que un ejemplo para que sea un poco más concreto.
+
+0:04:36.360,0:04:41.700
+Si tenemos una clase Java que se parece a esto, se reducirá a la sintaxis abstracta
+
+0:04:41.700,0:04:46.440
+árbol que tenemos en el lado derecho. Y luego, si hacemos algunos cambios en la clase,
+
+0:04:46.440,0:04:51.360
+la adición de un nuevo campo y un nuevo método, vemos algunos cambios correspondientes
+
+0:04:51.360,0:04:55.980
+al árbol de sintaxis abstracta. Así que la forma en que mi algoritmo funciona es,
+
+0:04:55.980,0:04:59.100
+construye estos ASTs de ambas revisiones del archivo
+
+0:04:59.100,0:05:04.440
+y, a continuación, se árbol de diferencia de la AST para averiguar lo que se ha añadido, cambiado,
+
+0:05:04.440,0:05:10.440
+o eliminado entre las dos versiones. Y entonces esto se repite para cada archivo cambiado
+
+0:05:10.440,0:05:16.020
+en un commit y todos los commits dentro de un período de tiempo, momento en el que los cambios se binned o
+
+0:05:16.020,0:05:20.220
+resumido para obtener una visión de alto nivel de lo que cada persona ha estado haciendo.
+
+0:05:20.880,0:05:26.520
+Así que para evaluar este algoritmo y averiguar si ayuda a TAs hacer un mejor trabajo o no,
+
+0:05:27.420,0:05:34.080
+Recluté a 13 antiguos o actuales asistentes técnicos de informática entre mis compañeros del programa de doctorado,
+
+0:05:34.080,0:05:38.520
+12 de los cuales tenían experiencia en la calificación de proyectos en equipo.
+
+0:05:39.060,0:05:41.580
+Y en mi estudio les encomendé la tarea de,
+
+0:05:41.580,0:05:43.260
+en primer lugar, la clasificación de algunos proyectos,
+
+0:05:43.260,0:05:48.420
+a continuación, evaluar y reflexionar sobre algunos comentarios de sus compañeros en el estudio,
+
+0:05:49.200,0:05:53.460
+y, por último, reflexionar sobre la experiencia: sobre el estudio, sobre las contribuciones,
+
+0:05:53.460,0:06:00.720
+los resúmenes de las contribuciones que se les facilitaron. En la primera parte del estudio les pedí que
+
+0:06:00.720,0:06:05.580
+con la calificación de un grupo de tareas de los estudiantes y he utilizado una hoja de cálculo de Google Sheets para
+
+0:06:05.580,0:06:09.720
+esto sólo para imitar la - la experiencia típica que están familiarizados con.
+
+0:06:09.720,0:06:15.900
+Y en la hoja de cálculo que eran - que tenía filas correspondientes a cada uno de los repositorios,
+
+0:06:15.900,0:06:19.380
+cada uno de los proyectos que iban a calificar, y luego columnas con información
+
+0:06:19.380,0:06:22.380
+acerca de qué hacer, por lo que los enlaces a la automatizado
+
+0:06:22.380,0:06:27.420
+resúmenes de alrededor de la mitad de los repositorios, no hay resúmenes automatizados para la otra mitad,
+
+0:06:28.380,0:06:32.160
+enlaces a los repositorios de GitHub para que pudieran ver todo el código,
+
+0:06:32.160,0:06:36.480
+la historia del proyecto que iban a mirar, y luego columnas para que rellenen,
+
+0:06:36.480,0:06:42.240
+calificaciones y retroalimentación para el - los estudiantes cuyos proyectos que estaban calificando.
+
+0:06:43.440,0:06:47.160
+Así que llenaron esto para cada uno de los tres estudiantes en el equipo.
+
+0:06:47.160,0:06:51.960
+He recortado los estudiantes B y C por lo que sólo tenemos A aquí,
+
+0:06:51.960,0:06:57.300
+sólo para que podamos leer las cosas. Y luego en la segunda parte del estudio,
+
+0:06:57.300,0:07:01.680
+pedí a los profesores que reflexionaran sobre algunos de los comentarios de sus compañeros,
+
+0:07:01.680,0:07:05.520
+elegir entre pares de comentarios que sus compañeros habían proporcionado
+
+0:07:06.240,0:07:09.660
+sobre cuál les parecía más procesable y con el que podían hacer más cosas.
+
+0:07:10.380,0:07:13.200
+Así que para resumir lo que hemos aprendido en este punto,
+
+0:07:14.100,0:07:19.560
+Me di cuenta de que los proyectos de grado TAs mucho más coherente cuando tienen el automatizado
+
+0:07:19.560,0:07:24.060
+resúmenes de contribución para ayudarles en comparación con hacerlo totalmente sin ayuda.
+
+0:07:24.660,0:07:29.940
+Sin embargo, al mismo tiempo, la coherencia, la fiabilidad entre evaluadores, es bastante baja,
+
+0:07:29.940,0:07:33.600
+así que uso el alfa de Krippendorff como una prueba estadística aquí,
+
+0:07:33.600,0:07:41.100
+y Krippendorff aboga por valores alfa realmente superiores a 0,8 siempre que sea posible,
+
+0:07:41.100,0:07:44.100
+e incluso con los resúmenes de contribución para ayudarles,
+
+0:07:44.100,0:07:49.140
+Las AATT no alcanzaron este objetivo. Así que está claro que aún queda trabajo por hacer
+
+0:07:49.140,0:07:55.140
+que hablaré en un momento. A continuación, en cuanto a si las AATT
+
+0:07:55.140,0:07:58.140
+realmente optan por utilizar esto o no, porque yo había llegado con todos los
+
+0:07:58.140,0:08:02.040
+herramientas más brillantes del mundo, pero si el TAs odiarlos no es de mucho valor,
+
+0:08:03.120,0:08:07.920
+Descubrí que todos los participantes preferían utilizar los resúmenes de contribuciones a la hora de calificar
+
+0:08:07.920,0:08:15.360
+y 11 de los 13 los prefieren totalmente. Y desglosándolos por características
+
+0:08:15.360,0:08:19.500
+vi que las AATT consideraban que la mayoría de las características eran bastante útiles,
+
+0:08:20.400,0:08:22.560
+tanto la simple información de
+
+0:08:22.560,0:08:25.800
+aquí está una lista de commits de lo que cada persona ha hecho,
+
+0:08:25.800,0:08:30.720
+y luego las cosas más avanzadas que vinieron de mi algoritmo de análisis del programa
+
+0:08:30.720,0:08:36.300
+y muestra TAs donde en el proyecto los estudiantes han participado.
+
+0:08:37.140,0:08:40.920
+Y, por último, en términos de resultados, volver a los estudiantes,
+
+0:08:42.660,0:08:47.040
+Pedí a los profesores que reflexionaran sobre los comentarios de sus compañeros.
+
+0:08:48.240,0:08:52.140
+y... que me dijeran cuál de los comentarios... cuál... cuál de los comentarios pensaban que era el más adecuado para ellos.
+
+0:08:52.140,0:08:56.820
+fue más útil, más procesable, y consideraron que la retroalimentación de las tareas
+
+0:08:56.820,0:09:01.500
+que se habían calificado con los resúmenes de contribución automatizados era más procesable
+
+0:09:02.040,0:09:05.460
+que la retroalimentación procedente de las tareas calificadas manualmente.
+
+0:09:06.000,0:09:11.580
+Y, además, me di cuenta de que los TAs dar más crédito parcial en comparación con
+
+0:09:11.580,0:09:14.520
+crédito completo o ningún crédito cuando tienen la
+
+0:09:14.520,0:09:18.360
+resúmenes de contribución disponibles, lo que sugiere que son más capaces de - a
+
+0:09:18.360,0:09:23.160
+ver los matices e identificar las contribuciones parciales, a diferencia de,
+
+0:09:23.160,0:09:25.740
+has hecho básicamente nada o has hecho un montón.
+
+0:09:27.060,0:09:32.340
+Así que eso es más o menos lo que aprendí. En cuanto a, más o menos, las implicaciones de esto,
+
+0:09:33.480,0:09:40.200
+a pesar de un tamaño relativamente pequeño de la muestra - que sólo tenía poco más de una docena de participantes en una de dos horas
+
+0:09:40.200,0:09:43.500
+sección de laboratorio donde corrí el estudio - a pesar de esto,
+
+0:09:43.500,0:09:47.640
+el estudio de laboratorio todavía mostró valor para el algoritmo de resumen de contribución
+
+0:09:47.640,0:09:53.160
+para ayudar a los TAs a identificar lo que han hecho los estudiantes y luego darles
+
+0:09:53.160,0:09:59.040
+calificaciones y retroalimentación en consecuencia. Estoy haciendo un estudio de seguimiento en el aula en este momento
+
+0:09:59.040,0:10:02.340
+donde estoy tratando de ver, puede esta retroalimentación realmente ayudar a
+
+0:10:02.340,0:10:07.080
+los estudiantes hacen mejor semestre o - asignación en la asignación en el transcurso de un semestre,
+
+0:10:07.080,0:10:10.200
+tratando de ver - si los estudiantes encuentran la retroalimentación más procesable,
+
+0:10:10.200,0:10:12.720
+si mejoran más en el transcurso del semestre.
+
+0:10:14.400,0:10:16.080
+En cuanto al trabajo futuro obvio,
+
+0:10:16.080,0:10:20.340
+obviamente hay mucho más que va a entrar en el trabajo de ingeniería de software que sólo el código Java.
+
+0:10:21.360,0:10:26.640
+En términos de código Python, código JavaScript, pero por supuesto también las contribuciones no código,
+
+0:10:26.640,0:10:29.640
+el "todo lo demás", el diseño, la gestión de proyectos,
+
+0:10:29.640,0:10:34.320
+las discusiones en torno al enfriador de agua que ayudan al equipo a trabajar con éxito.
+
+0:10:34.320,0:10:38.280
+Así que el reto pendiente sigue siendo, ¿cómo tenemos en cuenta todo lo demás?
+
+0:10:39.360,0:10:44.160
+Y estoy - Creo que un lenguaje agnóstico AST análisis puede llevarnos parte del camino allí,
+
+0:10:44.160,0:10:49.080
+pero todavía hay preguntas abiertas sobre cómo dar cuenta de las contribuciones no de código,
+
+0:10:49.080,0:10:51.660
+que es lo que estoy pensando en ponderar este
+
+0:10:51.660,0:10:55.680
+verano y averiguar cuáles son los - los próximos pasos que podemos tomar con esto.
+
+0:10:56.520,0:11:00.060
+Así que para resumir lo que hice y lo que aprendí de ella,
+
+0:11:00.960,0:11:05.700
+He diseñado un algoritmo que presentará resúmenes de alto nivel de lo que
+
+0:11:05.700,0:11:08.520
+los estudiantes en los equipos o - o realmente cualquier persona en un
+
+0:11:08.520,0:11:12.600
+equipo ha contribuido a su proyecto y luego lo construyó en una herramienta que funciona
+
+0:11:12.600,0:11:17.700
+en el código Java rastreado a través de GitHub e hice un laboratorio cuantitativo
+
+0:11:17.700,0:11:22.500
+estudio en el que he demostrado que los TAs que utilizan este son capaces de
+
+0:11:22.500,0:11:25.920
+calificar las tareas de forma más coherente, prefieren el proceso de calificación,
+
+0:11:25.920,0:11:30.780
+y tengo resultados provisionales que sugieren que la retroalimentación es más procesable,
+
+0:11:30.780,0:11:34.980
+más útil para los estudiantes cuyas tareas se están calificando.
+
+0:11:35.820,0:11:40.800
+Eso es todo lo que tengo, pero estaré encantado de responder a cualquier pregunta en este momento.
+
+0:11:41.580,0:11:44.280
+Genial, muchas gracias, Kai. Muchas gracias, Kai.
+
+0:11:44.280,0:11:47.820
+Primera pregunta que viene en, por lo que han pensado en
+
+0:11:47.820,0:11:52.680
+aplicar esto a las personas que hacen revisiones de código en proyectos de código abierto o en sus puestos de trabajo.
+
+0:11:52.680,0:11:56.280
+Parece que exactamente los mismos resúmenes sería útil para alguien
+
+0:11:56.280,0:12:00.660
+que está a punto de sumergirse en un gran, ya sabes, mirando a un gran pull request.
+
+0:12:01.920,0:12:04.140
+Divertidamente mi padre en realidad me hizo la misma pregunta.
+
+0:12:04.140,0:12:08.940
+Así que él trabaja en Salesforce y estaba reflexionando si esto podría ser una cosa útil
+
+0:12:09.720,0:12:13.740
+para ver los cambios realizados en un pull request y he - lo he considerado,
+
+0:12:13.740,0:12:17.520
+pero en realidad no hacer ninguna evaluación en ese contexto.
+
+0:12:17.520,0:12:20.040
+De acuerdo. El - el uno el uno
+
+0:12:20.040,0:12:28.020
+cosa que creo que es una especie de peligro aquí es, proyectos más grandes con más - más de forma libre
+
+0:12:28.020,0:12:32.100
+tipos de contribuciones que la gente puede hacer más allá de sólo el código Java,
+
+0:12:32.100,0:12:37.440
+queremos asegurarnos de que las personas no están teniendo los números que se presentan que se ven mal sobre ellos.
+
+0:12:37.440,0:12:42.420
+Tal vez todavía están haciendo grandes contribuciones, que están haciendo todo el - la ayuda a la
+
+0:12:42.420,0:12:45.420
+nuevos miembros del equipo, la gran arquitectura cosas,
+
+0:12:45.420,0:12:49.980
+incluso si la cantidad de código que están haciendo es en realidad relativamente pequeño,
+
+0:12:49.980,0:12:53.640
+así que me gustaría asegurarse de que, si yo iba a utilizar en un área diferente,
+
+0:12:53.640,0:12:56.220
+que estamos animando a la gente a utilizar de manera responsable.
+
+0:12:56.220,0:12:58.980
+Bien, y otra pregunta que ha llegado,
+
+0:12:58.980,0:13:03.060
+¿utilizan los estudiantes la programación por parejas? ¿Hay alguna forma de tenerlo en cuenta?
+
+0:13:03.060,0:13:07.680
+En los dojos de Python de Londres con equipos de tamaño similar se debe tratar de tener la menor
+
+0:13:07.680,0:13:12.480
+programador experimentado en el teclado. Así que la - la respuesta es, depende.
+
+0:13:12.480,0:13:16.680
+Se anima a los estudiantes, pero no se les exige, a realizar programación en parejas.
+
+0:13:18.240,0:13:20.940
+La forma - la forma en que funciona ahora es que el - el
+
+0:13:20.940,0:13:25.740
+TAs verá una lista de todos los commits y luego en el mensaje de confirmación que esperamos, nosotros - nosotros
+
+0:13:25.740,0:13:29.340
+decir a los estudiantes para documentar en el mensaje de confirmación si se emparejan programa.
+
+0:13:29.340,0:13:32.400
+Mi evidencia anecdótica es que hacen un trabajo pésimo de esto,
+
+0:13:33.360,0:13:37.080
+así que con - con documentación limitada no hay mucho que podamos ver,
+
+0:13:37.080,0:13:43.140
+pero tengo algo de trabajo previsto, así que tal vez, darle -
+
+0:13:43.140,0:13:45.480
+No estoy - no averiguar exactamente lo que los números se vería así,
+
+0:13:45.480,0:13:47.700
+cómo ponderar las cosas, sino también para tener en cuenta
+
+0:13:47.700,0:13:51.120
+estas contribuciones, al menos cuando se pueden discernir a partir de mensajes de confirmación.
+
+0:13:51.120,0:13:56.520
+Así que tengo - Tengo un poco de trabajo en curso donde estoy haciendo coincidencia difusa en los nombres y los mensajes de confirmación
+
+0:13:57.600,0:13:58.980
+y el uso que para averiguar,
+
+0:13:58.980,0:14:02.220
+si alguien más ha participado en un esfuerzo de programación por pares,
+
+0:14:03.000,0:14:05.700
+y entonces podemos tener en cuenta que en virtud de sus contribuciones también.
+
