@@ -8,31 +8,31 @@ Soy Rashina, de la Universidad Monash de Melbourne,
 y es un placer hablar con ustedes hoy sobre este tema que es,
 
 0:00:12.480,0:00:15.300
-"Tú lo has querido: dar sentido a los comentarios de los usuarios".
+"Tú lo pediste: dar sentido a los comentarios de los usuarios".
 
 0:00:16.740,0:00:20.040
-Así que al empezar me gustaría dar las gracias a los propietarios tradicionales
+Así que para empezar me gustaría dar las gracias a los pueblos originarios
 
 0:00:20.040,0:00:23.280
-de la tierra de la que presento, que es el Wurundjeri y
+de la tierra que que represento, que es el Wurundjeri y
 
 0:00:23.280,0:00:27.240
 pueblos Bunurong de las naciones Kulin, y me gustaría presentar mis respetos a
 
 0:00:27.240,0:00:31.920
-sus ancianos, pasados, presentes y emergentes, y a todos los que están aquí y se unen a nosotros
+sus ancianos, pasados, presentes y futuros, y a todos los que están aquí y se unen a nosotros
 
 0:00:31.920,0:00:37.200
 en línea desde varias partes del mundo. Bien, voy a empezar con
 
 0:00:37.200,0:00:39.893
-algo que podría ser un poco de una declaración controvertida.
+algo que podría ser un poco una declaración controvertida.
 
 0:00:39.893,0:00:44.940
-En toda mi investigación sobre ágil, y trabajando con ágil para un tiempo realmente largo,
+En toda mi investigación sobre Agil, y trabajando con Agil desde hace ya bastante tiempo,
 
 0:00:44.940,0:00:50.940
-Creo que las historias de usuario son un mito ágil moderna. ¿Por qué digo eso?
+creo que las historias de usuario son un mito Agil moderno. ¿Por qué digo eso?
 
 0:00:50.940,0:00:56.280
 Básicamente, si realmente lo piensas, las historias de usuario son historias inventadas sobre lo que
@@ -41,49 +41,49 @@ Básicamente, si realmente lo piensas, las historias de usuario son historias in
 nosotros, como desarrolladores de software y las partes interesadas de software piensan que los usuarios quieren.
 
 0:01:02.940,0:01:07.020
-Se basan en suposiciones, así que, las mejores suposiciones que podemos hacer sobre los usuarios.
+Se basan en suposiciones, así que, las mejores suposiciones que podemos hacer sobre los usuarios
 
 0:01:07.020,0:01:10.860
-Se guían por la conveniencia porque, bueno, estamos aquí,
+se guían por la conveniencia porque, bueno, estamos aquí,
 
 0:01:10.860,0:01:16.560
 y muchas veces los usuarios no lo están. Y las historias obviamente no son
 
 0:01:16.560,0:01:22.740
-real - se trata de situaciones que pensamos de los usuarios realmente el uso de nuestro sistema de antemano.
+reales, se trata de situaciones que pensamos de los usuarios sobre el uso de nuestro sistema de antemano.
 
 0:01:24.420,0:01:26.520
-Así que esto deja el tipo de todos los días,
+Así que el usuario promedio piensa: 
 
 0:01:26.520,0:01:31.020
-usuario medio pensando, como usuario quiero proporcionar mi propia retroalimentación,
+"como usuario quiero dar mi opinión
 
 0:01:31.020,0:01:34.080
-para que los clientes no tengan que fingir que saben lo que necesito.
+para que los clientes no tengan que fingir que saben lo que necesito".
 
 0:01:35.820,0:01:38.580
 En cambio, las historias reales de los usuarios no tienen precio.
 
 0:01:39.480,0:01:42.660
-Así que son una fuente importante para identificar cosas como bugs,
+Así que son una fuente importante para identificar cosas como errores,
 
 0:01:43.200,0:01:50.580
-problemas de usabilidad, así como nuevas ideas de características. Porque lo que realmente importa es el hecho de que,
+problemas de usabilidad, así como nuevas ideas para funcionalidades. Porque lo que realmente importa es el hecho de que,
 
 0:01:50.580,0:01:54.240
 aunque los clientes son los que pagan por el desarrollo del producto,
 
 0:01:54.240,0:01:57.840
-pero son los usuarios los que deciden el destino del producto.
+son los usuarios los que deciden el destino del producto.
 
 0:01:59.340,0:02:03.660
 Así que las historias reales de los usuarios nos dirán cosas como
 
 0:02:03.660,0:02:09.180
-sus necesidades - por lo que las necesidades de los usuarios - y esto es necesidades de los usuarios que son diversos.
+sus necesidades, las de los usuarios, y se trata de necesidades de usuarios que son diversas.
 
 0:02:09.180,0:02:13.440
-Y cuando entendemos que la diversidad, que nos puede llevar a la construcción de productos que
+Y cuando entendemos que la diversidad, nos puede llevar a la construcción de productos que
 
 0:02:13.440,0:02:17.100
 son más generalizables a través de la población humana en todo el mundo.
@@ -95,10 +95,10 @@ También nos lleva a comprender los deseos humanos en términos de nuestras pref
 cosas que nos gustan, no nos gusta, y que nos puede llevar a los equipos de software
 
 0:02:25.680,0:02:31.320
-personalizar y adaptar sus soluciones, y que, tipo de, ya sabes, conduce a los usuarios
+a personalizar y adaptar sus soluciones, y que, conduce a los usuarios a
 
 0:02:31.320,0:02:35.280
-volver a sus productos favoritos debido a que el aspecto de personalización.
+volver a sus productos favoritos debido al aspecto de personalización.
 
 0:02:36.540,0:02:40.740
 Las historias reales de los usuarios también son una fuente importante para generar valor empresarial
@@ -107,7 +107,7 @@ Las historias reales de los usuarios también son una fuente importante para gen
 porque cuando los usuarios ven que sus comentarios se tienen en cuenta,
 
 0:02:45.300,0:02:49.740
-que construye la confianza, la lealtad y la reputación de la marca,
+se construye la confianza, la lealtad y la reputación de la marca,
 
 0:02:49.740,0:02:53.820
 que en última instancia conduce a cosas como las ventas y los beneficios.
@@ -116,25 +116,25 @@ que en última instancia conduce a cosas como las ventas y los beneficios.
 Ahora bien, ¿cómo llegamos a estas historias de usuario reales si no queremos inventarlas?
 
 0:03:01.860,0:03:07.920
-Así que podemos obtener todo tipo de historias de usuarios reales o real feed - retroalimentación de los usuarios de cosas como usuario
+Podemos obtener todo tipo de historias de usuarios reales o real feed, retroalimentación de los usuarios de cosas como
 
 0:03:07.920,0:03:11.280
-valoraciones, reseñas en tiendas de aplicaciones, comentarios a través de sitios web,
+valoraciones de usuarios, reseñas en tiendas de aplicaciones, comentarios a través de sitios web,
 
 0:03:11.280,0:03:14.700
 quejas a través de centros de llamadas, y estos son los tipos de historias
 
 0:03:14.700,0:03:18.720
-que yo llamo historias proactivos porque el usuario se ha ofrecido a dar a usted
+que yo llamo historias proactivas porque el usuario se ha ofrecido a darles a ustedes
 
 0:03:18.720,0:03:23.760
-aunque no te lo haya pedido. Luego están las historias automáticas.
+aunque no se lo hayan pedido. Luego están las historias automáticas.
 
 0:03:23.760,0:03:26.760
 Son cosas como registros de actividad que se registran en segundo plano,
 
 0:03:26.760,0:03:29.940
-gustos, aversiones y compromiso de los usuarios, y datos demográficos,
+gustos, disgustos y compromiso de los usuarios, y datos demográficos,
 
 0:03:29.940,0:03:34.260
 todo ello acumulado en segundo plano sin que el usuario se entere.
@@ -158,10 +158,10 @@ estas actividades diseñadas intencionalmente como sesiones de co-diseño, sesio
 grupos focales, observaciones, entrevistas, pensar en voz alta, pruebas beta, todo ello.
 
 0:04:02.580,0:04:06.480
-Entonces, ¿a qué nos enfrentamos realmente? De lo que estamos tratando es
+Entonces, ¿a qué nos enfrentamos realmente? Lo que estamos tratando es
 
 0:04:06.480,0:04:11.340
-si usted tipo de mirada a través de todos estos tipo de historias de usuarios reales que encontramos algo común,
+tener un tipo de mirada a través de todos estos tipos de historias de usuarios reales para encontrar algo común,
 
 0:04:11.340,0:04:16.620
 que es todas estas revisiones y formularios de comentarios y quejas y características y así sucesivamente,
@@ -176,10 +176,10 @@ Así que va de todo a gran escala, por lo que a cientos y miles de revisiones,
 a más pequeña escala, porque, ya sabes,
 
 0:04:29.940,0:04:36.180
-usted probablemente estaría haciendo alrededor de decenas o decenas de grupos de enfoque en lugar de miles de ellos.
+ustedes probablemente estarían haciendo alrededor de decenas o decenas de focus groups en lugar de miles de ellos.
 
 0:04:36.180,0:04:44.100
-Pero, en definitiva, todos son datos cualitativos. Ahora aquí está el otro hecho, que es, por lo general
+Pero, en definitiva, todos son datos cualitativos. Ahora aquí está el otro hecho, que es que, por lo general
 
 0:04:44.100,0:04:48.360
 no quieren hacer frente a la retroalimentación del usuario real. Y la pregunta es ¿por qué?
@@ -191,88 +191,88 @@ Algunas de las razones son, bueno, hay muchas.
 La otra es que, al ser cualitativa, no suele estar estructurada y es desordenada,
 
 0:04:56.580,0:05:01.260
-y es un trabajo duro para tratar de conseguir realmente su cabeza alrededor de lo que todo esto significa en conjunto.
+y es un trabajo duro para tratar de conseguir realmente lo importante alrededor de lo que todo esto significa en conjunto.
 
 0:05:02.580,0:05:05.100
-Así que los enfoques actuales - y no estoy esperando que usted lea
+Los enfoques actuales, y no estoy esperando que ustedes lean
 
 0:05:05.100,0:05:08.760
-y entender la totalidad de este diagrama - pero usted puede hacer - usted sabe, mira en que
+y entiendan la totalidad de este diagrama, pero lo que ustedes pueden hacer es mirar el
 
 0:05:08.760,0:05:13.320
-artículo de Empirical Software Engineering del año pasado que entra en los detalles de los pasos -
+artículo de Empirical Software Engineering del año pasado que entra en los detalles de los pasos
 
 0:05:13.320,0:05:18.060
-pero lo que voy a destacar aquí es que en la actualidad - los enfoques actuales suelen incluir dos pasos.
+pero lo que voy a destacar aquí es que en la actualidad, los enfoques actuales suelen incluir dos pasos.
 
 0:05:18.060,0:05:22.440
 Así que uno es el análisis automatizado, que hay herramientas automatizadas que
 
 0:05:22.440,0:05:26.340
-filtrará el ruido como sinónimos y luego se clasifica sobre la base de
+filtrarán el ruido como sinónimos y luego se clasifica sobre la base de
 
 0:05:26.340,0:05:30.420
-palabras clave que usted proporcionó, Y el segundo paso es manual
+palabras clave que ustedes proporcionaron. Y el segundo paso es el análisis
 
 0:05:30.420,0:05:34.260
-análisis de los datos cualitativos utilizando las revisiones de muestra que ha
+manual de los datos cualitativos utilizando las revisiones de muestra que tienen.
 
 0:05:34.260,0:05:38.700
 Así que lo que voy a proponer va a ser ayudar con la segunda parte.
 
 0:05:39.840,0:05:43.860
-Ahora, las limitaciones actuales de este enfoque es, mientras que este enfoque nos ayuda a responder a
+Ahora, las limitaciones actuales de este enfoque son, mientras que este enfoque nos ayuda a responder a
 
 0:05:43.860,0:05:49.020
 cosas como el "qué" y el "cómo" en realidad no nos ayuda a responder el "por qué".
 
 0:05:49.020,0:05:52.680
-Así que falta esa idea en profundidad. También,
+Así que falta esa idea en profundidad. Además, 
 
 0:05:52.680,0:05:57.060
-porque nosotros - que se basa en palabras clave, si nos centramos en los errores que vamos a encontrar errores,
+al estar basado en palabras clave, si nos centramos en los errores vamos a encontrar errores,
 
 0:05:57.060,0:06:00.720
-pero vamos a perder las mariposas proverbiales en que hay
+pero vamos a perdernos las "mariposas proverbiales" ya que hay
 
 0:06:00.720,0:06:05.100
-todo tipo de hallazgos interesantes allí, pero porque no estábamos buscando para ellos nos
+todo tipo de hallazgos interesantes, pero como no los buscamos,
 
 0:06:05.100,0:06:06.660
-nunca los encontramos. Sin embargo,
+nunca los encontraremos. Sin embargo,
 
 0:06:06.660,0:06:10.920
-porque son todos los datos a disposición del público, nuestros competidores pueden encontrar estas mariposas
+como son todos datos que están a disposición del público, nuestros competidores pueden encontrar estas "mariposas"
 
 0:06:10.920,0:06:14.640
 y pueden actuar sobre ella para mejorar su producto, incluso si no lo estamos haciendo.
 
 0:06:16.560,0:06:20.940
-Así que aquí viene social-técnica teoría fundamentada o STGT como un
+Así que aquí viene la teoría técnica social fundamentada o STGT como un
 
 0:06:20.940,0:06:26.460
-potente método de análisis de datos cualitativos. Así que dado el límite de tiempo que voy a mostrar
+potente método de análisis de datos cualitativos. Dado el límite de tiempo, voy a mostrar
 
 0:06:26.460,0:06:30.720
 un ejemplo muy rápido de cómo es la codificación abierta en STGT
 
 0:06:30.720,0:06:35.340
-y lo que voy a pedir que pensar es realmente la idea de hashtags,
+y lo que voy a pedir es que piensen realmente la idea de hashtags,
 
 0:06:35.940,0:06:39.720
-especialmente si usted es un usuario de medios sociales, como Twitter, usted será muy
+especialmente si son usuarios de redes sociales, como Twitter, ustedes estarán muy
 
 0:06:39.720,0:06:43.500
-familiarizado con la idea de hashtags que se utilizan para capturar usted sabe muy
+familiarizados con la idea de hashtags que se utilizan para capturar 
 
 0:06:43.500,0:06:47.520
-ideas profundas en pocas palabras. Así que aquí está una revisión de usuario
+ideas muy profundas en pocas palabras. Así que aquí está una revisión de usuario
 
 0:06:47.520,0:06:52.080
-que estamos viendo ahora mismo. Ahora, si estábamos buscando - utilizando una palabra clave basada en
+que estamos viendo ahora mismo. Ahora, si estábamos buscando, utilizando una palabra clave basada en
 
 0:06:52.080,0:06:56.400
-enfoque - si estábamos buscando la palabra "estafa" por supuesto que es justo ahí, lo encontraremos
+enfoque, si estábamos buscando la palabra "estafa" por supuesto que está justo ahí, la encontraremos
 
 0:06:56.400,0:07:01.800
 y entonces podemos informar de ello y eso está bien. Pero nos vamos a perder todo esto otro,
@@ -281,16 +281,16 @@ y entonces podemos informar de ello y eso está bien. Pero nos vamos a perder to
 como he dicho, todas estas mariposas, estos hallazgos interesantes que no estábamos buscando.
 
 0:07:06.300,0:07:12.540
-Si utilizamos la codificación abierta utilizando la teoría fundamentada socio-técnica en realidad tenemos una oportunidad de
+Si utilizamos la codificación abierta utilizando la teoría socio-técnica fundamentada, en realidad tenemos una oportunidad de
 
 0:07:12.540,0:07:16.980
-descubrir todas estas otras ideas interesantes. Así que para darle un ejemplo,
+descubrir todas estas otras ideas interesantes. Así que para darles un ejemplo,
 
 0:07:16.980,0:07:21.840
-el bit en el azul, yo codificaría esto como hashtag "no intencional
+el bit en el azul, yo codificaría esto como hashtag "actualización 
 
 0:07:21.840,0:07:27.480
-upgrade" porque aquí el usuario está hablando de cómo involuntariamente fueron llevados a actualizar
+no intencional" porque aquí el usuario está hablando de cómo involuntariamente fueron llevados a actualizar
 
 0:07:27.480,0:07:32.040
 a una versión pro de 99 dólares porque su huella digital se fijó en la App Store.
@@ -299,22 +299,22 @@ a una versión pro de 99 dólares porque su huella digital se fijó en la App St
 La otra parte que se ve en el gris es todos sus intentos de venir y ponerse en contacto con la empresa
 
 0:07:38.100,0:07:42.780
-utilizando los diversos canales que están disponibles por lo que tendría, ya sabes, tipo de código que
+utilizando los diversos canales que están disponibles, por lo que tendría, ya sabes, un tipo de código
 
 0:07:42.780,0:07:45.660
-como "hashtag múltiples canales de contacto" que sí existen.
+como hashtag "múltiples canales de contacto" que sí existen.
 
 0:07:45.660,0:07:48.840
-Pero el otro código es "hashtag sin servicio de atención al cliente".
+Pero el otro código es hashtag "sin servicio de atención al cliente".
 
 0:07:48.840,0:07:52.920
 Así que a pesar de que hay múltiples canales no había servicio al cliente proporcionado.
 
 0:07:53.940,0:07:58.770
-Ahora todo esto - el hecho de que es una revisión o por lo general viene con una calificación -.
+Ahora todo esto, el hecho de que es una revisión o por lo general viene con una calificación, 
 
 0:07:58.770,0:08:03.240
-por lo que en la parte inferior vemos que es una estrella de cinco estrellas, por lo que hashtag para la revisión.
+por lo que en la parte inferior vemos que es una estrella de cinco estrellas, por eso hashtag "para la revisión".
 
 0:08:03.240,0:08:07.260
 En otras palabras, todo esto junto conforma una historia cohesiva sobre el hecho de que
@@ -332,49 +332,49 @@ y había un par de otras cosas interesantes que encontramos
 en la parte superior del hecho de que sólo lo clasificó como estafa.
 
 0:08:21.840,0:08:26.820
-¿Cómo se escala esto? Así que voy a mostrar, ya sabes, cómo
+¿Cómo se escala esto? Lo voy a mostrar, ya saben, cómo
 
 0:08:26.820,0:08:32.580
 vamos de datos en bruto a esta idea de código y luego agrupar los códigos juntos para llegar a conceptos.
 
 0:08:33.420,0:08:38.760
-Así que aquí, por ejemplo, una revisión dijo: "App requiere que usted tenga los servicios de localización siempre encendido,"
+Así que aquí, por ejemplo, una revisión dijo: "La app requiere que tenga los servicios de localización siempre encendido,"
 
 0:08:38.760,0:08:42.420
-que se codifica como "hashtag forzado compartir ubicación".
+que se codifica como hashtag "forzado compartir ubicación".
 
 0:08:43.080,0:08:47.160
 La otra es: "No tienes más opción que darles tu consentimiento para que vendan tus datos a terceros".
 
 0:08:47.160,0:08:50.280
-y este es el consentimiento forzado a la política.
+y este es el "consentimiento forzado".
 
 0:08:51.540,0:08:55.320
 El tercero es, "Mi cuenta fue hackeada y otro teléfono fue registrado",
 
 0:08:55.320,0:09:02.220
-y eso sería, como, obviamente hackeado cuenta. Si nos fijamos en todos estos códigos todos juntos y nos
+y eso sería, obviamente "cuenta hackeada". Si nos fijamos en todos estos códigos todos juntos y 
 
 0:09:02.220,0:09:06.420
-constantemente compararlos y llevarlo al siguiente nivel de abstracción y agruparlos juntos
+constantemente los comparamos y los llevamos al siguiente nivel de abstracción y los agrupamos
 
 0:09:06.420,0:09:10.260
-estamos hablando esencialmente de esta idea de las cuestiones de privacidad.
+estamos hablando esencialmente de esta idea de "cuestiones de privacidad".
 
 0:09:10.260,0:09:11.760
-Así que recuerda, empezamos
+Así que recuerden, empezamos
 
 0:09:11.760,0:09:16.080
 en busca de estafas, pero también encontramos problemas de privacidad porque estábamos usando un enfoque abierto.
 
 0:09:16.860,0:09:22.320
-Así que si utilizas una teoría fundamentada sociotécnica para el análisis de datos cualitativos,
+Así que si utilizan una teoría socio-técnica fundamentada para el análisis de datos cualitativos,
 
 0:09:22.320,0:09:27.240
-vas a ser capaz de analizar sistemáticamente los datos para las clasificaciones individuales,
+van a ser capaces de analizar sistemáticamente los datos para las clasificaciones individuales,
 
 0:09:27.240,0:09:30.360
-sino también para el conjunto de datos, ya sabes, los patrones que se pueden encontrar.
+y también para el conjunto de datos, ya sabes, los patrones que se pueden encontrar.
 
 0:09:30.360,0:09:34.140
 Puede dar lugar a ideas, directrices y recomendaciones,
@@ -383,22 +383,22 @@ Puede dar lugar a ideas, directrices y recomendaciones,
 por ejemplo, en la mejora de la privacidad en este caso. Pero para aquellos de ustedes que están más interesados en
 
 0:09:40.200,0:09:44.700
-llegar a resultados de la investigación, así, por ejemplo, usted es una experiencia de usuario
+llegar a resultados de la investigación, así, por ejemplo, usted son una experiencia de usuario
 
 0:09:44.700,0:09:49.200
-equipo de investigación dentro de la empresa, puede utilizar esto en un más riguroso
+de un equipo de investigación dentro de la empresa, pueden utilizar esto en una aplicación
 
 0:09:49.200,0:09:52.920
-aplicación para desarrollar taxonomías, modelos teóricos y teorías,
+más rigurosa para desarrollar taxonomías, modelos teóricos y teorías,
 
 0:09:52.920,0:09:55.320
-que luego puedes publicar en revistas revisadas por pares.
+que luego pueden publicar en revistas revisadas por pares.
 
 0:09:56.100,0:09:58.740
 Así que el nuevo enfoque que estamos hablando es
 
 0:09:58.740,0:10:04.140
-dar sentido a las historias de usuario real utilizando STGT donde usted todavía tiene esos dos pasos
+dar sentido a las historias de usuarios reales utilizando STGT donde todavía tienen esos dos pasos
 
 0:10:04.140,0:10:08.040
 pero en lugar de ser lineal es iterativo, para empezar,
@@ -407,52 +407,52 @@ pero en lugar de ser lineal es iterativo, para empezar,
 y también por el hecho de que estamos utilizando la codificación abierta en el segundo
 
 0:10:12.120,0:10:17.700
-paso utilizando la teoría fundamentada socio-técnica somos capaces de encontrar palabras clave nuevas y refinadas
+paso, utilizando la teoría socio-técnica fundamentada somos capaces de encontrar palabras clave nuevas y refinadas
 
 0:10:17.700,0:10:21.240
 que retroalimentan el análisis automatizado y va y viene.
 
 0:10:21.240,0:10:28.440
-Y esto le permite lograr tanto la profundidad y la respiración en su análisis de la retroalimentación del usuario.
+Y esto le permite lograr tanto una mayor profundidad como un mayor alcance en su análisis de los comentarios de los usuarios.
 
 0:10:29.160,0:10:33.660
-Así que el beneficio para los equipos de software de usuario es que ahora realmente puede trabajar
+Así que el beneficio para los equipos de software de usuario es que ahora realmente pueden trabajar
 
 0:10:33.660,0:10:39.480
-con pilas más pequeñas clasificadas de retroalimentación de los usuarios que se pueden poner de forma única bajo diferentes etiquetas.
+con pilas más pequeñas clasificadas de comentarios de los usuarios que se pueden poner de forma única bajo diferentes etiquetas.
 
 0:10:39.480,0:10:44.340
-Esto conducirá a un análisis más rico, para sacar conclusiones interesantes, por lo que coger
+Esto conducirá a un análisis más rico, para sacar conclusiones interesantes y, tomar
 
 0:10:44.340,0:10:48.180
-todos los errores que usted estaba buscando, pero también no se pierda las mariposas.
+todos los errores que ustedes estaban buscando, pero también no perderse las mariposas.
 
 0:10:48.960,0:10:52.680
 El beneficio para los usuarios, por supuesto, es que aumenta su confianza a la hora de actualizar
 
 0:10:52.680,0:10:58.080
-apps -le dan mejores valoraciones- y beneficio para las empresas, por supuesto,
+apps, te dan mejores valoraciones, y el beneficio para las empresas, por supuesto,
 
 0:10:58.080,0:11:02.100
-como hemos visto antes es porque estás actuando la retroalimentación del usuario aumenta la confianza
+como hemos visto antes, es porque estás usando los comentarios de los usuario y aumenta la confianza
 
 0:11:02.100,0:11:06.300
-y por tanto aumentan las ventas. Y voy a terminar con esto que es,
+y por lo tanto aumentan las ventas. Y voy a terminar con esto que es,
 
 0:11:06.300,0:11:11.580
-si quieres saber más puedes usar este código QR y o teclear mi web
+si quieren saber más pueden usar este código QR y o escribir mi web
 
 0:11:11.580,0:11:15.720
-y allí encontrará el documento clave real que habla de las directrices.
+y allí encontrarán el documento clave que habla de las directrices.
 
 0:11:15.720,0:11:19.500
-También hay un par de vídeos de información técnica, pero si vienes
+También hay un par de videos de información técnica, pero si vienen
 
 0:11:19.500,0:11:22.500
-al ICSE de 2023 en Melbourne, nos encantará darte la bienvenida,
+al ICSE de 2023 en Melbourne, nos encantará darles la bienvenida,
 
 0:11:22.500,0:11:26.520
-pero también voy a dar una sesión informativa técnica sobre la teoría fundamentada socio-técnica allí.
+también voy a dar una sesión informativa técnica sobre la teoría socio-técnica fundamentada allí.
 
 0:11:26.520,0:11:31.380
 Y hay un próximo libro. Y muy rápidamente me gustaría dar las gracias al Dr. Omar Haggag
@@ -461,13 +461,13 @@ Y hay un próximo libro. Y muy rápidamente me gustaría dar las gracias al Dr. 
 que me ayudó con esto y Michael Hoye, así que muchas gracias.
 
 0:11:35.220,0:11:38.760
-Muy bien, muchas gracias Rashina, si quieres terminar tu parte de pantalla,
+Muy bien, muchas gracias Rashina, si quieres terminar tu pantalla compartida,
 
 0:11:38.760,0:11:40.500
 tenemos una pregunta.
 
 0:11:42.600,0:11:46.380
-Uno de nuestros espectadores le gustaría saber si hay alguna preocupación especial
+A uno de nuestros espectadores le gustaría saber si hay alguna preocupación especial
 
 0:11:46.380,0:11:50.340
 o riesgos aquí con la confidencialidad, con la pérdida de privacidad y así sucesivamente,
@@ -476,25 +476,25 @@ o riesgos aquí con la confidencialidad, con la pérdida de privacidad y así su
 al hacer este tipo de análisis en comparación con, por ejemplo, las métricas web convencionales.
 
 0:11:58.020,0:12:04.140
-Por lo tanto, lo que voy a decir es que, en este caso, se trata de
+Lo que voy a decir es que, en este caso, se trata de
 
 0:12:04.140,0:12:09.600
-con los datos que ya está a disposición del público, por lo que las personas han optado por compartir que en línea
+datos que ya está a disposición del público, por lo que las personas han optado por compartir en línea
 
 0:12:10.800,0:12:14.940
-y ya está en el dominio público. También utilizamos fundamentos sociotécnicos
+y ya están en el dominio público. También utilizamos la teoría socio-técnica fundamentada
 
 0:12:14.940,0:12:19.260
-teoría para la investigación más confidencial en el que usted está haciendo entrevistas y así sucesivamente,
+para la investigación más confidencial en la que se hacen entrevistas y así sucesivamente,
 
 0:12:19.260,0:12:24.960
-y en ese caso lo que haría es, usted tratará de des-identificar los datos,
+y en ese caso lo que hacemos es tratar de que no se puedan identificar los datos,
 
 0:12:24.960,0:12:29.040
-eliminando todos los detalles que pudieran ser potencialmente identificativos,
+eliminando todos los detalles que pudieran ser potencialmente identificatorios,
 
 0:12:29.040,0:12:31.920
-ya sea la empresa o el individuo o cualquiera de esas cosas,
+ya sea la empresa o el individuo o cualquiera de los dos,
 
 0:12:31.920,0:12:36.180
-pero todavía se puede analizar para encontrar las cuestiones clave y los problemas clave
+pero todavía se puede analizar para encontrar las cuestiones clave y los problemas clave.

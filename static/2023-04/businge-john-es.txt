@@ -14,7 +14,7 @@ Estoy encantado de presentarles mi trabajo en este evento Never Work in Theory S
 En primer lugar me gustaría dar las gracias a Brittany y Greg por la invitación a este evento.
 
 0:00:27.900,0:00:32.820
-Voy a presentar a mi trabajo sobre clones parcheados y parches perdidos entre las variantes
+Voy a presentar a mi trabajo sobre clones arreglados y arreglos perdidos entre las variantes
 
 0:00:32.820,0:00:35.640
 de una familia de software. Este trabajo ha sido
@@ -26,18 +26,16 @@ presentado anteriormente en FSE 2022. Nuestro especial agradecimiento a los patr
 de este estudio SECO-Assist. En primer lugar
 
 0:00:46.500,0:00:54.180
-Permítanme comenzar con un poco de contexto del estudio. Puede que algunos de ustedes conozcan el software de Equifax,
+permítanme comenzar con un poco de contexto del estudio. Puede que algunos de ustedes conozcan el software de Equifax,
 
 0:00:54.180,0:01:00.600
-que es un software de puntuación de crédito. Equifax fue identificado con un delito cibernético en 2017,
+que es un software de puntuación de crédito. Equifax fue identificado como un delito cibernético en 2017,
 
 0:01:02.160,0:01:08.640
-que se solucionó casi de inmediato y esto afectó a más de 150
-millones de personas
+que se solucionó casi de inmediato y afectó a más de 150 millones de personas
 
 0:01:09.660,0:01:14.640
-y se perdieron 400
-millones de dólares estadounidenses. ¿Cómo ocurrió esto?
+y se perdieron 400 millones de dólares estadounidenses. ¿Cómo ocurrió esto?
 
 0:01:14.640,0:01:20.040
 Equifax depende de un software de código abierto llamado Apache Struts.
@@ -49,7 +47,7 @@ Apache Struts identificó una vulnerabilidad en marzo de 2017 que se solucionó 
 Sin embargo, Equifax retrasó
 
 0:01:31.260,0:01:36.960
-para actualizar la dependencia y dos meses después se identificó a Equifax con la violación de datos.
+la actualización de la dependencia y dos meses después se identificó a Equifax con la violación de datos.
 
 0:01:38.280,0:01:43.860
 Equifax podría haber evitado este problema si hubiera utilizado un sistema de recomendación para ser
@@ -67,13 +65,13 @@ En esta diapositiva y en la siguiente explicaré lo que significan ambas frases.
 En una plataforma de codificación social es habitual que los desarrolladores hagan un fork del repositorio upstream
 
 0:02:08.700,0:02:15.420
-cuando quieren contribuir. Hay dos tipos de bifurcación:
+cuando quieren contribuir. Hay dos tipos de forks:
 
 0:02:16.200,0:02:20.940
-bifurcaciones sociales y bifurcaciones variantes. Los forks sociales se crean para el
+forks sociales y forks variantes. Los forks sociales se crean por la
 
 0:02:20.940,0:02:30.120
-única razón de introducir nuevas características, como correcciones de errores, refactorizaciones o - refactorizaciones,
+única razón de introducir nuevas características, como correcciones de errores o refactorizaciones,
 
 0:02:30.840,0:02:37.680
 y cuando estas características están completamente desarrolladas se integran de nuevo en la rama principal
@@ -82,7 +80,7 @@ y cuando estas características están completamente desarrolladas se integran d
 o a través de un pull request o a través de cualquier otro medio Git.
 
 0:02:41.580,0:02:48.840
-Y eso marcaría el final de la bifurcación social. Por otro lado, las bifurcaciones variantes son creadas por
+Y eso marcaría el final del fork social. Por otro lado, los forks variantes son creados por
 
 0:02:48.840,0:02:53.760
 división de la nueva rama de desarrollo para dirigir el desarrollo en una nueva dirección
@@ -91,19 +89,19 @@ división de la nueva rama de desarrollo para dirigir el desarrollo en una nueva
 preservando al mismo tiempo el código del proyecto principal o upstream.
 
 0:02:59.340,0:03:07.080
-Pueden contribuir pero no están obligados. También pueden tener sus propias bifurcaciones que contribuyan
+Pueden contribuir pero no están obligados. También pueden tener sus propios forks que contribuyan
 
 0:03:07.080,0:03:14.520
-a sus líneas principales. Nos centramos en las bifurcaciones variantes
+a sus ramas principales. Nos centramos en los forks variantes
 
 0:03:16.740,0:03:23.220
 y familia variante sería una familia con dos o más variantes.
 
 0:03:24.660,0:03:31.500
-Entonces, ¿por qué nos interesan las bifurcaciones de variantes? Este trabajo está motivado por un
+Entonces, ¿por qué nos interesan los forks de variantes? Este trabajo está motivado por una
 
 0:03:32.160,0:03:42.060
-que se publicó en ESE en 2022. Investigamos tres ecosistemas de software
+publicación en ESE en 2022. Investigamos tres ecosistemas de software
 
 0:03:42.060,0:03:48.540
 en GitHub de Android, sistema de lenguaje de programación .NET y sistema de lenguaje de programación JavaScript
@@ -115,19 +113,19 @@ y descubrimos más de 10.000 variantes. Esto nos dio una indicación de que
 son bastante frecuentes en GitHub. Además, también descubrimos que las variantes son
 
 0:04:01.740,0:04:06.360
-reales - estas variantes rara vez comparten actualizaciones, lo cual fue bastante sorprendente
+reales, estas variantes rara vez comparten actualizaciones, lo cual fue bastante sorprendente
 
 0:04:07.020,0:04:13.260
 ya que esperábamos que al menos propagarían correcciones de errores en el código compartido.
 
 0:04:15.060,0:04:22.440
-Así que permítanme - permítanme ahora usando una ilustración explicar el contexto del problema de este estudio.
+Así que permítanme ahora usando una ilustración explicar el contexto del problema de este estudio.
 
 0:04:22.440,0:04:28.620
 Digamos que tenemos la variante uno, que es nuestra variante fuente o la original,
 
 0:04:30.660,0:04:37.620
-tiene tres revisiones o commits. Así que la variante 2 - un desarrollador de la variante 2 viene
+tiene tres revisiones o commits. Así que la variante 2, un desarrollador de la variante 2 viene
 
 0:04:37.620,0:04:42.360
 y quiere utilizar una variante 1 como punto de partida, por lo que se bifurcará,
@@ -136,37 +134,37 @@ y quiere utilizar una variante 1 como punto de partida, por lo que se bifurcará
 lo que significa que heredarán todos los commits o revisiones que existan en la variante 1
 
 0:04:49.800,0:04:57.960
-entre la fecha de bifurcación y la fecha de divergencia estas dos variantes comparten commits,
+entre la fecha del fork y la fecha de divergencia estas dos variantes comparten commits,
 
 0:04:57.960,0:05:04.140
-y hasta que la variante está muerto, estos los commits están sincronizados,
+y hasta que la variante esté muerta, estos commits están sincronizados,
 
 0:05:04.140,0:05:10.740
-por lo que los commits que están en ellos en el - en esta variante 1 también existe en la variante 2 y viceversa.
+por lo que los commits que están en ellos, en esta variante 1 también existe en la variante 2 y viceversa.
 
 0:05:10.740,0:05:13.440
 Por alguna razón después de la fecha de divergencia
 
 0:05:14.040,0:05:20.220
-los dos commits divergen y empiezan a introducir - introducir nuevos commits
+los dos commits divergen y empiezan a introducir nuevos commits
 
 0:05:20.220,0:05:24.660
-sin integrar commits pero - que compartir commits.
+sin integrar commits pero compartiendo commits.
 
 0:05:27.540,0:05:30.720
 Digamos que en este punto un desarrollador
 
 0:05:30.720,0:05:35.760
-de la variante 1 ha identificado una bolsa en un campo llamado Foo
+de la variante 1 ha identificado un error en un campo llamado Foo
 
 0:05:35.760,0:05:39.000
-y luego se bifurcan, arreglar el error,
+y luego se bifurcan, arreglan el error,
 
 0:05:39.000,0:05:48.300
-y luego fusionar de nuevo esta corrección en el carril principal de la línea principal de desarrollo a través de una solicitud de extracción.
+y luego fusionan esta corrección en la rama principal de la línea principal de desarrollo a través de un pull request.
 
 0:05:50.160,0:05:56.220
-En el objetivo - en el objetivo de la cabeza Git - la cabeza Git del objetivo,
+En el objetivo, de la Git head, la Git head del objetivo,
 
 0:05:56.220,0:06:00.360
 cuatro escenarios son posibles. Uno, que
@@ -175,19 +173,19 @@ cuatro escenarios son posibles. Uno, que
 ha corregido el error, el desarrollador de la variante dos ha corregido el error de forma independiente,
 
 0:06:09.960,0:06:17.160
-así que esto sería duplicación de esfuerzos. O bien, el error, el - Foo es todavía buggy
+así que esto sería duplicación de esfuerzos. O bien, Foo todavía tiene el error
 
 0:06:17.160,0:06:22.620
 y sin embargo se ha solucionado en la variante 1, por lo que esta sería una oportunidad perdida.
 
 0:06:23.400,0:06:29.820
-Y entonces variante - el desarrollador de la variante 2 tal vez sólo ha corregido parte del error,
+Y entonces la variante, el desarrollador de la variante 2 tal vez sólo ha corregido parte del error,
 
 0:06:29.820,0:06:35.640
-este sería un caso dividido - el - el Foo es todavía tiene un - un arreglo
+este sería un caso dividido, el Foo todavía tiene un arreglo
 
 0:06:35.640,0:06:40.860
-y es todavía buggy al mismo tiempo. O tal vez otro escenario sería Foo
+y un error al mismo tiempo. O tal vez otro escenario sería Foo
 
 0:06:40.860,0:06:47.760
 no es interesante porque Foo ha cambiado más allá de la comparación con el Foo de la variante 1.
@@ -196,7 +194,7 @@ no es interesante porque Foo ha cambiado más allá de la comparación con el Fo
 Permítanme darles también un ejemplo concreto de nuestro estudio.
 
 0:06:56.220,0:07:03.720
-Así que estos son dos - se trata de una variante que se llama Kafka que es la variante principal
+Así que estos son dos, se trata de una variante que se llama Kafka que es la variante principal
 
 0:07:03.720,0:07:10.980
 y luego variante LinkedIn Kafka fue bifurcado de Apache Kafka.
@@ -208,7 +206,7 @@ Así que los dos tienen commits únicos,
 como puedes ver tenemos 415 commits únicos que se introdujeron en LinkedIn Kafka,
 
 0:07:19.800,0:07:27.420
-bueno son más de 1K commits que - commits únicos que están apareciendo en una forma particular.
+bueno son más de 1K commits únicos que están apareciendo en una forma particular.
 
 0:07:28.260,0:07:33.420
 Así que estos dos han divergido el uno del otro y ya no están sincronizando.
@@ -220,21 +218,19 @@ Así que otro ejemplo concreto en nuestro estudio del caso de la oportunidad per
 tenemos una línea con errores en el upstream del software 2KM
 
 0:07:49.080,0:08:05.820
-y esta línea buggy es el resultado de un G10
-con un número de incidencia 12550
-- y 87.
+y esta línea con errores es el resultado de un G10 con un número de incidencia 12550 y 87.
 
 0:08:07.020,0:08:14.340
-Así que el desarrollador identificó esto y luego parcheó esto - parcheó el - el bug
+Así que el desarrollador identificó esto y luego arregló esto, arregló el error
 
 0:08:14.340,0:08:20.700
-e introdujo una nueva línea - una línea parcheada como se puede ver que ahora este viejo
+e introdujo una nueva línea, una línea corregida, como se puede ver que ahora esta vieja
 
 0:08:20.700,0:08:24.180
 línea se ha eliminado y la nueva línea se ha introducido en el proyecto.
 
 0:08:25.200,0:08:33.660
-Sin embargo en la bifurcación divergente en la cabecera Git identificamos que esta línea todavía tiene errores,
+Sin embargo en el fork divergente en la cabecera Git identificamos que esta línea todavía tiene errores,
 
 0:08:33.660,0:08:40.560
 por lo que se trata de una oportunidad perdida. Ahora permítanme presentarles nuestras preguntas de investigación.
@@ -246,46 +242,46 @@ Tenemos dos preguntas de investigación principales, la primera era,
 cuántos casos de duplicación de esfuerzos y oportunidades perdidas existen en las variantes,
 
 0:08:48.900,0:08:51.840
-y luego la segunda pregunta de investigación - investigación
+y luego la segunda pregunta de investigación
 
 0:08:51.840,0:08:53.460
-pregunta número dos, queríamos averiguar
+la pregunta número dos, queríamos averiguar
 
 0:08:53.460,0:09:00.600
-cuántos parches - cuánto retraso técnico parche existe entre la fuente y las variantes de destino -
+cuántos parches, cuánto retraso técnico de arreglo existe entre la fuente y las variantes de destino,
 
 0:09:00.600,0:09:04.860
-variante de destino - entre la variante de origen y la de destino.
+entre la variante de origen y la de destino.
 
 0:09:07.200,0:09:10.920
-Así que el método que utilizamos
+Así que el método que utilizamos es que
 
 0:09:10.920,0:09:16.380
-buscamos palabras clave en la solicitud de extracción que se han fusionado - que se fijaron,
+buscamos palabras clave en los pull requests que se han incorporado, que son: arreglado
 
 0:09:16.380,0:09:19.680
-la palabra clave como fix, arregla, resuelve,
+palabras clave como arreglo, arregla, resuelve,
 
 0:09:19.680,0:09:25.680
-que se fusionaron de nuevo en las diferentes variantes que estamos investigando.
+que se incorporaron de nuevo en las diferentes variantes que estamos investigando.
 
 0:09:25.680,0:09:32.700
-Por ejemplo, aquí hay una solicitud de extracción que fue la fijación de un error y se ha fusionado de nuevo en la variante 1.
+Por ejemplo, aquí hay un pull request que fue el arreglo de un error y se ha incorporado en la variante 1.
 
 0:09:33.960,0:09:41.460
-Y luego hemos extraído los archivos de las solicitudes de tirón de - de la fuente y también extrajo
+Y luego hemos extraído los archivos del pull request del código fuente y también sacamos
 
 0:09:41.460,0:09:49.560
-archivos de la cabeza Git de la meta. Así que el uso de una herramienta - herramienta que votaría,
+archivos del Git head del objetivo. Así que el uso de una herramienta, herramienta que votaría,
 
 0:09:50.340,0:09:55.320
-que utiliza una detección de clones llamado PaReco, comparamos estos archivos y estamos
+que utiliza una detección de clones llamado PaReco, comparamos estos archivos y somos
 
 0:09:55.320,0:09:58.800
-capaz de identificar los casos de duplicación de esfuerzos y la pérdida de oportunidades.
+capaces de identificar los casos de duplicación de esfuerzos y la pérdida de oportunidades.
 
 0:10:00.120,0:10:06.120
-Así que este es el gráfico de - de los resultados, como se puede ver, oh perdón,
+Así que este es el gráfico de los resultados, como se puede ver, oh perdón,
 
 0:10:09.420,0:10:12.840
 se puede ver que tenemos muchos casos de duplicación de esfuerzos
@@ -294,44 +290,43 @@ se puede ver que tenemos muchos casos de duplicación de esfuerzos
 y muchos casos de una oportunidad perdida en uno de nuestros ejemplos en ejecución, Apache Kafka.
 
 0:10:23.100,0:10:34.680
-Y entonces esto es un total que - hemos investigado más de 800
-y - 8K parches de 364 variantes de origen.
+Y entonces esto es el total que hemos investigado más de 800 y 8K arreglos de 364 variantes de origen.
 
 0:10:34.680,0:10:41.640
-Como se puede ver que tenemos parches muy interesantes, donde tenemos muchos casos de oportunidades perdidas,
+Como se puede ver que tenemos arreglos muy interesantes, donde tenemos muchos casos de oportunidades perdidas,
 
 0:10:41.640,0:10:46.500
 muchos casos de duplicación de esfuerzos, y también algunos casos de casos de división
 
 0:10:46.500,0:10:53.400
-donde un error es existente - tenemos parte de la del error que se fija.
+donde un error existente, tenemos parte del error que fue arreglado.
 
 0:10:56.520,0:11:02.160
-Nuestros resultados también alcanzaron una muy buena exactitud, precisión y recuerdo, como puede verse.
+Nuestros resultados también alcanzaron una muy buena exactitud, precisión y recall, como puede verse.
 
 0:11:03.060,0:11:07.200
-Y luego nuestra segunda pregunta de investigación, ¿cuánto retraso técnico parche existe
+Y luego nuestra segunda pregunta de investigación, ¿cuánto retraso técnico de arreglos existe
 
 0:11:07.200,0:11:10.680
-entre la fuente y las variantes de destino en variantes divididas.
+entre la fuente y las variantes de destino en variantes divididas?
 
 0:11:12.780,0:11:17.700
 Así que cada punto en el gráfico representa una variante de destino en el eje x y el
 
 0:11:17.700,0:11:23.160
-número de semanas que se ha perdido un parche introducido en la variante de origen.
+número de semanas que se ha perdido un arreglo introducido en la variante de origen.
 
 0:11:23.760,0:11:29.700
-Esto significa que, por término medio, se pasan por alto parches en la variante de destino -
+Esto significa que, por término medio, se pasan por alto arreglos en la variante de destino
 
 0:11:29.700,0:11:33.960
 se han introducido en la variante de origen 52 semanas antes.
 
 0:11:34.620,0:11:37.800
-Así que si usted es un desarrollador, usted no sería - usted
+Así que si sos un desarrollador, 
 
 0:11:37.800,0:11:42.780
-no querría estar en esta parte del rectángulo en el gráfico.
+no querrías estar en esta parte del rectángulo en el gráfico.
 
 0:11:44.880,0:11:49.680
 ¿Qué hemos aprendido de los resultados? Aprendimos de los resultados que
@@ -343,25 +338,25 @@ las variantes en plataformas de soporte muestran un mantenimiento subóptimo,
 investigadores y profesionales deben unirse para abordar este reto.
 
 0:12:01.140,0:12:05.580
-Hemos desarrollado una prueba de concepto de herramienta de recomendación de parches denominada PaReco,
+Hemos desarrollado una prueba de concepto de herramienta de recomendación de arreglos denominada PaReco,
 
 0:12:05.580,0:12:10.620
-vamos a - todavía estamos trabajando para ampliar este PaReco en una herramienta de recomendación parche.
+todavía estamos trabajando para ampliar este PaReco en una herramienta de recomendación de arreglos.
 
 0:12:11.340,0:12:17.820
 Actualmente estamos ampliando el trabajo sobre la oportunidad perdida,
 
 0:12:19.260,0:12:22.200
-por el que en primer lugar, lo que estamos haciendo que,
+en primer lugar, lo que estamos haciendo es,
 
 0:12:22.200,0:12:28.560
 estamos bifurcando la variante objetivo y, a continuación, utilizando la mejora genética,
 
 0:12:28.560,0:12:37.500
-queremos integrar fijar el parche que se ha introducido en la variante de origen
+queremos integrar el arreglo que se ha introducido en la variante de origen
 
 0:12:37.500,0:12:41.100
-y luego integrado en la variante de destino.
+y luego integrarlo en la variante de destino.
 
 0:12:41.880,0:12:44.580
 Gracias por escucharme, estaré encantado de responder a sus preguntas.
