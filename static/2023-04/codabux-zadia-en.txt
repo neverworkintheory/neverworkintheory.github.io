@@ -59,7 +59,7 @@ that are submitted before they are published. So in this study we explore the te
 types mentioned in these reviews, their distribution,
 
 0:01:54.780,0:02:01.260
-and whether the types of debt highlighted differ based on different user rules.
+and whether the types of debt highlighted differ based on different user roles.
 
 0:02:01.260,0:02:08.280
 So by user roles here we refer to authors, reviewers, and editors of these R packages.
@@ -149,7 +149,7 @@ So we used a traditional machine learning model and also neural nets including t
 So what we wanted to explore in this study is, what is the best model for classifying
 
 0:04:46.980,0:04:52.320
-self-admitted technical dept and its types. And we also investigate the causess of
+self-admitted technical debt and its types. And we also investigate the causess of
 
 0:04:52.320,0:04:58.500
 technical debt - the causes leading to the occurrences of SATD in R packages.
