@@ -943,6 +943,73 @@
   - date: '2023-04-26'
     reviewed: /2023/04/26/and-thats-a-wrap.html
     title: And That's a Wrap
+  - date: '2023-06-13'
+    reviewed: /2023/06/13/bai-gina.html
+    title: Gina Bai on How Novices Perceive and Perform Testing
+  - date: '2023-06-13'
+    reviewed: /2023/06/13/bohme-marcel.html
+    title: "Marcel B\xF6hme on the Surprising Efficiency and Cost of Fuzzing"
+  - date: '2023-06-13'
+    reviewed: /2023/06/13/businge-john.html
+    title: John Businge on Patches and Clones in Software Families
+  - date: '2023-06-13'
+    reviewed: /2023/06/13/chatterjee-preetha.html
+    title: Preetha Chatterjee on Emotion Awareness in Software Engineering
+  - date: '2023-06-13'
+    reviewed: /2023/06/13/codabux-zadia.html
+    title: Zadia Codabux on Technical Debt in R Packages
+  - date: '2023-06-13'
+    reviewed: /2023/06/13/devanbu-prem.html
+    title: Prem Devanbu on Leveraging the Bimodality of Software
+  - date: '2023-06-13'
+    reviewed: /2023/06/13/hoda-rashina.html
+    title: Rashina Hoda on Making Sense of User Feedback
+  - date: '2023-06-13'
+    reviewed: /2023/06/13/kula-elvan.html
+    title: Elvan Kula on Understanding and Predicting Delays in Software Development
+  - date: '2023-06-13'
+    reviewed: /2023/06/13/kula-raula.html
+    title: Raula Kula on What We Know About Libraries and Their Dependencies
+  - date: '2023-06-13'
+    reviewed: /2023/06/13/latoza-thomas.html
+    title: Thomas LaToza on Programming Strategically
+  - date: '2023-06-13'
+    reviewed: /2023/06/13/lee-carol.html
+    title: Carol Lee on Developer Thriving
+  - date: '2023-06-13'
+    reviewed: /2023/06/13/licorish-sherlock.html
+    title: Sherlock Licorish on Using Genetic Improvement to Enhance Code Snippets
+  - date: '2023-06-13'
+    reviewed: /2023/06/13/margulieux-lauren.html
+    title: Lauren Margulieux on Things Software Developers Should Know About Learning
+  - date: '2023-06-13'
+    reviewed: /2023/06/13/mirian-ariana.html
+    title: Ariana Mirian on Enterprise Vulnerability Remediation
+  - date: '2023-06-13'
+    reviewed: /2023/06/13/newman-christian.html
+    title: Christian Newman on Crafting Strong Identifier Naming Practices
+  - date: '2023-06-13'
+    reviewed: /2023/06/13/pinto-gustavo.html
+    title: Gustavo Pinto on Cognitive-Driven Development
+  - date: '2023-06-13'
+    reviewed: /2023/06/13/presler-marshall-kai.html
+    title: Kai Presler-Marshall on Teaching Collaborative Skills to Undergrads
+  - date: '2023-06-13'
+    reviewed: /2023/06/13/serebrenik-alexander.html
+    title: Alexander Serebrenik on Employability and Experiences of Older Developers
+  - date: '2023-06-13'
+    reviewed: /2023/06/13/sullivan-allison.html
+    title: Allison Sullivan on the Benefits of Unit Tests for Software Models
+  - date: '2023-06-13'
+    reviewed: /2023/06/13/tshukudu-ethel.html
+    title: Ethel Tshukudu on Conceptual Transfer in Students Learning New Programming
+      Languages
+  - date: '2023-06-13'
+    reviewed: /2023/06/13/zeller-andreas.html
+    title: Andreas Zeller on Creating Nasty Test Inputs
+  - date: '2023-06-13'
+    reviewed: /2023/06/13/zhou-shurui.html
+    title: Shurui Zhou on Sustainability of Open Source Scientific Software
   name: Lightning Talks
 - entries:
   - date: '2021-10-15'

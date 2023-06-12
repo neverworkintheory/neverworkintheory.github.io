@@ -1,11 +1,11 @@
 0:00:00.240,0:00:04.860
-So yeah I've been - we've been working on naturalness and bimodality thanks for the
+So yeah I've been - we've been working on naturalness and bimodality, thanks for the
 
 0:00:04.860,0:00:10.080
-intro and that Greg for many years now. These days every software engineer is
+intro and that, Greg, for many years now. These days every software engineer is
 
 0:00:10.080,0:00:13.380
-all excited about, and stoked about, large language models and they're use in code.
+all excited about, and stoked about, large language models and their use in code.
 
 0:00:14.760,0:00:20.460
 Some people derisively call large language models "stochastic parrots", with some justification,
