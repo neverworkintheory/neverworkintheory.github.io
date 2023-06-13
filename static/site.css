@@ -14,6 +14,10 @@ div.container {
     max-width: 64rem;
 }
 
+.large {
+    font-size: 120%;
+}
+
 /* Wrap */
 @media
  only screen and (max-width: 38em) {

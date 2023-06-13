@@ -1,7 +1,7 @@
 <h2>Recent Posts</h2>
 <table>
   <tr><th>Date</th><th>Title</th><th>Keywords</th></tr>
-  {% for post in site.posts limit:10 %}
+  {% for post in site.posts limit:25 %}
   <tr>
     <td style="white-space: nowrap;">{{post.date | date: '%F'}}</td>
     <td width="45%"><a href="{{post.url | relative_url}}">{{post.title}}</a></td>
