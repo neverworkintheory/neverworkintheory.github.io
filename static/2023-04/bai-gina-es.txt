@@ -1,0 +1,413 @@
+0:00:02.880,0:00:08.820
+Hola mi nombre es Gina Bai, soy profesora asistente de práctica en Vanderbilt y
+
+0:00:08.820,0:00:15.360
+estoy muy contenta de estar aquí para hablar acerca de cómo las personas novatas que hacen test perciben y realizan pruebas.
+
+0:00:16.440,0:00:21.120
+Nos centraremos en las pruebas unitarias, que es el nivel más básico de las pruebas de software.
+
+0:00:21.660,0:00:29.700
+Así que para empezar me gustaría que hicieras una conjetura, pueden compartirla en Slack, ¿cuánto cuesta una prueba unitaria?
+
+0:00:29.700,0:00:33.640
+¿Cuánto costará la mala calidad del software a los EE.UU. en 2022? [pausa]
+
+0:00:45.180,0:00:47.280
+Hagan una gran conjetura, valiente. 
+
+0:00:52.200,0:01:01.020
+¿1.400 millones de dólares? En realidad son al menos 2,41 billones de dólares.
+
+0:01:01.740,0:01:06.240
+Eso es alrededor del 10% del PBI por si quieren saberlo, de ese año.
+
+0:01:07.560,0:01:12.240
+Sé que esto es horrible, verdad?, y estoy segura de que esto aumentará la conciencia de
+
+0:01:12.240,0:01:18.120
+pruebas como una actividad crítica de ingeniería, así como la conciencia de que nuestros desarrolladores
+
+0:01:18.120,0:01:22.740
+y, por supuesto, nuestros testers deben ser capaces de realizar buenas pruebas. 
+
+0:01:22.740,0:01:27.600
+Sin embargo, Titus Winters, que es un ingeniero de software principal en Google,
+
+0:01:28.380,0:01:33.240
+señaló que la mayoría de sus nuevos graduados contratados por desgracia tienen
+
+0:01:33.240,0:01:37.620
+experiencia muy limitada con las pruebas. Así que las habilidades y el conocimiento de prueba es una
+
+0:01:37.620,0:01:44.220
+de las diferencias entre los programas de formación en ciencias de la computación y las expectativas de la industria respecto a los estudiantes que se gradúan.
+
+0:01:44.820,0:01:50.760
+Es una cuestión abierta para todos nosotros, cómo establecer, cómo mejorar a los estudiantes,
+
+0:01:50.760,0:01:54.060
+las nuevas contrataciones, o digamos las habilidades de prueba de las personas novatas.
+
+0:01:54.060,0:01:59.580
+Para ello, el primer paso es aprender cómo perciben y realizan las pruebas las personas novatas.
+
+0:02:00.780,0:02:08.220
+La mayoría de los principiantes no ven ninguna diferencia entre las pruebas y la depuración o piensan que el propósito de las pruebas
+
+0:02:08.220,0:02:15.360
+es mostrar lo correcto del programa. Esto es debido a que en la mayoría de los programas de educación CS, especialmente
+
+0:02:15.360,0:02:18.720
+los programas de grado, en general se espera que los estudiantes  
+
+0:02:18.720,0:02:24.600
+implementen sus programas dada una descripción: asegúrese de compilar, se ejecutan, pasan todos los
+
+0:02:24.600,0:02:29.940
+los casos de prueba proporcionados por los docentes. Y en algunos cursos también se espera que los estudiantes
+
+0:02:29.940,0:02:36.240
+escriban sus propias pruebas, para probar sus propios programas o programas implementados por sus compañeros.
+
+0:02:36.240,0:02:40.380
+Pero en general, si todos los casos de prueba pasan, significa que el
+
+0:02:40.380,0:02:43.380
+programa está listo para su presentación. Si no, es hora de depurar.
+
+0:02:43.380,0:02:49.380
+Así que yo diría que no es sorprendente en absoluto ver que los novatos se sienten y tienen una borrosa
+
+0:02:49.380,0:02:55.260
+línea conceptual entre la prueba y depuración. Pero la pregunta es: ¿podemos decir que un programa
+
+0:02:55.260,0:03:00.660
+es 100% correcto o es perfecto si pasan todos los casos de prueba?
+
+0:03:00.660,0:03:06.240
+¿Podría ser el caso de que la prueba no es lo suficientemente eficaz como para
+
+0:03:06.240,0:03:09.660
+capturar, para revisar la falla, o podría ser el caso de que algunas
+
+0:03:09.660,0:03:15.000
+de las pruebas en sí no son correctamente diseñadas e implementadas?
+
+0:03:16.200,0:03:22.440
+Así que lo que estamos tratando de hacer es capacitar a los novatos para ayudarles a construir la mentalidad del tester,
+
+0:03:22.440,0:03:26.880
+y ser capaz de identificar y averiguar los escenarios de prueba,
+
+0:03:26.880,0:03:30.900
+especialmente los casos extremos que pueden romper el programa.
+
+0:03:30.900,0:03:34.980
+Así que ese es el pensamiento de nivel dos. Y, por supuesto, queremos ayudar a los
+
+0:03:34.980,0:03:40.200
+novatos para llegar finalmente al nivel tres, para darse cuenta de que las pruebas sólo pueden mostrar la presencia
+
+0:03:40.200,0:03:45.240
+de los fallos, pero no su ausencia. Probamos los programas, probamos los
+
+0:03:46.080,0:03:51.780
+software para reducir su riesgo de provocar malas consecuencias o incluso catástrofes.
+
+0:03:51.780,0:04:03.900
+Y dejar que la mentalidad de los tester nos guíe realmente para diseñar y desarrollar mejor el software.
+
+0:04:03.900,0:04:09.960
+Así es como los novatos perciben las pruebas, veamos cómo practican las pruebas unitarias.
+
+0:04:09.960,0:04:14.700
+Hemos llevado a cabo varios estudios que exploran sus comportamientos de prueba y su rendimiento
+
+0:04:14.700,0:04:19.920
+y aquí voy a presentar varias preguntas representativas de los novatos.
+
+0:04:21.060,0:04:25.800
+Así que va la primera: Amy tenía una pregunta típica cuando los novatos van
+
+0:04:25.800,0:04:31.500
+hasta el nivel dos de nivel uno. Ella no estaba segura de cómo interpretar
+
+0:04:31.500,0:04:35.280
+y manejar una prueba que falló. ¿Está bien tener una prueba fallida?
+
+0:04:35.280,0:04:39.780
+¿Significa un error en el código fuente? ¿O es un error en el código de prueba?
+
+0:04:39.780,0:04:46.740
+Observamos varios casos en los que los participantes, los novatos, aunque
+
+0:04:47.580,0:04:51.780
+incluso cuando se les informó de que había al menos un error en el código
+
+0:04:51.780,0:04:55.680
+todavía confían en el código sobre las especificaciones del programa
+
+0:04:55.680,0:04:59.820
+e intentan cubrir ese código fuente independientemente de su corrección.
+
+0:05:01.080,0:05:07.500
+Y Bob necesitaba orientación sobre cuándo detener las pruebas. ¿Es determinado por el número de casos de prueba?,
+
+0:05:07.500,0:05:11.580
+podría ser, ¿Será el caso en que todo necesita ser probado?
+
+0:05:11.580,0:05:14.040
+¿y cómo asegurarse de que todo se prueba?
+
+0:05:14.040,0:05:17.520
+¿Podemos dejar de probar después de, por ejemplo, encontrar un error?
+
+0:05:17.520,0:05:25.320
+Esto en realidad puede ser como, esta pregunta en realidad puede ser parcialmente resuelta por
+
+0:05:25.320,0:05:30.360
+consultar las herramientas de cobertura como EclEmma que le dice , el usuario si el
+
+0:05:30.360,0:05:34.080
+casos de prueba está en realidad cubriendo el código fuente y cuánto del código se está ejercitando.
+
+0:05:34.080,0:05:40.200
+Pero no observamos la adopción de herramientas como estas en nuestros estudios.
+
+0:05:40.200,0:05:46.560
+Esto también sugiere la falta de exposición a las herramientas de prueba para los novatos.
+
+0:05:47.340,0:05:53.160
+Al mismo tiempo, también observamos algunos casos extremos en los que los novatos escribieron
+
+0:05:53.160,0:05:59.220
+docenas de pruebas para un solo método y todos ellos estaban probando el camino feliz.
+
+0:06:01.680,0:06:05.940
+Charlie tuvo dificultades para reutilizar los ejemplos de código de los recursos en línea
+
+0:06:05.940,0:06:10.380
+y Daniel no puede averiguar cómo implementar realmente una prueba para
+
+0:06:10.380,0:06:14.160
+indicar la existencia del fallo. Así que en nuestro estudio también encontramos varios
+
+0:06:14.160,0:06:20.940
+novatos donde fueron capaces de identificar para diseñar casos de prueba para la ruta infeliz 
+
+0:06:20.940,0:06:26.460
+pero terminaron borrando todos los casos de prueba sólo porque no pueden averiguar
+
+0:06:26.460,0:06:29.160
+la sintaxis correcta, por ejemplo para 
+
+0:06:29.160,0:06:35.520
+lanzar una excepción, así que se rindieron. Pero en general a los principiantes les resultó difícil
+
+0:06:35.520,0:06:40.680
+determinar qué probar y cómo hacerlo. No tienen consenso sobre lo que hace que una unidad sea
+
+0:06:40.680,0:06:46.800
+buena y, por lo tanto, a los principiantes les resulta difícil determinar cuándo dejar de probar
+
+0:06:46.800,0:06:50.760
+y tienden a probar sólo el camino feliz.
+
+0:06:50.760,0:06:56.100
+Además, los novatos suelen crear casos de prueba que no coinciden con las especificaciones del programa
+
+0:06:56.100,0:07:04.380
+y se enfrentan a barreras de implementación. Esto podría ser de su falta de
+
+0:07:04.380,0:07:10.200
+prácticas de prueba o podría ser un malentendido de las descripciones del programa.
+
+0:07:10.740,0:07:15.660
+Pero en respuesta a esos desafíos y con la consideración de la carga cognitiva,
+
+0:07:16.320,0:07:19.920
+bueno, los novatos tienen que
+
+0:07:19.920,0:07:26.160
+aprender a usar etiquetas, nuevos conceptos, nuevas bibliotecas, nuevas herramientas para poder practicar pruebas
+
+0:07:26.160,0:07:30.840
+así que esperamos mantener la carga cognitiva adicional lo más mínima posible cuando
+
+0:07:30.840,0:07:34.920
+introducimos nuestro apoyo. Así que introducimos una ligera
+
+0:07:34.920,0:07:37.620
+intervención con listas de comprobación. ¿Por qué listas de comprobación?
+
+0:07:37.620,0:07:43.740
+Dado que las listas de control fueron capaces de ser tan simples, verdad? y también son súper útiles
+
+0:07:43.740,0:07:49.860
+en otras áreas de investigación de ingeniería de software como la revisión de código y la inspección de software
+
+0:07:49.860,0:07:54.300
+y una gran característica de la lista de verificación es que es estática,
+
+0:07:54.300,0:07:57.660
+lo que reduce la curva de aprendizaje para los testers novatos,
+
+0:07:57.660,0:08:02.220
+y es lo suficientemente ligera como para ser transferida a través de las aulas,
+
+0:08:02.220,0:08:06.840
+programas de formación y lenguajes, incluidos los lenguajes naturales y los lenguajes de programación.
+
+0:08:06.840,0:08:10.020
+Y si echamos un vistazo más de cerca a los elementos de la lista,
+
+0:08:10.020,0:08:14.760
+podemos ver que se separa en dos niveles de abstracción,
+
+0:08:15.600,0:08:19.500
+uno para los casos de prueba y uno para conjuntos de prueba.
+
+0:08:19.500,0:08:23.820
+Cada nivel de abstracción también tiene dos conjuntos de elementos de la lista de comprobación,
+
+0:08:23.820,0:08:28.260
+los elementos que deben hacer, lo que representa la importante necesaria
+
+0:08:28.260,0:08:33.060
+y elementos que podrían hacer que representan las mejores prácticas de pruebas.
+
+0:08:34.500,0:08:39.060
+Así que contiene información tutorial, introduce brevemente el uso
+
+0:08:39.060,0:08:42.360
+de componentes de clase de prueba. La lista de comprobación también proporciona
+
+0:08:42.360,0:08:48.000
+las estrategias de prueba, por ejemplo la partición de clases de equivalencia y la prueba de valores límite.
+
+0:08:48.000,0:08:54.540
+No nombramos explícitamente esas estrategias en la lista de comprobación porque son novatos,
+
+0:08:54.540,0:08:57.540
+así que en su lugar les recordamos que pensaran en esos casos.
+
+0:08:58.440,0:09:03.780
+Además, los elementos de la lista de verificación también están diseñados para hacer frente a los errores comunes y olores de prueba
+
+0:09:03.780,0:09:08.040
+que se observan en estudios anteriores, así como en las aulas
+
+0:09:08.040,0:09:13.200
+y se puede ver que la mala denominación es uno de ellos, al igual que lo que dijo Christian, la denominación importa.
+
+0:09:13.200,0:09:18.360
+Y la lista de comprobación no es definitivamente como un estándar de oro para la práctica de pruebas
+
+0:09:18.360,0:09:24.840
+pero ayuda a los novatos a escribir pruebas que son de buena calidad y reducir el número
+
+0:09:24.840,0:09:33.000
+de pruebas redundantes innecesarias. Y descubrimos que la lista de comprobación funciona bien
+
+0:09:33.000,0:09:42.420
+y es al menos tan eficaz como una herramienta de cobertura como EclEmma para escribir pruebas de calidad para los novatos
+
+0:09:42.420,0:09:46.020
+lo que indica que el apoyo de la herramienta no necesita ser
+
+0:09:46.020,0:09:52.380
+sofisticado para ser maduro, para ser eficaz. Y también encontramos que los novatos que han
+
+0:09:52.380,0:09:57.900
+tenido menor conocimiento previo en pruebas unitarias se benefician más de la lista de verificación.
+
+0:09:59.820,0:10:04.800
+En resumen, la mayoría de los testers novatos no ven ninguna diferencia entre probar y depurar,
+
+0:10:04.800,0:10:07.740
+no pueden construirlas, y creen que el objetivo
+
+0:10:07.740,0:10:12.000
+de las pruebas es mostrar que el programa es correcto. Hablamos de los retos que
+
+0:10:12.000,0:10:16.500
+encontraron al practicar las pruebas y también demostramos que el soporte de herramientas
+
+0:10:16.500,0:10:21.960
+no necesita ser sofisticado para empezar, una simple lista de comprobación a veces hará la magia.
+
+0:10:24.480,0:10:26.580
+Y abro el turno de preguntas.
+
+0:10:27.480,0:10:36.420
+Sí fantástico, muchas gracias Gina, de nuevo otra gran charla, tenemos tiempo para preguntas
+
+0:10:36.420,0:10:40.980
+aunque si la gente tiene alguna por favor no dude en ponerlas en el Slack.
+
+0:10:40.980,0:10:46.560
+Voy a empezar. Me parece muy interesante, especialmente
+
+0:10:46.560,0:10:50.520
+ya que desde que he estado trabajando en George Mason y he estado enseñando una clase de pruebas de software
+
+0:10:50.520,0:10:55.320
+y reflexionando sobre mi propia educación CS me di cuenta de que nunca tuve ese tipo de educación
+
+0:10:56.160,0:10:59.040
+en mi, de forma explícita y en profundidad, verdad?,
+
+0:10:59.040,0:11:01.860
+con lo que significa escribir pruebas, a pensar en las pruebas.
+
+0:11:01.860,0:11:06.360
+¿Crees que parte del problema que llevó a esta investigación es que no estamos
+
+0:11:06.360,0:11:10.500
+centrándonos lo suficiente en un nivel más profundo? ¿crees que las intervenciones como
+
+0:11:10.500,0:11:13.740
+estas también podrían apoyar la forma en que enseñamos las pruebas, por ejemplo?
+
+0:11:15.840,0:11:20.100
+Bueno, ese es mi trabajo, así que probablemente soy parcial,
+
+0:11:20.100,0:11:25.080
+pero la razón por la que empecé a trabajar en la educación de prueba es que yo personalmente
+
+0:11:25.080,0:11:28.080
+no recibí ninguna formación al respecto, la educación formal de prueba,
+
+0:11:28.080,0:11:33.360
+cuando yo era un estudiante no vi pruebas hasta en la escuela de posgrado haciendo mi trabajo de doctorado.
+
+0:11:33.360,0:11:41.040
+Así que creo que es importante para nosotros por lo menos probar algo que no es tan difícil de adoptar para ambos
+
+0:11:41.040,0:11:47.280
+estudiantes y profesores, para ayudarles a enseñar a hacer pruebas y
+
+0:11:47.280,0:11:54.120
+ayudarles a aprender a hacer pruebas. Y esto es sólo de nuevo porque no muchos profesores
+
+0:11:54.120,0:11:58.980
+tenían una educación formal o experiencia en pruebas por lo que probablemente
+
+0:12:00.000,0:12:07.140
+no tocarán ese nivel en profundidad, así que de nuevo, en la mayoría de los casos la práctica que
+
+0:12:07.140,0:12:10.080
+sólo tienen los estudiantes es ejecutarlo, ejecutar su programa en contra de sus
+
+0:12:10.080,0:12:15.660
+casos de prueba proporcionados por los instructores y, a veces los casos de prueba realizados o proporcionados
+
+0:12:15.660,0:12:19.680
+por los instructores ni siquiera son lo suficientemente buenos. Así que absolutamente,
+
+0:12:21.780,0:12:25.620
+siento que la prueba, la lista de verificación puede funcionar como un buen,
+
+0:12:25.620,0:12:31.440
+al menos un umbral mínimo de lo que tus pruebas deben cubrir.

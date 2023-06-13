@@ -1,0 +1,464 @@
+0:00:00.060,0:00:04.560
+Mi charla va a ser un poco diferente. Así que mi charla va a ser sobre el sorprendente
+
+0:00:04.560,0:00:09.960
+eficiente y exponencial costo de fuzzing. Entonces, ¿cómo puede algo ser sorprendentemente eficiente
+
+0:00:09.960,0:00:14.220
+y además tener un costo exponencial? Bueno, el propósito real de esta charla es
+
+0:00:14.220,0:00:20.640
+introducir a la rareza de la aleatoriedad y la teoría de la probabilidad.
+
+0:00:20.640,0:00:26.040
+Así que dado el nombre de este evento no voy a hablar mucho acerca de la teoría
+
+0:00:26.040,0:00:34.380
+pero quiero hablar de la intuición. Y uno de los mensajes clave que quiero
+
+0:00:34.380,0:00:39.120
+que te lleves de esta charla es que podemos tener fuertes intuiciones sobre la solución de un problema
+
+0:00:39.120,0:00:44.580
+pero sin una comprensión profunda del problema a veces nuestras intuiciones pueden llevarnos por mal camino.
+
+0:00:46.260,0:00:51.960
+¿Qué es el fuzzing? Fuzzing es un proceso de pruebas.
+
+0:00:51.960,0:00:54.960
+Se nos da un programa y el programa toma cuatro caracteres.
+
+0:00:56.520,0:01:01.740
+Un enfoque para probar este programa se llama caja blanca fuzzing. Caja blanca porque el primer
+
+0:01:01.740,0:01:05.940
+análisis en realidad puede ver el interior de ese programa.
+
+0:01:07.500,0:01:13.380
+El programa tiene cuatro ramas y ahora podríamos tratar de explorar cada camino en
+
+0:01:13.380,0:01:17.700
+que el programa simplemente trata de capturar las condiciones de cada una de estas ramas.
+
+0:01:17.700,0:01:24.540
+Digamos que una rama es, una entrada sería ejercitar el camino donde el primer carácter no es una b,
+
+0:01:24.540,0:01:30.300
+otra entrada ejercitaría ese camino donde la primera entrada es una b pero la segunda entrada
+
+0:01:30.300,0:01:32.280
+no es una a, y así sucesivamente.
+
+0:01:32.280,0:01:37.680
+Así podríamos explorar todos los caminos y al final después de explorar el quinto camino, número
+
+0:01:37.680,0:01:40.500
+cinco, veríamos que el programa falla.
+
+0:01:40.500,0:01:45.420
+Y así, en este sentido este enfoque llamado caja blanca fuzzing es realmente más eficaz.
+
+0:01:45.420,0:01:47.760
+¿Por qué es más eficaz? Porque puede
+
+0:01:47.760,0:01:52.920
+realmente demostrar la ausencia de un error, en este caso de una violación de aserción,
+
+0:01:52.920,0:01:55.260
+simplemente enumerando todos los caminos a través del programa.
+
+0:01:55.260,0:01:59.520
+Porque estás haciendo algunas suposiciones pero en principio podríamos decir que la caja blanca fuzzing
+
+0:01:59.520,0:02:05.160
+sería capaz de demostrar la ausencia de error, en este sentido es más eficaz.
+
+0:02:06.420,0:02:07.740
+Y también es bastante eficaz, 
+
+0:02:07.740,0:02:10.650
+si nosotros, supongamos que estamos, 
+
+0:02:10.650,0:02:12.840
+tenemos estos cinco, hay cinco caminos en ese programa.
+
+0:02:12.840,0:02:20.640
+Si tomamos una muestra de un camino al azar sin reemplazo que se espera que tome alrededor de tres entradas para encontrar
+
+0:02:20.640,0:02:22.500
+ese error , correcto?,
+
+0:02:22.500,0:02:27.180
+generado por enumerar todos estos caminos utilizando esta técnica llamada caja blanca fuzzing.
+
+0:02:28.980,0:02:33.240
+Ahora en el otro lado del espectro hay algo llamado caja negra fuzzing.
+
+0:02:33.240,0:02:34.800
+El fuzzing de caja negra no sabe nada del
+
+0:02:34.800,0:02:37.500
+programa, lo que haría, es simplemente generar entradas 
+
+0:02:37.500,0:02:42.360
+aleatorias para ese programa. Así que en la mayoría de las máquinas un
+
+0:02:42.360,0:02:47.520
+caracter puede tomar uno de 256 valores, y supongamos que acabamos de generar al azar
+
+0:02:48.600,0:02:54.120
+estos valores utilizando el muestreo, uniforme al azar con reemplazo.
+
+0:02:56.400,0:02:59.580
+Por supuesto, nunca puede demostrar la ausencia de errores,
+
+0:02:59.580,0:03:05.880
+de hecho hay una gran cita de Dijkstra que dice que las pruebas de programas pueden
+
+0:03:05.880,0:03:08.700
+ser utilizadas para mostrar la presencia de errores, pero nunca mostrar su ausencia.
+
+0:03:09.300,0:03:14.340
+Es más, recientemente que hemos mirado en este problema de dar
+
+0:03:14.340,0:03:20.760
+pruebas de algún tipo de garantías estadísticas para que podamos calcular de alguna manera lo que se llama un
+
+0:03:20.760,0:03:26.220
+riesgo residual después de una cierta cantidad de pruebas, pero el efecto se mantiene,
+
+0:03:26.220,0:03:31.740
+caja negra fuzzing no es lo más efectivo, no puede probar la ausencia de errores.
+
+0:03:31.740,0:03:37.200
+Entonces si miramos esto desde una perspectiva estadística,
+
+0:03:37.800,0:03:42.000
+dije antes que el fuzzing de caja blanca requeriría alrededor de tres entradas y
+
+0:03:42.000,0:03:44.880
+expectativas para encontrar ese error. Ahora el fuzzing de caja negra,
+
+0:03:44.880,0:03:49.320
+si muestreamos cada entrada, cada valor para cada caracter uniformemente al azar,
+
+0:03:49.320,0:03:52.140
+esperaríamos generar alrededor de cuatro mil millones de entradas antes de
+
+0:03:52.140,0:03:54.360
+descubrir este error. Esto parece mucho.
+
+0:03:55.200,0:03:58.680
+Entonces la caja blanca fuzzing debería ser mejor, verdad?, es la más efectiva,
+
+0:03:58.680,0:04:02.340
+también es bastante eficiente. Y aquí es donde va a ir
+
+0:04:02.340,0:04:05.280
+mal por primera vez pero al menos no siempre.
+
+0:04:06.240,0:04:13.920
+A veces la caja negra fuzzing gana. Y esto se descubrió hace 30 o 40
+
+0:04:13.920,0:04:18.840
+años atrás cuando la gente empezó a hacer experimentos con estas dos técnicas
+
+0:04:20.940,0:04:25.500
+con la técnica hipotéticamente más eficaz y con un simple muestreo aleatorio.
+
+0:04:25.500,0:04:34.020
+De alguna manera se encontraron con que dado un tiempo limitado, esta muy simple, muy tonta técnica gana y
+
+0:04:34.020,0:04:41.040
+encuentra más errores que la técnica más eficaz. Y así nos fijamos en esto muy recientemente
+
+0:04:43.140,0:04:48.180
+desde una perspectiva estadística y encontramos que si una caja blanca
+
+0:04:48.180,0:04:52.980
+fuzzing toma demasiado tiempo por entrada, nuestra caja negra fuzzing supera la caja blanca fuzzing.
+
+0:04:52.980,0:04:55.560
+Entonces, si la generación para una entrada toma
+
+0:04:55.560,0:04:59.760
+demasiado tiempo, entonces el fuzzing de caja negra es mejor. Porque el fuzzing de caja negra genera
+
+0:05:00.300,0:05:04.440
+entradas muy rápido. Así que en mi máquina se tarda alrededor de 6,3
+
+0:05:04.440,0:05:08.820
+segundos para generar 4 mil millones de entradas y si tuviera 100 máquinas
+
+0:05:09.540,0:05:15.840
+tomaría 63 milisegundos para que podamos escalar fácilmente en la búsqueda de errores
+
+0:05:15.840,0:05:19.740
+ya que el fuzzing de caja negra es esencialmente y vergonzosamente paralelo.
+
+0:05:21.900,0:05:27.540
+Así, en este documento en realidad podemos dar un límite probabilístico en este tiempo máximo.
+
+0:05:29.520,0:05:33.360
+Entonces, ¿es el fuzzing de caja negra lo mejor que podemos hacer?
+
+0:05:35.940,0:05:39.780
+Y la respuesta aquí es incorrecta, no, podemos hacer algo aún mejor que eso.
+
+0:05:40.440,0:05:44.340
+Así que lo que presenté aquí fue un fuzzing de caja negra generacional.
+
+0:05:44.340,0:05:45.540
+Lo que significa es que genero
+
+0:05:46.980,0:05:51.540
+valores para cada uno de estos caracteres, pero también podría, en lugar de tratar de
+
+0:05:51.540,0:05:56.040
+generar entradas desde cero, usar el enfoque generacional,
+
+0:05:56.040,0:06:01.440
+tal vez podamos reutilizar los insumos existentes, y esto se llama caja negra mutacional de pruebas.
+
+0:06:02.160,0:06:09.480
+Supongamos que tenemos una entrada semilla que es "mala". La entrada mala es "¡mala!"
+
+0:06:10.260,0:06:14.400
+Así que si tuviéramos un fuzzing mutacional que simplemente selecciona los cuatro
+
+0:06:14.400,0:06:18.540
+caracteres al azar y luego elige un valor para que al azar
+
+0:06:18.540,0:06:24.540
+a continuación, con una probabilidad de uno sobre cuatro veces, uno sobre 256
+
+0:06:24.540,0:06:31.740
+una expectativa de alrededor de 1000 entradas que es mucho menos de cuatro mil millones de entradas.
+
+0:06:32.340,0:06:38.340
+Pero aquí he hecho un poco de trampa. Elegimos una muy buena semilla para empezar,
+
+0:06:38.340,0:06:42.720
+¿podemos hacerlo aún mejor? ¿Podemos de alguna manera automáticamente
+
+0:06:42.720,0:06:46.800
+descubrir esta semilla de inicio? Y aquí es donde el
+
+0:06:46.800,0:06:52.380
+tercer enfoque caja gris fuzzing entra en juego. ¿Podemos tomar la ventaja de la caja negra
+
+0:06:52.380,0:06:55.740
+fuzzing y la ventaja de la caja blanca fuzzing, ¿podemos combinarlos?
+
+0:06:56.280,0:06:59.100
+Y la caja gris fuzzing, porque en realidad no analiza el programa,
+
+0:06:59.100,0:07:03.300
+pero tomamos alguna retroalimentación llamada feedback de cobertura de fuzzing de caja gris
+
+0:07:03.300,0:07:05.760
+y añadimos entradas generadas al corpus que aumentan la cobertura.
+
+0:07:06.780,0:07:12.240
+Supongamos que empezamos con una entrada aleatoria. La probabilidad de que generemos la primera
+
+0:07:12.240,0:07:16.080
+cobertura creciente de entrada es uno sobre mil,
+
+0:07:16.080,0:07:20.880
+lo que significa una expectativa de alrededor de 1024 entradas a
+
+0:07:20.880,0:07:26.640
+generar la primera entrada de cobertura creciente. Lo añadimos al corpus y luego seleccionamos esta
+
+0:07:28.800,0:07:33.540
+siguiente semilla uniformemente al azar y en este caso, esta semilla, y
+
+0:07:33.540,0:07:37.980
+la probabilidad de que elegimos esta semilla, este caracter y genere 'a' como el valor,
+
+0:07:37.980,0:07:42.420
+requiere alrededor de 2000 entradas. Así que seguimos así,
+
+0:07:42.420,0:07:48.300
+y fácilmente a partir de una entrada aleatoria podemos generar, podemos
+
+0:07:48.300,0:07:53.640
+encontrar un error utilizando sólo 10.000 entradas. Y ahora mi máquina sólo tarda 150 microsegundos.
+
+0:07:53.640,0:07:58.620
+Así que esto es mucho más rápido que una herramienta de ejecución simbólica que requiere
+
+0:07:58.620,0:08:03.420
+toda esta maquinaria, la resolución de restricciones y la codificación y así sucesivamente para tres entradas.
+
+0:08:05.280,0:08:09.120
+Y en el trabajo que presentamos en CCS16 también impulsamos la caja gris
+
+0:08:09.120,0:08:13.860
+fuzzing simplemente eligiendo esa semilla que ejerce el dominio de menor probabilidad,
+
+0:08:13.860,0:08:18.060
+y bajamos aún más a cuatro mil entradas y a 55 microsegundos.
+
+0:08:19.560,0:08:24.960
+Muy bien, así que la idea es, si ustedes tienen un fuzzing muy eficiente
+
+0:08:24.960,0:08:30.060
+vamos a incorporar más máquinas en el problema. Recuerden que en mi máquina se tarda 6,3 segundos,
+
+0:08:30.060,0:08:34.620
+en 100 máquinas se tarda 63 milisegundos en encontrar el mismo error.
+
+0:08:36.540,0:08:40.920
+Así que entonces podrías pensar, bueno, si tengo, puedo
+
+0:08:40.920,0:08:44.340
+tomar X veces pequeñas máquinas significa que puedo encontrar X veces más errores, ¿verdad?
+
+0:08:45.120,0:08:50.520
+Y de nuevo nos equivocamos. Esto es un costo empírico.
+
+0:08:50.520,0:08:56.460
+Miramos un montón de datos donde vemos que se trata de un número exponencialmente creciente de máquinas.
+
+0:08:56.460,0:08:59.400
+Es una escala logarítmica aquí. Y este es el número de vulnerabilidades
+
+0:08:59.400,0:09:04.620
+adicionales descubiertas en el mismo tiempo. Y vemos que en un aumento lineal en el número
+
+0:09:04.620,0:09:08.880
+de nuevas vulnerabilidades descubiertas requiere un aumento exponencial del número de máquinas.
+
+0:09:08.880,0:09:13.980
+Y este es el costo exponencial. Y un poco de explicación aquí,
+
+0:09:13.980,0:09:17.580
+esto es sólo la intuición. Si piensas acerca de un solo error
+
+0:09:18.360,0:09:22.980
+y aumentamos el número de máquinas exponencialmente durante mucho tiempo, 
+
+0:09:22.980,0:09:27.540
+durante mucho tiempo aumentamos el número de máquinas no vamos a ver ese error
+
+0:09:27.540,0:09:32.280
+y hay un aumento casi lineal en un cierto número de máquinas
+
+0:09:32.280,0:09:37.080
+y luego estamos de nuevo cerca, casi hemos descubierto este error y así
+
+0:09:37.080,0:09:41.160
+seguimos con una línea recta. Si ahora, en lugar de tener sólo una
+
+0:09:41.160,0:09:45.360
+vulnerabilidad tenemos 10 vulnerabilidades y obtenemos estas líneas rápidamente y
+
+0:09:45.360,0:09:48.660
+que casi parecen líneas rectas y aumentamos el número de
+
+0:09:48.660,0:09:53.340
+de vulnerabilidades, el número de errores o lo que quieras medir y lo encuentras
+
+0:09:53.340,0:09:58.920
+cada vez más lineal. Y la razón de esto es que tenemos estos
+
+0:09:58.920,0:10:04.260
+tipo de constante, que nunca las vemos tampoco, nunca vemos el que se descubre o no
+
+0:10:04.260,0:10:07.800
+siempre vemos el ya descubierto y en el medio tenemos este
+
+0:10:07.800,0:10:13.020
+tipo de aumentos casi lineales. Así es como tenemos estaumento lineal
+
+0:10:13.020,0:10:19.080
+para un número exponencial de máquinas. Bien, intuitivamente cada nueva vulnerabilidad
+
+0:10:19.080,0:10:22.200
+requiere algunos recursos más que la vulnerabilidad anterior
+
+0:10:24.180,0:10:28.980
+por lo que el ritmo constante de descubrimiento de vulnerabilidades requiere una cantidad exponencial de recursos.
+
+0:10:31.560,0:10:35.700
+Así que lo que te mostré es: caja blanca fuzzing, tenemos una técnica con la 
+
+0:10:35.700,0:10:38.520
+que realmente nos encanta trabajar, que es realmente inteligente,
+
+0:10:38.520,0:10:41.160
+que analiza el programa, que de hecho es el más eficaz,
+
+0:10:41.160,0:10:45.540
+pero en la práctica es fácilmente superada por una técnica
+
+0:10:45.540,0:10:48.780
+muy tonta llamada caja negra fuzzing, simplemente generando entradas aleatoriamente.
+
+0:10:48.780,0:10:53.880
+Y de hecho esto es tan eficiente que podemos escalar fácilmente, a través de una gran cantidad
+
+0:10:53.880,0:10:58.620
+de máquinas y encontrar el mismo número de errores X veces más rápido.
+
+0:11:00.060,0:11:03.420
+También hablé de una máquina que aprovecha la eficiencia
+
+0:11:03.420,0:11:07.800
+de la caja negra fuzzing que enumera caminos como caja blanca fuzzing
+
+0:11:07.800,0:11:12.780
+pero luego expliqué cómo incluso esa técnica de fuzzing de caja gris incluye fuzzing de caja negra
+
+0:11:12.780,0:11:17.160
+y el fuzzing de caja gris se ve afectado de alguna manera por un costo exponencial.
+
+0:11:18.000,0:11:23.820
+Muchas gracias. Muy bien, muchas gracias Marcel.
+
+0:11:25.200,0:11:28.620
+Es estupendo ver este tipo de enfoque cuantitativo de este problema.
+
+0:11:29.700,0:11:36.180
+Una pregunta que viene de uno de los espectadores es, ¿cuánto de las estadísticas necesito entender
+
+0:11:36.180,0:11:43.560
+para poder aplicar este tipo de técnicas? Para aplicarlo no tienen
+
+0:11:43.560,0:11:48.960
+necesidad de entender las estadísticas. Es más, entender
+
+0:11:48.960,0:11:55.860
+las estadísticas es más una ayuda para ustedes que, por ejemplo, la idea de que ustedes no pueden simplemente
+
+0:11:55.860,0:12:00.480
+poner más máquinas en el problema y, a continuación, la idea de encontrar más errores, no funciona.
+
+0:12:00.480,0:12:06.540
+En algún momento ustedes pueden quedarse sin máquinas porque el costo de
+
+0:12:06.540,0:12:13.560
+encontrar más vulnerabilidades es exponencial. Eso es interesante para entender por qué este es el
+
+0:12:13.560,0:12:17.460
+caso y utilizamos la estadística y la teoría de la probabilidad para explicar por qué es así.
+
+0:12:17.460,0:12:21.720
+Pero cuando aplicas fuzzing no necesitas saber, no necesitas entender las estadísticas.
+
+0:12:21.720,0:12:29.580
+Tal vez otra cosa que exploramos es que, a menudo estamos interesados en la
+
+0:12:29.580,0:12:32.100
+probabilidad de que nos encontramos con o si no hemos encontrado un error.
+
+0:12:32.100,0:12:37.500
+Supongamos que han ejecutado una campaña durante 24 horas y no han encontrado ningún error,
+
+0:12:37.500,0:12:40.560
+Ustedes todavía quieren saber cuál es la probabilidad de que nos encontremos con un
+
+0:12:40.560,0:12:45.900
+error con sólo una entrada más generada y aquí es donde se pueden utilizar las estadísticas.

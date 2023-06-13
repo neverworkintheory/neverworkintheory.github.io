@@ -1,0 +1,452 @@
+0:00:00.000,0:00:02.460
+Gracias por la calurosa bienvenida.
+
+0:00:02.460,0:00:07.680
+Estoy muy contenta de participar hoy en la sesión del NWIT.
+
+0:00:07.680,0:00:14.940
+Así que hoy voy a hablar de mi trabajo sobre la concientización de las emociones en la ingeniería de software,
+
+0:00:14.940,0:00:22.980
+específicamente hacia la comprensión de cómo establecemos la confianza en los equipos de desarrollo de software.
+
+0:00:25.020,0:00:29.940
+Así que voy a empezar con un poco de tweets motivadores.
+
+0:00:29.940,0:00:36.360
+Como se puede ver en algunos de los tweets de los profesionales aquí que,
+
+0:00:36.360,0:00:38.760
+ya sabes, los desarrolladores valoran
+
+0:00:38.760,0:00:45.780
+y reconocen la importancia de la confianza y la coordinación en los equipos de ingeniería de software
+
+0:00:46.500,0:00:49.920
+Esto es increíblemente importante para crear un buen software
+
+0:00:49.920,0:00:53.880
+y viste que si no te importan los aspectos humanos
+
+0:00:53.880,0:00:59.340
+como la confianza y la colaboración en tu proyecto, tu proyecto ya está en problemas, ¿verdad?
+
+0:01:00.240,0:01:07.440
+Así que lo que quería hacer como investigadora, yo y mi laboratorio en Drexel, queríamos entender,
+
+0:01:07.440,0:01:09.780
+¿hay una manera de que podamos,
+
+0:01:10.500,0:01:19.140
+saber, analizar y ver cómo específicamente la confianza se incorpora o se exhibe en GitHub?
+
+0:01:21.240,0:01:26.400
+Porque esto es tan importante, pero la confianza parece ser muy vaga y no
+
+0:01:26.400,0:01:32.640
+no entendemos lo que entendemos por confianza. Así que antes de empezar a analizar y buscar
+
+0:01:32.640,0:01:38.280
+en los repositorios de GitHub es importante para nosotros saber y entender lo que es la confianza.
+
+0:01:39.060,0:01:44.280
+Y parece que la respuesta a esa pregunta es bastante complicada.
+
+0:01:45.120,0:01:50.460
+Así que varios investigadores en el campo de la psicología han
+
+0:01:51.120,0:01:55.440
+estudiado la confianza y llegaron a
+
+0:01:55.440,0:01:59.340
+diferentes tipos de definiciones y, ya sabes,
+
+0:01:59.340,0:02:03.960
+la que más se acerca a la ingeniería de software,
+
+0:02:03.960,0:02:08.400
+específicamente porque está diseñado para equipos virtuales,
+
+0:02:08.400,0:02:14.520
+aparece en mi diapositiva aquí. Así que voy a hacer una pausa de 5-10
+
+0:02:14.520,0:02:21.300
+segundos para que la gente lo lea porque no voy a leer algo que está en la diapositiva.
+
+0:02:26.880,0:02:35.220
+Bien, ¿qué entendemos por esto? Es vago, verdad?, no entendemos
+
+0:02:35.220,0:02:45.180
+realmente lo que es la confianza y qué tipo de decisiones estamos tomando en los equipos de ingeniería de software
+
+0:02:45.180,0:02:51.300
+acerca de, cómo confiamos, qué confiamos, qué no confiamos, pero no entendemos completamente lo que queremos decir con ella.
+
+0:02:51.900,0:02:58.080
+Así que, ya sabes, todos somos ingenieros, así que vamos a tratar de desmenuzar y ver lo que
+
+0:02:58.080,0:03:03.120
+son las diferentes dimensiones y lo que impulsa nuestras decisiones en los equipos de ingeniería de software.
+
+0:03:05.040,0:03:11.880
+Basado en la psicología hay varias dimensiones de la confianza.
+
+0:03:11.880,0:03:17.100
+Me refiero a los factores que implícitamente impulsan tus decisiones.
+
+0:03:17.100,0:03:18.360
+¿Y cuáles son?
+
+0:03:19.200,0:03:22.200
+El primero es la confianza basada en la acción. ¿En qué consiste?
+
+0:03:22.200,0:03:29.220
+Por ejemplo, confiarías más en una persona si pudieras comunicarte bien con ella,
+
+0:03:29.220,0:03:32.280
+con retrasos mínimos y una buena comunicación en general,
+
+0:03:32.280,0:03:34.740
+porque saben que esa persona es más fiable,
+
+0:03:34.740,0:03:38.820
+¿verdad? Luego está la confianza basada en el compromiso.
+
+0:03:38.820,0:03:46.620
+Eso sucede cuando ambos están comprometidos hacia el cumplimiento de un determinado tipo de tarea o tienen
+
+0:03:46.620,0:03:49.080
+un objetivo concreto, un objetivo común.
+
+0:03:50.640,0:03:54.660
+Luego está la competencia. Por ejemplo decir si ustedes están tratando de
+
+0:03:54.660,0:04:00.120
+asignar un error a un desarrollador en su equipo, ustedes quieren asignar a alguien que
+
+0:04:00.120,0:04:05.220
+piensan que es lo suficientemente competente como para resolver ese problema, por lo que es la confianza basada en la habilidad.
+
+0:04:06.600,0:04:13.140
+La siguiente es la confianza institucional. Por ejemplo, las personas que pertenecen a las
+
+0:04:13.140,0:04:19.320
+mismas instituciones tienden a confiar más en los demás porque piensan que pertenecen a la misma
+
+0:04:19.320,0:04:22.800
+institución y, por lo tanto, tienen el mismo conjunto de valores y objetivos.
+
+0:04:25.860,0:04:29.040
+Los siguientes tipos son interesantes, es la confianza basada en la personalidad.
+
+0:04:29.040,0:04:34.740
+Algunas personas inherentemente tienen más propensión a confiar en los demás,
+
+0:04:34.740,0:04:41.640
+así que es como una confianza basada en la personalidad. Y la siguiente es la confianza de transferencia.
+
+0:04:41.640,0:04:44.160
+Lo que queremos decir con eso es, por ejemplo,
+
+0:04:44.160,0:04:49.980
+conozco a una persona en la que confío, digamos que es la persona A,
+
+0:04:49.980,0:04:54.420
+y la persona A me recomienda a la persona B que no conozco
+
+0:04:54.960,0:05:00.420
+pero ya que confío en A yo confiaría en esa recomendación y lo haría
+
+0:05:00.420,0:05:07.620
+por lo tanto confiaría en la nueva persona B recomendada. Así que eso es lo que llamamos confianza transferida.
+
+0:05:08.520,0:05:14.880
+Bien, estas son las dimensiones de la confianza que encontramos en psicología,
+
+0:05:14.880,0:05:18.360
+pero queremos entender como esto, ya sabes,
+
+0:05:18.360,0:05:26.040
+se traduce en un contexto de ingeniería de software. Así que para ello hicimos un estudio preliminar
+
+0:05:26.040,0:05:30.780
+en las solicitudes de GitHub que ha sido aceptadas en ICSE Senior de este año
+
+0:05:31.860,0:05:36.660
+donde analizamos manualmente un conjunto de 100 pull requests en GitHub.
+
+0:05:36.660,0:05:41.340
+Elegimos cuatro repositorios, cuatro repositorios populares de código abierto, para
+
+0:05:41.340,0:05:45.120
+recoger estas pull requests, y consideramos no sólo el texto,
+
+0:05:45.120,0:05:49.920
+si no todo, los metadatos, los perfiles de desarrollador, todo para hacer este análisis.
+
+0:05:53.760,0:05:57.420
+Así que ya que hablamos de todas estas dimensiones en primer lugar,
+
+0:05:57.420,0:06:03.540
+vamos a ver cómo se traduce exactamente en un contexto de pull requests en GitHub.
+
+0:06:04.260,0:06:08.160
+Así que vemos la confianza basada en la acción cuando se exhibe 
+
+0:06:08.160,0:06:13.680
+la frecuencia y la calidad de los comentarios o revisiones de las pull requests, verdad?,
+
+0:06:13.680,0:06:16.800
+así que si hay un comentario de buena calidad, buena explicación,
+
+0:06:16.800,0:06:23.640
+y la persona es más proactiva y receptiva, entonces desarrollas una confianza basada en la acción.
+
+0:06:24.960,0:06:27.120
+Del mismo modo, la confianza basada en el compromiso
+
+0:06:27.120,0:06:31.380
+es revisar las pull requests cuando se pide o aborde el comentario de un revisor.
+
+0:06:32.280,0:06:40.680
+La tercera es interesante, tendemos a mirar las acciones pasadas de la gente en el repositorio,
+
+0:06:40.680,0:06:43.920
+y en GitHub, por ejemplo, usted puede mirar el perfil del desarrollador
+
+0:06:43.920,0:06:48.780
+y saber en cuántos repositorios el desarrollador ha contribuido,
+
+0:06:48.780,0:06:53.580
+también saber cuál es su general, ya sabes, las estadísticas hasta el momento,
+
+0:06:53.580,0:06:56.760
+cuánto tiempo han estado contribuyendo y así sucesivamente.
+
+0:06:58.560,0:07:04.560
+También nos dimos cuenta de que los desarrolladores que están asociados con, por ejemplo, las mismas organizaciones GitHub
+
+0:07:04.560,0:07:12.900
+tienden a confiar más los unos en los otros. La confianza basada en la personalidad es un poco
+
+0:07:12.900,0:07:17.460
+complicado porque, ya sabes, de nuestra investigación sabemos que
+
+0:07:17.460,0:07:24.660
+estas herramientas basadas en la personalidad, son las herramientas de detección automática y no funciona tan bien en los textos,
+
+0:07:24.660,0:07:25.560
+así que, ya sabes,
+
+0:07:25.560,0:07:31.860
+es por eso que no nos basamos en ninguna identificación basada en texto de la
+
+0:07:31.860,0:07:34.560
+confianza basada en la personalidad. Lo que hicimos fue
+
+0:07:34.560,0:07:40.260
+que, en realidad nos fijamos en general, con el análisis manual que vemos
+
+0:07:40.260,0:07:44.640
+que los desarrolladores aceptan en general, aceptar un alto número de pull requests 
+
+0:07:44.640,0:07:49.800
+de personas que no conocen de antemano tienen una propensión general más alta a confiar.
+
+0:07:51.360,0:07:54.060
+Y por último la confianza de transferencia,
+
+0:07:54.060,0:07:57.960
+por supuesto los miembros consolidados recomiendan a los nuevos contribuyentes
+
+0:07:57.960,0:08:01.860
+y así es como desarrollamos la confianza de transferencia en GitHub.
+
+0:08:03.240,0:08:08.100
+Así que todo esto es bueno, pero creo que como, ya sabes, ahora que tenemos una idea de
+
+0:08:08.100,0:08:13.020
+cómo se refleja en las pull requests, pensé que sería bueno si puedo
+
+0:08:13.020,0:08:19.380
+mostrarte un par de ejemplos y cómo se expone exactamente en las pull requests.
+
+0:08:19.380,0:08:22.800
+Así que a la izquierda te voy a mostrar una pull requests que ha sido
+
+0:08:22.800,0:08:27.660
+aceptada y muestra un alto nivel de confianza y a la derecha te voy a mostrar
+
+0:08:27.660,0:08:34.560
+un ejemplo de pull requests donde, ya sabes, no ha sido aceptada al final
+
+0:08:34.560,0:08:41.880
+y no muestra altos niveles de confianza. Así que sólo para ir dimensión por dimensión aquí,
+
+0:08:41.880,0:08:46.260
+primero se ve que aquí, con sólo mirar a la persona que,
+
+0:08:46.260,0:08:49.560
+ustedes saben, comenzó la pull requests, que se ve que es como,
+
+0:08:49.560,0:08:54.360
+esta persona tiene un montón de seguidores, hay 96% de aceptación de pull requests,
+
+0:08:54.360,0:08:57.840
+un miembro del proyecto, por lo que se desarrollan una
+
+0:08:57.840,0:09:04.380
+mayor confianza en esta persona que esta persona que tiene relativamente menos
+
+0:09:04.380,0:09:07.620
+número de seguidores, no es miembro del proyecto, etc.
+
+0:09:09.600,0:09:12.300
+Del mismo modo, como yo estaba hablando antes y mencioné antes 
+
+0:09:12.300,0:09:15.720
+que la alta confianza basada en la acción, por supuesto, ustedes ven aquí que hay
+
+0:09:15.720,0:09:20.940
+mucha retroalimentación frecuente detallada, buenas preguntas, y ves aquí, como, ya sabes,
+
+0:09:20.940,0:09:26.160
+hay como alguien pidiendo esta pregunta y como no hay respuestas, no hay discusiones,
+
+0:09:26.160,0:09:30.180
+así que ustedes saben que hay menos actividad allí.
+
+0:09:32.220,0:09:36.600
+De nuevo, avanzando en la misma línea, confianza basada en el compromiso, repasando y revisando,
+
+0:09:36.600,0:09:42.480
+la tercera solicitada y de nuevo porque no hay respuesta, no hay solicitudes de revisión,
+
+0:09:42.480,0:09:48.720
+no se están implementando cambios, nada. Y luego la confianza basada en la personalidad,
+
+0:09:48.720,0:09:52.560
+sólo mirando, ya sabes, cuántas pull requests se cerraron por esa persona,
+
+0:09:52.560,0:09:58.320
+y la confianza institucional, una vez más, nos fijamos en el perfil del desarrollador y vemos de cuántas organizaciones,
+
+0:09:58.320,0:10:04.320
+organizaciones de GitHub, es miembro, si hay organizaciones de GitHub en común de las
+
+0:10:04.320,0:10:05.400
+que son parte de, y así sucesivamente.
+
+0:10:05.400,0:10:09.900
+Así que en general el punto que aquí estoy tratando de mostrar es que, ya sabes, nuestra
+
+0:10:11.220,0:10:19.800
+inherente propensión a confiar en la gente impulsa algunas de nuestras muy importantes
+
+0:10:19.800,0:10:23.700
+decisiones en ingeniería de software y esto es sólo un ejemplo de ello.
+
+0:10:24.780,0:10:30.060
+Y si queremos hacerlo mejor y, ya sabes, mejorar la confianza y la colaboración
+
+0:10:30.060,0:10:35.040
+tenemos que entender y pensar en las decisiones que estamos haciendo aquí
+
+0:10:35.040,0:10:41.880
+y por qué tomamos esas decisiones. Así que, en general, sugiero que
+
+0:10:41.880,0:10:46.500
+examinen en lo que ustedes confían y cómo ustedes confían en su equipo de ingeniería de software.
+
+0:10:46.500,0:10:50.340
+Esto los ayudará a identificar los riesgos de la colaboración en el futuro.
+
+0:10:52.380,0:10:56.460
+Si identifican ciertos aspectos que impulsan una decisión,
+
+0:10:56.460,0:11:01.980
+les sugiero que hablen con franqueza sobre los niveles de confianza y eso mejora la transparencia
+
+0:11:01.980,0:11:05.460
+y mejora la colaboración y la comunicación en el equipo.
+
+0:11:06.900,0:11:11.760
+Entender la dinámica de equipo en términos de estas dimensiones de confianza de las que he hablado
+
+0:11:11.760,0:11:16.200
+hoy también puede ayudar a los directores de proyectos en las intervenciones oportunas.
+
+0:11:16.200,0:11:22.740
+Por supuesto, detectar automáticamente la confianza es un concepto muy difícil por ahora,
+
+0:11:22.740,0:11:25.920
+porque, ya saben, nosotros como seres humanos primero necesitamos
+
+0:11:25.920,0:11:29.820
+entender qué es la confianza y por qué estamos tomando esas decisiones.
+
+0:11:29.820,0:11:35.340
+Así que este trabajo fue una especie de, ya saben, el primer paso hacia eso.
+
+0:11:36.780,0:11:43.320
+Y como yo estaba hablando brevemente antes de que la parte más importante es que
+
+0:11:43.320,0:11:48.780
+los profesionales deben centrarse en la comunicación transparente y la retroalimentación regular a lo largo de
+
+0:11:48.780,0:11:55.440
+estas líneas y esta confianza de las dimensiones de confianza, construiría y mantendría la confianza en sus equipos.
+
+0:11:56.880,0:12:05.220
+Esto es todo lo que tengo para hoy. Hay un código QR aquí con 
+
+0:12:05.220,0:12:10.980
+enlaces a la prepublicación de nuestro trabajo, y este trabajo es sólo una pequeña
+
+0:12:10.980,0:12:15.240
+parte de nuestro proyecto más grande de la concientización de la emoción en la ingeniería de software.
+
+0:12:15.240,0:12:21.840
+Así que si están interesados en saber más por favor vayan a mi sitio web o
+
+0:12:21.840,0:12:26.700
+no duden en ponerse en contacto conmigo y estaré encantada de responder a cualquier pregunta.
+
+0:12:29.280,0:12:33.960
+Muchas gracias. Fantástico, muchas gracias
+
+0:12:33.960,0:12:37.920
+Si podemos empezar a configurar a Christian, tenemos una pregunta y tal vez tenemos
+
+0:12:37.920,0:12:42.480
+tiempo mientras estamos esperando a que se organice lo que sigue
+
+0:12:42.480,0:12:47.280
+Así que tenemos una pregunta ¿hay un matriz entre la confianza institucional y el compromiso,
+
+0:12:47.280,0:12:50.880
+porque parece que son casos aislados el uno del otro?
+
+0:12:52.500,0:12:57.720
+Están definitivamente correlacionadas porque la confianza institucional,
+
+0:12:57.720,0:13:01.740
+no fuimos más allá de si son parte de la misma
+
+0:13:01.740,0:13:06.180
+institución o no, ¿verdad? Pero la confianza basada en el compromiso es más.
+
+0:13:06.180,0:13:09.480
+Es como, está bien, ustedes pueden ser parte de la misma organización,
+
+0:13:09.480,0:13:15.060
+pero si no estás comprometido con el mismo objetivo no estás desarrollando ese nivel de confianza.
+
+0:13:15.060,0:13:19.620
+Así que yo diría que en mi mente la confianza institucional es sólo, como, a un nivel muy básico
+
+0:13:19.620,0:13:24.060
+y el compromiso basado en la confianza se construye en la parte superior de eso.
+
+0:13:24.060,0:13:25.680
+Entendido.
