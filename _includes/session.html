@@ -9,12 +9,7 @@
       <a href="{{speaker.url}}">{{speaker.personal}} {{speaker.family}}</a>:
       <br/>
       <a href="https://youtu.be/{{speaker.video}}">{{speaker.title}}</a>
-      {% if speaker.en or speaker.es %}
-      <br/>
-      Transcript:
-      {% if speaker.en %}<a href="{{ '/static/' | append: include.event | append: '/' | append: speaker.en | relative_url }}">English</a>{% endif %}
-      {% if speaker.es %}<a href="{{ '/static/' | append: include.event | append: '/' | append: speaker.es | relative_url }}">Español</a>{% endif %}
-      {% endif %}
+      {% include transcript.html event=include.event entry=speaker %}
     </td>
     {% if column == 'left' %}
       {% assign column = 'right' %}

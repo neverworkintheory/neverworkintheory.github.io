@@ -1,0 +1,8 @@
+{% if include.entry.transcript %}
+<br/>
+Transcript:
+{% for tx in include.entry.transcript %}
+{% assign lang = site.data.languages | where: "code", tx | last %}
+<a href="{{ '/static/' | append: include.event | append: '/' | append: include.entry.id | append: '-' | append: tx | append: '.txt' | relative_url }}">{{lang.name}}</a>
+{% endfor %}
+{% endif %}

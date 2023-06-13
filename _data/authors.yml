@@ -86,7 +86,7 @@
 - entries:
   - date: '2023-04-27'
     key: DeKoven2019
-    reviewed: /2023/04/27/a-few-more-to-close.html
+    reviewed: /2023/04/27/measuring-security-practices-and-impact.html
   name: Akiwate, Gautam
 - entries:
   - date: '2021-10-30'
@@ -223,7 +223,7 @@
 - entries:
   - date: '2023-04-27'
     key: Birillo2023
-    reviewed: /2023/04/27/a-few-more-to-close.html
+    reviewed: /2023/04/27/code-quality-in-templates-for-online-programming-courses.html
   name: Artser, Elizaveta
 - entries:
   - date: '2022-02-21'
@@ -269,9 +269,9 @@
     reviewed: /2021/10/01/python-coding-style-compliance-on-stack-overflow.html
   name: Bafatakis, Nikolaos
 - entries:
-  - date: '2023-02-25'
+  - date: '2023-02-26'
     key: Majumder2021
-    reviewed: /2023/02/25/fairness-and-code-smells-in-machine-learning.html
+    reviewed: /2023/02/26/fairness-and-code-smells-in-machine-learning.html
   name: Bai, Gina R.
 - entries:
   - date: '2021-11-16'
@@ -299,7 +299,7 @@
     reviewed: /2021/10/03/is-40-the-new-60.html
   - date: '2023-04-27'
     key: Torres2023
-    reviewed: /2023/04/27/a-few-more-to-close.html
+    reviewed: /2023/04/27/applying-information-theory-to-software-evolution.html
   name: Baltes, Sebastian
 - entries:
   - date: '2022-04-04'
@@ -309,7 +309,7 @@
 - entries:
   - date: '2023-04-14'
     key: Ladisa2023
-    reviewed: /2023/04/14/software-cupply-chain-attacks.html
+    reviewed: /2023/04/14/software-supply-chain-attacks.html
   name: Barais, Olivier
 - entries:
   - date: '2021-09-05'
@@ -554,15 +554,15 @@
     reviewed: /2022/04/23/closed-to-open-source.html
   - date: '2023-04-26'
     key: Johnson2023
-    reviewed: /2023/04/26/a-dozen-in-one.html
+    reviewed: /2023/04/26/trust-in-software-tools.html
   name: Bird, Christian
 - entries:
   - date: '2023-04-26'
     key: Tigina2023
-    reviewed: /2023/04/26/a-dozen-in-one.html
+    reviewed: /2023/04/26/quality-of-submissions-in-online-programming-courses.html
   - date: '2023-04-27'
     key: Birillo2023
-    reviewed: /2023/04/27/a-few-more-to-close.html
+    reviewed: /2023/04/27/code-quality-in-templates-for-online-programming-courses.html
   name: Birillo, Anastasiia
 - entries:
   - date: '2021-10-30'
@@ -585,7 +585,7 @@
 - entries:
   - date: '2023-04-27'
     key: DeKoven2019
-    reviewed: /2023/04/27/a-few-more-to-close.html
+    reviewed: /2023/04/27/measuring-security-practices-and-impact.html
   name: Blume, Ansel
 - entries:
   - date: '2021-10-01'
@@ -620,7 +620,7 @@
 - entries:
   - date: '2023-04-26'
     key: Runge2023
-    reviewed: /2023/04/26/a-dozen-in-one.html
+    reviewed: /2023/04/26/flexible-correct-by-construction-programming.html
   name: Bordis, Tabea
 - entries:
   - date: '2021-09-16'
@@ -687,10 +687,10 @@
     reviewed: /2022/03/04/software-refactoring.html
   - date: '2023-04-26'
     key: Tigina2023
-    reviewed: /2023/04/26/a-dozen-in-one.html
+    reviewed: /2023/04/26/quality-of-submissions-in-online-programming-courses.html
   - date: '2023-04-27'
     key: Birillo2023
-    reviewed: /2023/04/27/a-few-more-to-close.html
+    reviewed: /2023/04/27/code-quality-in-templates-for-online-programming-courses.html
   name: Bryksin, Timofey
 - entries:
   - date: '2023-02-27'
@@ -708,7 +708,7 @@
     reviewed: /2021/10/31/locating-faults-with-program-slicing.html
   - date: '2023-04-26'
     key: Mirzamomen2023
-    reviewed: /2023/04/26/a-dozen-in-one.html
+    reviewed: /2023/04/26/finding-bug-inducing-program-environments.html
   name: "B\xF6hme, Marcel"
 - entries:
   - date: '2012-11-06'
@@ -757,9 +757,9 @@
   - date: '2021-09-10'
     key: Majumder2019
     reviewed: /2021/09/10/why-software-projects-need-heroes.html
-  - date: '2023-02-25'
+  - date: '2023-02-26'
     key: Majumder2021
-    reviewed: /2023/02/25/fairness-and-code-smells-in-machine-learning.html
+    reviewed: /2023/02/26/fairness-and-code-smells-in-machine-learning.html
   name: Chakraborty, Joymallya
 - entries:
   - date: '2023-02-28'
@@ -795,7 +795,7 @@
 - entries:
   - date: '2023-04-26'
     key: Tan2023
-    reviewed: /2023/04/26/a-dozen-in-one.html
+    reviewed: /2023/04/26/mentoring-on-good-first-issues.html
   name: Chen, Yiran
 - entries:
   - date: '2021-10-17'
@@ -901,9 +901,9 @@
     reviewed: /2021/08/21/metrics-and-team-leaders-perceptions-of-productivity.html
   name: Cristo, Marco
 - entries:
-  - date: '2023-02-25'
+  - date: '2023-02-26'
     key: Zhang2022a
-    reviewed: /2023/02/25/fairness-and-code-smells-in-machine-learning.html
+    reviewed: /2023/02/26/fairness-and-code-smells-in-machine-learning.html
   name: "Cruz, Lu\xEDs"
 - entries:
   - date: '2011-08-17'
@@ -984,9 +984,9 @@
     reviewed: /2021/09/16/exception-handling-practices-and-post-release-defects.html
   name: "de P\xE1dua, Guilherme B."
 - entries:
-  - date: '2023-03-05'
+  - date: '2023-04-05'
     key: DeSouzaSantos2023
-    reviewed: /2023/03/05/transgender-careers-in-the-software-industry.html
+    reviewed: /2023/04/05/transgender-careers-in-the-software-industry.html
   name: de Souza Santos, Ronnie
 - entries:
   - date: '2023-03-24'
@@ -1019,7 +1019,7 @@
 - entries:
   - date: '2023-04-27'
     key: DeKoven2019
-    reviewed: /2023/04/27/a-few-more-to-close.html
+    reviewed: /2023/04/27/measuring-security-practices-and-impact.html
   name: DeKoven, Louis F.
 - entries:
   - date: '2011-06-30'
@@ -1032,12 +1032,12 @@
 - entries:
   - date: '2023-05-09'
     key: Demaine2023
-    reviewed: /2023/05/09/every-author-a-first-author.html
+    reviewed: /2023/05/09/every-author-as-first-author.html
   name: Demaine, Erik D.
 - entries:
   - date: '2023-05-09'
     key: Demaine2023
-    reviewed: /2023/05/09/every-author-a-first-author.html
+    reviewed: /2023/05/09/every-author-as-first-author.html
   name: Demaine, Martin L.
 - entries:
   - date: '2021-10-16'
@@ -1079,9 +1079,9 @@
   - date: '2021-11-08'
     key: Tomassi2019
     reviewed: /2021/11/08/my-kingdom-for-a-dataset.html
-  - date: '2023-03-02'
+  - date: '2023-03-01'
     key: Jesse2022
-    reviewed: /2023/03/02/learning-to-predict-user-defined-types.html
+    reviewed: /2023/03/01/learning-to-predict-user-defined-types.html
   name: Devanbu, Premkumar
 - entries:
   - date: '2012-05-17'
@@ -1099,12 +1099,12 @@
     reviewed: /2021/11/16/software-history-under-the-lens.html
   - date: '2023-04-27'
     key: Dilhara2023
-    reviewed: /2023/04/27/a-few-more-to-close.html
+    reviewed: /2023/04/27/automating-frequent-changes-in-python-ml.html
   name: Dig, Danny
 - entries:
   - date: '2023-04-27'
     key: Dilhara2023
-    reviewed: /2023/04/27/a-few-more-to-close.html
+    reviewed: /2023/04/27/automating-frequent-changes-in-python-ml.html
   name: Dilhara, Malinda
 - entries:
   - date: '2011-08-02'
@@ -1260,7 +1260,7 @@
 - entries:
   - date: '2023-04-27'
     key: Ferrario2023
-    reviewed: /2023/04/27/a-few-more-to-close.html
+    reviewed: /2023/04/27/applying-human-values-theory-to-software-engineering.html
   name: Ferrario, Maria Angela
 - entries:
   - date: '2023-03-14'
@@ -1298,7 +1298,7 @@
 - entries:
   - date: '2023-04-27'
     key: Gamboa2021
-    reviewed: /2023/04/27/a-few-more-to-close.html
+    reviewed: /2023/04/27/design-evaluation-liquid-types-in-java.html
   name: Fonseca, Alcides
 - entries:
   - date: '2016-09-21'
@@ -1318,12 +1318,12 @@
     reviewed: /2022/03/28/remote-onboarding.html
   - date: '2023-04-26'
     key: Johnson2023
-    reviewed: /2023/04/26/a-dozen-in-one.html
+    reviewed: /2023/04/26/trust-in-software-tools.html
   name: Ford, Denae
 - entries:
   - date: '2023-04-26'
     key: Johnson2023
-    reviewed: /2023/04/26/a-dozen-in-one.html
+    reviewed: /2023/04/26/trust-in-software-tools.html
   name: Forsgren, Nicole
 - entries:
   - date: '2012-11-06'
@@ -1402,7 +1402,7 @@
 - entries:
   - date: '2023-04-27'
     key: Gamboa2021
-    reviewed: /2023/04/27/a-few-more-to-close.html
+    reviewed: /2023/04/27/design-evaluation-liquid-types-in-java.html
   name: Gamboa, Catarina
 - entries:
   - date: '2023-03-13'
@@ -1461,7 +1461,7 @@
     reviewed: /2021/10/07/how-do-software-developers-use-github-actions.html
   - date: '2023-04-26'
     key: Vargovich2023
-    reviewed: /2023/04/26/a-dozen-in-one.html
+    reviewed: /2023/04/26/open-source-issue-recommendation-system.html
   name: Gerosa, Marco A.
 - entries:
   - date: '2021-10-26'
@@ -1531,10 +1531,10 @@
     reviewed: /2022/03/04/software-refactoring.html
   - date: '2023-04-26'
     key: Tigina2023
-    reviewed: /2023/04/26/a-dozen-in-one.html
+    reviewed: /2023/04/26/quality-of-submissions-in-online-programming-courses.html
   - date: '2023-04-27'
     key: Birillo2023
-    reviewed: /2023/04/27/a-few-more-to-close.html
+    reviewed: /2023/04/27/code-quality-in-templates-for-online-programming-courses.html
   name: Golubev, Yaroslav
 - entries:
   - date: '2023-03-24'
@@ -1645,7 +1645,7 @@
 - entries:
   - date: '2023-04-26'
     key: Kaleeswaran2023
-    reviewed: /2023/04/26/a-dozen-in-one.html
+    reviewed: /2023/04/26/evaluation-of-formal-verification-results.html
   name: Grunske, Lars
 - entries:
   - date: '2021-12-02'
@@ -1685,7 +1685,7 @@
 - entries:
   - date: '2023-04-26'
     key: Olson2023
-    reviewed: /2023/04/26/a-dozen-in-one.html
+    reviewed: /2023/04/26/along-the-margins.html
   name: "Guzm\xE1n, Emitz\xE1"
 - entries:
   - date: '2022-03-31'
@@ -1799,7 +1799,7 @@
 - entries:
   - date: '2023-04-27'
     key: Keuning2023
-    reviewed: /2023/04/27/a-few-more-to-close.html
+    reviewed: /2023/04/27/code-quality-in-education.html
   name: Heeren, Bastiaan
 - entries:
   - date: '2016-04-26'
@@ -2079,14 +2079,14 @@
     reviewed: /2012/02/23/looking-at-the-same-thing-in-pair-programming-tasks.html
   name: Jermann, Patrick
 - entries:
-  - date: '2023-03-02'
+  - date: '2023-03-01'
     key: Jesse2022
-    reviewed: /2023/03/02/learning-to-predict-user-defined-types.html
+    reviewed: /2023/03/01/learning-to-predict-user-defined-types.html
   name: Jesse, Kevin
 - entries:
   - date: '2023-04-27'
     key: Keuning2023
-    reviewed: /2023/04/27/a-few-more-to-close.html
+    reviewed: /2023/04/27/code-quality-in-education.html
   name: Jeuring, Johan
 - entries:
   - date: '2021-10-26'
@@ -2116,7 +2116,7 @@
 - entries:
   - date: '2023-04-26'
     key: Johnson2023
-    reviewed: /2023/04/26/a-dozen-in-one.html
+    reviewed: /2023/04/26/trust-in-software-tools.html
   - date: '2023-05-10'
     key: Newman2023
     reviewed: /2023/05/10/psychoactive-substance-use-by-professional-programmers.html
@@ -2171,7 +2171,7 @@
 - entries:
   - date: '2023-04-26'
     key: Kaleeswaran2023
-    reviewed: /2023/04/26/a-dozen-in-one.html
+    reviewed: /2023/04/26/evaluation-of-formal-verification-results.html
   name: Kaleeswaran, Arut Prakash
 - entries:
   - date: '2022-04-23'
@@ -2255,7 +2255,7 @@
 - entries:
   - date: '2023-04-27'
     key: Dilhara2023
-    reviewed: /2023/04/27/a-few-more-to-close.html
+    reviewed: /2023/04/27/automating-frequent-changes-in-python-ml.html
   name: Ketkar, Ameya
 - entries:
   - date: '2012-04-17'
@@ -2265,13 +2265,13 @@
 - entries:
   - date: '2023-04-26'
     key: Tigina2023
-    reviewed: /2023/04/26/a-dozen-in-one.html
+    reviewed: /2023/04/26/quality-of-submissions-in-online-programming-courses.html
   - date: '2023-04-27'
     key: Birillo2023
-    reviewed: /2023/04/27/a-few-more-to-close.html
+    reviewed: /2023/04/27/code-quality-in-templates-for-online-programming-courses.html
   - date: '2023-04-27'
     key: Keuning2023
-    reviewed: /2023/04/27/a-few-more-to-close.html
+    reviewed: /2023/04/27/code-quality-in-education.html
   name: Keuning, Hieke
 - entries:
   - date: '2012-05-17'
@@ -2481,7 +2481,7 @@
 - entries:
   - date: '2023-04-26'
     key: Olson2023
-    reviewed: /2023/04/26/a-dozen-in-one.html
+    reviewed: /2023/04/26/along-the-margins.html
   name: Kunneman, Florian
 - entries:
   - date: '2023-04-17'
@@ -2532,7 +2532,7 @@
 - entries:
   - date: '2023-04-14'
     key: Ladisa2023
-    reviewed: /2023/04/14/software-cupply-chain-attacks.html
+    reviewed: /2023/04/14/software-supply-chain-attacks.html
   name: Ladisa, Piergiorgio
 - entries:
   - date: '2021-09-19'
@@ -2669,10 +2669,10 @@
     reviewed: /2023/03/09/combining-gin-and-pmd-for-code-improvements.html
   - date: '2023-04-26'
     key: Meldrum2020
-    reviewed: /2023/04/26/a-dozen-in-one.html
+    reviewed: /2023/04/26/stack-overflow-code-quality.html
   - date: '2023-04-27'
     key: Ndukwe2023
-    reviewed: /2023/04/27/a-few-more-to-close.html
+    reviewed: /2023/04/27/views-of-software-quality-over-time.html
   name: Licorish, Sherlock A.
 - entries:
   - date: '2011-10-22'
@@ -2840,7 +2840,7 @@
     reviewed: /2011/12/21/factors-that-affect-software-systems-development-project-outcomes.html
   - date: '2023-04-27'
     key: Ndukwe2023
-    reviewed: /2023/04/27/a-few-more-to-close.html
+    reviewed: /2023/04/27/views-of-software-quality-over-time.html
   name: MacDonell, Stephen G.
 - entries:
   - date: '2023-04-13'
@@ -2853,9 +2853,9 @@
     reviewed: /2023/03/03/emotional-rollercoaster-requirements-changes.html
   name: Madampe, Kashumi
 - entries:
-  - date: '2023-03-05'
+  - date: '2023-04-05'
     key: DeSouzaSantos2023
-    reviewed: /2023/03/05/transgender-careers-in-the-software-industry.html
+    reviewed: /2023/04/05/transgender-careers-in-the-software-industry.html
   name: "Magalh\xE3es, Cleyton"
 - entries:
   - date: '2021-12-13'
@@ -2866,9 +2866,9 @@
   - date: '2021-09-10'
     key: Majumder2019
     reviewed: /2021/09/10/why-software-projects-need-heroes.html
-  - date: '2023-02-25'
+  - date: '2023-02-26'
     key: Majumder2021
-    reviewed: /2023/02/25/fairness-and-code-smells-in-machine-learning.html
+    reviewed: /2023/02/26/fairness-and-code-smells-in-machine-learning.html
   name: Majumder, Suvodeep
 - entries:
   - date: '2023-03-15'
@@ -2913,7 +2913,7 @@
 - entries:
   - date: '2023-04-14'
     key: Ladisa2023
-    reviewed: /2023/04/14/software-cupply-chain-attacks.html
+    reviewed: /2023/04/14/software-supply-chain-attacks.html
   name: Martinez, Matias
 - entries:
   - date: '2021-11-18'
@@ -3023,7 +3023,7 @@
 - entries:
   - date: '2023-04-26'
     key: Meldrum2020
-    reviewed: /2023/04/26/a-dozen-in-one.html
+    reviewed: /2023/04/26/stack-overflow-code-quality.html
   name: Meldrum, Sarah
 - entries:
   - date: '2022-03-07'
@@ -3063,9 +3063,9 @@
   - date: '2021-09-26'
     key: Menzies2016
     reviewed: /2021/09/26/are-delayed-issues-harder-to-resolve.html
-  - date: '2023-02-25'
+  - date: '2023-02-26'
     key: Majumder2021
-    reviewed: /2023/02/25/fairness-and-code-smells-in-machine-learning.html
+    reviewed: /2023/02/26/fairness-and-code-smells-in-machine-learning.html
   name: Menzies, Tim
 - entries:
   - date: '2011-08-31'
@@ -3093,9 +3093,9 @@
     reviewed: /2015/08/23/perception-productivity.html
   name: "Meyer, Andr\xE9 N."
 - entries:
-  - date: 2023-04-23-python-package-index-malware-scanning.html
+  - date: '2023-04-23'
     key: Vu2023
-    reviewed: /2023/04/23-python-package-index-malware-scanning.html
+    reviewed: /2023/04/23/python-package-index-malware-scanning.html
   name: Meyers, John Speed
 - entries:
   - date: '2016-06-09'
@@ -3152,12 +3152,12 @@
     reviewed: /2023/03/13/covert-cloud-communication-with-lambdas.html
   - date: '2023-04-27'
     key: DeKoven2019
-    reviewed: /2023/04/27/a-few-more-to-close.html
+    reviewed: /2023/04/27/measuring-security-practices-and-impact.html
   name: Mirian, Ariana
 - entries:
   - date: '2023-04-26'
     key: Mirzamomen2023
-    reviewed: /2023/04/26/a-dozen-in-one.html
+    reviewed: /2023/04/26/finding-bug-inducing-program-environments.html
   name: Mirzamomen, Zahra
 - entries:
   - date: '2021-09-21'
@@ -3417,7 +3417,7 @@
 - entries:
   - date: '2023-04-27'
     key: Ndukwe2023
-    reviewed: /2023/04/27/a-few-more-to-close.html
+    reviewed: /2023/04/27/views-of-software-quality-over-time.html
   name: Ndukwe, Ifeanyi G.
 - entries:
   - date: '2016-04-26'
@@ -3445,9 +3445,9 @@
     reviewed: /2023/05/10/psychoactive-substance-use-by-professional-programmers.html
   name: Newman, Kaia
 - entries:
-  - date: 2023-04-23-python-package-index-malware-scanning.html
+  - date: '2023-04-23'
     key: Vu2023
-    reviewed: /2023/04/23-python-package-index-malware-scanning.html
+    reviewed: /2023/04/23/python-package-index-malware-scanning.html
   name: Newman, Zachary
 - entries:
   - date: '2021-11-29'
@@ -3492,7 +3492,7 @@
 - entries:
   - date: '2023-04-26'
     key: Kaleeswaran2023
-    reviewed: /2023/04/26/a-dozen-in-one.html
+    reviewed: /2023/04/26/evaluation-of-formal-verification-results.html
   name: Nordmann, Arne
 - entries:
   - date: '2011-09-13'
@@ -3554,7 +3554,7 @@
 - entries:
   - date: '2023-04-26'
     key: Olson2023
-    reviewed: /2023/04/26/a-dozen-in-one.html
+    reviewed: /2023/04/26/along-the-margins.html
   name: Olson, Lauren
 - entries:
   - date: '2023-02-27'
@@ -3609,7 +3609,7 @@
 - entries:
   - date: '2023-04-26'
     key: Meldrum2020
-    reviewed: /2023/04/26/a-dozen-in-one.html
+    reviewed: /2023/04/26/stack-overflow-code-quality.html
   name: Owen, Caitlin A.
 - entries:
   - date: '2021-10-01'
@@ -3760,7 +3760,7 @@
 - entries:
   - date: '2023-04-26'
     key: Vargovich2023
-    reviewed: /2023/04/26/a-dozen-in-one.html
+    reviewed: /2023/04/26/open-source-issue-recommendation-system.html
   name: Penney, Jacob
 - entries:
   - date: '2021-10-18'
@@ -3850,12 +3850,12 @@
 - entries:
   - date: '2023-04-14'
     key: Ladisa2023
-    reviewed: /2023/04/14/software-cupply-chain-attacks.html
+    reviewed: /2023/04/14/software-supply-chain-attacks.html
   name: Ponta, Serena Elisa
 - entries:
   - date: '2023-04-26'
     key: Pool2023
-    reviewed: /2023/04/26/a-dozen-in-one.html
+    reviewed: /2023/04/26/accessibility-metatesting.html
   name: Pool, Jonathan Robert
 - entries:
   - date: '2016-10-02'
@@ -3886,7 +3886,7 @@
 - entries:
   - date: '2023-04-26'
     key: Runge2023
-    reviewed: /2023/04/26/a-dozen-in-one.html
+    reviewed: /2023/04/26/flexible-correct-by-construction-programming.html
   name: Potanin, Alex
 - entries:
   - date: '2021-10-10'
@@ -4010,7 +4010,7 @@
 - entries:
   - date: '2023-04-27'
     key: DeKoven2019
-    reviewed: /2023/04/27/a-few-more-to-close.html
+    reviewed: /2023/04/27/measuring-security-practices-and-impact.html
   name: Randall, Audrey
 - entries:
   - date: '2012-04-10'
@@ -4193,12 +4193,12 @@
 - entries:
   - date: '2023-04-26'
     key: Runge2023
-    reviewed: /2023/04/26/a-dozen-in-one.html
+    reviewed: /2023/04/26/flexible-correct-by-construction-programming.html
   name: Runge, Tobias
 - entries:
   - date: '2023-04-14'
     key: Ladisa2023
-    reviewed: /2023/04/14/software-cupply-chain-attacks.html
+    reviewed: /2023/04/14/software-supply-chain-attacks.html
   name: Sabetta, Antonino
 - entries:
   - date: '2013-06-06'
@@ -4228,12 +4228,12 @@
 - entries:
   - date: '2023-04-26'
     key: Vargovich2023
-    reviewed: /2023/04/26/a-dozen-in-one.html
+    reviewed: /2023/04/26/open-source-issue-recommendation-system.html
   name: Santos, Fabio
 - entries:
   - date: '2023-04-27'
     key: Gamboa2021
-    reviewed: /2023/04/27/a-few-more-to-close.html
+    reviewed: /2023/04/27/design-evaluation-liquid-types-in-java.html
   name: Santos, Paulo Alexandre
 - entries:
   - date: '2014-04-25'
@@ -4258,7 +4258,7 @@
 - entries:
   - date: '2023-04-27'
     key: DeKoven2019
-    reviewed: /2023/04/27/a-few-more-to-close.html
+    reviewed: /2023/04/27/measuring-security-practices-and-impact.html
   name: Saul, Lawrence K.
 - entries:
   - date: '2023-03-13'
@@ -4266,7 +4266,7 @@
     reviewed: /2023/03/13/covert-cloud-communication-with-lambdas.html
   - date: '2023-04-27'
     key: DeKoven2019
-    reviewed: /2023/04/27/a-few-more-to-close.html
+    reviewed: /2023/04/27/measuring-security-practices-and-impact.html
   name: Savage, Stefan
 - entries:
   - date: '2022-04-25'
@@ -4274,7 +4274,7 @@
     reviewed: /2022/04/25/rationale-for-open-source-development-decisions.html
   - date: '2023-04-26'
     key: Meldrum2020
-    reviewed: /2023/04/26/a-dozen-in-one.html
+    reviewed: /2023/04/26/stack-overflow-code-quality.html
   name: Savarimuthu, Bastin Tony Roy
 - entries:
   - date: '2022-03-31'
@@ -4282,9 +4282,9 @@
     reviewed: /2022/03/31/textual-vs-graphic-design-descriptions-and-communication.html
   name: Savary-Leblanc, Maxime
 - entries:
-  - date: '2023-03-02'
+  - date: '2023-03-01'
     key: Jesse2022
-    reviewed: /2023/03/02/learning-to-predict-user-defined-types.html
+    reviewed: /2023/03/01/learning-to-predict-user-defined-types.html
   name: Sawant, Anand Ashok
 - entries:
   - date: '2021-10-05'
@@ -4316,7 +4316,7 @@
 - entries:
   - date: '2023-04-26'
     key: Runge2023
-    reviewed: /2023/04/26/a-dozen-in-one.html
+    reviewed: /2023/04/26/flexible-correct-by-construction-programming.html
   name: Schaefer, Ina
 - entries:
   - date: '2021-09-23'
@@ -4346,7 +4346,7 @@
 - entries:
   - date: '2023-04-27'
     key: DeKoven2019
-    reviewed: /2023/04/27/a-few-more-to-close.html
+    reviewed: /2023/04/27/measuring-security-practices-and-impact.html
   name: Schulman, Aaron
 - entries:
   - date: '2011-06-30'
@@ -4616,7 +4616,7 @@
     reviewed: /2021/09/30/effects-of-adopting-code-review-bots.html
   - date: '2023-04-26'
     key: Vargovich2023
-    reviewed: /2023/04/26/a-dozen-in-one.html
+    reviewed: /2023/04/26/open-source-issue-recommendation-system.html
   - date: '2023-05-07'
     key: Salerno2023
     reviewed: /2023/05/07/impact-of-oss-courses-on-student-self-efficacy.html
@@ -4628,9 +4628,9 @@
   - date: '2021-08-30'
     key: Wang2020a
     reviewed: /2021/08/30/two-studies-of-regular-expressions.html
-  - date: '2023-02-25'
+  - date: '2023-02-26'
     key: Majumder2021
-    reviewed: /2023/02/25/fairness-and-code-smells-in-machine-learning.html
+    reviewed: /2023/02/26/fairness-and-code-smells-in-machine-learning.html
   name: Stolee, Kathryn T.
 - entries:
   - date: '2011-07-18'
@@ -4656,9 +4656,9 @@
     reviewed: /2012/03/01/social-coding-in-github.html
   name: Stuart, Colleen
 - entries:
-  - date: '2023-03-05'
+  - date: '2023-04-05'
     key: DeSouzaSantos2023
-    reviewed: /2023/03/05/transgender-careers-in-the-software-industry.html
+    reviewed: /2023/04/05/transgender-careers-in-the-software-industry.html
   name: Stuart-Verner, Brody
 - entries:
   - date: '2014-10-09'
@@ -4706,7 +4706,7 @@
 - entries:
   - date: '2023-04-26'
     key: Swillus2023
-    reviewed: /2023/04/26/a-dozen-in-one.html
+    reviewed: /2023/04/26/deconstructing-sentimental-stack-overflow-posts.html
   name: Swillus, Mark
 - entries:
   - date: '2023-05-07'
@@ -4716,7 +4716,7 @@
 - entries:
   - date: '2023-04-27'
     key: Ndukwe2023
-    reviewed: /2023/04/27/a-few-more-to-close.html
+    reviewed: /2023/04/27/views-of-software-quality-over-time.html
   name: Tahir, Amjed
 - entries:
   - date: '2021-08-27'
@@ -4739,7 +4739,7 @@
 - entries:
   - date: '2023-04-26'
     key: Tan2023
-    reviewed: /2023/04/26/a-dozen-in-one.html
+    reviewed: /2023/04/26/mentoring-on-good-first-issues.html
   name: Tan, Xin
 - entries:
   - date: '2021-11-16'
@@ -4794,7 +4794,7 @@
 - entries:
   - date: '2023-04-26'
     key: Runge2023
-    reviewed: /2023/04/26/a-dozen-in-one.html
+    reviewed: /2023/04/26/flexible-correct-by-construction-programming.html
   name: "Th\xFCm, Thomas"
 - entries:
   - date: '2022-03-09'
@@ -4814,15 +4814,15 @@
 - entries:
   - date: '2023-04-26'
     key: Tigina2023
-    reviewed: /2023/04/26/a-dozen-in-one.html
+    reviewed: /2023/04/26/quality-of-submissions-in-online-programming-courses.html
   - date: '2023-04-27'
     key: Birillo2023
-    reviewed: /2023/04/27/a-few-more-to-close.html
+    reviewed: /2023/04/27/code-quality-in-templates-for-online-programming-courses.html
   name: Tigina, Maria
 - entries:
   - date: '2023-04-27'
     key: Gamboa2021
-    reviewed: /2023/04/27/a-few-more-to-close.html
+    reviewed: /2023/04/27/design-evaluation-liquid-types-in-java.html
   name: Timperley, Christopher S.
 - entries:
   - date: '2021-11-08'
@@ -4832,7 +4832,7 @@
 - entries:
   - date: '2023-04-27'
     key: Torres2023
-    reviewed: /2023/04/27/a-few-more-to-close.html
+    reviewed: /2023/04/27/applying-information-theory-to-software-evolution.html
   name: Torres, Adriano
 - entries:
   - date: '2011-08-17'
@@ -4895,7 +4895,7 @@
     reviewed: /2023/03/29/software-engineering-gender-bias-in-llms.html
   - date: '2023-04-27'
     key: Torres2023
-    reviewed: /2023/04/27/a-few-more-to-close.html
+    reviewed: /2023/04/27/applying-information-theory-to-software-evolution.html
   - date: '2023-05-07'
     key: '2101.00756'
     reviewed: /2023/05/07/code-reuse-support-for-nodejs.html
@@ -4981,9 +4981,9 @@
   - date: '2022-04-06'
     key: Tomasdottir2020
     reviewed: /2022/04/06/adoption-of-javascript-linters.html
-  - date: '2023-02-25'
+  - date: '2023-02-26'
     key: Zhang2022a
-    reviewed: /2023/02/25/fairness-and-code-smells-in-machine-learning.html
+    reviewed: /2023/02/26/fairness-and-code-smells-in-machine-learning.html
   - date: '2023-03-06'
     key: Kula2022a
     reviewed: /2023/03/06/on-time-delivery-in-large-scale-agile.html
@@ -4996,7 +4996,7 @@
 - entries:
   - date: '2023-04-26'
     key: Vargovich2023
-    reviewed: /2023/04/26/a-dozen-in-one.html
+    reviewed: /2023/04/26/open-source-issue-recommendation-system.html
   name: Vargovich, Joseph
 - entries:
   - date: '2021-08-27'
@@ -5060,12 +5060,12 @@
 - entries:
   - date: '2023-04-27'
     key: DeKoven2019
-    reviewed: /2023/04/27/a-few-more-to-close.html
+    reviewed: /2023/04/27/measuring-security-practices-and-impact.html
   name: Voelker, Geoffrey M.
 - entries:
   - date: '2023-04-26'
     key: Kaleeswaran2023
-    reviewed: /2023/04/26/a-dozen-in-one.html
+    reviewed: /2023/04/26/evaluation-of-formal-verification-results.html
   name: Vogel, Thomas
 - entries:
   - date: '2021-10-14'
@@ -5078,17 +5078,17 @@
     reviewed: /2023/05/16/the-making-of-wikidata.html
   name: "Vrande\u010Di\u0107, Denny"
 - entries:
-  - date: 2023-04-23-python-package-index-malware-scanning.html
+  - date: '2023-04-23'
     key: Vu2023
-    reviewed: /2023/04/23-python-package-index-malware-scanning.html
+    reviewed: /2023/04/23/python-package-index-malware-scanning.html
   name: Vu, Duc-Ly
 - entries:
   - date: '2023-04-26'
     key: Tigina2023
-    reviewed: /2023/04/26/a-dozen-in-one.html
+    reviewed: /2023/04/26/quality-of-submissions-in-online-programming-courses.html
   - date: '2023-04-27'
     key: Birillo2023
-    reviewed: /2023/04/27/a-few-more-to-close.html
+    reviewed: /2023/04/27/code-quality-in-templates-for-online-programming-courses.html
   name: Vyahhi, Nikolay
 - entries:
   - date: '2021-10-03'
@@ -5101,7 +5101,7 @@
     reviewed: /2023/03/09/combining-gin-and-pmd-for-code-improvements.html
   - date: '2023-04-27'
     key: Torres2023
-    reviewed: /2023/04/27/a-few-more-to-close.html
+    reviewed: /2023/04/27/applying-information-theory-to-software-evolution.html
   - date: '2023-05-07'
     key: '2101.00756'
     reviewed: /2023/05/07/code-reuse-support-for-nodejs.html
@@ -5255,7 +5255,7 @@
 - entries:
   - date: '2023-04-27'
     key: Ferrario2023
-    reviewed: /2023/04/27/a-few-more-to-close.html
+    reviewed: /2023/04/27/applying-human-values-theory-to-software-engineering.html
   name: Winter, Emily
 - entries:
   - date: '2011-08-24'
@@ -5285,7 +5285,7 @@
 - entries:
   - date: '2023-04-26'
     key: Tan2023
-    reviewed: /2023/04/26/a-dozen-in-one.html
+    reviewed: /2023/04/26/mentoring-on-good-first-issues.html
   name: Wu, Haohua
 - entries:
   - date: '2023-03-27'
@@ -5461,7 +5461,7 @@
     reviewed: /2021/09/12/developer-testing-in-the-ide.html
   - date: '2023-04-26'
     key: Swillus2023
-    reviewed: /2023/04/26/a-dozen-in-one.html
+    reviewed: /2023/04/26/deconstructing-sentimental-stack-overflow-posts.html
   name: Zaidman, Andy
 - entries:
   - date: '2021-10-18'
@@ -5506,9 +5506,9 @@
     reviewed: /2023/05/07/open-source-adaptive-tutoring-system.html
   name: Zhang, Ethan
 - entries:
-  - date: '2023-02-25'
+  - date: '2023-02-26'
     key: Zhang2022a
-    reviewed: /2023/02/25/fairness-and-code-smells-in-machine-learning.html
+    reviewed: /2023/02/26/fairness-and-code-smells-in-machine-learning.html
   name: Zhang, Haiyin
 - entries:
   - date: '2021-09-19'
@@ -5534,7 +5534,7 @@
 - entries:
   - date: '2023-04-26'
     key: Tan2023
-    reviewed: /2023/04/26/a-dozen-in-one.html
+    reviewed: /2023/04/26/mentoring-on-good-first-issues.html
   name: Zhang, Li
 - entries:
   - date: '2021-10-01'
@@ -5594,7 +5594,7 @@
 - entries:
   - date: '2023-04-26'
     key: Tan2023
-    reviewed: /2023/04/26/a-dozen-in-one.html
+    reviewed: /2023/04/26/mentoring-on-good-first-issues.html
   name: Zhou, Minghui
 - entries:
   - date: '2023-03-22'
@@ -5674,7 +5674,7 @@
 - entries:
   - date: '2023-04-26'
     key: Johnson2023
-    reviewed: /2023/04/26/a-dozen-in-one.html
+    reviewed: /2023/04/26/trust-in-software-tools.html
   name: Zimmermann, Tom
 - entries:
   - date: '2016-09-16'

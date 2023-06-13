@@ -8,8 +8,9 @@
   bio: Maurício is Tech Academy Lead at Adyen and an Assistant Professor at Delft University of Technology in the Netherlands.
   video: f1DueZcSxRs
   thumbnail: aniche-mauricio.webp
-  en: aniche-mauricio-en.txt
-  es: aniche-mauricio-es.txt
+  transcript:
+  - en
+  - es
 
 - event: 2022-04
   id: bacchelli-alberto
@@ -21,8 +22,9 @@
   bio: Alberto is an Associate Professor at the University of Zurich in Switzerland.
   video: _SJL7vepQvU
   thumbnail: bacchelli-alberto.webp
-  en: bacchelli-alberto-en.txt
-  es: bacchelli-alberto-es.txt
+  transcript:
+  - en
+  - es
 
 - event: 2022-04
   id: baltes-sebastian
@@ -34,8 +36,9 @@
   title: Challenges and opportunities for software engineering in Papua New Guinea.
   bio: Sebastian is a Principal Expert for Empirical Software Engineering at SAP in Germany and an Adjunct Lecturer at the University of Adelaide in Australia.
   thumbnail: baltes-sebastian.webp
-  en: baltes-sebastian-en.txt
-  es: baltes-sebastian-es.txt
+  transcript:
+  - en
+  - es
 
 - event: 2022-04
   id: blincoe-kelly
@@ -47,8 +50,9 @@
   bio: Kelly is a Senior Lecturer at the University of Auckland in New Zealand.
   video: qaO00CLqLkI
   thumbnail: blincoe-kelly.webp
-  en: blincoe-kelly-en.txt
-  es: blincoe-kelly-es.txt
+  transcript:
+  - en
+  - es
 
 - event: 2022-04
   id: brown-neil
@@ -60,8 +64,9 @@
   bio: Neil is a Research Fellow at King's College London.
   video: FAXAPBxkhxc
   thumbnail: brown-neil.webp
-  en: brown-neil-en.txt
-  es: brown-neil-es.txt
+  transcript:
+  - en
+  - es
 
 - event: 2022-04
   id: ford-robinson-denae
@@ -73,8 +78,9 @@
   bio: Denae is a Research Scientist at Microsoft Research in the United States.
   video: kkPLEMevjlw
   thumbnail: ford-robinson-denae.webp
-  en: ford-robinson-denae-en.txt
-  es: ford-robinson-denae-es.txt
+  transcript:
+  - en
+  - es
 
 - event: 2022-04
   id: fucci-davide
@@ -87,8 +93,9 @@
   bio: "Davide is an Assistant Professor at the Blekinge Institute of Technology in Sweden."
   video: rBcV1F7jyHw
   thumbnail: fucci-davide.webp
-  en: fucci-davide-en.txt
-  es: fucci-davide-es.txt
+  transcript:
+  - en
+  - es
 
 - event: 2022-04
   id: galster-matthias
@@ -100,8 +107,9 @@
   bio: Matthias is an Associate Professor at the University of Canterbury in New Zealand.
   video: MVTO4KCRKJw
   thumbnail: galster-matthias.webp
-  en: galster-matthias-en.txt
-  es: galster-matthias-es.txt
+  transcript:
+  - en
+  - es
 
 - event: 2022-04
   id: hermans-felienne
@@ -113,8 +121,9 @@
   bio: Felienne is an Associate Professor at Leiden University in the Netherlands.
   video: z7w2lKG8zWM
   thumbnail: hermans-felienne.webp
-  en: hermans-felienne-en.txt
-  es: hermans-felienne-es.txt
+  transcript:
+  - en
+  - es
 
 - event: 2022-04
   id: hicks-catherine
@@ -126,8 +135,9 @@
   bio: Cat, a former intervention researcher at the Khan Academy, is the principal consultant at Carthasis Consulting.
   video: ygeykeP9Ww4
   thumbnail: hicks-catherine.webp
-  en: hicks-catherine-en.txt
-  es: hicks-catherine-es.txt
+  transcript:
+  - en
+  - es
 
 - event: 2022-04
   id: johnson-matthews-brittany
@@ -139,8 +149,9 @@
   bio: Brittany is an Assistant Professor at George Mason University in the United States.
   video: SrDqrwyV4I4
   thumbnail: johnson-matthews-brittany.webp
-  en: johnson-matthews-brittany-en.txt
-  es: johnson-matthews-brittany-es.txt
+  transcript:
+  - en
+  - es
 
 - event: 2022-04
   id: mcintosh-shane
@@ -152,8 +163,9 @@
   bio: Shane is an Associate Professor at the University of Waterloo in Canada.
   video: QJvijeRx8ic
   thumbnail: mcintosh-shane.webp
-  en: mcintosh-shane-en.txt
-  es: mcintosh-shane-es.txt
+  transcript:
+  - en
+  - es
 
 - event: 2022-04
   id: nagappan-mei
@@ -165,8 +177,9 @@
   bio: Mei is an Associate Professor at the University of Waterloo in Canada.
   video: oPIVZe0c3Io
   thumbnail: nagappan-mei.webp
-  en: nagappan-mei-en.txt
-  es: nagappan-mei-es.txt
+  transcript:
+  - en
+  - es
 
 - event: 2022-04
   id: petre-marian
@@ -178,8 +191,9 @@
   bio: Marian is a Professor at the Open University in the United Kingdom.
   video: Jor-Rh0gwus
   thumbnail: petre-marian.webp
-  en: petre-marian-en.txt
-  es: petre-marian-es.txt
+  transcript:
+  - en
+  - es
 
 - event: 2022-04
   id: rigger-manuel
@@ -191,8 +205,9 @@
   bio: Manuel Rigger is a postdoctoral researcher at ETH Zurich and an incoming Assistant Professor at the National University of Singapore.
   video: tLKTILnVasg
   thumbnail: rigger-manuel.webp
-  en: rigger-manuel-en.txt
-  es: rigger-manuel-es.txt
+  transcript:
+  - en
+  - es
 
 - event: 2022-04
   id: rodeghero-paige
@@ -204,8 +219,9 @@
   bio: Paige is an Assistant Professor at Clemson University in the United States.
   video: sVAPJ2JvU78
   thumbnail: rodeghero-paige.webp
-  en: rodeghero-paige-en.txt
-  es: rodeghero-paige-es.txt
+  transcript:
+  - en
+  - es
 
 - event: 2022-04
   id: steinmacher-igor
@@ -217,8 +233,9 @@
   bio: Igor is an Assistant Professor at the Federal University of Technology - Paraná in Brazil.
   video: zpPDlVoiVSU
   thumbnail: steinmacher-igor.webp
-  en: steinmacher-igor-en.txt
-  es: steinmacher-igor-es.txt
+  transcript:
+  - en
+  - es
 
 - event: 2022-04
   id: stolee-kathryn
@@ -230,8 +247,9 @@
   bio: Katie is an Associate Professor at North Carolina State University.
   video: iiJXYO_hcvQ
   thumbnail: stolee-kathryn.webp
-  en: stolee-kathryn-en.txt
-  es: stolee-kathryn-es.txt
+  transcript:
+  - en
+  - es
 
 - event: 2022-04
   id: storey-margaret-anne
@@ -243,8 +261,9 @@
   bio: Margaret-Anne is a Professor at the University of Victoria in Canada.
   video: ZdUAxUBrYLA
   thumbnail: storey-margaret-anne.webp
-  en: storey-margaret-anne-en.txt
-  es: storey-margaret-anne-es.txt
+  transcript:
+  - en
+  - es
 
 - event: 2022-04
   id: treude-christoph
@@ -256,8 +275,9 @@
   bio: Christoph is a Senior Lecturer at the University of Melbourne in Australia.
   video: YP5BGiw0Gng
   thumbnail: treude-christoph.webp
-  en: treude-christoph-en.txt
-  es: treude-christoph-es.txt
+  transcript:
+  - en
+  - es
 
 - event: 2022-04
   id: wessel-mairieli
@@ -269,8 +289,9 @@
   bio: Mairieli is a postdoctoral researcher at Delft University of Technology in the Netherlands.
   video: X1Z9lWhQaro
   thumbnail: wessel-mairieli.webp
-  en: wessel-mairieli-en.txt
-  es: wessel-mairieli-es.txt
+  transcript:
+  - en
+  - es
 
 - event: 2022-04
   id: zaidman-andy
@@ -282,8 +303,9 @@
   bio: Andy Zaidman is a Full Professor in Software Engineering at the Delft University of Technology.
   video: rFXdQ0k-hqw
   thumbnail: zaidman-andy.webp
-  en: zaidman-andy-en.txt
-  es: zaidman-andy-es.txt
+  transcript:
+  - en
+  - es
 
 - event: 2022-09
   id: brown-chris
@@ -295,8 +317,9 @@
   bio: Chris is an Assistant Professor in the Department of Computer Science at Virginia Tech.
   video: P_x3M57paZ8
   thumbnail: brown-chris.webp
-  en: brown-chris-en.txt
-  es: brown-chris-es.txt
+  transcript:
+  - en
+  - es
 
 - event: 2022-09
   id: da-silva-santos-joanna
@@ -308,8 +331,9 @@
   bio: Joanna is an Assistant Professor in the Department of Computer Science and Engineering at the University of Notre Dame.
   video: GIV-ZyjWtg0
   thumbnail: da-silva-santos-joanna.webp
-  en: da-silva-santos-joanna-en.txt
-  es: da-silva-santos-joanna-es.txt
+  transcript:
+  - en
+  - es
 
 - event: 2022-09
   id: hicks-catherine
@@ -321,8 +345,9 @@
   bio: Cat is the VP of Research Insights and Director of the Developer Insights Lab at Pluralsight Flow.
   video: mVec1TzQIMM
   thumbnail: hicks-catherine.webp
-  en: hicks-catherine-en.txt
-  es: hicks-catherine-es.txt
+  transcript:
+  - en
+  - es
 
 - event: 2022-09
   id: khomh-foutse
@@ -334,8 +359,9 @@
   bio: Foutse is a Full Professor of Software Engineering at Polytechnique Montréal.
   video: 1L8t3OldBfc
   thumbnail: khomh-foutse.webp
-  en: khomh-foutse-en.txt
-  es: khomh-foutse-es.txt
+  transcript:
+  - en
+  - es
 
 - event: 2022-09
   id: mkaouer-mohamed
@@ -348,8 +374,9 @@
   bio: Mohamed is an Assistant Professor in Software Engineering the Rochester Institute of Technology.
   video: rUa_hELXvHs
   thumbnail: mkaouer-mohamed.webp
-  en: mkaouer-mohamed-en.txt
-  es: mkaouer-mohamed-es.txt
+  transcript:
+  - en
+  - es
 
 - event: 2022-09
   id: nadi-sarah
@@ -361,8 +388,9 @@
   bio: Sarah is an Associate Professor in the Department of Computing Science at the University of Alberta.
   video: KqhvZ4xTnhQ
   thumbnail: nadi-sarah.webp
-  en: nadi-sarah-en.txt
-  es: nadi-sarah-es.txt
+  transcript:
+  - en
+  - es
 
 - event: 2022-09
   id: smith-justin
@@ -374,8 +402,9 @@
   bio: Justin is an Assistant Professor of Computer Science at Lafayette College.
   video: _I-DM5z8UeY
   thumbnail: smith-justin.webp
-  en: smith-justin-en.txt
-  es: smith-justin-es.txt
+  transcript:
+  - en
+  - es
 
 - event: 2022-09
   id: zhang-tianyi
@@ -387,8 +416,9 @@
   bio: Tianyi is an Assistant Professor in Computer Science at Purdue University.
   video: 8LekgPnRt1g
   thumbnail: zhang-tianyi.webp
-  en: zhang-tianyi-en.txt
-  es: zhang-tianyi-es.txt
+  transcript:
+  - en
+  - es
 
 - event: 2023-04
   id: bai-gina
@@ -400,8 +430,9 @@
   bio: Gina is an Assistant Professor of the Practice of Computer Science at Vanderbilt University in the United States.
   video: BKgdrEPYqmM 
   thumbnail: bai-gina.webp
-  en: bai-gina-en.txt
-  es: bai-gina-es.txt
+  transcript:
+  - en
+  - es
 
 - event: 2023-04
   id: bohme-marcel
@@ -413,8 +444,9 @@
   bio: Marcel leads the Software Security at the Max Planck Institute for Security and Privacy in Germany.
   video: _HUcBzYuWmM
   thumbnail: bohme-marcel.webp
-  en: bohme-marcel-en.txt
-  es: bohme-marcel-es.txt
+  transcript:
+  - en
+  - es
 
 - event: 2023-04
   id: businge-john
@@ -426,8 +458,9 @@
   bio: John is an Assistant Professor in the Department of Computer Science at the University of Nevada, Las Vegas, in the United States.
   video: -Nk44yuiIdo
   thumbnail: businge-john.webp
-  en: businge-john-en.txt
-  es: businge-john-es.txt
+  transcript:
+  - en
+  - es
 
 - event: 2023-04
   id: chatterjee-preetha
@@ -439,8 +472,9 @@
   bio: Preetha is an Assistant Professor at Drexel University in the United States.
   video: lkatTyerkwg
   thumbnail: chatterjee-preetha.webp
-  en: chatterjee-preetha-en.txt
-  es: chatterjee-preetha-es.txt
+  transcript:
+  - en
+  - es
 
 - event: 2023-04
   id: codabux-zadia
@@ -452,8 +486,9 @@
   bio: Zadia is an Assistance Professor at the University of Saskatchewan in Canada.
   video: -T0vuUkQCFg
   thumbnail: codabux-zadia.webp
-  en: codabux-zadia-en.txt
-  es: codabux-zadia-es.txt
+  transcript:
+  - en
+  - es
 
 - event: 2023-04
   id: devanbu-prem
@@ -465,8 +500,9 @@
   bio: Prem is a Distinguished Professor (Emeritus) of Computer Science at the University of California Davis in the United States.
   video: LQ43KdojuTI
   thumbnail: devanbu-prem.webp
-  en: devanbu-prem-en.txt
-  es: devanbu-prem-es.txt
+  transcript:
+  - en
+  - es
 
 - event: 2023-04
   id: hoda-rashina
@@ -478,8 +514,9 @@
   bio: Rashina is an Associate Professor of Software Engineering and Deputy Director of the HumaniSE lab at Monash University in Australia.
   video: O03LRJMgOf0
   thumbnail: hoda-rashina.webp
-  en: hoda-rashina-en.txt
-  es: hoda-rashina-es.txt
+  transcript:
+  - en
+  - es
 
 - event: 2023-04
   id: kula-elvan
@@ -491,7 +528,8 @@
   bio: Elvan is chapter lead of Analytics and AI Research at ING and a doctoral candidate at TU Delft.
   video: g3b8JfkV5jQ
   thumbnail: kula-elvan.webp
-  en: kula-elvan-en.txt
+  transcript:
+  - en
 
 - event: 2023-04
   id: kula-raula
@@ -503,7 +541,8 @@
   bio: Raula is an Assistant Professor at the Nara Institute of Science and Technology (NAIST) in Japan.
   video: O-PZX7d7YWo
   thumbnail: kula-raula.webp
-  en: kula-raula-en.txt
+  transcript:
+  - en
 
 - event: 2023-04
   id: latoza-thomas
@@ -515,7 +554,8 @@
   bio: Thomas is an Associate Professor of Computer Science at George Mason University in the United States.
   video: Dyo7WpndWog
   thumbnail: latoza-thomas.webp
-  en: latoza-thomas-en.txt
+  transcript:
+  - en
 
 - event: 2023-04
   id: lee-carol
@@ -527,7 +567,8 @@
   bio: Carol is a senior research scientist at Pluralsight Flow's Developer Success Lab in the United States.
   video: 8gfTqazvejI
   thumbnail: lee-carol.webp
-  en: lee-carol-en.txt
+  transcript:
+  - en
 
 - event: 2023-04
   id: licorish-sherlock
@@ -539,7 +580,8 @@
   bio: Sherlock is an Associate Professor in the Department of Information Science at the University of Otago.
   video: ylREDaqKWEk
   thumbnail: licorish-sherlock.webp
-  en: licorish-sherlock-en.txt
+  transcript:
+  - en
 
 - event: 2023-04
   id: margulieux-lauren
@@ -551,7 +593,8 @@
   bio: Lauren is an Associate Professor of Learning Sciences at Georgia State University.
   video: XGF8ljfL4ZA
   thumbnail: margulieux-lauren.webp
-  en: margulieux-lauren-en.txt
+  transcript:
+  - en
 
 - event: 2023-04
   id: mirian-ariana
@@ -563,7 +606,8 @@
   bio: Ariana is a security researcher at the University of California San Diego in the United States.
   video: ceuNc5cy1UA
   thumbnail: mirian-ariana.webp
-  en: mirian-ariana-en.txt
+  transcript:
+  - en
 
 - event: 2023-04
   id: newman-christian
@@ -575,7 +619,8 @@
   bio: Christian is assistant faculty in the Software Engineering Department at Rochester Institute of Technology.
   video: Q85GhN7871c
   thumbnail: newman-christian.webp
-  en: newman-christian-en.txt
+  transcript:
+  - en
 
 - event: 2023-04
   id: pinto-gustavo
@@ -587,7 +632,8 @@
   bio: Gustavo is Head of Research at Zup Innovation and Assistant Professor at Federal University of Pará in Brazil.
   video: g_ht_LDm5Hw
   thumbnail: pinto-gustavo.webp
-  en: pinto-gustavo-en.txt
+  transcript:
+  - en
 
 - event: 2023-04
   id: presler-marshall-kai
@@ -599,7 +645,8 @@
   bio: Kai completed his PhD at North Carolina State University and now teaches computer science at Bowdoin College in Maine.
   video: CvwHg9N7gWo
   thumbnail: presler-marshall-kai.webp
-  en: presler-marshall-kai-en.txt
+  transcript:
+  - en
 
 - event: 2023-04
   id: serebrenik-alexander
@@ -611,7 +658,8 @@
   bio: Alexander is a Full Professor of Social Software Engineering at Eindhoven University of Technology in the Netherlands.
   video: vofY6oeAaBQ
   thumbnail: serebrenik-alexander.webp
-  en: serebrenik-alexander-en.txt
+  transcript:
+  - en
 
 - event: 2023-04
   id: sullivan-allison
@@ -623,7 +671,8 @@
   bio: Allison is an Assistant Professor at the University of Texas at Arlington.
   video: H6vyMSoVN5s
   thumbnail: sullivan-allison.webp
-  en: sullivan-allison-en.txt
+  transcript:
+  - en
 
 - event: 2023-04
   id: tshukudu-ethel
@@ -635,7 +684,8 @@
   bio: Ethel is a Lecturer at the University of Botswana and a Founder and Director of CSEdBotswana.
   video: MHwSnjLx-64
   thumbnail: tshukudu-ethel.webp
-  en: tshukudu-ethel-en.txt
+  transcript:
+  - en
 
 - event: 2023-04
   id: zeller-andreas
@@ -647,7 +697,8 @@
   bio: Andreas is faculty at the CISPA Helmholtz Center for Information Security and Professor of Software Engineering at Saarland University in Saarbrücken, Germany.
   video: GCy8bYJ_G0I
   thumbnail: zeller-andreas.webp
-  en: zeller-andreas-en.txt
+  transcript:
+  - en
 
 - event: 2023-04
   id: zhou-shurui
@@ -659,4 +710,5 @@
   bio: Shurui is an Assistant Professor in Electrical and Computer Engineering at the University of Toronto in Canada.
   video: 24BdlgcK2mE
   thumbnail: zhou-shurui.webp
-  en: zhou-shurui-en.txt
+  transcript:
+  - en

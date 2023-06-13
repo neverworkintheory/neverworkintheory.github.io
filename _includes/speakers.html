@@ -11,6 +11,7 @@
     "{{speaker.title}}"
     {{speaker.bio}}
     {% if speaker.video %}<br><a href="https://youtu.be/{{speaker.video}}">Video</a>{% endif %}
+    {% include transcript.html event=include.event entry=speaker %}
   </div>
 </div>
 {% endfor %}
