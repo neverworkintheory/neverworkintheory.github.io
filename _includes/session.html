@@ -4,11 +4,11 @@
   <tr>
   {% assign column = "left" %}
   {% for speaker in speakers %}
-    <td><a href="{{speaker.video}}"><img src="{{'/static/' | append: include.event | append: '/' | append: speaker.thumbnail | relative_url}}" alt="{{speaker.title}}"/></a></td>
+    <td><a href="https://youtu.be/{{speaker.video}}"><img src="{{'/static/' | append: include.event | append: '/' | append: speaker.thumbnail | relative_url}}" alt="{{speaker.title}}"/></a></td>
     <td>
       <a href="{{speaker.url}}">{{speaker.personal}} {{speaker.family}}</a>:
       <br/>
-      <a href="{{speaker.video}}">{{speaker.title}}</a>
+      <a href="https://youtu.be/{{speaker.video}}">{{speaker.title}}</a>
       {% if speaker.en or speaker.es %}
       <br/>
       Transcript:
