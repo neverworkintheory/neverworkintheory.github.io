@@ -530,6 +530,7 @@
   thumbnail: kula-elvan.webp
   transcript:
   - en
+  - es
 
 - event: 2023-04
   id: kula-raula
@@ -543,6 +544,7 @@
   thumbnail: kula-raula.webp
   transcript:
   - en
+  - es
 
 - event: 2023-04
   id: latoza-thomas
@@ -556,6 +558,7 @@
   thumbnail: latoza-thomas.webp
   transcript:
   - en
+  - es
 
 - event: 2023-04
   id: lee-carol
@@ -569,6 +572,7 @@
   thumbnail: lee-carol.webp
   transcript:
   - en
+  - es
 
 - event: 2023-04
   id: licorish-sherlock
@@ -582,6 +586,7 @@
   thumbnail: licorish-sherlock.webp
   transcript:
   - en
+  - es
 
 - event: 2023-04
   id: margulieux-lauren
