@@ -600,6 +600,7 @@
   thumbnail: margulieux-lauren.webp
   transcript:
   - en
+  - es
 
 - event: 2023-04
   id: mirian-ariana
@@ -613,6 +614,7 @@
   thumbnail: mirian-ariana.webp
   transcript:
   - en
+  - es
 
 - event: 2023-04
   id: newman-christian
@@ -626,6 +628,7 @@
   thumbnail: newman-christian.webp
   transcript:
   - en
+  - es
 
 - event: 2023-04
   id: pinto-gustavo
@@ -639,6 +642,7 @@
   thumbnail: pinto-gustavo.webp
   transcript:
   - en
+  - es
 
 - event: 2023-04
   id: presler-marshall-kai
@@ -691,6 +695,7 @@
   thumbnail: tshukudu-ethel.webp
   transcript:
   - en
+  - es
 
 - event: 2023-04
   id: zeller-andreas
