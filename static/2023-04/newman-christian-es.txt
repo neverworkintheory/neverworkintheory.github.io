@@ -1,0 +1,476 @@
+0:00:00.000,0:00:06.000
+A continuación tenemos a Christian Newman para el último de esta hora, que va a hablar sobre cómo
+
+0:00:06.000,0:00:10.440
+podemos elaborar nombres de identificador fuerte. Christian, ¡Cuéntanos!
+
+0:00:11.100,0:00:12.540
+Muy bien, ¿me escuchan todos?
+
+0:00:14.280,0:00:15.540
+Perfecto. Perfecto.
+
+0:00:15.540,0:00:19.380
+Me llamo Christian y soy el investigador jefe del laboratorio SCANL,
+
+0:00:19.380,0:00:23.460
+así que si les gusta lo que hablamos hoy por favor no duden en visitar nuestro sitio web que se puede encontrar
+
+0:00:23.460,0:00:27.660
+al final de esta diapositiva scanl.org. Hoy quería hablarles de
+
+0:00:27.660,0:00:31.080
+nombres de identificadores, y en esta diapositiva se ven varios
+
+0:00:31.080,0:00:33.540
+diferentes tipos de identificadores, algunos tienen en ellos una o
+
+0:00:33.540,0:00:35.940
+dos palabras diferentes, algunos de ellos tienen preposiciones,
+
+0:00:35.940,0:00:39.300
+pero muchos de ellos, probablemente son un poco familiares para ustedes,
+
+0:00:39.300,0:00:42.300
+porque probablemente han visto identificadores que se parecen a estos
+
+0:00:42.300,0:00:45.360
+o tal vez incluso identificadores que se ven exactamente como estos
+
+0:00:45.360,0:00:47.460
+y quiero que mantengan eso en la mente a medida que hablamos
+
+0:00:47.460,0:00:52.260
+porque vamos a discutir por qué algunos de estos parecen familiares para ustedes a medida que avanzamos.
+
+0:00:53.040,0:00:56.880
+Así que una pregunta que quería hacer acerca de estos es, ¿son buenos identificadores?
+
+0:00:56.880,0:00:59.820
+Y si miramos hacia atrás aquí probablemente se verá en esta lista,
+
+0:00:59.820,0:01:01.800
+usted dirá, ah tal vez, usted sabe que depende,
+
+0:01:01.800,0:01:02.880
+como, usted mira el código y
+
+0:01:02.880,0:01:06.000
+usted puede llegar a alguna conclusión, pero el punto aquí es que
+
+0:01:06.000,0:01:09.000
+tendríamos que hablar de ello. Como desarrolladores tendríamos que realizar revisiones del código,
+
+0:01:09.000,0:01:11.880
+tendríamos que mirar el código, tendríamos que llegar a alguna conclusión
+
+0:01:11.880,0:01:15.120
+colectiva acerca de la calidad de estos. Así que creo que la denominación de los identificadores es
+
+0:01:15.120,0:01:17.460
+al menos parcialmente subjetiva, depende de la persona que
+
+0:01:17.460,0:01:21.120
+está leyendo y en el contexto de código y lo que la persona está tratando de transmitir.
+
+0:01:21.660,0:01:26.340
+No existe una métrica de calidad objetiva para determinar qué es un identificador de alta calidad.
+
+0:01:26.340,0:01:30.660
+Pero todos hemos visto, verdad?, por lo que todo el mundo ha mirado a algunos
+
+0:01:30.660,0:01:33.480
+códigos y han sido como, ah, esto, yo no, no sé lo que está haciendo esto,
+
+0:01:33.480,0:01:36.360
+¿por qué lo hicieron de esa manera, ¿qué significa PCL,
+
+0:01:36.360,0:01:39.240
+por qué es una sola letra, no entiendo qué es esto
+
+0:01:39.240,0:01:41.160
+odio el húngaro, ¿por qué utilizan el húngaro?
+
+0:01:41.160,0:01:43.140
+por qué hay un alfabeto delante de mi identificador.
+
+0:01:43.140,0:01:48.360
+Así que sabemos que son identificadores malos cuando los vemos, incluso si no siempre sabemos exactamente por qué es
+
+0:01:48.360,0:01:53.040
+malo o lo que hace que sea un mal identificador, todos hemos visto algo que nos hace sentir
+
+0:01:53.040,0:01:57.600
+algún tipo de, ya sabes, cringe. Así que una métrica o alguna manera de ser
+
+0:01:57.600,0:02:00.540
+capaces de entender la calidad de estos sería muy útil.
+
+0:02:00.540,0:02:04.200
+Podría decir, en lugar de tener que hablar de ello, podríamos mirar la métrica
+
+0:02:04.200,0:02:07.020
+y la métrica dice, hey, usted sabe, esto es bueno, y que
+
+0:02:07.020,0:02:10.200
+podría darnos algunas razones de por qué es bueno, y podríamos, usted sabe, mirar a estos y decir,
+
+0:02:10.200,0:02:13.320
+ok, ahora entiendo por qué se llama así, tiene sentido, si?, genial.
+
+0:02:14.220,0:02:17.280
+Por desgracia, hacer una métrica para esto es muy difícil, verdad?.
+
+0:02:17.280,0:02:21.120
+Hay diferentes, y una de las grandes razones de esto es que hay diferentes perspectivas
+
+0:02:21.120,0:02:25.560
+que debe satisfacer cada identificador. Puedes estar hablando con un estudiante o con un
+
+0:02:25.560,0:02:28.500
+experto o un desarrollador senior y cada uno de estos grupos
+
+0:02:28.500,0:02:34.560
+necesita un tipo diferente de identificador. Un senior entiende los modismos y la
+
+0:02:36.000,0:02:39.240
+terminología y las diferentes estructuras gramaticales de
+
+0:02:39.240,0:02:42.540
+identificadores que utilizan los ingenieros de software, mientras que un estudiante nunca los ha visto antes.
+
+0:02:42.540,0:02:47.400
+Y quiero que presten atención a eso porque los estudiantes no entienden el
+
+0:02:47.400,0:02:50.040
+lenguaje de desarrollo de software mientras que un senior lo hace,
+
+0:02:50.040,0:02:55.200
+y hay algo importante allí, porque lo que estoy diciendo aquí es que hemos
+
+0:02:55.200,0:02:58.500
+creado un lenguaje interno para nosotros, interno a la comunidad de desarrollo de software,
+
+0:02:58.500,0:03:02.100
+que es cómo transmitimos el significado del software entre nosotros.
+
+0:03:02.100,0:03:06.840
+Y la gente fuera de esa comunidad no entienden de qué estamos hablando al usar esto,
+
+0:03:06.840,0:03:09.480
+aunque hablen las mismas lenguas humanas que nosotros
+
+0:03:09.480,0:03:12.000
+Puede que todos hablen inglés, pero no todos entienden de qué estamos hablando.
+
+0:03:12.000,0:03:17.460
+Pero la comprensión del programa es de vital importancia. Es lo que tenemos que
+
+0:03:17.460,0:03:19.980
+hacer antes de hacer cualquier otra cosa. Si vas a añadir una característica,
+
+0:03:19.980,0:03:22.860
+si vas a corregir un error, tienes que entender el software.
+
+0:03:22.860,0:03:27.060
+Así que realmente deberíamos prestar atención a este fenómeno.
+
+0:03:27.060,0:03:32.220
+Bien, ¿por qué es tan difícil? Bueno, en el transcurso de décadas,
+
+0:03:32.220,0:03:35.760
+nosotros como desarrolladores hemos creado este sub-lenguaje y el sub-lenguaje,
+
+0:03:35.760,0:03:39.300
+que se basa en un lenguaje humano, por lo que para muchos de nosotros sería Inglés,
+
+0:03:39.300,0:03:44.880
+pero también pueden ser otros idiomas humanos, y este sub-lenguaje es especialmente inglés en
+
+0:03:44.880,0:03:48.960
+ciertas frases gramaticales y modismos que utilizamos para describir el software, 
+
+0:03:48.960,0:03:52.380
+para describir el comportamiento del software. Además de eso,
+
+0:03:52.380,0:03:56.040
+esto es el 70% del código, así que si nos fijamos en los caracteres en el código,
+
+0:03:56.040,0:03:58.620
+el 70% de todos los caracteres en el código son identificadores,
+
+0:03:58.620,0:04:02.280
+y por lo que si ustedes no entienden qué sub-lenguaje estamos utilizando entonces ustedes
+
+0:04:02.280,0:04:04.020
+no entienden el código, no puede leerlo,
+
+0:04:04.020,0:04:07.920
+es esencialmente también otro idioma extranjero. Y nosotros, la otra cosa para darse cuenta es
+
+0:04:07.920,0:04:11.400
+que aquí no diseñamos este lenguaje pero lo creamos, verdad?,
+
+0:04:11.400,0:04:17.400
+así que como desarrolladores todos evolucionamos este lenguaje con el tiempo para hacer frente a los contextos históricos.
+
+0:04:17.400,0:04:19.320
+Así, por ejemplo, los lenguajes antiguos utilizaban
+
+0:04:19.320,0:04:23.100
+para limitar el número de caracteres que pueden utilizar para, sólo para crear una variable.
+
+0:04:23.100,0:04:28.860
+Esto nos obligó a tener que utilizarun discurso mucho más corto para decir la misma cantidad de texto que 
+
+0:04:28.860,0:04:31.740
+en una frase. Así que creamos este pero
+
+0:04:31.740,0:04:34.560
+no lo diseñamos por adelantado, no se nos ocurrió con sus reglas,
+
+0:04:34.560,0:04:39.060
+tuvimos que evolucionarlo para hacer frente a nuestros puestos de trabajo y nuestra educación.
+
+0:04:40.140,0:04:44.700
+Así que lo que mi laboratorio está tratando de hacer es estudiar este sublenguaje,
+
+0:04:44.700,0:04:48.840
+para entender cuáles son las reglas que hemos curado colectivamente a través del
+
+0:04:48.840,0:04:52.560
+tiempo para que podamos hacer las reglas explícitas, para que todo el mundo entiende lo que son,
+
+0:04:52.560,0:04:56.940
+encontrar maneras de medir y describir el efecto que estas normas tienen sobre la
+
+0:04:56.940,0:05:01.980
+comprensión para diferentes tipos de lectores, los principiantes frente a los expertos, por ejemplo,
+
+0:05:01.980,0:05:08.340
+y utilizar esta comprensión para crear mejores enfoques de creación, valoración y mantenimiento de nombres.
+
+0:05:08.340,0:05:12.000
+Así que hoy quería hablarles de un enfoque concreto
+
+0:05:12.000,0:05:14.700
+y es un enfoque que mi laboratorio ha estado estudiando mucho últimamente,
+
+0:05:14.700,0:05:16.980
+que son los patrones gramaticales. La forma en que se obtiene un patrón gramátical
+
+0:05:16.980,0:05:20.850
+es tomando un identificador, así que ustedes pueden ver dos en la pantalla aquí, 
+
+0:05:20.850,0:05:23.820
+se aplica un divisor, el divisor divide estos
+
+0:05:23.820,0:05:27.780
+identificadores en sus palabras constituyentes y luego se aplica un etiquetador de categoría gramatical que
+
+0:05:27.780,0:05:30.360
+está especializado para el contexto de software, porque recuerden,
+
+0:05:30.360,0:05:33.360
+el software sigue una estructura gramatical diferente,
+
+0:05:33.360,0:05:35.400
+no se puede simplemente tomar de la estantería etiquetadores de categorías gramaticales
+
+0:05:35.400,0:05:39.660
+tienes que utilizar técnicas especializadas de PNL para tratar estas cosas.
+
+0:05:40.380,0:05:43.560
+Y lo que hicimos fue un estudio en el que tomamos mucho
+
+0:05:43.560,0:05:48.960
+de código y miramos a través de cómo este código, o nos fijamos en la estructura del nombre
+
+0:05:48.960,0:05:50.940
+del identificador de todo este código, por lo que recogimos un montón de
+
+0:05:50.940,0:05:54.420
+patrones de gramática y nos fijamos en cómo se estaban utilizando en el software,
+
+0:05:54.420,0:05:58.380
+y quiero echar un vistazo rápido a esto. Si escanean hacia abajo en este pequeño catálogo,
+
+0:05:58.380,0:06:02.100
+lo que hicimos fue que, básicamente, tomó la taxonomía y nos
+
+0:06:02.100,0:06:05.940
+enumeró cada patrón que encontramos. Así que estas son las estructuras gramaticales.
+
+0:06:06.540,0:06:09.840
+La primera es una frase nominal. Una frase nominal es, es una secuencia de modificadores
+
+0:06:09.840,0:06:14.700
+sustantivos seguida de un sustantivo principal. Y así podemos ver ejemplos de eso aquí abajo
+
+0:06:14.700,0:06:19.560
+donde tenemos el sustantivo principal "etiqueta". El sustantivo principal suele representar lo que
+
+0:06:19.560,0:06:23.940
+la entidad, lo que la variable en realidad está tratando de transmitir en el código,
+
+0:06:23.940,0:06:28.200
+y luego las palabras que vienen a la izquierda, los modificadores sustantivos, son descriptivos,
+
+0:06:28.200,0:06:32.280
+por lo que funcionan como adjetivos. De hecho, los modificadores del sustantivo son lo que
+
+0:06:32.280,0:06:34.260
+llamamos sustantivos adjuntos, que son efectivamente
+
+0:06:34.260,0:06:39.120
+sustantivos que se hacen pasar por adjetivos. Y así, en este caso lo que tenemos es una etiqueta
+
+0:06:39.120,0:06:44.040
+que es específicamente una etiqueta de ancho de selección, por lo que est es una descripción del tipo
+
+0:06:44.040,0:06:48.120
+de etiqueta de la que estamos hablando. Si bajamos veremos frases preposicionales.
+
+0:06:48.660,0:06:54.840
+Las frases preposicionales suelen ser identificadores que tienen que ver, por ejemplo, con la conversión,
+
+0:06:54.840,0:06:58.440
+por lo que la conversión a una cadena o la realización de algún tipo de evento,
+
+0:06:58.440,0:07:01.440
+por ejemplo, "al hacer clic", "al pulsar un botón", ese tipo de cosas,
+
+0:07:01.440,0:07:04.860
+y lo que quiero que entiendan y vean, ya que no tenemos suficiente tiempo
+
+0:07:04.860,0:07:07.920
+para ir a través de todos estos, es que los diferentes patrones se correlacionan
+
+0:07:07.920,0:07:13.260
+a diferentes tipos de comportamiento en el software. Y así realmente lo que estamos viendo aquí es un
+
+0:07:13.260,0:07:16.860
+atisbo de este sub-lenguaje sobre lo que he estado hablando hasta acá. 
+
+0:07:17.940,0:07:23.520
+Hemos creado estos patrones de habla que nos permiten transmitir el comportamiento muy rápidamente el uno al otro
+
+0:07:23.520,0:07:28.800
+sin tener que ser muy explícito acerca de lo que, los matices que bajo el texto,
+
+0:07:28.800,0:07:31.920
+hay mucho subtexto aquí. Y estos son algunos de los aspectos básicos
+
+0:07:31.920,0:07:35.400
+de las estructuras de frases de lenguaje natural que nosotros, como desarrolladores, hemos creado a lo largo de los
+
+0:07:35.400,0:07:41.280
+últimos 50-100 años o lo que sea. Así que lo que hicimos con esto es,
+
+0:07:41.280,0:07:45.600
+hemos creado un poco de una herramienta, esto es sólo una especie de forma inicial de
+
+0:07:45.600,0:07:48.180
+empezar a tratar el problema, y lo que hace esta herramienta es,
+
+0:07:48.180,0:07:50.100
+ver los patrones gramaticales en su código
+
+0:07:50.760,0:07:52.860
+y ver y examinar parte del código circundante
+
+0:07:52.860,0:07:56.880
+y les da una recomendación. Así que en este caso tenemos la variable "caracteres".
+
+0:07:57.960,0:08:01.680
+Nuestra herramienta ve que el tipo de este es singular por lo que es caracter,
+
+0:08:02.400,0:08:06.840
+y está recomendando que no utilice un plural, en su lugar, utilizar un sustantivo singular,
+
+0:08:06.840,0:08:10.440
+así que básicamente hace de este "caracter" singular en lugar de "caracteres".
+
+0:08:11.220,0:08:13.680
+Y eso es sólo un ejemplo rápido de lo que hace esta herramienta.
+
+0:08:13.680,0:08:18.600
+Y tengan en cuenta aquí que da ejemplos de lo que está hablando cuando da estos patrones,
+
+0:08:18.600,0:08:22.080
+y también una explicación, que son dos cosas que creemos que son
+
+0:08:22.080,0:08:30.060
+muy, muy importantes para este tipo de herramientas. Así que nuestro objetivo para este trabajo en el futuro es
+
+0:08:30.060,0:08:33.060
+explorar plenamente la diversidad de patrones gramaticales, por lo que, hay más de estos,
+
+0:08:33.060,0:08:37.320
+queremos averiguar cuántos de ellos existen para que podamos volver a hacerlos explícitos.
+
+0:08:37.320,0:08:43.200
+Queremos crear directrices de nomenclatura basadas en datos, por lo que se trata de conjuntos de medidas que pueden mirar a
+
+0:08:43.200,0:08:46.500
+diferentes aspectos del nombre del identificador: si contiene abreviaturas,
+
+0:08:46.500,0:08:52.020
+contiene terminología de dominio, etc. Y queremos hacer esto para que podamos
+
+0:08:52.020,0:08:56.880
+entender cómo afectan a la lectura humana, porque si, porque de nuevo,
+
+0:08:56.880,0:09:01.620
+si ustedes no entienden quién está tratando de leer el código, entonces ustedes no puede dar una métrica que diga
+
+0:09:01.620,0:09:05.040
+lo fácil que les resulta leerlo. Si no sé quién está mirando esto
+
+0:09:05.040,0:09:07.620
+entonces no puedo decirte si esto es un buen identificador para ellos o no.
+
+0:09:08.220,0:09:10.980
+Y entonces queremos crear un marco que optimiza,
+
+0:09:10.980,0:09:16.380
+o que nos ayuda a optimizar los nombres, que dan prioridad al lector y explicabilidad.
+
+0:09:16.380,0:09:22.740
+Así que otro principio básico de esto es que si ustedes no pueden explicar a la gente por qué esto es
+
+0:09:22.740,0:09:27.180
+bueno o malo, o lo que es bueno o malo al respecto, entonces no pueden tomar buenas decisiones sobre
+
+0:09:27.180,0:09:29.880
+si se trata de una recomendación que deben tomar.
+
+0:09:29.880,0:09:34.680
+Así que si simplemente les damos una caja negra que les diga qué es lo mejor no podrán
+
+0:09:34.680,0:09:37.440
+decirme si es bueno o malo porque no saben por qué la caja
+
+0:09:37.440,0:09:40.740
+está recomendando un patrón particular para ellos.
+
+0:09:40.740,0:09:45.780
+Y entonces, nuestro último objetivo es, obviamente, educar a los desarrolladores en todos los niveles acerca de este lenguaje
+
+0:09:45.780,0:09:49.170
+para que puedan expresarse correctamente cuando están, 
+
+0:09:49.170,0:09:52.920
+para que puedan expresarse de la mejor manera posible a los demás cuando están escribiendo código.
+
+0:09:52.920,0:09:56.760
+Y aquí termina mi presentación. Si están, de nuevo, si están interesados,
+
+0:09:56.760,0:10:00.780
+pueden visitar nuestro sitio web en scanl.org, el pequeño código QR les lleva a
+
+0:10:00.780,0:10:06.120
+nuestro, al catálogo de la estructura del nombre que también contiene enlaces a documentos en nuestra página web
+
+0:10:06.120,0:10:10.020
+por si quieren encontrarlos. Y eso es todo, gracias.

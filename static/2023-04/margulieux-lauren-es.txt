@@ -1,0 +1,500 @@
+0:00:01.920,0:00:05.220
+Quería empezar dando las gracias a los organizadores por ponerme aquí después de Thomas
+
+0:00:05.220,0:00:08.820
+porque lo primero de lo que voy a hablar es una muy buena continuación 
+
+0:00:09.480,0:00:12.660
+a lo que él estaba hablando. Así que soy Lauren Margulieux,
+
+0:00:12.660,0:00:16.800
+soy profesora de Ciencias del Aprendizaje en la Universidad Estatal de Georgia en Atlanta, Georgia
+
+0:00:16.800,0:00:23.220
+y me formé como psicóloga cognitiva. Eso significa que me formé en cómo el
+
+0:00:23.220,0:00:27.720
+cerebro funciona y, en particular, me centro en el aprendizaje y la enseñanza de la informática.
+
+0:00:27.720,0:00:31.980
+Así que hoy voy a compartir algunas cosas que los desarrolladores de software deben aprender sobre el aprendizaje
+
+0:00:31.980,0:00:38.280
+y esto es parte de un documento más grande que tenemos con diez cosas que los desarrolladores de software
+
+0:00:38.280,0:00:40.320
+deben aprender sobre el aprendizaje que se publicará en breve
+
+0:00:40.320,0:00:44.640
+en Communications of the ACM, y mis coautores son Neil
+
+0:00:44.640,0:00:49.440
+Brown del King's College de Londres y Felienne Hermans de la Universidad Vrije de Ámsterdam.
+
+0:00:51.120,0:00:57.180
+Y quería empezar con para quién es esta charla, porque esta charla no es sólo para estudiantes e
+
+0:00:57.180,0:00:59.700
+ingenieros juniors que tienen un montón de aprendizaje por hacer.
+
+0:00:59.700,0:01:05.640
+También es para los ingenieros que están aprendiendo una nueva herramienta o habilidad que es, en 
+
+0:01:05.640,0:01:08.880
+algún punto, casi todo el mundo. También es para mentores que
+
+0:01:08.880,0:01:13.920
+están trabajando con alumnos junior o que están enseñando a su equipo una nueva herramienta o habilidad.
+
+0:01:14.520,0:01:18.000
+También está dirigido a los responsables de selección y contratación de personal que desean
+
+0:01:18.000,0:01:24.600
+contratar a personas que aprenderán nuevas herramientas y habilidades y también es para los desarrolladores de nuevas herramientas que
+
+0:01:24.600,0:01:29.520
+quieren que la gente aprenda a utilizar su herramienta. Así que todas estas personas podrían beneficiarse de poder
+
+0:01:29.520,0:01:32.820
+entender cómo la gente aprende y procesa nueva información.
+
+0:01:35.040,0:01:39.000
+Así que el primer consejo que quiero compartir es que los expertos razonan y los principiantes...
+
+0:01:39.000,0:01:43.740
+los expertos reconocen y los principiantes razonan, lo que me recuerda esta cita de Einstein,
+
+0:01:43.740,0:01:48.420
+que es "no es que sea tan inteligente sólo me quedo con los problemas durante más tiempo".
+
+0:01:48.420,0:01:53.700
+Y esto pone de relieve que la verdadera diferencia entre un problema sin resolver y un problema resuelto
+
+0:01:53.700,0:01:58.920
+es la cantidad de tiempo que se tarda en resolverlo. Y la diferencia real en la cantidad
+
+0:01:58.920,0:02:04.560
+de tiempo que se necesita es su experiencia. Así que un experto verá un problema, identificará
+
+0:02:04.560,0:02:10.500
+el problema, como un todo o en grandes piezas porque es un problema que ya sabe cómo resolver.
+
+0:02:11.160,0:02:16.020
+Los novatos no tienen este lujo de experiencia, por lo que tienen que romper el problema en 
+
+0:02:16.020,0:02:20.340
+muchas más piezas y esto les da lo que llamamos un mayor espacio de resolución de problemas,
+
+0:02:20.340,0:02:24.360
+así que hay muchas más incógnitas y mucho más, mucha más información que son
+
+0:02:24.360,0:02:29.940
+procesamiento cuando están resolviendo un problema. Así que en el ejemplo de Thomas que acabamos de ver de un laberinto
+
+0:02:29.940,0:02:34.560
+un novato tendría un laberinto muy detallado en el que podría dar muchas vueltas equivocadas
+
+0:02:34.560,0:02:38.040
+y un experto tendría sólo unas pocas cosas pequeñas que tendrían que navegar.
+
+0:02:39.300,0:02:43.260
+Así, por ejemplo, un experto podría mirar a un problema y reconocerlo de inmediato,
+
+0:02:43.260,0:02:49.140
+esto necesita un bucle de conteo. Fácil. Hecho. Un novato podría mirar el mismo problema y decir,
+
+0:02:49.140,0:02:52.440
+¿esto necesita un bucle o un condicional? Y si es un bucle,
+
+0:02:52.440,0:02:55.200
+¿qué tipo de bucle necesita? Y una vez que elijo un tipo de bucle,
+
+0:02:55.200,0:03:01.320
+¿cuáles son los operadores y expresiones? Así que el beneficio real de la experiencia es que es
+
+0:03:01.320,0:03:06.240
+reduce este espacio de resolución de problemas, que le ahorra una tonelada de esfuerzo cognitivo,
+
+0:03:06.240,0:03:10.320
+y le permite asimilar más información para resolver problemas.
+
+0:03:10.860,0:03:16.320
+Así que para el bucle de conteo, un experto podría simplemente ver que necesita un bucle
+
+0:03:16.320,0:03:20.400
+de conteo y que sólo podría crear un bucle de conteo mientras que un novato podría necesitar
+
+0:03:20.400,0:03:25.320
+dividirlo en 10 pasos diferentes. Porque otra cosa que te da la experiencia es que 
+
+0:03:25.320,0:03:31.140
+automatiza un montón de habilidades de bajo nivel que le permite saltar directamente a las habilidades de orden superior.
+
+0:03:31.860,0:03:36.360
+Así que la conclusión es que si los principiantes no pueden hacer algo ahora no significa que
+
+0:03:36.360,0:03:39.780
+nunca serán capaces de hacerlo, pero sí necesitan practicar la resolución de
+
+0:03:39.780,0:03:45.600
+problemas para identificar patrones y practicar los pasos de los componentes para que puedan automatizarlos.
+
+0:03:46.920,0:03:50.700
+Y esto conecta con el siguiente consejo, que es que los predictores de
+
+0:03:50.700,0:03:54.240
+capacidad de programación no están claros. Así que ampliando el último conceto
+
+0:03:54.240,0:03:57.540
+que sólo porque ustedes no pueden hacer algo ahora no significa que nunca serán capaces de hacerlo,
+
+0:03:58.560,0:04:02.760
+tampoco somos tan buenos prediciendo lo que eventualmente podrán hacer.
+
+0:04:02.760,0:04:06.960
+Así que hay dos tipos de mentalidad cuando estamos tratando de predecir la capacidad de programación:
+
+0:04:06.960,0:04:09.960
+está la mentalidad de aptitud que dice que naciste con ella,
+
+0:04:09.960,0:04:12.780
+y si no son buenos en programación, nunca serán
+
+0:04:12.780,0:04:17.640
+buenos en programación, no importa cuánto práctiquen. La otra cara de la moneda es la mentalidad práctica,
+
+0:04:17.640,0:04:20.400
+que es, siempre y cuando practiquen y pongan suficiente
+
+0:04:20.400,0:04:24.840
+esfuerzo, pueden hacer cualquier cosa que deseen. Por supuesto, ninguno de estos 
+
+0:04:24.840,0:04:28.260
+puntos de vista extremos es correcto. Así que, aunque es cierto que
+
+0:04:28.260,0:04:32.820
+más o menos cualquier persona podría pasar una clase de física introductoria con suficiente práctica y esfuerzo,
+
+0:04:32.820,0:04:36.960
+también es cierto que prácticamente nadie va a conseguir un Premio Nobel
+
+0:04:36.960,0:04:42.660
+en física por mucho que practique. Así que la verdadera respuesta se encuentra en algún lugar en el medio
+
+0:04:43.440,0:04:48.060
+y vamos a dejar de lado la práctica por ahora porque eso es algo que podemos
+
+0:04:48.060,0:04:52.020
+manipular y tratar después de los hechos. Así que lo que intentamos hacer especialmente
+
+0:04:52.020,0:04:54.480
+cuando contratamos gente es, tratamos de predecir la aptitud.
+
+0:04:55.500,0:05:01.980
+Sin embargo somos muy, muy malos en ello. Así que algunos predictores fallidos de la aptitud son
+
+0:05:01.980,0:05:06.420
+su experiencia previa, por lo que puede hacer ahora, los lenguajes de programación que ya conoce,
+
+0:05:06.420,0:05:10.380
+tu experiencia matemática previa, ninguno de estos son buenos predictores de la aptitud.
+
+0:05:11.340,0:05:14.700
+Características personales como raza, sexo,
+
+0:05:14.700,0:05:20.280
+edad, o su percepción de CS también son malos predictores de la aptitud.
+
+0:05:20.280,0:05:23.820
+Incluso tus preferencias, es decir, cuál es o era tu especialidad académica,
+
+0:05:23.820,0:05:27.900
+o si te consideras una persona de humanidades o de ciencias, 
+
+0:05:27.900,0:05:31.320
+estos no son buenos predictores de su capacidad de programación final.
+
+0:05:31.920,0:05:36.540
+Los mejores predictores que tenemos son la inteligencia general y la capacidad de memoria de trabajo,
+
+0:05:36.540,0:05:39.120
+que es la cantidad de información que pueden procesar a la vez.
+
+0:05:39.120,0:05:41.580
+Sin embargo, estos no son realmente buenos predictores de la aptitud,
+
+0:05:41.580,0:05:44.820
+son mejores predictores de la velocidad a la que aprenderás.
+
+0:05:45.660,0:05:49.140
+Así que la conclusión de este consejo es que muchos de los percibidos
+
+0:05:49.140,0:05:51.540
+predictores de la aptitud de programación que tenemos
+
+0:05:51.540,0:05:56.940
+en realidad no tienen ninguna evidencia empírica. Y para mí esto dice que cuando estamos
+
+0:05:56.940,0:06:00.480
+tratando de medir la aptitud, la aptitud no es el factor limitante, en realidad,
+
+0:06:00.480,0:06:04.620
+la práctica es el factor limitante. Así que puede haber algunos casos extremos
+
+0:06:04.620,0:06:08.040
+donde usted está tratando de contratar a un CEO que tal vez usted debe buscar en la experiencia previa,
+
+0:06:08.040,0:06:12.300
+pero sobre la base de lo que la mayoría de las situaciones de contratación son,
+
+0:06:12.300,0:06:16.140
+ninguno de estos predictores son realmente buenos para predecir la aptitud.
+
+0:06:17.760,0:06:24.060
+El siguiente consejo es que la comprensión de un concepto va de lo abstracto a lo concreto y viceversa.
+
+0:06:24.900,0:06:31.920
+Así que creo que todo el mundo ha tenido este ejemplo en el que alguien te explica algo
+
+0:06:31.920,0:06:39.000
+y se te escapa por completo. Así que una buena estrategia cuando eso ocurre es decir,
+
+0:06:39.000,0:06:42.660
+podrías darme un ejemplo, y este escenario representa esto:
+
+0:06:42.660,0:06:48.420
+tensión constante entre expertos y novatos, porque los expertos quieren describir un concepto en
+
+0:06:48.420,0:06:52.140
+una forma abstracta que le permite resolver un montón de diferentes problemas, 
+
+0:06:52.140,0:06:53.520
+realmente tienen buenas intenciones,
+
+0:06:53.520,0:06:57.900
+pero cuando eres novato y no tienes ejemplos concretos
+
+0:06:57.900,0:07:03.720
+que se puede conectar a ese concepto abstracto,  no tienen ni idea de lo que están hablando
+
+0:07:03.720,0:07:07.320
+y, en efecto, ustedes no puede resolver absolutamente ningún problema.
+
+0:07:08.280,0:07:12.120
+Así que la conclusión es que usted deben alternar entre conceptos abstractos
+
+0:07:12.120,0:07:18.240
+y ejemplos concretos para ser capaz de aprender los conceptos de manera
+
+0:07:18.240,0:07:23.580
+que les permitan resolver diferentes problemas. Así que esto significa que los expertos deben proporcionar
+
+0:07:23.580,0:07:30.540
+explicaciones abstractas, así como ejemplos concretos y, a continuación, los novatos tienen que ser capaces de preguntar
+
+0:07:30.540,0:07:34.680
+por los conceptos que no entienden, recoger un montón de ejemplos concretos,
+
+0:07:34.680,0:07:40.380
+y así encontrar los principios subyacentes que les permitan resolver una gama más amplia de problemas.
+
+0:07:41.220,0:07:44.400
+Hay una especie de tensión en el campo de si se debe
+
+0:07:44.400,0:07:50.220
+empezar por lo abstracto o por lo concreto. Mi regla general es que cuanto más novata sea una persona,
+
+0:07:50.220,0:07:53.280
+más se debe comenzar con ejemplos concretos y pasar a
+
+0:07:53.280,0:07:59.400
+abstracto en comparación con la otra manera. Y entonces el último consejo que voy a dar es que
+
+0:07:59.400,0:08:03.240
+Internet y la IA no han hecho que el aprendizaje sea obsoleto, por desgracia.
+
+0:08:04.140,0:08:07.860
+Ya tuvimos este debate cuando apareció internet
+
+0:08:07.860,0:08:11.580
+y de repente puedes encontrar toda la documentación que quieras al alcance de tu mano,
+
+0:08:11.580,0:08:16.440
+usted no tiene que ir buscando a través de manuales, pensamos que esto haría que la programación fuera tan fácil.
+
+0:08:17.700,0:08:20.580
+Pero no fue así, así que el verdadero debate es,
+
+0:08:20.580,0:08:24.540
+cuál es el papel de Internet, de la IA y de otras herramientas,
+
+0:08:25.200,0:08:27.780
+y cuál es el papel del aprendizaje a la antigua usanza.
+
+0:08:28.440,0:08:32.400
+Así que Internet y la IA generativa como Codex o Copilot
+
+0:08:32.400,0:08:36.180
+son realmente buenas en detalles de bajo nivel, pero usarlas tiene un costo.
+
+0:08:36.180,0:08:41.760
+El primer costo es el cambio de tareas. Así que cuando estás usando Copilot para
+
+0:08:41.760,0:08:46.020
+escribir código que ambos están escribiendo código, la evaluación de lo que Copilot le está dando,
+
+0:08:46.020,0:08:49.560
+y luego la otra tarea es cambiar entre estos dos tipos diferentes de tareas.
+
+0:08:49.560,0:08:52.440
+Puedes mejorar en esto y las herramientas pueden hacerlo más fluido,
+
+0:08:52.440,0:08:56.640
+pero sigue teniendo un costo. El mayor costo, sin embargo, es
+
+0:08:56.640,0:09:04.620
+que cuando están descargando información a la IA y no tienen esas habilidades de bajo nivel de práctica,
+
+0:09:04.620,0:09:10.140
+entonces ustedes no están permitiendose lograr habilidades de orden superior como
+
+0:09:10.140,0:09:13.620
+hablamos con el primer consejo. Tienes que practicar esas habilidades de bajo nivel, 
+
+0:09:13.620,0:09:16.980
+habilidades para automatizarlas y desbloquear habilidades de orden superior.
+
+0:09:16.980,0:09:24.600
+Así que la IA es realmente buena prediciendo código para una situación muy predecible
+
+0:09:25.380,0:09:30.360
+pero en este momento no es bueno en un montón de cosas como la creatividad,
+
+0:09:30.360,0:09:33.780
+hacer frente a la incertidumbre, o hacer una base de código que es
+
+0:09:33.780,0:09:37.920
+mantenible y depurable. Así que tenemos que seguir 
+
+0:09:37.920,0:09:42.000
+aprendiendo esas habilidades de bajo nivel para que el programador que tiene que hacer esas tareas
+
+0:09:42.540,0:09:46.740
+pueda realizar esas pruebas. Así que la conclusión es que
+
+0:09:46.740,0:09:50.760
+desarrolladores todavía tienen que aprender la información conceptual que se descarga con las herramientas.
+
+0:09:51.900,0:09:56.160
+Y a modo de resumen, ¿qué se puede hacer para apoyar el aprendizaje?
+
+0:09:56.160,0:09:59.100
+Si estás aprendiendo, asegúrense de que están practicando problemas
+
+0:09:59.100,0:10:02.160
+para identificar y aplicar patrones. Para contratantes,
+
+0:10:02.160,0:10:05.640
+asegúrense de que están considerando cómo usted están tratando de predecir la aptitud de programación,
+
+0:10:05.640,0:10:09.780
+si ustedes están tratando de predecir la aptitud de programación, especialmente teniendo en cuenta que no tenemos una buena investigación
+
+0:10:09.780,0:10:11.880
+acerca de cómo hacerlo. Para los mentores,
+
+0:10:11.880,0:10:15.540
+asegúrense de que están proporcionando ejemplos concretos con conceptos abstractos.
+
+0:10:15.540,0:10:20.580
+Aprendices, asegúrate de que estás agregando ejemplos para descubrir esos principios subyacentes.
+
+0:10:20.580,0:10:23.700
+Y luego todos, asegúrense de comprender
+
+0:10:23.700,0:10:30.180
+las habilidades de bajo nivel que le están pidiendo a la IA que haga. Y si quieres un libro sobre esto,
+
+0:10:30.180,0:10:33.300
+...te recomiendo "El cerebro del programador"...
+
+0:10:33.300,0:10:35.160
+de Felienne Hermans, una de mis coautoras,
+
+0:10:35.160,0:10:40.620
+y si desea sólo un artículo, tenemos un documento próximamente en Comunicaciones
+
+0:10:40.620,0:10:45.720
+de la ACM que tiene 10 consejos y será de código abierto para que cualquiera pueda acceder.
+
+0:10:45.720,0:10:49.020
+Y mientras tanto, ahí está mi dirección de correo electrónico. Muchas gracias.
+
+0:10:51.600,0:10:56.580
+Fantástico muchas gracias, aplausos como si yo fuera todo el público.
+
+0:10:57.960,0:11:00.960
+Una vez más, qué grandes charlas, fantásticas que están sucediendo hoy,
+
+0:11:00.960,0:11:05.280
+y creo que la pieza de aprendizaje aquí, especialmente apreciar que trajiste
+
+0:11:05.280,0:11:10.380
+las tecnologías de aprendizaje y la realidad, bueno, yo los llamo tecnologías de aprendizaje, ya que
+
+0:11:10.380,0:11:13.200
+parece que es hacia donde nos dirigimos con muchos de estos inevitablemente,
+
+0:11:13.980,0:11:19.800
+y por eso creo que etiquetarlo así parece apropiado. Tengo una pregunta relacionada específicamente con
+
+0:11:19.800,0:11:25.440
+a ese componente, verdad? La idea de que 
+
+0:11:25.440,0:11:31.020
+AI reemplazaría el aprendizaje se siente bien, que eso no debería ser el caso, obviamente,
+
+0:11:31.020,0:11:35.520
+pero, ¿qué tienes que decir sobre el tipo de naturaleza complementaria que podría haber?
+
+0:11:35.520,0:11:38.760
+Así que hablas de lo concreto a lo abstracto, de lo abstracto a lo concreto...
+
+0:11:38.760,0:11:43.020
+¿Hay un papel que estas tecnologías pueden desempeñar de tal manera que no nos sentimos como
+
+0:11:43.020,0:11:45.480
+que las estamos utilizando como una muleta, sino que son más 
+
+0:11:45.480,0:11:48.180
+una ayuda en el proceso de aprendizaje? ¿Tienes alguna idea al respecto?
+
+0:11:48.840,0:11:50.220
+Bueno, una de mis
+
+0:11:50.220,0:11:57.300
+herramientas en el aprendizaje es el uso de analogías. Así que si usted puede pedir a un profesional, una IA que resuelva un
+
+0:11:57.300,0:12:00.960
+problema que es básicamente el mismo, pero tiene diferentes características de nivel superficial,
+
+0:12:00.960,0:12:04.800
+entonces usted puede comparar los tres, ya sabes, digamos que le pidió resolver tres
+
+0:12:04.800,0:12:06.240
+problemas diferentes, puede comparar los tres
+
+0:12:06.840,0:12:12.240
+para llegar a esos principios subyacentes. Así que usted puede utilizar eso como una herramienta para mirar
+
+0:12:12.240,0:12:15.960
+las diferencias y similitudes y conectar eso a, bueno,
+
+0:12:15.960,0:12:19.440
+esta característica es común a través de ellos por lo que debe ser un importante
+
+0:12:19.440,0:12:23.820
+característica de la solución de problemas como éste, mientras que éste es muy específico a un
+
+0:12:23.820,0:12:28.740
+cierto tipo de problemas por lo que realmente no necesita ser parte de lo que he aprendido.
