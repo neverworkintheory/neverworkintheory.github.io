@@ -1,0 +1,485 @@
+0:00:00.300,0:00:06.120
+Hola sí gracias por esa introducción, por lo que como se ha mencionado soy Allison Sullivan y
+
+0:00:06.120,0:00:11.040
+voy a saltar directamente a explicar de qué se trata "Corrigiendo el corrector de pruebas: los beneficios
+
+0:00:11.040,0:00:17.280
+de las pruebas unitarias para modelos de software". Con una observación inicial que
+
+0:00:17.280,0:00:20.040
+espero que todo el mundo puede estar de acuerdo con, que es realmente
+
+0:00:20.040,0:00:26.880
+difícil escribir programas correctamente, especialmente con la escala de los programas en la industria.
+
+0:00:26.880,0:00:31.740
+Sé que después de haber enseñado algoritmos es difícil para la gente escribir incluso sólo aquellos
+
+0:00:31.740,0:00:37.080
+algoritmos eficientes, simple diseño de soluciones, entonces ustedes ven en el mundo real y tienen
+
+0:00:37.080,0:00:41.520
+millones de líneas de código y están interactuando con
+
+0:00:41.520,0:00:46.620
+todos estos otros sistemas diferentes y por lo que es muy difícil, especialmente
+
+0:00:46.620,0:00:51.720
+de una sola vez, en el primer intento, realmente escribir ese programa correctamente.
+
+0:00:52.560,0:01:01.320
+Una solución muy antigua a esto es la idea de utilizar modelos de software para mejorar la corrección,
+
+0:01:01.320,0:01:06.600
+que sería el uso de la lógica matemática que podría haber sido introducida
+
+0:01:06.600,0:01:12.660
+hace mucho tiempo en una clase de matemáticas discretas para especificar, realmente específicamente, lo que ustedes
+
+0:01:12.660,0:01:15.600
+esperan que haga tu programa y normalmente escribimos
+
+0:01:15.600,0:01:22.980
+estos modelos del diseño con la idea de que si podemos crear una visión cohesiva del diseño
+
+0:01:22.980,0:01:28.980
+puede ser más fácil para todos los desarrolladores que trabajan en el software, para escribir realmente de forma correcta.
+
+0:01:29.820,0:01:35.460
+Y en los últimos años se ha producido un gran avance en la comunidad de modelado de software
+
+0:01:35.460,0:01:40.500
+para empezar a hacer lo que llamamos conjuntos de herramientas de búsqueda de escenarios.
+
+0:01:40.500,0:01:44.820
+Así que esta es la idea donde realmente se ejecuta el modelo de software
+
+0:01:44.820,0:01:51.960
+y como salida se obtiene una colección completa de todos los diferentes estados válidos
+
+0:01:51.960,0:01:55.800
+en los que puede entrar tu programa. Y entonces puedes tomar
+
+0:01:55.800,0:02:01.140
+estos estados válidos que tengo un ejemplo de, sólo una simple lista enlazada simple escrito aquí,
+
+0:02:01.140,0:02:06.060
+y los escenarios descubiertos se encuentran de forma automática mediante el análisis del modelo,
+
+0:02:06.060,0:02:09.900
+y se presentan al usuario, y lo ideal sería que quisiera iterar
+
+0:02:09.900,0:02:16.320
+sobre ellos y asegurarse de que cada uno de ellos es una lista enlazada válida sin ciclos.
+
+0:02:16.920,0:02:23.520
+Ahora el problema con esto es, bueno, es realmente difícil escribir modelos de software
+
+0:02:23.520,0:02:26.760
+correctamente. Al igual que, ellos proporcionan este
+
+0:02:26.760,0:02:32.100
+gran oráculo y esos escenarios se pueden convertir en pruebas sobre nuestra implementación
+
+0:02:32.100,0:02:40.320
+pero si el modelo de partida es incorrecta, entonces, ya sabes, acabamos de pasar el problema al modelo
+
+0:02:40.320,0:02:43.920
+en lugar de tener el problema en la aplicación.
+
+0:02:43.920,0:02:51.480
+Y así, mi investigación examinó la idea de abordar la corrección del modelo de la misma manera
+
+0:02:51.480,0:02:56.760
+que hacemos para bloques simples de código, que era la idea de establecer
+
+0:02:56.760,0:03:03.300
+una prueba unitaria para un modelo de software. Así que para nuestro ejemplo de lista enlazada simple,
+
+0:03:03.300,0:03:09.000
+una idea de una prueba unitaria que se nos ocurrió fue básicamente permitir que el
+
+0:03:09.000,0:03:16.080
+usuario para especificar uno de esos escenarios esperados que se debe encontrar cuando el modelo se ejecuta
+
+0:03:16.080,0:03:20.460
+y decir, ya sabes, espero una lista con un nodo
+
+0:03:20.460,0:03:28.020
+y sin enlaces en cualquier lugar que se encuentra como una lista válida, y también apoyar la idea de decir, ya sabes,
+
+0:03:28.020,0:03:32.580
+si luego añado un ciclo a esa lista - en este ejemplo aquí sería
+
+0:03:32.580,0:03:36.600
+sólo un bucle de auto en el nodo - Espero que esto se evite.
+
+0:03:36.600,0:03:43.200
+Así que es una idea bastante simple de una prueba de unidad, trae en una forma de, tipo de,
+
+0:03:43.200,0:03:47.880
+rápidamente un punto de comprobación de su modelo porque cuando se está ejecutando
+
+0:03:47.880,0:03:51.360
+y la generación de estos escenarios, es cierto que ustedes están recibiendo las
+
+0:03:51.360,0:03:55.200
+instantáneas de estados válidos que su programa puede entrar y eso es realmente agradable,
+
+0:03:55.200,0:04:00.900
+pero en la práctica ya que se trata de una búsqueda acotada pero exhaustiva
+
+0:04:00.900,0:04:07.380
+es muy común encontrar cientos de escenarios. Y así, cuando ustedes están escribiendo su modelo
+
+0:04:07.380,0:04:11.820
+podría ser ligeramente incorrecto, y que la incorrección podría significar,
+
+0:04:11.820,0:04:19.620
+de los 150 escenarios, dos son incorrectos. O tal vez usted acaba de escribir ligeramente algo
+
+0:04:19.620,0:04:24.960
+mal y que en realidad producen 149 escenarios en lugar de 150
+
+0:04:24.960,0:04:30.300
+y tienes que darte cuenta mientras enumeras, oh, creo que nunca vi este tipo
+
+0:04:30.300,0:04:35.280
+de lista y esperaba verlo. Así que las pruebas unitarias dan al desarrollador
+
+0:04:35.280,0:04:40.500
+una manera de, tipo de, tener un ligero punto de verificación de su modelo de software
+
+0:04:40.500,0:04:44.280
+y es una práctica que hace que se sienta mucho más familiar,
+
+0:04:44.280,0:04:50.100
+un poco en el camino, más cerca de cómo se desarrollaría el código y hacen una prueba de unidad rápida,
+
+0:04:50.100,0:04:53.520
+o, ya sabes, sobre todo en un pequeño método complicado,
+
+0:04:53.520,0:04:59.220
+asegurándose de que ustedes cubrieron sus casos prácticos. Pero el otro beneficio que terminamos
+
+0:04:59.220,0:05:03.600
+encontrando con la prueba de unidad es que una vez que tuvimos la definición de una prueba de unidad,
+
+0:05:03.600,0:05:08.700
+había un montón de, las prácticas de pruebas de software automatizado
+
+0:05:08.700,0:05:16.380
+ahora podíamos buscar apoyo para un modelo de software. Y lo que descubrimos fue que el entorno de 
+
+0:05:16.380,0:05:20.700
+ejecución y el hecho de que estamos tratando con estas lógicas formales
+
+0:05:20.700,0:05:26.040
+en realidad hizo un montón de esas prácticas de prueba más fácil de automatizar
+
+0:05:26.040,0:05:33.240
+y tienes aún más beneficios porque algunos de los problemas difíciles para un lenguaje como Java o C++
+
+0:05:33.240,0:05:38.400
+son en realidad bastante simples de resolver en un modelo. Así que para ilustrar,
+
+0:05:38.940,0:05:42.000
+voy a poner un ejemplo para la prueba de mutación.
+
+0:05:42.000,0:05:46.740
+Así pruebas de mutación es una de las áreas de investigación en pruebas de software
+
+0:05:46.740,0:05:50.160
+y la idea es, si tengo un programa original,
+
+0:05:50.160,0:05:57.300
+realmente puedo intencionalmente mutar el programa e introducir cambios en él
+
+0:05:57.300,0:06:05.340
+y al hacer eso quiero asegurarme de que tengo una prueba que es capaz de detectar este cambio.
+
+0:06:05.340,0:06:09.900
+Así que en este original hay dos mutantes diferentes en la pantalla aquí.
+
+0:06:09.900,0:06:15.060
+Así que para el primer mutante, si tengo una prueba donde x es 0 e Y es 1,
+
+0:06:15.060,0:06:20.580
+voy a observar una diferencia en la salida, el original producirá cero como resultado y
+
+0:06:20.580,0:06:24.720
+el mutante producirá uno. Sin embargo para el mutante dos,
+
+0:06:24.720,0:06:28.560
+ninguna entrada lo distinguirá del programa original:
+
+0:06:28.560,0:06:33.480
+pasó a ser un cambio lógicamente equivalente al programa.
+
+0:06:33.480,0:06:40.500
+Llamamos a eso un mutante equivalente y es un problema realmente difícil de resolver en estos lenguajes
+
+0:06:40.500,0:06:43.260
+de programación imperativos, ya sabes,
+
+0:06:43.260,0:06:48.480
+en este momento ustedes tienen que hacer sólo una especie de análisis manual de algo que llamamos propagación
+
+0:06:48.480,0:06:53.040
+para ver si es posible influir realmente en la salida,
+
+0:06:53.040,0:06:57.660
+usted hace un montón de análisis a través del flujo de control para llegar a la conclusión,
+
+0:06:57.660,0:07:00.180
+oh, esto es un mutante equivalente.
+
+0:07:00.180,0:07:05.820
+Así que la existencia de esos mutantes equivalentes realmente afectan a la aplicabilidad de hacer
+
+0:07:05.820,0:07:12.180
+un entorno automatizado de pruebas de mutación a pesar de que produce pruebas muy fuerte,
+
+0:07:12.180,0:07:14.640
+sólo tiene ese inconveniente.
+
+0:07:15.480,0:07:17.760
+Sin embargo, en un modelo de software,
+
+0:07:17.760,0:07:25.380
+si creamos una mutación, el propio lenguaje de modelado nos permite preguntar,
+
+0:07:25.380,0:07:31.320
+¿existe alguna situación en la que estas dos fórmulas difieran entre sí?
+
+0:07:31.320,0:07:36.300
+Así que en realidad sólo podemos pedir al lenguaje para comprobar la equivalencia
+
+0:07:36.300,0:07:43.920
+y si no son equivalentes, si difieren, entonces tenemos el apoyo en estos idiomas
+
+0:07:43.920,0:07:49.800
+para generar realmente ese escenario que muestra su diferencia en el comportamiento,
+
+0:07:49.800,0:07:54.840
+para que podamos crear automáticamente esta prueba que mata al mutante.
+
+0:07:54.840,0:07:59.880
+Y por lo que son realmente capaces de resolver estos problemas realmente difíciles, para hacer
+
+0:07:59.880,0:08:05.340
+pruebas de mutación en otros idiomas, realmente, simplemente en el lenguaje de modelado,
+
+0:08:05.340,0:08:11.040
+simplemente aprovechando la naturaleza de su ejecución. Hemos pasado a hacer cosas como la localización de fallos
+
+0:08:11.040,0:08:17.490
+tratando de averiguar automáticamente qué parte del modelo es incorrecta dada alguna prueba fallida, 
+
+0:08:17.490,0:08:24.180
+y reparación automatizada, para luego ir y corregir ese lugar defectuoso para que todas las pruebas pasan, 
+
+0:08:24.180,0:08:29.160
+y nos hemos encontrado con beneficios similares en los que algunos de estos problemas difíciles son simplemente más fáciles.
+
+0:08:29.160,0:08:31.260
+Por ejemplo, para la reparación,
+
+0:08:31.260,0:08:35.880
+si se piensa en una declaración de Java, hay tantas formas válidas diferentes que
+
+0:08:35.880,0:08:41.520
+la declaración de Java puede tomar, la gramática es tan abierta, pero en un lenguaje de modelado de la gramática
+
+0:08:41.520,0:08:45.180
+es mucho más restringido, por lo que nuestro espacio de búsqueda es más pequeño
+
+0:08:45.180,0:08:49.680
+y es más fácil entonces hacer algo en el ámbito de una búsqueda exhaustiva
+
+0:08:49.680,0:08:53.880
+que realmente será capaz de explorar una gran cantidad de reparaciones
+
+0:08:53.880,0:09:01.560
+sin tener el problema de correr durante más de 24 horas sólo para tratar de crear un parche automatizado.
+
+0:09:02.160,0:09:07.860
+Así que eso es parte de la idea clave de mi dirección de la investigación en general,
+
+0:09:07.860,0:09:13.440
+es esta idea de que el modelado de software puede tener un montón de beneficios,
+
+0:09:13.440,0:09:19.560
+pero tiene una persistente reputación de que es difícil de escalar y es difícil de usar.
+
+0:09:19.560,0:09:25.380
+La investigación se ha centrado en gran medida en abordar el problema de la escalabilidad con dividendos reales, 
+
+0:09:25.380,0:09:32.100
+hay un montón de trabajo saliendo, siendo citado, incluyendo Amazon citando algunos trabajos
+
+0:09:32.100,0:09:36.300
+con TLA + y SMT solvers sobre el despliegue en realidad
+
+0:09:36.300,0:09:41.580
+estos métodos formales en el mundo real pero sigue existiendo el problema de la facilidad de uso.
+
+0:09:41.580,0:09:45.780
+Y así, el enfoque de mi grupo de investigación ha sido la idea de que las pruebas unitarias,
+
+0:09:45.780,0:09:50.880
+y todo lo que permite, puede ayudar a facilitar la adopción de modelos de software.
+
+0:09:50.880,0:09:56.100
+Y resulta que estas técnicas se pueden hacer de una manera automatizada realmente agradable
+
+0:09:56.100,0:10:02.700
+debido al entorno en el que estamos trabajando. Y también, una idea que quiero que se lleven, es
+
+0:10:02.700,0:10:08.640
+si les sucede estar trabajando con un lenguaje no tradicional que podría no tener pruebas unitarias integradas,
+
+0:10:08.640,0:10:14.040
+yo consideraría la posibilidad de invertir en tratar de llegar a un entorno estructurado de pruebas unitarias.
+
+0:10:14.040,0:10:21.240
+Ustedes podrían sorprenderse por todos los beneficios adicionales y oportunidades únicas de automatización que existen
+
+0:10:21.240,0:10:30.600
+dado el entorno de ejecución único. Fantástico, esto me encanta especialmente,
+
+0:10:30.600,0:10:34.260
+es muy cercano y querido a mi corazón, esta idea de la unidad de pruebas y el valor
+
+0:10:34.260,0:10:38.100
+y cómo podemos pensar en ampliarlo. Creo que es especialmente interesante,
+
+0:10:38.880,0:10:41.640
+y voy a dar, voy a hacer mi pregunta para dar la oportunidad a otras
+
+0:10:41.640,0:10:47.580
+preguntas para que entren en el Slack por aquí, pero cuando estamos hablando de pruebas unitarias en el
+
+0:10:47.580,0:10:48.840
+contexto de los modelos de software, verdad?,
+
+0:10:48.840,0:10:51.360
+estamos hablando de una abstracción de una pieza de software,
+
+0:10:51.360,0:10:55.140
+que creo que tiene sentido estar pensando en la validación en ese punto.
+
+0:10:55.140,0:10:59.040
+¿Has pensado, o has hecho algún trabajo que da alguna idea de,
+
+0:10:59.040,0:11:03.060
+el valor más allá de eso, verdad?, como si estoy haciendo pruebas unitarias
+
+0:11:03.060,0:11:05.760
+en mi nivel de modelo de software, ¿eso me compra algo
+
+0:11:05.760,0:11:09.420
+cuando llegue el momento de la implementación, cuando llegue el momento del mantenimiento,
+
+0:11:09.420,0:11:13.260
+cuando llega el momento de algunas de las tareas que vienen más tarde por los canales,
+
+0:11:13.260,0:11:16.980
+¿Alguna idea que puedas compartir o pensamientos sobre eso? Sí,
+
+0:11:16.980,0:11:20.340
+así que definitivamente hay todo un cuerpo de trabajo dedicado hacia
+
+0:11:20.340,0:11:26.340
+tener esos escenarios que se producen y tratando de encontrar la manera de automatizar esos
+
+0:11:26.340,0:11:29.880
+y para poner a prueba sobre la aplicación, pero como se ha mencionado,
+
+0:11:29.880,0:11:36.600
+el hecho de que es una búsqueda exhaustiva limitada, a menudo que se ejecuta rápidamente en la escalabilidad
+
+0:11:36.600,0:11:40.320
+problemas y tal vez incluso un montón de caminos redundantes a través de sus pruebas
+
+0:11:40.320,0:11:43.800
+y algunos de estos escenarios son muy similares pero ligeramente diferentes,
+
+0:11:43.800,0:11:50.640
+así que hay todo un cuerpo de trabajo dedicado a la creación de un subconjunto más interesante de los escenarios.
+
+0:11:50.640,0:11:56.520
+Así que hemos intentado trasladar la idea de las métricas de cobertura a un modelo
+
+0:11:56.520,0:12:01.140
+y luego generar pruebas para que la cobertura y, a continuación, los escenarios,
+
+0:12:01.140,0:12:05.160
+que luego se traduciría en pruebas sobre la aplicación
+
+0:12:05.160,0:12:11.100
+y sería guiado por la cobertura del modelo y, a continuación, el objetivo es la esperanza de que eso conduce a
+
+0:12:11.100,0:12:16.320
+una cobertura interesante dentro de la aplicación. En realidad no hemos estudiado lo bien que
+
+0:12:16.320,0:12:21.720
+la última parte se conecta en, pero creo que eso es definitivamente el siguiente paso,
+
+0:12:21.720,0:12:25.020
+es averiguar cómo conectar mejor a la aplicación.
+
+0:12:26.520,0:12:28.800
+Fantástico, y por eso tenemos
+
+0:12:28.800,0:12:31.860
+una pregunta más que quiero asegurarme de que tenemos tiempo antes de llegar a la siguiente charla,
+
+0:12:32.700,0:12:35.220
+en el chat, tenemos una pregunta de Greg que dice,
+
+0:12:35.220,0:12:39.060
+¿cuál es la mejor introducción a este tipo de modelado para un programador 
+
+0:12:39.060,0:12:45.120
+que nunca hizo o no recuerda, como la mayoría de nosotros, un curso de matemáticas discretas o de métodos formales?
+
+0:12:45.840,0:12:49.680
+Sí, así que el lenguaje que uso en
+
+0:12:49.680,0:12:58.140
+las diapositivas se llama ALLOY a-l-l-o-y y ha sido una especie de enfoque en
+
+0:12:58.140,0:13:02.340
+cursos de pregrado que están buscando para empezar a introducir métodos formales
+
+0:13:02.340,0:13:07.320
+porque lo hace, como salida, producir automáticamente escenarios gráficos.
+
+0:13:07.320,0:13:12.060
+Algunos de los otros buscadores de escenarios producirán salidas de texto de los escenarios
+
+0:13:12.060,0:13:17.400
+y eso no es tan accesible. Y hay trabajo reciente para crear, que
+
+0:13:17.400,0:13:24.300
+han creado este sitio web llamado Alloy for Fun, y por lo que es un sitio web que usted puede visitar,
+
+0:13:24.300,0:13:30.780
+tiene Alloy instalado y funcionando en su backend y sólo tienes que escribir en, que le da indicaciones
+
+0:13:30.780,0:13:32.460
+para rellenar y luego
+
+0:13:32.460,0:13:38.340
+tiene un oráculo de back-end que está comprobando en contra y por lo que le mostrará ejemplos de escenarios que
+
+0:13:38.340,0:13:43.320
+usted permitió que el oráculo que no o viceversa para ayudar a corregir,
+
+0:13:43.320,0:13:49.080
+así que Alloy es algo que se ha utilizado un poco más en la perspectiva educativa
+
+0:13:49.080,0:13:51.600
+así que yo diría que los recursos como que sería beneficioso.

@@ -1,0 +1,485 @@
+0:00:01.140,0:00:05.220
+Muchas gracias por esta presentación, Greg, es un gran placer para mí estar aquí.
+
+0:00:07.080,0:00:11.280
+Y la persona que ven en mi diapositiva es Masako Wakamiya,
+
+0:00:11.280,0:00:15.540
+es desarrolladora de aplicaciones. Nació en 1935 y
+
+0:00:15.540,0:00:21.120
+construyó su primera aplicación cuando tenía 82 años. Y a la derecha se ve esta aplicación
+
+0:00:21.120,0:00:27.720
+llamado Hinedan y para los miembros japoneses en la audiencia tengo que pedir disculpas por mi pronunciación,
+
+0:00:27.720,0:00:34.200
+pero esto es esencialmente un juego que está entrenando a los niños a preparar un altar para un festival de las niñas
+
+0:00:34.200,0:00:37.920
+llamado Hinamatsuri. Y tienes que poner
+
+0:00:37.920,0:00:42.360
+esas muñecas en los lugares correctos. Así que ella es, por supuesto, excepcional,
+
+0:00:42.360,0:00:46.920
+pero hay bastantes desarrolladores de software mayores que están por ahí,
+
+0:00:46.920,0:00:52.800
+y estudios anteriores han demostrado que las puntuaciones de reputación de los programadores en Stack
+
+0:00:52.800,0:00:58.140
+Overflow tiende a aumentar hasta bien entrados los 50, y no existe una fuerte correlación entre
+
+0:00:58.140,0:01:04.440
+la edad y las puntuaciones y áreas específicas de conocimiento. Así que esto es lo que, esencialmente sugiere que los 
+
+0:01:04.440,0:01:10.380
+desarrolladores mayores de software deben prosperar en nuestro mundo. Pero al mismo tiempo Quora está lleno de preguntas.
+
+0:01:10.380,0:01:16.140
+Tengo tantos años, ¿soy demasiado viejo para ser programador?
+
+0:01:16.140,0:01:21.120
+Y esas preguntas vienen de personas que tienen 50, que tienen 60, pero también de personas que tienen 15.
+
+0:01:21.660,0:01:25.260
+Entonces, ¿qué está pasando? Intentamos comprender
+
+0:01:25.260,0:01:32.940
+junto con Sebastián Valdés y George Park, cómo exactamente este discurso público en torno a la
+
+0:01:32.940,0:01:39.660
+edad y los desarrolladores de software está organizado? ¿De qué habla la gente y qué
+
+0:01:39.660,0:01:43.800
+tipo de cosas se asocian con ser viejo en el desarrollo de software?
+
+0:01:45.060,0:01:54.660
+Así que hemos analizado artículos, esencialmente hemos mirado los 100 primeros hits,
+
+0:01:55.560,0:02:00.180
+hemos buscado en Google "edad y desarrollador de software", nos hemos centrado en fuentes en inglés
+
+0:02:00.180,0:02:03.780
+y lugares con sede en EE.UU., por supuesto, relacionados con la edad
+
+0:02:03.780,0:02:08.460
+las expectativas están determinadas culturalmente. Excluimos las cosas que son meramente
+
+0:02:08.460,0:02:14.760
+anuncios de trabajo y recopilaciones de estadísticas y encontramos 24 artículos publicados en sitios de noticias,
+
+0:02:14.760,0:02:18.960
+publicados en plataformas de blogs populares, CDC, un par de esos ejemplos,
+
+0:02:18.960,0:02:25.500
+y hemos analizado manualmente esos textos. Así que la primera pregunta para nosotros fue,
+
+0:02:25.500,0:02:31.740
+¿cuán viejo es realmente viejo? Y aquí tengo malas noticias para muchos de nosotros,
+
+0:02:31.740,0:02:34.320
+incluido yo mismo. Soy viejo:
+
+0:02:34.320,0:02:39.180
+He superado la barrera de los 40, así que se me considera viejo.
+
+0:02:40.200,0:02:46.260
+Y si ves que, incluso si el límite superior de esta tabla, como 50 o más,
+
+0:02:46.260,0:02:53.100
+no se acerca ni de lejos a la edad de jubilación de las culturas occidentales.
+
+0:02:54.600,0:02:59.580
+Algunos documentos incluso se refieren a las personas de 30 años como ancianos.
+
+0:02:59.580,0:03:04.560
+Así que esencialmente viejo es muy joven en el desarrollo de software.
+
+0:03:05.760,0:03:11.520
+Así que cuando miramos más de cerca sobre lo que esos artículos esencialmente estaban hablando
+
+0:03:11.520,0:03:15.900
+entonces resultó que la empleabilidad es una preocupación importante.
+
+0:03:17.340,0:03:22.620
+La gente está preocupada por su capacidad para continuar su carrera profesional,
+
+0:03:22.620,0:03:24.480
+encontrar nuevos empleos, etc.
+
+0:03:24.480,0:03:31.080
+Y hemos cotejado esos artículos con opiniones más populares en Hacker News.
+
+0:03:31.800,0:03:37.800
+Así que lo que hemos encontrado es que hay muchas estrategias que se recomiendan
+
+0:03:37.800,0:03:44.070
+tanto para las empresas como para los individuos cuando se trata de garantizar su empleador-
+
+0:03:44.070,0:03:48.180
+empleabilidad de los desarrolladores de software de más edad. Por ejemplo,
+
+0:03:48.180,0:03:56.700
+las empresas pueden ofrecer becas de retorno, que a menudo se mencionan en el contexto de los permisos parentales,
+
+0:03:56.700,0:04:02.160
+pero esencialmente pueden utilizarse para cualquier tipo de interrupción prolongada de la carrera profesional.
+
+0:04:02.760,0:04:09.480
+O proporcionar itinerarios profesionales y KPI adaptados a desarrolladores experimentados.
+
+0:04:09.480,0:04:16.380
+Al mismo tiempo, las empresas deberían dejar de hacer ciertas cosas que están afectando negativamente a
+
+0:04:17.220,0:04:19.200
+a todos los desarrolladores. Por ejemplo,
+
+0:04:19.200,0:04:27.000
+si ustedes están pidiendo como parte de su proceso de entrevista para resolver
+
+0:04:27.000,0:04:32.040
+rompecabezas clásicos del libro de algoritmos o del libro de estructuras de datos de un
+
+0:04:32.040,0:04:36.000
+primer año de educación universitaria, entonces, por supuesto, ustedes van a
+
+0:04:36.960,0:04:41.640
+dar desventaja a las personas que podrían no haber seguido el camino tradicional
+
+0:04:41.640,0:04:47.520
+o podría haber seguido esos caminos tradicionales hace muchos, muchos años,
+
+0:04:47.520,0:04:50.520
+que era, por supuesto, el caso de las personas en las que nos hemos centrado. 
+
+0:04:52.020,0:05:01.080
+Enmarcar la experiencia tecnológica como equipaje tecnológico es desalentador y preocupante.
+
+0:05:01.620,0:05:07.260
+A nivel de los individuos, vemos que estas personas están
+
+0:05:07.260,0:05:11.760
+intentando crecer como ingenieros informáticos, por ejemplo dominando las tecnologías modernas
+
+0:05:11.760,0:05:19.140
+o desarrollando habilidades de tutoría o convirtiéndose, y adquiriendo conocimientos de tecnologías de nicho específicas,
+
+0:05:20.100,0:05:25.260
+pero esas técnicas pueden ser vistas como problemáticas porque incluso si su tecnología
+
+0:05:25.260,0:05:31.140
+o conocimiento está siendo apreciado, el contexto social podría ser un problema
+
+0:05:31.140,0:05:38.160
+que empuja a algunos de los individuos de más edad a adoptar estrategias destinadas a parecer jóvenes.
+
+0:05:38.160,0:05:43.260
+Por ejemplo, modificar el CV ocultando algunos de los empleos anteriores,
+
+0:05:44.580,0:05:50.400
+trabajar horas extras que se asocia sobre todo o no se adopta para las personas que tienen otras obligaciones,
+
+0:05:50.400,0:05:55.440
+o incluso ir a los cirujanos plásticos. Así que basado en el estudio,
+
+0:05:55.440,0:06:03.960
+hemos visto técnicas que tanto las empresas como los particulares pueden emplear para fomentar o desincentivar
+
+0:06:03.960,0:06:09.060
+todos los desarrolladores de software de manera de ser empleado en las empresas.
+
+0:06:10.020,0:06:15.300
+En un estudio de seguimiento hemos analizado un subgrupo más específico de todos los desarrolladores,
+
+0:06:15.300,0:06:19.500
+específicamente en las mujeres. ¿Recuerdas a Masako Wakamiya?
+
+0:06:19.500,0:06:24.780
+Tenía más de 80 años y estaba desarrollando una aplicación.
+
+0:06:24.780,0:06:30.540
+Sabemos por la literatura y por nuestra propia experiencia que las mujeres son un grupo
+
+0:06:30.540,0:06:34.380
+minoritario en el desarrollo de software, y como nuestro estudio anterior ha demostrado,
+
+0:06:34.380,0:06:37.440
+también lo son los desarrolladores de mayor edad. Y en general
+
+0:06:38.880,0:06:41.880
+las personas que están en la intersección de múltiples ejes de diversidad
+
+0:06:41.880,0:06:46.440
+tienden a experimentar retos que no pueden atribuirse a uno solo de ellos.
+
+0:06:47.460,0:06:50.820
+Por eso hemos realizado una serie de entrevistas.
+
+0:06:50.820,0:06:56.340
+Así que aquí puedes ver una visión general de las experiencias de las mujeres mayores,
+
+0:06:56.340,0:07:02.220
+y, de nuevo, mayor en este caso significa más de 40 años, las estrategias que utilizan para sobrevivir,
+
+0:07:02.220,0:07:07.740
+y sus percepciones generales. Así que esto es, por supuesto, un documento completo y
+
+0:07:07.740,0:07:12.660
+hoy me gustaría centrarme únicamente en las estrategias porque me gustaría que fuera lo más práctico
+
+0:07:12.660,0:07:14.880
+como sea posible. Y concretamente
+
+0:07:14.880,0:07:19.260
+cuando vemos las estrategias que ayudan a las mujeres a sobrevivir en esta hostil
+
+0:07:19.260,0:07:25.440
+o al menos poco amigable medio ambiente vemos estrategias relacionadas con la edad, tales como
+
+0:07:26.280,0:07:31.140
+ajustar el comportamiento o ajustar la apariencia, ya hemos visto algunas de esas cuestiones antes.
+
+0:07:32.940,0:07:39.120
+Estudios relacionados con el género, que van desde no tomarse las cosas como algo personal
+
+0:07:39.120,0:07:42.900
+o apoyarse en otras mujeres, esas estrategias que
+
+0:07:42.900,0:07:47.580
+intentan combinar edad, género, porque de nuevo sabemos que las estrategias
+
+0:07:47.580,0:07:51.000
+no siempre son fácilmente atribuibles a una sola de esas dimensiones.
+
+0:07:51.000,0:07:57.780
+Y aquí vemos dos recomendaciones que hemos obtenido de nuestras entrevistas.
+
+0:07:57.780,0:07:59.760
+Por ejemplo, intentar ayudar a las
+
+0:07:59.760,0:08:08.460
+próxima generación de mujeres y personas no binarias y, por supuesto, también beneficiarse de las redes.
+
+0:08:09.420,0:08:12.660
+Resumiendo, ¿qué hemos visto?
+
+0:08:12.660,0:08:22.260
+Hemos visto que tanto las organizaciones como los individuos deben y pueden invertir
+
+0:08:22.260,0:08:27.480
+en la creación de un entorno más acogedor para todos los desarrolladores en general y para
+
+0:08:28.140,0:08:32.280
+mujeres desarrolladoras veteranas en particular. Por supuesto,
+
+0:08:32.280,0:08:40.980
+ya se sabe que la diversidad puede aportar soluciones más creativas y
+
+0:08:40.980,0:08:46.320
+puede crear equipos más productivos, pero concretamente cuando estamos
+
+0:08:46.320,0:08:51.240
+hablando de grupos minorizados, específicamente cuando estamos hablando de
+
+0:08:51.240,0:08:59.340
+grupos que son tan escasos como las mujeres mayores y las personas no binarias en el desarrollo de software,
+
+0:08:59.340,0:09:05.820
+su inclusión nos permite acercarnos a las necesidades de
+
+0:09:05.820,0:09:10.020
+los grupos infrarrepresentados, desatendidos de la sociedad en su conjunto.
+
+0:09:11.760,0:09:16.320
+Ejemplos de este tipo de ajustes son, por supuesto, los cambios en el proceso de entrevistas,
+
+0:09:17.040,0:09:22.860
+ofrecer becas de retorno, incluir KPI o incluir
+
+0:09:23.580,0:09:28.920
+que reflejen que se valoran las contribuciones de esas personas
+
+0:09:28.920,0:09:33.240
+y son importantes para la empresa. Cuando se trata de desarrolladores individuales,
+
+0:09:33.240,0:09:38.040
+entonces, por supuesto, tenemos un buen número de desafíos allí,
+
+0:09:38.040,0:09:43.620
+porque vemos que la gente cambia, desafía al entorno o cambia su entorno.
+
+0:09:45.120,0:09:49.800
+Ya sea, por ejemplo, a través de cosas como la sindicalización, plantando cara a los prejuicios,
+
+0:09:49.800,0:09:54.780
+o simplemente cambiando de empresa, de función o, a veces, de ubicación.
+
+0:09:55.920,0:09:59.880
+También vemos muchas técnicas y estrategias mucho más problemáticas,
+
+0:09:59.880,0:10:03.180
+como la adopción de patrones útiles de comportamiento,
+
+0:10:04.140,0:10:09.840
+cambiar de aspecto, cambiar, perdón,
+
+0:10:14.580,0:10:15.120
+de acuerdo,
+
+0:10:15.120,0:10:21.780
+cambiando el comportamiento y el aspecto de las personas, pero, por supuesto, al mismo tiempo,
+
+0:10:22.740,0:10:35.580
+sabemos que esas son simplemente soluciones curita, mientras que por supuesto los problemas son a veces, o 
+
+0:10:35.580,0:10:38.820
+al menos la mayoría de ellos son sistémicos. Y pido disculpas,
+
+0:10:38.820,0:10:42.780
+algo le pasó a mi pantalla y no estoy seguro de lo que están viendo exactamente.
+
+0:10:48.540,0:10:51.600
+Lo estamos viendo en el momento en que la pantalla compartida ha terminado.
+
+0:10:51.600,0:10:56.880
+Tenemos tiempo si usted tiene otra diapositiva o dos y le gustaría tratar de volver a compartir su
+
+0:10:56.880,0:10:58.860
+pantalla que debería funcionar. De acuerdo,
+
+0:10:58.860,0:11:05.640
+déjame intentar compartirla. Claro,
+
+0:11:11.460,0:11:19.200
+si, estamos viendo tu pantalla pero no tus diapositivas. Bien, ahora tienes que ver las diapositivas.
+
+0:11:19.200,0:11:20.760
+Sí, ya estamos viendo las diapositivas. Gracias.
+
+0:11:20.760,0:11:22.920
+Así que eso es esencialmente esta vez, sí,
+
+0:11:25.440,0:11:30.060
+así que como he dicho, verdad?, por lo que tenemos estrategias y soluciones que pueden ayudar a la gente
+
+0:11:30.900,0:11:37.560
+y puede ayudar tanto a las empresas y las empresas y los individuos
+
+0:11:38.160,0:11:43.260
+deberían participar en este proceso. Y ahora ya puedo dejar de compartir.
+
+0:11:43.800,0:11:47.460
+Vale, muchas gracias, perdón por el contratiempo técnico.
+
+0:11:48.420,0:11:52.500
+Una charla estupenda, gracias Alexander. Una pregunta del público.
+
+0:11:52.500,0:11:57.900
+¿Cómo va a influir todo esto en el cambio demográfico que estamos viendo, por ejemplo?
+
+0:11:57.900,0:12:01.200
+en Japón y partes de Europa, ya que tenemos una población que envejece.
+
+0:12:02.520,0:12:05.700
+¿Cree que se reducirá este tipo de discriminación?
+
+0:12:08.100,0:12:14.400
+Me encantaría decir que sí, pero la verdad es que no veo que vaya a ocurrir.
+
+0:12:15.600,0:12:26.280
+Nuestro estudio se ha centrado, por supuesto, en el mercado laboral estadounidense, que es más caliente, más activo,
+
+0:12:26.280,0:12:28.680
+que lo que al menos yo veo aquí en Europa,
+
+0:12:29.940,0:12:34.140
+y probablemente no debería hacer ningún comentario sobre el mercado laboral japonés.
+
+0:12:36.540,0:12:45.840
+Me preocupa sobre todo que, al igual que, los problemas que vemos son en su mayoría relacionados con el cambio de empleo.
+
+0:12:47.160,0:12:51.120
+Si la gente se queda en las mismas empresas,
+
+0:12:51.120,0:12:53.820
+que pueden estar sufriendo, pero todavía alrededor,
+
+0:12:53.820,0:12:58.800
+por lo que no van a verlo. Los problemas que surgieron fueron
+
+0:12:58.800,0:13:04.560
+en su mayoría relacionados con la búsqueda de empresas, ser contratado por esas empresas, y así sucesivamente.
+
+0:13:04.560,0:13:09.360
+Si el mercado no es tan activo, no es probable que la gente cambie de empleo,
+
+0:13:09.360,0:13:14.400
+por lo que podríamos tener otras formas de discriminación en lugar de la que hemos visto.
+
+0:13:14.400,0:13:21.360
+Pero sería muy atrevido por mi parte afirmar que no vamos a tener ninguna forma de discriminación.
+
+0:13:22.560,0:13:25.740
+Vale, otra otra
+
+0:13:25.740,0:13:30.060
+comentario que surgió, o pregunta, mencionaste el cambio de apariencia
+
+0:13:30.900,0:13:34.020
+¿Qué tan común es que en el sector de la tecnología, y con qué frecuencia se ve
+
+0:13:34.020,0:13:39.600
+personas que se aprovechan del trabajo a distancia para tratar de ocultar su edad?
+
+0:13:41.400,0:13:47.880
+Como científico, debo decir que esos estudios eran cualitativos,
+
+0:13:47.880,0:13:51.060
+por lo que no puedo responder a preguntas sobre el aspecto cuantitativo,
+
+0:13:51.060,0:13:53.040
+No sé con qué frecuencia sucede,
+
+0:13:53.040,0:13:57.780
+pero se ha mencionado en repetidas ocasiones por lo menos.
+
+0:13:57.780,0:14:03.540
+Así que nuestros entrevistados mencionan repetidamente cambiar de aspecto,
+
+0:14:03.540,0:14:09.420
+ya sea para parecer más joven o en el otro lado para no parecer más joven.
+
+0:14:09.420,0:14:13.740
+Así que la mayoría de las veces cuando estamos hablando de cambiar la apariencia
+
+0:14:13.740,0:14:18.600
+estamos pensando en intentar parecer más jóvenes. Algunas personas no están tratando de parecer más joven,
+
+0:14:18.600,0:14:23.640
+en particular, este fue uno de los temas relacionados con nuestras entrevistas con mujeres.
+
+0:14:25.920,0:14:29.940
+Tal vez pueda citar a una de las entrevistadas,
+
+0:14:29.940,0:14:36.240
+dijo que todos esos jóvenes tecnológicos, no les gusta trabajar con su madre
+
+0:14:36.240,0:14:40.620
+pero son perfectamente felices trabajando con su abuela.
+
+0:14:43.560,0:14:50.160
+Por lo tanto, esta edad, ya sabes, tiene una relación muy extraña
+
+0:14:50.160,0:14:59.260
+con lo que te hace tener "la edad adecuada". A menudo se considera que las mujeres nunca tienen la edad adecuada,
+
+0:15:00.060,0:15:05.201
+o son demasiado jóvenes y no se las toma en serio porque son demasiado jóvenes
+
+0:15:05.201,0:15:07.980
+o son demasiado viejas y no se toma en serio porque su conocimiento está fuera de época,
+
+0:15:07.980,0:15:10.260
+bien, así que esto es una cuerda floja.
