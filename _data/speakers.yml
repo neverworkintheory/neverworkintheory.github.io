@@ -656,6 +656,7 @@
   thumbnail: presler-marshall-kai.webp
   transcript:
   - en
+  - es
 
 - event: 2023-04
   id: serebrenik-alexander
@@ -669,6 +670,7 @@
   thumbnail: serebrenik-alexander.webp
   transcript:
   - en
+  - es
 
 - event: 2023-04
   id: sullivan-allison
@@ -682,6 +684,7 @@
   thumbnail: sullivan-allison.webp
   transcript:
   - en
+  - es
 
 - event: 2023-04
   id: tshukudu-ethel
@@ -709,6 +712,7 @@
   thumbnail: zeller-andreas.webp
   transcript:
   - en
+  - es
 
 - event: 2023-04
   id: zhou-shurui
@@ -722,3 +726,4 @@
   thumbnail: zhou-shurui.webp
   transcript:
   - en
+  - es
