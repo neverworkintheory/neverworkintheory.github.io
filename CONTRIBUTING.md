@@ -31,7 +31,7 @@ we would be happy to talk with you about specifics and give feedback on drafts.
 
 All contributors must abide by our [Code of Conduct]({{'/conduct/' | relative_url}}).
 By submitting material to this site, you agree that we may publish it under the terms of
-the [Creative Commons - Attribution License</a> (CC-BY)]({{'/license/' | relative_url}}).
+the [Creative Commons - Attribution License (CC-BY)]({{'/license/' | relative_url}}).
 
 <h2 id="guidelines">Guidelines</h2>
 
